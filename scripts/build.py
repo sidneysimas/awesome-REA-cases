@@ -81,6 +81,7 @@ def render(records):
     readme = ['# Awesome REA Cases', '',
               '**中文（默认）** | [English](README.en.md)', '',
               '**用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**', '',
+              '**每天 6 次定时追踪 REA 与 AI 逆向公开案例，自动筛选、去重并更新合集。**', '',
               '收集 REA 与其他 AI 逆向的案例和项目，覆盖游戏保存、硬件互通、应用重建与算法研究。每条说明作者在研究什么、为什么逆向、具体做了什么，并链接原帖、代码或验证记录。', '',
               '[REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。', '',
               f'当前收录 **{len(records)} 个案例与项目**，按用途分类，不设 Top N 或热度门槛。', '',
@@ -113,6 +114,7 @@ def render(records):
         return f"- [{r['en']['title']}](cases/{r['id']}.md) — {r['en']['summary']} **[{labels_en[r['rea']]}{stage}]**"
     english = ['# Awesome REA Cases', '', '[中文（默认）](README.md) | **English**', '',
                '**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**', '',
+               '**Tracks public REA and AI reverse-engineering cases six times daily, automatically screening, deduplicating, and updating the collection.**', '',
                'A collection of REA and AI reverse-engineering cases and projects, covering game preservation, hardware interoperability, app reconstruction, and algorithm research. Each entry explains the target, the author’s purpose and approach, and links to original posts, code, or verification records.', '',
                '[REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.', '',
                f'**{len(records)} entries**, organized by use case, without a Top-N or popularity threshold.', '',
