@@ -1,0 +1,22 @@
+name: Suggest a case
+description: 提交有公开证据的 AI 逆向案例
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 原始公开来源
+      description: 作者原帖、代码、演示或验证记录
+    validations:
+      required: true
+  - type: textarea
+    id: case
+    attributes:
+      label: 对象、作者操作和结果
+      description: 是什么软件或设备？为什么逆向？做了什么？有什么结果证据？是否使用 REA？
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: 尚未确认的部分
+      description: 自述结果、未公开测试、未完成部分请写明。
