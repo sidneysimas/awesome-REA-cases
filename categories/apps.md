@@ -10,7 +10,7 @@
 - [网站重建订单：作者自述的交付报告](../cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
 - [TradingView：传播较多的复刻流程帖](../cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
 - [WHOOP：分析健康追踪设备的 Android App](../cases/whoop-apk.md) — 发现 APK 分析讨论，尚未确认完成替代客户端。 **[未确认使用 REA · 待验证]**
-- [ArtCraft：不要把从零开发写成逆向 Adobe](../cases/artcraft-boundary.md) — 热门帖涉及创作软件替代，但逆向性质未得到支持。 **[其他 AI 逆向 · 相关项目]**
+- [ArtCraft：不要把从零开发写成逆向 Adobe](../cases/artcraft-boundary.md) — 创作软件与 WordCraft 的从零重建，不等于已完整逆向 Adobe 或 Word。 **[其他 AI 逆向 · 相关项目]**
 - [Obsidian：真实桌面包的大规模分析测试](../cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**
 - [大型 Android APK：真实生产包的分析需求](../cases/large-android-apk.md) — 133MB、11 DEX 的安装包；原目标未见修复后复测。 **[REA · 进行中]**
 - [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](../cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA · 进行中]**
@@ -24,3 +24,8 @@
 - [后台 Computer Use：用 Swift 暴露电脑操作 API](../cases/background-computer-use.md) — 研究 Codex 后台操作，提供本机可脚本调用的接口。 **[未确认使用 REA]**
 - [GarageBand：研究文件格式，用现有乐器自动作曲](../cases/garageband-file-format.md) — Claude 分析音乐工程格式，作为本地音乐视频流程的一环。 **[其他 AI 逆向]**
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](../cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
+- [扑克桌面整理：重建牌桌管理工具](../cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
+- [Codex 电脑操作：研究浏览器能力并接入其他 Agent](../cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
+- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[未确认使用 REA · 待验证]**
+- [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](../cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
+- [稿定设计：为固定封面制作自己的工作台](../cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**

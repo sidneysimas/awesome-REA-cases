@@ -623,8 +623,8 @@
     "title": "ArtCraft：不要把从零开发写成逆向 Adobe",
     "category": "apps",
     "rea": "other-ai",
-    "summary": "热门帖涉及创作软件替代，但逆向性质未得到支持。",
-    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。",
+    "summary": "创作软件与 WordCraft 的从零重建，不等于已完整逆向 Adobe 或 Word。",
+    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 本周期补充 WordCraft：同一 ArtCraft 团队用 Rust 从公开规范和行为观察重建 Microsoft Word 风格文字处理器，提供 .docx 读写、修订、批注与 MCP 控制。公开 README 标为 alpha，仍需真实文档保真度与稳定性测试；传播帖称 pre-alpha，阶段以项目说明为准。它是相关软件重建方向，不能据此称已反编译 Word 或确认 AI 完成全部开发。",
     "sources": [
       {
         "label": "原始记录",
@@ -633,13 +633,21 @@
       {
         "label": "官网状态",
         "url": "https://getartcraft.com/apps"
+      },
+      {
+        "label": "本周期 WordCraft 介绍",
+        "url": "https://x.com/realfxw/status/2109465865221550341"
+      },
+      {
+        "label": "WordCraft 项目与阶段说明",
+        "url": "https://github.com/storytold/wordcraft"
       }
     ],
     "snapshot_date": "2026-10-12",
     "metadata": [],
     "en": {
       "title": "ArtCraft: not proven Adobe reverse engineering",
-      "summary": "From-scratch creative software should not be labeled a complete Adobe decompilation."
+      "summary": "From-scratch creative apps and the WordCraft word processor are not proof of complete Adobe or Word decompilation."
     },
     "status": "related-project"
   },
@@ -1147,5 +1155,205 @@
       "summary": "A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it."
     },
     "status": "unverified"
+  },
+  {
+    "id": "poker-table-organizer",
+    "title": "扑克桌面整理：重建牌桌管理工具",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。",
+    "description": "trickstar 希望整理自己的扑克牌桌，称通过 PowerShell 配合 REA、Ghidra 和 Codex 克隆了一款扑克 App，约 40 分钟完成，从而不再依赖原付费工具。帖子未公开软件名、源码或完整功能测试；这里收录的是具体牌桌整理用途的第一手自述，不是已独立验证的替代产品。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/lipinhobeats/status/2109435654962655526"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T08:07:06+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜95 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Poker table organizer",
+      "summary": "A first-hand report of rebuilding table organization with REA, Ghidra and Codex; the app and tests are not public."
+    }
+  },
+  {
+    "id": "aerobiz-2-decompilation",
+    "title": "《航空霸业2》：用 REA + Kimi 反编译老游戏",
+    "category": "games",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "研究 KOEI 1993 年航空经营游戏的编译程序。",
+    "description": "TS-Fisher 分享用 REA + Kimi K3 反编译 KOEI 1993 年游戏《航空霸业2》的尝试。这是一款航空公司经营游戏，具体目标是分析老游戏程序；原帖附图，但未说明恢复比例、可编译代码或可玩重建版，不把“正在反编译”写成已经完整移植。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/TSFisher24nrex/status/2109452544913326086"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T09:14:13+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜15 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Aerobiz 2: REA and Kimi decompilation",
+      "summary": "Investigate a 1993 KOEI airline-management game; no complete code recovery or playable rebuild is established."
+    }
+  },
+  {
+    "id": "codex-cua-harness-research",
+    "title": "Codex 电脑操作：研究浏览器能力并接入其他 Agent",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。",
+    "description": "Hars 正让帖子中称为 Astra、配置为 xHigh 的模型，配合 REA 研究 Codex 的 CuA（电脑操作）、应用内浏览器、Chrome 快照导入及浏览器扩展。目标是让另一模型（原帖称 5.6 Luna Low）在 Hermes 一类 Agent 框架中获得相近的电脑操作能力。这是明确的互通研究任务；这些模型代号沿用作者用语，帖子仍在询问方案是否可行，未报告完成。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/thisishars/status/2109461719789735948"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T09:50:40+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜59 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Codex computer-use interoperability research",
+      "summary": "An ongoing REA-assisted investigation of browser and computer-use features for another model in an independent agent harness."
+    }
+  },
+  {
+    "id": "pumpfun-reconstruction-report",
+    "title": "Pump.fun：并行 Agent 研究发币平台机制",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。",
+    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/0rdlibrary/status/2109464346103263523"
+      },
+      {
+        "label": "所回复的开发帖（背景）",
+        "url": "https://x.com/clawddevs/status/2109461838144458936"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T10:01:06+08:00（北京时间）",
+      "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Pump.fun reconstruction report",
+      "summary": "A third-party report of parallel-agent investigation, with launch-curve and Raydium migration development as context; full reconstruction is not established."
+    }
+  },
+  {
+    "id": "super-mario-sunshine-pc",
+    "title": "《超级马里奥阳光》：AI 参与说法下的原生 PC 移植",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "传播帖称 AI Agent 参与反编译并将 GameCube 游戏移植到 PC。",
+    "description": "Adil 分享《超级马里奥阳光》的原生 PC 移植，称经 AI Agent 反编译后已可玩，并提到高清材质、跨平台与 120 FPS。公开 sms-pc-port 项目确有基于匹配反编译的移植，README 列出可玩平台及可选 120 FPS，要求使用自己的游戏镜像。但本轮无法确认传播帖短链接指向该仓库，项目 README 也未证明 AI 具体贡献；因此只保留待验证报告，不把移植全部归功于 AI。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/Edenwoodfilm/status/2109468542437310510"
+      },
+      {
+        "label": "同名移植项目背景（未确认原帖链接对应）",
+        "url": "https://github.com/chasem-dev/sms-pc-port"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T10:17:47+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜13 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Super Mario Sunshine: reported AI-assisted PC port",
+      "summary": "A post claims AI-assisted decompilation for a native port; public port documentation does not establish the AI contribution or exact link identity."
+    }
+  },
+  {
+    "id": "remote-client-privacy-monitor-idea",
+    "title": "远程桌面客户端：用 AI 逆向做数据采集监测的 idea",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。",
+    "description": "Scalers 在讨论 ToDesk 与 UU 远程桌面软件时，提出利用本地安装包让 AI 辅助逆向分析，并制作工具监测客户端的数据采集行为。目的是弄清自己使用的客户端在收集什么，而非恢复整个远程控制软件。这是具体隐私监测 idea；没有已执行的分析、工具或数据外传证据，也不据此断言某款客户端存在违规采集。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/ScalersTalk/status/2109481617182138694"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T11:09:44+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜227 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Remote-desktop client privacy monitoring idea",
+      "summary": "An idea to use AI-assisted inspection of local clients and build a data-collection monitor; no implementation or misconduct is established."
+    }
+  },
+  {
+    "id": "gaoding-cover-workbench",
+    "title": "稿定设计：为固定封面制作自己的工作台",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。",
+    "description": "阿杭觉得稿定设计免费版的限制妨碍日常封面制作，先让 Codex 基于 Fabric.js（网页画布编辑库）搭建自己的固定内容封面工作台，底图由自己预选。帖子开头称“完美复刻”，但正文仍说想试试 REA 研究设计界面与逻辑，因此区分已做出的自用工具和计划中的 REA 分析，不称稿定整套功能已经恢复。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/Astronaut_1216/status/2109487167726903560"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T11:31:47+08:00（北京时间）",
+      "热度快照（2026-10-12）：16 赞｜1872 浏览｜1 转发"
+    ],
+    "en": {
+      "title": "Gaoding-inspired cover workbench",
+      "summary": "A Codex/Fabric.js cover tool is reported; using REA to inspect Gaoding UI and logic is still described as a plan."
+    }
+  },
+  {
+    "id": "gaming-mouse-macos",
+    "title": "游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。",
+    "description": "MovingCharts 希望在 macOS 上设置原配软件不支持的游戏鼠标，报告用 ChatGPT 6.1sol 完成应用逆向，覆盖 RGB 灯效、DPI 灵敏度和按键映射。帖子附照片，但未公开鼠标型号、协议、源码或系统性测试；收录的是针对已购外设兼容性的第一手报告，不是所有鼠标都能适配的结论。",
+    "sources": [
+      {
+        "label": "本周期公开来源",
+        "url": "https://x.com/MovingCharts11/status/2109491501013377526"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T11:49:00+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜93 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Gaming mouse settings on macOS",
+      "summary": "A ChatGPT-assisted report of restoring RGB, DPI and button configuration for an unsupported mouse; hardware and test details remain private."
+    }
   }
 ]

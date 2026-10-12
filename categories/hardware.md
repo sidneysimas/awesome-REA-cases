@@ -12,3 +12,4 @@
 - [蓝牙手柄：写兼容层让不支持 Windows 的设备可用](../cases/bluetooth-gamepad-windows.md) — 逆向控制协议，以 ViGEm 虚拟手柄适配 Windows。 **[其他 AI 逆向]**
 - [蓝牙小手柄：协议研究后计划做跨平台设置程序](../cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA · 进行中]**
 - [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](../cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向 · 待验证]**
+- [游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置](../cases/gaming-mouse-macos.md) — 用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。 **[其他 AI 逆向 · 待验证]**

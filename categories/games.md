@@ -13,3 +13,5 @@
 - [Unity / Valheim：游戏程序集分析需求](../cases/unity-valheim.md) — 真实游戏分析需求，原游戏目标复测仍缺少证据。 **[REA · 进行中]**
 - [《荒野大镖客 2》：写导出器移入波巴·费特](../cases/boba-fett-rdr2.md) — Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。 **[其他 AI 逆向]**
 - [GameCube / Wii：从实际 Wii 分析提出 PowerPC 支持](../cases/wii-powerpc-request.md) — 已有 Ghidra 研究经验，REA 内部支持仍是需求。 **[未确认使用 REA · 进行中]**
+- [《航空霸业2》：用 REA + Kimi 反编译老游戏](../cases/aerobiz-2-decompilation.md) — 研究 KOEI 1993 年航空经营游戏的编译程序。 **[REA · 待验证]**
+- [《超级马里奥阳光》：AI 参与说法下的原生 PC 移植](../cases/super-mario-sunshine-pc.md) — 传播帖称 AI Agent 参与反编译并将 GameCube 游戏移植到 PC。 **[未确认使用 REA · 待验证]**

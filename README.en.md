@@ -8,15 +8,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**47 entries**, organized by use case, without a Top-N or popularity threshold.
+**55 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (11)
-- [Hardware and interoperability](categories/hardware.md) (10)
-- [Applications and clients](categories/apps.md) (22)
+- [Games and preservation](categories/games.md) (13)
+- [Hardware and interoperability](categories/hardware.md) (11)
+- [Applications and clients](categories/apps.md) (27)
 - [Algorithms and feature recovery](categories/algorithms.md) (4)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -37,6 +37,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Unity/Valheim assemblies](cases/unity-valheim.md) — Real game-analysis requests without a confirmed re-test of the original target. **[REA · In progress]**
 - [Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md) — Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod. **[Other AI-assisted work]**
 - [GameCube/Wii PowerPC support request](cases/wii-powerpc-request.md) — A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed. **[REA use unconfirmed · In progress]**
+- [Aerobiz 2: REA and Kimi decompilation](cases/aerobiz-2-decompilation.md) — Investigate a 1993 KOEI airline-management game; no complete code recovery or playable rebuild is established. **[REA · Needs verification]**
+- [Super Mario Sunshine: reported AI-assisted PC port](cases/super-mario-sunshine-pc.md) — A post claims AI-assisted decompilation for a native port; public port documentation does not establish the AI contribution or exact link identity. **[REA use unconfirmed · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -50,6 +52,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Bluetooth gamepad on Windows](cases/bluetooth-gamepad-windows.md) — Reverse the control protocol and write a ViGEm compatibility layer for an unsupported controller. **[Other AI-assisted work]**
 - [Gamepad settings after Bluetooth analysis](cases/gamepad-settings-request.md) — The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned. **[REA · In progress]**
 - [ASUS ACPI and Linux GPU support](cases/asus-acpi-gpu.md) — A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it. **[Other AI-assisted work · Needs verification]**
+- [Gaming mouse settings on macOS](cases/gaming-mouse-macos.md) — A ChatGPT-assisted report of restoring RGB, DPI and button configuration for an unsupported mouse; hardware and test details remain private. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -61,7 +64,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
 - [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
 - [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed · Needs verification]**
-- [ArtCraft: not proven Adobe reverse engineering](cases/artcraft-boundary.md) — From-scratch creative software should not be labeled a complete Adobe decompilation. **[Other AI-assisted work · Related project]**
+- [ArtCraft: not proven Adobe reverse engineering](cases/artcraft-boundary.md) — From-scratch creative apps and the WordCraft word processor are not proof of complete Adobe or Word decompilation. **[Other AI-assisted work · Related project]**
 - [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
 - [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA · In progress]**
 - [.NET NativeAOT recovery request](cases/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA · In progress]**
@@ -75,6 +78,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Background Computer Use in Swift](cases/background-computer-use.md) — Expose local APIs for background window interaction, with a real-time demo and public source. **[REA use unconfirmed]**
 - [GarageBand format for automated composition](cases/garageband-file-format.md) — Reverse the music-project format to compose with local instruments as part of a larger music-video workflow. **[Other AI-assisted work]**
 - [Apple Notes migration to Grape](cases/apple-notes-migration.md) — Use Claude Code to investigate Notes data and demonstrate importing folders, notes and images. **[Other AI-assisted work]**
+- [Poker table organizer](cases/poker-table-organizer.md) — A first-hand report of rebuilding table organization with REA, Ghidra and Codex; the app and tests are not public. **[REA · Needs verification]**
+- [Codex computer-use interoperability research](cases/codex-cua-harness-research.md) — An ongoing REA-assisted investigation of browser and computer-use features for another model in an independent agent harness. **[REA · In progress]**
+- [Pump.fun reconstruction report](cases/pumpfun-reconstruction-report.md) — A third-party report of parallel-agent investigation, with launch-curve and Raydium migration development as context; full reconstruction is not established. **[REA use unconfirmed · Needs verification]**
+- [Remote-desktop client privacy monitoring idea](cases/remote-client-privacy-monitor-idea.md) — An idea to use AI-assisted inspection of local clients and build a data-collection monitor; no implementation or misconduct is established. **[REA use unconfirmed · Needs verification]**
+- [Gaoding-inspired cover workbench](cases/gaoding-cover-workbench.md) — A Codex/Fabric.js cover tool is reported; using REA to inspect Gaoding UI and logic is still described as a plan. **[REA · In progress]**
 
 ### Algorithms and feature recovery
 
