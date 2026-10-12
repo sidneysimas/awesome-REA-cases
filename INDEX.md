@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **55 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **69 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（13）
-- [硬件与设备互通](categories/hardware.md)（11）
-- [应用与客户端](categories/apps.md)（27）
+- [游戏与游戏保存](categories/games.md)（14）
+- [硬件与设备互通](categories/hardware.md)（14）
+- [应用与客户端](categories/apps.md)（37）
 - [算法与功能重建](categories/algorithms.md)（4）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -39,6 +39,7 @@
 - [GameCube / Wii：从实际 Wii 分析提出 PowerPC 支持](cases/wii-powerpc-request.md) — 已有 Ghidra 研究经验，REA 内部支持仍是需求。 **[未确认使用 REA · 进行中]**
 - [《航空霸业2》：用 REA + Kimi 反编译老游戏](cases/aerobiz-2-decompilation.md) — 研究 KOEI 1993 年航空经营游戏的编译程序。 **[REA · 待验证]**
 - [《超级马里奥阳光》：AI 参与说法下的原生 PC 移植](cases/super-mario-sunshine-pc.md) — 传播帖称 AI Agent 参与反编译并将 GameCube 游戏移植到 PC。 **[未确认使用 REA · 待验证]**
+- [《红色警戒 2》：为强化学习重写游戏引擎](cases/red-alert-2-rl-engine.md) — 参考 Chrono Divide，用 Opus 与测试集重建单位行为。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -53,6 +54,9 @@
 - [蓝牙小手柄：协议研究后计划做跨平台设置程序](cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA · 进行中]**
 - [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向 · 待验证]**
 - [游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置](cases/gaming-mouse-macos.md) — 用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。 **[其他 AI 逆向 · 待验证]**
+- [PS5 安全机制：AI 辅助逆向的传播报告](cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，未提供模型与技术过程。 **[未确认使用 REA · 待验证]**
+- [空调协议：用 AR 眼镜手势控制家电](cases/ar-air-conditioner-control.md) — 分析官方 App 请求，再把开关和调温控制接到 AR 眼镜。 **[REA · 待验证]**
+- [红米电视：研究浏览器 APK，把闲置电视改成数据大屏](cases/redmi-tv-dashboard.md) — Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -64,7 +68,7 @@
 - [网站重建订单：作者自述的交付报告](cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
 - [TradingView：传播较多的复刻流程帖](cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
 - [WHOOP：分析健康追踪设备的 Android App](cases/whoop-apk.md) — 发现 APK 分析讨论，尚未确认完成替代客户端。 **[未确认使用 REA · 待验证]**
-- [ArtCraft：不要把从零开发写成逆向 Adobe](cases/artcraft-boundary.md) — 创作软件与 WordCraft 的从零重建，不等于已完整逆向 Adobe 或 Word。 **[其他 AI 逆向 · 相关项目]**
+- [ArtCraft：不要把从零开发写成逆向 Adobe](cases/artcraft-boundary.md) — 创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。 **[其他 AI 逆向 · 相关项目]**
 - [Obsidian：真实桌面包的大规模分析测试](cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**
 - [大型 Android APK：真实生产包的分析需求](cases/large-android-apk.md) — 133MB、11 DEX 的安装包；原目标未见修复后复测。 **[REA · 进行中]**
 - [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA · 进行中]**
@@ -83,6 +87,16 @@
 - [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[未确认使用 REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
+- [Axure：反编译原型工具，做 AI 时代版本的 idea](cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**
+- [Hermes Agent：用 Hark 研究后做新的 Agent 框架](cases/hermes-hark-harness.md) — 作者报告研究 Hermes Agent，随后制作自己的 AI 执行框架。 **[其他 AI 逆向 · 待验证]**
+- [Apple Preview：不重建整款 App，直接加 AI 功能](cases/preview-ai-sidebar.md) — 在现有编译应用的副本上增加 AI 侧栏，而非从零复刻。 **[未确认使用 REA · 待验证]**
+- [Cameo：从桌面角色应用的编译程序重建交互](cases/cameo-reconstruction.md) — 用 REA 产出伪代码，再由 Claude Code 还原桌面角色应用。 **[REA · 待验证]**
+- [wine-uwp：让 Shapr3D 等 Windows 商店应用在 Linux 运行](cases/wine-uwp-shapr3d.md) — 用 Claude 辅助研究封闭应用所需接口，扩展 Wine 的兼容层。 **[其他 AI 逆向 · 待验证]**
+- [CleanMyMac：研究核心功能并做原生 Mac 应用雏形](cases/cleanmymac-rebuild-report.md) — 第三方报告宝玉用 REA 分析清理工具，再重建部分功能。 **[REA · 待验证]**
+- [Nexalytics：用自己的应用检验 REA 行为重建](cases/nexalytics-rebuild.md) — 研究前后端通信与操作流程，结合 Playwright 重建应用。 **[REA · 待验证]**
+- [MetaTrader：为研究交易信号进行逆向的转述](cases/metatrader-signals-report.md) — 评论称有人研究 MetaTrader 以获取信号，缺少具体实现证据。 **[未确认使用 REA · 待验证]**
+- [业务软件：从既有程序或网页重建的进行中尝试](cases/business-software-rebuild.md) — 作者称正在用 Agent 逆向工作流克隆一款业务软件。 **[未确认使用 REA · 进行中]**
+- [CapCut 转场：研究视频编辑模块并自行重构的线索](cases/capcut-transition-research.md) — 第三方讨论以 CapCut 转场为研究对象，用于理解编辑器设计。 **[未确认使用 REA · 待验证]**
 
 ### 算法与功能重建
 

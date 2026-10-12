@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**55 entries**, organized by use case, without a Top-N or popularity threshold.
+**69 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (13)
-- [Hardware and interoperability](categories/hardware.md) (11)
-- [Applications and clients](categories/apps.md) (27)
+- [Games and preservation](categories/games.md) (14)
+- [Hardware and interoperability](categories/hardware.md) (14)
+- [Applications and clients](categories/apps.md) (37)
 - [Algorithms and feature recovery](categories/algorithms.md) (4)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -41,6 +41,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [GameCube/Wii PowerPC support request](cases/wii-powerpc-request.md) — A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed. **[REA use unconfirmed · In progress]**
 - [Aerobiz 2: REA and Kimi decompilation](cases/aerobiz-2-decompilation.md) — Investigate a 1993 KOEI airline-management game; no complete code recovery or playable rebuild is established. **[REA · Needs verification]**
 - [Super Mario Sunshine: reported AI-assisted PC port](cases/super-mario-sunshine-pc.md) — A post claims AI-assisted decompilation for a native port; public port documentation does not establish the AI contribution or exact link identity. **[REA use unconfirmed · Needs verification]**
+- [Red Alert 2: an engine rewrite for reinforcement learning](cases/red-alert-2-rl-engine.md) — The author reports using Chrono Divide, Opus and over 6,000 tests to rebuild unit behavior; their implementation and test results are not public. **[Other AI-assisted work · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -48,13 +49,16 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Tuya RGB lights from a Mac](cases/tuya-rgb-mac.md) — Analyze phone Bluetooth traffic and directly control lights with a script. **[Other AI-assisted work]**
 - [MIPS32 firmware analysis](cases/mips-firmware.md) — Select the correct architecture and cross-check analysis on real firmware. **[REA]**
 - [PSP/Allegrex analysis](cases/psp-allegrex.md) — Connect Ghidra platform support and validate on a source-built PSP program. **[REA]**
-- [Smart toilet from the desktop](cases/smart-toilet.md) — Analyze a mini-program Bluetooth protocol and demonstrate lid control. **[REA]**
+- [Smart toilet from the desktop](cases/smart-toilet.md) — Analyze a mini-program Bluetooth protocol for lid control; the author now reports extending the Mac menu-bar app to other home devices. **[REA]**
 - [Tuya Zigbee button firmware](cases/tuya-zigbee-button.md) — Use pi and GLM to investigate and modify button firmware; latency gains unquantified. **[Other AI-assisted work]**
 - [Layered firmware: extraction to Ghidra](cases/firmware-extract-handoff.md) — Identify regions, extract files and inspect an ELF using source-controlled fixtures rather than a claimed device hack. **[REA]**
 - [Bluetooth gamepad on Windows](cases/bluetooth-gamepad-windows.md) — Reverse the control protocol and write a ViGEm compatibility layer for an unsupported controller. **[Other AI-assisted work]**
 - [Gamepad settings after Bluetooth analysis](cases/gamepad-settings-request.md) — The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned. **[REA · In progress]**
 - [ASUS ACPI and Linux GPU support](cases/asus-acpi-gpu.md) — A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it. **[Other AI-assisted work · Needs verification]**
 - [Gaming mouse settings on macOS](cases/gaming-mouse-macos.md) — A ChatGPT-assisted report of restoring RGB, DPI and button configuration for an unsupported mouse; hardware and test details remain private. **[Other AI-assisted work · Needs verification]**
+- [PS5 security: reported AI-assisted investigation](cases/ps5-ai-security-report.md) — A secondary post claims accelerated security research; AI contribution and library-access claims lack primary technical evidence. **[REA use unconfirmed · Needs verification]**
+- [Air-conditioner protocol for AR gesture control](cases/ar-air-conditioner-control.md) — A secondary demo describes analyzing app requests with REA and using Codex/Lens Studio to control an appliance from AR glasses. **[REA · Needs verification]**
+- [Redmi TV: browser inspection for a dashboard](cases/redmi-tv-dashboard.md) — A Muse/Codex report combines APK inspection, browser selection and full-screen interaction to repurpose an idle TV as a dashboard. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -66,7 +70,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
 - [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
 - [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed · Needs verification]**
-- [ArtCraft: not proven Adobe reverse engineering](cases/artcraft-boundary.md) — From-scratch creative apps and the WordCraft word processor are not proof of complete Adobe or Word decompilation. **[Other AI-assisted work · Related project]**
+- [ArtCraft: not proven Adobe or Office reverse engineering](cases/artcraft-boundary.md) — From-scratch creative apps, WordCraft, GridCraft and DeckCraft are early software rebuilds, not proof of complete Adobe or Office decompilation. **[Other AI-assisted work · Related project]**
 - [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
 - [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA · In progress]**
 - [.NET NativeAOT recovery request](cases/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA · In progress]**
@@ -85,6 +89,16 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Pump.fun reconstruction report](cases/pumpfun-reconstruction-report.md) — A third-party report of parallel-agent investigation, with launch-curve and Raydium migration development as context; full reconstruction is not established. **[REA use unconfirmed · Needs verification]**
 - [Remote-desktop client privacy monitoring idea](cases/remote-client-privacy-monitor-idea.md) — An idea to use AI-assisted inspection of local clients and build a data-collection monitor; no implementation or misconduct is established. **[REA use unconfirmed · Needs verification]**
 - [Gaoding-inspired cover workbench](cases/gaoding-cover-workbench.md) — A Codex/Fabric.js cover tool is reported; using REA to inspect Gaoding UI and logic is still described as a plan. **[REA · In progress]**
+- [Axure: an AI-era rebuild idea](cases/axure-ai-rebuild-idea.md) — A proposal to study Axure and build a new prototyping tool; no implementation or AI-assisted investigation is established. **[REA use unconfirmed · Needs verification]**
+- [Hermes Agent: Hark-assisted harness reconstruction](cases/hermes-hark-harness.md) — The author reports studying the open-source agent and creating a new harness; no public implementation or parity tests are supplied. **[Other AI-assisted work · Needs verification]**
+- [Apple Preview: adding AI directly to a compiled app](cases/preview-ai-sidebar.md) — An OmniSE demo reports modifying a copy of Preview to add AI functionality rather than rebuilding the entire application; not independently reproduced. **[REA use unconfirmed · Needs verification]**
+- [Cameo: reconstructing desktop-character behavior](cases/cameo-reconstruction.md) — A REA-to-Claude workflow reports rebuilding a compiled macOS character app; matching-animation claims are not independently verified. **[REA · Needs verification]**
+- [wine-uwp: Windows Store apps and Shapr3D on Linux](cases/wine-uwp-shapr3d.md) — Claude-assisted investigation extends Wine with app-model and composition support; the related Shapr3D package remains an unofficial beta. **[Other AI-assisted work · Needs verification]**
+- [CleanMyMac: reported native-app prototype](cases/cleanmymac-rebuild-report.md) — A secondary report describes inspecting four functions with REA and rebuilding a Mac prototype; exact functions and primary implementation evidence are absent. **[REA · Needs verification]**
+- [Nexalytics: testing REA on the author's own app](cases/nexalytics-rebuild.md) — Inspect UI flows and front/back-end communication with Playwright; the author reports a close but not one-to-one reconstruction. **[REA · Needs verification]**
+- [MetaTrader: a reported signal-analysis use case](cases/metatrader-signals-report.md) — A comment names trading-signal investigation as a goal but supplies no researcher, toolchain or demonstrated results. **[REA use unconfirmed · Needs verification]**
+- [Business software: an ongoing agent-assisted rebuild](cases/business-software-rebuild.md) — The author reports cloning an unnamed professional application using an investigation/rebuild workflow; no delivery or exact REA use is established. **[REA use unconfirmed · In progress]**
+- [CapCut transitions: a module-reconstruction lead](cases/capcut-transition-research.md) — A secondary discussion names transition research and an independent rebuild; design questions raised by the commenter are not demonstrated recoveries. **[REA use unconfirmed · Needs verification]**
 
 ### Algorithms and feature recovery
 
