@@ -12,17 +12,17 @@ A collection of practical REA and AI-assisted reverse-engineering projects: main
 
 ## Recent picks
 
-### [Bringing Claude Design into a video agent](cases/claude-design-baocut.md)
+### [Running Shapr3D on Linux instead of rebuilding it](cases/wine-uwp-shapr3d.md)
 
-BaoCut's creator investigated the design skill and front end, integrated them into his video agent, and published a code commit. The interesting part is turning an existing capability into a feature of another product. **REA use unconfirmed; complete recovery of the original product is not established.**
+The author reports Claude-assisted investigation of Windows Store app interfaces, extends Wine's compatibility layer, and publishes the implementation. The interesting move is supplying the environment an existing app needs—not building a lookalike. **Other AI-assisted work; unofficial beta, not tested by this collection.**
 
-### [A gaming mouse without Mac settings? Add them yourself](cases/gaming-mouse-macos.md)
+### [Adding an AI sidebar to Preview instead of cloning the whole app](cases/preview-ai-sidebar.md)
 
-The author reports using ChatGPT-assisted reverse engineering to restore RGB, DPI, and button settings. A small, concrete goal: making an already-owned peripheral work on the owner's system. **Needs verification: no public hardware model, source code, or systematic tests.**
+A research team demonstrates modifying a copy of macOS Preview and publishes a proof-of-concept project. The question shifts from rebuilding a product to changing software that already exists. **Needs verification; REA use unconfirmed, modified apps are personal experiments.**
 
-### [Investigating what remote-desktop clients collect](cases/remote-client-privacy-monitor-idea.md)
+### [Controlling an air conditioner with AR-glasses gestures](cases/ar-air-conditioner-control.md)
 
-A specific idea: inspect local clients and build a data-collection monitor, rather than recreate remote-control software. **An idea only; no implementation or evidence of misconduct is established.**
+A secondary demo describes inspecting the official app's control requests and connecting power and temperature controls to AR glasses. A new interaction surface, rather than another appliance app. **REA · Needs verification: no public hardware model, protocol specification, or code; general appliance compatibility is not established.**
 
 ## Start with these
 
