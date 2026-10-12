@@ -39,3 +39,9 @@
 - [MetaTrader：为研究交易信号进行逆向的转述](../cases/metatrader-signals-report.md) — 评论称有人研究 MetaTrader 以获取信号，缺少具体实现证据。 **[未确认使用 REA · 待验证]**
 - [业务软件：从既有程序或网页重建的进行中尝试](../cases/business-software-rebuild.md) — 作者称正在用 Agent 逆向工作流克隆一款业务软件。 **[未确认使用 REA · 进行中]**
 - [CapCut 转场：研究视频编辑模块并自行重构的线索](../cases/capcut-transition-research.md) — 第三方讨论以 CapCut 转场为研究对象，用于理解编辑器设计。 **[未确认使用 REA · 待验证]**
+- [Android App：用 Claude Code 识别根检测与证书固定](../cases/android-protection-inspection.md) — AMA 转述一次 JADX、Burp Suite MCP 与 Claude Code 的移动应用分析。 **[其他 AI 逆向 · 待验证]**
+- [代理客户端：恢复 Clash 所需的订阅导出](../cases/proxy-clash-subscription-bridge.md) — Codex 分析客户端二进制，作者自建服务衔接订阅接口。 **[其他 AI 逆向 · 待验证]**
+- [Netflix / Prime：统一流媒体界面的逆向转述](../cases/streaming-service-integration-report.md) — 第三方称将两个服务整合到一个界面，未说明合法内容获取与 AI 贡献。 **[未确认使用 REA · 待验证]**
+- [Slack 音乐 / Claude 会议：跨应用功能组合的 idea](../cases/slack-music-claude-zoom-idea.md) — 提出把 YouTube Music 放进 Slack、把 Zoom 放进 Claude，而非只拼接游戏。 **[未确认使用 REA · 待验证]**
+- [fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态](../cases/fowlbrowser-agent-bridge.md) — 浏览器扩展为不同 Agent 提供前台与后台标签页操作。 **[未确认使用 REA · 待验证]**
+- [OpenSetter：重建评论转私信流程，并接入 AI 销售助手](../cases/opensetter-manychat-rebuild.md) — 作者称研究 Manychat，公开 Instagram 私信自动化与 AI 回复项目。 **[未确认使用 REA · 相关项目]**

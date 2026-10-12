@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**69 entries**, organized by use case, without a Top-N or popularity threshold.
+**81 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (14)
-- [Hardware and interoperability](categories/hardware.md) (14)
-- [Applications and clients](categories/apps.md) (37)
-- [Algorithms and feature recovery](categories/algorithms.md) (4)
+- [Games and preservation](categories/games.md) (16)
+- [Hardware and interoperability](categories/hardware.md) (16)
+- [Applications and clients](categories/apps.md) (43)
+- [Algorithms and feature recovery](categories/algorithms.md) (6)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -35,13 +35,15 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [DX-Ball: positional audio function](cases/dx-ball-sound-pan.md) — Recover and verify a single sound-panning function from a classic game. **[REA]**
 - [Touhou TH04: ring-bullet angles](cases/th04-bullet-ring.md) — Explain how Lotus Land Story calculates a ring of bullets. **[REA]**
 - [Touhou reconstruction projects](cases/touhou-reconstruction.md) — Recover old game code, validate it and produce playable platform builds. **[REA]**
-- [Dinosaur: the acceleration rule](cases/dinosaur-speed.md) — Inspect a web game and experimentally check its speed-update logic. **[REA]**
+- [Dinosaur: the acceleration rule](cases/dinosaur-speed.md) — Inspect and check speed-update logic; a later author reports a local REA/Codex rebuild with a three-version comparison video, not independently verified parity. **[REA]**
 - [Unity/Valheim assemblies](cases/unity-valheim.md) — Real game-analysis requests without a confirmed re-test of the original target. **[REA · In progress]**
 - [Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md) — Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod. **[Other AI-assisted work]**
 - [GameCube/Wii PowerPC support request](cases/wii-powerpc-request.md) — A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed. **[REA use unconfirmed · In progress]**
 - [Aerobiz 2: REA and Kimi decompilation](cases/aerobiz-2-decompilation.md) — Investigate a 1993 KOEI airline-management game; no complete code recovery or playable rebuild is established. **[REA · Needs verification]**
 - [Super Mario Sunshine: reported AI-assisted PC port](cases/super-mario-sunshine-pc.md) — A post claims AI-assisted decompilation for a native port; public port documentation does not establish the AI contribution or exact link identity. **[REA use unconfirmed · Needs verification]**
 - [Red Alert 2: an engine rewrite for reinforcement learning](cases/red-alert-2-rl-engine.md) — The author reports using Chrono Divide, Opus and over 6,000 tests to rebuild unit behavior; their implementation and test results are not public. **[Other AI-assisted work · Needs verification]**
+- [The Incredible Machine: a Claude-assisted browser rebuild](cases/incredible-machine-browser.md) — The author reports reimplementing a Sierra puzzle game and regenerating assets, with a video but no public source or parity tests. **[Other AI-assisted work · Needs verification]**
+- [Street Fighter III: AI refactoring of decompiled C](cases/sfiii-codescene-refactoring.md) — A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains. **[Other AI-assisted work · Related project]**
 
 ### Hardware and interoperability
 
@@ -59,6 +61,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [PS5 security: reported AI-assisted investigation](cases/ps5-ai-security-report.md) — A secondary post claims accelerated security research; AI contribution and library-access claims lack primary technical evidence. **[REA use unconfirmed · Needs verification]**
 - [Air-conditioner protocol for AR gesture control](cases/ar-air-conditioner-control.md) — A secondary demo describes analyzing app requests with REA and using Codex/Lens Studio to control an appliance from AR glasses. **[REA · Needs verification]**
 - [Redmi TV: browser inspection for a dashboard](cases/redmi-tv-dashboard.md) — A Muse/Codex report combines APK inspection, browser selection and full-screen interaction to repurpose an idle TV as a dashboard. **[Other AI-assisted work · Needs verification]**
+- [CF632BLE: a local Web Bluetooth scale client](cases/cf632ble-web-bluetooth.md) — Claude Code and ghidra-rpc investigate BLE; public Python/web reimplementation keeps measurements local, with device and browser limits. **[Other AI-assisted work · Needs verification]**
+- [Kindle: Android firmware for WeRead](cases/kindle-android-weread.md) — Codex/Claude-assisted system adaptation reportedly reaches an on-device interface; WeRead, drivers and overall usability remain unverified. **[Other AI-assisted work · In progress]**
 
 ### Applications and clients
 
@@ -70,7 +74,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
 - [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
 - [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed · Needs verification]**
-- [ArtCraft: not proven Adobe or Office reverse engineering](cases/artcraft-boundary.md) — From-scratch creative apps, WordCraft, GridCraft and DeckCraft are early software rebuilds, not proof of complete Adobe or Office decompilation. **[Other AI-assisted work · Related project]**
+- [ArtCraft: not proven Adobe or Office reverse engineering](cases/artcraft-boundary.md) — Early creative and Office-style rebuilds, now including PhotoCraft PSD round-trip evidence and MCP control; not proof of Adobe or Office decompilation. **[Other AI-assisted work · Related project]**
 - [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
 - [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA · In progress]**
 - [.NET NativeAOT recovery request](cases/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA · In progress]**
@@ -99,6 +103,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [MetaTrader: a reported signal-analysis use case](cases/metatrader-signals-report.md) — A comment names trading-signal investigation as a goal but supplies no researcher, toolchain or demonstrated results. **[REA use unconfirmed · Needs verification]**
 - [Business software: an ongoing agent-assisted rebuild](cases/business-software-rebuild.md) — The author reports cloning an unnamed professional application using an investigation/rebuild workflow; no delivery or exact REA use is established. **[REA use unconfirmed · In progress]**
 - [CapCut transitions: a module-reconstruction lead](cases/capcut-transition-research.md) — A secondary discussion names transition research and an independent rebuild; design questions raised by the commenter are not demonstrated recoveries. **[REA use unconfirmed · Needs verification]**
+- [Android app: inspecting root checks and certificate pinning](cases/android-protection-inspection.md) — An AMA recap describes JADX, Burp MCP and Claude Code identifying protections in an unnamed app; no demonstrated bypass or comparative speed claim. **[Other AI-assisted work · Needs verification]**
+- [Proxy client: restoring a Clash subscription bridge](cases/proxy-clash-subscription-bridge.md) — A retrospective Codex-assisted binary investigation reports a self-hosted subscription bridge; service, code and authorization details are not public. **[Other AI-assisted work · Needs verification]**
+- [Netflix/Prime: a reported unified streaming interface](cases/streaming-service-integration-report.md) — A secondary integration claim lacks primary code, authorization and specific AI evidence; no content service or media assets are distributed here. **[REA use unconfirmed · Needs verification]**
+- [Music in Slack and Zoom in Claude: interoperability ideas](cases/slack-music-claude-zoom-idea.md) — A concrete cross-app proposal, not a demonstrated integration, protocol investigation or REA implementation. **[REA use unconfirmed · Needs verification]**
+- [fowlbrowser: an existing-session browser bridge for agents](cases/fowlbrowser-agent-bridge.md) — A public extension supports Claude and other agents; its proposed link to Codex-extension reverse engineering remains an unanswered question. **[REA use unconfirmed · Needs verification]**
+- [OpenSetter: rebuilding comment-to-DM flows with an AI setter](cases/opensetter-manychat-rebuild.md) — A public Instagram automation project inspired by Manychat; AI-assisted replies are documented, but reverse-engineering methods are not. **[REA use unconfirmed · Related project]**
 
 ### Algorithms and feature recovery
 
@@ -106,6 +116,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [DownUnderCTF: masked squares checker](cases/masked-squares-ctf.md) — Recover input constraints and solve them with Z3; test against the original. **[REA]**
 - [Aegis: one-time code calculation](cases/aegis-totp.md) — Extract a TOTP routine and compare reconstructed implementations. **[REA]**
 - [Windows Calculator: recovering percentage rules](cases/windows-calculator-percent.md) — Inspect the installed model DLL and reconstruct different percentage rules for addition and multiplication. **[REA]**
+- [Controlled JS/.NET samples: Codex with and without REA](cases/codex-rea-controlled-samples.md) — Six runs reportedly pass 360 behavioral checks; small samples and unequal extra verification do not establish a general speed advantage. **[REA · Analysis test]**
+- [DLSS on AMD: reported AI-assisted compute-shader reconstruction](cases/dlss-amd-compute-report.md) — A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established. **[REA use unconfirmed · Needs verification]**
 
 ## Contributing and selection
 

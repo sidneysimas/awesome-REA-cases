@@ -494,7 +494,7 @@
     "category": "games",
     "rea": "REA",
     "summary": "读网页脚本，实验验证跑酷游戏的加速规则。",
-    "description": "t-rex-runner 是类似 Chrome 离线小恐龙的网页跑酷游戏。这次分析针对 HTTP 网页版本，而非浏览器内置的 chrome://dino。贡献者用 REA 阅读脚本，定位初始速度、加速度及更新分支，再用独立 Playwright 控制器在原页面验证更新次数与速度的关系，做成可交互演示。逆向用于回答一个具体玩法问题：“它什么时候加速、每次加多少？”",
+    "description": "t-rex-runner 是类似 Chrome 离线小恐龙的网页跑酷游戏。这次分析针对 HTTP 网页版本，而非浏览器内置的 chrome://dino。贡献者用 REA 阅读脚本，定位初始速度、加速度及更新分支，再用独立 Playwright 控制器在原页面验证更新次数与速度的关系，做成可交互演示。逆向用于回答一个具体玩法问题：“它什么时候加速、每次加多少？”10 月 12 日蓝哥AI 另报告在本机用 REA + Codex 生成复刻版，并发布原版、官方案例版与自制版的并排对比视频；这是新增重建操作的作者报告，不是本合集完成行为等价验证。",
     "sources": [
       {
         "label": "案例 PR",
@@ -503,13 +503,14 @@
       {
         "label": "原始观察与实验",
         "url": "https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md"
-      }
+      },
+      {"label": "本周期本机复刻与并排对比", "url": "https://x.com/0xlangeai/status/2109595393260761111"}
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": [],
+    "metadata": ["补充发帖：2026-10-12T18:41:50+08:00（北京时间）", "补充帖热度快照（2026-10-12）：6 赞｜525 浏览｜0 转发"],
     "en": {
       "title": "Dinosaur: the acceleration rule",
-      "summary": "Inspect a web game and experimentally check its speed-update logic."
+      "summary": "Inspect and check speed-update logic; a later author reports a local REA/Codex rebuild with a three-version comparison video, not independently verified parity."
     },
     "status": "case"
   },
@@ -628,7 +629,7 @@
     "category": "apps",
     "rea": "other-ai",
     "summary": "创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。",
-    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 本周期补充 WordCraft：同一 ArtCraft 团队用 Rust 从公开规范和行为观察重建 Microsoft Word 风格文字处理器，提供 .docx 读写、修订、批注与 MCP 控制。公开 README 标为 alpha，仍需真实文档保真度与稳定性测试；传播帖称 pre-alpha，阶段以项目说明为准。本周期再补充 GridCraft 和 DeckCraft，分别是 Excel 风格电子表格与 PowerPoint 风格幻灯片软件；公开 README 说明用 Rust 净室重实现，提供公式与 .xlsx、演示与 .pptx 等功能，仍处 alpha。它们是相关软件重建方向，不能据此称已反编译 Office 或确认 AI 完成全部开发。",
+    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 已收录的 WordCraft、GridCraft 和 DeckCraft 分别重建 Word 风格文字处理器、Excel 风格电子表格与 PowerPoint 风格幻灯片软件，提供对应 Office 文件格式与 MCP 控制，公开 README 仍标为 alpha。10 月 12 日新增 PhotoCraft 的具体互通与验证材料：公开 README 说明 PSD 实现基于 Adobe 公开规范，UI、CLI、JSON 与 MCP 共用 500 多条命令；项目报告 309 个 psd-tools 样本中 307 个打开再保存后渲染一致，不是所有文件逐字节相同。PhotoCraft 仍为 early alpha，不能作为专业日用 Photoshop 替代，也不能据此称已反编译 Adobe。",
     "sources": [
       {
         "label": "原始记录",
@@ -648,13 +649,15 @@
       },
       {"label": "本周期 Office 重建介绍", "url": "https://x.com/OLD9Gaming/status/2109532775170859138"},
       {"label": "GridCraft 项目与阶段", "url": "https://github.com/storytold/gridcraft"},
-      {"label": "DeckCraft 项目与阶段", "url": "https://github.com/storytold/deckcraft"}
+      {"label": "DeckCraft 项目与阶段", "url": "https://github.com/storytold/deckcraft"},
+      {"label": "本周期 PhotoCraft 文件互通与 Agent 控制介绍", "url": "https://x.com/i/status/2109556887645479114"},
+      {"label": "PhotoCraft 项目测试口径与 early alpha 边界", "url": "https://github.com/storytold/photocraft"}
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": ["补充发帖：2026-10-12T14:33:01+08:00（北京时间）", "补充帖热度快照（2026-10-12）：0 赞｜19 浏览｜0 转发"],
+    "metadata": ["Office 补充发帖：2026-10-12T14:33:01+08:00（北京时间）", "Office 补充帖热度快照（2026-10-12）：0 赞｜19 浏览｜0 转发", "PhotoCraft 补充发帖：2026-10-12T16:08:50+08:00（北京时间）", "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发"],
     "en": {
       "title": "ArtCraft: not proven Adobe or Office reverse engineering",
-      "summary": "From-scratch creative apps, WordCraft, GridCraft and DeckCraft are early software rebuilds, not proof of complete Adobe or Office decompilation."
+      "summary": "Early creative and Office-style rebuilds, now including PhotoCraft PSD round-trip evidence and MCP control; not proof of Adobe or Office decompilation."
     },
     "status": "related-project"
   },
@@ -1474,5 +1477,101 @@
     "sources": [{"label": "本周期研究讨论", "url": "https://x.com/fireandstart/status/2109554617004466397"}],
     "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:59:48+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜3 浏览｜0 转发"],
     "en": {"title": "CapCut transitions: a module-reconstruction lead", "summary": "A secondary discussion names transition research and an independent rebuild; design questions raised by the commenter are not demonstrated recoveries."}
+  },
+  {
+    "id": "cf632ble-web-bluetooth", "title": "CF632BLE 体脂秤：在浏览器里称重，不走厂商后台", "category": "hardware", "status": "unverified", "rea": "other-ai",
+    "summary": "Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。",
+    "description": "guyru 希望直接使用自己的智能体脂秤，报告用 Claude Code 连接 ghidra-rpc 研究 BLE（低功耗蓝牙）协议，先写 Python，再改为 Web Bluetooth。对应 CF632BLE 仓库说明协议与体成分算法来自对 Unique Health 安卓 App 的分析，网页本地计算并保存测量记录，不依赖厂商后台。源码公开，作者称使用效果良好；本合集未连接设备或复核健康指标准确性。Web Bluetooth 需要 Chromium，Safari/iOS 不支持。",
+    "sources": [{"label": "本周期作者报告", "url": "https://x.com/guyru_/status/2109566754540392730"}, {"label": "公开实现与设备边界", "url": "https://github.com/guyru/cf632ble"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T16:48:02+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜94 浏览｜0 转发"],
+    "en": {"title": "CF632BLE: a local Web Bluetooth scale client", "summary": "Claude Code and ghidra-rpc investigate BLE; public Python/web reimplementation keeps measurements local, with device and browser limits."}
+  },
+  {
+    "id": "android-protection-inspection", "title": "Android App：用 Claude Code 识别根检测与证书固定", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "summary": "AMA 转述一次 JADX、Burp Suite MCP 与 Claude Code 的移动应用分析。",
+    "description": "Ian Kerins 转述 Ibrahim 的近期研究：在网页数据访问困难时考虑移动 App 路线，用 JADX 阅读代码、Burp Suite MCP 与 Claude Code 查明某个 App 的 root 检测、Magisk 检测和 SSL pinning（证书固定）。具体 App 未具名，也未提供复现代码；目标是理解客户端保护与数据访问路径，不是已证明绕过保护或比浏览器方案更快。仅记录分析报告，不提供绕过步骤。",
+    "sources": [{"label": "本周期 AMA 转述", "url": "https://x.com/IanJKerins/status/2109559519584088093"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T16:19:17+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜17 浏览｜0 转发"],
+    "en": {"title": "Android app: inspecting root checks and certificate pinning", "summary": "An AMA recap describes JADX, Burp MCP and Claude Code identifying protections in an unnamed app; no demonstrated bypass or comparative speed claim."}
+  },
+  {
+    "id": "kindle-android-weread", "title": "Kindle：为运行微信读书制作 Android 固件", "category": "hardware", "status": "in-progress", "rea": "other-ai",
+    "summary": "Codex 与 Claude 接力适配系统；作者报告设备已显示界面。",
+    "description": "HB 想在 Kindle 上安装较新的微信读书水墨屏版本，旧 Android 4/5 移植无法满足需求，便让 Codex 研究固件。作者称虚拟机中的 Android 已能启动，但写到 Kindle 后不显示界面；换 Claude Opus 5.5 接力后，设备开始显示系统界面。未提供 Kindle 型号、固件代码、驱动覆盖或微信读书已运行的证据；这是系统迁移的进行中报告，不是完整可用的阅读方案。模型代号沿用原帖，不作能力对比结论。",
+    "sources": [{"label": "本周期作者进展", "url": "https://x.com/hbyxabc/status/2109583911483519202"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:56:13+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜31 浏览｜0 转发"],
+    "en": {"title": "Kindle: Android firmware for WeRead", "summary": "Codex/Claude-assisted system adaptation reportedly reaches an on-device interface; WeRead, drivers and overall usability remain unverified."}
+  },
+  {
+    "id": "proxy-clash-subscription-bridge", "title": "代理客户端：恢复 Clash 所需的订阅导出", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "summary": "Codex 分析客户端二进制，作者自建服务衔接订阅接口。",
+    "description": "web3渔夫 因自己使用的代理服务隐藏了订阅入口，无法继续用 Clash 自定义流量，报告让 Codex 分析客户端二进制，定位登录、订阅接口与请求签名机制，再做中转服务恢复订阅。实际工作发生在今年上半年，本帖是本周期首次收录的回顾报告。服务商、代码和授权条件未公开，不独立确认结果；不收录签名密钥、访问凭据或绕过操作。",
+    "sources": [{"label": "本周期作者回顾", "url": "https://x.com/web3_fising/status/2109601382273880327"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:05:38+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜26 浏览｜0 转发"],
+    "en": {"title": "Proxy client: restoring a Clash subscription bridge", "summary": "A retrospective Codex-assisted binary investigation reports a self-hosted subscription bridge; service, code and authorization details are not public."}
+  },
+  {
+    "id": "codex-rea-controlled-samples", "title": "自制 JS / .NET 样本：对照有无 REA 的函数重建", "category": "algorithms", "status": "analysis-test", "rea": "REA",
+    "summary": "同模型六次运行、360 用例验收，研究 REA 的线索价值而非宣称提速。",
+    "description": "蓝哥AI 以可读脚本、解包后仍为 JavaScript 的包和无源码的小型 .NET 托管样本，比较原生 Codex 与 Codex + REA，要求交付独立函数并对照原程序行为。同一 gpt-6.1-sol 模型在三组任务各跑两条路线，作者报告合计 360 用例全部通过；REA 提供方法位置与指令线索，完整解码仍需模型补脚本。各任务每路线只跑一次，额外验证步骤不统一，不能用耗时得出普遍效率排名；也不是商业软件的大规模反编译。",
+    "sources": [{"label": "本周期作者对照测试", "url": "https://x.com/0xlangeai/status/2109603485914206498"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:14:00+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜198 浏览｜0 转发"],
+    "en": {"title": "Controlled JS/.NET samples: Codex with and without REA", "summary": "Six runs reportedly pass 360 behavioral checks; small samples and unequal extra verification do not establish a general speed advantage."}
+  },
+  {
+    "id": "incredible-machine-browser", "title": "《不可思议的机器》：用 Claude 重建浏览器版", "category": "games", "status": "unverified", "rea": "other-ai",
+    "summary": "作者报告 Opus 分析 Sierra 老游戏、重做素材并在浏览器运行。",
+    "description": "The Incredible Machine（《不可思议的机器》）是 Sierra 的机械装置解谜游戏。Stas Kulesh 展示视频并报告 Claude Opus 5.5 研究原游戏、重新生成素材，做成可在浏览器玩的版本。具体目的为重建老游戏的网页体验；未给出源码、关卡覆盖或行为对照测试，无法确认完整恢复原引擎或素材权利，不把可玩演示写成完整反编译。",
+    "sources": [{"label": "本周期作者演示", "url": "https://x.com/staskulesh/status/2109605915175596275"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:23:39+08:00（北京时间）", "热度快照（2026-10-12）：3 赞｜145 浏览｜0 转发"],
+    "en": {"title": "The Incredible Machine: a Claude-assisted browser rebuild", "summary": "The author reports reimplementing a Sierra puzzle game and regenerating assets, with a video but no public source or parity tests."}
+  },
+  {
+    "id": "dlss-amd-compute-report", "title": "DLSS：重实现计算着色器以在 AMD 显卡运行的报告", "category": "algorithms", "status": "unverified", "rea": "unknown",
+    "summary": "讨论明确提出 AI 辅助重实现 DLSS，具体开发归属仍待核验。",
+    "description": "DLSS 是 NVIDIA 的游戏画面重建技术。MisterSpace3 在相关线程中称 AI 逆向并重实现它，使其以普通计算着色器在 AMD GPU 运行。背景中的 DLSSNR-AMD 仓库确实公开 Vulkan 实现，报告仅在 RX 9070 XT 测试，Windows 仍为实验预览，且不分发原模型权重。但本轮未确认评论指向这一确切仓库，README 也未说明 AI 开发贡献；因此保留为有明确互通用途的待验证报告，不归因全部公开成果给 AI。",
+    "sources": [{"label": "本周期 AI 重实现评论", "url": "https://x.com/MisterSpace3/status/2109578076648874292"}, {"label": "所回复线程的 DLSS 背景", "url": "https://x.com/SebAaltonen/status/2108990746280038649"}, {"label": "相关公开项目背景（未确认评论对应）", "url": "https://github.com/mochizuki0323/DLSSNR-AMD"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:33:02+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜9 浏览｜0 转发"],
+    "en": {"title": "DLSS on AMD: reported AI-assisted compute-shader reconstruction", "summary": "A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established."}
+  },
+  {
+    "id": "streaming-service-integration-report", "title": "Netflix / Prime：统一流媒体界面的逆向转述", "category": "apps", "status": "unverified", "rea": "unknown",
+    "summary": "第三方称将两个服务整合到一个界面，未说明合法内容获取与 AI 贡献。",
+    "description": "水哥 转述有人逆向整合 Netflix 与 Amazon Prime，做统一电影、剧集和动漫流媒体界面，并将其放在 AI 加速产品开发的语境中。没有研究者、代码、接口分析或授权说明，本轮也未成功读到短链接目标。不能确认 AI 的实际贡献，更不据此证明可合法免费获取两家平台的内容；只保留具体客户端整合目标的待验证转述，不链接内容站或分发影视资源。",
+    "sources": [{"label": "本周期第三方转述", "url": "https://x.com/HigbeyMyrta/status/2109596534350524664"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T18:46:22+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜36 浏览｜0 转发"],
+    "en": {"title": "Netflix/Prime: a reported unified streaming interface", "summary": "A secondary integration claim lacks primary code, authorization and specific AI evidence; no content service or media assets are distributed here."}
+  },
+  {
+    "id": "slack-music-claude-zoom-idea", "title": "Slack 音乐 / Claude 会议：跨应用功能组合的 idea", "category": "apps", "status": "unverified", "rea": "unknown",
+    "summary": "提出把 YouTube Music 放进 Slack、把 Zoom 放进 Claude，而非只拼接游戏。",
+    "description": "Netanel Gilad 在 AI 逆向与应用重组讨论中提出两个具体互通方向：在团队聊天工具 Slack 内使用 YouTube Music 音乐，在 Claude 内使用 Zoom 会议能力，希望不再依赖单独扩展来组合软件。帖子是具体 idea，没有实际协议分析、实现、授权条件或效果验证，也未说明使用 REA。",
+    "sources": [{"label": "本周期互通 idea", "url": "https://x.com/netanelgilad/status/2109590211034263756"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T18:21:15+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜30 浏览｜0 转发"],
+    "en": {"title": "Music in Slack and Zoom in Claude: interoperability ideas", "summary": "A concrete cross-app proposal, not a demonstrated integration, protocol investigation or REA implementation."}
+  },
+  {
+    "id": "fowlbrowser-agent-bridge", "title": "fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态", "category": "apps", "status": "unverified", "rea": "unknown",
+    "summary": "浏览器扩展为不同 Agent 提供前台与后台标签页操作。",
+    "description": "champi 在本周期询问 argofowl 的新浏览器扩展是否来自此前计划的 Codex 扩展逆向。对应作者发布帖与 README 介绍 fowlbrowser：通过 MCP、本地消息桥和扩展让 Claude 或其他 Agent 使用现有浏览器标签页和登录态，可在后台工作，并把登录、付款交还用户，提供公开仓库。目前仅支持 macOS，Chrome/Helium 已测试，其他 Chromium 浏览器测试较少。具体互通项目已有发布，但评论的逆向归因仍是问句，不能写成作者已确认恢复 Codex 协议；性能比较仅为作者的小样本报告，本合集未运行扩展。",
+    "sources": [{"label": "本周期逆向关联讨论", "url": "https://x.com/zCHAMPI1/status/2109572651689848893"}, {"label": "作者发布说明（背景）", "url": "https://x.com/argofowl/status/2109571141434277939"}, {"label": "公开实现", "url": "https://github.com/argofowl/fowlbrowser"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:11:28+08:00（北京时间）", "讨论帖热度快照（2026-10-12）：1 赞｜53 浏览｜0 转发"],
+    "en": {"title": "fowlbrowser: an existing-session browser bridge for agents", "summary": "A public extension supports Claude and other agents; its proposed link to Codex-extension reverse engineering remains an unanswered question."}
+  },
+  {
+    "id": "opensetter-manychat-rebuild", "title": "OpenSetter：重建评论转私信流程，并接入 AI 销售助手", "category": "apps", "status": "related-project", "rea": "unknown",
+    "summary": "作者称研究 Manychat，公开 Instagram 私信自动化与 AI 回复项目。",
+    "description": "Obiri 以“Manychat Reverse engineered + AI Setter”分享 OpenSetter。Manychat 是社交消息自动化工具；对应开源仓库用 Meta webhook 接收 Instagram 评论与私信，提供关键词触发私信、AI 拟稿、潜客资格判断与预约链接，可按对话选择人工审批或自动回复。具体重建目标与 AI 功能明确，但 README 没有说明 AI 是否参与逆向或使用了 Manychat 内部接口，故作为相关流程重建项目记录，不称已反编译 Manychat。",
+    "sources": [{"label": "本周期作者发布", "url": "https://x.com/xbirimensah/status/2109571298020274530"}, {"label": "项目与 AI 流程说明", "url": "https://github.com/xbirimensah/opensetter"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:06:06+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜4 浏览｜0 转发"],
+    "en": {"title": "OpenSetter: rebuilding comment-to-DM flows with an AI setter", "summary": "A public Instagram automation project inspired by Manychat; AI-assisted replies are documented, but reverse-engineering methods are not."}
+  },
+  {
+    "id": "sfiii-codescene-refactoring", "title": "《街头霸王 III》：用 AI 重构反编译后的 C 代码", "category": "games", "status": "related-project", "rea": "other-ai",
+    "summary": "在既有开源反编译代码上用 CodeHealth MCP 与轨迹回放约束重构。",
+    "description": "本周期帖子转述 CodeScene 对《街头霸王 III：三度冲击》开源反编译代码的重构研究。目标是改善约 30 万行 C 代码的可维护性，主要用 Claude Code / Opus，配合 CodeHealth MCP 评分与逐帧回放状态哈希检查行为。报告称三周、约 4000 美元 token 成本，评分从 5.6 升至 10.0，54 个 PR 合入一个分支版本的 main；不是 AI 从头完成游戏反编译，也不是已合入原项目。性能、架构质量与非功能回归仍待研究，缺陷减少等预测数字不是本次实测结果。",
+    "sources": [{"label": "本周期研究转述与边界", "url": "https://x.com/renmu2017/status/2109581250424123651"}],
+    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:45:38+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜150 浏览｜0 转发"],
+    "en": {"title": "Street Fighter III: AI refactoring of decompiled C", "summary": "A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains."}
   }
 ]
