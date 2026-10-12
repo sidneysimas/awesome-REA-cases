@@ -2,24 +2,27 @@
 
 [中文（默认）](README.md) | **English**
 
-A curated collection of REA and AI-related reverse-engineering cases: the target, the author’s purpose, what they did, and the reported outcome.
+**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-> Unofficial collection. Inclusion is not an endorsement. No proprietary binaries, keys, private records or unauthorized assets are distributed.
+A collection of REA and AI reverse-engineering cases and projects, covering game preservation, hardware interoperability, app reconstruction, and algorithm research. Each entry explains the target, the author’s purpose and approach, and links to original posts, code, or verification records.
 
-**36 cases**, plus **11 leads** with incomplete evidence, tool tests or exclusion notes. Results are attributed to authors and project records, not independently reproduced by this collection.
+[REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-The index below is in English. Linked case details, category pages, contribution and maintenance guides are currently in Chinese.
+**47 entries**, organized by use case, without a Top-N or popularity threshold.
+
+The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (9)
-- [Hardware and interoperability](categories/hardware.md) (8)
-- [Applications and clients](categories/apps.md) (15)
+- [Games and preservation](categories/games.md) (11)
+- [Hardware and interoperability](categories/hardware.md) (10)
+- [Applications and clients](categories/apps.md) (22)
 - [Algorithms and feature recovery](categories/algorithms.md) (4)
-- [Leads and excluded material](LEADS.md)
-- [Contributing](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
+- [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
-## Cases
+Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
+
+## Cases and projects
 
 ### Games and preservation
 
@@ -31,7 +34,9 @@ The index below is in English. Linked case details, category pages, contribution
 - [Touhou TH04: ring-bullet angles](cases/th04-bullet-ring.md) — Explain how Lotus Land Story calculates a ring of bullets. **[REA]**
 - [Touhou reconstruction projects](cases/touhou-reconstruction.md) — Recover old game code, validate it and produce playable platform builds. **[REA]**
 - [Dinosaur: the acceleration rule](cases/dinosaur-speed.md) — Inspect a web game and experimentally check its speed-update logic. **[REA]**
+- [Unity/Valheim assemblies](cases/unity-valheim.md) — Real game-analysis requests without a confirmed re-test of the original target. **[REA · In progress]**
 - [Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md) — Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod. **[Other AI-assisted work]**
+- [GameCube/Wii PowerPC support request](cases/wii-powerpc-request.md) — A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed. **[REA use unconfirmed · In progress]**
 
 ### Hardware and interoperability
 
@@ -43,6 +48,8 @@ The index below is in English. Linked case details, category pages, contribution
 - [Tuya Zigbee button firmware](cases/tuya-zigbee-button.md) — Use pi and GLM to investigate and modify button firmware; latency gains unquantified. **[Other AI-assisted work]**
 - [Layered firmware: extraction to Ghidra](cases/firmware-extract-handoff.md) — Identify regions, extract files and inspect an ELF using source-controlled fixtures rather than a claimed device hack. **[REA]**
 - [Bluetooth gamepad on Windows](cases/bluetooth-gamepad-windows.md) — Reverse the control protocol and write a ViGEm compatibility layer for an unsupported controller. **[Other AI-assisted work]**
+- [Gamepad settings after Bluetooth analysis](cases/gamepad-settings-request.md) — The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned. **[REA · In progress]**
+- [ASUS ACPI and Linux GPU support](cases/asus-acpi-gpu.md) — A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -51,6 +58,13 @@ The index below is in English. Linked case details, category pages, contribution
 - [Claude Code: inspecting a compressed codebase](cases/claude-code-analysis.md) — Use Muse and REA to investigate a large compressed JavaScript package. **[REA]**
 - [Notion: clipboard paths](cases/notion-clipboard.md) — Trace static copy-text and copy-image paths across Electron processes. **[REA]**
 - [Flutter: build identity and AOT structure](cases/flutter-aot.md) — Identify runtime/build clues in real APKs, not complete Dart source. **[REA]**
+- [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
+- [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
+- [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed · Needs verification]**
+- [ArtCraft: not proven Adobe reverse engineering](cases/artcraft-boundary.md) — From-scratch creative software should not be labeled a complete Adobe decompilation. **[Other AI-assisted work · Related project]**
+- [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
+- [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA · In progress]**
+- [.NET NativeAOT recovery request](cases/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA · In progress]**
 - [Android ApiDemos: tracing Java methods from an APK](cases/android-apidemos.md) — Inspect a real demo APK, select method overloads and trace static references through JADX. **[REA]**
 - [HarmonyOS packages: mapping components](cases/harmony-package-inventory.md) — Inspect a published HAP package to identify components and packaging hints, without claiming Ark-code recovery. **[REA]**
 - [macOS Preview: rebuilding with and without REA](cases/preview-rebuild.md) — A first-hand comparison of two rebuilds covering zoom, rotation, annotation and saving. **[REA]**
@@ -69,31 +83,16 @@ The index below is in English. Linked case details, category pages, contribution
 - [Aegis: one-time code calculation](cases/aegis-totp.md) — Extract a TOTP routine and compare reconstructed implementations. **[REA]**
 - [Windows Calculator: recovering percentage rules](cases/windows-calculator-percent.md) — Inspect the installed model DLL and reconstruct different percentage rules for addition and multiplication. **[REA]**
 
-## Leads
+## Contributing and selection
 
-- [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA]**
-- [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA]**
-- [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed]**
-- [ArtCraft: not proven Adobe reverse engineering](cases/artcraft-boundary.md) — From-scratch creative software should not be labeled a complete Adobe decompilation. **[Other AI-assisted work]**
-- [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA]**
-- [Unity/Valheim assemblies](cases/unity-valheim.md) — Real game-analysis requests without a confirmed re-test of the original target. **[REA]**
-- [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA]**
-- [.NET NativeAOT recovery request](cases/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA]**
-- [GameCube/Wii PowerPC support request](cases/wii-powerpc-request.md) — A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed. **[REA use unconfirmed]**
-- [Gamepad settings after Bluetooth analysis](cases/gamepad-settings-request.md) — The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned. **[REA]**
-- [ASUS ACPI and Linux GPU support](cases/asus-acpi-gpu.md) — A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it. **[Other AI-assisted work]**
+Submit new cases, additional verification, or corrections. Edit data/cases.json, run python3 scripts/build.py, and open a PR. See [Contributing](CONTRIBUTING.md).
 
-## Selection and evidence
+Prefer original authors, concrete targets and recorded work. Merge multiple sources for one project. Distinguish author reports, static analysis and actual execution. X engagement is a dated snapshot, not proof of effectiveness.
 
-- No Top-N or fixed date limit. Prefer concrete targets, methods and results over popularity.
-- REA, other AI-assisted work and unconfirmed REA use are labeled separately. An AI-tool integration does not prove AI performed the investigation itself.
-- Static analysis, source-built fixtures, author reports and runtime checks have different scopes. A supported platform is not a complete product reconstruction.
-- X engagement is a dated snapshot, not a live ranking. Post date is not necessarily project completion date.
-- Merge multiple posts about the same project. Keep separate targets or independent projects distinct.
-- Edit data/cases.json and run python3 scripts/build.py. Generated files must stay synchronized.
+## Scope and license
 
-## License and acknowledgements
+Unofficial collection. Results are attributed to authors and project records, not independently reproduced here. Only original summaries and public links are curated; no proprietary software, game assets, keys or private material are distributed.
 
-Original summaries, curation data and code use the [MIT License](LICENSE). Linked software, documents, posts and game assets retain their own rights and licenses; this license does not authorize their redistribution.
+Original summaries, curation data and code use the [MIT License](LICENSE). Linked content retains its own rights and licenses. Ensure you have the relevant authorization before investigating, reproducing or reusing it.
 
-Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). See the [reference study](research/reference-structure.md).
+Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). [Collection scope](research/collection-scope.md) · [Reference study](research/reference-structure.md)

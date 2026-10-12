@@ -3,7 +3,6 @@
     "id": "universal-modder",
     "title": "Universal Modder：用 AI 给现有游戏做 Mod",
     "category": "games",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "分析游戏代码与文件格式，制作跨游戏内容 Mod。",
     "description": "Rehan Sheikh 把修改游戏的过程做成了 Universal Modder。Mod 是在原有游戏上增加角色、玩法或内容，而不是重新开发整款游戏。作者让 Claude 分析游戏引擎、代码和文件格式，再生成素材、修改内容并进入游戏测试。演示包括给《帝国时代 II》加入 Robotaxi 文明，以及把 Minecraft 的角色和场景放进 GTA V。目标是让 Agent 串起原本需要多种工具的游戏改造过程；不代表这些游戏都被完整反编译。",
@@ -21,13 +20,13 @@
     "en": {
       "title": "Universal Modder: AI-assisted game mods",
       "summary": "Analyze engines and asset formats, then create and test cross-game mods."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "firefighter-rust",
     "title": "Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码",
     "category": "games",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "从旧 DOS 二进制恢复 Pascal，再转写为 Rust。",
     "description": "Firefighter 是一款老 DOS 游戏。Eric S. Raymond 希望从现存二进制恢复程序逻辑，再把它纳入自己的老游戏合集。作者称，AI 从数据布局判断原程序使用 Borland Pascal，恢复出带有变量和函数命名的 Pascal 代码，随后转写成 Rust。这里逆向解决的是“只有旧程序、没有可维护源码”的问题。10 月 5 日是分享日期，实际工作在几个月前完成。",
@@ -45,13 +44,13 @@
     "en": {
       "title": "Firefighter: from DOS binary to Rust",
       "summary": "Recover Pascal logic from an old binary and rewrite it in Rust."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "lg-plxnative",
     "title": "LG 电视：重做更快的 Plex 客户端",
     "category": "apps",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "研究 LG 媒体栈，开发更快的原生 Plex 客户端。",
     "description": "Plex 是用于浏览和播放个人影音库的软件。开发者觉得 LG 电视上的 Plex 客户端太慢，便用 Ghidra + Claude Code 研究电视原生媒体栈，做出 Rust/OpenGL 客户端 PlxNative。作者报告，同一台电视的用户选择界面从约 30 秒降到约 3 秒，并支持 4K、Dolby Vision 和 Atmos。逆向用于弄清如何调用电视自身的播放能力，而非只重画 Plex 界面。性能为作者报告；X 热度对应传播帖。",
@@ -73,13 +72,13 @@
     "en": {
       "title": "LG PlxNative: a faster Plex client",
       "summary": "Investigate the native media stack and build a Rust/OpenGL client."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "mw2-decompilation",
     "title": "《现代战争 2》：用多 Agent 重建游戏代码",
     "category": "games",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "多 Agent 反编译游戏，以原二进制核对恢复函数。",
     "description": "Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希望从编译后的游戏恢复代码，并用原二进制核对恢复结果。他让 17 个 Agent 并行工作，配合 Claude/Codex、IDA 接口以及共享协作流程。作者的复盘称项目持续约三个月，游戏可以运行，83% 的函数达到字节级匹配。不是“一晚重做整款游戏”；作者表示不公开代码。",
@@ -101,13 +100,13 @@
     "en": {
       "title": "Modern Warfare 2: multi-agent decompilation",
       "summary": "Reconstruct game functions and compare compiled bytes to the original binary."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "siri-remote-linux",
     "title": "Apple TV 遥控器：让专用配件在 Linux 上工作",
     "category": "hardware",
-    "section": "cases",
     "rea": "unknown",
     "summary": "解析蓝牙协议，让 Apple TV 遥控器接入 Linux。",
     "description": "第一代 Siri Remote 原本是 Apple TV 的专用遥控器。Alex Funk 逆向它的蓝牙协议，让 Linux 能理解遥控器发来的数据，而不必经过 Apple TV。作者称约 45 分钟完成，并发布开源实现；演示涉及触控、按键、手势及麦克风。具体成果是把原本面向封闭设备的输入配件接到自己的电脑。原帖未明确说明是否使用 REA。",
@@ -129,13 +128,13 @@
     "en": {
       "title": "Siri Remote on Linux",
       "summary": "Decode the Bluetooth protocol to use an Apple TV remote on Linux."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "tuya-rgb-mac",
     "title": "涂鸦 RGB 灯：绕开厂商 App，直接从 Mac 控灯",
     "category": "hardware",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "分析手机蓝牙控灯数据，用 Mac 脚本直接控灯。",
     "description": "Lucho 买了使用涂鸦（Tuya）方案的 RGB 灯，不想每次都依赖厂商手机 App。作者让 Claude 辅助分析 iPhone 控灯时发出的蓝牙数据，识别广播格式、序号和校验规则，再用 Mac 脚本发送控制指令。帖子有实际控灯视频。逆向的对象是灯泡的通信协议，解决的是“自己买的灯只能通过指定 App 控制”的限制。",
@@ -153,13 +152,13 @@
     "en": {
       "title": "Tuya RGB lights from a Mac",
       "summary": "Analyze phone Bluetooth traffic and directly control lights with a script."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "claude-slides",
     "title": "Claude Slides：分析前端代码，重建幻灯片编辑器",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "summary": "分析混淆前端，重建幻灯片编辑器。",
     "description": "Claude Slides 是 Claude 的幻灯片制作功能。宝玉希望恢复它的编辑器功能，下载前端脚本与样式，先让 Codex + REA 分析混淆代码生成初版工程，再用 Claude Code 整理结构和类型。帖子有界面截图及代码提交，作者称已实现“几乎完整功能”。另做的 Slides skill 提示词是为重建效果编写的，不是从原产品中提取的系统提示词。",
@@ -181,13 +180,13 @@
     "en": {
       "title": "Claude Slides: rebuilding the editor",
       "summary": "Analyze bundled front-end code and rebuild slide-editing functionality."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "claude-code-analysis",
     "title": "Claude Code：用 Muse + REA 阅读大型压缩代码",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "summary": "让 Muse 调用 REA 阅读 Claude Code 的压缩代码包。",
     "description": "Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。",
@@ -205,13 +204,13 @@
     "en": {
       "title": "Claude Code: inspecting a compressed codebase",
       "summary": "Use Muse and REA to investigate a large compressed JavaScript package."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "urban-terror-web",
     "title": "Urban Terror：把桌面多人射击游戏移植到浏览器",
     "category": "games",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "定位引擎与字节码布局差异，将游戏移植到浏览器。",
     "description": "Urban Terror 是基于 Quake III 系技术的多人射击游戏。levelsio 此前尝试通过 ioquake3 引擎和 WebAssembly 将它搬进浏览器，但游戏一直跑不起来。新一轮尝试中，模型定位到引擎结构体和游戏字节码之间的数据布局差异；修正后，作者报告游戏能在浏览器运行并接入多人服务器，附有试玩视频。逆向用于弄清阻碍移植的底层兼容性，而非从零恢复整款游戏。",
@@ -229,13 +228,13 @@
     "en": {
       "title": "Urban Terror in the browser",
       "summary": "Resolve engine/bytecode layout differences blocking a WebAssembly port."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "binary-library-rewrite",
     "title": "二进制库：先分析原实现，再写替代代码",
     "category": "algorithms",
-    "section": "cases",
     "rea": "REA",
     "summary": "分析二进制库并重写；库名和评测细节未公开。",
     "description": "Leo Xiang 自述，用 REA 分析一个加密二进制库，再让 Claude Code 根据分析重新实现，评测指标与原库接近。目标是从只能调用、难以理解的库走到自己能维护的实现。作者未公开库名、源码、具体指标或测试方法，所以目前只能确定有这条第一手使用报告，无法讲清库的业务用途或独立确认结果。",
@@ -253,13 +252,13 @@
     "en": {
       "title": "Binary-library rewrite",
       "summary": "Analyze and reimplement an unnamed library; evaluation details remain private."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "masked-squares-ctf",
     "title": "DownUnderCTF：从校验程序中找出正确输入",
     "category": "algorithms",
-    "section": "cases",
     "rea": "REA",
     "summary": "恢复校验约束，用 Z3 求出被原程序接受的输入。",
     "description": "DownUnderCTF 是网络安全解题比赛，masked squares flag checker 是其中一道校验题：程序接受一串输入，但不直接告诉你正确答案。贡献者用 REA + Ghidra 从输入提示追到校验函数，恢复掩码、求和常量和方程，再用 Python/Z3 求解。项目记录显示，求出的输入被原程序接受，改动一个字符后则被拒绝。逆向在这里用于把隐藏的校验规则还原成可求解的约束。",
@@ -278,13 +277,13 @@
     "en": {
       "title": "DownUnderCTF: masked squares checker",
       "summary": "Recover input constraints and solve them with Z3; test against the original."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "dx-ball-sound-pan",
     "title": "DX-Ball：恢复老打砖块游戏的声像算法",
     "category": "games",
-    "section": "cases",
     "rea": "REA",
     "summary": "还原打砖块游戏按位置分配左右声道的函数。",
     "description": "DX-Ball 是老式打砖块游戏。这个案例不是重做整款游戏，而是恢复音效如何根据屏幕横向位置分配到左右声道。贡献者顺着播放音效的调用找到声像计算函数，结合汇编、常量与调用者补全伪代码，恢复 C 实现。证据记录包含 3,205 组原始 x86 差分测试，以及重编译后完整 63 字节函数匹配；解决的是单个音效算法的准确重建。",
@@ -303,13 +302,13 @@
     "en": {
       "title": "DX-Ball: positional audio function",
       "summary": "Recover and verify a single sound-panning function from a classic game."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "th04-bullet-ring",
     "title": "《东方幻想乡》：恢复环形弹幕的角度计算",
     "category": "games",
-    "section": "cases",
     "rea": "REA",
     "summary": "恢复《东方幻想乡》环形弹幕的角度计算。",
     "description": "TH04 是《东方幻想乡》，东方 Project 系列的一款弹幕射击游戏，原版运行在 PC-98 的 DOS 环境。贡献者研究的是“敌人如何发出一圈子弹”：恢复角度间隔、瞄准玩家的方向偏移、模板旋转，以及最终角度写入的逻辑，并用 C++ 与示意图说明。REA 的指令检查引用了历史重建项目中的编译匹配记录，不是本次从零复刻完整游戏。",
@@ -328,13 +327,13 @@
     "en": {
       "title": "Touhou TH04: ring-bullet angles",
       "summary": "Explain how Lotus Land Story calculates a ring of bullets."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "aegis-totp",
     "title": "Aegis：还原验证器 App 的一次性验证码计算",
     "category": "algorithms",
-    "section": "cases",
     "rea": "REA",
     "summary": "从验证器 APK 提取验证码逻辑并做多实现对照。",
     "description": "Aegis 是 Android 上的开源双因素验证器，会生成随时间变化的登录验证码。贡献者从 APK 中追踪验证码显示和复制的调用，提取时间计数、HMAC、截断与补零逻辑，再写出 Python 和网页 WebCrypto 对照实现。记录中三种实现对 133 组输入给出一致结果，含标准参考向量。目的是还原与验证这个具体功能，不是破解用户密钥或绕过认证；没有运行原 APK。",
@@ -353,13 +352,13 @@
     "en": {
       "title": "Aegis: one-time code calculation",
       "summary": "Extract a TOTP routine and compare reconstructed implementations."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "notion-clipboard",
     "title": "Notion：追清复制文字和图片的内部链路",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "summary": "追踪桌面客户端复制文字和图片的实现路径。",
     "description": "Notion 是文档与知识管理工具，桌面版使用 Electron，页面代码与系统功能之间需要跨进程通信。贡献者想弄清“点复制后，内容如何进入系统剪贴板”，从前端 API 追到 preload 包装层、IPC 消息和主进程接收端。后续真实客户端包分析整理出 copy、copyText、copyImage 三条静态候选路径，连接到 Electron 或浏览器剪贴板接口。成果是解释这一功能的实现链路，并非重建整个 Notion。",
@@ -378,13 +377,13 @@
     "en": {
       "title": "Notion: clipboard paths",
       "summary": "Trace static copy-text and copy-image paths across Electron processes."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "flutter-aot",
     "title": "Flutter App：从安装包识别运行时和编译结构",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "summary": "识别 Flutter APK 的运行时、构建与 AOT 结构。",
     "description": "Flutter 是跨平台 App 开发框架，发布后的 Dart 逻辑常被提前编译到原生库中，不能像普通脚本一样直接阅读。贡献者分析 APK 内的 libapp.so 和 libflutter.so，提取 snapshot hash、构建标识、区段和包路径线索，以确认分析的是哪套运行时、数据位于哪里。讨论中测试了 Flutter Gallery、PocketDhamma、Flutter McSweepy 和 cone 等真实 App。这是为后续分析确定入口，尚非完整 Dart 源码恢复。",
@@ -399,13 +398,13 @@
     "en": {
       "title": "Flutter: build identity and AOT structure",
       "summary": "Identify runtime/build clues in real APKs, not complete Dart source."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "mips-firmware",
     "title": "老设备 MIPS 固件：把程序按正确架构读出来",
     "category": "hardware",
-    "section": "cases",
     "rea": "REA",
     "summary": "为旧设备固件选定正确架构，核对分析结果。",
     "description": "MIPS32 是一种 32 位处理器架构，常见于旧设备；固件是设备运行的软件。这个案例的目标是分析 2000 年代设备的真实固件，但自动分析选错了 64 位处理器配置，导致函数识别不完整。贡献者明确指定 32 位语言配置，再用四个真实固件 ELF 与独立 Ghidra 导出对照。这里展示的是建立可信的固件分析入口；材料没有给出具体设备型号，也没有展示改造设备功能。",
@@ -424,13 +423,13 @@
     "en": {
       "title": "MIPS32 firmware analysis",
       "summary": "Select the correct architecture and cross-check analysis on real firmware."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "psp-allegrex",
     "title": "PSP：让 REA 支持掌机程序的静态分析",
     "category": "hardware",
-    "section": "cases",
     "rea": "REA",
     "summary": "接入 Allegrex 扩展，使 REA 能分析 PSP 程序。",
     "description": "PSP 是索尼的 PlayStation Portable 掌机，使用名为 Allegrex 的处理器。用户希望 REA 能分析这一平台的程序，贡献者因此接入 Ghidra 的 Allegrex 扩展，使 Agent 可以获取函数、汇编和伪代码。验证使用自行编译的 PSP 测试程序，核查已知函数和调用关系。解决的是“通用逆向工作流不认识这个平台”的问题，不是已经复刻某款商业 PSP 游戏。",
@@ -449,13 +448,13 @@
     "en": {
       "title": "PSP/Allegrex analysis",
       "summary": "Connect Ghidra platform support and validate on a source-built PSP program."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "touhou-reconstruction",
     "title": "东方系列：用 Agent 重建旧游戏，并迁移到新平台",
     "category": "games",
-    "section": "cases",
     "rea": "REA",
     "summary": "重建东方系列代码，验证并迁移到可玩平台。",
     "description": "Touhou Reconstruction Factory 是 N0zoM1z0 将多个东方游戏重建项目的工具与工作流程整理到一起的项目。TH08 指《东方永夜抄》（Imperishable Night）；原材料里的另一个代号是 TH095，即《东方文花帖》（Shoot the Bullet），不是 TH09；TH04 则是《东方幻想乡》。这些都是东方 Project 的游戏。作者用 Agent 分析原可执行文件，逐函数恢复 C++，再编译并对照原二进制，目标是得到可运行、可继续维护的代码。项目记录中，TH08 已有 Linux 和浏览器可玩版本；TH095 已有可玩的 Windows 重建版；TH04 的 DOS 版有作者人工游戏测试记录，现代 64 位移植仍在开发。TH08 延续了 GensokyoClub 的已有工作，TH04 参考了 ReC98；历史项目也使用专用工具，不能把全部成果都归因于 REA。",
@@ -486,13 +485,13 @@
     "en": {
       "title": "Touhou reconstruction projects",
       "summary": "Recover old game code, validate it and produce playable platform builds."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "dinosaur-speed",
     "title": "Dinosaur：解释网页跑酷游戏如何逐渐加速",
     "category": "games",
-    "section": "cases",
     "rea": "REA",
     "summary": "读网页脚本，实验验证跑酷游戏的加速规则。",
     "description": "t-rex-runner 是类似 Chrome 离线小恐龙的网页跑酷游戏。这次分析针对 HTTP 网页版本，而非浏览器内置的 chrome://dino。贡献者用 REA 阅读脚本，定位初始速度、加速度及更新分支，再用独立 Playwright 控制器在原页面验证更新次数与速度的关系，做成可交互演示。逆向用于回答一个具体玩法问题：“它什么时候加速、每次加多少？”",
@@ -511,13 +510,13 @@
     "en": {
       "title": "Dinosaur: the acceleration rule",
       "summary": "Inspect a web game and experimentally check its speed-update logic."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "smart-toilet",
     "title": "智能马桶：从微信小程序协议做到电脑状态栏控制",
     "category": "hardware",
-    "section": "cases",
     "rea": "REA",
     "summary": "分析微信小程序的蓝牙通信，控制智能马桶翻盖。",
     "description": "作者 thinkszyg 希望从电脑控制自己的智能马桶，用 REA + Codex 分析微信小程序的蓝牙通信，称约半小时做出电脑状态栏控制翻盖的功能。帖子为第一手使用报告；未独立复测。",
@@ -532,13 +531,13 @@
     "en": {
       "title": "Smart toilet from the desktop",
       "summary": "Analyze a mini-program Bluetooth protocol and demonstrate lid control."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "tuya-zigbee-button",
     "title": "涂鸦 Zigbee 按钮：用 AI 辅助改造固件",
     "category": "hardware",
-    "section": "cases",
     "rea": "other-ai",
     "summary": "借助 pi + GLM 研究按钮固件并进行改造。",
     "description": "Zigbee 是智能家居设备使用的无线通信技术。ngxson 分享了用 pi + GLM 辅助分析和修改涂鸦 Zigbee 按钮固件的过程。案例展示的是对已购设备的固件改造；现有材料没有量化延迟改善，不把它写成已经验证的性能提升。",
@@ -553,16 +552,16 @@
     "en": {
       "title": "Tuya Zigbee button firmware",
       "summary": "Use pi and GLM to investigate and modify button firmware; latency gains unquantified."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "website-rebuild-report",
     "title": "网站重建订单：作者自述的交付报告",
     "category": "apps",
-    "section": "leads",
     "rea": "REA",
     "summary": "作者称以 REA 辅助网站重建，缺少具体项目与验证。",
-    "description": "goan999999 分享了参考网站重建的接单经历，称订单金额 5,000 元、耗时约 3 小时。现有记录不足以说明具体站点、逆向步骤或功能验收，因此只保留为线索；工时与金额是作者自述。",
+    "description": "goan999999 分享了参考网站重建的接单经历，称订单金额 5,000 元、耗时约 3 小时。现有记录不足以说明具体站点、逆向步骤或功能验收，交付效果仍待验证；工时与金额是作者自述。",
     "sources": [
       {
         "label": "原始记录",
@@ -574,16 +573,16 @@
     "en": {
       "title": "Website rebuild: delivery report",
       "summary": "A reported REA-assisted job without detailed target or acceptance evidence."
-    }
+    },
+    "status": "unverified"
   },
   {
     "id": "tradingview-workflow",
     "title": "TradingView：传播较多的复刻流程帖",
     "category": "apps",
-    "section": "leads",
     "rea": "REA",
     "summary": "有 REA 复刻流程，但没有证明恢复付费指标。",
-    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，不收作成功案例。",
+    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，因此按待验证的功能重建报告收录。",
     "sources": [
       {
         "label": "原始记录",
@@ -595,16 +594,16 @@
     "en": {
       "title": "TradingView: reconstruction workflow claim",
       "summary": "A popular workflow post does not establish recovery of paid indicators."
-    }
+    },
+    "status": "unverified"
   },
   {
     "id": "whoop-apk",
     "title": "WHOOP：分析健康追踪设备的 Android App",
     "category": "apps",
-    "section": "leads",
     "rea": "unknown",
     "summary": "发现 APK 分析讨论，尚未确认完成替代客户端。",
-    "description": "WHOOP 是健康与运动追踪设备及其配套服务。uwwgo 分享的 APK 相关帖子得到较高关注，但本轮记录不能确认作者已经完成可公开使用的替代客户端，保留为待跟进线索。",
+    "description": "WHOOP 是健康与运动追踪设备及其配套服务。uwwgo 分享的 APK 相关帖子得到较高关注，但本轮记录不能确认作者已经完成可公开使用的替代客户端，成果阶段仍待验证。",
     "sources": [
       {
         "label": "原始记录",
@@ -616,16 +615,16 @@
     "en": {
       "title": "WHOOP Android app investigation",
       "summary": "An APK discussion without a confirmed public replacement client."
-    }
+    },
+    "status": "unverified"
   },
   {
     "id": "artcraft-boundary",
     "title": "ArtCraft：不要把从零开发写成逆向 Adobe",
     "category": "apps",
-    "section": "leads",
     "rea": "other-ai",
     "summary": "热门帖涉及创作软件替代，但逆向性质未得到支持。",
-    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。保留这一条以说明未入选原因。",
+    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。",
     "sources": [
       {
         "label": "原始记录",
@@ -641,16 +640,16 @@
     "en": {
       "title": "ArtCraft: not proven Adobe reverse engineering",
       "summary": "From-scratch creative software should not be labeled a complete Adobe decompilation."
-    }
+    },
+    "status": "related-project"
   },
   {
     "id": "obsidian-asar",
     "title": "Obsidian：真实桌面包的大规模分析测试",
     "category": "apps",
-    "section": "leads",
     "rea": "REA",
     "summary": "用户确认原 ASAR 包可完成分析，但没有具体功能重建。",
-    "description": "Obsidian 是本地笔记软件，桌面版的 JavaScript 可打包在 ASAR 归档中。用户用 REA 分析约 24MB 的真实包，修复后确认 REA 6.0.0 配合 JSONL 在 86 秒完成原目标。讨论证明大包分析可跑通，未展示从结果中重建某个笔记功能，因此放在工具测试记录而非完成应用案例中。",
+    "description": "Obsidian 是本地笔记软件，桌面版的 JavaScript 可打包在 ASAR 归档中。用户用 REA 分析约 24MB 的真实包，修复后确认 REA 6.0.0 配合 JSONL 在 86 秒完成原目标。讨论证明大包分析可跑通，未展示从结果中重建某个笔记功能，因此标为分析测试，而非已完成的功能重建。",
     "sources": [
       {
         "label": "原始记录",
@@ -662,13 +661,13 @@
     "en": {
       "title": "Obsidian ASAR: large-package analysis",
       "summary": "The user confirms analysis completed, without a demonstrated feature rebuild."
-    }
+    },
+    "status": "analysis-test"
   },
   {
     "id": "unity-valheim",
     "title": "Unity / Valheim：游戏程序集分析需求",
     "category": "games",
-    "section": "leads",
     "rea": "REA",
     "summary": "真实游戏分析需求，原游戏目标复测仍缺少证据。",
     "description": "Unity 游戏常将 C# 逻辑编译到 Assembly-CSharp.dll；Valheim（《英灵神殿》）是使用 Unity 的生存游戏。用户尝试用 REA 分析游戏程序集。关联讨论包含工具修复和真实 .NET SDK 程序集的独立测试，但没有证明原 Valheim 目标已复测成功，更没有展示完成游戏修改。",
@@ -687,16 +686,16 @@
     "en": {
       "title": "Unity/Valheim assemblies",
       "summary": "Real game-analysis requests without a confirmed re-test of the original target."
-    }
+    },
+    "status": "in-progress"
   },
   {
     "id": "large-android-apk",
     "title": "大型 Android APK：真实生产包的分析需求",
     "category": "apps",
-    "section": "leads",
     "rea": "REA",
     "summary": "133MB、11 DEX 的安装包；原目标未见修复后复测。",
-    "description": "用户尝试分析一个 133MB、包含 11 个 DEX 的生产 Android 安装包。DEX 是 Android 字节码文件。讨论推动了内存控制修复，但没有公开具体 App 名称或原大 APK 修复后的复测，所以保留为规模化分析需求，不作为已完成业务案例。",
+    "description": "用户尝试分析一个 133MB、包含 11 个 DEX 的生产 Android 安装包。DEX 是 Android 字节码文件。讨论推动了内存控制修复，但没有公开具体 App 名称或原大 APK 修复后的复测，目前收录的是规模化分析需求与修复进展，不代表已完成业务重建。",
     "sources": [
       {
         "label": "原始记录",
@@ -708,13 +707,13 @@
     "en": {
       "title": "Large multidex Android APK",
       "summary": "A production-scale request; the original 133MB APK lacks a post-fix re-test."
-    }
+    },
+    "status": "in-progress"
   },
   {
     "id": "nativeaot",
     "title": ".NET NativeAOT：从原生二进制恢复 C# 信息的诉求",
     "category": "apps",
-    "section": "leads",
     "rea": "REA",
     "summary": "已有部分元数据恢复，不是原 C# 工程恢复。",
     "description": "NativeAOT 会把 .NET 程序提前编译为原生机器码，不能再按普通 .NET 程序集直接读出 C#。用户希望 REA 恢复相关信息；部分元数据支持已加入，但现有材料不能证明恢复了原 C# 工程，Windows 工作流也有边界。这是一条能力需求和进展记录。",
@@ -733,7 +732,8 @@
     "en": {
       "title": ".NET NativeAOT recovery request",
       "summary": "Partial metadata recovery does not establish restoration of the original C# project."
-    }
+    },
+    "status": "in-progress"
   },
   {
     "id": "windows-calculator-percent",
@@ -741,7 +741,6 @@
     "summary": "分析已安装计算器 DLL，解释并重建加法与乘法的百分号行为。",
     "description": "Windows 计算器的百分号会随当前运算改变含义。贡献者想解释这一行为，先发现 calc.exe 只是启动器，再用 REA 检查 CalcViewModel.dll 中的运算分支，并对照微软公开源码，恢复加减与乘除使用不同规则的逻辑，做成小型交互演示。函数定位由分析者辅助完成；公开源码和网页演示有交叉检查，但没有完成原 Windows GUI 输入验证。",
     "category": "algorithms",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -758,7 +757,8 @@
     "en": {
       "title": "Windows Calculator: recovering percentage rules",
       "summary": "Inspect the installed model DLL and reconstruct different percentage rules for addition and multiplication."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "android-apidemos",
@@ -766,7 +766,6 @@
     "summary": "用真实演示 APK 查类、读方法、追踪静态引用。",
     "description": "ApiDemos 是 Appium 用来展示和测试 Android 功能的示例 App。贡献者用其真实发布 APK 验证 REA + headless JADX：读取安装包和清单、查找类、查看成员、提取选中方法的 Java/smali，以及追踪谁调用它。还单独核查了 ContextCompat.startActivities 的重载选择。目的是让 Agent 能从安装包准确定位到特定实现；原 APK 未执行，这是静态分析实例，不是复刻整款 App。",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -779,7 +778,8 @@
     "en": {
       "title": "Android ApiDemos: tracing Java methods from an APK",
       "summary": "Inspect a real demo APK, select method overloads and trace static references through JADX."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "harmony-package-inventory",
@@ -787,7 +787,6 @@
     "summary": "用真实 HAP 发布包核查组件路径、哈希和打包线索。",
     "description": "HAP 是鸿蒙应用的安装包格式。贡献者使用开源 harmony-next-pipeline 1.0.1 的真实发布包，验证 REA 如何识别 HAP、HSP 与 App Pack，列出组件路径、内容哈希和运行时线索，并对照 CLI 与 MCP 的结果。目的是先回答安装包里有什么、后续可以分析哪里；没有解码 Ark 字节码、验证签名或证明应用运行行为。",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -800,7 +799,8 @@
     "en": {
       "title": "HarmonyOS packages: mapping components",
       "summary": "Inspect a published HAP package to identify components and packaging hints, without claiming Ark-code recovery."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "firmware-extract-handoff",
@@ -808,7 +808,6 @@
     "summary": "串起 Binwalk 区域识别、Unblob 解包和 Ghidra 函数分析。",
     "description": "设备固件常把压缩数据、文件系统和可执行程序放在同一镜像里。贡献者用自己生成的 gzip、USTAR、ext4 镜像及主机 ELF，验证 REA 调用 Binwalk 识别区域、用 Unblob 解包、核对导出文件哈希，再把提取出的 ELF 交给 Ghidra 读取函数和伪代码。解决的是从一整块镜像走到可分析文件的问题。这是来源可控的工具链实例，不是某款路由器或未知设备已被破解。",
     "category": "hardware",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -821,7 +820,8 @@
     "en": {
       "title": "Layered firmware: extraction to Ghidra",
       "summary": "Identify regions, extract files and inspect an ELF using source-controlled fixtures rather than a claimed device hack."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "preview-rebuild",
@@ -829,7 +829,6 @@
     "summary": "同一作者用两条路线重建缩放、旋转、标注与保存。",
     "description": "Preview（预览）是 macOS 自带的图片和 PDF 查看工具。Mahesh 把重建它作为对照实验：一轮用 Claude + REA，一轮只用 Claude。作者称纯 Claude 更快完成，而 REA 版本在缩放、分享、旋转、标注和保存等功能上更接近原应用，绘图也更快。没有公开完整代码和系统测试；这是作者的一次对照报告，不是工具速度的普遍结论。",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -845,7 +844,8 @@
     "en": {
       "title": "macOS Preview: rebuilding with and without REA",
       "summary": "A first-hand comparison of two rebuilds covering zoom, rotation, annotation and saving."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "codex-browser-annotations",
@@ -853,7 +853,6 @@
     "summary": "分析 Electron 代码并用测试页验证评论接口的部分能力。",
     "description": "宝玉想弄清 Codex / ChatGPT App 内置浏览器的网页标记如何进入对话输入框，以便自己的网页接入这一交互。他让 Codex + REA 查 Electron 代码，自己配合发送消息，再做测试网页。作者报告可通过 document.oai.annotation.request() 弹出评论框并填充内容，但不能直接把评论附加进输入框。案例结果是找到并部分验证一条交互接口，不是完整实现自动发消息。",
     "category": "apps",
-    "section": "cases",
     "rea": "REA",
     "sources": [
       {
@@ -869,7 +868,8 @@
     "en": {
       "title": "Codex browser annotations: finding the interaction bridge",
       "summary": "Inspect Electron code and test a page that opens and pre-fills an annotation dialog; direct composer insertion was not achieved."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "claude-design-baocut",
@@ -877,7 +877,6 @@
     "summary": "研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。",
     "description": "BaoCut 原本是宝玉开发的视频剪辑 Agent。作者在研究 Claude Design 后，将设计 Skill 与前端功能接入 BaoCut，使本机的 Agent CLI 能选择 design skill，提供公开代码提交。作者指出，仅作为独立 Skill 不能支持编辑、修改和标记，因而先做产品内集成。帖子没有明确说明这次是否使用 REA，也没有证明完整恢复原产品能力。",
     "category": "apps",
-    "section": "cases",
     "rea": "unknown",
     "sources": [
       {
@@ -897,7 +896,8 @@
     "en": {
       "title": "Claude Design in BaoCut",
       "summary": "A public skill/front-end integration into a video agent; REA use is not explicitly confirmed."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "bluetooth-gamepad-windows",
@@ -905,7 +905,6 @@
     "summary": "逆向控制协议，以 ViGEm 虚拟手柄适配 Windows。",
     "description": "MonoFevc 买了一只标称不支持 Windows 的蓝牙手柄，希望在 PC 上玩手游。作者自述，逆向控制协议后通过 AI 辅助开发写出 ViGEm 驱动，使手柄相关功能可用。ViGEm 用于在 Windows 上模拟受游戏识别的手柄输入。帖子没有给出型号、驱动源码或测试细节，结果按第一手自述理解。",
     "category": "hardware",
-    "section": "cases",
     "rea": "other-ai",
     "sources": [
       {
@@ -921,7 +920,8 @@
     "en": {
       "title": "Bluetooth gamepad on Windows",
       "summary": "Reverse the control protocol and write a ViGEm compatibility layer for an unsupported controller."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "claude-chrome-remote",
@@ -929,7 +929,6 @@
     "summary": "还原原生消息协议，转成 CDP 在远端执行。",
     "description": "Paul Klein IV 希望 Claude Code 不只操控同机 Chrome，也能使用远端浏览器。他研究 Claude Chrome 的 native messaging：消息使用四字节长度前缀和 JSON，承载导航、截图和点击等工具调用。随后做服务拦截浏览器连接，把命令转成 CDP，送往 Browserbase 云浏览器。线程提供演示与插件入口；它展示的是为 AI 工具做浏览器互通，不证明 AI 本身完成了全部逆向。",
     "category": "apps",
-    "section": "cases",
     "rea": "unknown",
     "sources": [
       {
@@ -949,7 +948,8 @@
     "en": {
       "title": "Claude Chrome on remote browsers",
       "summary": "Reverse the native-messaging bridge and translate browser commands to CDP for cloud execution."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "pi-computer-use",
@@ -957,7 +957,6 @@
     "summary": "研究 Computer Use，提供优先无障碍树、辅以视觉的 macOS 工具。",
     "description": "Zane Chee 希望 pi Agent 也能使用 Codex 风格的电脑操作，于是研究 Codex Computer Use 并开源 pi-computer-use。作者展示优先读取 macOS 无障碍树、在支持的模型上回退到视觉的路线，并在后续帖子补充后台模式。它是模型无关的电脑操作工具，未确认使用 REA；演示不意味着所有 App 都能后台控制。",
     "category": "apps",
-    "section": "cases",
     "rea": "unknown",
     "sources": [
       {
@@ -977,7 +976,8 @@
     "en": {
       "title": "pi-computer-use: desktop interaction for other models",
       "summary": "A macOS tool inspired by Codex Computer Use, using accessibility-first navigation and a vision fallback."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "background-computer-use",
@@ -985,7 +985,6 @@
     "summary": "研究 Codex 后台操作，提供本机可脚本调用的接口。",
     "description": "anupam batra 研究 Codex 的后台 Computer Use，希望 Agent 操作另一窗口时不打断人使用电脑。作者用 Swift 提供 localhost API，演示点击、滚动、输入、拖拽、缩放和按键；线程还展示按窗口区分的 Chrome 后台操作，并给出开源仓库。这里成果是独立实现可脚本控制的后台桌面工具，不是恢复原 Codex 源码；REA 使用未确认。",
     "category": "apps",
-    "section": "cases",
     "rea": "unknown",
     "sources": [
       {
@@ -1005,7 +1004,8 @@
     "en": {
       "title": "Background Computer Use in Swift",
       "summary": "Expose local APIs for background window interaction, with a real-time demo and public source."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "garageband-file-format",
@@ -1013,7 +1013,6 @@
     "summary": "Claude 分析音乐工程格式，作为本地音乐视频流程的一环。",
     "description": "GarageBand 是 Apple 的音乐制作软件。Anshu 为制作 The Context Windows 的音乐视频，让 Claude 利用 Mac 上的 GarageBand 乐器作曲；作者称 Claude 为此逆向了文件格式。最终帖子展示音乐视频，整条流程还包括 Blender、图像生成和本地人声模型。文件格式分析是其中一个具体环节；没有公开详细格式规格，24 小时是完整视频流程的作者工时报告。",
     "category": "apps",
-    "section": "cases",
     "rea": "other-ai",
     "sources": [
       {
@@ -1029,7 +1028,8 @@
     "en": {
       "title": "GarageBand format for automated composition",
       "summary": "Reverse the music-project format to compose with local instruments as part of a larger music-video workflow."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "boba-fett-rdr2",
@@ -1037,7 +1037,6 @@
     "summary": "Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。",
     "description": "Chris 与 Angaisb_ 希望把《星球大战：前线 II》中的波巴·费特放进《荒野大镖客 2》（RDR2）。因既有导出工具不满足“不注册、不付费”的要求，作者称 Claude 分析文件格式并自行写导出器，将模型适配到亚瑟的骨骼，加入喷气背包、武器和语音。帖子展示飞行与攻击画面；这是素材格式转换和 Mod，不是完整反编译两款游戏。",
     "category": "games",
-    "section": "cases",
     "rea": "other-ai",
     "sources": [
       {
@@ -1053,7 +1052,8 @@
     "en": {
       "title": "Boba Fett in Red Dead Redemption 2",
       "summary": "Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "apple-notes-migration",
@@ -1061,7 +1061,6 @@
     "summary": "研究笔记数据以实现跨产品导入。",
     "description": "Ozgur Ozer 想让用户从 Apple Notes（苹果备忘录）迁移到自己的笔记产品 Grape。他称使用 Claude Code 研究 Apple Notes，并展示导入文件夹、笔记和图片的实时视频。这里逆向用于数据互通与迁移，而不是重新做一个 Notes 客户端；原帖没有说明是否使用 REA，也没有公开所有数据格式和完整迁移覆盖测试。",
     "category": "apps",
-    "section": "cases",
     "rea": "other-ai",
     "sources": [
       {
@@ -1077,7 +1076,8 @@
     "en": {
       "title": "Apple Notes migration to Grape",
       "summary": "Use Claude Code to investigate Notes data and demonstrate importing folders, notes and images."
-    }
+    },
+    "status": "case"
   },
   {
     "id": "wii-powerpc-request",
@@ -1085,7 +1085,6 @@
     "summary": "已有 Ghidra 研究经验，REA 内部支持仍是需求。",
     "description": "GameCube 和 Wii 是任天堂主机，游戏程序使用 PowerPC 处理器与 DOL 格式。Issue 作者称已在 REA 之外用 Ghidra headless 分析一款未具名 Wii 游戏，希望把函数、调用者和数据检查接入 REA。讨论提出先支持通用 PowerPC ELF，再处理 DOL。现有证据是实际外部研究与明确接入需求，不是 REA 已完成某款 Wii 游戏重建。",
     "category": "games",
-    "section": "leads",
     "rea": "unknown",
     "sources": [
       {
@@ -1098,7 +1097,8 @@
     "en": {
       "title": "GameCube/Wii PowerPC support request",
       "summary": "A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed."
-    }
+    },
+    "status": "in-progress"
   },
   {
     "id": "gamepad-settings-request",
@@ -1106,7 +1106,6 @@
     "summary": "作者报告协议已逆向，但设置程序仍计划中。",
     "description": "goDavi 用 REA 研究常用小手柄的原厂蓝牙协议，称已成功，接下来想做比原厂更好用的 Mac / Windows 设置程序。帖子询问技术栈并附截图，但没有公开设备型号、协议规格或完成的设置程序。保留这个具体需求和阶段，不把计划写成已交付产品。",
     "category": "hardware",
-    "section": "leads",
     "rea": "REA",
     "sources": [
       {
@@ -1122,15 +1121,15 @@
     "en": {
       "title": "Gamepad settings after Bluetooth analysis",
       "summary": "The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned."
-    }
+    },
+    "status": "in-progress"
   },
   {
     "id": "asus-acpi-gpu",
     "title": "华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持",
     "summary": "作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。",
-    "description": "200Tabs1Brain 称 Codex 研究 ACPI 后，使华硕笔记本在 CachyOS Linux 中启用 NVIDIA 显卡，无需先启动 Windows。ACPI 是操作系统与固件沟通硬件状态和电源管理的接口。帖子没有型号、表格修改、日志或代码，因此暂留为硬件兼容性线索，不提供未经验证的操作建议。",
+    "description": "200Tabs1Brain 称 Codex 研究 ACPI 后，使华硕笔记本在 CachyOS Linux 中启用 NVIDIA 显卡，无需先启动 Windows。ACPI 是操作系统与固件沟通硬件状态和电源管理的接口。帖子没有型号、表格修改、日志或代码，因此结果标为待验证，不提供未经验证的操作建议。",
     "category": "hardware",
-    "section": "leads",
     "rea": "other-ai",
     "sources": [
       {
@@ -1146,6 +1145,7 @@
     "en": {
       "title": "ASUS ACPI and Linux GPU support",
       "summary": "A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it."
-    }
+    },
+    "status": "unverified"
   }
 ]

@@ -38,9 +38,9 @@ class CollectionTests(unittest.TestCase):
 
     def test_render_counts_and_boundaries(self):
         outputs = build.render(self.records)
-        n = sum(r['section'] == 'cases' for r in self.records)
-        self.assertIn(f'**{n} 个案例**', outputs['README.md'])
-        self.assertIn(f'**{n} cases**', outputs['README.en.md'])
+        n = len(self.records)
+        self.assertIn(f'**{n} 个案例与项目**', outputs['README.md'])
+        self.assertIn(f'**{n} entries**', outputs['README.en.md'])
         self.assertIn('TH095', outputs['cases/touhou-reconstruction.md'])
         self.assertNotIn('HTML 阅读版', outputs['README.md'])
         self.assertFalse(any(p.endswith('.html') for p in outputs))
@@ -53,6 +53,21 @@ class CollectionTests(unittest.TestCase):
         for r in self.records:
             self.assertIn(r['en']['title'], outputs['README.en.md'])
             self.assertEqual(outputs['README.en.md'].count(f"](cases/{r['id']}.md)"), 1)
+
+    def test_all_records_in_main_directory(self):
+        outputs = build.render(self.records)
+        self.assertNotIn('LEADS.md', outputs)
+        for r in self.records:
+            self.assertEqual(outputs['README.md'].count(f"](cases/{r['id']}.md)"), 1)
+            self.assertIn(r['title'], outputs[f"categories/{r['category']}.md"])
+            if build.STATUS[r['status']]:
+                self.assertIn(build.STATUS[r['status']], outputs[f"cases/{r['id']}.md"])
+                self.assertIn(build.STATUS_EN[r['status']], outputs['README.en.md'])
+
+    def test_invalid_status_rejected(self):
+        self.records[0]['status'] = 'verified-without-evidence'
+        with self.assertRaises(ValueError):
+            build.validate(self.records)
 
     def test_missing_translation_rejected(self):
         self.records[0]['en']['summary'] = ''

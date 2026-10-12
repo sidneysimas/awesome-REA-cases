@@ -7,6 +7,13 @@
 - [Claude Code：用 Muse + REA 阅读大型压缩代码](../cases/claude-code-analysis.md) — 让 Muse 调用 REA 阅读 Claude Code 的压缩代码包。 **[REA]**
 - [Notion：追清复制文字和图片的内部链路](../cases/notion-clipboard.md) — 追踪桌面客户端复制文字和图片的实现路径。 **[REA]**
 - [Flutter App：从安装包识别运行时和编译结构](../cases/flutter-aot.md) — 识别 Flutter APK 的运行时、构建与 AOT 结构。 **[REA]**
+- [网站重建订单：作者自述的交付报告](../cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
+- [TradingView：传播较多的复刻流程帖](../cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
+- [WHOOP：分析健康追踪设备的 Android App](../cases/whoop-apk.md) — 发现 APK 分析讨论，尚未确认完成替代客户端。 **[未确认使用 REA · 待验证]**
+- [ArtCraft：不要把从零开发写成逆向 Adobe](../cases/artcraft-boundary.md) — 热门帖涉及创作软件替代，但逆向性质未得到支持。 **[其他 AI 逆向 · 相关项目]**
+- [Obsidian：真实桌面包的大规模分析测试](../cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**
+- [大型 Android APK：真实生产包的分析需求](../cases/large-android-apk.md) — 133MB、11 DEX 的安装包；原目标未见修复后复测。 **[REA · 进行中]**
+- [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](../cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA · 进行中]**
 - [Android ApiDemos：从 APK 追到具体 Java 方法](../cases/android-apidemos.md) — 用真实演示 APK 查类、读方法、追踪静态引用。 **[REA]**
 - [鸿蒙 App：识别安装包结构与组件](../cases/harmony-package-inventory.md) — 用真实 HAP 发布包核查组件路径、哈希和打包线索。 **[REA]**
 - [macOS 预览：对比有无 REA 的功能重建](../cases/preview-rebuild.md) — 同一作者用两条路线重建缩放、旋转、标注与保存。 **[REA]**

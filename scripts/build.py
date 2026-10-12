@@ -15,6 +15,8 @@ CATEGORIES = {
     'algorithms': '算法与功能重建',
 }
 LABELS = {'REA': 'REA', 'other-ai': '其他 AI 逆向', 'unknown': '未确认使用 REA'}
+STATUS = {'case': '', 'unverified': '待验证', 'in-progress': '进行中', 'analysis-test': '分析测试', 'related-project': '相关项目'}
+STATUS_EN = {'case': '', 'unverified': 'Needs verification', 'in-progress': 'In progress', 'analysis-test': 'Analysis test', 'related-project': 'Related project'}
 
 
 def validate(records):
@@ -22,7 +24,7 @@ def validate(records):
         raise ValueError('cases.json must contain a non-empty list')
     ids = set()
     source_sets = set()
-    required = {'id', 'title', 'category', 'section', 'rea', 'summary',
+    required = {'id', 'title', 'category', 'status', 'rea', 'summary',
                 'description', 'sources', 'snapshot_date', 'metadata', 'en'}
     for r in records:
         if set(r) != required:
@@ -30,7 +32,7 @@ def validate(records):
         if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', r['id']) or r['id'] in ids:
             raise ValueError('Invalid or duplicate ID')
         ids.add(r['id'])
-        if r['category'] not in CATEGORIES or r['section'] not in ('cases', 'leads') or r['rea'] not in LABELS:
+        if r['category'] not in CATEGORIES or r['status'] not in STATUS or r['rea'] not in LABELS:
             raise ValueError(f"Invalid classification: {r['id']}")
         for key in ('title', 'summary', 'description'):
             if not isinstance(r[key], str) or not r[key].strip():
@@ -60,6 +62,8 @@ def validate(records):
 def detail(r):
     lines = [f"# {r['title']}", '', f"分类：{CATEGORIES[r['category']]} · {LABELS[r['rea']]}",
              f"记录日期：{r['snapshot_date']}", '', r['description'], '']
+    if STATUS[r['status']]:
+        lines.insert(4, f"阶段：{STATUS[r['status']]}")
     if r['metadata']:
         lines += r['metadata'] + ['']
     lines += ['## 来源', ''] + [f"- [{s['label']}]({s['url']})" for s in r['sources']]
@@ -68,74 +72,67 @@ def detail(r):
 
 
 def entry(r, prefix):
-    return f"- [{r['title']}]({prefix}cases/{r['id']}.md) — {r['summary']} **[{LABELS[r['rea']]}]**"
+    stage = f" · {STATUS[r['status']]}" if STATUS[r['status']] else ''
+    return f"- [{r['title']}]({prefix}cases/{r['id']}.md) — {r['summary']} **[{LABELS[r['rea']]}{stage}]**"
 
 
 def render(records):
-    selected = [r for r in records if r['section'] == 'cases']
-    leads = [r for r in records if r['section'] == 'leads']
     outputs = {f"cases/{r['id']}.md": detail(r) for r in records}
     readme = ['# Awesome REA Cases', '',
               '**中文（默认）** | [English](README.en.md)', '',
-              '收集 REA 与其他 AI 辅助逆向的实际案例。每条讲清楚对象是什么、作者为什么逆向、做了什么，以及报告了什么结果。', '',
-              '> 非 REA 官方项目。收录不代表工具或作者背书；不收集软件安装包、密钥、私人记录或未授权资产。', '',
-              f'当前收录 **{len(selected)} 个案例**；另保留 **{len(leads)} 条待补证据、工具测试或未入选线索**。所有结果均据作者或项目记录整理，未由本项目独立复现。', '',
+              '**用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**', '',
+              '收集 REA 与其他 AI 逆向的案例和项目，覆盖游戏保存、硬件互通、应用重建与算法研究。每条说明作者在研究什么、为什么逆向、具体做了什么，并链接原帖、代码或验证记录。', '',
+              '[REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。', '',
+              f'当前收录 **{len(records)} 个案例与项目**，按用途分类，不设 Top N 或热度门槛。', '',
               '## 目录', '']
     for slug, title in CATEGORIES.items():
-        count = sum(r['category'] == slug for r in selected)
+        count = sum(r['category'] == slug for r in records)
         readme.append(f'- [{title}](categories/{slug}.md)（{count}）')
-    readme += ['- [待跟进与未入选线索](LEADS.md)',
-               '- [贡献指南](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)', '',
-               '## 案例', '']
+    readme += ['- [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)', '',
+               '工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。', '',
+               '## 案例与项目', '']
     for slug, title in CATEGORIES.items():
-        group = [r for r in selected if r['category'] == slug]
+        group = [r for r in records if r['category'] == slug]
         readme += [f'### {title}', ''] + [entry(r, '') for r in group] + ['']
         outputs[f'categories/{slug}.md'] = '\n'.join(
             [f'# {title}', '', '[返回主目录](../README.md)', ''] +
             [entry(r, '../') for r in group] + [''])
-    readme += ['## 收录口径', '',
-               '- REA、其他 AI 逆向与工具未确认分别标注，不把所有 AI 案例写成 REA 成果。',
-               '- 不设 Top N、固定数量或时间窗口；有具体对象、过程和结果的优先，热度不作为门槛。',
-               '- 自述结果注明边界，工具支持不等于完整产品重建；为 AI 工具做互通不等于 AI 完成全部逆向。',
-               '- X 热度只保留带日期的抓取快照，不代表实时排名；发布日期不等于项目完成日期。',
-               '- 同一项目的多条帖子合并；不同作者或不同目标不人为归并。',
-               '- 新案例请修改 `data/cases.json` 并提交 PR，生成文件由脚本统一更新。', '',
-               '## 许可与致谢', '',
-               '本仓库原创摘要、数据整理与代码采用 [MIT License](LICENSE)。链接指向的第三方软件、文档、帖子和游戏资产仍遵循各自权利与许可证；本仓库许可不赋予其使用或分发权。', '',
-               '组织方式参考 [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)，具体调研见 [结构与维护调研](research/reference-structure.md)。', '']
+    readme += ['## 贡献与收录', '',
+               '欢迎提交新案例、补充验证或纠正描述。修改 `data/cases.json` 后运行 `python3 scripts/build.py`，再提交 PR；详见[贡献指南](CONTRIBUTING.md)。', '',
+               '优先原作者、具体目标与操作记录。同一项目合并来源；作者自述、静态分析和实际运行分别说明。X 热度保留抓取日期，不作为效果证明。', '',
+               '## 说明与许可', '',
+               '非 REA 官方项目。结果据作者和项目记录整理，未由本集合独立复现。仅整理原创摘要与公开链接，不分发原软件、游戏资产、密钥或私人材料。', '',
+               '本仓库原创摘要、数据整理与代码采用 [MIT License](LICENSE)；链接内容保留各自权利与许可证。研究、复现或再利用前，请确认你拥有相应授权。', '',
+               '组织方式参考 [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)。[收集范围](research/collection-scope.md) · [结构调研](research/reference-structure.md)', '']
     outputs['README.md'] = '\n'.join(readme)
-    outputs['LEADS.md'] = '\n'.join(['# 待跟进与未入选线索', '',
-        '这里保存已发现但尚不能作为完成案例展示的材料：证据不足、工具排障测试，或并非逆向的项目。它们不计入主目录案例数。', '',
-        '[返回主目录](README.md)', ''] + [entry(r, '') for r in leads] + [''])
     categories_en = {'games': 'Games and preservation', 'hardware': 'Hardware and interoperability',
                      'apps': 'Applications and clients', 'algorithms': 'Algorithms and feature recovery'}
     labels_en = {'REA': 'REA', 'other-ai': 'Other AI-assisted work', 'unknown': 'REA use unconfirmed'}
     def english_entry(r):
-        return f"- [{r['en']['title']}](cases/{r['id']}.md) — {r['en']['summary']} **[{labels_en[r['rea']]}]**"
+        stage = f" · {STATUS_EN[r['status']]}" if STATUS_EN[r['status']] else ''
+        return f"- [{r['en']['title']}](cases/{r['id']}.md) — {r['en']['summary']} **[{labels_en[r['rea']]}{stage}]**"
     english = ['# Awesome REA Cases', '', '[中文（默认）](README.md) | **English**', '',
-               'A curated collection of REA and AI-related reverse-engineering cases: the target, the author’s purpose, what they did, and the reported outcome.', '',
-               '> Unofficial collection. Inclusion is not an endorsement. No proprietary binaries, keys, private records or unauthorized assets are distributed.', '',
-               f'**{len(selected)} cases**, plus **{len(leads)} leads** with incomplete evidence, tool tests or exclusion notes. Results are attributed to authors and project records, not independently reproduced by this collection.', '',
-               'The index below is in English. Linked case details, category pages, contribution and maintenance guides are currently in Chinese.', '',
+               '**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**', '',
+               'A collection of REA and AI reverse-engineering cases and projects, covering game preservation, hardware interoperability, app reconstruction, and algorithm research. Each entry explains the target, the author’s purpose and approach, and links to original posts, code, or verification records.', '',
+               '[REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.', '',
+               f'**{len(records)} entries**, organized by use case, without a Top-N or popularity threshold.', '',
+               'The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.', '',
                '## Contents', '']
     for slug, title in categories_en.items():
-        count = sum(r['category'] == slug for r in selected)
+        count = sum(r['category'] == slug for r in records)
         english.append(f'- [{title}](categories/{slug}.md) ({count})')
-    english += ['- [Leads and excluded material](LEADS.md)',
-                '- [Contributing](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)', '', '## Cases', '']
+    english += ['- [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)', '',
+                'Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.', '',
+                '## Cases and projects', '']
     for slug, title in categories_en.items():
-        english += [f'### {title}', ''] + [english_entry(r) for r in selected if r['category'] == slug] + ['']
-    english += ['## Leads', ''] + [english_entry(r) for r in leads] + ['',
-                '## Selection and evidence', '',
-                '- No Top-N or fixed date limit. Prefer concrete targets, methods and results over popularity.',
-                '- REA, other AI-assisted work and unconfirmed REA use are labeled separately. An AI-tool integration does not prove AI performed the investigation itself.',
-                '- Static analysis, source-built fixtures, author reports and runtime checks have different scopes. A supported platform is not a complete product reconstruction.',
-                '- X engagement is a dated snapshot, not a live ranking. Post date is not necessarily project completion date.',
-                '- Merge multiple posts about the same project. Keep separate targets or independent projects distinct.',
-                '- Edit data/cases.json and run python3 scripts/build.py. Generated files must stay synchronized.', '',
-                '## License and acknowledgements', '',
-                'Original summaries, curation data and code use the [MIT License](LICENSE). Linked software, documents, posts and game assets retain their own rights and licenses; this license does not authorize their redistribution.', '',
-                'Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). See the [reference study](research/reference-structure.md).', '']
+        english += [f'### {title}', ''] + [english_entry(r) for r in records if r['category'] == slug] + ['']
+    english += ['## Contributing and selection', '',
+                'Submit new cases, additional verification, or corrections. Edit data/cases.json, run python3 scripts/build.py, and open a PR. See [Contributing](CONTRIBUTING.md).', '',
+                'Prefer original authors, concrete targets and recorded work. Merge multiple sources for one project. Distinguish author reports, static analysis and actual execution. X engagement is a dated snapshot, not proof of effectiveness.', '',
+                '## Scope and license', '',
+                'Unofficial collection. Results are attributed to authors and project records, not independently reproduced here. Only original summaries and public links are curated; no proprietary software, game assets, keys or private material are distributed.', '',
+                'Original summaries, curation data and code use the [MIT License](LICENSE). Linked content retains its own rights and licenses. Ensure you have the relevant authorization before investigating, reproducing or reusing it.', '',
+                'Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). [Collection scope](research/collection-scope.md) · [Reference study](research/reference-structure.md)', '']
     outputs['README.en.md'] = '\n'.join(english)
     return outputs
 
