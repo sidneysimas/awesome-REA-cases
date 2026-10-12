@@ -2,65 +2,47 @@
 
 [中文（默认）](README.md) | **English**
 
-**Unsupported software. Incompatible hardware. Lost source code. People are using AI to make these things work on their own terms.**
+**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-A collection of practical REA and AI-assisted reverse-engineering projects: maintaining old games, making hardware work across platforms, and bringing existing software capabilities into new products.
+Currently **69 cases and projects**. *As of October 12, 2026, 16:00 Beijing time (UTC+8).*
 
-**Public cases are tracked six times daily. This homepage is read, selected, and written by the maintainer—not generated from a ranking or a list of every accepted entry.**
+Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
-[All cases](INDEX.en.md) · [Games](categories/games.md) · [Hardware](categories/hardware.md) · [Applications](categories/apps.md) · [Algorithms](categories/algorithms.md)
+[REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
-## Recent picks
+## Recent picks: Top 10
 
-### [Running Shapr3D on Linux instead of rebuilding it](cases/wine-uwp-shapr3d.md)
+Manually selected for recent attention, concrete use, and reading value—not a live leaderboard. Engagement figures are recorded snapshots from October 12, 2026, not proof that results have been verified. Dates below refer to source posts.
 
-The author reports Claude-assisted investigation of Windows Store app interfaces, extends Wine's compatibility layer, and publishes the implementation. The interesting move is supplying the environment an existing app needs—not building a lookalike. **Other AI-assisted work; unofficial beta, not tested by this collection.**
+1. **[Claude Design in BaoCut](cases/claude-design-baocut.md)** — Investigate a design skill and front end, then integrate them into a video agent with a public code commit. **Oct 12 · 254 likes · REA use unconfirmed.**
+2. **[Rebuilding the Claude Slides editor](cases/claude-slides.md)** — Codex and REA analyze bundled scripts; Claude Code organizes the project. Screenshots and a code commit are available; completeness is author-reported. **Oct 11 · 686 likes · REA.**
+3. **[Opening the Codex browser annotation dialog from a web page](cases/codex-browser-annotations.md)** — Inspect Electron code and test an interface that opens and pre-fills the dialog; direct insertion into the composer was not achieved. **Oct 11 · 252 likes · REA.**
+4. **[Inspecting 47MB of compressed Claude Code](cases/claude-code-analysis.md)** — Muse calls REA to analyze a large code bundle. A tool-integration and analysis demonstration, not an established Claude Code clone. **Oct 10 · 576 likes · REA.**
+5. **[An Apple TV remote on Linux](cases/siri-remote-linux.md)** — Investigate Bluetooth messages and turn an ecosystem-specific accessory into a computer input device, with a public implementation. **Oct 9 · 5,419 likes · REA use unconfirmed.**
+6. **[A faster Plex client for LG TVs](cases/lg-plxnative.md)** — Investigate the native media stack with Ghidra and Claude Code. The author reports reducing user selection from about 30 seconds to 3 seconds. **Oct 8 · 7,268 likes · Other AI-assisted work.**
+7. **[Tuya RGB lights controlled from a Mac](cases/tuya-rgb-mac.md)** — Analyze the phone app's Bluetooth traffic and use a local script instead, with a working-light demonstration. **Oct 8 · 2,285 likes · Other AI-assisted work.**
+8. **[Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md)** — Investigate asset formats, write an exporter, adapt the skeleton, and add jetpack gameplay. A cross-game mod, not full decompilation. **Oct 5 · 678 likes · Other AI-assisted work.**
+9. **[Urban Terror in the browser](cases/urban-terror-web.md)** — Identify an engine/bytecode layout mismatch; the author reports a working browser port connected to multiplayer servers. **Oct 3 · 479 likes · Other AI-assisted work.**
+10. **[GarageBand formats for AI-assisted composition](cases/garageband-file-format.md)** — Investigate project files to use local instruments in a music-video workflow, with a finished video; detailed format specifications are not public. **Oct 2 · 272 likes · Other AI-assisted work.**
 
-### [Adding an AI sidebar to Preview instead of cloning the whole app](cases/preview-ai-sidebar.md)
+### Classic cases
 
-A research team demonstrates modifying a copy of macOS Preview and publishes a proof-of-concept project. The question shifts from rebuilding a product to changing software that already exists. **Needs verification; REA use unconfirmed, modified apps are personal experiments.**
+- **[Universal Modder](cases/universal-modder.md)** — Investigate engines and asset formats to bring Minecraft content into GTA V and other games; recorded snapshot: **14,340 likes**. `Other AI-assisted work`
+- **[Firefighter: DOS binary to Rust](cases/firefighter-rust.md)** — Recover Pascal logic and rewrite maintainable Rust, according to the author; recorded snapshot: **7,833 likes**. `Other AI-assisted work`
+- **[Modern Warfare 2: multi-agent reconstruction](cases/mw2-decompilation.md)** — The author reports 17 agents, three months, and byte-level matches for 83% of functions; code is not public and has not been independently reproduced here. `Other AI-assisted work`
+- **[Smart toilet from the Mac menu bar](cases/smart-toilet.md)** — Investigate Bluetooth communication for lid control; the author later reports extending the app to other home devices. `REA · Author-reported`
 
-### [Controlling an air conditioner with AR-glasses gestures](cases/ar-air-conditioner-control.md)
+## Contents
 
-A secondary demo describes inspecting the official app's control requests and connecting power and temperature controls to AR glasses. A new interaction surface, rather than another appliance app. **REA · Needs verification: no public hardware model, protocol specification, or code; general appliance compatibility is not established.**
+- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (14)
+- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (14)
+- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (37)
+- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (4)
+- [Contribute a case](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [Maintenance](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
-## Start with these
+Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and maintenance guides are currently in Chinese.
 
-### [Universal Modder: Minecraft content in GTA V](cases/universal-modder.md)
-
-Claude investigates engines and asset formats, then modifies content and tests it in-game. The idea is immediately understandable; the recorded post snapshot exceeds 14,000 likes. It demonstrates cross-game modding, not complete game decompilation. **Other AI-assisted work.**
-
-### [Plex was slow on an LG TV, so a developer rebuilt the client](cases/lg-plxnative.md)
-
-Ghidra and Claude Code helped investigate the TV's native media stack and build a Rust/OpenGL client. The author reports reducing the user-selection screen from about 30 seconds to 3 seconds: a clear user problem driving the investigation. **Other AI-assisted work; performance is author-reported.**
-
-### [Recovering maintainable code from a DOS binary](cases/firefighter-rust.md)
-
-The Firefighter author reports recovering Pascal logic and rewriting it in Rust. The goal is software preservation: turning an old executable into code someone can keep maintaining. **Other AI-assisted work.**
-
-### [Using an Apple TV remote on Linux](cases/siri-remote-linux.md)
-
-Investigate the Bluetooth protocol so Linux can understand touch, button, and microphone data, with a public implementation. A closed-ecosystem accessory becomes an input device for another system. **REA use unconfirmed.**
-
-### [Rebuilding the Claude Slides editor from bundled front-end code](cases/claude-slides.md)
-
-Codex and REA analyze the scripts; Claude Code organizes the project. Screenshots and a code commit provide something concrete to inspect. **REA; feature completeness is author-reported.**
-
-### [17 agents, three months, and Modern Warfare 2](cases/mw2-decompilation.md)
-
-The author reports a running game and byte-level matches for 83% of functions. The interesting work is parallel coordination and comparison against the original binary—not an overnight-rebuild story. **Other AI-assisted work; code is not public, and the collection has not independently reproduced it.**
-
-## Keep exploring
-
-The homepage is a selection. Every accepted case, ongoing project, and concrete idea remains in the [complete index](INDEX.en.md). Absence from the homepage is not a rejection.
-
-[REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes other AI-assisted work and interoperability projects for AI tools.
-
-The English homepage and index are available; linked case details and maintenance guides are currently in Chinese.
-
-## Contributing and scope
-
-[Submit cases, verification, or corrections](CONTRIBUTING.md). Homepage picks favor specific, distinctive projects worth reading. Engagement is a discovery signal, not proof of results. See [Maintenance](MAINTENANCE.md) for editorial rules.
+## Scope and license
 
 Unofficial collection. Results are attributed to authors and project records, not independently reproduced here. Only original summaries and public links are curated; no proprietary software, game assets, keys, or private material are distributed.
 

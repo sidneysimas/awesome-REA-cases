@@ -15,7 +15,7 @@
 
 ## 数据格式
 
-所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文完整总目录 `INDEX.en.md`；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另从每批记录中选择最热或最有创意的项目，亲自编辑中英文 README；不使用自动评分或排序算法。
+所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文完整总目录 `INDEX.en.md`；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另综合近期传播热度与阅读价值，亲自维护中英文 README 的近期精选 Top 10、紧凑经典案例、带截止时间的总数及分类数量目录；不使用自动评分或排序算法。
 
 1. 新增或更新记录，保留已有 ID。
 2. `python3 scripts/build.py`
