@@ -1,6 +1,6 @@
 # 贡献指南
 
-欢迎提交具体的 REA / AI 辅助逆向案例。只需修改 `data/cases.json`，然后运行 `python3 scripts/build.py`。
+欢迎提交具体的 REA / AI 辅助逆向案例。修改 `data/cases.json`，然后运行 `python3 scripts/build.py` 生成详情、分类页和完整总目录。首页由维护者亲自判断与编辑，不由生成器覆盖。
 
 ## 收录要求
 
@@ -8,14 +8,14 @@
 - 写清楚作者为什么逆向、具体做了什么，以及报告了什么结果。不要添加猜测用途、泛泛启发或抽象总结。
 - 至少一个公开来源；优先作者原帖、源码、验证记录和真实演示。明确区分作者自述、项目测试与独立复现。
 - `rea` 使用 `REA`、`other-ai` 或 `unknown`，不确定就不要猜。
-- 所有条目统一进入主目录。`status` 使用 `case`（普通条目，不表示独立验证）、`unverified`（待验证）、`in-progress`（进行中）、`analysis-test`（分析测试）或 `related-project`（相关项目）。
+- 所有条目统一进入完整总目录 `INDEX.md` 和分类页。`status` 使用 `case`（普通条目，不表示独立验证）、`unverified`（待验证）、`in-progress`（进行中）、`analysis-test`（分析测试）或 `related-project`（相关项目）。未获首页推荐不影响完整收录。
 - 同项目追加来源，不重复开条目；不同目标有不同成果时可单独收录。
 - 仅发布原创摘要与链接，不提交原软件、受版权保护的资产、凭据、私人材料或未经授权的数据。
 - 热度与工时只写有来源的值；热度必须注明快照日期。不要求每个案例都有热度。
 
 ## 数据格式
 
-所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文 README；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。
+所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文完整总目录 `INDEX.en.md`；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另从每批记录中选择最热或最有创意的项目，亲自编辑中英文 README；不使用自动评分或排序算法。
 
 1. 新增或更新记录，保留已有 ID。
 2. `python3 scripts/build.py`

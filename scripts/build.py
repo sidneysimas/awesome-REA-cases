@@ -78,8 +78,8 @@ def entry(r, prefix):
 
 def render(records):
     outputs = {f"cases/{r['id']}.md": detail(r) for r in records}
-    readme = ['# Awesome REA Cases', '',
-              '**中文（默认）** | [English](README.en.md)', '',
+    readme = ['# 全部案例与项目', '',
+              '[精选首页](README.md) | [English index](INDEX.en.md)', '',
               '**用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**', '',
               '**每天 6 次定时追踪 REA 与 AI 逆向公开案例，自动筛选、去重并更新合集。**', '',
               '收集 REA 与其他 AI 逆向的案例和项目，覆盖游戏保存、硬件互通、应用重建与算法研究。每条说明作者在研究什么、为什么逆向、具体做了什么，并链接原帖、代码或验证记录。', '',
@@ -105,14 +105,14 @@ def render(records):
                '非 REA 官方项目。结果据作者和项目记录整理，未由本集合独立复现。仅整理原创摘要与公开链接，不分发原软件、游戏资产、密钥或私人材料。', '',
                '本仓库原创摘要、数据整理与代码采用 [MIT License](LICENSE)；链接内容保留各自权利与许可证。研究、复现或再利用前，请确认你拥有相应授权。', '',
                '组织方式参考 [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)。[收集范围](research/collection-scope.md) · [结构调研](research/reference-structure.md)', '']
-    outputs['README.md'] = '\n'.join(readme)
+    outputs['INDEX.md'] = '\n'.join(readme)
     categories_en = {'games': 'Games and preservation', 'hardware': 'Hardware and interoperability',
                      'apps': 'Applications and clients', 'algorithms': 'Algorithms and feature recovery'}
     labels_en = {'REA': 'REA', 'other-ai': 'Other AI-assisted work', 'unknown': 'REA use unconfirmed'}
     def english_entry(r):
         stage = f" · {STATUS_EN[r['status']]}" if STATUS_EN[r['status']] else ''
         return f"- [{r['en']['title']}](cases/{r['id']}.md) — {r['en']['summary']} **[{labels_en[r['rea']]}{stage}]**"
-    english = ['# Awesome REA Cases', '', '[中文（默认）](README.md) | **English**', '',
+    english = ['# All cases and projects', '', '[Editor picks](README.en.md) | [中文总目录](INDEX.md)', '',
                '**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**', '',
                '**Tracks public REA and AI reverse-engineering cases six times daily, automatically screening, deduplicating, and updating the collection.**', '',
                'A collection of REA and AI reverse-engineering cases and projects, covering game preservation, hardware interoperability, app reconstruction, and algorithm research. Each entry explains the target, the author’s purpose and approach, and links to original posts, code, or verification records.', '',
@@ -135,7 +135,7 @@ def render(records):
                 'Unofficial collection. Results are attributed to authors and project records, not independently reproduced here. Only original summaries and public links are curated; no proprietary software, game assets, keys or private material are distributed.', '',
                 'Original summaries, curation data and code use the [MIT License](LICENSE). Linked content retains its own rights and licenses. Ensure you have the relevant authorization before investigating, reproducing or reusing it.', '',
                 'Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). [Collection scope](research/collection-scope.md) · [Reference study](research/reference-structure.md)', '']
-    outputs['README.en.md'] = '\n'.join(english)
+    outputs['INDEX.en.md'] = '\n'.join(english)
     return outputs
 
 

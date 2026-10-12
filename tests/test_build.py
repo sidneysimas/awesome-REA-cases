@@ -39,30 +39,30 @@ class CollectionTests(unittest.TestCase):
     def test_render_counts_and_boundaries(self):
         outputs = build.render(self.records)
         n = len(self.records)
-        self.assertIn(f'**{n} 个案例与项目**', outputs['README.md'])
-        self.assertIn(f'**{n} entries**', outputs['README.en.md'])
+        self.assertIn(f'**{n} 个案例与项目**', outputs['INDEX.md'])
+        self.assertIn(f'**{n} entries**', outputs['INDEX.en.md'])
         self.assertIn('TH095', outputs['cases/touhou-reconstruction.md'])
-        self.assertNotIn('HTML 阅读版', outputs['README.md'])
+        self.assertNotIn('HTML 阅读版', outputs['INDEX.md'])
         self.assertFalse(any(p.endswith('.html') for p in outputs))
         self.assertFalse((ROOT / 'docs/index.html').exists())
 
-    def test_english_readme_complete(self):
+    def test_english_index_complete(self):
         outputs = build.render(self.records)
-        self.assertIn('[English](README.en.md)', outputs['README.md'])
-        self.assertIn('[中文（默认）](README.md)', outputs['README.en.md'])
+        self.assertIn('[English index](INDEX.en.md)', outputs['INDEX.md'])
+        self.assertIn('[中文总目录](INDEX.md)', outputs['INDEX.en.md'])
         for r in self.records:
-            self.assertIn(r['en']['title'], outputs['README.en.md'])
-            self.assertEqual(outputs['README.en.md'].count(f"](cases/{r['id']}.md)"), 1)
+            self.assertIn(r['en']['title'], outputs['INDEX.en.md'])
+            self.assertEqual(outputs['INDEX.en.md'].count(f"](cases/{r['id']}.md)"), 1)
 
     def test_all_records_in_main_directory(self):
         outputs = build.render(self.records)
         self.assertNotIn('LEADS.md', outputs)
         for r in self.records:
-            self.assertEqual(outputs['README.md'].count(f"](cases/{r['id']}.md)"), 1)
+            self.assertEqual(outputs['INDEX.md'].count(f"](cases/{r['id']}.md)"), 1)
             self.assertIn(r['title'], outputs[f"categories/{r['category']}.md"])
             if build.STATUS[r['status']]:
                 self.assertIn(build.STATUS[r['status']], outputs[f"cases/{r['id']}.md"])
-                self.assertIn(build.STATUS_EN[r['status']], outputs['README.en.md'])
+                self.assertIn(build.STATUS_EN[r['status']], outputs['INDEX.en.md'])
 
     def test_invalid_status_rejected(self):
         self.records[0]['status'] = 'verified-without-evidence'
@@ -83,8 +83,8 @@ class CollectionTests(unittest.TestCase):
         build.validate(self.records)
         outputs = build.render(self.records)
         self.assertIn('cases/additional-test-case.md', outputs)
-        self.assertIn('additional-test-case.md', outputs['README.md'])
-        self.assertIn('additional-test-case.md', outputs['README.en.md'])
+        self.assertIn('additional-test-case.md', outputs['INDEX.md'])
+        self.assertIn('additional-test-case.md', outputs['INDEX.en.md'])
 
 if __name__ == '__main__':
     unittest.main()
