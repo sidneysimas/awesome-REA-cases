@@ -15,3 +15,4 @@
 - [GameCube / Wii：从实际 Wii 分析提出 PowerPC 支持](../cases/wii-powerpc-request.md) — 已有 Ghidra 研究经验，REA 内部支持仍是需求。 **[未确认使用 REA · 进行中]**
 - [《航空霸业2》：用 REA + Kimi 反编译老游戏](../cases/aerobiz-2-decompilation.md) — 研究 KOEI 1993 年航空经营游戏的编译程序。 **[REA · 待验证]**
 - [《超级马里奥阳光》：AI 参与说法下的原生 PC 移植](../cases/super-mario-sunshine-pc.md) — 传播帖称 AI Agent 参与反编译并将 GameCube 游戏移植到 PC。 **[未确认使用 REA · 待验证]**
+- [《红色警戒 2》：为强化学习重写游戏引擎](../cases/red-alert-2-rl-engine.md) — 参考 Chrono Divide，用 Opus 与测试集重建单位行为。 **[其他 AI 逆向 · 待验证]**
