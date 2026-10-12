@@ -53,7 +53,7 @@
     "category": "apps",
     "rea": "other-ai",
     "summary": "研究 LG 媒体栈，开发更快的原生 Plex 客户端。",
-    "description": "Plex 是用于浏览和播放个人影音库的软件。开发者觉得 LG 电视上的 Plex 客户端太慢，便用 Ghidra + Claude Code 研究电视原生媒体栈，做出 Rust/OpenGL 客户端 PlxNative。作者报告，同一台电视的用户选择界面从约 30 秒降到约 3 秒，并支持 4K、Dolby Vision 和 Atmos。逆向用于弄清如何调用电视自身的播放能力，而非只重画 Plex 界面。性能为作者报告；X 热度对应传播帖。",
+    "description": "Plex 是用于浏览和播放个人影音库的软件。开发者觉得 LG 电视上的 Plex 客户端太慢，便用 Ghidra + Claude Code 研究电视原生媒体栈，做出 Rust/OpenGL 客户端 PlxNative。作者报告，同一台电视的用户选择界面从约 30 秒降到约 3 秒，并支持 4K、Dolby Vision 和 Atmos。逆向用于弄清如何调用电视自身的播放能力，而非只重画 Plex 界面。性能为作者报告；X 热度对应传播帖。 10 月 12 日一条转述微信公众号的长帖新增开发细节：称 LG 修改版 SDL 的结构体尺寸导致重构后崩溃，随后改用 Rust 中间层；又称通过削减着色器动态分支、缩小阴影画布与脏矩形重绘恢复帧率。这些为二手开发过程转述，未从原作者代码或测试记录复核，不把文中性能计数及“无需 Root”扩大为所有电视的结论。",
     "sources": [
       {
         "label": "看 X 热门帖",
@@ -62,16 +62,21 @@
       {
         "label": "开发者原始介绍",
         "url": "https://www.reddit.com/r/ClaudeCode/comments/1x043yp/i_used_claude_code_to_reverseengineer_an_lg_tv/"
+      },
+      {
+        "label": "本周期开发细节二手转述",
+        "url": "https://x.com/i/status/2109658600394367126"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-13",
     "metadata": [
       "热度：7,268 赞｜26.4 万浏览｜483 转发",
-      "发帖：10 月 8 日｜非 REA"
+      "发帖：10 月 8 日｜非 REA",
+      "开发细节补充帖热度快照（2026-10-13）：1 赞｜345 浏览｜0 转发；原热门帖热度保留 2026-10-12 快照"
     ],
     "en": {
       "title": "LG PlxNative: a faster Plex client",
-      "summary": "Investigate the native media stack and build a Rust/OpenGL client."
+      "summary": "Investigate the media stack and build a Rust/OpenGL client; a later secondary report adds SDL-layout and shader-optimization details, not independently verified."
     },
     "status": "case"
   },
@@ -1573,5 +1578,225 @@
     "sources": [{"label": "本周期研究转述与边界", "url": "https://x.com/renmu2017/status/2109581250424123651"}],
     "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:45:38+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜150 浏览｜0 转发"],
     "en": {"title": "Street Fighter III: AI refactoring of decompiled C", "summary": "A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains."}
+  },
+  {
+    "id": "zee-rp-axure-format",
+    "title": "zee-rp：让 AI 直接读写 Axure 原型文件",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "逆向 .rp 格式，以 CLI/MCP 编辑原生交互原型。",
+    "description": "Axure RP 是交互原型工具。LilZee 的 computer use 临摹尝试失败后，研究 .rp 二进制格式，实现 LZ4 清单、.NET 类型化数据图与 GUID 引用处理，提供纯 JavaScript 引擎和 42 个 MCP 工具，让 Claude、Cursor、Codex 直接改文案、交互和中继器数据。作者在本周期回复中明确称使用 REA 辅助。公开 README 报告 225 个回归检查和原生应用保存重开样本，截图重建示例为 121 个可编辑元件；仅验证 macOS/Axure RP 11，Windows 未测试。结构、加载、预览行为与原生编辑验证分开声明，不能推成全格式支持；本合集未运行。与此前另一作者的 Axure 重建 idea 不是同一项目。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109660213850800621"
+      },
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109668579402829889"
+      },
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109668786668535874"
+      },
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109670067286007970"
+      },
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109671179015631307"
+      },
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109674402933821654"
+      },
+      {
+        "label": "公开引擎与验证边界",
+        "url": "https://github.com/LilZeeCN/zee-rp"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T22:59:25+08:00（北京时间）",
+      "热度快照（2026-10-13）：1 赞｜123 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "zee-rp: native Axure files for AI agents",
+      "summary": "A REA-assisted .rp format engine exposes CLI/MCP editing; macOS/Axure RP 11 samples are project-reported, not independently reproduced."
+    }
+  },
+  {
+    "id": "capcut-rea-editor",
+    "title": "CapCut：用 REA + Claude Code 做自己的视频编辑器",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "研究剪辑工具，重建字幕、转场、动画与文字功能。",
+    "description": "Mehal Kumar 报告让 REA 配合 Claude Code 研究 CapCut（视频剪辑软件）的功能，再生成自己的编辑器，列出自动字幕、转场、动画和文字，附视频演示。他称约 30 分钟搭建，仍有功能待添加；没有公开源码或系统性导出、行为对照测试。与此前另一作者的转场研究线索不视为同一实现，不称已完整替代 CapCut。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109665456735076494"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:20:15+08:00（北京时间）",
+      "热度快照（2026-10-13）：2 赞｜52 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "CapCut: a REA/Claude video-editor rebuild",
+      "summary": "An author demonstrates captions, transitions, animation and text, with more features planned; source and parity tests are not public."
+    }
+  },
+  {
+    "id": "clearspace-cleanmymac",
+    "title": "ClearSpace：研究 CleanMyMac，做原生 Mac 清理工具",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "Codex + REA 研究清理工具，报告缓存与文件管理功能。",
+    "description": "Iceman Shen 报告用 Codex + REA 研究 CleanMyMac，做出原生 macOS 清理应用 ClearSpace，列出缓存清理、应用管理、大文件与重复文件检测、存储可视化，并附两张界面图。没有公开源码、删除安全验证或功能等价测试，因此按待验证作者报告收录。既有 CleanMyMac 条目转述的是宝玉的雏形；作者与实现不同，不合并或将本帖作为其完成证明。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109665812017746132"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:21:39+08:00（北京时间）",
+      "热度快照（2026-10-13）：0 赞｜218 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "ClearSpace: a CleanMyMac-inspired native cleanup app",
+      "summary": "Codex and REA reportedly support cache cleanup, app management and file/storage inspection; deletion safety and parity are not verified."
+    }
+  },
+  {
+    "id": "rea-home-device-control-report",
+    "title": "全屋联网设备：用 Codex + REA 做电脑控制端",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称分析自家设备后做电脑控制软件，型号未公开。",
+    "description": "Jumpan1111 回复智能马桶案例时，报告让 Codex 安装 REA，研究家中联网设备并制作电脑控制软件。目标是统一控制自己已有的设备；未列设备型号、协议、源码或演示，不能扩展成兼容任意家电。作者不是智能马桶案例的 thinkszyg，故单独记录这条第一手实践报告。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109664718499762606"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:17:19+08:00（北京时间）",
+      "热度快照（2026-10-13）：0 赞｜21 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Home devices: a reported desktop controller",
+      "summary": "A different author reports Codex/REA-assisted control of their home devices; models, protocols and tests are not public."
+    }
+  },
+  {
+    "id": "discontinued-accounting-encryption",
+    "title": "停更记账软件：AI 分析卡在加密层",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "unknown",
+    "summary": "从旧程序研究记账需求，但未突破加密内容。",
+    "description": "liguozzz 在 REA 讨论中回顾上个月研究一款停更记账软件的尝试，称沿着二进制理解需求时，卡在 AI 无法读懂加密层。目标为研究旧记账工具；没有软件名、产物或替代版本，也没有确认实际使用 REA。保留这一失败边界，不把尝试写成已恢复数据或迁移成功。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109671680977367085"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:44:59+08:00（北京时间）",
+      "热度快照（2026-10-13）：0 赞｜5 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Discontinued accounting app: blocked by encryption",
+      "summary": "A retrospective AI-assisted inspection attempt stalls at encrypted content; software identity and exact REA use remain unknown."
+    }
+  },
+  {
+    "id": "cad-cli-open-rebuild-idea",
+    "title": "SolidWorks / Creo / Autodesk：重建带 CLI 的开源 CAD idea",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "提出 AI 辅助研究商业 CAD，制作可脚本控制的替代工具。",
+    "description": "hypersonicholas 提议用 AI 反编译 SolidWorks、Creo 与 Autodesk 系列 CAD 工具，目的为制作带 CLI（命令行接口）的开源计算机辅助设计软件。Autodesk 只指厂商系列，帖子没有指定产品。仍是请求他人尝试的具体 idea，没有原型、代码、格式互通或几何计算验证，REA 使用未知。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109674230392713569"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:55:07+08:00（北京时间）",
+      "热度快照（2026-10-13）：0 赞｜2 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Commercial CAD: an open-source CLI rebuild idea",
+      "summary": "A proposal naming SolidWorks, Creo and Autodesk tools, not a started decompilation or a verified CAD replacement."
+    }
+  },
+  {
+    "id": "rea-binary-injection-test-idea",
+    "title": "REA 分析链路：测试二进制内提示注入的 idea",
+    "category": "algorithms",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "计划测试目标文件中的文字能否污染 AI 逆向结论。",
+    "description": "riyoway 提出在分析目标的字符串、资源或死代码中放置面向 AI 的指令，观察 REA 一类 LLM 逆向工具是否会将其当指令而污染分析结果。目标是评估 AI 逆向链路的间接提示注入边界；作者只说考虑实验，没有样本、测试或成功证据。本合集未制作或执行注入目标，不将该构想写成已有效的防护方案。",
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/i/status/2109670989319868863"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T23:42:14+08:00（北京时间）",
+      "热度快照（2026-10-13）：1 赞｜14 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "REA analysis: a binary prompt-injection test idea",
+      "summary": "A proposed test of whether embedded text can contaminate agent analysis; no experiment or effectiveness is demonstrated."
+    }
+  },
+  {
+    "id": "classic-shooters-browser-report",
+    "title": "经典射击游戏：AI 辅助浏览器移植的传播报告",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "传播帖列出多款网页移植，但缺少项目对应与 AI 贡献证据。",
+    "description": "两条传播帖讨论 AI 辅助游戏逆向与浏览器移植，分别列出《光环：战斗进化》《半条命》《GTA V》，以及《使命召唤：黑色行动》《光环1》《GTA：罪恶都市》，后者称部分版本支持联机。具体用途是让旧游戏在网页运行，但未提供研究者、源码、可确认项目链接或模型实际贡献；也未确认使用 REA。按待验证合集报告收录，不把多个标题计成多个已完成逆向案例，不分发或访问游戏资产。",
+    "sources": [
+      {
+        "label": "本周期传播报告",
+        "url": "https://x.com/i/status/2109639780577190171"
+      },
+      {
+        "label": "本周期传播报告",
+        "url": "https://x.com/i/status/2109652812577517754"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-12T21:38:13+08:00（北京时间）",
+      "热度快照（2026-10-13）：1 赞｜224 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Classic shooters: reported AI-assisted browser ports",
+      "summary": "Secondary posts name Halo, Half-Life, GTA and Call of Duty browser ports; project identity, AI contribution and parity are unverified."
+    }
   }
 ]

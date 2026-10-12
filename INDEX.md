@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **81 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **89 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（16）
-- [硬件与设备互通](categories/hardware.md)（16）
-- [应用与客户端](categories/apps.md)（43）
-- [算法与功能重建](categories/algorithms.md)（6）
+- [游戏与游戏保存](categories/games.md)（17）
+- [硬件与设备互通](categories/hardware.md)（17）
+- [应用与客户端](categories/apps.md)（48）
+- [算法与功能重建](categories/algorithms.md)（7）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -42,6 +42,7 @@
 - [《红色警戒 2》：为强化学习重写游戏引擎](cases/red-alert-2-rl-engine.md) — 参考 Chrono Divide，用 Opus 与测试集重建单位行为。 **[其他 AI 逆向 · 待验证]**
 - [《不可思议的机器》：用 Claude 重建浏览器版](cases/incredible-machine-browser.md) — 作者报告 Opus 分析 Sierra 老游戏、重做素材并在浏览器运行。 **[其他 AI 逆向 · 待验证]**
 - [《街头霸王 III》：用 AI 重构反编译后的 C 代码](cases/sfiii-codescene-refactoring.md) — 在既有开源反编译代码上用 CodeHealth MCP 与轨迹回放约束重构。 **[其他 AI 逆向 · 相关项目]**
+- [经典射击游戏：AI 辅助浏览器移植的传播报告](cases/classic-shooters-browser-report.md) — 传播帖列出多款网页移植，但缺少项目对应与 AI 贡献证据。 **[未确认使用 REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -61,6 +62,7 @@
 - [红米电视：研究浏览器 APK，把闲置电视改成数据大屏](cases/redmi-tv-dashboard.md) — Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。 **[其他 AI 逆向 · 待验证]**
 - [CF632BLE 体脂秤：在浏览器里称重，不走厂商后台](cases/cf632ble-web-bluetooth.md) — Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。 **[其他 AI 逆向 · 待验证]**
 - [Kindle：为运行微信读书制作 Android 固件](cases/kindle-android-weread.md) — Codex 与 Claude 接力适配系统；作者报告设备已显示界面。 **[其他 AI 逆向 · 进行中]**
+- [全屋联网设备：用 Codex + REA 做电脑控制端](cases/rea-home-device-control-report.md) — 作者称分析自家设备后做电脑控制软件，型号未公开。 **[REA · 待验证]**
 
 ### 应用与客户端
 
@@ -107,6 +109,11 @@
 - [Slack 音乐 / Claude 会议：跨应用功能组合的 idea](cases/slack-music-claude-zoom-idea.md) — 提出把 YouTube Music 放进 Slack、把 Zoom 放进 Claude，而非只拼接游戏。 **[未确认使用 REA · 待验证]**
 - [fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态](cases/fowlbrowser-agent-bridge.md) — 浏览器扩展为不同 Agent 提供前台与后台标签页操作。 **[未确认使用 REA · 待验证]**
 - [OpenSetter：重建评论转私信流程，并接入 AI 销售助手](cases/opensetter-manychat-rebuild.md) — 作者称研究 Manychat，公开 Instagram 私信自动化与 AI 回复项目。 **[未确认使用 REA · 相关项目]**
+- [zee-rp：让 AI 直接读写 Axure 原型文件](cases/zee-rp-axure-format.md) — 逆向 .rp 格式，以 CLI/MCP 编辑原生交互原型。 **[REA · 待验证]**
+- [CapCut：用 REA + Claude Code 做自己的视频编辑器](cases/capcut-rea-editor.md) — 研究剪辑工具，重建字幕、转场、动画与文字功能。 **[REA · 进行中]**
+- [ClearSpace：研究 CleanMyMac，做原生 Mac 清理工具](cases/clearspace-cleanmymac.md) — Codex + REA 研究清理工具，报告缓存与文件管理功能。 **[REA · 待验证]**
+- [停更记账软件：AI 分析卡在加密层](cases/discontinued-accounting-encryption.md) — 从旧程序研究记账需求，但未突破加密内容。 **[未确认使用 REA · 进行中]**
+- [SolidWorks / Creo / Autodesk：重建带 CLI 的开源 CAD idea](cases/cad-cli-open-rebuild-idea.md) — 提出 AI 辅助研究商业 CAD，制作可脚本控制的替代工具。 **[未确认使用 REA · 待验证]**
 
 ### 算法与功能重建
 
@@ -116,6 +123,7 @@
 - [Windows 计算器：还原百分号在不同运算中的规则](cases/windows-calculator-percent.md) — 分析已安装计算器 DLL，解释并重建加法与乘法的百分号行为。 **[REA]**
 - [自制 JS / .NET 样本：对照有无 REA 的函数重建](cases/codex-rea-controlled-samples.md) — 同模型六次运行、360 用例验收，研究 REA 的线索价值而非宣称提速。 **[REA · 分析测试]**
 - [DLSS：重实现计算着色器以在 AMD 显卡运行的报告](cases/dlss-amd-compute-report.md) — 讨论明确提出 AI 辅助重实现 DLSS，具体开发归属仍待核验。 **[未确认使用 REA · 待验证]**
+- [REA 分析链路：测试二进制内提示注入的 idea](cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
 
 ## 贡献与收录
 

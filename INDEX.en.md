@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**81 entries**, organized by use case, without a Top-N or popularity threshold.
+**89 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (16)
-- [Hardware and interoperability](categories/hardware.md) (16)
-- [Applications and clients](categories/apps.md) (43)
-- [Algorithms and feature recovery](categories/algorithms.md) (6)
+- [Games and preservation](categories/games.md) (17)
+- [Hardware and interoperability](categories/hardware.md) (17)
+- [Applications and clients](categories/apps.md) (48)
+- [Algorithms and feature recovery](categories/algorithms.md) (7)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -44,6 +44,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Red Alert 2: an engine rewrite for reinforcement learning](cases/red-alert-2-rl-engine.md) — The author reports using Chrono Divide, Opus and over 6,000 tests to rebuild unit behavior; their implementation and test results are not public. **[Other AI-assisted work · Needs verification]**
 - [The Incredible Machine: a Claude-assisted browser rebuild](cases/incredible-machine-browser.md) — The author reports reimplementing a Sierra puzzle game and regenerating assets, with a video but no public source or parity tests. **[Other AI-assisted work · Needs verification]**
 - [Street Fighter III: AI refactoring of decompiled C](cases/sfiii-codescene-refactoring.md) — A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains. **[Other AI-assisted work · Related project]**
+- [Classic shooters: reported AI-assisted browser ports](cases/classic-shooters-browser-report.md) — Secondary posts name Halo, Half-Life, GTA and Call of Duty browser ports; project identity, AI contribution and parity are unverified. **[REA use unconfirmed · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -63,10 +64,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Redmi TV: browser inspection for a dashboard](cases/redmi-tv-dashboard.md) — A Muse/Codex report combines APK inspection, browser selection and full-screen interaction to repurpose an idle TV as a dashboard. **[Other AI-assisted work · Needs verification]**
 - [CF632BLE: a local Web Bluetooth scale client](cases/cf632ble-web-bluetooth.md) — Claude Code and ghidra-rpc investigate BLE; public Python/web reimplementation keeps measurements local, with device and browser limits. **[Other AI-assisted work · Needs verification]**
 - [Kindle: Android firmware for WeRead](cases/kindle-android-weread.md) — Codex/Claude-assisted system adaptation reportedly reaches an on-device interface; WeRead, drivers and overall usability remain unverified. **[Other AI-assisted work · In progress]**
+- [Home devices: a reported desktop controller](cases/rea-home-device-control-report.md) — A different author reports Codex/REA-assisted control of their home devices; models, protocols and tests are not public. **[REA · Needs verification]**
 
 ### Applications and clients
 
-- [LG PlxNative: a faster Plex client](cases/lg-plxnative.md) — Investigate the native media stack and build a Rust/OpenGL client. **[Other AI-assisted work]**
+- [LG PlxNative: a faster Plex client](cases/lg-plxnative.md) — Investigate the media stack and build a Rust/OpenGL client; a later secondary report adds SDL-layout and shader-optimization details, not independently verified. **[Other AI-assisted work]**
 - [Claude Slides: rebuilding the editor](cases/claude-slides.md) — Analyze bundled front-end code and rebuild slide-editing functionality. **[REA]**
 - [Claude Code: inspecting a compressed codebase](cases/claude-code-analysis.md) — Use Muse and REA to investigate a large compressed JavaScript package. **[REA]**
 - [Notion: clipboard paths](cases/notion-clipboard.md) — Trace static copy-text and copy-image paths across Electron processes. **[REA]**
@@ -109,6 +111,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Music in Slack and Zoom in Claude: interoperability ideas](cases/slack-music-claude-zoom-idea.md) — A concrete cross-app proposal, not a demonstrated integration, protocol investigation or REA implementation. **[REA use unconfirmed · Needs verification]**
 - [fowlbrowser: an existing-session browser bridge for agents](cases/fowlbrowser-agent-bridge.md) — A public extension supports Claude and other agents; its proposed link to Codex-extension reverse engineering remains an unanswered question. **[REA use unconfirmed · Needs verification]**
 - [OpenSetter: rebuilding comment-to-DM flows with an AI setter](cases/opensetter-manychat-rebuild.md) — A public Instagram automation project inspired by Manychat; AI-assisted replies are documented, but reverse-engineering methods are not. **[REA use unconfirmed · Related project]**
+- [zee-rp: native Axure files for AI agents](cases/zee-rp-axure-format.md) — A REA-assisted .rp format engine exposes CLI/MCP editing; macOS/Axure RP 11 samples are project-reported, not independently reproduced. **[REA · Needs verification]**
+- [CapCut: a REA/Claude video-editor rebuild](cases/capcut-rea-editor.md) — An author demonstrates captions, transitions, animation and text, with more features planned; source and parity tests are not public. **[REA · In progress]**
+- [ClearSpace: a CleanMyMac-inspired native cleanup app](cases/clearspace-cleanmymac.md) — Codex and REA reportedly support cache cleanup, app management and file/storage inspection; deletion safety and parity are not verified. **[REA · Needs verification]**
+- [Discontinued accounting app: blocked by encryption](cases/discontinued-accounting-encryption.md) — A retrospective AI-assisted inspection attempt stalls at encrypted content; software identity and exact REA use remain unknown. **[REA use unconfirmed · In progress]**
+- [Commercial CAD: an open-source CLI rebuild idea](cases/cad-cli-open-rebuild-idea.md) — A proposal naming SolidWorks, Creo and Autodesk tools, not a started decompilation or a verified CAD replacement. **[REA use unconfirmed · Needs verification]**
 
 ### Algorithms and feature recovery
 
@@ -118,6 +125,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Windows Calculator: recovering percentage rules](cases/windows-calculator-percent.md) — Inspect the installed model DLL and reconstruct different percentage rules for addition and multiplication. **[REA]**
 - [Controlled JS/.NET samples: Codex with and without REA](cases/codex-rea-controlled-samples.md) — Six runs reportedly pass 360 behavioral checks; small samples and unequal extra verification do not establish a general speed advantage. **[REA · Analysis test]**
 - [DLSS on AMD: reported AI-assisted compute-shader reconstruction](cases/dlss-amd-compute-report.md) — A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established. **[REA use unconfirmed · Needs verification]**
+- [REA analysis: a binary prompt-injection test idea](cases/rea-binary-injection-test-idea.md) — A proposed test of whether embedded text can contaminate agent analysis; no experiment or effectiveness is demonstrated. **[REA use unconfirmed · Needs verification]**
 
 ## Contributing and selection
 

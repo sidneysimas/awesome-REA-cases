@@ -45,3 +45,8 @@
 - [Slack 音乐 / Claude 会议：跨应用功能组合的 idea](../cases/slack-music-claude-zoom-idea.md) — 提出把 YouTube Music 放进 Slack、把 Zoom 放进 Claude，而非只拼接游戏。 **[未确认使用 REA · 待验证]**
 - [fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态](../cases/fowlbrowser-agent-bridge.md) — 浏览器扩展为不同 Agent 提供前台与后台标签页操作。 **[未确认使用 REA · 待验证]**
 - [OpenSetter：重建评论转私信流程，并接入 AI 销售助手](../cases/opensetter-manychat-rebuild.md) — 作者称研究 Manychat，公开 Instagram 私信自动化与 AI 回复项目。 **[未确认使用 REA · 相关项目]**
+- [zee-rp：让 AI 直接读写 Axure 原型文件](../cases/zee-rp-axure-format.md) — 逆向 .rp 格式，以 CLI/MCP 编辑原生交互原型。 **[REA · 待验证]**
+- [CapCut：用 REA + Claude Code 做自己的视频编辑器](../cases/capcut-rea-editor.md) — 研究剪辑工具，重建字幕、转场、动画与文字功能。 **[REA · 进行中]**
+- [ClearSpace：研究 CleanMyMac，做原生 Mac 清理工具](../cases/clearspace-cleanmymac.md) — Codex + REA 研究清理工具，报告缓存与文件管理功能。 **[REA · 待验证]**
+- [停更记账软件：AI 分析卡在加密层](../cases/discontinued-accounting-encryption.md) — 从旧程序研究记账需求，但未突破加密内容。 **[未确认使用 REA · 进行中]**
+- [SolidWorks / Creo / Autodesk：重建带 CLI 的开源 CAD idea](../cases/cad-cli-open-rebuild-idea.md) — 提出 AI 辅助研究商业 CAD，制作可脚本控制的替代工具。 **[未确认使用 REA · 待验证]**
