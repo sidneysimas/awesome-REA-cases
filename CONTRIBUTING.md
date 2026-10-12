@@ -15,7 +15,7 @@
 
 ## 数据格式
 
-所有必需字段及示例见 `data/cases.json`。分类使用 `games` / `hardware` / `apps` / `algorithms`。
+所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文 README；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。
 
 1. 新增或更新记录，保留已有 ID。
 2. `python3 scripts/build.py`

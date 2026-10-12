@@ -12,3 +12,6 @@
 - [Unity / Valheim：游戏程序集分析需求](cases/unity-valheim.md) — 真实游戏分析需求，原游戏目标复测仍缺少证据。 **[REA]**
 - [大型 Android APK：真实生产包的分析需求](cases/large-android-apk.md) — 133MB、11 DEX 的安装包；原目标未见修复后复测。 **[REA]**
 - [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA]**
+- [GameCube / Wii：从实际 Wii 分析提出 PowerPC 支持](cases/wii-powerpc-request.md) — 已有 Ghidra 研究经验，REA 内部支持仍是需求。 **[未确认使用 REA]**
+- [蓝牙小手柄：协议研究后计划做跨平台设置程序](cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA]**
+- [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向]**

@@ -8,3 +8,5 @@
 - [PSP：让 REA 支持掌机程序的静态分析](../cases/psp-allegrex.md) — 接入 Allegrex 扩展，使 REA 能分析 PSP 程序。 **[REA]**
 - [智能马桶：从微信小程序协议做到电脑状态栏控制](../cases/smart-toilet.md) — 分析微信小程序的蓝牙通信，控制智能马桶翻盖。 **[REA]**
 - [涂鸦 Zigbee 按钮：用 AI 辅助改造固件](../cases/tuya-zigbee-button.md) — 借助 pi + GLM 研究按钮固件并进行改造。 **[其他 AI 逆向]**
+- [分层固件：解包后把原生程序交给 Ghidra](../cases/firmware-extract-handoff.md) — 串起 Binwalk 区域识别、Unblob 解包和 Ghidra 函数分析。 **[REA]**
+- [蓝牙手柄：写兼容层让不支持 Windows 的设备可用](../cases/bluetooth-gamepad-windows.md) — 逆向控制协议，以 ViGEm 虚拟手柄适配 Windows。 **[其他 AI 逆向]**

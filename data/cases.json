@@ -17,7 +17,11 @@
     "metadata": [
       "热度：14,340 赞｜382.2 万浏览｜896 转发",
       "发帖：9 月 30 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "Universal Modder: AI-assisted game mods",
+      "summary": "Analyze engines and asset formats, then create and test cross-game mods."
+    }
   },
   {
     "id": "firefighter-rust",
@@ -37,7 +41,11 @@
     "metadata": [
       "热度：7,833 赞｜35.4 万浏览｜899 转发",
       "发帖：10 月 5 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "Firefighter: from DOS binary to Rust",
+      "summary": "Recover Pascal logic from an old binary and rewrite it in Rust."
+    }
   },
   {
     "id": "lg-plxnative",
@@ -61,7 +69,11 @@
     "metadata": [
       "热度：7,268 赞｜26.4 万浏览｜483 转发",
       "发帖：10 月 8 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "LG PlxNative: a faster Plex client",
+      "summary": "Investigate the native media stack and build a Rust/OpenGL client."
+    }
   },
   {
     "id": "mw2-decompilation",
@@ -85,7 +97,11 @@
     "metadata": [
       "热度：6,385 赞｜70.3 万浏览｜204 转发",
       "发帖：10 月 1 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "Modern Warfare 2: multi-agent decompilation",
+      "summary": "Reconstruct game functions and compare compiled bytes to the original binary."
+    }
   },
   {
     "id": "siri-remote-linux",
@@ -109,7 +125,11 @@
     "metadata": [
       "热度：5,419 赞｜52.8 万浏览｜300 转发",
       "发帖：10 月 9 日｜未确认使用 REA"
-    ]
+    ],
+    "en": {
+      "title": "Siri Remote on Linux",
+      "summary": "Decode the Bluetooth protocol to use an Apple TV remote on Linux."
+    }
   },
   {
     "id": "tuya-rgb-mac",
@@ -129,7 +149,11 @@
     "metadata": [
       "热度：2,285 赞｜15.9 万浏览｜132 转发",
       "发帖：10 月 8 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "Tuya RGB lights from a Mac",
+      "summary": "Analyze phone Bluetooth traffic and directly control lights with a script."
+    }
   },
   {
     "id": "claude-slides",
@@ -153,7 +177,11 @@
     "metadata": [
       "热度：686 赞｜8.1 万浏览｜105 转发",
       "发帖：10 月 11 日｜REA"
-    ]
+    ],
+    "en": {
+      "title": "Claude Slides: rebuilding the editor",
+      "summary": "Analyze bundled front-end code and rebuild slide-editing functionality."
+    }
   },
   {
     "id": "claude-code-analysis",
@@ -173,7 +201,11 @@
     "metadata": [
       "热度：576 赞｜11.4 万浏览｜56 转发",
       "发帖：10 月 10 日｜REA"
-    ]
+    ],
+    "en": {
+      "title": "Claude Code: inspecting a compressed codebase",
+      "summary": "Use Muse and REA to investigate a large compressed JavaScript package."
+    }
   },
   {
     "id": "urban-terror-web",
@@ -193,7 +225,11 @@
     "metadata": [
       "热度：479 赞｜11.1 万浏览｜11 转发",
       "发帖：10 月 3 日｜非 REA"
-    ]
+    ],
+    "en": {
+      "title": "Urban Terror in the browser",
+      "summary": "Resolve engine/bytecode layout differences blocking a WebAssembly port."
+    }
   },
   {
     "id": "binary-library-rewrite",
@@ -213,7 +249,11 @@
     "metadata": [
       "热度：355 赞｜11.0 万浏览｜10 转发",
       "发帖：10 月 11 日｜REA"
-    ]
+    ],
+    "en": {
+      "title": "Binary-library rewrite",
+      "summary": "Analyze and reimplement an unnamed library; evaluation details remain private."
+    }
   },
   {
     "id": "masked-squares-ctf",
@@ -234,7 +274,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "DownUnderCTF: masked squares checker",
+      "summary": "Recover input constraints and solve them with Z3; test against the original."
+    }
   },
   {
     "id": "dx-ball-sound-pan",
@@ -255,7 +299,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "DX-Ball: positional audio function",
+      "summary": "Recover and verify a single sound-panning function from a classic game."
+    }
   },
   {
     "id": "th04-bullet-ring",
@@ -276,7 +324,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Touhou TH04: ring-bullet angles",
+      "summary": "Explain how Lotus Land Story calculates a ring of bullets."
+    }
   },
   {
     "id": "aegis-totp",
@@ -297,7 +349,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Aegis: one-time code calculation",
+      "summary": "Extract a TOTP routine and compare reconstructed implementations."
+    }
   },
   {
     "id": "notion-clipboard",
@@ -318,7 +374,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Notion: clipboard paths",
+      "summary": "Trace static copy-text and copy-image paths across Electron processes."
+    }
   },
   {
     "id": "flutter-aot",
@@ -335,7 +395,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Flutter: build identity and AOT structure",
+      "summary": "Identify runtime/build clues in real APKs, not complete Dart source."
+    }
   },
   {
     "id": "mips-firmware",
@@ -356,7 +420,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "MIPS32 firmware analysis",
+      "summary": "Select the correct architecture and cross-check analysis on real firmware."
+    }
   },
   {
     "id": "psp-allegrex",
@@ -377,7 +445,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "PSP/Allegrex analysis",
+      "summary": "Connect Ghidra platform support and validate on a source-built PSP program."
+    }
   },
   {
     "id": "touhou-reconstruction",
@@ -410,7 +482,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Touhou reconstruction projects",
+      "summary": "Recover old game code, validate it and produce playable platform builds."
+    }
   },
   {
     "id": "dinosaur-speed",
@@ -431,7 +507,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Dinosaur: the acceleration rule",
+      "summary": "Inspect a web game and experimentally check its speed-update logic."
+    }
   },
   {
     "id": "smart-toilet",
@@ -448,7 +528,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Smart toilet from the desktop",
+      "summary": "Analyze a mini-program Bluetooth protocol and demonstrate lid control."
+    }
   },
   {
     "id": "tuya-zigbee-button",
@@ -465,7 +549,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Tuya Zigbee button firmware",
+      "summary": "Use pi and GLM to investigate and modify button firmware; latency gains unquantified."
+    }
   },
   {
     "id": "website-rebuild-report",
@@ -482,7 +570,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Website rebuild: delivery report",
+      "summary": "A reported REA-assisted job without detailed target or acceptance evidence."
+    }
   },
   {
     "id": "tradingview-workflow",
@@ -499,7 +591,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "TradingView: reconstruction workflow claim",
+      "summary": "A popular workflow post does not establish recovery of paid indicators."
+    }
   },
   {
     "id": "whoop-apk",
@@ -516,7 +612,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "WHOOP Android app investigation",
+      "summary": "An APK discussion without a confirmed public replacement client."
+    }
   },
   {
     "id": "artcraft-boundary",
@@ -537,7 +637,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "ArtCraft: not proven Adobe reverse engineering",
+      "summary": "From-scratch creative software should not be labeled a complete Adobe decompilation."
+    }
   },
   {
     "id": "obsidian-asar",
@@ -554,7 +658,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Obsidian ASAR: large-package analysis",
+      "summary": "The user confirms analysis completed, without a demonstrated feature rebuild."
+    }
   },
   {
     "id": "unity-valheim",
@@ -575,7 +683,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Unity/Valheim assemblies",
+      "summary": "Real game-analysis requests without a confirmed re-test of the original target."
+    }
   },
   {
     "id": "large-android-apk",
@@ -592,7 +704,11 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": "Large multidex Android APK",
+      "summary": "A production-scale request; the original 133MB APK lacks a post-fix re-test."
+    }
   },
   {
     "id": "nativeaot",
@@ -613,6 +729,423 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": []
+    "metadata": [],
+    "en": {
+      "title": ".NET NativeAOT recovery request",
+      "summary": "Partial metadata recovery does not establish restoration of the original C# project."
+    }
+  },
+  {
+    "id": "windows-calculator-percent",
+    "title": "Windows 计算器：还原百分号在不同运算中的规则",
+    "summary": "分析已安装计算器 DLL，解释并重建加法与乘法的百分号行为。",
+    "description": "Windows 计算器的百分号会随当前运算改变含义。贡献者想解释这一行为，先发现 calc.exe 只是启动器，再用 REA 检查 CalcViewModel.dll 中的运算分支，并对照微软公开源码，恢复加减与乘除使用不同规则的逻辑，做成小型交互演示。函数定位由分析者辅助完成；公开源码和网页演示有交叉检查，但没有完成原 Windows GUI 输入验证。",
+    "category": "algorithms",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "案例 PR",
+        "url": "https://github.com/morluto/rea/pull/1272"
+      },
+      {
+        "label": "分析证据",
+        "url": "https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [],
+    "en": {
+      "title": "Windows Calculator: recovering percentage rules",
+      "summary": "Inspect the installed model DLL and reconstruct different percentage rules for addition and multiplication."
+    }
+  },
+  {
+    "id": "android-apidemos",
+    "title": "Android ApiDemos：从 APK 追到具体 Java 方法",
+    "summary": "用真实演示 APK 查类、读方法、追踪静态引用。",
+    "description": "ApiDemos 是 Appium 用来展示和测试 Android 功能的示例 App。贡献者用其真实发布 APK 验证 REA + headless JADX：读取安装包和清单、查找类、查看成员、提取选中方法的 Java/smali，以及追踪谁调用它。还单独核查了 ContextCompat.startActivities 的重载选择。目的是让 Agent 能从安装包准确定位到特定实现；原 APK 未执行，这是静态分析实例，不是复刻整款 App。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "原始 PR 与验证",
+        "url": "https://github.com/morluto/rea/pull/738"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [],
+    "en": {
+      "title": "Android ApiDemos: tracing Java methods from an APK",
+      "summary": "Inspect a real demo APK, select method overloads and trace static references through JADX."
+    }
+  },
+  {
+    "id": "harmony-package-inventory",
+    "title": "鸿蒙 App：识别安装包结构与组件",
+    "summary": "用真实 HAP 发布包核查组件路径、哈希和打包线索。",
+    "description": "HAP 是鸿蒙应用的安装包格式。贡献者使用开源 harmony-next-pipeline 1.0.1 的真实发布包，验证 REA 如何识别 HAP、HSP 与 App Pack，列出组件路径、内容哈希和运行时线索，并对照 CLI 与 MCP 的结果。目的是先回答安装包里有什么、后续可以分析哪里；没有解码 Ark 字节码、验证签名或证明应用运行行为。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "原始 PR 与真实 HAP 记录",
+        "url": "https://github.com/morluto/rea/pull/1447"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [],
+    "en": {
+      "title": "HarmonyOS packages: mapping components",
+      "summary": "Inspect a published HAP package to identify components and packaging hints, without claiming Ark-code recovery."
+    }
+  },
+  {
+    "id": "firmware-extract-handoff",
+    "title": "分层固件：解包后把原生程序交给 Ghidra",
+    "summary": "串起 Binwalk 区域识别、Unblob 解包和 Ghidra 函数分析。",
+    "description": "设备固件常把压缩数据、文件系统和可执行程序放在同一镜像里。贡献者用自己生成的 gzip、USTAR、ext4 镜像及主机 ELF，验证 REA 调用 Binwalk 识别区域、用 Unblob 解包、核对导出文件哈希，再把提取出的 ELF 交给 Ghidra 读取函数和伪代码。解决的是从一整块镜像走到可分析文件的问题。这是来源可控的工具链实例，不是某款路由器或未知设备已被破解。",
+    "category": "hardware",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "原始 PR 与工具链验证",
+        "url": "https://github.com/morluto/rea/pull/741"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [],
+    "en": {
+      "title": "Layered firmware: extraction to Ghidra",
+      "summary": "Identify regions, extract files and inspect an ELF using source-controlled fixtures rather than a claimed device hack."
+    }
+  },
+  {
+    "id": "preview-rebuild",
+    "title": "macOS 预览：对比有无 REA 的功能重建",
+    "summary": "同一作者用两条路线重建缩放、旋转、标注与保存。",
+    "description": "Preview（预览）是 macOS 自带的图片和 PDF 查看工具。Mahesh 把重建它作为对照实验：一轮用 Claude + REA，一轮只用 Claude。作者称纯 Claude 更快完成，而 REA 版本在缩放、分享、旋转、标注和保存等功能上更接近原应用，绘图也更快。没有公开完整代码和系统测试；这是作者的一次对照报告，不是工具速度的普遍结论。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/maheshboda006/status/2109154423712977359"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-11（UTC）｜@maheshboda006",
+      "热度快照（2026-10-12）：5 赞｜494 浏览｜1 转发"
+    ],
+    "en": {
+      "title": "macOS Preview: rebuilding with and without REA",
+      "summary": "A first-hand comparison of two rebuilds covering zoom, rotation, annotation and saving."
+    }
+  },
+  {
+    "id": "codex-browser-annotations",
+    "title": "Codex 浏览器：找出网页唤起评论框的链路",
+    "summary": "分析 Electron 代码并用测试页验证评论接口的部分能力。",
+    "description": "宝玉想弄清 Codex / ChatGPT App 内置浏览器的网页标记如何进入对话输入框，以便自己的网页接入这一交互。他让 Codex + REA 查 Electron 代码，自己配合发送消息，再做测试网页。作者报告可通过 document.oai.annotation.request() 弹出评论框并填充内容，但不能直接把评论附加进输入框。案例结果是找到并部分验证一条交互接口，不是完整实现自动发消息。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/dotey/status/2109417222724600172"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-11（UTC）｜@dotey",
+      "热度快照（2026-10-12）：252 赞｜29,085 浏览｜32 转发"
+    ],
+    "en": {
+      "title": "Codex browser annotations: finding the interaction bridge",
+      "summary": "Inspect Electron code and test a page that opens and pre-fills an annotation dialog; direct composer insertion was not achieved."
+    }
+  },
+  {
+    "id": "claude-design-baocut",
+    "title": "Claude Design：把设计功能接进 BaoCut",
+    "summary": "研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。",
+    "description": "BaoCut 原本是宝玉开发的视频剪辑 Agent。作者在研究 Claude Design 后，将设计 Skill 与前端功能接入 BaoCut，使本机的 Agent CLI 能选择 design skill，提供公开代码提交。作者指出，仅作为独立 Skill 不能支持编辑、修改和标记，因而先做产品内集成。帖子没有明确说明这次是否使用 REA，也没有证明完整恢复原产品能力。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "unknown",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/dotey/status/2109482425722057154"
+      },
+      {
+        "label": "公开实现",
+        "url": "https://github.com/JimLiu/baocut/commit/7aa049e8"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12（UTC）｜@dotey",
+      "热度快照（2026-10-12）：254 赞｜23,291 浏览｜29 转发"
+    ],
+    "en": {
+      "title": "Claude Design in BaoCut",
+      "summary": "A public skill/front-end integration into a video agent; REA use is not explicitly confirmed."
+    }
+  },
+  {
+    "id": "bluetooth-gamepad-windows",
+    "title": "蓝牙手柄：写兼容层让不支持 Windows 的设备可用",
+    "summary": "逆向控制协议，以 ViGEm 虚拟手柄适配 Windows。",
+    "description": "MonoFevc 买了一只标称不支持 Windows 的蓝牙手柄，希望在 PC 上玩手游。作者自述，逆向控制协议后通过 AI 辅助开发写出 ViGEm 驱动，使手柄相关功能可用。ViGEm 用于在 Windows 上模拟受游戏识别的手柄输入。帖子没有给出型号、驱动源码或测试细节，结果按第一手自述理解。",
+    "category": "hardware",
+    "section": "cases",
+    "rea": "other-ai",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/fexisnpc/status/2103865671608307838"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-09-26（UTC）｜@fexisnpc",
+      "热度快照（2026-10-12）：12 赞｜1,018 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Bluetooth gamepad on Windows",
+      "summary": "Reverse the control protocol and write a ViGEm compatibility layer for an unsupported controller."
+    }
+  },
+  {
+    "id": "claude-chrome-remote",
+    "title": "Claude Chrome：把本地浏览器协议桥接到云浏览器",
+    "summary": "还原原生消息协议，转成 CDP 在远端执行。",
+    "description": "Paul Klein IV 希望 Claude Code 不只操控同机 Chrome，也能使用远端浏览器。他研究 Claude Chrome 的 native messaging：消息使用四字节长度前缀和 JSON，承载导航、截图和点击等工具调用。随后做服务拦截浏览器连接，把命令转成 CDP，送往 Browserbase 云浏览器。线程提供演示与插件入口；它展示的是为 AI 工具做浏览器互通，不证明 AI 本身完成了全部逆向。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "unknown",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/pk_iv/status/2005694082627297735"
+      },
+      {
+        "label": "公开实现",
+        "url": "https://github.com/browserbase/claude-code-plugin"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2025-12-29（UTC）｜@pk_iv",
+      "热度快照（2026-10-12）：2,263 赞｜395,773 浏览｜181 转发"
+    ],
+    "en": {
+      "title": "Claude Chrome on remote browsers",
+      "summary": "Reverse the native-messaging bridge and translate browser commands to CDP for cloud execution."
+    }
+  },
+  {
+    "id": "pi-computer-use",
+    "title": "pi-computer-use：把 Codex 桌面操作接给其他模型",
+    "summary": "研究 Computer Use，提供优先无障碍树、辅以视觉的 macOS 工具。",
+    "description": "Zane Chee 希望 pi Agent 也能使用 Codex 风格的电脑操作，于是研究 Codex Computer Use 并开源 pi-computer-use。作者展示优先读取 macOS 无障碍树、在支持的模型上回退到视觉的路线，并在后续帖子补充后台模式。它是模型无关的电脑操作工具，未确认使用 REA；演示不意味着所有 App 都能后台控制。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "unknown",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/injaneity/status/2046302876453232667"
+      },
+      {
+        "label": "公开实现",
+        "url": "https://github.com/injaneity/pi-computer-use"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-04-20（UTC）｜@injaneity",
+      "热度快照（2026-10-12）：926 赞｜169,438 浏览｜56 转发"
+    ],
+    "en": {
+      "title": "pi-computer-use: desktop interaction for other models",
+      "summary": "A macOS tool inspired by Codex Computer Use, using accessibility-first navigation and a vision fallback."
+    }
+  },
+  {
+    "id": "background-computer-use",
+    "title": "后台 Computer Use：用 Swift 暴露电脑操作 API",
+    "summary": "研究 Codex 后台操作，提供本机可脚本调用的接口。",
+    "description": "anupam batra 研究 Codex 的后台 Computer Use，希望 Agent 操作另一窗口时不打断人使用电脑。作者用 Swift 提供 localhost API，演示点击、滚动、输入、拖拽、缩放和按键；线程还展示按窗口区分的 Chrome 后台操作，并给出开源仓库。这里成果是独立实现可脚本控制的后台桌面工具，不是恢复原 Codex 源码；REA 使用未确认。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "unknown",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/anupambatra_/status/2047767285969145883"
+      },
+      {
+        "label": "公开实现",
+        "url": "https://github.com/actuallyepic/background-computer-use"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-04-24（UTC）｜@anupambatra_",
+      "热度快照（2026-10-12）：382 赞｜31,010 浏览｜17 转发"
+    ],
+    "en": {
+      "title": "Background Computer Use in Swift",
+      "summary": "Expose local APIs for background window interaction, with a real-time demo and public source."
+    }
+  },
+  {
+    "id": "garageband-file-format",
+    "title": "GarageBand：研究文件格式，用现有乐器自动作曲",
+    "summary": "Claude 分析音乐工程格式，作为本地音乐视频流程的一环。",
+    "description": "GarageBand 是 Apple 的音乐制作软件。Anshu 为制作 The Context Windows 的音乐视频，让 Claude 利用 Mac 上的 GarageBand 乐器作曲；作者称 Claude 为此逆向了文件格式。最终帖子展示音乐视频，整条流程还包括 Blender、图像生成和本地人声模型。文件格式分析是其中一个具体环节；没有公开详细格式规格，24 小时是完整视频流程的作者工时报告。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "other-ai",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/anshuc/status/2106131543752122774"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-02（UTC）｜@anshuc",
+      "热度快照（2026-10-12）：272 赞｜48,646 浏览｜30 转发"
+    ],
+    "en": {
+      "title": "GarageBand format for automated composition",
+      "summary": "Reverse the music-project format to compose with local instruments as part of a larger music-video workflow."
+    }
+  },
+  {
+    "id": "boba-fett-rdr2",
+    "title": "《荒野大镖客 2》：写导出器移入波巴·费特",
+    "summary": "Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。",
+    "description": "Chris 与 Angaisb_ 希望把《星球大战：前线 II》中的波巴·费特放进《荒野大镖客 2》（RDR2）。因既有导出工具不满足“不注册、不付费”的要求，作者称 Claude 分析文件格式并自行写导出器，将模型适配到亚瑟的骨骼，加入喷气背包、武器和语音。帖子展示飞行与攻击画面；这是素材格式转换和 Mod，不是完整反编译两款游戏。",
+    "category": "games",
+    "section": "cases",
+    "rea": "other-ai",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/ChrisGPT/status/2106925689190354989"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-05（UTC）｜@ChrisGPT",
+      "热度快照（2026-10-12）：678 赞｜35,172 浏览｜39 转发"
+    ],
+    "en": {
+      "title": "Boba Fett in Red Dead Redemption 2",
+      "summary": "Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod."
+    }
+  },
+  {
+    "id": "apple-notes-migration",
+    "title": "Apple Notes：迁移笔记、文件夹和图片到 Grape",
+    "summary": "研究笔记数据以实现跨产品导入。",
+    "description": "Ozgur Ozer 想让用户从 Apple Notes（苹果备忘录）迁移到自己的笔记产品 Grape。他称使用 Claude Code 研究 Apple Notes，并展示导入文件夹、笔记和图片的实时视频。这里逆向用于数据互通与迁移，而不是重新做一个 Notes 客户端；原帖没有说明是否使用 REA，也没有公开所有数据格式和完整迁移覆盖测试。",
+    "category": "apps",
+    "section": "cases",
+    "rea": "other-ai",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/ozgrozer/status/2035124755854979272"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-03-20（UTC）｜@ozgrozer",
+      "热度快照（2026-10-12）：978 赞｜173,343 浏览｜32 转发"
+    ],
+    "en": {
+      "title": "Apple Notes migration to Grape",
+      "summary": "Use Claude Code to investigate Notes data and demonstrate importing folders, notes and images."
+    }
+  },
+  {
+    "id": "wii-powerpc-request",
+    "title": "GameCube / Wii：从实际 Wii 分析提出 PowerPC 支持",
+    "summary": "已有 Ghidra 研究经验，REA 内部支持仍是需求。",
+    "description": "GameCube 和 Wii 是任天堂主机，游戏程序使用 PowerPC 处理器与 DOL 格式。Issue 作者称已在 REA 之外用 Ghidra headless 分析一款未具名 Wii 游戏，希望把函数、调用者和数据检查接入 REA。讨论提出先支持通用 PowerPC ELF，再处理 DOL。现有证据是实际外部研究与明确接入需求，不是 REA 已完成某款 Wii 游戏重建。",
+    "category": "games",
+    "section": "leads",
+    "rea": "unknown",
+    "sources": [
+      {
+        "label": "原始 Issue",
+        "url": "https://github.com/morluto/rea/issues/1741"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [],
+    "en": {
+      "title": "GameCube/Wii PowerPC support request",
+      "summary": "A Wii researcher describes an external Ghidra workflow and requests REA integration; no completed REA reconstruction is claimed."
+    }
+  },
+  {
+    "id": "gamepad-settings-request",
+    "title": "蓝牙小手柄：协议研究后计划做跨平台设置程序",
+    "summary": "作者报告协议已逆向，但设置程序仍计划中。",
+    "description": "goDavi 用 REA 研究常用小手柄的原厂蓝牙协议，称已成功，接下来想做比原厂更好用的 Mac / Windows 设置程序。帖子询问技术栈并附截图，但没有公开设备型号、协议规格或完成的设置程序。保留这个具体需求和阶段，不把计划写成已交付产品。",
+    "category": "hardware",
+    "section": "leads",
+    "rea": "REA",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/corndogjpn2/status/2109289076243525916"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-11（UTC）｜@corndogjpn2",
+      "热度快照（2026-10-12）：23 赞｜4,655 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Gamepad settings after Bluetooth analysis",
+      "summary": "The author reports protocol analysis with REA, but the Mac/Windows settings app is still planned."
+    }
+  },
+  {
+    "id": "asus-acpi-gpu",
+    "title": "华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持",
+    "summary": "作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。",
+    "description": "200Tabs1Brain 称 Codex 研究 ACPI 后，使华硕笔记本在 CachyOS Linux 中启用 NVIDIA 显卡，无需先启动 Windows。ACPI 是操作系统与固件沟通硬件状态和电源管理的接口。帖子没有型号、表格修改、日志或代码，因此暂留为硬件兼容性线索，不提供未经验证的操作建议。",
+    "category": "hardware",
+    "section": "leads",
+    "rea": "other-ai",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/200Tabs1Brain/status/2108983700776186112"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-10（UTC）｜@200Tabs1Brain",
+      "热度快照（2026-10-12）：1 赞｜28 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "ASUS ACPI and Linux GPU support",
+      "summary": "A brief Codex-assisted ACPI report without enough hardware details or logs to reproduce it."
+    }
   }
 ]

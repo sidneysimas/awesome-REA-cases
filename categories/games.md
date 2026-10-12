@@ -10,3 +10,4 @@
 - [《东方幻想乡》：恢复环形弹幕的角度计算](../cases/th04-bullet-ring.md) — 恢复《东方幻想乡》环形弹幕的角度计算。 **[REA]**
 - [东方系列：用 Agent 重建旧游戏，并迁移到新平台](../cases/touhou-reconstruction.md) — 重建东方系列代码，验证并迁移到可玩平台。 **[REA]**
 - [Dinosaur：解释网页跑酷游戏如何逐渐加速](../cases/dinosaur-speed.md) — 读网页脚本，实验验证跑酷游戏的加速规则。 **[REA]**
+- [《荒野大镖客 2》：写导出器移入波巴·费特](../cases/boba-fett-rdr2.md) — Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。 **[其他 AI 逆向]**

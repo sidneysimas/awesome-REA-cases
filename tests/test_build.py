@@ -38,18 +38,38 @@ class CollectionTests(unittest.TestCase):
 
     def test_render_counts_and_boundaries(self):
         outputs = build.render(self.records)
-        page = outputs['docs/index.html']
-        self.assertEqual(page.count('<article '), len(self.records))
         n = sum(r['section'] == 'cases' for r in self.records)
         self.assertIn(f'**{n} 个案例**', outputs['README.md'])
+        self.assertIn(f'**{n} cases**', outputs['README.en.md'])
         self.assertIn('TH095', outputs['cases/touhou-reconstruction.md'])
-        self.assertNotIn('可以延伸', page)
+        self.assertNotIn('HTML 阅读版', outputs['README.md'])
+        self.assertFalse(any(p.endswith('.html') for p in outputs))
+        self.assertFalse((ROOT / 'docs/index.html').exists())
 
-    def test_html_escapes_content(self):
-        self.records[0]['description'] = '<script>alert(1)</script>'
-        page = build.render(self.records)['docs/index.html']
-        self.assertIn('&lt;script&gt;', page)
-        self.assertNotIn('<script>alert(1)</script>', page)
+    def test_english_readme_complete(self):
+        outputs = build.render(self.records)
+        self.assertIn('[English](README.en.md)', outputs['README.md'])
+        self.assertIn('[中文（默认）](README.md)', outputs['README.en.md'])
+        for r in self.records:
+            self.assertIn(r['en']['title'], outputs['README.en.md'])
+            self.assertEqual(outputs['README.en.md'].count(f"](cases/{r['id']}.md)"), 1)
+
+    def test_missing_translation_rejected(self):
+        self.records[0]['en']['summary'] = ''
+        with self.assertRaises(ValueError):
+            build.validate(self.records)
+
+    def test_no_top_n_truncation(self):
+        extra = copy.deepcopy(self.records[0])
+        extra['id'] = 'additional-test-case'
+        extra['sources'] = [{'label': 'Test', 'url': 'https://example.com/additional'}]
+        extra['en']['title'] = 'Additional test case'
+        self.records.append(extra)
+        build.validate(self.records)
+        outputs = build.render(self.records)
+        self.assertIn('cases/additional-test-case.md', outputs)
+        self.assertIn('additional-test-case.md', outputs['README.md'])
+        self.assertIn('additional-test-case.md', outputs['README.en.md'])
 
 if __name__ == '__main__':
     unittest.main()

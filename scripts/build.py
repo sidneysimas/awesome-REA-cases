@@ -2,7 +2,6 @@
 """Validate canonical case data and generate the public collection (stdlib only)."""
 import argparse
 import datetime
-import html
 import json
 import re
 from pathlib import Path
@@ -24,7 +23,7 @@ def validate(records):
     ids = set()
     source_sets = set()
     required = {'id', 'title', 'category', 'section', 'rea', 'summary',
-                'description', 'sources', 'snapshot_date', 'metadata'}
+                'description', 'sources', 'snapshot_date', 'metadata', 'en'}
     for r in records:
         if set(r) != required:
             raise ValueError(f"Invalid fields: {r.get('id')}")
@@ -36,6 +35,8 @@ def validate(records):
         for key in ('title', 'summary', 'description'):
             if not isinstance(r[key], str) or not r[key].strip():
                 raise ValueError(f'Missing {key}')
+        if not isinstance(r['en'], dict) or set(r['en']) != {'title', 'summary'} or not all(isinstance(v, str) and v.strip() for v in r['en'].values()):
+            raise ValueError('Every record requires an English title and summary')
         datetime.date.fromisoformat(r['snapshot_date'])
         if not isinstance(r['metadata'], list) or not all(isinstance(m, str) for m in r['metadata']):
             raise ValueError('Invalid metadata')
@@ -75,7 +76,7 @@ def render(records):
     leads = [r for r in records if r['section'] == 'leads']
     outputs = {f"cases/{r['id']}.md": detail(r) for r in records}
     readme = ['# Awesome REA Cases', '',
-              'A curated collection of real-world REA and AI-assisted reverse-engineering cases.', '',
+              '**中文（默认）** | [English](README.en.md)', '',
               '收集 REA 与其他 AI 辅助逆向的实际案例。每条讲清楚对象是什么、作者为什么逆向、做了什么，以及报告了什么结果。', '',
               '> 非 REA 官方项目。收录不代表工具或作者背书；不收集软件安装包、密钥、私人记录或未授权资产。', '',
               f'当前收录 **{len(selected)} 个案例**；另保留 **{len(leads)} 条待补证据、工具测试或未入选线索**。所有结果均据作者或项目记录整理，未由本项目独立复现。', '',
@@ -84,7 +85,6 @@ def render(records):
         count = sum(r['category'] == slug for r in selected)
         readme.append(f'- [{title}](categories/{slug}.md)（{count}）')
     readme += ['- [待跟进与未入选线索](LEADS.md)',
-               '- [HTML 阅读版](docs/index.html)（下载后用浏览器打开）',
                '- [贡献指南](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)', '',
                '## 案例', '']
     for slug, title in CATEGORIES.items():
@@ -95,7 +95,8 @@ def render(records):
             [entry(r, '../') for r in group] + [''])
     readme += ['## 收录口径', '',
                '- REA、其他 AI 逆向与工具未确认分别标注，不把所有 AI 案例写成 REA 成果。',
-               '- 有具体对象、过程和结果的优先；自述结果注明边界，工具支持不等于完整产品重建。',
+               '- 不设 Top N、固定数量或时间窗口；有具体对象、过程和结果的优先，热度不作为门槛。',
+               '- 自述结果注明边界，工具支持不等于完整产品重建；为 AI 工具做互通不等于 AI 完成全部逆向。',
                '- X 热度只保留带日期的抓取快照，不代表实时排名；发布日期不等于项目完成日期。',
                '- 同一项目的多条帖子合并；不同作者或不同目标不人为归并。',
                '- 新案例请修改 `data/cases.json` 并提交 PR，生成文件由脚本统一更新。', '',
@@ -106,21 +107,36 @@ def render(records):
     outputs['LEADS.md'] = '\n'.join(['# 待跟进与未入选线索', '',
         '这里保存已发现但尚不能作为完成案例展示的材料：证据不足、工具排障测试，或并非逆向的项目。它们不计入主目录案例数。', '',
         '[返回主目录](README.md)', ''] + [entry(r, '') for r in leads] + [''])
-    esc = html.escape
-    sections = []
-    for section, title in [('cases', '案例'), ('leads', '待跟进与未入选线索')]:
-        cards = []
-        for r in records:
-            if r['section'] != section:
-                continue
-            links = ' '.join(f'<a href="{esc(s["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{esc(s["label"])} ↗</a>' for s in r['sources'])
-            metadata = ''.join(f'<div class="meta">{esc(m)}</div>' for m in r['metadata'])
-            cards.append(f'<article id="{r["id"]}" data-section="{section}" data-category="{r["category"]}"><h3>{esc(r["title"])}</h3><div class="meta">{esc(CATEGORIES[r["category"]])} · {esc(LABELS[r["rea"]])}</div>{metadata}<p>{esc(r["description"])}</p><div class="links">{links}</div></article>')
-        note = '<p class="meta">以下不计入主目录案例数，不作为已完成成果展示。</p>' if section == 'leads' else ''
-        sections.append(f'<section data-section="{section}"><h2>{title}</h2>{note}{"".join(cards)}</section>')
-    css = '''*{box-sizing:border-box}body{margin:0;background:#f7f7f2;color:#283128;font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.9}main{max-width:900px;margin:auto;padding:44px 30px}h1{font-size:34px;line-height:1.35}h2{font-size:23px;padding-bottom:12px;border-bottom:2px solid #586e4c}h3{font-size:21px;margin:0 0 8px}article{padding:26px 0;border-bottom:1px solid #d4dccb;scroll-margin-top:12px}article p{font-size:16px}.meta,footer{font-size:12px;color:#727e68}a{color:#385a37;text-underline-offset:4px}.links{display:flex;gap:8px 20px;flex-wrap:wrap}.links a{min-height:44px;display:inline-flex;align-items:center}nav{display:flex;gap:8px;flex-wrap:wrap}button{background:transparent;border:1px solid #b5c2ab;padding:9px 16px;font:inherit;color:#385a37;min-height:44px;cursor:pointer}button.active{background:#385a37;color:white}[hidden]{display:none!important}a:focus-visible,button:focus-visible{outline:3px solid #9ba980;outline-offset:3px}@media(max-width:500px){main{padding:25px 18px}h1{font-size:29px}h3{font-size:19px}}@media print{nav{display:none}body{background:white}main{padding:0}article{break-inside:avoid}article p,.meta,.links,footer{font-size:12pt}}'''
-    js = '''const buttons=[...document.querySelectorAll('[data-filter]')];buttons.forEach(b=>b.onclick=()=>{const v=b.dataset.filter;buttons.forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});document.querySelectorAll('section[data-section]').forEach(s=>s.hidden=v!=='all'&&s.dataset.section!==v)});document.getElementById('print').onclick=()=>window.print();'''
-    outputs['docs/index.html'] = f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Awesome REA Cases</title><style>{css}</style></head><body><main><header><h1>Awesome REA Cases</h1><p>REA 与 AI 辅助逆向的实际案例。背景、作者做法和报告结果。</p><p class="meta">{len(selected)} 个案例 · {len(leads)} 条补充线索 · 数据快照：{max(r['snapshot_date'] for r in records)}<br>据作者与项目记录整理，未独立复现；第三方内容保留原始来源。</p><nav><button class="active" data-filter="all" aria-pressed="true">全部</button><button data-filter="cases" aria-pressed="false">案例</button><button data-filter="leads" aria-pressed="false">补充线索</button><button id="print">打印 / 存为 PDF</button></nav></header>{''.join(sections)}<footer>本阅读版由 data/cases.json 自动生成。<a href="https://github.com/songshikang0111/awesome-REA-cases">GitHub 项目与贡献指南</a></footer></main><script>{js}</script></body></html>\n'''
+    categories_en = {'games': 'Games and preservation', 'hardware': 'Hardware and interoperability',
+                     'apps': 'Applications and clients', 'algorithms': 'Algorithms and feature recovery'}
+    labels_en = {'REA': 'REA', 'other-ai': 'Other AI-assisted work', 'unknown': 'REA use unconfirmed'}
+    def english_entry(r):
+        return f"- [{r['en']['title']}](cases/{r['id']}.md) — {r['en']['summary']} **[{labels_en[r['rea']]}]**"
+    english = ['# Awesome REA Cases', '', '[中文（默认）](README.md) | **English**', '',
+               'A curated collection of REA and AI-related reverse-engineering cases: the target, the author’s purpose, what they did, and the reported outcome.', '',
+               '> Unofficial collection. Inclusion is not an endorsement. No proprietary binaries, keys, private records or unauthorized assets are distributed.', '',
+               f'**{len(selected)} cases**, plus **{len(leads)} leads** with incomplete evidence, tool tests or exclusion notes. Results are attributed to authors and project records, not independently reproduced by this collection.', '',
+               'The index below is in English. Linked case details, category pages, contribution and maintenance guides are currently in Chinese.', '',
+               '## Contents', '']
+    for slug, title in categories_en.items():
+        count = sum(r['category'] == slug for r in selected)
+        english.append(f'- [{title}](categories/{slug}.md) ({count})')
+    english += ['- [Leads and excluded material](LEADS.md)',
+                '- [Contributing](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)', '', '## Cases', '']
+    for slug, title in categories_en.items():
+        english += [f'### {title}', ''] + [english_entry(r) for r in selected if r['category'] == slug] + ['']
+    english += ['## Leads', ''] + [english_entry(r) for r in leads] + ['',
+                '## Selection and evidence', '',
+                '- No Top-N or fixed date limit. Prefer concrete targets, methods and results over popularity.',
+                '- REA, other AI-assisted work and unconfirmed REA use are labeled separately. An AI-tool integration does not prove AI performed the investigation itself.',
+                '- Static analysis, source-built fixtures, author reports and runtime checks have different scopes. A supported platform is not a complete product reconstruction.',
+                '- X engagement is a dated snapshot, not a live ranking. Post date is not necessarily project completion date.',
+                '- Merge multiple posts about the same project. Keep separate targets or independent projects distinct.',
+                '- Edit data/cases.json and run python3 scripts/build.py. Generated files must stay synchronized.', '',
+                '## License and acknowledgements', '',
+                'Original summaries, curation data and code use the [MIT License](LICENSE). Linked software, documents, posts and game assets retain their own rights and licenses; this license does not authorize their redistribution.', '',
+                'Organization inspired by [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills). See the [reference study](research/reference-structure.md).', '']
+    outputs['README.en.md'] = '\n'.join(english)
     return outputs
 
 

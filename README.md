@@ -1,21 +1,20 @@
 # Awesome REA Cases
 
-A curated collection of real-world REA and AI-assisted reverse-engineering cases.
+**中文（默认）** | [English](README.en.md)
 
 收集 REA 与其他 AI 辅助逆向的实际案例。每条讲清楚对象是什么、作者为什么逆向、做了什么，以及报告了什么结果。
 
 > 非 REA 官方项目。收录不代表工具或作者背书；不收集软件安装包、密钥、私人记录或未授权资产。
 
-当前收录 **22 个案例**；另保留 **8 条待补证据、工具测试或未入选线索**。所有结果均据作者或项目记录整理，未由本项目独立复现。
+当前收录 **36 个案例**；另保留 **11 条待补证据、工具测试或未入选线索**。所有结果均据作者或项目记录整理，未由本项目独立复现。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（8）
-- [硬件与设备互通](categories/hardware.md)（6）
-- [应用与客户端](categories/apps.md)（5）
-- [算法与功能重建](categories/algorithms.md)（3）
+- [游戏与游戏保存](categories/games.md)（9）
+- [硬件与设备互通](categories/hardware.md)（8）
+- [应用与客户端](categories/apps.md)（15）
+- [算法与功能重建](categories/algorithms.md)（4）
 - [待跟进与未入选线索](LEADS.md)
-- [HTML 阅读版](docs/index.html)（下载后用浏览器打开）
 - [贡献指南](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 ## 案例
@@ -30,6 +29,7 @@ A curated collection of real-world REA and AI-assisted reverse-engineering cases
 - [《东方幻想乡》：恢复环形弹幕的角度计算](cases/th04-bullet-ring.md) — 恢复《东方幻想乡》环形弹幕的角度计算。 **[REA]**
 - [东方系列：用 Agent 重建旧游戏，并迁移到新平台](cases/touhou-reconstruction.md) — 重建东方系列代码，验证并迁移到可玩平台。 **[REA]**
 - [Dinosaur：解释网页跑酷游戏如何逐渐加速](cases/dinosaur-speed.md) — 读网页脚本，实验验证跑酷游戏的加速规则。 **[REA]**
+- [《荒野大镖客 2》：写导出器移入波巴·费特](cases/boba-fett-rdr2.md) — Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。 **[其他 AI 逆向]**
 
 ### 硬件与设备互通
 
@@ -39,6 +39,8 @@ A curated collection of real-world REA and AI-assisted reverse-engineering cases
 - [PSP：让 REA 支持掌机程序的静态分析](cases/psp-allegrex.md) — 接入 Allegrex 扩展，使 REA 能分析 PSP 程序。 **[REA]**
 - [智能马桶：从微信小程序协议做到电脑状态栏控制](cases/smart-toilet.md) — 分析微信小程序的蓝牙通信，控制智能马桶翻盖。 **[REA]**
 - [涂鸦 Zigbee 按钮：用 AI 辅助改造固件](cases/tuya-zigbee-button.md) — 借助 pi + GLM 研究按钮固件并进行改造。 **[其他 AI 逆向]**
+- [分层固件：解包后把原生程序交给 Ghidra](cases/firmware-extract-handoff.md) — 串起 Binwalk 区域识别、Unblob 解包和 Ghidra 函数分析。 **[REA]**
+- [蓝牙手柄：写兼容层让不支持 Windows 的设备可用](cases/bluetooth-gamepad-windows.md) — 逆向控制协议，以 ViGEm 虚拟手柄适配 Windows。 **[其他 AI 逆向]**
 
 ### 应用与客户端
 
@@ -47,17 +49,29 @@ A curated collection of real-world REA and AI-assisted reverse-engineering cases
 - [Claude Code：用 Muse + REA 阅读大型压缩代码](cases/claude-code-analysis.md) — 让 Muse 调用 REA 阅读 Claude Code 的压缩代码包。 **[REA]**
 - [Notion：追清复制文字和图片的内部链路](cases/notion-clipboard.md) — 追踪桌面客户端复制文字和图片的实现路径。 **[REA]**
 - [Flutter App：从安装包识别运行时和编译结构](cases/flutter-aot.md) — 识别 Flutter APK 的运行时、构建与 AOT 结构。 **[REA]**
+- [Android ApiDemos：从 APK 追到具体 Java 方法](cases/android-apidemos.md) — 用真实演示 APK 查类、读方法、追踪静态引用。 **[REA]**
+- [鸿蒙 App：识别安装包结构与组件](cases/harmony-package-inventory.md) — 用真实 HAP 发布包核查组件路径、哈希和打包线索。 **[REA]**
+- [macOS 预览：对比有无 REA 的功能重建](cases/preview-rebuild.md) — 同一作者用两条路线重建缩放、旋转、标注与保存。 **[REA]**
+- [Codex 浏览器：找出网页唤起评论框的链路](cases/codex-browser-annotations.md) — 分析 Electron 代码并用测试页验证评论接口的部分能力。 **[REA]**
+- [Claude Design：把设计功能接进 BaoCut](cases/claude-design-baocut.md) — 研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。 **[未确认使用 REA]**
+- [Claude Chrome：把本地浏览器协议桥接到云浏览器](cases/claude-chrome-remote.md) — 还原原生消息协议，转成 CDP 在远端执行。 **[未确认使用 REA]**
+- [pi-computer-use：把 Codex 桌面操作接给其他模型](cases/pi-computer-use.md) — 研究 Computer Use，提供优先无障碍树、辅以视觉的 macOS 工具。 **[未确认使用 REA]**
+- [后台 Computer Use：用 Swift 暴露电脑操作 API](cases/background-computer-use.md) — 研究 Codex 后台操作，提供本机可脚本调用的接口。 **[未确认使用 REA]**
+- [GarageBand：研究文件格式，用现有乐器自动作曲](cases/garageband-file-format.md) — Claude 分析音乐工程格式，作为本地音乐视频流程的一环。 **[其他 AI 逆向]**
+- [Apple Notes：迁移笔记、文件夹和图片到 Grape](cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 
 ### 算法与功能重建
 
 - [二进制库：先分析原实现，再写替代代码](cases/binary-library-rewrite.md) — 分析二进制库并重写；库名和评测细节未公开。 **[REA]**
 - [DownUnderCTF：从校验程序中找出正确输入](cases/masked-squares-ctf.md) — 恢复校验约束，用 Z3 求出被原程序接受的输入。 **[REA]**
 - [Aegis：还原验证器 App 的一次性验证码计算](cases/aegis-totp.md) — 从验证器 APK 提取验证码逻辑并做多实现对照。 **[REA]**
+- [Windows 计算器：还原百分号在不同运算中的规则](cases/windows-calculator-percent.md) — 分析已安装计算器 DLL，解释并重建加法与乘法的百分号行为。 **[REA]**
 
 ## 收录口径
 
 - REA、其他 AI 逆向与工具未确认分别标注，不把所有 AI 案例写成 REA 成果。
-- 有具体对象、过程和结果的优先；自述结果注明边界，工具支持不等于完整产品重建。
+- 不设 Top N、固定数量或时间窗口；有具体对象、过程和结果的优先，热度不作为门槛。
+- 自述结果注明边界，工具支持不等于完整产品重建；为 AI 工具做互通不等于 AI 完成全部逆向。
 - X 热度只保留带日期的抓取快照，不代表实时排名；发布日期不等于项目完成日期。
 - 同一项目的多条帖子合并；不同作者或不同目标不人为归并。
 - 新案例请修改 `data/cases.json` 并提交 PR，生成文件由脚本统一更新。

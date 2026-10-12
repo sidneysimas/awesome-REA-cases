@@ -2,7 +2,7 @@
 
 ## 单一数据源
 
-`data/cases.json` 是唯一需要编辑的案例集合；`cases/*.md`、`categories/*.md`、`README.md`、`LEADS.md`、`docs/index.html` 均由 `scripts/build.py` 生成。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
+`data/cases.json` 是唯一需要编辑的案例集合；`cases/*.md`、`categories/*.md`、`README.md`、`LEADS.md`、`README.en.md` 均由 `scripts/build.py` 生成。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
 
 ## 流程
 
@@ -31,6 +31,6 @@ git diff --check
 
 ## 发布与版权
 
-仓库为公开 Markdown 集合；HTML 在 `docs/index.html`，可下载后直接打开。本次不依赖 GitHub Pages 或外部主机。
+仓库仅提供 Markdown 集合，不生成 HTML。`README.md` 为默认中文入口，`README.en.md` 为英文入口；英文标题与摘要在每条记录的 `en` 字段维护，脚本统一生成两版目录和计数。英文 README 已翻译，案例详情与维护文档暂为中文。
 
 MIT 许可只涵盖本项目原创摘要、数据整理与代码，不能用于授权链接中的游戏、软件、源代码或资产。案例的复现需要使用合法获得的目标；本项目不分发这些目标。
