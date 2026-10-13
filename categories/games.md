@@ -23,3 +23,8 @@
 - [手游交互：用 Codex + REA 对应脚本与运行活动](../cases/mobile-game-interaction-evidence.md) — 一边分析脚本文件，一边观察手游交互的计算活动。 **[REA · 进行中]**
 - [Star Fox / Sonic CD：AI 原生移植的待验证传播](../cases/arwing-littleplanet-ai-port-report.md) — 传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。 **[其他 AI 逆向 · 待验证]**
 - [Dark Sun: Shattered Lands：用 REA 研究并移植老游戏的计划](../cases/dark-sun-shattered-lands-port-idea.md) — 提出从 GOG 游戏到 REA 分析，再用攻略帮助移植 Unity/three.js 的路线。 **[REA · 待验证]**
+- [Armed and Dangerous：用 Ghidra 与 AI 探索重制路线](../cases/armed-and-dangerous-remaster.md) — 作者报告以 Ghidra 反编译并用 AI 编写 C 函数，正在比较运行时替换与 Bevy 重写路线。 **[未确认使用 REA · 进行中]**
+- [Fort Apocalypse：用 Codex 与 Ghidra 移植到 Android](../cases/fort-apocalypse-android-port.md) — 作者称使用 Codex 和 Ghidra 将 C64 游戏 Fort Apocalypse 移植到 Android。 **[其他 AI 逆向 · 待验证]**
+- [Minecraft × Plants vs. Zombies：REA 辅助的可玩混合作品报告](../cases/minecraft-pvz-rea-mashup.md) — 一则 quote 帖称试用 REA 逆向后制作出可玩的 Minecraft 与植物大战僵尸混合作品。 **[REA · 待验证]**
+- [《三国志14》：将修改器功能组合成 MCP 的报告](../cases/three-kingdoms-mod-mcp.md) — 作者称分析《三国志14》修改器与风灵月影，并组合成可批量操作的 MCP。 **[未确认使用 REA · 待验证]**
+- [Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中](../cases/virtua-fighter-ai-decompilation.md) — AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。 **[未确认使用 REA · 进行中]**

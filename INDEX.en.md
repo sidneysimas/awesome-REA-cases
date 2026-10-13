@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**121 entries**, organized by use case, without a Top-N or popularity threshold.
+**127 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (21)
+- [Games and preservation](categories/games.md) (26)
 - [Hardware and interoperability](categories/hardware.md) (32)
-- [Applications and clients](categories/apps.md) (59)
+- [Applications and clients](categories/apps.md) (60)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -49,6 +49,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Mobile game interactions: Codex and REA evidence mapping](cases/mobile-game-interaction-evidence.md) — Maps interactions to scripts and files while observing runtime activity; reconstruction remains in progress. **[REA · In progress]**
 - [Star Fox and Sonic CD: reported AI-assisted native ports](cases/arwing-littleplanet-ai-port-report.md) — Linked projects document static recompilation; the claimed one-prompt AI attribution is not verified. **[Other AI-assisted work · Needs verification]**
 - [Dark Sun: Shattered Lands: a REA porting plan](cases/dark-sun-shattered-lands-port-idea.md) — A named next target and a GOG-to-REA-to-Unity/three.js workflow; no completed port or gameplay fix is shown. **[REA · Needs verification]**
+- [Armed and Dangerous: exploring remastering approaches with Ghidra and AI](cases/armed-and-dangerous-remaster.md) — A first-person report describes Ghidra decompilation and AI-written C functions while comparing runtime replacement with a Bevy rewrite; the project remains in progress. **[REA use unconfirmed · In progress]**
+- [Fort Apocalypse: a reported Codex/Ghidra Android port](cases/fort-apocalypse-android-port.md) — The author says they ported the C64 game to Android using Codex and Ghidra; implementation and behavioral parity are not independently verified. **[Other AI-assisted work · Needs verification]**
+- [Minecraft × Plants vs. Zombies: a reported playable REA-assisted mashup](cases/minecraft-pvz-rea-mashup.md) — A quote post says its poster used REA for reverse engineering and built a playable mashup; authorship and the result are not independently verified. **[REA · Needs verification]**
+- [Three Kingdoms XIV: a reported trainer-to-MCP project](cases/three-kingdoms-mod-mcp.md) — The author reports combining reverse-engineered game-trainer functions into an MCP for batch edits; implementation, tests and REA use are unverified. **[REA use unconfirmed · Needs verification]**
+- [Virtua Fighter 2.1 / 3 TB: AI-assisted decompilation in progress](cases/virtua-fighter-ai-decompilation.md) — AI coding agents are reportedly helping reconstruct readable C/C++ game logic; both projects remain works in progress and REA use is unconfirmed. **[REA use unconfirmed · In progress]**
 
 ### Hardware and interoperability
 
@@ -146,6 +151,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [LightBurn: a reported personal laser-control rebuild](cases/lightburn-personal-laser-rebuild.md) — An author reports a 16-minute REA-assisted app for one laser; hardware compatibility and execution are unverified. **[REA · Needs verification]**
 - [MarkText: a REA-assisted HTML export rebuild](cases/marktext-html-export.md) — The author reports 17 passing tests for a REA-assisted rebuild, with one Windows check still open. **[REA · In progress]**
 - [Screen Studio: a reported REA-assisted rebuild](cases/screen-studio-rebuild.md) — The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified. **[REA · Needs verification]**
+- [Claude Desktop: UI details reported from REA analysis](cases/claude-desktop-ui-details.md) — A user reports analyzing Claude Desktop with REA and observing typography, line wrapping and per-character fade-in details; findings are not independently verified. **[REA · Analysis test]**
 
 ### Algorithms and feature recovery
 

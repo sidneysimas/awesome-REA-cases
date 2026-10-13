@@ -3112,5 +3112,147 @@
       "title": "Screen Studio: a reported REA-assisted rebuild",
       "summary": "The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified."
     }
+  },
+  {
+    "id": "armed-and-dangerous-remaster",
+    "title": "Armed and Dangerous：用 Ghidra 与 AI 探索重制路线",
+    "category": "games",
+    "status": "in-progress",
+    "rea": "unknown",
+    "summary": "作者报告以 Ghidra 反编译并用 AI 编写 C 函数，正在比较运行时替换与 Bevy 重写路线。",
+    "description": "一位未在捕获记录中标识身份的发帖者称，正在重制自己喜爱的《Armed and Dangerous》。其比较两种路线：用 Ghidra 反编译并让 AI 编写 C 函数、在运行时替换；或用 Rust 与 Bevy 重写。帖子称第一种路线已能加载原游戏的任意关卡和场景，以辅助主观改进与客观准确性比较，但物理等引擎行为仍受 Havok 路线限制。作者希望稍后发布视频；现阶段是进行中的自述，没有公开视频或独立验证。帖子未提及 REA，不能确认使用 REA。",
+    "sources": [
+      {
+        "label": "X 帖子（第一人称项目进度报告；捕获记录未识别作者）",
+        "url": "https://x.com/i/status/2109911827203358998"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "帖子时间：2026-10-13T15:39:14+08:00",
+      "REA 使用未确认；完成状态未验证。"
+    ],
+    "en": {
+      "title": "Armed and Dangerous: exploring remastering approaches with Ghidra and AI",
+      "summary": "A first-person report describes Ghidra decompilation and AI-written C functions while comparing runtime replacement with a Bevy rewrite; the project remains in progress."
+    }
+  },
+  {
+    "id": "claude-desktop-ui-details",
+    "title": "Claude Desktop：用 REA 观察界面细节",
+    "category": "apps",
+    "status": "analysis-test",
+    "rea": "REA",
+    "summary": "作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。",
+    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。",
+    "sources": [
+      {
+        "label": "作者关于 REA 分析 Claude Desktop 的原帖",
+        "url": "https://x.com/i/status/2109912411679433121"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "作者自述使用 REA；界面细节未经独立验证",
+      "未展示重建或功能等价测试"
+    ],
+    "en": {
+      "title": "Claude Desktop: UI details reported from REA analysis",
+      "summary": "A user reports analyzing Claude Desktop with REA and observing typography, line wrapping and per-character fade-in details; findings are not independently verified."
+    }
+  },
+  {
+    "id": "fort-apocalypse-android-port",
+    "title": "Fort Apocalypse：用 Codex 与 Ghidra 移植到 Android",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "作者称使用 Codex 和 Ghidra 将 C64 游戏 Fort Apocalypse 移植到 Android。",
+    "description": "Fort Apocalypse 是一款 C64 游戏。作者以第一人称称已使用 Codex 和 Ghidra 将游戏移植到 Android。该帖提供了明确目标、AI 工具、逆向工具及完成移植的自述，但没有代码、演示细节或行为对照测试，因此记录为作者报告的移植，不据此断言与原版功能等价。帖子未提及 REA。",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/i/status/2109865837477716324"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "作者自述已移植至 Android；代码与独立验证未提供；REA 未提及"
+    ],
+    "en": {
+      "title": "Fort Apocalypse: a reported Codex/Ghidra Android port",
+      "summary": "The author says they ported the C64 game to Android using Codex and Ghidra; implementation and behavioral parity are not independently verified."
+    }
+  },
+  {
+    "id": "minecraft-pvz-rea-mashup",
+    "title": "Minecraft × Plants vs. Zombies：REA 辅助的可玩混合作品报告",
+    "category": "games",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "一则 quote 帖称试用 REA 逆向后制作出可玩的 Minecraft 与植物大战僵尸混合作品。",
+    "description": "一则 X quote 帖称，发帖者尝试 REA 做逆向后，约一小时制作出可玩的 Minecraft × Plants vs. Zombies 混合作品，提及 Minecraft 中的向日葵与豌豆射手。这里的 REA 使用与可玩状态均为该帖的第一人称自述；当前证据没有提供可复核的成品或独立测试，因此列为待验证。捕获记录将该帖标为 quote，作者字段为空；感谢提及 @morluto 只是归属线索，不证明该被提及者就是发帖者或项目作者。",
+    "sources": [
+      {
+        "label": "X quote 帖（作者身份未由捕获记录确认；第一人称自述）",
+        "url": "https://x.com/i/status/2109912103813599539"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "帖子时间：2026-10-13T15:40:20+08:00",
+      "帖子标记为 quote；捕获记录未提供作者身份。"
+    ],
+    "en": {
+      "title": "Minecraft × Plants vs. Zombies: a reported playable REA-assisted mashup",
+      "summary": "A quote post says its poster used REA for reverse engineering and built a playable mashup; authorship and the result are not independently verified."
+    }
+  },
+  {
+    "id": "three-kingdoms-mod-mcp",
+    "title": "《三国志14》：将修改器功能组合成 MCP 的报告",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "作者称分析《三国志14》修改器与风灵月影，并组合成可批量操作的 MCP。",
+    "description": "作者称曾分析《三国志14》的 VAN 修改器与风灵月影，将两者功能组合成 MCP，并报告可以通过指令批量修改战法及多个剧本。帖子没有公开 MCP 实现、具体修改记录或测试，因此结果仅按作者自述记录。尽管帖文提及 REA，未明确说该项目实际使用 REA，故不确认 REA 参与；也不把对 macOS、Photoshop 等目标的推测当成已完成工作。",
+    "sources": [
+      {
+        "label": "作者关于《三国志14》修改器与 MCP 的原帖",
+        "url": "https://x.com/i/status/2109913567428592046"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "作者报告实际操作与批量修改；未独立验证",
+      "帖文提到 REA，但未明确确认本项目使用 REA"
+    ],
+    "en": {
+      "title": "Three Kingdoms XIV: a reported trainer-to-MCP project",
+      "summary": "The author reports combining reverse-engineered game-trainer functions into an MCP for batch edits; implementation, tests and REA use are unverified."
+    }
+  },
+  {
+    "id": "virtua-fighter-ai-decompilation",
+    "title": "Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中",
+    "category": "games",
+    "status": "in-progress",
+    "rea": "unknown",
+    "summary": "AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。",
+    "description": "一则项目介绍称 Virtua Fighter 2.1（街机版）与 Virtua Fighter 3 TB（Dreamcast 版）正在借助 AI coding agents 进行逆向工程，目标是把原游戏逻辑重建为可读的 C/C++，理解内部实现并最终移植到更多平台。帖子称两个项目仍为 WIP，并邀请逆向、C/C++、汇编及 SEGA 开发经验者参与。它支持的是进行中的 AI 辅助游戏逆向项目，不是已完成移植或可运行重建；帖子未说明使用 REA，故 REA 状态未知。",
+    "sources": [
+      {
+        "label": "项目进行中介绍（X）",
+        "url": "https://x.com/i/status/2109858919111913543"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13｜项目状态：WIP；REA 使用未确认"
+    ],
+    "en": {
+      "title": "Virtua Fighter 2.1 / 3 TB: AI-assisted decompilation in progress",
+      "summary": "AI coding agents are reportedly helping reconstruct readable C/C++ game logic; both projects remain works in progress and REA use is unconfirmed."
+    }
   }
 ]
