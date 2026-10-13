@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**117 entries**, organized by use case, without a Top-N or popularity threshold.
+**121 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/games.md) (21)
-- [Hardware and interoperability](categories/hardware.md) (30)
-- [Applications and clients](categories/apps.md) (57)
+- [Hardware and interoperability](categories/hardware.md) (32)
+- [Applications and clients](categories/apps.md) (59)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -82,6 +82,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Android touchscreen photo frame: Codex-assisted device research](cases/android-photo-frame-codex-bringup.md) — An author reports teardown and connection to Codex using a referenced project; no completed modification is established. **[Other AI-assisted work · In progress]**
 - [Echo Show 5 Gen 2: a reported Hermes intercom and camera system](cases/echo-show5-hermes-intercom.md) — An author reports device research and integration across two homes; AI involvement in reverse engineering and reproducibility are unconfirmed. **[REA use unconfirmed · Needs verification]**
 - [Elgato X 4K capture card: REA-assisted latency research](cases/elgato-4k-x-latency-research.md) — A newly started reverse-engineering task for performance and latency, with the tool link resolved to REA; no results yet. **[REA · In progress]**
+- [Gardena mower: reported Codex motor control and firmware work](cases/gardena-mower-codex.md) — An author reports motor control through an ESP32/Bluetooth link and ongoing firmware work; REA use and safety are unverified. **[REA use unconfirmed · In progress]**
+- [TV: an REA-assisted reverse-engineering control workbench](cases/rea-tv-control-workbench.md) — The author says they used REA to reverse engineer a TV and lists input, volume, remote, Mac screen mirroring, screen-time and picture controls; details and independent validation are absent. **[REA · Needs verification]**
 
 ### Applications and clients
 
@@ -142,6 +144,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Virtual Desktop Streamer: a Linux platform-layer port](cases/virtual-desktop-streamer-linux.md) — Analyze installers with Claude Code and REA, reuse vendor protocol libraries and replace macOS integration; not a complete clean-room rewrite. **[REA · In progress]**
 - [WeChat local chats: a reported Codex-assisted decryption task](cases/wechat-local-chat-decryption-report.md) — An author reports work on encrypted local chat data; version, authorization, method and outcome are not documented. **[Other AI-assisted work · Needs verification]**
 - [LightBurn: a reported personal laser-control rebuild](cases/lightburn-personal-laser-rebuild.md) — An author reports a 16-minute REA-assisted app for one laser; hardware compatibility and execution are unverified. **[REA · Needs verification]**
+- [MarkText: a REA-assisted HTML export rebuild](cases/marktext-html-export.md) — The author reports 17 passing tests for a REA-assisted rebuild, with one Windows check still open. **[REA · In progress]**
+- [Screen Studio: a reported REA-assisted rebuild](cases/screen-studio-rebuild.md) — The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 

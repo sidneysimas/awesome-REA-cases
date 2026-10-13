@@ -4,9 +4,9 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **117 cases and projects**. *Last maintained: October 13, 2026, 12:01; case coverage through 08:00 Beijing time (UTC+8).*
+Currently **121 cases and projects**. *Last maintained: October 13, 2026, 12:20; this review covers cases through 12:00 Beijing time (UTC+8); collection coverage after 08:00 was outside this audit window.*
 
-Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
+Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. This maintenance added 4 cases and updated 2 existing cases. Category counts: Games and preservation 21; Hardware and interoperability 32; Applications and clients 59; Algorithms and feature recovery 9. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
 [REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 

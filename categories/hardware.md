@@ -32,3 +32,5 @@
 - [Android 触屏相框：拆机后接 Codex 研究设备](../cases/android-photo-frame-codex-bringup.md) — 作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。 **[其他 AI 逆向 · 进行中]**
 - [Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防](../cases/echo-show5-hermes-intercom.md) — 作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。 **[未确认使用 REA · 待验证]**
 - [Elgato X 4K 采集卡：用 REA 研究性能和低延迟](../cases/elgato-4k-x-latency-research.md) — 作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。 **[REA · 进行中]**
+- [Gardena 割草机：Codex 控制电机并研究新固件](../cases/gardena-mower-codex.md) — 作者称 Codex 已取得割草机电机控制，正研究 ESP32 与蓝牙链路的新固件。 **[未确认使用 REA · 进行中]**
+- [电视：用 REA 逆向并制作电脑控制工作台](../cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**

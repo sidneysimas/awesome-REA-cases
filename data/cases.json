@@ -375,7 +375,7 @@
     "category": "apps",
     "rea": "REA",
     "summary": "追踪桌面客户端复制文字和图片的实现路径。",
-    "description": "Notion 是文档与知识管理工具，桌面版使用 Electron，页面代码与系统功能之间需要跨进程通信。贡献者想弄清“点复制后，内容如何进入系统剪贴板”，从前端 API 追到 preload 包装层、IPC 消息和主进程接收端。后续真实客户端包分析整理出 copy、copyText、copyImage 三条静态候选路径，连接到 Electron 或浏览器剪贴板接口。成果是解释这一功能的实现链路，并非重建整个 Notion。",
+    "description": "Notion 是文档与知识管理工具，桌面版使用 Electron，页面代码与系统功能之间需要跨进程通信。贡献者想弄清“点复制后，内容如何进入系统剪贴板”，从前端 API 追到 preload 包装层、IPC 消息和主进程接收端。后续真实客户端包分析整理出 copy、copyText、copyImage 三条静态候选路径，连接到 Electron 或浏览器剪贴板接口。成果是解释这一功能的实现链路，并非重建整个 Notion。\n\nA later post further describes copying Notion blocks while preserving text, formatting and block structure, and reports that copied HTML carries a notionvc ID linking it to saved block data. This is a secondary post-level account; the underlying implementation details are not independently verified here.",
     "sources": [
       {
         "label": "最初案例",
@@ -384,10 +384,16 @@
       {
         "label": "后续实测",
         "url": "https://github.com/morluto/rea/pull/1874"
+      },
+      {
+        "label": "REA Notion clipboard case details (X post)",
+        "url": "https://x.com/i/status/2109842048023212348"
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": [],
+    "metadata": [
+      "Additional clipboard/block association details reported 2026-10-13; source is a post, not an independent implementation test."
+    ],
     "en": {
       "title": "Notion: clipboard paths",
       "summary": "Trace static copy-text and copy-image paths across Electron processes."
@@ -942,7 +948,7 @@
     "id": "claude-design-baocut",
     "title": "Claude Design：把设计功能接进 BaoCut",
     "summary": "研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。",
-    "description": "BaoCut 原本是宝玉开发的视频剪辑 Agent。作者在研究 Claude Design 后，将设计 Skill 与前端功能接入 BaoCut，使本机的 Agent CLI 能选择 design skill，提供公开代码提交。作者指出，仅作为独立 Skill 不能支持编辑、修改和标记，因而先做产品内集成。帖子没有明确说明这次是否使用 REA，也没有证明完整恢复原产品能力。",
+    "description": "BaoCut 原本是宝玉开发的视频剪辑 Agent。作者在研究 Claude Design 后，将设计 Skill 与前端功能接入 BaoCut，使本机的 Agent CLI 能选择 design skill，提供公开代码提交。作者指出，仅作为独立 Skill 不能支持编辑、修改和标记，因而先做产品内集成。帖子没有明确说明这次是否使用 REA，也没有证明完整恢复原产品能力。\n\n2026-10-13 的第三方转载帖称，Claude Design 的混淆代码由 REA MCP 辅助拆解、再由 Claude Code 重写，Design 和 Slides 已进入开源 BaoCut；帖中还转述了通过 Slides 生成效果相近 Skill 的思路。这不是原作者的直接确认，本次未核验转述或实现，不据此改变 REA 使用确认，也不代表完整复制 Claude Design。",
     "category": "apps",
     "rea": "unknown",
     "sources": [
@@ -953,6 +959,10 @@
       {
         "label": "公开实现",
         "url": "https://github.com/JimLiu/baocut/commit/7aa049e8"
+      },
+      {
+        "label": "后续转载：REA MCP 与 Claude Design/BaoCut 集成的描述",
+        "url": "https://x.com/i/status/2109830792851448099"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -3005,6 +3015,102 @@
     "en": {
       "title": "Elgato X 4K capture card: REA-assisted latency research",
       "summary": "A newly started reverse-engineering task for performance and latency, with the tool link resolved to REA; no results yet."
+    }
+  },
+  {
+    "id": "gardena-mower-codex",
+    "title": "Gardena 割草机：Codex 控制电机并研究新固件",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "unknown",
+    "summary": "作者称 Codex 已取得割草机电机控制，正研究 ESP32 与蓝牙链路的新固件。",
+    "description": "作者报告已通过 Codex 对 Gardena 割草机取得电机控制，链路描述为手机经 Wi-Fi 到 ESP32，再由 ESP32 经蓝牙连接割草机；作者称正在制作新固件。该帖没有型号、代码、测试记录或安全验证，也未明确使用 REA；这里仅记录作者所述进展，不视为独立确认、完整固件替换或可靠安全的设备改造。",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/i/status/2109840164004737341"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据边界：作者自述；未独立复测",
+      "固件工作仍进行中；REA 使用未确认"
+    ],
+    "en": {
+      "title": "Gardena mower: reported Codex motor control and firmware work",
+      "summary": "An author reports motor control through an ESP32/Bluetooth link and ongoing firmware work; REA use and safety are unverified."
+    }
+  },
+  {
+    "id": "marktext-html-export",
+    "title": "MarkText：用 REA 逆向并重建 HTML 导出",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。",
+    "description": "作者报告 AI bots 使用 REA 从 MarkText 已构建应用追踪 HTML 导出行为并重建该功能，称 17 项测试通过，另有一项 Windows 检查仍开放。证据仅为原帖自述及其所称视频收据；本次未查看视频、运行项目或独立复测，不能据此宣称完整兼容或 Windows 已验证。",
+    "sources": [
+      {
+        "label": "作者原帖",
+        "url": "https://x.com/i/status/2109839329933824026"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据边界：作者报告；未独立复测",
+      "17 项测试通过；Windows 检查仍开放"
+    ],
+    "en": {
+      "title": "MarkText: a REA-assisted HTML export rebuild",
+      "summary": "The author reports 17 passing tests for a REA-assisted rebuild, with one Windows check still open."
+    }
+  },
+  {
+    "id": "rea-tv-control-workbench",
+    "title": "电视：用 REA 逆向并制作电脑控制工作台",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。",
+    "description": "作者以第一人称称使用 REA 对自己的电视进行逆向，并列出应用/输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及亮度、对比度等通用控制。帖子附有媒体链接，但没有说明电视品牌/型号、通信协议、实现细节或独立复测。因此记录为明确提及 REA 的作者报告，未将功能清单视为独立验证的完整实现。",
+    "sources": [
+      {
+        "label": "作者关于电视逆向与控制功能的原帖",
+        "url": "https://x.com/i/status/2109842197654692349"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T11:02:33+08:00（北京时间）",
+      "证据边界：作者自述；设备型号、实现细节与复测未提供"
+    ],
+    "en": {
+      "title": "TV: an REA-assisted reverse-engineering control workbench",
+      "summary": "The author says they used REA to reverse engineer a TV and lists input, volume, remote, Mac screen mirroring, screen-time and picture controls; details and independent validation are absent."
+    }
+  },
+  {
+    "id": "screen-studio-rebuild",
+    "title": "Screen Studio：用 REA 拆解后复刻录屏演示工具",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。",
+    "description": "Screen Studio 是桌面录屏与演示制作工具。作者称自己用 REA 拆解该应用，再按分析得到的规则让 Claude Code 做出复刻版本；作者表示约半小时完成，并称文章中的演示由新版本自行录制。这是明确提到 REA 的第一手使用报告，包含一个已录制演示的完成线索；但帖子未给出重建代码、功能清单或对照测试，因此不能据此认定功能或外观等价，也未独立验证所称工时与录制过程。",
+    "sources": [
+      {
+        "label": "作者关于 REA 分析与复刻的原帖",
+        "url": "https://x.com/i/status/2109843188341207283"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T11:06:29+08:00（北京时间）",
+      "作者自述使用 REA 和 Claude Code；复刻效果与工时未独立验证。"
+    ],
+    "en": {
+      "title": "Screen Studio: a reported REA-assisted rebuild",
+      "summary": "The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified."
     }
   }
 ]

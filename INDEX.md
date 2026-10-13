@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **117 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **121 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（21）
-- [硬件与设备互通](categories/hardware.md)（30）
-- [应用与客户端](categories/apps.md)（57）
+- [硬件与设备互通](categories/hardware.md)（32）
+- [应用与客户端](categories/apps.md)（59）
 - [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -80,6 +80,8 @@
 - [Android 触屏相框：拆机后接 Codex 研究设备](cases/android-photo-frame-codex-bringup.md) — 作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。 **[其他 AI 逆向 · 进行中]**
 - [Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防](cases/echo-show5-hermes-intercom.md) — 作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。 **[未确认使用 REA · 待验证]**
 - [Elgato X 4K 采集卡：用 REA 研究性能和低延迟](cases/elgato-4k-x-latency-research.md) — 作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。 **[REA · 进行中]**
+- [Gardena 割草机：Codex 控制电机并研究新固件](cases/gardena-mower-codex.md) — 作者称 Codex 已取得割草机电机控制，正研究 ESP32 与蓝牙链路的新固件。 **[未确认使用 REA · 进行中]**
+- [电视：用 REA 逆向并制作电脑控制工作台](cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**
 
 ### 应用与客户端
 
@@ -140,6 +142,8 @@
 - [Virtual Desktop Streamer：研究安装包，做 Linux 适配层](cases/virtual-desktop-streamer-linux.md) — Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。 **[REA · 进行中]**
 - [微信本地聊天记录：Codex 分析加密数据的作者报告](cases/wechat-local-chat-decryption-report.md) — 作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。 **[其他 AI 逆向 · 待验证]**
 - [LightBurn：为自己的激光机重建专用控制软件的报告](cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
+- [MarkText：用 REA 逆向并重建 HTML 导出](cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
+- [Screen Studio：用 REA 拆解后复刻录屏演示工具](cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
 
 ### 算法与功能重建
 

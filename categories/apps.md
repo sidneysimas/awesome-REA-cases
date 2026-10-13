@@ -59,3 +59,5 @@
 - [Virtual Desktop Streamer：研究安装包，做 Linux 适配层](../cases/virtual-desktop-streamer-linux.md) — Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。 **[REA · 进行中]**
 - [微信本地聊天记录：Codex 分析加密数据的作者报告](../cases/wechat-local-chat-decryption-report.md) — 作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。 **[其他 AI 逆向 · 待验证]**
 - [LightBurn：为自己的激光机重建专用控制软件的报告](../cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
+- [MarkText：用 REA 逆向并重建 HTML 导出](../cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
+- [Screen Studio：用 REA 拆解后复刻录屏演示工具](../cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
