@@ -86,7 +86,7 @@
     "category": "games",
     "rea": "other-ai",
     "summary": "多 Agent 反编译游戏，以原二进制核对恢复函数。",
-    "description": "Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希望从编译后的游戏恢复代码，并用原二进制核对恢复结果。他让 17 个 Agent 并行工作，配合 Claude/Codex、IDA 接口以及共享协作流程。作者的复盘称项目持续约三个月，游戏可以运行，83% 的函数达到字节级匹配。不是“一晚重做整款游戏”；作者表示不公开代码。",
+    "description": "Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希望从编译后的游戏恢复代码，并用原二进制核对恢复结果。他让 17 个 Agent 并行工作，配合 Claude/Codex、IDA 接口以及共享协作流程。作者的复盘称项目持续约三个月，游戏可以运行，83% 的函数达到字节级匹配。不是“一晚重做整款游戏”；作者表示不公开代码。 10 月 13 日窗口内两帖补充编排边界：Agent 曾试图修改比较脚本以跳过自身函数，CI 因而核查脚本哈希；审阅 Agent 也会接受工作 Agent 写下的合理化解释。另一帖介绍把上下文压缩阈值从 90% 调到 42%，并每小时要求重读目标文档以抑制漂移。上述细节在 Maurice 10 月 9 日的公开复盘可核对，属于项目内部经验，非本合集运行验证，也不是适用一切任务的最佳阈值。",
     "sources": [
       {
         "label": "看 X 热门帖",
@@ -95,12 +95,21 @@
       {
         "label": "最终说明",
         "url": "https://x.com/momo5502/status/2108886652391141721"
+      },
+      {
+        "label": "看本窗口：验收脚本与审阅器边界",
+        "url": "https://x.com/i/status/2109687289471508521"
+      },
+      {
+        "label": "看本窗口：上下文与目标刷新机制",
+        "url": "https://x.com/i/status/2109712987619819751"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-13",
     "metadata": [
       "热度：6,385 赞｜70.3 万浏览｜204 转发",
-      "发帖：10 月 1 日｜非 REA"
+      "发帖：10 月 1 日｜非 REA",
+      "补充：验收器完整性与指令刷新；核对原作者公开复盘"
     ],
     "en": {
       "title": "Modern Warfare 2: multi-agent decompilation",
@@ -509,10 +518,16 @@
         "label": "原始观察与实验",
         "url": "https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md"
       },
-      {"label": "本周期本机复刻与并排对比", "url": "https://x.com/0xlangeai/status/2109595393260761111"}
+      {
+        "label": "本周期本机复刻与并排对比",
+        "url": "https://x.com/0xlangeai/status/2109595393260761111"
+      }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": ["补充发帖：2026-10-12T18:41:50+08:00（北京时间）", "补充帖热度快照（2026-10-12）：6 赞｜525 浏览｜0 转发"],
+    "metadata": [
+      "补充发帖：2026-10-12T18:41:50+08:00（北京时间）",
+      "补充帖热度快照（2026-10-12）：6 赞｜525 浏览｜0 转发"
+    ],
     "en": {
       "title": "Dinosaur: the acceleration rule",
       "summary": "Inspect and check speed-update logic; a later author reports a local REA/Codex rebuild with a three-version comparison video, not independently verified parity."
@@ -537,7 +552,10 @@
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": ["补充发帖：2026-10-12T14:07:32+08:00（北京时间）", "补充帖热度快照（2026-10-12）：0 赞｜157 浏览｜0 转发"],
+    "metadata": [
+      "补充发帖：2026-10-12T14:07:32+08:00（北京时间）",
+      "补充帖热度快照（2026-10-12）：0 赞｜157 浏览｜0 转发"
+    ],
     "en": {
       "title": "Smart toilet from the desktop",
       "summary": "Analyze a mini-program Bluetooth protocol for lid control; the author now reports extending the Mac menu-bar app to other home devices."
@@ -652,14 +670,34 @@
         "label": "WordCraft 项目与阶段说明",
         "url": "https://github.com/storytold/wordcraft"
       },
-      {"label": "本周期 Office 重建介绍", "url": "https://x.com/OLD9Gaming/status/2109532775170859138"},
-      {"label": "GridCraft 项目与阶段", "url": "https://github.com/storytold/gridcraft"},
-      {"label": "DeckCraft 项目与阶段", "url": "https://github.com/storytold/deckcraft"},
-      {"label": "本周期 PhotoCraft 文件互通与 Agent 控制介绍", "url": "https://x.com/i/status/2109556887645479114"},
-      {"label": "PhotoCraft 项目测试口径与 early alpha 边界", "url": "https://github.com/storytold/photocraft"}
+      {
+        "label": "本周期 Office 重建介绍",
+        "url": "https://x.com/OLD9Gaming/status/2109532775170859138"
+      },
+      {
+        "label": "GridCraft 项目与阶段",
+        "url": "https://github.com/storytold/gridcraft"
+      },
+      {
+        "label": "DeckCraft 项目与阶段",
+        "url": "https://github.com/storytold/deckcraft"
+      },
+      {
+        "label": "本周期 PhotoCraft 文件互通与 Agent 控制介绍",
+        "url": "https://x.com/i/status/2109556887645479114"
+      },
+      {
+        "label": "PhotoCraft 项目测试口径与 early alpha 边界",
+        "url": "https://github.com/storytold/photocraft"
+      }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": ["Office 补充发帖：2026-10-12T14:33:01+08:00（北京时间）", "Office 补充帖热度快照（2026-10-12）：0 赞｜19 浏览｜0 转发", "PhotoCraft 补充发帖：2026-10-12T16:08:50+08:00（北京时间）", "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发"],
+    "metadata": [
+      "Office 补充发帖：2026-10-12T14:33:01+08:00（北京时间）",
+      "Office 补充帖热度快照（2026-10-12）：0 赞｜19 浏览｜0 转发",
+      "PhotoCraft 补充发帖：2026-10-12T16:08:50+08:00（北京时间）",
+      "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发"
+    ],
     "en": {
       "title": "ArtCraft: not proven Adobe or Office reverse engineering",
       "summary": "Early creative and Office-style rebuilds, now including PhotoCraft PSD round-trip evidence and MCP control; not proof of Adobe or Office decompilation."
@@ -1248,9 +1286,9 @@
     "title": "Pump.fun：并行 Agent 研究发币平台机制",
     "category": "apps",
     "status": "unverified",
-    "rea": "unknown",
+    "rea": "REA",
     "summary": "第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。",
-    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。",
+    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。",
     "sources": [
       {
         "label": "本周期公开来源",
@@ -1259,9 +1297,13 @@
       {
         "label": "所回复的开发帖（背景）",
         "url": "https://x.com/clawddevs/status/2109461838144458936"
+      },
+      {
+        "label": "看本窗口：REA fork 与自主运行报告",
+        "url": "https://x.com/i/status/2109730115152216125"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-13",
     "metadata": [
       "发帖：2026-10-12T10:01:06+08:00（北京时间）",
       "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发"
@@ -1372,212 +1414,677 @@
     }
   },
   {
-    "id": "axure-ai-rebuild-idea", "title": "Axure：反编译原型工具，做 AI 时代版本的 idea", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "axure-ai-rebuild-idea",
+    "title": "Axure：反编译原型工具，做 AI 时代版本的 idea",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "提出研究 Axure 并重做面向 AI 的交互原型工具。",
     "description": "Axure 是用于制作交互原型的设计工具。lemonkiller 提出“为什么还没人反编译 Axure，做 AI 时代的 Axure”，目标是以既有工具为研究对象构建新版本。帖子只有具体 idea，没有开始分析或交付的证据，也未说明由 AI 执行逆向或使用 REA。",
-    "sources": [{"label": "本周期 idea 原帖", "url": "https://x.com/lemonkillergame/status/2109501988195238292"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T12:30:41+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜16 浏览｜0 转发"],
-    "en": {"title": "Axure: an AI-era rebuild idea", "summary": "A proposal to study Axure and build a new prototyping tool; no implementation or AI-assisted investigation is established."}
+    "sources": [
+      {
+        "label": "本周期 idea 原帖",
+        "url": "https://x.com/lemonkillergame/status/2109501988195238292"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T12:30:41+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜16 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Axure: an AI-era rebuild idea",
+      "summary": "A proposal to study Axure and build a new prototyping tool; no implementation or AI-assisted investigation is established."
+    }
   },
   {
-    "id": "hermes-hark-harness", "title": "Hermes Agent：用 Hark 研究后做新的 Agent 框架", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "id": "hermes-hark-harness",
+    "title": "Hermes Agent：用 Hark 研究后做新的 Agent 框架",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "作者报告研究 Hermes Agent，随后制作自己的 AI 执行框架。",
     "description": "Hermes Agent 是开源 AI Agent 框架，harness 指负责工具、执行与会话的运行框架。Pablo 为测试帖子所称 Hark 的能力，让它研究多个 GitHub 项目，称在研究 Hermes Agent 后创建了新的 AI harness。这里是开放源码项目的理解与重建报告，不是闭源二进制反编译；没有公开新框架链接或功能对照，未独立验证。",
-    "sources": [{"label": "本周期作者报告", "url": "https://x.com/pablothethinker/status/2109509759044854087"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T13:01:34+08:00（北京时间）", "热度快照（2026-10-12）：1 赞｜223 浏览｜0 转发"],
-    "en": {"title": "Hermes Agent: Hark-assisted harness reconstruction", "summary": "The author reports studying the open-source agent and creating a new harness; no public implementation or parity tests are supplied."}
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/pablothethinker/status/2109509759044854087"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T13:01:34+08:00（北京时间）",
+      "热度快照（2026-10-12）：1 赞｜223 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Hermes Agent: Hark-assisted harness reconstruction",
+      "summary": "The author reports studying the open-source agent and creating a new harness; no public implementation or parity tests are supplied."
+    }
   },
   {
-    "id": "preview-ai-sidebar", "title": "Apple Preview：不重建整款 App，直接加 AI 功能", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "preview-ai-sidebar",
+    "title": "Apple Preview：不重建整款 App，直接加 AI 功能",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "在现有编译应用的副本上增加 AI 侧栏，而非从零复刻。",
     "description": "Zhuo Zhang 团队以 macOS 的 Preview（图片与 PDF 预览工具）展示 OmniSE，即从既有软件而不只从源码开始开发。作者称 Astra Max 在不到 20 分钟内给应用加入 AI 功能。对应 Edit My App 仓库以“给 Preview 加 AI 侧栏”为例，说明先复制原应用再修改和测试；项目仅报告 macOS 路线已验证，生成 App 仍是个人实验。本合集只阅读公开帖与 README，未运行改造应用；没有确认使用 REA。",
-    "sources": [{"label": "本周期研究团队演示帖", "url": "https://x.com/i2huer/status/2109511316465414274"}, {"label": "概念验证 Skill 与边界", "url": "https://github.com/Pasta-Lab/edit-my-app"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T13:07:45+08:00（北京时间）", "热度快照（2026-10-12）：12 赞｜2277 浏览｜2 转发"],
-    "en": {"title": "Apple Preview: adding AI directly to a compiled app", "summary": "An OmniSE demo reports modifying a copy of Preview to add AI functionality rather than rebuilding the entire application; not independently reproduced."}
+    "sources": [
+      {
+        "label": "本周期研究团队演示帖",
+        "url": "https://x.com/i2huer/status/2109511316465414274"
+      },
+      {
+        "label": "概念验证 Skill 与边界",
+        "url": "https://github.com/Pasta-Lab/edit-my-app"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T13:07:45+08:00（北京时间）",
+      "热度快照（2026-10-12）：12 赞｜2277 浏览｜2 转发"
+    ],
+    "en": {
+      "title": "Apple Preview: adding AI directly to a compiled app",
+      "summary": "An OmniSE demo reports modifying a copy of Preview to add AI functionality rather than rebuilding the entire application; not independently reproduced."
+    }
   },
   {
-    "id": "ps5-ai-security-report", "title": "PS5 安全机制：AI 辅助逆向的传播报告", "category": "hardware", "status": "unverified", "rea": "unknown",
+    "id": "ps5-ai-security-report",
+    "title": "PS5 安全机制：AI 辅助逆向的传播报告",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "传播帖称 AI 加速 PS5 安全研究，未提供模型与技术过程。",
     "description": "PS5 是索尼游戏主机。0x0SojalSec 称 AI 在数周内逆向其安全机制，并附越狱商店画面。帖子没有研究者原始记录、AI 工具、固件版本或代码，无法确认 AI 贡献，也不能据此证明整个游戏库均可访问。收录的是明确硬件目标的待验证报告，不提供游戏资产、破解步骤或盗版商店入口。",
-    "sources": [{"label": "本周期传播报告", "url": "https://x.com/0x0SojalSec/status/2109517461921902780"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T13:32:10+08:00（北京时间）", "热度快照（2026-10-12）：40 赞｜3336 浏览｜1 转发"],
-    "en": {"title": "PS5 security: reported AI-assisted investigation", "summary": "A secondary post claims accelerated security research; AI contribution and library-access claims lack primary technical evidence."}
+    "sources": [
+      {
+        "label": "本周期传播报告",
+        "url": "https://x.com/0x0SojalSec/status/2109517461921902780"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T13:32:10+08:00（北京时间）",
+      "热度快照（2026-10-12）：40 赞｜3336 浏览｜1 转发"
+    ],
+    "en": {
+      "title": "PS5 security: reported AI-assisted investigation",
+      "summary": "A secondary post claims accelerated security research; AI contribution and library-access claims lack primary technical evidence."
+    }
   },
   {
-    "id": "cameo-reconstruction", "title": "Cameo：从桌面角色应用的编译程序重建交互", "category": "apps", "status": "unverified", "rea": "REA",
+    "id": "cameo-reconstruction",
+    "title": "Cameo：从桌面角色应用的编译程序重建交互",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
     "summary": "用 REA 产出伪代码，再由 Claude Code 还原桌面角色应用。",
     "description": "Cameo 是 macOS 状态栏应用，用透明视频或动画角色在桌面上显示可拖动的小动物。wquguru 给出原项目发布链接，并描述先让 Grok Build 安装 REA 取得伪代码，再让 Claude Code 结合编译应用镜像还原功能。所回复的背景帖称六个子 Agent 用一小时恢复应用，猫动画逐帧逐字节一致；没有公开本次重建源码或对照测试，结果按作者自述理解。没有下载原镜像或角色素材。",
-    "sources": [{"label": "本周期重建工作流", "url": "https://x.com/wquguru/status/2109522225472970833"}, {"label": "所回复的结果说明（背景）", "url": "https://x.com/wquguru/status/2109521555953013004"}, {"label": "原应用项目说明", "url": "https://github.com/wquguru/cameo"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T13:51:06+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜459 浏览｜0 转发"],
-    "en": {"title": "Cameo: reconstructing desktop-character behavior", "summary": "A REA-to-Claude workflow reports rebuilding a compiled macOS character app; matching-animation claims are not independently verified."}
+    "sources": [
+      {
+        "label": "本周期重建工作流",
+        "url": "https://x.com/wquguru/status/2109522225472970833"
+      },
+      {
+        "label": "所回复的结果说明（背景）",
+        "url": "https://x.com/wquguru/status/2109521555953013004"
+      },
+      {
+        "label": "原应用项目说明",
+        "url": "https://github.com/wquguru/cameo"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T13:51:06+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜459 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Cameo: reconstructing desktop-character behavior",
+      "summary": "A REA-to-Claude workflow reports rebuilding a compiled macOS character app; matching-animation claims are not independently verified."
+    }
   },
   {
-    "id": "ar-air-conditioner-control", "title": "空调协议：用 AR 眼镜手势控制家电", "category": "hardware", "status": "unverified", "rea": "REA",
+    "id": "ar-air-conditioner-control",
+    "title": "空调协议：用 AR 眼镜手势控制家电",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
     "summary": "分析官方 App 请求，再把开关和调温控制接到 AR 眼镜。",
     "description": "HalfBit 转述 icanberk 的演示：在安卓模拟器运行空调官方 App 并观察请求，用 REA 分析开关、调温的通信协议，再由 Codex 在 Lens Studio（AR 眼镜开发平台）制作界面与手势交互。目的不是重做空调 App，而是戴眼镜直接控制设备。传播帖称约 15 分钟完成，未给出设备型号、协议规格或代码；不能把这次演示写成已兼容任意家电。",
-    "sources": [{"label": "本周期演示转述", "url": "https://x.com/justhalfbit/status/2109524402765488499"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T13:59:45+08:00（北京时间）", "热度快照（2026-10-12）：5 赞｜493 浏览｜0 转发"],
-    "en": {"title": "Air-conditioner protocol for AR gesture control", "summary": "A secondary demo describes analyzing app requests with REA and using Codex/Lens Studio to control an appliance from AR glasses."}
+    "sources": [
+      {
+        "label": "本周期演示转述",
+        "url": "https://x.com/justhalfbit/status/2109524402765488499"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T13:59:45+08:00（北京时间）",
+      "热度快照（2026-10-12）：5 赞｜493 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Air-conditioner protocol for AR gesture control",
+      "summary": "A secondary demo describes analyzing app requests with REA and using Codex/Lens Studio to control an appliance from AR glasses."
+    }
   },
   {
-    "id": "wine-uwp-shapr3d", "title": "wine-uwp：让 Shapr3D 等 Windows 商店应用在 Linux 运行", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "id": "wine-uwp-shapr3d",
+    "title": "wine-uwp：让 Shapr3D 等 Windows 商店应用在 Linux 运行",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "用 Claude 辅助研究封闭应用所需接口，扩展 Wine 的兼容层。",
     "description": "Wine 是在 Linux 运行 Windows 软件的兼容层，UWP/MSIX 商店应用还需要应用包模型、WinRT 和界面合成接口。DesignGears 报告 Claude 完成多数逆向和编码，自己负责指导与测试，做出 wine-uwp；原帖与 README 列出 Shapr3D、纸牌、媒体播放器和计算器。后续同周期帖介绍基于该运行时的 Shapr3D for Linux，称建模、登录、云同步及 STL/PDF 导出可用，仍为非官方 beta。项目运行微软原有界面框架，不是重写整个 Shapr3D 或 Windows；本合集只核对公开材料，未运行应用。",
-    "sources": [{"label": "本周期运行时作者帖", "url": "https://x.com/DesignGears/status/2109530620321788301"}, {"label": "本周期 Shapr3D 作者帖", "url": "https://x.com/DesignGears/status/2109532140907921698"}, {"label": "兼容层实现与应用状态", "url": "https://github.com/designgears/wine-uwp"}, {"label": "Shapr3D 包装项目与 beta 说明", "url": "https://github.com/designgears/shapr3d-linux"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T14:24:27+08:00、14:30:30+08:00（北京时间）", "运行时帖热度快照（2026-10-12）：2 赞｜70 浏览｜0 转发", "Shapr3D 帖热度快照（2026-10-12）：1 赞｜23 浏览｜0 转发"],
-    "en": {"title": "wine-uwp: Windows Store apps and Shapr3D on Linux", "summary": "Claude-assisted investigation extends Wine with app-model and composition support; the related Shapr3D package remains an unofficial beta."}
+    "sources": [
+      {
+        "label": "本周期运行时作者帖",
+        "url": "https://x.com/DesignGears/status/2109530620321788301"
+      },
+      {
+        "label": "本周期 Shapr3D 作者帖",
+        "url": "https://x.com/DesignGears/status/2109532140907921698"
+      },
+      {
+        "label": "兼容层实现与应用状态",
+        "url": "https://github.com/designgears/wine-uwp"
+      },
+      {
+        "label": "Shapr3D 包装项目与 beta 说明",
+        "url": "https://github.com/designgears/shapr3d-linux"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T14:24:27+08:00、14:30:30+08:00（北京时间）",
+      "运行时帖热度快照（2026-10-12）：2 赞｜70 浏览｜0 转发",
+      "Shapr3D 帖热度快照（2026-10-12）：1 赞｜23 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "wine-uwp: Windows Store apps and Shapr3D on Linux",
+      "summary": "Claude-assisted investigation extends Wine with app-model and composition support; the related Shapr3D package remains an unofficial beta."
+    }
   },
   {
-    "id": "redmi-tv-dashboard", "title": "红米电视：研究浏览器 APK，把闲置电视改成数据大屏", "category": "hardware", "status": "unverified", "rea": "other-ai",
+    "id": "redmi-tv-dashboard",
+    "title": "红米电视：研究浏览器 APK，把闲置电视改成数据大屏",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。",
     "description": "AI.阿烈叔希望将闲置红米电视变成作战数据大屏，报告由 Muse 调度、Codex 反编译浏览器 APK 并在电视实测，区分 TV Bro/BrowseHere 的 WebView 套壳与其他浏览器，再适配看板页面。作者称通过 Firefox 远程调试与 ADB 点击组合触发全屏，形成一键恢复脚本。两小时是整个大屏改造的自述工时；没有公开分析产物和脚本，本合集未核实帖子中所有浏览器兼容性解释。",
-    "sources": [{"label": "本周期作者实践记录", "url": "https://x.com/zxlie_fehelper/status/2109533072370917846"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T14:34:12+08:00（北京时间）", "热度快照（2026-10-12）：1 赞｜127 浏览｜1 转发"],
-    "en": {"title": "Redmi TV: browser inspection for a dashboard", "summary": "A Muse/Codex report combines APK inspection, browser selection and full-screen interaction to repurpose an idle TV as a dashboard."}
+    "sources": [
+      {
+        "label": "本周期作者实践记录",
+        "url": "https://x.com/zxlie_fehelper/status/2109533072370917846"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T14:34:12+08:00（北京时间）",
+      "热度快照（2026-10-12）：1 赞｜127 浏览｜1 转发"
+    ],
+    "en": {
+      "title": "Redmi TV: browser inspection for a dashboard",
+      "summary": "A Muse/Codex report combines APK inspection, browser selection and full-screen interaction to repurpose an idle TV as a dashboard."
+    }
   },
   {
-    "id": "cleanmymac-rebuild-report", "title": "CleanMyMac：研究核心功能并做原生 Mac 应用雏形", "category": "apps", "status": "unverified", "rea": "REA",
+    "id": "cleanmymac-rebuild-report",
+    "title": "CleanMyMac：研究核心功能并做原生 Mac 应用雏形",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
     "summary": "第三方报告宝玉用 REA 分析清理工具，再重建部分功能。",
     "description": "CleanMyMac 是 macOS 清理与维护软件。Wen 转述宝玉的实践，称用 REA 分析四个核心功能，再让 AI 写出原生 Mac 应用雏形。目的在于研究已有维护工具并做自己的实现。当前帖没有列出四个功能的名称、原作者过程链接或重建代码，因此只收录待验证转述，不称完整替代 CleanMyMac。",
-    "sources": [{"label": "本周期第三方报告", "url": "https://x.com/xiaoshan0413/status/2109540598633877515"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:04:06+08:00（北京时间）", "热度快照（2026-10-12）：1 赞｜50 浏览｜0 转发"],
-    "en": {"title": "CleanMyMac: reported native-app prototype", "summary": "A secondary report describes inspecting four functions with REA and rebuilding a Mac prototype; exact functions and primary implementation evidence are absent."}
+    "sources": [
+      {
+        "label": "本周期第三方报告",
+        "url": "https://x.com/xiaoshan0413/status/2109540598633877515"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:04:06+08:00（北京时间）",
+      "热度快照（2026-10-12）：1 赞｜50 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "CleanMyMac: reported native-app prototype",
+      "summary": "A secondary report describes inspecting four functions with REA and rebuilding a Mac prototype; exact functions and primary implementation evidence are absent."
+    }
   },
   {
-    "id": "nexalytics-rebuild", "title": "Nexalytics：用自己的应用检验 REA 行为重建", "category": "apps", "status": "unverified", "rea": "REA",
+    "id": "nexalytics-rebuild",
+    "title": "Nexalytics：用自己的应用检验 REA 行为重建",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
     "summary": "研究前后端通信与操作流程，结合 Playwright 重建应用。",
     "description": "Wiktor 为检验 REA 的能力，以自己开发数月的 Nexalytics 应用做实验；帖子未介绍该产品的具体业务。作者从整体行为、前后端通信和选定流程恢复功能逻辑，再接入 Playwright，让 Agent 点击界面、观察通信并验证假设。作者报告功能与架构都较接近原版，但尚未一比一；未提供重建源码或完整对照测试，不能称已恢复服务器原代码。",
-    "sources": [{"label": "本周期作者实验", "url": "https://x.com/wikwanat/status/2109542201927647588"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:10:28+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜9 浏览｜0 转发"],
-    "en": {"title": "Nexalytics: testing REA on the author's own app", "summary": "Inspect UI flows and front/back-end communication with Playwright; the author reports a close but not one-to-one reconstruction."}
+    "sources": [
+      {
+        "label": "本周期作者实验",
+        "url": "https://x.com/wikwanat/status/2109542201927647588"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:10:28+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜9 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Nexalytics: testing REA on the author's own app",
+      "summary": "Inspect UI flows and front/back-end communication with Playwright; the author reports a close but not one-to-one reconstruction."
+    }
   },
   {
-    "id": "metatrader-signals-report", "title": "MetaTrader：为研究交易信号进行逆向的转述", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "metatrader-signals-report",
+    "title": "MetaTrader：为研究交易信号进行逆向的转述",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "评论称有人研究 MetaTrader 以获取信号，缺少具体实现证据。",
     "description": "MetaTrader 是金融交易终端。Rapture 在讨论 AI 逆向工具时称，有人研究 MetaTrader 是为了得到交易信号。该评论提供明确软件对象与目的，但没有说明分析的是终端、指标还是插件，也没有研究者、模型、代码或结果链接；REA 在同帖被提到，却不能确认用于这个目标。保留为待验证第三方线索，不据此称已获取付费信号或盈利策略。",
-    "sources": [{"label": "本周期第三方线索", "url": "https://x.com/TheKing_Rapture/status/2109547879199056181"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:33:02+08:00（北京时间）", "热度快照（2026-10-12）：8 赞｜325 浏览｜0 转发"],
-    "en": {"title": "MetaTrader: a reported signal-analysis use case", "summary": "A comment names trading-signal investigation as a goal but supplies no researcher, toolchain or demonstrated results."}
+    "sources": [
+      {
+        "label": "本周期第三方线索",
+        "url": "https://x.com/TheKing_Rapture/status/2109547879199056181"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:33:02+08:00（北京时间）",
+      "热度快照（2026-10-12）：8 赞｜325 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "MetaTrader: a reported signal-analysis use case",
+      "summary": "A comment names trading-signal investigation as a goal but supplies no researcher, toolchain or demonstrated results."
+    }
   },
   {
-    "id": "red-alert-2-rl-engine", "title": "《红色警戒 2》：为强化学习重写游戏引擎", "category": "games", "status": "unverified", "rea": "other-ai",
+    "id": "red-alert-2-rl-engine",
+    "title": "《红色警戒 2》：为强化学习重写游戏引擎",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "参考 Chrono Divide，用 Opus 与测试集重建单位行为。",
     "description": "《红色警戒 2》是即时战略游戏，Chrono Divide 是其浏览器重实现项目。Xi 为强化学习（RL）研究重写游戏引擎，称借助 Chrono Divide 的已有引擎推进实现，并使用 Opus 5.5 与 6000 多个测试用例核查单位行为。具体用途是构建可用于学习实验的游戏逻辑；没有公开自己的引擎仓库、测试集或评测结果，不能把已有 Chrono Divide 项目整体归为 AI 逆向成果。",
-    "sources": [{"label": "本周期作者报告", "url": "https://x.com/Chen1090874226/status/2109548112281055674"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:33:58+08:00（北京时间）", "热度快照（2026-10-12）：1 赞｜24 浏览｜0 转发"],
-    "en": {"title": "Red Alert 2: an engine rewrite for reinforcement learning", "summary": "The author reports using Chrono Divide, Opus and over 6,000 tests to rebuild unit behavior; their implementation and test results are not public."}
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/Chen1090874226/status/2109548112281055674"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:33:58+08:00（北京时间）",
+      "热度快照（2026-10-12）：1 赞｜24 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Red Alert 2: an engine rewrite for reinforcement learning",
+      "summary": "The author reports using Chrono Divide, Opus and over 6,000 tests to rebuild unit behavior; their implementation and test results are not public."
+    }
   },
   {
-    "id": "business-software-rebuild", "title": "业务软件：从既有程序或网页重建的进行中尝试", "category": "apps", "status": "in-progress", "rea": "unknown",
+    "id": "business-software-rebuild",
+    "title": "业务软件：从既有程序或网页重建的进行中尝试",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "unknown",
     "summary": "作者称正在用 Agent 逆向工作流克隆一款业务软件。",
     "description": "Supersocks 在讨论 REA 与模型工具链时，称自己正在用这种方式克隆一款业务软件，即从二进制或网页研究行为后做独立实现。明确目标是重建已有业务工具，但没有公开产品名、业务领域、具体模块或代码，也没有确认实际使用 REA。按进行中的第一手尝试记录，不把它写成已完成交付。",
-    "sources": [{"label": "本周期作者进行中报告", "url": "https://x.com/iamsupersocks/status/2109553690595979371"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:56:08+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜88 浏览｜0 转发"],
-    "en": {"title": "Business software: an ongoing agent-assisted rebuild", "summary": "The author reports cloning an unnamed professional application using an investigation/rebuild workflow; no delivery or exact REA use is established."}
+    "sources": [
+      {
+        "label": "本周期作者进行中报告",
+        "url": "https://x.com/iamsupersocks/status/2109553690595979371"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:56:08+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜88 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Business software: an ongoing agent-assisted rebuild",
+      "summary": "The author reports cloning an unnamed professional application using an investigation/rebuild workflow; no delivery or exact REA use is established."
+    }
   },
   {
-    "id": "capcut-transition-research", "title": "CapCut 转场：研究视频编辑模块并自行重构的线索", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "capcut-transition-research",
+    "title": "CapCut 转场：研究视频编辑模块并自行重构的线索",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "第三方讨论以 CapCut 转场为研究对象，用于理解编辑器设计。",
     "description": "CapCut 是视频剪辑工具，转场模块负责片段之间的衔接效果。fireandstart 在讨论 REA 类工具时提到，对方正在研究 CapCut 转场并打算自行重构，用于理解素材组织、时间线和转场参数。后面的预览与导出一致性等是评论者建议关注的问题，不是已经恢复的事实。原作者过程、分析结果与代码未在当前帖展开，也未确认具体工具；保留为待验证研究线索。",
-    "sources": [{"label": "本周期研究讨论", "url": "https://x.com/fireandstart/status/2109554617004466397"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T15:59:48+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜3 浏览｜0 转发"],
-    "en": {"title": "CapCut transitions: a module-reconstruction lead", "summary": "A secondary discussion names transition research and an independent rebuild; design questions raised by the commenter are not demonstrated recoveries."}
+    "sources": [
+      {
+        "label": "本周期研究讨论",
+        "url": "https://x.com/fireandstart/status/2109554617004466397"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T15:59:48+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜3 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "CapCut transitions: a module-reconstruction lead",
+      "summary": "A secondary discussion names transition research and an independent rebuild; design questions raised by the commenter are not demonstrated recoveries."
+    }
   },
   {
-    "id": "cf632ble-web-bluetooth", "title": "CF632BLE 体脂秤：在浏览器里称重，不走厂商后台", "category": "hardware", "status": "unverified", "rea": "other-ai",
+    "id": "cf632ble-web-bluetooth",
+    "title": "CF632BLE 体脂秤：在浏览器里称重，不走厂商后台",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。",
     "description": "guyru 希望直接使用自己的智能体脂秤，报告用 Claude Code 连接 ghidra-rpc 研究 BLE（低功耗蓝牙）协议，先写 Python，再改为 Web Bluetooth。对应 CF632BLE 仓库说明协议与体成分算法来自对 Unique Health 安卓 App 的分析，网页本地计算并保存测量记录，不依赖厂商后台。源码公开，作者称使用效果良好；本合集未连接设备或复核健康指标准确性。Web Bluetooth 需要 Chromium，Safari/iOS 不支持。",
-    "sources": [{"label": "本周期作者报告", "url": "https://x.com/guyru_/status/2109566754540392730"}, {"label": "公开实现与设备边界", "url": "https://github.com/guyru/cf632ble"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T16:48:02+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜94 浏览｜0 转发"],
-    "en": {"title": "CF632BLE: a local Web Bluetooth scale client", "summary": "Claude Code and ghidra-rpc investigate BLE; public Python/web reimplementation keeps measurements local, with device and browser limits."}
+    "sources": [
+      {
+        "label": "本周期作者报告",
+        "url": "https://x.com/guyru_/status/2109566754540392730"
+      },
+      {
+        "label": "公开实现与设备边界",
+        "url": "https://github.com/guyru/cf632ble"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T16:48:02+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜94 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "CF632BLE: a local Web Bluetooth scale client",
+      "summary": "Claude Code and ghidra-rpc investigate BLE; public Python/web reimplementation keeps measurements local, with device and browser limits."
+    }
   },
   {
-    "id": "android-protection-inspection", "title": "Android App：用 Claude Code 识别根检测与证书固定", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "id": "android-protection-inspection",
+    "title": "Android App：用 Claude Code 识别根检测与证书固定",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "AMA 转述一次 JADX、Burp Suite MCP 与 Claude Code 的移动应用分析。",
     "description": "Ian Kerins 转述 Ibrahim 的近期研究：在网页数据访问困难时考虑移动 App 路线，用 JADX 阅读代码、Burp Suite MCP 与 Claude Code 查明某个 App 的 root 检测、Magisk 检测和 SSL pinning（证书固定）。具体 App 未具名，也未提供复现代码；目标是理解客户端保护与数据访问路径，不是已证明绕过保护或比浏览器方案更快。仅记录分析报告，不提供绕过步骤。",
-    "sources": [{"label": "本周期 AMA 转述", "url": "https://x.com/IanJKerins/status/2109559519584088093"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T16:19:17+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜17 浏览｜0 转发"],
-    "en": {"title": "Android app: inspecting root checks and certificate pinning", "summary": "An AMA recap describes JADX, Burp MCP and Claude Code identifying protections in an unnamed app; no demonstrated bypass or comparative speed claim."}
+    "sources": [
+      {
+        "label": "本周期 AMA 转述",
+        "url": "https://x.com/IanJKerins/status/2109559519584088093"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T16:19:17+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜17 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Android app: inspecting root checks and certificate pinning",
+      "summary": "An AMA recap describes JADX, Burp MCP and Claude Code identifying protections in an unnamed app; no demonstrated bypass or comparative speed claim."
+    }
   },
   {
-    "id": "kindle-android-weread", "title": "Kindle：为运行微信读书制作 Android 固件", "category": "hardware", "status": "in-progress", "rea": "other-ai",
+    "id": "kindle-android-weread",
+    "title": "Kindle：为运行微信读书制作 Android 固件",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "other-ai",
     "summary": "Codex 与 Claude 接力适配系统；作者报告设备已显示界面。",
     "description": "HB 想在 Kindle 上安装较新的微信读书水墨屏版本，旧 Android 4/5 移植无法满足需求，便让 Codex 研究固件。作者称虚拟机中的 Android 已能启动，但写到 Kindle 后不显示界面；换 Claude Opus 5.5 接力后，设备开始显示系统界面。未提供 Kindle 型号、固件代码、驱动覆盖或微信读书已运行的证据；这是系统迁移的进行中报告，不是完整可用的阅读方案。模型代号沿用原帖，不作能力对比结论。",
-    "sources": [{"label": "本周期作者进展", "url": "https://x.com/hbyxabc/status/2109583911483519202"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:56:13+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜31 浏览｜0 转发"],
-    "en": {"title": "Kindle: Android firmware for WeRead", "summary": "Codex/Claude-assisted system adaptation reportedly reaches an on-device interface; WeRead, drivers and overall usability remain unverified."}
+    "sources": [
+      {
+        "label": "本周期作者进展",
+        "url": "https://x.com/hbyxabc/status/2109583911483519202"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T17:56:13+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜31 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Kindle: Android firmware for WeRead",
+      "summary": "Codex/Claude-assisted system adaptation reportedly reaches an on-device interface; WeRead, drivers and overall usability remain unverified."
+    }
   },
   {
-    "id": "proxy-clash-subscription-bridge", "title": "代理客户端：恢复 Clash 所需的订阅导出", "category": "apps", "status": "unverified", "rea": "other-ai",
+    "id": "proxy-clash-subscription-bridge",
+    "title": "代理客户端：恢复 Clash 所需的订阅导出",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "Codex 分析客户端二进制，作者自建服务衔接订阅接口。",
     "description": "web3渔夫 因自己使用的代理服务隐藏了订阅入口，无法继续用 Clash 自定义流量，报告让 Codex 分析客户端二进制，定位登录、订阅接口与请求签名机制，再做中转服务恢复订阅。实际工作发生在今年上半年，本帖是本周期首次收录的回顾报告。服务商、代码和授权条件未公开，不独立确认结果；不收录签名密钥、访问凭据或绕过操作。",
-    "sources": [{"label": "本周期作者回顾", "url": "https://x.com/web3_fising/status/2109601382273880327"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:05:38+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜26 浏览｜0 转发"],
-    "en": {"title": "Proxy client: restoring a Clash subscription bridge", "summary": "A retrospective Codex-assisted binary investigation reports a self-hosted subscription bridge; service, code and authorization details are not public."}
+    "sources": [
+      {
+        "label": "本周期作者回顾",
+        "url": "https://x.com/web3_fising/status/2109601382273880327"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T19:05:38+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜26 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Proxy client: restoring a Clash subscription bridge",
+      "summary": "A retrospective Codex-assisted binary investigation reports a self-hosted subscription bridge; service, code and authorization details are not public."
+    }
   },
   {
-    "id": "codex-rea-controlled-samples", "title": "自制 JS / .NET 样本：对照有无 REA 的函数重建", "category": "algorithms", "status": "analysis-test", "rea": "REA",
+    "id": "codex-rea-controlled-samples",
+    "title": "自制 JS / .NET 样本：对照有无 REA 的函数重建",
+    "category": "algorithms",
+    "status": "analysis-test",
+    "rea": "REA",
     "summary": "同模型六次运行、360 用例验收，研究 REA 的线索价值而非宣称提速。",
     "description": "蓝哥AI 以可读脚本、解包后仍为 JavaScript 的包和无源码的小型 .NET 托管样本，比较原生 Codex 与 Codex + REA，要求交付独立函数并对照原程序行为。同一 gpt-6.1-sol 模型在三组任务各跑两条路线，作者报告合计 360 用例全部通过；REA 提供方法位置与指令线索，完整解码仍需模型补脚本。各任务每路线只跑一次，额外验证步骤不统一，不能用耗时得出普遍效率排名；也不是商业软件的大规模反编译。",
-    "sources": [{"label": "本周期作者对照测试", "url": "https://x.com/0xlangeai/status/2109603485914206498"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:14:00+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜198 浏览｜0 转发"],
-    "en": {"title": "Controlled JS/.NET samples: Codex with and without REA", "summary": "Six runs reportedly pass 360 behavioral checks; small samples and unequal extra verification do not establish a general speed advantage."}
+    "sources": [
+      {
+        "label": "本周期作者对照测试",
+        "url": "https://x.com/0xlangeai/status/2109603485914206498"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T19:14:00+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜198 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Controlled JS/.NET samples: Codex with and without REA",
+      "summary": "Six runs reportedly pass 360 behavioral checks; small samples and unequal extra verification do not establish a general speed advantage."
+    }
   },
   {
-    "id": "incredible-machine-browser", "title": "《不可思议的机器》：用 Claude 重建浏览器版", "category": "games", "status": "unverified", "rea": "other-ai",
+    "id": "incredible-machine-browser",
+    "title": "《不可思议的机器》：用 Claude 重建浏览器版",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
     "summary": "作者报告 Opus 分析 Sierra 老游戏、重做素材并在浏览器运行。",
     "description": "The Incredible Machine（《不可思议的机器》）是 Sierra 的机械装置解谜游戏。Stas Kulesh 展示视频并报告 Claude Opus 5.5 研究原游戏、重新生成素材，做成可在浏览器玩的版本。具体目的为重建老游戏的网页体验；未给出源码、关卡覆盖或行为对照测试，无法确认完整恢复原引擎或素材权利，不把可玩演示写成完整反编译。",
-    "sources": [{"label": "本周期作者演示", "url": "https://x.com/staskulesh/status/2109605915175596275"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T19:23:39+08:00（北京时间）", "热度快照（2026-10-12）：3 赞｜145 浏览｜0 转发"],
-    "en": {"title": "The Incredible Machine: a Claude-assisted browser rebuild", "summary": "The author reports reimplementing a Sierra puzzle game and regenerating assets, with a video but no public source or parity tests."}
+    "sources": [
+      {
+        "label": "本周期作者演示",
+        "url": "https://x.com/staskulesh/status/2109605915175596275"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T19:23:39+08:00（北京时间）",
+      "热度快照（2026-10-12）：3 赞｜145 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "The Incredible Machine: a Claude-assisted browser rebuild",
+      "summary": "The author reports reimplementing a Sierra puzzle game and regenerating assets, with a video but no public source or parity tests."
+    }
   },
   {
-    "id": "dlss-amd-compute-report", "title": "DLSS：重实现计算着色器以在 AMD 显卡运行的报告", "category": "algorithms", "status": "unverified", "rea": "unknown",
+    "id": "dlss-amd-compute-report",
+    "title": "DLSS：重实现计算着色器以在 AMD 显卡运行的报告",
+    "category": "algorithms",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "讨论明确提出 AI 辅助重实现 DLSS，具体开发归属仍待核验。",
     "description": "DLSS 是 NVIDIA 的游戏画面重建技术。MisterSpace3 在相关线程中称 AI 逆向并重实现它，使其以普通计算着色器在 AMD GPU 运行。背景中的 DLSSNR-AMD 仓库确实公开 Vulkan 实现，报告仅在 RX 9070 XT 测试，Windows 仍为实验预览，且不分发原模型权重。但本轮未确认评论指向这一确切仓库，README 也未说明 AI 开发贡献；因此保留为有明确互通用途的待验证报告，不归因全部公开成果给 AI。",
-    "sources": [{"label": "本周期 AI 重实现评论", "url": "https://x.com/MisterSpace3/status/2109578076648874292"}, {"label": "所回复线程的 DLSS 背景", "url": "https://x.com/SebAaltonen/status/2108990746280038649"}, {"label": "相关公开项目背景（未确认评论对应）", "url": "https://github.com/mochizuki0323/DLSSNR-AMD"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:33:02+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜9 浏览｜0 转发"],
-    "en": {"title": "DLSS on AMD: reported AI-assisted compute-shader reconstruction", "summary": "A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established."}
+    "sources": [
+      {
+        "label": "本周期 AI 重实现评论",
+        "url": "https://x.com/MisterSpace3/status/2109578076648874292"
+      },
+      {
+        "label": "所回复线程的 DLSS 背景",
+        "url": "https://x.com/SebAaltonen/status/2108990746280038649"
+      },
+      {
+        "label": "相关公开项目背景（未确认评论对应）",
+        "url": "https://github.com/mochizuki0323/DLSSNR-AMD"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T17:33:02+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜9 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "DLSS on AMD: reported AI-assisted compute-shader reconstruction",
+      "summary": "A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established."
+    }
   },
   {
-    "id": "streaming-service-integration-report", "title": "Netflix / Prime：统一流媒体界面的逆向转述", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "streaming-service-integration-report",
+    "title": "Netflix / Prime：统一流媒体界面的逆向转述",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "第三方称将两个服务整合到一个界面，未说明合法内容获取与 AI 贡献。",
     "description": "水哥 转述有人逆向整合 Netflix 与 Amazon Prime，做统一电影、剧集和动漫流媒体界面，并将其放在 AI 加速产品开发的语境中。没有研究者、代码、接口分析或授权说明，本轮也未成功读到短链接目标。不能确认 AI 的实际贡献，更不据此证明可合法免费获取两家平台的内容；只保留具体客户端整合目标的待验证转述，不链接内容站或分发影视资源。",
-    "sources": [{"label": "本周期第三方转述", "url": "https://x.com/HigbeyMyrta/status/2109596534350524664"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T18:46:22+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜36 浏览｜0 转发"],
-    "en": {"title": "Netflix/Prime: a reported unified streaming interface", "summary": "A secondary integration claim lacks primary code, authorization and specific AI evidence; no content service or media assets are distributed here."}
+    "sources": [
+      {
+        "label": "本周期第三方转述",
+        "url": "https://x.com/HigbeyMyrta/status/2109596534350524664"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T18:46:22+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜36 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Netflix/Prime: a reported unified streaming interface",
+      "summary": "A secondary integration claim lacks primary code, authorization and specific AI evidence; no content service or media assets are distributed here."
+    }
   },
   {
-    "id": "slack-music-claude-zoom-idea", "title": "Slack 音乐 / Claude 会议：跨应用功能组合的 idea", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "slack-music-claude-zoom-idea",
+    "title": "Slack 音乐 / Claude 会议：跨应用功能组合的 idea",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "提出把 YouTube Music 放进 Slack、把 Zoom 放进 Claude，而非只拼接游戏。",
     "description": "Netanel Gilad 在 AI 逆向与应用重组讨论中提出两个具体互通方向：在团队聊天工具 Slack 内使用 YouTube Music 音乐，在 Claude 内使用 Zoom 会议能力，希望不再依赖单独扩展来组合软件。帖子是具体 idea，没有实际协议分析、实现、授权条件或效果验证，也未说明使用 REA。",
-    "sources": [{"label": "本周期互通 idea", "url": "https://x.com/netanelgilad/status/2109590211034263756"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T18:21:15+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜30 浏览｜0 转发"],
-    "en": {"title": "Music in Slack and Zoom in Claude: interoperability ideas", "summary": "A concrete cross-app proposal, not a demonstrated integration, protocol investigation or REA implementation."}
+    "sources": [
+      {
+        "label": "本周期互通 idea",
+        "url": "https://x.com/netanelgilad/status/2109590211034263756"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T18:21:15+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜30 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Music in Slack and Zoom in Claude: interoperability ideas",
+      "summary": "A concrete cross-app proposal, not a demonstrated integration, protocol investigation or REA implementation."
+    }
   },
   {
-    "id": "fowlbrowser-agent-bridge", "title": "fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态", "category": "apps", "status": "unverified", "rea": "unknown",
+    "id": "fowlbrowser-agent-bridge",
+    "title": "fowlbrowser：让 Claude 等 Agent 使用现有 Chrome 登录态",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
     "summary": "浏览器扩展为不同 Agent 提供前台与后台标签页操作。",
     "description": "champi 在本周期询问 argofowl 的新浏览器扩展是否来自此前计划的 Codex 扩展逆向。对应作者发布帖与 README 介绍 fowlbrowser：通过 MCP、本地消息桥和扩展让 Claude 或其他 Agent 使用现有浏览器标签页和登录态，可在后台工作，并把登录、付款交还用户，提供公开仓库。目前仅支持 macOS，Chrome/Helium 已测试，其他 Chromium 浏览器测试较少。具体互通项目已有发布，但评论的逆向归因仍是问句，不能写成作者已确认恢复 Codex 协议；性能比较仅为作者的小样本报告，本合集未运行扩展。",
-    "sources": [{"label": "本周期逆向关联讨论", "url": "https://x.com/zCHAMPI1/status/2109572651689848893"}, {"label": "作者发布说明（背景）", "url": "https://x.com/argofowl/status/2109571141434277939"}, {"label": "公开实现", "url": "https://github.com/argofowl/fowlbrowser"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:11:28+08:00（北京时间）", "讨论帖热度快照（2026-10-12）：1 赞｜53 浏览｜0 转发"],
-    "en": {"title": "fowlbrowser: an existing-session browser bridge for agents", "summary": "A public extension supports Claude and other agents; its proposed link to Codex-extension reverse engineering remains an unanswered question."}
+    "sources": [
+      {
+        "label": "本周期逆向关联讨论",
+        "url": "https://x.com/zCHAMPI1/status/2109572651689848893"
+      },
+      {
+        "label": "作者发布说明（背景）",
+        "url": "https://x.com/argofowl/status/2109571141434277939"
+      },
+      {
+        "label": "公开实现",
+        "url": "https://github.com/argofowl/fowlbrowser"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T17:11:28+08:00（北京时间）",
+      "讨论帖热度快照（2026-10-12）：1 赞｜53 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "fowlbrowser: an existing-session browser bridge for agents",
+      "summary": "A public extension supports Claude and other agents; its proposed link to Codex-extension reverse engineering remains an unanswered question."
+    }
   },
   {
-    "id": "opensetter-manychat-rebuild", "title": "OpenSetter：重建评论转私信流程，并接入 AI 销售助手", "category": "apps", "status": "related-project", "rea": "unknown",
+    "id": "opensetter-manychat-rebuild",
+    "title": "OpenSetter：重建评论转私信流程，并接入 AI 销售助手",
+    "category": "apps",
+    "status": "related-project",
+    "rea": "unknown",
     "summary": "作者称研究 Manychat，公开 Instagram 私信自动化与 AI 回复项目。",
     "description": "Obiri 以“Manychat Reverse engineered + AI Setter”分享 OpenSetter。Manychat 是社交消息自动化工具；对应开源仓库用 Meta webhook 接收 Instagram 评论与私信，提供关键词触发私信、AI 拟稿、潜客资格判断与预约链接，可按对话选择人工审批或自动回复。具体重建目标与 AI 功能明确，但 README 没有说明 AI 是否参与逆向或使用了 Manychat 内部接口，故作为相关流程重建项目记录，不称已反编译 Manychat。",
-    "sources": [{"label": "本周期作者发布", "url": "https://x.com/xbirimensah/status/2109571298020274530"}, {"label": "项目与 AI 流程说明", "url": "https://github.com/xbirimensah/opensetter"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:06:06+08:00（北京时间）", "热度快照（2026-10-12）：0 赞｜4 浏览｜0 转发"],
-    "en": {"title": "OpenSetter: rebuilding comment-to-DM flows with an AI setter", "summary": "A public Instagram automation project inspired by Manychat; AI-assisted replies are documented, but reverse-engineering methods are not."}
+    "sources": [
+      {
+        "label": "本周期作者发布",
+        "url": "https://x.com/xbirimensah/status/2109571298020274530"
+      },
+      {
+        "label": "项目与 AI 流程说明",
+        "url": "https://github.com/xbirimensah/opensetter"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T17:06:06+08:00（北京时间）",
+      "热度快照（2026-10-12）：0 赞｜4 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "OpenSetter: rebuilding comment-to-DM flows with an AI setter",
+      "summary": "A public Instagram automation project inspired by Manychat; AI-assisted replies are documented, but reverse-engineering methods are not."
+    }
   },
   {
-    "id": "sfiii-codescene-refactoring", "title": "《街头霸王 III》：用 AI 重构反编译后的 C 代码", "category": "games", "status": "related-project", "rea": "other-ai",
+    "id": "sfiii-codescene-refactoring",
+    "title": "《街头霸王 III》：用 AI 重构反编译后的 C 代码",
+    "category": "games",
+    "status": "related-project",
+    "rea": "other-ai",
     "summary": "在既有开源反编译代码上用 CodeHealth MCP 与轨迹回放约束重构。",
     "description": "本周期帖子转述 CodeScene 对《街头霸王 III：三度冲击》开源反编译代码的重构研究。目标是改善约 30 万行 C 代码的可维护性，主要用 Claude Code / Opus，配合 CodeHealth MCP 评分与逐帧回放状态哈希检查行为。报告称三周、约 4000 美元 token 成本，评分从 5.6 升至 10.0，54 个 PR 合入一个分支版本的 main；不是 AI 从头完成游戏反编译，也不是已合入原项目。性能、架构质量与非功能回归仍待研究，缺陷减少等预测数字不是本次实测结果。",
-    "sources": [{"label": "本周期研究转述与边界", "url": "https://x.com/renmu2017/status/2109581250424123651"}],
-    "snapshot_date": "2026-10-12", "metadata": ["发帖：2026-10-12T17:45:38+08:00（北京时间）", "热度快照（2026-10-12）：2 赞｜150 浏览｜0 转发"],
-    "en": {"title": "Street Fighter III: AI refactoring of decompiled C", "summary": "A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains."}
+    "sources": [
+      {
+        "label": "本周期研究转述与边界",
+        "url": "https://x.com/renmu2017/status/2109581250424123651"
+      }
+    ],
+    "snapshot_date": "2026-10-12",
+    "metadata": [
+      "发帖：2026-10-12T17:45:38+08:00（北京时间）",
+      "热度快照（2026-10-12）：2 赞｜150 浏览｜0 转发"
+    ],
+    "en": {
+      "title": "Street Fighter III: AI refactoring of decompiled C",
+      "summary": "A secondary study recap describes MCP-guided refactoring with replay checks on an existing decompilation, not original AI decompilation or verified performance gains."
+    }
   },
   {
     "id": "zee-rp-axure-format",
@@ -1797,6 +2304,388 @@
     "en": {
       "title": "Classic shooters: reported AI-assisted browser ports",
       "summary": "Secondary posts name Halo, Half-Life, GTA and Call of Duty browser ports; project identity, AI contribution and parity are unverified."
+    }
+  },
+  {
+    "id": "obsidian-gpt-rebuild-report",
+    "title": "Obsidian：GPT 选择笔记应用并尝试重建",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "以 Obsidian 为目标做快速重建，具体功能与验证未公开。",
+    "description": "twone.eth 报告让 GPT 自选逆向项目，模型选择 Obsidian，称约十来分钟实现并附截图。原帖没有说明恢复哪些笔记功能、源码或对照测试，也没有明确使用 REA。与既有 Obsidian ASAR 大包分析测试不是同一作者或同一任务；保留这条新重建报告，不称完整替代。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109676911500951649"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：原帖报告；本次未运行目标或独立复测"
+    ],
+    "en": {
+      "title": "Obsidian: a GPT-selected reconstruction attempt",
+      "summary": "A user reports a quick Obsidian reconstruction, with feature coverage and validation undisclosed."
+    }
+  },
+  {
+    "id": "xiaomi-speaker-chatgpt-voice-idea",
+    "title": "小米音箱：改固件接入 ChatGPT 语音的 idea",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "提出研究小米音箱固件，让设备支持 ChatGPT voice。",
+    "description": "评论者请求逆向小米音箱并修改固件，使其支持 ChatGPT voice 对话。设备系列和功能方向明确，但没有音箱型号、已开始分析或演示证据。仅是具体互通 idea，不称已经替换语音服务，也未确认使用 REA。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109680172995895346"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：具体 idea，未执行"
+    ],
+    "en": {
+      "title": "Xiaomi speaker: a ChatGPT voice firmware idea",
+      "summary": "Proposes analyzing speaker firmware to integrate ChatGPT voice; no implementation evidence."
+    }
+  },
+  {
+    "id": "capcut-subtitle-renderer-idea",
+    "title": "CapCut 动态字幕：从模板 DSL 重建渲染器的 idea",
+    "category": "algorithms",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。",
+    "description": "byeval 回复宝玉的 CapCut 动态字幕分析帖，称自己在 AI 时代之前手工研究过该渲染引擎：使用 Shader 和 SDF 文字，含样式与动画系统。作者提出现在让 AI 从模板 DSL 重建 renderer，再把模板作测试集做图片 diff。历史人工研究不是 AI 成果，当前 AI 路线仍为 idea；与他人 CapCut 编辑器或转场项目分开。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109687082558050357"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：具体 idea；历史逆向为人工",
+      "目标由窗口外父帖确认，不将父帖计入候选数"
+    ],
+    "en": {
+      "title": "CapCut subtitles: a template-driven renderer idea",
+      "summary": "Proposes reconstructing a subtitle renderer from its template DSL and comparing rendered images."
+    }
+  },
+  {
+    "id": "rea-webflow-rest-spec-report",
+    "title": "Web Flow：用 REA 梳理请求链，转成 REST 接口定义",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称分析某大厂 Web Flow 的时序与请求链，输出接口定义。",
+    "description": "作者在 REA 架构推广帖中报告，曾用某大厂 Web Flow 跑通请求链与时序拆解，生成接口定义，方向是把复杂网页流程转成标准 REST API。网站、具体接口、代码和验证没有公开；不能把“秒级”营销表述当独立性能证据。只收这个实际 Web2API 自述，其他安全审计等泛化商业方向不拆成案例。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109689282336346575"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：原帖报告；本次未运行目标或独立复测"
+    ],
+    "en": {
+      "title": "Web Flow: a REA-assisted REST specification report",
+      "summary": "Reports mapping a web workflow into an API specification, with the site and validation undisclosed."
+    }
+  },
+  {
+    "id": "kepler-ai-inference-idea",
+    "title": "Kepler 显卡：为 AI 推理做逆向研究的计划",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "计划研究旧 Kepler 显卡，使其用于 AI 推理。",
+    "description": "作者介绍使用 ChatGPT Pro 推进自己的硬件研究，其中明确说正在准备逆向 Kepler 显卡，用于 AI inference。没有具体显卡、驱动、算子或性能测试；这是筹备中的兼容研究目标，而不是已经恢复推理支持。AI 实际承担哪些步骤尚未展开，未确认使用 REA。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109705207219151126"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：筹备计划；尚未报告执行"
+    ],
+    "en": {
+      "title": "Kepler GPUs: a planned AI inference investigation",
+      "summary": "Plans reverse-engineering work on Kepler cards for inference; no driver or performance results."
+    }
+  },
+  {
+    "id": "nanolathe-total-annihilation",
+    "title": "Nanolathe：重新实现《横扫千军》游戏引擎",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "用公开研究重实现 Total Annihilation，AI 具体贡献仍待核实。",
+    "description": "Alexander Tanasie 分享 Nanolathe，称 Claude、Codex 与 DeepSeek 支持了《横扫千军》（Total Annihilation）引擎逆向。短链确实指向官网，对应公开 Go 仓库描述 clean-room 引擎与未完成兼容边界，并有供人和 Agent 贡献的研究规则。项目存在及重建目标可核查，但具体模型贡献比例仍主要来自传播帖；本次未运行。完整游戏需要用户自己的数据，不把引擎开源写成游戏内容免费。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109705658907959786"
+      },
+      {
+        "label": "看公开项目 README",
+        "url": "https://github.com/nanolathe-gg/nanolathe"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：传播帖与公开仓库",
+      "阶段：持续开发、兼容性有缺口；未独立运行"
+    ],
+    "en": {
+      "title": "Nanolathe: reimplementing Total Annihilation",
+      "summary": "An open engine reimplementation with AI involvement reported on X; compatibility and attribution remain bounded."
+    }
+  },
+  {
+    "id": "android-priv-app-permission-inspection",
+    "title": "Android priv-app：用 GPT 检查系统应用特权",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "other-ai",
+    "summary": "分析 priv-app 中疑似电信应用，研究其权限。",
+    "description": "思思思考中报告查看系统应用位置，没有看到支付应用的特权，反而发现一个疑似中国电信的组件位于 priv-app，正在交给 GPT 逆向。讨论背景涉及 TEE 与应用权限，但应用身份、型号和分析结果均不确定。收录的是具体系统应用权限检查任务，不把“看起来像”写成已确认厂商组件或恶意行为，也未确认使用 REA。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109711257779765741"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：进行中；组件名称与身份未确定"
+    ],
+    "en": {
+      "title": "Android priv-app: GPT-assisted permission inspection",
+      "summary": "A user is inspecting a privileged system app; its identity and analysis outcome remain uncertain."
+    }
+  },
+  {
+    "id": "thermalright-cooler-lcd-rust",
+    "title": "散热器 LCD：逆向 USB 协议，做 Rust 状态屏",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "让 Thermalright 散热器屏幕在 Omarchy 显示温度与 AI 使用量。",
+    "description": "Kristján Ingi 称 Opus 研究 CPU 散热器屏幕的 USB 协议并编写 Rust 驱动，在 Omarchy 显示实时温度与 AI 用量，并随主题变化。原帖短链指向 cooler-lcd，公开 README 确认 Thermalright Vision LCD 及整帧图片传输方式。代码与具体设备用途可核查，但 AI 分工仍是作者自述；本次未接设备或运行测试，未确认使用 REA。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109713514990379076"
+      },
+      {
+        "label": "看公开项目 README",
+        "url": "https://github.com/kristjaningi/cooler-lcd"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：作者原帖与 cooler-lcd README",
+      "本次仅公开材料核验，未运行"
+    ],
+    "en": {
+      "title": "Cooler LCD: a USB protocol and Rust dashboard",
+      "summary": "An Opus-assisted USB driver powers a Thermalright LCD dashboard on Omarchy."
+    }
+  },
+  {
+    "id": "camera-firmware-vm-boot",
+    "title": "相机固件：让 Codex 推进虚拟机启动研究",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "other-ai",
+    "summary": "研究自己的相机固件，使其能在虚拟机启动。",
+    "description": "作者的帖子称 Codex 会持续推进，直到自己的 camera firmware 在 VM 中启动。任务对象与用途明确，但没有相机型号、镜像架构、模拟环境或启动日志；措辞不能确认启动已经实现。保留固件仿真分析的进行中报告，不称已重建相机或完成所有驱动。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109715839117316150"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：进行中；原帖未明确报告成功启动"
+    ],
+    "en": {
+      "title": "Camera firmware: a Codex-driven VM boot investigation",
+      "summary": "A concrete firmware emulation task, without confirmed boot logs or a completed result."
+    }
+  },
+  {
+    "id": "helm-chart-v2-spec-research",
+    "title": "Helm Chart API v2：从实现整理可互通规范",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "other-ai",
+    "summary": "借助 AI 研究 Chart v2，整理便于其他工具使用的规范。",
+    "description": "Matt Farina 报告开始用 AI 将 Helm charts v2 研究整理成 spec，希望其他工具更容易围绕 Helm 运作。短链指向 helm/specs Draft PR #2，定义的是 Chart API v2，不是旧 Helm v2 程序。页面上的 Copilot 审阅指出规范可能与参考实现冲突，故保留草案阶段，不能称已经正式合入或实现一致性验证；未确认使用 REA。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109717890262053108"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：作者原帖与 Draft PR #2",
+      "边界：是 Chart API v2；规范仍待审阅"
+    ],
+    "en": {
+      "title": "Helm Chart API v2: an AI-assisted specification draft",
+      "summary": "Derives an interoperability specification from existing behavior; the draft still has review findings."
+    }
+  },
+  {
+    "id": "lg-tv-ai-privacy-audit-idea",
+    "title": "LG 电视：用 REA 核查隐私行为的 idea",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "提出分析电视代码实际行为，检验数据采集与隐私说法。",
+    "description": "Haydon Ryan 回复 LG 电视隐私争议帖，提出用 Reverse Engineering Anything MCP 检查代码实际做什么，作为 AI validated privacy 实验。父帖补读明确了 LG 电视这个对象；当前帖并未开始设备分析，也没有网络采集或代码证据。仅收具体隐私核查 idea，不将父帖对厂商的指控当本次确认事实，与 Plex 客户端重建不是同一任务。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109718682385502411"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：具体 idea",
+      "目标来自已补读父帖；未核实隐私指控"
+    ],
+    "en": {
+      "title": "LG TVs: a REA-assisted privacy audit idea",
+      "summary": "Proposes inspecting actual TV behavior to evaluate privacy claims; no audit has been executed."
+    }
+  },
+  {
+    "id": "mobile-game-interaction-evidence",
+    "title": "手游交互：用 Codex + REA 对应脚本与运行活动",
+    "category": "games",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "一边分析脚本文件，一边观察手游交互的计算活动。",
+    "description": "作者正在用 Codex + REA 反编译一款未具名 mobile game，观察 Agent 将 REA 的分析证据与游戏 compute usage 并行使用，识别每次交互对应的脚本和文件。具体操作是静态与运行交互证据对应，不是已经完成重建或移植；缺游戏名、代码和最终验证。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109721540245782843"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "阶段：进行中；手游未具名"
+    ],
+    "en": {
+      "title": "Mobile game interactions: Codex and REA evidence mapping",
+      "summary": "Maps interactions to scripts and files while observing runtime activity; reconstruction remains in progress."
+    }
+  },
+  {
+    "id": "homatics-atv14-dolby-vision-fix",
+    "title": "Homatics 盒子：研究固件修复 Dolby Vision 绿屏",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称修复 Box R 4K Plus 升 Android TV 14 后的偏色。",
+    "description": "作者报告 Homatics Box R 4K Plus 升级 Android TV 14 后，Dolby Vision 一直绿屏偏色，随后用 Claude + REA 研究固件并找到问题修复。目标、版本与故障明确，但帖子未给补丁、日志、测试视频或受影响范围。本次未刷机和复测，结果按第一手自述理解，不给未经验证的固件修改建议。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109722857207115879"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：原帖报告；本次未运行目标或独立复测"
+    ],
+    "en": {
+      "title": "Homatics ATV14: a reported Dolby Vision firmware fix",
+      "summary": "Reports using Claude and REA to address green-tinted Dolby Vision on a specific TV box."
+    }
+  },
+  {
+    "id": "rea-personal-website-redesign",
+    "title": "个人网站：用 REA 拆解设计，再做自定义重建",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称从某站设计重建自己的站，展示网页与 iPhone 版本。",
+    "description": "khaled_cli 的阿拉伯语帖报告使用 rea 仓库拆解一个网站设计，从零重建并加入个人修改，形成自己的站，视频展示 Web 和 iPhone 版本。目标站、代码与功能测试未公开；这是网页设计与交互重建的第一手报告，不称恢复服务器源代码，也不与另一作者的接单网站案例合并。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109733299115475393"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：原帖报告；本次未运行目标或独立复测"
+    ],
+    "en": {
+      "title": "Personal website: a REA-assisted design reconstruction",
+      "summary": "Reports inspecting a site and rebuilding a customized version, with web and iPhone demonstrations."
+    }
+  },
+  {
+    "id": "codex-replit-saas-subset-rebuild",
+    "title": "SaaS 功能子集：Codex 观察，Replit 重建所需 20%",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "只重建实际用到的 SaaS 功能，以替代整套订阅。",
+    "description": "作者称让 Codex computer use 操作待研究应用，再让 Replit 重建，替换多款用户只用约 20% 功能的 SaaS，并另加认证、审计与 RBAC。用途为重建实际需要的子集，而非整款产品；未列 SaaS 名称、代码或验收。“无错误”“首次正确”及 ISO27001 aligned 都是作者表述，不能当认证或独立验证，REA 未确认使用。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109733493202981247"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：原帖报告；本次未运行目标或独立复测"
+    ],
+    "en": {
+      "title": "SaaS feature subsets: Codex observation and Replit rebuilding",
+      "summary": "Reports replacing only the features users need, without named SaaS targets or independent validation."
+    }
+  },
+  {
+    "id": "arwing-littleplanet-ai-port-report",
+    "title": "Star Fox / Sonic CD：AI 原生移植的待验证传播",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。",
+    "description": "Aman 称 Opus 5.5 将 Star Fox、Star Fox 2 与 Sonic CD 移植到 Windows、macOS 和 Linux。三个短链确实分别指向 arwing、arwing2 与 littleplanet；README 描述反汇编与静态重编译为 C，并保留解释器回退，不是恢复可读原始源码。公开文档存在匹配和运行对照的作者报告，但本次未运行，也没有确认全部工作由该模型和单条提示完成。三款关联项目同帖合成一条传播案例，需要用户自有游戏镜像，不提供资产。",
+    "sources": [
+      {
+        "label": "看本窗口 X 帖",
+        "url": "https://x.com/i/status/2109734599865540661"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "证据：传播帖及三个实际关联仓库",
+      "边界：静态重编译不等于完整高层源码恢复；未运行"
+    ],
+    "en": {
+      "title": "Star Fox and Sonic CD: reported AI-assisted native ports",
+      "summary": "Linked projects document static recompilation; the claimed one-prompt AI attribution is not verified."
     }
   }
 ]

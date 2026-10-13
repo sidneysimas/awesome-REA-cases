@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **89 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **105 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（17）
-- [硬件与设备互通](categories/hardware.md)（17）
-- [应用与客户端](categories/apps.md)（48）
-- [算法与功能重建](categories/algorithms.md)（7）
+- [游戏与游戏保存](categories/games.md)（20）
+- [硬件与设备互通](categories/hardware.md)（23）
+- [应用与客户端](categories/apps.md)（54）
+- [算法与功能重建](categories/algorithms.md)（8）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -43,6 +43,9 @@
 - [《不可思议的机器》：用 Claude 重建浏览器版](cases/incredible-machine-browser.md) — 作者报告 Opus 分析 Sierra 老游戏、重做素材并在浏览器运行。 **[其他 AI 逆向 · 待验证]**
 - [《街头霸王 III》：用 AI 重构反编译后的 C 代码](cases/sfiii-codescene-refactoring.md) — 在既有开源反编译代码上用 CodeHealth MCP 与轨迹回放约束重构。 **[其他 AI 逆向 · 相关项目]**
 - [经典射击游戏：AI 辅助浏览器移植的传播报告](cases/classic-shooters-browser-report.md) — 传播帖列出多款网页移植，但缺少项目对应与 AI 贡献证据。 **[未确认使用 REA · 待验证]**
+- [Nanolathe：重新实现《横扫千军》游戏引擎](cases/nanolathe-total-annihilation.md) — 用公开研究重实现 Total Annihilation，AI 具体贡献仍待核实。 **[其他 AI 逆向 · 待验证]**
+- [手游交互：用 Codex + REA 对应脚本与运行活动](cases/mobile-game-interaction-evidence.md) — 一边分析脚本文件，一边观察手游交互的计算活动。 **[REA · 进行中]**
+- [Star Fox / Sonic CD：AI 原生移植的待验证传播](cases/arwing-littleplanet-ai-port-report.md) — 传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -63,6 +66,12 @@
 - [CF632BLE 体脂秤：在浏览器里称重，不走厂商后台](cases/cf632ble-web-bluetooth.md) — Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。 **[其他 AI 逆向 · 待验证]**
 - [Kindle：为运行微信读书制作 Android 固件](cases/kindle-android-weread.md) — Codex 与 Claude 接力适配系统；作者报告设备已显示界面。 **[其他 AI 逆向 · 进行中]**
 - [全屋联网设备：用 Codex + REA 做电脑控制端](cases/rea-home-device-control-report.md) — 作者称分析自家设备后做电脑控制软件，型号未公开。 **[REA · 待验证]**
+- [小米音箱：改固件接入 ChatGPT 语音的 idea](cases/xiaomi-speaker-chatgpt-voice-idea.md) — 提出研究小米音箱固件，让设备支持 ChatGPT voice。 **[未确认使用 REA · 待验证]**
+- [Kepler 显卡：为 AI 推理做逆向研究的计划](cases/kepler-ai-inference-idea.md) — 计划研究旧 Kepler 显卡，使其用于 AI 推理。 **[其他 AI 逆向 · 待验证]**
+- [散热器 LCD：逆向 USB 协议，做 Rust 状态屏](cases/thermalright-cooler-lcd-rust.md) — 让 Thermalright 散热器屏幕在 Omarchy 显示温度与 AI 使用量。 **[其他 AI 逆向 · 待验证]**
+- [相机固件：让 Codex 推进虚拟机启动研究](cases/camera-firmware-vm-boot.md) — 研究自己的相机固件，使其能在虚拟机启动。 **[其他 AI 逆向 · 进行中]**
+- [LG 电视：用 REA 核查隐私行为的 idea](cases/lg-tv-ai-privacy-audit-idea.md) — 提出分析电视代码实际行为，检验数据采集与隐私说法。 **[REA · 待验证]**
+- [Homatics 盒子：研究固件修复 Dolby Vision 绿屏](cases/homatics-atv14-dolby-vision-fix.md) — 作者称修复 Box R 4K Plus 升 Android TV 14 后的偏色。 **[REA · 待验证]**
 
 ### 应用与客户端
 
@@ -90,7 +99,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[未确认使用 REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**
@@ -114,6 +123,12 @@
 - [ClearSpace：研究 CleanMyMac，做原生 Mac 清理工具](cases/clearspace-cleanmymac.md) — Codex + REA 研究清理工具，报告缓存与文件管理功能。 **[REA · 待验证]**
 - [停更记账软件：AI 分析卡在加密层](cases/discontinued-accounting-encryption.md) — 从旧程序研究记账需求，但未突破加密内容。 **[未确认使用 REA · 进行中]**
 - [SolidWorks / Creo / Autodesk：重建带 CLI 的开源 CAD idea](cases/cad-cli-open-rebuild-idea.md) — 提出 AI 辅助研究商业 CAD，制作可脚本控制的替代工具。 **[未确认使用 REA · 待验证]**
+- [Obsidian：GPT 选择笔记应用并尝试重建](cases/obsidian-gpt-rebuild-report.md) — 以 Obsidian 为目标做快速重建，具体功能与验证未公开。 **[未确认使用 REA · 待验证]**
+- [Web Flow：用 REA 梳理请求链，转成 REST 接口定义](cases/rea-webflow-rest-spec-report.md) — 作者称分析某大厂 Web Flow 的时序与请求链，输出接口定义。 **[REA · 待验证]**
+- [Android priv-app：用 GPT 检查系统应用特权](cases/android-priv-app-permission-inspection.md) — 分析 priv-app 中疑似电信应用，研究其权限。 **[其他 AI 逆向 · 进行中]**
+- [Helm Chart API v2：从实现整理可互通规范](cases/helm-chart-v2-spec-research.md) — 借助 AI 研究 Chart v2，整理便于其他工具使用的规范。 **[其他 AI 逆向 · 进行中]**
+- [个人网站：用 REA 拆解设计，再做自定义重建](cases/rea-personal-website-redesign.md) — 作者称从某站设计重建自己的站，展示网页与 iPhone 版本。 **[REA · 待验证]**
+- [SaaS 功能子集：Codex 观察，Replit 重建所需 20%](cases/codex-replit-saas-subset-rebuild.md) — 只重建实际用到的 SaaS 功能，以替代整套订阅。 **[其他 AI 逆向 · 待验证]**
 
 ### 算法与功能重建
 
@@ -124,6 +139,7 @@
 - [自制 JS / .NET 样本：对照有无 REA 的函数重建](cases/codex-rea-controlled-samples.md) — 同模型六次运行、360 用例验收，研究 REA 的线索价值而非宣称提速。 **[REA · 分析测试]**
 - [DLSS：重实现计算着色器以在 AMD 显卡运行的报告](cases/dlss-amd-compute-report.md) — 讨论明确提出 AI 辅助重实现 DLSS，具体开发归属仍待核验。 **[未确认使用 REA · 待验证]**
 - [REA 分析链路：测试二进制内提示注入的 idea](cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
+- [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
 
 ## 贡献与收录
 

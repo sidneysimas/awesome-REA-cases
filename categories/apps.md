@@ -26,7 +26,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](../cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](../cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](../cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[未确认使用 REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](../cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](../cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](../cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**
@@ -50,3 +50,9 @@
 - [ClearSpace：研究 CleanMyMac，做原生 Mac 清理工具](../cases/clearspace-cleanmymac.md) — Codex + REA 研究清理工具，报告缓存与文件管理功能。 **[REA · 待验证]**
 - [停更记账软件：AI 分析卡在加密层](../cases/discontinued-accounting-encryption.md) — 从旧程序研究记账需求，但未突破加密内容。 **[未确认使用 REA · 进行中]**
 - [SolidWorks / Creo / Autodesk：重建带 CLI 的开源 CAD idea](../cases/cad-cli-open-rebuild-idea.md) — 提出 AI 辅助研究商业 CAD，制作可脚本控制的替代工具。 **[未确认使用 REA · 待验证]**
+- [Obsidian：GPT 选择笔记应用并尝试重建](../cases/obsidian-gpt-rebuild-report.md) — 以 Obsidian 为目标做快速重建，具体功能与验证未公开。 **[未确认使用 REA · 待验证]**
+- [Web Flow：用 REA 梳理请求链，转成 REST 接口定义](../cases/rea-webflow-rest-spec-report.md) — 作者称分析某大厂 Web Flow 的时序与请求链，输出接口定义。 **[REA · 待验证]**
+- [Android priv-app：用 GPT 检查系统应用特权](../cases/android-priv-app-permission-inspection.md) — 分析 priv-app 中疑似电信应用，研究其权限。 **[其他 AI 逆向 · 进行中]**
+- [Helm Chart API v2：从实现整理可互通规范](../cases/helm-chart-v2-spec-research.md) — 借助 AI 研究 Chart v2，整理便于其他工具使用的规范。 **[其他 AI 逆向 · 进行中]**
+- [个人网站：用 REA 拆解设计，再做自定义重建](../cases/rea-personal-website-redesign.md) — 作者称从某站设计重建自己的站，展示网页与 iPhone 版本。 **[REA · 待验证]**
+- [SaaS 功能子集：Codex 观察，Replit 重建所需 20%](../cases/codex-replit-saas-subset-rebuild.md) — 只重建实际用到的 SaaS 功能，以替代整套订阅。 **[其他 AI 逆向 · 待验证]**

@@ -19,3 +19,6 @@
 - [《不可思议的机器》：用 Claude 重建浏览器版](../cases/incredible-machine-browser.md) — 作者报告 Opus 分析 Sierra 老游戏、重做素材并在浏览器运行。 **[其他 AI 逆向 · 待验证]**
 - [《街头霸王 III》：用 AI 重构反编译后的 C 代码](../cases/sfiii-codescene-refactoring.md) — 在既有开源反编译代码上用 CodeHealth MCP 与轨迹回放约束重构。 **[其他 AI 逆向 · 相关项目]**
 - [经典射击游戏：AI 辅助浏览器移植的传播报告](../cases/classic-shooters-browser-report.md) — 传播帖列出多款网页移植，但缺少项目对应与 AI 贡献证据。 **[未确认使用 REA · 待验证]**
+- [Nanolathe：重新实现《横扫千军》游戏引擎](../cases/nanolathe-total-annihilation.md) — 用公开研究重实现 Total Annihilation，AI 具体贡献仍待核实。 **[其他 AI 逆向 · 待验证]**
+- [手游交互：用 Codex + REA 对应脚本与运行活动](../cases/mobile-game-interaction-evidence.md) — 一边分析脚本文件，一边观察手游交互的计算活动。 **[REA · 进行中]**
+- [Star Fox / Sonic CD：AI 原生移植的待验证传播](../cases/arwing-littleplanet-ai-port-report.md) — 传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。 **[其他 AI 逆向 · 待验证]**
