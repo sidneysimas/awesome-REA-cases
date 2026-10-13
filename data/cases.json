@@ -203,17 +203,23 @@
     "category": "apps",
     "rea": "REA",
     "summary": "让 Muse 调用 REA 阅读 Claude Code 的压缩代码包。",
-    "description": "Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。",
+    "description": "Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。\n\n\n\n另一帖中，发帖者自述用 REA 逆向 Claude Code 的语言设置，称发现 Claude 默认读取系统设置而非其所设选项。这是发帖者对一次操作及观察结果的自述；没有展示分析过程或复测，不能据此断言适用于所有版本或配置。",
     "sources": [
       {
         "label": "看 X 热门帖",
         "url": "https://x.com/servasyy_ai/status/2108846931183378537"
+      },
+      {
+        "label": "本窗口：发帖者自述用 REA 检查 Claude Code 语言设置",
+        "url": "https://x.com/i/status/2110027278570635457"
       }
     ],
     "snapshot_date": "2026-10-12",
     "metadata": [
       "热度：576 赞｜11.4 万浏览｜56 转发",
-      "发帖：10 月 10 日｜REA"
+      "发帖：10 月 10 日｜REA",
+      "补充发帖：2026-10-13T23:18:00+08:00（原帖所示时间）",
+      "补充证据为发帖者自述，未独立复核。"
     ],
     "en": {
       "title": "Claude Code: inspecting a compressed codebase",
@@ -3277,6 +3283,146 @@
     "en": {
       "title": "Typeless: a reported local voice-input alternative built with REA",
       "summary": "The author reports using REA to inspect Typeless and build an offline Swift app; functionality and performance claims are not independently verified."
+    }
+  },
+  {
+    "id": "canon-pro-1000-firmware-emulation",
+    "title": "Canon Pro-1000：用 Claude 研究并模拟打印机固件",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "unknown",
+    "summary": "作者称正尝试用 Claude 逆向并模拟 Canon Pro-1000 固件；未报告完成或验证。",
+    "description": "一位回帖者明确区分了前述成果归属，称相关既有工作 100% 是 Ian 完成；该回帖者自己的尝试则是使用 Claude 研究并模拟 Canon Pro-1000 打印机的实际固件。帖子表述为正在尝试，未提供逆向过程、模拟器、固件运行结果或验证证据，因此仅记录为进行中的作者自述。没有明示使用 REA，REA 状态为未知。",
+    "sources": [
+      {
+        "label": "作者关于 Pro-1000 固件模拟的进行中自述（回复帖）",
+        "url": "https://x.com/i/status/2110028302215999825"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "发帖：2026-10-13T23:22:04+08:00",
+      "回复中将既有工作归于 Ian；仅 Pro-1000 固件模拟尝试归于发帖者本人。"
+    ],
+    "en": {
+      "title": "Canon Pro-1000: Claude-assisted firmware emulation attempt",
+      "summary": "The poster reports an ongoing attempt to reverse-engineer and emulate Canon Pro-1000 firmware with Claude; no completion or validation is shown."
+    }
+  },
+  {
+    "id": "eleven-agent-reverse-engineering",
+    "title": "Eleven：让 Agent 协助分析应用与二进制",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "作者介绍一款开源逆向工具，可查看多平台二进制并让 Agent 协助理解代码。",
+    "description": "发帖者介绍自己制作的 Eleven，定位为 Agent 辅助逆向工具。其描述支持打开 Mac 应用、Android APK 及 Windows/Linux 二进制，并以伪代码、汇编、图或十六进制查看函数；用户可询问 Claude、Codex、Gemini、Cursor 或 ACP Agent，查看分析步骤，并将函数改名和注释作为可接受或撤销的建议。帖子还称可在副本上安全修改字节、比较构建版本并使用 lldb 调试。上述范围与免费开源状态均为作者介绍；本次没有仓库链接、代码核验或独立运行测试。帖子未明确使用 REA，不能据此确认 REA 参与。",
+    "sources": [
+      {
+        "label": "作者发布 Eleven 的原帖",
+        "url": "https://x.com/i/status/2110035757691703722"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "作者称软件免费开源；未提供可核验项目链接或独立测试。",
+      "未确认使用 REA。"
+    ],
+    "en": {
+      "title": "Eleven: agent-assisted analysis of apps and binaries",
+      "summary": "The author describes a tool for viewing multi-platform binaries and asking coding agents to help inspect them; scope and open-source status are not independently verified."
+    }
+  },
+  {
+    "id": "rea-database-query-optimization-report",
+    "title": "48,000,000 行数据库：REA 辅助查询优化的转述",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "第三方称 Claude Code 与 REA 协助优化仪表板查询；性能与等价结果未独立核验。",
+    "description": "一则第三方引用帖将该工作归于 Anthropic 工程师 Thariq Shihipar：称其把数据库快照和一周查询日志交给十个 Agent，以 REA 归组查询轨迹并分派调查，再由 Claude Code Agent 检查执行计划、改写查询与测试索引。转述称日志归纳出 18 种重复查询模式，15 项改动通过审查，另有 3 项因预期行为不清而未改；并报告中位仪表板加载时间由 8.6 秒降至 0.7 秒、最慢页面由 34 秒降至 2.8 秒，以及 4,800 组结果比较无差异。上述作者身份、REA 使用、性能和等价性均来自第三方帖子，不是 Thariq 本人的确认或本合集独立复测；不据此确认数据库归属、生产部署或普遍性能提升。",
+    "sources": [
+      {
+        "label": "第三方引用帖（所述 Thariq 项目的转述，非作者确认）",
+        "url": "https://x.com/i/status/2110037357164441796"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "证据边界：第三方转述；未取得被引作者原始说明或独立测试。"
+    ],
+    "en": {
+      "title": "48-million-row database: a second-hand REA query-optimization report",
+      "summary": "A third-party post attributes a Claude Code/REA dashboard-query optimization to Thariq Shihipar; results and attribution are not independently verified."
+    }
+  },
+  {
+    "id": "rea-gtm-tool",
+    "title": "GTM 工具：用 REA 构建线索与邮件营销工作流",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。",
+    "description": "一位发帖者称使用 REA 构建 GTM（市场进入）工具，并列出潜在客户获取、线索验证与管理、邮件预热和营销活动配置等功能，还称工具有 AI Agent 执行这些工作。帖子附有短链接，但现有材料未核实链接指向、工具实现、数据来源或实际运行结果。REA 使用是发帖者的第一人称自述，不代表独立确认；因此记录为待验证的具体应用开发报告，不推断其已完成商业级工作流或有效投递。",
+    "sources": [
+      {
+        "label": "作者关于 REA GTM 工具的报告",
+        "url": "https://x.com/i/status/2110034984065245677"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "作者自述使用 REA；功能与运行结果未独立验证。"
+    ],
+    "en": {
+      "title": "GTM tool: a reported REA-assisted lead and email workflow",
+      "summary": "The author says REA was used to build a GTM tool for lead generation, management and email campaigns; implementation and operation are unverified."
+    }
+  },
+  {
+    "id": "tclimate-macos",
+    "title": "TCL 空调：逆向 TCL Home 并制作 macOS 控制端",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。",
+    "description": "TCLimate 是面向 TCL 空调的原生 macOS 菜单栏控制应用。帖子称一位开发者使用 REA 与 mitmproxy 逆向 TCL Home iOS 应用，然后制作无需遥控器或手机即可点击控制空调的工具，并称项目开源。此信息来自第三方介绍，不是开发者本人的直接确认；帖子没有提供可核对的仓库地址、设备型号或功能测试细节。本合集未检查项目或实际连接设备，因此将成果记为待验证，并将 REA 使用标为未确认。",
+    "sources": [
+      {
+        "label": "第三方项目介绍（非开发者本人确认）",
+        "url": "https://x.com/i/status/2110018382762262902"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "帖子发表于 2026-10-13（+08:00）；第三方称项目开源，未提供仓库直链。"
+    ],
+    "en": {
+      "title": "TCL air conditioners: a reported macOS control app",
+      "summary": "A third-party post says a developer inspected TCL Home with REA and mitmproxy and built a native Mac menu-bar controller; attribution and implementation remain unverified."
+    }
+  },
+  {
+    "id": "tea-site-rea-rebuild-report",
+    "title": "茶叶出海网站：REA 辅助的本地重建报告",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。",
+    "description": "一位为茶叶相关企业制作出海网站的开发者称，Codex 提供了一个参考网站，随后直接让 Codex 使用 REA 技术逆向该网站，并在约 40 分钟内将结果部署到本地。帖子未说明参考网站名称、具体分析过程、重建了哪些功能，也没有独立测试或公开代码，因此这只是作者自述的具体网站重建报告，不代表已验证的功能等价或完整复制。",
+    "sources": [
+      {
+        "label": "作者关于 REA 网站重建的原帖",
+        "url": "https://x.com/i/status/2110010062597230838"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "作者自述使用 Codex + REA；参考网站未具名，重建结果未独立验证。"
+    ],
+    "en": {
+      "title": "Tea-export website: reported REA-assisted rebuild",
+      "summary": "The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified."
     }
   }
 ]

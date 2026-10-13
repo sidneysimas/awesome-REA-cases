@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**128 entries**, organized by use case, without a Top-N or popularity threshold.
+**134 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/games.md) (26)
-- [Hardware and interoperability](categories/hardware.md) (32)
-- [Applications and clients](categories/apps.md) (61)
+- [Hardware and interoperability](categories/hardware.md) (34)
+- [Applications and clients](categories/apps.md) (65)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -89,6 +89,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Elgato X 4K capture card: REA-assisted latency research](cases/elgato-4k-x-latency-research.md) — A newly started reverse-engineering task for performance and latency, with the tool link resolved to REA; no results yet. **[REA · In progress]**
 - [Gardena mower: reported Codex motor control and firmware work](cases/gardena-mower-codex.md) — An author reports motor control through an ESP32/Bluetooth link and ongoing firmware work; REA use and safety are unverified. **[REA use unconfirmed · In progress]**
 - [TV: an REA-assisted reverse-engineering control workbench](cases/rea-tv-control-workbench.md) — The author says they used REA to reverse engineer a TV and lists input, volume, remote, Mac screen mirroring, screen-time and picture controls; details and independent validation are absent. **[REA · Needs verification]**
+- [Canon Pro-1000: Claude-assisted firmware emulation attempt](cases/canon-pro-1000-firmware-emulation.md) — The poster reports an ongoing attempt to reverse-engineer and emulate Canon Pro-1000 firmware with Claude; no completion or validation is shown. **[REA use unconfirmed · In progress]**
+- [TCL air conditioners: a reported macOS control app](cases/tclimate-macos.md) — A third-party post says a developer inspected TCL Home with REA and mitmproxy and built a native Mac menu-bar controller; attribution and implementation remain unverified. **[REA use unconfirmed · Needs verification]**
 
 ### Applications and clients
 
@@ -153,6 +155,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Screen Studio: a reported REA-assisted rebuild](cases/screen-studio-rebuild.md) — The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified. **[REA · Needs verification]**
 - [Claude Desktop: UI details reported from REA analysis](cases/claude-desktop-ui-details.md) — A user reports analyzing Claude Desktop with REA and observing typography, line wrapping and per-character fade-in details; findings are not independently verified. **[REA · Analysis test]**
 - [Typeless: a reported local voice-input alternative built with REA](cases/rea-typeless-local.md) — The author reports using REA to inspect Typeless and build an offline Swift app; functionality and performance claims are not independently verified. **[REA · Needs verification]**
+- [Eleven: agent-assisted analysis of apps and binaries](cases/eleven-agent-reverse-engineering.md) — The author describes a tool for viewing multi-platform binaries and asking coding agents to help inspect them; scope and open-source status are not independently verified. **[REA use unconfirmed · Needs verification]**
+- [48-million-row database: a second-hand REA query-optimization report](cases/rea-database-query-optimization-report.md) — A third-party post attributes a Claude Code/REA dashboard-query optimization to Thariq Shihipar; results and attribution are not independently verified. **[REA use unconfirmed · Needs verification]**
+- [GTM tool: a reported REA-assisted lead and email workflow](cases/rea-gtm-tool.md) — The author says REA was used to build a GTM tool for lead generation, management and email campaigns; implementation and operation are unverified. **[REA · Needs verification]**
+- [Tea-export website: reported REA-assisted rebuild](cases/tea-site-rea-rebuild-report.md) — The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 

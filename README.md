@@ -4,9 +4,9 @@
 
 **用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
 
-当前收录 **128 个案例与项目**。*最近维护：2026 年 10 月 13 日 20:00；案例统计截至 20 点（北京时间）。*
+当前收录 **134 个案例与项目**。*最近维护：2026 年 10 月 14 日 00:00；案例统计截至 00 点（北京时间）。*
 
-每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次 16–20 点窗口的收集覆盖有限，所列发现不代表完整检索。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
+每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次 10 月 13 日 20:00 至 10 月 14 日 00:00（北京时间）窗口的收集覆盖有限，所列发现不代表完整检索。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向工具。本合集也收录其他 AI 辅助逆向，以及为 AI 工具实现互通的项目。
 
@@ -35,8 +35,8 @@
 ## 目录
 
 - [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（26）
-- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（32）
-- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（61）
+- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（34）
+- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（65）
 - [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（9）
 - [贡献案例](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [维护方法](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 

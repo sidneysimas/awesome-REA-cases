@@ -63,3 +63,7 @@
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](../cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
 - [Claude Desktop：用 REA 观察界面细节](../cases/claude-desktop-ui-details.md) — 作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。 **[REA · 分析测试]**
 - [Typeless：用 REA 做本地语音输入替代品](../cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**
+- [Eleven：让 Agent 协助分析应用与二进制](../cases/eleven-agent-reverse-engineering.md) — 作者介绍一款开源逆向工具，可查看多平台二进制并让 Agent 协助理解代码。 **[未确认使用 REA · 待验证]**
+- [48,000,000 行数据库：REA 辅助查询优化的转述](../cases/rea-database-query-optimization-report.md) — 第三方称 Claude Code 与 REA 协助优化仪表板查询；性能与等价结果未独立核验。 **[未确认使用 REA · 待验证]**
+- [GTM 工具：用 REA 构建线索与邮件营销工作流](../cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
+- [茶叶出海网站：REA 辅助的本地重建报告](../cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
