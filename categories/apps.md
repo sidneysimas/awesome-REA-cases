@@ -62,3 +62,4 @@
 - [MarkText：用 REA 逆向并重建 HTML 导出](../cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](../cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
 - [Claude Desktop：用 REA 观察界面细节](../cases/claude-desktop-ui-details.md) — 作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。 **[REA · 分析测试]**
+- [Typeless：用 REA 做本地语音输入替代品](../cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**

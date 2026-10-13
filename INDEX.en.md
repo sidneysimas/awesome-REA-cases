@@ -10,7 +10,7 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**127 entries**, organized by use case, without a Top-N or popularity threshold.
+**128 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
@@ -18,7 +18,7 @@ The index is in English; linked case details, category pages, and contribution/m
 
 - [Games and preservation](categories/games.md) (26)
 - [Hardware and interoperability](categories/hardware.md) (32)
-- [Applications and clients](categories/apps.md) (60)
+- [Applications and clients](categories/apps.md) (61)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -152,6 +152,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [MarkText: a REA-assisted HTML export rebuild](cases/marktext-html-export.md) — The author reports 17 passing tests for a REA-assisted rebuild, with one Windows check still open. **[REA · In progress]**
 - [Screen Studio: a reported REA-assisted rebuild](cases/screen-studio-rebuild.md) — The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified. **[REA · Needs verification]**
 - [Claude Desktop: UI details reported from REA analysis](cases/claude-desktop-ui-details.md) — A user reports analyzing Claude Desktop with REA and observing typography, line wrapping and per-character fade-in details; findings are not independently verified. **[REA · Analysis test]**
+- [Typeless: a reported local voice-input alternative built with REA](cases/rea-typeless-local.md) — The author reports using REA to inspect Typeless and build an offline Swift app; functionality and performance claims are not independently verified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 

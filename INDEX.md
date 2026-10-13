@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **127 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **128 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（26）
 - [硬件与设备互通](categories/hardware.md)（32）
-- [应用与客户端](categories/apps.md)（60）
+- [应用与客户端](categories/apps.md)（61）
 - [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -150,6 +150,7 @@
 - [MarkText：用 REA 逆向并重建 HTML 导出](cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
 - [Claude Desktop：用 REA 观察界面细节](cases/claude-desktop-ui-details.md) — 作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。 **[REA · 分析测试]**
+- [Typeless：用 REA 做本地语音输入替代品](cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**
 
 ### 算法与功能重建
 
