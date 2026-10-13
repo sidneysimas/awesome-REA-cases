@@ -4,7 +4,7 @@
 
 **用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
 
-当前收录 **105 个案例与项目**。*最近维护：2026 年 10 月 13 日 10:35；案例统计截至 4 点（北京时间）。*
+当前收录 **117 个案例与项目**。*最近维护：2026 年 10 月 13 日 10:38；案例统计截至 8 点（北京时间）。*
 
 每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
 
@@ -34,10 +34,10 @@
 
 ## 目录
 
-- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（20）
-- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（23）
-- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（54）
-- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（8）
+- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（21）
+- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（30）
+- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（57）
+- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（9）
 - [贡献案例](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [维护方法](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 分类页保留全部通过筛选的案例、进行中的项目和具体 idea；首页不展开全量清单。`待验证`、`进行中`、`分析测试`、`相关项目`不是已完成或已独立验证的成果。

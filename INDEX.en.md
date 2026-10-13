@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**105 entries**, organized by use case, without a Top-N or popularity threshold.
+**117 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (20)
-- [Hardware and interoperability](categories/hardware.md) (23)
-- [Applications and clients](categories/apps.md) (54)
-- [Algorithms and feature recovery](categories/algorithms.md) (8)
+- [Games and preservation](categories/games.md) (21)
+- [Hardware and interoperability](categories/hardware.md) (30)
+- [Applications and clients](categories/apps.md) (57)
+- [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -48,6 +48,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Nanolathe: reimplementing Total Annihilation](cases/nanolathe-total-annihilation.md) — An open engine reimplementation with AI involvement reported on X; compatibility and attribution remain bounded. **[Other AI-assisted work · Needs verification]**
 - [Mobile game interactions: Codex and REA evidence mapping](cases/mobile-game-interaction-evidence.md) — Maps interactions to scripts and files while observing runtime activity; reconstruction remains in progress. **[REA · In progress]**
 - [Star Fox and Sonic CD: reported AI-assisted native ports](cases/arwing-littleplanet-ai-port-report.md) — Linked projects document static recompilation; the claimed one-prompt AI attribution is not verified. **[Other AI-assisted work · Needs verification]**
+- [Dark Sun: Shattered Lands: a REA porting plan](cases/dark-sun-shattered-lands-port-idea.md) — A named next target and a GOG-to-REA-to-Unity/three.js workflow; no completed port or gameplay fix is shown. **[REA · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -74,6 +75,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Camera firmware: a Codex-driven VM boot investigation](cases/camera-firmware-vm-boot.md) — A concrete firmware emulation task, without confirmed boot logs or a completed result. **[Other AI-assisted work · In progress]**
 - [LG TVs: a REA-assisted privacy audit idea](cases/lg-tv-ai-privacy-audit-idea.md) — Proposes inspecting actual TV behavior to evaluate privacy claims; no audit has been executed. **[REA · Needs verification]**
 - [Homatics ATV14: a reported Dolby Vision firmware fix](cases/homatics-atv14-dolby-vision-fix.md) — Reports using Claude and REA to address green-tinted Dolby Vision on a specific TV box. **[REA · Needs verification]**
+- [AYN Odin 2 Portal: Codex-assisted native Omarchy bring-up](cases/omarchy-mobile-odin2.md) — Inspect boot and storage behavior, then adapt a native Linux desktop; microphone and wider hardware acceptance remain open. **[Other AI-assisted work · In progress]**
+- [Ledger: a Claude-assisted custom firmware idea](cases/ledger-custom-firmware-idea.md) — A reply proposes custom firmware for a Ledger device; implementation and security are not demonstrated. **[Other AI-assisted work · Needs verification]**
+- [LG TV: a reported native Claude Code terminal](cases/lg-tv-native-claude-code.md) — An author reports running Claude Code and using remote speech input; model, method and reproducibility are not established. **[REA use unconfirmed · Needs verification]**
+- [HP printers: a Claude-assisted third-party ink firmware idea](cases/hp-printer-third-party-ink-idea.md) — Two posts relay a firmware-rewrite proposal; printer models, implementation and printing results are not demonstrated. **[Other AI-assisted work · Needs verification]**
+- [Android touchscreen photo frame: Codex-assisted device research](cases/android-photo-frame-codex-bringup.md) — An author reports teardown and connection to Codex using a referenced project; no completed modification is established. **[Other AI-assisted work · In progress]**
+- [Echo Show 5 Gen 2: a reported Hermes intercom and camera system](cases/echo-show5-hermes-intercom.md) — An author reports device research and integration across two homes; AI involvement in reverse engineering and reproducibility are unconfirmed. **[REA use unconfirmed · Needs verification]**
+- [Elgato X 4K capture card: REA-assisted latency research](cases/elgato-4k-x-latency-research.md) — A newly started reverse-engineering task for performance and latency, with the tool link resolved to REA; no results yet. **[REA · In progress]**
 
 ### Applications and clients
 
@@ -131,6 +139,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Helm Chart API v2: an AI-assisted specification draft](cases/helm-chart-v2-spec-research.md) — Derives an interoperability specification from existing behavior; the draft still has review findings. **[Other AI-assisted work · In progress]**
 - [Personal website: a REA-assisted design reconstruction](cases/rea-personal-website-redesign.md) — Reports inspecting a site and rebuilding a customized version, with web and iPhone demonstrations. **[REA · Needs verification]**
 - [SaaS feature subsets: Codex observation and Replit rebuilding](cases/codex-replit-saas-subset-rebuild.md) — Reports replacing only the features users need, without named SaaS targets or independent validation. **[Other AI-assisted work · Needs verification]**
+- [Virtual Desktop Streamer: a Linux platform-layer port](cases/virtual-desktop-streamer-linux.md) — Analyze installers with Claude Code and REA, reuse vendor protocol libraries and replace macOS integration; not a complete clean-room rewrite. **[REA · In progress]**
+- [WeChat local chats: a reported Codex-assisted decryption task](cases/wechat-local-chat-decryption-report.md) — An author reports work on encrypted local chat data; version, authorization, method and outcome are not documented. **[Other AI-assisted work · Needs verification]**
+- [LightBurn: a reported personal laser-control rebuild](cases/lightburn-personal-laser-rebuild.md) — An author reports a 16-minute REA-assisted app for one laser; hardware compatibility and execution are unverified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 
@@ -142,6 +153,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [DLSS on AMD: reported AI-assisted compute-shader reconstruction](cases/dlss-amd-compute-report.md) — A comment claims AI-assisted interoperability; a related Vulkan project exists, but exact identity and AI contribution are not established. **[REA use unconfirmed · Needs verification]**
 - [REA analysis: a binary prompt-injection test idea](cases/rea-binary-injection-test-idea.md) — A proposed test of whether embedded text can contaminate agent analysis; no experiment or effectiveness is demonstrated. **[REA use unconfirmed · Needs verification]**
 - [CapCut subtitles: a template-driven renderer idea](cases/capcut-subtitle-renderer-idea.md) — Proposes reconstructing a subtitle renderer from its template DSL and comparing rendered images. **[REA use unconfirmed · Needs verification]**
+- [Sixteen note files: a reported REA/no-REA decoder comparison](cases/sixteen-note-files-decoder-report.md) — A bilingual secondary report describes two timed decoding attempts; app identity, samples and claims were not independently checked. **[REA · Needs verification]**
 
 ## Contributing and selection
 

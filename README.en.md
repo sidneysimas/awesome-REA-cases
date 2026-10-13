@@ -4,7 +4,7 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **105 cases and projects**. *Last maintained: October 13, 2026, 10:35; case coverage through 04:00 Beijing time (UTC+8).*
+Currently **117 cases and projects**. *Last maintained: October 13, 2026, 10:38; case coverage through 08:00 Beijing time (UTC+8).*
 
 Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
@@ -34,10 +34,10 @@ Manually selected for recent attention, concrete use, and reading value—not a 
 
 ## Contents
 
-- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (20)
-- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (23)
-- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (54)
-- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (8)
+- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (21)
+- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (30)
+- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (57)
+- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (9)
 - [Contribute a case](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [Maintenance](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and maintenance guides are currently in Chinese.

@@ -56,3 +56,6 @@
 - [Helm Chart API v2：从实现整理可互通规范](../cases/helm-chart-v2-spec-research.md) — 借助 AI 研究 Chart v2，整理便于其他工具使用的规范。 **[其他 AI 逆向 · 进行中]**
 - [个人网站：用 REA 拆解设计，再做自定义重建](../cases/rea-personal-website-redesign.md) — 作者称从某站设计重建自己的站，展示网页与 iPhone 版本。 **[REA · 待验证]**
 - [SaaS 功能子集：Codex 观察，Replit 重建所需 20%](../cases/codex-replit-saas-subset-rebuild.md) — 只重建实际用到的 SaaS 功能，以替代整套订阅。 **[其他 AI 逆向 · 待验证]**
+- [Virtual Desktop Streamer：研究安装包，做 Linux 适配层](../cases/virtual-desktop-streamer-linux.md) — Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。 **[REA · 进行中]**
+- [微信本地聊天记录：Codex 分析加密数据的作者报告](../cases/wechat-local-chat-decryption-report.md) — 作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。 **[其他 AI 逆向 · 待验证]**
+- [LightBurn：为自己的激光机重建专用控制软件的报告](../cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**

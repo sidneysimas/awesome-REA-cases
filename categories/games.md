@@ -22,3 +22,4 @@
 - [Nanolathe：重新实现《横扫千军》游戏引擎](../cases/nanolathe-total-annihilation.md) — 用公开研究重实现 Total Annihilation，AI 具体贡献仍待核实。 **[其他 AI 逆向 · 待验证]**
 - [手游交互：用 Codex + REA 对应脚本与运行活动](../cases/mobile-game-interaction-evidence.md) — 一边分析脚本文件，一边观察手游交互的计算活动。 **[REA · 进行中]**
 - [Star Fox / Sonic CD：AI 原生移植的待验证传播](../cases/arwing-littleplanet-ai-port-report.md) — 传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。 **[其他 AI 逆向 · 待验证]**
+- [Dark Sun: Shattered Lands：用 REA 研究并移植老游戏的计划](../cases/dark-sun-shattered-lands-port-idea.md) — 提出从 GOG 游戏到 REA 分析，再用攻略帮助移植 Unity/three.js 的路线。 **[REA · 待验证]**

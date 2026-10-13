@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **105 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **117 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（20）
-- [硬件与设备互通](categories/hardware.md)（23）
-- [应用与客户端](categories/apps.md)（54）
-- [算法与功能重建](categories/algorithms.md)（8）
+- [游戏与游戏保存](categories/games.md)（21）
+- [硬件与设备互通](categories/hardware.md)（30）
+- [应用与客户端](categories/apps.md)（57）
+- [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -46,6 +46,7 @@
 - [Nanolathe：重新实现《横扫千军》游戏引擎](cases/nanolathe-total-annihilation.md) — 用公开研究重实现 Total Annihilation，AI 具体贡献仍待核实。 **[其他 AI 逆向 · 待验证]**
 - [手游交互：用 Codex + REA 对应脚本与运行活动](cases/mobile-game-interaction-evidence.md) — 一边分析脚本文件，一边观察手游交互的计算活动。 **[REA · 进行中]**
 - [Star Fox / Sonic CD：AI 原生移植的待验证传播](cases/arwing-littleplanet-ai-port-report.md) — 传播帖关联三个原生移植仓库，但不等于 AI 完整反编译。 **[其他 AI 逆向 · 待验证]**
+- [Dark Sun: Shattered Lands：用 REA 研究并移植老游戏的计划](cases/dark-sun-shattered-lands-port-idea.md) — 提出从 GOG 游戏到 REA 分析，再用攻略帮助移植 Unity/three.js 的路线。 **[REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -72,6 +73,13 @@
 - [相机固件：让 Codex 推进虚拟机启动研究](cases/camera-firmware-vm-boot.md) — 研究自己的相机固件，使其能在虚拟机启动。 **[其他 AI 逆向 · 进行中]**
 - [LG 电视：用 REA 核查隐私行为的 idea](cases/lg-tv-ai-privacy-audit-idea.md) — 提出分析电视代码实际行为，检验数据采集与隐私说法。 **[REA · 待验证]**
 - [Homatics 盒子：研究固件修复 Dolby Vision 绿屏](cases/homatics-atv14-dolby-vision-fix.md) — 作者称修复 Box R 4K Plus 升 Android TV 14 后的偏色。 **[REA · 待验证]**
+- [AYN Odin 2 Portal：用 Codex 研究启动链，原生运行 Omarchy](cases/omarchy-mobile-odin2.md) — 研究掌机分区、启动与设备适配，在内部存储原生运行 Linux 桌面。 **[其他 AI 逆向 · 进行中]**
+- [Ledger：让 Claude 重写自定义固件的 idea](cases/ledger-custom-firmware-idea.md) — 针对拆开的 Ledger 设备，提出替换厂商固件与配套软件的设想。 **[其他 AI 逆向 · 待验证]**
+- [LG 电视：研究系统后原生运行 Claude Code](cases/lg-tv-native-claude-code.md) — 作者称在 LG 电视上运行 Claude Code，并用遥控器语音转文字输入。 **[未确认使用 REA · 待验证]**
+- [HP 打印机：用 Claude 重写固件以支持第三方墨水的 idea](cases/hp-printer-third-party-ink-idea.md) — 转述针对 HP 固件与第三方墨水兼容的设想，未见实现。 **[其他 AI 逆向 · 待验证]**
+- [Android 触屏相框：拆机后接 Codex 研究设备](cases/android-photo-frame-codex-bringup.md) — 作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。 **[其他 AI 逆向 · 进行中]**
+- [Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防](cases/echo-show5-hermes-intercom.md) — 作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。 **[未确认使用 REA · 待验证]**
+- [Elgato X 4K 采集卡：用 REA 研究性能和低延迟](cases/elgato-4k-x-latency-research.md) — 作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。 **[REA · 进行中]**
 
 ### 应用与客户端
 
@@ -129,6 +137,9 @@
 - [Helm Chart API v2：从实现整理可互通规范](cases/helm-chart-v2-spec-research.md) — 借助 AI 研究 Chart v2，整理便于其他工具使用的规范。 **[其他 AI 逆向 · 进行中]**
 - [个人网站：用 REA 拆解设计，再做自定义重建](cases/rea-personal-website-redesign.md) — 作者称从某站设计重建自己的站，展示网页与 iPhone 版本。 **[REA · 待验证]**
 - [SaaS 功能子集：Codex 观察，Replit 重建所需 20%](cases/codex-replit-saas-subset-rebuild.md) — 只重建实际用到的 SaaS 功能，以替代整套订阅。 **[其他 AI 逆向 · 待验证]**
+- [Virtual Desktop Streamer：研究安装包，做 Linux 适配层](cases/virtual-desktop-streamer-linux.md) — Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。 **[REA · 进行中]**
+- [微信本地聊天记录：Codex 分析加密数据的作者报告](cases/wechat-local-chat-decryption-report.md) — 作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。 **[其他 AI 逆向 · 待验证]**
+- [LightBurn：为自己的激光机重建专用控制软件的报告](cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
 
 ### 算法与功能重建
 
@@ -140,6 +151,7 @@
 - [DLSS：重实现计算着色器以在 AMD 显卡运行的报告](cases/dlss-amd-compute-report.md) — 讨论明确提出 AI 辅助重实现 DLSS，具体开发归属仍待核验。 **[未确认使用 REA · 待验证]**
 - [REA 分析链路：测试二进制内提示注入的 idea](cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
 - [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
+- [16 个笔记文件：有无 REA 的解码对照实验转述](cases/sixteen-note-files-decoder-report.md) — 长文转述对16个笔记文件的限时解码比较，两条语言版本合并。 **[REA · 待验证]**
 
 ## 贡献与收录
 

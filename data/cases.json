@@ -652,7 +652,7 @@
     "category": "apps",
     "rea": "other-ai",
     "summary": "创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。",
-    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 已收录的 WordCraft、GridCraft 和 DeckCraft 分别重建 Word 风格文字处理器、Excel 风格电子表格与 PowerPoint 风格幻灯片软件，提供对应 Office 文件格式与 MCP 控制，公开 README 仍标为 alpha。10 月 12 日新增 PhotoCraft 的具体互通与验证材料：公开 README 说明 PSD 实现基于 Adobe 公开规范，UI、CLI、JSON 与 MCP 共用 500 多条命令；项目报告 309 个 psd-tools 样本中 307 个打开再保存后渲染一致，不是所有文件逐字节相同。PhotoCraft 仍为 early alpha，不能作为专业日用 Photoshop 替代，也不能据此称已反编译 Adobe。",
+    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 已收录的 WordCraft、GridCraft 和 DeckCraft 分别重建 Word 风格文字处理器、Excel 风格电子表格与 PowerPoint 风格幻灯片软件，提供对应 Office 文件格式与 MCP 控制，公开 README 仍标为 alpha。10 月 12 日新增 PhotoCraft 的具体互通与验证材料：公开 README 说明 PSD 实现基于 Adobe 公开规范，UI、CLI、JSON 与 MCP 共用 500 多条命令；项目报告 309 个 psd-tools 样本中 307 个打开再保存后渲染一致，不是所有文件逐字节相同。PhotoCraft 仍为 early alpha，不能作为专业日用 Photoshop 替代，也不能据此称已反编译 Adobe。 2026年10月13日04:00–08:00窗口，一位用户报告亲自试用 PhotoCraft，具体指出面板无法浮动、色彩管理不透明、保存缺少压缩等格式选项、PSD打开较慢、活动图像焦点/蒙版读数及文字控制方面的问题，认为不适合专业工作。这是该用户的单次体验与评价，并非官方承认、本合集复现或所有版本的结论；补充既有 early-alpha 限制，不改变 Rust 从零重建、并非已反编译 Adobe 的边界。",
     "sources": [
       {
         "label": "原始记录",
@@ -689,14 +689,20 @@
       {
         "label": "PhotoCraft 项目测试口径与 early alpha 边界",
         "url": "https://github.com/storytold/photocraft"
+      },
+      {
+        "label": "本窗口 PhotoCraft 第三方使用体验",
+        "url": "https://x.com/i/status/2109765636750532915"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-13",
     "metadata": [
       "Office 补充发帖：2026-10-12T14:33:01+08:00（北京时间）",
       "Office 补充帖热度快照（2026-10-12）：0 赞｜19 浏览｜0 转发",
       "PhotoCraft 补充发帖：2026-10-12T16:08:50+08:00（北京时间）",
-      "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发"
+      "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发",
+      "补充发帖：2026-10-13T05:58:20+08:00（北京时间）",
+      "补充证据：第三方具体使用反馈；未独立运行软件。"
     ],
     "en": {
       "title": "ArtCraft: not proven Adobe or Office reverse engineering",
@@ -1288,7 +1294,7 @@
     "status": "unverified",
     "rea": "REA",
     "summary": "第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。",
-    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。",
+    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。 2026 年 10 月 13 日 04–08 点窗口，clawddevs 本人称过去 24 小时以 ultra high 设置研究 Pump.fun，并经历 3 次 Codex 额度重置。这是该作者正在研究的第一手报告，未展示代码或行为对照，不把自信表述解释为成功。这位作者没有明确使用 REA；前窗 8Bit 的 REA fork 报告属于另一作者，不据此认定两人使用同一实现。",
     "sources": [
       {
         "label": "本周期公开来源",
@@ -1301,12 +1307,18 @@
       {
         "label": "看本窗口：REA fork 与自主运行报告",
         "url": "https://x.com/i/status/2109730115152216125"
+      },
+      {
+        "label": "本窗口开发者本人进行中报告",
+        "url": "https://x.com/i/status/2109761893808365700"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "发帖：2026-10-12T10:01:06+08:00（北京时间）",
-      "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发"
+      "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发",
+      "补充发帖：2026-10-13T05:43:27+08:00（北京时间）",
+      "补充证据：xreach 确认发帖账户 clawddevs；作者自述，非独立验证。"
     ],
     "en": {
       "title": "Pump.fun reconstruction report",
@@ -2686,6 +2698,313 @@
     "en": {
       "title": "Star Fox and Sonic CD: reported AI-assisted native ports",
       "summary": "Linked projects document static recompilation; the claimed one-prompt AI attribution is not verified."
+    }
+  },
+  {
+    "id": "omarchy-mobile-odin2",
+    "title": "AYN Odin 2 Portal：用 Codex 研究启动链，原生运行 Omarchy",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "other-ai",
+    "summary": "研究掌机分区、启动与设备适配，在内部存储原生运行 Linux 桌面。",
+    "description": "作者报告与 Codex 一起进行 AYN Odin 2 Portal 的原生 Linux bring-up，先检查实际设备、保存基础系统备份与哈希，再研究 UFS 分区和启动链，安装 Arch Linux ARM/Omarchy，而非 Android 中的虚拟机。报告涉及 AVB 元数据、4096 字节逻辑扇区造成的启动分区故障及恢复验证，目标是触屏桌面、手柄快捷键与本地游戏库。公开 omarchy-mobile-odin2 README 与原帖目标一致，并列出启动、显示、触摸与 Wi-Fi 工作的项目记录；这仍是作者/仓库自述，本合集未接触设备。麦克风语音采集、冷启动、备用槽恢复与其他硬件验收仍未完成，备份恢复本身也未实测。上游 Linux/ROCKNIX 等提供大量基础工作，不归功于 AI 从零重建；未确认使用 REA。",
+    "sources": [
+      {
+        "label": "本窗口原帖",
+        "url": "https://x.com/i/status/2109736028538093774"
+      },
+      {
+        "label": "看公开项目 README",
+        "url": "https://github.com/TechLuddite/omarchy-mobile-odin2"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T04:00:40+08:00（北京时间）",
+      "证据边界：进行中；未独立运行验证"
+    ],
+    "en": {
+      "title": "AYN Odin 2 Portal: Codex-assisted native Omarchy bring-up",
+      "summary": "Inspect boot and storage behavior, then adapt a native Linux desktop; microphone and wider hardware acceptance remain open."
+    }
+  },
+  {
+    "id": "ledger-custom-firmware-idea",
+    "title": "Ledger：让 Claude 重写自定义固件的 idea",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "针对拆开的 Ledger 设备，提出替换厂商固件与配套软件的设想。",
+    "description": "回复者建议把设备装回去，移除 Ledger 的固件与软件，再连接 Claude 制作自己的定制实现。补读被回复的原帖可确认上下文是 Ledger 设备及供应链安全话题，不能确认型号。该条是针对现有硬件替换实现的具体 idea，而非完成的固件逆向或可靠钱包；未见源码、设备验证、安全审计或备份恢复证据。作者所谓“hack prove”不能写成不可破解，定制安全设备也不等同于比官方实现安全。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109743903863701561"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T04:31:58+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证",
+      "Ledger 目标来自 xreach 补读回复上文；型号未知。"
+    ],
+    "en": {
+      "title": "Ledger: a Claude-assisted custom firmware idea",
+      "summary": "A reply proposes custom firmware for a Ledger device; implementation and security are not demonstrated."
+    }
+  },
+  {
+    "id": "virtual-desktop-streamer-linux",
+    "title": "Virtual Desktop Streamer：研究安装包，做 Linux 适配层",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。",
+    "description": "补读 cudanexus 的6帖线程，目标是把 Virtual Desktop Streamer 的桌面、音频与输入串流带到 Linux。作者称 Windows 安装包路线因 .NET Framework/驱动受阻，转而研究 macOS 的 .NET 8 版本，定位平台调用并用 PipeWire/X11、GStreamer、PulseAudio 与 uinput 替换。公开 vd-streamer-linux README 明确由 Claude Code + REA 开发，复用官方 macOS 协议库，而不是从零恢复全部源代码；官方库由用户自行取得，带这些库的包不能再分发。线程还报告 Ubuntu 使用后修复延迟累积、滚动和网络切换。项目不支持 Windows 版提供的 SteamVR/OpenXR 游戏。虽然线程使用“real use”描述反馈，README 的 Not verified yet 明确所有测试使用模拟头显，未有真实头显、Wi-Fi 或 GPU 编码器，Ubuntu 测试是在容器中；滚动修复也未直接观察 X11 应用收到事件。本轮未构建或独立验证互通。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109767636452265990"
+      },
+      {
+        "label": "看公开项目 README",
+        "url": "https://github.com/cudanexus/vd-streamer-linux"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T06:06:16+08:00（北京时间）",
+      "证据边界：进行中；未独立运行验证",
+      "线程“real use”不等于实机验收：仓库明确仅模拟头显/容器测试。"
+    ],
+    "en": {
+      "title": "Virtual Desktop Streamer: a Linux platform-layer port",
+      "summary": "Analyze installers with Claude Code and REA, reuse vendor protocol libraries and replace macOS integration; not a complete clean-room rewrite."
+    }
+  },
+  {
+    "id": "lg-tv-native-claude-code",
+    "title": "LG 电视：研究系统后原生运行 Claude Code",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "作者称在 LG 电视上运行 Claude Code，并用遥控器语音转文字输入。",
+    "description": "Hristo B.（ceoico）报告研究自己的 LG 电视后，让 Claude Code 原生运行，并可使用遥控器的语音转文字代替键盘。目标是把电视变成 Agent 操作终端，区别于既有 LG Plex 原生客户端。xreach 核验正文与附视频存在，但本轮未播放视频，帖子未公开型号、系统改动、源码、权限配置或可复现测试。Claude Code 是运行的应用，不足以证明研究由 AI 完成；REA 使用也未知，因此保留待验证作者报告，不声称适配所有 LG 电视。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109774258738176000"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T06:32:35+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "LG TV: a reported native Claude Code terminal",
+      "summary": "An author reports running Claude Code and using remote speech input; model, method and reproducibility are not established."
+    }
+  },
+  {
+    "id": "wechat-local-chat-decryption-report",
+    "title": "微信本地聊天记录：Codex 分析加密数据的作者报告",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。",
+    "description": "趋势翻译官（trendtranslate1）在回复中称自己用 Codex“破解过微信本地的加密聊天记录”，并提到用 Claude 研究旧 iOS 游戏。微信这一部分有明确目标和加密数据分析动作，可保留作者自述；没有公开微信版本、数据归属、授权范围、密钥获取方式、源码或成功对照。本合集未验证其结果，不解释为能读取他人账户、远程攻破微信或绕过服务端保护。iOS 游戏未命名且无用途/结果细节，不另计新案例。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109779123778490858"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T06:51:55+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "WeChat local chats: a reported Codex-assisted decryption task",
+      "summary": "An author reports work on encrypted local chat data; version, authorization, method and outcome are not documented."
+    }
+  },
+  {
+    "id": "hp-printer-third-party-ink-idea",
+    "title": "HP 打印机：用 Claude 重写固件以支持第三方墨水的 idea",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "转述针对 HP 固件与第三方墨水兼容的设想，未见实现。",
+    "description": "Kreia Notes 转述 r/singularity 的具体设想：用 Claude 重新编写 HP 打印机固件，使设备可用第三方墨水。同作者随后发布题目及来源链接，将两帖合并为一条 idea。未提供打印机型号、固件镜像、签名机制研究、改写代码或真实打印验证；本合集没有取得原 Reddit 正文，判断只依据这位转述者的帖子。签名与硬件安全限制可能使替换代码无法运行，不将讨论当成绕过成功或所有 HP 设备兼容。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109779363973738696"
+      },
+      {
+        "label": "同一案例本窗口补充帖",
+        "url": "https://x.com/i/status/2109779405300216058"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T06:52:52+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "HP printers: a Claude-assisted third-party ink firmware idea",
+      "summary": "Two posts relay a firmware-rewrite proposal; printer models, implementation and printing results are not demonstrated."
+    }
+  },
+  {
+    "id": "dark-sun-shattered-lands-port-idea",
+    "title": "Dark Sun: Shattered Lands：用 REA 研究并移植老游戏的计划",
+    "category": "games",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "提出从 GOG 游戏到 REA 分析，再用攻略帮助移植 Unity/three.js 的路线。",
+    "description": "Rex St. John 列出老游戏研究路线：从 GOG 获取游戏、运行 REA、把攻略提供给 AI 辅助理解，再移植到 Unity 或 three.js，并将下一目标明确为 Dark Sun: Shattered Lands，提到最终战难度问题。用“probably”“if works”“next up”的表述表明仍是计划/idea；未给原游戏行为分析、源码、可玩移植或最终战修复记录，也不能推断其已处理同名游戏。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109779769307087321"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T06:54:29+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "Dark Sun: Shattered Lands: a REA porting plan",
+      "summary": "A named next target and a GOG-to-REA-to-Unity/three.js workflow; no completed port or gameplay fix is shown."
+    }
+  },
+  {
+    "id": "sixteen-note-files-decoder-report",
+    "title": "16 个笔记文件：有无 REA 的解码对照实验转述",
+    "category": "algorithms",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "长文转述对16个笔记文件的限时解码比较，两条语言版本合并。",
+    "description": "英文 Daily Insights #129 及同一篇韩语正文转述某视频中的对照实验：16个笔记文件，其中1个损坏，使用与不使用 REA 各尝试10分钟；按视频说法，两种路线都得到能处理原应用通常可打开笔记的解码器。目标是研究笔记格式和恢复读取能力，不代表恢复整个笔记应用。原帖未命名软件、附视频地址、提供样本或验证记录；本轮没有独立观看或执行实验，因此状态待验证，不将其写为已证实提速或能恢复损坏文件。两语言版本是同一报告，计算器、Dinosaur 与 DX-Ball 则是既有例子，不能重复新增。",
+    "sources": [
+      {
+        "label": "本窗口原帖",
+        "url": "https://x.com/i/status/2109783203892597103"
+      },
+      {
+        "label": "同一案例本窗口补充帖",
+        "url": "https://x.com/i/status/2109783810472845779"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T07:08:08+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "Sixteen note files: a reported REA/no-REA decoder comparison",
+      "summary": "A bilingual secondary report describes two timed decoding attempts; app identity, samples and claims were not independently checked."
+    }
+  },
+  {
+    "id": "android-photo-frame-codex-bringup",
+    "title": "Android 触屏相框：拆机后接 Codex 研究设备",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "other-ai",
+    "summary": "作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。",
+    "description": "Leonard Volner 报告收到廉价触屏相框后不到10分钟拆开外壳，把设备接到 Codex，并让其参考 wesbos 的仓库，称原始思路是研究这些实际运行 Android 的相框。具体硬件目标、拆机和 Agent 接入动作明确，但帖子未给型号、仓库 URL、解锁步骤、替代桌面或运行验收。附图片存在不等于本轮完成视觉或设备验证；因此仅按进行中设备研究记录，不宣称已经改成完整 Android 平板、替换固件或运行其他应用。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109785163475591510"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T07:15:55+08:00（北京时间）",
+      "证据边界：进行中；未独立运行验证"
+    ],
+    "en": {
+      "title": "Android touchscreen photo frame: Codex-assisted device research",
+      "summary": "An author reports teardown and connection to Codex using a referenced project; no completed modification is established."
+    }
+  },
+  {
+    "id": "lightburn-personal-laser-rebuild",
+    "title": "LightBurn：为自己的激光机重建专用控制软件的报告",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。",
+    "description": "Homard Simpson（LIQUID8RPF）报告借助 Reverse Engineer Anything，约16分钟制作适合自己激光机的 LightBurn 类软件，强调只做所需功能。xreach 证实该自述与两张附图存在，但未实际查看图像或控制激光设备。没有公开激光型号、研究原程序哪部分、指令协议、源码、加工结果或安全限制，不把软件界面生成当成真实硬件已兼容，更不能声称完整复刻 LightBurn。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109789864891940904"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T07:34:36+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证"
+    ],
+    "en": {
+      "title": "LightBurn: a reported personal laser-control rebuild",
+      "summary": "An author reports a 16-minute REA-assisted app for one laser; hardware compatibility and execution are unverified."
+    }
+  },
+  {
+    "id": "echo-show5-hermes-intercom",
+    "title": "Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。",
+    "description": "Marc Seal（Kurcide）称研究 Echo Show 5 第二代并搭建自己的系统，接到 Nous Research Hermes Agent，在两处住宅作为对讲和安防摄像系统；他还报告购入20台蓝色设备。型号和用途明确，但没有公开设备改动、接口协议、系统代码或复现记录。本轮只核验文字与附图片存在，未验证实际设备。Hermes 是连接终点，帖子没有说明 AI 在逆向分析中承担了什么工作，更未确认使用 REA；按待验证互通作者报告保留，而不是 AI 已完成研究的证据。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109791974014496983"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T07:42:59+08:00（北京时间）",
+      "证据边界：待验证；不等于已完成逆向或功能等价验证",
+      "“smartphone system”沿用作者表述但不推定手机系统/Android刷机；描述用中性“自己的系统”。"
+    ],
+    "en": {
+      "title": "Echo Show 5 Gen 2: a reported Hermes intercom and camera system",
+      "summary": "An author reports device research and integration across two homes; AI involvement in reverse engineering and reproducibility are unconfirmed."
+    }
+  },
+  {
+    "id": "elgato-4k-x-latency-research",
+    "title": "Elgato X 4K 采集卡：用 REA 研究性能和低延迟",
+    "category": "hardware",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。",
+    "description": "Max（talkaboutdesign）称当晚借助所链接工具研究 Elgato X 4K 采集卡，以改善性能并降低延迟。实查短链 dUV7rUbgHw 跳转到 morluto/rea，明确了所用工具。帖子说“Lets see how far we get”，表示刚开始，不包含驱动修改、协议发现、延迟测量或兼容性结果；因此按进行中收录。设备名称按作者原文保留，不擅自改成其他 Elgato 型号，本轮未访问硬件。",
+    "sources": [
+      {
+        "label": "本窗口原帖（作者报告）",
+        "url": "https://x.com/i/status/2109795113807630735"
+      }
+    ],
+    "snapshot_date": "2026-10-13",
+    "metadata": [
+      "发帖：2026-10-13T07:55:27+08:00（北京时间）",
+      "证据边界：进行中；未独立运行验证"
+    ],
+    "en": {
+      "title": "Elgato X 4K capture card: REA-assisted latency research",
+      "summary": "A newly started reverse-engineering task for performance and latency, with the tool link resolved to REA; no results yet."
     }
   }
 ]
