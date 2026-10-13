@@ -4,7 +4,7 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **89 cases and projects**. *As of October 13, 2026, 00:00 Beijing time (UTC+8).*
+Currently **89 cases and projects**. *Last maintained: October 13, 2026, 10:00; case coverage through 00:00 Beijing time (UTC+8). Reviews for the two 00:00–08:00 windows remain incomplete; this update changes maintenance status only.*
 
 Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
