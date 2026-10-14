@@ -3673,5 +3673,56 @@
       "title": "Ray-Ban Meta glasses: an Android assistant replacement based on reverse-engineered communication",
       "summary": "The poster says they reverse-engineered communication between Ray-Ban Meta glasses and a phone and built an open-source Android app routing voice requests to Claude or a user-selected model; REA use and the implementation are unverified."
     }
+  },
+  {
+    "id": "hongguo-short-drama-ad-removal",
+    "title": "红果短剧：用 REA 逆向并去除广告与悬浮窗",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "发帖者自述用 REA 逆向红果短剧应用，实现去广告和去悬浮窗功能；连续观看一天未见广告的结果尚未独立核验。",
+    "description": "发帖者以第一人称称使用 REA 逆向红果短剧应用，并实现了去除广告和去除悬浮窗两个功能；其称连续观看一天未出现广告。该帖明确提及 REA，并报告了已完成的应用功能和实际使用体验，因此记录为 REA 辅助的应用逆向与功能改造自述。帖子未提供发帖者身份、技术过程、代码或独立复现材料，广告未出现的体验及功能效果均未独立验证；不将自述扩大为对应用完整逆向或普遍有效性的证明。",
+    "sources": [
+      {
+        "label": "发帖者关于使用 REA 逆向红果短剧并实现去广告与去悬浮窗的第一人称报告；效果未独立核验",
+        "url": "https://x.com/i/status/2110320554049941661"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "报告目标：红果短剧应用。",
+      "报告实现：去广告、去悬浮窗。",
+      "发帖者称连续观看一天未见广告；未独立核验。",
+      "REA 使用由发帖者明确自述；身份、过程与代码未核验。"
+    ],
+    "en": {
+      "title": "Hongguo Short Drama: REA-assisted reverse engineering to remove ads and overlays",
+      "summary": "The poster says they used REA to reverse-engineer the Hongguo short-drama app and implement ad and overlay removal; the reported day-long ad-free result is unverified."
+    }
+  },
+  {
+    "id": "profound-rea-reconstruction",
+    "title": "Profound：用 REA 研究并重建 SaaS 工作台",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 REA 逆向 Profound 的官网、工作台与管理后台并开源重建项目；所述数据为虚构示例，功能尚未独立核验。",
+    "description": "发帖者自述通过 REA 研究估值 18 亿美元的 Profound，并称还原官网、产品工作台和管理后台相关页面，随后将项目开源。帖子列出七种 AI 引擎可视化、AI Marketer 对话助手、七类 Agent 工作流及认证权限实现，并称使用 Next.js、React、Tailwind CSS 和 better-sqlite3。示例工作区 Wrenfield 是虚构品牌，帖子描述的可见度、引用、线索等示例数据不证明与 Profound 真实服务或数据相同。该记录依据发帖者自述；仓库实现、还原程度及功能均未独立核验。",
+    "sources": [
+      {
+        "label": "作者自述：REA 研究 Profound 并开源重建项目",
+        "url": "https://x.com/i/status/2110335911992979960"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "发帖：2026-10-14T19:44:24+08:00（北京时间）",
+      "项目描述与技术细节来自作者自述，未独立核验",
+      "示例品牌 Wrenfield 被作者说明为虚构数据"
+    ],
+    "en": {
+      "title": "Profound: a reported REA-assisted SaaS reconstruction",
+      "summary": "The poster says REA was used to study and recreate Profound’s website, workspace and admin pages, then open-source the project; the demo data is fictional and functionality is not independently verified."
+    }
   }
 ]

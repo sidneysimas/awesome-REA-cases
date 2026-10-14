@@ -10,7 +10,7 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**143 entries**, organized by use case, without a Top-N or popularity threshold.
+**145 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
@@ -18,7 +18,7 @@ The index is in English; linked case details, category pages, and contribution/m
 
 - [Games and preservation](categories/games.md) (27)
 - [Hardware and interoperability](categories/hardware.md) (37)
-- [Applications and clients](categories/apps.md) (70)
+- [Applications and clients](categories/apps.md) (72)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -168,6 +168,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
 - [ChatGPT app: a reported REA-assisted gradient-background modification](cases/chatgpt-app-gradient-background.md) — The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified. **[REA · Needs verification]**
 - [Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study](cases/ledger-reborn-accounting-app.md) — A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews. **[REA · Related project]**
+- [Hongguo Short Drama: REA-assisted reverse engineering to remove ads and overlays](cases/hongguo-short-drama-ad-removal.md) — The poster says they used REA to reverse-engineer the Hongguo short-drama app and implement ad and overlay removal; the reported day-long ad-free result is unverified. **[REA · Needs verification]**
+- [Profound: a reported REA-assisted SaaS reconstruction](cases/profound-rea-reconstruction.md) — The poster says REA was used to study and recreate Profound’s website, workspace and admin pages, then open-source the project; the demo data is fictional and functionality is not independently verified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 
