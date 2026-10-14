@@ -1310,7 +1310,7 @@
     "status": "unverified",
     "rea": "REA",
     "summary": "第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。",
-    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。 2026 年 10 月 13 日 04–08 点窗口，clawddevs 本人称过去 24 小时以 ultra high 设置研究 Pump.fun，并经历 3 次 Codex 额度重置。这是该作者正在研究的第一手报告，未展示代码或行为对照，不把自信表述解释为成功。这位作者没有明确使用 REA；前窗 8Bit 的 REA fork 报告属于另一作者，不据此认定两人使用同一实现。",
+    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。 2026 年 10 月 13 日 04–08 点窗口，clawddevs 本人称过去 24 小时以 ultra high 设置研究 Pump.fun，并经历 3 次 Codex 额度重置。这是该作者正在研究的第一手报告，未展示代码或行为对照，不把自信表述解释为成功。这位作者没有明确使用 REA；前窗 8Bit 的 REA fork 报告属于另一作者，不据此认定两人使用同一实现。\n\n\n\n本批 quote 帖另转述称，Pump.fun 的真实 depth-two 测试已通过，REA 追踪了两条创建路径，并修复且测试了开盘结算的舍入短缺；同一引述明确说源码/构建验证仍在进行、生产就绪尚未证明。这是捕获作者未知的转述材料，不视为 Pump.fun 项目作者本人确认，也不是本合集独立复测。",
     "sources": [
       {
         "label": "本周期公开来源",
@@ -1327,6 +1327,10 @@
       {
         "label": "本窗口开发者本人进行中报告",
         "url": "https://x.com/i/status/2109761893808365700"
+      },
+      {
+        "label": "本批 X 帖（quote/转述；作者身份未确认，非原开发者确认）",
+        "url": "https://x.com/i/status/2110080570612941090"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -1334,7 +1338,8 @@
       "发帖：2026-10-12T10:01:06+08:00（北京时间）",
       "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发",
       "补充发帖：2026-10-13T05:43:27+08:00（北京时间）",
-      "补充证据：xreach 确认发帖账户 clawddevs；作者自述，非独立验证。"
+      "补充证据：xreach 确认发帖账户 clawddevs；作者自述，非独立验证。",
+      "本批新增证据：quote/转述称真实 depth-two 测试通过、创建路径已追踪、开盘结算舍入短缺已修复并测试；生产就绪仍未证明，作者身份未确认。"
     ],
     "en": {
       "title": "Pump.fun reconstruction report",
@@ -3423,6 +3428,80 @@
     "en": {
       "title": "Tea-export website: reported REA-assisted rebuild",
       "summary": "The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified."
+    }
+  },
+  {
+    "id": "arabic-terminal-rendering",
+    "title": "iTerm：借助 REA 规格实现阿拉伯语文本绘制",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。",
+    "description": "这则 X 帖的发帖者自述：使用 REA 检查 iTerm 的功能与工作方式，将分析所得规格交给另一个项目，目标是改进其终端对阿拉伯语的支持；之后又称整合结果并在自己的设备上实际测试，达到其所称的完整阿拉伯语绘制支持。帖子没有说明所改造终端的名称、公开代码或可复现测试，因此这是作者自述的已完成结果，而非独立确认。",
+    "sources": [
+      {
+        "label": "发帖者自述：REA 分析 iTerm 并测试阿拉伯语绘制改进",
+        "url": "https://x.com/i/status/2110091122517410164"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "REA 的使用与完成/测试状态均来自发帖者自述；发帖者身份未在输入中确认。",
+      "未提供目标终端名称、代码或独立复测证据。"
+    ],
+    "en": {
+      "title": "iTerm: Arabic text rendering informed by REA",
+      "summary": "The poster says REA was used to analyze iTerm, then specifications guided a separate implementation tested on their device; the result is unverified."
+    }
+  },
+  {
+    "id": "bloomberg-style-research-terminal",
+    "title": "Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。",
+    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。",
+    "sources": [
+      {
+        "label": "作者关于 REA 辅助研究终端的原帖（第一手自述）",
+        "url": "https://x.com/i/status/2110082824371908790"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "发帖时间：2026-10-14T02:58:43+08:00",
+      "作者自述使用 REA MCP 与 Claude Opus 5.5；本合集未独立运行或核验功能。",
+      "作者称使用免费、独立市场数据，未解锁 Bloomberg 专有数据。"
+    ],
+    "en": {
+      "title": "Bloomberg-style research terminal: a reported REA/Claude build",
+      "summary": "The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified."
+    }
+  },
+  {
+    "id": "projector-ir-focus-command",
+    "title": "投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令",
+    "category": "hardware",
+    "status": "case",
+    "rea": "other-ai",
+    "summary": "根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。",
+    "description": "发帖者自述在没有原装遥控器的情况下，用 Codex 分析投影仪遥控器的红外时序，参照已知的 Focus− 信号模式推断缺失的 Focus+ 命令，再将信号导入 IRplus。发帖者报告该命令实际生效。该例是针对单一投影仪遥控协议的命令推断与操作报告；帖子未给出投影仪型号、完整时序、复现记录或独立测试，因此不扩展为通用红外协议结论。REA 未被提及，AI 工具明确为 Codex。",
+    "sources": [
+      {
+        "label": "作者关于红外命令推断与测试的原帖（账号身份未在输入中确认）",
+        "url": "https://x.com/i/status/2110090047579926826"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "输入时间：2026-10-14T03:27:25+08:00",
+      "Codex 明确提及；REA 未确认",
+      "成功结果为发帖者自述，未独立复核"
+    ],
+    "en": {
+      "title": "Projector IR remote: inferring and testing a missing focus command",
+      "summary": "A first-hand report says Codex inferred a missing Focus+ infrared command from timing patterns and the signal worked in IRplus; the device and result are not independently verified."
     }
   }
 ]

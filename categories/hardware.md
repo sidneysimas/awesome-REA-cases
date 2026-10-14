@@ -36,3 +36,4 @@
 - [电视：用 REA 逆向并制作电脑控制工作台](../cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**
 - [Canon Pro-1000：用 Claude 研究并模拟打印机固件](../cases/canon-pro-1000-firmware-emulation.md) — 作者称正尝试用 Claude 逆向并模拟 Canon Pro-1000 固件；未报告完成或验证。 **[未确认使用 REA · 进行中]**
 - [TCL 空调：逆向 TCL Home 并制作 macOS 控制端](../cases/tclimate-macos.md) — 第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。 **[未确认使用 REA · 待验证]**
+- [投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令](../cases/projector-ir-focus-command.md) — 根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。 **[其他 AI 逆向]**

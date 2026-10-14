@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **134 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **137 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（26）
-- [硬件与设备互通](categories/hardware.md)（34）
-- [应用与客户端](categories/apps.md)（65）
+- [硬件与设备互通](categories/hardware.md)（35）
+- [应用与客户端](categories/apps.md)（67）
 - [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -89,6 +89,7 @@
 - [电视：用 REA 逆向并制作电脑控制工作台](cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**
 - [Canon Pro-1000：用 Claude 研究并模拟打印机固件](cases/canon-pro-1000-firmware-emulation.md) — 作者称正尝试用 Claude 逆向并模拟 Canon Pro-1000 固件；未报告完成或验证。 **[未确认使用 REA · 进行中]**
 - [TCL 空调：逆向 TCL Home 并制作 macOS 控制端](cases/tclimate-macos.md) — 第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。 **[未确认使用 REA · 待验证]**
+- [投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令](cases/projector-ir-focus-command.md) — 根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。 **[其他 AI 逆向]**
 
 ### 应用与客户端
 
@@ -157,6 +158,8 @@
 - [48,000,000 行数据库：REA 辅助查询优化的转述](cases/rea-database-query-optimization-report.md) — 第三方称 Claude Code 与 REA 协助优化仪表板查询；性能与等价结果未独立核验。 **[未确认使用 REA · 待验证]**
 - [GTM 工具：用 REA 构建线索与邮件营销工作流](cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
 - [茶叶出海网站：REA 辅助的本地重建报告](cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
+- [iTerm：借助 REA 规格实现阿拉伯语文本绘制](cases/arabic-terminal-rendering.md) — 作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。 **[REA · 待验证]**
+- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](cases/bloomberg-style-research-terminal.md) — 作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。 **[REA · 待验证]**
 
 ### 算法与功能重建
 
