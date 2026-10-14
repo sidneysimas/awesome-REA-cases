@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**140 entries**, organized by use case, without a Top-N or popularity threshold.
+**143 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (26)
-- [Hardware and interoperability](categories/hardware.md) (36)
-- [Applications and clients](categories/apps.md) (69)
+- [Games and preservation](categories/games.md) (27)
+- [Hardware and interoperability](categories/hardware.md) (37)
+- [Applications and clients](categories/apps.md) (70)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -54,6 +54,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Minecraft × Plants vs. Zombies: a reported playable REA-assisted mashup](cases/minecraft-pvz-rea-mashup.md) — A quote post says its poster used REA for reverse engineering and built a playable mashup; authorship and the result are not independently verified. **[REA · Needs verification]**
 - [Three Kingdoms XIV: a reported trainer-to-MCP project](cases/three-kingdoms-mod-mcp.md) — The author reports combining reverse-engineered game-trainer functions into an MCP for batch edits; implementation, tests and REA use are unverified. **[REA use unconfirmed · Needs verification]**
 - [Virtua Fighter 2.1 / 3 TB: AI-assisted decompilation in progress](cases/virtua-fighter-ai-decompilation.md) — AI coding agents are reportedly helping reconstruct readable C/C++ game logic; both projects remain works in progress and REA use is unconfirmed. **[REA use unconfirmed · In progress]**
+- [Dragon Ball Budokai: an unverified AI-assisted browser-port report](cases/dragon-ball-budokai-browser.md) — A quote post claims an AI reverse-engineered the game into a 60-fps browser version; project identity, attribution and results are unverified. **[REA use unconfirmed · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -93,6 +94,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [TCL air conditioners: a reported macOS control app](cases/tclimate-macos.md) — A third-party post says a developer inspected TCL Home with REA and mitmproxy and built a native Mac menu-bar controller; attribution and implementation remain unverified. **[REA use unconfirmed · Needs verification]**
 - [Projector IR remote: inferring and testing a missing focus command](cases/projector-ir-focus-command.md) — A first-hand report says Codex inferred a missing Focus+ infrared command from timing patterns and the signal worked in IRplus; the device and result are not independently verified. **[Other AI-assisted work]**
 - [Smart pen: Codex-assisted decompilation and integration](cases/smart-pen-codex-integration.md) — A team reports using Codex to decompile an off-the-shelf smart pen and integrate it into its software system. **[Other AI-assisted work]**
+- [Ray-Ban Meta glasses: an Android assistant replacement based on reverse-engineered communication](cases/rayban-meta-claude-android.md) — The poster says they reverse-engineered communication between Ray-Ban Meta glasses and a phone and built an open-source Android app routing voice requests to Claude or a user-selected model; REA use and the implementation are unverified. **[REA use unconfirmed · Needs verification]**
 
 ### Applications and clients
 
@@ -165,6 +167,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Bloomberg-style research terminal: a reported REA/Claude build](cases/bloomberg-style-research-terminal.md) — The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified. **[REA · Needs verification]**
 - [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
 - [ChatGPT app: a reported REA-assisted gradient-background modification](cases/chatgpt-app-gradient-background.md) — The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified. **[REA · Needs verification]**
+- [Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study](cases/ledger-reborn-accounting-app.md) — A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews. **[REA · Related project]**
 
 ### Algorithms and feature recovery
 

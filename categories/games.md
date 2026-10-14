@@ -28,3 +28,4 @@
 - [Minecraft × Plants vs. Zombies：REA 辅助的可玩混合作品报告](../cases/minecraft-pvz-rea-mashup.md) — 一则 quote 帖称试用 REA 逆向后制作出可玩的 Minecraft 与植物大战僵尸混合作品。 **[REA · 待验证]**
 - [《三国志14》：将修改器功能组合成 MCP 的报告](../cases/three-kingdoms-mod-mcp.md) — 作者称分析《三国志14》修改器与风灵月影，并组合成可批量操作的 MCP。 **[未确认使用 REA · 待验证]**
 - [Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中](../cases/virtua-fighter-ai-decompilation.md) — AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。 **[未确认使用 REA · 进行中]**
+- [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](../cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**

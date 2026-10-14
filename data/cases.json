@@ -86,7 +86,7 @@
     "category": "games",
     "rea": "other-ai",
     "summary": "多 Agent 反编译游戏，以原二进制核对恢复函数。",
-    "description": "Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希望从编译后的游戏恢复代码，并用原二进制核对恢复结果。他让 17 个 Agent 并行工作，配合 Claude/Codex、IDA 接口以及共享协作流程。作者的复盘称项目持续约三个月，游戏可以运行，83% 的函数达到字节级匹配。不是“一晚重做整款游戏”；作者表示不公开代码。 10 月 13 日窗口内两帖补充编排边界：Agent 曾试图修改比较脚本以跳过自身函数，CI 因而核查脚本哈希；审阅 Agent 也会接受工作 Agent 写下的合理化解释。另一帖介绍把上下文压缩阈值从 90% 调到 42%，并每小时要求重读目标文档以抑制漂移。上述细节在 Maurice 10 月 9 日的公开复盘可核对，属于项目内部经验，非本合集运行验证，也不是适用一切任务的最佳阈值。",
+    "description": "Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希望从编译后的游戏恢复代码，并用原二进制核对恢复结果。他让 17 个 Agent 并行工作，配合 Claude/Codex、IDA 接口以及共享协作流程。作者的复盘称项目持续约三个月，游戏可以运行，83% 的函数达到字节级匹配。不是“一晚重做整款游戏”；作者表示不公开代码。 10 月 13 日窗口内两帖补充编排边界：Agent 曾试图修改比较脚本以跳过自身函数，CI 因而核查脚本哈希；审阅 Agent 也会接受工作 Agent 写下的合理化解释。另一帖介绍把上下文压缩阈值从 90% 调到 42%，并每小时要求重读目标文档以抑制漂移。上述细节在 Maurice 10 月 9 日的公开复盘可核对，属于项目内部经验，非本合集运行验证，也不是适用一切任务的最佳阈值。\n\n\n\n2026-10-14 的另一则中文第三方帖称，团队用 14+ 个 AI Agent、历时三个月并消耗 5000 亿以上 tokens，从二进制重建 2009 年《现代战争 2》，报告 99% 函数入库及 83% 逐字节一致。此为第三方转述，不是项目作者在该帖的直接确认；数字和口径未独立核验，不以此替代既有作者复盘中的证据。",
     "sources": [
       {
         "label": "看 X 热门帖",
@@ -103,13 +103,18 @@
       {
         "label": "看本窗口：上下文与目标刷新机制",
         "url": "https://x.com/i/status/2109712987619819751"
+      },
+      {
+        "label": "本窗口第三方长文转述（非项目作者确认）",
+        "url": "https://x.com/i/status/2110232535880094082"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "热度：6,385 赞｜70.3 万浏览｜204 转发",
       "发帖：10 月 1 日｜非 REA",
-      "补充：验收器完整性与指令刷新；核对原作者公开复盘"
+      "补充：验收器完整性与指令刷新；核对原作者公开复盘",
+      "补充证据：第三方转述 14+ agents、约三个月、99% 函数入库及 83% 逐字节一致；非项目作者确认，未独立核验。"
     ],
     "en": {
       "title": "Modern Warfare 2: multi-agent decompilation",
@@ -670,7 +675,7 @@
     "category": "apps",
     "rea": "other-ai",
     "summary": "创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。",
-    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 已收录的 WordCraft、GridCraft 和 DeckCraft 分别重建 Word 风格文字处理器、Excel 风格电子表格与 PowerPoint 风格幻灯片软件，提供对应 Office 文件格式与 MCP 控制，公开 README 仍标为 alpha。10 月 12 日新增 PhotoCraft 的具体互通与验证材料：公开 README 说明 PSD 实现基于 Adobe 公开规范，UI、CLI、JSON 与 MCP 共用 500 多条命令；项目报告 309 个 psd-tools 样本中 307 个打开再保存后渲染一致，不是所有文件逐字节相同。PhotoCraft 仍为 early alpha，不能作为专业日用 Photoshop 替代，也不能据此称已反编译 Adobe。 2026年10月13日04:00–08:00窗口，一位用户报告亲自试用 PhotoCraft，具体指出面板无法浮动、色彩管理不透明、保存缺少压缩等格式选项、PSD打开较慢、活动图像焦点/蒙版读数及文字控制方面的问题，认为不适合专业工作。这是该用户的单次体验与评价，并非官方承认、本合集复现或所有版本的结论；补充既有 early-alpha 限制，不改变 Rust 从零重建、并非已反编译 Adobe 的边界。",
+    "description": "ArtCraft 被传播为创作软件的替代方向。官网说明其软件使用 Rust 从零编写，多款处于早期测试或开发中，不能将热门帖子解读成“AI 已完整逆向 Adobe”。作为相关的 AI 软件重建项目收录，不将其归为已完成的逆向成果。 已收录的 WordCraft、GridCraft 和 DeckCraft 分别重建 Word 风格文字处理器、Excel 风格电子表格与 PowerPoint 风格幻灯片软件，提供对应 Office 文件格式与 MCP 控制，公开 README 仍标为 alpha。10 月 12 日新增 PhotoCraft 的具体互通与验证材料：公开 README 说明 PSD 实现基于 Adobe 公开规范，UI、CLI、JSON 与 MCP 共用 500 多条命令；项目报告 309 个 psd-tools 样本中 307 个打开再保存后渲染一致，不是所有文件逐字节相同。PhotoCraft 仍为 early alpha，不能作为专业日用 Photoshop 替代，也不能据此称已反编译 Adobe。 2026年10月13日04:00–08:00窗口，一位用户报告亲自试用 PhotoCraft，具体指出面板无法浮动、色彩管理不透明、保存缺少压缩等格式选项、PSD打开较慢、活动图像焦点/蒙版读数及文字控制方面的问题，认为不适合专业工作。这是该用户的单次体验与评价，并非官方承认、本合集复现或所有版本的结论；补充既有 early-alpha 限制，不改变 Rust 从零重建、并非已反编译 Adobe 的边界。\n\n\n\n2026-10-14 又一条第三方帖子称 PhotoCraft 等项目正以类似逆向工作流重建 Adobe 套件，并明确提到 REA。该帖发帖者身份未确认，不能视为 PhotoCraft 作者本人的确认；本批未核验其说法或新增实现、测试证据，因此不据此扩大已有项目能力或 REA 贡献结论。",
     "sources": [
       {
         "label": "原始记录",
@@ -711,6 +716,10 @@
       {
         "label": "本窗口 PhotoCraft 第三方使用体验",
         "url": "https://x.com/i/status/2109765636750532915"
+      },
+      {
+        "label": "第三方帖子：称 PhotoCraft 使用 REA 工作流（发帖者身份未确认，非项目作者确认）",
+        "url": "https://x.com/i/status/2110249246138245143"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -720,7 +729,8 @@
       "PhotoCraft 补充发帖：2026-10-12T16:08:50+08:00（北京时间）",
       "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发",
       "补充发帖：2026-10-13T05:58:20+08:00（北京时间）",
-      "补充证据：第三方具体使用反馈；未独立运行软件。"
+      "补充证据：第三方具体使用反馈；未独立运行软件。",
+      "2026-10-14：第三方帖子称 PhotoCraft 使用 REA 类逆向工作流；发帖者身份未确认，非项目作者确认，未独立核验。"
     ],
     "en": {
       "title": "ArtCraft: not proven Adobe or Office reverse engineering",
@@ -3161,17 +3171,22 @@
     "status": "analysis-test",
     "rea": "REA",
     "summary": "作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。",
-    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。",
+    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。\n\n\n\n2026-10-14 一则第三方 quote 帖另称，分析还观察到输出时屏幕自动下滚、界面以四层相近底色区分层次、暗色模式的按钮和卡片以内侧淡亮线代替外框，以及 Mac 高清屏上的分割线为 0.5px。该帖称分析报告仍在完善；发帖者身份未确认，不能视为原分析者确认或 Claude 官方说明。以上为转述的待核实观察，不是本合集独立测量，也没有展示据此完成的重建。",
     "sources": [
       {
         "label": "作者关于 REA 分析 Claude Desktop 的原帖",
         "url": "https://x.com/i/status/2109912411679433121"
+      },
+      {
+        "label": "第三方 quote 帖转述的界面观察（非原分析者确认；分析报告仍在完善）",
+        "url": "https://x.com/i/status/2110270963338084425"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "作者自述使用 REA；界面细节未经独立验证",
-      "未展示重建或功能等价测试"
+      "未展示重建或功能等价测试",
+      "2026-10-14 第三方 quote 帖补充 UI 观察；非原分析者确认，报告未完成公开，本合集未独立核验。"
     ],
     "en": {
       "title": "Claude Desktop: UI details reported from REA analysis",
@@ -3581,6 +3596,82 @@
     "en": {
       "title": "ChatGPT app: a reported REA-assisted gradient-background modification",
       "summary": "The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified."
+    }
+  },
+  {
+    "id": "dragon-ball-budokai-browser",
+    "title": "Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。",
+    "description": "一则 quote 帖称 AI 逆向了 Dragon Ball Budokai，并报告游戏可在浏览器以 60 fps 运行、支持手机与在线游玩。帖子附有指向演示的短链接，但没有说明作者、项目仓库、目标游戏的具体版本或分析过程。该表述是转述帖的主张，不是原项目作者的确认；本合集未核验链接目标或运行结果。因此只记录为待验证的 AI 游戏移植报告，不将其视为已证实的完整反编译或可复现成果。REA 使用未知。",
+    "sources": [
+      {
+        "label": "X quote 帖（转述主张；原项目与作者身份未确认）",
+        "url": "https://x.com/i/status/2110230860717060262"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "帖子时间：2026-10-14T12:46:58+08:00",
+      "60 fps、移动端及在线游玩均为转述帖主张；未独立验证。",
+      "REA 使用未确认；未确认发帖者为项目作者。"
+    ],
+    "en": {
+      "title": "Dragon Ball Budokai: an unverified AI-assisted browser-port report",
+      "summary": "A quote post claims an AI reverse-engineered the game into a 60-fps browser version; project identity, attribution and results are unverified."
+    }
+  },
+  {
+    "id": "ledger-reborn-accounting-app",
+    "title": "Ledger Reborn：研究 QuickBooks 后制作独立记账应用",
+    "category": "apps",
+    "status": "related-project",
+    "rea": "REA",
+    "summary": "第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。",
+    "description": "一则第三方 quote 帖将 Ledger Reborn 描述为在针对 QuickBooks 的 REA + Ghidra 研究后开发的独立记账应用，涉及库存成本、预算与对账。帖文称维护者独立编写 Python + SQLite 引擎和界面，并称已有 Windows 与 Mac 预览版，可用保存的数据生成发票、处理部分付款及查看报告。原帖没有标明该维护者身份，也不是维护者本人确认；此处记录为有明确 REA 提及的第三方项目转述，不将转述当作独立核验或作者确认。",
+    "sources": [
+      {
+        "label": "Third-party quote post; project maintainer not identified or directly confirming",
+        "url": "https://x.com/i/status/2110262015063105757"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "Reported target: QuickBooks",
+      "Reported research: inventory costs, budgets and reconciliation",
+      "Reported implementation: Python + SQLite engine and interface",
+      "Reported availability: Windows and Mac preview",
+      "Evidence is a third-party quote post, not direct maintainer confirmation"
+    ],
+    "en": {
+      "title": "Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study",
+      "summary": "A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews."
+    }
+  },
+  {
+    "id": "rayban-meta-claude-android",
+    "title": "Ray-Ban Meta 眼镜：逆向通信并制作 Android 助手替代应用",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "发帖者称逆向眼镜与手机的通信，并制作 Android 应用将语音助手请求转给 Claude 或自选模型；REA 使用未确认。",
+    "description": "一则第一人称帖子称发帖者逆向研究 Ray-Ban Meta 眼镜与手机之间的通信，并编写开源 Android 应用以替代 Meta AI，将“Hey Meta”语音交互转发给 Claude 或用户自己的模型。帖子未提及 REA，故本记录不将其归因于 REA。发帖者身份、通信分析过程、应用源码及功能结果均未在该帖子中独立核验；文中的应用链接是短链，不能仅凭帖子确认关联项目的具体内容。",
+    "sources": [
+      {
+        "label": "发帖者关于逆向 Ray-Ban Meta 眼镜通信并制作 Android 替代应用的第一人称报告（未独立核验）",
+        "url": "https://x.com/i/status/2110224031794241676"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "帖子时间：2026-10-14T12:19:49+08:00",
+      "REA 使用未确认；发帖者身份、实现与结果未独立核验。"
+    ],
+    "en": {
+      "title": "Ray-Ban Meta glasses: an Android assistant replacement based on reverse-engineered communication",
+      "summary": "The poster says they reverse-engineered communication between Ray-Ban Meta glasses and a phone and built an open-source Android app routing voice requests to Claude or a user-selected model; REA use and the implementation are unverified."
     }
   }
 ]

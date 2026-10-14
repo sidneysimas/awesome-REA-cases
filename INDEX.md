@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **140 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **143 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（26）
-- [硬件与设备互通](categories/hardware.md)（36）
-- [应用与客户端](categories/apps.md)（69）
+- [游戏与游戏保存](categories/games.md)（27）
+- [硬件与设备互通](categories/hardware.md)（37）
+- [应用与客户端](categories/apps.md)（70）
 - [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -52,6 +52,7 @@
 - [Minecraft × Plants vs. Zombies：REA 辅助的可玩混合作品报告](cases/minecraft-pvz-rea-mashup.md) — 一则 quote 帖称试用 REA 逆向后制作出可玩的 Minecraft 与植物大战僵尸混合作品。 **[REA · 待验证]**
 - [《三国志14》：将修改器功能组合成 MCP 的报告](cases/three-kingdoms-mod-mcp.md) — 作者称分析《三国志14》修改器与风灵月影，并组合成可批量操作的 MCP。 **[未确认使用 REA · 待验证]**
 - [Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中](cases/virtua-fighter-ai-decompilation.md) — AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。 **[未确认使用 REA · 进行中]**
+- [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -91,6 +92,7 @@
 - [TCL 空调：逆向 TCL Home 并制作 macOS 控制端](cases/tclimate-macos.md) — 第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。 **[未确认使用 REA · 待验证]**
 - [投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令](cases/projector-ir-focus-command.md) — 根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。 **[其他 AI 逆向]**
 - [Smart pen：用 Codex 反编译并集成现成设备](cases/smart-pen-codex-integration.md) — 团队称用 Codex 反编译现成智能笔，并将其集成进软件系统。 **[其他 AI 逆向]**
+- [Ray-Ban Meta 眼镜：逆向通信并制作 Android 助手替代应用](cases/rayban-meta-claude-android.md) — 发帖者称逆向眼镜与手机的通信，并制作 Android 应用将语音助手请求转给 Claude 或自选模型；REA 使用未确认。 **[未确认使用 REA · 待验证]**
 
 ### 应用与客户端
 
@@ -163,6 +165,7 @@
 - [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](cases/bloomberg-style-research-terminal.md) — 作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。 **[REA · 待验证]**
 - [闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件](cases/closed-agent-pi-plugin.md) — 作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。 **[REA · 待验证]**
 - [ChatGPT App：用 REA 分析并为聊天窗口添加渐变背景](cases/chatgpt-app-gradient-background.md) — 作者称用 ChatGPT 与 REA 分析 Electron 应用，并为右侧聊天窗口注入渐变背景。 **[REA · 待验证]**
+- [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**
 
 ### 算法与功能重建
 
