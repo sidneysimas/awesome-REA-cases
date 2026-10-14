@@ -10,7 +10,7 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**139 entries**, organized by use case, without a Top-N or popularity threshold.
+**140 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
@@ -18,7 +18,7 @@ The index is in English; linked case details, category pages, and contribution/m
 
 - [Games and preservation](categories/games.md) (26)
 - [Hardware and interoperability](categories/hardware.md) (36)
-- [Applications and clients](categories/apps.md) (68)
+- [Applications and clients](categories/apps.md) (69)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -164,6 +164,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [iTerm: Arabic text rendering informed by REA](cases/arabic-terminal-rendering.md) — The poster says REA was used to analyze iTerm, then specifications guided a separate implementation tested on their device; the result is unverified. **[REA · Needs verification]**
 - [Bloomberg-style research terminal: a reported REA/Claude build](cases/bloomberg-style-research-terminal.md) — The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified. **[REA · Needs verification]**
 - [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
+- [ChatGPT app: a reported REA-assisted gradient-background modification](cases/chatgpt-app-gradient-background.md) — The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 
