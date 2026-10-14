@@ -3503,5 +3503,54 @@
       "title": "Projector IR remote: inferring and testing a missing focus command",
       "summary": "A first-hand report says Codex inferred a missing Focus+ infrared command from timing patterns and the signal worked in IRplus; the device and result are not independently verified."
     }
+  },
+  {
+    "id": "closed-agent-pi-plugin",
+    "title": "闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。",
+    "description": "一则回复中，发帖者以第一人称称自己接触 REA 后，逆向了一个未具名闭源 coding agent 的多模型协同工作逻辑，并基于相同逻辑开发 pi 插件，以便不依赖该 Agent 使用相应能力。该帖是明确提及 REA 的作者自述，支持记录一次逆向研究及后续插件开发；但没有给出目标 Agent 名称、代码仓库、分析细节、插件链接或功能测试。因此不能确认插件复现了原工具行为，也不把它描述为已独立验证的重建成果。",
+    "sources": [
+      {
+        "label": "作者第一人称报告（X 回复；目标与插件未提供链接）",
+        "url": "https://x.com/i/status/2110151664846139425"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "帖子时间：2026-10-14T07:32:16+08:00",
+      "证据边界：REA 使用、逆向和插件开发均为作者自述；未核验目标身份、代码或功能等价性。"
+    ],
+    "en": {
+      "title": "Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin",
+      "summary": "The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified."
+    }
+  },
+  {
+    "id": "smart-pen-codex-integration",
+    "title": "Smart pen：用 Codex 反编译并集成现成设备",
+    "category": "hardware",
+    "status": "case",
+    "rea": "other-ai",
+    "summary": "团队称用 Codex 反编译现成智能笔，并将其集成进软件系统。",
+    "description": "发帖者称团队原计划制作智能笔原型，后来购买现成智能笔，使用 Codex 反编译并集成到其软件系统，并称整合运行顺畅。帖子没有说明笔的型号、具体反编译对象或验证细节。@shensitivity 是被提及的人，不能据此认定其为本帖作者或报告的确认者。Codex 的使用明确，因此记为 other-ai；没有证据确认使用 REA。",
+    "sources": [
+      {
+        "label": "团队成员报告（X）",
+        "url": "https://x.com/i/status/2110108201043775589"
+      }
+    ],
+    "snapshot_date": "2026-10-14",
+    "metadata": [
+      "报告称已集成；具体设备型号和技术细节未提供",
+      "发帖者提及 @shensitivity；被提及不等于作者身份或独立确认",
+      "使用 Codex；未确认 REA"
+    ],
+    "en": {
+      "title": "Smart pen: Codex-assisted decompilation and integration",
+      "summary": "A team reports using Codex to decompile an off-the-shelf smart pen and integrate it into its software system."
+    }
   }
 ]

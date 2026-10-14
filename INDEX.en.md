@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**137 entries**, organized by use case, without a Top-N or popularity threshold.
+**139 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/games.md) (26)
-- [Hardware and interoperability](categories/hardware.md) (35)
-- [Applications and clients](categories/apps.md) (67)
+- [Hardware and interoperability](categories/hardware.md) (36)
+- [Applications and clients](categories/apps.md) (68)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -92,6 +92,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Canon Pro-1000: Claude-assisted firmware emulation attempt](cases/canon-pro-1000-firmware-emulation.md) — The poster reports an ongoing attempt to reverse-engineer and emulate Canon Pro-1000 firmware with Claude; no completion or validation is shown. **[REA use unconfirmed · In progress]**
 - [TCL air conditioners: a reported macOS control app](cases/tclimate-macos.md) — A third-party post says a developer inspected TCL Home with REA and mitmproxy and built a native Mac menu-bar controller; attribution and implementation remain unverified. **[REA use unconfirmed · Needs verification]**
 - [Projector IR remote: inferring and testing a missing focus command](cases/projector-ir-focus-command.md) — A first-hand report says Codex inferred a missing Focus+ infrared command from timing patterns and the signal worked in IRplus; the device and result are not independently verified. **[Other AI-assisted work]**
+- [Smart pen: Codex-assisted decompilation and integration](cases/smart-pen-codex-integration.md) — A team reports using Codex to decompile an off-the-shelf smart pen and integrate it into its software system. **[Other AI-assisted work]**
 
 ### Applications and clients
 
@@ -162,6 +163,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Tea-export website: reported REA-assisted rebuild](cases/tea-site-rea-rebuild-report.md) — The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified. **[REA · Needs verification]**
 - [iTerm: Arabic text rendering informed by REA](cases/arabic-terminal-rendering.md) — The poster says REA was used to analyze iTerm, then specifications guided a separate implementation tested on their device; the result is unverified. **[REA · Needs verification]**
 - [Bloomberg-style research terminal: a reported REA/Claude build](cases/bloomberg-style-research-terminal.md) — The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified. **[REA · Needs verification]**
+- [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 
