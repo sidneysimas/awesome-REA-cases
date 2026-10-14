@@ -10,7 +10,7 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**145 entries**, organized by use case, without a Top-N or popularity threshold.
+**147 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
@@ -18,7 +18,7 @@ The index is in English; linked case details, category pages, and contribution/m
 
 - [Games and preservation](categories/games.md) (27)
 - [Hardware and interoperability](categories/hardware.md) (37)
-- [Applications and clients](categories/apps.md) (72)
+- [Applications and clients](categories/apps.md) (74)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -170,6 +170,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study](cases/ledger-reborn-accounting-app.md) — A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews. **[REA · Related project]**
 - [Hongguo Short Drama: REA-assisted reverse engineering to remove ads and overlays](cases/hongguo-short-drama-ad-removal.md) — The poster says they used REA to reverse-engineer the Hongguo short-drama app and implement ad and overlay removal; the reported day-long ad-free result is unverified. **[REA · Needs verification]**
 - [Profound: a reported REA-assisted SaaS reconstruction](cases/profound-rea-reconstruction.md) — The poster says REA was used to study and recreate Profound’s website, workspace and admin pages, then open-source the project; the demo data is fictional and functionality is not independently verified. **[REA · Needs verification]**
+- [Codex Desktop: author reports trying REA to study its differences from CLI](cases/codex-desktop-rea-attempt.md) — The author says they tried REA to reverse engineer Codex desktop and understand how it differs from Codex CLI; no findings or validation are reported. **[REA · In progress]**
+- [Mac desktop app: REA-assisted analysis and reference materials](cases/mac-app-rea-analysis-workflow.md) — A post reports using WorkBuddy, DeepSeek and REA to analyze an unnamed Mac app and produce UI/technical documents plus a capture tool; claims are not independently verified. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 

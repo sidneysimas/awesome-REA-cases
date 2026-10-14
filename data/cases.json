@@ -2362,16 +2362,21 @@
     "status": "unverified",
     "rea": "unknown",
     "summary": "以 Obsidian 为目标做快速重建，具体功能与验证未公开。",
-    "description": "twone.eth 报告让 GPT 自选逆向项目，模型选择 Obsidian，称约十来分钟实现并附截图。原帖没有说明恢复哪些笔记功能、源码或对照测试，也没有明确使用 REA。与既有 Obsidian ASAR 大包分析测试不是同一作者或同一任务；保留这条新重建报告，不称完整替代。",
+    "description": "twone.eth 报告让 GPT 自选逆向项目，模型选择 Obsidian，称约十来分钟实现并附截图。原帖没有说明恢复哪些笔记功能、源码或对照测试，也没有明确使用 REA。与既有 Obsidian ASAR 大包分析测试不是同一作者或同一任务；保留这条新重建报告，不称完整替代。\n\n\n\nA post dated 2026-10-14 self-reports using GPT 5.6 Luna Medium to reverse-engineer an Obsidian-like app with basic bidirectional links and a Copilot, then package it as an EXE and send it to a customer after 15 dialogue turns. This is the poster's report; no source, feature comparison, or independent verification is provided. The trailing #rea does not by itself confirm actual REA use, so REA confirmation remains unknown. This is a distinct rebuild report and should not be conflated with the existing Obsidian ASAR analysis test.",
     "sources": [
       {
         "label": "看本窗口 X 帖",
         "url": "https://x.com/i/status/2109676911500951649"
+      },
+      {
+        "label": "This batch: first-person Obsidian-like app rebuild; REA use not explicitly confirmed",
+        "url": "https://x.com/i/status/2110355975974596826"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
-      "证据：原帖报告；本次未运行目标或独立复测"
+      "证据：原帖报告；本次未运行目标或独立复测",
+      "2026-10-14: self-reported Obsidian-like app rebuild with bidirectional links and Copilot, EXE delivery, and 15 dialogue turns; not independently verified. REA use not explicitly confirmed."
     ],
     "en": {
       "title": "Obsidian: a GPT-selected reconstruction attempt",
@@ -3294,17 +3299,22 @@
     "status": "unverified",
     "rea": "REA",
     "summary": "作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。",
-    "description": "一位 Mac 用户报告，因 Typeless 免费额度下降，使用 Claude Code 通过 REA 分析该 Electron 语音输入应用，并制作名为 REATypeless 的本地替代品。作者称分析发现原应用客户端处理快捷键、录音与粘贴，语音识别和文本处理依赖服务器；其替代实现改用 whisper.cpp large-v3-turbo 量化模型和 Ollama/Qwen2.5 3B，并加入润色、翻译及选中文本改写功能。帖子报告约 2.9GB 常驻内存，以及五秒语音约两至三秒出字等体验，但未提供代码或独立功能/性能测试，因此这些结果均为作者自述；不能据此认定完整复刻 Typeless。",
+    "description": "一位 Mac 用户报告，因 Typeless 免费额度下降，使用 Claude Code 通过 REA 分析该 Electron 语音输入应用，并制作名为 REATypeless 的本地替代品。作者称分析发现原应用客户端处理快捷键、录音与粘贴，语音识别和文本处理依赖服务器；其替代实现改用 whisper.cpp large-v3-turbo 量化模型和 Ollama/Qwen2.5 3B，并加入润色、翻译及选中文本改写功能。帖子报告约 2.9GB 常驻内存，以及五秒语音约两至三秒出字等体验，但未提供代码或独立功能/性能测试，因此这些结果均为作者自述；不能据此认定完整复刻 Typeless。\n\nAnother poster reports using Claude Code over half a day to build Saydra, a Windows voice-input alternative. Claimed features include local offline SenseVoice recognition (about 0.3 seconds), optional Groq Whisper large-v3, Qwen text polishing, translation, and selected-text rewriting. The poster says Chris used REA to reverse engineer Typeless; this is a retelling, not evidence that the poster personally used REA, nor independent confirmation of Chris's identity or original project details. Saydra's features and performance are unverified.",
     "sources": [
       {
         "label": "作者的 REA 分析与本地替代品报告",
         "url": "https://x.com/i/status/2109971905336037671"
+      },
+      {
+        "label": "Saydra author's report and retelling of Chris's REA work",
+        "url": "https://x.com/i/status/2110386418929594439"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "作者报告已完成个人 Mac 上的本地应用；未公开代码，未独立验证功能或性能。",
-      "原帖注明仅供个人学习与技术研究，不分发、不售卖。"
+      "原帖注明仅供个人学习与技术研究，不分发、不售卖。",
+      "2026-10-14: Another developer reports building Windows alternative Saydra with Claude Code; REA use is attributed to @Chris62771610 and is not independently verified."
     ],
     "en": {
       "title": "Typeless: a reported local voice-input alternative built with REA",
@@ -3723,6 +3733,57 @@
     "en": {
       "title": "Profound: a reported REA-assisted SaaS reconstruction",
       "summary": "The poster says REA was used to study and recreate Profound’s website, workspace and admin pages, then open-source the project; the demo data is fictional and functionality is not independently verified."
+    }
+  },
+  {
+    "id": "codex-desktop-rea-attempt",
+    "title": "Codex Desktop：作者尝试用 REA 研究其与 CLI 的差异",
+    "category": "apps",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "作者自述尝试用 REA 逆向 Codex 桌面版，以了解其为何优于 Codex CLI；未报告分析结果或验证。",
+    "description": "一则个人自述称，作者在其两个 Codex 账号被封后想到自己曾尝试用 REA 逆向 Codex desktop，目的是理解它为何比 Codex CLI 工作得更好。该帖没有说明账号封禁原因，也没有提供逆向分析的发现、重建或验证，因此只能作为作者报告的尝试记录。",
+    "sources": [
+      {
+        "label": "作者自述尝试用 REA 研究 Codex desktop",
+        "url": "https://x.com/i/status/2110377021402661320"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "evidence: author self-report",
+      "stage: attempted analysis; no findings reported",
+      "target: Codex desktop",
+      "purpose: compare behavior with Codex CLI",
+      "account-ban causation: unconfirmed"
+    ],
+    "en": {
+      "title": "Codex Desktop: author reports trying REA to study its differences from CLI",
+      "summary": "The author says they tried REA to reverse engineer Codex desktop and understand how it differs from Codex CLI; no findings or validation are reported."
+    }
+  },
+  {
+    "id": "mac-app-rea-analysis-workflow",
+    "title": "Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。",
+    "description": "一位身份未在输入材料中确认的发帖者自述，为避免使用 Codex 和 Claude 封号，改用 WorkBuddy、DeepSeek 与 REA 分析一款未具名的 Mac 桌面软件。帖子称工作涵盖功能与交互拆解、自动等待并捕获目标窗口的工具、去重与资料整理脚本，并最终留下两份文档和一套采集工具，另称已脱敏和归档。其结论、工具产物及完成情况均为帖子自述，未提供目标软件名称、公开代码或独立测试；不能据此推断 REA 分析之外的 AI 具体贡献，也不将未确认判断当作事实。",
+    "sources": [
+      {
+        "label": "发帖者自述：REA 辅助的 Mac 软件分析与交付物（账号身份未确认）",
+        "url": "https://x.com/i/status/2110382256829386935"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "作者自述；目标软件未具名，文档与工具未公开，未独立核验。",
+      "REA 使用由帖子明确陈述；发帖者身份未确认。"
+    ],
+    "en": {
+      "title": "Mac desktop app: REA-assisted analysis and reference materials",
+      "summary": "A post reports using WorkBuddy, DeepSeek and REA to analyze an unnamed Mac app and produce UI/technical documents plus a capture tool; claims are not independently verified."
     }
   }
 ]

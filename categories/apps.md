@@ -74,3 +74,5 @@
 - [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](../cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**
 - [红果短剧：用 REA 逆向并去除广告与悬浮窗](../cases/hongguo-short-drama-ad-removal.md) — 发帖者自述用 REA 逆向红果短剧应用，实现去广告和去悬浮窗功能；连续观看一天未见广告的结果尚未独立核验。 **[REA · 待验证]**
 - [Profound：用 REA 研究并重建 SaaS 工作台](../cases/profound-rea-reconstruction.md) — 作者称用 REA 逆向 Profound 的官网、工作台与管理后台并开源重建项目；所述数据为虚构示例，功能尚未独立核验。 **[REA · 待验证]**
+- [Codex Desktop：作者尝试用 REA 研究其与 CLI 的差异](../cases/codex-desktop-rea-attempt.md) — 作者自述尝试用 REA 逆向 Codex 桌面版，以了解其为何优于 Codex CLI；未报告分析结果或验证。 **[REA · 进行中]**
+- [Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册](../cases/mac-app-rea-analysis-workflow.md) — 作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。 **[REA · 待验证]**
