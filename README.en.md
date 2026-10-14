@@ -4,9 +4,9 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **147 cases and projects**. *Last maintained: October 15, 2026, 00:07; case coverage through October 15, 2026, 00:00 Beijing time (UTC+8).*
+Currently **150 cases and projects**. *Last maintained: October 15, 2026, 04:07; case coverage through October 15, 2026, 04:00 Beijing time (UTC+8).*
 
-Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. Coverage in the October 14, 20:00–October 15, 00:00 Beijing-time window was limited and should not be read as exhaustive. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
+Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. Coverage in the October 15, 00:00–04:00 Beijing-time window was limited and should not be read as exhaustive. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
 [REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
@@ -34,9 +34,9 @@ Manually selected for recent attention, concrete use, and reading value—not a 
 
 ## Contents
 
-- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (27)
+- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (28)
 - [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (37)
-- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (74)
+- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (76)
 - [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (9)
 - [Contribute a case](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [Maintenance](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 

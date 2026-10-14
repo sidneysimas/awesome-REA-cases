@@ -76,3 +76,5 @@
 - [Profound：用 REA 研究并重建 SaaS 工作台](../cases/profound-rea-reconstruction.md) — 作者称用 REA 逆向 Profound 的官网、工作台与管理后台并开源重建项目；所述数据为虚构示例，功能尚未独立核验。 **[REA · 待验证]**
 - [Codex Desktop：作者尝试用 REA 研究其与 CLI 的差异](../cases/codex-desktop-rea-attempt.md) — 作者自述尝试用 REA 逆向 Codex 桌面版，以了解其为何优于 Codex CLI；未报告分析结果或验证。 **[REA · 进行中]**
 - [Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册](../cases/mac-app-rea-analysis-workflow.md) — 作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。 **[REA · 待验证]**
+- [Apple Weather：作者自述用 REA 重建天气应用](../cases/apple-weather-rea-rebuild.md) — 发帖者称用 REA 制作 Apple Weather 克隆；其评分比较未说明方法或独立验证。 **[REA · 待验证]**
+- [Linux cal：从无符号程序追出 1752 年日历切换](../cases/linux-cal-1752-switch.md) — 用 REA 分析无符号 calendar 二进制，定位 1752 年缺失日期规则并作选项测试。 **[REA]**

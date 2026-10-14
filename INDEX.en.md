@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**147 entries**, organized by use case, without a Top-N or popularity threshold.
+**150 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (27)
+- [Games and preservation](categories/games.md) (28)
 - [Hardware and interoperability](categories/hardware.md) (37)
-- [Applications and clients](categories/apps.md) (74)
+- [Applications and clients](categories/apps.md) (76)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
@@ -55,6 +55,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Three Kingdoms XIV: a reported trainer-to-MCP project](cases/three-kingdoms-mod-mcp.md) — The author reports combining reverse-engineered game-trainer functions into an MCP for batch edits; implementation, tests and REA use are unverified. **[REA use unconfirmed · Needs verification]**
 - [Virtua Fighter 2.1 / 3 TB: AI-assisted decompilation in progress](cases/virtua-fighter-ai-decompilation.md) — AI coding agents are reportedly helping reconstruct readable C/C++ game logic; both projects remain works in progress and REA use is unconfirmed. **[REA use unconfirmed · In progress]**
 - [Dragon Ball Budokai: an unverified AI-assisted browser-port report](cases/dragon-ball-budokai-browser.md) — A quote post claims an AI reverse-engineered the game into a 60-fps browser version; project identity, attribution and results are unverified. **[REA use unconfirmed · Needs verification]**
+- [Friday Night Funkin’: a Claude-assisted gameplay variant](cases/friday-night-funkin-claude-gameplay.md) — The poster reports using Claude to create a gameplay variant based on a recent decompilation; REA use and functional parity are unconfirmed. **[REA use unconfirmed · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -172,6 +173,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Profound: a reported REA-assisted SaaS reconstruction](cases/profound-rea-reconstruction.md) — The poster says REA was used to study and recreate Profound’s website, workspace and admin pages, then open-source the project; the demo data is fictional and functionality is not independently verified. **[REA · Needs verification]**
 - [Codex Desktop: author reports trying REA to study its differences from CLI](cases/codex-desktop-rea-attempt.md) — The author says they tried REA to reverse engineer Codex desktop and understand how it differs from Codex CLI; no findings or validation are reported. **[REA · In progress]**
 - [Mac desktop app: REA-assisted analysis and reference materials](cases/mac-app-rea-analysis-workflow.md) — A post reports using WorkBuddy, DeepSeek and REA to analyze an unnamed Mac app and produce UI/technical documents plus a capture tool; claims are not independently verified. **[REA · Needs verification]**
+- [Apple Weather: reported REA-assisted rebuild](cases/apple-weather-rea-rebuild.md) — A poster says they made an Apple Weather clone with REA; the reported scores lack methods and independent verification. **[REA · Needs verification]**
+- [Linux cal: tracing the 1752 calendar switch](cases/linux-cal-1752-switch.md) — A post reports using REA on a stripped calendar binary to locate the 1752 date-switch rule and test country/calendar options; results are not independently reproduced. **[REA]**
 
 ### Algorithms and feature recovery
 

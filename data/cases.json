@@ -744,15 +744,22 @@
     "category": "apps",
     "rea": "REA",
     "summary": "用户确认原 ASAR 包可完成分析，但没有具体功能重建。",
-    "description": "Obsidian 是本地笔记软件，桌面版的 JavaScript 可打包在 ASAR 归档中。用户用 REA 分析约 24MB 的真实包，修复后确认 REA 6.0.0 配合 JSONL 在 86 秒完成原目标。讨论证明大包分析可跑通，未展示从结果中重建某个笔记功能，因此标为分析测试，而非已完成的功能重建。",
+    "description": "Obsidian 是本地笔记软件，桌面版的 JavaScript 可打包在 ASAR 归档中。用户用 REA 分析约 24MB 的真实包，修复后确认 REA 6.0.0 配合 JSONL 在 86 秒完成原目标。讨论证明大包分析可跑通，未展示从结果中重建某个笔记功能，因此标为分析测试，而非已完成的功能重建。\n\n\n\n2026-10-15 一位发帖者自述先用 REA 分析 Obsidian，称完整性校验因原生二进制哈希不匹配而阻止首次运行，调整参数后数秒完成 JavaScript 层分析并看到文件读取及系统接口调用路径。其尝试分析原生二进制时失败，且未配置 Ghidra、Hopper 或 IDA；发帖者也明确指出仅有静态分析、动态 IPC 未解以及未运行代码不构成行为证据。帖子另提及一个未具名的大包并称耗时约一分钟，但目标身份和分析结果均不足以并入 Obsidian 案例。本合集未复现上述过程。",
     "sources": [
       {
         "label": "原始记录",
         "url": "https://github.com/morluto/rea/issues/746"
+      },
+      {
+        "label": "本窗口：Obsidian JavaScript 静态分析及原生层受阻的作者报告（未独立复测）",
+        "url": "https://x.com/i/status/2110407610134663474"
       }
     ],
     "snapshot_date": "2026-10-12",
-    "metadata": [],
+    "metadata": [
+      "补充发帖：2026-10-15T00:29:18+08:00；作者自述，未独立复测。",
+      "报告限于 Obsidian JavaScript 静态分析；原生二进制分析失败，未证明动态行为。"
+    ],
     "en": {
       "title": "Obsidian ASAR: large-package analysis",
       "summary": "The user confirms analysis completed, without a demonstrated feature rebuild."
@@ -2310,17 +2317,22 @@
     "status": "unverified",
     "rea": "unknown",
     "summary": "计划测试目标文件中的文字能否污染 AI 逆向结论。",
-    "description": "riyoway 提出在分析目标的字符串、资源或死代码中放置面向 AI 的指令，观察 REA 一类 LLM 逆向工具是否会将其当指令而污染分析结果。目标是评估 AI 逆向链路的间接提示注入边界；作者只说考虑实验，没有样本、测试或成功证据。本合集未制作或执行注入目标，不将该构想写成已有效的防护方案。",
+    "description": "riyoway 提出在分析目标的字符串、资源或死代码中放置面向 AI 的指令，观察 REA 一类 LLM 逆向工具是否会将其当指令而污染分析结果。目标是评估 AI 逆向链路的间接提示注入边界；作者只说考虑实验，没有样本、测试或成功证据。本合集未制作或执行注入目标，不将该构想写成已有效的防护方案。\n\n后续测试（作者自述）：作者用 REA 6.5.0 的 JavaScript 分析器分析自制 Electron 玩具应用，未接入 agent，并在报告中搜索九条无害标记。九条中六条出现在报告的不同部分；注释及 package.json description 未出现，部分字符串、对象键、IPC 名、URL 和文件名出现。只含摘要/统计/局限的切片和窗口设置切片未包含这些标记，窗口切片仍呈现 nodeIntegration 开启、contextIsolation 关闭。作者据此建议先核对数字与标志，并将含名称或 URL 的切片视为目标文本。此结果仅说明哪些样本文字进入静态分析输出，不证明模型会听从指令，也不能推广到其他命令或应用。",
     "sources": [
       {
         "label": "本周期作者报告",
         "url": "https://x.com/i/status/2109670989319868863"
+      },
+      {
+        "label": "作者的 REA 6.5.0 玩具应用静态分析测试（未测试模型服从性）",
+        "url": "https://x.com/i/status/2110441399279604113"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "发帖：2026-10-12T23:42:14+08:00（北京时间）",
-      "热度快照（2026-10-13）：1 赞｜14 浏览｜0 转发"
+      "热度快照（2026-10-13）：1 赞｜14 浏览｜0 转发",
+      "REA 6.5.0；作者自制 Electron 玩具应用；未接入 agent，未测试模型是否服从植入文本。"
     ],
     "en": {
       "title": "REA analysis: a binary prompt-injection test idea",
@@ -3176,7 +3188,7 @@
     "status": "analysis-test",
     "rea": "REA",
     "summary": "作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。",
-    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。\n\n\n\n2026-10-14 一则第三方 quote 帖另称，分析还观察到输出时屏幕自动下滚、界面以四层相近底色区分层次、暗色模式的按钮和卡片以内侧淡亮线代替外框，以及 Mac 高清屏上的分割线为 0.5px。该帖称分析报告仍在完善；发帖者身份未确认，不能视为原分析者确认或 Claude 官方说明。以上为转述的待核实观察，不是本合集独立测量，也没有展示据此完成的重建。",
+    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。\n\n\n\n2026-10-14 一则第三方 quote 帖另称，分析还观察到输出时屏幕自动下滚、界面以四层相近底色区分层次、暗色模式的按钮和卡片以内侧淡亮线代替外框，以及 Mac 高清屏上的分割线为 0.5px。该帖称分析报告仍在完善；发帖者身份未确认，不能视为原分析者确认或 Claude 官方说明。以上为转述的待核实观察，不是本合集独立测量，也没有展示据此完成的重建。\n\n\n\n2026-10-15 一条第一人称帖子称发帖者用 REA 逆向 Claude Desktop，整理出 3000 多行手册及算法实现，并列举滚动边缘渐隐、语音波形处理、弹簧动画、自动滚动、以鼠标为中心缩放及分栏交互等观察，还称提供 30 个 React 组件。捕获记录未提供作者身份，故这是发帖者自述，不视为 Claude 官方说明或原分析者身份已确认；未独立检查手册、组件或测量这些实现细节，也没有据此完成重建或功能等价测试。",
     "sources": [
       {
         "label": "作者关于 REA 分析 Claude Desktop 的原帖",
@@ -3185,13 +3197,19 @@
       {
         "label": "第三方 quote 帖转述的界面观察（非原分析者确认；分析报告仍在完善）",
         "url": "https://x.com/i/status/2110270963338084425"
+      },
+      {
+        "label": "本窗口：发帖者自述用 REA 分析 Claude Desktop 并整理手册（作者身份未确认，未独立验证）",
+        "url": "https://x.com/i/status/2110404747605709153"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "作者自述使用 REA；界面细节未经独立验证",
       "未展示重建或功能等价测试",
-      "2026-10-14 第三方 quote 帖补充 UI 观察；非原分析者确认，报告未完成公开，本合集未独立核验。"
+      "2026-10-14 第三方 quote 帖补充 UI 观察；非原分析者确认，报告未完成公开，本合集未独立核验。",
+      "补充发帖：2026-10-15T00:17:55+08:00；捕获作者字段为空，身份未确认。",
+      "手册、算法与界面细节为帖子自述；未独立核验，无功能重建验证。"
     ],
     "en": {
       "title": "Claude Desktop: UI details reported from REA analysis",
@@ -3784,6 +3802,78 @@
     "en": {
       "title": "Mac desktop app: REA-assisted analysis and reference materials",
       "summary": "A post reports using WorkBuddy, DeepSeek and REA to analyze an unnamed Mac app and produce UI/technical documents plus a capture tool; claims are not independently verified."
+    }
+  },
+  {
+    "id": "apple-weather-rea-rebuild",
+    "title": "Apple Weather：作者自述用 REA 重建天气应用",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "发帖者称用 REA 制作 Apple Weather 克隆；其评分比较未说明方法或独立验证。",
+    "description": "一位身份未由本条证据确认的发帖者回复称，数日前试用 REA 制作了 Apple Weather 应用，并称 REA 路线得分 95%，而自己用 Claude 制作的克隆得分 90%。这是发帖者对使用工具、产物及比较结果的第一手自述；帖子没有展示应用、评分标准、测试集或独立复核，不能据此断言功能等价、REA 普遍优于 Claude，亦不能将结果归因于独立验证。",
+    "sources": [
+      {
+        "label": "发帖者自述（身份及评分未独立核验）",
+        "url": "https://x.com/i/status/2110459951365980334"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "帖子时间：2026-10-15（+08:00）",
+      "REA 使用、应用制作及 95%/90% 分数均为发帖者自述；方法与结果未独立核验。"
+    ],
+    "en": {
+      "title": "Apple Weather: reported REA-assisted rebuild",
+      "summary": "A poster says they made an Apple Weather clone with REA; the reported scores lack methods and independent verification."
+    }
+  },
+  {
+    "id": "friday-night-funkin-claude-gameplay",
+    "title": "Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。",
+    "description": "发帖者称利用近期制作的 Friday Night Funkin’ 反编译成果，并借助 Claude 创建了改良玩法体验，列出新输入、图像、界面、代码和角色内容。该报告说明的是在已有反编译成果上开发游戏体验，不代表本次完成了原游戏反编译；发帖没有明确提及 REA，因此 REA 使用为 unknown。帖子附有项目短链接，但本记录仅以原帖为来源，不推断短链接内容或将作者报告当作独立测试；功能完成情况与游戏行为等价性未核验。",
+    "sources": [
+      {
+        "label": "作者关于 Claude 辅助新玩法的原帖（未独立核验）",
+        "url": "https://x.com/i/status/2110407024731439392"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "发帖时间：2026-10-15T00:26:58+08:00",
+      "作者自述使用 Claude；未确认 REA；未独立验证实现与功能等价性。"
+    ],
+    "en": {
+      "title": "Friday Night Funkin’: a Claude-assisted gameplay variant",
+      "summary": "The poster reports using Claude to create a gameplay variant based on a recent decompilation; REA use and functional parity are unconfirmed."
+    }
+  },
+  {
+    "id": "linux-cal-1752-switch",
+    "title": "Linux cal：从无符号程序追出 1752 年日历切换",
+    "category": "apps",
+    "status": "case",
+    "rea": "REA",
+    "summary": "用 REA 分析无符号 calendar 二进制，定位 1752 年缺失日期规则并作选项测试。",
+    "description": "发帖者报告使用 OpenCode、Ghidra 与 REA 检查 Linux 的 calendar 命令，在没有函数名的 stripped binary 中定位到 1752-09-02 的硬编码切换规则；帖子称约 1.5 分钟找到位置，分析结论附有证据，且 AI 标示未追踪部分。作者随后自述切换国家或使用 Julian calendar 时，9 月缺失日期会恢复。此为帖子中的分析与手动测试报告，尚无独立复测；未声称重建整个程序。",
+    "sources": [
+      {
+        "label": "作者的 REA 实操演示帖（含视频链接）",
+        "url": "https://x.com/i/status/2110453427209916612"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "发帖：2026-10-15（输入记录时间）",
+      "REA 使用、分析过程及国家/历法切换测试均为原帖自述，未独立复核。"
+    ],
+    "en": {
+      "title": "Linux cal: tracing the 1752 calendar switch",
+      "summary": "A post reports using REA on a stripped calendar binary to locate the 1752 date-switch rule and test country/calendar options; results are not independently reproduced."
     }
   }
 ]

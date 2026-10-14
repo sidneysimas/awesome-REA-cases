@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **147 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **150 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（27）
+- [游戏与游戏保存](categories/games.md)（28）
 - [硬件与设备互通](categories/hardware.md)（37）
-- [应用与客户端](categories/apps.md)（74）
+- [应用与客户端](categories/apps.md)（76）
 - [算法与功能重建](categories/algorithms.md)（9）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -53,6 +53,7 @@
 - [《三国志14》：将修改器功能组合成 MCP 的报告](cases/three-kingdoms-mod-mcp.md) — 作者称分析《三国志14》修改器与风灵月影，并组合成可批量操作的 MCP。 **[未确认使用 REA · 待验证]**
 - [Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中](cases/virtua-fighter-ai-decompilation.md) — AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。 **[未确认使用 REA · 进行中]**
 - [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**
+- [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -170,6 +171,8 @@
 - [Profound：用 REA 研究并重建 SaaS 工作台](cases/profound-rea-reconstruction.md) — 作者称用 REA 逆向 Profound 的官网、工作台与管理后台并开源重建项目；所述数据为虚构示例，功能尚未独立核验。 **[REA · 待验证]**
 - [Codex Desktop：作者尝试用 REA 研究其与 CLI 的差异](cases/codex-desktop-rea-attempt.md) — 作者自述尝试用 REA 逆向 Codex 桌面版，以了解其为何优于 Codex CLI；未报告分析结果或验证。 **[REA · 进行中]**
 - [Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册](cases/mac-app-rea-analysis-workflow.md) — 作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。 **[REA · 待验证]**
+- [Apple Weather：作者自述用 REA 重建天气应用](cases/apple-weather-rea-rebuild.md) — 发帖者称用 REA 制作 Apple Weather 克隆；其评分比较未说明方法或独立验证。 **[REA · 待验证]**
+- [Linux cal：从无符号程序追出 1752 年日历切换](cases/linux-cal-1752-switch.md) — 用 REA 分析无符号 calendar 二进制，定位 1752 年缺失日期规则并作选项测试。 **[REA]**
 
 ### 算法与功能重建
 
