@@ -42,3 +42,12 @@
 - [Switch《暗黑2》：移到苹果设备的 AI 辅助转述](../cases/diablo2-switch-apple-ai-port-report.md) — 第三方称民间项目在 iPhone、iPad 与 Apple Silicon Mac 原生运行。 **[其他 AI 逆向 · 待验证]**
 - [旧 Flash SWF：反编译后用 AI 重建移动版的 idea](../cases/flash-swf-ai-mobile-rebuild-idea.md) — 从旧 Flash 游戏文件恢复行为，再做移动版；帖子只有建议，没有实现。 **[其他 AI 逆向 · 进行中]**
 - [Spider-Man 摆荡到 GTA V：内部叙述不一致的 REA 报告](../cases/spiderman-gta5-swing-rea-report.md) — 帖子宣称洛圣都内摆荡，步骤却交付 Godot 代码，不能确认真正 GTA Mod。 **[REA · 待验证]**
+- [Battlefront II：实现太空至地面战斗的反编译 idea](../cases/battlefront2-space-ground-ai-idea.md) — AI讨论中提出研究新Battlefront II，加入取消版第三作的战斗形式。 **[其他 AI 逆向 · 待验证]**
+- [小王子到龙珠：Opus 辅助重建单 HTML 的 3D 剧情游戏](../cases/little-prince-dragonball-opus-html.md) — 作者称研究小王子3D游戏后，用Opus做出龙珠主题场景、剧情和交互。 **[其他 AI 逆向 · 待验证]**
+- [《马力欧：奥德赛》：Claude 辅助 macOS 本地版的转述](../cases/mario-odyssey-macos-claude-report.md) — 转述@Wiggin_Han称隔夜做出本地版，但没有项目页或实现验证。 **[其他 AI 逆向 · 待验证]**
+- [Mario 跳跃到 Halo：提取六个参数的 REA 转述](../cases/mario-jump-halo-rea-report.md) — 帖子称研究N64 ROM跳跃规则并写入Halo控制器，没有定位或测试材料。 **[REA · 待验证]**
+- [RE-Agent：研究《秘密潜入2》GConv / QVM 老工具](../cases/re-agent-igi2-legacy-tools.md) — REA分支作者将2003年IGI 2工具列为首个目标，强调隔离修复与比较验证。 **[REA · 进行中]**
+- [Rust Duty：从《现代战争》视频重建玩法，不反编译](../cases/rust-duty-video-gameplay-rebuild.md) — 作者让多个AI参考动画和玩法视频，实现Wgpu渲染、光照、UI与性能改进。 **[其他 AI 逆向 · 进行中]**
+- [2010 Rust Rewrite Mashup：在 MW2 地图里玩 Skate 3](../cases/iw4l-skate3-mw2-rust-mashup.md) — 二手帖称IW4L读取自有游戏文件，结合滑板与MW2/Minecraft世界，AI加速其上开发。 **[其他 AI 逆向 · 待验证]**
+- [网页版 CS：市场部同事用 AI 做联机版本的转述](../cases/cs-browser-colleague-ai-report.md) — 发帖者称同事20分钟做出可联机浏览器CS，没有产物或逆向过程。 **[其他 AI 逆向 · 待验证]**
+- [GTA 规则到 Godot：版本不清的 REA 重建计划](../cases/gta-rules-godot-rea-plan.md) — 作者计划研究驾驶、速度和通缉规则后重建开放世界，不能确认已逆向GTA6。 **[REA · 进行中]**

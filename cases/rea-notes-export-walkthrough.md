@@ -7,9 +7,11 @@
 教程以其所称的REA官方Notes示例中的Export notes按钮为目标，描述renderer.js处理点击、preload.js发送notes:export、main.js写文件、csv.js序列化id和title，并强调逗号、引号的CSV转义。作者提出用Grok Bot独立电脑调用REA，先建立带文件定位的SPEC.md，再从规格实现和测试，不确定结论保持unknown。这些文件映射与流程来自教程，候选未提供完整执行日志或独立重建结果；本合集没有核验示例代码，不能把提示词流程视为实际运行，也不是Apple Notes生产客户端分析。
 
 教学示例，不是独立复现或完整应用克隆。
+10月15日23:57补充教程提出lead/scout/index/trace/scribe/builder分工，只读导出按钮触及的renderer/preload/main/csv链路，称1284个文件只需看4个、规格12条。帖中38.52美元至0.38美元和约4100万tokens没有账单或执行记录，且以‘我会这样做’描述，不能当实测节省或已完成隔离重建；不采纳‘零风险’的法律保证。
 
 ## 来源
 
 - [示范与提示词](https://x.com/i/status/2110623921611432090)
+- [按调用链分工的后续方案与未核验成本比较](https://x.com/i/status/2110762075559444705)
 
 [返回目录](../README.md)

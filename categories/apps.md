@@ -96,3 +96,16 @@
 - [自己的预约漏斗：调查前端后重建共享日历](../cases/booking-funnel-rea-calendar.md) — 作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。 **[REA · 待验证]**
 - [Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea](../cases/lotus-smartsuite-linux-revival-idea.md) — 希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。 **[其他 AI 逆向 · 进行中]**
 - [REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试](../cases/rea-local-qwen-commercial-analysis-tests.md) — 作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。 **[REA · 分析测试]**
+- [Grok Bot：为 Mac 连接故障提出的 worker 逆向 idea](../cases/grok-bot-worker-network-idea.md) — Gemini建议反编译连接进程，作者没有实施，而是开TUN恢复连接。 **[其他 AI 逆向 · 待验证]**
+- [建筑公司后台：观察 ProCore / Salesforce 工作流再重建](../cases/construction-saas-workflow-ai-rebuild.md) — 作者开发访谈与电脑使用观察工具，计划以定制后台替代既有SaaS。 **[其他 AI 逆向 · 进行中]**
+- [AI 逆向项目目录：记录模型、工具与结果边界](../cases/ai-reverse-project-directory.md) — whyamas称建立覆盖游戏、固件、协议和旧软件迁移的项目资料目录。 **[未确认使用 REA · 相关项目]**
+- [idx-core：让 Claude 解释印尼股票数据采集路径的 idea](../cases/idx-core-ai-data-inspection-idea.md) — 回复建议检查idx-core中逆向与抓取的数据入口，提到KSEI数据。 **[其他 AI 逆向 · 待验证]**
+- [Hermes + REA：WinSCP GUI 的 Ghidra 导入测试与版本边界](../cases/hermes-rea-winscp-import-test.md) — 插件介绍报告WinSCP导入663秒，较晚说明纠正稳定版timeout键兼容问题。 **[REA · 分析测试]**
+- [永久授权压缩软件：用 AI 做个人逆向学习的 idea](../cases/compression-app-ai-learning-idea.md) — 用户提出学习已购买的压缩软件，尚在讨论个人研究与公开分享的边界。 **[其他 AI 逆向 · 待验证]**
+- [Arkham：Grok Bot + REA 研究链上分析工作台](../cases/arkham-grok-rea-research-workbench.md) — 作者描述观察钱包分析界面并草拟定制重建，真实数据交互仍待测试。 **[REA · 进行中]**
+- [Grok Build：用 REA + Claude Code 阅读开源实现](../cases/grok-build-rea-code-study.md) — 作者称用REA浏览开源项目，当前出于好奇研究Grok Build。 **[REA · 进行中]**
+- [Grok Bot 到 Hermes：让 Alan + REA 研究交互的 idea](../cases/grok-bot-hermes-rea-idea.md) — 用户想用Hermes内的Agent研究Grok Bot，尚未报告实施。 **[REA · 待验证]**
+- [Codex CLI：检查模型身份提示词与路由字段](../cases/codex-cli-model-identity-inspection.md) — 帖子检查0.162.1本地二进制，讨论具体模型名为何未进入Agent提示词。 **[未确认使用 REA · 分析测试]**
+- [PDF 二进制最小修改：AI 文档结构操作的 idea](../cases/pdf-binary-minimal-edit-ai-idea.md) — 帖子建议拆解PDF后最小修改文字，未给样本或结构保持测试。 **[其他 AI 逆向 · 待验证]**
+- [Supabase：用 REA 研究欧盟取向兼容版本的 idea](../cases/supabase-eu-rea-idea.md) — 回复建议研究Supabase并制作面向欧盟的版本，没有实现或GDPR验收。 **[REA · 待验证]**
+- [日用语音输入 App：看懂客户端后仍需重建五小时的报告](../cases/voice-input-client-cloud-ai-rebuild.md) — 作者自述AI研究安装包，发现识别润色留在云端，客户端只覆盖录音与粘贴链。 **[其他 AI 逆向 · 进行中]**

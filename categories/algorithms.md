@@ -18,3 +18,7 @@
 - [热工与流体力学求解器：REA + Opus 的进行中重建报告](../cases/rea-thermofluid-equation-solver.md) — 作者称用 T3 Code、Opus 与 REA 推进求解器，同时开发移动/web RTS。 **[REA · 进行中]**
 - [旧图片处理软件：用 AI 学习预设与处理方法的 idea](../cases/image-presets-ai-study-idea.md) — 永久权益用户希望研究自己所购软件的图片预设，仍在询问许可边界。 **[其他 AI 逆向 · 进行中]**
 - [Windows 图形启动：用 Agent 群反编译与剖析系统 DLL 的 idea](../cases/windows-graphics-startup-ai-profile-idea.md) — 针对 D3D11 创建设备和 DirectWrite 首次字形栅格化瓶颈提出逆向优化建议。 **[其他 AI 逆向 · 进行中]**
+- [游戏机制百科：让 AI 逆向真实数值与公式的 idea](../cases/game-formulas-ai-guide-idea.md) — 提议从游戏实现提取公式、分支和隐藏剧情，用作攻略证据。 **[其他 AI 逆向 · 待验证]**
+- [SentinelOne / Daybreak：缩短复杂恶意软件逆向时间的转述](../cases/sentinelone-daybreak-malware-report.md) — 传播帖称恶意软件分析由4–6周缩短至约8小时，缺原始样本与测试。 **[其他 AI 逆向 · 待验证]**
+- [Linux Easy Anti-Cheat：经 IDA Assist MCP 的 AI 去虚拟化报告](../cases/linux-eac-ai-devirtualization-report.md) — 作者称Gemini 4 Argon与GPT 6.1 Sol辅助分析Linux EAC，没有可复核结果。 **[其他 AI 逆向 · 待验证]**
+- [REA JavaScript 示例：陈旧价格检查的 400 ms 边界](../cases/rea-js-stale-price-boundary-demo.md) — 作者用自制模块追踪调用链并测边界，明确不是真实交易或Claude现场演示。 **[REA · 分析测试]**

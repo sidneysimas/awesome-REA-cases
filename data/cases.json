@@ -755,6 +755,10 @@
       {
         "label": "10月15日本窗口的格式规范与验证流程转述",
         "url": "https://x.com/i/status/2110655957436965228"
+      },
+      {
+        "label": "10月15日20:48：Ubuntu安装体验与非反编译边界转述",
+        "url": "https://x.com/i/status/2110714534591713611"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -765,6 +769,7 @@
       "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发",
       "补充发帖：2026-10-13T05:58:20+08:00（北京时间）",
       "补充证据：第三方具体使用反馈；未独立运行软件。",
+      "10月15日20:48新使用报告：发帖者称将官网13个应用装在Ubuntu，均可打开；这只是启动体验，不代表完整功能可用。他还转述维护者在Hacker News说不反编译二进制、团队禁止Ghidra，以公开信息和观察行为做clean-room重建。本合集未补查该HN原话，因此标明转述，不把启动、方法或法律边界升级为独立验收。",
       "2026-10-14：第三方帖子称 PhotoCraft 使用 REA 类逆向工作流；发帖者身份未确认，非项目作者确认，未独立核验。",
       "10月15日16:00–20:00窗口补充：新传播帖将公开PSD/Office规范、观察按钮行为、与Photoshop渲染逐像素比较列为重建路线，并声称自行实现视频编解码器。公开规范与从零实现不等于反编译Adobe；像素验证和编解码范围仍为该帖转述，不将其扩大为全部套件兼容、法律保证或本合集测试。其星数宣传不作为新热度快照。"
     ],
@@ -2378,17 +2383,22 @@
       {
         "label": "作者的 REA 6.5.0 玩具应用静态分析测试（未测试模型服从性）",
         "url": "https://x.com/i/status/2110441399279604113"
+      },
+      {
+        "label": "另一用户的嵌入提示词干扰设想（未测试）",
+        "url": "https://x.com/i/status/2110709861042503706"
       }
     ],
     "snapshot_date": "2026-10-13",
     "metadata": [
       "发帖：2026-10-12T23:42:14+08:00（北京时间）",
       "热度快照（2026-10-13）：1 赞｜14 浏览｜0 转发",
-      "REA 6.5.0；作者自制 Electron 玩具应用；未接入 agent，未测试模型是否服从植入文本。"
+      "REA 6.5.0；作者自制 Electron 玩具应用；未接入 agent，未测试模型是否服从植入文本。",
+      "10月15日20:30另一用户提出在自己的软件里嵌入要求模型先大量重复感叹词的文字，作为被AI逆向时的干扰。本条只补充具体设想，非早前实验作者的新结果，也没有证明Agent服从或防护有效；候选快照36赞、1450浏览，记录于10月16日。"
     ],
     "en": {
       "title": "REA analysis: a binary prompt-injection test idea",
-      "summary": "A proposed test of whether embedded text can contaminate agent analysis; no experiment or effectiveness is demonstrated."
+      "summary": "An embedded-instruction idea followed by an author's static analyzer test on a toy Electron app: some markers reach reports, but model obedience and protective effectiveness were not tested."
     }
   },
   {
@@ -3983,11 +3993,16 @@
       {
         "label": "Author's follow-up on byte-for-byte comparison claims",
         "url": "https://x.com/i/status/2110641814545764484"
+      },
+      {
+        "label": "Author's Heaven Skills workflow context",
+        "url": "https://x.com/i/status/2110737629465514404"
       }
     ],
     "snapshot_date": "2026-10-15",
     "metadata": [
       "First-person project report",
+      "An October 15 22:20 post introduces Heaven Skills as execution SOPs drawn from the author's OpenAgent, rea-engine and career-studio-ai builds. It adds workflow context for automated decompilation and verification, not a new TicTacToe test or proof that SOPs eliminate hallucinations; the skill repository was not inspected here.",
       "Result not independently reproduced",
       "October 15 follow-ups reiterate bundled tooling, Frida tracing and Z3 checks, then claim byte-for-byte output comparisons for rebuilds. These are author claims, not a demonstrated universal guarantee or a reason to generalize the TicTacToe result."
     ],
@@ -4258,10 +4273,10 @@
     "status": "analysis-test",
     "summary": "从 renderer 到 preload、main 和 CSV 格式化，把示范行为写成规格与测试。",
     "description": "教程以其所称的REA官方Notes示例中的Export notes按钮为目标，描述renderer.js处理点击、preload.js发送notes:export、main.js写文件、csv.js序列化id和title，并强调逗号、引号的CSV转义。作者提出用Grok Bot独立电脑调用REA，先建立带文件定位的SPEC.md，再从规格实现和测试，不确定结论保持unknown。这些文件映射与流程来自教程，候选未提供完整执行日志或独立重建结果；本合集没有核验示例代码，不能把提示词流程视为实际运行，也不是Apple Notes生产客户端分析。",
-    "sources": [{"label": "示范与提示词", "url": "https://x.com/i/status/2110623921611432090"}],
+    "sources": [{"label": "示范与提示词", "url": "https://x.com/i/status/2110623921611432090"}, {"label": "按调用链分工的后续方案与未核验成本比较", "url": "https://x.com/i/status/2110762075559444705"}],
     "snapshot_date": "2026-10-15",
-    "metadata": ["教学示例，不是独立复现或完整应用克隆。"],
-    "en": {"title": "Notes example: tracing a CSV export button", "summary": "A tutorial maps renderer, preload, main and CSV escaping into a specification-and-test workflow; it does not supply an independently reproduced export rebuild."}
+    "metadata": ["教学示例，不是独立复现或完整应用克隆。", "10月15日23:57补充教程提出lead/scout/index/trace/scribe/builder分工，只读导出按钮触及的renderer/preload/main/csv链路，称1284个文件只需看4个、规格12条。帖中38.52美元至0.38美元和约4100万tokens没有账单或执行记录，且以‘我会这样做’描述，不能当实测节省或已完成隔离重建；不采纳‘零风险’的法律保证。"],
+    "en": {"title": "Notes example: tracing a CSV export button", "summary": "A tutorial maps renderer, preload, main and CSV escaping into a specification-and-test workflow; a later proposed role split and cost comparison are not independently measured rebuild results."}
   },
   {
     "id": "isaacrecomp-flash-cpp-report",
@@ -4612,5 +4627,305 @@
     "sources": [{"label": "本窗口 Agent 逆向剖析建议", "url": "https://x.com/i/status/2110701870826328360"}, {"label": "此前父帖：具体启动瓶颈（补充背景）", "url": "https://x.com/i/status/2110588092696739937"}],
     "snapshot_date": "2026-10-15", "metadata": ["建议来自回复者，瓶颈观察来自原作者；两者不可混同。"],
     "en": {"title": "Windows graphics startup: an agent-swarm profiling idea", "summary": "A reply proposes decompiling system DLLs to investigate D3D11 device creation and initial DirectWrite rasterization; the earlier author's bottleneck report is context, not completed AI optimization."}
+  },
+  {
+    "id": "grok-bot-worker-network-idea",
+    "title": "Grok Bot：为 Mac 连接故障提出的 worker 逆向 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "Gemini建议反编译连接进程，作者没有实施，而是开TUN恢复连接。",
+    "description": "作者报告Grok Bot自动更新后无法连接本地Mac，各路AI协助排查后，认为连接worker没有遵守网络出口规则。Gemini提出反编译App、修改该进程网络行为的具体方案，但作者认为没有必要，实际采用Clash的TUN模式并称恢复连接。这里收录的是未实施的AI逆向建议及其排障背景，不是已经找到或修复二进制缺陷；网络原因也是作者判断，没有抓包或代码定位。",
+    "sources": [{"label": "作者的故障排查与未采用方案", "url": "https://x.com/i/status/2110702662270460232"}],
+    "snapshot_date": "2026-10-16", "metadata": ["原帖：10月15日20:01北京时间；候选快照3赞、453浏览。未实施逆向。"],
+    "en": {"title": "Grok Bot: a worker-network reverse-engineering idea not pursued", "summary": "Gemini suggested decompiling a connection worker, but the author reports restoring Mac connectivity with TUN instead; no binary repair is demonstrated."}
+  },
+  {
+    "id": "battlefront2-space-ground-ai-idea",
+    "title": "Battlefront II：实现太空至地面战斗的反编译 idea",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "AI讨论中提出研究新Battlefront II，加入取消版第三作的战斗形式。",
+    "description": "回复者在AI话题下建议反编译新版《星球大战：前线 II》，目标是实现被取消的《前线 III》所设想的太空至地面连续战斗。帖子只表达希望有人尝试，没有说明工具、引擎版本、研究进度或产物。以具体游戏玩法改造idea收录，不把可行性、授权或已经完成AI移植写成事实。",
+    "sources": [{"label": "具体玩法改造提议", "url": "https://x.com/i/status/2110702991443636235"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照8赞、235浏览；只有提议。"],
+    "en": {"title": "Battlefront II: a space-to-ground combat decompilation idea", "summary": "An AI-themed reply proposes studying the newer Battlefront II to add the canceled third game's combat concept; no implementation is reported."}
+  },
+  {
+    "id": "game-formulas-ai-guide-idea",
+    "title": "游戏机制百科：让 AI 逆向真实数值与公式的 idea",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "提议从游戏实现提取公式、分支和隐藏剧情，用作攻略证据。",
+    "description": "作者希望大模型研究游戏的真实数据和公式，形成能解释机制、数值、选择分支和隐藏剧情的实时攻略百科，并举P社游戏作为可能目标，明确不想做作弊器。当前是对研究路线的提问，没有指定游戏版本、提取结果或运行中的问答系统。作者期待的“无幻觉”不是已验证属性；即使取得代码，解释、版本差异和运行条件仍未被该帖验证。",
+    "sources": [{"label": "作者的机制百科设想", "url": "https://x.com/i/status/2110712989737472285"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照6赞、978浏览；idea，未确认REA。"],
+    "en": {"title": "An AI game-guide idea grounded in extracted formulas", "summary": "The author proposes extracting mechanics, branches and hidden-story data, mentioning Paradox games; a hallucination-free guide has not been demonstrated."}
+  },
+  {
+    "id": "little-prince-dragonball-opus-html",
+    "title": "小王子到龙珠：Opus 辅助重建单 HTML 的 3D 剧情游戏",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "作者称研究小王子3D游戏后，用Opus做出龙珠主题场景、剧情和交互。",
+    "description": "梭哈.AI（@SUOHA_AI）报告自己没有游戏开发或3D建模经验，使用Opus 5.5研究一款小王子主题AI 3D游戏，随后做出龙珠主题3D剧情游戏。作者称场景、剧情、交互均由模型协助研究和重建，耗时5小时、成本5元，并提供HTML下载、称源码开放。补查原帖确认账号及演示视频存在；本合集未取得和运行HTML，不能确认其源码内容、成本、帧率或功能等价，也不推断其使用了二进制反编译。原帖明确称没有使用其他工具，因此不归因于REA。",
+    "sources": [{"label": "作者的重建报告与HTML下载入口", "url": "https://x.com/i/status/2110713533193453572"}],
+    "snapshot_date": "2026-10-16", "metadata": ["原帖10月15日20:44；候选快照78赞、11649浏览、7转发。5小时/5元为作者自述，未独立核验。"],
+    "en": {"title": "From a Little Prince game to Dragon Ball-themed HTML 3D", "summary": "SUOHA_AI reports using Opus 5.5 to study and rebuild scenes, story and interaction in five hours for RMB 5; the HTML and equivalence were not tested here."}
+  },
+  {
+    "id": "sentinelone-daybreak-malware-report",
+    "title": "SentinelOne / Daybreak：缩短复杂恶意软件逆向时间的转述",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "传播帖称恶意软件分析由4–6周缩短至约8小时，缺原始样本与测试。",
+    "description": "两条本窗口新闻传播帖将SentinelOne与OpenAI Daybreak联系起来，称其用于复杂恶意软件逆向，减少研究人员理解样本所需时间，并为跨样本关联留出更多精力。较晚一帖给出的比较口径是4–6周至约8小时。当前材料未列恶意软件家族、任务清单、人工基线、失败率或原始验证记录，不能把宣传比较当独立测量、通用加速倍数或自动完成威胁调查。按具体组织与研究用途的待验证报告收录，不归因于REA。",
+    "sources": [{"label": "本窗口新闻摘要", "url": "https://x.com/i/status/2110726263392387158"}, {"label": "补充4–6周至8小时的转述口径", "url": "https://x.com/i/status/2110758857555509385"}],
+    "snapshot_date": "2026-10-16", "metadata": ["两帖均发表于10月15日；时间比较是转述的厂商说法，非本合集测试。"],
+    "en": {"title": "SentinelOne and Daybreak: a reported malware-analysis time reduction", "summary": "Secondary posts claim sophisticated malware reverse engineering fell from four to six weeks to about eight hours; samples, baselines and original validation were not supplied."}
+  },
+  {
+    "id": "construction-saas-workflow-ai-rebuild",
+    "title": "建筑公司后台：观察 ProCore / Salesforce 工作流再重建",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "作者开发访谈与电脑使用观察工具，计划以定制后台替代既有SaaS。",
+    "description": "作者称正在为一家建筑公司构建后台系统，希望次年初脱离ProCore和Salesforce。正在开发的研究工具包括Agent主导的员工访谈，以及观察电脑使用以了解现有SaaS实际工作流的程序；随后计划让Agent逐屏、逐流程研究行为，另用Agent迁移数据。目标是贴合企业真实业务，而非单纯重画通用SaaS界面。交付时间仍是计划，没有屏幕观察样本、数据迁移验收或成品测试；也未说明是否研究二进制、如何取得员工观察与数据处理授权。",
+    "sources": [{"label": "作者的进行中后台替代与工作流研究", "url": "https://x.com/i/status/2110726879665660172"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照13赞、729浏览；次年初为交付目标而非结果。"],
+    "en": {"title": "A construction firm's SaaS workflows, observed and rebuilt", "summary": "An ongoing custom back office combines agent-led interviews and computer-use observation, with planned screen/workflow reconstruction and migration away from ProCore and Salesforce."}
+  },
+  {
+    "id": "ai-reverse-project-directory",
+    "title": "AI 逆向项目目录：记录模型、工具与结果边界",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "whyamas称建立覆盖游戏、固件、协议和旧软件迁移的项目资料目录。",
+    "description": "whyamas（@whyamas）介绍自己建立的AI逆向项目目录，声称每项列出模型、工具、工时及是否实际可用，主题覆盖游戏反编译、固件研究、停用协议与旧软件移植。补查原帖确认作者与目录演示视频存在。作为帮助定位具体研究项目的相关资料收录；尚未检查目录全部条目、其来源、工时或验证标准，因此不将目录中的“可用”视为独立复现，也不重复采纳其泛称的成果。",
+    "sources": [{"label": "目录作者介绍及演示", "url": "https://x.com/i/status/2110730358153269753"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照4赞、71浏览；资料目录，非单一目标完成报告。"],
+    "en": {"title": "A directory of AI reverse-engineering projects", "summary": "Whyamas introduces a directory intended to track models, tools, time and outcomes across games, firmware and protocols; its entries and validation standard were not audited here."}
+  },
+  {
+    "id": "idx-core-ai-data-inspection-idea",
+    "title": "idx-core：让 Claude 解释印尼股票数据采集路径的 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "回复建议检查idx-core中逆向与抓取的数据入口，提到KSEI数据。",
+    "description": "一位印尼语回复者讨论免费行情数据的限额与逆向来源，建议检查名为idx-core的项目根目录，再让Claude或编程Agent解释其过程，并特别提到KSEI数据多来自抓取。这里的目标是理解股票数据工具的获取路径，而不是已经验证突破限额或取得交易所数据。候选没有仓库URL、具体接口、授权或分析结果；不猜测idx-core的仓库归属，也不提供绕过步骤。作为具体工具与数据来源的AI研究建议收录。",
+    "sources": [{"label": "idx-core与Claude研究建议", "url": "https://x.com/i/status/2110735275358027901"}],
+    "snapshot_date": "2026-10-16", "metadata": ["原帖10月15日；未确认REA、未给公开仓库定位。"],
+    "en": {"title": "idx-core: an AI-assisted data-path inspection idea", "summary": "A reply recommends asking Claude to explain reverse-engineered and crawled Indonesian-market data paths, including KSEI; repository identity, access rights and results remain unspecified."}
+  },
+  {
+    "id": "mario-odyssey-macos-claude-report",
+    "title": "《马力欧：奥德赛》：Claude 辅助 macOS 本地版的转述",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "转述@Wiggin_Han称隔夜做出本地版，但没有项目页或实现验证。",
+    "description": "本窗口中文综述引用@Wiggin_Han在10月14日的说法：让Claude学习“joe老师”的思路，挂机一夜，做出《超级马力欧：奥德赛》的macOS本地版。综述作者明确承认没有找到项目页，不能确认“本地化”指移植还是翻译，也不知道性能、通关范围与所需资产。该帖还推测与D2R Mobile路线有关，但这不是原作者确认。本条只保存具体游戏与目标平台的待验证传播，不将隔夜完成、原生执行或与另一项目共用技术路线当成已证实事实。",
+    "sources": [{"label": "本窗口转述及自陈未核验边界", "url": "https://x.com/i/status/2110735780842999962"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日转述10月14日历史自述；未取得原作者代码或验收。"],
+    "en": {"title": "Mario Odyssey on macOS: a secondary Claude-assisted report", "summary": "A recap quotes Wiggin_Han's overnight localization claim but cannot establish whether it means a port or translation, and supplies no project page or execution evidence."}
+  },
+  {
+    "id": "hermes-rea-winscp-import-test",
+    "title": "Hermes + REA：WinSCP GUI 的 Ghidra 导入测试与版本边界",
+    "category": "apps", "rea": "REA", "status": "analysis-test",
+    "summary": "插件介绍报告WinSCP导入663秒，较晚说明纠正稳定版timeout键兼容问题。",
+    "description": "本窗口两则Hermes REA插件介绍称其固定rea-agents 6.4.0，通过按需工具检索提供约170个MCP工具，并把执行目标或连接Android设备前确认的规则纳入skill。具体分析目标是WinSCP GUI，帖子报告Ghidra导入耗时663秒；没有样本版本、机器配置、后续函数分析或重建测试，不能据此声称WinSCP已被重建。22:25帖称稳定版已可安装，23:42的较晚说明改称v0.22.2会因unknown keys ['timeout']失败，需每服务器超时修复；本条保留这一矛盾和更正，不把任何版本建议当当前官方安装保证。工具数量与schema体积也是帖子口径，本合集未测试插件。",
+    "sources": [{"label": "首次插件与WinSCP测试介绍", "url": "https://x.com/i/status/2110738801660219869"}, {"label": "较晚说明：v0.22.2的timeout键限制", "url": "https://x.com/i/status/2110758099866771894"}],
+    "snapshot_date": "2026-10-16", "metadata": ["两帖均为10月15日来源；663秒为项目转述测试，非本合集计时。不执行安装。"],
+    "en": {"title": "Hermes/REA: a WinSCP import test and a version correction", "summary": "Posts report a 663-second Ghidra import of WinSCP; the later post contradicts stable-release install advice by reporting an unsupported timeout key on v0.22.2. Neither reconstruction nor installation was tested here."}
+  },
+  {
+    "id": "compression-app-ai-learning-idea",
+    "title": "永久授权压缩软件：用 AI 做个人逆向学习的 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "用户提出学习已购买的压缩软件，尚在讨论个人研究与公开分享的边界。",
+    "description": "回复者想用AI研究一款拥有永久授权的压缩软件，仅作学习，并指出自己使用与向外分享是两种不同情形。目标软件未命名，也没有压缩算法、文件格式或测试记录，因此不猜测是WinRAR等产品，不写成破解授权或已实现兼容工具。以软件类别与个人研究目的明确的idea收录；购买许可不自动证明获准逆向，本合集不作法律判断。",
+    "sources": [{"label": "个人研究与许可边界讨论", "url": "https://x.com/i/status/2110740891770257659"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；未报告开始或完成分析。"],
+    "en": {"title": "A perpetual-license compression app: a personal AI-study idea", "summary": "A user proposes studying an unnamed compression app with AI while distinguishing private learning from sharing; implementation and authorization are not established."}
+  },
+  {
+    "id": "mario-jump-halo-rea-report",
+    "title": "Mario 跳跃到 Halo：提取六个参数的 REA 转述",
+    "category": "games", "rea": "REA", "status": "unverified",
+    "summary": "帖子称研究N64 ROM跳跃规则并写入Halo控制器，没有定位或测试材料。",
+    "description": "传播帖称REA与Opus 5.5从N64 Mario ROM中找出跳跃逻辑，再研究Halo中玩家运动的接入点，把六个浮点参数带进新控制器，并声称没有复制任天堂代码。它给出从研究原目标、研究接收游戏到写控制器的流程，但没有具体游戏版本、偏移、规格、代码或测试输出。只记具体跨游戏物理重建报告，不确认已经完成Halo Mod，不把“只用参数”当法律保证或认定代码来源干净。",
+    "sources": [{"label": "参数提取与Halo控制器宣称", "url": "https://x.com/i/status/2110741739732435179"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照4赞、71浏览；待验证。"],
+    "en": {"title": "Mario's jump in Halo: an unverified six-parameter REA claim", "summary": "A post describes studying an N64 ROM and Halo movement, then carrying six floats into a controller; offsets, code and tests are not provided."}
+  },
+  {
+    "id": "roborock-agent-local-cloud-report",
+    "title": "Roborock：Agent 研究固件与 App 后重建家庭云的简报",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "回复称Agent研究石头设备固件和应用，以在家运行云端替代服务。",
+    "description": "一条列举AI逆向项目的回复称，有人让Agent研究Roborock固件及App，把其云服务重建到家中。目标是本地替代设备依赖的远程服务，但该帖没有设备型号、协议、仓库、作者或可用功能清单，不能推断已经完全脱云、支持全部设备或安全等价。该回复还提到Codex参加Flare-On 13、GPT-5.6 Sol完成八阶段恶意软件分析，以及Spider-Man摆荡进入Arkham Knight；这些只是同帖其他待核验例子，不是Roborock项目的成果，也不与既有GTA摆荡报告合并。",
+    "sources": [{"label": "本窗口多项目简报中的Roborock线索", "url": "https://x.com/i/status/2110741945874350429"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日回复；仅简报，未确认REA，未独立验证。"],
+    "en": {"title": "Roborock: a brief report of an agent-built local cloud", "summary": "A reply says agents inspected firmware and an app to rebuild Roborock's cloud at home; device models, implementation and feature coverage are not supplied."}
+  },
+  {
+    "id": "arkham-grok-rea-research-workbench",
+    "title": "Arkham：Grok Bot + REA 研究链上分析工作台",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "作者描述观察钱包分析界面并草拟定制重建，真实数据交互仍待测试。",
+    "description": "Arkham是用于观察链上资金流向与钱包活动的分析工具。发帖者描述用Grok Bot与REA研究其界面行为，再围绕自己的钱包观察列表、转账筛选、警报和研究视图定制工作台。帖子称画面展示Agent研究和草拟重建的过程，同时明确下一步才是以真实数据测试交互。因而按进行中的界面行为研究收录，不写成已取得Arkham专有数据、已实现所有警报或可以交易的系统；没有公开成品、数据连接验收或独立运行结果。",
+    "sources": [{"label": "界面研究与待做真实数据测试", "url": "https://x.com/i/status/2110743454959509801"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照42赞、748浏览；真实数据验证尚待进行。"],
+    "en": {"title": "Arkham: a Grok Bot/REA research-workbench rebuild", "summary": "The post describes interface inspection and a customized wallet-analysis draft, explicitly leaving real-data interaction tests for the next step; proprietary data access is not established."}
+  },
+  {
+    "id": "re-agent-igi2-legacy-tools",
+    "title": "RE-Agent：研究《秘密潜入2》GConv / QVM 老工具",
+    "category": "games", "rea": "REA", "status": "in-progress",
+    "summary": "REA分支作者将2003年IGI 2工具列为首个目标，强调隔离修复与比较验证。",
+    "description": "Haseeb Mir（@HaseebMir91）介绍REA分支RE-Agent，目标是为失去支持的老软件与游戏排障，首个具体案例是2003年《秘密潜入2》（Project I.G.I. 2）的GConv/QVM工具。其流程描述为复现故障、用Ghidra/IDA/Hopper与Frida收集静态和运行证据，在独立工作区修复，并比较原版与修复版，输出pass、mismatch或unknown。稍后帖子补充无界面Ghidra分析、IDA桥和内存跟踪。作者未在候选中给出具体故障、修复补丁、输入样本或通过记录；本合集确认原帖作者但未定位其仓库或测试，因此这是项目方向及进行中目标，而非已修复所有IGI工具或普遍避免幻觉的保证。",
+    "sources": [{"label": "作者介绍RE-Agent与IGI 2首个案例", "url": "https://x.com/i/status/2110744399567073616"}, {"label": "后续工具与验证循环介绍", "url": "https://x.com/i/status/2110751222437150721"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日作者报告；未取得补丁或实际验证输出。"],
+    "en": {"title": "RE-Agent: legacy Project I.G.I. 2 GConv/QVM tooling", "summary": "A REA fork names the 2003 game's tooling as its first case and describes isolated repairs with original-versus-fixed comparisons; no specific patch or passing result is supplied."}
+  },
+  {
+    "id": "plate-reader-filter-wheel-claude-repair",
+    "title": "读板仪滤光轮：Claude 研究设备通信与固件重置的报告",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "机械与光学检查正常却自检失败，作者称Claude通信、重置固件并建立监测脚本。",
+    "description": "Rüdiger Groß（@r_gross_）报告一台读板仪停用数月，诊所技术人员已经放弃维修。读板仪用于读取样品板的光学信号；这里具体故障是滤光轮对齐错误导致开机QC失败，作者称机械和光学检查均正常，但仍报fatal error。他设置运行设备软件与Claude的笔记本，用摄像头观察设备屏幕，午饭后回来发现恢复工作。回复补充Claude研究了与仪器通信的方法、重置固件、运行测试并写了监测脚本。父帖与回复均发表于10月15日22:49–22:52北京时间，父帖是补查背景而非另一候选。型号、通信命令、重置含义及测试标准未给出，不能断言修复了固件代码或满足临床质量要求，也不能推广为可无人监督维修；这里只记录作者恢复工作的自述。",
+    "sources": [{"label": "候选：故障与通信、重置和监测细节", "url": "https://x.com/i/status/2110745676875227179"}, {"label": "同作者父帖：读板仪背景与屏幕观察（补充来源）", "url": "https://x.com/i/status/2110744888543510712"}],
+    "snapshot_date": "2026-10-16", "metadata": ["候选快照0赞、17浏览；未确认REA，未提供独立验收或临床质量证明。"],
+    "en": {"title": "A plate reader's filter-wheel fault: a Claude-assisted repair report", "summary": "Rüdiger Groß reports that Claude worked out device communication, reset firmware and added monitoring after a startup QC fault; model details, commands and independent or clinical validation are absent."}
+  },
+  {
+    "id": "grok-build-rea-code-study",
+    "title": "Grok Build：用 REA + Claude Code 阅读开源实现",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "作者称用REA浏览开源项目，当前出于好奇研究Grok Build。",
+    "description": "一位有研发经验的土耳其语用户称，把过去研究别人如何解决问题的习惯交给Agent，通过REA MCP连接Claude Code，让它按需进入开源项目的不同部分。作者明确当前在研究Grok Build，并称该仓库开源，目的只是好奇与学习大型团队的实现。帖子没有具体函数、研究发现、替代实现或仓库URL；这是进行中的代码理解使用报告，不是已经反编译Grok Bot或复制Grok Build。开源性质沿用作者说法，本合集未定位并核对其仓库。",
+    "sources": [{"label": "作者的REA代码阅读使用报告", "url": "https://x.com/i/status/2110749141710028914"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照1赞、73浏览；学习性分析，未报告成果。"],
+    "en": {"title": "Grok Build: exploratory code study with REA and Claude Code", "summary": "A user reports curiosity-driven study of what they describe as Grok Build's open repository; no particular finding or reconstruction is supplied."}
+  },
+  {
+    "id": "grok-bot-hermes-rea-idea",
+    "title": "Grok Bot 到 Hermes：让 Alan + REA 研究交互的 idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "用户想用Hermes内的Agent研究Grok Bot，尚未报告实施。",
+    "description": "发帖者询问是否可以让Alan（其Agent称呼）使用REA研究Grok Bot，动机是让Hermes获得类似Grok Bot的使用体验。他同时说此前已研究Codex computer use，且那次没有REA插件。后者没有附实现或测试，不能借此证明新的Grok研究已完成，也不与既有其他作者的Codex互通项目合并。候选只提供具体目标与互通需求，没有列要移植的功能、取得的内部接口或成品。",
+    "sources": [{"label": "用户的Grok Bot研究提问", "url": "https://x.com/i/status/2110750477130604789"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照8赞、891浏览；idea而非已实现插件。"],
+    "en": {"title": "Grok Bot to Hermes: an Alan/REA interoperability idea", "summary": "A user asks whether their Hermes agent could inspect Grok Bot with REA; their separate claim about earlier Codex computer-use work does not establish this new project's progress."}
+  },
+  {
+    "id": "codex-cli-model-identity-inspection",
+    "title": "Codex CLI：检查模型身份提示词与路由字段",
+    "category": "apps", "rea": "unknown", "status": "analysis-test",
+    "summary": "帖子检查0.162.1本地二进制，讨论具体模型名为何未进入Agent提示词。",
+    "description": "一篇讨论Agent自适应策略的帖子报告检查本地codex-cli 0.162.1：模型条目包括gpt-6.1-sol，但四个GPT-6条目的提示词开场仍统一为“You are Codex, an agent based on GPT-6.”，并提到ModelRerouteEvent与from_model字段。作者借此解释为何skills路由、快速模式策略和PR模型归属可能需要宿主补充模型身份。没有公开提取命令、样本哈希或代码定位，也没有说明AI是否参与二进制读取；以AI工具互通相关的内部行为分析收录，rea标为unknown。客户端字符串不能证明服务端偷偷降级模型，帖子中的该怀疑不作为结论。",
+    "sources": [{"label": "本地CLI检查与Agent模型身份讨论", "url": "https://x.com/i/status/2110751118343164066"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；版本、模型与字段名沿用原帖；未独立提取或核实服务端路由。"],
+    "en": {"title": "Codex CLI: inspecting model-identity prompts and routing fields", "summary": "A post reports generic GPT-6 prompt openings in codex-cli 0.162.1 despite specific model entries; this concerns agent interoperability, not proof of hidden server-side downgrades."}
+  },
+  {
+    "id": "rust-duty-video-gameplay-rebuild",
+    "title": "Rust Duty：从《现代战争》视频重建玩法，不反编译",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "作者让多个AI参考动画和玩法视频，实现Wgpu渲染、光照、UI与性能改进。",
+    "description": "Rust Duty作者把研究问题写得很明确：LLM能否仅从视频提炼玩法，而不是反编译游戏。他提供MW2019、2022、2023及帖中称MW4的动画和玩法视频，报告过去一周使用两个OpenAI Dots、Claude与Grokbot，实现Wgpu渲染器、解析遥测以改善FPS、默认光照及基础UI。武器和手模型是其此前为Arma项目自行购买的资产，作者称没有用这些模型进行AI训练。按从可见行为重建的进行中项目收录，不写成恢复原游戏源码或已经还原全部玩法；没有性能数值、视频到规则的核验或独立运行。",
+    "sources": [{"label": "Rust Duty作者进度与非反编译边界", "url": "https://x.com/i/status/2110752844328419587"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；工具与视频代号沿用原帖，素材授权为作者自述。"],
+    "en": {"title": "Rust Duty: reconstructing gameplay from video, not decompilation", "summary": "The author reports AI-assisted Wgpu, lighting, telemetry and UI work from Modern Warfare videos, using previously purchased models; gameplay fidelity and performance remain untested here."}
+  },
+  {
+    "id": "pdf-binary-minimal-edit-ai-idea",
+    "title": "PDF 二进制最小修改：AI 文档结构操作的 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "帖子建议拆解PDF后最小修改文字，未给样本或结构保持测试。",
+    "description": "作者建议让AI按二进制拆解PDF，只修改必要文字后重新封装，并要求属性、时间戳与二进制特征保持一致。作为针对文件结构的AI研究与修改idea记录，而不是已验证技术：没有原始文件、对象流、字体编码、交叉引用表或渲染对照。改变文字通常会改变文件字节，不能同时保证所有二进制特征完全不变；原帖也未定义其所谓特征。不能据此保证文档来源、完整性、签名或不可检出性。",
+    "sources": [{"label": "PDF最小修改提示词建议", "url": "https://x.com/i/status/2110755472089518089"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；没有演示或测试，未确认REA。"],
+    "en": {"title": "Minimal binary PDF edits: an untested AI file-structure idea", "summary": "A prompt proposes changing PDF text while preserving metadata and unspecified binary traits; no sample or structural test is supplied, and changed content cannot guarantee unchanged bytes or signatures."}
+  },
+  {
+    "id": "usb-sdr-gpu-claude-inspection-idea",
+    "title": "USB 射频棒到 GPU：用 Claude 研究吞吐与本振控制的 idea",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "建议检查USB控制器传输和设备固件，以安排GPU端DSP并控制本振。",
+    "description": "一条射频讨论回复建议用Claude检查USB控制器能向GPU推送多少数据、以何种速度传送，并询问是否已研究USB dongle固件以控制LO（本地振荡器）。DSP指数字信号处理；回复者认为相关逻辑应放在GPU。具体设备和型号未给出，固件修改只是提问，帖子结尾未展开也不能据此补出控制方法。作为接口性能与设备行为研究的具体idea收录，不声称已经得到吞吐、接管本振或实现GPU处理链。",
+    "sources": [{"label": "Claude吞吐与固件研究建议", "url": "https://x.com/i/status/2110757069968261388"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；研究建议，未给运行或性能结果。"],
+    "en": {"title": "USB radio dongle to GPU: a Claude-assisted inspection idea", "summary": "A reply proposes examining USB-to-GPU throughput and dongle firmware for oscillator control and DSP placement; no model, measurements or implemented path is reported."}
+  },
+  {
+    "id": "iw4l-skate3-mw2-rust-mashup",
+    "title": "2010 Rust Rewrite Mashup：在 MW2 地图里玩 Skate 3",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "二手帖称IW4L读取自有游戏文件，结合滑板与MW2/Minecraft世界，AI加速其上开发。",
+    "description": "本窗口转述介绍2010 Rust Rewrite Mashup，称它基于从零用Rust重写MW2的IW4L，在2009年《现代战争2》地图与Minecraft世界中加入Skate 3滑板玩法。帖子说Windows用户需自有MW2及Xbox 360版Skate 3文件，并称仓库包含AI Agent指令文件及LLM使用声明。它同时强调社区长时间研究Skate 3、创作者约半年制作Xbox 360重编译工具，AI加速的是其上的编码，不能写成一夜自动反编译两款完整游戏。未取得仓库与运行记录，本条为二手报告，也不与Maurice的MW2反编译项目或Universal Modder默认视为同一工程。",
+    "sources": [{"label": "混合作品介绍与人工逆向背景转述", "url": "https://x.com/i/status/2110757135009112576"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；约半年为二手转述工期，非独立核验；未确认REA。"],
+    "en": {"title": "2010 Rust Rewrite Mashup: Skate 3 in MW2 maps", "summary": "A secondary report describes IW4L reading users' game files and AI-assisted coding atop longstanding community reverse engineering; repository claims, the reported six-month tool effort and gameplay were not independently checked."}
+  },
+  {
+    "id": "supabase-eu-rea-idea",
+    "title": "Supabase：用 REA 研究欧盟取向兼容版本的 idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "回复建议研究Supabase并制作面向欧盟的版本，没有实现或GDPR验收。",
+    "description": "法语回复者建议对Supabase进行逆向，使用REA做一个欧盟版本，声称目标是100%符合GDPR。Supabase是应用后端服务平台，这里的具体目标是区域化替代与兼容，而不是已经获得专有服务端实现。帖子没有研究计划、部署、数据处理方案或合规材料。GDPR合规涉及组织与数据流程，不能因重建软件而自动成立，故将其作为作者的目标用语而非本合集保证。",
+    "sources": [{"label": "Supabase欧盟版本的REA建议", "url": "https://x.com/i/status/2110757849609515285"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；idea，未报告实现。"],
+    "en": {"title": "Supabase: an EU-focused REA rebuild idea", "summary": "A reply proposes an EU-oriented Supabase alternative using REA; neither compatibility nor the claimed GDPR compliance has been implemented or validated in the supplied material."}
+  },
+  {
+    "id": "carplay-adapter-rea-grok-firmware",
+    "title": "无线 CarPlay 适配器：REA + Grok 修改自动连接行为的转述",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "帖子称Arif在Claude拒绝后让Grok生成新固件二进制，以修自动连接问题。",
+    "description": "土耳其语传播帖称Arif使用REA研究车内无线CarPlay适配器，修改固件以解决自动连接问题；在Claude表示无法完成后，Grok据称半小时给出新的二进制。目标是配件连接行为，而非汽车控制系统。候选没有作者原始研究串、设备型号、固件差异、刷写记录或重新连接测试，因此只作为明确设备类别与故障的待验证报告，不确认新二进制已安全写入或所有场景修复，也不提供刷写建议。",
+    "sources": [{"label": "适配器固件修复的本窗口转述", "url": "https://x.com/i/status/2110759012266332509"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日来源；半小时为转述时间，未独立验证。"],
+    "en": {"title": "A wireless CarPlay adapter: a reported REA/Grok firmware change", "summary": "A post says Arif addressed auto-connect behavior and obtained a new binary from Grok after Claude declined; model details, flashing evidence and reconnection tests are absent."}
+  },
+  {
+    "id": "voice-input-client-cloud-ai-rebuild",
+    "title": "日用语音输入 App：看懂客户端后仍需重建五小时的报告",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "作者自述AI研究安装包，发现识别润色留在云端，客户端只覆盖录音与粘贴链。",
+    "description": "一篇讨论REA边界的作者称，曾用AI研究自己日常使用的语音输入App，从打开安装文件到理解架构约一分钟，随后花五个多小时制作个人版本。其观察是客户端负责录音、读取光标附近文字及粘贴结果，语音识别与文字润色实际在对方服务器完成。软件与模型未命名，也未明确自述这次使用REA，因此不猜为Typeless或与既有作者合并。没有公开重建代码或功能验收，工时与架构均为作者报告；该例强调读懂本地文件不等于获得云端模型、后端或数据。",
+    "sources": [{"label": "作者的个人语音工具研究经历", "url": "https://x.com/i/status/2110759506003304641"}],
+    "snapshot_date": "2026-10-16", "metadata": ["本窗口10月15日分享，实际研究日期未给出；1分钟与5小时均为自述。"],
+    "en": {"title": "A daily voice-input app: quick client inspection, hours of rebuilding", "summary": "The author reports a minute to understand an unnamed client and over five hours on a personal version, finding speech recognition and rewriting remained server-side; REA use and feature completion are unconfirmed."}
+  },
+  {
+    "id": "linux-eac-ai-devirtualization-report",
+    "title": "Linux Easy Anti-Cheat：经 IDA Assist MCP 的 AI 去虚拟化报告",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "作者称Gemini 4 Argon与GPT 6.1 Sol辅助分析Linux EAC，没有可复核结果。",
+    "description": "作者简短报告用Gemini 4 Argon和GPT 6.1 Sol，通过Hex-Rays IDA Assist的MCP接口，对Linux版Easy Anti-Cheat（EAC）做去虚拟化。去虚拟化指尝试恢复虚拟机式保护下的程序逻辑，不自动等于关闭反作弊或产生可用绕过。帖子没有样本版本、恢复范围、比较结果或授权说明。本条仅记录明确目标与工具组合的作者宣称，保留模型原称，不确认还原成功，不提供反作弊规避步骤，也不归因于REA。",
+    "sources": [{"label": "作者的Linux EAC分析宣称", "url": "https://x.com/i/status/2110759663822352852"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照0赞、38浏览；未独立验证。"],
+    "en": {"title": "Linux EAC: an AI devirtualization claim via IDA Assist MCP", "summary": "The author names Gemini 4 Argon and GPT 6.1 Sol for Linux Easy Anti-Cheat analysis; recovered logic, scope and success are not independently established, and no bypass is provided."}
+  },
+  {
+    "id": "cs-browser-colleague-ai-report",
+    "title": "网页版 CS：市场部同事用 AI 做联机版本的转述",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "发帖者称同事20分钟做出可联机浏览器CS，没有产物或逆向过程。",
+    "description": "发帖者说市场部一位文科背景同事用AI在20分钟内做出能联机的网页版CS，并将其放在AI逆向趋势中讨论。目标和可见结果具体，但没有给CS版本、模型、原作分析方法、运行地址或源码，无法区分玩法仿作、已有开源引擎配置与真正二进制研究。以二手待验证游戏重建报告收录，不把20分钟当完整游戏反编译工期，也不与既有Urban Terror浏览器移植或经典射击游戏传播报告默认合并。",
+    "sources": [{"label": "作者对同事AI网页游戏的转述", "url": "https://x.com/i/status/2110760621113548854"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照2赞、280浏览；未确认REA或独立运行。"],
+    "en": {"title": "Browser Counter-Strike: a colleague's AI-build claim", "summary": "A post reports a non-programmer colleague made a multiplayer browser CS in twenty minutes; no artifact establishes the game's scope, original analysis or whether this was a remake rather than decompilation."}
+  },
+  {
+    "id": "gta-rules-godot-rea-plan",
+    "title": "GTA 规则到 Godot：版本不清的 REA 重建计划",
+    "category": "games", "rea": "REA", "status": "in-progress",
+    "summary": "作者计划研究驾驶、速度和通缉规则后重建开放世界，不能确认已逆向GTA6。",
+    "description": "作者称正在用REA与Opus 5.5研究GTA，计划定位速度、驾驶和通缉等级相关函数，以运行观察区分OBSERVED、INFERRED、UNKNOWN，再用Godot与自有素材重建、为规则写测试。帖子以GTA6投入作引子，又说将在其发售前持续分享，却未说明实际拿到哪一代、哪一版本的程序。不能把未明确的目标升级成已取得并反编译GTA6，更不能把一分钟观察当完整规则证明。作为目标明确到玩法类型、版本与成果未明的开放世界研究计划保留；没有代码、定位或测试记录。",
+    "sources": [{"label": "作者的规则研究与Godot重建计划", "url": "https://x.com/i/status/2110761379863154777"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日候选快照4赞、24浏览；开源为作者承诺，未取得仓库。"],
+    "en": {"title": "GTA rules into Godot: an REA plan with unclear target version", "summary": "A post proposes studying driving, speed and wanted levels before a Godot rebuild; its GTA6 framing does not establish access to that game or any completed reverse engineering."}
+  },
+  {
+    "id": "rea-js-stale-price-boundary-demo",
+    "title": "REA JavaScript 示例：陈旧价格检查的 400 ms 边界",
+    "category": "algorithms", "rea": "REA", "status": "analysis-test",
+    "summary": "作者用自制模块追踪调用链并测边界，明确不是真实交易或Claude现场演示。",
+    "description": "作者用自己的小型JavaScript演示模块，展示如何让逆向解释对应到可检查的决策。帖子称运行了真实REA JavaScript分析器，沿reviewSignal()到inspectGuards()，定位guards.mjs第4行ageMs > 400，第5行返回HOLD / STALE_PRICE。其本地检查报告399和400毫秒为REVIEW，401和800毫秒为HOLD，重点是严格大于与大于等于的边界差异。作者说明视频为真实CLI结果与六项本地检查的剪辑，没有现场Claude会话；REVIEW只表示通过此例检查，不提交订单，静态追踪本身也不能证明运行行为。没有取得完整模块与六项输出，因此这是作者报告的自制样本分析测试，不是商业交易工具审计或本合集重跑。",
+    "sources": [{"label": "作者的调用定位、边界结果与演示限制", "url": "https://x.com/i/status/2110761684411572247"}],
+    "snapshot_date": "2026-10-16", "metadata": ["10月15日23:56来源；候选快照2赞、10浏览。六项检查为作者口径，帖子只列四个时间输入结果。"],
+    "en": {"title": "REA JavaScript demo: a stale-price check at 400 ms", "summary": "The author traces a self-made module and reports REVIEW at 399/400 ms versus HOLD at 401/800 ms, explicitly distinguishing edited CLI results, local checks and a live agent or trading session."}
   }
 ]

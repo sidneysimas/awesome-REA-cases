@@ -55,3 +55,7 @@
 - [Watch5 Pro：用 Claude + REA 添加健康传感器应用的报告](../cases/watch5-pro-rea-health-app.md) — 作者称研究手表后安装自有应用，使用 Samsung Health 所用传感器。 **[REA · 待验证]**
 - [QUICKSURFACE AI：从 3D 扫描恢复参数 CAD 的产品预告](../cases/quicksurface-ai-scan-parametric-cad.md) — 公告称将随 Pro 2027 提供扫描到可编辑模型的 AI 自动化，尚未验证。 **[其他 AI 逆向 · 相关项目]**
 - [湿度读数：Agent 逆向蓝牙协议后制作个人 App](../cases/bluetooth-humidity-agent-app.md) — 作者用读数比较加湿方式，并称应用完全由 Agent 研究蓝牙协议制作。 **[其他 AI 逆向 · 待验证]**
+- [Roborock：Agent 研究固件与 App 后重建家庭云的简报](../cases/roborock-agent-local-cloud-report.md) — 回复称Agent研究石头设备固件和应用，以在家运行云端替代服务。 **[其他 AI 逆向 · 待验证]**
+- [读板仪滤光轮：Claude 研究设备通信与固件重置的报告](../cases/plate-reader-filter-wheel-claude-repair.md) — 机械与光学检查正常却自检失败，作者称Claude通信、重置固件并建立监测脚本。 **[其他 AI 逆向 · 待验证]**
+- [USB 射频棒到 GPU：用 Claude 研究吞吐与本振控制的 idea](../cases/usb-sdr-gpu-claude-inspection-idea.md) — 建议检查USB控制器传输和设备固件，以安排GPU端DSP并控制本振。 **[其他 AI 逆向 · 待验证]**
+- [无线 CarPlay 适配器：REA + Grok 修改自动连接行为的转述](../cases/carplay-adapter-rea-grok-firmware.md) — 帖子称Arif在Claude拒绝后让Grok生成新固件二进制，以修自动连接问题。 **[REA · 待验证]**
