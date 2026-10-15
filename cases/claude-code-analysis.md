@@ -5,9 +5,9 @@
 
 Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。
 
-
-
 另一帖中，发帖者自述用 REA 逆向 Claude Code 的语言设置，称发现 Claude 默认读取系统设置而非其所设选项。这是发帖者对一次操作及观察结果的自述；没有展示分析过程或复测，不能据此断言适用于所有版本或配置。
+
+2026 年 10 月 15 日本轮另有作者提出，在开发功能前先让 Claude 搜 GitHub issue，再逆向 Claude Code CLI 与 Desktop，把用户反馈和现有实现作为开发参考。这是不同作者针对同一软件的新研究用途计划，未说明具体功能或给出产物，未确认使用 REA；不把该 idea 混作 huangserva 已完成的工作。
 
 热度：576 赞｜11.4 万浏览｜56 转发
 发帖：10 月 10 日｜REA
@@ -18,5 +18,6 @@ Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 R
 
 - [看 X 热门帖](https://x.com/servasyy_ai/status/2108846931183378537)
 - [本窗口：发帖者自述用 REA 检查 Claude Code 语言设置](https://x.com/i/status/2110027278570635457)
+- [10 月 15 日另一作者的 CLI/Desktop 功能研究计划（未实现）](https://x.com/i/status/2110550597527339230)
 
 [返回目录](../README.md)

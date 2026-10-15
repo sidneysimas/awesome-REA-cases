@@ -11,3 +11,4 @@
 - [REA 分析链路：测试二进制内提示注入的 idea](../cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
 - [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](../cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
 - [16 个笔记文件：有无 REA 的解码对照实验转述](../cases/sixteen-note-files-decoder-report.md) — 长文转述对16个笔记文件的限时解码比较，两条语言版本合并。 **[REA · 待验证]**
+- [CPU kernels：Claude Code 编排 Astra 做汇编层优化](../cases/rea-cpu-kernel-optimization.md) — 作者称正在由 Claude Code 管理 Astra，借 REA 研究 CPU 内核优化。 **[REA · 进行中]**

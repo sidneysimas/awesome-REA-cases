@@ -78,3 +78,6 @@
 - [Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册](../cases/mac-app-rea-analysis-workflow.md) — 作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。 **[REA · 待验证]**
 - [Apple Weather：作者自述用 REA 重建天气应用](../cases/apple-weather-rea-rebuild.md) — 发帖者称用 REA 制作 Apple Weather 克隆；其评分比较未说明方法或独立验证。 **[REA · 待验证]**
 - [Linux cal：从无符号程序追出 1752 年日历切换](../cases/linux-cal-1752-switch.md) — 用 REA 分析无符号 calendar 二进制，定位 1752 年缺失日期规则并作选项测试。 **[REA]**
+- [Samsung DeX：用 AI 研究并制作 Mac 客户端的 idea](../cases/samsung-dex-mac-client-idea.md) — 发帖者请求用 AI 逆向 Samsung DeX，制作 Mac 客户端。 **[其他 AI 逆向 · 待验证]**
+- [隔离环境中的 REA + Claude Code：静态分析 A/B 测试转述](../cases/rea-claude-isolated-ab-test.md) — Zenn 推荐一篇真实任务 A/B 测试，称静态分析标准工具已足够，并讨论隔离设计。 **[REA · 分析测试]**
+- [REA 6.4.0：Windows 下的 .NET 与 Electron 样本测试](../cases/rea-640-windows-managed-electron-test.md) — 以 Framework 程序集和 AI 构造的 Electron 样本测试版本边界、静态语义与证据输出。 **[REA · 分析测试]**

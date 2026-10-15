@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **151 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **160 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（29）
-- [硬件与设备互通](categories/hardware.md)（37）
-- [应用与客户端](categories/apps.md)（76）
-- [算法与功能重建](categories/algorithms.md)（9）
+- [游戏与游戏保存](categories/games.md)（32）
+- [硬件与设备互通](categories/hardware.md)（39）
+- [应用与客户端](categories/apps.md)（79）
+- [算法与功能重建](categories/algorithms.md)（10）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -55,6 +55,9 @@
 - [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 - [rea-engine: Rebuild Windows TicTacToe from its binary](cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**
+- [《星之卡比》：REA 逆向进行中的作者报告](cases/kirby-rea-in-progress.md) — 作者称星之卡比逆向到一半，未公布具体版本或产物。 **[REA · 进行中]**
+- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](cases/links-awakening-claude-pc-port-report.md) — 移植综述称《织梦岛》几乎依靠 Claude Code 重编译上 PC，未提供本帖内可核验产物。 **[其他 AI 逆向 · 待验证]**
+- [《博德之门3》：探索 Agent 增强 Mod 的 idea](cases/bg3-agent-modding-idea.md) — 发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。 **[未确认使用 REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -69,7 +72,7 @@
 - [蓝牙小手柄：协议研究后计划做跨平台设置程序](cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA · 进行中]**
 - [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向 · 待验证]**
 - [游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置](cases/gaming-mouse-macos.md) — 用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。 **[其他 AI 逆向 · 待验证]**
-- [PS5 安全机制：AI 辅助逆向的传播报告](cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，未提供模型与技术过程。 **[未确认使用 REA · 待验证]**
+- [PS5 安全机制：AI 辅助逆向的传播报告](cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，后续提到具名研究者的 LLM 实验，但缺少原始技术记录。 **[未确认使用 REA · 待验证]**
 - [空调协议：用 AR 眼镜手势控制家电](cases/ar-air-conditioner-control.md) — 分析官方 App 请求，再把开关和调温控制接到 AR 眼镜。 **[REA · 待验证]**
 - [红米电视：研究浏览器 APK，把闲置电视改成数据大屏](cases/redmi-tv-dashboard.md) — Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。 **[其他 AI 逆向 · 待验证]**
 - [CF632BLE 体脂秤：在浏览器里称重，不走厂商后台](cases/cf632ble-web-bluetooth.md) — Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。 **[其他 AI 逆向 · 待验证]**
@@ -95,6 +98,8 @@
 - [投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令](cases/projector-ir-focus-command.md) — 根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。 **[其他 AI 逆向]**
 - [Smart pen：用 Codex 反编译并集成现成设备](cases/smart-pen-codex-integration.md) — 团队称用 Codex 反编译现成智能笔，并将其集成进软件系统。 **[其他 AI 逆向]**
 - [Ray-Ban Meta 眼镜：逆向通信并制作 Android 助手替代应用](cases/rayban-meta-claude-android.md) — 发帖者称逆向眼镜与手机的通信，并制作 Android 应用将语音助手请求转给 Claude 或自选模型；REA 使用未确认。 **[未确认使用 REA · 待验证]**
+- [家居 App 协议：把无 API 设备接给本地 LLM](cases/bitfish-local-llm-home-control.md) — DiscusFish 自述用 REA 提取家居 App 协议，与现有 API 一起交给本地 LLM 调度。 **[REA · 待验证]**
+- [GAMEKB-K17 宏键盘：用 Claude Code 逆向配置协议](cases/claude-code-rgb-macropad.md) — 研究厂商 WebHID 配置端，做离线按键、固件宏和 RGB 配置工具。 **[其他 AI 逆向]**
 
 ### 应用与客户端
 
@@ -174,6 +179,9 @@
 - [Mac 桌面软件：用 REA 制作分析文档与 UI 参考手册](cases/mac-app-rea-analysis-workflow.md) — 作者称用 WorkBuddy、DeepSeek 与 REA 分析 Mac 软件，并生成技术/UI 文档及采集工具。 **[REA · 待验证]**
 - [Apple Weather：作者自述用 REA 重建天气应用](cases/apple-weather-rea-rebuild.md) — 发帖者称用 REA 制作 Apple Weather 克隆；其评分比较未说明方法或独立验证。 **[REA · 待验证]**
 - [Linux cal：从无符号程序追出 1752 年日历切换](cases/linux-cal-1752-switch.md) — 用 REA 分析无符号 calendar 二进制，定位 1752 年缺失日期规则并作选项测试。 **[REA]**
+- [Samsung DeX：用 AI 研究并制作 Mac 客户端的 idea](cases/samsung-dex-mac-client-idea.md) — 发帖者请求用 AI 逆向 Samsung DeX，制作 Mac 客户端。 **[其他 AI 逆向 · 待验证]**
+- [隔离环境中的 REA + Claude Code：静态分析 A/B 测试转述](cases/rea-claude-isolated-ab-test.md) — Zenn 推荐一篇真实任务 A/B 测试，称静态分析标准工具已足够，并讨论隔离设计。 **[REA · 分析测试]**
+- [REA 6.4.0：Windows 下的 .NET 与 Electron 样本测试](cases/rea-640-windows-managed-electron-test.md) — 以 Framework 程序集和 AI 构造的 Electron 样本测试版本边界、静态语义与证据输出。 **[REA · 分析测试]**
 
 ### 算法与功能重建
 
@@ -186,6 +194,7 @@
 - [REA 分析链路：测试二进制内提示注入的 idea](cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
 - [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
 - [16 个笔记文件：有无 REA 的解码对照实验转述](cases/sixteen-note-files-decoder-report.md) — 长文转述对16个笔记文件的限时解码比较，两条语言版本合并。 **[REA · 待验证]**
+- [CPU kernels：Claude Code 编排 Astra 做汇编层优化](cases/rea-cpu-kernel-optimization.md) — 作者称正在由 Claude Code 管理 Astra，借 REA 研究 CPU 内核优化。 **[REA · 进行中]**
 
 ## 贡献与收录
 

@@ -31,3 +31,6 @@
 - [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](../cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](../cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 - [rea-engine: Rebuild Windows TicTacToe from its binary](../cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**
+- [《星之卡比》：REA 逆向进行中的作者报告](../cases/kirby-rea-in-progress.md) — 作者称星之卡比逆向到一半，未公布具体版本或产物。 **[REA · 进行中]**
+- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](../cases/links-awakening-claude-pc-port-report.md) — 移植综述称《织梦岛》几乎依靠 Claude Code 重编译上 PC，未提供本帖内可核验产物。 **[其他 AI 逆向 · 待验证]**
+- [《博德之门3》：探索 Agent 增强 Mod 的 idea](../cases/bg3-agent-modding-idea.md) — 发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。 **[未确认使用 REA · 待验证]**

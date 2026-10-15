@@ -13,7 +13,7 @@
 - [蓝牙小手柄：协议研究后计划做跨平台设置程序](../cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA · 进行中]**
 - [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](../cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向 · 待验证]**
 - [游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置](../cases/gaming-mouse-macos.md) — 用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。 **[其他 AI 逆向 · 待验证]**
-- [PS5 安全机制：AI 辅助逆向的传播报告](../cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，未提供模型与技术过程。 **[未确认使用 REA · 待验证]**
+- [PS5 安全机制：AI 辅助逆向的传播报告](../cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，后续提到具名研究者的 LLM 实验，但缺少原始技术记录。 **[未确认使用 REA · 待验证]**
 - [空调协议：用 AR 眼镜手势控制家电](../cases/ar-air-conditioner-control.md) — 分析官方 App 请求，再把开关和调温控制接到 AR 眼镜。 **[REA · 待验证]**
 - [红米电视：研究浏览器 APK，把闲置电视改成数据大屏](../cases/redmi-tv-dashboard.md) — Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。 **[其他 AI 逆向 · 待验证]**
 - [CF632BLE 体脂秤：在浏览器里称重，不走厂商后台](../cases/cf632ble-web-bluetooth.md) — Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。 **[其他 AI 逆向 · 待验证]**
@@ -39,3 +39,5 @@
 - [投影仪红外遥控：用 Codex 推断并验证缺失的对焦命令](../cases/projector-ir-focus-command.md) — 根据遥控器 IR 时序推断 Focus+ 命令，并报告已成功控制投影仪对焦。 **[其他 AI 逆向]**
 - [Smart pen：用 Codex 反编译并集成现成设备](../cases/smart-pen-codex-integration.md) — 团队称用 Codex 反编译现成智能笔，并将其集成进软件系统。 **[其他 AI 逆向]**
 - [Ray-Ban Meta 眼镜：逆向通信并制作 Android 助手替代应用](../cases/rayban-meta-claude-android.md) — 发帖者称逆向眼镜与手机的通信，并制作 Android 应用将语音助手请求转给 Claude 或自选模型；REA 使用未确认。 **[未确认使用 REA · 待验证]**
+- [家居 App 协议：把无 API 设备接给本地 LLM](../cases/bitfish-local-llm-home-control.md) — DiscusFish 自述用 REA 提取家居 App 协议，与现有 API 一起交给本地 LLM 调度。 **[REA · 待验证]**
+- [GAMEKB-K17 宏键盘：用 Claude Code 逆向配置协议](../cases/claude-code-rgb-macropad.md) — 研究厂商 WebHID 配置端，做离线按键、固件宏和 RGB 配置工具。 **[其他 AI 逆向]**

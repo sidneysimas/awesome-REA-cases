@@ -208,7 +208,7 @@
     "category": "apps",
     "rea": "REA",
     "summary": "让 Muse 调用 REA 阅读 Claude Code 的压缩代码包。",
-    "description": "Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。\n\n\n\n另一帖中，发帖者自述用 REA 逆向 Claude Code 的语言设置，称发现 Claude 默认读取系统设置而非其所设选项。这是发帖者对一次操作及观察结果的自述；没有展示分析过程或复测，不能据此断言适用于所有版本或配置。",
+    "description": "Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 REA，分析 Claude Code 约 47MB 的压缩代码，并用视频展示过程。作者称最终得到分析结果，但没有公开具体恢复了哪些模块。因此这个案例展示的是让 Agent 接入逆向工具、阅读难以直接理解的大型代码包，尚不能说已经复刻 Claude Code。\n\n另一帖中，发帖者自述用 REA 逆向 Claude Code 的语言设置，称发现 Claude 默认读取系统设置而非其所设选项。这是发帖者对一次操作及观察结果的自述；没有展示分析过程或复测，不能据此断言适用于所有版本或配置。\n\n2026 年 10 月 15 日本轮另有作者提出，在开发功能前先让 Claude 搜 GitHub issue，再逆向 Claude Code CLI 与 Desktop，把用户反馈和现有实现作为开发参考。这是不同作者针对同一软件的新研究用途计划，未说明具体功能或给出产物，未确认使用 REA；不把该 idea 混作 huangserva 已完成的工作。",
     "sources": [
       {
         "label": "看 X 热门帖",
@@ -217,6 +217,10 @@
       {
         "label": "本窗口：发帖者自述用 REA 检查 Claude Code 语言设置",
         "url": "https://x.com/i/status/2110027278570635457"
+      },
+      {
+        "label": "10 月 15 日另一作者的 CLI/Desktop 功能研究计划（未实现）",
+        "url": "https://x.com/i/status/2110550597527339230"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -1551,12 +1555,16 @@
     "category": "hardware",
     "status": "unverified",
     "rea": "unknown",
-    "summary": "传播帖称 AI 加速 PS5 安全研究，未提供模型与技术过程。",
-    "description": "PS5 是索尼游戏主机。0x0SojalSec 称 AI 在数周内逆向其安全机制，并附越狱商店画面。帖子没有研究者原始记录、AI 工具、固件版本或代码，无法确认 AI 贡献，也不能据此证明整个游戏库均可访问。收录的是明确硬件目标的待验证报告，不提供游戏资产、破解步骤或盗版商店入口。",
+    "summary": "传播帖称 AI 加速 PS5 安全研究，后续提到具名研究者的 LLM 实验，但缺少原始技术记录。",
+    "description": "PS5 是索尼游戏主机。0x0SojalSec 称 AI 在数周内逆向其安全机制，并附越狱商店画面。帖子没有研究者原始记录、AI 工具、固件版本或代码，无法确认 AI 贡献，也不能据此证明整个游戏库均可访问。2026 年 10 月 15 日另一则第三方报道提到研究者 2tonejordy，称他使用 LLM 重新发现一个已知漏洞，并提及索尼漏洞赏金。这为 AI 参与说法增加了具名线索，但未提供研究者原始技术记录，不能确认赏金对应的漏洞与 LLM 实验是否同一项工作，更不能把报道中所有 PS5 模拟器、Linux 或 Windows 项目归因于 AI。收录的是明确硬件目标的待验证报告，不提供游戏资产、破解步骤或盗版商店入口。",
     "sources": [
       {
         "label": "本周期传播报告",
         "url": "https://x.com/0x0SojalSec/status/2109517461921902780"
+      },
+      {
+        "label": "10 月 15 日第三方报道：LLM 与具名研究者线索（未核验原始研究）",
+        "url": "https://x.com/i/status/2110549825548959842"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -1566,7 +1574,7 @@
     ],
     "en": {
       "title": "PS5 security: reported AI-assisted investigation",
-      "summary": "A secondary post claims accelerated security research; AI contribution and library-access claims lack primary technical evidence."
+      "summary": "Secondary posts claim AI-assisted PS5 research and name 2tonejordy in an LLM experiment; primary technical evidence and the connection to a reported bounty remain unverified."
     }
   },
   {
@@ -3188,7 +3196,7 @@
     "status": "analysis-test",
     "rea": "REA",
     "summary": "作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。",
-    "description": "一位发帖者称刚用 REA 分析 Claude Desktop，并列出三项观察：暗色模式下采用较轻字重以平衡视觉粗细、避免正文行尾只剩单字，以及回答文字逐字从模糊过渡到清晰。帖子未提供版本、测量方式、截图对照或独立复核；这些数值与实现说明均应视为作者报告，不代表 Claude 官方确认，也没有展示据此完成的重建。\n\n\n\n2026-10-14 一则第三方 quote 帖另称，分析还观察到输出时屏幕自动下滚、界面以四层相近底色区分层次、暗色模式的按钮和卡片以内侧淡亮线代替外框，以及 Mac 高清屏上的分割线为 0.5px。该帖称分析报告仍在完善；发帖者身份未确认，不能视为原分析者确认或 Claude 官方说明。以上为转述的待核实观察，不是本合集独立测量，也没有展示据此完成的重建。\n\n\n\n2026-10-15 一条第一人称帖子称发帖者用 REA 逆向 Claude Desktop，整理出 3000 多行手册及算法实现，并列举滚动边缘渐隐、语音波形处理、弹簧动画、自动滚动、以鼠标为中心缩放及分栏交互等观察，还称提供 30 个 React 组件。捕获记录未提供作者身份，故这是发帖者自述，不视为 Claude 官方说明或原分析者身份已确认；未独立检查手册、组件或测量这些实现细节，也没有据此完成重建或功能等价测试。",
+    "description": "飞翔的企鹅x（@BystAnd3rs）想弄清 Claude Desktop 为什么有顺滑的界面手感，称用 REA 分析桌面应用，记录暗色模式字重补偿、避免孤字换行、回答文字逐字淡入等细节。10 月 15 日凌晨他称已开源 3000 多行研究手册、算法实现及 30 个 React 组件，涵盖滚动渐隐、语音波形、弹簧动画、自动滚动、图片缩放和分栏交互。本轮补查 10 月 13 日原帖与 10 月 15 日凌晨帖，确认两者与本轮更新来自同一账号；手册和组件本身未独立检查，具体参数仍是作者观察，不是 Claude 官方规格或本合集测量。\n\n本轮 10 月 15 日 09:39 的更新称 Claude Desktop 随即大改，增加并行会话、新侧栏、模型选择器旁用量及独立聊天窗口，作者计划重新拆解并对比新旧版本。此前研究里的弹簧参数、字重与渐隐实现是否仍适用于新版尚不确定；不把旧版观察当成新版已验证结论。既有 10 月 14 日第三方界面观察保留为转述来源，不视为独立复现。",
     "sources": [
       {
         "label": "作者关于 REA 分析 Claude Desktop 的原帖",
@@ -3199,8 +3207,12 @@
         "url": "https://x.com/i/status/2110270963338084425"
       },
       {
-        "label": "本窗口：发帖者自述用 REA 分析 Claude Desktop 并整理手册（作者身份未确认，未独立验证）",
+        "label": "10 月 15 日凌晨：作者自述手册与组件（本轮补查确认账号，未独立验证实现）",
         "url": "https://x.com/i/status/2110404747605709153"
+      },
+      {
+        "label": "作者本轮更新：大改版后计划重新分析",
+        "url": "https://x.com/i/status/2110546102705369357"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -3208,12 +3220,13 @@
       "作者自述使用 REA；界面细节未经独立验证",
       "未展示重建或功能等价测试",
       "2026-10-14 第三方 quote 帖补充 UI 观察；非原分析者确认，报告未完成公开，本合集未独立核验。",
-      "补充发帖：2026-10-15T00:17:55+08:00；捕获作者字段为空，身份未确认。",
-      "手册、算法与界面细节为帖子自述；未独立核验，无功能重建验证。"
+      "2026-10-15 补查原帖账号：10 月 13 日原帖、15 日凌晨手册帖和本轮更新均为 @BystAnd3rs；保留原来源 URL。",
+      "手册、算法与界面细节为作者自述；未独立核验，无功能重建验证。",
+      "本轮候选热度快照（2026-10-15）：74 赞｜6795 浏览｜3 转发；旧版参数在大改版后的适用性待重新研究。"
     ],
     "en": {
       "title": "Claude Desktop: UI details reported from REA analysis",
-      "summary": "A user reports analyzing Claude Desktop with REA and observing typography, line wrapping and per-character fade-in details; findings are not independently verified."
+      "summary": "BystAnd3rs reports REA-based UI research and a public handbook/component collection; an October 15 redesign prompted plans for a new comparison, so older parameters should not be assumed current."
     }
   },
   {
@@ -3904,5 +3917,129 @@
       "title": "rea-engine: Rebuilding TicTacToe from a Windows game binary",
       "summary": "The author reports building rea-engine atop original REA and reconstructing a Windows TicTacToe game from its binary, with all 19,683 board states matching byte for byte."
     }
+  },
+  {
+    "id": "bitfish-local-llm-home-control",
+    "title": "家居 App 协议：把无 API 设备接给本地 LLM",
+    "category": "hardware",
+    "status": "unverified",
+    "rea": "REA",
+    "summary": "DiscusFish 自述用 REA 提取家居 App 协议，与现有 API 一起交给本地 LLM 调度。",
+    "description": "DiscusFish（@bitfish）认为买回来的智能家居仍被各自的遥控器割裂。他在 10 月 15 日的帖子中描述自己的集成方式：有 API 的设备直接调用 API，没有 API 的则用 REA 反编译 App、找出协议，再统一接到本地 LLM 调度。目标是让自购家居设备有统一的软件控制入口。原帖没有列出型号、协议细节、源码或逐设备测试结果；这是作者自述的集成报告，不能据此认定所有设备均支持本地离线控制，也不能与其他作者的全屋控制项目合并。",
+    "sources": [{"label": "DiscusFish 的本轮集成报告", "url": "https://x.com/i/status/2110539823572463953"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["发帖：2026-10-15 09:14（北京时间）", "候选快照：19 赞｜7767 浏览｜1 转发；功能未独立验证。"],
+    "en": {"title": "Home-device protocols connected to a local LLM", "summary": "DiscusFish reports using REA to extract protocols from home-device apps without APIs, combining them with documented APIs under a local LLM; models and device-level tests are not provided."}
+  },
+  {
+    "id": "claude-code-rgb-macropad",
+    "title": "GAMEKB-K17 宏键盘：用 Claude Code 逆向配置协议",
+    "category": "hardware",
+    "status": "case",
+    "rea": "other-ai",
+    "summary": "研究厂商 WebHID 配置端，做离线按键、固件宏和 RGB 配置工具。",
+    "description": "Denis Darkin（@dvdarkin）报告用不到 40 美元的 16 键 RGB 宏键盘辅助日常 AI 编程，以 /model、/clear、yes 回车和 continue 回车等固件宏替代重复输入。他称用 Claude Code 逆向键盘配置协议，不再依赖厂商网页。补查公开仓库 gamekb-k17 的 README，目标为 GAMEKB-K17 / HCY-K017（USB 0816:0220）；项目从厂商 WebHID 配置器研究协议，提供按键映射、宏、RGB 与布局配置。文档说明配置写入键盘闪存后读回核验，断开配置程序后仍保存在设备内，并附协议文档。仓库自述 Windows 已测，其他 hidapi 平台未测；本合集只阅读文档，没有安装、运行工具或连接硬件，不把项目自测升级为独立复现。",
+    "sources": [
+      {"label": "作者本轮 Claude Code 辅助逆向报告", "url": "https://x.com/i/status/2110541828097462605"},
+      {"label": "公开实现及配置/协议文档（本轮补查）", "url": "https://github.com/dvdarkin/gamekb-k17"}
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["发帖：2026-10-15 09:22（北京时间）", "候选快照：7 赞｜399 浏览｜0 转发", "仓库创建于 2026-10-15；README 平台测试范围为项目声明。"],
+    "en": {"title": "GAMEKB-K17: a Claude Code-assisted macropad protocol tool", "summary": "Denis Darkin reports reverse-engineering the vendor configurator with Claude Code; a public tool writes and reads back key mappings, firmware macros and RGB settings. Windows testing is project-reported, not independently reproduced."}
+  },
+  {
+    "id": "samsung-dex-mac-client-idea",
+    "title": "Samsung DeX：用 AI 研究并制作 Mac 客户端的 idea",
+    "category": "apps",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "发帖者请求用 AI 逆向 Samsung DeX，制作 Mac 客户端。",
+    "description": "Samsung DeX 是三星面向手机桌面式使用的功能。发帖者在本轮明确询问是否有人能用 AI 逆向 DeX，再写一个 Mac 客户端，目标是把这项设备能力接到自己的电脑环境。帖子没有技术方案、代码、设备型号或动工报告，因此只作为互通需求与具体 idea 收录；不据此推断现有官方客户端支持情况，也没有证据确认使用 REA。",
+    "sources": [{"label": "本轮 Mac 客户端需求帖", "url": "https://x.com/i/status/2110544862844203290"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["只有请求/idea，未展示实现。"],
+    "en": {"title": "Samsung DeX: an AI-assisted Mac client idea", "summary": "A poster asks for AI-assisted reverse engineering of Samsung DeX to build a Mac client; no implementation or technical plan is reported."}
+  },
+
+  {
+    "id": "kirby-rea-in-progress",
+    "title": "《星之卡比》：REA 逆向进行中的作者报告",
+    "category": "games",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "作者称星之卡比逆向到一半，未公布具体版本或产物。",
+    "description": "发帖者说自己用 REA 研究《星之卡比》，已逆向到一半，随后表达对账号和历史数据的担忧。帖子没有说明系列中的具体作品、平台、分析方法、可运行成果或代码。本条只记录具名游戏系列的进行中逆向尝试；不把“一半”换算为代码覆盖率，不把账号担忧当成平台已确认因逆向封号的证据，也不提供规避平台限制的建议。",
+    "sources": [{"label": "本轮作者未完成报告", "url": "https://x.com/i/status/2110553648787013950"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["候选快照：5 赞｜492 浏览；进度仅为作者口述。"],
+    "en": {"title": "Kirby: a reported REA investigation in progress", "summary": "A poster says a Kirby reverse-engineering attempt is halfway through; the title, platform, artifacts and coverage are unspecified, and account concerns do not establish enforcement causation."}
+  },
+  {
+    "id": "rea-claude-isolated-ab-test",
+    "title": "隔离环境中的 REA + Claude Code：静态分析 A/B 测试转述",
+    "category": "apps",
+    "status": "analysis-test",
+    "rea": "REA",
+    "summary": "Zenn 推荐一篇真实任务 A/B 测试，称静态分析标准工具已足够，并讨论隔离设计。",
+    "description": "Zenn 官方账号本轮推荐一篇测试记录：在隔离环境中将逆向 MCP 工具 REA 接入 Claude Code，用实际任务进行 A/B 比较。推荐摘要说，该静态分析任务用标准工具就足够，记录的价值还包括环境隔离与安全措施，而非证明 REA 总能提高分析质量。候选未披露目标应用、样本、量化指标或原始测试表，本合集也未取得链接文章正文，因此只收录推荐帖实际提供的测试方向和结论边界；不声称复核了 A/B 设计，不推广成所有逆向任务的普遍结论。",
+    "sources": [{"label": "Zenn 官方本轮测试文章推荐摘要", "url": "https://x.com/i/status/2110558521209356397"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["第三方推荐摘要；原测试目标和量化数据未在候选中给出。"],
+    "en": {"title": "REA with Claude Code in isolation: a reported A/B test", "summary": "Zenn highlights a real-task A/B test in an isolated setup, saying standard tools sufficed for static analysis. The target, metrics and full methodology are not available in the candidate post."}
+  },
+  {
+    "id": "rea-640-windows-managed-electron-test",
+    "title": "REA 6.4.0：Windows 下的 .NET 与 Electron 样本测试",
+    "category": "apps",
+    "status": "analysis-test",
+    "rea": "REA",
+    "summary": "以 Framework 程序集和 AI 构造的 Electron 样本测试版本边界、静态语义与证据输出。",
+    "description": "本轮长帖以第一人称描述在 Windows + Node 24 下测试 npm REA 6.4.0，未装 ILSpy/dnSpy；另一个候选注明测评来自论坛作者“神奇的人鱼”，因此不把传播账号自动当作原测试者。帖子称检查约 200 个 .NET Framework 程序集：1701 方法的样本可解，System.DirectoryServices.dll 的 2094 方法样本失败，System.Activities.dll 出现元数据完整而成员不可用的差异。作者将其归因于 JSON 中间表示的 64 MiB 预算，并报告文档中的 --type 在该 npm 版本不可用。这是特定版本与样本的实测报告，不把约 2000 方法当成所有程序集固定阈值；原文对 Windows 能力比例的数字不一致，本条不沿用该比例。\n\n同帖称用 AI 构造 Electron 风格样本，包含 BrowserWindow、IPC handler、原生 .node 插件及条件动态 require；REA 输出 24 个语义节点和 33 条边，能定位 IPC 与原生插件，并把无法静态判断的依赖标为 unknown。续帖另报告 Trap.dll 中的写文件静态构造函数未执行，以及对仅差一个常量的两个程序集准确定位变更方法。目标是检验静态结构分析、资源限制和版本比较，而不是复刻整款商业软件。样本、命令原始输出和完整测试环境未由本合集独立核验；不能据单一 Trap.dll 测试保证所有工具链绝无副作用。",
+    "sources": [
+      {"label": "本轮长帖：Framework 与 Electron 样本测试", "url": "https://x.com/i/status/2110563764886266167"},
+      {"label": "本轮续帖：Trap.dll 与程序集变更比较", "url": "https://x.com/i/status/2110565455039799441"}
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["版本口径：npm 6.4.0，Windows + Node 24；测试为帖子报告。", "两条候选各 1 赞，属于同一测评的主帖与续帖，非独立重复实验；不沿用星数、代码行数或安全性绝对宣称。"],
+    "en": {"title": "REA 6.4.0: Windows .NET and Electron sample tests", "summary": "Posts report managed-decoding budget limits, an AI-made Electron sample's semantic graph, a non-executed Trap.dll constructor and a one-constant version diff. Findings are version-specific and not independently reproduced."}
+  },
+  {
+    "id": "links-awakening-claude-pc-port-report",
+    "title": "《织梦岛》：Claude Code 参与 PC 移植的待验证转述",
+    "category": "games",
+    "status": "unverified",
+    "rea": "other-ai",
+    "summary": "移植综述称《织梦岛》几乎依靠 Claude Code 重编译上 PC，未提供本帖内可核验产物。",
+    "description": "本轮一篇移植综述的分享帖称，《塞尔达传说：织梦岛》几乎全靠 Claude Code 重编译后在 PC 运行，并将其与 Melee 反编译、Diablo II 在 iPhone 运行及 Android 运行 Steam 等路线对照。它讨论的是把现有游戏带到新平台，而非从零开发同名游戏。候选未给出《织梦岛》的具体版本、作者、仓库、构建记录或对照测试，本合集未确认其原生移植方式、AI 贡献比例或功能完整度。只将具名作品与 Claude Code 的二手归因作为待验证报告收录，不把同帖所有移植项目都写成 AI 独立完成。",
+    "sources": [{"label": "本轮游戏移植综述分享帖", "url": "https://x.com/i/status/2110565293802274865"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["二手报告；未确认 REA 使用，未核验可运行产物。"],
+    "en": {"title": "Link's Awakening: a reported Claude Code-assisted PC port", "summary": "A secondary roundup attributes a Link's Awakening PC recompilation largely to Claude Code; the version, repository, build evidence and AI contribution remain unverified."}
+  },
+  {
+    "id": "rea-cpu-kernel-optimization",
+    "title": "CPU kernels：Claude Code 编排 Astra 做汇编层优化",
+    "category": "algorithms",
+    "status": "in-progress",
+    "rea": "REA",
+    "summary": "作者称正在由 Claude Code 管理 Astra，借 REA 研究 CPU 内核优化。",
+    "description": "作者本轮称当天用 Claude Code 管理 Astra，通过 REA 在汇编层研究 CPU kernels 的优化，想观察前沿模型深入低层实现后能获得什么结果。这里的 kernel 指计算内核，原帖未说是操作系统内核，也未给出算法、指令集、测试用例或性能数字。因此收录为具名工具协同的进行中低层研究，不补写已恢复的代码、正确性或速度提升。",
+    "sources": [{"label": "本轮作者进行中报告", "url": "https://x.com/i/status/2110566660113625486"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["未报告优化结果或基准测试。"],
+    "en": {"title": "CPU kernels: Claude Code orchestrates Astra with REA", "summary": "A poster reports ongoing assembly-level CPU-kernel optimization using Claude Code to manage Astra through REA; no algorithm, correctness evidence or speedup is reported."}
+  },
+  {
+    "id": "bg3-agent-modding-idea",
+    "title": "《博德之门3》：探索 Agent 增强 Mod 的 idea",
+    "category": "games",
+    "status": "unverified",
+    "rea": "unknown",
+    "summary": "发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。",
+    "description": "BG3 即角色扮演游戏《博德之门3》。发帖者注意到其他游戏的 AI 改造很热闹，询问为什么 BG3 的 Mod 没有类似进展、是不是难以反编译，并认为它应是 Agent 增强的优先目标。这是具名游戏的探索性改造想法，没有给出具体 Mod 功能、工具或动工证据；不把提问当成 BG3 确实无法反编译、现有 Mod 稀少或已有 AI 成果的结论。",
+    "sources": [{"label": "本轮 BG3 改造想法与难度提问", "url": "https://x.com/i/status/2110581317889057031"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["探索性 idea，无实现；未确认使用 REA。"],
+    "en": {"title": "Baldur's Gate 3: an agent-assisted modding idea", "summary": "A poster proposes BG3 as a target for agent enhancements and asks whether decompilation difficulty is a barrier; no specific mod or implementation is reported."}
   }
 ]

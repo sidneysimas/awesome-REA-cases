@@ -4,26 +4,26 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **151 cases and projects**. *Last maintained: October 15, 2026, 12:01; case coverage through October 15, 2026, 08:00 Beijing time (UTC+8).*
+Currently **160 cases and projects**. *Last maintained: October 15, 2026, 13:26; the case-evidence cutoff remains October 15, 2026, 08:00 Beijing time (UTC+8).*
 
-Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. Coverage in the October 15, 04:00–08:00 Beijing-time window was limited and should not be read as exhaustive. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
+Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. This review covers candidates from October 15, 08:00–12:00 Beijing time, within keyword and pagination limits—not an exhaustive search. Assessable material has been added while some sources still await clarification, so the complete evidence boundary remains at 08:00. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
 [REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
 ## Recent picks: Top 10
 
-Manually selected for recent attention, concrete use, and reading value—not a live leaderboard. Engagement figures are source-specific snapshots collected October 12–14, 2026, not live counts or proof of verified results. Dates below refer to source posts.
+Manually selected for recent attention, concrete use, and reading value—not a live leaderboard. Engagement figures are source-specific snapshots collected October 12–15, 2026, not live counts or proof of verified results. Dates below refer to source posts.
 
-1. **[An off-the-shelf smart pen in a custom software system](cases/smart-pen-codex-integration.md)** — A team reports using Codex to decompile and integrate an existing pen instead of building a prototype; the device model and technical details are not public. **Oct 14 · 79 likes · Other AI-assisted work · Team report.**
-2. **[A reported Screen Studio rebuild](cases/screen-studio-rebuild.md)** — The poster says REA informed a Claude Code rebuild and that the new app recorded its own demo; code, feature parity and timing are unverified. **Oct 13 · 6 likes · REA · Needs verification.**
-3. **[Claude Design in BaoCut](cases/claude-design-baocut.md)** — Investigate a design skill and front end, then integrate them into a video agent with a public code commit. **Oct 12 · 254 likes · REA use unconfirmed.**
-4. **[Rebuilding the Claude Slides editor](cases/claude-slides.md)** — Codex and REA analyze bundled scripts; Claude Code organizes the project. Screenshots and a code commit are available; completeness is author-reported. **Oct 11 · 686 likes · REA.**
-5. **[Opening the Codex browser annotation dialog from a web page](cases/codex-browser-annotations.md)** — Inspect Electron code and test an interface that opens and pre-fills the dialog; direct insertion into the composer was not achieved. **Oct 11 · 252 likes · REA.**
-6. **[Inspecting 47MB of compressed Claude Code](cases/claude-code-analysis.md)** — Muse calls REA to analyze a large code bundle. A tool-integration and analysis demonstration, not an established Claude Code clone. **Oct 10 · 576 likes · REA.**
-7. **[An Apple TV remote on Linux](cases/siri-remote-linux.md)** — Investigate Bluetooth messages and turn an ecosystem-specific accessory into a computer input device, with a public implementation. **Oct 9 · 5,419 likes · REA use unconfirmed.**
-8. **[A faster Plex client for LG TVs](cases/lg-plxnative.md)** — Investigate the native media stack with Ghidra and Claude Code. The author reports reducing user selection from about 30 seconds to 3 seconds. **Oct 8 · 7,268 likes · Other AI-assisted work.**
-9. **[Tuya RGB lights controlled from a Mac](cases/tuya-rgb-mac.md)** — Analyze the phone app's Bluetooth traffic and use a local script instead, with a working-light demonstration. **Oct 8 · 2,285 likes · Other AI-assisted work.**
-10. **[Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md)** — Investigate asset formats, write an exporter, adapt the skeleton, and add jetpack gameplay. A cross-game mod, not full decompilation. **Oct 5 · 678 likes · Other AI-assisted work.**
+1. **[Claude Desktop: UI feel and a moving version boundary](cases/claude-desktop-ui-details.md)** — The author reports an REA-based interaction handbook and React components, then plans a fresh comparison after a major redesign. Older spring, typography and fade parameters should not be assumed current. **Oct 15 update · 74 likes · REA · Analysis report.**
+2. **[GAMEKB-K17: configure a macropad without the vendor website](cases/claude-code-rgb-macropad.md)** — Denis Darkin reports studying the protocol with Claude Code and publishes an offline tool. Its documentation describes writing and reading back keys, macros and RGB settings; Windows testing is project-reported. **Oct 15 · 7 likes · Other AI-assisted work.**
+3. **[An off-the-shelf smart pen in a custom software system](cases/smart-pen-codex-integration.md)** — A team reports using Codex to decompile and integrate an existing pen instead of building a prototype; the device model and technical details are not public. **Oct 14 · 79 likes · Other AI-assisted work · Team report.**
+4. **[Claude Design in BaoCut](cases/claude-design-baocut.md)** — Investigate a design skill and front end, then integrate them into a video agent with a public code commit. **Oct 12 · 254 likes · REA use unconfirmed.**
+5. **[Rebuilding the Claude Slides editor](cases/claude-slides.md)** — Codex and REA analyze bundled scripts; Claude Code organizes the project. Screenshots and a code commit are available; completeness is author-reported. **Oct 11 · 686 likes · REA.**
+6. **[Opening the Codex browser annotation dialog from a web page](cases/codex-browser-annotations.md)** — Inspect Electron code and test an interface that opens and pre-fills the dialog; direct insertion into the composer was not achieved. **Oct 11 · 252 likes · REA.**
+7. **[REA 6.4.0 through .NET and Electron samples](cases/rea-640-windows-managed-electron-test.md)** — Posts report managed-decoding budget limits, an Electron semantic graph and a one-constant version diff. Version-specific sample tests, not a universal method-count limit or safety guarantee. **Oct 15 · Main post: 1 like · REA · Not independently checked.**
+8. **[An Apple TV remote on Linux](cases/siri-remote-linux.md)** — Investigate Bluetooth messages and turn an ecosystem-specific accessory into a computer input device, with a public implementation. **Oct 9 · 5,419 likes · REA use unconfirmed.**
+9. **[A faster Plex client for LG TVs](cases/lg-plxnative.md)** — Investigate the native media stack with Ghidra and Claude Code. The author reports reducing user selection from about 30 seconds to 3 seconds. **Oct 8 · 7,268 likes · Other AI-assisted work.**
+10. **[Tuya RGB lights controlled from a Mac](cases/tuya-rgb-mac.md)** — Analyze the phone app's Bluetooth traffic and use a local script instead, with a working-light demonstration. **Oct 8 · 2,285 likes · Other AI-assisted work.**
 
 ### Classic cases
 
@@ -34,10 +34,10 @@ Manually selected for recent attention, concrete use, and reading value—not a 
 
 ## Contents
 
-- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (29)
-- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (37)
-- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (76)
-- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (9)
+- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (32)
+- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (39)
+- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (79)
+- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (10)
 - [Contribute a case](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [Maintenance](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and maintenance guides are currently in Chinese.
