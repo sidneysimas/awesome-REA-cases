@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **233 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **252 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（49）
-- [硬件与设备互通](categories/hardware.md)（57）
-- [应用与客户端](categories/apps.md)（107）
-- [算法与功能重建](categories/algorithms.md)（20）
+- [游戏与游戏保存](categories/games.md)（55）
+- [硬件与设备互通](categories/hardware.md)（60）
+- [应用与客户端](categories/apps.md)（114）
+- [算法与功能重建](categories/algorithms.md)（23）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -75,6 +75,12 @@
 - [2010 Rust Rewrite Mashup：在 MW2 地图里玩 Skate 3](cases/iw4l-skate3-mw2-rust-mashup.md) — 二手帖称IW4L读取自有游戏文件，结合滑板与MW2/Minecraft世界，AI加速其上开发。 **[其他 AI 逆向 · 待验证]**
 - [网页版 CS：市场部同事用 AI 做联机版本的转述](cases/cs-browser-colleague-ai-report.md) — 发帖者称同事20分钟做出可联机浏览器CS，没有产物或逆向过程。 **[其他 AI 逆向 · 待验证]**
 - [GTA 规则到 Godot：版本不清的 REA 重建计划](cases/gta-rules-godot-rea-plan.md) — 作者计划研究驾驶、速度和通缉规则后重建开放世界，不能确认已逆向GTA6。 **[REA · 进行中]**
+- [Galaxy-Android：《超级马里奥银河》的 AI 辅助原生移植转述](cases/galaxy-android-ai-native-port.md) — 帖子称基于 Petari 反编译成果制作 Android ARM64 原生版，仍有早期问题。 **[其他 AI 逆向 · 待验证]**
+- [H1Z1：研究后用 Opus / Astra / Tripo 构建自己的 MMO](cases/h1z1-ai-mmo-research.md) — 作者称已完成 H1Z1 逆向，正在做自己的多人在线游戏，动画仍困难。 **[其他 AI 逆向 · 进行中]**
+- [Uncharted 1–3：Claude 逆向与 Windows 原生版的转述](cases/uncharted-trilogy-claude-windows-report.md) — 帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [Slipstream 5000：Codex 两天反编译的作者报告](cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
+- [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](cases/pokemon-hgss-multi-agent-decompile-report.md) — 回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。 **[其他 AI 逆向 · 待验证]**
+- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](cases/d2-claude-engine-rebuild-report.md) — 读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -135,6 +141,9 @@
 - [读板仪滤光轮：Claude 研究设备通信与固件重置的报告](cases/plate-reader-filter-wheel-claude-repair.md) — 机械与光学检查正常却自检失败，作者称Claude通信、重置固件并建立监测脚本。 **[其他 AI 逆向 · 待验证]**
 - [USB 射频棒到 GPU：用 Claude 研究吞吐与本振控制的 idea](cases/usb-sdr-gpu-claude-inspection-idea.md) — 建议检查USB控制器传输和设备固件，以安排GPU端DSP并控制本振。 **[其他 AI 逆向 · 待验证]**
 - [无线 CarPlay 适配器：REA + Grok 修改自动连接行为的转述](cases/carplay-adapter-rea-grok-firmware.md) — 帖子称Arif在Claude拒绝后让Grok生成新固件二进制，以修自动连接问题。 **[REA · 待验证]**
+- [童年手机：Claude 把 OEM 固件运行到 Wasm 的作者报告](cases/old-phone-oem-firmware-wasm.md) — 作者称旧手机实体仍卡在 SIM 提示时，Claude 已让固件在 Wasm 中运行。 **[其他 AI 逆向 · 待验证]**
+- [扫地机器人：让 Claude 替代内置清扫策略的 idea](cases/robot-vacuum-claude-cleaning-idea.md) — Joe 想研究自己的机器人，让 AI 按脏污、角落和坡度决定清扫方式，尚未实施。 **[其他 AI 逆向 · 待验证]**
+- [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 
 ### 应用与客户端
 
@@ -245,6 +254,13 @@
 - [PDF 二进制最小修改：AI 文档结构操作的 idea](cases/pdf-binary-minimal-edit-ai-idea.md) — 帖子建议拆解PDF后最小修改文字，未给样本或结构保持测试。 **[其他 AI 逆向 · 待验证]**
 - [Supabase：用 REA 研究欧盟取向兼容版本的 idea](cases/supabase-eu-rea-idea.md) — 回复建议研究Supabase并制作面向欧盟的版本，没有实现或GDPR验收。 **[REA · 待验证]**
 - [日用语音输入 App：看懂客户端后仍需重建五小时的报告](cases/voice-input-client-cloud-ai-rebuild.md) — 作者自述AI研究安装包，发现识别润色留在云端，客户端只覆盖录音与粘贴链。 **[其他 AI 逆向 · 进行中]**
+- [BINNY：面向逆向研究的多模型 Agent harness 公测](cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
+- [Chrome 深色模式扩展：用 REA 研究以便改进](cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
+- [建设投标解密器：Claude Code 辅助研究密码报错的转述](cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
+- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](cases/hermes-rea-plugin-release.md) — 帖子称插件一次安装 MCP 与 Skill，以工具搜索暴露约 170 项工具；并非本次安装测试。 **[REA · 相关项目]**
+- [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
+- [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
+- [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
 
 ### 算法与功能重建
 
@@ -268,6 +284,9 @@
 - [SentinelOne / Daybreak：缩短复杂恶意软件逆向时间的转述](cases/sentinelone-daybreak-malware-report.md) — 传播帖称恶意软件分析由4–6周缩短至约8小时，缺原始样本与测试。 **[其他 AI 逆向 · 待验证]**
 - [Linux Easy Anti-Cheat：经 IDA Assist MCP 的 AI 去虚拟化报告](cases/linux-eac-ai-devirtualization-report.md) — 作者称Gemini 4 Argon与GPT 6.1 Sol辅助分析Linux EAC，没有可复核结果。 **[其他 AI 逆向 · 待验证]**
 - [REA JavaScript 示例：陈旧价格检查的 400 ms 边界](cases/rea-js-stale-price-boundary-demo.md) — 作者用自制模块追踪调用链并测边界，明确不是真实交易或Claude现场演示。 **[REA · 分析测试]**
+- [game.exe 示意演示：双房间与三类重建 oracle](cases/rea-clean-room-illustrative-oracles.md) — 帖子具体描述 Reader/Builder 隔离及字节、植错、运行检查，但数字明标 illustrative。 **[REA · 分析测试]**
+- [两款游戏 RNG：Codex 与 ILSpy 辅助预测跟踪的自述](cases/two-game-rng-codex-ilspy-report.md) — 作者称当天研究出两款游戏的随机机制，Codex 不够时再用 ILSpy 搜索。 **[其他 AI 逆向 · 待验证]**
+- [博彩 App：用 REA 研究结果机制的假设性提问](cases/betting-app-rea-outcome-idea.md) — 作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。 **[REA · 待验证]**
 
 ## 贡献与收录
 

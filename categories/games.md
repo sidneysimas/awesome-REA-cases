@@ -51,3 +51,9 @@
 - [2010 Rust Rewrite Mashup：在 MW2 地图里玩 Skate 3](../cases/iw4l-skate3-mw2-rust-mashup.md) — 二手帖称IW4L读取自有游戏文件，结合滑板与MW2/Minecraft世界，AI加速其上开发。 **[其他 AI 逆向 · 待验证]**
 - [网页版 CS：市场部同事用 AI 做联机版本的转述](../cases/cs-browser-colleague-ai-report.md) — 发帖者称同事20分钟做出可联机浏览器CS，没有产物或逆向过程。 **[其他 AI 逆向 · 待验证]**
 - [GTA 规则到 Godot：版本不清的 REA 重建计划](../cases/gta-rules-godot-rea-plan.md) — 作者计划研究驾驶、速度和通缉规则后重建开放世界，不能确认已逆向GTA6。 **[REA · 进行中]**
+- [Galaxy-Android：《超级马里奥银河》的 AI 辅助原生移植转述](../cases/galaxy-android-ai-native-port.md) — 帖子称基于 Petari 反编译成果制作 Android ARM64 原生版，仍有早期问题。 **[其他 AI 逆向 · 待验证]**
+- [H1Z1：研究后用 Opus / Astra / Tripo 构建自己的 MMO](../cases/h1z1-ai-mmo-research.md) — 作者称已完成 H1Z1 逆向，正在做自己的多人在线游戏，动画仍困难。 **[其他 AI 逆向 · 进行中]**
+- [Uncharted 1–3：Claude 逆向与 Windows 原生版的转述](../cases/uncharted-trilogy-claude-windows-report.md) — 帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [Slipstream 5000：Codex 两天反编译的作者报告](../cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
+- [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](../cases/pokemon-hgss-multi-agent-decompile-report.md) — 回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。 **[其他 AI 逆向 · 待验证]**
+- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — 读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。 **[其他 AI 逆向 · 待验证]**

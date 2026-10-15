@@ -59,3 +59,6 @@
 - [读板仪滤光轮：Claude 研究设备通信与固件重置的报告](../cases/plate-reader-filter-wheel-claude-repair.md) — 机械与光学检查正常却自检失败，作者称Claude通信、重置固件并建立监测脚本。 **[其他 AI 逆向 · 待验证]**
 - [USB 射频棒到 GPU：用 Claude 研究吞吐与本振控制的 idea](../cases/usb-sdr-gpu-claude-inspection-idea.md) — 建议检查USB控制器传输和设备固件，以安排GPU端DSP并控制本振。 **[其他 AI 逆向 · 待验证]**
 - [无线 CarPlay 适配器：REA + Grok 修改自动连接行为的转述](../cases/carplay-adapter-rea-grok-firmware.md) — 帖子称Arif在Claude拒绝后让Grok生成新固件二进制，以修自动连接问题。 **[REA · 待验证]**
+- [童年手机：Claude 把 OEM 固件运行到 Wasm 的作者报告](../cases/old-phone-oem-firmware-wasm.md) — 作者称旧手机实体仍卡在 SIM 提示时，Claude 已让固件在 Wasm 中运行。 **[其他 AI 逆向 · 待验证]**
+- [扫地机器人：让 Claude 替代内置清扫策略的 idea](../cases/robot-vacuum-claude-cleaning-idea.md) — Joe 想研究自己的机器人，让 AI 按脏污、角落和坡度决定清扫方式，尚未实施。 **[其他 AI 逆向 · 待验证]**
+- [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**

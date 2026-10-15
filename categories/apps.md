@@ -109,3 +109,10 @@
 - [PDF 二进制最小修改：AI 文档结构操作的 idea](../cases/pdf-binary-minimal-edit-ai-idea.md) — 帖子建议拆解PDF后最小修改文字，未给样本或结构保持测试。 **[其他 AI 逆向 · 待验证]**
 - [Supabase：用 REA 研究欧盟取向兼容版本的 idea](../cases/supabase-eu-rea-idea.md) — 回复建议研究Supabase并制作面向欧盟的版本，没有实现或GDPR验收。 **[REA · 待验证]**
 - [日用语音输入 App：看懂客户端后仍需重建五小时的报告](../cases/voice-input-client-cloud-ai-rebuild.md) — 作者自述AI研究安装包，发现识别润色留在云端，客户端只覆盖录音与粘贴链。 **[其他 AI 逆向 · 进行中]**
+- [BINNY：面向逆向研究的多模型 Agent harness 公测](../cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
+- [Chrome 深色模式扩展：用 REA 研究以便改进](../cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
+- [建设投标解密器：Claude Code 辅助研究密码报错的转述](../cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
+- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 帖子称插件一次安装 MCP 与 Skill，以工具搜索暴露约 170 项工具；并非本次安装测试。 **[REA · 相关项目]**
+- [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](../cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
+- [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](../cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
+- [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](../cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**

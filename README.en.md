@@ -4,9 +4,9 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **233 cases and projects**. *Last maintained and counted: October 16, 2026, 00:13; continuous resolved-material case-evidence cutoff: October 15, 2026, 16:00 Beijing time (UTC+8).*
+Currently **252 cases and projects**. *Last maintained and counted: October 16, 2026, 04:05; continuous resolved-material case-evidence cutoff: October 15, 2026, 16:00 Beijing time (UTC+8).*
 
-Public REA and AI reverse-engineering cases are tracked six times daily, screened and deduplicated. This review reads all 146 candidates from October 15, 20:00 to October 16, 00:00 Beijing time (start exclusive, end inclusive), plus one previously unresolved source. It adds 30 entries and supplements four existing records. Eight sources still need clarification; the oldest comes from the window starting October 15 at 16:00, so the continuous evidence cutoff stays there while assessable newer projects are included. Keyword and pagination limits make this a bounded search, not exhaustive coverage. The cutoff does not imply independent validation of every project. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
+Public REA and AI reverse-engineering cases are tracked six times daily, screened and deduplicated. This review reads all 128 candidates from October 16, 00:00 to 04:00 Beijing time (start exclusive, end inclusive), plus eight previously unresolved sources. It adds 19 projects, author reports and concrete ideas, combining two posts by the same author about a robot vacuum. New material includes old-phone firmware running in Wasm, a Codex attempt on Slipstream 5000 and multi-model reverse-engineering tools. Unverified ports, costs and features remain attributed claims; illustrative demonstrations are not treated as measured results. Nine sources still need clarification; the oldest comes from the window starting October 15 at 16:00, so the continuous evidence cutoff stays there while assessable newer projects are included. Keyword and pagination limits make this a bounded search, not exhaustive coverage. The cutoff does not imply independent validation of every project. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
 [REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
@@ -36,10 +36,10 @@ Manually selected for recent attention, concrete use, and reading value—not a 
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (49)
-- [Hardware and interoperability](categories/en/hardware.md) (57)
-- [Applications and clients](categories/en/apps.md) (107)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (20)
+- [Games and preservation](categories/en/games.md) (55)
+- [Hardware and interoperability](categories/en/hardware.md) (60)
+- [Applications and clients](categories/en/apps.md) (114)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (23)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and category pages are available in English, with reciprocal Chinese links. Contribution and maintenance guides are in Chinese.

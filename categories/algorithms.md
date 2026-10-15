@@ -22,3 +22,6 @@
 - [SentinelOne / Daybreak：缩短复杂恶意软件逆向时间的转述](../cases/sentinelone-daybreak-malware-report.md) — 传播帖称恶意软件分析由4–6周缩短至约8小时，缺原始样本与测试。 **[其他 AI 逆向 · 待验证]**
 - [Linux Easy Anti-Cheat：经 IDA Assist MCP 的 AI 去虚拟化报告](../cases/linux-eac-ai-devirtualization-report.md) — 作者称Gemini 4 Argon与GPT 6.1 Sol辅助分析Linux EAC，没有可复核结果。 **[其他 AI 逆向 · 待验证]**
 - [REA JavaScript 示例：陈旧价格检查的 400 ms 边界](../cases/rea-js-stale-price-boundary-demo.md) — 作者用自制模块追踪调用链并测边界，明确不是真实交易或Claude现场演示。 **[REA · 分析测试]**
+- [game.exe 示意演示：双房间与三类重建 oracle](../cases/rea-clean-room-illustrative-oracles.md) — 帖子具体描述 Reader/Builder 隔离及字节、植错、运行检查，但数字明标 illustrative。 **[REA · 分析测试]**
+- [两款游戏 RNG：Codex 与 ILSpy 辅助预测跟踪的自述](../cases/two-game-rng-codex-ilspy-report.md) — 作者称当天研究出两款游戏的随机机制，Codex 不够时再用 ILSpy 搜索。 **[其他 AI 逆向 · 待验证]**
+- [博彩 App：用 REA 研究结果机制的假设性提问](../cases/betting-app-rea-outcome-idea.md) — 作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。 **[REA · 待验证]**

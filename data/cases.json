@@ -7891,5 +7891,366 @@
         "Author's call locations, boundary results and demonstration limitations"
       ]
     }
+  },
+  {
+    "id": "galaxy-android-ai-native-port",
+    "title": "Galaxy-Android：《超级马里奥银河》的 AI 辅助原生移植转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "帖子称基于 Petari 反编译成果制作 Android ARM64 原生版，仍有早期问题。",
+    "description": "《超级马里奥银河》是2007年的Wii游戏。10月16日的一则帖子介绍OpenPort Labs的Galaxy-Android，称其基于Petari反编译成果，为Android ARM64做非模拟器的原生移植，并明确称项目有AI辅助。帖子列出稳定OpenGL ES 3.2、实验性Vulkan、触屏和手柄、Hor+超宽屏及随时快速存档；目标为1080p/60 FPS，并称中端Snapdragon设备也运行良好。项目名、功能、当天发布及性能均为该帖说法，未取得仓库或设备测试，不能视为已确认发布或所有设备的性能保证。帖子强调仍有glitch、属于非官方早期社区项目，需使用者合法自行导出的Wii ROM（ISO/RVZ/WBFS）；不分发原游戏。未确认使用REA。",
+    "sources": [{"label": "Galaxy-Android 的 AI 辅助移植介绍帖", "url": "https://x.com/i/status/2110763621768716353"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、47浏览；没有独立运行或源码核验。"],
+    "en": {
+      "title": "Galaxy-Android: a reported AI-assisted native Super Mario Galaxy port",
+      "summary": "A post describes an Android ARM64 port based on Petari's decompilation, with early glitches and unverified release and performance claims.",
+      "description": "Super Mario Galaxy is a 2007 Wii game. An October 16 post introduces OpenPort Labs' Galaxy-Android as an unofficial native Android ARM64 port based on the Petari decompilation rather than emulation, explicitly crediting AI assistance. It lists stable OpenGL ES 3.2, experimental Vulkan, touch and gamepad controls, Hor+ ultrawide support and Quick Save Anywhere. It targets 1080p/60 FPS and claims good performance even on mid-range Snapdragon devices. The project name, features, same-day release and performance are claims in this post: no repository or device test was obtained, so neither publication nor performance across devices is established. The post calls it an early experimental community project with glitches and requires the user's legally dumped Wii ROM in ISO/RVZ/WBFS format; this collection distributes no game files. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 47 views; no independent execution or source inspection."],
+      "source_labels": ["Post introducing the AI-assisted Galaxy-Android port"]
+    }
+  },
+  {
+    "id": "old-phone-oem-firmware-wasm",
+    "title": "童年手机：Claude 把 OEM 固件运行到 Wasm 的作者报告",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称旧手机实体仍卡在 SIM 提示时，Claude 已让固件在 Wasm 中运行。",
+    "description": "作者找到童年使用的一部旧手机，实体设备仍无法越过要求SIM卡的界面，却称Claude已经把该机OEM（厂商原装）固件运行到Wasm，即可在WebAssembly环境中执行的形式。报告的效果包括玩3D Java游戏、播放音乐以及给Claude发消息。这里具体目标是保存并运行旧手机的软件环境，而非仅重画手机界面；但帖子没有给出手机型号、固件版本、逆向或模拟方案、源码和测试记录。它是带链接的第一人称结果自述，不据此确认全部外设、通信网络或固件完整兼容，也未确认REA使用。",
+    "sources": [{"label": "作者的旧手机固件 Wasm 运行自述", "url": "https://x.com/i/status/2110765881768747173"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、241浏览；设备型号和实现未知。"],
+    "en": {
+      "title": "An old phone: an author reports running OEM firmware in Wasm with Claude",
+      "summary": "The poster says Claude made childhood-phone firmware run in Wasm while the physical phone was still blocked by a SIM-required screen.",
+      "description": "After finding a childhood phone, the poster says the physical device was still stuck at a SIM-required screen while Claude had already made its OEM, or manufacturer-supplied, firmware work in Wasm, an executable WebAssembly environment. Reported capabilities include 3D Java games, music and texting Claude. The concrete target is preserving and running an old phone's software environment, not simply redrawing its interface. However, the post supplies no phone model, firmware version, reverse-engineering or emulation approach, source code or test records. This is a linked first-person result claim, not confirmation of complete peripheral, cellular-network or firmware compatibility. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 241 views; device model and implementation unknown."],
+      "source_labels": ["Author's account of old-phone firmware running in Wasm"]
+    }
+  },
+  {
+    "id": "binny-agentic-reverse-harness",
+    "title": "BINNY：面向逆向研究的多模型 Agent harness 公测",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。",
+    "description": "BINNY的发布帖将它介绍为面向逆向工程师和安全研究者的开源agentic AI harness，即为模型安排工具与执行流程的框架，称已进入public beta。具体主张包括多LLM支持、Ghidra集成、沙箱执行和自主二进制分析，用户自带模型，目标是减少重复分析工作。帖子附项目短链，但本次没有取得可检查的源码、许可证、具体目标或测试记录；开源、公测和这些功能均为发布者自述。尤其沙箱执行是产品主张，不代表已经证明没有副作用；没有确认使用REA。作为具体AI逆向相关项目收录，不写成完成某一软件分析的案例。",
+    "sources": [{"label": "BINNY public beta 发布帖", "url": "https://x.com/i/status/2110767491286716525"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：96赞、3548浏览、9转发；热度不代表功能验证。"],
+    "en": {
+      "title": "BINNY: public beta of a multi-model reverse-engineering harness",
+      "summary": "The launch post claims multi-LLM support, Ghidra integration, sandboxed execution and autonomous binary analysis; implementation is not verified.",
+      "description": "BINNY's launch post introduces an open-source agentic AI harness for reverse engineers and security researchers, meaning a framework that organizes model tools and execution workflows, and says it is in public beta. Specific claims include multi-LLM support, Ghidra integration, sandboxed execution and autonomous binary analysis, with users bringing their own model to reduce repetitive analysis work. The post includes a project short link, but inspectable source code, a license, a concrete target and test records were not obtained in this review. Open-source status, the beta release and features remain the publisher's claims. In particular, sandboxed execution is a product claim, not proof that side effects are impossible. REA use is unconfirmed. It is included as a concrete AI reverse-engineering project, not a completed analysis of a particular application.",
+      "metadata": ["October 16 candidate snapshot: 96 likes, 3,548 views, 9 reposts; attention is not feature validation."],
+      "source_labels": ["BINNY public-beta announcement"]
+    }
+  },
+  {
+    "id": "rea-clean-room-illustrative-oracles",
+    "title": "game.exe 示意演示：双房间与三类重建 oracle",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "帖子具体描述 Reader/Builder 隔离及字节、植错、运行检查，但数字明标 illustrative。",
+    "description": "一则演示解说帖把目标写为本地x86 PE32的game.exe，描述Claude Opus 5.5与REA的双房间流程：Reader通过REA MCP读取二进制（称后端为Ghidra/Hopper/IDA），把观察写入NOTES.md并标obs、inf、unk；Builder只读SPEC.md，不接收代码和地址，逐函数重建。演示设三类oracle（决定是否接受结果的检查）：字节比较、第12天允许const-bytes的例外；故意放入off-by-one、分支颠倒和错误常量三种缺陷以测试检查器；最后检查是否能启动、游玩和观看。关键限制是帖子两次说明697函数、约12天和696/697匹配来自REA博客，仪表板明标illustrative；屏幕上的零行复制、3/3植错被抓和playable也只是此演示叙述，不是可下载项目的独立实验结果。未提供实际game.exe身份、构建产物或运行日志，不把示意数字与东方既有项目合并，也不据双房间说法证明法律上的clean room。",
+    "sources": [{"label": "明标 illustrative 的双房间与 oracle 演示解说", "url": "https://x.com/i/status/2110783611800522897"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、37浏览；属于流程示意，非本合集执行测试。"],
+    "en": {
+      "title": "An illustrative game.exe demo: two rooms and three reconstruction oracles",
+      "summary": "A post describes isolated Reader/Builder roles and byte, planted-bug and runtime checks, explicitly labeling its headline numbers illustrative.",
+      "description": "A demonstration commentary names a local x86 PE32 game.exe as the target and describes a two-room Claude Opus 5.5/REA workflow. Reader inspects the binary through REA MCP, reportedly backed by Ghidra/Hopper/IDA, writes NOTES.md and tags claims obs, inf or unk. Builder sees only SPEC.md, without original code or addresses, and reconstructs one function at a time. Three oracles decide acceptance: byte comparison with a const-bytes allowance by day 12; deliberate off-by-one, swapped-branch and wrong-constant defects to test the checker; and runtime checks for booting, playing and watchability. Crucially, the post twice says the 697 functions, roughly 12 days and 696/697 matches come from the REA blog and are labeled illustrative on the dashboard. The on-screen zero copied lines, 3/3 planted defects caught and playable status likewise belong to this demonstration narrative, not independent results from a downloadable experiment. No actual game.exe identity, build artifact or runtime log is supplied. These illustrative figures are not merged into the existing Touhou project, and two-room terminology does not establish a legally clean-room process.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 37 views; a workflow illustration, not a test executed by this collection."],
+      "source_labels": ["Two-room and oracle demonstration explicitly labeled illustrative"]
+    }
+  },
+  {
+    "id": "h1z1-ai-mmo-research",
+    "title": "H1Z1：研究后用 Opus / Astra / Tripo 构建自己的 MMO",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者称已完成 H1Z1 逆向，正在做自己的多人在线游戏，动画仍困难。",
+    "description": "在回复中，作者称自己完成了对H1Z1这款在线生存射击游戏的逆向，目前正用Opus、Astra和Tripo构建自己的MMO（大型多人在线游戏），并说动画对AI仍然很难。其具体用途是把对现有游戏的研究用于个人新游戏开发，而不是报告H1Z1原生移植或已经可玩的完整MMO。帖子没有说明逆向覆盖哪些系统、采用什么工具、这些模型分别承担什么任务，也没有源码、演示或测试；逆向完成只是作者的说法，AI参与逆向本身的程度未明确，REA未确认。记录为研究背景下的进行中AI游戏开发报告。",
+    "sources": [{"label": "作者的 H1Z1 研究与 MMO 进展回复", "url": "https://x.com/i/status/2110784230687125852"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、44浏览；无可核验完成度。"],
+    "en": {
+      "title": "H1Z1: research followed by an MMO built with Opus, Astra and Tripo",
+      "summary": "The poster says H1Z1 reverse engineering is finished and an original MMO is being built; animation remains difficult for AI.",
+      "description": "In a reply, the poster says they finished reverse engineering H1Z1, an online survival shooter, and are now building their own MMO, or massively multiplayer online game, with Opus, Astra and Tripo. They add that animation is still very hard for AI. The concrete use is research into an existing game informing a new personal game, not a reported native H1Z1 port or a complete playable MMO. The post does not identify investigated systems, reverse-engineering tools, individual model roles, source code, a demonstration or tests. Completion of the reverse engineering is the poster's claim; the extent of AI assistance in that stage itself is unspecified, and REA use is unconfirmed. This is recorded as ongoing AI-assisted game development following reverse-engineering research.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 44 views; no verifiable completion measure."],
+      "source_labels": ["Author's reply on H1Z1 research and MMO progress"]
+    }
+  },
+  {
+    "id": "uncharted-trilogy-claude-windows-report",
+    "title": "Uncharted 1–3：Claude 逆向与 Windows 原生版的转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。",
+    "description": "一则引用帖称《神秘海域》（Uncharted）1、2、3已可在Windows PC游玩，描述路线为用Claude逆向，将PS4代码转到Vulkan，做原生Windows构建并共用一个启动器。帖子还列出60/120 FPS、DLSS、FSR、帧生成以及键鼠和手柄支持，主观评价性能很好。它提供的是具体三作移植的传播报告，不是源码或可重跑验证；本次没有取得仓库、构建和硬件测试，不能确认这些功能已经实现，也不能把帧率写成普遍性能。未确认REA使用，不提供游戏文件或推断发行授权。",
+    "sources": [{"label": "Uncharted 三部曲 Windows / Claude 移植转述", "url": "https://x.com/i/status/2110786628553932980"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：5赞、1250浏览；非独立复现。"],
+    "en": {
+      "title": "Uncharted 1–3: a reported Claude-assisted native Windows port",
+      "summary": "A quote post claims PS4-to-Vulkan native builds with one launcher for three games; features and performance are unverified.",
+      "description": "A quote post says Uncharted 1, 2 and 3 are playable on Windows PC, describing Claude-assisted reverse engineering that translates PS4 code to Vulkan for native Windows builds with a shared launcher. It also lists 60/120 FPS, DLSS, FSR, frame generation, keyboard/mouse and controller support, and subjectively praises performance. This is a circulating report about three specific games, not source code or reproducible validation. No repository, build or hardware test was obtained, so implementation of these features is not confirmed and frame rates are not presented as general performance. REA use is unconfirmed. No game files are distributed and release authorization is not inferred.",
+      "metadata": ["October 16 candidate snapshot: 5 likes, 1,250 views; not independently reproduced."],
+      "source_labels": ["Secondhand Uncharted trilogy Windows/Claude port report"]
+    }
+  },
+  {
+    "id": "slipstream-5000-codex-decompile",
+    "title": "Slipstream 5000：Codex 两天反编译的作者报告",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。",
+    "description": "Slipstream 5000是一款老赛车游戏。作者称用Codex花两天得到一次很好的反编译，主观评价为相当忠实；并对比自己三月的尝试，当时也花了数天，但模型变得很混乱。这提供了同一作者在同一目标上先前不顺利与当前较好结果的经验，不是受控模型基准。帖子没有说明目标版本、工具链、忠实程度的检查方法、是否能运行或是否发布源码，因此两天为作者工时自述，不能改写成完整原生移植、字节匹配或独立成功验证。未确认使用REA。",
+    "sources": [{"label": "作者的 Slipstream 5000 两次 Codex 尝试对比", "url": "https://x.com/i/status/2110786958649684035"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：2赞、67浏览；两天与三月对比均为作者自述。"],
+    "en": {
+      "title": "Slipstream 5000: an author reports a two-day Codex decompilation",
+      "summary": "The poster calls the new result remarkably faithful, contrasting it with a confused attempt taking days in March.",
+      "description": "Slipstream 5000 is an older racing game. The poster says Codex produced a good decompilation in two days and subjectively calls it remarkably faithful. They contrast this with their March attempt, which also took days but became very confused. This is one author's experience with earlier difficulties and a better recent result on the same target, not a controlled model benchmark. The post does not identify the target version, toolchain, fidelity checks, runtime status or published source code. Two days is therefore author-reported effort, not evidence of a complete native port, byte matching or independently validated success. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 2 likes, 67 views; both the two-day effort and March comparison are author reports."],
+      "source_labels": ["Author's comparison of two Codex attempts on Slipstream 5000"]
+    }
+  },
+  {
+    "id": "chrome-dark-mode-extension-rea",
+    "title": "Chrome 深色模式扩展：用 REA 研究以便改进",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。",
+    "description": "作者回复REA作者morluto，称自己用REA逆向Chrome中的一款深色模式扩展，目的是让它变得更好。深色模式扩展通常调整网页的亮暗显示，这里可确认的具体用途是研究已有浏览器扩展以改进体验，而非笼统说能克隆任意软件。帖子没有给出扩展名称、分析发现、具体修改、源码或测试结果，因此不猜为Dark Reader等产品，也不把研究经历写成已交付替代品。REA使用为第一人称自述；记录为进行中研究，未独立核验。",
+    "sources": [{"label": "作者使用 REA 研究 Chrome 深色扩展的回复", "url": "https://x.com/i/status/2110797282308153562"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、31浏览；扩展未命名。"],
+    "en": {
+      "title": "A Chrome dark-mode extension: REA research for improvements",
+      "summary": "The poster says they used REA on a dark-mode extension, without naming it or reporting a completed improvement.",
+      "description": "Replying to REA author morluto, the poster says they used REA to reverse engineer a Chrome dark-mode extension so they could improve it. Dark-mode extensions generally adjust the light/dark appearance of web pages. The supported concrete use here is investigating an existing browser extension to improve the experience, not a generic claim about cloning any app. The post gives no extension name, findings, specific modification, source code or test results. It is not guessed to be Dark Reader or another product, and the research is not presented as a delivered replacement. REA use is a first-person claim; the entry records ongoing research without independent verification.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 31 views; extension unnamed."],
+      "source_labels": ["Author's reply about REA research on a Chrome dark-mode extension"]
+    }
+  },
+  {
+    "id": "construction-bid-decryptor-claude-report",
+    "title": "建设投标解密器：Claude Code 辅助研究密码报错的转述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。",
+    "description": "一则帖子描述一个金额为₩1B（十亿韩元）的建设投标被密码错误阻塞：解密器失败后，一位Vibe Crew成员用Claude Code逆向它，并加入证书处理。帖子最后将原因归为密码中的^^变成了^6，借此强调解决实际问题。这个叙述同时涉及软件研究与输入错误，不能据此断言原解密器存在密码算法漏洞，或逆向绕过了加密。未给解密器名称、代码、证书处理细节、原作者确认或投标成功凭证；金额和处理结果均为转述，REA未确认。",
+    "sources": [{"label": "建设投标密码与解密器研究的转述", "url": "https://x.com/i/status/2110802464786264210"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、39浏览；₩1B为叙述中的投标金额，非节省成本。"],
+    "en": {
+      "title": "A construction-bid decryptor: reported Claude Code research into a password error",
+      "summary": "A post describes a ₩1 billion bid blocked by decryption failure; the stated cause was ^^ becoming ^6.",
+      "description": "A post describes a ₩1B, or one-billion-won, construction bid blocked by a password error. After the decryptor failed, a Vibe Crew member reportedly reverse engineered it with Claude Code and added certificate handling. The post ultimately attributes the problem to ^^ becoming ^6 in the password and uses the story to emphasize solving practical problems. This account involves both software investigation and an input error; it does not establish a cryptographic flaw in the original decryptor or a bypass of encryption. No decryptor name, code, certificate-handling details, confirmation from the original participant or proof of a successful bid is supplied. The amount and outcome are secondhand claims, and REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 39 views; ₩1B is the reported bid value, not money saved."],
+      "source_labels": ["Secondhand construction-bid password and decryptor research account"]
+    }
+  },
+  {
+    "id": "robot-vacuum-claude-cleaning-idea",
+    "title": "扫地机器人：让 Claude 替代内置清扫策略的 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Joe 想研究自己的机器人，让 AI 按脏污、角落和坡度决定清扫方式，尚未实施。",
+    "description": "Joe（LuckyJoe198x）先在回复中提出逆向自己的扫地机器人，让Claude指挥它打扫房屋并替代内置清扫程序；随后单独发帖展开成AI监工的设想：脏区切换最大马力、对经常清扫不净的角落更积极进入、遇下降坡度不直冲而使用越障机械足爬下。本轮补查两帖确认同一作者，合并记录。这里目标是替换具体设备的清扫决策，而不是已实现的本地云或遥控客户端。作者未给品牌、型号、协议、实际代码或运行结果；机械足等能力只是其设想，不确认设备具备或可安全控制。未报告实际逆向，也未明确使用REA，作为具体AI设备控制idea收录。",
+    "sources": [{"label": "Joe 提出用 Claude 替代清扫程序", "url": "https://x.com/i/status/2110803296571310205"}, {"label": "同作者补充脏区、角落与坡度策略设想", "url": "https://x.com/i/status/2110806568673632539"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：首帖1赞、12浏览；补充帖1赞、87浏览；均未实施。"],
+    "en": {
+      "title": "A robot vacuum: an idea for Claude to replace built-in cleaning decisions",
+      "summary": "Joe proposes AI-directed cleaning that responds to dirt, corners and slopes; no implementation is reported.",
+      "description": "Joe, LuckyJoe198x, first replies that he wants to reverse engineer his own robot vacuum and have Claude direct cleaning around his home instead of its built-in program. A subsequent standalone post expands the AI-supervisor idea: maximum power for dirty areas, more assertive entry into repeatedly missed corners, and using obstacle-climbing mechanical legs to descend a slope instead of rushing down it. Follow-up retrieval confirmed the same author for both posts, which are combined here. The target is replacing a specific device's cleaning decisions, not an implemented local cloud or remote-control client. The author supplies no brand, model, protocol, code or runtime result. Mechanical legs and similar capabilities are proposals, not confirmation that the device has them or can safely expose them to control. Actual reverse engineering is not reported and REA use is not explicit; this is included as a concrete AI-device-control idea.",
+      "metadata": ["October 16 candidate snapshots: initial reply 1 like, 12 views; follow-up 1 like, 87 views; neither reports implementation."],
+      "source_labels": ["Joe proposes replacing the cleaning program with Claude", "Same author's dirt, corner and slope strategy ideas"]
+    }
+  },
+  {
+    "id": "hermes-rea-plugin-release",
+    "title": "Hermes REA 插件：MCP 与适配 Skill 的发布转述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "帖子称插件一次安装 MCP 与 Skill，以工具搜索暴露约 170 项工具；并非本次安装测试。",
+    "description": "一则转述帖称Hermes的官方REA插件已发布，一次安装带入REA MCP与为Hermes适配的reverse-engineer-anything Skill。帖子列出原生二进制、.NET、Electron、Android包、固件、浏览器捕获及进程活动等检查对象，称约170项工具放在工具搜索之后按需发现，以减轻上下文负担；安装入口写为hermes plugins install rea，要求Hermes 0.22.1及Node，原生反编译另需自备Ghidra、Hopper或IDA。它还称Skill要求运行程序或改变设备前先询问。发帖者最后说今晚安装，因此这不是其已完成的安装或目标分析验收；官方归属、版本、数量和权限提示均按转述保留，未在本轮安装或执行。与既有Hermes/WinSCP导入测试分开，作为集成项目说明，不推断所有Hermes版本都支持或所有操作都有强制拦截。",
+    "sources": [{"label": "Hermes REA 插件发布与使用边界转述", "url": "https://x.com/i/status/2110805485939249561"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：6赞、549浏览；插件功能与约170工具是帖子口径，不是本合集实测。"],
+    "en": {
+      "title": "Hermes REA plugin: a reported MCP and adapted Skill release",
+      "summary": "A post describes one install for MCP and a Hermes-adapted Skill, with roughly 170 tools behind tool search; no installation was tested here.",
+      "description": "A circulating post says an official REA plugin for Hermes has been released, installing REA MCP and a Hermes-adapted reverse-engineer-anything Skill together. It lists native binaries, .NET, Electron, Android packages, firmware, browser captures and live process activity as inspection targets. Roughly 170 tools are reportedly discoverable behind tool search to keep context light. The stated entry point is hermes plugins install rea, requiring Hermes 0.22.1 and Node, with users supplying Ghidra, Hopper or IDA for native decompilation. The post also says the Skill tells the agent to ask before running programs or changing a device. The poster ends with plans to install that night, so this is not a completed installation test or target-analysis acceptance report. Official attribution, version, counts and permission guidance remain the post's claims; no installation or execution occurred in this review. This integration project is distinct from the existing Hermes/WinSCP import test and does not imply support in every Hermes version or enforced blocking of every operation.",
+      "metadata": ["October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 tools are post claims, not tests by this collection."],
+      "source_labels": ["Secondhand Hermes REA plugin release and usage-boundary introduction"]
+    }
+  },
+  {
+    "id": "whirlpool-f13-rea-investigation-idea",
+    "title": "Whirlpool 洗烘机：用 REA 调查随机 F13 的计划",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。",
+    "description": "作者直接提及Whirlpool，抱怨自己的洗烘机随机显示F13错误且售后不愿给出答复，因此表示要用Reverse Engineer Anything研究它，并怀疑厂商的计划报废行为。这是有设备类别、错误码和动机的具体调查计划，而非已完成固件分析。帖子没有机型、诊断记录、固件、协议或测试，不能把用户怀疑写成厂家确有不当行为，也不能据F13推断根因或安全维修方法。REA是作者拟采用的工具，不是已经运行或完成研究的证据。",
+    "sources": [{"label": "Whirlpool 用户提出 F13 / REA 调查计划", "url": "https://x.com/i/status/2110809016142082332"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、9浏览；未实施、未诊断。"],
+    "en": {
+      "title": "A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors",
+      "summary": "A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established.",
+      "description": "Addressing Whirlpool, the author complains that their washer-dryer randomly displays F13 errors and support will not provide an answer. They say they will investigate it with Reverse Engineer Anything and suspect planned obsolescence. The device category, error code and motivation make this a concrete investigation plan, not completed firmware analysis. No model, diagnostic record, firmware, protocol or test is supplied. The user's suspicion is not evidence of manufacturer misconduct, and F13 alone does not establish a root cause or safe repair method. REA is the proposed tool, not evidence that it has been run or the research completed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 9 views; neither implemented nor diagnosed."],
+      "source_labels": ["Whirlpool user's F13/REA investigation proposal"]
+    }
+  },
+  {
+    "id": "pokemon-hgss-multi-agent-decompile-report",
+    "title": "《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。",
+    "description": "一则回复称有人用多个AI Agent分别反编译《宝可梦心金》和《魂银》的片段，再将它们组合，一月内完成，累计约71 billion（710亿）token。帖子特别说这些不是本地模型token，而是Claude/OpenAI API，并称工作得到补贴，约56,000美元是按这些平台API用量估出的假设费用，不是实付账单。未提供开发者身份、仓库、匹配比例、测试或费用计算表，因此游戏范围、完成度、时间和token均保留为二手说法，不能认定clean room、没有使用既有公开成果或已完成可玩移植。本轮另一短讯仅重复心金一月和标价费用，未增加实质证据。REA未确认。",
+    "sources": [{"label": "心金 / 魂银多 Agent、token 与假设费用转述", "url": "https://x.com/i/status/2110816115718824296"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、22浏览；约710亿token、一月和56000美元均未经独立核验。"],
+    "en": {
+      "title": "Pokémon HeartGold/SoulSilver: a secondhand multi-agent decompilation and cost report",
+      "summary": "A reply claims a month and about 71 billion tokens; $56,000 is a hypothetical API list-price estimate for subsidized work, not a paid bill.",
+      "description": "A reply says multiple AI agents separately decompiled chunks of Pokémon HeartGold and SoulSilver and assembled them, finishing in one month with roughly 71 billion tokens. It explicitly distinguishes these from local-model tokens, naming Claude/OpenAI APIs, and says the work was subsidized. Around $56,000 is described as a hypothetical cost estimated from API usage on those platforms, not an actual bill. No developer identity, repository, matching percentage, tests or cost worksheet is supplied. Game scope, completion, time and tokens remain secondhand claims; they do not establish clean-room work, absence of existing public material or a completed playable port. Another short item in this review only repeats HeartGold, a month and the list-price estimate, adding no substantive evidence. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 22 views; roughly 71 billion tokens, one month and $56,000 are not independently verified."],
+      "source_labels": ["Secondhand HeartGold/SoulSilver multi-agent, token and hypothetical-cost report"]
+    }
+  },
+  {
+    "id": "resend-agentic-email-rebuild",
+    "title": "Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。",
+    "description": "作者称自己逆向了邮件开发者服务Resend，并介绍一个替代服务：邮件API、SMTP中继、AI Agent收件箱、自动化、投递护栏、自带SMTP，以及收信能力，声称UI中的所有功能也能给AI调用。其商业主张是每月10万封20美元而非90美元，免费档每月3000封，并称可两分钟迁移、开源可自行运行。帖子只给短链，本次未取得项目名称、兼容接口说明、仓库或投递测试；这些价格、功能、迁移时间和开源属性均为作者宣传，不能当作当前已核验定价或成功投递。没有明确AI用于逆向或使用REA，收录理由是具体面向AI Agent互通的重建相关项目，而不是确认AI已克隆Resend后端。",
+    "sources": [{"label": "作者的 Resend 研究与 Agent 邮件服务介绍", "url": "https://x.com/i/status/2110817677778489400"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、32浏览；78%更便宜为作者口径，未验证计费或服务质量。"],
+    "en": {
+      "title": "A Resend alternative: reported email APIs and inboxes for agents",
+      "summary": "The poster describes an open-source email service after studying Resend, with UI features available to AI; implementation is unverified.",
+      "description": "The author says they reverse engineered developer email service Resend and introduces an alternative with an email API, SMTP relay, AI-agent inboxes, automations, deliverability guardrails, bring-your-own SMTP and incoming email. They claim every UI feature is also available to AI. Commercial claims include 100,000 emails for $20 rather than $90 per month, a free tier of 3,000 per month, two-minute migration and open-source self-hosting. Only a short link is supplied; the project name, compatible-interface documentation, repository and delivery tests were not obtained. Prices, features, migration time and open-source status remain promotional claims, not verified current pricing or successful delivery. Neither AI use in reverse engineering nor REA use is explicit. The entry covers a concrete reconstruction project for AI-agent interoperability, not confirmation that AI cloned Resend's backend.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 32 views; 78% cheaper is the author's claim, without billing or service-quality verification."],
+      "source_labels": ["Author's Resend research and agent-email service introduction"]
+    }
+  },
+  {
+    "id": "two-game-rng-codex-ilspy-report",
+    "title": "两款游戏 RNG：Codex 与 ILSpy 辅助预测跟踪的自述",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称当天研究出两款游戏的随机机制，Codex 不够时再用 ILSpy 搜索。",
+    "description": "一则土耳其语回复中，作者称当天解出了两款游戏的RNG（随机数生成）机制，并做了prediction tracking（预测跟踪）；还说有时Codex也不够，需要用ILSpy反编译再搜索。这里具体工作是游戏内部随机机制研究，且明确包含AI与传统反编译工具的配合，而不是泛指AI很强。帖子没有给游戏名称、随机算法、预测准确率、代码或测试，不能推出已破解线上服务器结果或普遍能够预测随机事件。结果为作者自述，未确认REA，也不猜两个目标的身份。",
+    "sources": [{"label": "作者关于两款游戏 RNG 与 Codex / ILSpy 的回复", "url": "https://x.com/i/status/2110817897706582486"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、34浏览；游戏未命名，准确性未核验。"],
+    "en": {
+      "title": "Two games' RNG: a Codex/ILSpy prediction-tracking report",
+      "summary": "The poster says they investigated two games' random mechanics that day, using ILSpy searches when Codex was insufficient.",
+      "description": "In a Turkish reply, the author says they worked out the RNG, or random-number-generation, mechanics in two games that day and performed prediction tracking. They add that Codex is sometimes insufficient and they must decompile with ILSpy and search. This is concrete investigation of game-internal random mechanics combining AI with a traditional decompiler, rather than generic AI praise. No game names, random algorithm, prediction accuracy, code or tests are given. The account does not establish control over online server outcomes or a general ability to predict random events. Results are author-reported, REA use is unconfirmed and the two targets' identities are not guessed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 34 views; games unnamed and accuracy unverified."],
+      "source_labels": ["Author's reply on two games' RNG and Codex/ILSpy use"]
+    }
+  },
+  {
+    "id": "d2-claude-engine-rebuild-report",
+    "title": "Destiny 社区重建：Claude 反编译 d2 与素材重做的转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。",
+    "description": "本轮候选是一条为社区项目辩护的回复：称项目使用Claude反编译Steam上可下载的d2代码，并在引擎中重新制作素材。为判断d2指向，本轮补读原串：10月15日01:26（北京时间）的根帖呼吁Bungie联系Destiny社区创作者，后续讨论提及WoTM raid。该往期串只用于澄清背景，不算本轮新候选。可保守描述为Destiny社区重建的二手报告，不能确认具体项目名称、复刻范围、代码公开程度或可玩性。回复同时说用了Claude但“0 generative ai”，其意似区分反编译辅助与生成素材；这不是未使用AI的证明，也不据讨论者的法律意见断言合法。没有取得原作者开发说明、仓库或测试，REA未确认。",
+    "sources": [{"label": "本轮读者关于 Claude 反编译与引擎素材重建的回复", "url": "https://x.com/i/status/2110818698109899108"}, {"label": "补查往期 Destiny / Bungie 根帖（只作背景）", "url": "https://x.com/i/status/2110422033662124277"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、16浏览；补查材料保留原始日期，不将回复升级为项目作者确认。"],
+    "en": {
+      "title": "A Destiny community rebuild: reported Claude decompilation and in-engine assets",
+      "summary": "A reader claims Claude-assisted d2 decompilation and recreated assets; the thread supplies Destiny/WoTM context, not validation by the project author.",
+      "description": "The candidate is a reply defending a community project, saying Claude was used to decompile d2 code downloadable on Steam and assets were recreated in-engine. To identify the d2 context, this review read the original thread: its root post at 01:26 Beijing time on October 15 asks Bungie to contact Destiny community creators, and later discussion mentions the WoTM raid. That earlier thread clarifies context only; it is not a new candidate in this window. The supported description is a secondhand Destiny community-rebuild report, without confirmation of the project name, reconstruction scope, source availability or playability. The reply says both that Claude was used and that there was '0 generative ai', apparently distinguishing decompilation assistance from generated assets. This does not prove absence of AI, and commenters' legal opinions do not establish legality. The original developer's account, repository and tests were not obtained. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains its original date and the reply is not treated as project-author confirmation."],
+      "source_labels": ["This window's reader reply on Claude decompilation and in-engine assets", "Earlier Destiny/Bungie root post retrieved for context only"]
+    }
+  },
+  {
+    "id": "itunes-ai-modernization-idea",
+    "title": "iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。",
+    "description": "看到AI软件重建的传播后，作者提出能否同样研究iTunes，并针对现代电脑更新和优化它。其背景是作者认为Apple已放弃这款仍好用的音乐播放器，而寻找旧iPod的用户又在增加。这里可收录的具体idea是保留旧音乐播放器与设备工作流，同时改善现代系统体验；没有报告逆向、实现、协议兼容或设备测试。对Apple放弃及复兴趋势只保留为作者动机，不作独立市场判断。帖子开头称Adobe和Office被AI反编译，但本条不沿用该误归因，也不据此改动ArtCraft既有证据边界。未确认REA。",
+    "sources": [{"label": "作者的 iTunes 现代化研究请求", "url": "https://x.com/i/status/2110820109631766547"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、9浏览；idea，尚无实施。"],
+    "en": {
+      "title": "iTunes: an AI-modernization idea for old-iPod music workflows",
+      "summary": "The poster asks for an AI research and rebuild approach to update iTunes for modern computers and users returning to old iPods.",
+      "description": "After seeing AI software-reconstruction stories, the poster asks whether the approach could be applied to iTunes to update and optimize it for modern computing. Their motivation is a view that Apple abandoned a still-useful music player while interest in old iPods is returning. The concrete idea is preserving an older music-player and device workflow while improving the modern-system experience. No reverse engineering, implementation, protocol compatibility or device testing is reported. Claims about abandonment and renewed popularity remain the author's motivation, not independent market findings. The opening refers to Adobe and Office being decompiled by AI; this entry does not adopt that attribution or alter the existing ArtCraft evidence boundary. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 9 views; an idea without implementation."],
+      "source_labels": ["Author's request for iTunes modernization research"]
+    }
+  },
+  {
+    "id": "opus-own-android-win95-test",
+    "title": "自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。",
+    "description": "作者回复他人时称不需要REA，Opus 5.5会完成逆向并告诉用户需要哪些工具；作为个人依据，称已经逆向一款Android应用和一款旧Windows 95应用，二者都是自己写的，只用于测试。目标自有这一背景有助于理解实验范围，但没有应用名称、功能问题、具体工具、输出或对照测试。不能从作者两次体验推断Opus普遍不需要逆向工具，也不能认定恢复了完整源码或实现功能等价。记录为作者报告的自有样本分析测试，非本合集复跑。",
+    "sources": [{"label": "作者的自有 Android 与 Windows 95 应用测试回复", "url": "https://x.com/i/status/2110820518983000118"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、6浏览；明确自有样本，不提供验证输出。"],
+    "en": {
+      "title": "Self-owned Android/Windows 95 apps: an Opus reverse-engineering test without REA",
+      "summary": "The poster reports testing Opus 5.5 on two of their own applications, without feature details or acceptance records.",
+      "description": "In a reply, the author says REA is unnecessary because Opus 5.5 will perform reverse engineering and identify required tools. As personal evidence, they say they already reverse engineered an Android application and an old Windows 95 application, both their own, purely as tests. Self-owned targets clarify the experiment's scope, but no application names, feature questions, specific tools, output or comparison tests are supplied. Two personal experiences do not establish that Opus generally needs no reverse-engineering tools, nor that complete original source or functional equivalence was recovered. This is an author-reported analysis test on self-owned samples, not a rerun by this collection.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 6 views; explicitly self-owned samples, without validation output."],
+      "source_labels": ["Author's reply on self-owned Android and Windows 95 app tests"]
+    }
+  },
+  {
+    "id": "betting-app-rea-outcome-idea",
+    "title": "博彩 App：用 REA 研究结果机制的假设性提问",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。",
+    "description": "作者以“替朋友问”的口吻，提出能否用REA逆向博彩App来game the outcome，即利用对结果机制的了解取得优势。该提问有具体应用类别和研究目的，但没有目标名称、机制假设、实施或结果；记录为尚未验证的idea，而不是有效预测或操控博彩的案例。客户端逆向是否能看到相关逻辑、结果是否由服务器决定均没有来源，不补写可行路线或成功保证，也不与同轮两款游戏RNG作者报告混为一谈。REA是设想工具，不是已使用证据。",
+    "sources": [{"label": "作者关于 REA 与博彩结果的假设性提问", "url": "https://x.com/i/status/2110822588817510762"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、4浏览；没有实施或结果证据。"],
+    "en": {
+      "title": "Betting apps: a hypothetical REA question about outcome mechanisms",
+      "summary": "The poster asks whether researching betting apps could provide an outcome advantage, without naming a service or establishing feasibility.",
+      "description": "Using an 'asking for a friend' framing, the author asks whether REA could reverse engineer betting apps to 'game the outcome', or obtain an advantage from understanding result mechanisms. The application category and research purpose are concrete, but there is no target name, mechanism hypothesis, implementation or result. It is recorded as an unverified idea, not successful prediction or manipulation of betting. Whether relevant logic is visible in a client or outcomes are decided on a server is not established by the source. No feasible attack route or success guarantee is invented, and this is not conflated with this window's separate two-game RNG author report. REA is the proposed tool, not evidence of actual use.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 4 views; no implementation or outcome evidence."],
+      "source_labels": ["Author's hypothetical question about REA and betting outcomes"]
+    }
   }
 ]

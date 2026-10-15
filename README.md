@@ -4,9 +4,9 @@
 
 **用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
 
-当前收录 **233 个案例与项目**。*最近维护与案例数统计：2026 年 10 月 16 日 00:13；连续已解决材料的案例证据截止：2026 年 10 月 15 日 16:00（北京时间）。*
+当前收录 **252 个案例与项目**。*最近维护与案例数统计：2026 年 10 月 16 日 04:05；连续已解决材料的案例证据截止：2026 年 10 月 15 日 16:00（北京时间）。*
 
-每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次逐条审读 10 月 15 日 20:00 至 16 日 00:00（北京时间，起点不含、终点含）的 146 条候选，并补审 1 条往期来源；新增 30 项、补充 4 项既有记录。仍有 8 条材料待核实，最早来自 10 月 15 日 16:00 开始的窗口，因此连续证据截止保留在 16:00，可判断的较新项目照常收录。检索受关键词与分页边界限制，不代表全网全量；证据截止也不表示所有项目已独立验证。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
+每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次逐条审读 10 月 16 日 00:00 至 04:00（北京时间，起点不含、终点含）的 128 条候选，另补审 8 条往期材料，新增 19 个项目、作者报告与具体 idea；同作者的扫地机器人设想合并两条来源。新材料包括旧手机固件运行到 Wasm、Slipstream 5000 的 Codex 尝试，以及多模型逆向工具。未核验的移植、费用和功能仍明确归因，不将示意演示当作实测。仍有 9 条材料待核实，最早来自 10 月 15 日 16:00 开始的窗口，因此连续证据截止保留在 16:00，可判断的较新项目照常收录。检索受关键词与分页边界限制，不代表全网全量；证据截止也不表示所有项目已独立验证。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向工具。本合集也收录其他 AI 辅助逆向，以及为 AI 工具实现互通的项目。
 
@@ -36,10 +36,10 @@
 
 ## 目录
 
-- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（49）
-- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（57）
-- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（107）
-- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（20）
+- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（55）
+- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（60）
+- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（114）
+- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（23）
 - [贡献案例](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [维护方法](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 分类页保留全部通过筛选的案例、进行中的项目和具体 idea；首页不展开全量清单。`待验证`、`进行中`、`分析测试`、`相关项目`不是已完成或已独立验证的成果。
