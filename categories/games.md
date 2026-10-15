@@ -8,7 +8,7 @@
 - [Urban Terror：把桌面多人射击游戏移植到浏览器](../cases/urban-terror-web.md) — 定位引擎与字节码布局差异，将游戏移植到浏览器。 **[其他 AI 逆向]**
 - [DX-Ball：恢复老打砖块游戏的声像算法](../cases/dx-ball-sound-pan.md) — 还原打砖块游戏按位置分配左右声道的函数。 **[REA]**
 - [《东方幻想乡》：恢复环形弹幕的角度计算](../cases/th04-bullet-ring.md) — 恢复《东方幻想乡》环形弹幕的角度计算。 **[REA]**
-- [东方系列：用 Agent 重建旧游戏，并迁移到新平台](../cases/touhou-reconstruction.md) — 重建东方系列代码，验证并迁移到可玩平台。 **[REA]**
+- [东方系列：用 Agent 重建旧游戏，并迁移到新平台](../cases/touhou-reconstruction.md) — 重建东方系列代码并迁移平台；新增浮点常量漏验的历史修复证据。 **[REA]**
 - [Dinosaur：解释网页跑酷游戏如何逐渐加速](../cases/dinosaur-speed.md) — 读网页脚本，实验验证跑酷游戏的加速规则。 **[REA]**
 - [Unity / Valheim：游戏程序集分析需求](../cases/unity-valheim.md) — 真实游戏分析需求，原游戏目标复测仍缺少证据。 **[REA · 进行中]**
 - [《荒野大镖客 2》：写导出器移入波巴·费特](../cases/boba-fett-rdr2.md) — Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。 **[其他 AI 逆向]**
@@ -37,3 +37,8 @@
 - [《大富翁4》：REA 分析后用 Flutter 重写到 iPhone](../cases/richman4-flutter-iphone.md) — 作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。 **[REA · 待验证]**
 - [IsaacRecomp：把初代 Flash《以撒》带到原生平台](../cases/isaacrecomp-flash-cpp-report.md) — 项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。 **[其他 AI 逆向 · 进行中]**
 - [DOOM / Terraria：Claude Code + REA 的无源码 Mod 实验](../cases/rea-doom-terraria-modding.md) — 作者报告分别给 DOOM 添加无敌等修改、给 Terraria 添加 yeet 模式。 **[REA · 待验证]**
+- [殖民模拟引擎：为 AI 生成世界研究现有游戏的计划](../cases/ai-colony-engine-decompilation-plan.md) — 作者准备反编译现有引擎，为全 3D、可破坏地形的殖民模拟系统研究实现。 **[未确认使用 REA · 进行中]**
+- [Sonic 运动参数：移入 Elden Ring 的 REA Mod 报告](../cases/sonic-physics-elden-ring-rea.md) — 发帖者称从 1991 年二进制提取常数，再在另一游戏重建角色控制器。 **[REA · 待验证]**
+- [Switch《暗黑2》：移到苹果设备的 AI 辅助转述](../cases/diablo2-switch-apple-ai-port-report.md) — 第三方称民间项目在 iPhone、iPad 与 Apple Silicon Mac 原生运行。 **[其他 AI 逆向 · 待验证]**
+- [旧 Flash SWF：反编译后用 AI 重建移动版的 idea](../cases/flash-swf-ai-mobile-rebuild-idea.md) — 从旧 Flash 游戏文件恢复行为，再做移动版；帖子只有建议，没有实现。 **[其他 AI 逆向 · 进行中]**
+- [Spider-Man 摆荡到 GTA V：内部叙述不一致的 REA 报告](../cases/spiderman-gta5-swing-rea-report.md) — 帖子宣称洛圣都内摆荡，步骤却交付 Godot 代码，不能确认真正 GTA Mod。 **[REA · 待验证]**

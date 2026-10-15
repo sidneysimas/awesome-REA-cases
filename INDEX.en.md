@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**181 entries**, organized by use case, without a Top-N or popularity threshold.
+**203 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (35)
-- [Hardware and interoperability](categories/hardware.md) (45)
-- [Applications and clients](categories/apps.md) (88)
-- [Algorithms and feature recovery](categories/algorithms.md) (13)
+- [Games and preservation](categories/games.md) (40)
+- [Hardware and interoperability](categories/hardware.md) (53)
+- [Applications and clients](categories/apps.md) (94)
+- [Algorithms and feature recovery](categories/algorithms.md) (16)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -34,7 +34,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Urban Terror in the browser](cases/urban-terror-web.md) — Resolve engine/bytecode layout differences blocking a WebAssembly port. **[Other AI-assisted work]**
 - [DX-Ball: positional audio function](cases/dx-ball-sound-pan.md) — Recover and verify a single sound-panning function from a classic game. **[REA]**
 - [Touhou TH04: ring-bullet angles](cases/th04-bullet-ring.md) — Explain how Lotus Land Story calculates a ring of bullets. **[REA]**
-- [Touhou reconstruction projects](cases/touhou-reconstruction.md) — Recover old game code, validate it and produce playable platform builds. **[REA]**
+- [Touhou reconstruction projects](cases/touhou-reconstruction.md) — Recover and port old games; historical TH08 issue/PR records also expose and fix an oracle that matched instruction bytes while missing incorrect floating-literal data. Project tests, not independently replayed here. **[REA]**
 - [Dinosaur: the acceleration rule](cases/dinosaur-speed.md) — Inspect and check speed-update logic; a later author reports a local REA/Codex rebuild with a three-version comparison video, not independently verified parity. **[REA]**
 - [Unity/Valheim assemblies](cases/unity-valheim.md) — Real game-analysis requests without a confirmed re-test of the original target. **[REA · In progress]**
 - [Boba Fett in Red Dead Redemption 2](cases/boba-fett-rdr2.md) — Reverse asset formats, write an exporter and adapt a Battlefront II character into a working game mod. **[Other AI-assisted work]**
@@ -63,6 +63,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Richman 4: REA research to a Flutter iPhone rebuild](cases/richman4-flutter-iphone.md) — The author reports a day of REA research and another of Claude-assisted Flutter work, then an iPhone build; completeness and timing are self-reported. **[REA · Needs verification]**
 - [IsaacRecomp: the Flash Binding of Isaac as native C++](cases/isaacrecomp-flash-cpp-report.md) — The project acknowledges AI assistance, translates game logic and reads assets from the user's original copy; frame-rate and port claims are not independently tested here. **[Other AI-assisted work · In progress]**
 - [DOOM and Terraria: reported no-source mod experiments](cases/rea-doom-terraria-modding.md) — An author credits Claude Code and REA with DOOM cheats in 7m35s and a Terraria yeet mode in 7m57s; mechanisms and outcomes remain author-reported. **[REA · Needs verification]**
+- [A colony-simulation engine: a decompilation research plan](cases/ai-colony-engine-decompilation-plan.md) — The author plans to inspect existing engines for an AI-generated, destructible 3D colony world; no completed analysis or confirmed REA use is reported. **[REA use unconfirmed · In progress]**
+- [Sonic physics in Elden Ring: an unverified REA mod report](cases/sonic-physics-elden-ring-rea.md) — A poster claims to extract 1991 movement constants and rebuild a controller in another game; the supplied numbers and 40-minute result lack replayable evidence. **[REA · Needs verification]**
+- [Switch Diablo II on Apple devices: an AI-assisted port claim](cases/diablo2-switch-apple-ai-port-report.md) — A secondary post describes native iPhone, iPad and Apple Silicon support, but supplies no identifiable project or validation record; AI involvement remains attributed to that post. **[Other AI-assisted work · Needs verification]**
+- [Old Flash SWFs: an AI-assisted mobile-rebuild idea](cases/flash-swf-ai-mobile-rebuild-idea.md) — A proposal to decompile an old Flash game and rebuild it for mobile; no named game, implementation or distribution authorization is established. **[Other AI-assisted work · In progress]**
+- [Spider-Man swinging in GTA V: an internally inconsistent REA claim](cases/spiderman-gta5-swing-rea-report.md) — The post claims a GTA mod but ends with a Godot implementation workflow; only the specific swing-reconstruction claim is recorded, not a confirmed GTA integration. **[REA · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -109,8 +114,16 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Hailo: a planned agent-assisted reverse-engineering run](cases/hailo-agent-reverse-plan.md) — A poster plans Hailo research alongside Raspberry Pi agent-environment work; no device model, method or result is reported. **[REA use unconfirmed · In progress]**
 - [Wyze scale: weight data in a custom iOS app](cases/wyze-scale-custom-ios.md) — An author credits Claude with investigating a Wyze scale and enabling a personal iOS client with reminders and graphs; protocol and code are not public. **[Other AI-assisted work · Needs verification]**
 - [Tuya AC: local Mac controls exposed to Claude over MCP](cases/tuya-ac-mac-claude-mcp.md) — An author reports a cloud-free Wi-Fi menu-bar controller and MCP bridge for Claude; AI participation in the original protocol research is not established. **[REA use unconfirmed · Needs verification]**
-- [A HyperOS monitor: exploring exposed control services](cases/hyperos-monitor-ai-research.md) — A poster discusses DDC/CI and exposed services on their HyperOS monitor as an AI-research path; no model, command or working controller is reported. **[Other AI-assisted work · In progress]**
+- [A HyperOS monitor: exploring exposed control services](cases/hyperos-monitor-ai-research.md) — Binaryify's earlier HyperOS/DDC-CI investigation is now accompanied by a secondary report of an Opus-assisted Xiaomi monitor controller; model, protocol and input switching remain unverified. **[Other AI-assisted work · In progress]**
 - [Mi Health: timestamp repair and a cloud-data exporter](cases/mi-health-data-exporter.md) — An AI-analysis scare prompted database and miothealth protocol research; the public exporter documents login and pagination limits. Wearable data does not establish medical diagnoses. **[REA use unconfirmed · In progress]**
+- [ScanSnap iX500: a Claude-assisted replacement Mac app](cases/scansnap-ix500-claude-mac.md) — After ScanSnap Home stopped working on macOS 27, the author reports an evening-built app with Wi-Fi scanning, hardware-button support, OCR and blank-page removal; not independently tested. **[Other AI-assisted work · Needs verification]**
+- [iriver E30: personalizing an unsupported player's main screen](cases/iriver-e30-main-screen.md) — The author reports ongoing reverse engineering to change the main screen, with an AI-personalization outlook but no specified AI workflow or completed firmware result. **[REA use unconfirmed · In progress]**
+- [A radiator-control app bridged to Home Assistant with AI](cases/radiator-app-home-assistant-ai.md) — A poster reports AI-assisted app analysis and a working Home Assistant integration in ten minutes; device identity, protocol and validation are not supplied. **[Other AI-assisted work · Needs verification]**
+- [WHOOP and Zhoop: an iPhone data path for a health agent](cases/whoop-noop-zhoop-ios.md) — A secondary report says Guru adapted NOOP's Bluetooth work into Zhoop after cancelling a subscription; protocol authorship and later AI-agent integration are kept distinct. **[REA use unconfirmed · Needs verification]**
+- [Ricoh GXR: an idea for modern GR recipes in old firmware](cases/ricoh-gxr-modern-gr-recipes-idea.md) — Inspired by REA, a poster proposes new GXR firmware with modern GR imaging recipes; no analysis, flashing result or actual REA use is shown. **[REA use unconfirmed · In progress]**
+- [Watch5 Pro: a reported Claude/REA health-sensor app](cases/watch5-pro-rea-health-app.md) — A poster says Claude used REA on a Watch5 Pro and added an app for health sensors used by Samsung Health; access methods, sensor scope and accuracy are unspecified. **[REA · Needs verification]**
+- [QUICKSURFACE AI: announced scan-to-parametric-CAD automation](cases/quicksurface-ai-scan-parametric-cad.md) — An announcement schedules AI-assisted geometry reconstruction for November 17 within Pro 2027; it is a product preview, not a tested one-click result or software decompilation. **[Other AI-assisted work · Related project]**
+- [Humidity readings through an agent-built Bluetooth app](cases/bluetooth-humidity-agent-app.md) — Kai reports an app produced by agent-led Bluetooth analysis and uses readings to compare humidifier operation; device identity, protocol ownership and control capabilities remain unspecified. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -202,6 +215,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Roko Input: Apple on-device dictation after Typeless research](cases/rokoinput-apple-local-voice.md) — The author credits REA research; public source uses Apple speech APIs, stops without on-device support, and retains plaintext history by default. Personal non-commercial license; not independently tested. **[REA · In progress]**
 - [ReaCut: an independent editor informed by Jianying research](cases/reacut-jianying-open-editor.md) — Public research separates observed app behavior from original implementation; project validation reports real exports and plugin tests while retaining signing, CI, host and platform limitations. **[REA · In progress]**
 - [REA and archify: interactive architecture diagrams](cases/rea-archify-diagrams.md) — An author describes converting REA findings into typed diagram data and interactive HTML using archify; unnamed targets and diagram output do not establish a successful app rebuild. **[REA · Related project]**
+- [macOS Notes: a reported REA-assisted SwiftUI rebuild](cases/apple-notes-rea-swiftui-rebuild.md) — A secondary account describes a three-pane app with folders, search, pinning and delete/restore interactions; it supplies no reproducible test or Apple sync implementation. **[REA · Needs verification]**
+- [Nuke, Houdini and Gurobi: an AI/Ghidra replacement idea](cases/industrial-tools-ai-ghidra-rebuild-idea.md) — A poster proposes studying named creative and optimization tools to build low-cost alternatives; there is no executed analysis, implementation or performance evidence. **[Other AI-assisted work · In progress]**
+- [reverse-skill: investigation workflows for coding agents](cases/reverse-skill-agent-workflows.md) — A post introduces a skill for selecting tools and steps across APKs, frontend code and firmware; no public implementation or sample validation was checked. **[REA use unconfirmed · Related project]**
+- [A booking funnel investigated and rebuilt as a personal calendar](cases/booking-funnel-rea-calendar.md) — The author reports Claude/REA inspection of frontend booking rules and an API, followed by a shareable calendar app; no backend access or independent scheduling tests are supplied. **[REA · Needs verification]**
+- [Lotus SmartSuite: an AI-assisted Linux revival idea](cases/lotus-smartsuite-linux-revival-idea.md) — A poster proposes reviving the discontinued office suite as modern Linux applications; no version, analyzed module or working port is reported. **[Other AI-assisted work · In progress]**
+- [REA with local Qwen and pi: multi-target commercial-software tests](cases/rea-local-qwen-commercial-analysis-tests.md) — The author lists Aspose, CData, Hopper demo and interface-algorithm investigations without reproducible validation; Hopper reportedly still displays demo, so success is not inferred. **[REA · Analysis test]**
 
 ### Algorithms and feature recovery
 
@@ -218,6 +237,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A license-compliance comparison during reverse engineering](cases/agent-reverse-license-test.md) — A poster reports different Codex/Luna and Claude/Sonnet behavior under a no-reverse-engineering license; no replayable protocol establishes a general model-level conclusion. **[Other AI-assisted work · Analysis test]**
 - [A legacy binary: an agent invents nonexistent APIs](cases/legacy-binary-agent-api-hallucination.md) — A poster recalls an agent hallucinating APIs while reading decompiler output; the unnamed experiment did not establish that REA was used or fixed the problem. **[Other AI-assisted work · Analysis test]**
 - [Humans versus agents in software reverse engineering](cases/humans-machines-sre-study.md) — A nine-model, two-task IDA study reports human-competitive understanding for stronger agents and studies context saturation over 4,000 binaries; findings are paper-reported, not rerun here. **[Other AI-assisted work · Analysis test]**
+- [A thermofluid equation solver: ongoing REA/Opus work](cases/rea-thermofluid-equation-solver.md) — The author reports near-finished equation-solver and mobile/web RTS projects using T3 Code, Opus and REA; a five-hour-to-five-minute simulation claim has no comparable benchmark or accuracy evidence. **[REA · In progress]**
+- [An image editor's presets: an AI-study idea](cases/image-presets-ai-study-idea.md) — A perpetual-license customer asks about studying an unnamed editor's presets with AI for personal learning; neither completed analysis nor authorization is established. **[Other AI-assisted work · In progress]**
+- [Windows graphics startup: an agent-swarm profiling idea](cases/windows-graphics-startup-ai-profile-idea.md) — A reply proposes decompiling system DLLs to investigate D3D11 device creation and initial DirectWrite rasterization; the earlier author's bottleneck report is context, not completed AI optimization. **[Other AI-assisted work · In progress]**
 
 ## Contributing and selection
 

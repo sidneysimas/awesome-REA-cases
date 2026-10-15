@@ -45,5 +45,13 @@
 - [Hailo：启动 Agent 辅助逆向研究的计划](../cases/hailo-agent-reverse-plan.md) — 作者准备开展 Hailo 逆向，并并列提到 Raspberry Pi Agent 环境开发。 **[未确认使用 REA · 进行中]**
 - [Wyze 体重秤：让自制 iOS App 接收称重数据](../cases/wyze-scale-custom-ios.md) — 作者称 Claude 研究秤后做出个人客户端，带提醒与图表。 **[其他 AI 逆向 · 待验证]**
 - [涂鸦空调：从 Mac 菜单栏和 Claude 本地调温](../cases/tuya-ac-mac-claude-mcp.md) — 研究空调本地控制，做 Wi-Fi 菜单栏客户端，再以 MCP 接给 Claude。 **[未确认使用 REA · 待验证]**
-- [澎湃 OS 显示器：探索暴露服务的控制路线](../cases/hyperos-monitor-ai-research.md) — 作者讨论先检查 DDC/CI，再研究自家智能显示器暴露的端口和服务。 **[其他 AI 逆向 · 进行中]**
+- [澎湃 OS 显示器：探索暴露服务的控制路线](../cases/hyperos-monitor-ai-research.md) — Binaryify 的显示器服务研究新增 Opus 辅助控制软件转述，仍缺实机验收。 **[其他 AI 逆向 · 进行中]**
 - [小米运动健康：校正数据库时间戳并制作云端导出器](../cases/mi-health-data-exporter.md) — 从 AI 误读健康记录追到导出时区错误，再研究 miothealth 同步与签名。 **[未确认使用 REA · 进行中]**
+- [ScanSnap iX500：官方应用失效后用 Claude 做 Mac 扫描端](../cases/scansnap-ix500-claude-mac.md) — 作者称为旧扫描仪重建 Wi-Fi 扫描、实体按钮、OCR 与空白页处理。 **[其他 AI 逆向 · 待验证]**
+- [iriver E30：为停支持的播放器修改主屏](../cases/iriver-e30-main-screen.md) — 作者报告正在逆向旧播放器，以定制主屏；AI 参与方式未具体说明。 **[未确认使用 REA · 进行中]**
+- [散热器控制 App：AI 逆向后接入 Home Assistant 的报告](../cases/radiator-app-home-assistant-ai.md) — 作者称 AI 分析设备控制应用，使家中散热器能由 Home Assistant 使用。 **[其他 AI 逆向 · 待验证]**
+- [WHOOP / Zhoop：保留手环，用自己的 iPhone 应用读数据](../cases/whoop-noop-zhoop-ios.md) — 转述 Guru 沿用 NOOP 蓝牙逆向实现，制作健康 Agent 的 iPhone 数据入口。 **[未确认使用 REA · 待验证]**
+- [Ricoh GXR：把现代 GR recipe 带进旧相机固件的 idea](../cases/ricoh-gxr-modern-gr-recipes-idea.md) — 作者受 REA 热潮启发，希望为旧相机加入现代成像配方。 **[未确认使用 REA · 进行中]**
+- [Watch5 Pro：用 Claude + REA 添加健康传感器应用的报告](../cases/watch5-pro-rea-health-app.md) — 作者称研究手表后安装自有应用，使用 Samsung Health 所用传感器。 **[REA · 待验证]**
+- [QUICKSURFACE AI：从 3D 扫描恢复参数 CAD 的产品预告](../cases/quicksurface-ai-scan-parametric-cad.md) — 公告称将随 Pro 2027 提供扫描到可编辑模型的 AI 自动化，尚未验证。 **[其他 AI 逆向 · 相关项目]**
+- [湿度读数：Agent 逆向蓝牙协议后制作个人 App](../cases/bluetooth-humidity-agent-app.md) — 作者用读数比较加湿方式，并称应用完全由 Agent 研究蓝牙协议制作。 **[其他 AI 逆向 · 待验证]**

@@ -15,3 +15,6 @@
 - [禁止逆向的许可：一次 Codex 与 Claude 行为对照](../cases/agent-reverse-license-test.md) — 作者测试 Agent 是否尊重禁止逆向条款，报告两组工具表现不同。 **[其他 AI 逆向 · 分析测试]**
 - [旧二进制：Agent 读反编译输出时编造 API 的失败报告](../cases/legacy-binary-agent-api-hallucination.md) — 作者回忆一次旧程序分析，Agent 自信引用实际不存在的接口。 **[其他 AI 逆向 · 分析测试]**
 - [人类与 Agent：两项静态逆向任务及上下文扩展性研究](../cases/humans-machines-sre-study.md) — 论文比较九个模型与人类理解二进制的表现，并分析4000个程序的上下文饱和。 **[其他 AI 逆向 · 分析测试]**
+- [热工与流体力学求解器：REA + Opus 的进行中重建报告](../cases/rea-thermofluid-equation-solver.md) — 作者称用 T3 Code、Opus 与 REA 推进求解器，同时开发移动/web RTS。 **[REA · 进行中]**
+- [旧图片处理软件：用 AI 学习预设与处理方法的 idea](../cases/image-presets-ai-study-idea.md) — 永久权益用户希望研究自己所购软件的图片预设，仍在询问许可边界。 **[其他 AI 逆向 · 进行中]**
+- [Windows 图形启动：用 Agent 群反编译与剖析系统 DLL 的 idea](../cases/windows-graphics-startup-ai-profile-idea.md) — 针对 D3D11 创建设备和 DirectWrite 首次字形栅格化瓶颈提出逆向优化建议。 **[其他 AI 逆向 · 进行中]**

@@ -107,6 +107,10 @@
       {
         "label": "本窗口第三方长文转述（非项目作者确认）",
         "url": "https://x.com/i/status/2110232535880094082"
+      },
+      {
+        "label": "10月15日本窗口：早期错误实现与精确oracle的二手复盘",
+        "url": "https://x.com/i/status/2110679520772849745"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -114,7 +118,8 @@
       "热度：6,385 赞｜70.3 万浏览｜204 转发",
       "发帖：10 月 1 日｜非 REA",
       "补充：验收器完整性与指令刷新；核对原作者公开复盘",
-      "补充证据：第三方转述 14+ agents、约三个月、99% 函数入库及 83% 逐字节一致；非项目作者确认，未独立核验。"
+      "补充证据：第三方转述 14+ agents、约三个月、99% 函数入库及 83% 逐字节一致；非项目作者确认，未独立核验。",
+      "10月15日16:00–20:00窗口的新综述补充早期表象与逻辑的区别：称菜单、地图能加载时，仍存在编造逻辑、结构布局错误及把全局配置读取改为哈希表的问题；随后用原编译器逐函数编译并比较字节，替代依赖工作Agent说明的审阅。此为Maurice复盘的二手摘要，不是本轮运行证据；文中600–700B tokens及14 Luna/2 Opus属于其口径，不能无说明覆盖旧记录的17 Agent，也不归功于REA。"
     ],
     "en": {
       "title": "Modern Warfare 2: multi-agent decompilation",
@@ -491,7 +496,7 @@
     "title": "东方系列：用 Agent 重建旧游戏，并迁移到新平台",
     "category": "games",
     "rea": "REA",
-    "summary": "重建东方系列代码，验证并迁移到可玩平台。",
+    "summary": "重建东方系列代码并迁移平台；新增浮点常量漏验的历史修复证据。",
     "description": "Touhou Reconstruction Factory 是 N0zoM1z0 将多个东方游戏重建项目的工具与工作流程整理到一起的项目。TH08 指《东方永夜抄》（Imperishable Night）；原材料里的另一个代号是 TH095，即《东方文花帖》（Shoot the Bullet），不是 TH09；TH04 则是《东方幻想乡》。这些都是东方 Project 的游戏。作者用 Agent 分析原可执行文件，逐函数恢复 C++，再编译并对照原二进制，目标是得到可运行、可继续维护的代码。项目记录中，TH08 已有 Linux 和浏览器可玩版本；TH095 已有可玩的 Windows 重建版；TH04 的 DOS 版有作者人工游戏测试记录，现代 64 位移植仍在开发。TH08 延续了 GensokyoClub 的已有工作，TH04 参考了 ReC98；历史项目也使用专用工具，不能把全部成果都归因于 REA。\n\n\n\n2026-10-14 的第三方长文综述另称，TH08 项目 1,107 个游戏自身函数中有 1,106 个与原版机器码一致；同文指出这项约两周的工作接续此前人工研究，且另有 1,119 个库函数仅 260 个达到相同标准，整个可执行文件并未精确还原。这是第三方转述，非项目作者在该帖的直接确认；不将全部成果归因于 REA。",
     "sources": [
       {
@@ -517,15 +522,29 @@
       {
         "label": "第三方长文综述：TH08 对照数据（转述，非项目作者确认）",
         "url": "https://x.com/i/status/2110211900051210691"
+      },
+      {
+        "label": "本窗口教程：TH08浮点常量漏验提醒",
+        "url": "https://x.com/i/status/2110683568644964737"
+      },
+      {
+        "label": "9月2日原始问题：自动收集阈值及oracle缺口（本轮追溯）",
+        "url": "https://github.com/N0zoM1z0/th08/issues/10"
+      },
+      {
+        "label": "9月2日已合并修复：全局浮点引用核验（本轮追溯）",
+        "url": "https://github.com/N0zoM1z0/th08/pull/13"
       }
     ],
     "snapshot_date": "2026-10-12",
     "metadata": [
-      "第三方综述转述（2026-10-14）：报告 TH08 游戏函数机器码匹配情况；非项目作者直接确认。"
+      "第三方综述转述（2026-10-14）：报告 TH08 游戏函数机器码匹配情况；非项目作者直接确认。",
+      "10月15日本窗口教程称128.0写成0.0仍通过字节检查。本轮追溯读取REA证据文档及TH08 issue #10、已合并PR #13：9月2日记录表明，ItemManager::OnUpdate自动收集条件误用0.0；比较器回放重定位地址，却未校验所指浮点数据，因而指令字节匹配仍可掩盖语义错误。这不是浮点容差问题。",
+      "PR #13项目记录称核查1548个浮点引用，另修正5个函数中12个旧引用，并为无显式data_hex的32/64位浮点重定位自动检查。它记录了故意错误声明测试与1106/1106冷重放通过；本合集只读历史issue/PR与文档，没有重跑编译器或游戏。9月历史修复是本轮补证，不冒充当前窗口新完成成果。"
     ],
     "en": {
       "title": "Touhou reconstruction projects",
-      "summary": "Recover old game code, validate it and produce playable platform builds."
+      "summary": "Recover and port old games; historical TH08 issue/PR records also expose and fix an oracle that matched instruction bytes while missing incorrect floating-literal data. Project tests, not independently replayed here."
     },
     "status": "case"
   },
@@ -637,11 +656,15 @@
     "category": "apps",
     "rea": "REA",
     "summary": "有 REA 复刻流程，但没有证明恢复付费指标。",
-    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，因此按待验证的功能重建报告收录。",
+    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，因此按待验证的功能重建报告收录。10月15日16:00–20:00窗口另一帖声称重建个人量化终端，具体列出从公开界面观察切换品种、周期、指标、画线和布局，再用 Opus 5.5 写规格、重建蜡烛图、RSI、MACD、布林带、观察列表及计入费用、滑点和回撤的回测引擎。这些是更具体的目标与作者成功宣称，不是可重放的测试证据；候选未提供代码或对照结果，不能把标准技术指标列表当作恢复付费指标的证明，更不采纳获利保证。",
     "sources": [
       {
         "label": "原始记录",
         "url": "https://x.com/RohOnChain/status/2109347169316839434"
+      },
+      {
+        "label": "10月15日量化终端目标与流程宣称",
+        "url": "https://x.com/i/status/2110692386854555977"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -728,6 +751,10 @@
       {
         "label": "第三方帖子：称 PhotoCraft 使用 REA 工作流（发帖者身份未确认，非项目作者确认）",
         "url": "https://x.com/i/status/2110249246138245143"
+      },
+      {
+        "label": "10月15日本窗口的格式规范与验证流程转述",
+        "url": "https://x.com/i/status/2110655957436965228"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -738,7 +765,8 @@
       "PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发",
       "补充发帖：2026-10-13T05:58:20+08:00（北京时间）",
       "补充证据：第三方具体使用反馈；未独立运行软件。",
-      "2026-10-14：第三方帖子称 PhotoCraft 使用 REA 类逆向工作流；发帖者身份未确认，非项目作者确认，未独立核验。"
+      "2026-10-14：第三方帖子称 PhotoCraft 使用 REA 类逆向工作流；发帖者身份未确认，非项目作者确认，未独立核验。",
+      "10月15日16:00–20:00窗口补充：新传播帖将公开PSD/Office规范、观察按钮行为、与Photoshop渲染逐像素比较列为重建路线，并声称自行实现视频编解码器。公开规范与从零实现不等于反编译Adobe；像素验证和编解码范围仍为该帖转述，不将其扩大为全部套件兼容、法律保证或本合集测试。其星数宣传不作为新热度快照。"
     ],
     "en": {
       "title": "ArtCraft: not proven Adobe or Office reverse engineering",
@@ -1321,11 +1349,19 @@
     "status": "in-progress",
     "rea": "REA",
     "summary": "研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。",
-    "description": "Hars 正让帖子中称为 Astra、配置为 xHigh 的模型，配合 REA 研究 Codex 的 CuA（电脑操作）、应用内浏览器、Chrome 快照导入及浏览器扩展。目标是让另一模型（原帖称 5.6 Luna Low）在 Hermes 一类 Agent 框架中获得相近的电脑操作能力。这是明确的互通研究任务；这些模型代号沿用作者用语，帖子仍在询问方案是否可行，未报告完成。",
+    "description": "Hars 正让帖子中称为 Astra、配置为 xHigh 的模型，配合 REA 研究 Codex 的 CuA（电脑操作）、应用内浏览器、Chrome 快照导入及浏览器扩展。目标是让另一模型（原帖称 5.6 Luna Low）在 Hermes 一类 Agent 框架中获得相近的电脑操作能力。这是明确的互通研究任务；这些模型代号沿用作者用语，帖子仍在询问方案是否可行，未报告完成。10月15日本窗口，另一位用户 @sigaoed 报告将 Codex computer-use MCP 给 Claude 使用时遇到进程签名限制，计划用 REA 研究并 fork。补查父串确认具体互通目标；另一用户回复称自己仍能使用，说明不是已证实的普遍限制。后者是独立用户的待尝试方案，不将其说成 Hars 的进度，也不确认已有可用 fork 或签名绕过实现。父串10月15日01:01的建议是追溯背景，不是本窗口新增候选。",
     "sources": [
       {
         "label": "本周期公开来源",
         "url": "https://x.com/thisishars/status/2109461719789735948"
+      },
+      {
+        "label": "本窗口另一用户的MCP签名限制与REA计划",
+        "url": "https://x.com/i/status/2110692783375757778"
+      },
+      {
+        "label": "此前父串：Codex电脑操作MCP供Opus使用（背景）",
+        "url": "https://x.com/i/status/2110415588438733222"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -3418,6 +3454,10 @@
       {
         "label": "本轮第三方架构与功能主张",
         "url": "https://x.com/i/status/2110634488938275080"
+      },
+      {
+        "label": "10月15日本窗口：修改副本、撤销和工具链介绍",
+        "url": "https://x.com/i/status/2110655118282781161"
       }
     ],
     "snapshot_date": "2026-10-14",
@@ -3426,7 +3466,8 @@
       "未确认使用 REA。",
       "2026-10-15：作者称 Eleven 发布重大更新；具体分析效果及 REA 使用未由该帖确认。",
       "本轮补充两篇第三方介绍：称底层Ghidra、LLDB与REA，前台GPUIX，通过ACP/MCP让Agent操作控制流和反编译视图，并宣称Metal shader及端侧模型分析。这些不是本合集代码核验；REA字段仍保留unknown，不能仅凭转述确认作者实现。",
-      "本轮第一篇传播快照（2026-10-15）：98赞｜7668浏览｜16转发；与旧作者帖指标分开。"
+      "本轮第一篇传播快照（2026-10-15）：98赞｜7668浏览｜16转发；与旧作者帖指标分开。",
+      "10月15日16:00–20:00新介绍称Ghidra经REA调用、亦支持Rizin，Android使用jadx；同时强调修改可撤销、补丁写入副本不覆盖原文件。补充其编辑安全边界的产品主张，未由本合集代码检查确认，不能作为绝无副作用保证；REA字段继续unknown。"
     ],
     "en": {
       "title": "Eleven: agent-assisted analysis of apps and binaries",
@@ -4048,9 +4089,9 @@
     "rea": "other-ai",
     "summary": "补查LASRecomp公开项目，确认Switch版本与Claude Code自述，保留beta与崩溃边界。",
     "description": "原综述称《织梦岛》几乎全靠Claude Code重编译到PC。10月15日14:17候选补充LASRecomp项目名及特殊操作会崩溃的边界。随后补查peiikai/LASRecomp公开README，确认目标为2019年Switch版v1.0.0，项目自称静态重编译为Windows、macOS和Linux原生应用；作者明确称几乎全部代码、工具、逆向和文档由Claude Code完成，人类指挥、测试和审阅。当前为beta：macOS限Apple Silicon，Linux ARM标实验且未实机测试，已列出查看特定梳妆台和返回标题界面会崩溃等问题。项目不含游戏文件、素材或字体，需用户合法提供原作。本合集未编译或运行，不量化AI贡献比例、不保证完整行为对等；保留已有ID与早期来源，公开文档是本轮追溯补证。",
-    "sources": [{"label": "早期游戏移植综述分享帖", "url": "https://x.com/i/status/2110565293802274865"}, {"label": "本轮LASRecomp转述与崩溃边界", "url": "https://x.com/i/status/2110615951075168686"}, {"label": "公开项目说明与已知问题（10月15日补查）", "url": "https://github.com/peiikai/LASRecomp"}],
+    "sources": [{"label": "早期游戏移植综述分享帖", "url": "https://x.com/i/status/2110565293802274865"}, {"label": "本轮LASRecomp转述与崩溃边界", "url": "https://x.com/i/status/2110615951075168686"}, {"label": "公开项目说明与已知问题（10月15日补查）", "url": "https://github.com/peiikai/LASRecomp"}, {"label": "10月15日18:04帧率及分辨率设置转述", "url": "https://x.com/i/status/2110673058986066332"}],
     "snapshot_date": "2026-10-15",
-    "metadata": ["本轮转述快照：144赞｜24723浏览｜16转发；公开README确认项目及AI自述，未独立运行。"],
+    "metadata": ["本轮转述快照：144赞｜24723浏览｜16转发；公开README确认项目及AI自述，未独立运行。", "10月15日18:04新转述称锁60 FPS、内部渲染最高4倍、超过60帧会出问题。本轮重读公开README仅确认可调内部渲染与beta/崩溃限制，未从该文档确认60 FPS或4倍上限；精确值保持转述口径，不当作当前跨平台实测。"],
     "en": {"title": "Link's Awakening: the Claude-assisted LASRecomp project", "summary": "The public project identifies Switch v1.0.0 and credits Claude Code with most work; the beta documents platform limits and reproducible crash triggers, not independently tested here."}
   },
   {
@@ -4202,12 +4243,12 @@
     "category": "hardware",
     "rea": "other-ai",
     "status": "in-progress",
-    "summary": "作者讨论先检查 DDC/CI，再研究自家智能显示器暴露的端口和服务。",
-    "description": "在如何用AI研究显示器的讨论中，作者建议先看DDC/CI这种显示器控制接口，不支持再看设备是否暴露其他服务，并说自己的显示器内置澎湃OS，恰好有端口和服务。这是围绕自有设备的具体研究路径，未给出型号、协议、已执行的控制命令或结果。作者认为模型本身可能够用，未确认REA实际参与；有关工具可能导致降级或封号的说法未作为事实采用。",
-    "sources": [{"label": "作者设备研究回复", "url": "https://x.com/i/status/2110622119419838752"}],
+    "summary": "Binaryify 的显示器服务研究新增 Opus 辅助控制软件转述，仍缺实机验收。",
+    "description": "Binaryify（@binaryify）在如何用AI研究显示器的讨论中，建议先检查DDC/CI控制接口，不支持再看暴露的服务，并说自己的显示器内置澎湃OS，恰好开放端口和服务。10月15日16:00–20:00窗口的第三方帖进一步指名 Binaryify：称小米显示器不支持DDC/CI，BetterDisplay无法切换输入源，于是配合Opus 5.5研究设备并制作专属控制软件。补查旧原帖确认其作者确为Binaryify，因此追加同一目标而不另建条目。工作软件与输入源切换动机来自第三方转述；仍没有型号、协议、代码或实机验收，不把“专属软件”扩大为已验证的所有控制能力。作者此前认为模型本身可能够用，REA未确认，有关降级或封号的观点不作为技术事实。",
+    "sources": [{"label": "作者设备研究回复", "url": "https://x.com/i/status/2110622119419838752"}, {"label": "本窗口Binaryify小米显示器控制软件转述", "url": "https://x.com/i/status/2110657740364529992"}],
     "snapshot_date": "2026-10-15",
-    "metadata": ["探索中；未报告可用控制客户端。"],
-    "en": {"title": "A HyperOS monitor: exploring exposed control services", "summary": "A poster discusses DDC/CI and exposed services on their HyperOS monitor as an AI-research path; no model, command or working controller is reported."}
+    "metadata": ["旧原帖为探索路径；本窗口新增专属客户端的第三方报告，未独立核验。"],
+    "en": {"title": "A HyperOS monitor: exploring exposed control services", "summary": "Binaryify's earlier HyperOS/DDC-CI investigation is now accompanied by a secondary report of an Opus-assisted Xiaomi monitor controller; model, protocol and input switching remain unverified."}
   },
   {
     "id": "rea-notes-export-walkthrough",
@@ -4351,5 +4392,225 @@
     "snapshot_date": "2026-10-15",
     "metadata": ["原source window：10月15日08:00–12:00；本轮补审，不冒充新抓取。"],
     "en": {"title": "REA and archify: interactive architecture diagrams", "summary": "An author describes converting REA findings into typed diagram data and interactive HTML using archify; unnamed targets and diagram output do not establish a successful app rebuild."}
+  },
+  {
+    "id": "ai-colony-engine-decompilation-plan",
+    "title": "殖民模拟引擎：为 AI 生成世界研究现有游戏的计划",
+    "category": "games", "rea": "unknown", "status": "in-progress",
+    "summary": "作者准备反编译现有引擎，为全 3D、可破坏地形的殖民模拟系统研究实现。",
+    "description": "@Promptmethus 称自己正在构建面向 AI 生成居民和世界的殖民模拟系统，希望玩家能进入全 3D、可破坏地形的世界生存。他说已下载反编译与逆向工具，并有本地 GPU，下一步准备打开既有游戏引擎、观察精确代码，以了解实现方式。原帖将一个目标写作“room world”，未给出正式项目名、版本或二进制，不将该拼写自行校正为已确认的目标。这里收录的是有具体用途的研究计划；未报告已经完成反编译，也未说明 AI 实际参与了哪一步分析，更未确认 REA。",
+    "sources": [{"label": "本窗口作者研究计划", "url": "https://x.com/i/status/2110642225361371219"}],
+    "snapshot_date": "2026-10-15", "metadata": ["工具准备与开发愿景，不是已完成的引擎重建。"],
+    "en": {"title": "A colony-simulation engine: a decompilation research plan", "summary": "The author plans to inspect existing engines for an AI-generated, destructible 3D colony world; no completed analysis or confirmed REA use is reported."}
+  },
+  {
+    "id": "scansnap-ix500-claude-mac",
+    "title": "ScanSnap iX500：官方应用失效后用 Claude 做 Mac 扫描端",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "作者称为旧扫描仪重建 Wi-Fi 扫描、实体按钮、OCR 与空白页处理。",
+    "description": "Jonas Wagner（@jonaswagnr）长期用 ScanSnap iX500 维持无纸化工作流，报告 ScanSnap Home 在 macOS 27 上失效，连带使设备无法按原方式使用。他称花一个晚上用 Claude Code 制作自己的 Mac 应用，支持 Wi-Fi 扫描、机身按钮、OCR 文字识别和去掉空白页，明确把它介绍为自己的逆向作品。补查原作者串确认身份，但未找到对 Wi-Fi/USB 抓取方法的作者答复；不能补写协议细节、源码许可或更多型号兼容性。时间和功能均是作者自述，本合集没有运行设备或独立验收。",
+    "sources": [{"label": "作者原帖与后续讨论", "url": "https://x.com/i/status/2110647905027604700"}],
+    "snapshot_date": "2026-10-15", "metadata": ["本窗口候选快照：2赞｜52浏览；一晚为作者报告，不是测得工时。"],
+    "en": {"title": "ScanSnap iX500: a Claude-assisted replacement Mac app", "summary": "After ScanSnap Home stopped working on macOS 27, the author reports an evening-built app with Wi-Fi scanning, hardware-button support, OCR and blank-page removal; not independently tested."}
+  },
+  {
+    "id": "sonic-physics-elden-ring-rea",
+    "title": "Sonic 运动参数：移入 Elden Ring 的 REA Mod 报告",
+    "category": "games", "rea": "REA", "status": "unverified",
+    "summary": "发帖者称从 1991 年二进制提取常数，再在另一游戏重建角色控制器。",
+    "description": "发帖者说用 REA + Opus 5.5 研究 1991 年 Sonic 二进制里的角色运动，并将旋转冲刺、收集金环和速度显示接入 Elden Ring。他列出最高速度 $0600、跳跃 $0680、重力 $0038，声称关键手感可归为六个数字，约40分钟完成。帖子建议先定位原游戏运动函数，再查目标游戏玩家移动入口，最后重建控制器。但未提供可重放 Mod、常数定位记录或测试日志，不能确认数字、用时及跨引擎效果；“没有复制代码”也只是发帖者主张。收录为具体但未验证的 Mod 报告，不扩大为任意游戏通用能力。",
+    "sources": [{"label": "本窗口具体 Mod 宣称与流程", "url": "https://x.com/i/status/2110648710606557644"}],
+    "snapshot_date": "2026-10-15", "metadata": ["候选快照：9赞｜205浏览；未独立验证常数或游戏内运行。"],
+    "en": {"title": "Sonic physics in Elden Ring: an unverified REA mod report", "summary": "A poster claims to extract 1991 movement constants and rebuild a controller in another game; the supplied numbers and 40-minute result lack replayable evidence."}
+  },
+  {
+    "id": "iriver-e30-main-screen",
+    "title": "iriver E30：为停支持的播放器修改主屏",
+    "category": "hardware", "rea": "unknown", "status": "in-progress",
+    "summary": "作者报告正在逆向旧播放器，以定制主屏；AI 参与方式未具体说明。",
+    "description": "@MikeS190477 因 iriver 不再支持自己的 E30 播放器，开始逆向设备以修改主屏。原帖明确说仍在进行，并把 AI 视为未来个人化设备的一种可能。补查原帖确认了作者与相同文字，没有协议、固件版本或刷写测试记录；不能把关于 AI 的展望写成已经由某个模型完成固件重建。按具体旧设备维护项目收录，REA 与实际 AI 工具链保持 unknown。",
+    "sources": [{"label": "作者进行中报告", "url": "https://x.com/i/status/2110651009181851731"}],
+    "snapshot_date": "2026-10-15", "metadata": ["未确认使用REA；不将主屏改造等同完整固件恢复。"],
+    "en": {"title": "iriver E30: personalizing an unsupported player's main screen", "summary": "The author reports ongoing reverse engineering to change the main screen, with an AI-personalization outlook but no specified AI workflow or completed firmware result."}
+  },
+  {
+    "id": "radiator-app-home-assistant-ai",
+    "title": "散热器控制 App：AI 逆向后接入 Home Assistant 的报告",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "作者称 AI 分析设备控制应用，使家中散热器能由 Home Assistant 使用。",
+    "description": "发帖者希望将家中散热器接入 Home Assistant，而不只依赖原控制 App。他报告 AI 逆向了这款应用，约10分钟让设备可与 Home Assistant 工作，并说没有额外花费。候选没有品牌、型号、通信方式、模型、源码或读写验证记录，因此不能推断为本地离线控制、完整协议恢复或所有散热器兼容。具体用途清楚，按未验证的个人互通报告收录；工时与费用仅归因原帖。",
+    "sources": [{"label": "本窗口作者互通报告", "url": "https://x.com/i/status/2110651982323310818"}],
+    "snapshot_date": "2026-10-15", "metadata": ["未确认REA；没有独立设备验收。"],
+    "en": {"title": "A radiator-control app bridged to Home Assistant with AI", "summary": "A poster reports AI-assisted app analysis and a working Home Assistant integration in ten minutes; device identity, protocol and validation are not supplied."}
+  },
+  {
+    "id": "diablo2-switch-apple-ai-port-report",
+    "title": "Switch《暗黑2》：移到苹果设备的 AI 辅助转述",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "第三方称民间项目在 iPhone、iPad 与 Apple Silicon Mac 原生运行。",
+    "description": "本窗口一则第三方帖子称，民间项目把 Switch 版《暗黑2》带到 iPhone、iPad 和苹果芯片 Mac，并将 AI 辅助逆向、代码适配和调试列为背景。帖子解释 Switch 与这些设备同属 ARM，可减少部分跨架构障碍，但没有给出项目名、代码、构建或兼容性记录。不能由共同架构推出完整兼容，也不能确认具体游戏版本或 AI 贡献比例。保留这项明确目标的传播报告，状态为待验证，不与已有《织梦岛》项目混为同一成果。",
+    "sources": [{"label": "本窗口第三方移植转述", "url": "https://x.com/i/status/2110658894360097141"}],
+    "snapshot_date": "2026-10-15", "metadata": ["转述，不是作者确认或本合集运行验证。"],
+    "en": {"title": "Switch Diablo II on Apple devices: an AI-assisted port claim", "summary": "A secondary post describes native iPhone, iPad and Apple Silicon support, but supplies no identifiable project or validation record; AI involvement remains attributed to that post."}
+  },
+  {
+    "id": "whoop-noop-zhoop-ios",
+    "title": "WHOOP / Zhoop：保留手环，用自己的 iPhone 应用读数据",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "转述 Guru 沿用 NOOP 蓝牙逆向实现，制作健康 Agent 的 iPhone 数据入口。",
+    "description": "本窗口转述称，Guru 在使用 WHOOP 手环18个月后取消订阅，但想继续使用硬件，于是将社区项目 NOOP 改为自己的 iPhone App Zhoop，接收心率、步数与睡眠数据并接入健康 AI Agent。按该帖说法，NOOP 自6月起研究 WHOOP 蓝牙协议，不需修改固件；Guru 沿用底层代码，加上饮食、热量缺口与减重计划并重做界面。这里明确区分社区协议研究与后续个人应用，不将底层逆向归功于 Guru 或 AI；帖子的 AI 观点不能证明 NOOP 由 AI 完成。本合集没有核验源码、健康算法准确性、费用或离线范围。这也不同于已有 WHOOP Android APK 分析记录。",
+    "sources": [{"label": "本窗口 NOOP 与 Zhoop 的第三方介绍", "url": "https://x.com/i/status/2110659108076769728"}],
+    "snapshot_date": "2026-10-15", "metadata": ["历史NOOP项目日期来自转述；本窗口是Zhoop介绍，不是6月新抓取。"],
+    "en": {"title": "WHOOP and Zhoop: an iPhone data path for a health agent", "summary": "A secondary report says Guru adapted NOOP's Bluetooth work into Zhoop after cancelling a subscription; protocol authorship and later AI-agent integration are kept distinct."}
+  },
+  {
+    "id": "flash-swf-ai-mobile-rebuild-idea",
+    "title": "旧 Flash SWF：反编译后用 AI 重建移动版的 idea",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "从旧 Flash 游戏文件恢复行为，再做移动版；帖子只有建议，没有实现。",
+    "description": "发帖者建议取得旧 Adobe Flash 游戏的 .swf 文件，先反编译，再让 AI 重建并制作移动版，希望让被放弃的游戏继续可用。帖子提到 EA，但没有命名游戏，也未展示实际分析或 App Store 发布。按游戏保存的具体技术路线 idea 收录，不代表任何授权已经取得；原帖认为是双赢不等于有权复制游戏代码、资产或上架。未确认 REA，也不把该建议与已有 IsaacRecomp 或其他实际项目合并。",
+    "sources": [{"label": "本窗口保存路线建议", "url": "https://x.com/i/status/2110664422914179229"}],
+    "snapshot_date": "2026-10-15", "metadata": ["idea；未指定游戏、未执行。"],
+    "en": {"title": "Old Flash SWFs: an AI-assisted mobile-rebuild idea", "summary": "A proposal to decompile an old Flash game and rebuild it for mobile; no named game, implementation or distribution authorization is established."}
+  },
+  {
+    "id": "apple-notes-rea-swiftui-rebuild",
+    "title": "macOS 备忘录：REA 辅助重建三栏 SwiftUI 应用的转述",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "第三方描述调查原生备忘录后重建笔记、文件夹、搜索与删除恢复交互。",
+    "description": "本窗口长文用 macOS 原生备忘录说明 REA 的功能研究路线，称给 Agent 简短指令后，先读取应用元信息，再交付 SwiftUI 三栏 Mac 应用。文章列出文件夹、笔记列表和编辑区，以及多笔记切换留存、置顶、新建分类、移动计数、搜索、删除和恢复，另称不挂 REA 更快但细节较弱。候选没有原测试者身份、源码、统一测试集或可重复运行记录，因此这些仍为第三方测试叙述，不能视为已还原苹果同步后端。与已有 Notes CSV 导出教学的 Electron 调用链不是同一目标，单独记录其原生 UI 重建报告。",
+    "sources": [{"label": "本窗口具体测试叙述", "url": "https://x.com/i/status/2110670751087137197"}],
+    "snapshot_date": "2026-10-15", "metadata": ["不将三栏界面或自述交互通过扩大为完整Apple Notes克隆。"],
+    "en": {"title": "macOS Notes: a reported REA-assisted SwiftUI rebuild", "summary": "A secondary account describes a three-pane app with folders, search, pinning and delete/restore interactions; it supplies no reproducible test or Apple sync implementation."}
+  },
+  {
+    "id": "industrial-tools-ai-ghidra-rebuild-idea",
+    "title": "Nuke / Houdini / Gurobi：让 AI 配合 Ghidra 研究替代品的 idea",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "建议研究高价创作、求解和工业软件，制作低价替代；无实际分析结果。",
+    "description": "发帖者建议将其称为 sol 6.1 或 Opus 的模型指向 Nuke、Houdini、Gurobi 以及电路设计、制造优化软件，配合 Ghidra 或 GhidraMCP 研究实现，再做一次买断的替代品及销售网站。Nuke/Houdini 是影视创作工具，Gurobi 是数学优化求解器，目标跨越不同工程领域。帖子没有实际目标版本、函数、实现或性能报告，50美元终身只是商业设想，不是已经售卖的结果。作为有命名目标的 AI 逆向重建 idea 收录，不确认 REA，不背书授权或技术可行性。",
+    "sources": [{"label": "本窗口命名目标的建议", "url": "https://x.com/i/status/2110674628578537633"}],
+    "snapshot_date": "2026-10-15", "metadata": ["建议而非成果；不以模型代号推断实际能力。"],
+    "en": {"title": "Nuke, Houdini and Gurobi: an AI/Ghidra replacement idea", "summary": "A poster proposes studying named creative and optimization tools to build low-cost alternatives; there is no executed analysis, implementation or performance evidence."}
+  },
+  {
+    "id": "reverse-skill-agent-workflows",
+    "title": "reverse-skill：给编程 Agent 的多目标逆向路线",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "帖子介绍把 APK、前端代码与固件的分析路径整理为 Skill。",
+    "description": "本窗口介绍名为 reverse-skill 的项目，称可放入 Codex、Cursor 和 Claude Code，为 APK、前端代码及固件选择工具和调查步骤。其具体用途是让 Agent 获得逆向分析的路径与工具编排，而不是新的反编译引擎。候选未给出可直接核对的仓库地址、示例样本或验收日志，不能把“自己知道怎么拆”写成所有格式都能可靠处理。作为相关工作流项目收录；名称与已有 apk-reverse 不同，没有证据认为是同一项目，也未确认基于 REA。",
+    "sources": [{"label": "本窗口项目介绍", "url": "https://x.com/i/status/2110680583634366777"}],
+    "snapshot_date": "2026-10-15", "metadata": ["功能范围为帖子介绍，未独立核验。"],
+    "en": {"title": "reverse-skill: investigation workflows for coding agents", "summary": "A post introduces a skill for selecting tools and steps across APKs, frontend code and firmware; no public implementation or sample validation was checked."}
+  },
+  {
+    "id": "rea-thermofluid-equation-solver",
+    "title": "热工与流体力学求解器：REA + Opus 的进行中重建报告",
+    "category": "algorithms", "rea": "REA", "status": "in-progress",
+    "summary": "作者称用 T3 Code、Opus 与 REA 推进求解器，同时开发移动/web RTS。",
+    "description": "@iamsupersocks 报告自本周一持续用 Opus 5.5 做两项逆向项目：一个 Age of Empires 风格的移动/web即时战略游戏，以及用于热工、流体力学和力学的方程求解器。作者说两者接近完成，工具为 T3 Code、Opus 5.5 与 REA，采用逐块推进、定期挑战模型并测试漂移的方式；RTS 计划开放 beta。求解器针对旧 Excel 和旧软件工作流，他声称一次模拟从5小时变为5分钟，但没有原软件名、方程组、输入规模、精度或同机对比，不能将其写成已测得60倍性能提升。两项用途在同一开发报告中分别说明，条目以求解器为主，不把 RTS 叫做已反编译《帝国时代》。均未独立运行。",
+    "sources": [{"label": "本窗口作者两项目进度报告", "url": "https://x.com/i/status/2110684985900355622"}],
+    "snapshot_date": "2026-10-15", "metadata": ["候选快照：12赞｜866浏览；性能与接近完成均为作者说法。"],
+    "en": {"title": "A thermofluid equation solver: ongoing REA/Opus work", "summary": "The author reports near-finished equation-solver and mobile/web RTS projects using T3 Code, Opus and REA; a five-hour-to-five-minute simulation claim has no comparable benchmark or accuracy evidence."}
+  },
+  {
+    "id": "ricoh-gxr-modern-gr-recipes-idea",
+    "title": "Ricoh GXR：把现代 GR recipe 带进旧相机固件的 idea",
+    "category": "hardware", "rea": "unknown", "status": "in-progress",
+    "summary": "作者受 REA 热潮启发，希望为旧相机加入现代成像配方。",
+    "description": "发帖者说 REA 热潮让自己的 Ricoh GXR 又有了用途，希望制作新固件，把现代 GR 的 recipe（成像设置配方）放进去。这里有明确设备与想增加的功能，但只有兴奋的设想，没有固件版本、逆向记录或刷机结果。不能把“可以做”写成已经复活相机，也不能认定现代 GR 的算法可直接迁入；REA 实际是否使用保持 unknown。",
+    "sources": [{"label": "本窗口相机固件设想", "url": "https://x.com/i/status/2110685826468512185"}],
+    "snapshot_date": "2026-10-15", "metadata": ["idea，尚无实施证据。"],
+    "en": {"title": "Ricoh GXR: an idea for modern GR recipes in old firmware", "summary": "Inspired by REA, a poster proposes new GXR firmware with modern GR imaging recipes; no analysis, flashing result or actual REA use is shown."}
+  },
+  {
+    "id": "booking-funnel-rea-calendar",
+    "title": "自己的预约漏斗：调查前端后重建共享日历",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。",
+    "description": "发帖者把 REA 仓库链接和自己的预约漏斗页面交给 Claude，希望重建自己需要的日历工具。他称没有后端访问，Agent 从前端找出时段长度、间隔、日历类型和销售成员，识别 API 后做出带可分享预约链接的日历应用，约10分钟、几个提示词完成。候选没有源码或用例，不据此保证预约并发、权限、真实日历写入或服务端规则已恢复。与泛称重建 SaaS 的记录不同，这里有具体输入、观察字段和交付目标，保留为作者自述，未独立验证。",
+    "sources": [{"label": "本窗口作者操作与结果报告", "url": "https://x.com/i/status/2110686215846699236"}],
+    "snapshot_date": "2026-10-15", "metadata": ["10分钟为作者说法；无后端访问是原帖明确边界。"],
+    "en": {"title": "A booking funnel investigated and rebuilt as a personal calendar", "summary": "The author reports Claude/REA inspection of frontend booking rules and an API, followed by a shareable calendar app; no backend access or independent scheduling tests are supplied."}
+  },
+  {
+    "id": "lotus-smartsuite-linux-revival-idea",
+    "title": "Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。",
+    "description": "发帖者看到 Adobe、Office 和 AutoCAD 被 AI 逆向的传播后，提出改为复活已停止发展的 Lotus SmartSuite，将其做成现代 Linux 应用。SmartSuite 是旧办公套件，这一建议的动机是保存仍有价值但缺乏维护的软件。没有指定版本、模块、文件格式、工具或已执行分析，不重复传播开头关于其他软件已被逆向的说法。按命名目标的保存 idea 收录，未确认 REA 或实际实现。",
+    "sources": [{"label": "本窗口软件保存建议", "url": "https://x.com/i/status/2110686539571478745"}],
+    "snapshot_date": "2026-10-15", "metadata": ["具体idea，不是已经提供Linux替代品。"],
+    "en": {"title": "Lotus SmartSuite: an AI-assisted Linux revival idea", "summary": "A poster proposes reviving the discontinued office suite as modern Linux applications; no version, analyzed module or working port is reported."}
+  },
+  {
+    "id": "watch5-pro-rea-health-app",
+    "title": "Watch5 Pro：用 Claude + REA 添加健康传感器应用的报告",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "作者称研究手表后安装自有应用，使用 Samsung Health 所用传感器。",
+    "description": "在 AI 逆向讨论的回复中，发帖者称让 Claude 对自己的 Watch5 Pro 使用 REA，随后添加了一个应用，以通过 Samsung Health 使用的传感器跟踪健康。这是明确设备和健康数据用途的第一人称报告。帖子没有说明传感器种类、访问接口、是否真的分析 Samsung Health、应用权限或数据精度，不能补写破解私有 API、替代所有健康功能或医疗用途。本合集未运行手表或核验应用。",
+    "sources": [{"label": "本窗口作者设备使用回复", "url": "https://x.com/i/status/2110693137773392155"}],
+    "snapshot_date": "2026-10-15", "metadata": ["传感器访问与安装为作者报告，非独立验收。"],
+    "en": {"title": "Watch5 Pro: a reported Claude/REA health-sensor app", "summary": "A poster says Claude used REA on a Watch5 Pro and added an app for health sensors used by Samsung Health; access methods, sensor scope and accuracy are unspecified."}
+  },
+  {
+    "id": "rea-local-qwen-commercial-analysis-tests",
+    "title": "REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试",
+    "category": "apps", "rea": "REA", "status": "analysis-test",
+    "summary": "作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。",
+    "description": "作者称两天内用 REA、自部署的 qwen 3.8 Flash next 与 pi 做逆向测试，目标包括 Aspose 的 Java/C++ 产品、CData Java 系列、Hopper demo、TikTok 接口加密与滑块校验算法。帖子认为 REA 主要提供最佳实践 Skill，并笼统称少需人工干预、能直接出结果；但没有产品版本、样本、代码、正确性测试或授权说明。Hopper 部分还明确承认即使所谓注册后仍显示 demo，不能描述为完整解锁或成功兼容。保留为具体多目标分析报告，不提供注册算法、绕过校验或模型拒绝的操作步骤，不由作者的宽泛成功宣称推导出完整恢复这些产品。",
+    "sources": [{"label": "本窗口作者多目标测试报告", "url": "https://x.com/i/status/2110696564335214807"}],
+    "snapshot_date": "2026-10-15", "metadata": ["analysis-test不表示通过独立测试；模型名称沿用原帖。"],
+    "en": {"title": "REA with local Qwen and pi: multi-target commercial-software tests", "summary": "The author lists Aspose, CData, Hopper demo and interface-algorithm investigations without reproducible validation; Hopper reportedly still displays demo, so success is not inferred."}
+  },
+  {
+    "id": "image-presets-ai-study-idea",
+    "title": "旧图片处理软件：用 AI 学习预设与处理方法的 idea",
+    "category": "algorithms", "rea": "other-ai", "status": "in-progress",
+    "summary": "永久权益用户希望研究自己所购软件的图片预设，仍在询问许可边界。",
+    "description": "发帖者说多年前付费购买了一款图片处理软件的永久权益，现在想用 AI 逆向学习它的预设与处理方法，仅个人学习、不分享使用，并询问是否被允许。软件未命名，但目标功能、已有软件关系和学习动机具体，因此作为算法研究 idea 收录。原帖是许可疑问而非已经开展的分析，没有滤镜实现、模型或结果；付费购买和个人学习本身不等于已获得逆向授权，本合集不替作者作法律结论。",
+    "sources": [{"label": "本窗口作者研究设想与许可问题", "url": "https://x.com/i/status/2110696662222127398"}],
+    "snapshot_date": "2026-10-15", "metadata": ["未命名软件，未开始或完成分析；未确认REA。"],
+    "en": {"title": "An image editor's presets: an AI-study idea", "summary": "A perpetual-license customer asks about studying an unnamed editor's presets with AI for personal learning; neither completed analysis nor authorization is established."}
+  },
+  {
+    "id": "quicksurface-ai-scan-parametric-cad",
+    "title": "QUICKSURFACE AI：从 3D 扫描恢复参数 CAD 的产品预告",
+    "category": "hardware", "rea": "other-ai", "status": "related-project",
+    "summary": "公告称将随 Pro 2027 提供扫描到可编辑模型的 AI 自动化，尚未验证。",
+    "description": "QUICKSURFACE 的本窗口宣传公告称，QUICKSURFACE AI 将于2026年11月17日发布，包含在 Pro 2027 中，目标是一键把3D扫描数据转成可编辑的参数化 CAD 模型。这里的逆向是从物体测量恢复工程几何，不是反编译商业 CAD 软件；作为更广义 AI 辅助逆向相关项目单独说明。当前证据只是未来产品预告，没有模型、误差、扫描样本或实际演示验收，不将计划日期写成已发布，不背书一键效果。",
+    "sources": [{"label": "本窗口产品发布预告", "url": "https://x.com/i/status/2110699093333000322"}],
+    "snapshot_date": "2026-10-15", "metadata": ["公告中的未来发布日期是产品计划，记录日期仍为10月15日。"],
+    "en": {"title": "QUICKSURFACE AI: announced scan-to-parametric-CAD automation", "summary": "An announcement schedules AI-assisted geometry reconstruction for November 17 within Pro 2027; it is a product preview, not a tested one-click result or software decompilation."}
+  },
+  {
+    "id": "spiderman-gta5-swing-rea-report",
+    "title": "Spider-Man 摆荡到 GTA V：内部叙述不一致的 REA 报告",
+    "category": "games", "rea": "REA", "status": "unverified",
+    "summary": "帖子宣称洛圣都内摆荡，步骤却交付 Godot 代码，不能确认真正 GTA Mod。",
+    "description": "发帖者称把 GTA 5 和 Spider-Man 交给 REA + Opus 5.5，约60分钟后能在洛圣都建筑间摆荡。所列流程是用 Ghidra 查 swing/web/velocity/gravity 字符串、追调用链、运行观察，再写 SPEC.md。但结尾让 Claude 将规格转为带自有素材的 Godot 代码，这与开头声称直接进入 GTA 的目标不一致。没有 Mod 包、函数定位或运行日志可消除矛盾，因此只记录研究 Spider-Man 摆荡行为并重建控制器的具体报告，不确认已经注入 GTA，不采纳“零猜测”“运行60秒即证明规则”等泛化保证。",
+    "sources": [{"label": "本窗口摆荡重建宣称与步骤", "url": "https://x.com/i/status/2110699414792642732"}],
+    "snapshot_date": "2026-10-15", "metadata": ["60分钟为发帖者宣称；GTA与Godot叙述矛盾，未独立核验。"],
+    "en": {"title": "Spider-Man swinging in GTA V: an internally inconsistent REA claim", "summary": "The post claims a GTA mod but ends with a Godot implementation workflow; only the specific swing-reconstruction claim is recorded, not a confirmed GTA integration."}
+  },
+  {
+    "id": "bluetooth-humidity-agent-app",
+    "title": "湿度读数：Agent 逆向蓝牙协议后制作个人 App",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "作者用读数比较加湿方式，并称应用完全由 Agent 研究蓝牙协议制作。",
+    "description": "Kai（@real_kai42）报告，原先加湿器两个喷嘴间歇工作时湿度读数没有明显变化，改为同时喷后改善，并称用于观察数据的 App 是纯 Agent 逆向蓝牙协议写出的。目标是让自己的环境指标可测量，进而调整使用方式。补查原作者串确认身份，但没有型号、协议字段、采样频率或源码；不能确定被分析的是加湿器本身还是另一个湿度传感设备，也不能推断 App 能控制喷嘴。保留作者观察与应用来源，不将一次家居读数比较变成准确性或因果实验；未确认 REA。",
+    "sources": [{"label": "本窗口作者湿度观察与蓝牙 App 报告", "url": "https://x.com/i/status/2110700189912912155"}],
+    "snapshot_date": "2026-10-15", "metadata": ["候选快照：3赞｜232浏览；不混入补查后的实时指标。"],
+    "en": {"title": "Humidity readings through an agent-built Bluetooth app", "summary": "Kai reports an app produced by agent-led Bluetooth analysis and uses readings to compare humidifier operation; device identity, protocol ownership and control capabilities remain unspecified."}
+  },
+  {
+    "id": "windows-graphics-startup-ai-profile-idea",
+    "title": "Windows 图形启动：用 Agent 群反编译与剖析系统 DLL 的 idea",
+    "category": "algorithms", "rea": "other-ai", "status": "in-progress",
+    "summary": "针对 D3D11 创建设备和 DirectWrite 首次字形栅格化瓶颈提出逆向优化建议。",
+    "description": "本窗口回复建议让 AI Agent 群反编译并剖析系统 DLL 中的函数，即使是专有编译实现也尝试优化。补查父串后可明确上下文：Ryan Fleury 说自己应用启动受 D3D11CreateDevice 与 DirectWrite 初次字形栅格化阻碍。候选是针对这两个具体图形启动瓶颈的研究 idea，不是 Ryan 已采用 AI，也不是已找到系统库修复。父帖发表于10月15日12:24/12:26北京时间，属于本轮之前的追溯背景；没有分析、补丁或性能改进结果，未确认 REA。",
+    "sources": [{"label": "本窗口 Agent 逆向剖析建议", "url": "https://x.com/i/status/2110701870826328360"}, {"label": "此前父帖：具体启动瓶颈（补充背景）", "url": "https://x.com/i/status/2110588092696739937"}],
+    "snapshot_date": "2026-10-15", "metadata": ["建议来自回复者，瓶颈观察来自原作者；两者不可混同。"],
+    "en": {"title": "Windows graphics startup: an agent-swarm profiling idea", "summary": "A reply proposes decompiling system DLLs to investigate D3D11 device creation and initial DirectWrite rasterization; the earlier author's bottleneck report is context, not completed AI optimization."}
   }
 ]

@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **181 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **203 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（35）
-- [硬件与设备互通](categories/hardware.md)（45）
-- [应用与客户端](categories/apps.md)（88）
-- [算法与功能重建](categories/algorithms.md)（13）
+- [游戏与游戏保存](categories/games.md)（40）
+- [硬件与设备互通](categories/hardware.md)（53）
+- [应用与客户端](categories/apps.md)（94）
+- [算法与功能重建](categories/algorithms.md)（16）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -32,7 +32,7 @@
 - [Urban Terror：把桌面多人射击游戏移植到浏览器](cases/urban-terror-web.md) — 定位引擎与字节码布局差异，将游戏移植到浏览器。 **[其他 AI 逆向]**
 - [DX-Ball：恢复老打砖块游戏的声像算法](cases/dx-ball-sound-pan.md) — 还原打砖块游戏按位置分配左右声道的函数。 **[REA]**
 - [《东方幻想乡》：恢复环形弹幕的角度计算](cases/th04-bullet-ring.md) — 恢复《东方幻想乡》环形弹幕的角度计算。 **[REA]**
-- [东方系列：用 Agent 重建旧游戏，并迁移到新平台](cases/touhou-reconstruction.md) — 重建东方系列代码，验证并迁移到可玩平台。 **[REA]**
+- [东方系列：用 Agent 重建旧游戏，并迁移到新平台](cases/touhou-reconstruction.md) — 重建东方系列代码并迁移平台；新增浮点常量漏验的历史修复证据。 **[REA]**
 - [Dinosaur：解释网页跑酷游戏如何逐渐加速](cases/dinosaur-speed.md) — 读网页脚本，实验验证跑酷游戏的加速规则。 **[REA]**
 - [Unity / Valheim：游戏程序集分析需求](cases/unity-valheim.md) — 真实游戏分析需求，原游戏目标复测仍缺少证据。 **[REA · 进行中]**
 - [《荒野大镖客 2》：写导出器移入波巴·费特](cases/boba-fett-rdr2.md) — Claude 研究游戏素材格式，迁移角色并制作喷气背包等玩法。 **[其他 AI 逆向]**
@@ -61,6 +61,11 @@
 - [《大富翁4》：REA 分析后用 Flutter 重写到 iPhone](cases/richman4-flutter-iphone.md) — 作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。 **[REA · 待验证]**
 - [IsaacRecomp：把初代 Flash《以撒》带到原生平台](cases/isaacrecomp-flash-cpp-report.md) — 项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。 **[其他 AI 逆向 · 进行中]**
 - [DOOM / Terraria：Claude Code + REA 的无源码 Mod 实验](cases/rea-doom-terraria-modding.md) — 作者报告分别给 DOOM 添加无敌等修改、给 Terraria 添加 yeet 模式。 **[REA · 待验证]**
+- [殖民模拟引擎：为 AI 生成世界研究现有游戏的计划](cases/ai-colony-engine-decompilation-plan.md) — 作者准备反编译现有引擎，为全 3D、可破坏地形的殖民模拟系统研究实现。 **[未确认使用 REA · 进行中]**
+- [Sonic 运动参数：移入 Elden Ring 的 REA Mod 报告](cases/sonic-physics-elden-ring-rea.md) — 发帖者称从 1991 年二进制提取常数，再在另一游戏重建角色控制器。 **[REA · 待验证]**
+- [Switch《暗黑2》：移到苹果设备的 AI 辅助转述](cases/diablo2-switch-apple-ai-port-report.md) — 第三方称民间项目在 iPhone、iPad 与 Apple Silicon Mac 原生运行。 **[其他 AI 逆向 · 待验证]**
+- [旧 Flash SWF：反编译后用 AI 重建移动版的 idea](cases/flash-swf-ai-mobile-rebuild-idea.md) — 从旧 Flash 游戏文件恢复行为，再做移动版；帖子只有建议，没有实现。 **[其他 AI 逆向 · 进行中]**
+- [Spider-Man 摆荡到 GTA V：内部叙述不一致的 REA 报告](cases/spiderman-gta5-swing-rea-report.md) — 帖子宣称洛圣都内摆荡，步骤却交付 Godot 代码，不能确认真正 GTA Mod。 **[REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -107,8 +112,16 @@
 - [Hailo：启动 Agent 辅助逆向研究的计划](cases/hailo-agent-reverse-plan.md) — 作者准备开展 Hailo 逆向，并并列提到 Raspberry Pi Agent 环境开发。 **[未确认使用 REA · 进行中]**
 - [Wyze 体重秤：让自制 iOS App 接收称重数据](cases/wyze-scale-custom-ios.md) — 作者称 Claude 研究秤后做出个人客户端，带提醒与图表。 **[其他 AI 逆向 · 待验证]**
 - [涂鸦空调：从 Mac 菜单栏和 Claude 本地调温](cases/tuya-ac-mac-claude-mcp.md) — 研究空调本地控制，做 Wi-Fi 菜单栏客户端，再以 MCP 接给 Claude。 **[未确认使用 REA · 待验证]**
-- [澎湃 OS 显示器：探索暴露服务的控制路线](cases/hyperos-monitor-ai-research.md) — 作者讨论先检查 DDC/CI，再研究自家智能显示器暴露的端口和服务。 **[其他 AI 逆向 · 进行中]**
+- [澎湃 OS 显示器：探索暴露服务的控制路线](cases/hyperos-monitor-ai-research.md) — Binaryify 的显示器服务研究新增 Opus 辅助控制软件转述，仍缺实机验收。 **[其他 AI 逆向 · 进行中]**
 - [小米运动健康：校正数据库时间戳并制作云端导出器](cases/mi-health-data-exporter.md) — 从 AI 误读健康记录追到导出时区错误，再研究 miothealth 同步与签名。 **[未确认使用 REA · 进行中]**
+- [ScanSnap iX500：官方应用失效后用 Claude 做 Mac 扫描端](cases/scansnap-ix500-claude-mac.md) — 作者称为旧扫描仪重建 Wi-Fi 扫描、实体按钮、OCR 与空白页处理。 **[其他 AI 逆向 · 待验证]**
+- [iriver E30：为停支持的播放器修改主屏](cases/iriver-e30-main-screen.md) — 作者报告正在逆向旧播放器，以定制主屏；AI 参与方式未具体说明。 **[未确认使用 REA · 进行中]**
+- [散热器控制 App：AI 逆向后接入 Home Assistant 的报告](cases/radiator-app-home-assistant-ai.md) — 作者称 AI 分析设备控制应用，使家中散热器能由 Home Assistant 使用。 **[其他 AI 逆向 · 待验证]**
+- [WHOOP / Zhoop：保留手环，用自己的 iPhone 应用读数据](cases/whoop-noop-zhoop-ios.md) — 转述 Guru 沿用 NOOP 蓝牙逆向实现，制作健康 Agent 的 iPhone 数据入口。 **[未确认使用 REA · 待验证]**
+- [Ricoh GXR：把现代 GR recipe 带进旧相机固件的 idea](cases/ricoh-gxr-modern-gr-recipes-idea.md) — 作者受 REA 热潮启发，希望为旧相机加入现代成像配方。 **[未确认使用 REA · 进行中]**
+- [Watch5 Pro：用 Claude + REA 添加健康传感器应用的报告](cases/watch5-pro-rea-health-app.md) — 作者称研究手表后安装自有应用，使用 Samsung Health 所用传感器。 **[REA · 待验证]**
+- [QUICKSURFACE AI：从 3D 扫描恢复参数 CAD 的产品预告](cases/quicksurface-ai-scan-parametric-cad.md) — 公告称将随 Pro 2027 提供扫描到可编辑模型的 AI 自动化，尚未验证。 **[其他 AI 逆向 · 相关项目]**
+- [湿度读数：Agent 逆向蓝牙协议后制作个人 App](cases/bluetooth-humidity-agent-app.md) — 作者用读数比较加湿方式，并称应用完全由 Agent 研究蓝牙协议制作。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -200,6 +213,12 @@
 - [洛克输入法：研究 Typeless 后用苹果端侧能力做本地输入](cases/rokoinput-apple-local-voice.md) — 作者报告 REA 辅助研究后制作 Roko Input，公开源码并强制端侧语音识别。 **[REA · 进行中]**
 - [ReaCut：研究剪映本地行为，制作独立视频编辑器](cases/reacut-jianying-open-editor.md) — 公开研究、独立项目格式和导出验证，明确不承诺商业剪映完整对等。 **[REA · 进行中]**
 - [REA + archify：把分析材料整理成可交互架构图](cases/rea-archify-diagrams.md) — 作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。 **[REA · 相关项目]**
+- [macOS 备忘录：REA 辅助重建三栏 SwiftUI 应用的转述](cases/apple-notes-rea-swiftui-rebuild.md) — 第三方描述调查原生备忘录后重建笔记、文件夹、搜索与删除恢复交互。 **[REA · 待验证]**
+- [Nuke / Houdini / Gurobi：让 AI 配合 Ghidra 研究替代品的 idea](cases/industrial-tools-ai-ghidra-rebuild-idea.md) — 建议研究高价创作、求解和工业软件，制作低价替代；无实际分析结果。 **[其他 AI 逆向 · 进行中]**
+- [reverse-skill：给编程 Agent 的多目标逆向路线](cases/reverse-skill-agent-workflows.md) — 帖子介绍把 APK、前端代码与固件的分析路径整理为 Skill。 **[未确认使用 REA · 相关项目]**
+- [自己的预约漏斗：调查前端后重建共享日历](cases/booking-funnel-rea-calendar.md) — 作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。 **[REA · 待验证]**
+- [Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea](cases/lotus-smartsuite-linux-revival-idea.md) — 希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。 **[其他 AI 逆向 · 进行中]**
+- [REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试](cases/rea-local-qwen-commercial-analysis-tests.md) — 作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。 **[REA · 分析测试]**
 
 ### 算法与功能重建
 
@@ -216,6 +235,9 @@
 - [禁止逆向的许可：一次 Codex 与 Claude 行为对照](cases/agent-reverse-license-test.md) — 作者测试 Agent 是否尊重禁止逆向条款，报告两组工具表现不同。 **[其他 AI 逆向 · 分析测试]**
 - [旧二进制：Agent 读反编译输出时编造 API 的失败报告](cases/legacy-binary-agent-api-hallucination.md) — 作者回忆一次旧程序分析，Agent 自信引用实际不存在的接口。 **[其他 AI 逆向 · 分析测试]**
 - [人类与 Agent：两项静态逆向任务及上下文扩展性研究](cases/humans-machines-sre-study.md) — 论文比较九个模型与人类理解二进制的表现，并分析4000个程序的上下文饱和。 **[其他 AI 逆向 · 分析测试]**
+- [热工与流体力学求解器：REA + Opus 的进行中重建报告](cases/rea-thermofluid-equation-solver.md) — 作者称用 T3 Code、Opus 与 REA 推进求解器，同时开发移动/web RTS。 **[REA · 进行中]**
+- [旧图片处理软件：用 AI 学习预设与处理方法的 idea](cases/image-presets-ai-study-idea.md) — 永久权益用户希望研究自己所购软件的图片预设，仍在询问许可边界。 **[其他 AI 逆向 · 进行中]**
+- [Windows 图形启动：用 Agent 群反编译与剖析系统 DLL 的 idea](cases/windows-graphics-startup-ai-profile-idea.md) — 针对 D3D11 创建设备和 DirectWrite 首次字形栅格化瓶颈提出逆向优化建议。 **[其他 AI 逆向 · 进行中]**
 
 ## 贡献与收录
 

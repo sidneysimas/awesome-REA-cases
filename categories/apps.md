@@ -90,3 +90,9 @@
 - [洛克输入法：研究 Typeless 后用苹果端侧能力做本地输入](../cases/rokoinput-apple-local-voice.md) — 作者报告 REA 辅助研究后制作 Roko Input，公开源码并强制端侧语音识别。 **[REA · 进行中]**
 - [ReaCut：研究剪映本地行为，制作独立视频编辑器](../cases/reacut-jianying-open-editor.md) — 公开研究、独立项目格式和导出验证，明确不承诺商业剪映完整对等。 **[REA · 进行中]**
 - [REA + archify：把分析材料整理成可交互架构图](../cases/rea-archify-diagrams.md) — 作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。 **[REA · 相关项目]**
+- [macOS 备忘录：REA 辅助重建三栏 SwiftUI 应用的转述](../cases/apple-notes-rea-swiftui-rebuild.md) — 第三方描述调查原生备忘录后重建笔记、文件夹、搜索与删除恢复交互。 **[REA · 待验证]**
+- [Nuke / Houdini / Gurobi：让 AI 配合 Ghidra 研究替代品的 idea](../cases/industrial-tools-ai-ghidra-rebuild-idea.md) — 建议研究高价创作、求解和工业软件，制作低价替代；无实际分析结果。 **[其他 AI 逆向 · 进行中]**
+- [reverse-skill：给编程 Agent 的多目标逆向路线](../cases/reverse-skill-agent-workflows.md) — 帖子介绍把 APK、前端代码与固件的分析路径整理为 Skill。 **[未确认使用 REA · 相关项目]**
+- [自己的预约漏斗：调查前端后重建共享日历](../cases/booking-funnel-rea-calendar.md) — 作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。 **[REA · 待验证]**
+- [Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea](../cases/lotus-smartsuite-linux-revival-idea.md) — 希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。 **[其他 AI 逆向 · 进行中]**
+- [REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试](../cases/rea-local-qwen-commercial-analysis-tests.md) — 作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。 **[REA · 分析测试]**
