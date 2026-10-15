@@ -3370,17 +3370,22 @@
     "status": "unverified",
     "rea": "unknown",
     "summary": "作者介绍一款开源逆向工具，可查看多平台二进制并让 Agent 协助理解代码。",
-    "description": "发帖者介绍自己制作的 Eleven，定位为 Agent 辅助逆向工具。其描述支持打开 Mac 应用、Android APK 及 Windows/Linux 二进制，并以伪代码、汇编、图或十六进制查看函数；用户可询问 Claude、Codex、Gemini、Cursor 或 ACP Agent，查看分析步骤，并将函数改名和注释作为可接受或撤销的建议。帖子还称可在副本上安全修改字节、比较构建版本并使用 lldb 调试。上述范围与免费开源状态均为作者介绍；本次没有仓库链接、代码核验或独立运行测试。帖子未明确使用 REA，不能据此确认 REA 参与。",
+    "description": "发帖者介绍自己制作的 Eleven，定位为 Agent 辅助逆向工具。其描述支持打开 Mac 应用、Android APK 及 Windows/Linux 二进制，并以伪代码、汇编、图或十六进制查看函数；用户可询问 Claude、Codex、Gemini、Cursor 或 ACP Agent，查看分析步骤，并将函数改名和注释作为可接受或撤销的建议。帖子还称可在副本上安全修改字节、比较构建版本并使用 lldb 调试。上述范围与免费开源状态均为作者介绍；本次没有仓库链接、代码核验或独立运行测试。帖子未明确使用 REA，不能据此确认 REA 参与。\n\n\n\n2026-10-15，发帖者称 Eleven 发布了一次重大更新，并将其描述为 agent-first 逆向应用：可打开应用或二进制，由 Agent 协助拆解。此为产品作者的更新介绍；该帖未提供具体目标分析案例或验证记录，REA 使用也未确认。",
     "sources": [
       {
         "label": "作者发布 Eleven 的原帖",
         "url": "https://x.com/i/status/2110035757691703722"
+      },
+      {
+        "label": "作者关于 Eleven 更新的原帖",
+        "url": "https://x.com/i/status/2110476050815983632"
       }
     ],
     "snapshot_date": "2026-10-14",
     "metadata": [
       "作者称软件免费开源；未提供可核验项目链接或独立测试。",
-      "未确认使用 REA。"
+      "未确认使用 REA。",
+      "2026-10-15：作者称 Eleven 发布重大更新；具体分析效果及 REA 使用未由该帖确认。"
     ],
     "en": {
       "title": "Eleven: agent-assisted analysis of apps and binaries",
@@ -3874,6 +3879,30 @@
     "en": {
       "title": "Linux cal: tracing the 1752 calendar switch",
       "summary": "A post reports using REA on a stripped calendar binary to locate the 1752 date-switch rule and test country/calendar options; results are not independently reproduced."
+    }
+  },
+  {
+    "id": "rea-engine-tictactoe",
+    "title": "rea-engine: Rebuild Windows TicTacToe from its binary",
+    "category": "games",
+    "status": "case",
+    "rea": "REA",
+    "summary": "The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte.",
+    "description": "The author says rea-engine retains the original REA MCP and adds ILSpy, preview Ghidra 12.1.2, and pinned, hash-checked Frida, Z3, LIEF, and Capstone. The reported workflow combines static and Frida runtime evidence with rebuild, test, and repair. The author reports reconstructing Windows TicTacToe from its binary alone, with 19,683/19,683 board states matching byte for byte. This is a first-person report, not independently reproduced. The post explicitly credits morluto/rea for the original project.",
+    "sources": [
+      {
+        "label": "Author's first-person report on rea-engine and TicTacToe reconstruction",
+        "url": "https://x.com/i/status/2110506338706985158"
+      }
+    ],
+    "snapshot_date": "2026-10-15",
+    "metadata": [
+      "First-person project report",
+      "Result not independently reproduced"
+    ],
+    "en": {
+      "title": "rea-engine: Rebuilding TicTacToe from a Windows game binary",
+      "summary": "The author reports building rea-engine atop original REA and reconstructing a Windows TicTacToe game from its binary, with all 19,683 board states matching byte for byte."
     }
   }
 ]

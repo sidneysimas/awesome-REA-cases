@@ -30,3 +30,4 @@
 - [Virtua Fighter 2.1 / 3 TB：AI 辅助反编译进行中](../cases/virtua-fighter-ai-decompilation.md) — AI coding agents 辅助恢复两款 SEGA 格斗游戏的可读 C/C++ 逻辑；项目仍在进行。 **[未确认使用 REA · 进行中]**
 - [Dragon Ball Budokai：AI 逆向与浏览器移植的待验证报告](../cases/dragon-ball-budokai-browser.md) — 传播帖称 AI 逆向《龙珠》游戏并实现可在浏览器运行的 60 fps 版本；项目与 AI 贡献未核实。 **[未确认使用 REA · 待验证]**
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](../cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
+- [rea-engine: Rebuild Windows TicTacToe from its binary](../cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**

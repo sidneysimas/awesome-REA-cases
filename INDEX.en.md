@@ -10,13 +10,13 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**150 entries**, organized by use case, without a Top-N or popularity threshold.
+**151 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (28)
+- [Games and preservation](categories/games.md) (29)
 - [Hardware and interoperability](categories/hardware.md) (37)
 - [Applications and clients](categories/apps.md) (76)
 - [Algorithms and feature recovery](categories/algorithms.md) (9)
@@ -56,6 +56,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Virtua Fighter 2.1 / 3 TB: AI-assisted decompilation in progress](cases/virtua-fighter-ai-decompilation.md) — AI coding agents are reportedly helping reconstruct readable C/C++ game logic; both projects remain works in progress and REA use is unconfirmed. **[REA use unconfirmed · In progress]**
 - [Dragon Ball Budokai: an unverified AI-assisted browser-port report](cases/dragon-ball-budokai-browser.md) — A quote post claims an AI reverse-engineered the game into a 60-fps browser version; project identity, attribution and results are unverified. **[REA use unconfirmed · Needs verification]**
 - [Friday Night Funkin’: a Claude-assisted gameplay variant](cases/friday-night-funkin-claude-gameplay.md) — The poster reports using Claude to create a gameplay variant based on a recent decompilation; REA use and functional parity are unconfirmed. **[REA use unconfirmed · Needs verification]**
+- [rea-engine: Rebuilding TicTacToe from a Windows game binary](cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA and reconstructing a Windows TicTacToe game from its binary, with all 19,683 board states matching byte for byte. **[REA]**
 
 ### Hardware and interoperability
 
