@@ -12,4 +12,4 @@
 
 - [本窗口作者研究设想与许可问题](https://x.com/i/status/2110696662222127398)
 
-[返回目录](../README.md)
+[English](en/image-presets-ai-study-idea.md) | [返回目录](../README.md)

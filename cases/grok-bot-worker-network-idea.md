@@ -12,4 +12,4 @@
 
 - [作者的故障排查与未采用方案](https://x.com/i/status/2110702662270460232)
 
-[返回目录](../README.md)
+[English](en/grok-bot-worker-network-idea.md) | [返回目录](../README.md)

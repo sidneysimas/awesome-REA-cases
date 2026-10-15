@@ -15,7 +15,13 @@
 
 ## 数据格式
 
-所有必需字段及示例见 `data/cases.json`。每条必须包含 `en.title` 与 `en.summary`，用于生成英文完整总目录 `INDEX.en.md`；不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另综合近期传播热度与阅读价值，亲自维护中英文 README 的近期精选 Top 10、紧凑经典案例、带截止时间的总数及分类数量目录；不使用自动评分或排序算法。
+所有必需字段及示例见 `data/cases.json`。每条的 `en` 必须恰好包含 `title`、`summary`、`description`、`metadata`、`source_labels`：前三项为非空英文字符串，`description` 完整翻译中文详情，不能用一句摘要替代；`metadata` 与中文 `metadata` 逐项对应、数量相同（原列表为空时也为空）；`source_labels` 与 `sources` 逐项对应、数量相同，两种列表中的元素均须为非空字符串。URL 只保存在 `sources`，不在 `en` 重复。保留作者归属、日期、数量单位、阶段与全部证据边界，不将转述、静态分析或 idea 升级为已验证成果。
+
+新增或实质修改记录时同步维护完整中英文内容，再生成 `cases/<id>.md`、`cases/en/<id>.md`、两种语言分类页及总目录。中英文详情互链，英文入口直接指向英文详情与 `categories/en/`。生成器校验翻译完整性，缺译时失败，不回退中文或摘要；`--check` 同时检查两种语言详情的过期或孤立文件。中文贡献与维护文档在英文导航中明确标注语言。
+
+不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另综合近期传播热度与阅读价值，亲自维护中英文 README 的近期精选 Top 10、紧凑经典案例、带截止时间的总数及分类数量目录；不使用自动评分或排序算法。
+
+English maintenance: update all five `en` fields with every new or changed record, keeping full evidence caveats and aligned metadata/source labels. Keep URLs only in `sources`, regenerate both reading paths, and edit the selected README content by hand.
 
 1. 新增或更新记录，保留已有 ID。
 2. `python3 scripts/build.py`

@@ -13,4 +13,4 @@
 - [看 X 热门帖](https://x.com/alexzfunk/status/2108585025205592408)
 - [开源实现](https://github.com/a-funk/open-appleremote)
 
-[返回目录](../README.md)
+[English](en/siri-remote-linux.md) | [返回目录](../README.md)

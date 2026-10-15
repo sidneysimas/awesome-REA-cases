@@ -13,4 +13,4 @@ Supersocks 在讨论 REA 与模型工具链时，称自己正在用这种方式�
 
 - [本周期作者进行中报告](https://x.com/iamsupersocks/status/2109553690595979371)
 
-[返回目录](../README.md)
+[English](en/business-software-rebuild.md) | [返回目录](../README.md)

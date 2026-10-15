@@ -12,4 +12,4 @@
 
 - [作者对同事AI网页游戏的转述](https://x.com/i/status/2110760621113548854)
 
-[返回目录](../README.md)
+[English](en/cs-browser-colleague-ai-report.md) | [返回目录](../README.md)

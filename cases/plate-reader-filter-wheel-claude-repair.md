@@ -13,4 +13,4 @@ Rüdiger Groß（@r_gross_）报告一台读板仪停用数月，诊所技术人
 - [候选：故障与通信、重置和监测细节](https://x.com/i/status/2110745676875227179)
 - [同作者父帖：读板仪背景与屏幕观察（补充来源）](https://x.com/i/status/2110744888543510712)
 
-[返回目录](../README.md)
+[English](en/plate-reader-filter-wheel-claude-repair.md) | [返回目录](../README.md)

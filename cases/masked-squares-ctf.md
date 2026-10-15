@@ -10,4 +10,4 @@ DownUnderCTF 是网络安全解题比赛，masked squares flag checker 是其中
 - [案例 PR](https://github.com/morluto/rea/pull/1077)
 - [证据记录](https://github.com/morluto/rea/blob/main/website/evidence/ctf-masked-squares.md)
 
-[返回目录](../README.md)
+[English](en/masked-squares-ctf.md) | [返回目录](../README.md)

@@ -12,4 +12,4 @@ Ozgur Ozer 想让用户从 Apple Notes（苹果备忘录）迁移到自己的笔
 
 - [作者原帖](https://x.com/ozgrozer/status/2035124755854979272)
 
-[返回目录](../README.md)
+[English](en/apple-notes-migration.md) | [返回目录](../README.md)

@@ -15,4 +15,4 @@ Additional clipboard/block association details reported 2026-10-13; source is a 
 - [后续实测](https://github.com/morluto/rea/pull/1874)
 - [REA Notion clipboard case details (X post)](https://x.com/i/status/2109842048023212348)
 
-[返回目录](../README.md)
+[English](en/notion-clipboard.md) | [返回目录](../README.md)

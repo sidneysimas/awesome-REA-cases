@@ -13,4 +13,4 @@
 
 - [作者关于电视逆向与控制功能的原帖](https://x.com/i/status/2109842197654692349)
 
-[返回目录](../README.md)
+[English](en/rea-tv-control-workbench.md) | [返回目录](../README.md)

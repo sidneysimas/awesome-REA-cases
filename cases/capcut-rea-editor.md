@@ -13,4 +13,4 @@ Mehal Kumar 报告让 REA 配合 Claude Code 研究 CapCut（视频剪辑软件�
 
 - [本周期作者报告](https://x.com/i/status/2109665456735076494)
 
-[返回目录](../README.md)
+[English](en/capcut-rea-editor.md) | [返回目录](../README.md)

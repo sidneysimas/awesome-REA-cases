@@ -14,4 +14,4 @@
 - [作者研究文章](https://x.com/i/status/2110624271282139204)
 - [公开实现及限制](https://github.com/LilZeeCN/mi-health-exporter)
 
-[返回目录](../README.md)
+[English](en/mi-health-data-exporter.md) | [返回目录](../README.md)

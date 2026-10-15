@@ -12,4 +12,4 @@
 
 - [本窗口第三方移植转述](https://x.com/i/status/2110658894360097141)
 
-[返回目录](../README.md)
+[English](en/diablo2-switch-apple-ai-port-report.md) | [返回目录](../README.md)

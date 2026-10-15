@@ -12,4 +12,4 @@
 
 - [本窗口 NOOP 与 Zhoop 的第三方介绍](https://x.com/i/status/2110659108076769728)
 
-[返回目录](../README.md)
+[English](en/whoop-noop-zhoop-ios.md) | [返回目录](../README.md)

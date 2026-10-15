@@ -13,4 +13,4 @@ DiscusFish（@bitfish）认为买回来的智能家居仍被各自的遥控器�
 
 - [DiscusFish 的本轮集成报告](https://x.com/i/status/2110539823572463953)
 
-[返回目录](../README.md)
+[English](en/bitfish-local-llm-home-control.md) | [返回目录](../README.md)

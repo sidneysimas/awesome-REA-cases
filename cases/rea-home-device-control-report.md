@@ -13,4 +13,4 @@ Jumpan1111 回复智能马桶案例时，报告让 Codex 安装 REA，研究家�
 
 - [本周期作者报告](https://x.com/i/status/2109664718499762606)
 
-[返回目录](../README.md)
+[English](en/rea-home-device-control-report.md) | [返回目录](../README.md)

@@ -13,4 +13,4 @@
 
 - [本周期第三方转述](https://x.com/HigbeyMyrta/status/2109596534350524664)
 
-[返回目录](../README.md)
+[English](en/streaming-service-integration-report.md) | [返回目录](../README.md)

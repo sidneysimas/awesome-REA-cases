@@ -12,4 +12,4 @@
 
 - [本窗口摆荡重建宣称与步骤](https://x.com/i/status/2110699414792642732)
 
-[返回目录](../README.md)
+[English](en/spiderman-gta5-swing-rea-report.md) | [返回目录](../README.md)

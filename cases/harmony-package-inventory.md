@@ -9,4 +9,4 @@ HAP 是鸿蒙应用的安装包格式。贡献者使用开源 harmony-next-pipel
 
 - [原始 PR 与真实 HAP 记录](https://github.com/morluto/rea/pull/1447)
 
-[返回目录](../README.md)
+[English](en/harmony-package-inventory.md) | [返回目录](../README.md)

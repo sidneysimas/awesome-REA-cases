@@ -13,4 +13,4 @@ Ian Kerins 转述 Ibrahim 的近期研究：在网页数据访问困难时考虑
 
 - [本周期 AMA 转述](https://x.com/IanJKerins/status/2109559519584088093)
 
-[返回目录](../README.md)
+[English](en/android-protection-inspection.md) | [返回目录](../README.md)

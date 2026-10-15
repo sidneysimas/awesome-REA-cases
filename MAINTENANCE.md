@@ -3,8 +3,10 @@
 ## 数据与编辑分工
 
 - `data/cases.json` 是完整案例集合的唯一数据源。
-- `scripts/build.py` 只生成 `cases/*.md`、`categories/*.md`、`INDEX.md`、`INDEX.en.md`，不写入或要求 README 与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
+- `scripts/build.py` 只生成 `cases/*.md`、`cases/en/*.md`、`categories/*.md`、`categories/en/*.md`、`INDEX.md`、`INDEX.en.md`，不写入或要求 README 与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
 - `README.md` 与 `README.en.md` 是维护者亲自判断、直接编辑的精选首页。它们是仓库的门面，不是数据库导出。
+- 每条 `en` 恰好包含非空字符串 `title`、`summary`、`description` 以及列表 `metadata`、`source_labels`。详情必须完整忠实翻译，不用摘要占位；两个列表分别与原 `metadata`、`sources` 数量一致且逐项对应，元素为非空字符串，原 metadata 为空时译文也为空。来源 URL 只保存在 `sources`。新增或改动记录须同步两种语言，保留归属、日期、数值单位、待验证和静态分析等全部边界；翻译本身不刷新证据日期、热度或状态。
+- 中英文详情和分类页保留语言互链；英文 README、总目录与分类页直接链接英文详情。维护时核对双向切换、返回链接与本地链接目标（含锚点），手工 README 不受生成器覆盖。
 
 ## 首页编辑规则
 
@@ -32,7 +34,7 @@
 
 ## 自动检查
 
-GitHub Actions 在 push、PR、每周及手动触发时验证字段、重复 ID / 来源集、HTTPS 链接格式、生成文件同步及单元测试。生成一致性只针对完整总目录、分类页和案例详情；测试保证生成器不会覆盖手工 README。
+GitHub Actions 在 push、PR、每周及手动触发时验证字段、重复 ID / 来源集、HTTPS 链接格式、生成文件同步及单元测试。生成一致性只针对两种语言的完整总目录、分类页和案例详情；`--check` 检测中英文详情的过期、缺失及孤立文件。缺少完整英文或列表数量不符时校验失败，不回退中文或摘要；测试保证生成器不会覆盖手工 README，并核对语言导航与本地链接。
 
 CI **不**确认外部链接可访问，不**复现**软件，不替维护者选择首页案例。X 的登录、限流和反爬响应，不能当成链接已失效。自动格式检查与维护者的来源核验、编辑判断必须分开。
 
@@ -45,6 +47,8 @@ git diff --check
 
 ## 发布与版权
 
-仓库仅提供 Markdown，不生成 HTML。中文为默认入口；英文首页与总目录可阅读，案例详情与维护文档暂为中文。完整数据中的 `en` 字段用于英文总目录；首页另由维护者选编。
+仓库仅提供 Markdown，不生成 HTML。中文为默认入口；英文首页、总目录、分类页与全部案例详情形成完整英文阅读路径。贡献与维护文档仍以中文为主，英文导航明确标注。完整数据中的 `en` 字段用于生成英文总目录、分类页和详情；首页另由维护者选编。
+
+English maintenance: translate the full description, each metadata note and each source label whenever a record changes. Keep original evidence boundaries and single-sourced URLs, regenerate both languages, and check navigation. README selections, prose and timestamps remain hand-maintained.
 
 MIT 许可只涵盖本项目原创摘要、数据整理与代码，不能授权链接中的游戏、软件、源代码或资产。复现需要使用合法获得的目标；本项目不分发这些目标。

@@ -13,4 +13,4 @@ TS-Fisher 分享用 REA + Kimi K3 反编译 KOEI 1993 年游戏《航空霸业2�
 
 - [本周期公开来源](https://x.com/TSFisher24nrex/status/2109452544913326086)
 
-[返回目录](../README.md)
+[English](en/aerobiz-2-decompilation.md) | [返回目录](../README.md)

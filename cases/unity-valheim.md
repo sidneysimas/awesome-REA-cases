@@ -11,4 +11,4 @@ Unity 游戏常将 C# 逻辑编译到 Assembly-CSharp.dll；Valheim（《英灵�
 - [原始记录](https://github.com/morluto/rea/issues/1801)
 - [Valheim 讨论](https://github.com/morluto/rea/issues/1371)
 
-[返回目录](../README.md)
+[English](en/unity-valheim.md) | [返回目录](../README.md)

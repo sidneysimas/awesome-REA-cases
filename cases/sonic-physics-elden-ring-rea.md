@@ -12,4 +12,4 @@
 
 - [本窗口具体 Mod 宣称与流程](https://x.com/i/status/2110648710606557644)
 
-[返回目录](../README.md)
+[English](en/sonic-physics-elden-ring-rea.md) | [返回目录](../README.md)

@@ -14,4 +14,4 @@
 - [本窗口原帖](https://x.com/i/status/2109783203892597103)
 - [同一案例本窗口补充帖](https://x.com/i/status/2109783810472845779)
 
-[返回目录](../README.md)
+[English](en/sixteen-note-files-decoder-report.md) | [返回目录](../README.md)

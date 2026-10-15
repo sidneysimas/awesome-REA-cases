@@ -12,4 +12,4 @@
 
 - [适配器固件修复的本窗口转述](https://x.com/i/status/2110759012266332509)
 
-[返回目录](../README.md)
+[English](en/carplay-adapter-rea-grok-firmware.md) | [返回目录](../README.md)

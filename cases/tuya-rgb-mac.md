@@ -12,4 +12,4 @@ Lucho 买了使用涂鸦（Tuya）方案的 RGB 灯，不想每次都依赖厂�
 
 - [看 X 热门帖](https://x.com/luchoalfonso_/status/2108200739495362718)
 
-[返回目录](../README.md)
+[English](en/tuya-rgb-mac.md) | [返回目录](../README.md)

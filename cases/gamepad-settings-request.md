@@ -13,4 +13,4 @@ goDavi 用 REA 研究常用小手柄的原厂蓝牙协议，称已成功，接�
 
 - [作者原帖](https://x.com/corndogjpn2/status/2109289076243525916)
 
-[返回目录](../README.md)
+[English](en/gamepad-settings-request.md) | [返回目录](../README.md)

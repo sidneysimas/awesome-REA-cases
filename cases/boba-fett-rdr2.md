@@ -12,4 +12,4 @@ Chris 与 Angaisb_ 希望把《星球大战：前线 II》中的波巴·费特�
 
 - [作者原帖](https://x.com/ChrisGPT/status/2106925689190354989)
 
-[返回目录](../README.md)
+[English](en/boba-fett-rdr2.md) | [返回目录](../README.md)

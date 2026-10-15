@@ -12,4 +12,4 @@ KEF LSX II 是桌面无线音箱。作者受困于 Mac USB 音量仅有约六档
 - [作者报告](https://x.com/i/status/2110581933533184501)
 - [公开实现及测量说明](https://github.com/roberdorfer/kef-lsx-volume)
 
-[返回目录](../README.md)
+[English](en/kef-lsx-ii-volume-fixer.md) | [返回目录](../README.md)

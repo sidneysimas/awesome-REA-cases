@@ -15,4 +15,4 @@
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109767636452265990)
 - [看公开项目 README](https://github.com/cudanexus/vd-streamer-linux)
 
-[返回目录](../README.md)
+[English](en/virtual-desktop-streamer-linux.md) | [返回目录](../README.md)

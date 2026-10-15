@@ -15,4 +15,4 @@ Hars 正让帖子中称为 Astra、配置为 xHigh 的模型，配合 REA 研究
 - [本窗口另一用户的MCP签名限制与REA计划](https://x.com/i/status/2110692783375757778)
 - [此前父串：Codex电脑操作MCP供Opus使用（背景）](https://x.com/i/status/2110415588438733222)
 
-[返回目录](../README.md)
+[English](en/codex-cua-harness-research.md) | [返回目录](../README.md)

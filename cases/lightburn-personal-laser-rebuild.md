@@ -13,4 +13,4 @@ Homard Simpson（LIQUID8RPF）报告借助 Reverse Engineer Anything，约16分�
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109789864891940904)
 
-[返回目录](../README.md)
+[English](en/lightburn-personal-laser-rebuild.md) | [返回目录](../README.md)

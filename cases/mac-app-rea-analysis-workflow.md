@@ -13,4 +13,4 @@ REA 使用由帖子明确陈述；发帖者身份未确认。
 
 - [发帖者自述：REA 辅助的 Mac 软件分析与交付物（账号身份未确认）](https://x.com/i/status/2110382256829386935)
 
-[返回目录](../README.md)
+[English](en/mac-app-rea-analysis-workflow.md) | [返回目录](../README.md)

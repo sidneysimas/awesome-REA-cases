@@ -12,4 +12,4 @@
 
 - [本窗口软件保存建议](https://x.com/i/status/2110686539571478745)
 
-[返回目录](../README.md)
+[English](en/lotus-smartsuite-linux-revival-idea.md) | [返回目录](../README.md)

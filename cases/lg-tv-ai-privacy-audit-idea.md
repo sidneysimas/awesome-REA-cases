@@ -13,4 +13,4 @@ Haydon Ryan 回复 LG 电视隐私争议帖，提出用 Reverse Engineering Anyt
 
 - [看本窗口 X 帖](https://x.com/i/status/2109718682385502411)
 
-[返回目录](../README.md)
+[English](en/lg-tv-ai-privacy-audit-idea.md) | [返回目录](../README.md)

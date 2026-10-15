@@ -12,4 +12,4 @@ Rust Duty作者把研究问题写得很明确：LLM能否仅从视频提炼玩�
 
 - [Rust Duty作者进度与非反编译边界](https://x.com/i/status/2110752844328419587)
 
-[返回目录](../README.md)
+[English](en/rust-duty-video-gameplay-rebuild.md) | [返回目录](../README.md)

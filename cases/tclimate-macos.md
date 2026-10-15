@@ -12,4 +12,4 @@ TCLimate 是面向 TCL 空调的原生 macOS 菜单栏控制应用。帖子称�
 
 - [第三方项目介绍（非开发者本人确认）](https://x.com/i/status/2110018382762262902)
 
-[返回目录](../README.md)
+[English](en/tclimate-macos.md) | [返回目录](../README.md)

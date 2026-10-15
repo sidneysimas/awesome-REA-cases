@@ -13,4 +13,4 @@
 
 - [作者关于《三国志14》修改器与 MCP 的原帖](https://x.com/i/status/2109913567428592046)
 
-[返回目录](../README.md)
+[English](en/three-kingdoms-mod-mcp.md) | [返回目录](../README.md)

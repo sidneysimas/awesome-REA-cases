@@ -13,4 +13,4 @@ REA 使用、应用制作及 95%/90% 分数均为发帖者自述；方法与结�
 
 - [发帖者自述（身份及评分未独立核验）](https://x.com/i/status/2110459951365980334)
 
-[返回目录](../README.md)
+[English](en/apple-weather-rea-rebuild.md) | [返回目录](../README.md)

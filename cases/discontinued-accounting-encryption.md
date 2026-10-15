@@ -13,4 +13,4 @@ liguozzz 在 REA 讨论中回顾上个月研究一款停更记账软件的尝试
 
 - [本周期作者报告](https://x.com/i/status/2109671680977367085)
 
-[返回目录](../README.md)
+[English](en/discontinued-accounting-encryption.md) | [返回目录](../README.md)

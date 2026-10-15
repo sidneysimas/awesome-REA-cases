@@ -13,4 +13,4 @@
 - [本轮二手介绍](https://x.com/i/status/2110628235797217327)
 - [作者项目说明](https://github.com/whylurking/IsaacRecomp)
 
-[返回目录](../README.md)
+[English](en/isaacrecomp-flash-cpp-report.md) | [返回目录](../README.md)

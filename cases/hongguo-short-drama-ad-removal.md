@@ -15,4 +15,4 @@ REA 使用由发帖者明确自述；身份、过程与代码未核验。
 
 - [发帖者关于使用 REA 逆向红果短剧并实现去广告与去悬浮窗的第一人称报告；效果未独立核验](https://x.com/i/status/2110320554049941661)
 
-[返回目录](../README.md)
+[English](en/hongguo-short-drama-ad-removal.md) | [返回目录](../README.md)

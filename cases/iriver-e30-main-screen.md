@@ -12,4 +12,4 @@
 
 - [作者进行中报告](https://x.com/i/status/2110651009181851731)
 
-[返回目录](../README.md)
+[English](en/iriver-e30-main-screen.md) | [返回目录](../README.md)

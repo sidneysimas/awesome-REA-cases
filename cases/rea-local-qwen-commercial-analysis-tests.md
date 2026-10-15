@@ -12,4 +12,4 @@ analysis-test不表示通过独立测试；模型名称沿用原帖。
 
 - [本窗口作者多目标测试报告](https://x.com/i/status/2110696564335214807)
 
-[返回目录](../README.md)
+[English](en/rea-local-qwen-commercial-analysis-tests.md) | [返回目录](../README.md)

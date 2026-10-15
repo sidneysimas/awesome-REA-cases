@@ -12,4 +12,4 @@
 
 - [Claude吞吐与固件研究建议](https://x.com/i/status/2110757069968261388)
 
-[返回目录](../README.md)
+[English](en/usb-sdr-gpu-claude-inspection-idea.md) | [返回目录](../README.md)

@@ -14,4 +14,4 @@
 
 - [作者关于 REA 辅助研究终端的原帖（第一手自述）](https://x.com/i/status/2110082824371908790)
 
-[返回目录](../README.md)
+[English](en/bloomberg-style-research-terminal.md) | [返回目录](../README.md)

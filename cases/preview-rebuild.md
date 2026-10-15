@@ -13,4 +13,4 @@ Preview（预览）是macOS自带的图片和PDF工具。Mahesh把重建它作�
 - [作者原帖](https://x.com/maheshboda006/status/2109154423712977359)
 - [10月15日中文过程叙述（非独立复现）](https://x.com/i/status/2110613996382654771)
 
-[返回目录](../README.md)
+[English](en/preview-rebuild.md) | [返回目录](../README.md)

@@ -13,4 +13,4 @@
 - [候选介绍](https://x.com/i/status/2110594366989369744)
 - [项目文档与源码](https://github.com/newliver666/apk-reverse)
 
-[返回目录](../README.md)
+[English](en/apk-reverse-agent-skill.md) | [返回目录](../README.md)

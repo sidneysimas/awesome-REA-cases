@@ -15,4 +15,4 @@
 - [10月13日研究边界（补充来源）](https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/research/REA_FINDINGS.md)
 - [10月13日项目验证记录（补充来源）](https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/VALIDATION.md)
 
-[返回目录](../README.md)
+[English](en/reacut-jianying-open-editor.md) | [返回目录](../README.md)

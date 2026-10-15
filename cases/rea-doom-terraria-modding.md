@@ -12,4 +12,4 @@
 
 - [作者实验报告与视频入口](https://x.com/i/status/2110641024389271883)
 
-[返回目录](../README.md)
+[English](en/rea-doom-terraria-modding.md) | [返回目录](../README.md)

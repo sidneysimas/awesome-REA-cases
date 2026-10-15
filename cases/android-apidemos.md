@@ -9,4 +9,4 @@ ApiDemos 是 Appium 用来展示和测试 Android 功能的示例 App。贡献�
 
 - [原始 PR 与验证](https://github.com/morluto/rea/pull/738)
 
-[返回目录](../README.md)
+[English](en/android-apidemos.md) | [返回目录](../README.md)

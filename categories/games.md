@@ -1,6 +1,6 @@
 # 游戏与游戏保存
 
-[返回主目录](../README.md)
+[返回主目录](../README.md) | [English](en/games.md)
 
 - [Universal Modder：用 AI 给现有游戏做 Mod](../cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏内容 Mod。 **[其他 AI 逆向]**
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](../cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**

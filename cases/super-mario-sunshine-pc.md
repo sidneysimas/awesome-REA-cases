@@ -14,4 +14,4 @@ Adil 分享《超级马里奥阳光》的原生 PC 移植，称经 AI Agent 反�
 - [本周期公开来源](https://x.com/Edenwoodfilm/status/2109468542437310510)
 - [同名移植项目背景（未确认原帖链接对应）](https://github.com/chasem-dev/sms-pc-port)
 
-[返回目录](../README.md)
+[English](en/super-mario-sunshine-pc.md) | [返回目录](../README.md)

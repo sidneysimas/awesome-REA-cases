@@ -14,4 +14,4 @@ Denis Darkin（@dvdarkin）报告用不到 40 美元的 16 键 RGB 宏键盘辅�
 - [作者本轮 Claude Code 辅助逆向报告](https://x.com/i/status/2110541828097462605)
 - [公开实现及配置/协议文档（本轮补查）](https://github.com/dvdarkin/gamekb-k17)
 
-[返回目录](../README.md)
+[English](en/claude-code-rgb-macropad.md) | [返回目录](../README.md)

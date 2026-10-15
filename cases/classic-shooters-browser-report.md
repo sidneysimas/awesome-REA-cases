@@ -14,4 +14,4 @@
 - [本周期传播报告](https://x.com/i/status/2109639780577190171)
 - [本周期传播报告](https://x.com/i/status/2109652812577517754)
 
-[返回目录](../README.md)
+[English](en/classic-shooters-browser-report.md) | [返回目录](../README.md)

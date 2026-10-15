@@ -26,8 +26,9 @@ class EditorialReadmeTests(unittest.TestCase):
             records = json.loads((root / 'data/cases.json').read_text())
             for name in ('INDEX.md', 'INDEX.en.md'):
                 index = (root / name).read_text()
+                case_dir = 'cases/en' if name == 'INDEX.en.md' else 'cases'
                 for record in records:
-                    self.assertIn(f"](cases/{record['id']}.md)", index)
+                    self.assertIn(f"]({case_dir}/{record['id']}.md)", index)
             subprocess.run(['python3', str(root / 'scripts/build.py'), '--check'], check=True, capture_output=True)
 
 

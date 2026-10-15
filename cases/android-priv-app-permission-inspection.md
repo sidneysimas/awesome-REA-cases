@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109711257779765741)
 
-[返回目录](../README.md)
+[English](en/android-priv-app-permission-inspection.md) | [返回目录](../README.md)

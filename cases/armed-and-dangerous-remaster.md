@@ -13,4 +13,4 @@ REA 使用未确认；完成状态未验证。
 
 - [X 帖子（第一人称项目进度报告；捕获记录未识别作者）](https://x.com/i/status/2109911827203358998)
 
-[返回目录](../README.md)
+[English](en/armed-and-dangerous-remaster.md) | [返回目录](../README.md)

@@ -13,4 +13,4 @@ Haseeb Mir（@HaseebMir91）介绍REA分支RE-Agent，目标是为失去支持�
 - [作者介绍RE-Agent与IGI 2首个案例](https://x.com/i/status/2110744399567073616)
 - [后续工具与验证循环介绍](https://x.com/i/status/2110751222437150721)
 
-[返回目录](../README.md)
+[English](en/re-agent-igi2-legacy-tools.md) | [返回目录](../README.md)

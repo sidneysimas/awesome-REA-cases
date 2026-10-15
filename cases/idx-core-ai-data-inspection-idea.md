@@ -12,4 +12,4 @@
 
 - [idx-core与Claude研究建议](https://x.com/i/status/2110735275358027901)
 
-[返回目录](../README.md)
+[English](en/idx-core-ai-data-inspection-idea.md) | [返回目录](../README.md)

@@ -14,4 +14,4 @@ Kristján Ingi 称 Opus 研究 CPU 散热器屏幕的 USB 协议并编写 Rust �
 - [看本窗口 X 帖](https://x.com/i/status/2109713514990379076)
 - [看公开项目 README](https://github.com/kristjaningi/cooler-lcd)
 
-[返回目录](../README.md)
+[English](en/thermalright-cooler-lcd-rust.md) | [返回目录](../README.md)

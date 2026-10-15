@@ -14,4 +14,4 @@ PS5 是索尼游戏主机。0x0SojalSec 称 AI 在数周内逆向其安全机制
 - [本周期传播报告](https://x.com/0x0SojalSec/status/2109517461921902780)
 - [10 月 15 日第三方报道：LLM 与具名研究者线索（未核验原始研究）](https://x.com/i/status/2110549825548959842)
 
-[返回目录](../README.md)
+[English](en/ps5-ai-security-report.md) | [返回目录](../README.md)

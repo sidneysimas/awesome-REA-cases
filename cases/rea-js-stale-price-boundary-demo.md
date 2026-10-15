@@ -12,4 +12,4 @@
 
 - [作者的调用定位、边界结果与演示限制](https://x.com/i/status/2110761684411572247)
 
-[返回目录](../README.md)
+[English](en/rea-js-stale-price-boundary-demo.md) | [返回目录](../README.md)

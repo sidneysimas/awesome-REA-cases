@@ -13,4 +13,4 @@ Scalers 在讨论 ToDesk 与 UU 远程桌面软件时，提出利用本地安装
 
 - [本周期公开来源](https://x.com/ScalersTalk/status/2109481617182138694)
 
-[返回目录](../README.md)
+[English](en/remote-client-privacy-monitor-idea.md) | [返回目录](../README.md)

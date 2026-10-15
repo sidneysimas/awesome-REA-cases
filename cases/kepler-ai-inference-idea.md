@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109705207219151126)
 
-[返回目录](../README.md)
+[English](en/kepler-ai-inference-idea.md) | [返回目录](../README.md)

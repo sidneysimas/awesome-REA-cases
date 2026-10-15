@@ -13,4 +13,4 @@ MovingCharts 希望在 macOS 上设置原配软件不支持的游戏鼠标，报
 
 - [本周期公开来源](https://x.com/MovingCharts11/status/2109491501013377526)
 
-[返回目录](../README.md)
+[English](en/gaming-mouse-macos.md) | [返回目录](../README.md)

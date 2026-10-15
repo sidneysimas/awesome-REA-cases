@@ -12,4 +12,4 @@
 
 - [PDF最小修改提示词建议](https://x.com/i/status/2110755472089518089)
 
-[返回目录](../README.md)
+[English](en/pdf-binary-minimal-edit-ai-idea.md) | [返回目录](../README.md)

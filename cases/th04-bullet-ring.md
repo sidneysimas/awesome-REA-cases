@@ -10,4 +10,4 @@ TH04 是《东方幻想乡》，东方 Project 系列的一款弹幕射击游戏
 - [案例 PR](https://github.com/morluto/rea/pull/970)
 - [证据记录](https://github.com/morluto/rea/blob/main/website/evidence/th04-bullet-ring.md)
 
-[返回目录](../README.md)
+[English](en/th04-bullet-ring.md) | [返回目录](../README.md)

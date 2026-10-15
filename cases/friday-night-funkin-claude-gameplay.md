@@ -13,4 +13,4 @@
 
 - [作者关于 Claude 辅助新玩法的原帖（未独立核验）](https://x.com/i/status/2110407024731439392)
 
-[返回目录](../README.md)
+[English](en/friday-night-funkin-claude-gameplay.md) | [返回目录](../README.md)

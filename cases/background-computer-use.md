@@ -13,4 +13,4 @@ anupam batra 研究 Codex 的后台 Computer Use，希望 Agent 操作另一窗�
 - [作者原帖](https://x.com/anupambatra_/status/2047767285969145883)
 - [公开实现](https://github.com/actuallyepic/background-computer-use)
 
-[返回目录](../README.md)
+[English](en/background-computer-use.md) | [返回目录](../README.md)

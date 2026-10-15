@@ -12,4 +12,4 @@
 
 - [作者的REA代码阅读使用报告](https://x.com/i/status/2110749141710028914)
 
-[返回目录](../README.md)
+[English](en/grok-build-rea-code-study.md) | [返回目录](../README.md)

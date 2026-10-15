@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109733493202981247)
 
-[返回目录](../README.md)
+[English](en/codex-replit-saas-subset-rebuild.md) | [返回目录](../README.md)

@@ -12,4 +12,4 @@ MonoFevc 买了一只标称不支持 Windows 的蓝牙手柄，希望在 PC 上�
 
 - [作者原帖](https://x.com/fexisnpc/status/2103865671608307838)
 
-[返回目录](../README.md)
+[English](en/bluetooth-gamepad-windows.md) | [返回目录](../README.md)

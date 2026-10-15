@@ -15,4 +15,4 @@ champi 在本周期询问 argofowl 的新浏览器扩展是否来自此前计划
 - [作者发布说明（背景）](https://x.com/argofowl/status/2109571141434277939)
 - [公开实现](https://github.com/argofowl/fowlbrowser)
 
-[返回目录](../README.md)
+[English](en/fowlbrowser-agent-bridge.md) | [返回目录](../README.md)

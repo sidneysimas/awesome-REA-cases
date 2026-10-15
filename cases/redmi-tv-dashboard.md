@@ -13,4 +13,4 @@ AI.阿烈叔希望将闲置红米电视变成作战数据大屏，报告由 Muse
 
 - [本周期作者实践记录](https://x.com/zxlie_fehelper/status/2109533072370917846)
 
-[返回目录](../README.md)
+[English](en/redmi-tv-dashboard.md) | [返回目录](../README.md)

@@ -13,4 +13,4 @@
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109779123778490858)
 
-[返回目录](../README.md)
+[English](en/wechat-local-chat-decryption-report.md) | [返回目录](../README.md)

@@ -13,4 +13,4 @@
 - [原始记录](https://x.com/thinkszyg/status/2109309251533570509)
 - [本周期扩展到全屋设备的作者报告](https://x.com/thinkszyg/status/2109526361971073103)
 
-[返回目录](../README.md)
+[English](en/smart-toilet.md) | [返回目录](../README.md)

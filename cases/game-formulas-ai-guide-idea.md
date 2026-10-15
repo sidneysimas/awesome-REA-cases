@@ -12,4 +12,4 @@
 
 - [作者的机制百科设想](https://x.com/i/status/2110712989737472285)
 
-[返回目录](../README.md)
+[English](en/game-formulas-ai-guide-idea.md) | [返回目录](../README.md)

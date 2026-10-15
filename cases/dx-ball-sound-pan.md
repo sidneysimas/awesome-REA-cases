@@ -10,4 +10,4 @@ DX-Ball 是老式打砖块游戏。这个案例不是重做整款游戏，而是
 - [案例 PR](https://github.com/morluto/rea/pull/876)
 - [证据记录](https://github.com/morluto/rea/blob/main/website/evidence/dx-ball-sound-pan.md)
 
-[返回目录](../README.md)
+[English](en/dx-ball-sound-pan.md) | [返回目录](../README.md)

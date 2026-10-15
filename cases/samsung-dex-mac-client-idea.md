@@ -12,4 +12,4 @@ Samsung DeX 是三星面向手机桌面式使用的功能。发帖者在本轮�
 
 - [本轮 Mac 客户端需求帖](https://x.com/i/status/2110544862844203290)
 
-[返回目录](../README.md)
+[English](en/samsung-dex-mac-client-idea.md) | [返回目录](../README.md)

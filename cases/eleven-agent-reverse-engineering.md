@@ -25,4 +25,4 @@
 - [本轮第三方架构与功能主张](https://x.com/i/status/2110634488938275080)
 - [10月15日本窗口：修改副本、撤销和工具链介绍](https://x.com/i/status/2110655118282781161)
 
-[返回目录](../README.md)
+[English](en/eleven-agent-reverse-engineering.md) | [返回目录](../README.md)

@@ -10,4 +10,4 @@
 
 - [原始记录](https://github.com/morluto/rea/issues/893)
 
-[返回目录](../README.md)
+[English](en/large-android-apk.md) | [返回目录](../README.md)

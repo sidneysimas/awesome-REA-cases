@@ -12,4 +12,4 @@
 
 - [作者的规则研究与Godot重建计划](https://x.com/i/status/2110761379863154777)
 
-[返回目录](../README.md)
+[English](en/gta-rules-godot-rea-plan.md) | [返回目录](../README.md)

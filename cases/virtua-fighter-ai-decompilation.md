@@ -12,4 +12,4 @@
 
 - [项目进行中介绍（X）](https://x.com/i/status/2109858919111913543)
 
-[返回目录](../README.md)
+[English](en/virtua-fighter-ai-decompilation.md) | [返回目录](../README.md)

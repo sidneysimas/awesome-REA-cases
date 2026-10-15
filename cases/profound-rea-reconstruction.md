@@ -14,4 +14,4 @@
 
 - [作者自述：REA 研究 Profound 并开源重建项目](https://x.com/i/status/2110335911992979960)
 
-[返回目录](../README.md)
+[English](en/profound-rea-reconstruction.md) | [返回目录](../README.md)

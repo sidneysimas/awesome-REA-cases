@@ -12,4 +12,4 @@ Jonas Wagner（@jonaswagnr）长期用 ScanSnap iX500 维持无纸化工作流�
 
 - [作者原帖与后续讨论](https://x.com/i/status/2110647905027604700)
 
-[返回目录](../README.md)
+[English](en/scansnap-ix500-claude-mac.md) | [返回目录](../README.md)

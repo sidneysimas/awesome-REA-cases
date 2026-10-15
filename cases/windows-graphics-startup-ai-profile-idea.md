@@ -13,4 +13,4 @@
 - [本窗口 Agent 逆向剖析建议](https://x.com/i/status/2110701870826328360)
 - [此前父帖：具体启动瓶颈（补充背景）](https://x.com/i/status/2110588092696739937)
 
-[返回目录](../README.md)
+[English](en/windows-graphics-startup-ai-profile-idea.md) | [返回目录](../README.md)

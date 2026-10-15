@@ -12,4 +12,4 @@
 
 - [作者原帖](https://x.com/dotey/status/2109417222724600172)
 
-[返回目录](../README.md)
+[English](en/codex-browser-annotations.md) | [返回目录](../README.md)

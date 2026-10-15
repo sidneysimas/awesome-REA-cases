@@ -13,4 +13,4 @@
 - [往期候选完整文章](https://x.com/i/status/2110570919169286424)
 - [文章指向的架构图项目](https://github.com/tt-a1i/archify)
 
-[返回目录](../README.md)
+[English](en/rea-archify-diagrams.md) | [返回目录](../README.md)

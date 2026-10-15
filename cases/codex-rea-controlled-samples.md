@@ -13,4 +13,4 @@
 
 - [本周期作者对照测试](https://x.com/0xlangeai/status/2109603485914206498)
 
-[返回目录](../README.md)
+[English](en/codex-rea-controlled-samples.md) | [返回目录](../README.md)

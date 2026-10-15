@@ -13,4 +13,4 @@ CapCut 是视频剪辑工具，转场模块负责片段之间的衔接效果。f
 
 - [本周期研究讨论](https://x.com/fireandstart/status/2109554617004466397)
 
-[返回目录](../README.md)
+[English](en/capcut-transition-research.md) | [返回目录](../README.md)

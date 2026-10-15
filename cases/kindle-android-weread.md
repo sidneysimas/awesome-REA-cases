@@ -13,4 +13,4 @@ HB 想在 Kindle 上安装较新的微信读书水墨屏版本，旧 Android 4/5
 
 - [本周期作者进展](https://x.com/hbyxabc/status/2109583911483519202)
 
-[返回目录](../README.md)
+[English](en/kindle-android-weread.md) | [返回目录](../README.md)

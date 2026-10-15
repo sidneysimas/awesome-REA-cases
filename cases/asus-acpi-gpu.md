@@ -13,4 +13,4 @@
 
 - [作者原帖](https://x.com/200Tabs1Brain/status/2108983700776186112)
 
-[返回目录](../README.md)
+[English](en/asus-acpi-gpu.md) | [返回目录](../README.md)

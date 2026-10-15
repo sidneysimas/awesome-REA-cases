@@ -11,4 +11,4 @@ WHOOP 是健康与运动追踪设备及其配套服务。原记录为uwwgo分享
 - [原始记录](https://x.com/uwwgo/status/2109217632758976755)
 - [10月15日Zhoop/NOOP用途转述（非独立核验）](https://x.com/i/status/2110602443814047871)
 
-[返回目录](../README.md)
+[English](en/whoop-apk.md) | [返回目录](../README.md)

@@ -9,4 +9,4 @@
 
 - [原始 PR 与工具链验证](https://github.com/morluto/rea/pull/741)
 
-[返回目录](../README.md)
+[English](en/firmware-extract-handoff.md) | [返回目录](../README.md)

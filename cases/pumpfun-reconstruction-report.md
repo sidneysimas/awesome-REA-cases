@@ -24,4 +24,4 @@ Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse �
 - [本窗口开发者本人进行中报告](https://x.com/i/status/2109761893808365700)
 - [本批 X 帖（quote/转述；作者身份未确认，非原开发者确认）](https://x.com/i/status/2110080570612941090)
 
-[返回目录](../README.md)
+[English](en/pumpfun-reconstruction-report.md) | [返回目录](../README.md)

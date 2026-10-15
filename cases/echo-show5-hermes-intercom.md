@@ -14,4 +14,4 @@ Marc Seal（Kurcide）称研究 Echo Show 5 第二代并搭建自己的系统，
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109791974014496983)
 
-[返回目录](../README.md)
+[English](en/echo-show5-hermes-intercom.md) | [返回目录](../README.md)

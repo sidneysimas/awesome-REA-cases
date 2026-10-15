@@ -12,4 +12,4 @@ whyamas（@whyamas）介绍自己建立的AI逆向项目目录，声称每项列
 
 - [目录作者介绍及演示](https://x.com/i/status/2110730358153269753)
 
-[返回目录](../README.md)
+[English](en/ai-reverse-project-directory.md) | [返回目录](../README.md)

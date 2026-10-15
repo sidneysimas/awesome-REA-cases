@@ -13,4 +13,4 @@ Rex St. John 列出老游戏研究路线：从 GOG 获取游戏、运行 REA、�
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109779769307087321)
 
-[返回目录](../README.md)
+[English](en/dark-sun-shattered-lands-port-idea.md) | [返回目录](../README.md)

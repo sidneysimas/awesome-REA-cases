@@ -14,4 +14,4 @@ Zhuo Zhang 团队以 macOS 的 Preview（图片与 PDF 预览工具）展示 Omn
 - [本周期研究团队演示帖](https://x.com/i2huer/status/2109511316465414274)
 - [概念验证 Skill 与边界](https://github.com/Pasta-Lab/edit-my-app)
 
-[返回目录](../README.md)
+[English](en/preview-ai-sidebar.md) | [返回目录](../README.md)

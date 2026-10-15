@@ -12,4 +12,4 @@
 
 - [用户的Grok Bot研究提问](https://x.com/i/status/2110750477130604789)
 
-[返回目录](../README.md)
+[English](en/grok-bot-hermes-rea-idea.md) | [返回目录](../README.md)

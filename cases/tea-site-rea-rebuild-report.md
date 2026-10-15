@@ -12,4 +12,4 @@
 
 - [作者关于 REA 网站重建的原帖](https://x.com/i/status/2110010062597230838)
 
-[返回目录](../README.md)
+[English](en/tea-site-rea-rebuild-report.md) | [返回目录](../README.md)

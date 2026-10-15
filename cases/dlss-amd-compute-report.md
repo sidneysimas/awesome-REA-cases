@@ -15,4 +15,4 @@ DLSS 是 NVIDIA 的游戏画面重建技术。MisterSpace3 在相关线程中称
 - [所回复线程的 DLSS 背景](https://x.com/SebAaltonen/status/2108990746280038649)
 - [相关公开项目背景（未确认评论对应）](https://github.com/mochizuki0323/DLSSNR-AMD)
 
-[返回目录](../README.md)
+[English](en/dlss-amd-compute-report.md) | [返回目录](../README.md)

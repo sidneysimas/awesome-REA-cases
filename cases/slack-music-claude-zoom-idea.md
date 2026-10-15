@@ -13,4 +13,4 @@ Netanel Gilad 在 AI 逆向与应用重组讨论中提出两个具体互通方�
 
 - [本周期互通 idea](https://x.com/netanelgilad/status/2109590211034263756)
 
-[返回目录](../README.md)
+[English](en/slack-music-claude-zoom-idea.md) | [返回目录](../README.md)

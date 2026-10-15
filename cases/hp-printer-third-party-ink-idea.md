@@ -14,4 +14,4 @@ Kreia Notes 转述 r/singularity 的具体设想：用 Claude 重新编写 HP �
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109779363973738696)
 - [同一案例本窗口补充帖](https://x.com/i/status/2109779405300216058)
 
-[返回目录](../README.md)
+[English](en/hp-printer-third-party-ink-idea.md) | [返回目录](../README.md)

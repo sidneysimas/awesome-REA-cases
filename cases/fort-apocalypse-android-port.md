@@ -12,4 +12,4 @@ Fort Apocalypse 是一款 C64 游戏。作者以第一人称称已使用 Codex �
 
 - [作者原帖](https://x.com/i/status/2109865837477716324)
 
-[返回目录](../README.md)
+[English](en/fort-apocalypse-android-port.md) | [返回目录](../README.md)

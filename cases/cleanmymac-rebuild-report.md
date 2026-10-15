@@ -13,4 +13,4 @@ CleanMyMac 是 macOS 清理与维护软件。Wen 转述宝玉的实践，称用 
 
 - [本周期第三方报告](https://x.com/xiaoshan0413/status/2109540598633877515)
 
-[返回目录](../README.md)
+[English](en/cleanmymac-rebuild-report.md) | [返回目录](../README.md)

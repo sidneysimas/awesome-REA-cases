@@ -19,4 +19,4 @@ REA 6.5.0；作者自制 Electron 玩具应用；未接入 agent，未测试模�
 - [作者的 REA 6.5.0 玩具应用静态分析测试（未测试模型服从性）](https://x.com/i/status/2110441399279604113)
 - [另一用户的嵌入提示词干扰设想（未测试）](https://x.com/i/status/2110709861042503706)
 
-[返回目录](../README.md)
+[English](en/rea-binary-injection-test-idea.md) | [返回目录](../README.md)

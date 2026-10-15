@@ -12,4 +12,4 @@
 
 - [第三方引用帖（所述 Thariq 项目的转述，非作者确认）](https://x.com/i/status/2110037357164441796)
 
-[返回目录](../README.md)
+[English](en/rea-database-query-optimization-report.md) | [返回目录](../README.md)

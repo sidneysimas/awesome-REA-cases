@@ -14,4 +14,4 @@
 - [本窗口原帖](https://x.com/i/status/2109736028538093774)
 - [看公开项目 README](https://github.com/TechLuddite/omarchy-mobile-odin2)
 
-[返回目录](../README.md)
+[English](en/omarchy-mobile-odin2.md) | [返回目录](../README.md)

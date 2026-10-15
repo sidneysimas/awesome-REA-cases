@@ -14,4 +14,4 @@ Alexander Tanasie 分享 Nanolathe，称 Claude、Codex 与 DeepSeek 支持了�
 - [看本窗口 X 帖](https://x.com/i/status/2109705658907959786)
 - [看公开项目 README](https://github.com/nanolathe-gg/nanolathe)
 
-[返回目录](../README.md)
+[English](en/nanolathe-total-annihilation.md) | [返回目录](../README.md)
