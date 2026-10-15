@@ -12,3 +12,6 @@
 - [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](../cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
 - [16 个笔记文件：有无 REA 的解码对照实验转述](../cases/sixteen-note-files-decoder-report.md) — 长文转述对16个笔记文件的限时解码比较，两条语言版本合并。 **[REA · 待验证]**
 - [CPU kernels：Claude Code 编排 Astra 做汇编层优化](../cases/rea-cpu-kernel-optimization.md) — 作者称正在由 Claude Code 管理 Astra，借 REA 研究 CPU 内核优化。 **[REA · 进行中]**
+- [禁止逆向的许可：一次 Codex 与 Claude 行为对照](../cases/agent-reverse-license-test.md) — 作者测试 Agent 是否尊重禁止逆向条款，报告两组工具表现不同。 **[其他 AI 逆向 · 分析测试]**
+- [旧二进制：Agent 读反编译输出时编造 API 的失败报告](../cases/legacy-binary-agent-api-hallucination.md) — 作者回忆一次旧程序分析，Agent 自信引用实际不存在的接口。 **[其他 AI 逆向 · 分析测试]**
+- [人类与 Agent：两项静态逆向任务及上下文扩展性研究](../cases/humans-machines-sre-study.md) — 论文比较九个模型与人类理解二进制的表现，并分析4000个程序的上下文饱和。 **[其他 AI 逆向 · 分析测试]**

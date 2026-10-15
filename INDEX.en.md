@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**160 entries**, organized by use case, without a Top-N or popularity threshold.
+**181 entries**, organized by use case, without a Top-N or popularity threshold.
 
 The index is in English; linked case details, category pages, and contribution/maintenance guides are currently in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/games.md) (32)
-- [Hardware and interoperability](categories/hardware.md) (39)
-- [Applications and clients](categories/apps.md) (79)
-- [Algorithms and feature recovery](categories/algorithms.md) (10)
+- [Games and preservation](categories/games.md) (35)
+- [Hardware and interoperability](categories/hardware.md) (45)
+- [Applications and clients](categories/apps.md) (88)
+- [Algorithms and feature recovery](categories/algorithms.md) (13)
 - [Contribute a case](CONTRIBUTING.md) · [Maintenance](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -58,8 +58,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Friday Night Funkin’: a Claude-assisted gameplay variant](cases/friday-night-funkin-claude-gameplay.md) — The poster reports using Claude to create a gameplay variant based on a recent decompilation; REA use and functional parity are unconfirmed. **[REA use unconfirmed · Needs verification]**
 - [rea-engine: Rebuilding TicTacToe from a Windows game binary](cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA and reconstructing a Windows TicTacToe game from its binary, with all 19,683 board states matching byte for byte. **[REA]**
 - [Kirby: a reported REA investigation in progress](cases/kirby-rea-in-progress.md) — A poster says a Kirby reverse-engineering attempt is halfway through; the title, platform, artifacts and coverage are unspecified, and account concerns do not establish enforcement causation. **[REA · In progress]**
-- [Link's Awakening: a reported Claude Code-assisted PC port](cases/links-awakening-claude-pc-port-report.md) — A secondary roundup attributes a Link's Awakening PC recompilation largely to Claude Code; the version, repository, build evidence and AI contribution remain unverified. **[Other AI-assisted work · Needs verification]**
+- [Link's Awakening: the Claude-assisted LASRecomp project](cases/links-awakening-claude-pc-port-report.md) — The public project identifies Switch v1.0.0 and credits Claude Code with most work; the beta documents platform limits and reproducible crash triggers, not independently tested here. **[Other AI-assisted work · Needs verification]**
 - [Baldur's Gate 3: an agent-assisted modding idea](cases/bg3-agent-modding-idea.md) — A poster proposes BG3 as a target for agent enhancements and asks whether decompilation difficulty is a barrier; no specific mod or implementation is reported. **[REA use unconfirmed · Needs verification]**
+- [Richman 4: REA research to a Flutter iPhone rebuild](cases/richman4-flutter-iphone.md) — The author reports a day of REA research and another of Claude-assisted Flutter work, then an iPhone build; completeness and timing are self-reported. **[REA · Needs verification]**
+- [IsaacRecomp: the Flash Binding of Isaac as native C++](cases/isaacrecomp-flash-cpp-report.md) — The project acknowledges AI assistance, translates game logic and reads assets from the user's original copy; frame-rate and port claims are not independently tested here. **[Other AI-assisted work · In progress]**
+- [DOOM and Terraria: reported no-source mod experiments](cases/rea-doom-terraria-modding.md) — An author credits Claude Code and REA with DOOM cheats in 7m35s and a Terraria yeet mode in 7m57s; mechanisms and outcomes remain author-reported. **[REA · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -102,6 +105,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Ray-Ban Meta glasses: an Android assistant replacement based on reverse-engineered communication](cases/rayban-meta-claude-android.md) — The poster says they reverse-engineered communication between Ray-Ban Meta glasses and a phone and built an open-source Android app routing voice requests to Claude or a user-selected model; REA use and the implementation are unverified. **[REA use unconfirmed · Needs verification]**
 - [Home-device protocols connected to a local LLM](cases/bitfish-local-llm-home-control.md) — DiscusFish reports using REA to extract protocols from home-device apps without APIs, combining them with documented APIs under a local LLM; models and device-level tests are not provided. **[REA · Needs verification]**
 - [GAMEKB-K17: a Claude Code-assisted macropad protocol tool](cases/claude-code-rgb-macropad.md) — Denis Darkin reports reverse-engineering the vendor configurator with Claude Code; a public tool writes and reads back key mappings, firmware macros and RGB settings. Windows testing is project-reported, not independently reproduced. **[Other AI-assisted work]**
+- [KEF LSX II: finer Mac volume control](cases/kef-lsx-ii-volume-fixer.md) — A Claude-assisted USB audio passthrough and LAN volume bridge; latency, volume measurements and LSX II compatibility are project-reported. **[Other AI-assisted work]**
+- [Hailo: a planned agent-assisted reverse-engineering run](cases/hailo-agent-reverse-plan.md) — A poster plans Hailo research alongside Raspberry Pi agent-environment work; no device model, method or result is reported. **[REA use unconfirmed · In progress]**
+- [Wyze scale: weight data in a custom iOS app](cases/wyze-scale-custom-ios.md) — An author credits Claude with investigating a Wyze scale and enabling a personal iOS client with reminders and graphs; protocol and code are not public. **[Other AI-assisted work · Needs verification]**
+- [Tuya AC: local Mac controls exposed to Claude over MCP](cases/tuya-ac-mac-claude-mcp.md) — An author reports a cloud-free Wi-Fi menu-bar controller and MCP bridge for Claude; AI participation in the original protocol research is not established. **[REA use unconfirmed · Needs verification]**
+- [A HyperOS monitor: exploring exposed control services](cases/hyperos-monitor-ai-research.md) — A poster discusses DDC/CI and exposed services on their HyperOS monitor as an AI-research path; no model, command or working controller is reported. **[Other AI-assisted work · In progress]**
+- [Mi Health: timestamp repair and a cloud-data exporter](cases/mi-health-data-exporter.md) — An AI-analysis scare prompted database and miothealth protocol research; the public exporter documents login and pagination limits. Wearable data does not establish medical diagnoses. **[REA use unconfirmed · In progress]**
 
 ### Applications and clients
 
@@ -112,7 +121,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Flutter: build identity and AOT structure](cases/flutter-aot.md) — Identify runtime/build clues in real APKs, not complete Dart source. **[REA]**
 - [Website rebuild: delivery report](cases/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
 - [TradingView: reconstruction workflow claim](cases/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
-- [WHOOP Android app investigation](cases/whoop-apk.md) — An APK discussion without a confirmed public replacement client. **[REA use unconfirmed · Needs verification]**
+- [WHOOP Android app investigation](cases/whoop-apk.md) — An APK lead now accompanied by a secondary Zhoop/NOOP client report; local iPhone use and Claude Code protocol work are attributed, not independently verified. **[REA use unconfirmed · Needs verification]**
 - [ArtCraft: not proven Adobe or Office reverse engineering](cases/artcraft-boundary.md) — Early creative and Office-style rebuilds, now including PhotoCraft PSD round-trip evidence and MCP control; not proof of Adobe or Office decompilation. **[Other AI-assisted work · Related project]**
 - [Obsidian ASAR: large-package analysis](cases/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
 - [Large multidex Android APK](cases/large-android-apk.md) — A production-scale request; the original 133MB APK lacks a post-fix re-test. **[REA · In progress]**
@@ -184,6 +193,15 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Samsung DeX: an AI-assisted Mac client idea](cases/samsung-dex-mac-client-idea.md) — A poster asks for AI-assisted reverse engineering of Samsung DeX to build a Mac client; no implementation or technical plan is reported. **[Other AI-assisted work · Needs verification]**
 - [REA with Claude Code in isolation: a reported A/B test](cases/rea-claude-isolated-ab-test.md) — Zenn highlights a real-task A/B test in an isolated setup, saying standard tools sufficed for static analysis. The target, metrics and full methodology are not available in the candidate post. **[REA · Analysis test]**
 - [REA 6.4.0: Windows .NET and Electron sample tests](cases/rea-640-windows-managed-electron-test.md) — Posts report managed-decoding budget limits, an AI-made Electron sample's semantic graph, a non-executed Trap.dll constructor and a one-constant version diff. Findings are version-specific and not independently reproduced. **[REA · Analysis test]**
+- [A saved website investigated with WorkBuddy International](cases/workbuddy-website-reverse-report.md) — A poster reports a satisfactory website investigation, without naming the site or publishing an artifact; REA use is unconfirmed. **[REA use unconfirmed · Needs verification]**
+- [apk-reverse: an Android analysis skill for coding agents](cases/apk-reverse-agent-skill.md) — A public skill organizes APK, DEX and runtime investigation; workflow coverage is not evidence of successful recovery for arbitrary protected apps. **[Other AI-assisted work · Related project]**
+- [Codex: a personal library following REA research](cases/codex-rea-custom-library.md) — A poster reports experimenting with Codex and writing a library using REA; its interfaces, function and implementation are not disclosed. **[REA · In progress]**
+- [Notes example: tracing a CSV export button](cases/rea-notes-export-walkthrough.md) — A tutorial maps renderer, preload, main and CSV escaping into a specification-and-test workflow; it does not supply an independently reproduced export rebuild. **[REA · Analysis test]**
+- [Codex next-input prediction recreated for Pi](cases/codex-pi-next-hint.md) — The author reports extracting version-5 prompts/configuration and adapting them as pi-next-hint, with a 30-second deadline and suggestions that never auto-send. **[REA use unconfirmed · Needs verification]**
+- [Feishu: a dual-account Mac client after Codex/REA research](cases/feishu-dual-instance-codex-rea.md) — The author reports isolating a second Feishu 8.1.17 copy's data and single-instance lock, with local signature and separation checks; timing and safety claims are not independently reproduced. **[REA · Needs verification]**
+- [Roko Input: Apple on-device dictation after Typeless research](cases/rokoinput-apple-local-voice.md) — The author credits REA research; public source uses Apple speech APIs, stops without on-device support, and retains plaintext history by default. Personal non-commercial license; not independently tested. **[REA · In progress]**
+- [ReaCut: an independent editor informed by Jianying research](cases/reacut-jianying-open-editor.md) — Public research separates observed app behavior from original implementation; project validation reports real exports and plugin tests while retaining signing, CI, host and platform limitations. **[REA · In progress]**
+- [REA and archify: interactive architecture diagrams](cases/rea-archify-diagrams.md) — An author describes converting REA findings into typed diagram data and interactive HTML using archify; unnamed targets and diagram output do not establish a successful app rebuild. **[REA · Related project]**
 
 ### Algorithms and feature recovery
 
@@ -197,6 +215,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [CapCut subtitles: a template-driven renderer idea](cases/capcut-subtitle-renderer-idea.md) — Proposes reconstructing a subtitle renderer from its template DSL and comparing rendered images. **[REA use unconfirmed · Needs verification]**
 - [Sixteen note files: a reported REA/no-REA decoder comparison](cases/sixteen-note-files-decoder-report.md) — A bilingual secondary report describes two timed decoding attempts; app identity, samples and claims were not independently checked. **[REA · Needs verification]**
 - [CPU kernels: Claude Code orchestrates Astra with REA](cases/rea-cpu-kernel-optimization.md) — A poster reports ongoing assembly-level CPU-kernel optimization using Claude Code to manage Astra through REA; no algorithm, correctness evidence or speedup is reported. **[REA · In progress]**
+- [A license-compliance comparison during reverse engineering](cases/agent-reverse-license-test.md) — A poster reports different Codex/Luna and Claude/Sonnet behavior under a no-reverse-engineering license; no replayable protocol establishes a general model-level conclusion. **[Other AI-assisted work · Analysis test]**
+- [A legacy binary: an agent invents nonexistent APIs](cases/legacy-binary-agent-api-hallucination.md) — A poster recalls an agent hallucinating APIs while reading decompiler output; the unnamed experiment did not establish that REA was used or fixed the problem. **[Other AI-assisted work · Analysis test]**
+- [Humans versus agents in software reverse engineering](cases/humans-machines-sre-study.md) — A nine-model, two-task IDA study reports human-competitive understanding for stronger agents and studies context saturation over 4,000 binaries; findings are paper-reported, not rerun here. **[Other AI-assisted work · Analysis test]**
 
 ## Contributing and selection
 

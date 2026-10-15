@@ -657,19 +657,23 @@
     "title": "WHOOP：分析健康追踪设备的 Android App",
     "category": "apps",
     "rea": "unknown",
-    "summary": "发现 APK 分析讨论，尚未确认完成替代客户端。",
-    "description": "WHOOP 是健康与运动追踪设备及其配套服务。uwwgo 分享的 APK 相关帖子得到较高关注，但本轮记录不能确认作者已经完成可公开使用的替代客户端，成果阶段仍待验证。",
+    "summary": "APK 分析线索新增 Zhoop / NOOP 替代客户端的二手报告，尚未独立验证。",
+    "description": "WHOOP 是健康与运动追踪设备及其配套服务。原记录为uwwgo分享的APK讨论，不能确认已有公开可用替代客户端。10月15日候选另转述一位使用18个月后取消订阅的开发者制作Zhoop：直接通过蓝牙读取手环、数据存于iPhone本地，并按个人需求简化为热量管理工具；转述称Zhoop来自NOOP，更早的协议研究借助Claude Code。它是同目标的新用途线索，不足以证明原APK作者就是Zhoop开发者，也不能确认全部WHOOP指标或官方算法已恢复。本合集未补查两项目源码或复现通信，保留待验证状态与原来源。",
     "sources": [
       {
         "label": "原始记录",
         "url": "https://x.com/uwwgo/status/2109217632758976755"
+      },
+      {
+        "label": "10月15日Zhoop/NOOP用途转述（非独立核验）",
+        "url": "https://x.com/i/status/2110602443814047871"
       }
     ],
     "snapshot_date": "2026-10-12",
     "metadata": [],
     "en": {
       "title": "WHOOP Android app investigation",
-      "summary": "An APK discussion without a confirmed public replacement client."
+      "summary": "An APK lead now accompanied by a secondary Zhoop/NOOP client report; local iPhone use and Claude Code protocol work are attributed, not independently verified."
     },
     "status": "unverified"
   },
@@ -933,13 +937,17 @@
     "id": "preview-rebuild",
     "title": "macOS 预览：对比有无 REA 的功能重建",
     "summary": "同一作者用两条路线重建缩放、旋转、标注与保存。",
-    "description": "Preview（预览）是 macOS 自带的图片和 PDF 查看工具。Mahesh 把重建它作为对照实验：一轮用 Claude + REA，一轮只用 Claude。作者称纯 Claude 更快完成，而 REA 版本在缩放、分享、旋转、标注和保存等功能上更接近原应用，绘图也更快。没有公开完整代码和系统测试；这是作者的一次对照报告，不是工具速度的普遍结论。",
+    "description": "Preview（预览）是macOS自带的图片和PDF工具。Mahesh把重建它作为有无REA的对照，称纯Claude更快，REA版在缩放、分享、旋转、标注和保存上更接近原作。10月15日候选中文文章进一步叙述两条路线：REA侧解析CommonToolbar.plist、MainMenu.nib和私有selector，编写Swift实现并报告47项自测通过；另一侧依靠AppKit常识生成18个Swift文件并修复自身Bug，交付更快。该文没有给出可重放源码与统一系统测试，属于这次对照的补充叙述，不是本合集或第三方独立复现；不采纳星数、私有类推断或速度差为普遍结论。",
     "category": "apps",
     "rea": "REA",
     "sources": [
       {
         "label": "作者原帖",
         "url": "https://x.com/maheshboda006/status/2109154423712977359"
+      },
+      {
+        "label": "10月15日中文过程叙述（非独立复现）",
+        "url": "https://x.com/i/status/2110613996382654771"
       }
     ],
     "snapshot_date": "2026-10-12",
@@ -3213,6 +3221,14 @@
       {
         "label": "作者本轮更新：大改版后计划重新分析",
         "url": "https://x.com/i/status/2110546102705369357"
+      },
+      {
+        "label": "往期补审：@xaiwind 的独立入门文章与Claude Desktop实测（非同一UI作者）",
+        "url": "https://x.com/i/status/2110529367793393945"
+      },
+      {
+        "label": "本轮对xaiwind三层模型的转述",
+        "url": "https://x.com/i/status/2110627231949266953"
       }
     ],
     "snapshot_date": "2026-10-13",
@@ -3222,7 +3238,9 @@
       "2026-10-14 第三方 quote 帖补充 UI 观察；非原分析者确认，报告未完成公开，本合集未独立核验。",
       "2026-10-15 补查原帖账号：10 月 13 日原帖、15 日凌晨手册帖和本轮更新均为 @BystAnd3rs；保留原来源 URL。",
       "手册、算法与界面细节为作者自述；未独立核验，无功能重建验证。",
-      "本轮候选热度快照（2026-10-15）：74 赞｜6795 浏览｜3 转发；旧版参数在大改版后的适用性待重新研究。"
+      "本轮候选热度快照（2026-10-15）：74 赞｜6795 浏览｜3 转发；旧版参数在大改版后的适用性待重新研究。",
+      "10月15日补审08:00–12:00来源：另一作者@xaiwind在完整入门文中报告Claude Desktop包分析：388文件、369 JS、约818万语法节点、113 IPC频道及19个context bridge API，提到claude.designPdf通道；大文件出现仅保留部分事实的限制。是独立作者的工具输出叙述，非官方架构规格、非本合集复核，不与@BystAnd3rs的UI观察混同。",
+      "12:00–16:00候选转述xaiwind的Electron/Bridge/Web三层模型，没有新增独立复现。"
     ],
     "en": {
       "title": "Claude Desktop: UI details reported from REA analysis",
@@ -3392,13 +3410,23 @@
       {
         "label": "作者关于 Eleven 更新的原帖",
         "url": "https://x.com/i/status/2110476050815983632"
+      },
+      {
+        "label": "本轮第三方工具介绍（REA归因为转述）",
+        "url": "https://x.com/i/status/2110603171920023720"
+      },
+      {
+        "label": "本轮第三方架构与功能主张",
+        "url": "https://x.com/i/status/2110634488938275080"
       }
     ],
     "snapshot_date": "2026-10-14",
     "metadata": [
       "作者称软件免费开源；未提供可核验项目链接或独立测试。",
       "未确认使用 REA。",
-      "2026-10-15：作者称 Eleven 发布重大更新；具体分析效果及 REA 使用未由该帖确认。"
+      "2026-10-15：作者称 Eleven 发布重大更新；具体分析效果及 REA 使用未由该帖确认。",
+      "本轮补充两篇第三方介绍：称底层Ghidra、LLDB与REA，前台GPUIX，通过ACP/MCP让Agent操作控制流和反编译视图，并宣称Metal shader及端侧模型分析。这些不是本合集代码核验；REA字段仍保留unknown，不能仅凭转述确认作者实现。",
+      "本轮第一篇传播快照（2026-10-15）：98赞｜7668浏览｜16转发；与旧作者帖指标分开。"
     ],
     "en": {
       "title": "Eleven: agent-assisted analysis of apps and binaries",
@@ -3906,12 +3934,21 @@
       {
         "label": "Author's first-person report on rea-engine and TicTacToe reconstruction",
         "url": "https://x.com/i/status/2110506338706985158"
+      },
+      {
+        "label": "Author's follow-up on bundled tools, runtime tracing and Z3",
+        "url": "https://x.com/i/status/2110622062918144222"
+      },
+      {
+        "label": "Author's follow-up on byte-for-byte comparison claims",
+        "url": "https://x.com/i/status/2110641814545764484"
       }
     ],
     "snapshot_date": "2026-10-15",
     "metadata": [
       "First-person project report",
-      "Result not independently reproduced"
+      "Result not independently reproduced",
+      "October 15 follow-ups reiterate bundled tooling, Frida tracing and Z3 checks, then claim byte-for-byte output comparisons for rebuilds. These are author claims, not a demonstrated universal guarantee or a reason to generalize the TicTacToe result."
     ],
     "en": {
       "title": "rea-engine: Rebuilding TicTacToe from a Windows game binary",
@@ -4009,12 +4046,12 @@
     "category": "games",
     "status": "unverified",
     "rea": "other-ai",
-    "summary": "移植综述称《织梦岛》几乎依靠 Claude Code 重编译上 PC，未提供本帖内可核验产物。",
-    "description": "本轮一篇移植综述的分享帖称，《塞尔达传说：织梦岛》几乎全靠 Claude Code 重编译后在 PC 运行，并将其与 Melee 反编译、Diablo II 在 iPhone 运行及 Android 运行 Steam 等路线对照。它讨论的是把现有游戏带到新平台，而非从零开发同名游戏。候选未给出《织梦岛》的具体版本、作者、仓库、构建记录或对照测试，本合集未确认其原生移植方式、AI 贡献比例或功能完整度。只将具名作品与 Claude Code 的二手归因作为待验证报告收录，不把同帖所有移植项目都写成 AI 独立完成。",
-    "sources": [{"label": "本轮游戏移植综述分享帖", "url": "https://x.com/i/status/2110565293802274865"}],
+    "summary": "补查LASRecomp公开项目，确认Switch版本与Claude Code自述，保留beta与崩溃边界。",
+    "description": "原综述称《织梦岛》几乎全靠Claude Code重编译到PC。10月15日14:17候选补充LASRecomp项目名及特殊操作会崩溃的边界。随后补查peiikai/LASRecomp公开README，确认目标为2019年Switch版v1.0.0，项目自称静态重编译为Windows、macOS和Linux原生应用；作者明确称几乎全部代码、工具、逆向和文档由Claude Code完成，人类指挥、测试和审阅。当前为beta：macOS限Apple Silicon，Linux ARM标实验且未实机测试，已列出查看特定梳妆台和返回标题界面会崩溃等问题。项目不含游戏文件、素材或字体，需用户合法提供原作。本合集未编译或运行，不量化AI贡献比例、不保证完整行为对等；保留已有ID与早期来源，公开文档是本轮追溯补证。",
+    "sources": [{"label": "早期游戏移植综述分享帖", "url": "https://x.com/i/status/2110565293802274865"}, {"label": "本轮LASRecomp转述与崩溃边界", "url": "https://x.com/i/status/2110615951075168686"}, {"label": "公开项目说明与已知问题（10月15日补查）", "url": "https://github.com/peiikai/LASRecomp"}],
     "snapshot_date": "2026-10-15",
-    "metadata": ["二手报告；未确认 REA 使用，未核验可运行产物。"],
-    "en": {"title": "Link's Awakening: a reported Claude Code-assisted PC port", "summary": "A secondary roundup attributes a Link's Awakening PC recompilation largely to Claude Code; the version, repository, build evidence and AI contribution remain unverified."}
+    "metadata": ["本轮转述快照：144赞｜24723浏览｜16转发；公开README确认项目及AI自述，未独立运行。"],
+    "en": {"title": "Link's Awakening: the Claude-assisted LASRecomp project", "summary": "The public project identifies Switch v1.0.0 and credits Claude Code with most work; the beta documents platform limits and reproducible crash triggers, not independently tested here."}
   },
   {
     "id": "rea-cpu-kernel-optimization",
@@ -4041,5 +4078,278 @@
     "snapshot_date": "2026-10-15",
     "metadata": ["探索性 idea，无实现；未确认使用 REA。"],
     "en": {"title": "Baldur's Gate 3: an agent-assisted modding idea", "summary": "A poster proposes BG3 as a target for agent enhancements and asks whether decompilation difficulty is a barrier; no specific mod or implementation is reported."}
+  },
+  {
+    "id": "kef-lsx-ii-volume-fixer",
+    "title": "KEF LSX II：让 Mac 音量键控制音箱的细粒度音量",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "case",
+    "summary": "Claude 辅助制作 USB 音频透传与局域网音量桥，避开音箱 USB 输入的粗步进。",
+    "description": "KEF LSX II 是桌面无线音箱。作者受困于 Mac USB 音量仅有约六档、每档6 dB，称与 Claude 制作 LSX II Volume Fixer：虚拟音频输出把样本原样传给 USB，音量键则控制音箱已有的局域网0–100音量接口，而不是修改签名固件。作者报告192 kHz音频、约2 ms附加延迟，以及默认16档、3.4 dB间距，并实际测量音量曲线，称厂商表在低音量端偏差达20 dB。10月15日补查公开仓库，文档解释驱动和网络控制设计；这些测量与兼容性仍是项目报告，本合集没有运行驱动。仅Mac、仅LSX II经过作者测试；Windows只是文档中的可行方向。",
+    "sources": [{"label": "作者报告", "url": "https://x.com/i/status/2110581933533184501"}, {"label": "公开实现及测量说明", "url": "https://github.com/roberdorfer/kef-lsx-volume"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["候选快照：0赞｜18浏览；性能为作者测量，非独立复现。"],
+    "en": {"title": "KEF LSX II: finer Mac volume control", "summary": "A Claude-assisted USB audio passthrough and LAN volume bridge; latency, volume measurements and LSX II compatibility are project-reported."}
+  },
+  {
+    "id": "workbuddy-website-reverse-report",
+    "title": "收藏的网站：用 WorkBuddy International 做逆向研究的报告",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "作者报告研究长期收藏的网站，自述效果满意，站名与产物未公开。",
+    "description": "作者在看过REA讨论后，担心使用Codex会被封号，于是重新安装WorkBuddy International，研究一个长期收藏的网站，称过程有趣、效果满意。封号风险只是作者顾虑，不是本合集确认的事实。帖子没有公开网站名称、分析对象、具体功能、源码或演示，因此只能确认这次个人研究报告，不能推定完整克隆、商业交付或实际调用REA。",
+    "sources": [{"label": "作者自述", "url": "https://x.com/i/status/2110593537872175256"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["目标为未具名收藏网站；无实现核验。"],
+    "en": {"title": "A saved website investigated with WorkBuddy International", "summary": "A poster reports a satisfactory website investigation, without naming the site or publishing an artifact; REA use is unconfirmed."}
+  },
+  {
+    "id": "apk-reverse-agent-skill",
+    "title": "apk-reverse：把 Android 分析流程交给编程 Agent 的 Skill",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "公开 Skill 组织 APK、DEX 与运行时分析流程，不代表任意应用都已破解。",
+    "description": "候选介绍newliver666/apk-reverse，把Android安装包分析组织成Claude Code、Codex等Agent可使用的Skill，覆盖反编译、DEX检查、逻辑分析和运行时调试。10月15日补查公开README，确认这是具体的分析工具项目，而不是一个具名App的完成报告。本合集未安装Skill、运行APK或验证调试能力；不沿用传播帖关于数千Star的泛称，不把流程文档写成复杂混淆代码必然可恢复。",
+    "sources": [{"label": "候选介绍", "url": "https://x.com/i/status/2110594366989369744"}, {"label": "项目文档与源码", "url": "https://github.com/newliver666/apk-reverse"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["相关工具项目；非REA能力测试，未执行目标代码。"],
+    "en": {"title": "apk-reverse: an Android analysis skill for coding agents", "summary": "A public skill organizes APK, DEX and runtime investigation; workflow coverage is not evidence of successful recovery for arbitrary protected apps."}
+  },
+  {
+    "id": "hailo-agent-reverse-plan",
+    "title": "Hailo：启动 Agent 辅助逆向研究的计划",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "in-progress",
+    "summary": "作者准备开展 Hailo 逆向，并并列提到 Raspberry Pi Agent 环境开发。",
+    "description": "Hailo是边缘AI加速器品牌。作者在回复工具消息时，表示准备启动Hailo逆向、网站工作和Raspberry Pi Agent环境开发。这是具名硬件方向的研究计划，但未说明Hailo型号、研究协议还是驱动、采用哪个Agent，也没有结果。不能据三个并列任务推断已经把Hailo接入树莓派或完成推理加速；REA参与亦未确认。",
+    "sources": [{"label": "作者计划", "url": "https://x.com/i/status/2110600631144919232"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["计划，无技术成果或设备兼容性证据。"],
+    "en": {"title": "Hailo: a planned agent-assisted reverse-engineering run", "summary": "A poster plans Hailo research alongside Raspberry Pi agent-environment work; no device model, method or result is reported."}
+  },
+  {
+    "id": "wyze-scale-custom-ios",
+    "title": "Wyze 体重秤：让自制 iOS App 接收称重数据",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称 Claude 研究秤后做出个人客户端，带提醒与图表。",
+    "description": "作者希望不用Wyze官方App也能将自己的体重同步到手机，称Claude逆向了其Wyze秤，并制作符合个人需求的iOS App，带提醒与图表。帖子未说明秤型号、通信方式、具体协议、代码或测试结果。本条保留明确设备和个人用途，不补写蓝牙细节、体脂算法或全型号兼容性，也不确认使用REA。",
+    "sources": [{"label": "作者报告", "url": "https://x.com/i/status/2110604057287217339"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["短篇第一人称报告；功能未独立验证。"],
+    "en": {"title": "Wyze scale: weight data in a custom iOS app", "summary": "An author credits Claude with investigating a Wyze scale and enabling a personal iOS client with reminders and graphs; protocol and code are not public."}
+  },
+  {
+    "id": "agent-reverse-license-test",
+    "title": "禁止逆向的许可：一次 Codex 与 Claude 行为对照",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者测试 Agent 是否尊重禁止逆向条款，报告两组工具表现不同。",
+    "description": "作者称用Codex/Luna与Claude/Sonnet测试是否遵守一份禁止逆向的许可，并说前者通过、后者即使收到read *.md指令仍失败，附许可短链。帖子没有公开完整提示、工具版本、目标二进制或可重放记录。本条是一次许可遵从行为实验，不是模型品牌的普遍合规结论，也不认定任何行为已构成侵权；未确认REA参与。",
+    "sources": [{"label": "作者测试报告", "url": "https://x.com/i/status/2110614074941927618"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["作者自评，实验设计与结果未独立复核。"],
+    "en": {"title": "A license-compliance comparison during reverse engineering", "summary": "A poster reports different Codex/Luna and Claude/Sonnet behavior under a no-reverse-engineering license; no replayable protocol establishes a general model-level conclusion."}
+  },
+  {
+    "id": "codex-rea-custom-library",
+    "title": "Codex：用 REA 研究后写个人库的尝试",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "作者称 DIY Codex 并用 REA 写库，尚未公开接口或实现。",
+    "description": "作者在讨论逆向的乐趣时说，前一天DIY了一下Codex，用REA写了一个库。这是具名应用的个人研究尝试，未说明Codex的哪种版本、库做什么、是否可用或公开代码。不把它等同于已有Codex桌面操作、浏览器评论或下一句预测项目，也不补写功能、工作量与成功指标。",
+    "sources": [{"label": "作者回复", "url": "https://x.com/i/status/2110616441611542781"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["简短进行中报告；用途和成果范围未展开。"],
+    "en": {"title": "Codex: a personal library following REA research", "summary": "A poster reports experimenting with Codex and writing a library using REA; its interfaces, function and implementation are not disclosed."}
+  },
+  {
+    "id": "richman4-flutter-iphone",
+    "title": "《大富翁4》：REA 分析后用 Flutter 重写到 iPhone",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。",
+    "description": "《大富翁4》是经典桌面棋盘经营游戏。作者称先用REA研究一天，再花一天让Claude以Flutter制作新实现，编译到iPhone后觉得完成度很高，附媒体。逆向用于理解旧游戏并迁移到手机，而非仅以同题材新建项目。两天工时和完整度均为作者自述；没有源码、游戏规则对照测试或资产授权说明，不认定完整复刻成功或可公开分发。",
+    "sources": [{"label": "作者报告与媒体", "url": "https://x.com/i/status/2110618564608880843"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["候选快照：20赞｜3935浏览；未独立运行。"],
+    "en": {"title": "Richman 4: REA research to a Flutter iPhone rebuild", "summary": "The author reports a day of REA research and another of Claude-assisted Flutter work, then an iPhone build; completeness and timing are self-reported."}
+  },
+  {
+    "id": "tuya-ac-mac-claude-mcp",
+    "title": "涂鸦空调：从 Mac 菜单栏和 Claude 本地调温",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "研究空调本地控制，做 Wi-Fi 菜单栏客户端，再以 MCP 接给 Claude。",
+    "description": "作者嫌遥控器放在床边、工作时要离开桌子，称研究了内置Tuya的空调，取得自己的local key，做出不走云端的Mac菜单栏Wi-Fi控制程序，又加MCP服务让Claude接受调到24度之类的请求。这里明确的是把设备接给AI工具，不代表Claude参与了协议逆向。未公开型号、代码、抓包或测试，也未确认REA参与；与TCL空调、Tuya灯及其他作者的全屋控制记录分开。",
+    "sources": [{"label": "作者报告", "url": "https://x.com/i/status/2110620776915411243"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["具体互通项目；未复现，不收集或发布设备密钥。"],
+    "en": {"title": "Tuya AC: local Mac controls exposed to Claude over MCP", "summary": "An author reports a cloud-free Wi-Fi menu-bar controller and MCP bridge for Claude; AI participation in the original protocol research is not established."}
+  },
+  {
+    "id": "hyperos-monitor-ai-research",
+    "title": "澎湃 OS 显示器：探索暴露服务的控制路线",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者讨论先检查 DDC/CI，再研究自家智能显示器暴露的端口和服务。",
+    "description": "在如何用AI研究显示器的讨论中，作者建议先看DDC/CI这种显示器控制接口，不支持再看设备是否暴露其他服务，并说自己的显示器内置澎湃OS，恰好有端口和服务。这是围绕自有设备的具体研究路径，未给出型号、协议、已执行的控制命令或结果。作者认为模型本身可能够用，未确认REA实际参与；有关工具可能导致降级或封号的说法未作为事实采用。",
+    "sources": [{"label": "作者设备研究回复", "url": "https://x.com/i/status/2110622119419838752"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["探索中；未报告可用控制客户端。"],
+    "en": {"title": "A HyperOS monitor: exploring exposed control services", "summary": "A poster discusses DDC/CI and exposed services on their HyperOS monitor as an AI-research path; no model, command or working controller is reported."}
+  },
+  {
+    "id": "rea-notes-export-walkthrough",
+    "title": "Notes 示例：沿按钮调用链重建 CSV 导出的教程",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "从 renderer 到 preload、main 和 CSV 格式化，把示范行为写成规格与测试。",
+    "description": "教程以其所称的REA官方Notes示例中的Export notes按钮为目标，描述renderer.js处理点击、preload.js发送notes:export、main.js写文件、csv.js序列化id和title，并强调逗号、引号的CSV转义。作者提出用Grok Bot独立电脑调用REA，先建立带文件定位的SPEC.md，再从规格实现和测试，不确定结论保持unknown。这些文件映射与流程来自教程，候选未提供完整执行日志或独立重建结果；本合集没有核验示例代码，不能把提示词流程视为实际运行，也不是Apple Notes生产客户端分析。",
+    "sources": [{"label": "示范与提示词", "url": "https://x.com/i/status/2110623921611432090"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["教学示例，不是独立复现或完整应用克隆。"],
+    "en": {"title": "Notes example: tracing a CSV export button", "summary": "A tutorial maps renderer, preload, main and CSV escaping into a specification-and-test workflow; it does not supply an independently reproduced export rebuild."}
+  },
+  {
+    "id": "isaacrecomp-flash-cpp-report",
+    "title": "IsaacRecomp：把初代 Flash《以撒》带到原生平台",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。",
+    "description": "2011年《以撒的结合》原版依赖Flash播放器，原来画面低分辨率、逻辑约30 Hz。候选转述IsaacRecomp在几天内成为1440p、165 FPS的C++移植。10月15日补查whylurking/IsaacRecomp公开README，作者明确写有AI帮助，称将原游戏代码转为C++，从用户自有Steam Isaac.exe读取图像和音频，保持30 Hz逻辑、用插值提升显示刷新率，列出PC、Android与Switch homebrew版本。本合集未运行游戏，不把候选中的工时和165 FPS当成实测，也不把跨平台下载表当成所有设备均已验证。需合法持有原作；未确认REA参与。",
+    "sources": [{"label": "本轮二手介绍", "url": "https://x.com/i/status/2110628235797217327"}, {"label": "作者项目说明", "url": "https://github.com/whylurking/IsaacRecomp"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["公开项目文档补证AI参与；性能未独立复测。"],
+    "en": {"title": "IsaacRecomp: the Flash Binding of Isaac as native C++", "summary": "The project acknowledges AI assistance, translates game logic and reads assets from the user's original copy; frame-rate and port claims are not independently tested here."}
+  },
+  {
+    "id": "legacy-binary-agent-api-hallucination",
+    "title": "旧二进制：Agent 读反编译输出时编造 API 的失败报告",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者回忆一次旧程序分析，Agent 自信引用实际不存在的接口。",
+    "description": "作者说曾把一个旧二进制的反编译输出交给Agent，后者自信编造了不存在的API。目标程序与模型未具名，没有原始输出或可复现实验；但材料明确描述了一次实际分析失败，而非只讲抽象风险。作者随后期待REA可能改善这类理解落差，这不表示该次测试用了REA，更不能视作REA已解决幻觉。",
+    "sources": [{"label": "作者失败经历", "url": "https://x.com/i/status/2110630792049115198"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["未具名失败实验，无复现材料。"],
+    "en": {"title": "A legacy binary: an agent invents nonexistent APIs", "summary": "A poster recalls an agent hallucinating APIs while reading decompiler output; the unnamed experiment did not establish that REA was used or fixed the problem."}
+  },
+  {
+    "id": "codex-pi-next-hint",
+    "title": "Codex 下一句预测：研究提示词与配置后移到 Pi",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "作者称提取版本5的预测配置并实现 pi-next-hint，提示不自动发送。",
+    "description": "作者想把Codex面向Pro用户的下一句预测带到Pi，称逆向取得提示词和远程配置版本5，并发布pi-next-hint。候选串描述每轮结束单独请求预测、high推理强度、30秒截止、不自动重试、只取最近消息；提示只在输入框为空时显示、永远不自动发送。作者称沿用同版提示词并适配Pi的JSON格式。配置与实现为作者报告，不是OpenAI规格；未独立检查代码或验证预测质量，也未确认使用REA。",
+    "sources": [{"label": "作者项目介绍", "url": "https://x.com/i/status/2110631522403512760"}, {"label": "候选串中的配置和行为说明", "url": "https://x.com/i/status/2110631530683068722"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["主帖候选快照：1赞｜16浏览；功能为作者自述。"],
+    "en": {"title": "Codex next-input prediction recreated for Pi", "summary": "The author reports extracting version-5 prompts/configuration and adapting them as pi-next-hint, with a 30-second deadline and suggestions that never auto-send."}
+  },
+  {
+    "id": "rea-doom-terraria-modding",
+    "title": "DOOM / Terraria：Claude Code + REA 的无源码 Mod 实验",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者报告分别给 DOOM 添加无敌等修改、给 Terraria 添加 yeet 模式。",
+    "description": "作者把DOOM和Terraria两个游戏交给Claude Code + REA，称未提供源码，在DOOM中制作无敌、无限弹药与evil grin修改，用时7分35秒；Terraria的yeet模式用时7分57秒，并链接频道视频。候选没有展开版本、补丁机制、源代码或对照测试；两组工时与可玩结果都归于作者，不据此认定整个游戏已经被反编译或任何版本都可修改。",
+    "sources": [{"label": "作者实验报告与视频入口", "url": "https://x.com/i/status/2110641024389271883"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["两目标同一实验；未独立运行或验证修改。"],
+    "en": {"title": "DOOM and Terraria: reported no-source mod experiments", "summary": "An author credits Claude Code and REA with DOOM cheats in 7m35s and a Terraria yeet mode in 7m57s; mechanisms and outcomes remain author-reported."}
+  },
+  {
+    "id": "humans-machines-sre-study",
+    "title": "人类与 Agent：两项静态逆向任务及上下文扩展性研究",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "论文比较九个模型与人类理解二进制的表现，并分析4000个程序的上下文饱和。",
+    "description": "候选分享Doria等人的Humans vs. Machines: A Comparison With AI Agents in Software Reverse Engineering。10月15日补查arXiv摘要，论文原提交日期为10月10日，并非本窗口新完成实验。研究让九模型完成两项此前有人类分析的紧凑静态逆向任务，使用共同理解评分并记录IDA Pro交互。摘要称最强Agent达到统计上可与人类竞争的理解表现，弱模型落后；Agent倾向广泛抓取且少回访函数，人类更常沿局部结构反复查看。另对4000个真实二进制分析上下文饱和，强调选择性检索、导航与持久状态。本合集只核对摘要，未重跑实验；这不是REA测评，也不把两项任务的成绩推及全部真实程序。",
+    "sources": [{"label": "本轮候选论文分享", "url": "https://x.com/i/status/2110600548747530271"}, {"label": "论文摘要及提交日期", "url": "https://arxiv.org/abs/2610.14960"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["原论文2026-10-10提交；本窗口分享，补查仅用于确认研究对象与摘要结果。"],
+    "en": {"title": "Humans versus agents in software reverse engineering", "summary": "A nine-model, two-task IDA study reports human-competitive understanding for stronger agents and studies context saturation over 4,000 binaries; findings are paper-reported, not rerun here."}
+  },
+  {
+    "id": "feishu-dual-instance-codex-rea",
+    "title": "飞书：Codex + REA 分析客户端后实现双账号并行",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "研究飞书8.1.17的模块与单实例边界，在本机副本隔离数据目录。",
+    "description": "作者为解决Mac飞书切换账号的麻烦，让Codex安装REA并分析飞书8.1.17，称第一轮安装与报告耗时4分34秒。报告列出混合壳、多进程Web、25个ASAR、剪贴板桥接和请求分流，同时承认关键链路主要由Codex直接读代码追出，不能只凭包标识认定标准Electron。随后作者称6分钟做出飞书2副本：改应用标识、在15个原生文件的18处以等长名称替换数据目录标记，隔离单实例锁、关闭副本更新并重新签名。作者报告双账号登录、锁与目录不交叉、原版签名和主程序哈希不变。技术参考feishu-clone但脚本由Agent重写；所有工时及验收为作者自述，无独立运行。副本仅供本机，不分发；本地签名和关闭更新有维护与许可风险，不保证未来版本适用。",
+    "sources": [{"label": "本轮作者长文", "url": "https://x.com/i/status/2110601137707729071"}, {"label": "作者原始博客与实验版本", "url": "https://benx.ai/blog/posts/rea-reverse-engineer-feishu-dual-instance/"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["本轮取得完整文章；本机验收与工时均为作者报告。"],
+    "en": {"title": "Feishu: a dual-account Mac client after Codex/REA research", "summary": "The author reports isolating a second Feishu 8.1.17 copy's data and single-instance lock, with local signature and separation checks; timing and safety claims are not independently reproduced."}
+  },
+  {
+    "id": "rokoinput-apple-local-voice",
+    "title": "洛克输入法：研究 Typeless 后用苹果端侧能力做本地输入",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "作者报告 REA 辅助研究后制作 Roko Input，公开源码并强制端侧语音识别。",
+    "description": "@slashui因担心输入法收集个人信息，用REA研究国外语音输入工具，作者串将其与Typeless比较，并公开bassnova42/rokoinput。与已有whisper.cpp/Ollama版REATypeless不同，本项目使用苹果Speech框架和InputMethodKit，不带第三方ASR或大模型。10月15日补查README：0.4.0才强制端侧识别，不支持则停止而非回退云端；系统准备语言资源可能联网，设备与语言有条件，不能沿用帖子中Mac不挑机型的笼统说法。文档也明确文字历史默认开启、明文且不自动过期，可关闭但不会自动删除旧记录。只有源码与本地构建脚本，未独立验证真实麦克风、全局快捷键和流量；自定义许可仅限个人非商业使用，不称MIT或自由商用开源。",
+    "sources": [{"label": "作者报告与回复", "url": "https://x.com/i/status/2110610758212145408"}, {"label": "公开源码及隐私、版本边界", "url": "https://github.com/bassnova42/rokoinput"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["候选快照：3赞｜432浏览；读取公开文档，不代表实机验收。"],
+    "en": {"title": "Roko Input: Apple on-device dictation after Typeless research", "summary": "The author credits REA research; public source uses Apple speech APIs, stops without on-device support, and retains plaintext history by default. Personal non-commercial license; not independently tested."}
+  },
+  {
+    "id": "mi-health-data-exporter",
+    "title": "小米运动健康：校正数据库时间戳并制作云端导出器",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "in-progress",
+    "summary": "从 AI 误读健康记录追到导出时区错误，再研究 miothealth 同步与签名。",
+    "description": "作者先从自己的手机备份取得小米运动健康SQLite数据库，导出给AI后收到夜间心率异常的判断；回查time、timeIn0Tz和zoneOffsetInSec，发现旧导出重复处理时区，产生16小时偏移。随后研究miothealth云端认证、RC4-Drop1024与签名，公开纯Python标准库同步和CSV导出器，希望避免反复USB备份。10月15日补查LilZeeCN/mi-health-exporter README，确认八类CSV、合并写入与时间戳设计，但每日汇总每类最多100条且未分页，首次密码登录未经本次发布真实账号验证，离线测试使用合成数据。它不附带文章中的图表或AI Skill，也不能保证完整历史。AI数据分析是明确背景，未确认AI完成了协议逆向或使用REA；不采纳文章凭手环数据排除心脏疾病、推断听力损伤的医疗结论。",
+    "sources": [{"label": "作者研究文章", "url": "https://x.com/i/status/2110624271282139204"}, {"label": "公开实现及限制", "url": "https://github.com/LilZeeCN/mi-health-exporter"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["未读取个人健康库或凭据；公开文档检查不等于云端登录验证。", "项目文档说明会话凭证保存在本地明文文件，支持POSIX权限时设为0600；数据与会话均应由使用者自行保护。"],
+    "en": {"title": "Mi Health: timestamp repair and a cloud-data exporter", "summary": "An AI-analysis scare prompted database and miothealth protocol research; the public exporter documents login and pagination limits. Wearable data does not establish medical diagnoses."}
+  },
+  {
+    "id": "reacut-jianying-open-editor",
+    "title": "ReaCut：研究剪映本地行为，制作独立视频编辑器",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "公开研究、独立项目格式和导出验证，明确不承诺商业剪映完整对等。",
+    "description": "@zoozoo_ai本轮说正在用REA逆向剪映并邀请贡献，链接Xiangyu-CAS/rea-capcut。与已有Mehal的CapCut编辑器不是同一项目。10月15日补查仓库10月13日研究和验证文档：作者用REA6.4.0检查macOS剪映11.0.12922包、被动观察新建项目和自造素材时间线，区分组件/字符串存在与真实行为，首轮不透明草稿不能直接认定为已支持格式。独立实现使用自己的项目格式和FFmpeg导出，不把商业素材、原二进制或完整原生调用图作为已恢复成果。验证记录报告293项通过、1项缺libx265跳过，以及隔离环境下实际安装包导出中文、混音视频和插件协议测试；Codex侧栏可见获用户确认，但完整宿主流程、跨平台与首次CI失败尚有边界。v0.5.0仅本地ad-hoc签名的Apple Silicon预览包，未公证。本合集仅阅读项目记录，不把作者验收升级为独立复现或跨平台CI全绿。",
+    "sources": [{"label": "本轮作者贡献邀请", "url": "https://x.com/i/status/2110633692834222460"}, {"label": "项目源码", "url": "https://github.com/Xiangyu-CAS/rea-capcut"}, {"label": "10月13日研究边界（补充来源）", "url": "https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/research/REA_FINDINGS.md"}, {"label": "10月13日项目验证记录（补充来源）", "url": "https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/VALIDATION.md"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["本轮候选为进行中邀请；10月13日文档是追溯补证，不是本窗口新完成结果。"],
+    "en": {"title": "ReaCut: an independent editor informed by Jianying research", "summary": "Public research separates observed app behavior from original implementation; project validation reports real exports and plugin tests while retaining signing, CI, host and platform limitations."}
+  },
+  {
+    "id": "rea-archify-diagrams",
+    "title": "REA + archify：把分析材料整理成可交互架构图",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。",
+    "description": "往期补审取得完整文章：作者说用REA研究一些未具名软件的架构和设计，嫌默认图示不够友好，于是配合tt-a1i/archify，把模块关系和数据流整理为带类型校验的JSON，再生成独立可交互HTML架构图，展示节点聚焦和时序图用途，也提到配色及图形支持有限。目标应用未具名，因此收录为具体的研究可视化工具工作流，不称已经重建某款App。文中的Notion和DX-Ball为已有官方案例转述，不另算成果；生成图好看也不能证明分析正确。",
+    "sources": [{"label": "往期候选完整文章", "url": "https://x.com/i/status/2110570919169286424"}, {"label": "文章指向的架构图项目", "url": "https://github.com/tt-a1i/archify"}],
+    "snapshot_date": "2026-10-15",
+    "metadata": ["原source window：10月15日08:00–12:00；本轮补审，不冒充新抓取。"],
+    "en": {"title": "REA and archify: interactive architecture diagrams", "summary": "An author describes converting REA findings into typed diagram data and interactive HTML using archify; unnamed targets and diagram output do not establish a successful app rebuild."}
   }
 ]

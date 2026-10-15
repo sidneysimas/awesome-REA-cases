@@ -4,9 +4,9 @@
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-Currently **160 cases and projects**. *Last maintained: October 15, 2026, 13:26; the case-evidence cutoff remains October 15, 2026, 08:00 Beijing time (UTC+8).*
+Currently **181 cases and projects**. *Last maintained: October 15, 2026, 16:38; case-count and reviewed-material evidence cutoff: October 15, 2026, 16:00 Beijing time (UTC+8).*
 
-Public REA and AI reverse-engineering cases are tracked six times daily, screened, deduplicated, and added to the collection. This review covers candidates from October 15, 08:00–12:00 Beijing time, within keyword and pagination limits—not an exhaustive search. Assessable material has been added while some sources still await clarification, so the complete evidence boundary remains at 08:00. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
+Public REA and AI reverse-engineering cases are tracked six times daily, screened and deduplicated. This review covers October 15, 12:00–16:00 Beijing time (start exclusive, end inclusive), and resolves four sources carried over from the previous window. Keyword and pagination limits make this a bounded search, not exhaustive coverage. The cutoff marks material reviewed, not independent validation of every project. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
 [REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
@@ -14,16 +14,16 @@ Public REA and AI reverse-engineering cases are tracked six times daily, screene
 
 Manually selected for recent attention, concrete use, and reading value—not a live leaderboard. Engagement figures are source-specific snapshots collected October 12–15, 2026, not live counts or proof of verified results. Dates below refer to source posts.
 
-1. **[Claude Desktop: UI feel and a moving version boundary](cases/claude-desktop-ui-details.md)** — The author reports an REA-based interaction handbook and React components, then plans a fresh comparison after a major redesign. Older spring, typography and fade parameters should not be assumed current. **Oct 15 update · 74 likes · REA · Analysis report.**
-2. **[GAMEKB-K17: configure a macropad without the vendor website](cases/claude-code-rgb-macropad.md)** — Denis Darkin reports studying the protocol with Claude Code and publishes an offline tool. Its documentation describes writing and reading back keys, macros and RGB settings; Windows testing is project-reported. **Oct 15 · 7 likes · Other AI-assisted work.**
-3. **[An off-the-shelf smart pen in a custom software system](cases/smart-pen-codex-integration.md)** — A team reports using Codex to decompile and integrate an existing pen instead of building a prototype; the device model and technical details are not public. **Oct 14 · 79 likes · Other AI-assisted work · Team report.**
-4. **[Claude Design in BaoCut](cases/claude-design-baocut.md)** — Investigate a design skill and front end, then integrate them into a video agent with a public code commit. **Oct 12 · 254 likes · REA use unconfirmed.**
-5. **[Rebuilding the Claude Slides editor](cases/claude-slides.md)** — Codex and REA analyze bundled scripts; Claude Code organizes the project. Screenshots and a code commit are available; completeness is author-reported. **Oct 11 · 686 likes · REA.**
-6. **[Opening the Codex browser annotation dialog from a web page](cases/codex-browser-annotations.md)** — Inspect Electron code and test an interface that opens and pre-fills the dialog; direct insertion into the composer was not achieved. **Oct 11 · 252 likes · REA.**
-7. **[REA 6.4.0 through .NET and Electron samples](cases/rea-640-windows-managed-electron-test.md)** — Posts report managed-decoding budget limits, an Electron semantic graph and a one-constant version diff. Version-specific sample tests, not a universal method-count limit or safety guarantee. **Oct 15 · Main post: 1 like · REA · Not independently checked.**
-8. **[An Apple TV remote on Linux](cases/siri-remote-linux.md)** — Investigate Bluetooth messages and turn an ecosystem-specific accessory into a computer input device, with a public implementation. **Oct 9 · 5,419 likes · REA use unconfirmed.**
-9. **[A faster Plex client for LG TVs](cases/lg-plxnative.md)** — Investigate the native media stack with Ghidra and Claude Code. The author reports reducing user selection from about 30 seconds to 3 seconds. **Oct 8 · 7,268 likes · Other AI-assisted work.**
-10. **[Tuya RGB lights controlled from a Mac](cases/tuya-rgb-mac.md)** — Analyze the phone app's Bluetooth traffic and use a local script instead, with a working-light demonstration. **Oct 8 · 2,285 likes · Other AI-assisted work.**
+1. **[ReaCut: an editor with explicit export and validation boundaries](cases/reacut-jianying-open-editor.md)** — Jianying research informs an independent editor. Project records describe real video exports and plugin tests while documenting signing, platform and CI limitations. **Oct 15 · REA · In progress; project-reported validation.**
+2. **[LASRecomp: Switch Link's Awakening on desktop](cases/links-awakening-claude-pc-port-report.md)** — The public project credits Claude Code with most work and requires the user's original game. Its beta documentation lists crash triggers and untested Linux ARM support. **Oct 15 · Secondary post: 144 likes · Other AI-assisted work · Not run here.**
+3. **[KEF LSX II: volume keys that work better at a desk](cases/kef-lsx-ii-volume-fixer.md)** — A Claude-assisted USB passthrough and LAN volume bridge avoids patching signed firmware. The volume curve and roughly 2 ms added latency are author measurements. **Oct 15 · AI-assisted interoperability · Public implementation.**
+4. **[Feishu: two accounts without constant switching](cases/feishu-dual-instance-codex-rea.md)** — After Codex/REA research, the author reports isolating a second copy's data and single-instance lock, with signature and directory checks. Local signing and disabled updates carry maintenance risks. **Oct 15 · REA · Author-tested, not independently reproduced.**
+5. **[Roko Input: Apple's on-device speech rather than a cloud service](cases/rokoinput-apple-local-voice.md)** — Published after REA research, it stops when local recognition is unavailable. Plaintext history is enabled by default: privacy takes more than an offline label. **Oct 15 · 3 likes · REA · Personal non-commercial license.**
+6. **[Claude Desktop: UI details and communication boundaries](cases/claude-desktop-ui-details.md)** — The earlier interaction handbook and redesign warning now sit alongside another author's IPC/Bridge package analysis. Large files yielded only partial findings; static observations are not runtime verification. **Oct 15 update · Earlier update: 74 likes · REA · Analysis report.**
+7. **[IsaacRecomp: a native path for Flash Isaac](cases/isaacrecomp-flash-cpp-report.md)** — The author acknowledges AI assistance and describes C++ translation with 30 Hz logic and interpolated rendering. Assets come from the user's original game; performance has not been independently tested. **Oct 15 · Other AI-assisted work · Public project.**
+8. **[GAMEKB-K17: configure a macropad without the vendor website](cases/claude-code-rgb-macropad.md)** — Claude Code assists protocol research for an offline keys, macros and RGB tool with readback checks. Windows testing is project-reported. **Oct 15 · 7 likes · Other AI-assisted work.**
+9. **[Codex next-input prediction adapted for Pi](cases/codex-pi-next-hint.md)** — The author reports extracting version-5 prompts and settings to build pi-next-hint: a 30-second deadline, no display over a nonempty composer, and never an automatic send. **Oct 15 · REA unconfirmed · Not independently checked.**
+10. **[Humans versus agents: more than getting the answer right](cases/humans-machines-sre-study.md)** — Nine models, two static IDA tasks and context saturation across 4,000 programs. The paper emphasizes navigation and selective retrieval, not just bigger windows. **Shared Oct 15 · Paper submitted Oct 10 · Not an REA benchmark.**
 
 ### Classic cases
 
@@ -31,13 +31,15 @@ Manually selected for recent attention, concrete use, and reading value—not a 
 - **[Firefighter: DOS binary to Rust](cases/firefighter-rust.md)** — Recover Pascal logic and rewrite maintainable Rust, according to the author; recorded snapshot: **7,833 likes**. `Other AI-assisted work`
 - **[Modern Warfare 2: multi-agent reconstruction](cases/mw2-decompilation.md)** — The author reports 17 agents, three months, and byte-level matches for 83% of functions; code is not public and has not been independently reproduced here. `Other AI-assisted work`
 - **[Smart toilet from the Mac menu bar](cases/smart-toilet.md)** — Investigate Bluetooth communication for lid control; the author later reports extending the app to other home devices. `REA · Author-reported`
+- **[An Apple TV remote on Linux](cases/siri-remote-linux.md)** — Bluetooth interoperability with a public implementation; recorded snapshot: **5,419 likes**. `REA unconfirmed`
+- **[LG PlxNative](cases/lg-plxnative.md)** — Investigate the native media stack; the author reports user selection falling from about 30 seconds to 3 seconds. Recorded snapshot: **7,268 likes**. `Other AI-assisted work`
 
 ## Contents
 
-- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (32)
-- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (39)
-- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (79)
-- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (10)
+- [Games and preservation](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md) (35)
+- [Hardware and interoperability](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md) (45)
+- [Applications and clients](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md) (88)
+- [Algorithms and feature recovery](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md) (13)
 - [Contribute a case](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [Maintenance](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and maintenance guides are currently in Chinese.

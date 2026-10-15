@@ -32,5 +32,8 @@
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](../cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 - [rea-engine: Rebuild Windows TicTacToe from its binary](../cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**
 - [《星之卡比》：REA 逆向进行中的作者报告](../cases/kirby-rea-in-progress.md) — 作者称星之卡比逆向到一半，未公布具体版本或产物。 **[REA · 进行中]**
-- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](../cases/links-awakening-claude-pc-port-report.md) — 移植综述称《织梦岛》几乎依靠 Claude Code 重编译上 PC，未提供本帖内可核验产物。 **[其他 AI 逆向 · 待验证]**
+- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](../cases/links-awakening-claude-pc-port-report.md) — 补查LASRecomp公开项目，确认Switch版本与Claude Code自述，保留beta与崩溃边界。 **[其他 AI 逆向 · 待验证]**
 - [《博德之门3》：探索 Agent 增强 Mod 的 idea](../cases/bg3-agent-modding-idea.md) — 发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。 **[未确认使用 REA · 待验证]**
+- [《大富翁4》：REA 分析后用 Flutter 重写到 iPhone](../cases/richman4-flutter-iphone.md) — 作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。 **[REA · 待验证]**
+- [IsaacRecomp：把初代 Flash《以撒》带到原生平台](../cases/isaacrecomp-flash-cpp-report.md) — 项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。 **[其他 AI 逆向 · 进行中]**
+- [DOOM / Terraria：Claude Code + REA 的无源码 Mod 实验](../cases/rea-doom-terraria-modding.md) — 作者报告分别给 DOOM 添加无敌等修改、给 Terraria 添加 yeet 模式。 **[REA · 待验证]**

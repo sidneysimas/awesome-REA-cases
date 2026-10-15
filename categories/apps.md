@@ -9,7 +9,7 @@
 - [Flutter App：从安装包识别运行时和编译结构](../cases/flutter-aot.md) — 识别 Flutter APK 的运行时、构建与 AOT 结构。 **[REA]**
 - [网站重建订单：作者自述的交付报告](../cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
 - [TradingView：传播较多的复刻流程帖](../cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
-- [WHOOP：分析健康追踪设备的 Android App](../cases/whoop-apk.md) — 发现 APK 分析讨论，尚未确认完成替代客户端。 **[未确认使用 REA · 待验证]**
+- [WHOOP：分析健康追踪设备的 Android App](../cases/whoop-apk.md) — APK 分析线索新增 Zhoop / NOOP 替代客户端的二手报告，尚未独立验证。 **[未确认使用 REA · 待验证]**
 - [ArtCraft：不要把从零开发写成逆向 Adobe](../cases/artcraft-boundary.md) — 创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。 **[其他 AI 逆向 · 相关项目]**
 - [Obsidian：真实桌面包的大规模分析测试](../cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**
 - [大型 Android APK：真实生产包的分析需求](../cases/large-android-apk.md) — 133MB、11 DEX 的安装包；原目标未见修复后复测。 **[REA · 进行中]**
@@ -81,3 +81,12 @@
 - [Samsung DeX：用 AI 研究并制作 Mac 客户端的 idea](../cases/samsung-dex-mac-client-idea.md) — 发帖者请求用 AI 逆向 Samsung DeX，制作 Mac 客户端。 **[其他 AI 逆向 · 待验证]**
 - [隔离环境中的 REA + Claude Code：静态分析 A/B 测试转述](../cases/rea-claude-isolated-ab-test.md) — Zenn 推荐一篇真实任务 A/B 测试，称静态分析标准工具已足够，并讨论隔离设计。 **[REA · 分析测试]**
 - [REA 6.4.0：Windows 下的 .NET 与 Electron 样本测试](../cases/rea-640-windows-managed-electron-test.md) — 以 Framework 程序集和 AI 构造的 Electron 样本测试版本边界、静态语义与证据输出。 **[REA · 分析测试]**
+- [收藏的网站：用 WorkBuddy International 做逆向研究的报告](../cases/workbuddy-website-reverse-report.md) — 作者报告研究长期收藏的网站，自述效果满意，站名与产物未公开。 **[未确认使用 REA · 待验证]**
+- [apk-reverse：把 Android 分析流程交给编程 Agent 的 Skill](../cases/apk-reverse-agent-skill.md) — 公开 Skill 组织 APK、DEX 与运行时分析流程，不代表任意应用都已破解。 **[其他 AI 逆向 · 相关项目]**
+- [Codex：用 REA 研究后写个人库的尝试](../cases/codex-rea-custom-library.md) — 作者称 DIY Codex 并用 REA 写库，尚未公开接口或实现。 **[REA · 进行中]**
+- [Notes 示例：沿按钮调用链重建 CSV 导出的教程](../cases/rea-notes-export-walkthrough.md) — 从 renderer 到 preload、main 和 CSV 格式化，把示范行为写成规格与测试。 **[REA · 分析测试]**
+- [Codex 下一句预测：研究提示词与配置后移到 Pi](../cases/codex-pi-next-hint.md) — 作者称提取版本5的预测配置并实现 pi-next-hint，提示不自动发送。 **[未确认使用 REA · 待验证]**
+- [飞书：Codex + REA 分析客户端后实现双账号并行](../cases/feishu-dual-instance-codex-rea.md) — 研究飞书8.1.17的模块与单实例边界，在本机副本隔离数据目录。 **[REA · 待验证]**
+- [洛克输入法：研究 Typeless 后用苹果端侧能力做本地输入](../cases/rokoinput-apple-local-voice.md) — 作者报告 REA 辅助研究后制作 Roko Input，公开源码并强制端侧语音识别。 **[REA · 进行中]**
+- [ReaCut：研究剪映本地行为，制作独立视频编辑器](../cases/reacut-jianying-open-editor.md) — 公开研究、独立项目格式和导出验证，明确不承诺商业剪映完整对等。 **[REA · 进行中]**
+- [REA + archify：把分析材料整理成可交互架构图](../cases/rea-archify-diagrams.md) — 作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。 **[REA · 相关项目]**

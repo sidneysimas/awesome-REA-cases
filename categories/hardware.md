@@ -41,3 +41,9 @@
 - [Ray-Ban Meta 眼镜：逆向通信并制作 Android 助手替代应用](../cases/rayban-meta-claude-android.md) — 发帖者称逆向眼镜与手机的通信，并制作 Android 应用将语音助手请求转给 Claude 或自选模型；REA 使用未确认。 **[未确认使用 REA · 待验证]**
 - [家居 App 协议：把无 API 设备接给本地 LLM](../cases/bitfish-local-llm-home-control.md) — DiscusFish 自述用 REA 提取家居 App 协议，与现有 API 一起交给本地 LLM 调度。 **[REA · 待验证]**
 - [GAMEKB-K17 宏键盘：用 Claude Code 逆向配置协议](../cases/claude-code-rgb-macropad.md) — 研究厂商 WebHID 配置端，做离线按键、固件宏和 RGB 配置工具。 **[其他 AI 逆向]**
+- [KEF LSX II：让 Mac 音量键控制音箱的细粒度音量](../cases/kef-lsx-ii-volume-fixer.md) — Claude 辅助制作 USB 音频透传与局域网音量桥，避开音箱 USB 输入的粗步进。 **[其他 AI 逆向]**
+- [Hailo：启动 Agent 辅助逆向研究的计划](../cases/hailo-agent-reverse-plan.md) — 作者准备开展 Hailo 逆向，并并列提到 Raspberry Pi Agent 环境开发。 **[未确认使用 REA · 进行中]**
+- [Wyze 体重秤：让自制 iOS App 接收称重数据](../cases/wyze-scale-custom-ios.md) — 作者称 Claude 研究秤后做出个人客户端，带提醒与图表。 **[其他 AI 逆向 · 待验证]**
+- [涂鸦空调：从 Mac 菜单栏和 Claude 本地调温](../cases/tuya-ac-mac-claude-mcp.md) — 研究空调本地控制，做 Wi-Fi 菜单栏客户端，再以 MCP 接给 Claude。 **[未确认使用 REA · 待验证]**
+- [澎湃 OS 显示器：探索暴露服务的控制路线](../cases/hyperos-monitor-ai-research.md) — 作者讨论先检查 DDC/CI，再研究自家智能显示器暴露的端口和服务。 **[其他 AI 逆向 · 进行中]**
+- [小米运动健康：校正数据库时间戳并制作云端导出器](../cases/mi-health-data-exporter.md) — 从 AI 误读健康记录追到导出时区错误，再研究 miothealth 同步与签名。 **[未确认使用 REA · 进行中]**
