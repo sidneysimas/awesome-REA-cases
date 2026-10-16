@@ -63,7 +63,7 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](../cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](../cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](../cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
-- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。 **[其他 AI 逆向 · 相关项目]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。 **[其他 AI 逆向 · 相关项目]**
 - [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](../cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
 - [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](../cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
@@ -71,3 +71,6 @@
 - [Stunts：AI 逆向后重做浏览器赛车的二手线索](../cases/stunts-ai-browser-remake-report.md) — 读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。 **[其他 AI 逆向 · 待验证]**
 - [Halo 3 Reforged：AI 反编译与128人对战的读者说法](../cases/halo3-reforged-ai-decompile-report.md) — 读者以 Halo 3 Reforged 举例声称 AI 可绕开原开发者改造经典游戏，具体 AI 贡献未证实。 **[其他 AI 逆向 · 待验证]**
 - [Max Payne 3：用 AI 反编译添加过场跳过与关卡创作的 idea](../cases/max-payne3-ai-cutscene-level-idea.md) — 玩家希望 AI 辅助 Mod 作者研究 Max Payne 3，增加跳过过场与关卡创作能力，尚无实现。 **[其他 AI 逆向 · 待验证]**
+- [QQPet：从 Arctic Penguin T800 重建跨平台桌宠](../cases/qqpet-arctic-penguin-ai-rebuild.md) — 公开项目自称 AI 复刻 QQ 宠物，逆向 T800 并以 Ruffle 播放 Flash；平台和素材限制仍在。 **[其他 AI 逆向 · 相关项目]**
+- [Mega Man Battle Network：AI 反编译与 Mod 的二手线索](../cases/megaman-battle-network-ai-mod-report.md) — 评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。 **[其他 AI 逆向 · 待验证]**
+- [Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述](../cases/ben-claude-rts-metal-alpha-report.md) — Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。 **[其他 AI 逆向 · 进行中]**

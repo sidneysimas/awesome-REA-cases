@@ -6,9 +6,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-## 297 cases & projects
+## 311 cases & projects
 
-**Collection updated / count snapshot:** October 16, 2026, 20:09 · Beijing time (UTC+8)
+**Latest case update / count snapshot:** October 17, 2026, 00:13 · Beijing time (UTC+8)
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -23,13 +23,13 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 **10 worth reading**, selected for practical use, evidence, and recency—not an automated ranking. Dates refer to featured sources or author updates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
-2. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — The author clarifies: **a native port from decompiled code, not static recompilation**, after months of AI-assisted work. Visual defects remain; November 20 is a release plan. `In progress`
-3. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. The author now stresses **licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
-4. **[LASRecomp](cases/en/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — An AI-assisted Link’s Awakening port for desktop. Requires the original game; beta crashes and untested platform support are documented. `Public project`
-5. **[A plate reader brought back to work](cases/en/plate-reader-filter-wheel-claude-repair.md)** · `2026-10-15` — Claude reportedly investigated communication and reset firmware after a startup fault. **No independent or clinical validation.** `Author report`
-6. **[ScanSnap iX500](cases/en/scansnap-ix500-claude-mac.md)** · `2026-10-15` — A reported Claude-built replacement Mac app with Wi-Fi scanning, hardware-button support, and OCR. Protocol details and independent tests are absent. `Author report`
+2. **[Computer + REA: five app demos](cases/en/computer-rea-five-app-rebuild-demos.md)** · `2026-10-16` — Design layouts, edit spreadsheets, process images, review contracts, and mix audio. **An official feature showcase, not verified replacements** for Figma, Calc, Photopea, Harvey, or Audacity. `REA · Unverified`
+3. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — The author clarifies: **a native port from decompiled code, not static recompilation**, after months of AI-assisted work. Visual defects remain; November 20 is a release plan. `In progress`
+4. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
+5. **[LASRecomp](cases/en/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — An AI-assisted Link’s Awakening port for desktop. Requires the original game; beta crashes and untested platform support are documented. `Public project`
+6. **[A plate reader brought back to work](cases/en/plate-reader-filter-wheel-claude-repair.md)** · `2026-10-15` — Claude reportedly investigated communication and reset firmware after a startup fault. **No independent or clinical validation.** `Author report`
 7. **[KEF LSX II volume keys](cases/en/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — A USB/LAN bridge improves desktop volume control without patching signed firmware. Latency figures are the author’s measurements. `Public implementation`
-8. **[Two Feishu accounts on one Mac](cases/en/feishu-dual-instance-codex-rea.md)** · `2026-10-15` — Codex/REA research supports isolated app copies. Local signing and disabled updates bring maintenance risks. `Author-tested`
+8. **[Claude Intercept](cases/en/claude-intercept-api-traffic-analysis.md)** · `2026-10-16` — Feed authorized HTTP/S captures to Claude Code to investigate undocumented APIs. A public project with **certificate-pinning, network-exposure, and licensing limits**; not run here. `Public project`
 9. **[crashlens](cases/en/crashlens-rea-crash-triage-idea.md)** · `2026-10-16` — Turn core dumps and stack traces into evidence reports for coding agents. A **public early prototype**, not independently tested; the Hermes integration is still proposed. `REA`
 10. **[Test the CSV evaluator first](cases/en/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — Three deliberately broken exporters reportedly passed simple tests; **215 byte comparisons** exposed them. A useful acceptance-testing experiment, without published test inputs or code. `REA test`
 
@@ -46,9 +46,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **69** |
-| [Hardware & interoperability](categories/en/hardware.md) | **65** |
-| [Applications & clients](categories/en/apps.md) | **135** |
+| [Games & preservation](categories/en/games.md) | **72** |
+| [Hardware & interoperability](categories/en/hardware.md) | **69** |
+| [Applications & clients](categories/en/apps.md) | **142** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **28** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

@@ -64,6 +64,10 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视固件：为隐私与去广告提出的 AI 逆向 idea](../cases/tv-firmware-ai-ad-removal-idea.md) — 建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。 **[其他 AI 逆向 · 待验证]**
+- [电视固件：AI 去广告 idea 与两种实施自述](../cases/tv-firmware-ai-ad-removal-idea.md) — 同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](../cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
+- [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
+- [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](../cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：AI 逆向移植的假设性 idea](../cases/ios-android-ai-port-idea.md) — 设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。 **[其他 AI 逆向 · 待验证]**
+- [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](../cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**

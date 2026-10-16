@@ -8536,17 +8536,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "related-project",
-    "summary": "项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。",
-    "description": "10月16日 @Pirat_Nation 介绍 Decompwtf，称它让 AI 编程 Agent 从游戏编译代码恢复 C/C++，再编译结果并与原二进制比较机器码，以加速游戏保存和既有社区反编译工程，而非只重画界面。帖子列出 N64、PS1、PS2、GameCube、Wii、GBA 和 DS 目标，并称本地运行、不需账号或上传游戏数据。这是来源描述的工作流和范围，不表示任意游戏都已字节匹配。本轮补查原串与公开 GitHub 仓库名检索，未取得可确认的源码、匹配日志或完成游戏清单；开源、隐私和兼容性仍是来源说法，本合集未安装或运行。",
-    "sources": [{"label": "Pirat_Nation 的项目介绍", "url": "https://x.com/i/status/2110899022932418745"}],
+    "summary": "项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。",
+    "description": "10月16日 @Pirat_Nation 介绍 Decompwtf，称它让 AI 编程 Agent 从游戏编译代码恢复 C/C++，再编译结果并与原二进制比较机器码，以加速游戏保存和既有社区反编译工程，而非只重画界面。帖子列出 N64、PS1、PS2、GameCube、Wii、GBA 和 DS 目标，并称本地运行、不需账号或上传游戏数据。这是来源描述的工作流和范围，不表示任意游戏都已字节匹配。公开 GitHub 仓库名检索未取得可确认的源码、匹配日志或完成游戏清单；开源、隐私和兼容性仍是来源说法，本合集未安装或运行。\n\n10月16日21:19（北京时间）的新转述称作者因反编译社区反对而停止更新。补读原介绍串，@nycfurby 当日09:26也称项目已停更，并把原因归于社区阻力。这些是第三方对维护状态及动机的说法，不是已核验的作者公告，更不代表整个反编译社区关闭。其后关于一个人维护、Claude Code 调试和 rollback 的回复未命名游戏，不能作为 Decompwtf 成果或完成游戏清单。本合集没有据此确认停更原因或功能可用性。",
+    "sources": [{"label": "Pirat_Nation 的项目介绍", "url": "https://x.com/i/status/2110899022932418745"}, {"label": "10月16日晚：项目停更的第三方转述", "url": "https://x.com/i/status/2111084605973672036"}, {"label": "补查原串：nycfurby 对停更与社区阻力的说法", "url": "https://x.com/i/status/2110905152173400298"}],
     "snapshot_date": "2026-10-16",
     "metadata": ["10月16日候选快照：1,331赞、30,869浏览、116转发；热度不是验证结果。"],
     "en": {
       "title": "Decompwtf: agents reconstruct game C/C++ and compare machine code",
-      "summary": "A project account describes local AI decompilation with compile-and-compare checks and support for continuing community work.",
-      "description": "On October 16, @Pirat_Nation introduced Decompwtf as a project that lets AI coding agents reconstruct C/C++ from compiled game code, then compile it and compare machine code with the original binary to accelerate game preservation and existing community decompilation work rather than merely redraw interfaces. The post lists N64, PS1, PS2, GameCube, Wii, GBA and DS targets and says it runs locally without an account or game-data uploads. These are the source's descriptions of workflow and scope, not evidence that arbitrary games have reached byte matching. Reading the thread and searching public GitHub repository names did not yield confirmed source, matching logs or a completed-game list in this review. Open-source, privacy and compatibility statements remain attributed claims; this collection did not install or run it.",
+      "summary": "Accounts describe local AI decompilation with compile-and-compare checks; third-party discontinuation claims lack a verified author announcement.",
+      "description": "On October 16, @Pirat_Nation introduced Decompwtf as a project that lets AI coding agents reconstruct C/C++ from compiled game code, then compile it and compare machine code with the original binary to accelerate game preservation and existing community decompilation work rather than merely redraw interfaces. The post lists N64, PS1, PS2, GameCube, Wii, GBA and DS targets and says it runs locally without an account or game-data uploads. These are the source's descriptions of workflow and scope, not evidence that arbitrary games have reached byte matching. Public GitHub repository-name searches did not yield confirmed source, matching logs or a completed-game list. Open-source, privacy and compatibility statements remain attributed claims; this collection did not install or run it.\n\nA new third-party account at 21:19 Beijing time on October 16 says the author stopped updates because of opposition from decompilation communities. Reading the original introduction's conversation also found @nycfurby saying at 09:26 that day that the project was discontinued and attributing this to community resistance. These are third-party claims about maintenance and motivation, not a verified author announcement, and do not mean the entire decompilation community closed. A later reply about one-person maintenance, Claude Code debugging and rollback does not name its game and cannot establish a Decompwtf result or completed-game list. Neither the alleged reason for discontinuation nor functional availability was confirmed here.",
       "metadata": ["October 16 candidate snapshot: 1,331 likes, 30,869 views, 116 reposts; engagement is not validation."],
-      "source_labels": ["Pirat_Nation's project introduction"]
+      "source_labels": ["Pirat_Nation's project introduction", "October 16 evening: third-party claim of discontinuation", "Supplementary conversation check: nycfurby's claims about discontinuation and community resistance"]
     }
   },
   {
@@ -8627,21 +8627,21 @@
   },
   {
     "id": "tv-firmware-ai-ad-removal-idea",
-    "title": "电视固件：为隐私与去广告提出的 AI 逆向 idea",
+    "title": "电视固件：AI 去广告 idea 与两种实施自述",
     "category": "hardware",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。",
-    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。这是针对既有电视固件的具体 idea，不是完成的修复。原串未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试。作者认为只需会提示 AI，不应据此推定刷机安全、固件可重编译或签名限制可跨越，隐私改善也未实测。本合集未执行或验证。",
-    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}],
+    "summary": "同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。",
+    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。该建议是 idea，不是完成的修复。未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试；不能推定刷机安全或签名限制可跨越。\n\n同日22:16（北京时间），另一位回复者称用 Claude 深入研究自己的电视固件并关闭追踪和广告，还建议用 AdGuard 阻止外发。这是实施者自述，未提供固件补丁、前后流量对照或代码；其关于大多数电视麦克风监听一切的泛化没有证据，不予采纳。22:56，@meta_syntactic 在同一父帖下称，曾让 Codex 逆向现有固件以移除不喜欢的部分，但失去兴趣，基本停在逆向阶段。补读父帖确认电视隐私背景，但没有型号或具体要删的模块。两人不是同一项目，不把前者的完成说法套到后者；合并在既有主题下方便比较计划、声称修改和搁置三种证据阶段。所有结果均未经本合集运行或隐私验证。",
+    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}, {"label": "Claude 研究固件并关闭广告追踪的自述", "url": "https://x.com/i/status/2111098983997186126"}, {"label": "meta_syntactic：Codex 分析后搁置，父帖确认电视背景", "url": "https://x.com/i/status/2111108975454281750"}, {"label": "补充背景：DCinvestor 当日09:14提出电视隐私固件问题", "url": "https://x.com/i/status/2110902155783885210"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：4赞、143浏览；idea，无刷机与隐私验收。"],
+    "metadata": ["10月16日原 idea 候选快照：4赞、143浏览；后续两人自述另列来源，均无刷机与隐私验收。"],
     "en": {
-      "title": "TV firmware: an AI reverse-engineering idea for privacy and ad removal",
-      "summary": "A reply proposes AI investigation, ad removal, recompilation and reflashing of existing firmware; no device test is supplied.",
-      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. This is a concrete idea for existing TV firmware, not a completed repair. The thread supplies no brand, model, firmware, build or signing method, or ad/telemetry tests. The author's claim that prompting AI is enough is not evidence that flashing is safe, firmware can be rebuilt or signing restrictions can be overcome. Privacy improvement is unmeasured. This collection did not execute or validate the suggestion.",
-      "metadata": ["October 16 candidate snapshot: 4 likes, 143 views; an idea without flashing or privacy acceptance tests."],
-      "source_labels": ["TV firmware modification proposal and conversation"]
+      "title": "TV firmware: an AI ad-removal idea and two implementation accounts",
+      "summary": "In one TV privacy conversation, a Claude user claims ad/tracking removal while a Codex user stopped after analysis; models and privacy tests are absent.",
+      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. That suggestion is an idea, not a completed repair. No brand, model, firmware, build or signing method, or ad/telemetry tests are supplied; safe flashing and overcoming signing restrictions cannot be assumed.\n\nAt 22:16 Beijing time that day, another respondent says they used Claude to investigate their TV firmware and disable tracking and advertising, also recommending AdGuard to block outbound traffic. This is the participant's own account without firmware patches, before-and-after traffic comparisons or code. Their generalization that most TV microphones listen to everything is unsupported and is not adopted here. At 22:56, @meta_syntactic replies to the same parent post that Codex had investigated existing firmware to remove unwanted parts, but they lost interest and got little beyond reverse engineering. Reading the parent confirms the TV privacy context, but not a model or modules to remove. These are different participants, not the same project; the first person's completion claim does not apply to the second. They are grouped under the existing topic to compare a proposal, claimed changes and a stalled investigation. None was run or privacy-tested by this collection.",
+      "metadata": ["October 16 original idea's candidate snapshot: 4 likes, 143 views; two later personal accounts have separate sources, neither with flashing or privacy acceptance tests."],
+      "source_labels": ["TV firmware modification proposal and conversation", "Account of Claude firmware investigation and claimed ad/tracking removal", "meta_syntactic: Codex analysis followed by abandonment; parent confirms TV context", "Supplementary context: DCinvestor's TV privacy firmware question at 09:14 that day"]
     }
   },
   {
@@ -9163,6 +9163,272 @@
       "description": "On October 16, @Minsi_AI recounts an unnamed Reddit user giving a stress.exe from 2000 to Opus 5.5 and REA: investigating binary strings, functions, call relationships and behavioral evidence, then writing a behavior specification, implementing it and comparing it with the original. A high-fidelity rebuild reportedly ran in about 30 minutes, with macOS and web versions published in about two hours. The aim is to make an old executable's behavior available on modern platforms. The name stress.exe alone does not justify identifying it as a stress-testing tool or inventing its functions. The post does not identify the original author or provide an obtainable original article, code, release package or comparison records. Timing and fidelity are secondhand claims, not measurements or acceptance by this collection. This is retained as a named legacy-program reconstruction lead, not established complete decompilation, cross-platform equivalence or independent reproduction.",
       "metadata": ["Published: 2026-10-16 19:45 Beijing time; 30 minutes and two hours are secondhand figures, original tests not obtained."],
       "source_labels": ["@Minsi_AI's account of the stress.exe reconstruction"]
+    }
+  },
+  {
+    "id": "osec-ai-rust-hash-recompilation-report",
+    "title": "osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。",
+    "description": "10月16日20:08（北京时间），安全研究者 @pashov 赞扬 @osec_io 的工作，称研究者正用 AI 恢复 Rust 项目的源代码、达到 hash-perfect 重编译，随后发现 Critical 漏洞。背景是 Web3 闭源程序的安全审查；具体用途是把编译产物恢复成可审计实现，并用重编译结果约束恢复质量。原帖与补读原帖都没有命名项目、链、漏洞编号、模型或工具，也没有提供本合集取得的源码、哈希对照与漏洞验证。这里的哈希一致和严重等级均为 pashov 对研究工作的转述，不是本合集独立核验，更不能推出闭源软件已失效或任意 Rust 程序均可恢复。未确认使用 REA。",
+    "sources": [{"label": "pashov 对 osec_io Rust 研究的转述", "url": "https://x.com/i/status/2111066785890054605"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["候选快照（10月16日）：120赞、4,339浏览、11转发；热度不是哈希或漏洞证据。"],
+    "en": {
+      "title": "osec_io Rust research: reported AI recovery and hash-perfect recompilation",
+      "summary": "pashov recounts AI-assisted Rust recovery and critical vulnerability discoveries; targets and validation records are not supplied.",
+      "description": "At 20:08 Beijing time on October 16, security researcher @pashov praised @osec_io's work, saying researchers were using AI to recover Rust project source, achieve hash-perfect recompilation and then find Critical vulnerabilities. The context is auditing closed-source Web3 programs: recovering an auditable implementation from compiled artifacts, with recompilation constraining recovery quality. Neither the candidate nor the reread original names a project, chain, vulnerability identifier, model or tool, or supplies source, hash comparisons or vulnerability validation obtained by this collection. Hash equality and severity are pashov's account of the work, not independently checked results here. They do not establish that closed-source software is obsolete or that arbitrary Rust programs can be recovered. REA use is unconfirmed.",
+      "metadata": ["Candidate snapshot (October 16): 120 likes, 4,339 views, 11 reposts; engagement is not hash or vulnerability evidence."],
+      "source_labels": ["pashov's account of osec_io's Rust research"]
+    }
+  },
+  {
+    "id": "creality-spacepix4-gemini-firmware-idea",
+    "title": "Creality SpacePiX4：用 Gemini Argon 改善固件的计划",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。",
+    "description": "10月16日20:27（北京时间），发帖者回复 @loyalmoses，表示打算用 Gemini Argon 为自己的 Creality SpacePiX4 做一版更好的固件。目标是改善既有设备的软件行为，而不是泛泛询问 AI 能否开发硬件。原帖只给设备标识、模型名和尝试意图，没有说明要改进哪项功能、是否取得原固件、是否需要逆向、可用源码、启动签名或刷写方法。按 AI 辅助设备固件探索的具体 idea 收录，不将其写成已经反编译、已刷机或已解决缺陷；未确认 REA 参与，也不补填硬件规格。",
+    "sources": [{"label": "作者的 SpacePiX4 固件计划", "url": "https://x.com/i/status/2111071431890985121"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["仅计划：没有功能清单、固件样本或设备测试。"],
+    "en": {
+      "title": "Creality SpacePiX4: a Gemini Argon firmware-improvement plan",
+      "summary": "The poster wants better firmware for a named device using Gemini Argon; investigation and implementation are not yet described.",
+      "description": "At 20:27 Beijing time on October 16, the poster replied to @loyalmoses that they intended to try Gemini Argon to create better firmware for their Creality SpacePiX4. The goal is improving an existing device's software behavior, rather than a generic question about AI hardware development. The post supplies only the device identifier, model name and intention. It does not specify a feature to improve, access to original firmware, whether reverse engineering is needed, available source, boot signing or a flashing method. This is included as a concrete AI-assisted device-firmware exploration idea, not completed decompilation, reflashing or a repaired defect. REA involvement is unconfirmed, and hardware specifications are not inferred.",
+      "metadata": ["Plan only: no feature list, firmware sample or device tests."],
+      "source_labels": ["The poster's SpacePiX4 firmware plan"]
+    }
+  },
+  {
+    "id": "race-recorder-claude-format-mac-report",
+    "title": "赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。",
+    "description": "10月16日21:10（北京时间）的一条案例汇总回复称，一位开发者用 Claude Code 逆向赛车记录仪的私有文件格式，四小时后终于能在 Mac 上访问多年积累的视频和驾驶遥测。目标是取回自有设备产物的可用性，而不是重建整套赛车系统。来源明确给出工具、格式问题、平台与声称的结果，但未给记录仪型号、开发者身份、样本、解析代码、同步精度或格式对照测试。本合集未取得链接指向的原始报告，四小时也只是该汇总的转述；不推断支持全部设备、无损提取或遥测适于专业决策，未确认 REA 参与。",
+    "sources": [{"label": "赛车记录仪格式研究的四小时转述", "url": "https://x.com/i/status/2111082259096945133"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["二手报告；没有设备型号、原始文件和独立验证。"],
+    "en": {
+      "title": "Race recorder: reported Claude Code recovery of video and telemetry files on Mac",
+      "summary": "A roundup says a developer investigated a proprietary recorder format in four hours to access years of video and driving telemetry on a Mac.",
+      "description": "A roundup reply at 21:10 Beijing time on October 16 says a developer used Claude Code to reverse-engineer a race car recorder's proprietary file format and, after four hours, could finally access years of video and driving telemetry on a Mac. The goal is making an owned device's output usable, not rebuilding an entire racing system. The source identifies a tool, format problem, platform and claimed outcome, but not the recorder model, developer, samples, parser code, synchronization accuracy or format-comparison tests. This collection did not obtain the original report behind the link; four hours is a secondhand figure from the roundup. Universal device support, lossless extraction and fitness for professional telemetry decisions are not established. REA involvement is unconfirmed.",
+      "metadata": ["Secondhand report without a device model, original files or independent validation."],
+      "source_labels": ["Four-hour account of race-recorder file-format investigation"]
+    }
+  },
+  {
+    "id": "qqpet-arctic-penguin-ai-rebuild",
+    "title": "QQPet：从 Arctic Penguin T800 重建跨平台桌宠",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "公开项目自称 AI 复刻 QQ 宠物，逆向 T800 并以 Ruffle 播放 Flash；平台和素材限制仍在。",
+    "description": "10月16日22:01（北京时间）的候选介绍 QQPet：基于 Arctic Penguin T800 逆向重建 QQ 宠物，用 Ruffle 播放 Flash 内容。补查匹配名称与描述的 AnkioTomas/qqpet，仓库简介标为“QQ宠物单机复刻版(AI)”，README 描述养成、工作、学习、小游戏、存档导入导出，以及 Windows、macOS、Linux、Android、HarmonyOS 和 iOS 版本。AI 重建的具体模型、步骤与贡献比例未说明；宠物可接 AI 聊天是另一个运行时功能，不能当作逆向中使用 AI 的证明。\n\n公开 README 还说明部分原版资源缺失、只能猜测复刻；桌面包无代码签名，iOS 需 TrollStore 或越狱安装器及特定权限，不能按普通签名应用理解。代码声明 GPL-3.0，但原美术、SWF 和旅行照片不受此代码许可覆盖。该文档在本次复核时读取，属于候选之后的补充资料，不倒填为候选原帖已证明的功能；本合集未下载资源、构建或运行，未验证平台兼容和原版保真度，也未单独确认 X 发帖者与仓库作者关系。",
+    "sources": [{"label": "10月16日 QQPet 项目介绍", "url": "https://x.com/i/status/2111095142790857087"}, {"label": "匹配项目公开仓库与 README（补充阅读，未运行）", "url": "https://github.com/AnkioTomas/qqpet"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["AI 参与来自仓库自述，模型与逆向流程未核实；未确认 REA。", "原版素材版权不随代码许可证开放，缺失素材与平台权限是公开限制。"],
+    "en": {
+      "title": "QQPet: a cross-platform pet rebuilt from Arctic Penguin T800",
+      "summary": "A public project describes an AI-made QQ Pet recreation from T800 with Ruffle Flash playback; platform and asset limitations remain.",
+      "description": "The candidate at 22:01 Beijing time on October 16 introduces QQPet as a QQ Pet recreation reverse-engineered from Arctic Penguin T800, with Ruffle playing Flash content. A supplementary search found AnkioTomas/qqpet matching the name and description. Its repository description labels it an AI single-player recreation, and its README describes pet care, work, study, minigames, save import/export and Windows, macOS, Linux, Android, HarmonyOS and iOS versions. Specific reconstruction models, steps and contribution shares are unspecified. Optional AI pet chat is a separate runtime feature, not proof of AI involvement in reverse engineering.\n\nThe public README also says original materials are missing and some recreation relies on guesses. Desktop packages are unsigned; iOS requires TrollStore or a jailbreak installer and particular entitlements, not ordinary app signing. Code is described as GPL-3.0, but original art, SWFs and travel photos are outside that code license. The document was read during this review as supplementary material after the candidate, not retroactive proof that the original post established every feature. This collection did not download assets, build or run it, verify platform compatibility or fidelity, or separately establish the X poster's relationship to the repository author.",
+      "metadata": ["AI participation is a repository claim; model and reversing workflow unverified, REA unconfirmed.", "Original asset rights are not opened by the code license; missing materials and platform permissions are documented limits."],
+      "source_labels": ["October 16 QQPet project introduction", "Matching public repository and README (supplementary reading, not run)"]
+    }
+  },
+  {
+    "id": "claude-website-dom-nextjs-template-report",
+    "title": "网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。",
+    "description": "10月16日22:07（北京时间），发帖者描述一项演示：给 Claude Code 模板一个网页 URL，它读取素材清单、字体文件、CDN 路径、间距与 DOM 计算样式，再让并行 Agent 分别处理网格、样式和字体导入，输出 Next.js 代码库。目标是从可观察前端信息重建界面，不是从截图凭空猜测，也不表示恢复了后端。帖子未命名模板或示例网站，未给本合集可核对的仓库、渲染对照或可运行交付物。故保留为具有具体输入与分工的演示转述，不采纳“任意界面都能复刻”、重设计成本已崩塌等行业预测，也不补填工时与功能等价性。未确认 REA 使用。",
+    "sources": [{"label": "网页观察与 Next.js 重建流程转述", "url": "https://x.com/i/status/2111096590387601489"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["网站、模板与测试均未公开在可用正文中；流程具体但结果未验证。"],
+    "en": {
+      "title": "Website to Next.js: a reported Claude Code template with parallel DOM-based rebuilding",
+      "summary": "A post describes agents reading assets, fonts and layout to reconstruct an interface; project identity and tests are missing.",
+      "description": "At 22:07 Beijing time on October 16, a poster describes a demo in which a Claude Code template receives a website URL, reads asset manifests, font files, CDN paths, spacing and computed DOM styles, then delegates grids, styles and font imports to parallel agents to produce a Next.js codebase. The aim is reconstructing an interface from observable frontend information rather than guessing from pixels; it does not establish backend recovery. The post does not name the template or example site, or provide a repository, rendered comparisons or runnable deliverable this collection could check. It is retained as a demo account with concrete inputs and division of work. Predictions that any interface can be copied or redesign costs have collapsed are not adopted, and timing or functional equivalence is not invented. REA use is unconfirmed.",
+      "metadata": ["The available text identifies neither site, template nor tests; the workflow is specific but the outcome is unverified."],
+      "source_labels": ["Account of website observation and Next.js reconstruction"]
+    }
+  },
+  {
+    "id": "black-bot-blacksidian-rea-report",
+    "title": "Black Bot / Blacksidian：REA 重建应用并选择 AI provider 的自述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称用 REA 把 Grok Bot、Obsidian 做成自己的版本，并加入模型供应商选择。",
+    "description": "10月16日22:24（北京时间），发帖者称此前不用 REA 已多轮迭代出自己的 Wispr Flow 副本；用了 REA 之后，只需少量对话便做出 Grok Bot 对应的 Black Bot、Obsidian 对应的 Blacksidian，以及其他未列名应用。具体目标是让自己能在每个应用里选择想用的 AI provider。Wispr Flow 是先前工作的比较背景，不能归功于 REA；“完美”与少量对话均是作者说法。原帖没有代码、版本、功能表、数据兼容或行为对照，不能判断这些作品是否保留插件、同步、原协议或全部编辑能力。按同一作者的一组个人重建报告收录，不把已具名目标混同其他作者的 Obsidian 或 Grok Bot 研究。",
+    "sources": [{"label": "作者的 Black Bot 与 Blacksidian 报告", "url": "https://x.com/i/status/2111100877083947405"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["作者称 REA 参与，未独立运行；不能把此前 Wispr Flow 项目也归为 REA。"],
+    "en": {
+      "title": "Black Bot / Blacksidian: reported REA rebuilds with AI-provider choice",
+      "summary": "The poster reports personal Grok Bot and Obsidian versions made with REA, adding a choice of AI providers.",
+      "description": "At 22:24 Beijing time on October 16, the poster says they had previously iterated extensively on a personal Wispr Flow copy without REA. After adopting REA, they say a few exchanges produced Black Bot from Grok Bot, Blacksidian from Obsidian, and other unnamed apps. The concrete goal is choosing their preferred AI provider in each application. Wispr Flow is background for comparison and cannot be credited to REA; perfection and the small number of exchanges are the author's claims. No code, versions, feature matrix, data-compatibility checks or behavioral comparisons are supplied. Plugins, synchronization, original protocols and complete editing functionality are not established. This is grouped as one author's personal reconstruction report, without conflation with other authors' Obsidian or Grok Bot investigations.",
+      "metadata": ["Author reports REA involvement; not independently run, and the earlier Wispr Flow project is not credited to REA."],
+      "source_labels": ["Author's Black Bot and Blacksidian report"]
+    }
+  },
+  {
+    "id": "ios-android-ai-port-idea",
+    "title": "iOS 到安卓硬件：AI 逆向移植的假设性 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。",
+    "description": "10月16日22:24（北京时间），发帖者以“如果”提出：若 AI 逆向 iOS 并把它装到安卓手机，可能比原苹果设备更顺滑，进而推演软件进步可弱化硬件升级意义。具体目标是操作系统跨硬件移植，但来源没有报告自己的实验、内核、驱动、启动链、设备型号或实现计划。收录的是明确的探索设想，不是已成功的 iOS 移植；顺滑、比苹果理解更深以及手机硬件终局都是未经检验的推论。也不能把同时传播的 HACKIOS 或红米视频自动当成该作者的证据；没有确认 REA 或任何模型实际参与实施。",
+    "sources": [{"label": "iOS 跨安卓硬件的条件性设想", "url": "https://x.com/i/status/2111100973238329497"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["假设性 idea；无实现、启动证明或性能数据，非 HACKIOS 成果确认。"],
+    "en": {
+      "title": "iOS on Android hardware: a hypothetical AI reverse-engineering idea",
+      "summary": "A post imagines AI understanding iOS and moving it to Android phones; no actual port or performance measurement is supplied.",
+      "description": "At 22:24 Beijing time on October 16, the poster conditionally proposes that if AI reverse-engineered iOS and installed it on Android phones, it might run more smoothly than on Apple hardware, then extrapolates that software progress could reduce the value of hardware upgrades. The concrete target is an operating system port across hardware, but the source reports no personal experiment, kernel, drivers, boot chain, device model or implementation plan. What is collected is an explicit exploration idea, not a successful iOS port. Smoothness, deeper understanding than Apple and an end to meaningful phone hardware upgrades are untested inferences. Contemporaneous HACKIOS claims or Redmi videos cannot automatically serve as this author's evidence. Neither REA nor any model is confirmed to have performed an implementation.",
+      "metadata": ["Hypothetical idea without implementation, boot evidence or performance data; not confirmation of HACKIOS results."],
+      "source_labels": ["Conditional idea for iOS across Android hardware"]
+    }
+  },
+  {
+    "id": "deepseek-vmp-protected-sample-failure",
+    "title": "VMP 加壳样本：DeepSeek 挑战失败的自述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "发帖者称自己的 REA 讨论视频包含 DeepSeek 处理 VMP 虚拟机保护失败的实验。",
+    "description": "10月16日22:27（北京时间），发帖者解释自己的“逆向一切的 REA”视频中，曾让 DeepSeek 挑战 VMP 虚拟机加壳程序，结果失败。背景是对 REA 热潮能力边界的测试：虚拟机保护会改变静态代码的可读形式，来源把它作为一个实际挑战，而不是声称所有程序可被轻易恢复。可用正文没有提供样本、DeepSeek 版本、任务成功标准、日志或失败阶段，不能判断是去虚拟化、逻辑恢复、工具调用还是环境配置失败，也不能确定 REA 在该次挑战中实际承担的步骤。这里记录一次作者报告的失败，不推断 DeepSeek 或 AI 永远无法处理 VMP；未运行目标或复现。",
+    "sources": [{"label": "作者说明视频中的 DeepSeek/VMP 失败挑战", "url": "https://x.com/i/status/2111101746001113381"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["失败自述，无样本与日志；REA 的具体参与步骤不明。"],
+    "en": {
+      "title": "VMP-protected sample: a reported failed DeepSeek challenge",
+      "summary": "The poster says an REA discussion video includes DeepSeek failing a virtual-machine-protected sample.",
+      "description": "At 22:27 Beijing time on October 16, the poster explains that their video about REA's capabilities included a DeepSeek challenge against a VMP virtual-machine-protected program, which failed. The context is testing limits amid REA publicity: virtualization protection changes how static code can be read, and the source presents an actual challenge rather than claiming easy recovery of every program. The available text supplies no sample, DeepSeek version, success criteria, logs or failure stage. It cannot establish whether devirtualization, logic recovery, tool calls or environment setup failed, or exactly what REA did in the challenge. This records one author-reported failure, not a conclusion that DeepSeek or AI can never handle VMP. The target was not run or reproduced here.",
+      "metadata": ["Reported failure without sample or logs; REA's specific role is unclear."],
+      "source_labels": ["Author's description of the video's failed DeepSeek/VMP challenge"]
+    }
+  },
+  {
+    "id": "megaman-battle-network-ai-mod-report",
+    "title": "Mega Man Battle Network：AI 反编译与 Mod 的二手线索",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。",
+    "description": "10月16日22:34（北京时间），发帖者称看到人们抱怨有人使用 AI 反编译并 Mod 一款 Mega Man Battle Network（洛克人 EXE）游戏，并认为游戏题材与反 AI 态度形成讽刺。可收录的具体事实只是具名游戏系列、AI 反编译和 Mod 这条二手线索。正文未命名第几作、制作者、模型、仓库、所改玩法或运行测试，不能判断反编译覆盖、修改是否成功，亦不把社区争论当成技术验证。未确认 REA 参与，未执行目标；保留待验证状态以便后续补原作者材料。",
+    "sources": [{"label": "关于 Mega Man Battle Network AI Mod 的评论", "url": "https://x.com/i/status/2111103450448572730"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["二手线索，未给具体游戏版本或验证；不把舆论争议当技术成果。"],
+    "en": {
+      "title": "Mega Man Battle Network: a secondhand AI decompilation and modding lead",
+      "summary": "A comment reports AI decompilation and modding of a Battle Network game; version, implementation and outcome are unspecified.",
+      "description": "At 22:34 Beijing time on October 16, the poster says they saw complaints about someone using AI to decompile and mod a Mega Man Battle Network game, finding an irony between the game's subject and opposition to AI. The concrete information retained is only a named game series and a secondhand decompilation/modding lead. The text identifies no installment, creator, model, repository, modified mechanics or runtime tests. Coverage and successful modification cannot be established, and community disagreement is not technical validation. REA use is unconfirmed and no target was executed here. The lead remains unverified for possible later original-author evidence.",
+      "metadata": ["Secondhand lead without game version or validation; controversy is not a technical result."],
+      "source_labels": ["Comment about an AI-assisted Mega Man Battle Network mod"]
+    }
+  },
+  {
+    "id": "old-kindle-claude-refusal-report",
+    "title": "十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。",
+    "description": "10月16日22:45（北京时间），回复者把网上 Claude 一次性反编译的说法，与自己的经历对照：尝试越狱一台用了十二年的 Kindle 时，遇到 Claude 的安全阻拦。目标是研究和解锁自有旧阅读器，但原帖没有型号、固件版本、请求文本、工具、日志或后续结果。这里只能记录用户声称的模型拒绝及设备背景，不证明技术上无法解锁，也不推断存在可用绕过方式或已实施攻击。未确认 REA 参与；十二年是用户对设备年龄的描述，不据此推定具体型号。",
+    "sources": [{"label": "旧 Kindle 研究中遭 Claude 拒绝的回复", "url": "https://x.com/i/status/2111106257431961740"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["受阻自述，无请求记录、设备版本或解锁成果。"],
+    "en": {
+      "title": "A twelve-year-old Kindle: reported Claude safety refusal during a jailbreak attempt",
+      "summary": "A user reports safety blocks while investigating an owned old Kindle, not a successful unlock or firmware change.",
+      "description": "At 22:45 Beijing time on October 16, a respondent contrasts online claims of one-shot Claude decompilation with their own experience: encountering Claude safety blocks while trying to jailbreak a twelve-year-old Kindle. The target is investigating and unlocking an owned old reader, but the post supplies no model, firmware version, request text, tools, logs or subsequent result. This records only the user's reported refusal and device context. It does not prove technical impossibility, a working bypass or an executed attack. REA involvement is unconfirmed. Twelve years is the user's description of the device's age, not a basis for identifying its model.",
+      "metadata": ["Reported blockage without request logs, device version or unlocking result."],
+      "source_labels": ["Reply reporting Claude refusal during old-Kindle research"]
+    }
+  },
+  {
+    "id": "1997-audio-software-ai-win11-revival",
+    "title": "1997 年音频软件：为继续旧工作探索 Windows 11 兼容",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者称用 Claude 规划、headless Ghidra 研究旧音频程序，再考虑较便宜的 GLM 5.3。",
+    "description": "10月16日23:22（北京时间），一位西语回复者称正在复活一款1997年的音频软件，因为需要在 Windows 11 上继续原来的工作。其建议的具体流程是让 Claude 或现有模型安装 headless Ghidra、制定研究计划，再用 GLM 5.3 等便宜模型继续。这给出了年代、软件用途、现代系统需求和工具分工，但没有给软件名称、格式、架构、错误日志、代码或已运行的证明。状态保留进行中；不将一般工作流建议写成每一步已完成，也不声称兼容层、音频精度或项目文件恢复已成功。未明确使用 REA，未独立运行。",
+    "sources": [{"label": "作者关于1997年音频软件与 Windows 11 的进行中报告", "url": "https://x.com/i/status/2111115615628824723"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["软件未命名，当前仅有作者的工作背景与建议流程，无兼容验收。"],
+    "en": {
+      "title": "1997 audio software: investigating Windows 11 compatibility to continue old work",
+      "summary": "The poster reports a revival effort and suggests Claude planning with headless Ghidra, followed by a cheaper model such as GLM 5.3.",
+      "description": "At 23:22 Beijing time on October 16, a Spanish-language respondent says they are reviving audio software from 1997 because they need it to continue work on Windows 11. Their concrete suggested workflow is asking Claude or an available model to install headless Ghidra and devise a plan, then continuing with a cheaper model such as GLM 5.3. This supplies a period, software purpose, modern-system need and division of tools, but no program name, format, architecture, error logs, code or proof it runs. The status remains in progress. General workflow advice is not treated as evidence that every step has happened, or that a compatibility layer, audio accuracy or project-file recovery succeeds. REA is not explicitly used, and nothing was independently run here.",
+      "metadata": ["Unnamed software; only the author's work context and suggested workflow, without compatibility acceptance."],
+      "source_labels": ["Author's ongoing report about 1997 audio software and Windows 11"]
+    }
+  },
+  {
+    "id": "ben-claude-rts-metal-alpha-report",
+    "title": "Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。",
+    "description": "10月16日23:28（北京时间），Ben（@benw_____）称用 Claude Code 重建自己最喜欢的童年 RTS 引擎，报告约70k行 C++、30多份逆向规格、Metal 渲染器、原游戏脚本语言，以及会建造和进攻的电脑对手。他称项目开源、Mac 原生、处于 alpha。补读原串确认账号和正文；次日00:03另一用户问规格是否先于实现，属于窗口外补充提问，没有作者回答，不能据此认定净室顺序。\n\n游戏、仓库和脚本语言的名称在可用正文中未给出，公开仓库关键词检索也没有确定匹配。不能因 RTS 题材便合并为已有 Go 语言 Nanolathe，也不把行数当作覆盖率、可玩性或原版行为等价。保留作者报告的正在开发项目，未下载目标、编译或运行；70k 和30多份均未独立统计，REA 使用未确认。",
+    "sources": [{"label": "Ben 的 RTS 引擎 alpha 原帖及补读原串", "url": "https://x.com/i/status/2111116976168779845"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["约70k行、30多份规格、Metal 和电脑对手均为作者声明，未独立核验。", "游戏与公开仓库未确定，alpha 不等于完整兼容。"],
+    "en": {
+      "title": "Ben's childhood RTS: a reported Claude Code C++/Metal Mac alpha",
+      "summary": "Ben reports roughly 70k C++ lines, over 30 reverse-engineered specifications and an opponent that builds and attacks.",
+      "description": "At 23:28 Beijing time on October 16, Ben (@benw_____) says Claude Code helped rebuild the engine of their favorite childhood RTS, reporting roughly 70k C++ lines, over 30 reverse-engineered specifications, a Metal renderer, the original game's scripting language and a computer opponent that builds and attacks. They describe an open-source, native Mac alpha. Reading the conversation confirmed the account and text. Another user asks at 00:03 the following day whether specs preceded implementation; that is a supplementary question outside the window, without an author answer, not evidence of a clean-room sequence.\n\nThe available text does not name the game, repository or scripting language, and public repository-keyword searches did not establish a match. An RTS theme does not justify merging it with the existing Go-based Nanolathe, and line counts are not coverage, playability or behavioral equivalence. This remains an author-reported ongoing project. No target was downloaded, compiled or run; 70k lines and over 30 specs were not independently counted. REA use is unconfirmed.",
+      "metadata": ["Roughly 70k lines, over 30 specs, Metal and the computer opponent are author claims, not independently checked.", "Game and public repository unidentified; alpha is not complete compatibility."],
+      "source_labels": ["Ben's original RTS engine alpha post and supplementary conversation reading"]
+    }
+  },
+  {
+    "id": "computer-rea-five-app-rebuild-demos",
+    "title": "Computer 接入 REA：Figma 等五款应用功能重建演示",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。",
+    "description": "10月16日23:42（北京时间），Computer 官方账号 @AskPerplexity 宣布将 @morluto 的 REA 作为 skill 接入 Computer，并称可在没有源码的情况下研究应用、构建可工作的版本。候选直接展示 Figma 方向：图层、auto-layout、登录、跨设备同步和多人编辑。补读同作者23:43的连续回复，另有 LibreOffice Calc 的单元格、公式和联动图表；Photopea 的图层、蒙版、调色和可编辑文本；Harvey 的合同检索、版本比较、按规则标记条款与来源引用；Audacity 的音轨剪裁混合、音量、淡入淡出和 WAV 导出。五项是同一次产品发布的演示合集，不是五个独立复现。\n\n官方称演示仅限时可试，使用 /reverse-engineer 的任务免费到10月31日、每用户最多10,000 credits；这些是当时促销口径，不是永久免费承诺。正文及演示链接未提供本合集取得的分析日志、源码、原版对照或持久服务保证。没有验证多人协作、真实文件兼容、公式覆盖或合同分析正确性；官方发布确认平台的功能主张，不证明完整复刻或安全上线。未执行演示、注册服务或处理真实合同与账户。",
+    "sources": [{"label": "Computer 官方 REA skill 与 Figma 演示发布", "url": "https://x.com/i/status/2111120664543596957"}, {"label": "同作者补充：LibreOffice Calc 演示", "url": "https://x.com/i/status/2111120738078044244"}, {"label": "同作者补充：Photopea 演示", "url": "https://x.com/i/status/2111120790683050106"}, {"label": "同作者补充：Harvey 演示", "url": "https://x.com/i/status/2111120848186982838"}, {"label": "同作者补充：Audacity 演示", "url": "https://x.com/i/status/2111120943540289627"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["候选快照（10月16日）：25赞、2,317浏览、4转发；与补读时变化的指标分开。", "官方功能演示，未经独立运行或原版等价测试；10月31日与10,000 credits 是当时活动限制。"],
+    "en": {
+      "title": "Computer integrates REA: five app-feature rebuilding demos including Figma",
+      "summary": "Computer announces an REA skill with design, spreadsheet, image, contract and audio demos; equivalence to the originals is untested.",
+      "description": "At 23:42 Beijing time on October 16, Computer's official @AskPerplexity account announced @morluto's REA as a skill inside Computer, claiming it can investigate apps without source and build working versions. The candidate directly presents Figma-like layers, auto-layout, sign-in, cross-device sync and multiplayer editing. Supplementary reading of the same author's 23:43 replies adds LibreOffice Calc cells, formulas and updating charts; Photopea layers, masks, color adjustments and editable text; Harvey contract search, version comparison, rule-based clause flags and source citations; and Audacity track trimming/mixing, volume, fades and WAV export. These are five demos in one product announcement, not five independent reproductions.\n\nThe account says the demos are temporarily available and /reverse-engineer tasks are free through October 31, up to 10,000 credits per user. These are contemporaneous promotional terms, not permanent free access. The text and demo links did not supply analysis logs, source, original-app comparisons or persistent-service guarantees obtained by this collection. Multiplayer behavior, real-file compatibility, formula coverage and contract-analysis correctness were not verified. An official announcement establishes the platform's feature claims, not complete cloning or safe production deployment. This collection did not run demos, register for the service or process real contracts or accounts.",
+      "metadata": ["Candidate snapshot (October 16): 25 likes, 2,317 views, 4 reposts; kept separate from changing metrics during rereading.", "Official feature demos, not independently run or tested for equivalence; October 31 and 10,000 credits are the announcement's promotion limits."],
+      "source_labels": ["Computer's official REA skill and Figma demo announcement", "Same-author supplementary reply: LibreOffice Calc demo", "Same-author supplementary reply: Photopea demo", "Same-author supplementary reply: Harvey demo", "Same-author supplementary reply: Audacity demo"]
+    }
+  },
+  {
+    "id": "claude-intercept-api-traffic-analysis",
+    "title": "Claude Intercept：把授权 HTTP/S 抓包交给 Claude Code 分析",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "公开代理项目提供 /intercept skill 与结构化流量导出，辅助发现未文档化 API；不保证所有流量可解密。",
+    "description": "往期10月16日19:30（北京时间）的候选在 Ship Systems 项目介绍中列出 Claude Intercept，称可查看解密后的电脑流量和未文档化 API，由 William Haesemeyer 参与制作。此前因 AI 角色与项目地址不明而待补证；现补查到名称和作者匹配的 whaesemeyer/claude-intercept，公开 README 明确定位为 Claude Code 配套 HTTP/S 中间人代理。项目描述本地抓包、实时面板、SQLite 存储、/intercept skill，以及 api-docs、summary、full 等导出方式，让 Claude 研究请求模式与 API，而非只凭产品名推定 AI 参与。\n\n该 README 为本次补充阅读，不当作原候选时点已独立测试的功能。它要求为授权设备配置代理与信任本机 CA，并说明某些证书固定域名会失败、面板绑定0.0.0.0不能放在不可信网络；停止代理后若不关闭系统代理还会影响联网。因此不采用原帖“所有流量都可解密”的泛化。本地存储也不等于送入云模型的内容不会外发。README 许可为 CC BY-NC 4.0，不能把宣传中的开源等同无限商业许可。项目用途和 AI 接口可由文档核对，实际拦截、权限安全、隐私与分析质量未验证；未安装、改代理、导入证书或访问任何凭据，未确认 REA 参与。",
+    "sources": [{"label": "往期候选：Ship Systems 对 Claude Intercept 的介绍", "url": "https://x.com/i/status/2111057177200738632"}, {"label": "补充公开 README：Claude Code 集成与安全边界", "url": "https://github.com/whaesemeyer/claude-intercept"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["补审原窗口为10月16日16:00–20:00，不计作本轮新帖。", "仅检查公开文档；CC BY-NC 4.0、证书固定与局域网暴露限制按项目说明保留。"],
+    "en": {
+      "title": "Claude Intercept: authorized HTTP/S captures for Claude Code analysis",
+      "summary": "A public proxy project provides an /intercept skill and structured traffic exports for undocumented API research, not guaranteed decryption of all traffic.",
+      "description": "An earlier candidate at 19:30 Beijing time on October 16 lists Claude Intercept among Ship Systems projects, describing decrypted computer traffic and undocumented APIs, with William Haesemeyer's involvement. It was previously deferred because the AI role and public project were unclear. A supplementary search now finds whaesemeyer/claude-intercept matching the name and author. Its public README explicitly describes an HTTP/S man-in-the-middle proxy built for Claude Code, with local capture, a live dashboard, SQLite storage, an /intercept skill and api-docs, summary and full exports for Claude to investigate request patterns and APIs. AI involvement is supported by this documented interface, not inferred from the name.\n\nThe README was read as supplementary material, not as independently tested functionality at the earlier candidate's timestamp. It requires proxy setup and trust in a local CA on authorized devices, warns that some certificate-pinned domains fail and that the dashboard binds to 0.0.0.0 and should not run on untrusted networks, and says leaving system proxy settings on after stopping the proxy disrupts connectivity. Thus the original claim about decrypting all traffic is not adopted. Local storage also does not mean content sent to a cloud model cannot leave the machine. The README specifies CC BY-NC 4.0, so open-source promotion does not imply unrestricted commercial licensing. Documentation establishes the intended use and AI interface, not successful interception, permission safety, privacy or analysis quality. Nothing was installed, no proxies or certificates changed and no credentials accessed. REA involvement is unconfirmed.",
+      "metadata": ["Follow-up from the October 16, 16:00–20:00 source window, not a newly fetched post in this window.", "Public documentation only; CC BY-NC 4.0, certificate-pinning and LAN-exposure limitations retained from project statements."],
+      "source_labels": ["Earlier candidate: Ship Systems' Claude Intercept introduction", "Supplementary public README: Claude Code integration and security limits"]
     }
   }
 ]

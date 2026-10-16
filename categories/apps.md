@@ -137,3 +137,10 @@
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](../cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
 - [crashlens：把 REA 接入崩溃分诊与编程 Agent](../cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](../cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
+- [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](../cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
+- [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](../cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**
+- [Black Bot / Blacksidian：REA 重建应用并选择 AI provider 的自述](../cases/black-bot-blacksidian-rea-report.md) — 作者称用 REA 把 Grok Bot、Obsidian 做成自己的版本，并加入模型供应商选择。 **[REA · 待验证]**
+- [VMP 加壳样本：DeepSeek 挑战失败的自述](../cases/deepseek-vmp-protected-sample-failure.md) — 发帖者称自己的 REA 讨论视频包含 DeepSeek 处理 VMP 虚拟机保护失败的实验。 **[其他 AI 逆向 · 分析测试]**
+- [1997 年音频软件：为继续旧工作探索 Windows 11 兼容](../cases/1997-audio-software-ai-win11-revival.md) — 作者称用 Claude 规划、headless Ghidra 研究旧音频程序，再考虑较便宜的 GLM 5.3。 **[其他 AI 逆向 · 进行中]**
+- [Computer 接入 REA：Figma 等五款应用功能重建演示](../cases/computer-rea-five-app-rebuild-demos.md) — Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。 **[REA · 待验证]**
+- [Claude Intercept：把授权 HTTP/S 抓包交给 Claude Code 分析](../cases/claude-intercept-api-traffic-analysis.md) — 公开代理项目提供 /intercept skill 与结构化流量导出，辅助发现未文档化 API；不保证所有流量可解密。 **[其他 AI 逆向 · 相关项目]**

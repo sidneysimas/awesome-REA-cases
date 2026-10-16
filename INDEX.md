@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **297 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **311 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（69）
-- [硬件与设备互通](categories/hardware.md)（65）
-- [应用与客户端](categories/apps.md)（135）
+- [游戏与游戏保存](categories/games.md)（72）
+- [硬件与设备互通](categories/hardware.md)（69）
+- [应用与客户端](categories/apps.md)（142）
 - [算法与功能重建](categories/algorithms.md)（28）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -87,7 +87,7 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
-- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。 **[其他 AI 逆向 · 相关项目]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。 **[其他 AI 逆向 · 相关项目]**
 - [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
 - [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
@@ -95,6 +95,9 @@
 - [Stunts：AI 逆向后重做浏览器赛车的二手线索](cases/stunts-ai-browser-remake-report.md) — 读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。 **[其他 AI 逆向 · 待验证]**
 - [Halo 3 Reforged：AI 反编译与128人对战的读者说法](cases/halo3-reforged-ai-decompile-report.md) — 读者以 Halo 3 Reforged 举例声称 AI 可绕开原开发者改造经典游戏，具体 AI 贡献未证实。 **[其他 AI 逆向 · 待验证]**
 - [Max Payne 3：用 AI 反编译添加过场跳过与关卡创作的 idea](cases/max-payne3-ai-cutscene-level-idea.md) — 玩家希望 AI 辅助 Mod 作者研究 Max Payne 3，增加跳过过场与关卡创作能力，尚无实现。 **[其他 AI 逆向 · 待验证]**
+- [QQPet：从 Arctic Penguin T800 重建跨平台桌宠](cases/qqpet-arctic-penguin-ai-rebuild.md) — 公开项目自称 AI 复刻 QQ 宠物，逆向 T800 并以 Ruffle 播放 Flash；平台和素材限制仍在。 **[其他 AI 逆向 · 相关项目]**
+- [Mega Man Battle Network：AI 反编译与 Mod 的二手线索](cases/megaman-battle-network-ai-mod-report.md) — 评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。 **[其他 AI 逆向 · 待验证]**
+- [Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述](cases/ben-claude-rts-metal-alpha-report.md) — Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。 **[其他 AI 逆向 · 进行中]**
 
 ### 硬件与设备互通
 
@@ -160,9 +163,13 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视固件：为隐私与去广告提出的 AI 逆向 idea](cases/tv-firmware-ai-ad-removal-idea.md) — 建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。 **[其他 AI 逆向 · 待验证]**
+- [电视固件：AI 去广告 idea 与两种实施自述](cases/tv-firmware-ai-ad-removal-idea.md) — 同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
+- [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
+- [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：AI 逆向移植的假设性 idea](cases/ios-android-ai-port-idea.md) — 设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。 **[其他 AI 逆向 · 待验证]**
+- [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -301,6 +308,13 @@
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
 - [crashlens：把 REA 接入崩溃分诊与编程 Agent](cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
+- [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
+- [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**
+- [Black Bot / Blacksidian：REA 重建应用并选择 AI provider 的自述](cases/black-bot-blacksidian-rea-report.md) — 作者称用 REA 把 Grok Bot、Obsidian 做成自己的版本，并加入模型供应商选择。 **[REA · 待验证]**
+- [VMP 加壳样本：DeepSeek 挑战失败的自述](cases/deepseek-vmp-protected-sample-failure.md) — 发帖者称自己的 REA 讨论视频包含 DeepSeek 处理 VMP 虚拟机保护失败的实验。 **[其他 AI 逆向 · 分析测试]**
+- [1997 年音频软件：为继续旧工作探索 Windows 11 兼容](cases/1997-audio-software-ai-win11-revival.md) — 作者称用 Claude 规划、headless Ghidra 研究旧音频程序，再考虑较便宜的 GLM 5.3。 **[其他 AI 逆向 · 进行中]**
+- [Computer 接入 REA：Figma 等五款应用功能重建演示](cases/computer-rea-five-app-rebuild-demos.md) — Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。 **[REA · 待验证]**
+- [Claude Intercept：把授权 HTTP/S 抓包交给 Claude Code 分析](cases/claude-intercept-api-traffic-analysis.md) — 公开代理项目提供 /intercept skill 与结构化流量导出，辅助发现未文档化 API；不保证所有流量可解密。 **[其他 AI 逆向 · 相关项目]**
 
 ### 算法与功能重建
 

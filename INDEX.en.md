@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**297 entries**, organized by use case, without a Top-N or popularity threshold.
+**311 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (69)
-- [Hardware and interoperability](categories/en/hardware.md) (65)
-- [Applications and clients](categories/en/apps.md) (135)
+- [Games and preservation](categories/en/games.md) (72)
+- [Hardware and interoperability](categories/en/hardware.md) (69)
+- [Applications and clients](categories/en/apps.md) (142)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (28)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -89,7 +89,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Open-BFME: a report of AI-assisted Battle for Middle Earth decompilation and byte matching](cases/en/open-bfme-ai-byte-matching-report.md) — jfwfreo says Open-BFME produces C++ that matches original bytes with the right compiler, without a coverage figure. **[Other AI-assisted work · Needs verification]**
 - [Jet Set Radio Future: a disputed AI-decompilation project lead](cases/en/jsrf-ai-decompilation-controversy.md) — A candidate criticizes AI decompilation of JSRF and recommends a human-led alternative, without technical results. **[Other AI-assisted work · Needs verification]**
 - [A character on a video homepage: a report of Fu Sheng's REA mashup demonstration](cases/en/fu-sheng-video-homepage-character-demo.md) — A post says Fu Sheng used one prompt to make a game character smash up his video homepage, without identifying the character or reverse-engineering steps. **[REA · Needs verification]**
-- [Decompwtf: agents reconstruct game C/C++ and compare machine code](cases/en/decompwtf-agent-game-decompilation.md) — A project account describes local AI decompilation with compile-and-compare checks and support for continuing community work. **[Other AI-assisted work · Related project]**
+- [Decompwtf: agents reconstruct game C/C++ and compare machine code](cases/en/decompwtf-agent-game-decompilation.md) — Accounts describe local AI decompilation with compile-and-compare checks; third-party discontinuation claims lack a verified author announcement. **[Other AI-assisted work · Related project]**
 - [Immersive Portals: an AI-assisted Minecraft JE 26.2 compatibility report](cases/en/immersive-portals-ai-je262.md) — The author reports compatibility with newer Minecraft, Fabric and shaders, explicitly noting the recording is not the first attempt. **[Other AI-assisted work · Needs verification]**
 - [Obfuscated old games: a report of Claude guessing structure sizes incorrectly](cases/en/claude-obfuscated-game-struct-size-failure.md) — The author says pseudo-C conversion was fast, but obfuscation led to guessed structure sizes requiring manual IDA review. **[Other AI-assisted work · Analysis test]**
 - [Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port](cases/en/sonic-3d-blast-saturn-opus-port.md) — The author clarifies that this is a native port from decompiled source, not static recompilation; AI accelerated a months-long process. **[Other AI-assisted work · In progress]**
@@ -97,6 +97,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Stunts: a secondhand lead on an AI-assisted browser racing remake](cases/en/stunts-ai-browser-remake-report.md) — A reader says someone remade Stunts with AI, modern graphics and better browser frame rates; no performance data is verified. **[Other AI-assisted work · Needs verification]**
 - [Halo 3 Reforged: a reader's AI-decompilation and 128-player claim](cases/en/halo3-reforged-ai-decompile-report.md) — A reader cites Halo 3 Reforged to argue AI can modify classic games independently of developers; the specific AI contribution is unestablished. **[Other AI-assisted work · Needs verification]**
 - [Max Payne 3: an AI-decompilation idea for cutscene skipping and level creation](cases/en/max-payne3-ai-cutscene-level-idea.md) — A player hopes AI-assisted modders will investigate Max Payne 3 to add cutscene skips and level-creation tools; no implementation is shown. **[Other AI-assisted work · Needs verification]**
+- [QQPet: a cross-platform pet rebuilt from Arctic Penguin T800](cases/en/qqpet-arctic-penguin-ai-rebuild.md) — A public project describes an AI-made QQ Pet recreation from T800 with Ruffle Flash playback; platform and asset limitations remain. **[Other AI-assisted work · Related project]**
+- [Mega Man Battle Network: a secondhand AI decompilation and modding lead](cases/en/megaman-battle-network-ai-mod-report.md) — A comment reports AI decompilation and modding of a Battle Network game; version, implementation and outcome are unspecified. **[Other AI-assisted work · Needs verification]**
+- [Ben's childhood RTS: a reported Claude Code C++/Metal Mac alpha](cases/en/ben-claude-rts-metal-alpha-report.md) — Ben reports roughly 70k C++ lines, over 30 reverse-engineered specifications and an opponent that builds and attacks. **[Other AI-assisted work · In progress]**
 
 ### Hardware and interoperability
 
@@ -162,9 +165,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors](cases/en/whirlpool-f13-rea-investigation-idea.md) — A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established. **[REA · Needs verification]**
 - [Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity](cases/en/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android. **[Other AI-assisted work · Needs verification]**
 - [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
-- [TV firmware: an AI reverse-engineering idea for privacy and ad removal](cases/en/tv-firmware-ai-ad-removal-idea.md) — A reply proposes AI investigation, ad removal, recompilation and reflashing of existing firmware; no device test is supplied. **[Other AI-assisted work · Needs verification]**
+- [TV firmware: an AI ad-removal idea and two implementation accounts](cases/en/tv-firmware-ai-ad-removal-idea.md) — In one TV privacy conversation, a Claude user claims ad/tracking removal while a Codex user stopped after analysis; models and privacy tests are absent. **[Other AI-assisted work · Needs verification]**
 - [Circuit-board function reconstruction: an idea to extend the REA approach to hardware](cases/en/rea-circuit-board-functional-rebuild-idea.md) — The author proposes an REA-like program to investigate circuit-board functions and reimplement them; no board or prototype is specified. **[REA use unconfirmed · Needs verification]**
 - [Samsung AC: local-network control with reported partial Claude assistance](cases/en/samsung-ac-local-claude-report.md) — The author says a personal Samsung AC was reverse-engineered for local control; support for all post-2022 models is not verified. **[Other AI-assisted work · Needs verification]**
+- [Creality SpacePiX4: a Gemini Argon firmware-improvement plan](cases/en/creality-spacepix4-gemini-firmware-idea.md) — The poster wants better firmware for a named device using Gemini Argon; investigation and implementation are not yet described. **[Other AI-assisted work · Needs verification]**
+- [Race recorder: reported Claude Code recovery of video and telemetry files on Mac](cases/en/race-recorder-claude-format-mac-report.md) — A roundup says a developer investigated a proprietary recorder format in four hours to access years of video and driving telemetry on a Mac. **[Other AI-assisted work · Needs verification]**
+- [iOS on Android hardware: a hypothetical AI reverse-engineering idea](cases/en/ios-android-ai-port-idea.md) — A post imagines AI understanding iOS and moving it to Android phones; no actual port or performance measurement is supplied. **[Other AI-assisted work · Needs verification]**
+- [A twelve-year-old Kindle: reported Claude safety refusal during a jailbreak attempt](cases/en/old-kindle-claude-refusal-report.md) — A user reports safety blocks while investigating an owned old Kindle, not a successful unlock or firmware change. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -303,6 +310,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [JPCERT/CC: tracing APK analysis and API probing on attack servers](cases/en/jpcert-ai-apk-api-investigation-report.md) — An official investigation reports AI use and APK, jadx, Blutter and API-research traces, without identifying a model or REA. **[Other AI-assisted work · Analysis test]**
 - [crashlens: connecting REA crash triage to coding agents](cases/en/crashlens-rea-crash-triage-idea.md) — A public early prototype turns crash artifacts into evidence reports; a Hermes Skill is still proposed and the implementation was not independently tested. **[REA · Related project]**
 - [A 2000 stress.exe: a reported Opus/REA revival for Mac and the web](cases/en/stress-exe-2000-rea-revival-report.md) — A post says a Reddit user rebuilt stress.exe in half an hour and shipped Mac/web versions in two hours; the original implementation and comparisons were not obtained. **[REA · Needs verification]**
+- [osec_io Rust research: reported AI recovery and hash-perfect recompilation](cases/en/osec-ai-rust-hash-recompilation-report.md) — pashov recounts AI-assisted Rust recovery and critical vulnerability discoveries; targets and validation records are not supplied. **[Other AI-assisted work · Needs verification]**
+- [Website to Next.js: a reported Claude Code template with parallel DOM-based rebuilding](cases/en/claude-website-dom-nextjs-template-report.md) — A post describes agents reading assets, fonts and layout to reconstruct an interface; project identity and tests are missing. **[Other AI-assisted work · Needs verification]**
+- [Black Bot / Blacksidian: reported REA rebuilds with AI-provider choice](cases/en/black-bot-blacksidian-rea-report.md) — The poster reports personal Grok Bot and Obsidian versions made with REA, adding a choice of AI providers. **[REA · Needs verification]**
+- [VMP-protected sample: a reported failed DeepSeek challenge](cases/en/deepseek-vmp-protected-sample-failure.md) — The poster says an REA discussion video includes DeepSeek failing a virtual-machine-protected sample. **[Other AI-assisted work · Analysis test]**
+- [1997 audio software: investigating Windows 11 compatibility to continue old work](cases/en/1997-audio-software-ai-win11-revival.md) — The poster reports a revival effort and suggests Claude planning with headless Ghidra, followed by a cheaper model such as GLM 5.3. **[Other AI-assisted work · In progress]**
+- [Computer integrates REA: five app-feature rebuilding demos including Figma](cases/en/computer-rea-five-app-rebuild-demos.md) — Computer announces an REA skill with design, spreadsheet, image, contract and audio demos; equivalence to the originals is untested. **[REA · Needs verification]**
+- [Claude Intercept: authorized HTTP/S captures for Claude Code analysis](cases/en/claude-intercept-api-traffic-analysis.md) — A public proxy project provides an /intercept skill and structured traffic exports for undocumented API research, not guaranteed decryption of all traffic. **[Other AI-assisted work · Related project]**
 
 ### Algorithms and feature recovery
 
