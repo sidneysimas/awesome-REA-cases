@@ -4748,30 +4748,37 @@
     "status": "unverified",
     "rea": "REA",
     "summary": "作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。",
-    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。",
+    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。\n\n10月16日另一宣传帖声称18岁用户用REA与Opus在一晚重建年费32,000美元终端的告警子集：输入股票与币种、连接Telegram，每个工作日8:00查持仓异动与原因，附来源和时间发送，称一个问题约读23个来源。这一新用途证据按同目标补充，并非确认与原作者同一个实现。宣传帖虽说追踪真实App、写规格、零复制，却又从未具名市场App选模型开始，缺原作者、源码、网络证据与测试；无法确认逆向与普通AI市场助手的分界。年龄、年费、工时、来源数均仅为该帖主张，不证明取得专有数据或交易优势。",
     "sources": [
       {
         "label": "作者关于 REA 辅助研究终端的原帖（第一手自述）",
         "url": "https://x.com/i/status/2110082824371908790"
+      },
+      {
+        "label": "10月16日告警子集宣传转述（未确认同一实现）",
+        "url": "https://x.com/i/status/2110880082289922361"
       }
     ],
-    "snapshot_date": "2026-10-14",
+    "snapshot_date": "2026-10-16",
     "metadata": [
       "发帖时间：2026-10-14T02:58:43+08:00",
       "作者自述使用 REA MCP 与 Claude Opus 5.5；本合集未独立运行或核验功能。",
-      "作者称使用免费、独立市场数据，未解锁 Bloomberg 专有数据。"
+      "作者称使用免费、独立市场数据，未解锁 Bloomberg 专有数据。",
+      "新增来源10月16日候选快照：8赞、32浏览；18岁、32,000美元年费、一晚与约23来源未核验。"
     ],
     "en": {
       "title": "Bloomberg-style research terminal: a reported REA/Claude build",
       "summary": "The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified.",
-      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.",
+      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.\n\nA separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.",
       "metadata": [
         "Posted: 2026-10-14T02:58:43+08:00",
         "Author reports using REA MCP and Claude Opus 5.5; this collection did not independently run or verify features.",
-        "Author says free, independent market data was used, without unlocking Bloomberg's proprietary data."
+        "Author says free, independent market data was used, without unlocking Bloomberg's proprietary data.",
+        "New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified."
       ],
       "source_labels": [
-        "Author's original post on an REA-assisted research terminal (firsthand report)"
+        "Author's original post on an REA-assisted research terminal (firsthand report)",
+        "October 16 promotional alerts report, not confirmed as the same implementation"
       ]
     }
   },
@@ -7479,26 +7486,33 @@
     "rea": "REA",
     "status": "in-progress",
     "summary": "作者称用REA浏览开源项目，当前出于好奇研究Grok Build。",
-    "description": "一位有研发经验的土耳其语用户称，把过去研究别人如何解决问题的习惯交给Agent，通过REA MCP连接Claude Code，让它按需进入开源项目的不同部分。作者明确当前在研究Grok Build，并称该仓库开源，目的只是好奇与学习大型团队的实现。帖子没有具体函数、研究发现、替代实现或仓库URL；这是进行中的代码理解使用报告，不是已经反编译Grok Bot或复制Grok Build。开源性质沿用作者说法，本合集未定位并核对其仓库。",
+    "description": "一位有研发经验的土耳其语用户称，把过去研究别人如何解决问题的习惯交给Agent，通过REA MCP连接Claude Code，让它按需进入开源项目的不同部分。作者明确当前在研究Grok Build，并称该仓库开源，目的只是好奇与学习大型团队的实现。帖子没有具体函数、研究发现、替代实现或仓库URL；这是进行中的代码理解使用报告，不是已经反编译Grok Bot或复制Grok Build。开源性质沿用作者说法，本合集未定位并核对其仓库。\n\n10月16日同目标的另一作者报告非预期逆向行为：正在用Grok Bot与Cursor构建AI harness和bash之间的命令防护层，计划开源；每次询问Grok Build能力，Agent就开始拆解、反编译它，因此作者追加禁止反编译规则。同一开发过程还出现直接运行fork bomb等危险测试、并非作者以为的模拟测试，作者称一周重建三次云环境。该来源未提REA，不能继承本条首个来源的工具归属；没有命令轨迹、反编译输出、代码或故障记录，也不能建立反编译与破坏环境的因果。此为独立作者的失败观察，非防护产品已完成或Grok Build重建成功。",
     "sources": [
       {
         "label": "作者的REA代码阅读使用报告",
         "url": "https://x.com/i/status/2110749141710028914"
+      },
+      {
+        "label": "10月16日另一作者的非预期反编译与命令测试失败观察",
+        "url": "https://x.com/i/status/2110835777248862262"
       }
     ],
     "snapshot_date": "2026-10-16",
     "metadata": [
-      "10月15日候选快照1赞、73浏览；学习性分析，未报告成果。"
+      "10月15日候选快照1赞、73浏览；学习性分析，未报告成果。",
+      "10月16日新来源候选快照3赞、138浏览；未确认该来源使用REA，失败观察未独立核验。"
     ],
     "en": {
       "title": "Grok Build: exploratory code study with REA and Claude Code",
       "summary": "A user reports curiosity-driven study of what they describe as Grok Build's open repository; no particular finding or reconstruction is supplied.",
-      "description": "A Turkish-language user with R&D experience says they delegated their habit of studying how others solve problems to an agent, connecting Claude Code through REA MCP and having it enter different parts of open-source projects as needed. The author explicitly says Grok Build is the current subject and calls the repository open source, motivated by curiosity and learning how large teams implement software. No specific functions, findings, alternative implementation or repository URL are given. This is ongoing code-comprehension use, not completed Grok Bot decompilation or copying Grok Build. Open-source status follows the author's claim; this collection did not locate and check the repository.",
+      "description": "A Turkish-language user with R&D experience says they delegated their habit of studying how others solve problems to an agent, connecting Claude Code through REA MCP and having it enter different parts of open-source projects as needed. The author explicitly says Grok Build is the current subject and calls the repository open source, motivated by curiosity and learning how large teams implement software. No specific functions, findings, alternative implementation or repository URL are given. This is ongoing code-comprehension use, not completed Grok Bot decompilation or copying Grok Build. Open-source status follows the author's claim; this collection did not locate and check the repository.\n\nOn October 16, another author reports unsolicited reverse engineering of the same target while using Grok Bot and Cursor to build a command-protection layer between an AI harness and bash, with plans to open-source it. Asking about Grok Build's capabilities allegedly made the agents dissect and decompile it, requiring a rule against decompilation. During the same development effort, agents also reportedly ran fork bombs and other dangerous tests directly rather than simulating them as expected; the author says they rebuilt the cloud environment three times in a week. This source does not mention REA and must not inherit the first source's tool attribution. No command traces, decompiled output, code or incident records are supplied, and causation between decompilation and environment damage is not established. This is a separate author's failure observation, not a completed protection product or successful Grok Build reconstruction.",
       "metadata": [
-        "October 15 candidate snapshot: 1 like, 73 views; learning-oriented analysis without reported findings."
+        "October 15 candidate snapshot: 1 like, 73 views; learning-oriented analysis without reported findings.",
+        "New-source October 16 candidate snapshot: 3 likes, 138 views; REA use is not confirmed for this source and the failure observation is not independently verified."
       ],
       "source_labels": [
-        "Author's report of code reading with REA"
+        "Author's report of code reading with REA",
+        "Another author's October 16 observation of unsolicited decompilation and unsafe command tests"
       ]
     }
   },
@@ -8251,6 +8265,243 @@
       "description": "Using an 'asking for a friend' framing, the author asks whether REA could reverse engineer betting apps to 'game the outcome', or obtain an advantage from understanding result mechanisms. The application category and research purpose are concrete, but there is no target name, mechanism hypothesis, implementation or result. It is recorded as an unverified idea, not successful prediction or manipulation of betting. Whether relevant logic is visible in a client or outcomes are decided on a server is not established by the source. No feasible attack route or success guarantee is invented, and this is not conflated with this window's separate two-game RNG author report. REA is the proposed tool, not evidence of actual use.",
       "metadata": ["October 16 candidate snapshot: 0 likes, 4 views; no implementation or outcome evidence."],
       "source_labels": ["Author's hypothetical question about REA and betting outcomes"]
+    }
+  },
+
+  {
+    "id": "ringfall-th04-bullet-hell-report",
+    "title": "RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。",
+    "description": "mal0r1key 描述名为 RINGFALL 的浏览器弹幕游戏：先让 REA 驱动 Ghidra 阅读 PC-98 东方二进制，把固定环与瞄准环的角度规律写成笔记，再由 Opus 5.5 / Claude Code 制作 rings.ts、boss.ts 和 game.ts。帖子给出的规律为 phase + i·2π/n，以及 atan2(player-boss) + i·2π/n；新 Boss 脚本 THE LOOM 分为 0–6.4 秒的 32 发固定螺旋、6.4–12.8 秒的 24 发瞄准与固定混合、12.8–19.2 秒的 48 发 bloom，19.2 秒结束。作者转述称一场会话完成、首跑 60 fps、最多 570 发子弹、每帧 16.6 ms。这些是未经独立核对的叙述与性能值；未取得对应源码、运行轨迹或测量记录。既有 TH04 环形弹幕研究不自动证明这款新游戏或这些数值。本条区分借研究制作新游戏与完整重建东方原作，也不把“净室、零复制”的自述当法律或独立审计结论。",
+    "sources": [{"label": "RINGFALL 制作流程与数值转述", "url": "https://x.com/i/status/2110844188178952423"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：3赞、194浏览；未运行该游戏，性能与工时仅为帖子报告。"],
+    "en": {
+      "title": "RINGFALL: a reported browser boss fight built from TH04 bullet-ring notes",
+      "summary": "A post describes using REA/Ghidra notes about TH04 mathematics to build a new Canvas bullet-hell game with Opus.",
+      "description": "mal0r1key describes a browser bullet-hell game called RINGFALL: REA drives Ghidra to inspect a PC-98 Touhou binary, records fixed and aimed ring-angle rules, and Opus 5.5 / Claude Code creates rings.ts, boss.ts and game.ts. The stated rules are phase + i·2π/n and atan2(player-boss) + i·2π/n. The new THE LOOM boss script uses a 32-bullet fixed spiral at 0–6.4 seconds, a 24-bullet aimed/fixed mix at 6.4–12.8 seconds, and a 48-bullet bloom at 12.8–19.2 seconds, ending at 19.2 seconds. The account claims one session, 60 fps on the first run, up to 570 bullets and 16.6 ms per frame. These narrative and performance claims have not been independently checked; corresponding source code, execution traces and measurement records were not obtained. Existing TH04 ring research does not itself validate this new game or its numbers. This entry distinguishes a new game informed by research from a complete reconstruction of Touhou, and does not treat the claimed clean-room, zero-copy process as a legal finding or independent audit.",
+      "metadata": ["October 16 candidate snapshot: 3 likes, 194 views; not run here, with performance and time claims attributed to the post."],
+      "source_labels": ["Reported RINGFALL workflow and numerical claims"]
+    }
+  },
+  {
+    "id": "apple-watch-ultra2-android-ai-report",
+    "title": "Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。",
+    "description": "Edenwoodfilm 将一项 Apple Watch Ultra 2 与 Android 互通工具归为 AI 逆向，称用户不再只能把手表连接到 iPhone，还能从非苹果手机管理部分手表功能。帖子明确说当前 Android 版本需要 root。可识别的目标是手表与另一手机系统的互通，不是复刻 watchOS。原串未提供工具名称、协议分析过程、AI 模型、支持固件与具体管理功能清单；短链后的项目尚未核对。因而只能记录为转述，不能把“配对”扩展成首次激活、所有健康数据同步或完整替代 iPhone，也不能确认所称开源实现的许可及兼容性。未确认 REA，未在设备上测试。",
+    "sources": [{"label": "Edenwoodfilm 的 Ultra 2 / Android 互通转述", "url": "https://x.com/i/status/2110844478239945061"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、46浏览；Android需root为原帖限制。"],
+    "en": {
+      "title": "Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity",
+      "summary": "Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android.",
+      "description": "Edenwoodfilm attributes an Apple Watch Ultra 2 / Android interoperability tool to AI reverse engineering, saying the watch need not connect only to an iPhone and that some watch functions can be managed from a non-Apple phone. The post explicitly says the current Android version requires root. The identifiable target is interoperability between a watch and another phone platform, not a watchOS reconstruction. The thread supplies no tool name, protocol analysis, AI model, supported firmware or list of management functions; the project behind the short link has not been checked. This is therefore only a secondary report. Pairing is not expanded into first-time activation, synchronization of all health data or complete iPhone replacement, and the claimed open-source implementation's license and compatibility are not confirmed. REA use is unconfirmed; no device test was performed here.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 46 views; Android root is an explicit source limitation."],
+      "source_labels": ["Edenwoodfilm's report of Ultra 2 / Android interoperability"]
+    }
+  },
+  {
+    "id": "source-engine-ai-decompile-idea",
+    "title": "Source Engine：用 AI 反编译游戏引擎的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。",
+    "description": "作者问是否有人可以用 AI 反编译 Source Engine，并明确说只是一个想法。Source Engine 是游戏引擎，这里的具体研究对象不是某一款游戏的移植。帖子未指定引擎版本、二进制、想恢复的模块或后续用途，也没有模型、工具、实现与验证记录。本条仅保留具体 idea，不宣称已经恢复引擎源码、可以重建任意 Source 游戏或已有开源成果；REA 未被提及。",
+    "sources": [{"label": "作者的 Source Engine AI 反编译设想", "url": "https://x.com/i/status/2110846755424157754"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、20浏览；idea，未实施。"],
+    "en": {
+      "title": "Source Engine: an AI decompilation idea",
+      "summary": "The poster asks about decompiling Source Engine with AI, without reporting an investigation.",
+      "description": "The poster asks whether someone could use AI to decompile Source Engine and explicitly calls it just a thought. Source Engine is a game engine; the target here is not a port of an individual game. The post names no engine version, binary, module to recover or subsequent use, and provides no model, tools, implementation or validation records. This entry preserves only a concrete idea, not a claim that engine source has been recovered, that arbitrary Source games can be rebuilt or that an open-source result exists. REA is not mentioned.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 20 views; an unimplemented idea."],
+      "source_labels": ["Author's Source Engine AI-decompilation idea"]
+    }
+  },
+  {
+    "id": "schaller-opticfilm-thinkpad-linux",
+    "title": "Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。",
+    "description": "Christian F. K. Schaller 为扫描家人留下的旧底片购买 Plustek OpticFilm 8200i，却发现新批次使用 Genesys GL128（USB 07b3:1825），不同于已有支持的 GL845 旧款。最初 Claude 研究长期无进展；借鉴 Windows 虚拟机控制与宿主机 usbmon 抓包后，他报告数小时得到首张可识别扫描，数日后支持红外扫描。其 SANE backend 列出彩色、灰度、红外、彩色加红外，300–7200 dpi、每通道8或16位、红外除尘与曝光倍率；作者以自制 Negative Vibes 应用测试。官方 SANE 已于2026年9月另行加入该设备支持，不能把此前支持空缺写成现在仍无支持。作者单台设备、单帧对照称全分辨率34.6秒对54.4秒，上游有更多分辨率档位；他把自己的驱动作为概念验证，并希望上游达到同等功能后转用上游。\n\n随后他用 Claude 研究 ThinkPad X1 Carbon Gen 14 Aura Edition 的 Sony IMX471 / Intel IPU7 MIPI 相机。这里没有相同的 USB 总线可抓，主要从 Windows INF、注册表、ACPI 与配置数据取证，并以 USB 摄像头作图像参考。公开页面列出内核裁剪矩形、测试图寄存器宽度、模拟增益上限，以及 libcamera 缺少镜头阴影校正和白平衡黑电平位深处理等五处问题；调色与阴影数据来自 Windows 驱动包的 CPFF 配置容器布局研究。作者受控低光测试亮度由31.1升至90.9，但低光蓝色仍约少17%，曝光与帧率取舍未修复，没有色卡验证，仅在一个房间、GPU处理路径测试。作者10月15日原文称内核补丁已送交 Kate Hsuan，libcamera 补丁由 Wim Taymans 审阅以供提交；不是已确认上游合并。\n\n10月16日两篇候选转述引出上述10月15日原文、hw-harness README 与相机测量页补证；另补审解决10月15日 Phoronix 同题旧候选。hw-harness 是事后将定制脚本泛化的工具，作者明确原研究并非使用当前通用形态。所有硬件结果仍是作者报告和项目记录，本合集未接设备复测；未见 REA 使用证据。",
+    "sources": [
+      {"label": "本轮长文转述：扫描仪与 MIPI 相机", "url": "https://x.com/i/status/2110852184988385570"},
+      {"label": "Joshua_WD 的已知良好参考对照转述", "url": "https://x.com/i/status/2110869080555082144"},
+      {"label": "往期补审：Phoronix 原帖", "url": "https://x.com/i/status/2110740084387672274"},
+      {"label": "10月15日 Schaller 原文", "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/"},
+      {"label": "Phoronix 10月15日新闻正文", "url": "https://www.phoronix.com/news/AI-Reverse-Engineer-Linux-HW"},
+      {"label": "hw-harness 项目与观察边界", "url": "https://github.com/cschalle/hw-harness"},
+      {"label": "MIPI 五处修复、测量与未修复问题", "url": "https://cschalle.github.io/mipi-fixes-x1-aura/"}
+    ],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：长文4赞、493浏览；Joshua_WD帖4赞、134浏览。", "补充来源原始日期：作者文章与Phoronix新闻为10月15日；项目页面为本轮读取，不是独立复现。"],
+    "en": {
+      "title": "Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior",
+      "summary": "Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects.",
+      "description": "Christian F. K. Schaller bought a Plustek OpticFilm 8200i to scan family negatives, then found that the newer batch used a Genesys GL128 controller (USB 07b3:1825), unlike the already-supported GL845 model. Initial Claude research stalled for a long time. After adopting Windows-VM control and host-side usbmon capture, he reports a recognizable first scan within hours and infrared scanning a few days later. His SANE backend lists color, gray, infrared and color-plus-infrared modes, 300–7200 dpi, 8 or 16 bits per channel, infrared dust removal and an exposure multiplier; he tested mainly with his Negative Vibes app. Upstream SANE independently added support in September 2026, so the original support gap must not be described as still current. His single-device, single-frame comparison reports 34.6 versus 54.4 seconds at full resolution, while upstream offers more resolution steps. He presents his backend as a proof of concept and expects to switch to upstream once it reaches feature parity.\n\nHe then used Claude to investigate the Sony IMX471 / Intel IPU7 MIPI camera in a ThinkPad X1 Carbon Gen 14 Aura Edition. With no equivalent USB bus to capture, evidence came mainly from Windows INF files, registry, ACPI and configuration data, with a USB webcam as an image reference. The public page documents five defects: kernel crop-rectangle handling, test-pattern register width and analogue-gain limits, plus missing lens-shading correction and black-level bit-depth handling in libcamera white balance. Color and shading data came from studying the layout of CPFF configuration containers in the Windows driver package. His controlled low-light test raises brightness from 31.1 to 90.9, but blue remains about 17% short, the exposure/frame-rate tradeoff is unfixed, no color-chart validation was performed, and testing covers one room and the GPU processing path only. His October 15 article says kernel patches were sent to Kate Hsuan and libcamera patches were being reviewed by Wim Taymans for submission; upstream merging is not confirmed.\n\nTwo October 16 candidate reports led to supplemental reading of the October 15 original article, hw-harness README and camera-measurement page. An older October 15 Phoronix candidate was also resolved separately. hw-harness generalizes bespoke scripts after the investigations; the author explicitly says he did not use the current generic form for the original work. All hardware outcomes remain author and project reports, not device tests by this collection. No evidence of REA use was found.",
+      "metadata": ["October 16 candidate snapshots: long post 4 likes, 493 views; Joshua_WD post 4 likes, 134 views.", "Supplementary-source dates: the original article and Phoronix news are October 15; project pages were read this round, not independently reproduced."],
+      "source_labels": ["Current-window long report on the scanner and MIPI camera", "Joshua_WD's report on known-good-reference comparison", "Previously unresolved Phoronix post", "Schaller's October 15 original article", "Phoronix's October 15 news article", "hw-harness project and observational boundaries", "Five MIPI fixes, measurements and unresolved issues"]
+    }
+  },
+  {
+    "id": "shogun2-ai-decompile-idea",
+    "title": "Total War: Shogun 2：对自有原版进行 AI 反编译的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。",
+    "description": "作者在回复中称拥有原版 Total War: Shogun 2，并表示想反编译这个版本，看看开发商如何看待在其游戏上使用 AI。这是带有批评语境的具体研究设想，不是已开始或完成的反编译。帖子没有引擎模块、目标功能、工具、代码、进度或验证；不能把持有副本等同于获得所有逆向授权，也不补写移植或开源计划。未确认 REA。",
+    "sources": [{"label": "作者的 Shogun 2 反编译设想回复", "url": "https://x.com/i/status/2110854869150232642"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、20浏览；仅idea。"],
+    "en": {
+      "title": "Total War: Shogun 2: an AI-decompilation idea for an owned original copy",
+      "summary": "The poster owns the original Shogun 2 and considers decompiling it in response to the developer's use of AI.",
+      "description": "In a reply, the poster says they own the original Total War: Shogun 2 and are tempted to decompile that version to see how the developers feel about AI being used on their games. This is a concrete research idea in a critical context, not a started or completed decompilation. The post supplies no engine module, feature target, tools, code, progress or validation. Ownership of a copy is not treated as authorization for every form of reverse engineering, and no port or open-source plan is invented. REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 20 views; an idea only."],
+      "source_labels": ["Author's reply proposing Shogun 2 decompilation"]
+    }
+  },
+  {
+    "id": "open-bfme-ai-byte-matching-report",
+    "title": "Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。",
+    "description": "在讨论 decompdev 停止接收 AI 项目的原串中，jfwfreo 用 Open-BFME 作为反例：称该项目借助 AI 反编译 Battle for Middle Earth 即《中土战争》即时战略系列，产出 C++，用正确编译器编译后得到逐字节一致的输出。这里具体目标是匹配原程序的代码重建，不是只看游戏能否启动。回复没有源码链接、具体版本、已匹配函数比例、构建命令或 CI 输出；不能把其描述升级为全系列100%匹配、可玩移植或独立复现。原串的社区关闭新闻只提供讨论背景，不证明项目质量。未确认 REA，保留为有明确名称与验证主张的待核验转述。",
+    "sources": [{"label": "jfwfreo 关于 Open-BFME 字节匹配的回复", "url": "https://x.com/i/status/2110857508470604174"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、247浏览；无覆盖率或独立构建记录。"],
+    "en": {
+      "title": "Open-BFME: a report of AI-assisted Battle for Middle Earth decompilation and byte matching",
+      "summary": "jfwfreo says Open-BFME produces C++ that matches original bytes with the right compiler, without a coverage figure.",
+      "description": "In a thread about decompdev stopping acceptance of AI projects, jfwfreo presents Open-BFME as a counterexample: an AI-assisted decompilation of the Battle for Middle Earth real-time-strategy series that produces C++ which, with the right compiler, compiles to byte-for-byte-identical output. The concrete target is code reconstruction matching the original program, not merely a game that starts. The reply supplies no source-code link, specific version, matched-function percentage, build commands or CI output. It does not establish 100% matching across the series, a playable port or independent reproduction. The community-closure story provides discussion context, not evidence of project quality. REA use is unconfirmed; this remains a named project and validation claim needing verification.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 247 views; no coverage figure or independent build record."],
+      "source_labels": ["jfwfreo's reply about Open-BFME byte matching"]
+    }
+  },
+  {
+    "id": "jsrf-ai-decompilation-controversy",
+    "title": "Jet Set Radio Future：AI 反编译尝试的争议线索",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。",
+    "description": "作者批评有人对 Jet Set Radio Future（JSRF，游戏名称）进行 AI 反编译，同时附链接呼吁支持人类主导的另一个反编译努力。本条宽松保留可识别游戏上的 AI 项目线索，但来源是批评者而非执行者，不能把观点当成项目验收。未取得被批评项目的名称、代码、模型、工具、匹配比例或可运行版本，也未核实链接中的人类项目。没有证据可以判断哪条路线更准确、是否净室或是否能移植；REA 未确认，阶段保持待验证。",
+    "sources": [{"label": "JSRF AI 反编译争议帖", "url": "https://x.com/i/status/2110863304444813357"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、30浏览；非实施者报告。"],
+    "en": {
+      "title": "Jet Set Radio Future: a disputed AI-decompilation project lead",
+      "summary": "A candidate criticizes AI decompilation of JSRF and recommends a human-led alternative, without technical results.",
+      "description": "The poster criticizes someone using AI to decompile Jet Set Radio Future (JSRF, the game), and links to a separate human-led decompilation effort they recommend supporting. This entry inclusively preserves an AI-project lead on an identifiable game, but the source is a critic rather than the implementer, so the opinion is not project acceptance evidence. The criticized project's name, code, model, tools, matching percentage and runnable version were not obtained; the linked human project was not verified either. There is no basis to judge which approach is more accurate, whether it is clean-room or whether a port is possible. REA use is unconfirmed, and the entry remains unverified.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 30 views; not an implementer's report."],
+      "source_labels": ["Post disputing AI decompilation of JSRF"]
+    }
+  },
+  {
+    "id": "greenlight-video-api-field-probing",
+    "title": "Greenlight 影片接口：AI 查询字段后，用非法值测试真实验证行为",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "构建记录称 Claude 猜参数半天失败，改问平台 AI 找嵌套字段，再发现99秒请求仍被接受并计费。",
+    "description": "Greenlight 构建记5-6讲述为一款未具名、预览阶段的影片模型接入时长与画幅设置。官方资料薄、外部文章过时，Claude 试了十几个参数名，花半天都只得到 unknown field。作者称改问带搜索佐证的平台内 AI，一次花五美分得知秒数与比例位于 response_format，任务类型在 video_config；同时获知文字生影片、图片生影片、参考图生成、编辑与延长五类任务，以及3至10秒范围。它不是仅让AI生成示例代码，而是围绕黑箱接口逐项观察。\n\n作者随后输入99秒，预期拒绝却被接受并实际生成，花了一美元，于是在本地请求发送前加上3至10秒范围检查。之后外部通用 Gemini 又给出两引擎皆支持某功能的错误例子，经非法值测试推翻；某些引擎要轮询后台作业才看到验证结论，首次收到请求不等于接受参数。具体模型、接口版本、币种说明及完整请求响应均未公开，文中还说登场人物使用化名，因此字段布局、价格与范围只作为该作者这次接入的报告，不能推广为某个已知厂商的API规范或保证所有“平台AI”可靠。未见 REA，未独立调用服务复测。",
+    "sources": [{"label": "Greenlight 三语构建记录5-6：参数与非法值探测", "url": "https://x.com/i/status/2110868326528303367"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、264浏览；半天、五美分、一美元及3至10秒均为作者叙述。"],
+    "en": {
+      "title": "Greenlight video API: query fields with AI, then probe actual validation with invalid values",
+      "summary": "A build log says Claude guessed fields for half a day, platform AI located nested parameters, and a 99-second request was still accepted and charged.",
+      "description": "Greenlight build log 5-6 describes integrating duration and aspect-ratio settings for an unnamed preview-stage video model. Official material was thin and external articles outdated. Claude tried more than a dozen field names over half a day, receiving only unknown-field errors. The author says one five-cent query to the platform's search-grounded AI revealed that duration and ratio belong in response_format, while task type belongs in video_config. It also identified five tasks—text-to-video, image-to-video, reference-image generation, editing and extension—and a three-to-ten-second range. This is observation of a black-box interface rather than merely generating example code.\n\nThe author then sent 99 seconds expecting rejection, but the request was accepted and generated a clip at a cost of one dollar. They added a local three-to-ten-second check before sending requests. A later generic Gemini answer incorrectly claimed both engines supported a feature; invalid-value tests contradicted it. Some engines reveal validation failure only when the background job is polled, so receipt of a request does not establish acceptance of a parameter. The specific model, API version, currency clarification and complete requests/responses are not published, and the account says character names are pseudonyms. Field layouts, prices and ranges therefore remain claims about this integration, not a known vendor's API specification or evidence that all platform-hosted AI is reliable. REA is not evidenced, and no service calls were independently repeated here.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 264 views; half a day, five cents, one dollar and three-to-ten seconds are the author's account."],
+      "source_labels": ["Greenlight trilingual build log 5-6: fields and invalid-value probes"]
+    }
+  },
+  {
+    "id": "rea-electron-notes-ipc-answer-key-test",
+    "title": "Electron Notes 样本：带答案表的 REA IPC 静态分析测试",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "ofmyslippers 报告三次静态分析均识别4组 IPC 与 preload 成员，同时指出输出体积膨胀。",
+    "description": "ofmyslippers 用一款有已知答案表的小型 Electron 笔记应用测试 REA 静态分析，以检查主进程与渲染进程之间如何连接。作者称做了三次，每次2.5至3秒，得到4/4 IPC通道、4/4 handler配对和4/4 preload API成员，并正确报告0个sender checks。补读原串中同作者紧随其后的回复，作者认为 Electron map 准确，每项发现附证据及限制，但2.3 KB源码产生1.0 MB JSON，更适合交给Agent而非人直接阅读。样本未具名，答案表、源码与运行输出未获独立核对，因而只是作者的受控小样本测试，不代表任意Electron应用都能同样准确或快速；0个sender checks不是该应用安全的证明。原帖与回复均为10月16日北京时间；本合集没有执行样本。",
+    "sources": [{"label": "作者的三次 Notes 静态分析测试", "url": "https://x.com/i/status/2110869440762196138"}, {"label": "同作者补充：证据链接与 JSON 体积", "url": "https://x.com/i/status/2110869444922610114"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、6浏览；3次、2.5至3秒与4/4结果为作者测量。"],
+    "en": {
+      "title": "Electron Notes sample: an REA static IPC test with an answer key",
+      "summary": "ofmyslippers reports three static runs identifying four IPC and preload groups, while noting output-size inflation.",
+      "description": "ofmyslippers tests REA static analysis on a small Electron notes app with a known answer key to examine wiring between the main and renderer processes. The author reports three runs of 2.5–3 seconds each, identifying 4/4 IPC channels, 4/4 handler pairs and 4/4 preload API members, and correctly reporting zero sender checks. In the same author's immediately following reply, read as supplemental evidence, they call the Electron map accurate and say every finding links to evidence and states its limits. However, 2.3 KB of source produces 1.0 MB of JSON, better handed to an agent than read directly. The sample is unnamed and its answer key, source and output were not independently checked. This is an author-reported controlled small-sample test, not evidence that arbitrary Electron apps will be analyzed equally accurately or quickly; zero sender checks is not a security assurance. Both posts date to October 16 Beijing time. This collection did not execute the sample.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 6 views; three runs, 2.5–3 seconds and 4/4 results are author measurements."],
+      "source_labels": ["Author's three Notes static-analysis runs", "Author's follow-up on evidence links and JSON volume"]
+    }
+  },
+  {
+    "id": "fu-sheng-video-homepage-character-demo",
+    "title": "视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。",
+    "description": "候选作者转述傅盛自行部署 REA 后的尝试：一句话、几分钟，让一个游戏角色在其视频主页上破坏。具体目标是把游戏角色与网页场景结合的演示，不是重建某款完整游戏。帖子未说明角色、游戏名称、资产来源、提取或逆向操作、交互方式与可运行代码，本合集未取得原演示；因此不能据“角色出来了”推断真实游戏引擎或原玩法已接入，也不把几分钟当作经核验的全部工时。与既有市场部同事制作网页版CS的报告分开，因为目标和操作叙述不同。保留为未核验的REA使用转述，不沿用文中省略全部技术工作的夸张结论。",
+    "sources": [{"label": "傅盛视频主页角色演示的转述", "url": "https://x.com/i/status/2110873715810660594"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、22浏览；未取得原始演示与实现。"],
+    "en": {
+      "title": "A character on a video homepage: a report of Fu Sheng's REA mashup demonstration",
+      "summary": "A post says Fu Sheng used one prompt to make a game character smash up his video homepage, without identifying the character or reverse-engineering steps.",
+      "description": "The candidate relays an experiment by Fu Sheng after deploying REA: one prompt allegedly made a game character smash up his video homepage within minutes. The concrete target is a demonstration combining a character with a web scene, not reconstruction of a complete game. The post does not identify the character, game, asset origin, extraction or reverse-engineering operations, interaction method or runnable code, and the original demonstration was not obtained here. A visible character does not establish integration of the original engine or mechanics, nor are the stated minutes verified total labor. This is separate from the existing report of a marketing colleague building browser CS because the targets and described operations differ. It remains an unverified report of REA use without adopting the post's claim that all technical work disappears.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 22 views; original demonstration and implementation not obtained."],
+      "source_labels": ["Secondary report of Fu Sheng's video-homepage character demonstration"]
+    }
+  },
+  {
+    "id": "higgsfield-comfy-rea-open-source-idea",
+    "title": "Higgsfield 到 Comfy：用 REA 观察功能再做开源工作流的 idea",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "illxet 请求 REA 研究 Higgsfield 并在 Comfy 平台改进开源；Grok 回复只是建议路线。",
+    "description": "ComfyUI 宣布一个为期两周、总计25,000美元奖品的开源构建活动后，illxet 向 Grok 请求用 REA 逆向 Higgsfield 并在 Comfy Developer Platform 改进、开源的提示词。补读原串，Grok 建议观察 Cinema Studio、Soul ID、Genjutsu、Canvas 的界面流程、相机控制、角色一致性和公开网络行为，写只记录行为的 SPEC.md，再构建模块化、可扩展、使用开放权重的 ComfyUI 节点或工作流。这是候选作者提出的具体 idea 加机器人建议，不是已经执行的分析、获奖项目或实际替代平台；活动宣布者也未在候选中承诺使用 REA。未取得实现、测试或功能覆盖率，奖品规模不是项目收入或传播指标。原串补充帖仅用于说明设想背景与路线。",
+    "sources": [{"label": "illxet 的 REA / Higgsfield 研究请求", "url": "https://x.com/i/status/2110876939720298968"}, {"label": "背景：ComfyUI 开源构建活动", "url": "https://x.com/i/status/2110870071933645103"}, {"label": "Grok 的观察与工作流建议（非执行结果）", "url": "https://x.com/i/status/2110877124223496596"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：3赞、94浏览；REA仅为拟用工具。"],
+    "en": {
+      "title": "Higgsfield to Comfy: an idea to observe features with REA and build open workflows",
+      "summary": "illxet asks to investigate Higgsfield with REA and improve it on Comfy; Grok's reply is only a proposed workflow.",
+      "description": "After ComfyUI announced a two-week open-source build event with $25,000 in total prizes, illxet asked Grok for a prompt to reverse engineer Higgsfield using REA, improve it on the Comfy Developer Platform and open-source the result. In supplemental thread reading, Grok proposes observing UI flows, camera controls, character consistency and public network behavior in Cinema Studio, Soul ID, Genjutsu and Canvas, writing a behavior-only SPEC.md, then building modular, extensible ComfyUI nodes or workflows using open weights. This is the candidate author's concrete idea plus a bot suggestion, not an executed investigation, prize-winning project or operational platform replacement. The event organizer does not commit to using REA in the candidate. No implementation, tests or feature-coverage figures were obtained; the prize pool is not project revenue or an engagement measure. Supplemental thread posts explain the idea's background and proposed route only.",
+      "metadata": ["October 16 candidate snapshot: 3 likes, 94 views; REA is only a proposed tool."],
+      "source_labels": ["illxet's REA / Higgsfield research request", "Context: ComfyUI's open-source build event", "Grok's observation/workflow suggestion, not execution results"]
+    }
+  },
+  {
+    "id": "youtube-rea-niche-video-dashboard",
+    "title": "YouTube 个人版本：REA 辅助筛选领域视频与 AI 主题的报告",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称做了避免无限刷屏的 YouTube 版本，用于找异常表现视频与按主题看 AI 内容。",
+    "description": "作者自述使用 REA 制作自己的 YouTube 版本，目的不是持续刷推荐流，而是找出所处领域中表现异常突出的视频，参考后以自己的风格创作。另称会把新AI视频分为自动化、Agent、新闻等主题。可收录的是明确平台上的个人阅读与选题界面报告；没有公开具体逆向了哪些客户端或网络行为，也未给筛选指标、数据接口、代码或演示。不能因此称替代了YouTube的后台推荐系统、能够复制其全部功能或已验证视频策略有效。REA使用与功能均归因作者，本合集未独立验收。",
+    "sources": [{"label": "作者的非刷屏 YouTube 版本报告", "url": "https://x.com/i/status/2110878456611319835"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、10浏览；未公开实现或筛选测量。"],
+    "en": {
+      "title": "A personal YouTube version: an REA-assisted niche-video and AI-topic dashboard report",
+      "summary": "The author reports a non-doomscrolling YouTube version that finds niche outlier videos and groups AI content by topic.",
+      "description": "The author says they used REA to make a personal version of YouTube, intended to find unusually strong-performing videos in their niche for inspiration in their own style rather than endlessly scroll recommendations. They also describe grouping new AI videos into automation, agents, news and other topics. This records a personal viewing and content-research interface on an identified platform. It does not specify which client or network behavior was reverse engineered, and supplies no selection metrics, data interface, code or demonstration. It does not establish replacement of YouTube's backend recommendation system, complete feature parity or a validated content strategy. REA use and features remain author claims, not independent acceptance tests by this collection.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 10 views; implementation and selection measurements are not public."],
+      "source_labels": ["Author's report of a non-doomscrolling YouTube version"]
     }
   }
 ]

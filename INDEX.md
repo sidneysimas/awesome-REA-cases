@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **252 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **264 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（55）
-- [硬件与设备互通](categories/hardware.md)（60）
-- [应用与客户端](categories/apps.md)（114）
+- [游戏与游戏保存](categories/games.md)（61）
+- [硬件与设备互通](categories/hardware.md)（62）
+- [应用与客户端](categories/apps.md)（118）
 - [算法与功能重建](categories/algorithms.md)（23）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -81,6 +81,12 @@
 - [Slipstream 5000：Codex 两天反编译的作者报告](cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
 - [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](cases/pokemon-hgss-multi-agent-decompile-report.md) — 回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。 **[其他 AI 逆向 · 待验证]**
 - [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](cases/d2-claude-engine-rebuild-report.md) — 读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。 **[其他 AI 逆向 · 待验证]**
+- [RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述](cases/ringfall-th04-bullet-hell-report.md) — 帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。 **[REA · 待验证]**
+- [Source Engine：用 AI 反编译游戏引擎的 idea](cases/source-engine-ai-decompile-idea.md) — 作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。 **[其他 AI 逆向 · 待验证]**
+- [Total War: Shogun 2：对自有原版进行 AI 反编译的 idea](cases/shogun2-ai-decompile-idea.md) — 作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。 **[其他 AI 逆向 · 待验证]**
+- [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
+- [Jet Set Radio Future：AI 反编译尝试的争议线索](cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
+- [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
 
 ### 硬件与设备互通
 
@@ -144,6 +150,8 @@
 - [童年手机：Claude 把 OEM 固件运行到 Wasm 的作者报告](cases/old-phone-oem-firmware-wasm.md) — 作者称旧手机实体仍卡在 SIM 提示时，Claude 已让固件在 Wasm 中运行。 **[其他 AI 逆向 · 待验证]**
 - [扫地机器人：让 Claude 替代内置清扫策略的 idea](cases/robot-vacuum-claude-cleaning-idea.md) — Joe 想研究自己的机器人，让 AI 按脏污、角落和坡度决定清扫方式，尚未实施。 **[其他 AI 逆向 · 待验证]**
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
+- [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
+- [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
 
 ### 应用与客户端
 
@@ -261,6 +269,10 @@
 - [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
 - [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
 - [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
+- [Greenlight 影片接口：AI 查询字段后，用非法值测试真实验证行为](cases/greenlight-video-api-field-probing.md) — 构建记录称 Claude 猜参数半天失败，改问平台 AI 找嵌套字段，再发现99秒请求仍被接受并计费。 **[其他 AI 逆向 · 分析测试]**
+- [Electron Notes 样本：带答案表的 REA IPC 静态分析测试](cases/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers 报告三次静态分析均识别4组 IPC 与 preload 成员，同时指出输出体积膨胀。 **[REA · 分析测试]**
+- [Higgsfield 到 Comfy：用 REA 观察功能再做开源工作流的 idea](cases/higgsfield-comfy-rea-open-source-idea.md) — illxet 请求 REA 研究 Higgsfield 并在 Comfy 平台改进开源；Grok 回复只是建议路线。 **[REA · 待验证]**
+- [YouTube 个人版本：REA 辅助筛选领域视频与 AI 主题的报告](cases/youtube-rea-niche-video-dashboard.md) — 作者称做了避免无限刷屏的 YouTube 版本，用于找异常表现视频与按主题看 AI 内容。 **[REA · 待验证]**
 
 ### 算法与功能重建
 

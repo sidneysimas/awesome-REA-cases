@@ -57,3 +57,9 @@
 - [Slipstream 5000：Codex 两天反编译的作者报告](../cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
 - [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](../cases/pokemon-hgss-multi-agent-decompile-report.md) — 回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。 **[其他 AI 逆向 · 待验证]**
 - [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — 读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。 **[其他 AI 逆向 · 待验证]**
+- [RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述](../cases/ringfall-th04-bullet-hell-report.md) — 帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。 **[REA · 待验证]**
+- [Source Engine：用 AI 反编译游戏引擎的 idea](../cases/source-engine-ai-decompile-idea.md) — 作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。 **[其他 AI 逆向 · 待验证]**
+- [Total War: Shogun 2：对自有原版进行 AI 反编译的 idea](../cases/shogun2-ai-decompile-idea.md) — 作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。 **[其他 AI 逆向 · 待验证]**
+- [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](../cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
+- [Jet Set Radio Future：AI 反编译尝试的争议线索](../cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
+- [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](../cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**

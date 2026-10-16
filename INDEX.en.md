@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**252 entries**, organized by use case, without a Top-N or popularity threshold.
+**264 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (55)
-- [Hardware and interoperability](categories/en/hardware.md) (60)
-- [Applications and clients](categories/en/apps.md) (114)
+- [Games and preservation](categories/en/games.md) (61)
+- [Hardware and interoperability](categories/en/hardware.md) (62)
+- [Applications and clients](categories/en/apps.md) (118)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (23)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -83,6 +83,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Slipstream 5000: an author reports a two-day Codex decompilation](cases/en/slipstream-5000-codex-decompile.md) — The poster calls the new result remarkably faithful, contrasting it with a confused attempt taking days in March. **[Other AI-assisted work · Needs verification]**
 - [Pokémon HeartGold/SoulSilver: a secondhand multi-agent decompilation and cost report](cases/en/pokemon-hgss-multi-agent-decompile-report.md) — A reply claims a month and about 71 billion tokens; $56,000 is a hypothetical API list-price estimate for subsidized work, not a paid bill. **[Other AI-assisted work · Needs verification]**
 - [A Destiny community rebuild: reported Claude decompilation and in-engine assets](cases/en/d2-claude-engine-rebuild-report.md) — A reader claims Claude-assisted d2 decompilation and recreated assets; the thread supplies Destiny/WoTM context, not validation by the project author. **[Other AI-assisted work · Needs verification]**
+- [RINGFALL: a reported browser boss fight built from TH04 bullet-ring notes](cases/en/ringfall-th04-bullet-hell-report.md) — A post describes using REA/Ghidra notes about TH04 mathematics to build a new Canvas bullet-hell game with Opus. **[REA · Needs verification]**
+- [Source Engine: an AI decompilation idea](cases/en/source-engine-ai-decompile-idea.md) — The poster asks about decompiling Source Engine with AI, without reporting an investigation. **[Other AI-assisted work · Needs verification]**
+- [Total War: Shogun 2: an AI-decompilation idea for an owned original copy](cases/en/shogun2-ai-decompile-idea.md) — The poster owns the original Shogun 2 and considers decompiling it in response to the developer's use of AI. **[Other AI-assisted work · Needs verification]**
+- [Open-BFME: a report of AI-assisted Battle for Middle Earth decompilation and byte matching](cases/en/open-bfme-ai-byte-matching-report.md) — jfwfreo says Open-BFME produces C++ that matches original bytes with the right compiler, without a coverage figure. **[Other AI-assisted work · Needs verification]**
+- [Jet Set Radio Future: a disputed AI-decompilation project lead](cases/en/jsrf-ai-decompilation-controversy.md) — A candidate criticizes AI decompilation of JSRF and recommends a human-led alternative, without technical results. **[Other AI-assisted work · Needs verification]**
+- [A character on a video homepage: a report of Fu Sheng's REA mashup demonstration](cases/en/fu-sheng-video-homepage-character-demo.md) — A post says Fu Sheng used one prompt to make a game character smash up his video homepage, without identifying the character or reverse-engineering steps. **[REA · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -146,6 +152,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [An old phone: an author reports running OEM firmware in Wasm with Claude](cases/en/old-phone-oem-firmware-wasm.md) — The poster says Claude made childhood-phone firmware run in Wasm while the physical phone was still blocked by a SIM-required screen. **[Other AI-assisted work · Needs verification]**
 - [A robot vacuum: an idea for Claude to replace built-in cleaning decisions](cases/en/robot-vacuum-claude-cleaning-idea.md) — Joe proposes AI-directed cleaning that responds to dirt, corners and slopes; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors](cases/en/whirlpool-f13-rea-investigation-idea.md) — A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established. **[REA · Needs verification]**
+- [Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity](cases/en/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android. **[Other AI-assisted work · Needs verification]**
+- [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
 
 ### Applications and clients
 
@@ -263,6 +271,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Resend alternative: reported email APIs and inboxes for agents](cases/en/resend-agentic-email-rebuild.md) — The poster describes an open-source email service after studying Resend, with UI features available to AI; implementation is unverified. **[REA use unconfirmed · Related project]**
 - [iTunes: an AI-modernization idea for old-iPod music workflows](cases/en/itunes-ai-modernization-idea.md) — The poster asks for an AI research and rebuild approach to update iTunes for modern computers and users returning to old iPods. **[Other AI-assisted work · Needs verification]**
 - [Self-owned Android/Windows 95 apps: an Opus reverse-engineering test without REA](cases/en/opus-own-android-win95-test.md) — The poster reports testing Opus 5.5 on two of their own applications, without feature details or acceptance records. **[Other AI-assisted work · Analysis test]**
+- [Greenlight video API: query fields with AI, then probe actual validation with invalid values](cases/en/greenlight-video-api-field-probing.md) — A build log says Claude guessed fields for half a day, platform AI located nested parameters, and a 99-second request was still accepted and charged. **[Other AI-assisted work · Analysis test]**
+- [Electron Notes sample: an REA static IPC test with an answer key](cases/en/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers reports three static runs identifying four IPC and preload groups, while noting output-size inflation. **[REA · Analysis test]**
+- [Higgsfield to Comfy: an idea to observe features with REA and build open workflows](cases/en/higgsfield-comfy-rea-open-source-idea.md) — illxet asks to investigate Higgsfield with REA and improve it on Comfy; Grok's reply is only a proposed workflow. **[REA · Needs verification]**
+- [A personal YouTube version: an REA-assisted niche-video and AI-topic dashboard report](cases/en/youtube-rea-niche-video-dashboard.md) — The author reports a non-doomscrolling YouTube version that finds niche outlier videos and groups AI content by topic. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 

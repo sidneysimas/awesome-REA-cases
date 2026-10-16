@@ -116,3 +116,7 @@
 - [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](../cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
 - [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](../cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
 - [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](../cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
+- [Greenlight 影片接口：AI 查询字段后，用非法值测试真实验证行为](../cases/greenlight-video-api-field-probing.md) — 构建记录称 Claude 猜参数半天失败，改问平台 AI 找嵌套字段，再发现99秒请求仍被接受并计费。 **[其他 AI 逆向 · 分析测试]**
+- [Electron Notes 样本：带答案表的 REA IPC 静态分析测试](../cases/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers 报告三次静态分析均识别4组 IPC 与 preload 成员，同时指出输出体积膨胀。 **[REA · 分析测试]**
+- [Higgsfield 到 Comfy：用 REA 观察功能再做开源工作流的 idea](../cases/higgsfield-comfy-rea-open-source-idea.md) — illxet 请求 REA 研究 Higgsfield 并在 Comfy 平台改进开源；Grok 回复只是建议路线。 **[REA · 待验证]**
+- [YouTube 个人版本：REA 辅助筛选领域视频与 AI 主题的报告](../cases/youtube-rea-niche-video-dashboard.md) — 作者称做了避免无限刷屏的 YouTube 版本，用于找异常表现视频与按主题看 AI 内容。 **[REA · 待验证]**
