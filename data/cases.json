@@ -1247,9 +1247,9 @@
   },
   {
     "id": "preview-rebuild",
-    "title": "macOS 预览：对比有无 REA 的功能重建",
-    "summary": "同一作者用两条路线重建缩放、旋转、标注与保存。",
-    "description": "Preview（预览）是macOS自带的图片和PDF工具。Mahesh把重建它作为有无REA的对照，称纯Claude更快，REA版在缩放、分享、旋转、标注和保存上更接近原作。10月15日候选中文文章进一步叙述两条路线：REA侧解析CommonToolbar.plist、MainMenu.nib和私有selector，编写Swift实现并报告47项自测通过；另一侧依靠AppKit常识生成18个Swift文件并修复自身Bug，交付更快。该文没有给出可重放源码与统一系统测试，属于这次对照的补充叙述，不是本合集或第三方独立复现；不采纳星数、私有类推断或速度差为普遍结论。",
+    "title": "macOS 预览：有无 REA 的重建对照与自测边界",
+    "summary": "两条路线重建图片工具；后续转述明确47项检查由AI自写自跑。",
+    "description": "Preview（预览）是macOS自带的图片和PDF工具。Mahesh把重建它作为有无REA的对照，称纯Claude更快，REA版在缩放、分享、旋转、标注和保存上更接近原作。10月15日候选中文文章进一步叙述两条路线：REA侧解析CommonToolbar.plist、MainMenu.nib和私有selector，编写Swift实现并报告47项自测通过；另一侧依靠AppKit常识生成18个Swift文件并修复自身Bug，交付更快。10月16日新转述列出开图、裁剪、调色、导出和幻灯片功能，同时明确47项测试由AI自己编写、执行并设定及格线。这是对自测口径的重要限定，不是独立QA。新帖的“一句话、十分钟”仍缺可重放日志，不作为经核验全部工时。这些文章均未提供可重放源码与统一系统测试，属于对照的补充叙述，不是本合集或第三方独立复现；不采纳星数、私有类推断或速度差为普遍结论。",
     "category": "apps",
     "rea": "REA",
     "sources": [
@@ -1260,24 +1260,31 @@
       {
         "label": "10月15日中文过程叙述（非独立复现）",
         "url": "https://x.com/i/status/2110613996382654771"
+      },
+      {
+        "label": "10月16日功能与AI自测口径转述",
+        "url": "https://x.com/i/status/2110935009775546599"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-16",
     "metadata": [
       "发帖：2026-10-11（UTC）｜@maheshboda006",
-      "热度快照（2026-10-12）：5 赞｜494 浏览｜1 转发"
+      "原帖热度快照（2026-10-12）：5赞、494浏览、1转发；新转述候选快照（10月16日）：0赞、130浏览。",
+      "47项为来源称AI自写自跑的检查，不是统一系统测试或独立复现。"
     ],
     "en": {
-      "title": "macOS Preview: rebuilding with and without REA",
-      "summary": "A first-hand comparison of two rebuilds covering zoom, rotation, annotation and saving.",
-      "description": "Preview is macOS's built-in image and PDF tool. Mahesh used rebuilding it to compare work with and without REA, saying plain Claude was faster while the REA version was closer to the original in zooming, sharing, rotation, annotation and saving. A Chinese article among the October 15 candidates further describes the two approaches: the REA side parsed CommonToolbar.plist, MainMenu.nib and private selectors, wrote a Swift implementation and reported 47 passing self-tests; the other side used general AppKit knowledge to generate 18 Swift files and fix its own bugs, delivering faster. The article supplies neither replayable source code nor uniform system tests. It supplements the comparison's narrative rather than independently reproducing it here or through a third party. Star counts, inferred private classes and speed differences are not adopted as general conclusions.",
+      "title": "macOS Preview: rebuilds with and without REA and the limits of self-tests",
+      "summary": "Two routes rebuild an image tool; a later account specifies that AI wrote and ran the 47 checks itself.",
+      "description": "Preview is macOS's built-in image and PDF tool. Mahesh used rebuilding it to compare work with and without REA, saying plain Claude was faster while the REA version was closer to the original in zooming, sharing, rotation, annotation and saving. An October 15 Chinese account further describes the two routes: REA parsed CommonToolbar.plist, MainMenu.nib and private selectors, wrote Swift and reported 47 passing self-tests; the other route used general AppKit knowledge to generate 18 Swift files and fix its own bugs, delivering faster. A new October 16 account lists image opening, cropping, color adjustment, exporting and slideshows, while explicitly saying AI wrote and executed the 47 tests and set their passing criteria. This importantly limits the self-test claim; it is not independent QA. The new post's 'one prompt, ten minutes' lacks replayable logs and is not verified total labor. Neither account provides replayable source or uniform system tests. They supplement the comparison's narrative, not an independent reproduction here or by a third party. Star counts, inferred private classes and speed differences are not adopted as general conclusions.",
       "metadata": [
         "Posted: 2026-10-11 (UTC) | @maheshboda006",
-        "Engagement snapshot (2026-10-12): 5 likes | 494 views | 1 repost"
+        "Original-post snapshot (2026-10-12): 5 likes, 494 views, 1 repost; new account's candidate snapshot (October 16): 0 likes, 130 views.",
+        "The source describes 47 AI-written, AI-run checks, not uniform system tests or independent reproduction."
       ],
       "source_labels": [
         "Author's original post",
-        "October 15 Chinese process account (not an independent reproduction)"
+        "October 15 Chinese process account (not an independent reproduction)",
+        "October 16 account of features and AI self-test criteria"
       ]
     },
     "status": "case"
@@ -8502,6 +8509,253 @@
       "description": "The author says they used REA to make a personal version of YouTube, intended to find unusually strong-performing videos in their niche for inspiration in their own style rather than endlessly scroll recommendations. They also describe grouping new AI videos into automation, agents, news and other topics. This records a personal viewing and content-research interface on an identified platform. It does not specify which client or network behavior was reverse engineered, and supplies no selection metrics, data interface, code or demonstration. It does not establish replacement of YouTube's backend recommendation system, complete feature parity or a validated content strategy. REA use and features remain author claims, not independent acceptance tests by this collection.",
       "metadata": ["October 16 candidate snapshot: 0 likes, 10 views; implementation and selection measurements are not public."],
       "source_labels": ["Author's report of a non-doomscrolling YouTube version"]
+    }
+  },
+  {
+    "id": "decompwtf-agent-game-decompilation",
+    "title": "Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。",
+    "description": "10月16日 @Pirat_Nation 介绍 Decompwtf，称它让 AI 编程 Agent 从游戏编译代码恢复 C/C++，再编译结果并与原二进制比较机器码，以加速游戏保存和既有社区反编译工程，而非只重画界面。帖子列出 N64、PS1、PS2、GameCube、Wii、GBA 和 DS 目标，并称本地运行、不需账号或上传游戏数据。这是来源描述的工作流和范围，不表示任意游戏都已字节匹配。本轮补查原串与公开 GitHub 仓库名检索，未取得可确认的源码、匹配日志或完成游戏清单；开源、隐私和兼容性仍是来源说法，本合集未安装或运行。",
+    "sources": [{"label": "Pirat_Nation 的项目介绍", "url": "https://x.com/i/status/2110899022932418745"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1,331赞、30,869浏览、116转发；热度不是验证结果。"],
+    "en": {
+      "title": "Decompwtf: agents reconstruct game C/C++ and compare machine code",
+      "summary": "A project account describes local AI decompilation with compile-and-compare checks and support for continuing community work.",
+      "description": "On October 16, @Pirat_Nation introduced Decompwtf as a project that lets AI coding agents reconstruct C/C++ from compiled game code, then compile it and compare machine code with the original binary to accelerate game preservation and existing community decompilation work rather than merely redraw interfaces. The post lists N64, PS1, PS2, GameCube, Wii, GBA and DS targets and says it runs locally without an account or game-data uploads. These are the source's descriptions of workflow and scope, not evidence that arbitrary games have reached byte matching. Reading the thread and searching public GitHub repository names did not yield confirmed source, matching logs or a completed-game list in this review. Open-source, privacy and compatibility statements remain attributed claims; this collection did not install or run it.",
+      "metadata": ["October 16 candidate snapshot: 1,331 likes, 30,869 views, 116 reposts; engagement is not validation."],
+      "source_labels": ["Pirat_Nation's project introduction"]
+    }
+  },
+  {
+    "id": "rea-local-office-workbench-idea",
+    "title": "本地 REA 工作台：把逆向界面与个人办公流程放在一起",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "作者自述已有本地 REA 界面，提出再接选题、Skill、灵感、计划与生图视频。",
+    "description": "@ModengSir 在10月16日谈到前一天部署的 REA 本地工作台，称可让 Codex 制作，提出扩成个人综合操作平台：选题雷达、直接连接 Agent 的 Skill 工作流（如公众号排版）、灵感记录、计划完成情况、REA 逆向界面及生图生视频界面。同日回复称自己的本地工作台已有 REA 界面。具体用途是把逆向入口与日常流程放进一个本地界面；其余功能属于征集需求的扩展建议，不是全部交付。未说明被逆向的软件、后端隔离、代码或验收结果，也不将界面当作新逆向引擎。",
+    "sources": [{"label": "作者的工作台扩展建议", "url": "https://x.com/i/status/2110904597900673267"}, {"label": "作者确认本地工作台含 REA 界面", "url": "https://x.com/i/status/2110941073434701893"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日主帖候选快照：18赞、1,654浏览、3转发；未独立验收。"],
+    "en": {
+      "title": "A local REA workbench: combine investigation and personal office workflows",
+      "summary": "The author reports a local REA interface and proposes content research, skills, notes, planning and media tools.",
+      "description": "On October 16, @ModengSir discussed an REA workbench deployed the previous day, saying Codex could build it, and proposed expanding it into a personal operations platform: a content-topic radar, agent-connected skill workflows such as public-account formatting, idea capture, plan completion tracking, an REA interface, and image/video generation interfaces. A same-day reply says the author's local workbench already contains an REA interface. The concrete use is combining an investigation entry point with daily workflows in one local interface. The other functions are suggestions in a request for requirements, not all delivered features. No investigated application, backend isolation design, code or acceptance results are supplied; an interface is not a new reverse-engineering engine.",
+      "metadata": ["October 16 main-post candidate snapshot: 18 likes, 1,654 views, 3 reposts; not independently tested."],
+      "source_labels": ["Author's proposed workbench extensions", "Author confirms a local workbench with an REA interface"]
+    }
+  },
+  {
+    "id": "rea-six-feature-rebuild-ideas",
+    "title": "六个单功能重建 idea：从斜杠菜单到智能吸附",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "提出用 REA + Claude 梳理六款应用的事件与状态，再做单功能实现和对照测试。",
+    "description": "10月16日的建议帖主张只研究获准检查的软件中的一个功能，不是克隆整款应用。六个目标是 Notion 斜杠菜单的搜索与插入、Linear 命令面板的模糊搜索和键盘导航、TradingView 趋势线的锚点拖动/价格吸附/撤销、Discord 输入状态的事件与失活计时器、Figma 对齐参考线和吸附，以及 Spotify 时间线拖动后的音频跳转与 UI 同步。作者建议 REA + Claude Code/Opus 5.5 先追交互、函数、调用、事件与状态，区分确认和假设，写含输入输出及边界条件的 SPEC.md，再原创实现、同输入对照并记录差异。没有报告六项实际完成、源码或测试结果；这是具体研究路线和功能 idea，不是平台协议或后台已经还原。",
+    "sources": [{"label": "六个功能与对照测试建议", "url": "https://x.com/i/status/2110912021810020423"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、98浏览；建议路线，未提供实现。"],
+    "en": {
+      "title": "Six single-feature rebuild ideas: from slash menus to smart snapping",
+      "summary": "A proposal maps events and state in six apps with REA and Claude before implementing and comparing individual features.",
+      "description": "An October 16 proposal recommends investigating one feature in software the user is authorized to inspect, rather than cloning an entire app. Its six targets are Notion's slash-menu search and insertion; Linear's command-palette fuzzy search and keyboard navigation; TradingView trendline anchor dragging, price snapping and undo; Discord typing-status events and inactivity timers; Figma alignment guides and snapping; and Spotify seeking with synchronized audio position and UI updates. The author suggests REA with Claude Code/Opus 5.5 to trace interaction, functions, calls, events and state, separate findings from assumptions, write SPEC.md with inputs, outputs and edge cases, then build an original implementation, compare identical inputs and log mismatches. The post does not report completing the six features or supply code or test results. This is a concrete research route and set of feature ideas, not a reconstruction of platform protocols or backends.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 98 views; a proposed route without an implementation."],
+      "source_labels": ["Six feature ideas and comparison-test proposal"]
+    }
+  },
+  {
+    "id": "ledger-opus-finance-agent-report",
+    "title": "Ledger Opus：声称研究 Claude for Finance 的金融 Agent 推广线索",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "推广者称用 REA 制作加密资产、股票和记账助手，尚无可核对的逆向过程。",
+    "description": "10月16日 @Nigeloooooo 推介 Ledger Opus，称名为 RazeDen 的开发者用 REA 研究 Claude for Finance，做出用于加密资产、股票甚至记账的通用 Agent。目标是金融助手的独立替代工具，但没有给出研究的组件、数据接入或交易与会计验收。本轮原串仍只有推广正文与短链，未取得源码或验证记录。MIT 毕业、前 OpenAI 开发者身份及“REA 2.0”均为推广者说法，本合集不予确认；金融能力、费用去向或资产收益也不当成事实或建议。这是待验证项目线索，不是成功复制金融服务的结论。",
+    "sources": [{"label": "Ledger Opus 推广帖（未经核验）", "url": "https://x.com/i/status/2110916629244641548"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、73浏览；身份、实现和金融能力未核验。"],
+    "en": {
+      "title": "Ledger Opus: an unverified finance-agent promotion referencing Claude for Finance",
+      "summary": "A promoter claims REA informed an agent for crypto, stocks and accounting, without a checkable reverse-engineering process.",
+      "description": "On October 16, @Nigeloooooo promoted Ledger Opus, claiming a developer named RazeDen used REA to investigate Claude for Finance and build a general agent for crypto, stocks and even accounting. The target is an independent financial-assistant alternative, but no investigated components, data integration or trading/accounting acceptance tests are provided. The retrieved thread still contains only promotional text and short links; no source or verification records were obtained. An MIT degree, former OpenAI employment and the label 'REA 2.0' are the promoter's claims, not confirmed identities or affiliations. Financial capabilities, fee destinations and asset returns are not adopted as facts or recommendations. This is an unverified project lead, not evidence of reproducing a financial service.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 73 views; identity, implementation and financial capabilities are unverified."],
+      "source_labels": ["Unverified Ledger Opus promotional post"]
+    }
+  },
+  {
+    "id": "immersive-portals-ai-je262",
+    "title": "Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。",
+    "description": "Immersive Portals 是 Minecraft 的传送门 Mod。10月16日 @Tre1in 讨论 AI 逆向时称，用 AI 使它兼容 Minecraft Java Edition 26.2、着色器和最新版 Fabric，多个其他 Mod 也能一起工作。作者说接近首次就完成，但括注明确当前录屏不是第一次尝试。用途是把既有 Mod 适配到新游戏/加载器环境，不是重建 Minecraft 引擎。未说明模型、是否从编译产物逆向、修改接口、版本矩阵或补丁，因此 AI 参与与兼容性均按作者报告，不称完整无源码反编译或通用 Mod 兼容。本合集未运行该组合。",
+    "sources": [{"label": "作者的兼容性与录屏说明", "url": "https://x.com/i/status/2110918344886927696"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：2赞、65浏览；未独立复现。"],
+    "en": {
+      "title": "Immersive Portals: an AI-assisted Minecraft JE 26.2 compatibility report",
+      "summary": "The author reports compatibility with newer Minecraft, Fabric and shaders, explicitly noting the recording is not the first attempt.",
+      "description": "Immersive Portals is a portal mod for Minecraft. Discussing AI reverse engineering on October 16, @Tre1in says AI made it compatible with Minecraft Java Edition 26.2, shaders and the latest Fabric, with several other mods also working. The author calls the result nearly correct on the first try but explicitly says the recording is not that first attempt. The use is adapting an existing mod to a newer game/loader environment, not rebuilding Minecraft's engine. No model, compiled-artifact investigation, changed interfaces, version matrix or patch is identified. AI involvement and compatibility remain author claims, not evidence of complete source-free decompilation or universal mod support. This collection did not run the combination.",
+      "metadata": ["October 16 candidate snapshot: 2 likes, 65 views; not independently reproduced."],
+      "source_labels": ["Author's compatibility report and recording caveat"]
+    }
+  },
+  {
+    "id": "tv-firmware-ai-ad-removal-idea",
+    "title": "电视固件：为隐私与去广告提出的 AI 逆向 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。",
+    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。这是针对既有电视固件的具体 idea，不是完成的修复。原串未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试。作者认为只需会提示 AI，不应据此推定刷机安全、固件可重编译或签名限制可跨越，隐私改善也未实测。本合集未执行或验证。",
+    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：4赞、143浏览；idea，无刷机与隐私验收。"],
+    "en": {
+      "title": "TV firmware: an AI reverse-engineering idea for privacy and ad removal",
+      "summary": "A reply proposes AI investigation, ad removal, recompilation and reflashing of existing firmware; no device test is supplied.",
+      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. This is a concrete idea for existing TV firmware, not a completed repair. The thread supplies no brand, model, firmware, build or signing method, or ad/telemetry tests. The author's claim that prompting AI is enough is not evidence that flashing is safe, firmware can be rebuilt or signing restrictions can be overcome. Privacy improvement is unmeasured. This collection did not execute or validate the suggestion.",
+      "metadata": ["October 16 candidate snapshot: 4 likes, 143 views; an idea without flashing or privacy acceptance tests."],
+      "source_labels": ["TV firmware modification proposal and conversation"]
+    }
+  },
+  {
+    "id": "reconciliation-workbook-agent-distillation",
+    "title": "Excel 对账表：从已验收产物逆向业务程序再交给 Agent",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "从签核工作簿恢复隐含流程，研究跨期对账和过程问答，而非只检索文档。",
+    "description": "10月16日 @burkov 介绍 replication-driven knowledge distillation 研究。背景是企业对账逻辑散在表格、数据库、文档、邮件和聊天中，还可能缺失或冲突。研究让 Agent 以已签核 Excel 对账工作簿这类验收产物为参照，推断程序、蒸馏为可复用结构化知识，再评估能否做新时间段的同一任务及解释流程细节。目标是业务计算和操作规则，不是反编译 Excel 或恢复全部企业知识。摘要称框架已提出和评价，但未给论文标题、数据集、模型或数值结果，原串也未补到这些。按二手研究概述收录，未独立核对论文或复跑，不宣称跨期准确率已证实。",
+    "sources": [{"label": "burkov 的工作簿程序蒸馏研究概述", "url": "https://x.com/i/status/2110919658748719318"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、623浏览；研究摘要，无可核对的数值结果。"],
+    "en": {
+      "title": "Excel reconciliation workbooks: infer a procedure from an accepted artifact for agents",
+      "summary": "A research account describes recovering implicit workflow from signed-off workbooks, then testing new-period reconciliation and process questions.",
+      "description": "On October 16, @burkov described research on replication-driven knowledge distillation. Enterprise reconciliation logic is scattered across spreadsheets, databases, documentation, email and chat, with missing or conflicting evidence. An agent uses a validated artifact such as a signed-off Excel reconciliation workbook to infer a procedure and distill reusable structured knowledge, then is evaluated on the same task for a new time period and detailed process questions. The target is business calculations and operating rules, not decompiling Excel or recovering all enterprise knowledge. The summary says the framework was proposed and evaluated but gives no paper title, dataset, model or numerical results; the retrieved thread did not add these. This is a secondary research overview, not an independently checked paper or rerun experiment, and cross-period accuracy is not established here.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 623 views; a research summary without checkable numerical results."],
+      "source_labels": ["burkov's overview of workbook procedure-distillation research"]
+    }
+  },
+  {
+    "id": "opencodex-antigravity-signature-fallback",
+    "title": "OpenCodex / Antigravity：用 REA 调查多轮工具调用签名丢失",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称研究 Rust 工具与 Go language_server 后，为 Gemini 请求补上签名缺失兜底。",
+    "description": "10月16日作者报告称，OpenCodex 代理 Gemini/Antigravity 的复杂多轮会话即使缓存和重放历史签名，仍遭遇缺少 thought_signature 的400错误。作者用 REA 查看本地 antigravity_tools（Rust）与 Google language_server（Go）二进制，称发现本地缓存及回退找不到真实签名时客户端使用 skip_thought_signature_validator 占位符；据此在 OpenCodex 的 Antigravity 请求末端加入兜底，允许后续真实签名覆盖。作者称错误消失，但未给补丁、版本、请求日志或测试矩阵。Google 网关硬编码豁免的解释仍是作者归因，客户端静态观察不能直接证明服务端实现，也不代表任意模型或会话兼容。本合集未发送请求或复现。",
+    "sources": [{"label": "OpenCodex 签名报错与 REA 调查报告", "url": "https://x.com/i/status/2110921946418602001"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、108浏览；结果与服务端解释均未独立核验。"],
+    "en": {
+      "title": "OpenCodex / Antigravity: REA investigation of missing multi-turn tool-call signatures",
+      "summary": "The author reports investigating Rust tools and a Go language_server, then adding a fallback for missing Gemini signatures.",
+      "description": "An October 16 author report says complex multi-turn sessions proxying Gemini/Antigravity through OpenCodex still encountered 400 errors for missing thought_signature values despite caching and replaying historical signatures. The author used REA to inspect local antigravity_tools (Rust) and Google's language_server (Go) binary, claiming the client uses a skip_thought_signature_validator placeholder when caches and fallbacks find no real signature. They describe adding that fallback at the end of OpenCodex's Antigravity request pipeline while allowing later real signatures to replace it. The author says the errors stopped but gives no patch, versions, request logs or test matrix. The explanation of a hard-coded Google gateway exemption remains the author's attribution: client-side static observations cannot directly prove the server implementation or compatibility with arbitrary models or sessions. This collection did not send requests or reproduce it.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 108 views; neither results nor the server-side explanation are independently verified."],
+      "source_labels": ["OpenCodex signature error and REA investigation report"]
+    }
+  },
+  {
+    "id": "rea-bilibili-minesweeper-demo-roundup",
+    "title": "扫雷与 B 站：REA 视频演示标题的二手汇总",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "读者列出扫雷、B站及手机 App 的 REA 演示视频，实现和测试尚待核对。",
+    "description": "10月16日一条读者观察列举 B 站可搜索的 REA 视频标题，包括“REA逆向工具直接还原扫雷游戏源码”“我用爆火的REA，逆向了B站……”和“用 REA + AI 复刻手机 App，还能随意修改功能！”。这是研究既有游戏/平台及重建客户端功能的具体演示线索：扫雷与 B 站目标可识别，手机 App 未命名。候选未给视频 URL、作者、版本、代码或验收记录，本轮未直接观看视频；标题中的“还原源码”不能当作恢复原始源码、功能完整或独立复现的证据。按二手演示汇总保留，不拆成三个已验证项目。",
+    "sources": [{"label": "读者列举的 B 站 REA 演示标题", "url": "https://x.com/i/status/2110936629221450214"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：5赞、702浏览；二手标题线索，未观看或验收。"],
+    "en": {
+      "title": "Minesweeper and Bilibili: a secondary roundup of REA demonstration titles",
+      "summary": "A reader lists REA videos about Minesweeper, Bilibili and a mobile app; implementations and tests remain unchecked.",
+      "description": "An October 16 reader observation lists searchable Bilibili REA video titles, including 'REA directly restores Minesweeper source code', 'I used the viral REA to reverse engineer Bilibili…', and 'Rebuild a mobile app with REA + AI and freely modify features'. These are concrete demonstration leads for investigating existing games/platforms and rebuilding client features. Minesweeper and Bilibili are identifiable targets; the mobile app is unnamed. The candidate gives no video URLs, authors, versions, code or acceptance records, and this review did not watch the videos directly. The title's 'restores source code' is not evidence of recovering original source, complete functionality or independent reproduction. This remains one secondary roundup, not three verified projects.",
+      "metadata": ["October 16 candidate snapshot: 5 likes, 702 views; secondary title leads, not watched or acceptance-tested."],
+      "source_labels": ["Reader's list of Bilibili REA demonstration titles"]
+    }
+  },
+  {
+    "id": "moonbit-claude-debugger-demangling",
+    "title": "MoonBit：Claude 研究符号改名，让 VSCode 调试更易读",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称 Claude 逆向 name mangling 并写 customDescriptionGenerator 改善调试显示。",
+    "description": "@jonathoda 为语言研究项目寻找代数数据类型、模式匹配、可变性、引用相等、JavaScript 编译与调试等能力，按 Claude 建议尝试 MoonBit 后发现调试输出全是改名符号。10月16日作者称 Claude 逆向 name mangling 算法，写了 VSCode 调试器 customDescriptionGenerator，改善可读性。目标是理解编译器名称编码并改善显示，不是重建 MoonBit 编译器。前面的需求帖仅作窗口外背景；候选未提供生成器代码、符号样例、覆盖率或测试，显示效果与正确性仍是作者报告，本合集未运行。",
+    "sources": [{"label": "作者的符号解码与调试器报告", "url": "https://x.com/i/status/2110938121080631767"}, {"label": "往期语言研究需求背景", "url": "https://x.com/i/status/2110458286290133115"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、27浏览；未公开代码或测试结果。"],
+    "en": {
+      "title": "MoonBit: Claude investigates name mangling to improve VSCode debugging",
+      "summary": "The author says Claude reverse engineered name mangling and wrote a customDescriptionGenerator for readable debugging.",
+      "description": "For a language research project, @jonathoda sought algebraic data types, pattern matching, mutability, reference equality, JavaScript compilation and debugging. Trying MoonBit on Claude's recommendation, the author found debugger output full of mangled symbols. On October 16, they reported Claude reverse engineered the name-mangling algorithm and wrote a VSCode debugger customDescriptionGenerator to improve readability. The goal is understanding compiler name encoding and improving displays, not rebuilding MoonBit's compiler. The earlier requirements post is outside-window background only. No generator code, symbol examples, coverage or tests are supplied; display behavior and correctness remain author claims, not run by this collection.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 27 views; no published code or test results."],
+      "source_labels": ["Author's symbol-decoding and debugger report", "Earlier language-research requirements as background"]
+    }
+  },
+  {
+    "id": "claude-obfuscated-game-struct-size-failure",
+    "title": "老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。",
+    "description": "10月16日 @godsonde 在多模型逆向讨论下称，自己用 Claude 研究过几个老游戏，转伪 C 很快，但遇混淆便开始猜结构体尺寸，仍得人工用 IDA 慢慢检查。这是实际尝试的具体失败观察：可读伪代码不代表数据布局正确。未给游戏名、模型版本、二进制、错误偏移或工时，不能推断哪些游戏受影响、错误率多少或 Claude 必然弱于其他模型。原帖作者建议把人工经验做成 Skill/MCP，也没有称已经实现。本合集未复跑。",
+    "sources": [{"label": "godsonde 的老游戏分析失败观察", "url": "https://x.com/i/status/2110942707074183405"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、15浏览；游戏未命名，保留失败类型而不补造目标。"],
+    "en": {
+      "title": "Obfuscated old games: a report of Claude guessing structure sizes incorrectly",
+      "summary": "The author says pseudo-C conversion was fast, but obfuscation led to guessed structure sizes requiring manual IDA review.",
+      "description": "In an October 16 multi-model investigation discussion, @godsonde says they used Claude on several old games: pseudo-C conversion was fast, but obfuscation led it to guess structure sizes, leaving manual IDA investigation. This is a concrete failure observation from actual attempts: readable pseudocode does not establish correct data layouts. No game names, model version, binary, erroneous offsets or labor measurements are given. It cannot establish which games are affected, an error rate or that Claude is necessarily weaker than another model. The original poster's suggestion to turn human expertise into a skill/MCP is not reported as implemented. This collection did not rerun it.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 15 views; games are unnamed, so only the failure type is retained."],
+      "source_labels": ["godsonde's old-game analysis failure observation"]
+    }
+  },
+  {
+    "id": "sonic-3d-blast-saturn-opus-port",
+    "title": "Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者本轮确认 Opus 加速反编译，历史更新说明 Claude 重建编译环境与仍有问题的 PC 版。",
+    "description": "10月16日 @TheOneMrMatt 回应质疑，承认 Opus 加速字节匹配反编译，称因反 AI 言论删除过说明。补查历史更新确认目标为 Saturn 版 Sonic 3D Blast：7月研究 SH2 代码和自制模拟器逐帧状态，8月3日称借 Claude Code 重建 Hitachi 编译环境，SSSS.BIN 特殊关卡引擎恢复为 C 与手写汇编并字节匹配，其余三个程序当时受特定 GCC 环境阻碍。9月26日称反编译进度100%，仍需多地区版本、文档和移植。10月16日06:04（早于本轮窗口）的更新描述 C/SDL 原生 PC 版、软件渲染后用 OpenGL 显示，支持宽屏与特殊关卡插帧；仍有边缘杂图和多边形接缝，计划11月20日首次发布，须自备 US/EU/JP 原盘文件。历史帖用于识别目标、AI用途与阶段，不是本轮新进展。匹配与画面表现均为作者报告，本合集未取得并运行源码，不把未来发布日期写成已发行。",
+    "sources": [{"label": "本轮作者确认 Opus 参与", "url": "https://x.com/i/status/2110939629516186067"}, {"label": "8月3日 Claude 重建编译环境的历史更新", "url": "https://x.com/i/status/2084352916253762001"}, {"label": "9月26日反编译进度报告", "url": "https://x.com/i/status/2103692693037826484"}, {"label": "10月16日06:04的PC移植更新（窗口外补证）", "url": "https://x.com/i/status/2110854238989582709"}, {"label": "7月16日 SH2 与模拟器分析路线", "url": "https://x.com/i/status/2077571522248732787"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["本轮声明候选快照：0赞、14浏览；补证原帖从7月到10月16日，非本轮新成果。"],
+    "en": {
+      "title": "Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port",
+      "summary": "The author confirms Opus-assisted decompilation; earlier updates describe Claude-built compiler tooling and a still-imperfect PC port.",
+      "description": "On October 16, @TheOneMrMatt acknowledged Opus accelerated byte-matching decompilation and said an AI disclosure was removed because of anti-AI reactions. Historical updates identify Saturn Sonic 3D Blast: in July the author studied SH2 code and frame-by-frame state from a custom emulator; on August 3 they reported using Claude Code to recreate a Hitachi compiler environment, recovering the SSSS.BIN Special Stage engine as C and handwritten assembly with byte matching, while three other executables were blocked by a particular GCC environment. On September 26 they reported 100% decompilation progress, with regional versions, documentation and porting still to do. An October 16 update at 06:04 Beijing time, before this window, describes a native C/SDL PC port with software rendering and OpenGL presentation, widescreen and Special Stage interpolation. Edge garbage and polygon seams remain; first release is planned for November 20 with user-supplied US/EU/JP disc files. Historical posts identify the target, AI use and stage, not new-window developments. Matching and visual results are author reports. This collection did not obtain and run source or treat the future release as already shipped.",
+      "metadata": ["Current-window statement candidate snapshot: 0 likes, 14 views; supplementary originals range from July to October 16 and are not new-window achievements."],
+      "source_labels": ["Current-window author confirmation of Opus involvement", "August 3 historical update on Claude-built compiler tooling", "September 26 decompilation progress report", "October 16 06:04 PC-port update, outside-window supplementary evidence", "July 16 SH2 and emulator investigation approach"]
+    }
+  },
+  {
+    "id": "uu-remote-linux-ai-client",
+    "title": "网易 UU 远程：Claude / Codex 辅助制作非官方 Linux 被控端",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者为官方缺少 Linux 端的问题做 Rust 兼容实现，本轮讨论多模型逆向协作。",
+    "description": "10月16日 @ai_fengshou 称在 Claude 带领下 Codex 与 Gemini 也能逆向，原串回复具体提到 Linux UU。补查作者历史帖：10月13日称原生 Rust UU 远程 Linux 版大部分功能已实现；10月15日00:04（北京时间）称借 Claude 和 Codex 写出开源 Linux 被控端，可由官方 Mac、Windows、手机客户端控制 Linux。背景是网易 UU 远程尚无官方 Linux 版，作者想补上互通，明确非官方、不牟利，官方发布 Linux 版便停止更新。早期发布用于识别本轮目标与实现背景，不算本轮新成果。未取得可核对仓库、协议分析、测试矩阵或安全审计，不称完整协议兼容或保证远程访问安全；本合集未安装或连接设备。",
+    "sources": [{"label": "本轮多模型逆向讨论及 Linux UU 回复", "url": "https://x.com/i/status/2110941066371400123"}, {"label": "10月15日00:04作者发布（窗口外补证）", "url": "https://x.com/i/status/2110401249799811120"}, {"label": "10月13日 Rust 版进度（历史背景）", "url": "https://x.com/i/status/2110012260085379216"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["本轮候选快照：2赞、148浏览；开源与兼容性为作者说法，未独立验收。"],
+    "en": {
+      "title": "NetEase UU Remote: an unofficial Linux controlled endpoint built with Claude and Codex",
+      "summary": "The author reports a Rust compatibility implementation where an official Linux endpoint is missing, and discusses multi-model investigation this window.",
+      "description": "On October 16, @ai_fengshou said Codex and Gemini could also do reverse engineering under Claude's guidance; a thread reply specifically refers to Linux UU. Earlier posts from the same author identify the project: on October 13 they said most functionality of a native Rust UU Remote Linux version was implemented; on October 15 at 00:04 Beijing time they reported an open-source Linux controlled endpoint built with Claude and Codex, allowing official Mac, Windows and mobile clients to control Linux. The motivation is the absence of an official NetEase UU Remote Linux version. The author calls it unofficial and noncommercial, and says updates will stop if an official Linux version appears. Earlier releases identify this window's target and background, not new-window results. No checkable repository, protocol analysis, test matrix or security audit was obtained. Complete protocol compatibility and safe remote access are not established; this collection did not install it or connect devices.",
+      "metadata": ["Current-window candidate snapshot: 2 likes, 148 views; open-source status and compatibility remain author claims, not independent acceptance results."],
+      "source_labels": ["Current-window multi-model investigation discussion and Linux UU reply", "Author's October 15 00:04 release report, outside-window supplementary evidence", "October 13 Rust-version progress as historical background"]
     }
   }
 ]

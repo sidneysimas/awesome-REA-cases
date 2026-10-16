@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**264 entries**, organized by use case, without a Top-N or popularity threshold.
+**277 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (61)
-- [Hardware and interoperability](categories/en/hardware.md) (62)
-- [Applications and clients](categories/en/apps.md) (118)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (23)
+- [Games and preservation](categories/en/games.md) (65)
+- [Hardware and interoperability](categories/en/hardware.md) (63)
+- [Applications and clients](categories/en/apps.md) (124)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (25)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -89,6 +89,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Open-BFME: a report of AI-assisted Battle for Middle Earth decompilation and byte matching](cases/en/open-bfme-ai-byte-matching-report.md) — jfwfreo says Open-BFME produces C++ that matches original bytes with the right compiler, without a coverage figure. **[Other AI-assisted work · Needs verification]**
 - [Jet Set Radio Future: a disputed AI-decompilation project lead](cases/en/jsrf-ai-decompilation-controversy.md) — A candidate criticizes AI decompilation of JSRF and recommends a human-led alternative, without technical results. **[Other AI-assisted work · Needs verification]**
 - [A character on a video homepage: a report of Fu Sheng's REA mashup demonstration](cases/en/fu-sheng-video-homepage-character-demo.md) — A post says Fu Sheng used one prompt to make a game character smash up his video homepage, without identifying the character or reverse-engineering steps. **[REA · Needs verification]**
+- [Decompwtf: agents reconstruct game C/C++ and compare machine code](cases/en/decompwtf-agent-game-decompilation.md) — A project account describes local AI decompilation with compile-and-compare checks and support for continuing community work. **[Other AI-assisted work · Related project]**
+- [Immersive Portals: an AI-assisted Minecraft JE 26.2 compatibility report](cases/en/immersive-portals-ai-je262.md) — The author reports compatibility with newer Minecraft, Fabric and shaders, explicitly noting the recording is not the first attempt. **[Other AI-assisted work · Needs verification]**
+- [Obfuscated old games: a report of Claude guessing structure sizes incorrectly](cases/en/claude-obfuscated-game-struct-size-failure.md) — The author says pseudo-C conversion was fast, but obfuscation led to guessed structure sizes requiring manual IDA review. **[Other AI-assisted work · Analysis test]**
+- [Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port](cases/en/sonic-3d-blast-saturn-opus-port.md) — The author confirms Opus-assisted decompilation; earlier updates describe Claude-built compiler tooling and a still-imperfect PC port. **[Other AI-assisted work · In progress]**
 
 ### Hardware and interoperability
 
@@ -154,6 +158,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors](cases/en/whirlpool-f13-rea-investigation-idea.md) — A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established. **[REA · Needs verification]**
 - [Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity](cases/en/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android. **[Other AI-assisted work · Needs verification]**
 - [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
+- [TV firmware: an AI reverse-engineering idea for privacy and ad removal](cases/en/tv-firmware-ai-ad-removal-idea.md) — A reply proposes AI investigation, ad removal, recompilation and reflashing of existing firmware; no device test is supplied. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -171,7 +176,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [.NET NativeAOT recovery request](cases/en/nativeaot.md) — Partial metadata recovery does not establish restoration of the original C# project. **[REA · In progress]**
 - [Android ApiDemos: tracing Java methods from an APK](cases/en/android-apidemos.md) — Inspect a real demo APK, select method overloads and trace static references through JADX. **[REA]**
 - [HarmonyOS packages: mapping components](cases/en/harmony-package-inventory.md) — Inspect a published HAP package to identify components and packaging hints, without claiming Ark-code recovery. **[REA]**
-- [macOS Preview: rebuilding with and without REA](cases/en/preview-rebuild.md) — A first-hand comparison of two rebuilds covering zoom, rotation, annotation and saving. **[REA]**
+- [macOS Preview: rebuilds with and without REA and the limits of self-tests](cases/en/preview-rebuild.md) — Two routes rebuild an image tool; a later account specifies that AI wrote and ran the 47 checks itself. **[REA]**
 - [Codex browser annotations: finding the interaction bridge](cases/en/codex-browser-annotations.md) — Inspect Electron code and test a page that opens and pre-fills an annotation dialog; direct composer insertion was not achieved. **[REA]**
 - [Claude Design in BaoCut](cases/en/claude-design-baocut.md) — A public skill/front-end integration into a video agent; REA use is not explicitly confirmed. **[REA use unconfirmed]**
 - [Claude Chrome on remote browsers](cases/en/claude-chrome-remote.md) — Reverse the native-messaging bridge and translate browser commands to CDP for cloud execution. **[REA use unconfirmed]**
@@ -275,6 +280,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Electron Notes sample: an REA static IPC test with an answer key](cases/en/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers reports three static runs identifying four IPC and preload groups, while noting output-size inflation. **[REA · Analysis test]**
 - [Higgsfield to Comfy: an idea to observe features with REA and build open workflows](cases/en/higgsfield-comfy-rea-open-source-idea.md) — illxet asks to investigate Higgsfield with REA and improve it on Comfy; Grok's reply is only a proposed workflow. **[REA · Needs verification]**
 - [A personal YouTube version: an REA-assisted niche-video and AI-topic dashboard report](cases/en/youtube-rea-niche-video-dashboard.md) — The author reports a non-doomscrolling YouTube version that finds niche outlier videos and groups AI content by topic. **[REA · Needs verification]**
+- [A local REA workbench: combine investigation and personal office workflows](cases/en/rea-local-office-workbench-idea.md) — The author reports a local REA interface and proposes content research, skills, notes, planning and media tools. **[REA · In progress]**
+- [Six single-feature rebuild ideas: from slash menus to smart snapping](cases/en/rea-six-feature-rebuild-ideas.md) — A proposal maps events and state in six apps with REA and Claude before implementing and comparing individual features. **[REA · Needs verification]**
+- [Ledger Opus: an unverified finance-agent promotion referencing Claude for Finance](cases/en/ledger-opus-finance-agent-report.md) — A promoter claims REA informed an agent for crypto, stocks and accounting, without a checkable reverse-engineering process. **[REA · Needs verification]**
+- [OpenCodex / Antigravity: REA investigation of missing multi-turn tool-call signatures](cases/en/opencodex-antigravity-signature-fallback.md) — The author reports investigating Rust tools and a Go language_server, then adding a fallback for missing Gemini signatures. **[REA · Needs verification]**
+- [Minesweeper and Bilibili: a secondary roundup of REA demonstration titles](cases/en/rea-bilibili-minesweeper-demo-roundup.md) — A reader lists REA videos about Minesweeper, Bilibili and a mobile app; implementations and tests remain unchecked. **[REA · Needs verification]**
+- [NetEase UU Remote: an unofficial Linux controlled endpoint built with Claude and Codex](cases/en/uu-remote-linux-ai-client.md) — The author reports a Rust compatibility implementation where an official Linux endpoint is missing, and discusses multi-model investigation this window. **[Other AI-assisted work · In progress]**
 
 ### Algorithms and feature recovery
 
@@ -301,6 +312,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [An illustrative game.exe demo: two rooms and three reconstruction oracles](cases/en/rea-clean-room-illustrative-oracles.md) — A post describes isolated Reader/Builder roles and byte, planted-bug and runtime checks, explicitly labeling its headline numbers illustrative. **[REA · Analysis test]**
 - [Two games' RNG: a Codex/ILSpy prediction-tracking report](cases/en/two-game-rng-codex-ilspy-report.md) — The poster says they investigated two games' random mechanics that day, using ILSpy searches when Codex was insufficient. **[Other AI-assisted work · Needs verification]**
 - [Betting apps: a hypothetical REA question about outcome mechanisms](cases/en/betting-app-rea-outcome-idea.md) — The poster asks whether researching betting apps could provide an outcome advantage, without naming a service or establishing feasibility. **[REA · Needs verification]**
+- [Excel reconciliation workbooks: infer a procedure from an accepted artifact for agents](cases/en/reconciliation-workbook-agent-distillation.md) — A research account describes recovering implicit workflow from signed-off workbooks, then testing new-period reconciliation and process questions. **[Other AI-assisted work · Analysis test]**
+- [MoonBit: Claude investigates name mangling to improve VSCode debugging](cases/en/moonbit-claude-debugger-demangling.md) — The author says Claude reverse engineered name mangling and wrote a customDescriptionGenerator for readable debugging. **[Other AI-assisted work · Needs verification]**
 
 ## Contributing and selection
 

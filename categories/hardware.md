@@ -64,3 +64,4 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
+- [电视固件：为隐私与去广告提出的 AI 逆向 idea](../cases/tv-firmware-ai-ad-removal-idea.md) — 建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。 **[其他 AI 逆向 · 待验证]**

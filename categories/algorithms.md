@@ -25,3 +25,5 @@
 - [game.exe 示意演示：双房间与三类重建 oracle](../cases/rea-clean-room-illustrative-oracles.md) — 帖子具体描述 Reader/Builder 隔离及字节、植错、运行检查，但数字明标 illustrative。 **[REA · 分析测试]**
 - [两款游戏 RNG：Codex 与 ILSpy 辅助预测跟踪的自述](../cases/two-game-rng-codex-ilspy-report.md) — 作者称当天研究出两款游戏的随机机制，Codex 不够时再用 ILSpy 搜索。 **[其他 AI 逆向 · 待验证]**
 - [博彩 App：用 REA 研究结果机制的假设性提问](../cases/betting-app-rea-outcome-idea.md) — 作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。 **[REA · 待验证]**
+- [Excel 对账表：从已验收产物逆向业务程序再交给 Agent](../cases/reconciliation-workbook-agent-distillation.md) — 从签核工作簿恢复隐含流程，研究跨期对账和过程问答，而非只检索文档。 **[其他 AI 逆向 · 分析测试]**
+- [MoonBit：Claude 研究符号改名，让 VSCode 调试更易读](../cases/moonbit-claude-debugger-demangling.md) — 作者称 Claude 逆向 name mangling 并写 customDescriptionGenerator 改善调试显示。 **[其他 AI 逆向 · 待验证]**

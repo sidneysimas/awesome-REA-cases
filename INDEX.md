@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **264 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **277 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（61）
-- [硬件与设备互通](categories/hardware.md)（62）
-- [应用与客户端](categories/apps.md)（118）
-- [算法与功能重建](categories/algorithms.md)（23）
+- [游戏与游戏保存](categories/games.md)（65）
+- [硬件与设备互通](categories/hardware.md)（63）
+- [应用与客户端](categories/apps.md)（124）
+- [算法与功能重建](categories/algorithms.md)（25）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -87,6 +87,10 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。 **[其他 AI 逆向 · 相关项目]**
+- [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
+- [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
+- [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](cases/sonic-3d-blast-saturn-opus-port.md) — 作者本轮确认 Opus 加速反编译，历史更新说明 Claude 重建编译环境与仍有问题的 PC 版。 **[其他 AI 逆向 · 进行中]**
 
 ### 硬件与设备互通
 
@@ -152,6 +156,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
+- [电视固件：为隐私与去广告提出的 AI 逆向 idea](cases/tv-firmware-ai-ad-removal-idea.md) — 建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -169,7 +174,7 @@
 - [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA · 进行中]**
 - [Android ApiDemos：从 APK 追到具体 Java 方法](cases/android-apidemos.md) — 用真实演示 APK 查类、读方法、追踪静态引用。 **[REA]**
 - [鸿蒙 App：识别安装包结构与组件](cases/harmony-package-inventory.md) — 用真实 HAP 发布包核查组件路径、哈希和打包线索。 **[REA]**
-- [macOS 预览：对比有无 REA 的功能重建](cases/preview-rebuild.md) — 同一作者用两条路线重建缩放、旋转、标注与保存。 **[REA]**
+- [macOS 预览：有无 REA 的重建对照与自测边界](cases/preview-rebuild.md) — 两条路线重建图片工具；后续转述明确47项检查由AI自写自跑。 **[REA]**
 - [Codex 浏览器：找出网页唤起评论框的链路](cases/codex-browser-annotations.md) — 分析 Electron 代码并用测试页验证评论接口的部分能力。 **[REA]**
 - [Claude Design：把设计功能接进 BaoCut](cases/claude-design-baocut.md) — 研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。 **[未确认使用 REA]**
 - [Claude Chrome：把本地浏览器协议桥接到云浏览器](cases/claude-chrome-remote.md) — 还原原生消息协议，转成 CDP 在远端执行。 **[未确认使用 REA]**
@@ -273,6 +278,12 @@
 - [Electron Notes 样本：带答案表的 REA IPC 静态分析测试](cases/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers 报告三次静态分析均识别4组 IPC 与 preload 成员，同时指出输出体积膨胀。 **[REA · 分析测试]**
 - [Higgsfield 到 Comfy：用 REA 观察功能再做开源工作流的 idea](cases/higgsfield-comfy-rea-open-source-idea.md) — illxet 请求 REA 研究 Higgsfield 并在 Comfy 平台改进开源；Grok 回复只是建议路线。 **[REA · 待验证]**
 - [YouTube 个人版本：REA 辅助筛选领域视频与 AI 主题的报告](cases/youtube-rea-niche-video-dashboard.md) — 作者称做了避免无限刷屏的 YouTube 版本，用于找异常表现视频与按主题看 AI 内容。 **[REA · 待验证]**
+- [本地 REA 工作台：把逆向界面与个人办公流程放在一起](cases/rea-local-office-workbench-idea.md) — 作者自述已有本地 REA 界面，提出再接选题、Skill、灵感、计划与生图视频。 **[REA · 进行中]**
+- [六个单功能重建 idea：从斜杠菜单到智能吸附](cases/rea-six-feature-rebuild-ideas.md) — 提出用 REA + Claude 梳理六款应用的事件与状态，再做单功能实现和对照测试。 **[REA · 待验证]**
+- [Ledger Opus：声称研究 Claude for Finance 的金融 Agent 推广线索](cases/ledger-opus-finance-agent-report.md) — 推广者称用 REA 制作加密资产、股票和记账助手，尚无可核对的逆向过程。 **[REA · 待验证]**
+- [OpenCodex / Antigravity：用 REA 调查多轮工具调用签名丢失](cases/opencodex-antigravity-signature-fallback.md) — 作者称研究 Rust 工具与 Go language_server 后，为 Gemini 请求补上签名缺失兜底。 **[REA · 待验证]**
+- [扫雷与 B 站：REA 视频演示标题的二手汇总](cases/rea-bilibili-minesweeper-demo-roundup.md) — 读者列出扫雷、B站及手机 App 的 REA 演示视频，实现和测试尚待核对。 **[REA · 待验证]**
+- [网易 UU 远程：Claude / Codex 辅助制作非官方 Linux 被控端](cases/uu-remote-linux-ai-client.md) — 作者为官方缺少 Linux 端的问题做 Rust 兼容实现，本轮讨论多模型逆向协作。 **[其他 AI 逆向 · 进行中]**
 
 ### 算法与功能重建
 
@@ -299,6 +310,8 @@
 - [game.exe 示意演示：双房间与三类重建 oracle](cases/rea-clean-room-illustrative-oracles.md) — 帖子具体描述 Reader/Builder 隔离及字节、植错、运行检查，但数字明标 illustrative。 **[REA · 分析测试]**
 - [两款游戏 RNG：Codex 与 ILSpy 辅助预测跟踪的自述](cases/two-game-rng-codex-ilspy-report.md) — 作者称当天研究出两款游戏的随机机制，Codex 不够时再用 ILSpy 搜索。 **[其他 AI 逆向 · 待验证]**
 - [博彩 App：用 REA 研究结果机制的假设性提问](cases/betting-app-rea-outcome-idea.md) — 作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。 **[REA · 待验证]**
+- [Excel 对账表：从已验收产物逆向业务程序再交给 Agent](cases/reconciliation-workbook-agent-distillation.md) — 从签核工作簿恢复隐含流程，研究跨期对账和过程问答，而非只检索文档。 **[其他 AI 逆向 · 分析测试]**
+- [MoonBit：Claude 研究符号改名，让 VSCode 调试更易读](cases/moonbit-claude-debugger-demangling.md) — 作者称 Claude 逆向 name mangling 并写 customDescriptionGenerator 改善调试显示。 **[其他 AI 逆向 · 待验证]**
 
 ## 贡献与收录
 

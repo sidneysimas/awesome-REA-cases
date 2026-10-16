@@ -63,3 +63,7 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](../cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](../cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](../cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。 **[其他 AI 逆向 · 相关项目]**
+- [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](../cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
+- [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](../cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
+- [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者本轮确认 Opus 加速反编译，历史更新说明 Claude 重建编译环境与仍有问题的 PC 版。 **[其他 AI 逆向 · 进行中]**

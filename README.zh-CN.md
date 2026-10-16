@@ -4,9 +4,9 @@
 
 **用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
 
-当前收录 **264 个案例与项目**。*最近维护与案例数统计：2026 年 10 月 16 日 08:05；连续已解决材料的案例证据截止：2026 年 10 月 15 日 16:00（北京时间）。*
+当前收录 **277 个案例与项目**。*最近维护与案例数统计：2026 年 10 月 16 日 12:33；连续已解决材料的案例证据截止：2026 年 10 月 15 日 16:00（北京时间）。*
 
-每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次逐条审读 10 月 16 日 04:00 至 08:00（北京时间，起点不含、终点含）的 126 条候选，另补审 9 条往期材料，新增 12 个项目、作者报告与具体 idea，并为既有 Grok Build、Bloomberg 风格终端追加不同作者的观察。扫描仪与笔记本相机的线索补到作者原文、测量页和工具说明，同时解决一条往期新闻；Electron 小样本测试则保留准确率之外的输出体积代价。功能、性能与费用仍按来源归因，未核验不写成复现成功。仍有 16 条材料待核实，其中 8 条来自往期，最早窗口始于 10 月 15 日 16:00，因此连续证据截止不推进，可判断的较新项目照常收录。检索受关键词与分页边界限制，不代表全网全量；证据截止也不表示所有项目已独立验证。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
+每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次逐条审读所提供的 10 月 16 日 08:00 至 12:00（北京时间，起点不含、终点含）132 条候选，另补审 16 条往期材料，新增 13 个项目、作者报告与具体 idea，并补明预览重建的 47 项检查由 AI 自写自跑。新内容包括能追溯编译环境研究的 Saturn 移植、MoonBit 调试符号、Linux 远程被控端，以及签名与结构体分析的证据边界；早期原帖单独注明日期，不冒充本轮新成果。仍有 27 条材料待核实，含全部 16 条往期线索，最早窗口始于 10 月 15 日 16:00，因此连续证据截止保持不变，可判断的较新项目照常收录。检索受关键词与分页边界限制，不代表全网全量；证据截止不表示所有项目已独立验证。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向工具。本合集也收录其他 AI 辅助逆向，以及为 AI 工具实现互通的项目。
 
@@ -15,15 +15,15 @@
 综合近期传播热度、具体用途和阅读价值手工挑选，不是实时排行榜。以下热度为 2026 年 10 月 12–16 日各来源的记录快照，不是当前实时数据；条目日期为来源发帖日期，热度不代表成果已被验证。
 
 1. **[底片与相机：给 Claude 一个能对照的 Windows 参考](cases/schaller-opticfilm-thinkpad-linux.md)** — Schaller 从家人旧底片出发，用 USB 抓包研究新版 Plustek 8200i，再改善 ThinkPad MIPI 相机。公开测量也写清单机样本、低光蓝色不足与未修复曝光问题；补丁送审不等于合并。**10/16 转述 · 10/15 原文补证 · 其他 AI 逆向 · 作者与项目报告。**
-2. **[ReaCut：不止画界面，也公开导出与验证边界](cases/reacut-jianying-open-editor.md)** — 从剪映本地行为研究走向独立编辑器，项目记录包含真实视频导出与插件测试；同时明示未公证、跨平台与 CI 限制。**10/15 · REA · 进行中；验收为项目报告。**
-3. **[LASRecomp：把 Switch《织梦岛》带到电脑](cases/links-awakening-claude-pc-port-report.md)** — 公开项目自述几乎由 Claude Code 完成，需自备原作；beta 文档也列出特定操作崩溃、Linux ARM 未实测等问题。**10/15 · 此前转述快照 144 赞 · 其他 AI 逆向 · 未独立运行。**
-4. **[读板仪：先研究通信，再谈“修好了”](cases/plate-reader-filter-wheel-claude-repair.md)** — 滤光轮机械与光学检查正常，却卡在开机自检。作者称 Claude 找到通信方法、重置固件并建立监测；设备型号、命令与临床质量验收仍缺。**10/15 · 其他 AI 辅助研究 · 作者报告，不是医疗设备安全认证。**
-5. **[ScanSnap iX500：系统升级后，旧扫描仪不退休](cases/scansnap-ix500-claude-mac.md)** — 官方 Mac 应用失效后，Jonas Wagner 称用 Claude Code 做出 Wi-Fi 扫描、实体按钮、OCR 和空白页处理；未公布可核对的协议过程。**10/15 · 2 赞 · 其他 AI 逆向 · 作者报告，未独立验收。**
-6. **[KEF LSX II：修好桌面音箱的音量键体验](cases/kef-lsx-ii-volume-fixer.md)** — Claude 辅助做 USB 音频透传与局域网音量桥，不改签名固件；测量曲线和约 2 ms 附加延迟均为作者报告。**10/15 · 其他 AI 辅助互通 · 有公开实现。**
-7. **[飞书：两个账号，不再来回切换](cases/feishu-dual-instance-codex-rea.md)** — Codex + REA 分析后，作者报告在副本中隔离数据与单实例锁，并做签名和目录检查；本地签名、关闭更新仍有维护风险。**10/15 · REA · 作者实测，非独立复现。**
-8. **[东方 TH08：字节匹配，也可能漏掉错误常量](cases/touhou-reconstruction.md)** — 10 月 15 日的提醒追溯到 9 月 2 日原始 issue 与修复：指令引用的地址匹配了，数据却把 128.0 写成 0.0；项目随后补上浮点引用核验。**10/15 分享 · 历史修复补证 · 项目测试，非本合集重跑。**
+2. **[Sonic 3D Blast：模型之外，还要重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** — 作者本轮确认 Opus 参与；早期更新讲清 Claude 重建 Hitachi 编译环境、字节匹配与 Saturn 到 PC 的原生移植，也保留未修复画面问题。**10/16 确认 · 7–10 月背景补证 · 其他 AI 逆向 · 进行中；11/20 是计划，不是已经发行。**
+3. **[ReaCut：不止画界面，也公开导出与验证边界](cases/reacut-jianying-open-editor.md)** — 从剪映本地行为研究走向独立编辑器，项目记录包含真实视频导出与插件测试；同时明示未公证、跨平台与 CI 限制。**10/15 · REA · 进行中；验收为项目报告。**
+4. **[LASRecomp：把 Switch《织梦岛》带到电脑](cases/links-awakening-claude-pc-port-report.md)** — 公开项目自述几乎由 Claude Code 完成，需自备原作；beta 文档也列出特定操作崩溃、Linux ARM 未实测等问题。**10/15 · 此前转述快照 144 赞 · 其他 AI 逆向 · 未独立运行。**
+5. **[读板仪：先研究通信，再谈“修好了”](cases/plate-reader-filter-wheel-claude-repair.md)** — 滤光轮机械与光学检查正常，却卡在开机自检。作者称 Claude 找到通信方法、重置固件并建立监测；设备型号、命令与临床质量验收仍缺。**10/15 · 其他 AI 辅助研究 · 作者报告，不是医疗设备安全认证。**
+6. **[ScanSnap iX500：系统升级后，旧扫描仪不退休](cases/scansnap-ix500-claude-mac.md)** — 官方 Mac 应用失效后，Jonas Wagner 称用 Claude Code 做出 Wi-Fi 扫描、实体按钮、OCR 和空白页处理；未公布可核对的协议过程。**10/15 · 2 赞 · 其他 AI 逆向 · 作者报告，未独立验收。**
+7. **[KEF LSX II：修好桌面音箱的音量键体验](cases/kef-lsx-ii-volume-fixer.md)** — Claude 辅助做 USB 音频透传与局域网音量桥，不改签名固件；测量曲线和约 2 ms 附加延迟均为作者报告。**10/15 · 其他 AI 辅助互通 · 有公开实现。**
+8. **[飞书：两个账号，不再来回切换](cases/feishu-dual-instance-codex-rea.md)** — Codex + REA 分析后，作者报告在副本中隔离数据与单实例锁，并做签名和目录检查；本地签名、关闭更新仍有维护风险。**10/15 · REA · 作者实测，非独立复现。**
 9. **[Electron Notes：答案表全对，输出却大了很多](cases/rea-electron-notes-ipc-answer-key-test.md)** — 三次静态分析识别 4/4 通道、handler 与 preload 成员；作者也指出 2.3 KB 源码产生 1.0 MB JSON。只证明这次小样本观察，不是所有 Electron 的准确率保证。**10/16 · REA · 作者分析测试，未独立复跑。**
-10. **[400 ms 这条线：把 REA 解释落到边界测试](cases/rea-js-stale-price-boundary-demo.md)** — 自制 JS 模块里，400 ms 仍通过、401 ms 才拦截。作者区分静态定位与本地检查，明说是剪辑演示、没有 Claude 现场会话，也不下单。**10/15 · REA · 作者报告的分析测试，非本合集复跑。**
+10. **[MoonBit：让调试器里的符号重新可读](cases/moonbit-claude-debugger-demangling.md)** — 为研究项目试新语言，却遇到满屏改名符号；作者称 Claude 分析编码规则，写出 VSCode customDescriptionGenerator，未提供代码与测试。**10/16 · 其他 AI 逆向 · 作者报告，未独立运行。**
 
 ### 经典案例
 
@@ -36,10 +36,10 @@
 
 ## 目录
 
-- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（61）
-- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（62）
-- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（118）
-- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（23）
+- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（65）
+- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（63）
+- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（124）
+- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（25）
 - [贡献案例](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [维护方法](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
 
 分类页保留全部通过筛选的案例、进行中的项目和具体 idea；首页不展开全量清单。`待验证`、`进行中`、`分析测试`、`相关项目`不是已完成或已独立验证的成果。

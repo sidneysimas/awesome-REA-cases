@@ -16,7 +16,7 @@
 - [.NET NativeAOT：从原生二进制恢复 C# 信息的诉求](../cases/nativeaot.md) — 已有部分元数据恢复，不是原 C# 工程恢复。 **[REA · 进行中]**
 - [Android ApiDemos：从 APK 追到具体 Java 方法](../cases/android-apidemos.md) — 用真实演示 APK 查类、读方法、追踪静态引用。 **[REA]**
 - [鸿蒙 App：识别安装包结构与组件](../cases/harmony-package-inventory.md) — 用真实 HAP 发布包核查组件路径、哈希和打包线索。 **[REA]**
-- [macOS 预览：对比有无 REA 的功能重建](../cases/preview-rebuild.md) — 同一作者用两条路线重建缩放、旋转、标注与保存。 **[REA]**
+- [macOS 预览：有无 REA 的重建对照与自测边界](../cases/preview-rebuild.md) — 两条路线重建图片工具；后续转述明确47项检查由AI自写自跑。 **[REA]**
 - [Codex 浏览器：找出网页唤起评论框的链路](../cases/codex-browser-annotations.md) — 分析 Electron 代码并用测试页验证评论接口的部分能力。 **[REA]**
 - [Claude Design：把设计功能接进 BaoCut](../cases/claude-design-baocut.md) — 研究设计 Skill 与前端，把它们集成到自己的视频 Agent 中。 **[未确认使用 REA]**
 - [Claude Chrome：把本地浏览器协议桥接到云浏览器](../cases/claude-chrome-remote.md) — 还原原生消息协议，转成 CDP 在远端执行。 **[未确认使用 REA]**
@@ -120,3 +120,9 @@
 - [Electron Notes 样本：带答案表的 REA IPC 静态分析测试](../cases/rea-electron-notes-ipc-answer-key-test.md) — ofmyslippers 报告三次静态分析均识别4组 IPC 与 preload 成员，同时指出输出体积膨胀。 **[REA · 分析测试]**
 - [Higgsfield 到 Comfy：用 REA 观察功能再做开源工作流的 idea](../cases/higgsfield-comfy-rea-open-source-idea.md) — illxet 请求 REA 研究 Higgsfield 并在 Comfy 平台改进开源；Grok 回复只是建议路线。 **[REA · 待验证]**
 - [YouTube 个人版本：REA 辅助筛选领域视频与 AI 主题的报告](../cases/youtube-rea-niche-video-dashboard.md) — 作者称做了避免无限刷屏的 YouTube 版本，用于找异常表现视频与按主题看 AI 内容。 **[REA · 待验证]**
+- [本地 REA 工作台：把逆向界面与个人办公流程放在一起](../cases/rea-local-office-workbench-idea.md) — 作者自述已有本地 REA 界面，提出再接选题、Skill、灵感、计划与生图视频。 **[REA · 进行中]**
+- [六个单功能重建 idea：从斜杠菜单到智能吸附](../cases/rea-six-feature-rebuild-ideas.md) — 提出用 REA + Claude 梳理六款应用的事件与状态，再做单功能实现和对照测试。 **[REA · 待验证]**
+- [Ledger Opus：声称研究 Claude for Finance 的金融 Agent 推广线索](../cases/ledger-opus-finance-agent-report.md) — 推广者称用 REA 制作加密资产、股票和记账助手，尚无可核对的逆向过程。 **[REA · 待验证]**
+- [OpenCodex / Antigravity：用 REA 调查多轮工具调用签名丢失](../cases/opencodex-antigravity-signature-fallback.md) — 作者称研究 Rust 工具与 Go language_server 后，为 Gemini 请求补上签名缺失兜底。 **[REA · 待验证]**
+- [扫雷与 B 站：REA 视频演示标题的二手汇总](../cases/rea-bilibili-minesweeper-demo-roundup.md) — 读者列出扫雷、B站及手机 App 的 REA 演示视频，实现和测试尚待核对。 **[REA · 待验证]**
+- [网易 UU 远程：Claude / Codex 辅助制作非官方 Linux 被控端](../cases/uu-remote-linux-ai-client.md) — 作者为官方缺少 Linux 端的问题做 Rust 兼容实现，本轮讨论多模型逆向协作。 **[其他 AI 逆向 · 进行中]**
