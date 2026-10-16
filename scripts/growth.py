@@ -30,11 +30,17 @@ def record_daily(history, total, day):
 
 
 def render_svg(history, language='en'):
-    rows = history['daily']
+    first = date.fromisoformat(history['daily'][0]['date'])
+    # Presentation-only zero baseline before this collection existed, not observations.
+    baseline = [{'date': (first - timedelta(days=n)).isoformat(), 'total': 0}
+                for n in (3, 2, 1)]
+    rows = baseline + history['daily']
     zh = language == 'zh'
     title = '累计案例' if zh else 'Case accumulation'
     subtitle = '每日累计 · 北京时间' if zh else 'Cumulative total · Beijing time'
-    note = '按实际入库日期统计 · 最后一天为截至当前' if zh else 'By collection date · Latest day is partial · UTC+8'
+    baseline_range = baseline[0]['date'][5:] + '–' + baseline[-1]['date'][5:]
+    note = (f'{baseline_range}：收录前零基线 · 最后一天为截至当前 · 北京时间' if zh
+            else f'{baseline_range}: pre-collection baseline · Latest day is partial · UTC+8')
     end = rows[-1]['date']
     maximum = max(row['total'] for row in rows)
     step = max(1, 10 ** max(0, len(str(maximum)) - 1))
@@ -60,7 +66,7 @@ def render_svg(history, language='en'):
     svg += [f'<path d="M {left} {bottom} L ' + ' L '.join(f'{x:.1f} {y:.1f}' for x,y in points) + f' L {points[-1][0]:.1f} {bottom} Z" fill="url(#area)"/>',
             f'<polyline points="{coords}" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>']
     # Limit labels on long histories, not the underlying daily observations.
-    stride = max(1, ceil(len(rows)/7))
+    stride = max(1, ceil(len(rows)/8))
     for i, ((x,y), row) in enumerate(zip(points, rows)):
         if i % stride == 0 or i == len(rows)-1:
             svg += [f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="#10b981"/>',

@@ -7,6 +7,26 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class GrowthTests(unittest.TestCase):
+    def test_chart_adds_three_precollection_zero_days_without_changing_history(self):
+        import copy
+        import re
+        spec = importlib.util.spec_from_file_location('growth', ROOT / 'scripts/growth.py')
+        growth = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(growth)
+        history = {'daily': [
+            {'date': '2026-10-12', 'total': 81},
+            {'date': '2026-10-13', 'total': 128}]}
+        before = copy.deepcopy(history)
+        svg = growth.render_svg(history)
+        for day in ('09', '10', '11'):
+            self.assertIn(f'2026-10-{day}: 0', svg)
+        self.assertIn('pre-collection baseline', svg)
+        self.assertEqual(history, before)
+        self.assertIn('收录前零基线', growth.render_svg(history, 'zh'))
+        points = re.search(r'<polyline points="([^"]+)"', svg).group(1).split()
+        self.assertEqual(len(points), 5)
+        self.assertTrue(all(point.split(',')[1] == '210.0' for point in points[:3]))
+
     def test_build_records_growth_and_check_is_read_only(self):
         import json
         import shutil
