@@ -6,27 +6,30 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-**277 cases** · Updated **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
+## 277 cases & projects
+
+**Collection updated:** October 16, 2026, 12:33 · Beijing time (UTC+8)
+
+Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
 Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA connects coding agents to local reverse-engineering tools through CLI and MCP.
 
-> [!NOTE]
-> Entries describe **author and project reports**, not independent reproductions by this collection. Ideas, work in progress, and analysis tests are labeled in the details.
+*Based on author and project reports; not independently reproduced here. Evidence and project status are recorded in each case.*
 
 ## Recent picks
 
-**10 worth reading**, selected by the maintainer for practical use, evidence, and recency—not an automated ranking.
+**10 worth reading**, selected for practical use, evidence, and recency—not an automated ranking. Dates refer to featured sources or author updates, not collection dates.
 
-1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
-2. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** — The author credits Claude/Opus with compiler-environment research and a native Saturn-to-PC port. Visual issues remain; **November 20 is a plan, not a release**. `In progress`
-3. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** — An independent editor informed by Jianying research, with project-reported video exports and plugin tests. Signing and platform limitations remain. `REA`
-4. **[LASRecomp](cases/en/links-awakening-claude-pc-port-report.md)** — An AI-assisted Link’s Awakening port for desktop. Requires the original game; beta crashes and untested platform support are documented. `Public project`
-5. **[A plate reader brought back to work](cases/en/plate-reader-filter-wheel-claude-repair.md)** — Claude reportedly investigated communication and reset firmware after a startup fault. **No independent or clinical validation.** `Author report`
-6. **[ScanSnap iX500](cases/en/scansnap-ix500-claude-mac.md)** — A reported Claude-built replacement Mac app with Wi-Fi scanning, hardware-button support, and OCR. Protocol details and independent tests are absent. `Author report`
-7. **[KEF LSX II volume keys](cases/en/kef-lsx-ii-volume-fixer.md)** — A USB/LAN bridge improves desktop volume control without patching signed firmware. Latency figures are the author’s measurements. `Public implementation`
-8. **[Two Feishu accounts on one Mac](cases/en/feishu-dual-instance-codex-rea.md)** — Codex/REA research supports isolated app copies. Local signing and disabled updates bring maintenance risks. `Author-tested`
-9. **[Electron Notes: accuracy has an output cost](cases/en/rea-electron-notes-ipc-answer-key-test.md)** — The author reports **4/4 channels** identified, but **1.0 MB JSON from 2.3 KB source**. A small static-analysis sample, not a general accuracy guarantee. `REA test`
-10. **[MoonBit: readable debugger symbols](cases/en/moonbit-claude-debugger-demangling.md)** — Claude reportedly investigated symbol encoding and wrote a VSCode display helper. **Code and tests are not supplied.** `Author report`
+1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
+2. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — The author credits Claude/Opus with compiler-environment research and a native Saturn-to-PC port. Visual issues remain; **November 20 is a plan, not a release**. `In progress`
+3. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-15` — An independent editor informed by Jianying research, with project-reported video exports and plugin tests. Signing and platform limitations remain. `REA`
+4. **[LASRecomp](cases/en/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — An AI-assisted Link’s Awakening port for desktop. Requires the original game; beta crashes and untested platform support are documented. `Public project`
+5. **[A plate reader brought back to work](cases/en/plate-reader-filter-wheel-claude-repair.md)** · `2026-10-15` — Claude reportedly investigated communication and reset firmware after a startup fault. **No independent or clinical validation.** `Author report`
+6. **[ScanSnap iX500](cases/en/scansnap-ix500-claude-mac.md)** · `2026-10-15` — A reported Claude-built replacement Mac app with Wi-Fi scanning, hardware-button support, and OCR. Protocol details and independent tests are absent. `Author report`
+7. **[KEF LSX II volume keys](cases/en/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — A USB/LAN bridge improves desktop volume control without patching signed firmware. Latency figures are the author’s measurements. `Public implementation`
+8. **[Two Feishu accounts on one Mac](cases/en/feishu-dual-instance-codex-rea.md)** · `2026-10-15` — Codex/REA research supports isolated app copies. Local signing and disabled updates bring maintenance risks. `Author-tested`
+9. **[Electron Notes: accuracy has an output cost](cases/en/rea-electron-notes-ipc-answer-key-test.md)** · `2026-10-16` — The author reports **4/4 channels** identified, but **1.0 MB JSON from 2.3 KB source**. A small static-analysis sample, not a general accuracy guarantee. `REA test`
+10. **[MoonBit: readable debugger symbols](cases/en/moonbit-claude-debugger-demangling.md)** · `2026-10-16` — Claude reportedly investigated symbol encoding and wrote a VSCode display helper. **Code and tests are not supplied.** `Author report`
 
 ## Classic cases
 
@@ -51,7 +54,6 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 <details>
 <summary><strong>Update & evidence notes</strong></summary>
 
-- **Last maintained / count snapshot:** October 16, 2026, 12:33, Beijing time (UTC+8).
 - **Continuous resolved-material cutoff:** October 15, 2026, 16:00, Beijing time. Older unresolved sources can hold this cutoff back while newer entries are added; it is not a verification date for every project.
 - Searches run six times daily with keyword and pagination limits; coverage is not exhaustive. Source dates, evidence boundaries, and any engagement snapshots are recorded in case details.
 - Full descriptions, sources, and language switching are available on every case page.
