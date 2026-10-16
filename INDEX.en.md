@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**286 entries**, organized by use case, without a Top-N or popularity threshold.
+**297 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (67)
-- [Hardware and interoperability](categories/en/hardware.md) (64)
-- [Applications and clients](categories/en/apps.md) (128)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (27)
+- [Games and preservation](categories/en/games.md) (69)
+- [Hardware and interoperability](categories/en/hardware.md) (65)
+- [Applications and clients](categories/en/apps.md) (135)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (28)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -95,6 +95,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port](cases/en/sonic-3d-blast-saturn-opus-port.md) — The author clarifies that this is a native port from decompiled source, not static recompilation; AI accelerated a months-long process. **[Other AI-assisted work · In progress]**
 - [Spectrum Stonkers: an idea to decompile with AI and fix its crash bug](cases/en/stonkers-spectrum-ai-crash-fix-idea.md) — Martin Scott proposes investigating and fixing a crash in the old game; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Stunts: a secondhand lead on an AI-assisted browser racing remake](cases/en/stunts-ai-browser-remake-report.md) — A reader says someone remade Stunts with AI, modern graphics and better browser frame rates; no performance data is verified. **[Other AI-assisted work · Needs verification]**
+- [Halo 3 Reforged: a reader's AI-decompilation and 128-player claim](cases/en/halo3-reforged-ai-decompile-report.md) — A reader cites Halo 3 Reforged to argue AI can modify classic games independently of developers; the specific AI contribution is unestablished. **[Other AI-assisted work · Needs verification]**
+- [Max Payne 3: an AI-decompilation idea for cutscene skipping and level creation](cases/en/max-payne3-ai-cutscene-level-idea.md) — A player hopes AI-assisted modders will investigate Max Payne 3 to add cutscene skips and level-creation tools; no implementation is shown. **[Other AI-assisted work · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -162,6 +164,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
 - [TV firmware: an AI reverse-engineering idea for privacy and ad removal](cases/en/tv-firmware-ai-ad-removal-idea.md) — A reply proposes AI investigation, ad removal, recompilation and reflashing of existing firmware; no device test is supplied. **[Other AI-assisted work · Needs verification]**
 - [Circuit-board function reconstruction: an idea to extend the REA approach to hardware](cases/en/rea-circuit-board-functional-rebuild-idea.md) — The author proposes an REA-like program to investigate circuit-board functions and reimplement them; no board or prototype is specified. **[REA use unconfirmed · Needs verification]**
+- [Samsung AC: local-network control with reported partial Claude assistance](cases/en/samsung-ac-local-claude-report.md) — The author says a personal Samsung AC was reverse-engineered for local control; support for all post-2022 models is not verified. **[Other AI-assisted work · Needs verification]**
 
 ### Applications and clients
 
@@ -224,7 +227,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [LightBurn: a reported personal laser-control rebuild](cases/en/lightburn-personal-laser-rebuild.md) — An author reports a 16-minute REA-assisted app for one laser; hardware compatibility and execution are unverified. **[REA · Needs verification]**
 - [MarkText: a REA-assisted HTML export rebuild](cases/en/marktext-html-export.md) — The author reports 17 passing tests for a REA-assisted rebuild, with one Windows check still open. **[REA · In progress]**
 - [Screen Studio: a reported REA-assisted rebuild](cases/en/screen-studio-rebuild.md) — The author reports analyzing Screen Studio with REA and using Claude Code to make and record a demo; parity and timing are unverified. **[REA · Needs verification]**
-- [Claude Desktop: UI details reported from REA analysis](cases/en/claude-desktop-ui-details.md) — BystAnd3rs reports REA-based UI research and a public handbook/component collection; an October 15 redesign prompted plans for a new comparison, so older parameters should not be assumed current. **[REA · Analysis test]**
+- [Claude Desktop: UI details reported from REA analysis](cases/en/claude-desktop-ui-details.md) — REA UI research extends from author observations to public Open Claude UI documentation; component fidelity and applicability to the redesigned app are not independently tested. **[REA · Analysis test]**
 - [Typeless: a reported local voice-input alternative built with REA](cases/en/rea-typeless-local.md) — The author reports using REA to inspect Typeless and build an offline Swift app; functionality and performance claims are not independently verified. **[REA · Needs verification]**
 - [Eleven: agent-assisted analysis of apps and binaries](cases/en/eleven-agent-reverse-engineering.md) — The author describes a tool for viewing multi-platform binaries and asking coding agents to help inspect them; scope and open-source status are not independently verified. **[REA use unconfirmed · Needs verification]**
 - [48-million-row database: a second-hand REA query-optimization report](cases/en/rea-database-query-optimization-report.md) — A third-party post attributes a Claude Code/REA dashboard-query optimization to Thariq Shihipar; results and attribution are not independently verified. **[REA use unconfirmed · Needs verification]**
@@ -293,6 +296,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Immersive-translation-style extensions: investigating a bring-your-own-token alternative with Codex](cases/en/codex-immersive-translation-extension.md) — The author is investigating a Chrome translation extension to use personally purchased model tokens. **[Other AI-assisted work · In progress]**
 - [ChatGPT Intelligent UI: asking Codex to investigate the implementation](cases/en/chatgpt-intelligent-ui-codex-study.md) — The author has asked Codex to investigate ChatGPT Intelligent UI; no technical results are reported. **[Other AI-assisted work · In progress]**
 - [Claude Code home background: a reported REA-assisted reconstruction of its tranquility animation](cases/en/claude-code-home-animation-rea.md) — Henry Fan says REA helped reconstruct and open-source a home background animation in one shot, not Claude Code itself. **[REA · Needs verification]**
+- [ChatGPT Work Cloud: probing a cloud agent's tools through introspection](cases/en/chatgpt-work-cloud-introspection-report.md) — A post recounts Simon Willison's introspective prompts and website-building test; tool counts and security mechanisms are not independently verified. **[Other AI-assisted work · Needs verification]**
+- [Indian Kanoon: a reported Claude Code legal-search integration](cases/en/indian-kanoon-claude-legal-workflow.md) — The author links reverse engineering, Claude Code and the Indian Kanoon API to a personal legal-research workflow, without publishing the implementation. **[Other AI-assisted work · Needs verification]**
+- [Amap anti-bot controls: a secondhand Tencent sandbox-agent incident report](cases/en/amap-tencent-agent-boundary-report.md) — A post says an agent investigated security credentials after scraping was blocked and triggered an alert; the security report and original Tencent response were not obtained. **[Other AI-assisted work · Needs verification]**
+- [LINE Desktop: an idea for an REA-informed lightweight client](cases/en/line-desktop-lite-rea-idea.md) — The author proposes reverse-engineering LINE Desktop into a lighter version, without a feature scope or implementation. **[REA · Needs verification]**
+- [JPCERT/CC: tracing APK analysis and API probing on attack servers](cases/en/jpcert-ai-apk-api-investigation-report.md) — An official investigation reports AI use and APK, jadx, Blutter and API-research traces, without identifying a model or REA. **[Other AI-assisted work · Analysis test]**
+- [crashlens: connecting REA crash triage to coding agents](cases/en/crashlens-rea-crash-triage-idea.md) — A public early prototype turns crash artifacts into evidence reports; a Hermes Skill is still proposed and the implementation was not independently tested. **[REA · Related project]**
+- [A 2000 stress.exe: a reported Opus/REA revival for Mac and the web](cases/en/stress-exe-2000-rea-revival-report.md) — A post says a Reddit user rebuilt stress.exe in half an hour and shipped Mac/web versions in two hours; the original implementation and comparisons were not obtained. **[REA · Needs verification]**
 
 ### Algorithms and feature recovery
 
@@ -323,6 +333,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [MoonBit: Claude investigates name mangling to improve VSCode debugging](cases/en/moonbit-claude-debugger-demangling.md) — The author says Claude reverse engineered name mangling and wrote a customDescriptionGenerator for readable debugging. **[Other AI-assisted work · Needs verification]**
 - [CSV export evaluators: three deliberately broken implementations pass simple tests](cases/en/rea-csv-evaluator-mutation-test.md) — The author says simple tests stayed green, while 215 byte-level comparisons against the original exposed all three broken exporters. **[REA · Analysis test]**
 - [Obfuscated JavaScript request signatures: an author reports restoring data retrieval with REA](cases/en/rea-obfuscated-web-request-signature.md) — The author says REA mapped a dynamic signature in five minutes and a few code changes restored data; the site and validation materials are not public. **[REA · Needs verification]**
+- [Polymarket Up/Down bot: a promotional REA strategy-analysis and replay report](cases/en/polymarket-updown-rea-replay-report.md) — The author reports using REA/Opus to understand an order-book strategy and replay it tick by tick; no inspectable code, metrics or profit evidence is supplied. **[REA · Needs verification]**
 
 ## Contributing and selection
 

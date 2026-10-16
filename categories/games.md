@@ -69,3 +69,5 @@
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
 - [Spectrum《Stonkers》：用 AI 反编译修复崩溃的 idea](../cases/stonkers-spectrum-ai-crash-fix-idea.md) — Martin Scott 提议从老游戏代码找出并修复崩溃问题，未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Stunts：AI 逆向后重做浏览器赛车的二手线索](../cases/stunts-ai-browser-remake-report.md) — 读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。 **[其他 AI 逆向 · 待验证]**
+- [Halo 3 Reforged：AI 反编译与128人对战的读者说法](../cases/halo3-reforged-ai-decompile-report.md) — 读者以 Halo 3 Reforged 举例声称 AI 可绕开原开发者改造经典游戏，具体 AI 贡献未证实。 **[其他 AI 逆向 · 待验证]**
+- [Max Payne 3：用 AI 反编译添加过场跳过与关卡创作的 idea](../cases/max-payne3-ai-cutscene-level-idea.md) — 玩家希望 AI 辅助 Mod 作者研究 Max Payne 3，增加跳过过场与关卡创作能力，尚无实现。 **[其他 AI 逆向 · 待验证]**

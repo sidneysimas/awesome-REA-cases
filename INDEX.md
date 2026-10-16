@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **286 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **297 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（67）
-- [硬件与设备互通](categories/hardware.md)（64）
-- [应用与客户端](categories/apps.md)（128）
-- [算法与功能重建](categories/algorithms.md)（27）
+- [游戏与游戏保存](categories/games.md)（69）
+- [硬件与设备互通](categories/hardware.md)（65）
+- [应用与客户端](categories/apps.md)（135）
+- [算法与功能重建](categories/algorithms.md)（28）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -93,6 +93,8 @@
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
 - [Spectrum《Stonkers》：用 AI 反编译修复崩溃的 idea](cases/stonkers-spectrum-ai-crash-fix-idea.md) — Martin Scott 提议从老游戏代码找出并修复崩溃问题，未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Stunts：AI 逆向后重做浏览器赛车的二手线索](cases/stunts-ai-browser-remake-report.md) — 读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。 **[其他 AI 逆向 · 待验证]**
+- [Halo 3 Reforged：AI 反编译与128人对战的读者说法](cases/halo3-reforged-ai-decompile-report.md) — 读者以 Halo 3 Reforged 举例声称 AI 可绕开原开发者改造经典游戏，具体 AI 贡献未证实。 **[其他 AI 逆向 · 待验证]**
+- [Max Payne 3：用 AI 反编译添加过场跳过与关卡创作的 idea](cases/max-payne3-ai-cutscene-level-idea.md) — 玩家希望 AI 辅助 Mod 作者研究 Max Payne 3，增加跳过过场与关卡创作能力，尚无实现。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -160,6 +162,7 @@
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
 - [电视固件：为隐私与去广告提出的 AI 逆向 idea](cases/tv-firmware-ai-ad-removal-idea.md) — 建议 AI 研究现有固件、移除广告后重新编译刷回，尚无设备测试。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
+- [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -222,7 +225,7 @@
 - [LightBurn：为自己的激光机重建专用控制软件的报告](cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
 - [MarkText：用 REA 逆向并重建 HTML 导出](cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
-- [Claude Desktop：用 REA 观察界面细节](cases/claude-desktop-ui-details.md) — 作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。 **[REA · 分析测试]**
+- [Claude Desktop：用 REA 观察界面细节](cases/claude-desktop-ui-details.md) — REA 界面研究从作者观察延伸到公开 Open Claude UI 文档；组件与动效的保真度、新版适用性未独立测试。 **[REA · 分析测试]**
 - [Typeless：用 REA 做本地语音输入替代品](cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**
 - [Eleven：让 Agent 协助分析应用与二进制](cases/eleven-agent-reverse-engineering.md) — 作者介绍一款开源逆向工具，可查看多平台二进制并让 Agent 协助理解代码。 **[未确认使用 REA · 待验证]**
 - [48,000,000 行数据库：REA 辅助查询优化的转述](cases/rea-database-query-optimization-report.md) — 第三方称 Claude Code 与 REA 协助优化仪表板查询；性能与等价结果未独立核验。 **[未确认使用 REA · 待验证]**
@@ -291,6 +294,13 @@
 - [沉浸式翻译类扩展：用 Codex 研究自带 Token 的替代版本](cases/codex-immersive-translation-extension.md) — 作者正在逆向 Chrome 翻译扩展，希望直接使用自己购买的模型 Token。 **[其他 AI 逆向 · 进行中]**
 - [ChatGPT Intelligent UI：交给 Codex 研究实现的尝试](cases/chatgpt-intelligent-ui-codex-study.md) — 作者已让 Codex 调查 ChatGPT Intelligent UI 的实现，尚无技术结果。 **[其他 AI 逆向 · 进行中]**
 - [Claude Code 主页背景：REA 辅助重建宁静动画的报告](cases/claude-code-home-animation-rea.md) — Henry Fan 称用 REA 检查软件，一次重建主页背景动画并开源；不等于开源 Claude Code。 **[REA · 待验证]**
+- [ChatGPT Work Cloud：通过自省提示研究云端 Agent 的工具边界](cases/chatgpt-work-cloud-introspection-report.md) — 帖子转述 Simon Willison 的自省提示与自动建站测试，工具数量和安全机制尚未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [Indian Kanoon：Claude Code 辅助的法律检索集成自述](cases/indian-kanoon-claude-legal-workflow.md) — 作者把 reverse engineering、Claude Code 与 Indian Kanoon API 联系到自己的法律检索流程，未公开实现。 **[其他 AI 逆向 · 待验证]**
+- [高德地图反爬：腾讯云沙盒 Agent 越界事件的转述](cases/amap-tencent-agent-boundary-report.md) — 帖子称抓取受阻后的 Agent 自主研究安全凭证并触发警报；未取得安全机构报告或腾讯原回应。 **[其他 AI 逆向 · 待验证]**
+- [LINE Desktop：用 REA 研究精简客户端的 idea](cases/line-desktop-lite-rea-idea.md) — 作者提议逆向 LINE Desktop 做精简版，尚未给功能范围或实现。 **[REA · 待验证]**
+- [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
+- [crashlens：把 REA 接入崩溃分诊与编程 Agent](cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
+- [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
 
 ### 算法与功能重建
 
@@ -321,6 +331,7 @@
 - [MoonBit：Claude 研究符号改名，让 VSCode 调试更易读](cases/moonbit-claude-debugger-demangling.md) — 作者称 Claude 逆向 name mangling 并写 customDescriptionGenerator 改善调试显示。 **[其他 AI 逆向 · 待验证]**
 - [CSV 导出验收器：三个故意改坏的实现如何逃过简单测试](cases/rea-csv-evaluator-mutation-test.md) — 作者称简单测试全绿，换成215组原版字节对照才发现三个错误实现。 **[REA · 分析测试]**
 - [混淆 JS 请求签名：REA 分析后恢复取数的作者报告](cases/rea-obfuscated-web-request-signature.md) — 作者称 REA 五分钟梳理动态签名，改几行代码后得到数据；网站与验证材料未公开。 **[REA · 待验证]**
+- [Polymarket Up/Down bot：REA 分析策略与历史回放的推广自述](cases/polymarket-updown-rea-replay-report.md) — 作者称用 REA/Opus 理解订单簿策略并逐 tick 回放；没有可检查代码、指标或收益证明。 **[REA · 待验证]**
 
 ## 贡献与收录
 

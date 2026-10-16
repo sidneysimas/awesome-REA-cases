@@ -61,7 +61,7 @@
 - [LightBurn：为自己的激光机重建专用控制软件的报告](../cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
 - [MarkText：用 REA 逆向并重建 HTML 导出](../cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](../cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
-- [Claude Desktop：用 REA 观察界面细节](../cases/claude-desktop-ui-details.md) — 作者称用 REA 分析 Claude Desktop，记录暗色字重、换行与逐字淡入等界面细节。 **[REA · 分析测试]**
+- [Claude Desktop：用 REA 观察界面细节](../cases/claude-desktop-ui-details.md) — REA 界面研究从作者观察延伸到公开 Open Claude UI 文档；组件与动效的保真度、新版适用性未独立测试。 **[REA · 分析测试]**
 - [Typeless：用 REA 做本地语音输入替代品](../cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**
 - [Eleven：让 Agent 协助分析应用与二进制](../cases/eleven-agent-reverse-engineering.md) — 作者介绍一款开源逆向工具，可查看多平台二进制并让 Agent 协助理解代码。 **[未确认使用 REA · 待验证]**
 - [48,000,000 行数据库：REA 辅助查询优化的转述](../cases/rea-database-query-optimization-report.md) — 第三方称 Claude Code 与 REA 协助优化仪表板查询；性能与等价结果未独立核验。 **[未确认使用 REA · 待验证]**
@@ -130,3 +130,10 @@
 - [沉浸式翻译类扩展：用 Codex 研究自带 Token 的替代版本](../cases/codex-immersive-translation-extension.md) — 作者正在逆向 Chrome 翻译扩展，希望直接使用自己购买的模型 Token。 **[其他 AI 逆向 · 进行中]**
 - [ChatGPT Intelligent UI：交给 Codex 研究实现的尝试](../cases/chatgpt-intelligent-ui-codex-study.md) — 作者已让 Codex 调查 ChatGPT Intelligent UI 的实现，尚无技术结果。 **[其他 AI 逆向 · 进行中]**
 - [Claude Code 主页背景：REA 辅助重建宁静动画的报告](../cases/claude-code-home-animation-rea.md) — Henry Fan 称用 REA 检查软件，一次重建主页背景动画并开源；不等于开源 Claude Code。 **[REA · 待验证]**
+- [ChatGPT Work Cloud：通过自省提示研究云端 Agent 的工具边界](../cases/chatgpt-work-cloud-introspection-report.md) — 帖子转述 Simon Willison 的自省提示与自动建站测试，工具数量和安全机制尚未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [Indian Kanoon：Claude Code 辅助的法律检索集成自述](../cases/indian-kanoon-claude-legal-workflow.md) — 作者把 reverse engineering、Claude Code 与 Indian Kanoon API 联系到自己的法律检索流程，未公开实现。 **[其他 AI 逆向 · 待验证]**
+- [高德地图反爬：腾讯云沙盒 Agent 越界事件的转述](../cases/amap-tencent-agent-boundary-report.md) — 帖子称抓取受阻后的 Agent 自主研究安全凭证并触发警报；未取得安全机构报告或腾讯原回应。 **[其他 AI 逆向 · 待验证]**
+- [LINE Desktop：用 REA 研究精简客户端的 idea](../cases/line-desktop-lite-rea-idea.md) — 作者提议逆向 LINE Desktop 做精简版，尚未给功能范围或实现。 **[REA · 待验证]**
+- [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](../cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
+- [crashlens：把 REA 接入崩溃分诊与编程 Agent](../cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
+- [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](../cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**

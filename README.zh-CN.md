@@ -6,9 +6,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-## 286 个案例与项目
+## 297 个案例与项目
 
-**案例更新／数量快照：**2026 年 10 月 16 日 16:11 · 北京时间（UTC+8）
+**案例更新／数量快照：**2026 年 10 月 16 日 20:09 · 北京时间（UTC+8）
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -24,13 +24,13 @@
 
 1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
 2. **[Sonic 3D Blast：先重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — 作者澄清是**从反编译代码构建原生移植，不是静态重编译**，AI 辅助过程历时数月；画面缺陷仍在，11 月 20 日只是发行计划。`进行中`
-3. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-15` — 从剪映研究走向独立编辑器，项目记录包含视频导出与插件测试；签名和平台限制仍在。`REA`
+3. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-16` — 独立编辑器已有项目报告的导出与插件测试；作者新说明**版权素材与 AI API 仍是卡点**，签名和平台限制也未消失。`进行中`
 4. **[LASRecomp：让《织梦岛》运行在电脑上](cases/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — AI 辅助移植，需自备原作；beta 崩溃及部分平台未实测的限制已公开。`公开项目`
 5. **[让读板仪恢复工作的报告](cases/plate-reader-filter-wheel-claude-repair.md)** · `2026-10-15` — 作者称 Claude 在开机故障后研究通信、重置固件。**无独立验收或临床质量证明。**`作者自述`
 6. **[ScanSnap iX500：旧扫描仪继续用](cases/scansnap-ix500-claude-mac.md)** · `2026-10-15` — 作者称用 Claude 做出支持 Wi-Fi、实体按钮和 OCR 的 Mac 替代应用；缺少协议细节与独立测试。`作者自述`
 7. **[KEF LSX II：修好音量键体验](cases/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — USB／局域网桥接改善桌面控制，不修改签名固件；延迟数据为作者测量。`公开实现`
 8. **[飞书：一台 Mac，两个账号](cases/feishu-dual-instance-codex-rea.md)** · `2026-10-15` — Codex／REA 研究后隔离应用副本；本地签名、关闭更新仍有维护风险。`作者实测`
-9. **[《宝可梦心金／魂银》](cases/pokemon-hgss-multi-agent-decompile-report.md)** · `2026-10-16` — 广泛传播的帖子称反编译 **4.1 MB**；回复提醒区分 pret 上游成果。匹配与 AI 贡献仍未核验，**5.6 万美元不是已核验账单**。`二手报告`
+9. **[crashlens](cases/crashlens-rea-crash-triage-idea.md)** · `2026-10-16` — 把 core dump 与堆栈变成编程 Agent 可读的证据报告。已有**公开早期原型**，未经独立测试；接入 Hermes 仍为计划。`REA`
 10. **[先验证 CSV 验收器](cases/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — 作者称三个故意改坏的导出器通过简单测试，却被 **215 组字节对照**发现；有价值的验收实验，但未公开输入与代码。`REA 分析测试`
 
 ## 经典案例
@@ -46,10 +46,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **67** |
-| [硬件与设备互通](categories/hardware.md) | **64** |
-| [应用与客户端](categories/apps.md) | **128** |
-| [算法与功能重建](categories/algorithms.md) | **27** |
+| [游戏与游戏保存](categories/games.md) | **69** |
+| [硬件与设备互通](categories/hardware.md) | **65** |
+| [应用与客户端](categories/apps.md) | **135** |
+| [算法与功能重建](categories/algorithms.md) | **28** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
