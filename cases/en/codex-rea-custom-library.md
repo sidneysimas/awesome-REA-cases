@@ -12,4 +12,4 @@ Brief work-in-progress report; purpose and result scope not explained.
 
 - [Author's reply](https://x.com/i/status/2110616441611542781)
 
-[中文](../codex-rea-custom-library.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-rea-custom-library.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

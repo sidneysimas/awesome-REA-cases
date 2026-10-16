@@ -12,4 +12,4 @@ Candidate snapshot: 0 likes | 18 views; performance is author-measured, not inde
 - [Author report](https://x.com/i/status/2110581933533184501)
 - [Public implementation and measurement notes](https://github.com/roberdorfer/kef-lsx-volume)
 
-[中文](../kef-lsx-ii-volume-fixer.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../kef-lsx-ii-volume-fixer.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

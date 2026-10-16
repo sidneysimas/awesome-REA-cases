@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-13): 0 likes | 2 views | 0 reposts
 
 - [Author report from this review](https://x.com/i/status/2109674230392713569)
 
-[中文](../cad-cli-open-rebuild-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../cad-cli-open-rebuild-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

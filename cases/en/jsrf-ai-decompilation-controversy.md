@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 30 views; not an implementer's report.
 
 - [Post disputing AI decompilation of JSRF](https://x.com/i/status/2110863304444813357)
 
-[中文](../jsrf-ai-decompilation-controversy.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../jsrf-ai-decompilation-controversy.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

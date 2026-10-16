@@ -14,4 +14,4 @@ Evidence boundary: needs verification; does not establish completed reverse engi
 - [Original post from this window (author report)](https://x.com/i/status/2109779363973738696)
 - [Additional post on the same case in this window](https://x.com/i/status/2109779405300216058)
 
-[中文](../hp-printer-third-party-ink-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../hp-printer-third-party-ink-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

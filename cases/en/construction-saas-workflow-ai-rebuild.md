@@ -12,4 +12,4 @@ October 15 candidate snapshot: 13 likes, 729 views; early next year is a deliver
 
 - [Author's ongoing back-office replacement and workflow research](https://x.com/i/status/2110726879665660172)
 
-[中文](../construction-saas-workflow-ai-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../construction-saas-workflow-ai-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

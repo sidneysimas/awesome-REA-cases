@@ -16,4 +16,4 @@
 - [作者的REA代码阅读使用报告](https://x.com/i/status/2110749141710028914)
 - [10月16日另一作者的非预期反编译与命令测试失败观察](https://x.com/i/status/2110835777248862262)
 
-[English](en/grok-build-rea-code-study.md) | [返回目录](../README.md)
+[English](en/grok-build-rea-code-study.md) | [返回目录](../README.zh-CN.md)

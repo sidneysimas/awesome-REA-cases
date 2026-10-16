@@ -12,4 +12,4 @@ Candidate snapshot: 20 likes | 3,935 views; not independently run.
 
 - [Author report and media](https://x.com/i/status/2110618564608880843)
 
-[中文](../richman4-flutter-iphone.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../richman4-flutter-iphone.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

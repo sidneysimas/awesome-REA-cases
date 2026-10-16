@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 9 views; neither implemented nor diagnos
 
 - [Whirlpool user's F13/REA investigation proposal](https://x.com/i/status/2110809016142082332)
 
-[中文](../whirlpool-f13-rea-investigation-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../whirlpool-f13-rea-investigation-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

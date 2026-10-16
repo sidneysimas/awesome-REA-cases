@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 32 views; 78% cheaper is the author's cla
 
 - [Author's Resend research and agent-email service introduction](https://x.com/i/status/2110817677778489400)
 
-[中文](../resend-agentic-email-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../resend-agentic-email-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

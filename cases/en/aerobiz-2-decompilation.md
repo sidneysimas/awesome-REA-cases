@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 15 views | 0 reposts
 
 - [Public source from this review](https://x.com/TSFisher24nrex/status/2109452544913326086)
 
-[中文](../aerobiz-2-decompilation.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../aerobiz-2-decompilation.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

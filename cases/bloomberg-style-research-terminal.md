@@ -18,4 +18,4 @@
 - [作者关于 REA 辅助研究终端的原帖（第一手自述）](https://x.com/i/status/2110082824371908790)
 - [10月16日告警子集宣传转述（未确认同一实现）](https://x.com/i/status/2110880082289922361)
 
-[English](en/bloomberg-style-research-terminal.md) | [返回目录](../README.md)
+[English](en/bloomberg-style-research-terminal.md) | [返回目录](../README.zh-CN.md)

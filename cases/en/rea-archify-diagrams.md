@@ -13,4 +13,4 @@ Original source window: October 15, 08:00–12:00; follow-up review this round, 
 - [Full article from an earlier candidate](https://x.com/i/status/2110570919169286424)
 - [Architecture-diagram project linked by the article](https://github.com/tt-a1i/archify)
 
-[中文](../rea-archify-diagrams.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-archify-diagrams.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

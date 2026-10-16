@@ -14,4 +14,4 @@ t-rex-runner 是类似 Chrome 离线小恐龙的网页跑酷游戏。这次分�
 - [原始观察与实验](https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md)
 - [本周期本机复刻与并排对比](https://x.com/0xlangeai/status/2109595393260761111)
 
-[English](en/dinosaur-speed.md) | [返回目录](../README.md)
+[English](en/dinosaur-speed.md) | [返回目录](../README.zh-CN.md)

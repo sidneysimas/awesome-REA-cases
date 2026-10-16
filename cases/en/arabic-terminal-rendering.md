@@ -13,4 +13,4 @@ Target terminal name, code and independent retest evidence not supplied.
 
 - [Poster reports REA analysis of iTerm and testing Arabic rendering improvements](https://x.com/i/status/2110091122517410164)
 
-[中文](../arabic-terminal-rendering.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../arabic-terminal-rendering.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

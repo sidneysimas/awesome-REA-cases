@@ -22,4 +22,4 @@ New evidence in this batch: a quote/secondhand account claims real depth-two tes
 - [This window: developer's own work-in-progress report](https://x.com/i/status/2109761893808365700)
 - [X post from this batch (quote/secondhand; author identity unconfirmed, not original-developer confirmation)](https://x.com/i/status/2110080570612941090)
 
-[中文](../pumpfun-reconstruction-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../pumpfun-reconstruction-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

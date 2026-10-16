@@ -12,4 +12,4 @@
 
 - [个人研究与许可边界讨论](https://x.com/i/status/2110740891770257659)
 
-[English](en/compression-app-ai-learning-idea.md) | [返回目录](../README.md)
+[English](en/compression-app-ai-learning-idea.md) | [返回目录](../README.zh-CN.md)

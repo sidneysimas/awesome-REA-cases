@@ -12,4 +12,4 @@
 
 - [明标 illustrative 的双房间与 oracle 演示解说](https://x.com/i/status/2110783611800522897)
 
-[English](en/rea-clean-room-illustrative-oracles.md) | [返回目录](../README.md)
+[English](en/rea-clean-room-illustrative-oracles.md) | [返回目录](../README.zh-CN.md)

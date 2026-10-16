@@ -12,4 +12,4 @@ Stage: in progress; mobile game unnamed
 
 - [X post from this window](https://x.com/i/status/2109721540245782843)
 
-[中文](../mobile-game-interaction-evidence.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../mobile-game-interaction-evidence.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

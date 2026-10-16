@@ -12,4 +12,4 @@
 
 - [作者失败经历](https://x.com/i/status/2110630792049115198)
 
-[English](en/legacy-binary-agent-api-hallucination.md) | [返回目录](../README.md)
+[English](en/legacy-binary-agent-api-hallucination.md) | [返回目录](../README.zh-CN.md)

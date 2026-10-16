@@ -13,4 +13,4 @@ Original paper submitted 2026-10-10; shared this window; follow-up check only co
 - [Candidate paper-sharing post from this review](https://x.com/i/status/2110600548747530271)
 - [Paper abstract and submission date](https://arxiv.org/abs/2610.14960)
 
-[中文](../humans-machines-sre-study.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../humans-machines-sre-study.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

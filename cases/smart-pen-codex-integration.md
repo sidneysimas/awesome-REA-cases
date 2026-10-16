@@ -13,4 +13,4 @@
 
 - [团队成员报告（X）](https://x.com/i/status/2110108201043775589)
 
-[English](en/smart-pen-codex-integration.md) | [返回目录](../README.md)
+[English](en/smart-pen-codex-integration.md) | [返回目录](../README.zh-CN.md)

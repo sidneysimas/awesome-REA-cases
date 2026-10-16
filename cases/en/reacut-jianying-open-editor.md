@@ -15,4 +15,4 @@ Current candidate is a work-in-progress invitation; October 13 documents are ret
 - [October 13 research boundaries (additional source)](https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/research/REA_FINDINGS.md)
 - [October 13 project-validation records (additional source)](https://github.com/Xiangyu-CAS/rea-capcut/blob/main/docs/VALIDATION.md)
 
-[中文](../reacut-jianying-open-editor.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../reacut-jianying-open-editor.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

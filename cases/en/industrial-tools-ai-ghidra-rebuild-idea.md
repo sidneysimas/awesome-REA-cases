@@ -12,4 +12,4 @@ Suggestion, not a result; model names do not imply actual capabilities.
 
 - [Suggestion with named targets from this window](https://x.com/i/status/2110674628578537633)
 
-[中文](../industrial-tools-ai-ghidra-rebuild-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../industrial-tools-ai-ghidra-rebuild-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

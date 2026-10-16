@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2 likes | 150 views | 0 reposts
 
 - [Secondhand research account and limitations from this review](https://x.com/renmu2017/status/2109581250424123651)
 
-[中文](../sfiii-codescene-refactoring.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../sfiii-codescene-refactoring.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

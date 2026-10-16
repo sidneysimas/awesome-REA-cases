@@ -13,4 +13,4 @@ byeval 回复宝玉的 CapCut 动态字幕分析帖，称自己在 AI 时代之�
 
 - [看本窗口 X 帖](https://x.com/i/status/2109687082558050357)
 
-[English](en/capcut-subtitle-renderer-idea.md) | [返回目录](../README.md)
+[English](en/capcut-subtitle-renderer-idea.md) | [返回目录](../README.zh-CN.md)

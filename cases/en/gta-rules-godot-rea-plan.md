@@ -12,4 +12,4 @@ October 15 candidate snapshot: 4 likes, 24 views; open source is the author's pr
 
 - [Author's rule-research and Godot-reconstruction plan](https://x.com/i/status/2110761379863154777)
 
-[中文](../gta-rules-godot-rea-plan.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../gta-rules-godot-rea-plan.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -13,4 +13,4 @@ Older original post gives an exploratory route; this window adds a third-party d
 - [Author's device-research reply](https://x.com/i/status/2110622119419838752)
 - [This window: account of Binaryify's Xiaomi monitor-control software](https://x.com/i/status/2110657740364529992)
 
-[中文](../hyperos-monitor-ai-research.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../hyperos-monitor-ai-research.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

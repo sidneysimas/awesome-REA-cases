@@ -25,4 +25,4 @@ PR #13项目记录称核查1548个浮点引用，另修正5个函数中12个旧�
 - [9月2日原始问题：自动收集阈值及oracle缺口（本轮追溯）](https://github.com/N0zoM1z0/th08/issues/10)
 - [9月2日已合并修复：全局浮点引用核验（本轮追溯）](https://github.com/N0zoM1z0/th08/pull/13)
 
-[English](en/touhou-reconstruction.md) | [返回目录](../README.md)
+[English](en/touhou-reconstruction.md) | [返回目录](../README.zh-CN.md)

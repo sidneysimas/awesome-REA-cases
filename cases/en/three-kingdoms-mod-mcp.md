@@ -13,4 +13,4 @@ Post mentions REA but does not explicitly confirm its use in this project
 
 - [Author's original post on Romance of the Three Kingdoms XIV editors and MCP](https://x.com/i/status/2109913567428592046)
 
-[中文](../three-kingdoms-mod-mcp.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../three-kingdoms-mod-mcp.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

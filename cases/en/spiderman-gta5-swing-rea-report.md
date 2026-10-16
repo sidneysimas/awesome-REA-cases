@@ -12,4 +12,4 @@ The poster says GTA 5 and Spider-Man were given to REA and Opus 5.5, producing s
 
 - [Swing-reconstruction claims and steps from this window](https://x.com/i/status/2110699414792642732)
 
-[中文](../spiderman-gta5-swing-rea-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../spiderman-gta5-swing-rea-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

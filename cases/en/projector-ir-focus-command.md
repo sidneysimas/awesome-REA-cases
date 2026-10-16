@@ -13,4 +13,4 @@ Successful result is the poster's own report, not independently checked
 
 - [Author's original post on infrared-command inference and testing (account identity unconfirmed in input)](https://x.com/i/status/2110090047579926826)
 
-[中文](../projector-ir-focus-command.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../projector-ir-focus-command.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

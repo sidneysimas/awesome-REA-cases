@@ -12,4 +12,4 @@ October 16 candidate snapshot: 3 likes, 194 views; not run here, with performanc
 
 - [Reported RINGFALL workflow and numerical claims](https://x.com/i/status/2110844188178952423)
 
-[中文](../ringfall-th04-bullet-hell-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../ringfall-th04-bullet-hell-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

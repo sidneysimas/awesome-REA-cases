@@ -13,4 +13,4 @@ Author reports Claude use; REA unconfirmed; implementation and functional equiva
 
 - [Author's original post on Claude-assisted new gameplay (not independently checked)](https://x.com/i/status/2110407024731439392)
 
-[中文](../friday-night-funkin-claude-gameplay.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../friday-night-funkin-claude-gameplay.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

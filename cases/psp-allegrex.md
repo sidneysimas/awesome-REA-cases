@@ -10,4 +10,4 @@ PSP 是索尼的 PlayStation Portable 掌机，使用名为 Allegrex 的处理�
 - [应用需求](https://github.com/morluto/rea/issues/1330)
 - [接入实现](https://github.com/morluto/rea/pull/1599)
 
-[English](en/psp-allegrex.md) | [返回目录](../README.md)
+[English](en/psp-allegrex.md) | [返回目录](../README.zh-CN.md)

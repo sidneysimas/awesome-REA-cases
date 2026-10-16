@@ -26,4 +26,4 @@
 - [往期补审：@xaiwind 的独立入门文章与Claude Desktop实测（非同一UI作者）](https://x.com/i/status/2110529367793393945)
 - [本轮对xaiwind三层模型的转述](https://x.com/i/status/2110627231949266953)
 
-[English](en/claude-desktop-ui-details.md) | [返回目录](../README.md)
+[English](en/claude-desktop-ui-details.md) | [返回目录](../README.zh-CN.md)

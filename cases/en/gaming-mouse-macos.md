@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2 likes | 93 views | 0 reposts
 
 - [Public source from this review](https://x.com/MovingCharts11/status/2109491501013377526)
 
-[中文](../gaming-mouse-macos.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../gaming-mouse-macos.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

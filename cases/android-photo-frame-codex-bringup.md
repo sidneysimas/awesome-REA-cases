@@ -13,4 +13,4 @@ Leonard Volner 报告收到廉价触屏相框后不到10分钟拆开外壳，把
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109785163475591510)
 
-[English](en/android-photo-frame-codex-bringup.md) | [返回目录](../README.md)
+[English](en/android-photo-frame-codex-bringup.md) | [返回目录](../README.zh-CN.md)

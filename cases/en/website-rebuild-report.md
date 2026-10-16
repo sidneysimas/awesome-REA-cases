@@ -10,4 +10,4 @@ goan999999 shared a paid job rebuilding a reference website, reporting a price o
 
 - [Original record](https://x.com/goan999999/status/2109080288823562734)
 
-[中文](../website-rebuild-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../website-rebuild-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

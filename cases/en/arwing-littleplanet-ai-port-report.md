@@ -13,4 +13,4 @@ Boundary: static recompilation is not complete high-level source recovery; not r
 
 - [X post from this window](https://x.com/i/status/2109734599865540661)
 
-[中文](../arwing-littleplanet-ai-port-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../arwing-littleplanet-ai-port-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -20,4 +20,4 @@ Claude Code 是终端中的 AI 编程工具。huangserva 让 Muse 自动安装 R
 - [本窗口：发帖者自述用 REA 检查 Claude Code 语言设置](https://x.com/i/status/2110027278570635457)
 - [10 月 15 日另一作者的 CLI/Desktop 功能研究计划（未实现）](https://x.com/i/status/2110550597527339230)
 
-[English](en/claude-code-analysis.md) | [返回目录](../README.md)
+[English](en/claude-code-analysis.md) | [返回目录](../README.zh-CN.md)

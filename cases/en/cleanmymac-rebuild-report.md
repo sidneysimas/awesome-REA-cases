@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 1 like | 50 views | 0 reposts
 
 - [Third-party report from this review](https://x.com/xiaoshan0413/status/2109540598633877515)
 
-[中文](../cleanmymac-rebuild-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../cleanmymac-rebuild-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

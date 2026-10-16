@@ -13,4 +13,4 @@ REA 使用及修改结果为发帖者自述；无公开代码或独立复测。
 
 - [发帖者关于使用 ChatGPT 与 REA 修改 ChatGPT App 的第一人称报告（未独立验证）](https://x.com/i/status/2110207568090198474)
 
-[English](en/chatgpt-app-gradient-background.md) | [返回目录](../README.md)
+[English](en/chatgpt-app-gradient-background.md) | [返回目录](../README.zh-CN.md)

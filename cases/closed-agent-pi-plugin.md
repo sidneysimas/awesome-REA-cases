@@ -13,4 +13,4 @@
 
 - [作者第一人称报告（X 回复；目标与插件未提供链接）](https://x.com/i/status/2110151664846139425)
 
-[English](en/closed-agent-pi-plugin.md) | [返回目录](../README.md)
+[English](en/closed-agent-pi-plugin.md) | [返回目录](../README.zh-CN.md)

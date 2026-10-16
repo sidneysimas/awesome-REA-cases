@@ -13,4 +13,4 @@
 
 - [作者原帖](https://x.com/i/status/2109840164004737341)
 
-[English](en/gardena-mower-codex.md) | [返回目录](../README.md)
+[English](en/gardena-mower-codex.md) | [返回目录](../README.zh-CN.md)

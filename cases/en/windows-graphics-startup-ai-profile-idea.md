@@ -13,4 +13,4 @@ Suggestion comes from the respondent; bottleneck observations come from the orig
 - [Agent reverse-engineering/profiling suggestion from this window](https://x.com/i/status/2110701870826328360)
 - [Earlier parent post: specific startup bottlenecks (additional background)](https://x.com/i/status/2110588092696739937)
 
-[中文](../windows-graphics-startup-ai-profile-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../windows-graphics-startup-ai-profile-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

@@ -12,4 +12,4 @@
 
 - [作者的 H1Z1 研究与 MMO 进展回复](https://x.com/i/status/2110784230687125852)
 
-[English](en/h1z1-ai-mmo-research.md) | [返回目录](../README.md)
+[English](en/h1z1-ai-mmo-research.md) | [返回目录](../README.zh-CN.md)

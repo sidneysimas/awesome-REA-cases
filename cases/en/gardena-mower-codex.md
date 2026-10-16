@@ -13,4 +13,4 @@ Firmware work remains in progress; REA use unconfirmed
 
 - [Author's original post](https://x.com/i/status/2109840164004737341)
 
-[中文](../gardena-mower-codex.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../gardena-mower-codex.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

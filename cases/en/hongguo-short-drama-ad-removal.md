@@ -15,4 +15,4 @@ REA use explicitly reported by the poster; identity, process and code not checke
 
 - [Poster's first-person account of using REA on Hongguo short dramas to remove ads and floating windows; effects not independently checked](https://x.com/i/status/2110320554049941661)
 
-[中文](../hongguo-short-drama-ad-removal.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../hongguo-short-drama-ad-removal.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

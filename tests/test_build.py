@@ -75,7 +75,7 @@ class CollectionTests(unittest.TestCase):
                     self.assertIn(f"Stage: {build.STATUS_EN[r['status']]}", english)
                 self.assertIn(f"[中文](../{r['id']}.md)", english)
                 self.assertIn(f"[English](en/{r['id']}.md)", chinese)
-                self.assertIn('[Back to editor picks](../../README.en.md)', english)
+                self.assertIn('[Back to editor picks](../../README.md)', english)
                 self.assertIn('[Full index](../../INDEX.en.md)', english)
                 self.assertIn(f"](../../categories/en/{r['category']}.md)", english)
                 for note in r['en']['metadata']:
@@ -90,6 +90,35 @@ class CollectionTests(unittest.TestCase):
             self.assertIn(f"](categories/en/{slug}.md)", outputs['INDEX.en.md'])
             self.assertIn(f"](../{slug}.md)", outputs[f'categories/en/{slug}.md'])
             self.assertIn(f"](en/{slug}.md)", outputs[f'categories/{slug}.md'])
+
+    def test_canonical_home_navigation_in_both_languages(self):
+        outputs = build.render(self.records)
+        self.assertTrue({'README.md', 'README.zh-CN.md', 'README.en.md'}.isdisjoint(outputs))
+        self.assertIn('[精选首页](README.zh-CN.md)', outputs['INDEX.md'])
+        self.assertIn('[Editor picks](README.md)', outputs['INDEX.en.md'])
+        for r in self.records:
+            self.assertIn('[返回目录](../README.zh-CN.md)', outputs[f"cases/{r['id']}.md"])
+            self.assertIn('[Back to editor picks](../../README.md)', outputs[f"cases/en/{r['id']}.md"])
+        for slug in build.CATEGORIES:
+            self.assertIn('[返回主目录](../README.zh-CN.md)', outputs[f'categories/{slug}.md'])
+            self.assertIn('[Editor picks](../../README.md)', outputs[f'categories/en/{slug}.md'])
+        for text in outputs.values():
+            self.assertNotIn('README.en.md', text)
+
+    def test_canonical_home_switches_and_static_legacy_entry(self):
+        english = (ROOT / 'README.md').read_text()
+        chinese = (ROOT / 'README.zh-CN.md').read_text()
+        legacy = (ROOT / 'README.en.md').read_text()
+        self.assertIn('**English (default)** | [简体中文](README.zh-CN.md)', english)
+        self.assertIn('[English](README.md) | **简体中文**', chinese)
+        self.assertIn('[English](README.md)', legacy)
+        self.assertIn('[简体中文](README.zh-CN.md)', legacy)
+        self.assertLess(len(legacy.splitlines()), 12)
+        self.assertNotIn('cases/', legacy)
+        self.assertNotIn('categories/', legacy)
+        for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', chinese):
+            if target.startswith(('cases/', 'categories/')):
+                self.assertNotIn('/en/', target)
 
     def test_incomplete_english_rejected(self):
         for key, value in [('description', ''), ('description', None),
@@ -114,7 +143,7 @@ class CollectionTests(unittest.TestCase):
                 build.validate(records)
 
     def test_english_homepage_links_to_english_reading_path(self):
-        text = (ROOT / 'README.en.md').read_text()
+        text = (ROOT / 'README.md').read_text()
         for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
             if target.startswith('cases/'):
                 self.assertTrue(target.startswith('cases/en/'), target)

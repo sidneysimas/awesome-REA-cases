@@ -16,4 +16,4 @@ Two candidates have 1 like each and are the main and follow-up posts of the same
 - [Long post this review: Framework and Electron sample tests](https://x.com/i/status/2110563764886266167)
 - [Follow-up this review: Trap.dll and assembly-change comparison](https://x.com/i/status/2110565455039799441)
 
-[中文](../rea-640-windows-managed-electron-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-640-windows-managed-electron-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

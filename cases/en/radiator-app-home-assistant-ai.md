@@ -12,4 +12,4 @@ REA unconfirmed; no independent device acceptance.
 
 - [Author's interoperability report from this window](https://x.com/i/status/2110651982323310818)
 
-[中文](../radiator-app-home-assistant-ai.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../radiator-app-home-assistant-ai.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

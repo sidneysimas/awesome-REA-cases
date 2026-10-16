@@ -14,4 +14,4 @@ Obiri 以“Manychat Reverse engineered + AI Setter”分享 OpenSetter。Manych
 - [本周期作者发布](https://x.com/xbirimensah/status/2109571298020274530)
 - [项目与 AI 流程说明](https://github.com/xbirimensah/opensetter)
 
-[English](en/opensetter-manychat-rebuild.md) | [返回目录](../README.md)
+[English](en/opensetter-manychat-rebuild.md) | [返回目录](../README.zh-CN.md)

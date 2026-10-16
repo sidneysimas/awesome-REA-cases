@@ -13,4 +13,4 @@ REA use unconfirmed; poster identity, implementation and results not independent
 
 - [Poster's first-person report of reverse-engineering Ray-Ban Meta communication and making an Android alternative (not independently checked)](https://x.com/i/status/2110224031794241676)
 
-[中文](../rayban-meta-claude-android.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../rayban-meta-claude-android.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

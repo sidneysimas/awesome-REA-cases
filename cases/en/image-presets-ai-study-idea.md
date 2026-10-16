@@ -12,4 +12,4 @@ Software unnamed; analysis not started or completed; REA unconfirmed.
 
 - [Author's research idea and licensing question from this window](https://x.com/i/status/2110696662222127398)
 
-[中文](../image-presets-ai-study-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../image-presets-ai-study-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

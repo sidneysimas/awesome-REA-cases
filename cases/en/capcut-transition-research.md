@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 3 views | 0 reposts
 
 - [Research discussion from this review](https://x.com/fireandstart/status/2109554617004466397)
 
-[中文](../capcut-transition-research.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../capcut-transition-research.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

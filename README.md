@@ -1,51 +1,51 @@
 # Awesome REA Cases
 
-**中文（默认）** | [English](README.en.md)
+**English (default)** | [简体中文](README.zh-CN.md)
 
-**用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
+**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 
-当前收录 **264 个案例与项目**。*最近维护与案例数统计：2026 年 10 月 16 日 08:05；连续已解决材料的案例证据截止：2026 年 10 月 15 日 16:00（北京时间）。*
+Currently **264 cases and projects**. *Last maintained and counted: October 16, 2026, 08:05; continuous resolved-material case-evidence cutoff: October 15, 2026, 16:00 Beijing time (UTC+8).*
 
-每天 6 次定时追踪 REA 与 AI 逆向公开案例，筛选、去重并更新。本次逐条审读 10 月 16 日 04:00 至 08:00（北京时间，起点不含、终点含）的 126 条候选，另补审 9 条往期材料，新增 12 个项目、作者报告与具体 idea，并为既有 Grok Build、Bloomberg 风格终端追加不同作者的观察。扫描仪与笔记本相机的线索补到作者原文、测量页和工具说明，同时解决一条往期新闻；Electron 小样本测试则保留准确率之外的输出体积代价。功能、性能与费用仍按来源归因，未核验不写成复现成功。仍有 16 条材料待核实，其中 8 条来自往期，最早窗口始于 10 月 15 日 16:00，因此连续证据截止不推进，可判断的较新项目照常收录。检索受关键词与分页边界限制，不代表全网全量；证据截止也不表示所有项目已独立验证。首页由维护者亲自阅读与选编，完整收录见[全部案例](INDEX.md)。
+Public REA and AI reverse-engineering cases are tracked six times daily, screened and deduplicated. This review reads all 126 candidates from October 16, 04:00 to 08:00 Beijing time (start exclusive, end inclusive), plus nine previously unresolved sources. It adds 12 projects, author reports and concrete ideas, and appends separate authors' observations to the existing Grok Build and Bloomberg-style terminal entries. Scanner and laptop-camera leads now reach the original article, measurements and tooling documentation, also resolving an older news source. An Electron sample test records output volume as well as accuracy. Features, performance and costs remain attributed claims, not independent reproductions. Sixteen sources still need clarification, including eight older ones; the earliest window starts October 15 at 16:00, so the continuous evidence cutoff stays there while assessable newer projects are included. Keyword and pagination limits make this a bounded search, not exhaustive coverage. The cutoff does not imply independent validation of every project. The maintainer reads and edits this homepage; the [complete index](INDEX.en.md) contains every accepted entry.
 
-[REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向工具。本合集也收录其他 AI 辅助逆向，以及为 AI 工具实现互通的项目。
+[REA](https://github.com/morluto/rea), Reverse Engineer Anything, lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also covers other AI-assisted work and interoperability projects for AI tools.
 
-## 近期精选 Top 10
+## Recent picks: Top 10
 
-综合近期传播热度、具体用途和阅读价值手工挑选，不是实时排行榜。以下热度为 2026 年 10 月 12–16 日各来源的记录快照，不是当前实时数据；条目日期为来源发帖日期，热度不代表成果已被验证。
+Manually selected for recent attention, concrete use, and reading value—not a live leaderboard. Engagement figures are source-specific snapshots collected October 12–16, 2026, not live counts or proof of verified results. Dates below refer to source posts.
 
-1. **[底片与相机：给 Claude 一个能对照的 Windows 参考](cases/schaller-opticfilm-thinkpad-linux.md)** — Schaller 从家人旧底片出发，用 USB 抓包研究新版 Plustek 8200i，再改善 ThinkPad MIPI 相机。公开测量也写清单机样本、低光蓝色不足与未修复曝光问题；补丁送审不等于合并。**10/16 转述 · 10/15 原文补证 · 其他 AI 逆向 · 作者与项目报告。**
-2. **[ReaCut：不止画界面，也公开导出与验证边界](cases/reacut-jianying-open-editor.md)** — 从剪映本地行为研究走向独立编辑器，项目记录包含真实视频导出与插件测试；同时明示未公证、跨平台与 CI 限制。**10/15 · REA · 进行中；验收为项目报告。**
-3. **[LASRecomp：把 Switch《织梦岛》带到电脑](cases/links-awakening-claude-pc-port-report.md)** — 公开项目自述几乎由 Claude Code 完成，需自备原作；beta 文档也列出特定操作崩溃、Linux ARM 未实测等问题。**10/15 · 此前转述快照 144 赞 · 其他 AI 逆向 · 未独立运行。**
-4. **[读板仪：先研究通信，再谈“修好了”](cases/plate-reader-filter-wheel-claude-repair.md)** — 滤光轮机械与光学检查正常，却卡在开机自检。作者称 Claude 找到通信方法、重置固件并建立监测；设备型号、命令与临床质量验收仍缺。**10/15 · 其他 AI 辅助研究 · 作者报告，不是医疗设备安全认证。**
-5. **[ScanSnap iX500：系统升级后，旧扫描仪不退休](cases/scansnap-ix500-claude-mac.md)** — 官方 Mac 应用失效后，Jonas Wagner 称用 Claude Code 做出 Wi-Fi 扫描、实体按钮、OCR 和空白页处理；未公布可核对的协议过程。**10/15 · 2 赞 · 其他 AI 逆向 · 作者报告，未独立验收。**
-6. **[KEF LSX II：修好桌面音箱的音量键体验](cases/kef-lsx-ii-volume-fixer.md)** — Claude 辅助做 USB 音频透传与局域网音量桥，不改签名固件；测量曲线和约 2 ms 附加延迟均为作者报告。**10/15 · 其他 AI 辅助互通 · 有公开实现。**
-7. **[飞书：两个账号，不再来回切换](cases/feishu-dual-instance-codex-rea.md)** — Codex + REA 分析后，作者报告在副本中隔离数据与单实例锁，并做签名和目录检查；本地签名、关闭更新仍有维护风险。**10/15 · REA · 作者实测，非独立复现。**
-8. **[东方 TH08：字节匹配，也可能漏掉错误常量](cases/touhou-reconstruction.md)** — 10 月 15 日的提醒追溯到 9 月 2 日原始 issue 与修复：指令引用的地址匹配了，数据却把 128.0 写成 0.0；项目随后补上浮点引用核验。**10/15 分享 · 历史修复补证 · 项目测试，非本合集重跑。**
-9. **[Electron Notes：答案表全对，输出却大了很多](cases/rea-electron-notes-ipc-answer-key-test.md)** — 三次静态分析识别 4/4 通道、handler 与 preload 成员；作者也指出 2.3 KB 源码产生 1.0 MB JSON。只证明这次小样本观察，不是所有 Electron 的准确率保证。**10/16 · REA · 作者分析测试，未独立复跑。**
-10. **[400 ms 这条线：把 REA 解释落到边界测试](cases/rea-js-stale-price-boundary-demo.md)** — 自制 JS 模块里，400 ms 仍通过、401 ms 才拦截。作者区分静态定位与本地检查，明说是剪辑演示、没有 Claude 现场会话，也不下单。**10/15 · REA · 作者报告的分析测试，非本合集复跑。**
+1. **[Negatives and cameras: give Claude a Windows reference to compare](cases/en/schaller-opticfilm-thinkpad-linux.md)** — Starting with family negatives, Schaller captures USB behavior for a newer Plustek 8200i, then improves a ThinkPad MIPI camera. Published measurements disclose the single-device sample, a low-light blue deficit and unresolved exposure issues. Patch review is not upstream merging. **Reported Oct 16 · Oct 15 original read as supplementary evidence · Other AI-assisted work · Author/project reports.**
+2. **[ReaCut: an editor with explicit export and validation boundaries](cases/en/reacut-jianying-open-editor.md)** — Jianying research informs an independent editor. Project records describe real video exports and plugin tests while documenting signing, platform and CI limitations. **Oct 15 · REA · In progress; project-reported validation.**
+3. **[LASRecomp: Switch Link's Awakening on desktop](cases/en/links-awakening-claude-pc-port-report.md)** — The public project credits Claude Code with most work and requires the user's original game. Its beta documentation lists crash triggers and untested Linux ARM support. **Oct 15 · Secondary post: 144 likes · Other AI-assisted work · Not run here.**
+4. **[A plate reader: investigate communication before declaring a repair](cases/en/plate-reader-filter-wheel-claude-repair.md)** — A filter wheel passed mechanical and optical checks but failed startup QC. The author says Claude worked out communication, reset firmware and added monitoring; device details, commands and clinical validation are absent. **Oct 15 · Other AI-assisted work · Author report, not medical-device safety certification.**
+5. **[ScanSnap iX500: an OS upgrade need not retire the scanner](cases/en/scansnap-ix500-claude-mac.md)** — After the official Mac app stopped working, Jonas Wagner reports a Claude-built replacement with Wi-Fi scanning, the hardware button, OCR and blank-page handling. Protocol details are not supplied. **Oct 15 · 2 likes · Other AI-assisted work · Author report, not independently tested.**
+6. **[KEF LSX II: volume keys that work better at a desk](cases/en/kef-lsx-ii-volume-fixer.md)** — A Claude-assisted USB passthrough and LAN volume bridge avoids patching signed firmware. The volume curve and roughly 2 ms added latency are author measurements. **Oct 15 · AI-assisted interoperability · Public implementation.**
+7. **[Feishu: two accounts without constant switching](cases/en/feishu-dual-instance-codex-rea.md)** — After Codex/REA research, the author reports isolating a second copy's data and single-instance lock, with signature and directory checks. Local signing and disabled updates carry maintenance risks. **Oct 15 · REA · Author-tested, not independently reproduced.**
+8. **[Touhou TH08: matching bytes can still miss a wrong constant](cases/en/touhou-reconstruction.md)** — An October 15 warning leads back to a September 2 issue and fix: instruction addresses matched while referenced data used 0.0 instead of 128.0. The project added floating-literal verification. **Shared Oct 15 · Historical repair evidence · Project tests, not rerun here.**
+9. **[Electron Notes: the answer key matches, but the output grows](cases/en/rea-electron-notes-ipc-answer-key-test.md)** — Three static runs identify 4/4 channels, handlers and preload members. The author also reports 1.0 MB of JSON from 2.3 KB of source. This small-sample observation is not an accuracy guarantee for all Electron apps. **Oct 16 · REA · Author's analysis test, not independently rerun.**
+10. **[The 400 ms line: turn an REA explanation into a boundary check](cases/en/rea-js-stale-price-boundary-demo.md)** — A self-made JS module passes at 400 ms and blocks at 401 ms. The author distinguishes static tracing from local checks and labels the video as edited CLI results, not a live Claude session or order submission. **Oct 15 · REA · Author-reported analysis test, not rerun here.**
 
-### 经典案例
+### Classic cases
 
-- **[Universal Modder](cases/universal-modder.md)** — 分析引擎与素材格式，把 Minecraft 内容放进 GTA V 等游戏；记录快照 **14,340 赞**。`其他 AI 逆向`
-- **[Firefighter：从 DOS 二进制到 Rust](cases/firefighter-rust.md)** — 作者报告恢复 Pascal 逻辑，再转写为可维护的 Rust 代码；记录快照 **7,833 赞**。`其他 AI 逆向`
-- **[《现代战争 2》：多 Agent 重建代码](cases/mw2-decompilation.md)** — 作者报告 17 个 Agent 协作三个月，83% 函数字节级匹配；代码未公开，未独立复现。`其他 AI 逆向`
-- **[智能马桶：从小程序协议到 Mac 状态栏](cases/smart-toilet.md)** — 分析蓝牙通信，控制翻盖；作者后来报告扩展到家中其他设备。`REA · 作者报告`
-- **[Apple TV 遥控器接入 Linux](cases/siri-remote-linux.md)** — 蓝牙协议互通与公开实现；记录快照 **5,419 赞**。`未确认 REA`
-- **[LG PlxNative](cases/lg-plxnative.md)** — 研究原生媒体栈，作者报告用户选择从约 30 秒到 3 秒；记录快照 **7,268 赞**。`其他 AI 逆向`
+- **[Universal Modder](cases/en/universal-modder.md)** — Investigate engines and asset formats to bring Minecraft content into GTA V and other games; recorded snapshot: **14,340 likes**. `Other AI-assisted work`
+- **[Firefighter: DOS binary to Rust](cases/en/firefighter-rust.md)** — Recover Pascal logic and rewrite maintainable Rust, according to the author; recorded snapshot: **7,833 likes**. `Other AI-assisted work`
+- **[Modern Warfare 2: multi-agent reconstruction](cases/en/mw2-decompilation.md)** — The author reports 17 agents, three months, and byte-level matches for 83% of functions; code is not public and has not been independently reproduced here. `Other AI-assisted work`
+- **[Smart toilet from the Mac menu bar](cases/en/smart-toilet.md)** — Investigate Bluetooth communication for lid control; the author later reports extending the app to other home devices. `REA · Author-reported`
+- **[An Apple TV remote on Linux](cases/en/siri-remote-linux.md)** — Bluetooth interoperability with a public implementation; recorded snapshot: **5,419 likes**. `REA unconfirmed`
+- **[LG PlxNative](cases/en/lg-plxnative.md)** — Investigate the native media stack; the author reports user selection falling from about 30 seconds to 3 seconds. Recorded snapshot: **7,268 likes**. `Other AI-assisted work`
 
-## 目录
+## Contents
 
-- [游戏与游戏保存](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/games.md)（61）
-- [硬件与设备互通](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/hardware.md)（62）
-- [应用与客户端](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/apps.md)（118）
-- [算法与功能重建](https://github.com/songshikang0111/awesome-REA-cases/blob/main/categories/algorithms.md)（23）
-- [贡献案例](https://github.com/songshikang0111/awesome-REA-cases/blob/main/CONTRIBUTING.md) · [维护方法](https://github.com/songshikang0111/awesome-REA-cases/blob/main/MAINTENANCE.md)
+- [Games and preservation](categories/en/games.md) (61)
+- [Hardware and interoperability](categories/en/hardware.md) (62)
+- [Applications and clients](categories/en/apps.md) (118)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (23)
+- [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
-分类页保留全部通过筛选的案例、进行中的项目和具体 idea；首页不展开全量清单。`待验证`、`进行中`、`分析测试`、`相关项目`不是已完成或已独立验证的成果。
+Category pages contain every accepted case, ongoing project, and concrete idea; the homepage does not expand the full listing. Labels such as Needs verification, In progress, Analysis test, and Related project do not indicate completed or independently verified results. Case details and category pages are available in English, with reciprocal Chinese links. Contribution and maintenance guides are in Chinese.
 
-## 说明与许可
+## Scope and license
 
-非 REA 官方项目。内容据作者与项目记录整理，未由本合集独立复现。仅提供原创摘要与公开链接，不分发原软件、游戏资产、密钥或私人材料。
+Unofficial collection. Results are attributed to authors and project records, not independently reproduced here. Only original summaries and public links are curated; no proprietary software, game assets, keys, or private material are distributed.
 
-原创摘要、数据整理与代码采用 [MIT License](LICENSE)；链接内容保留各自权利，研究或复现前请确认相应授权。
+Original summaries, curation data, and code use the [MIT License](LICENSE). Linked content retains its own rights. Ensure appropriate authorization before investigating or reproducing it.

@@ -12,4 +12,4 @@ Third-party recommendation summary; original test target and quantitative data a
 
 - [Zenn official account's test-article recommendation summary this review](https://x.com/i/status/2110558521209356397)
 
-[中文](../rea-claude-isolated-ab-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-claude-isolated-ab-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

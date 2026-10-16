@@ -12,4 +12,4 @@ Urban Terror 是基于 Quake III 系技术的多人射击游戏。levelsio 此�
 
 - [看 X 热门帖](https://x.com/levelsio/status/2106150888289009666)
 
-[English](en/urban-terror-web.md) | [返回目录](../README.md)
+[English](en/urban-terror-web.md) | [返回目录](../README.zh-CN.md)

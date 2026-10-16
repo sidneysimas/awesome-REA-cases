@@ -12,4 +12,4 @@ Concrete idea, not an already available Linux alternative.
 
 - [Software-preservation suggestion from this window](https://x.com/i/status/2110686539571478745)
 
-[中文](../lotus-smartsuite-linux-revival-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../lotus-smartsuite-linux-revival-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

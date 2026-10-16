@@ -13,4 +13,4 @@ Screen Studio 是桌面录屏与演示制作工具。作者称自己用 REA 拆�
 
 - [作者关于 REA 分析与复刻的原帖](https://x.com/i/status/2109843188341207283)
 
-[English](en/screen-studio-rebuild.md) | [返回目录](../README.md)
+[English](en/screen-studio-rebuild.md) | [返回目录](../README.zh-CN.md)

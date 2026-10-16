@@ -23,4 +23,4 @@ PR #13's project records report checking 1,548 floating-point references, correc
 - [September 2 original issue: auto-collection threshold and oracle gap (traced this review)](https://github.com/N0zoM1z0/th08/issues/10)
 - [September 2 merged fix: global floating-point reference verification (traced this review)](https://github.com/N0zoM1z0/th08/pull/13)
 
-[中文](../touhou-reconstruction.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../touhou-reconstruction.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

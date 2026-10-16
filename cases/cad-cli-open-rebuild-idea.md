@@ -13,4 +13,4 @@ hypersonicholas 提议用 AI 反编译 SolidWorks、Creo 与 Autodesk 系列 CAD
 
 - [本周期作者报告](https://x.com/i/status/2109674230392713569)
 
-[English](en/cad-cli-open-rebuild-idea.md) | [返回目录](../README.md)
+[English](en/cad-cli-open-rebuild-idea.md) | [返回目录](../README.zh-CN.md)

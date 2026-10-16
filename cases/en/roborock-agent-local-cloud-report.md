@@ -12,4 +12,4 @@ October 15 reply; brief account only, REA unconfirmed, not independently verifie
 
 - [Roborock lead in this window's multi-project brief](https://x.com/i/status/2110741945874350429)
 
-[中文](../roborock-agent-local-cloud-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../roborock-agent-local-cloud-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

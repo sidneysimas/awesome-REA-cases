@@ -13,4 +13,4 @@
 - [作者项目介绍](https://x.com/i/status/2110631522403512760)
 - [候选串中的配置和行为说明](https://x.com/i/status/2110631530683068722)
 
-[English](en/codex-pi-next-hint.md) | [返回目录](../README.md)
+[English](en/codex-pi-next-hint.md) | [返回目录](../README.zh-CN.md)

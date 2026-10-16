@@ -12,4 +12,4 @@ October 15 source; tool and video names follow the original; asset authorization
 
 - [Rust Duty author's progress and non-decompilation boundary](https://x.com/i/status/2110752844328419587)
 
-[中文](../rust-duty-video-gameplay-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../rust-duty-video-gameplay-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

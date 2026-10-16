@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 241 views; device model and implementatio
 
 - [Author's account of old-phone firmware running in Wasm](https://x.com/i/status/2110765881768747173)
 
-[中文](../old-phone-oem-firmware-wasm.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../old-phone-oem-firmware-wasm.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

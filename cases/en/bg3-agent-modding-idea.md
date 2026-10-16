@@ -12,4 +12,4 @@ Exploratory idea without implementation; REA use unconfirmed.
 
 - [BG3 modification idea and difficulty question from this review](https://x.com/i/status/2110581317889057031)
 
-[中文](../bg3-agent-modding-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../bg3-agent-modding-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

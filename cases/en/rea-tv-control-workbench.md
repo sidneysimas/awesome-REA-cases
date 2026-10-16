@@ -13,4 +13,4 @@ Evidence boundary: author report; device model, implementation details and retes
 
 - [Author's original post on TV reverse engineering and control features](https://x.com/i/status/2109842197654692349)
 
-[中文](../rea-tv-control-workbench.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../rea-tv-control-workbench.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

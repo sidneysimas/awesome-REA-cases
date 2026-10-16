@@ -12,4 +12,4 @@ Original post dated October 15; REA unconfirmed and no public repository locatio
 
 - [idx-core and Claude research suggestion](https://x.com/i/status/2110735275358027901)
 
-[中文](../idx-core-ai-data-inspection-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../idx-core-ai-data-inspection-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -13,4 +13,4 @@
 - [本轮作者长文](https://x.com/i/status/2110601137707729071)
 - [作者原始博客与实验版本](https://benx.ai/blog/posts/rea-reverse-engineer-feishu-dual-instance/)
 
-[English](en/feishu-dual-instance-codex-rea.md) | [返回目录](../README.md)
+[English](en/feishu-dual-instance-codex-rea.md) | [返回目录](../README.zh-CN.md)

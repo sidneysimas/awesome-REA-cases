@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 31 views | 0 reposts
 
 - [Author's progress report from this review](https://x.com/hbyxabc/status/2109583911483519202)
 
-[中文](../kindle-android-weread.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../kindle-android-weread.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

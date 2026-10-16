@@ -14,4 +14,4 @@ ComfyUI 宣布一个为期两周、总计25,000美元奖品的开源构建活动
 - [背景：ComfyUI 开源构建活动](https://x.com/i/status/2110870071933645103)
 - [Grok 的观察与工作流建议（非执行结果）](https://x.com/i/status/2110877124223496596)
 
-[English](en/higgsfield-comfy-rea-open-source-idea.md) | [返回目录](../README.md)
+[English](en/higgsfield-comfy-rea-open-source-idea.md) | [返回目录](../README.zh-CN.md)

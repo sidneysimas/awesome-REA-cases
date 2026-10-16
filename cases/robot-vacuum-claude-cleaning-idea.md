@@ -13,4 +13,4 @@ Joe（LuckyJoe198x）先在回复中提出逆向自己的扫地机器人，让Cl
 - [Joe 提出用 Claude 替代清扫程序](https://x.com/i/status/2110803296571310205)
 - [同作者补充脏区、角落与坡度策略设想](https://x.com/i/status/2110806568673632539)
 
-[English](en/robot-vacuum-claude-cleaning-idea.md) | [返回目录](../README.md)
+[English](en/robot-vacuum-claude-cleaning-idea.md) | [返回目录](../README.zh-CN.md)

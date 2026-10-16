@@ -12,4 +12,4 @@ Posted: October 8 | Not REA
 
 - [Popular X post](https://x.com/luchoalfonso_/status/2108200739495362718)
 
-[中文](../tuya-rgb-mac.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../tuya-rgb-mac.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

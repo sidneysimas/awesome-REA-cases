@@ -13,4 +13,4 @@ Hermes Agent 是开源 AI Agent 框架，harness 指负责工具、执行与会�
 
 - [本周期作者报告](https://x.com/pablothethinker/status/2109509759044854087)
 
-[English](en/hermes-hark-harness.md) | [返回目录](../README.md)
+[English](en/hermes-hark-harness.md) | [返回目录](../README.zh-CN.md)

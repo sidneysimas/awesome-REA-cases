@@ -13,4 +13,4 @@ Binaryify（@binaryify）在如何用AI研究显示器的讨论中，建议先�
 - [作者设备研究回复](https://x.com/i/status/2110622119419838752)
 - [本窗口Binaryify小米显示器控制软件转述](https://x.com/i/status/2110657740364529992)
 
-[English](en/hyperos-monitor-ai-research.md) | [返回目录](../README.md)
+[English](en/hyperos-monitor-ai-research.md) | [返回目录](../README.zh-CN.md)

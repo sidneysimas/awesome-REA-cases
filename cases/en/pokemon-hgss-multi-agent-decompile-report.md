@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 22 views; roughly 71 billion tokens, one 
 
 - [Secondhand HeartGold/SoulSilver multi-agent, token and hypothetical-cost report](https://x.com/i/status/2110816115718824296)
 
-[中文](../pokemon-hgss-multi-agent-decompile-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../pokemon-hgss-multi-agent-decompile-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

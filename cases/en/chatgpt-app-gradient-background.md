@@ -13,4 +13,4 @@ REA use and modification result are poster-reported; no public code or independe
 
 - [Poster's first-person report of modifying the ChatGPT app with ChatGPT and REA (not independently verified)](https://x.com/i/status/2110207568090198474)
 
-[中文](../chatgpt-app-gradient-background.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../chatgpt-app-gradient-background.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -1,6 +1,6 @@
 # Hardware and interoperability
 
-[Editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [中文](../hardware.md)
+[Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../hardware.md)
 
 - [Siri Remote on Linux](../../cases/en/siri-remote-linux.md) — Decode the Bluetooth protocol to use an Apple TV remote on Linux. **[REA use unconfirmed]**
 - [Tuya RGB lights from a Mac](../../cases/en/tuya-rgb-mac.md) — Analyze phone Bluetooth traffic and directly control lights with a script. **[Other AI-assisted work]**

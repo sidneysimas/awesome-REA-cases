@@ -13,4 +13,4 @@ Evidence boundary: REA use, reverse engineering and plugin development are all a
 
 - [Author's first-person report (X reply; no target or plugin links)](https://x.com/i/status/2110151664846139425)
 
-[中文](../closed-agent-pi-plugin.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../closed-agent-pi-plugin.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

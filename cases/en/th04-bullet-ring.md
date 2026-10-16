@@ -10,4 +10,4 @@ TH04 is Touhou Gensokyo, a bullet-hell shooter in the Touhou Project series orig
 - [Case PR](https://github.com/morluto/rea/pull/970)
 - [Evidence record](https://github.com/morluto/rea/blob/main/website/evidence/th04-bullet-ring.md)
 
-[中文](../th04-bullet-ring.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../th04-bullet-ring.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

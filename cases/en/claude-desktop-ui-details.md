@@ -26,4 +26,4 @@ A 12:00–16:00 candidate recounts xaiwind's Electron/Bridge/Web three-layer mod
 - [Follow-up review of earlier window: @xaiwind's separate introductory article and Claude Desktop test (different from UI author)](https://x.com/i/status/2110529367793393945)
 - [This review's retelling of xaiwind's three-layer model](https://x.com/i/status/2110627231949266953)
 
-[中文](../claude-desktop-ui-details.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../claude-desktop-ui-details.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

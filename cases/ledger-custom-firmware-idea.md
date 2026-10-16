@@ -14,4 +14,4 @@ Ledger 目标来自 xreach 补读回复上文；型号未知。
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109743903863701561)
 
-[English](en/ledger-custom-firmware-idea.md) | [返回目录](../README.md)
+[English](en/ledger-custom-firmware-idea.md) | [返回目录](../README.zh-CN.md)

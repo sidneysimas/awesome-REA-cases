@@ -12,4 +12,4 @@ mal0r1key 描述名为 RINGFALL 的浏览器弹幕游戏：先让 REA 驱动 Ghi
 
 - [RINGFALL 制作流程与数值转述](https://x.com/i/status/2110844188178952423)
 
-[English](en/ringfall-th04-bullet-hell-report.md) | [返回目录](../README.md)
+[English](en/ringfall-th04-bullet-hell-report.md) | [返回目录](../README.zh-CN.md)

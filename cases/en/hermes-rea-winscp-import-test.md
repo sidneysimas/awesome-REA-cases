@@ -13,4 +13,4 @@ Both sources dated October 15; 663 seconds is a recounted project test, not timi
 - [Initial plugin and WinSCP-test introduction](https://x.com/i/status/2110738801660219869)
 - [Later explanation: v0.22.2 timeout-key restriction](https://x.com/i/status/2110758099866771894)
 
-[中文](../hermes-rea-winscp-import-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../hermes-rea-winscp-import-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

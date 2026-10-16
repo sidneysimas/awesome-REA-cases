@@ -14,4 +14,4 @@ October 16 candidate snapshot: 0 likes, 264 views; half a day, five cents, one d
 
 - [Greenlight trilingual build log 5-6: fields and invalid-value probes](https://x.com/i/status/2110868326528303367)
 
-[中文](../greenlight-video-api-field-probing.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../greenlight-video-api-field-probing.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

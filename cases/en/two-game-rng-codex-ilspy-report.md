@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 34 views; games unnamed and accuracy unv
 
 - [Author's reply on two games' RNG and Codex/ILSpy use](https://x.com/i/status/2110817897706582486)
 
-[中文](../two-game-rng-codex-ilspy-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../two-game-rng-codex-ilspy-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

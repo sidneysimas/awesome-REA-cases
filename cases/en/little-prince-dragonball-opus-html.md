@@ -12,4 +12,4 @@ Original post: October 15, 20:44; candidate snapshot: 78 likes, 11,649 views, 7 
 
 - [Author's reconstruction report and HTML-download entry point](https://x.com/i/status/2110713533193453572)
 
-[中文](../little-prince-dragonball-opus-html.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../little-prince-dragonball-opus-html.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

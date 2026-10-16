@@ -13,4 +13,4 @@ web3渔夫 因自己使用的代理服务隐藏了订阅入口，无法继续用
 
 - [本周期作者回顾](https://x.com/web3_fising/status/2109601382273880327)
 
-[English](en/proxy-clash-subscription-bridge.md) | [返回目录](../README.md)
+[English](en/proxy-clash-subscription-bridge.md) | [返回目录](../README.zh-CN.md)

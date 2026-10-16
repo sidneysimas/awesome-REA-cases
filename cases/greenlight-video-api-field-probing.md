@@ -14,4 +14,4 @@ Greenlight 构建记5-6讲述为一款未具名、预览阶段的影片模型接
 
 - [Greenlight 三语构建记录5-6：参数与非法值探测](https://x.com/i/status/2110868326528303367)
 
-[English](en/greenlight-video-api-field-probing.md) | [返回目录](../README.md)
+[English](en/greenlight-video-api-field-probing.md) | [返回目录](../README.zh-CN.md)

@@ -1,6 +1,6 @@
 # 硬件与设备互通
 
-[返回主目录](../README.md) | [English](en/hardware.md)
+[返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
 - [Apple TV 遥控器：让专用配件在 Linux 上工作](../cases/siri-remote-linux.md) — 解析蓝牙协议，让 Apple TV 遥控器接入 Linux。 **[未确认使用 REA]**
 - [涂鸦 RGB 灯：绕开厂商 App，直接从 Mac 控灯](../cases/tuya-rgb-mac.md) — 分析手机蓝牙控灯数据，用 Mac 脚本直接控灯。 **[其他 AI 逆向]**

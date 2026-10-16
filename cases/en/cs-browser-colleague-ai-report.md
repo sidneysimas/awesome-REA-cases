@@ -12,4 +12,4 @@ October 15 candidate snapshot: 2 likes, 280 views; REA unconfirmed and not indep
 
 - [Author's account of a colleague's AI browser game](https://x.com/i/status/2110760621113548854)
 
-[中文](../cs-browser-colleague-ai-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../cs-browser-colleague-ai-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -13,4 +13,4 @@ Follow-up engagement snapshot (2026-10-12): 0 likes | 157 views | 0 reposts
 - [Original record](https://x.com/thinkszyg/status/2109309251533570509)
 - [This review: author's report of expanding to devices throughout the home](https://x.com/thinkszyg/status/2109526361971073103)
 
-[中文](../smart-toilet.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../smart-toilet.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

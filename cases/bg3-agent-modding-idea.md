@@ -12,4 +12,4 @@ BG3 即角色扮演游戏《博德之门3》。发帖者注意到其他游戏的
 
 - [本轮 BG3 改造想法与难度提问](https://x.com/i/status/2110581317889057031)
 
-[English](en/bg3-agent-modding-idea.md) | [返回目录](../README.md)
+[English](en/bg3-agent-modding-idea.md) | [返回目录](../README.zh-CN.md)

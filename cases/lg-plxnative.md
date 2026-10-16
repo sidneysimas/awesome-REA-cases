@@ -15,4 +15,4 @@ Plex 是用于浏览和播放个人影音库的软件。开发者觉得 LG 电�
 - [开发者原始介绍](https://www.reddit.com/r/ClaudeCode/comments/1x043yp/i_used_claude_code_to_reverseengineer_an_lg_tv/)
 - [本周期开发细节二手转述](https://x.com/i/status/2109658600394367126)
 
-[English](en/lg-plxnative.md) | [返回目录](../README.md)
+[English](en/lg-plxnative.md) | [返回目录](../README.zh-CN.md)

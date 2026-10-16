@@ -13,4 +13,4 @@ Aman 称 Opus 5.5 将 Star Fox、Star Fox 2 与 Sonic CD 移植到 Windows、mac
 
 - [看本窗口 X 帖](https://x.com/i/status/2109734599865540661)
 
-[English](en/arwing-littleplanet-ai-port-report.md) | [返回目录](../README.md)
+[English](en/arwing-littleplanet-ai-port-report.md) | [返回目录](../README.zh-CN.md)

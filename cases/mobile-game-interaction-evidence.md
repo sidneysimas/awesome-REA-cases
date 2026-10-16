@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109721540245782843)
 
-[English](en/mobile-game-interaction-evidence.md) | [返回目录](../README.md)
+[English](en/mobile-game-interaction-evidence.md) | [返回目录](../README.zh-CN.md)

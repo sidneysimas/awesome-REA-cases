@@ -14,4 +14,4 @@ Project documentation says session credentials are stored locally in plaintext f
 - [Author's research article](https://x.com/i/status/2110624271282139204)
 - [Public implementation and limitations](https://github.com/LilZeeCN/mi-health-exporter)
 
-[中文](../mi-health-data-exporter.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../mi-health-data-exporter.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

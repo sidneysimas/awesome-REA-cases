@@ -1,5 +1,7 @@
 # 贡献指南
 
+[English homepage](README.md) | [简体中文首页](README.zh-CN.md)
+
 欢迎提交具体的 REA / AI 辅助逆向案例。修改 `data/cases.json`，然后运行 `python3 scripts/build.py` 生成详情、分类页和完整总目录。首页由维护者亲自判断与编辑，不由生成器覆盖。
 
 ## 收录要求
@@ -19,7 +21,9 @@
 
 新增或实质修改记录时同步维护完整中英文内容，再生成 `cases/<id>.md`、`cases/en/<id>.md`、两种语言分类页及总目录。中英文详情互链，英文入口直接指向英文详情与 `categories/en/`。生成器校验翻译完整性，缺译时失败，不回退中文或摘要；`--check` 同时检查两种语言详情的过期或孤立文件。中文贡献与维护文档在英文导航中明确标注语言。
 
-不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另综合近期传播热度与阅读价值，亲自维护中英文 README 的近期精选 Top 10、紧凑经典案例、带截止时间的总数及分类数量目录；不使用自动评分或排序算法。
+不设置 Top N 或固定收录数量。分类使用 `games` / `hardware` / `apps` / `algorithms`。维护者另综合近期传播热度与阅读价值，亲自维护英文默认首页 `README.md` 与中文首页 `README.zh-CN.md` 的近期精选 Top 10、紧凑经典案例、带截止时间的总数及分类数量目录；不使用自动评分或排序算法。
+
+`README.en.md` 仅为静态兼容入口，不作为第三份选编目标；生成器不写入任何一份 README。
 
 English maintenance: update all five `en` fields with every new or changed record, keeping full evidence caveats and aligned metadata/source labels. Keep URLs only in `sources`, regenerate both reading paths, and edit the selected README content by hand.
 

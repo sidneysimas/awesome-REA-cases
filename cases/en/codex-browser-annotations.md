@@ -12,4 +12,4 @@ Engagement snapshot (2026-10-12): 252 likes | 29,085 views | 32 reposts
 
 - [Author's original post](https://x.com/dotey/status/2109417222724600172)
 
-[中文](../codex-browser-annotations.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-browser-annotations.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -14,4 +14,4 @@ REA 使用未确认；未确认发帖者为项目作者。
 
 - [X quote 帖（转述主张；原项目与作者身份未确认）](https://x.com/i/status/2110230860717060262)
 
-[English](en/dragon-ball-budokai-browser.md) | [返回目录](../README.md)
+[English](en/dragon-ball-budokai-browser.md) | [返回目录](../README.zh-CN.md)

@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 3 likes | 145 views | 0 reposts
 
 - [Author's demonstration from this review](https://x.com/staskulesh/status/2109605915175596275)
 
-[中文](../incredible-machine-browser.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../incredible-machine-browser.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -12,4 +12,4 @@ Idea; no game specified and no execution.
 
 - [Game-preservation route suggested this window](https://x.com/i/status/2110664422914179229)
 
-[中文](../flash-swf-ai-mobile-rebuild-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../flash-swf-ai-mobile-rebuild-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

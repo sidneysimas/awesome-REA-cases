@@ -13,4 +13,4 @@ HalfBit 转述 icanberk 的演示：在安卓模拟器运行空调官方 App 并
 
 - [本周期演示转述](https://x.com/justhalfbit/status/2109524402765488499)
 
-[English](en/ar-air-conditioner-control.md) | [返回目录](../README.md)
+[English](en/ar-air-conditioner-control.md) | [返回目录](../README.zh-CN.md)

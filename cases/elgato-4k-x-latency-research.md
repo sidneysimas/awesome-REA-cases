@@ -13,4 +13,4 @@ Max（talkaboutdesign）称当晚借助所链接工具研究 Elgato X 4K 采集�
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109795113807630735)
 
-[English](en/elgato-4k-x-latency-research.md) | [返回目录](../README.md)
+[English](en/elgato-4k-x-latency-research.md) | [返回目录](../README.zh-CN.md)

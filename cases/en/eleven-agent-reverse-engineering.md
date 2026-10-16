@@ -23,4 +23,4 @@ A new October 15, 16:00–20:00 introduction says Ghidra is called through REA, 
 - [Third-party architecture and feature claims this review](https://x.com/i/status/2110634488938275080)
 - [This October 15 window: copies, undo and toolchain introduction](https://x.com/i/status/2110655118282781161)
 
-[中文](../eleven-agent-reverse-engineering.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../eleven-agent-reverse-engineering.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 16 likes | 1,872 views | 1 repost
 
 - [Public source from this review](https://x.com/Astronaut_1216/status/2109487167726903560)
 
-[中文](../gaoding-cover-workbench.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../gaoding-cover-workbench.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

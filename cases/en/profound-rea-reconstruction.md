@@ -14,4 +14,4 @@ Author identifies example brand Wrenfield as fictional data
 
 - [Author reports REA research on Profound and open-sourcing a reconstruction](https://x.com/i/status/2110335911992979960)
 
-[中文](../profound-rea-reconstruction.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../profound-rea-reconstruction.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

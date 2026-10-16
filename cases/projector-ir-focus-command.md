@@ -13,4 +13,4 @@ Codex 明确提及；REA 未确认
 
 - [作者关于红外命令推断与测试的原帖（账号身份未在输入中确认）](https://x.com/i/status/2110090047579926826)
 
-[English](en/projector-ir-focus-command.md) | [返回目录](../README.md)
+[English](en/projector-ir-focus-command.md) | [返回目录](../README.zh-CN.md)

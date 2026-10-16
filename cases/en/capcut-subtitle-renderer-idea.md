@@ -13,4 +13,4 @@ Target confirmed through a parent post outside the window; the parent is not cou
 
 - [X post from this window](https://x.com/i/status/2109687082558050357)
 
-[中文](../capcut-subtitle-renderer-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../capcut-subtitle-renderer-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

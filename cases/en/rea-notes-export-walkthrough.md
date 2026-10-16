@@ -14,4 +14,4 @@ A follow-up tutorial at 23:57 on October 15 proposes lead/scout/index/trace/scri
 - [Demonstration and prompts](https://x.com/i/status/2110623921611432090)
 - [Follow-up call-chain division-of-work proposal and unverified cost comparison](https://x.com/i/status/2110762075559444705)
 
-[中文](../rea-notes-export-walkthrough.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-notes-export-walkthrough.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -12,4 +12,4 @@
 
 - [具体玩法改造提议](https://x.com/i/status/2110702991443636235)
 
-[English](en/battlefront2-space-ground-ai-idea.md) | [返回目录](../README.md)
+[English](en/battlefront2-space-ground-ai-idea.md) | [返回目录](../README.zh-CN.md)

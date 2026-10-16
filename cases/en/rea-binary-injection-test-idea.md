@@ -19,4 +19,4 @@ At 20:30 on October 15, another user proposed embedding text in their own softwa
 - [Author's REA 6.5.0 toy-app static-analysis test (model obedience untested)](https://x.com/i/status/2110441399279604113)
 - [Another user's embedded-prompt interference idea (untested)](https://x.com/i/status/2110709861042503706)
 
-[中文](../rea-binary-injection-test-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../rea-binary-injection-test-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

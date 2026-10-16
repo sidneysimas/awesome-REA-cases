@@ -12,4 +12,4 @@
 
 - [本窗口转述及自陈未核验边界](https://x.com/i/status/2110735780842999962)
 
-[English](en/mario-odyssey-macos-claude-report.md) | [返回目录](../README.md)
+[English](en/mario-odyssey-macos-claude-report.md) | [返回目录](../README.zh-CN.md)

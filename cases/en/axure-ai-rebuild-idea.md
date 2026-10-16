@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 16 views | 0 reposts
 
 - [Original idea post from this review](https://x.com/lemonkillergame/status/2109501988195238292)
 
-[中文](../axure-ai-rebuild-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../axure-ai-rebuild-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

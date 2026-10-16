@@ -13,4 +13,4 @@ Public project documentation adds evidence of AI involvement; performance not in
 - [Secondhand introduction from this review](https://x.com/i/status/2110628235797217327)
 - [Author's project description](https://github.com/whylurking/IsaacRecomp)
 
-[中文](../isaacrecomp-flash-cpp-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../isaacrecomp-flash-cpp-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

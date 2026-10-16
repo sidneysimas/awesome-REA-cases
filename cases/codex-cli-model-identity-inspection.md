@@ -12,4 +12,4 @@
 
 - [本地CLI检查与Agent模型身份讨论](https://x.com/i/status/2110751118343164066)
 
-[English](en/codex-cli-model-identity-inspection.md) | [返回目录](../README.md)
+[English](en/codex-cli-model-identity-inspection.md) | [返回目录](../README.zh-CN.md)

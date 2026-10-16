@@ -17,4 +17,4 @@ Shapr3D 帖热度快照（2026-10-12）：1 赞｜23 浏览｜0 转发
 - [兼容层实现与应用状态](https://github.com/designgears/wine-uwp)
 - [Shapr3D 包装项目与 beta 说明](https://github.com/designgears/shapr3d-linux)
 
-[English](en/wine-uwp-shapr3d.md) | [返回目录](../README.md)
+[English](en/wine-uwp-shapr3d.md) | [返回目录](../README.zh-CN.md)

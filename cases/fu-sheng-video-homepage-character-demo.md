@@ -12,4 +12,4 @@
 
 - [傅盛视频主页角色演示的转述](https://x.com/i/status/2110873715810660594)
 
-[English](en/fu-sheng-video-homepage-character-demo.md) | [返回目录](../README.md)
+[English](en/fu-sheng-video-homepage-character-demo.md) | [返回目录](../README.zh-CN.md)

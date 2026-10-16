@@ -13,4 +13,4 @@ Main-post candidate snapshot: 1 like | 16 views; features are author-reported.
 - [Author's project introduction](https://x.com/i/status/2110631522403512760)
 - [Configuration and behavior described in candidate thread](https://x.com/i/status/2110631530683068722)
 
-[中文](../codex-pi-next-hint.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-pi-next-hint.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

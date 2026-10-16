@@ -14,4 +14,4 @@ Public material checked only; not run in this review
 - [X post from this window](https://x.com/i/status/2109713514990379076)
 - [Public project README](https://github.com/kristjaningi/cooler-lcd)
 
-[中文](../thermalright-cooler-lcd-rust.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../thermalright-cooler-lcd-rust.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

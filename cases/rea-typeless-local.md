@@ -17,4 +17,4 @@ Another poster reports using Claude Code over half a day to build Saydra, a Wind
 - [作者的 REA 分析与本地替代品报告](https://x.com/i/status/2109971905336037671)
 - [Saydra author's report and retelling of Chris's REA work](https://x.com/i/status/2110386418929594439)
 
-[English](en/rea-typeless-local.md) | [返回目录](../README.md)
+[English](en/rea-typeless-local.md) | [返回目录](../README.zh-CN.md)

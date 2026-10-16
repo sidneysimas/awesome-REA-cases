@@ -12,4 +12,4 @@ idea，尚无实施证据。
 
 - [本窗口相机固件设想](https://x.com/i/status/2110685826468512185)
 
-[English](en/ricoh-gxr-modern-gr-recipes-idea.md) | [返回目录](../README.md)
+[English](en/ricoh-gxr-modern-gr-recipes-idea.md) | [返回目录](../README.zh-CN.md)

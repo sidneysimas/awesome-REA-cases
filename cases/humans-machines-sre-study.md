@@ -13,4 +13,4 @@
 - [本轮候选论文分享](https://x.com/i/status/2110600548747530271)
 - [论文摘要及提交日期](https://arxiv.org/abs/2610.14960)
 
-[English](en/humans-machines-sre-study.md) | [返回目录](../README.md)
+[English](en/humans-machines-sre-study.md) | [返回目录](../README.zh-CN.md)

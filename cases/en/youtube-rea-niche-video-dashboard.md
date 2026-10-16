@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 10 views; implementation and selection m
 
 - [Author's report of a non-doomscrolling YouTube version](https://x.com/i/status/2110878456611319835)
 
-[中文](../youtube-rea-niche-video-dashboard.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../youtube-rea-niche-video-dashboard.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

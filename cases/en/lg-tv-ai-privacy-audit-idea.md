@@ -13,4 +13,4 @@ Target established by reading the parent post; privacy allegations unverified
 
 - [X post from this window](https://x.com/i/status/2109718682385502411)
 
-[中文](../lg-tv-ai-privacy-audit-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../lg-tv-ai-privacy-audit-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

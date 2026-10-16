@@ -9,4 +9,4 @@ ApiDemos is a sample app Appium uses to demonstrate and test Android features. A
 
 - [Original PR and validation](https://github.com/morluto/rea/pull/738)
 
-[中文](../android-apidemos.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../android-apidemos.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

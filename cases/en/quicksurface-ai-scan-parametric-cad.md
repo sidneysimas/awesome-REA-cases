@@ -12,4 +12,4 @@ Future release date in the announcement is a product plan; record date remains O
 
 - [Product-release preview from this window](https://x.com/i/status/2110699093333000322)
 
-[中文](../quicksurface-ai-scan-parametric-cad.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../quicksurface-ai-scan-parametric-cad.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

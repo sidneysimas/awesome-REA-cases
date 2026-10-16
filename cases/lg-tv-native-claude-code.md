@@ -13,4 +13,4 @@ Hristo B.（ceoico）报告研究自己的 LG 电视后，让 Claude Code 原生
 
 - [本窗口原帖（作者报告）](https://x.com/i/status/2109774258738176000)
 
-[English](en/lg-tv-native-claude-code.md) | [返回目录](../README.md)
+[English](en/lg-tv-native-claude-code.md) | [返回目录](../README.zh-CN.md)

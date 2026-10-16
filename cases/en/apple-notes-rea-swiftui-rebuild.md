@@ -12,4 +12,4 @@ A three-pane interface or self-reported passing interactions are not expanded in
 
 - [Specific test narrative from this window](https://x.com/i/status/2110670751087137197)
 
-[中文](../apple-notes-rea-swiftui-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../apple-notes-rea-swiftui-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

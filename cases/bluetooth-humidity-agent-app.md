@@ -12,4 +12,4 @@ Kai（@real_kai42）报告，原先加湿器两个喷嘴间歇工作时湿度读
 
 - [本窗口作者湿度观察与蓝牙 App 报告](https://x.com/i/status/2110700189912912155)
 
-[English](en/bluetooth-humidity-agent-app.md) | [返回目录](../README.md)
+[English](en/bluetooth-humidity-agent-app.md) | [返回目录](../README.zh-CN.md)

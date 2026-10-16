@@ -18,4 +18,4 @@ New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 ann
 - [Author's original post on an REA-assisted research terminal (firsthand report)](https://x.com/i/status/2110082824371908790)
 - [October 16 promotional alerts report, not confirmed as the same implementation](https://x.com/i/status/2110880082289922361)
 
-[中文](../bloomberg-style-research-terminal.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../bloomberg-style-research-terminal.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -13,4 +13,4 @@ Evidence boundary: needs verification; does not establish completed reverse engi
 
 - [Original post from this window (author report)](https://x.com/i/status/2109774258738176000)
 
-[中文](../lg-tv-native-claude-code.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../lg-tv-native-claude-code.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

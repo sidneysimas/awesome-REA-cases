@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 44 views; no verifiable completion measu
 
 - [Author's reply on H1Z1 research and MMO progress](https://x.com/i/status/2110784230687125852)
 
-[中文](../h1z1-ai-mmo-research.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../h1z1-ai-mmo-research.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

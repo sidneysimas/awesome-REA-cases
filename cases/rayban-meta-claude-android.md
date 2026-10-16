@@ -13,4 +13,4 @@ REA 使用未确认；发帖者身份、实现与结果未独立核验。
 
 - [发帖者关于逆向 Ray-Ban Meta 眼镜通信并制作 Android 替代应用的第一人称报告（未独立核验）](https://x.com/i/status/2110224031794241676)
 
-[English](en/rayban-meta-claude-android.md) | [返回目录](../README.md)
+[English](en/rayban-meta-claude-android.md) | [返回目录](../README.zh-CN.md)

@@ -13,4 +13,4 @@
 
 - [作者原帖](https://x.com/i/status/2109839329933824026)
 
-[English](en/marktext-html-export.md) | [返回目录](../README.md)
+[English](en/marktext-html-export.md) | [返回目录](../README.zh-CN.md)

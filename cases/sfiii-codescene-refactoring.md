@@ -13,4 +13,4 @@
 
 - [本周期研究转述与边界](https://x.com/renmu2017/status/2109581250424123651)
 
-[English](en/sfiii-codescene-refactoring.md) | [返回目录](../README.md)
+[English](en/sfiii-codescene-refactoring.md) | [返回目录](../README.zh-CN.md)

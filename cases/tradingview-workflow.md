@@ -11,4 +11,4 @@ TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复�
 - [原始记录](https://x.com/RohOnChain/status/2109347169316839434)
 - [10月15日量化终端目标与流程宣称](https://x.com/i/status/2110692386854555977)
 
-[English](en/tradingview-workflow.md) | [返回目录](../README.md)
+[English](en/tradingview-workflow.md) | [返回目录](../README.zh-CN.md)

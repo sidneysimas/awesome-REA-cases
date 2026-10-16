@@ -12,4 +12,4 @@
 
 - [作者的 Shogun 2 反编译设想回复](https://x.com/i/status/2110854869150232642)
 
-[English](en/shogun2-ai-decompile-idea.md) | [返回目录](../README.md)
+[English](en/shogun2-ai-decompile-idea.md) | [返回目录](../README.zh-CN.md)

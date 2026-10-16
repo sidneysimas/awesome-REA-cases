@@ -13,4 +13,4 @@ Paul Klein IV 希望 Claude Code 不只操控同机 Chrome，也能使用远端�
 - [作者原帖](https://x.com/pk_iv/status/2005694082627297735)
 - [公开实现](https://github.com/browserbase/claude-code-plugin)
 
-[English](en/claude-chrome-remote.md) | [返回目录](../README.md)
+[English](en/claude-chrome-remote.md) | [返回目录](../README.zh-CN.md)

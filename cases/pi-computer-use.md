@@ -13,4 +13,4 @@ Zane Chee 希望 pi Agent 也能使用 Codex 风格的电脑操作，于是研�
 - [作者原帖](https://x.com/injaneity/status/2046302876453232667)
 - [公开实现](https://github.com/injaneity/pi-computer-use)
 
-[English](en/pi-computer-use.md) | [返回目录](../README.md)
+[English](en/pi-computer-use.md) | [返回目录](../README.zh-CN.md)

@@ -22,4 +22,4 @@ A new overview in the October 15, 16:00–20:00 window distinguishes early appea
 - [Third-party long-form account in this window (not confirmed by the project author)](https://x.com/i/status/2110232535880094082)
 - [October 15 window: secondhand retrospective on early incorrect implementations and an exact oracle](https://x.com/i/status/2110679520772849745)
 
-[中文](../mw2-decompilation.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../mw2-decompilation.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

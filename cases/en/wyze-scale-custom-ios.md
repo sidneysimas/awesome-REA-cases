@@ -12,4 +12,4 @@ Brief first-person report; features not independently verified.
 
 - [Author report](https://x.com/i/status/2110604057287217339)
 
-[中文](../wyze-scale-custom-ios.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../wyze-scale-custom-ios.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

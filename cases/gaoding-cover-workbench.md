@@ -13,4 +13,4 @@
 
 - [本周期公开来源](https://x.com/Astronaut_1216/status/2109487167726903560)
 
-[English](en/gaoding-cover-workbench.md) | [返回目录](../README.md)
+[English](en/gaoding-cover-workbench.md) | [返回目录](../README.zh-CN.md)

@@ -11,4 +11,4 @@ NativeAOT 会把 .NET 程序提前编译为原生机器码，不能再按普通 
 - [原始记录](https://github.com/morluto/rea/issues/744)
 - [相关实现](https://github.com/morluto/rea/pull/748)
 
-[English](en/nativeaot.md) | [返回目录](../README.md)
+[English](en/nativeaot.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@ Idea without implementation evidence.
 
 - [Camera-firmware idea from this window](https://x.com/i/status/2110685826468512185)
 
-[中文](../ricoh-gxr-modern-gr-recipes-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../ricoh-gxr-modern-gr-recipes-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

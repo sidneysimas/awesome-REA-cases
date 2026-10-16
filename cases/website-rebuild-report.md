@@ -10,4 +10,4 @@ goan999999 分享了参考网站重建的接单经历，称订单金额 5,000 �
 
 - [原始记录](https://x.com/goan999999/status/2109080288823562734)
 
-[English](en/website-rebuild-report.md) | [返回目录](../README.md)
+[English](en/website-rebuild-report.md) | [返回目录](../README.zh-CN.md)

@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 8 likes | 325 views | 0 reposts
 
 - [Third-party lead from this review](https://x.com/TheKing_Rapture/status/2109547879199056181)
 
-[中文](../metatrader-signals-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../metatrader-signals-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

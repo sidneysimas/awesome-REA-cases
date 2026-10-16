@@ -12,4 +12,4 @@ Zenn 官方账号本轮推荐一篇测试记录：在隔离环境中将逆向 MC
 
 - [Zenn 官方本轮测试文章推荐摘要](https://x.com/i/status/2110558521209356397)
 
-[English](en/rea-claude-isolated-ab-test.md) | [返回目录](../README.md)
+[English](en/rea-claude-isolated-ab-test.md) | [返回目录](../README.zh-CN.md)

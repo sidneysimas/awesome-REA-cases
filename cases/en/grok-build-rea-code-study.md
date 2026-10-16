@@ -16,4 +16,4 @@ New-source October 16 candidate snapshot: 3 likes, 138 views; REA use is not con
 - [Author's report of code reading with REA](https://x.com/i/status/2110749141710028914)
 - [Another author's October 16 observation of unsolicited decompilation and unsafe command tests](https://x.com/i/status/2110835777248862262)
 
-[中文](../grok-build-rea-code-study.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../grok-build-rea-code-study.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

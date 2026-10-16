@@ -13,4 +13,4 @@ ofmyslippers 用一款有已知答案表的小型 Electron 笔记应用测试 RE
 - [作者的三次 Notes 静态分析测试](https://x.com/i/status/2110869440762196138)
 - [同作者补充：证据链接与 JSON 体积](https://x.com/i/status/2110869444922610114)
 
-[English](en/rea-electron-notes-ipc-answer-key-test.md) | [返回目录](../README.md)
+[English](en/rea-electron-notes-ipc-answer-key-test.md) | [返回目录](../README.zh-CN.md)

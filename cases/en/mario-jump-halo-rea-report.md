@@ -12,4 +12,4 @@ October 15 candidate snapshot: 4 likes, 71 views; needs verification.
 
 - [Parameter-extraction and Halo-controller claims](https://x.com/i/status/2110741739732435179)
 
-[中文](../mario-jump-halo-rea-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../mario-jump-halo-rea-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

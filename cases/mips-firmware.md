@@ -10,4 +10,4 @@ MIPS32 是一种 32 位处理器架构，常见于旧设备；固件是设备运
 - [需求与真实固件调查](https://github.com/morluto/rea/issues/1620)
 - [实现方向](https://github.com/morluto/rea/pull/1898)
 
-[English](en/mips-firmware.md) | [返回目录](../README.md)
+[English](en/mips-firmware.md) | [返回目录](../README.zh-CN.md)

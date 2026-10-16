@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 6 views; explicitly self-owned samples, 
 
 - [Author's reply on self-owned Android and Windows 95 app tests](https://x.com/i/status/2110820518983000118)
 
-[中文](../opus-own-android-win95-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../opus-own-android-win95-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

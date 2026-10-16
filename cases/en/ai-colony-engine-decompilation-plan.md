@@ -12,4 +12,4 @@ Tool preparation and development vision, not completed engine reconstruction.
 
 - [Author's research plan from this window](https://x.com/i/status/2110642225361371219)
 
-[中文](../ai-colony-engine-decompilation-plan.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../ai-colony-engine-decompilation-plan.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

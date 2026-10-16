@@ -13,4 +13,4 @@ Iceman Shen 报告用 Codex + REA 研究 CleanMyMac，做出原生 macOS 清理�
 
 - [本周期作者报告](https://x.com/i/status/2109665812017746132)
 
-[English](en/clearspace-cleanmymac.md) | [返回目录](../README.md)
+[English](en/clearspace-cleanmymac.md) | [返回目录](../README.zh-CN.md)

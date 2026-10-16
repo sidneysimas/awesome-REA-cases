@@ -16,4 +16,4 @@
 - [公开项目说明与已知问题（10月15日补查）](https://github.com/peiikai/LASRecomp)
 - [10月15日18:04帧率及分辨率设置转述](https://x.com/i/status/2110673058986066332)
 
-[English](en/links-awakening-claude-pc-port-report.md) | [返回目录](../README.md)
+[English](en/links-awakening-claude-pc-port-report.md) | [返回目录](../README.zh-CN.md)

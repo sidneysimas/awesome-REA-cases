@@ -18,4 +18,4 @@ A post dated 2026-10-14 self-reports using GPT 5.6 Luna Medium to reverse-engine
 - [看本窗口 X 帖](https://x.com/i/status/2109676911500951649)
 - [This batch: first-person Obsidian-like app rebuild; REA use not explicitly confirmed](https://x.com/i/status/2110355975974596826)
 
-[English](en/obsidian-gpt-rebuild-report.md) | [返回目录](../README.md)
+[English](en/obsidian-gpt-rebuild-report.md) | [返回目录](../README.zh-CN.md)

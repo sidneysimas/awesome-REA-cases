@@ -23,4 +23,4 @@ Supplementary-source dates: the original article and Phoronix news are October 1
 - [hw-harness project and observational boundaries](https://github.com/cschalle/hw-harness)
 - [Five MIPI fixes, measurements and unresolved issues](https://cschalle.github.io/mipi-fixes-x1-aura/)
 
-[中文](../schaller-opticfilm-thinkpad-linux.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../schaller-opticfilm-thinkpad-linux.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

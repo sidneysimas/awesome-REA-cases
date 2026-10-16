@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 20 views; an unimplemented idea.
 
 - [Author's Source Engine AI-decompilation idea](https://x.com/i/status/2110846755424157754)
 
-[中文](../source-engine-ai-decompile-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../source-engine-ai-decompile-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -12,4 +12,4 @@ October 15 candidate snapshot: 8 likes, 891 views; idea rather than an implement
 
 - [User's Grok Bot research question](https://x.com/i/status/2110750477130604789)
 
-[中文](../grok-bot-hermes-rea-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../grok-bot-hermes-rea-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

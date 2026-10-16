@@ -1,10 +1,12 @@
 # 维护方法
 
+[English homepage](README.md) | [简体中文首页](README.zh-CN.md)
+
 ## 数据与编辑分工
 
 - `data/cases.json` 是完整案例集合的唯一数据源。
-- `scripts/build.py` 只生成 `cases/*.md`、`cases/en/*.md`、`categories/*.md`、`categories/en/*.md`、`INDEX.md`、`INDEX.en.md`，不写入或要求 README 与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
-- `README.md` 与 `README.en.md` 是维护者亲自判断、直接编辑的精选首页。它们是仓库的门面，不是数据库导出。
+- `scripts/build.py` 只生成 `cases/*.md`、`cases/en/*.md`、`categories/*.md`、`categories/en/*.md`、`INDEX.md`、`INDEX.en.md`，不写入 `README.md`、`README.zh-CN.md`、`README.en.md`，也不要求首页与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
+- `README.md`（英文默认首页）与 `README.zh-CN.md`（中文首页）是维护者亲自判断、直接编辑的精选首页。它们是仓库的门面，不是数据库导出。`README.en.md` 仅为链接两版首页的静态兼容入口，不是第三份选编目标。
 - 每条 `en` 恰好包含非空字符串 `title`、`summary`、`description` 以及列表 `metadata`、`source_labels`。详情必须完整忠实翻译，不用摘要占位；两个列表分别与原 `metadata`、`sources` 数量一致且逐项对应，元素为非空字符串，原 metadata 为空时译文也为空。来源 URL 只保存在 `sources`。新增或改动记录须同步两种语言，保留归属、日期、数值单位、待验证和静态分析等全部边界；翻译本身不刷新证据日期、热度或状态。
 - 中英文详情和分类页保留语言互链；英文 README、总目录与分类页直接链接英文详情。维护时核对双向切换、返回链接与本地链接目标（含锚点），手工 README 不受生成器覆盖。
 
@@ -47,7 +49,7 @@ git diff --check
 
 ## 发布与版权
 
-仓库仅提供 Markdown，不生成 HTML。中文为默认入口；英文首页、总目录、分类页与全部案例详情形成完整英文阅读路径。贡献与维护文档仍以中文为主，英文导航明确标注。完整数据中的 `en` 字段用于生成英文总目录、分类页和详情；首页另由维护者选编。
+仓库仅提供 Markdown，不生成 HTML。英文 `README.md` 为默认入口，可切换至中文 `README.zh-CN.md`；`README.en.md` 保留为静态兼容入口。英文首页、总目录、分类页与全部案例详情形成完整英文阅读路径；中英文返回首页链接分别指向各自语言的首页。贡献与维护文档仍以中文为主，英文导航明确标注。完整数据中的 `en` 字段用于生成英文总目录、分类页和详情；首页另由维护者选编。
 
 English maintenance: translate the full description, each metadata note and each source label whenever a record changes. Keep original evidence boundaries and single-sourced URLs, regenerate both languages, and check navigation. README selections, prose and timestamps remain hand-maintained.
 

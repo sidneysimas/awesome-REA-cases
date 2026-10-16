@@ -78,7 +78,7 @@ def detail(r):
     if r['metadata']:
         lines += r['metadata'] + ['']
     lines += ['## 来源', ''] + [f"- [{s['label']}]({s['url']})" for s in r['sources']]
-    lines += ['', f"[English](en/{r['id']}.md) | [返回目录](../README.md)", '']
+    lines += ['', f"[English](en/{r['id']}.md) | [返回目录](../README.zh-CN.md)", '']
     return '\n'.join(lines)
 
 
@@ -95,7 +95,7 @@ def english_detail(r):
     lines += ['## Sources', ''] + [
         f"- [{label}]({source['url']})"
         for label, source in zip(en['source_labels'], r['sources'])]
-    lines += ['', f"[中文](../{r['id']}.md) | [Back to editor picks](../../README.en.md) | "
+    lines += ['', f"[中文](../{r['id']}.md) | [Back to editor picks](../../README.md) | "
               f"[Full index](../../INDEX.en.md) | [Category](../../categories/en/{r['category']}.md)", '']
     return '\n'.join(lines)
 
@@ -109,7 +109,7 @@ def render(records):
     outputs = {f"cases/{r['id']}.md": detail(r) for r in records}
     outputs.update({f"cases/en/{r['id']}.md": english_detail(r) for r in records})
     readme = ['# 全部案例与项目', '',
-              '[精选首页](README.md) | [English index](INDEX.en.md)', '',
+              '[精选首页](README.zh-CN.md) | [English index](INDEX.en.md)', '',
               '**用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**', '',
               '**每天 6 次定时追踪 REA 与 AI 逆向公开案例，自动筛选、去重并更新合集。**', '',
               '收集 REA 与其他 AI 逆向的案例和项目，覆盖游戏保存、硬件互通、应用重建与算法研究。每条说明作者在研究什么、为什么逆向、具体做了什么，并链接原帖、代码或验证记录。', '',
@@ -126,7 +126,7 @@ def render(records):
         group = [r for r in records if r['category'] == slug]
         readme += [f'### {title}', ''] + [entry(r, '') for r in group] + ['']
         outputs[f'categories/{slug}.md'] = '\n'.join(
-            [f'# {title}', '', f'[返回主目录](../README.md) | [English](en/{slug}.md)', ''] +
+            [f'# {title}', '', f'[返回主目录](../README.zh-CN.md) | [English](en/{slug}.md)', ''] +
             [entry(r, '../') for r in group] + [''])
     readme += ['## 贡献与收录', '',
                '欢迎提交新案例、补充验证或纠正描述。修改 `data/cases.json` 后运行 `python3 scripts/build.py`，再提交 PR；详见[贡献指南](CONTRIBUTING.md)。', '',
@@ -139,7 +139,7 @@ def render(records):
     def english_entry(r, prefix=''):
         stage = f" · {STATUS_EN[r['status']]}" if STATUS_EN[r['status']] else ''
         return f"- [{r['en']['title']}]({prefix}cases/en/{r['id']}.md) — {r['en']['summary']} **[{LABELS_EN[r['rea']]}{stage}]**"
-    english = ['# All cases and projects', '', '[Editor picks](README.en.md) | [中文总目录](INDEX.md)', '',
+    english = ['# All cases and projects', '', '[Editor picks](README.md) | [中文总目录](INDEX.md)', '',
                '**Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**', '',
                '**Tracks public REA and AI reverse-engineering cases six times daily, automatically screening, deduplicating, and updating the collection.**', '',
                'A collection of REA and AI reverse-engineering cases and projects, covering game preservation, hardware interoperability, app reconstruction, and algorithm research. Each entry explains the target, the author’s purpose and approach, and links to original posts, code, or verification records.', '',
@@ -157,7 +157,7 @@ def render(records):
         group = [r for r in records if r['category'] == slug]
         english += [f'### {title}', ''] + [english_entry(r) for r in group] + ['']
         outputs[f'categories/en/{slug}.md'] = '\n'.join(
-            [f'# {title}', '', f'[Editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [中文](../{slug}.md)', ''] +
+            [f'# {title}', '', f'[Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../{slug}.md)', ''] +
             [english_entry(r, '../../') for r in group] + [''])
     english += ['## Contributing and selection', '',
                 'Submit new cases, additional verification, or corrections. Edit data/cases.json, run python3 scripts/build.py, and open a PR. See [Contributing (Chinese)](CONTRIBUTING.md).', '',

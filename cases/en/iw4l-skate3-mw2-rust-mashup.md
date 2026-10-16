@@ -12,4 +12,4 @@ October 15 source; roughly six months is secondhand effort, not independently ch
 
 - [Mashup introduction and account of manual reverse-engineering foundations](https://x.com/i/status/2110757135009112576)
 
-[中文](../iw4l-skate3-mw2-rust-mashup.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../iw4l-skate3-mw2-rust-mashup.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-12): 0 likes | 4 views | 0 reposts
 - [Author's release from this review](https://x.com/xbirimensah/status/2109571298020274530)
 - [Project and AI workflow description](https://github.com/xbirimensah/opensetter)
 
-[中文](../opensetter-manychat-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../opensetter-manychat-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

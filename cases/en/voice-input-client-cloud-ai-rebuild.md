@@ -12,4 +12,4 @@ Shared in this October 15 window; actual research date unspecified; one minute a
 
 - [Author's personal voice-tool research experience](https://x.com/i/status/2110759506003304641)
 
-[中文](../voice-input-client-cloud-ai-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../voice-input-client-cloud-ai-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

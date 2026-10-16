@@ -13,4 +13,4 @@ October 16 candidate snapshot: 0 likes, 6 views; three runs, 2.5–3 seconds and
 - [Author's three Notes static-analysis runs](https://x.com/i/status/2110869440762196138)
 - [Author's follow-up on evidence links and JSON volume](https://x.com/i/status/2110869444922610114)
 
-[中文](../rea-electron-notes-ipc-answer-key-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-electron-notes-ipc-answer-key-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

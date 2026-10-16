@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 5 likes | 494 views | 1 repost
 - [Author's original post](https://x.com/maheshboda006/status/2109154423712977359)
 - [October 15 Chinese process account (not an independent reproduction)](https://x.com/i/status/2110613996382654771)
 
-[中文](../preview-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../preview-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

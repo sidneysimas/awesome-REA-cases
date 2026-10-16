@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-12): 12 likes | 2,277 views | 2 reposts
 - [Research team's demonstration post from this review](https://x.com/i2huer/status/2109511316465414274)
 - [Proof-of-concept skill and limitations](https://github.com/Pasta-Lab/edit-my-app)
 
-[中文](../preview-ai-sidebar.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../preview-ai-sidebar.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

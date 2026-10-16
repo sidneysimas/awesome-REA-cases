@@ -14,4 +14,4 @@ guyru 希望直接使用自己的智能体脂秤，报告用 Claude Code 连接 
 - [本周期作者报告](https://x.com/guyru_/status/2109566754540392730)
 - [公开实现与设备边界](https://github.com/guyru/cf632ble)
 
-[English](en/cf632ble-web-bluetooth.md) | [返回目录](../README.md)
+[English](en/cf632ble-web-bluetooth.md) | [返回目录](../README.zh-CN.md)

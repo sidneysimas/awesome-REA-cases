@@ -12,4 +12,4 @@
 
 - [作者关于两款游戏 RNG 与 Codex / ILSpy 的回复](https://x.com/i/status/2110817897706582486)
 
-[English](en/two-game-rng-codex-ilspy-report.md) | [返回目录](../README.md)
+[English](en/two-game-rng-codex-ilspy-report.md) | [返回目录](../README.zh-CN.md)

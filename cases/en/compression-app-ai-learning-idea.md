@@ -12,4 +12,4 @@ October 15 source; no analysis start or completion reported.
 
 - [Personal-research and licensing-boundary discussion](https://x.com/i/status/2110740891770257659)
 
-[中文](../compression-app-ai-learning-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../compression-app-ai-learning-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

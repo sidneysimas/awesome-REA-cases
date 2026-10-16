@@ -12,4 +12,4 @@ October 15 candidate snapshot: 6 likes, 978 views; idea, REA unconfirmed.
 
 - [Author's game-mechanics encyclopedia idea](https://x.com/i/status/2110712989737472285)
 
-[中文](../game-formulas-ai-guide-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../game-formulas-ai-guide-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

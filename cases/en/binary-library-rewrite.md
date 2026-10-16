@@ -12,4 +12,4 @@ Posted: October 11 | REA
 
 - [Popular X post](https://x.com/leeoxiang/status/2109159806183538768)
 
-[中文](../binary-library-rewrite.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../binary-library-rewrite.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

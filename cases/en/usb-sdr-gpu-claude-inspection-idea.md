@@ -12,4 +12,4 @@ October 15 source; research suggestion without runtime or performance results.
 
 - [Claude throughput and firmware-research suggestion](https://x.com/i/status/2110757069968261388)
 
-[中文](../usb-sdr-gpu-claude-inspection-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../usb-sdr-gpu-claude-inspection-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

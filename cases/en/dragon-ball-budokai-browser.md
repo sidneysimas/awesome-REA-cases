@@ -14,4 +14,4 @@ REA use unconfirmed; poster not confirmed as project author.
 
 - [X quote post (secondhand claims; original project and author identity unconfirmed)](https://x.com/i/status/2110230860717060262)
 
-[中文](../dragon-ball-budokai-browser.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../dragon-ball-budokai-browser.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

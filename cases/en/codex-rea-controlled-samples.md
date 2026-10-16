@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2 likes | 198 views | 0 reposts
 
 - [Author's comparison tests from this review](https://x.com/0xlangeai/status/2109603485914206498)
 
-[中文](../codex-rea-controlled-samples.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../codex-rea-controlled-samples.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

@@ -10,4 +10,4 @@ Windows 计算器的百分号会随当前运算改变含义。贡献者想解释
 - [案例 PR](https://github.com/morluto/rea/pull/1272)
 - [分析证据](https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md)
 
-[English](en/windows-calculator-percent.md) | [返回目录](../README.md)
+[English](en/windows-calculator-percent.md) | [返回目录](../README.zh-CN.md)

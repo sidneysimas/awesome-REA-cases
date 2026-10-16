@@ -10,4 +10,4 @@ A user tried analyzing a production Android installation package of 133 MB conta
 
 - [Original record](https://github.com/morluto/rea/issues/893)
 
-[中文](../large-android-apk.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../large-android-apk.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

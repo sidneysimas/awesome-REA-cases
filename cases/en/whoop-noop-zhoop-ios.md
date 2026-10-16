@@ -12,4 +12,4 @@ Historical NOOP dates come from the account; this window introduces Zhoop rather
 
 - [Third-party introduction to NOOP and Zhoop from this window](https://x.com/i/status/2110659108076769728)
 
-[中文](../whoop-noop-zhoop-ios.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../whoop-noop-zhoop-ios.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -13,4 +13,4 @@ The Incredible Machine（《不可思议的机器》）是 Sierra 的机械装�
 
 - [本周期作者演示](https://x.com/staskulesh/status/2109605915175596275)
 
-[English](en/incredible-machine-browser.md) | [返回目录](../README.md)
+[English](en/incredible-machine-browser.md) | [返回目录](../README.zh-CN.md)

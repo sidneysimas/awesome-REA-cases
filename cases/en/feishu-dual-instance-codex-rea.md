@@ -13,4 +13,4 @@ Full article obtained this review; local acceptance and timing are all author re
 - [Author's long article from this review](https://x.com/i/status/2110601137707729071)
 - [Author's original blog and experiment version](https://benx.ai/blog/posts/rea-reverse-engineer-feishu-dual-instance/)
 
-[中文](../feishu-dual-instance-codex-rea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../feishu-dual-instance-codex-rea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

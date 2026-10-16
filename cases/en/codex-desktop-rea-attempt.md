@@ -16,4 +16,4 @@ account-ban causation: unconfirmed
 
 - [Author reports attempting to study Codex desktop with REA](https://x.com/i/status/2110377021402661320)
 
-[中文](../codex-desktop-rea-attempt.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-desktop-rea-attempt.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

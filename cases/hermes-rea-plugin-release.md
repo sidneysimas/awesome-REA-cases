@@ -12,4 +12,4 @@
 
 - [Hermes REA 插件发布与使用边界转述](https://x.com/i/status/2110805485939249561)
 
-[English](en/hermes-rea-plugin-release.md) | [返回目录](../README.md)
+[English](en/hermes-rea-plugin-release.md) | [返回目录](../README.zh-CN.md)

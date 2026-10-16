@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 247 views; no coverage figure or indepen
 
 - [jfwfreo's reply about Open-BFME byte matching](https://x.com/i/status/2110857508470604174)
 
-[中文](../open-bfme-ai-byte-matching-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../open-bfme-ai-byte-matching-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

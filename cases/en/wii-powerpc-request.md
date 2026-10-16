@@ -10,4 +10,4 @@ GameCube and Wii are Nintendo consoles whose game programs use PowerPC processor
 
 - [Original issue](https://github.com/morluto/rea/issues/1741)
 
-[中文](../wii-powerpc-request.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../wii-powerpc-request.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

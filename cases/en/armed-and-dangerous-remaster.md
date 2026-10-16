@@ -13,4 +13,4 @@ REA use unconfirmed; completion status unverified.
 
 - [X post (first-person project-progress report; capture does not identify author)](https://x.com/i/status/2109911827203358998)
 
-[中文](../armed-and-dangerous-remaster.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../armed-and-dangerous-remaster.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

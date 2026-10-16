@@ -12,4 +12,4 @@
 
 - [作者的自有 Android 与 Windows 95 应用测试回复](https://x.com/i/status/2110820518983000118)
 
-[English](en/opus-own-android-win95-test.md) | [返回目录](../README.md)
+[English](en/opus-own-android-win95-test.md) | [返回目录](../README.zh-CN.md)

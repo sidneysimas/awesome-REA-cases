@@ -13,4 +13,4 @@
 
 - [X quote 帖（作者身份未由捕获记录确认；第一人称自述）](https://x.com/i/status/2109912103813599539)
 
-[English](en/minecraft-pvz-rea-mashup.md) | [返回目录](../README.md)
+[English](en/minecraft-pvz-rea-mashup.md) | [返回目录](../README.zh-CN.md)

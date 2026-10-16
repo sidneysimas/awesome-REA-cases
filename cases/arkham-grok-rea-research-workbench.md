@@ -12,4 +12,4 @@ Arkham是用于观察链上资金流向与钱包活动的分析工具。发帖�
 
 - [界面研究与待做真实数据测试](https://x.com/i/status/2110743454959509801)
 
-[English](en/arkham-grok-rea-research-workbench.md) | [返回目录](../README.md)
+[English](en/arkham-grok-rea-research-workbench.md) | [返回目录](../README.zh-CN.md)

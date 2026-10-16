@@ -12,4 +12,4 @@ Engagement snapshot (2026-10-12): 678 likes | 35,172 views | 39 reposts
 
 - [Author's original post](https://x.com/ChrisGPT/status/2106925689190354989)
 
-[中文](../boba-fett-rdr2.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../boba-fett-rdr2.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

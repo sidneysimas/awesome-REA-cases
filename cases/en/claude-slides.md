@@ -13,4 +13,4 @@ Posted: October 11 | REA
 - [Popular X post](https://x.com/dotey/status/2109151666020794711)
 - [Corresponding code commit](https://github.com/JimLiu/baocut/commit/b8585e0c8d7a82bdee9f0ed019cf6edb075e41c1)
 
-[中文](../claude-slides.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../claude-slides.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

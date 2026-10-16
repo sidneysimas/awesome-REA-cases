@@ -16,4 +16,4 @@ Report limited to Obsidian JavaScript static analysis; native-binary analysis fa
 - [Original record](https://github.com/morluto/rea/issues/746)
 - [This window: author reports Obsidian JavaScript static analysis and blocked native-layer analysis (not independently retested)](https://x.com/i/status/2110407610134663474)
 
-[中文](../obsidian-asar.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../obsidian-asar.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

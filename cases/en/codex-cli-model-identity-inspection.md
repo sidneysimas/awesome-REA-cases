@@ -12,4 +12,4 @@ October 15 source; version, model and field names follow the original; no indepe
 
 - [Local CLI inspection and agent model-identity discussion](https://x.com/i/status/2110751118343164066)
 
-[中文](../codex-cli-model-identity-inspection.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-cli-model-identity-inspection.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

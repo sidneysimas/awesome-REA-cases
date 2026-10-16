@@ -12,4 +12,4 @@ QUICKSURFACE 的本窗口宣传公告称，QUICKSURFACE AI 将于2026年11月17�
 
 - [本窗口产品发布预告](https://x.com/i/status/2110699093333000322)
 
-[English](en/quicksurface-ai-scan-parametric-cad.md) | [返回目录](../README.md)
+[English](en/quicksurface-ai-scan-parametric-cad.md) | [返回目录](../README.zh-CN.md)

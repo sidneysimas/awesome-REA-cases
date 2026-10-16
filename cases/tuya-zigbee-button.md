@@ -9,4 +9,4 @@ Zigbee 是智能家居设备使用的无线通信技术。ngxson 分享了用 pi
 
 - [原始记录](https://x.com/ngxson/status/2107787195918475432)
 
-[English](en/tuya-zigbee-button.md) | [返回目录](../README.md)
+[English](en/tuya-zigbee-button.md) | [返回目录](../README.zh-CN.md)

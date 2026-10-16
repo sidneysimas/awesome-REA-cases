@@ -12,4 +12,4 @@
 
 - [作者报告](https://x.com/i/status/2110620776915411243)
 
-[English](en/tuya-ac-mac-claude-mcp.md) | [返回目录](../README.md)
+[English](en/tuya-ac-mac-claude-mcp.md) | [返回目录](../README.zh-CN.md)

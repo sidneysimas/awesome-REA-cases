@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 37 views; a workflow illustration, not a 
 
 - [Two-room and oracle demonstration explicitly labeled illustrative](https://x.com/i/status/2110783611800522897)
 
-[中文](../rea-clean-room-illustrative-oracles.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../rea-clean-room-illustrative-oracles.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

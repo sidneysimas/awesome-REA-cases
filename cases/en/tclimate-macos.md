@@ -12,4 +12,4 @@ Post dated 2026-10-13 (+08:00); third party says project is open source but supp
 
 - [Third-party project introduction (not direct developer confirmation)](https://x.com/i/status/2110018382762262902)
 
-[中文](../tclimate-macos.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../tclimate-macos.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

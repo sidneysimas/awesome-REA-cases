@@ -12,4 +12,4 @@ No optimization results or benchmarks reported.
 
 - [Author's work-in-progress report this review](https://x.com/i/status/2110566660113625486)
 
-[中文](../rea-cpu-kernel-optimization.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../rea-cpu-kernel-optimization.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

@@ -13,4 +13,4 @@ October 15 author report; patch or actual validation output not obtained.
 - [Author introduces RE-Agent and the first IGI 2 case](https://x.com/i/status/2110744399567073616)
 - [Follow-up introduction to tools and validation loop](https://x.com/i/status/2110751222437150721)
 
-[中文](../re-agent-igi2-legacy-tools.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../re-agent-igi2-legacy-tools.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

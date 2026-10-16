@@ -15,4 +15,4 @@ Engagement snapshot (2026-10-12): 0 likes | 9 views | 0 reposts
 - [DLSS background in the thread being replied to](https://x.com/SebAaltonen/status/2108990746280038649)
 - [Related public project background (correspondence to comment unconfirmed)](https://github.com/mochizuki0323/DLSSNR-AMD)
 
-[中文](../dlss-amd-compute-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../dlss-amd-compute-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

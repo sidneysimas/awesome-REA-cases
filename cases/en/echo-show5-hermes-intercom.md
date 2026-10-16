@@ -14,4 +14,4 @@ The author's wording 'smartphone system' does not establish a phone OS or Androi
 
 - [Original post from this window (author report)](https://x.com/i/status/2109791974014496983)
 
-[中文](../echo-show5-hermes-intercom.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../echo-show5-hermes-intercom.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -12,4 +12,4 @@ October 15 retelling of an October 14 historical self-report; original-author co
 
 - [This window's account and explicit verification limitations](https://x.com/i/status/2110735780842999962)
 
-[中文](../mario-odyssey-macos-claude-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../mario-odyssey-macos-claude-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

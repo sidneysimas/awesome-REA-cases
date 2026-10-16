@@ -1,6 +1,6 @@
 # Applications and clients
 
-[Editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [中文](../apps.md)
+[Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../apps.md)
 
 - [LG PlxNative: a faster Plex client](../../cases/en/lg-plxnative.md) — Investigate the media stack and build a Rust/OpenGL client; a later secondary report adds SDL-layout and shader-optimization details, not independently verified. **[Other AI-assisted work]**
 - [Claude Slides: rebuilding the editor](../../cases/en/claude-slides.md) — Analyze bundled front-end code and rebuild slide-editing functionality. **[REA]**

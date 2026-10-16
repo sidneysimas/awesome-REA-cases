@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-13): 1 like | 224 views | 0 reposts
 - [Circulating report from this review](https://x.com/i/status/2109639780577190171)
 - [Circulating report from this review](https://x.com/i/status/2109652812577517754)
 
-[中文](../classic-shooters-browser-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../classic-shooters-browser-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

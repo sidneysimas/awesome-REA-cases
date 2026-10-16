@@ -12,4 +12,4 @@
 
 - [本轮作者未完成报告](https://x.com/i/status/2110553648787013950)
 
-[English](en/kirby-rea-in-progress.md) | [返回目录](../README.md)
+[English](en/kirby-rea-in-progress.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@
 
 - [作者的 iTunes 现代化研究请求](https://x.com/i/status/2110820109631766547)
 
-[English](en/itunes-ai-modernization-idea.md) | [返回目录](../README.md)
+[English](en/itunes-ai-modernization-idea.md) | [返回目录](../README.zh-CN.md)

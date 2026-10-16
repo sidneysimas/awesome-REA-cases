@@ -12,4 +12,4 @@ October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 
 
 - [Secondhand Hermes REA plugin release and usage-boundary introduction](https://x.com/i/status/2110805485939249561)
 
-[中文](../hermes-rea-plugin-release.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../hermes-rea-plugin-release.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

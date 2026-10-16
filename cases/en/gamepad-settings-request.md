@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 23 likes | 4,655 views | 0 reposts
 
 - [Author's original post](https://x.com/corndogjpn2/status/2109289076243525916)
 
-[中文](../gamepad-settings-request.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../gamepad-settings-request.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

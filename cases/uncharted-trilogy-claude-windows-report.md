@@ -12,4 +12,4 @@
 
 - [Uncharted 三部曲 Windows / Claude 移植转述](https://x.com/i/status/2110786628553932980)
 
-[English](en/uncharted-trilogy-claude-windows-report.md) | [返回目录](../README.md)
+[English](en/uncharted-trilogy-claude-windows-report.md) | [返回目录](../README.zh-CN.md)

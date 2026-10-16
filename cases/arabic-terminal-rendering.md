@@ -13,4 +13,4 @@ REA 的使用与完成/测试状态均来自发帖者自述；发帖者身份未
 
 - [发帖者自述：REA 分析 iTerm 并测试阿拉伯语绘制改进](https://x.com/i/status/2110091122517410164)
 
-[English](en/arabic-terminal-rendering.md) | [返回目录](../README.md)
+[English](en/arabic-terminal-rendering.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@
 
 - [Whirlpool 用户提出 F13 / REA 调查计划](https://x.com/i/status/2110809016142082332)
 
-[English](en/whirlpool-f13-rea-investigation-idea.md) | [返回目录](../README.md)
+[English](en/whirlpool-f13-rea-investigation-idea.md) | [返回目录](../README.zh-CN.md)

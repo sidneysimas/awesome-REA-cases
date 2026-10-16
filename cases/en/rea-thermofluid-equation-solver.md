@@ -12,4 +12,4 @@ Candidate snapshot: 12 likes | 866 views; performance and near-completion are au
 
 - [Author's two-project progress report from this window](https://x.com/i/status/2110684985900355622)
 
-[中文](../rea-thermofluid-equation-solver.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../rea-thermofluid-equation-solver.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

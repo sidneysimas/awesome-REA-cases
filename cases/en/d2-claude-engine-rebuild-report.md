@@ -13,4 +13,4 @@ October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains
 - [This window's reader reply on Claude decompilation and in-engine assets](https://x.com/i/status/2110818698109899108)
 - [Earlier Destiny/Bungie root post retrieved for context only](https://x.com/i/status/2110422033662124277)
 
-[中文](../d2-claude-engine-rebuild-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../d2-claude-engine-rebuild-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

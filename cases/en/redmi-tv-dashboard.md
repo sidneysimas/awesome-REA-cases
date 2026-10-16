@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 1 like | 127 views | 1 repost
 
 - [Author's practical account from this review](https://x.com/zxlie_fehelper/status/2109533072370917846)
 
-[中文](../redmi-tv-dashboard.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../redmi-tv-dashboard.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

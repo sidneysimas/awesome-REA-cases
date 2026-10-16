@@ -12,4 +12,4 @@
 
 - [作者关于 REA 与博彩结果的假设性提问](https://x.com/i/status/2110822588817510762)
 
-[English](en/betting-app-rea-outcome-idea.md) | [返回目录](../README.md)
+[English](en/betting-app-rea-outcome-idea.md) | [返回目录](../README.zh-CN.md)

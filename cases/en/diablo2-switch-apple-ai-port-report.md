@@ -12,4 +12,4 @@ Secondhand account, not author confirmation or execution verification by this co
 
 - [Third-party port account from this window](https://x.com/i/status/2110658894360097141)
 
-[中文](../diablo2-switch-apple-ai-port-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../diablo2-switch-apple-ai-port-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

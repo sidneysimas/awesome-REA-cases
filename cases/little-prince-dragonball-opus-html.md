@@ -12,4 +12,4 @@
 
 - [作者的重建报告与HTML下载入口](https://x.com/i/status/2110713533193453572)
 
-[English](en/little-prince-dragonball-opus-html.md) | [返回目录](../README.md)
+[English](en/little-prince-dragonball-opus-html.md) | [返回目录](../README.zh-CN.md)

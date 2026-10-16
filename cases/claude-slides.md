@@ -13,4 +13,4 @@ Claude Slides 是 Claude 的幻灯片制作功能。宝玉希望恢复它的编�
 - [看 X 热门帖](https://x.com/dotey/status/2109151666020794711)
 - [对应代码提交](https://github.com/JimLiu/baocut/commit/b8585e0c8d7a82bdee9f0ed019cf6edb075e41c1)
 
-[English](en/claude-slides.md) | [返回目录](../README.md)
+[English](en/claude-slides.md) | [返回目录](../README.zh-CN.md)

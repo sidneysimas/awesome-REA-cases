@@ -17,4 +17,4 @@ Original post specifies personal learning and technical research only, without d
 - [Author's REA analysis and local-alternative report](https://x.com/i/status/2109971905336037671)
 - [Saydra author's report and retelling of Chris's REA work](https://x.com/i/status/2110386418929594439)
 
-[中文](../rea-typeless-local.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-typeless-local.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

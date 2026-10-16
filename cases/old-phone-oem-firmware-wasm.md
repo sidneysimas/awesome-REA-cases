@@ -12,4 +12,4 @@
 
 - [作者的旧手机固件 Wasm 运行自述](https://x.com/i/status/2110765881768747173)
 
-[English](en/old-phone-oem-firmware-wasm.md) | [返回目录](../README.md)
+[English](en/old-phone-oem-firmware-wasm.md) | [返回目录](../README.zh-CN.md)

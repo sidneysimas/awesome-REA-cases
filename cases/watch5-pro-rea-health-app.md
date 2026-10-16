@@ -12,4 +12,4 @@
 
 - [本窗口作者设备使用回复](https://x.com/i/status/2110693137773392155)
 
-[English](en/watch5-pro-rea-health-app.md) | [返回目录](../README.md)
+[English](en/watch5-pro-rea-health-app.md) | [返回目录](../README.zh-CN.md)

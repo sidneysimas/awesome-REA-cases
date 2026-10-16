@@ -13,4 +13,4 @@ Post marked as a quote; capture does not supply author identity.
 
 - [X quote post (author identity unconfirmed in capture; first-person account)](https://x.com/i/status/2109912103813599539)
 
-[中文](../minecraft-pvz-rea-mashup.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../minecraft-pvz-rea-mashup.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2 likes | 88 views | 0 reposts
 
 - [Author's work-in-progress report from this review](https://x.com/iamsupersocks/status/2109553690595979371)
 
-[中文](../business-software-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../business-software-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

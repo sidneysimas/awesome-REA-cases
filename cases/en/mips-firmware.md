@@ -10,4 +10,4 @@ MIPS32 is a 32-bit processor architecture common in older devices; firmware is t
 - [Request and real-firmware investigation](https://github.com/morluto/rea/issues/1620)
 - [Implementation direction](https://github.com/morluto/rea/pull/1898)
 
-[中文](../mips-firmware.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../mips-firmware.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

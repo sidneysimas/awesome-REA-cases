@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 30 views | 0 reposts
 
 - [Interoperability idea from this review](https://x.com/netanelgilad/status/2109590211034263756)
 
-[中文](../slack-music-claude-zoom-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../slack-music-claude-zoom-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

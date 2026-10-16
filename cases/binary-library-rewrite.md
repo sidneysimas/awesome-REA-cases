@@ -12,4 +12,4 @@ Leo Xiang 自述，用 REA 分析一个加密二进制库，再让 Claude Code �
 
 - [看 X 热门帖](https://x.com/leeoxiang/status/2109159806183538768)
 
-[English](en/binary-library-rewrite.md) | [返回目录](../README.md)
+[English](en/binary-library-rewrite.md) | [返回目录](../README.zh-CN.md)

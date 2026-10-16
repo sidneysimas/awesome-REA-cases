@@ -13,4 +13,4 @@ Evidence boundary: in progress; not independently run or verified
 
 - [Original post from this window (author report)](https://x.com/i/status/2109785163475591510)
 
-[中文](../android-photo-frame-codex-bringup.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../android-photo-frame-codex-bringup.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

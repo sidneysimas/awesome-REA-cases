@@ -16,13 +16,12 @@ class EditorialReadmeTests(unittest.TestCase):
             (root / 'data').mkdir()
             shutil.copy(ROOT / 'scripts/build.py', root / 'scripts/build.py')
             shutil.copy(ROOT / 'data/cases.json', root / 'data/cases.json')
-            editorial = {'README.md': '# 人工精选\n\n由编辑选择。\n',
-                         'README.en.md': '# Editor picks\n\nChosen by the editor.\n'}
+            editorial = {'README.md': '# Editor picks\n\nChosen by the editor.\n',
+                         'README.zh-CN.md': '# 人工精选\n\n由编辑选择。\n',
+                         'README.en.md': '# Legacy entry\n\n[English](README.md) | [简体中文](README.zh-CN.md)\n'}
             for name, text in editorial.items():
                 (root / name).write_text(text)
             subprocess.run(['python3', str(root / 'scripts/build.py')], check=True, capture_output=True)
-            for name, text in editorial.items():
-                self.assertEqual((root / name).read_text(), text, 'build must never overwrite editorial README')
             records = json.loads((root / 'data/cases.json').read_text())
             for name in ('INDEX.md', 'INDEX.en.md'):
                 index = (root / name).read_text()
@@ -30,6 +29,8 @@ class EditorialReadmeTests(unittest.TestCase):
                 for record in records:
                     self.assertIn(f"]({case_dir}/{record['id']}.md)", index)
             subprocess.run(['python3', str(root / 'scripts/build.py'), '--check'], check=True, capture_output=True)
+            for name, text in editorial.items():
+                self.assertEqual((root / name).read_text(), text, 'build must never overwrite any static README')
 
 
 if __name__ == '__main__':

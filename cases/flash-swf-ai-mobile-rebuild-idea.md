@@ -12,4 +12,4 @@ idea；未指定游戏、未执行。
 
 - [本窗口保存路线建议](https://x.com/i/status/2110664422914179229)
 
-[English](en/flash-swf-ai-mobile-rebuild-idea.md) | [返回目录](../README.md)
+[English](en/flash-swf-ai-mobile-rebuild-idea.md) | [返回目录](../README.zh-CN.md)

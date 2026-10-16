@@ -9,4 +9,4 @@ Zigbee is a wireless communication technology used by smart-home devices. ngxson
 
 - [Original record](https://x.com/ngxson/status/2107787195918475432)
 
-[中文](../tuya-zigbee-button.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../tuya-zigbee-button.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

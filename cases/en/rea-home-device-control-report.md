@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-13): 0 likes | 21 views | 0 reposts
 
 - [Author report from this review](https://x.com/i/status/2109664718499762606)
 
-[中文](../rea-home-device-control-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../rea-home-device-control-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

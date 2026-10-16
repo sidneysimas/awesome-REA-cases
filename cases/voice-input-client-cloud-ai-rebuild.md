@@ -12,4 +12,4 @@
 
 - [作者的个人语音工具研究经历](https://x.com/i/status/2110759506003304641)
 
-[English](en/voice-input-client-cloud-ai-rebuild.md) | [返回目录](../README.md)
+[English](en/voice-input-client-cloud-ai-rebuild.md) | [返回目录](../README.zh-CN.md)

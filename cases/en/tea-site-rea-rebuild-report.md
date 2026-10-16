@@ -12,4 +12,4 @@ Author reports using Codex and REA; reference site unnamed and reconstruction no
 
 - [Author's original post on website reconstruction with REA](https://x.com/i/status/2110010062597230838)
 
-[中文](../tea-site-rea-rebuild-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../tea-site-rea-rebuild-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

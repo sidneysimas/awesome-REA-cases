@@ -16,4 +16,4 @@ Evidence is a third-party quote post, not direct maintainer confirmation
 
 - [Third-party quote post; project maintainer not identified or directly confirming](https://x.com/i/status/2110262015063105757)
 
-[English](en/ledger-reborn-accounting-app.md) | [返回目录](../README.md)
+[English](en/ledger-reborn-accounting-app.md) | [返回目录](../README.zh-CN.md)

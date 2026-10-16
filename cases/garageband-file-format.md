@@ -12,4 +12,4 @@ GarageBand 是 Apple 的音乐制作软件。Anshu 为制作 The Context Windows
 
 - [作者原帖](https://x.com/anshuc/status/2106131543752122774)
 
-[English](en/garageband-file-format.md) | [返回目录](../README.md)
+[English](en/garageband-file-format.md) | [返回目录](../README.zh-CN.md)

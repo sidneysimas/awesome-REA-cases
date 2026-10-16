@@ -15,4 +15,4 @@ Discussion-post engagement snapshot (2026-10-12): 1 like | 53 views | 0 reposts
 - [Author's release notes (background)](https://x.com/argofowl/status/2109571141434277939)
 - [Public implementation](https://github.com/argofowl/fowlbrowser)
 
-[中文](../fowlbrowser-agent-bridge.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../fowlbrowser-agent-bridge.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

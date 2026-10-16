@@ -10,4 +10,4 @@ DX-Ball is an older brick-breaking game. This case recovers how sound effects ar
 - [Case PR](https://github.com/morluto/rea/pull/876)
 - [Evidence record](https://github.com/morluto/rea/blob/main/website/evidence/dx-ball-sound-pan.md)
 
-[中文](../dx-ball-sound-pan.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../dx-ball-sound-pan.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

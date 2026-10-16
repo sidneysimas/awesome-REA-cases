@@ -12,4 +12,4 @@
 
 - [本窗口作者研究计划](https://x.com/i/status/2110642225361371219)
 
-[English](en/ai-colony-engine-decompilation-plan.md) | [返回目录](../README.md)
+[English](en/ai-colony-engine-decompilation-plan.md) | [返回目录](../README.zh-CN.md)

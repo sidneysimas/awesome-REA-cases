@@ -12,4 +12,4 @@
 
 - [本窗口具体测试叙述](https://x.com/i/status/2110670751087137197)
 
-[English](en/apple-notes-rea-swiftui-rebuild.md) | [返回目录](../README.md)
+[English](en/apple-notes-rea-swiftui-rebuild.md) | [返回目录](../README.zh-CN.md)

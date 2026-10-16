@@ -20,4 +20,4 @@ Additional evidence is the poster's own account, not independently checked.
 - [This window: poster reports checking Claude Code language settings with REA](https://x.com/i/status/2110027278570635457)
 - [October 15: another author's CLI/Desktop feature-research plan (not implemented)](https://x.com/i/status/2110550597527339230)
 
-[中文](../claude-code-analysis.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../claude-code-analysis.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

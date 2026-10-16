@@ -12,4 +12,4 @@ Ten minutes is author-reported; no backend access is an explicit original-post b
 
 - [Author's operation and result report from this window](https://x.com/i/status/2110686215846699236)
 
-[中文](../booking-funnel-rea-calendar.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../booking-funnel-rea-calendar.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

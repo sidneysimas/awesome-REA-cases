@@ -12,4 +12,4 @@ Stage: in progress; component name and identity undetermined
 
 - [X post from this window](https://x.com/i/status/2109711257779765741)
 
-[中文](../android-priv-app-permission-inspection.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../android-priv-app-permission-inspection.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

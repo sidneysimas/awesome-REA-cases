@@ -12,4 +12,4 @@ Candidate snapshot this window: 2 likes | 52 views; one evening is author-report
 
 - [Author's original post and follow-up discussion](https://x.com/i/status/2110647905027604700)
 
-[中文](../scansnap-ix500-claude-mac.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../scansnap-ix500-claude-mac.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

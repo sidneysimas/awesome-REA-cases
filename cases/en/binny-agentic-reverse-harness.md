@@ -12,4 +12,4 @@ October 16 candidate snapshot: 96 likes, 3,548 views, 9 reposts; attention is no
 
 - [BINNY public-beta announcement](https://x.com/i/status/2110767491286716525)
 
-[中文](../binny-agentic-reverse-harness.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../binny-agentic-reverse-harness.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

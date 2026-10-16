@@ -23,4 +23,4 @@ Christian F. K. Schaller 为扫描家人留下的旧底片购买 Plustek OpticFi
 - [hw-harness 项目与观察边界](https://github.com/cschalle/hw-harness)
 - [MIPI 五处修复、测量与未修复问题](https://cschalle.github.io/mipi-fixes-x1-aura/)
 
-[English](en/schaller-opticfilm-thinkpad-linux.md) | [返回目录](../README.md)
+[English](en/schaller-opticfilm-thinkpad-linux.md) | [返回目录](../README.zh-CN.md)

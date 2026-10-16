@@ -12,4 +12,4 @@ October 15 source; no demonstration or tests, REA unconfirmed.
 
 - [PDF minimal-edit prompting suggestion](https://x.com/i/status/2110755472089518089)
 
-[中文](../pdf-binary-minimal-edit-ai-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../pdf-binary-minimal-edit-ai-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

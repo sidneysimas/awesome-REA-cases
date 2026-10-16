@@ -10,4 +10,4 @@ Aegis is an open-source Android two-factor authenticator that generates time-bas
 - [Case PR](https://github.com/morluto/rea/pull/1266)
 - [Evidence record](https://github.com/morluto/rea/blob/main/website/evidence/aegis-login-code.md)
 
-[中文](../aegis-totp.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../aegis-totp.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

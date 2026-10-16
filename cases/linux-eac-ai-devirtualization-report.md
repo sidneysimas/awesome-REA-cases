@@ -12,4 +12,4 @@
 
 - [作者的Linux EAC分析宣称](https://x.com/i/status/2110759663822352852)
 
-[English](en/linux-eac-ai-devirtualization-report.md) | [返回目录](../README.md)
+[English](en/linux-eac-ai-devirtualization-report.md) | [返回目录](../README.zh-CN.md)

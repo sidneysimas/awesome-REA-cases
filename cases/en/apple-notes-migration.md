@@ -12,4 +12,4 @@ Engagement snapshot (2026-10-12): 978 likes | 173,343 views | 32 reposts
 
 - [Author's original post](https://x.com/ozgrozer/status/2035124755854979272)
 
-[中文](../apple-notes-migration.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../apple-notes-migration.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

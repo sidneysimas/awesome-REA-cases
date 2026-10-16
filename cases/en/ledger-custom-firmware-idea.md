@@ -14,4 +14,4 @@ Ledger target established by reading the reply context with xreach; model unknow
 
 - [Original post from this window (author report)](https://x.com/i/status/2109743903863701561)
 
-[中文](../ledger-custom-firmware-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../ledger-custom-firmware-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

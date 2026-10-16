@@ -16,4 +16,4 @@
 - [本轮长帖：Framework 与 Electron 样本测试](https://x.com/i/status/2110563764886266167)
 - [本轮续帖：Trap.dll 与程序集变更比较](https://x.com/i/status/2110565455039799441)
 
-[English](en/rea-640-windows-managed-electron-test.md) | [返回目录](../README.md)
+[English](en/rea-640-windows-managed-electron-test.md) | [返回目录](../README.zh-CN.md)

@@ -13,4 +13,4 @@ Boundary: Chart API v2; specification still under review
 
 - [X post from this window](https://x.com/i/status/2109717890262053108)
 
-[中文](../helm-chart-v2-spec-research.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../helm-chart-v2-spec-research.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

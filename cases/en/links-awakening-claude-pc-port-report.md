@@ -16,4 +16,4 @@ A new October 15, 18:04 account claims a 60 FPS lock, internal rendering up to 4
 - [Public project description and known issues (checked October 15)](https://github.com/peiikai/LASRecomp)
 - [October 15, 18:04 account of frame-rate and resolution settings](https://x.com/i/status/2110673058986066332)
 
-[中文](../links-awakening-claude-pc-port-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../links-awakening-claude-pc-port-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

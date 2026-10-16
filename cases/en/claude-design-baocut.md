@@ -16,4 +16,4 @@ Engagement snapshot (2026-10-12): 254 likes | 23,291 views | 29 reposts
 - [Public implementation](https://github.com/JimLiu/baocut/commit/7aa049e8)
 - [Later repost: account of REA MCP and Claude Design/BaoCut integration](https://x.com/i/status/2109830792851448099)
 
-[中文](../claude-design-baocut.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../claude-design-baocut.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

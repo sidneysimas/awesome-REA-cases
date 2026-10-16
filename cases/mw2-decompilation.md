@@ -24,4 +24,4 @@ Maurice Heumann 研究的是《使命召唤：现代战争 2》（MW2），希�
 - [本窗口第三方长文转述（非项目作者确认）](https://x.com/i/status/2110232535880094082)
 - [10月15日本窗口：早期错误实现与精确oracle的二手复盘](https://x.com/i/status/2110679520772849745)
 
-[English](en/mw2-decompilation.md) | [返回目录](../README.md)
+[English](en/mw2-decompilation.md) | [返回目录](../README.zh-CN.md)

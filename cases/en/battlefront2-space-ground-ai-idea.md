@@ -12,4 +12,4 @@ October 15 candidate snapshot: 8 likes, 235 views; proposal only.
 
 - [Specific gameplay-modification proposal](https://x.com/i/status/2110702991443636235)
 
-[中文](../battlefront2-space-ground-ai-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../battlefront2-space-ground-ai-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

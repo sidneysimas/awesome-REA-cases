@@ -12,4 +12,4 @@ October 15 source; half an hour is secondhand timing, not independently verified
 
 - [This window's account of an adapter-firmware fix](https://x.com/i/status/2110759012266332509)
 
-[中文](../carplay-adapter-rea-grok-firmware.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../carplay-adapter-rea-grok-firmware.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

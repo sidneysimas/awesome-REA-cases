@@ -11,4 +11,4 @@ WHOOP provides health and fitness tracking devices and associated services. The 
 - [Original record](https://x.com/uwwgo/status/2109217632758976755)
 - [October 15: account of Zhoop/NOOP use (not independently verified)](https://x.com/i/status/2110602443814047871)
 
-[中文](../whoop-apk.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../whoop-apk.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

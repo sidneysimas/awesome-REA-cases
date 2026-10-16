@@ -13,4 +13,4 @@ October 16 candidate snapshots: initial reply 1 like, 12 views; follow-up 1 like
 - [Joe proposes replacing the cleaning program with Claude](https://x.com/i/status/2110803296571310205)
 - [Same author's dirt, corner and slope strategy ideas](https://x.com/i/status/2110806568673632539)
 
-[中文](../robot-vacuum-claude-cleaning-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../robot-vacuum-claude-cleaning-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

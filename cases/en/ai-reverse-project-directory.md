@@ -12,4 +12,4 @@ October 15 candidate snapshot: 4 likes, 71 views; resource directory, not a sing
 
 - [Directory author's introduction and demonstration](https://x.com/i/status/2110730358153269753)
 
-[中文](../ai-reverse-project-directory.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../ai-reverse-project-directory.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

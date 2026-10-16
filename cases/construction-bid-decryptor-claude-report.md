@@ -12,4 +12,4 @@
 
 - [建设投标密码与解密器研究的转述](https://x.com/i/status/2110802464786264210)
 
-[English](en/construction-bid-decryptor-claude-report.md) | [返回目录](../README.md)
+[English](en/construction-bid-decryptor-claude-report.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@ Stage: preparatory plan; execution not yet reported
 
 - [X post from this window](https://x.com/i/status/2109705207219151126)
 
-[中文](../kepler-ai-inference-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../kepler-ai-inference-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

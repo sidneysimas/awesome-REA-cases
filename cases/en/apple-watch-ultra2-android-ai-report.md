@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 46 views; Android root is an explicit so
 
 - [Edenwoodfilm's report of Ultra 2 / Android interoperability](https://x.com/i/status/2110844478239945061)
 
-[中文](../apple-watch-ultra2-android-ai-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../apple-watch-ultra2-android-ai-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

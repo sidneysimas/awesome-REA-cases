@@ -12,4 +12,4 @@ Stage: concrete idea, not executed
 
 - [X post from this window](https://x.com/i/status/2109680172995895346)
 
-[中文](../xiaomi-speaker-chatgpt-voice-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../xiaomi-speaker-chatgpt-voice-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -12,4 +12,4 @@ Posted: October 5 | Not REA
 
 - [Popular X post](https://x.com/esrtweet/status/2106983467141509385)
 
-[中文](../firefighter-rust.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../firefighter-rust.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

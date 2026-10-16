@@ -12,4 +12,4 @@ Author's own assessment; experimental design and results not independently check
 
 - [Author's test report](https://x.com/i/status/2110614074941927618)
 
-[中文](../agent-reverse-license-test.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../agent-reverse-license-test.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

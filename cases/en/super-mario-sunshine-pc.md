@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-12): 0 likes | 13 views | 0 reposts
 - [Public source from this review](https://x.com/Edenwoodfilm/status/2109468542437310510)
 - [Same-name port project background (original-post link correspondence unconfirmed)](https://github.com/chasem-dev/sms-pc-port)
 
-[中文](../super-mario-sunshine-pc.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../super-mario-sunshine-pc.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

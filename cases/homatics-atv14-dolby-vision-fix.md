@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109722857207115879)
 
-[English](en/homatics-atv14-dolby-vision-fix.md) | [返回目录](../README.md)
+[English](en/homatics-atv14-dolby-vision-fix.md) | [返回目录](../README.zh-CN.md)

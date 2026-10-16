@@ -16,4 +16,4 @@ BaoCut 原本是宝玉开发的视频剪辑 Agent。作者在研究 Claude Desig
 - [公开实现](https://github.com/JimLiu/baocut/commit/7aa049e8)
 - [后续转载：REA MCP 与 Claude Design/BaoCut 集成的描述](https://x.com/i/status/2109830792851448099)
 
-[English](en/claude-design-baocut.md) | [返回目录](../README.md)
+[English](en/claude-design-baocut.md) | [返回目录](../README.zh-CN.md)

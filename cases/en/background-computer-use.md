@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 382 likes | 31,010 views | 17 reposts
 - [Author's original post](https://x.com/anupambatra_/status/2047767285969145883)
 - [Public implementation](https://github.com/actuallyepic/background-computer-use)
 
-[中文](../background-computer-use.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../background-computer-use.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

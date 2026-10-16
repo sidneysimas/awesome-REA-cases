@@ -16,4 +16,4 @@ account-ban causation: unconfirmed
 
 - [作者自述尝试用 REA 研究 Codex desktop](https://x.com/i/status/2110377021402661320)
 
-[English](en/codex-desktop-rea-attempt.md) | [返回目录](../README.md)
+[English](en/codex-desktop-rea-attempt.md) | [返回目录](../README.zh-CN.md)

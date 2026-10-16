@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109689282336346575)
 
-[English](en/rea-webflow-rest-spec-report.md) | [返回目录](../README.md)
+[English](en/rea-webflow-rest-spec-report.md) | [返回目录](../README.zh-CN.md)

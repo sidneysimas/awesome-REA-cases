@@ -12,4 +12,4 @@
 
 - [参数提取与Halo控制器宣称](https://x.com/i/status/2110741739732435179)
 
-[English](en/mario-jump-halo-rea-report.md) | [返回目录](../README.md)
+[English](en/mario-jump-halo-rea-report.md) | [返回目录](../README.zh-CN.md)

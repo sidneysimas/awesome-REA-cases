@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 26 views | 0 reposts
 
 - [Author's retrospective from this review](https://x.com/web3_fising/status/2109601382273880327)
 
-[中文](../proxy-clash-subscription-bridge.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../proxy-clash-subscription-bridge.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

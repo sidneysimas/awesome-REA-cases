@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-12): 2 likes | 94 views | 0 reposts
 - [Author report from this review](https://x.com/guyru_/status/2109566754540392730)
 - [Public implementation and device limitations](https://github.com/guyru/cf632ble)
 
-[中文](../cf632ble-web-bluetooth.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../cf632ble-web-bluetooth.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

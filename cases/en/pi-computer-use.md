@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 926 likes | 169,438 views | 56 reposts
 - [Author's original post](https://x.com/injaneity/status/2046302876453232667)
 - [Public implementation](https://github.com/injaneity/pi-computer-use)
 
-[中文](../pi-computer-use.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../pi-computer-use.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

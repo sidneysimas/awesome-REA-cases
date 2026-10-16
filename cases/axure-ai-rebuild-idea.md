@@ -13,4 +13,4 @@ Axure 是用于制作交互原型的设计工具。lemonkiller 提出“为什�
 
 - [本周期 idea 原帖](https://x.com/lemonkillergame/status/2109501988195238292)
 
-[English](en/axure-ai-rebuild-idea.md) | [返回目录](../README.md)
+[English](en/axure-ai-rebuild-idea.md) | [返回目录](../README.zh-CN.md)

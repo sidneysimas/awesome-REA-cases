@@ -13,4 +13,4 @@ Candidate snapshot: 0 likes, 17 views; REA unconfirmed; no independent acceptanc
 - [Candidate: fault, communication, reset and monitoring details](https://x.com/i/status/2110745676875227179)
 - [Same author's parent post: plate-reader context and screen observation (additional source)](https://x.com/i/status/2110744888543510712)
 
-[中文](../plate-reader-filter-wheel-claude-repair.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../plate-reader-filter-wheel-claude-repair.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

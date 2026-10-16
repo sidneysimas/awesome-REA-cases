@@ -12,4 +12,4 @@ Author reports REA use; features and runtime results not independently verified.
 
 - [Author's report on an REA GTM tool](https://x.com/i/status/2110034984065245677)
 
-[中文](../rea-gtm-tool.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-gtm-tool.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

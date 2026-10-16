@@ -12,4 +12,4 @@ Author reports completed Android port; code and independent validation not suppl
 
 - [Author's original post](https://x.com/i/status/2109865837477716324)
 
-[中文](../fort-apocalypse-android-port.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../fort-apocalypse-android-port.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

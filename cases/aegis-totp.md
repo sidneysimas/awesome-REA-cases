@@ -10,4 +10,4 @@ Aegis 是 Android 上的开源双因素验证器，会生成随时间变化的�
 - [案例 PR](https://github.com/morluto/rea/pull/1266)
 - [证据记录](https://github.com/morluto/rea/blob/main/website/evidence/aegis-login-code.md)
 
-[English](en/aegis-totp.md) | [返回目录](../README.md)
+[English](en/aegis-totp.md) | [返回目录](../README.zh-CN.md)

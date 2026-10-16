@@ -13,4 +13,4 @@ Related tool project; not an REA capability test; target code not executed.
 - [Candidate introduction](https://x.com/i/status/2110594366989369744)
 - [Project documentation and source](https://github.com/newliver666/apk-reverse)
 
-[中文](../apk-reverse-agent-skill.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../apk-reverse-agent-skill.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

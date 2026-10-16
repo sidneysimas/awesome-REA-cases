@@ -12,4 +12,4 @@
 
 - [作者的非刷屏 YouTube 版本报告](https://x.com/i/status/2110878456611319835)
 
-[English](en/youtube-rea-niche-video-dashboard.md) | [返回目录](../README.md)
+[English](en/youtube-rea-niche-video-dashboard.md) | [返回目录](../README.zh-CN.md)

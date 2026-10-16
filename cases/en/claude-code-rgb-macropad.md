@@ -14,4 +14,4 @@ Repository created on 2026-10-15; README platform-testing scope is the project's
 - [Author's Claude Code-assisted reverse-engineering report this review](https://x.com/i/status/2110541828097462605)
 - [Public implementation and configuration/protocol documentation (checked this review)](https://github.com/dvdarkin/gamekb-k17)
 
-[中文](../claude-code-rgb-macropad.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../claude-code-rgb-macropad.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

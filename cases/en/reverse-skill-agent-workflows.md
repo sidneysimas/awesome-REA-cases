@@ -12,4 +12,4 @@ Feature scope is post-described, not independently checked.
 
 - [Project introduction from this window](https://x.com/i/status/2110680583634366777)
 
-[中文](../reverse-skill-agent-workflows.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../reverse-skill-agent-workflows.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

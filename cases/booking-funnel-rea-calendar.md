@@ -12,4 +12,4 @@
 
 - [本窗口作者操作与结果报告](https://x.com/i/status/2110686215846699236)
 
-[English](en/booking-funnel-rea-calendar.md) | [返回目录](../README.md)
+[English](en/booking-funnel-rea-calendar.md) | [返回目录](../README.zh-CN.md)

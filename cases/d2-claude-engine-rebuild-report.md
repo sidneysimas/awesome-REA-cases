@@ -13,4 +13,4 @@
 - [本轮读者关于 Claude 反编译与引擎素材重建的回复](https://x.com/i/status/2110818698109899108)
 - [补查往期 Destiny / Bungie 根帖（只作背景）](https://x.com/i/status/2110422033662124277)
 
-[English](en/d2-claude-engine-rebuild-report.md) | [返回目录](../README.md)
+[English](en/d2-claude-engine-rebuild-report.md) | [返回目录](../README.zh-CN.md)

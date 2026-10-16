@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 39 views; ₩1B is the reported bid valu
 
 - [Secondhand construction-bid password and decryptor research account](https://x.com/i/status/2110802464786264210)
 
-[中文](../construction-bid-decryptor-claude-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../construction-bid-decryptor-claude-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

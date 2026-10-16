@@ -16,4 +16,4 @@ Evidence: original-post report; target not run or independently retested in this
 - [X post from this window](https://x.com/i/status/2109676911500951649)
 - [This batch: first-person Obsidian-like app rebuild; REA use not explicitly confirmed](https://x.com/i/status/2110355975974596826)
 
-[中文](../obsidian-gpt-rebuild-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../obsidian-gpt-rebuild-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

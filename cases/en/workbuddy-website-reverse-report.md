@@ -12,4 +12,4 @@ Target is an unnamed bookmarked website; no implementation verification.
 
 - [Author's account](https://x.com/i/status/2110593537872175256)
 
-[中文](../workbuddy-website-reverse-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../workbuddy-website-reverse-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

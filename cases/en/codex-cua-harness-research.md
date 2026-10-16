@@ -15,4 +15,4 @@ Engagement snapshot (2026-10-12): 0 likes | 59 views | 0 reposts
 - [This window: another user's MCP signature restriction and REA plan](https://x.com/i/status/2110692783375757778)
 - [Earlier parent thread: Codex computer-use MCP for Opus (background)](https://x.com/i/status/2110415588438733222)
 
-[中文](../codex-cua-harness-research.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-cua-harness-research.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

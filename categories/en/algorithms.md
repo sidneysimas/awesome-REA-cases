@@ -1,6 +1,6 @@
 # Algorithms and feature recovery
 
-[Editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
+[Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
 - [Binary-library rewrite](../../cases/en/binary-library-rewrite.md) — Analyze and reimplement an unnamed library; evaluation details remain private. **[REA]**
 - [DownUnderCTF: masked squares checker](../../cases/en/masked-squares-ctf.md) — Recover input constraints and solve them with Z3; test against the original. **[REA]**

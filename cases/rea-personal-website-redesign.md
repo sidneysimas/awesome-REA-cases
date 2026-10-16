@@ -12,4 +12,4 @@ khaled_cli 的阿拉伯语帖报告使用 rea 仓库拆解一个网站设计，�
 
 - [看本窗口 X 帖](https://x.com/i/status/2109733299115475393)
 
-[English](en/rea-personal-website-redesign.md) | [返回目录](../README.md)
+[English](en/rea-personal-website-redesign.md) | [返回目录](../README.zh-CN.md)

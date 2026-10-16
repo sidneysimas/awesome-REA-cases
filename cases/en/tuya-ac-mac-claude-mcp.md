@@ -12,4 +12,4 @@ Concrete interoperability project; not reproduced; device keys not collected or 
 
 - [Author report](https://x.com/i/status/2110620776915411243)
 
-[中文](../tuya-ac-mac-claude-mcp.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../tuya-ac-mac-claude-mcp.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

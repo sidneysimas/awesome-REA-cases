@@ -1,6 +1,6 @@
 # 算法与功能重建
 
-[返回主目录](../README.md) | [English](en/algorithms.md)
+[返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
 - [二进制库：先分析原实现，再写替代代码](../cases/binary-library-rewrite.md) — 分析二进制库并重写；库名和评测细节未公开。 **[REA]**
 - [DownUnderCTF：从校验程序中找出正确输入](../cases/masked-squares-ctf.md) — 恢复校验约束，用 Z3 求出被原程序接受的输入。 **[REA]**

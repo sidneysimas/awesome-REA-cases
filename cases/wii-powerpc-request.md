@@ -10,4 +10,4 @@ GameCube 和 Wii 是任天堂主机，游戏程序使用 PowerPC 处理器与 DO
 
 - [原始 Issue](https://github.com/morluto/rea/issues/1741)
 
-[English](en/wii-powerpc-request.md) | [返回目录](../README.md)
+[English](en/wii-powerpc-request.md) | [返回目录](../README.zh-CN.md)

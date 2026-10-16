@@ -15,4 +15,4 @@ Development-detail follow-up snapshot (2026-10-13): 1 like | 345 views | 0 repos
 - [Developer's original introduction](https://www.reddit.com/r/ClaudeCode/comments/1x043yp/i_used_claude_code_to_reverseengineer_an_lg_tv/)
 - [Secondhand development details from this review window](https://x.com/i/status/2109658600394367126)
 
-[中文](../lg-plxnative.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../lg-plxnative.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

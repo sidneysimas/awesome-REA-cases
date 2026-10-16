@@ -17,4 +17,4 @@ Shapr3D post engagement snapshot (2026-10-12): 1 like | 23 views | 0 reposts
 - [Compatibility-layer implementation and application status](https://github.com/designgears/wine-uwp)
 - [Shapr3D wrapper project and beta notes](https://github.com/designgears/shapr3d-linux)
 
-[中文](../wine-uwp-shapr3d.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../wine-uwp-shapr3d.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

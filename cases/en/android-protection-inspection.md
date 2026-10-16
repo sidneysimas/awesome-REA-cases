@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 17 views | 0 reposts
 
 - [Secondhand AMA account from this review](https://x.com/IanJKerins/status/2109559519584088093)
 
-[中文](../android-protection-inspection.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../android-protection-inspection.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

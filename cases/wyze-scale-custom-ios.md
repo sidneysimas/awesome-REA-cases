@@ -12,4 +12,4 @@
 
 - [作者报告](https://x.com/i/status/2110604057287217339)
 
-[English](en/wyze-scale-custom-ios.md) | [返回目录](../README.md)
+[English](en/wyze-scale-custom-ios.md) | [返回目录](../README.zh-CN.md)

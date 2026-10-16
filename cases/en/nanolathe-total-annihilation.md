@@ -14,4 +14,4 @@ Stage: ongoing development with compatibility gaps; not independently run
 - [X post from this window](https://x.com/i/status/2109705658907959786)
 - [Public project README](https://github.com/nanolathe-gg/nanolathe)
 
-[中文](../nanolathe-total-annihilation.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../nanolathe-total-annihilation.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

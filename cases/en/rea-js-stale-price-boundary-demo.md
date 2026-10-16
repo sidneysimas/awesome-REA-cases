@@ -12,4 +12,4 @@ October 15, 23:56 source; candidate snapshot: 2 likes, 10 views. Six checks is t
 
 - [Author's call locations, boundary results and demonstration limitations](https://x.com/i/status/2110761684411572247)
 
-[中文](../rea-js-stale-price-boundary-demo.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../rea-js-stale-price-boundary-demo.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

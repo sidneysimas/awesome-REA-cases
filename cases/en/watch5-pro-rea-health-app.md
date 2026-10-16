@@ -12,4 +12,4 @@ Sensor access and installation are author-reported, not independent acceptance.
 
 - [Author's device-use reply from this window](https://x.com/i/status/2110693137773392155)
 
-[中文](../watch5-pro-rea-health-app.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../watch5-pro-rea-health-app.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -12,4 +12,4 @@
 
 - [心金 / 魂银多 Agent、token 与假设费用转述](https://x.com/i/status/2110816115718824296)
 
-[English](en/pokemon-hgss-multi-agent-decompile-report.md) | [返回目录](../README.md)
+[English](en/pokemon-hgss-multi-agent-decompile-report.md) | [返回目录](../README.zh-CN.md)

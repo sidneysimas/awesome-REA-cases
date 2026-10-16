@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 1 like | 24 views | 0 reposts
 
 - [Author report from this review](https://x.com/Chen1090874226/status/2109548112281055674)
 
-[中文](../red-alert-2-rl-engine.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../red-alert-2-rl-engine.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

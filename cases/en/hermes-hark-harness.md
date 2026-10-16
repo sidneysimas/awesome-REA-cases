@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 1 like | 223 views | 0 reposts
 
 - [Author report from this review](https://x.com/pablothethinker/status/2109509759044854087)
 
-[中文](../hermes-hark-harness.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../hermes-hark-harness.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

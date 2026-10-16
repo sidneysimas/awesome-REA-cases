@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2,263 likes | 395,773 views | 181 reposts
 - [Author's original post](https://x.com/pk_iv/status/2005694082627297735)
 - [Public implementation](https://github.com/browserbase/claude-code-plugin)
 
-[中文](../claude-chrome-remote.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../claude-chrome-remote.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

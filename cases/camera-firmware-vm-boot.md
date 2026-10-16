@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109715839117316150)
 
-[English](en/camera-firmware-vm-boot.md) | [返回目录](../README.md)
+[English](en/camera-firmware-vm-boot.md) | [返回目录](../README.zh-CN.md)

@@ -15,4 +15,4 @@ Cameo 是 macOS 状态栏应用，用透明视频或动画角色在桌面上显�
 - [所回复的结果说明（背景）](https://x.com/wquguru/status/2109521555953013004)
 - [原应用项目说明](https://github.com/wquguru/cameo)
 
-[English](en/cameo-reconstruction.md) | [返回目录](../README.md)
+[English](en/cameo-reconstruction.md) | [返回目录](../README.zh-CN.md)

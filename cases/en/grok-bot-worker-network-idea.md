@@ -12,4 +12,4 @@ Original post: October 15, 20:01 Beijing time; candidate snapshot: 3 likes, 453 
 
 - [Author's troubleshooting and unused proposal](https://x.com/i/status/2110702662270460232)
 
-[中文](../grok-bot-worker-network-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../grok-bot-worker-network-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

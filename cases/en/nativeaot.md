@@ -11,4 +11,4 @@ NativeAOT compiles .NET programs ahead of time into native machine code, prevent
 - [Original record](https://github.com/morluto/rea/issues/744)
 - [Related implementation](https://github.com/morluto/rea/pull/748)
 
-[中文](../nativeaot.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../nativeaot.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

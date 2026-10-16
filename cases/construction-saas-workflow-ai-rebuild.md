@@ -12,4 +12,4 @@
 
 - [作者的进行中后台替代与工作流研究](https://x.com/i/status/2110726879665660172)
 
-[English](en/construction-saas-workflow-ai-rebuild.md) | [返回目录](../README.md)
+[English](en/construction-saas-workflow-ai-rebuild.md) | [返回目录](../README.zh-CN.md)

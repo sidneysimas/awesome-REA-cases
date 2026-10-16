@@ -12,4 +12,4 @@ Evidence: original-post report; target not run or independently retested in this
 
 - [X post from this window](https://x.com/i/status/2109733493202981247)
 
-[中文](../codex-replit-saas-subset-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../codex-replit-saas-subset-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

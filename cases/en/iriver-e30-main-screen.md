@@ -12,4 +12,4 @@ REA use unconfirmed; main-screen modification is not complete firmware recovery.
 
 - [Author's work-in-progress report](https://x.com/i/status/2110651009181851731)
 
-[中文](../iriver-e30-main-screen.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../iriver-e30-main-screen.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

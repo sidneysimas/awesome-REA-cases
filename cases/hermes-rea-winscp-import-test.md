@@ -13,4 +13,4 @@
 - [首次插件与WinSCP测试介绍](https://x.com/i/status/2110738801660219869)
 - [较晚说明：v0.22.2的timeout键限制](https://x.com/i/status/2110758099866771894)
 
-[English](en/hermes-rea-winscp-import-test.md) | [返回目录](../README.md)
+[English](en/hermes-rea-winscp-import-test.md) | [返回目录](../README.zh-CN.md)

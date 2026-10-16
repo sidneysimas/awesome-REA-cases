@@ -36,4 +36,4 @@ PhotoCraft 补充帖热度快照（2026-10-12）：2 赞｜69 浏览｜0 转发
 - [10月15日本窗口的格式规范与验证流程转述](https://x.com/i/status/2110655957436965228)
 - [10月15日20:48：Ubuntu安装体验与非反编译边界转述](https://x.com/i/status/2110714534591713611)
 
-[English](en/artcraft-boundary.md) | [返回目录](../README.md)
+[English](en/artcraft-boundary.md) | [返回目录](../README.zh-CN.md)

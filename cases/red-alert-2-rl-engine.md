@@ -13,4 +13,4 @@
 
 - [本周期作者报告](https://x.com/Chen1090874226/status/2109548112281055674)
 
-[English](en/red-alert-2-rl-engine.md) | [返回目录](../README.md)
+[English](en/red-alert-2-rl-engine.md) | [返回目录](../README.zh-CN.md)

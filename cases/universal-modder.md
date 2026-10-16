@@ -12,4 +12,4 @@ Rehan Sheikh 把修改游戏的过程做成了 Universal Modder。Mod 是在原�
 
 - [看 X 热门帖](https://x.com/rehan_shei/status/2105161487509852622)
 
-[English](en/universal-modder.md) | [返回目录](../README.md)
+[English](en/universal-modder.md) | [返回目录](../README.zh-CN.md)

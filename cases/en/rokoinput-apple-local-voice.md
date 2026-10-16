@@ -13,4 +13,4 @@ Candidate snapshot: 3 likes | 432 views; reading public documentation is not phy
 - [Author report and replies](https://x.com/i/status/2110610758212145408)
 - [Public source and privacy/version boundaries](https://github.com/bassnova42/rokoinput)
 
-[中文](../rokoinput-apple-local-voice.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rokoinput-apple-local-voice.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

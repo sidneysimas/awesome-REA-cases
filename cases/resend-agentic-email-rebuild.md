@@ -12,4 +12,4 @@
 
 - [作者的 Resend 研究与 Agent 邮件服务介绍](https://x.com/i/status/2110817677778489400)
 
-[English](en/resend-agentic-email-rebuild.md) | [返回目录](../README.md)
+[English](en/resend-agentic-email-rebuild.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@ Posted: 2026-10-13 | Project status: WIP; REA use unconfirmed
 
 - [Work-in-progress project introduction (X)](https://x.com/i/status/2109858919111913543)
 
-[中文](../virtua-fighter-ai-decompilation.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../virtua-fighter-ai-decompilation.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

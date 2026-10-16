@@ -10,4 +10,4 @@ The percent key in Windows Calculator changes meaning depending on the current o
 - [Case PR](https://github.com/morluto/rea/pull/1272)
 - [Analysis evidence](https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md)
 
-[中文](../windows-calculator-percent.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../windows-calculator-percent.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

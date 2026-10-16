@@ -11,4 +11,4 @@ TradingView is a financial-charting platform. RohOnChain's widely circulated pos
 - [Original record](https://x.com/RohOnChain/status/2109347169316839434)
 - [October 15: quantitative-terminal target and workflow claims](https://x.com/i/status/2110692386854555977)
 
-[中文](../tradingview-workflow.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../tradingview-workflow.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

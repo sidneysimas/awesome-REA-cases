@@ -12,4 +12,4 @@ Evidence: original-post report; target not run or independently retested in this
 
 - [X post from this window](https://x.com/i/status/2109722857207115879)
 
-[中文](../homatics-atv14-dolby-vision-fix.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../homatics-atv14-dolby-vision-fix.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

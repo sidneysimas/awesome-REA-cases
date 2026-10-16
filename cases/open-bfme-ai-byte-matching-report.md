@@ -12,4 +12,4 @@
 
 - [jfwfreo 关于 Open-BFME 字节匹配的回复](https://x.com/i/status/2110857508470604174)
 
-[English](en/open-bfme-ai-byte-matching-report.md) | [返回目录](../README.md)
+[English](en/open-bfme-ai-byte-matching-report.md) | [返回目录](../README.zh-CN.md)

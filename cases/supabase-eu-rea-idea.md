@@ -12,4 +12,4 @@
 
 - [Supabase欧盟版本的REA建议](https://x.com/i/status/2110757849609515285)
 
-[English](en/supabase-eu-rea-idea.md) | [返回目录](../README.md)
+[English](en/supabase-eu-rea-idea.md) | [返回目录](../README.zh-CN.md)

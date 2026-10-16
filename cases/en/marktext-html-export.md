@@ -13,4 +13,4 @@ Evidence boundary: author report; not independently retested
 
 - [Author's original post](https://x.com/i/status/2109839329933824026)
 
-[中文](../marktext-html-export.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../marktext-html-export.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

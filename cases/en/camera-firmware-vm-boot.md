@@ -12,4 +12,4 @@ Stage: in progress; original post does not explicitly report a successful boot
 
 - [X post from this window](https://x.com/i/status/2109715839117316150)
 
-[中文](../camera-firmware-vm-boot.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../camera-firmware-vm-boot.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

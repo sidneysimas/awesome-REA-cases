@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 5 likes | 493 views | 0 reposts
 
 - [Secondhand demonstration account from this review](https://x.com/justhalfbit/status/2109524402765488499)
 
-[中文](../ar-air-conditioner-control.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../ar-air-conditioner-control.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

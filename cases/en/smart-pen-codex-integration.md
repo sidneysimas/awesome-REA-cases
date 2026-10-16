@@ -13,4 +13,4 @@ Uses Codex; REA unconfirmed
 
 - [Team member's report (X)](https://x.com/i/status/2110108201043775589)
 
-[中文](../smart-pen-codex-integration.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../smart-pen-codex-integration.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

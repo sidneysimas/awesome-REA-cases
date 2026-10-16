@@ -13,4 +13,4 @@ Posted: October 9 | REA use unconfirmed
 - [Popular X post](https://x.com/alexzfunk/status/2108585025205592408)
 - [Open-source implementation](https://github.com/a-funk/open-appleremote)
 
-[中文](../siri-remote-linux.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../siri-remote-linux.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

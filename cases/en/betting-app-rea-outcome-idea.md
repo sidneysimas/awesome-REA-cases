@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 4 views; no implementation or outcome ev
 
 - [Author's hypothetical question about REA and betting outcomes](https://x.com/i/status/2110822588817510762)
 
-[中文](../betting-app-rea-outcome-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../betting-app-rea-outcome-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

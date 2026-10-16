@@ -12,4 +12,4 @@
 
 - [本轮作者进行中报告](https://x.com/i/status/2110566660113625486)
 
-[English](en/rea-cpu-kernel-optimization.md) | [返回目录](../README.md)
+[English](en/rea-cpu-kernel-optimization.md) | [返回目录](../README.zh-CN.md)

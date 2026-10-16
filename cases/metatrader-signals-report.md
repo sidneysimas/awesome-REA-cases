@@ -13,4 +13,4 @@ MetaTrader 是金融交易终端。Rapture 在讨论 AI 逆向工具时称，有
 
 - [本周期第三方线索](https://x.com/TheKing_Rapture/status/2109547879199056181)
 
-[English](en/metatrader-signals-report.md) | [返回目录](../README.md)
+[English](en/metatrader-signals-report.md) | [返回目录](../README.zh-CN.md)

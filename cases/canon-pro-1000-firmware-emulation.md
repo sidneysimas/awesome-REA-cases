@@ -13,4 +13,4 @@
 
 - [作者关于 Pro-1000 固件模拟的进行中自述（回复帖）](https://x.com/i/status/2110028302215999825)
 
-[English](en/canon-pro-1000-firmware-emulation.md) | [返回目录](../README.md)
+[English](en/canon-pro-1000-firmware-emulation.md) | [返回目录](../README.zh-CN.md)

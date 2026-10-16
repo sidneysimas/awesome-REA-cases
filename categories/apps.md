@@ -1,6 +1,6 @@
 # 应用与客户端
 
-[返回主目录](../README.md) | [English](en/apps.md)
+[返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
 - [LG 电视：重做更快的 Plex 客户端](../cases/lg-plxnative.md) — 研究 LG 媒体栈，开发更快的原生 Plex 客户端。 **[其他 AI 逆向]**
 - [Claude Slides：分析前端代码，重建幻灯片编辑器](../cases/claude-slides.md) — 分析混淆前端，重建幻灯片编辑器。 **[REA]**

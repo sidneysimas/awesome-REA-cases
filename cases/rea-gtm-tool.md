@@ -12,4 +12,4 @@
 
 - [作者关于 REA GTM 工具的报告](https://x.com/i/status/2110034984065245677)
 
-[English](en/rea-gtm-tool.md) | [返回目录](../README.md)
+[English](en/rea-gtm-tool.md) | [返回目录](../README.zh-CN.md)

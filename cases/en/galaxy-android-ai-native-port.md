@@ -12,4 +12,4 @@ October 16 candidate snapshot: 1 like, 47 views; no independent execution or sou
 
 - [Post introducing the AI-assisted Galaxy-Android port](https://x.com/i/status/2110763621768716353)
 
-[中文](../galaxy-android-ai-native-port.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../galaxy-android-ai-native-port.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

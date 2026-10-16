@@ -13,4 +13,4 @@
 - [作者报告与回复](https://x.com/i/status/2110610758212145408)
 - [公开源码及隐私、版本边界](https://github.com/bassnova42/rokoinput)
 
-[English](en/rokoinput-apple-local-voice.md) | [返回目录](../README.md)
+[English](en/rokoinput-apple-local-voice.md) | [返回目录](../README.zh-CN.md)

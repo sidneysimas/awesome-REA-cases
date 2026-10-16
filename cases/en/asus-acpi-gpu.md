@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 1 like | 28 views | 0 reposts
 
 - [Author's original post](https://x.com/200Tabs1Brain/status/2108983700776186112)
 
-[中文](../asus-acpi-gpu.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../asus-acpi-gpu.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 22 views; original demonstration and imp
 
 - [Secondary report of Fu Sheng's video-homepage character demonstration](https://x.com/i/status/2110873715810660594)
 
-[中文](../fu-sheng-video-homepage-character-demo.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../fu-sheng-video-homepage-character-demo.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

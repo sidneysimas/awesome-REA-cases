@@ -9,4 +9,4 @@ Flutter 是跨平台 App 开发框架，发布后的 Dart 逻辑常被提前编�
 
 - [PR 与真实应用测试](https://github.com/morluto/rea/pull/1582)
 
-[English](en/flutter-aot.md) | [返回目录](../README.md)
+[English](en/flutter-aot.md) | [返回目录](../README.zh-CN.md)

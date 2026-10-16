@@ -12,4 +12,4 @@
 
 - [看本窗口 X 帖](https://x.com/i/status/2109680172995895346)
 
-[English](en/xiaomi-speaker-chatgpt-voice-idea.md) | [返回目录](../README.md)
+[English](en/xiaomi-speaker-chatgpt-voice-idea.md) | [返回目录](../README.zh-CN.md)

@@ -12,4 +12,4 @@ Posted: September 30 | Not REA
 
 - [Popular X post](https://x.com/rehan_shei/status/2105161487509852622)
 
-[中文](../universal-modder.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../universal-modder.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

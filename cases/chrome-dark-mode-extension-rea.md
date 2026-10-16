@@ -12,4 +12,4 @@
 
 - [作者使用 REA 研究 Chrome 深色扩展的回复](https://x.com/i/status/2110797282308153562)
 
-[English](en/chrome-dark-mode-extension-rea.md) | [返回目录](../README.md)
+[English](en/chrome-dark-mode-extension-rea.md) | [返回目录](../README.zh-CN.md)

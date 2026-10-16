@@ -1,6 +1,6 @@
 # Games and preservation
 
-[Editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
+[Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
 - [Universal Modder: AI-assisted game mods](../../cases/en/universal-modder.md) — Analyze engines and asset formats, then create and test cross-game mods. **[Other AI-assisted work]**
 - [Firefighter: from DOS binary to Rust](../../cases/en/firefighter-rust.md) — Recover Pascal logic from an old binary and rewrite it in Rust. **[Other AI-assisted work]**

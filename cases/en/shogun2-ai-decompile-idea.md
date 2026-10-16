@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 20 views; an idea only.
 
 - [Author's reply proposing Shogun 2 decompilation](https://x.com/i/status/2110854869150232642)
 
-[中文](../shogun2-ai-decompile-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../shogun2-ai-decompile-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

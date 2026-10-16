@@ -14,4 +14,4 @@ Evidence boundary: needs verification; does not establish completed reverse engi
 - [Original post from this window](https://x.com/i/status/2109783203892597103)
 - [Additional post on the same case in this window](https://x.com/i/status/2109783810472845779)
 
-[中文](../sixteen-note-files-decoder-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../sixteen-note-files-decoder-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

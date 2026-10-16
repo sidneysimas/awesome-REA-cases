@@ -10,4 +10,4 @@ Sony's PlayStation Portable (PSP) handheld uses a processor called Allegrex. A u
 - [Use-case request](https://github.com/morluto/rea/issues/1330)
 - [Integration implementation](https://github.com/morluto/rea/pull/1599)
 
-[中文](../psp-allegrex.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../psp-allegrex.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -12,4 +12,4 @@ Edenwoodfilm 将一项 Apple Watch Ultra 2 与 Android 互通工具归为 AI 逆
 
 - [Edenwoodfilm 的 Ultra 2 / Android 互通转述](https://x.com/i/status/2110844478239945061)
 
-[English](en/apple-watch-ultra2-android-ai-report.md) | [返回目录](../README.md)
+[English](en/apple-watch-ultra2-android-ai-report.md) | [返回目录](../README.zh-CN.md)

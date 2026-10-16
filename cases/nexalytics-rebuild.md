@@ -13,4 +13,4 @@ Wiktor 为检验 REA 的能力，以自己开发数月的 Nexalytics 应用做�
 
 - [本周期作者实验](https://x.com/wikwanat/status/2109542201927647588)
 
-[English](en/nexalytics-rebuild.md) | [返回目录](../README.md)
+[English](en/nexalytics-rebuild.md) | [返回目录](../README.zh-CN.md)

@@ -14,4 +14,4 @@ October 16 candidate snapshot: 3 likes, 94 views; REA is only a proposed tool.
 - [Context: ComfyUI's open-source build event](https://x.com/i/status/2110870071933645103)
 - [Grok's observation/workflow suggestion, not execution results](https://x.com/i/status/2110877124223496596)
 
-[中文](../higgsfield-comfy-rea-open-source-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../higgsfield-comfy-rea-open-source-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

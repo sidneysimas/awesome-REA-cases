@@ -14,4 +14,4 @@ Engagement snapshot (2026-10-12): 40 likes | 3,336 views | 1 repost
 - [Circulating report from this review](https://x.com/0x0SojalSec/status/2109517461921902780)
 - [October 15 third-party report: LLM and named-researcher lead (original research unverified)](https://x.com/i/status/2110549825548959842)
 
-[中文](../ps5-ai-security-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../ps5-ai-security-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

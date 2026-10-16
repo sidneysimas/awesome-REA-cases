@@ -1,6 +1,6 @@
 # 全部案例与项目
 
-[精选首页](README.md) | [English index](INDEX.en.md)
+[精选首页](README.zh-CN.md) | [English index](INDEX.en.md)
 
 **用 AI 读懂软件与硬件：重建功能、打通协议、迁移旧系统。**
 

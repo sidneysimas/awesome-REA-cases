@@ -13,4 +13,4 @@ Post explicitly states REA use; poster identity unconfirmed.
 
 - [Poster reports REA-assisted Mac software analysis and deliverables (account identity unconfirmed)](https://x.com/i/status/2110382256829386935)
 
-[中文](../mac-app-rea-analysis-workflow.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../mac-app-rea-analysis-workflow.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

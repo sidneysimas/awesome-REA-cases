@@ -12,4 +12,4 @@
 
 - [本窗口命名目标的建议](https://x.com/i/status/2110674628578537633)
 
-[English](en/industrial-tools-ai-ghidra-rebuild-idea.md) | [返回目录](../README.md)
+[English](en/industrial-tools-ai-ghidra-rebuild-idea.md) | [返回目录](../README.zh-CN.md)

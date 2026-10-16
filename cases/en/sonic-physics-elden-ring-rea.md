@@ -12,4 +12,4 @@ Candidate snapshot: 9 likes | 205 views; constants and in-game execution not ind
 
 - [Specific mod claims and workflow from this window](https://x.com/i/status/2110648710606557644)
 
-[中文](../sonic-physics-elden-ring-rea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../sonic-physics-elden-ring-rea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

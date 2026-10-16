@@ -11,4 +11,4 @@ Unity games often compile C# logic into Assembly-CSharp.dll; Valheim is a surviv
 - [Original record](https://github.com/morluto/rea/issues/1801)
 - [Valheim discussion](https://github.com/morluto/rea/issues/1371)
 
-[中文](../unity-valheim.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../unity-valheim.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

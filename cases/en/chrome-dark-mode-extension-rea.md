@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 31 views; extension unnamed.
 
 - [Author's reply about REA research on a Chrome dark-mode extension](https://x.com/i/status/2110797282308153562)
 
-[中文](../chrome-dark-mode-extension-rea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../chrome-dark-mode-extension-rea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

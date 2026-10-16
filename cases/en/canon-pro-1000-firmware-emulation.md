@@ -13,4 +13,4 @@ Reply attributes existing work to Ian; only the Pro-1000 firmware-emulation atte
 
 - [Author's ongoing Pro-1000 firmware-emulation account (reply)](https://x.com/i/status/2110028302215999825)
 
-[中文](../canon-pro-1000-firmware-emulation.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../canon-pro-1000-firmware-emulation.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

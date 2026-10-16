@@ -12,4 +12,4 @@ Engagement snapshot (2026-10-12): 12 likes | 1,018 views | 0 reposts
 
 - [Author's original post](https://x.com/fexisnpc/status/2103865671608307838)
 
-[中文](../bluetooth-gamepad-windows.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../bluetooth-gamepad-windows.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

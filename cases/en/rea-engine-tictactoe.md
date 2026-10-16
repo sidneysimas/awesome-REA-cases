@@ -17,4 +17,4 @@ October 15 follow-ups reiterate bundled tooling, Frida tracing and Z3 checks, th
 - [Author's follow-up on byte-for-byte comparison claims](https://x.com/i/status/2110641814545764484)
 - [Author's Heaven Skills workflow context](https://x.com/i/status/2110737629465514404)
 
-[中文](../rea-engine-tictactoe.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../rea-engine-tictactoe.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -12,4 +12,4 @@
 
 - [作者回复](https://x.com/i/status/2110616441611542781)
 
-[English](en/codex-rea-custom-library.md) | [返回目录](../README.md)
+[English](en/codex-rea-custom-library.md) | [返回目录](../README.zh-CN.md)

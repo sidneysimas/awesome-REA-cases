@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 227 views | 0 reposts
 
 - [Public source from this review](https://x.com/ScalersTalk/status/2109481617182138694)
 
-[中文](../remote-client-privacy-monitor-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../remote-client-privacy-monitor-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -12,4 +12,4 @@ October 15 candidate snapshot: 0 likes, 38 views; not independently verified.
 
 - [Author's Linux EAC analysis claim](https://x.com/i/status/2110759663822352852)
 
-[中文](../linux-eac-ai-devirtualization-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../linux-eac-ai-devirtualization-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

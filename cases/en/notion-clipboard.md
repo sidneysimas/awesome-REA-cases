@@ -15,4 +15,4 @@ Additional clipboard/block association details reported 2026-10-13; source is a 
 - [Subsequent hands-on test](https://github.com/morluto/rea/pull/1874)
 - [REA Notion clipboard case details (X post)](https://x.com/i/status/2109842048023212348)
 
-[中文](../notion-clipboard.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../notion-clipboard.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

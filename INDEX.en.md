@@ -1,6 +1,6 @@
 # All cases and projects
 
-[Editor picks](README.en.md) | [中文总目录](INDEX.md)
+[Editor picks](README.md) | [中文总目录](INDEX.md)
 
 **Explore software and hardware with AI: rebuild features, bridge protocols, and modernize legacy systems.**
 

@@ -14,4 +14,4 @@
 - [示范与提示词](https://x.com/i/status/2110623921611432090)
 - [按调用链分工的后续方案与未核验成本比较](https://x.com/i/status/2110762075559444705)
 
-[English](en/rea-notes-export-walkthrough.md) | [返回目录](../README.md)
+[English](en/rea-notes-export-walkthrough.md) | [返回目录](../README.zh-CN.md)

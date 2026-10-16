@@ -12,4 +12,4 @@ Evidence boundary: third-party account; attributed author's original explanation
 
 - [Third-party quote post (account of the alleged Thariq project, not author confirmation)](https://x.com/i/status/2110037357164441796)
 
-[中文](../rea-database-query-optimization-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-database-query-optimization-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

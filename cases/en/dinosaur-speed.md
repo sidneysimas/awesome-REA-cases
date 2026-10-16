@@ -14,4 +14,4 @@ Follow-up engagement snapshot (2026-10-12): 6 likes | 525 views | 0 reposts
 - [Original observations and experiments](https://github.com/morluto/rea/blob/main/website/evidence/calculator-and-dino.md)
 - [This review: local reconstruction and side-by-side comparison](https://x.com/0xlangeai/status/2109595393260761111)
 
-[中文](../dinosaur-speed.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../dinosaur-speed.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

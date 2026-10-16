@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 2 likes | 95 views | 0 reposts
 
 - [Public source from this review](https://x.com/lipinhobeats/status/2109435654962655526)
 
-[中文](../poker-table-organizer.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../poker-table-organizer.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

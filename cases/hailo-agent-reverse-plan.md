@@ -12,4 +12,4 @@ Hailo是边缘AI加速器品牌。作者在回复工具消息时，表示准备�
 
 - [作者计划](https://x.com/i/status/2110600631144919232)
 
-[English](en/hailo-agent-reverse-plan.md) | [返回目录](../README.md)
+[English](en/hailo-agent-reverse-plan.md) | [返回目录](../README.zh-CN.md)

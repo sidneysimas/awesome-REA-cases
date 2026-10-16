@@ -13,4 +13,4 @@ Engagement snapshot (2026-10-12): 0 likes | 36 views | 0 reposts
 
 - [Third-party account from this review](https://x.com/HigbeyMyrta/status/2109596534350524664)
 
-[中文](../streaming-service-integration-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../streaming-service-integration-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

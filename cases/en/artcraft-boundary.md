@@ -34,4 +34,4 @@ October 15, 16:00–20:00 follow-up: a new circulating post describes public PSD
 - [This October 15 window: account of format specifications and validation workflow](https://x.com/i/status/2110655957436965228)
 - [October 15, 20:48: Ubuntu installation experience and secondhand non-decompilation boundary](https://x.com/i/status/2110714534591713611)
 
-[中文](../artcraft-boundary.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../artcraft-boundary.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

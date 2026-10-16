@@ -9,4 +9,4 @@ Device firmware often combines compressed data, file systems and executables in 
 
 - [Original PR and toolchain validation](https://github.com/morluto/rea/pull/741)
 
-[中文](../firmware-extract-handoff.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../firmware-extract-handoff.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

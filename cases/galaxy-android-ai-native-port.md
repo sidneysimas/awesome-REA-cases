@@ -12,4 +12,4 @@
 
 - [Galaxy-Android 的 AI 辅助移植介绍帖](https://x.com/i/status/2110763621768716353)
 
-[English](en/galaxy-android-ai-native-port.md) | [返回目录](../README.md)
+[English](en/galaxy-android-ai-native-port.md) | [返回目录](../README.zh-CN.md)

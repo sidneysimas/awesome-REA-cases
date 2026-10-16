@@ -12,4 +12,4 @@
 
 - [混合作品介绍与人工逆向背景转述](https://x.com/i/status/2110757135009112576)
 
-[English](en/iw4l-skate3-mw2-rust-mashup.md) | [返回目录](../README.md)
+[English](en/iw4l-skate3-mw2-rust-mashup.md) | [返回目录](../README.zh-CN.md)

@@ -13,4 +13,4 @@ Matt Farina 报告开始用 AI 将 Helm charts v2 研究整理成 spec，希望�
 
 - [看本窗口 X 帖](https://x.com/i/status/2109717890262053108)
 
-[English](en/helm-chart-v2-spec-research.md) | [返回目录](../README.md)
+[English](en/helm-chart-v2-spec-research.md) | [返回目录](../README.zh-CN.md)

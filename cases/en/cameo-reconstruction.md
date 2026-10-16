@@ -15,4 +15,4 @@ Engagement snapshot (2026-10-12): 2 likes | 459 views | 0 reposts
 - [Result explanation being replied to (background)](https://x.com/wquguru/status/2109521555953013004)
 - [Original application project description](https://github.com/wquguru/cameo)
 
-[中文](../cameo-reconstruction.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../cameo-reconstruction.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

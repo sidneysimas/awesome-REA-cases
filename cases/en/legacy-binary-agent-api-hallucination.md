@@ -12,4 +12,4 @@ Unnamed failed experiment without reproduction material.
 
 - [Author's failure experience](https://x.com/i/status/2110630792049115198)
 
-[中文](../legacy-binary-agent-api-hallucination.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)
+[中文](../legacy-binary-agent-api-hallucination.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/algorithms.md)

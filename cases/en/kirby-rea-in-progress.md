@@ -12,4 +12,4 @@ Candidate snapshot: 5 likes | 492 views; progress is only the author's verbal ac
 
 - [Author's incomplete-work report this review](https://x.com/i/status/2110553648787013950)
 
-[中文](../kirby-rea-in-progress.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../kirby-rea-in-progress.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

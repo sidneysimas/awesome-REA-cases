@@ -12,4 +12,4 @@ Two targets in one experiment; modifications not independently run or verified.
 
 - [Author's experiment report and video entry point](https://x.com/i/status/2110641024389271883)
 
-[中文](../rea-doom-terraria-modding.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../rea-doom-terraria-modding.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -9,4 +9,4 @@ Flutter is a cross-platform app framework. Released Dart logic is often compiled
 
 - [PR and real-app tests](https://github.com/morluto/rea/pull/1582)
 
-[中文](../flutter-aot.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../flutter-aot.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

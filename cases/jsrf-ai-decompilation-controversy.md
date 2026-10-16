@@ -12,4 +12,4 @@
 
 - [JSRF AI 反编译争议帖](https://x.com/i/status/2110863304444813357)
 
-[English](en/jsrf-ai-decompilation-controversy.md) | [返回目录](../README.md)
+[English](en/jsrf-ai-decompilation-controversy.md) | [返回目录](../README.zh-CN.md)

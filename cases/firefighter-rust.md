@@ -12,4 +12,4 @@ Firefighter 是一款老 DOS 游戏。Eric S. Raymond 希望从现存二进制�
 
 - [看 X 热门帖](https://x.com/esrtweet/status/2106983467141509385)
 
-[English](en/firefighter-rust.md) | [返回目录](../README.md)
+[English](en/firefighter-rust.md) | [返回目录](../README.zh-CN.md)

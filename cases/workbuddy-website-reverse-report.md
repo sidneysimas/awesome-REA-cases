@@ -12,4 +12,4 @@
 
 - [作者自述](https://x.com/i/status/2110593537872175256)
 
-[English](en/workbuddy-website-reverse-report.md) | [返回目录](../README.md)
+[English](en/workbuddy-website-reverse-report.md) | [返回目录](../README.zh-CN.md)

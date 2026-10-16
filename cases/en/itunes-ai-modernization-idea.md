@@ -12,4 +12,4 @@ October 16 candidate snapshot: 0 likes, 9 views; an idea without implementation.
 
 - [Author's request for iTunes modernization research](https://x.com/i/status/2110820109631766547)
 
-[中文](../itunes-ai-modernization-idea.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../itunes-ai-modernization-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

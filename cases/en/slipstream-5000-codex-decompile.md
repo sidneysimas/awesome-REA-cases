@@ -12,4 +12,4 @@ October 16 candidate snapshot: 2 likes, 67 views; both the two-day effort and Ma
 
 - [Author's comparison of two Codex attempts on Slipstream 5000](https://x.com/i/status/2110786958649684035)
 
-[中文](../slipstream-5000-codex-decompile.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../slipstream-5000-codex-decompile.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

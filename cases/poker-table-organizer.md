@@ -13,4 +13,4 @@ trickstar 希望整理自己的扑克牌桌，称通过 PowerShell 配合 REA、
 
 - [本周期公开来源](https://x.com/lipinhobeats/status/2109435654962655526)
 
-[English](en/poker-table-organizer.md) | [返回目录](../README.md)
+[English](en/poker-table-organizer.md) | [返回目录](../README.zh-CN.md)

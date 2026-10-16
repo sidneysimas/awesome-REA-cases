@@ -12,4 +12,4 @@ Candidate snapshot: 3 likes | 232 views; later live metrics from follow-up check
 
 - [Author's humidity observation and Bluetooth-app report from this window](https://x.com/i/status/2110700189912912155)
 
-[中文](../bluetooth-humidity-agent-app.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../bluetooth-humidity-agent-app.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

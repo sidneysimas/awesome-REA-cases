@@ -12,4 +12,4 @@ Engagement snapshot (2026-10-12): 272 likes | 48,646 views | 30 reposts
 
 - [Author's original post](https://x.com/anshuc/status/2106131543752122774)
 
-[中文](../garageband-file-format.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../garageband-file-format.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

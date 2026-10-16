@@ -12,4 +12,4 @@ October 15 candidate snapshot: 42 likes, 748 views; real-data validation still p
 
 - [Interface research and planned real-data testing](https://x.com/i/status/2110743454959509801)
 
-[中文](../arkham-grok-rea-research-workbench.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../arkham-grok-rea-research-workbench.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

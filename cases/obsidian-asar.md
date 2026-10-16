@@ -18,4 +18,4 @@ Obsidian 是本地笔记软件，桌面版的 JavaScript 可打包在 ASAR 归�
 - [原始记录](https://github.com/morluto/rea/issues/746)
 - [本窗口：Obsidian JavaScript 静态分析及原生层受阻的作者报告（未独立复测）](https://x.com/i/status/2110407610134663474)
 
-[English](en/obsidian-asar.md) | [返回目录](../README.md)
+[English](en/obsidian-asar.md) | [返回目录](../README.zh-CN.md)

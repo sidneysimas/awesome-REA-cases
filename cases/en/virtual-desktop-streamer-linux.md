@@ -15,4 +15,4 @@ The thread's 'real use' does not establish physical-device acceptance: the repos
 - [Original post from this window (author report)](https://x.com/i/status/2109767636452265990)
 - [Public project README](https://github.com/cudanexus/vd-streamer-linux)
 
-[中文](../virtual-desktop-streamer-linux.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../virtual-desktop-streamer-linux.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

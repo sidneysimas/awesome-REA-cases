@@ -12,4 +12,4 @@ BINNY的发布帖将它介绍为面向逆向工程师和安全研究者的开源
 
 - [BINNY public beta 发布帖](https://x.com/i/status/2110767491286716525)
 
-[English](en/binny-agentic-reverse-harness.md) | [返回目录](../README.md)
+[English](en/binny-agentic-reverse-harness.md) | [返回目录](../README.zh-CN.md)

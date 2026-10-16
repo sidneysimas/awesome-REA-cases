@@ -12,4 +12,4 @@ Slipstream 5000是一款老赛车游戏。作者称用Codex花两天得到一次
 
 - [作者的 Slipstream 5000 两次 Codex 尝试对比](https://x.com/i/status/2110786958649684035)
 
-[English](en/slipstream-5000-codex-decompile.md) | [返回目录](../README.md)
+[English](en/slipstream-5000-codex-decompile.md) | [返回目录](../README.zh-CN.md)

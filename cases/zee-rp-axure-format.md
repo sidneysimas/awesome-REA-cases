@@ -19,4 +19,4 @@ Axure RP 是交互原型工具。LilZee 的 computer use 临摹尝试失败后�
 - [本周期作者报告](https://x.com/i/status/2109674402933821654)
 - [公开引擎与验证边界](https://github.com/LilZeeCN/zee-rp)
 
-[English](en/zee-rp-axure-format.md) | [返回目录](../README.md)
+[English](en/zee-rp-axure-format.md) | [返回目录](../README.zh-CN.md)

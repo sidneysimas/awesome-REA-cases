@@ -12,4 +12,4 @@
 
 - [本窗口作者互通报告](https://x.com/i/status/2110651982323310818)
 
-[English](en/radiator-app-home-assistant-ai.md) | [返回目录](../README.md)
+[English](en/radiator-app-home-assistant-ai.md) | [返回目录](../README.zh-CN.md)

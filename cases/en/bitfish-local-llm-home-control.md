@@ -13,4 +13,4 @@ Candidate snapshot: 19 likes | 7,767 views | 1 repost; features not independentl
 
 - [DiscusFish's integration report in this review](https://x.com/i/status/2110539823572463953)
 
-[中文](../bitfish-local-llm-home-control.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)
+[中文](../bitfish-local-llm-home-control.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

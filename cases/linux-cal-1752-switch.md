@@ -12,4 +12,4 @@ REA 使用、分析过程及国家/历法切换测试均为原帖自述，未独
 
 - [作者的 REA 实操演示帖（含视频链接）](https://x.com/i/status/2110453427209916612)
 
-[English](en/linux-cal-1752-switch.md) | [返回目录](../README.md)
+[English](en/linux-cal-1752-switch.md) | [返回目录](../README.zh-CN.md)

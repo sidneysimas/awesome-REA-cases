@@ -12,4 +12,4 @@ analysis-test does not mean independently passed tests; model name follows the o
 
 - [Author's multi-target test report from this window](https://x.com/i/status/2110696564335214807)
 
-[中文](../rea-local-qwen-commercial-analysis-tests.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../rea-local-qwen-commercial-analysis-tests.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

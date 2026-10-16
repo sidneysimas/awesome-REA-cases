@@ -12,4 +12,4 @@ REA use, analysis and country/calendar-switch tests are all original-post claims
 
 - [Author's hands-on REA demonstration post (includes video link)](https://x.com/i/status/2110453427209916612)
 
-[中文](../linux-cal-1752-switch.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../linux-cal-1752-switch.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

@@ -13,4 +13,4 @@ REA use, app creation and 95%/90% scores are all poster-reported; methods and re
 
 - [Poster's account (identity and scoring not independently checked)](https://x.com/i/status/2110459951365980334)
 
-[中文](../apple-weather-rea-rebuild.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
+[中文](../apple-weather-rea-rebuild.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

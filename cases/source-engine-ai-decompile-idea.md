@@ -12,4 +12,4 @@
 
 - [作者的 Source Engine AI 反编译设想](https://x.com/i/status/2110846755424157754)
 
-[English](en/source-engine-ai-decompile-idea.md) | [返回目录](../README.md)
+[English](en/source-engine-ai-decompile-idea.md) | [返回目录](../README.zh-CN.md)

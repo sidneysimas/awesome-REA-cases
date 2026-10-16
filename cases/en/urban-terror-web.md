@@ -12,4 +12,4 @@ Posted: October 3 | Not REA
 
 - [Popular X post](https://x.com/levelsio/status/2106150888289009666)
 
-[中文](../urban-terror-web.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../urban-terror-web.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

@@ -12,4 +12,4 @@ October 16 candidate snapshot: 5 likes, 1,250 views; not independently reproduce
 
 - [Secondhand Uncharted trilogy Windows/Claude port report](https://x.com/i/status/2110786628553932980)
 
-[中文](../uncharted-trilogy-claude-windows-report.md) | [Back to editor picks](../../README.en.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
+[中文](../uncharted-trilogy-claude-windows-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)
