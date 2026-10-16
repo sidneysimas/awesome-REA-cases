@@ -112,7 +112,7 @@
 - [BINNY：面向逆向研究的多模型 Agent harness 公测](../cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
 - [Chrome 深色模式扩展：用 REA 研究以便改进](../cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
 - [建设投标解密器：Claude Code 辅助研究密码报错的转述](../cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
-- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 发布转述之外，用户报告已接入REA MCP并补充传统分析工具；Python支持仍有自述缺口。 **[REA · 相关项目]**
+- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 用户报告集成与Python分析缺口，新工程摘要补充版本pin兼容和工具审批边界。 **[REA · 相关项目]**
 - [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](../cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
 - [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](../cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
 - [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](../cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
@@ -144,3 +144,12 @@
 - [1997 年音频软件：为继续旧工作探索 Windows 11 兼容](../cases/1997-audio-software-ai-win11-revival.md) — 作者称用 Claude 规划、headless Ghidra 研究旧音频程序，再考虑较便宜的 GLM 5.3。 **[其他 AI 逆向 · 进行中]**
 - [Computer 接入 REA：Figma 等五款应用功能重建演示](../cases/computer-rea-five-app-rebuild-demos.md) — Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。 **[REA · 待验证]**
 - [Claude Intercept：把授权 HTTP/S 抓包交给 Claude Code 分析](../cases/claude-intercept-api-traffic-analysis.md) — 公开代理项目提供 /intercept skill 与结构化流量导出，辅助发现未文档化 API；不保证所有流量可解密。 **[其他 AI 逆向 · 相关项目]**
+- [Claude 客户端：用 REA 检查环境遥测参数](../cases/claude-client-environment-telemetry.md) — 作者报告发现 ARM 转译、内存和远程/SSH 参数；VPS 风控用途仍是作者解释。 **[REA · 分析测试]**
+- [Codex 光标：从编译程序恢复绘制几何，设为 Windows 光标](../cases/codex-cursor-windows-opus.md) — Ananth 报告 Opus 在 Ghidra 失败后改用 pefile/Capstone，恢复光标形状与颜色。 **[其他 AI 逆向 · 待验证]**
+- [三款开源工具到个人应用：REA 录屏、截图与听写报告](../cases/rea-three-open-tool-apps-report.md) — 作者称从三款免费开源工具构建录屏编辑、截图标注、听写会议笔记三类应用。 **[REA · 待验证]**
+- [Perplexity Computer：对 Agent 产品本身提出逆向请求的 idea](../cases/perplexity-computer-reverse-idea.md) — 用户向 AskPerplexity 与 morluto 请求研究 Computer，没有展示实现或结果。 **[未确认使用 REA · 待验证]**
+- [Gemini App：研究 Argon 接口并代理给 Codex 的 idea](../cases/gemini-argon-codex-proxy-idea.md) — 用户询问是否有人逆向 Gemini App，使 Codex 通过代理使用 Argon；没有实现证据。 **[未确认使用 REA · 待验证]**
+- [拖放式 AI 重编译界面：选择复古平台或操作系统的 idea](../cases/ai-drag-drop-recompile-ui-idea.md) — 用户设想拖入游戏或程序，反编译后为选定系统重编译，没有实现或验证。 **[未确认使用 REA · 待验证]**
+- [Notion app.asar：Claude 只读检查文件与域名字符串](../cases/notion-asar-claude-readonly-audit.md) — 作者报告6.8 MB 包内147文件、58个JS和47域名，明确字符串存在不等于实际上传。 **[其他 AI 逆向 · 分析测试]**
+- [Grok Bot + REA：在聊天中研究软件的模板报告](../cases/grok-bot-rea-chat-template.md) — 作者称一次构建了 REA 聊天模板，可提交待分析工具；没有目标样本与验证。 **[REA · 相关项目]**
+- [Patrick 的 AI 逆向游戏目录：进行中的资料项目](../cases/patrick-ai-reverse-games-directory.md) — Patrick Keane 称正建设 AI 逆向游戏目录；条目与验证标准尚未检查。 **[未确认使用 REA · 相关项目]**

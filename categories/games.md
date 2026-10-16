@@ -63,7 +63,7 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](../cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](../cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](../cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
-- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。 **[其他 AI 逆向 · 相关项目]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 本地 AI 反编译与编译对比的项目转述；停更、归档及使用请求仍未核实作者原文。 **[其他 AI 逆向 · 相关项目]**
 - [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](../cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
 - [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](../cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
@@ -74,3 +74,4 @@
 - [QQPet：从 Arctic Penguin T800 重建跨平台桌宠](../cases/qqpet-arctic-penguin-ai-rebuild.md) — 公开项目自称 AI 复刻 QQ 宠物，逆向 T800 并以 Ruffle 播放 Flash；平台和素材限制仍在。 **[其他 AI 逆向 · 相关项目]**
 - [Mega Man Battle Network：AI 反编译与 Mod 的二手线索](../cases/megaman-battle-network-ai-mod-report.md) — 评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。 **[其他 AI 逆向 · 待验证]**
 - [Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述](../cases/ben-claude-rts-metal-alpha-report.md) — Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。 **[其他 AI 逆向 · 进行中]**
+- [Gears of War 3：AI 辅助静态重编译与图形后端研究](../cases/gears3-ai-graphics-recompile.md) — GloriousEggroll 澄清为 ReXGlue 机械翻译而非恢复原始源码，报告4K演示仍有战斗掉帧。 **[其他 AI 逆向 · 进行中]**

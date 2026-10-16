@@ -71,3 +71,6 @@
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](../cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
 - [iOS 到安卓硬件：AI 逆向移植的假设性 idea](../cases/ios-android-ai-port-idea.md) — 设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](../cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
+- [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](../cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
+- [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](../cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
+- [自有硬件到语音 Agent：受耳机与智能戒指启发的 REA 尝试](../cases/rea-own-hardware-agent-voice-idea.md) — 用户称用 Claude 与 REA，在已有硬件上尝试语音控制 Agent、听写与记录想法。 **[REA · 进行中]**

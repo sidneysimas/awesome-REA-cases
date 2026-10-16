@@ -8128,17 +8128,17 @@
     "category": "apps",
     "rea": "REA",
     "status": "related-project",
-    "summary": "发布转述之外，用户报告已接入REA MCP并补充传统分析工具；Python支持仍有自述缺口。",
-    "description": "此前转述称Hermes官方REA插件一次安装REA MCP与适配的reverse-engineer-anything Skill，约170项工具通过工具搜索按需发现，覆盖原生二进制、.NET、Electron、Android包、固件、浏览器捕获及进程活动。帖子列安装入口hermes plugins install rea、Hermes 0.22.1及Node要求，原生反编译另备Ghidra、Hopper或IDA，并称Skill要求运行程序或改变设备前先问。原发帖者只是计划当晚安装，官方归属、版本、数量与权限提示仍是转述，非本合集安装测试。10月16日13:44 @wyant_dalto 回复称前一两天已给自己的Hermes加入REA及MCP，发现其Python逆向不足，并提及jadx 1.5.6、pycdc-rapid和Ghidra，称也已加到自己的配置。这是用户的集成经验与需求，不是官方Python兼容矩阵或全部软件均可逆向的证明；没有提供配置、目标样本、日志或验收测试。本合集未安装或执行，亦不把这些用户自加工具写成官方插件必带能力。与既有Hermes/WinSCP导入测试分开，不推断所有版本都支持或所有敏感操作都有强制拦截。",
-    "sources": [{"label": "Hermes REA 插件发布与使用边界转述", "url": "https://x.com/i/status/2110805485939249561"}, {"label": "10月16日用户报告REA MCP及补充工具集成", "url": "https://x.com/i/status/2110970183372116411"}],
-    "snapshot_date": "2026-10-16",
-    "metadata": ["较早10月16日候选快照：6赞、549浏览；插件功能与约170工具是帖子口径，不是本合集实测。", "13:44用户候选快照：0赞、19浏览；Python不足与自行接入工具是用户自述，不是官方支持结论。"],
+    "summary": "用户报告集成与Python分析缺口，新工程摘要补充版本pin兼容和工具审批边界。",
+    "description": "此前转述称Hermes官方REA插件一次安装REA MCP与适配的reverse-engineer-anything Skill，约170项工具通过工具搜索按需发现，覆盖原生二进制、.NET、Electron、Android包、固件、浏览器捕获及进程活动。帖子列安装入口hermes plugins install rea、Hermes 0.22.1及Node要求，原生反编译另备Ghidra、Hopper或IDA，并称Skill要求运行程序或改变设备前先问。原发帖者只是计划当晚安装，官方归属、版本、数量与权限提示仍是转述，非本合集安装测试。10月16日13:44 @wyant_dalto 回复称前一两天已给自己的Hermes加入REA及MCP，发现其Python逆向不足，并提及jadx 1.5.6、pycdc-rapid和Ghidra，称也已加到自己的配置。这是用户的集成经验与需求，不是官方Python兼容矩阵或全部软件均可逆向的证明；没有提供配置、目标样本、日志或验收测试。本合集未安装或执行，亦不把这些用户自加工具写成官方插件必带能力。与既有Hermes/WinSCP导入测试分开，不推断所有版本都支持或所有敏感操作都有强制拦截。\n\n10月17日02:50（北京时间）的工程摘要称插件要求Node.js 22.19或更新版本，原生分析仍另需Ghidra、Hopper或IDA；部分工具能运行命令、驱动应用、修改Android设备或覆盖文件而不触发Hermes提示，Skill要求先问不等于运行时强制审批。摘要又称首个pin因较新manifest键无法在0.22.2安装，当天已重新pin，main对较新键改为警告。这些是版本与修复的转述，未核对提交、目录或安装验收，不把main变更或重pin当作全部已安装版本已修复。",
+    "sources": [{"label": "Hermes REA 插件发布与使用边界转述", "url": "https://x.com/i/status/2110805485939249561"}, {"label": "10月16日用户报告REA MCP及补充工具集成", "url": "https://x.com/i/status/2110970183372116411"}, {"label": "10月17日工程摘要：pin兼容与副作用提示边界", "url": "https://x.com/i/status/2111167832037954013"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["较早10月16日候选快照：6赞、549浏览；插件功能与约170工具是帖子口径，不是本合集实测。", "13:44用户候选快照：0赞、19浏览；Python不足与自行接入工具是用户自述，不是官方支持结论。", "10月17日02:50摘要的0.22.2兼容与重pin未经提交或安装复核；Skill询问不等于所有工具强制审批。"],
     "en": {
       "title": "Hermes REA plugin: a reported MCP and adapted Skill release",
-      "summary": "Beyond the release report, a user describes adding REA MCP and traditional tools, while reporting a Python-analysis gap.",
-      "description": "An earlier circulating post says an official Hermes REA plugin installs REA MCP and an adapted reverse-engineer-anything Skill together, with roughly 170 tools discoverable through tool search for native binaries, .NET, Electron, Android packages, firmware, browser captures and live process activity. It names hermes plugins install rea, Hermes 0.22.1 and Node, with Ghidra, Hopper or IDA separately required for native decompilation, and says the Skill asks before running programs or changing devices. That poster only planned to install that night: official attribution, versions, counts and permission guidance remain secondhand, not installation tests by this collection. At 13:44 Beijing time on October 16, @wyant_dalto says REA and MCP were added to their own Hermes a day or two earlier, reports inadequate Python reverse engineering, mentions jadx 1.5.6, pycdc-rapid and Ghidra, and says these were also added locally. This is user integration experience and a request, not an official Python compatibility matrix or proof that all software can be reverse engineered. No configuration, target sample, log or acceptance test is provided. This collection did not install or execute anything, and the user's additional tools are not presented as official plugin features. This remains distinct from the Hermes/WinSCP import test and implies neither universal version support nor enforced interception of every sensitive operation.",
-      "metadata": ["Earlier October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 tools are post claims, not tests by this collection.", "13:44 user candidate snapshot: 0 likes, 19 views; the Python gap and extra integrations are user reports, not official support conclusions."],
-      "source_labels": ["Secondhand Hermes REA plugin release and usage-boundary introduction", "October 16 user report of REA MCP and additional tool integration"]
+      "summary": "User reports cover integration and a Python-analysis gap; a new engineering digest adds version-pin compatibility and tool-approval limits.",
+      "description": "An earlier circulating post says an official Hermes REA plugin installs REA MCP and an adapted reverse-engineer-anything Skill together, with roughly 170 tools discoverable through tool search for native binaries, .NET, Electron, Android packages, firmware, browser captures and live process activity. It names hermes plugins install rea, Hermes 0.22.1 and Node, with Ghidra, Hopper or IDA separately required for native decompilation, and says the Skill asks before running programs or changing devices. That poster only planned to install that night: official attribution, versions, counts and permission guidance remain secondhand, not installation tests by this collection. At 13:44 Beijing time on October 16, @wyant_dalto says REA and MCP were added to their own Hermes a day or two earlier, reports inadequate Python reverse engineering, mentions jadx 1.5.6, pycdc-rapid and Ghidra, and says these were also added locally. This is user integration experience and a request, not an official Python compatibility matrix or proof that all software can be reverse engineered. No configuration, target sample, log or acceptance test is provided. This collection did not install or execute anything, and the user's additional tools are not presented as official plugin features. This remains distinct from the Hermes/WinSCP import test and implies neither universal version support nor enforced interception of every sensitive operation.\n\nAn engineering digest at 02:50 Beijing time on October 17 says the plugin needs Node.js 22.19 or newer, still with Ghidra, Hopper or IDA separately needed for native analysis. Some tools can run commands, drive apps, change Android devices or overwrite files without a Hermes prompt: Skill instructions to ask first are not enforced runtime approval. The digest also says the first pin could not install on 0.22.2 because of a newer manifest key, was re-pinned that day, and main now warns on newer keys. These are version and repair accounts, not commit, catalog or installation checks here. Main changes or re-pinning do not establish fixes in every installed version.",
+      "metadata": ["Earlier October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 tools are post claims, not tests by this collection.", "13:44 user candidate snapshot: 0 likes, 19 views; the Python gap and extra integrations are user reports, not official support conclusions.", "The October 17, 02:50 digest's 0.22.2 compatibility and re-pinning claims were not checked against commits or installation; Skill guidance is not enforced approval for all tools."],
+      "source_labels": ["Secondhand Hermes REA plugin release and usage-boundary introduction", "October 16 user report of REA MCP and additional tool integration", "October 17 engineering digest: pin compatibility and side-effect prompt limits"]
     }
   },
   {
@@ -8536,17 +8536,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "related-project",
-    "summary": "项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。",
+    "summary": "本地 AI 反编译与编译对比的项目转述；停更、归档及使用请求仍未核实作者原文。",
     "description": "10月16日 @Pirat_Nation 介绍 Decompwtf，称它让 AI 编程 Agent 从游戏编译代码恢复 C/C++，再编译结果并与原二进制比较机器码，以加速游戏保存和既有社区反编译工程，而非只重画界面。帖子列出 N64、PS1、PS2、GameCube、Wii、GBA 和 DS 目标，并称本地运行、不需账号或上传游戏数据。这是来源描述的工作流和范围，不表示任意游戏都已字节匹配。公开 GitHub 仓库名检索未取得可确认的源码、匹配日志或完成游戏清单；开源、隐私和兼容性仍是来源说法，本合集未安装或运行。\n\n10月16日21:19（北京时间）的新转述称作者因反编译社区反对而停止更新。补读原介绍串，@nycfurby 当日09:26也称项目已停更，并把原因归于社区阻力。这些是第三方对维护状态及动机的说法，不是已核验的作者公告，更不代表整个反编译社区关闭。其后关于一个人维护、Claude Code 调试和 rollback 的回复未命名游戏，不能作为 Decompwtf 成果或完成游戏清单。本合集没有据此确认停更原因或功能可用性。",
-    "sources": [{"label": "Pirat_Nation 的项目介绍", "url": "https://x.com/i/status/2110899022932418745"}, {"label": "10月16日晚：项目停更的第三方转述", "url": "https://x.com/i/status/2111084605973672036"}, {"label": "补查原串：nycfurby 对停更与社区阻力的说法", "url": "https://x.com/i/status/2110905152173400298"}],
+    "sources": [{"label": "Pirat_Nation 的项目介绍", "url": "https://x.com/i/status/2110899022932418745"}, {"label": "10月16日晚：项目停更的第三方转述", "url": "https://x.com/i/status/2111084605973672036"}, {"label": "补查原串：nycfurby 对停更与社区阻力的说法", "url": "https://x.com/i/status/2110905152173400298"}, {"label": "10月17日目录巡检：归档与作者使用请求的转述", "url": "https://x.com/i/status/2111166914919875063"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：1,331赞、30,869浏览、116转发；热度不是验证结果。"],
+    "metadata": ["10月16日候选快照：1,331赞、30,869浏览、116转发；热度不是验证结果。", "10月17日02:46目录巡检转述称该工具已归档、代码保留MIT，作者请求仅研究自有游戏且不分享产出代码；仍未找到作者公告或许可原文，不能把请求当作已核实的许可条款。该帖的422星是目录转述，不替换原热度快照。"],
     "en": {
       "title": "Decompwtf: agents reconstruct game C/C++ and compare machine code",
-      "summary": "Accounts describe local AI decompilation with compile-and-compare checks; third-party discontinuation claims lack a verified author announcement.",
+      "summary": "Accounts describe local AI decompilation and compile-and-compare checks; discontinuation, archival and usage requests lack verified author text.",
       "description": "On October 16, @Pirat_Nation introduced Decompwtf as a project that lets AI coding agents reconstruct C/C++ from compiled game code, then compile it and compare machine code with the original binary to accelerate game preservation and existing community decompilation work rather than merely redraw interfaces. The post lists N64, PS1, PS2, GameCube, Wii, GBA and DS targets and says it runs locally without an account or game-data uploads. These are the source's descriptions of workflow and scope, not evidence that arbitrary games have reached byte matching. Public GitHub repository-name searches did not yield confirmed source, matching logs or a completed-game list. Open-source, privacy and compatibility statements remain attributed claims; this collection did not install or run it.\n\nA new third-party account at 21:19 Beijing time on October 16 says the author stopped updates because of opposition from decompilation communities. Reading the original introduction's conversation also found @nycfurby saying at 09:26 that day that the project was discontinued and attributing this to community resistance. These are third-party claims about maintenance and motivation, not a verified author announcement, and do not mean the entire decompilation community closed. A later reply about one-person maintenance, Claude Code debugging and rollback does not name its game and cannot establish a Decompwtf result or completed-game list. Neither the alleged reason for discontinuation nor functional availability was confirmed here.",
-      "metadata": ["October 16 candidate snapshot: 1,331 likes, 30,869 views, 116 reposts; engagement is not validation."],
-      "source_labels": ["Pirat_Nation's project introduction", "October 16 evening: third-party claim of discontinuation", "Supplementary conversation check: nycfurby's claims about discontinuation and community resistance"]
+      "metadata": ["October 16 candidate snapshot: 1,331 likes, 30,869 views, 116 reposts; engagement is not validation.", "A directory review at 02:46 on October 17 says the tool is archived with code left under MIT and an author request to study owned games only and not share generated code. No author announcement or license text was found here; a reported request is not a verified license term. The post's 422 stars are secondhand directory reporting, not a replacement engagement snapshot."],
+      "source_labels": ["Pirat_Nation's project introduction", "October 16 evening: third-party claim of discontinuation", "Supplementary conversation check: nycfurby's claims about discontinuation and community resistance", "October 17 directory review: account of archival and author usage requests"]
     }
   },
   {
@@ -9429,6 +9429,291 @@
       "description": "An earlier candidate at 19:30 Beijing time on October 16 lists Claude Intercept among Ship Systems projects, describing decrypted computer traffic and undocumented APIs, with William Haesemeyer's involvement. It was previously deferred because the AI role and public project were unclear. A supplementary search now finds whaesemeyer/claude-intercept matching the name and author. Its public README explicitly describes an HTTP/S man-in-the-middle proxy built for Claude Code, with local capture, a live dashboard, SQLite storage, an /intercept skill and api-docs, summary and full exports for Claude to investigate request patterns and APIs. AI involvement is supported by this documented interface, not inferred from the name.\n\nThe README was read as supplementary material, not as independently tested functionality at the earlier candidate's timestamp. It requires proxy setup and trust in a local CA on authorized devices, warns that some certificate-pinned domains fail and that the dashboard binds to 0.0.0.0 and should not run on untrusted networks, and says leaving system proxy settings on after stopping the proxy disrupts connectivity. Thus the original claim about decrypting all traffic is not adopted. Local storage also does not mean content sent to a cloud model cannot leave the machine. The README specifies CC BY-NC 4.0, so open-source promotion does not imply unrestricted commercial licensing. Documentation establishes the intended use and AI interface, not successful interception, permission safety, privacy or analysis quality. Nothing was installed, no proxies or certificates changed and no credentials accessed. REA involvement is unconfirmed.",
       "metadata": ["Follow-up from the October 16, 16:00–20:00 source window, not a newly fetched post in this window.", "Public documentation only; CC BY-NC 4.0, certificate-pinning and LAN-exposure limitations retained from project statements."],
       "source_labels": ["Earlier candidate: Ship Systems' Claude Intercept introduction", "Supplementary public README: Claude Code integration and security limits"]
+    }
+  },
+  {
+    "id": "claude-client-environment-telemetry",
+    "title": "Claude 客户端：用 REA 检查环境遥测参数",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "作者报告发现 ARM 转译、内存和远程/SSH 参数；VPS 风控用途仍是作者解释。",
+    "description": "10月17日00:36（北京时间），@hooxingzhao 称用 REA 逆向 Claude 客户端，分析其所谓风控上传参数，列出是否 ARM 转译运行、总内存与剩余内存、远程/SSH 环境。目标是理解客户端暴露哪些运行环境信息；作者认为这些可用于判断是否在 VPS 上运行。原帖和补读确认了作者的说法，但未提供本合集可检查的函数、参数名、抓包或服务端规则。不能由静态参数发现推定实际上传时机、全部字段、具体封禁原因或绕过方法；VPS 判定用途也是作者解释，不是 Anthropic 确认。未运行客户端、抓取通信或独立复现。",
+    "sources": [{"label": "作者的客户端环境参数分析原帖", "url": "https://x.com/i/status/2111134289970765964"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17 00:36，北京时间；参数与用途均按作者归因。"],
+    "en": {
+      "title": "Claude client: inspecting environment telemetry with REA",
+      "summary": "The author reports ARM translation, memory and remote/SSH indicators; their use for VPS risk assessment remains an interpretation.",
+      "description": "At 00:36 Beijing time on October 17, @hooxingzhao says they reverse-engineered the Claude client with REA and examined what they call uploaded risk-control parameters: whether it runs under ARM translation, total and free memory, and remote/SSH environment indicators. The investigation concerns which environment information the client exposes. The author interprets these as a way to detect VPS use. The original post and rereading establish the author's account but provide no functions, field names, packet captures or server-side rules inspected by this collection. Static parameter findings do not establish actual upload timing, a complete field list, specific ban causes or bypasses. VPS detection is the author's explanation, not confirmation from Anthropic. The client was not run, traffic was not captured and the account was not independently reproduced here.",
+      "metadata": ["Source posted: October 17, 2026, 00:36 Beijing time; parameters and intended use remain attributed to the author."],
+      "source_labels": ["Author's original client-environment parameter analysis"]
+    }
+  },
+  {
+    "id": "codex-cursor-windows-opus",
+    "title": "Codex 光标：从编译程序恢复绘制几何，设为 Windows 光标",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Ananth 报告 Opus 在 Ghidra 失败后改用 pefile/Capstone，恢复光标形状与颜色。",
+    "description": "10月17日01:10（北京时间），Ananth（@Ananth7e）想把 Codex computer use 的光标设为自己的 Windows 默认光标，于是请 Opus 5.5 分析其编译可执行文件。作者称 Ghidra 因 C 盘已满而崩溃，Claude 随后换用 Python、pefile 和 Capstone，反汇编绘制函数，提取几何形状、曲线与颜色，再重建光标、安装到 Windows 并备份原设置。这是为了取得一个具体视觉元素，不是重建整个 Codex。补读原串确认作者与图片存在，尚未检查图片像素或取得提取脚本、二进制、光标文件和测试。动画、不同缩放下的热点与点击准确性没有作者验证记录；评论中的提问不作为已实现功能。未独立执行，未确认使用 REA。",
+    "sources": [{"label": "Ananth 的光标恢复原帖与作者串", "url": "https://x.com/i/status/2111142820207837308"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["10月17日候选快照：34赞、1,789浏览、1转发；不是功能验证。", "作者报告已安装和备份设置；未独立检查像素、动画或热点。"],
+    "en": {
+      "title": "Codex cursor: recovering drawing geometry for a Windows pointer",
+      "summary": "Ananth says Opus switched from a failed Ghidra run to pefile/Capstone to recover the cursor's shape and colors.",
+      "description": "At 01:10 Beijing time on October 17, Ananth (@Ananth7e) wanted the Codex computer-use pointer as their default Windows cursor and asked Opus 5.5 to inspect its compiled executable. The author says Ghidra crashed because the C drive was full, after which Claude switched to Python, pefile and Capstone, disassembled the drawing function, recovered geometry, curves and colors, rebuilt the cursor, installed it in Windows and backed up the old settings. The goal was one visual element, not rebuilding Codex. Reading the original conversation confirmed the author and a posted image, but this collection did not inspect its pixels or obtain extraction scripts, binaries, cursor files or tests. No author validation establishes animation, hotspots at different display scales or click accuracy; commenters' questions do not establish implemented features. Nothing was independently executed and REA use is unconfirmed.",
+      "metadata": ["October 17 candidate snapshot: 34 likes, 1,789 views, 1 repost; not functional validation.", "Installation and settings backup are author reports; pixels, animation and hotspots were not independently checked."],
+      "source_labels": ["Ananth's original cursor-recovery post and conversation"]
+    }
+  },
+  {
+    "id": "gears3-ai-graphics-recompile",
+    "title": "Gears of War 3：AI 辅助静态重编译与图形后端研究",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "GloriousEggroll 澄清为 ReXGlue 机械翻译而非恢复原始源码，报告4K演示仍有战斗掉帧。",
+    "description": "10月17日01:27（北京时间），GloriousEggroll 介绍自己持续数周乃至数月的 Gears of War 3 重编译，称以 SonicDE 的反编译 GPU 后端为基础，不直接依赖 Xenia 的 Xbox 360 图形翻译器，画面升至4K且未用 FSR，帧率改善但战斗仍有掉帧。其对其他移植是否算原生的评价不是本合集的技术判定。补读同作者本窗口02:40的澄清后，应把项目写成静态重编译而非完整反编译：作者称未用 UE3 源码，修改版 ReXGlue 从自备 ISO 中的 default.xex 将 PowerPC 指令机械翻译为可移植 C++，再编译成 x86-64 Linux 程序；并明确承认 Xenia 的内核/系统服务与 XenonRecomp 的分析翻译基础。着色器经 XenosRecomp 转 HLSL，再由 DXC 转 SPIR-V 供 Vulkan 使用，渲染库为 plume。作者03:18又说明自己不是模拟领域专家，没有 AI 可能不会尝试。以上具体工具和性能均为作者说明，未取得或运行源码、ISO、基准与完整兼容测试；不称其恢复了带原名和原结构的源码，也不把视频或4K当作全程稳定帧率。",
+    "sources": [{"label": "GloriousEggroll 的 WIP 原帖", "url": "https://x.com/i/status/2111146922522402943"}, {"label": "同作者澄清 ReXGlue、着色器和运行库路线", "url": "https://x.com/i/status/2111165298531270905"}, {"label": "同作者说明 AI 促成尝试及个人经验边界", "url": "https://x.com/i/status/2111175047033528355"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（10月17日）：239赞、4,767浏览、21转发；非独立性能验证。", "补充回复发布于同一严格窗口；无 UE3 源码、机械翻译与依赖归属均按作者原话保留。"],
+    "en": {
+      "title": "Gears of War 3: AI-assisted static recompilation and graphics work",
+      "summary": "GloriousEggroll clarifies ReXGlue's mechanical translation rather than recovered original source; the reported 4K WIP still drops frames in combat.",
+      "description": "At 01:27 Beijing time on October 17, GloriousEggroll described weeks or possibly months of work on a Gears of War 3 recompile, saying it uses the decompiled SonicDE GPU backend as a base rather than directly relying on Xenia's Xbox 360 graphics translator. The author reports improved frame rates with a 4K upscale and no FSR, but remaining combat drops. Their opinion about whether other ports are native is not this collection's technical judgment. Reading the same author's 02:40 clarification within the window changes the description to static recompilation, not full decompilation: no UE3 source was used; a modified ReXGlue translates PowerPC instructions in default.xex from the user's ISO into portable C++, compiled into an x86-64 Linux program. The author explicitly credits Xenia kernel/system services and XenonRecomp analysis and translation foundations. XenosRecomp converts shader binaries to HLSL, then DXC compiles to SPIR-V for Vulkan; plume provides renderer libraries. At 03:18 the author adds that they are not an emulation expert and probably would not have attempted this without AI. Tool details and performance remain author statements. This collection did not obtain or run source, an ISO, benchmarks or full compatibility tests. The project is not described as recovering original names and source structure, and a video or 4K setting does not establish sustained stable frame rates.",
+      "metadata": ["October 17 candidate snapshot: 239 likes, 4,767 views, 21 reposts; not independent performance validation.", "Supplementary author replies are within the same strict window; no UE3 source, mechanical translation and dependency credits are retained as author statements."],
+      "source_labels": ["GloriousEggroll's original WIP post", "Author's ReXGlue, shader and runtime clarification", "Author's AI motivation and limits of personal expertise"]
+    }
+  },
+  {
+    "id": "garmin-health-menubar-mcp-report",
+    "title": "佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。",
+    "description": "10月17日02:00（北京时间），@women5200 转述一位开发者制作 Mac 开源工具，逆向佳明手表蓝牙协议，把身体电量、压力与心率显示在电脑菜单栏，并提供本地 MCP 供 AI 读取健康数据和做运动总结。具体目标是让用户不看手表或厂商 App 也能看到健康指标，同时为 AI 提供数据接口。帖子没有工具名、仓库、手表型号或协议与测量记录；开发是否使用 AI 或 REA 未说明。作为逆向设备与 AI 互通的相关项目线索收录，不称已核实开源、实时性、兼容性、医学准确性或数据不会外发。这里的 AI 角色是消费 MCP 数据，不是已证明参与蓝牙逆向；未独立运行或进行健康验证。",
+    "sources": [{"label": "佳明健康菜单栏与本地 MCP 的二手介绍", "url": "https://x.com/i/status/2111155441077977138"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["未确认工具与原开发者；AI 读取接口不等于 AI 完成逆向。"],
+    "en": {
+      "title": "Garmin watch: a reported Mac health menu bar and MCP bridge",
+      "summary": "A secondhand account describes Bluetooth research exposing Body Battery, stress and heart rate to a menu bar and local AI interface.",
+      "description": "At 02:00 Beijing time on October 17, @women5200 describes an unnamed developer's purportedly open-source Mac tool that reverse-engineers Garmin watch Bluetooth, displays Body Battery, stress and heart rate in the computer's menu bar, and provides local MCP access for AI health-data reading and exercise summaries. The concrete aim is to see metrics without consulting the watch or vendor app and provide an AI data interface. The post supplies no tool name, repository, watch model, protocol record or measurement log, and does not say AI or REA performed the development. It is included as a related lead connecting device reverse engineering with AI, not verified open-source status, real-time behavior, compatibility, medical accuracy or a guarantee that data stays local. The stated AI role is consuming MCP data, not established participation in Bluetooth research. Nothing was independently run or medically validated.",
+      "metadata": ["Tool and original developer unidentified; an AI reading interface does not establish AI-performed reverse engineering."],
+      "source_labels": ["Secondhand Garmin health menu-bar and local MCP introduction"]
+    }
+  },
+  {
+    "id": "rea-three-open-tool-apps-report",
+    "title": "三款开源工具到个人应用：REA 录屏、截图与听写报告",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称从三款免费开源工具构建录屏编辑、截图标注、听写会议笔记三类应用。",
+    "description": "10月17日02:05（北京时间），@automatedmarktr 称使用 REA，从三款免费的开源工具构建三个应用：录屏与编辑、截图标注、听写与会议笔记。这是一个把现有工具能力整理进自己应用的实际报告，不要求原软件闭源才收录。可获得正文及补读原帖未命名输入工具、产物或仓库，也未说明究竟静态分析、观察行为还是复用公开代码。因目标工作流明确而按作者功能报告保守收录，不推定净室重建、原版等价、离线识别、会议转写准确率或跨平台支持。没有公开代码、安装与验收材料供本合集检查，未运行。",
+    "sources": [{"label": "三类应用的 REA 使用报告", "url": "https://x.com/i/status/2111156533002227870"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["输入与产物未命名；三个应用为作者自述，不是三项独立复现。"],
+    "en": {
+      "title": "Three open tools to personal apps: an REA recording, markup and dictation report",
+      "summary": "The author reports rebuilding screen recording/editing, screenshot markup and dictation/meeting notes from three free open tools.",
+      "description": "At 02:05 Beijing time on October 17, @automatedmarktr says they used REA to build three apps from three free open-source tools: screen recording and editing, screenshot markup, and dictation with meeting notes. This is a concrete report of putting existing capabilities into personal applications; closed-source inputs are not a prerequisite for inclusion. The available text and original-post rereading name neither inputs, outputs nor repositories and do not explain whether the work used static analysis, observed behavior or publicly available code. It is conservatively included as an author-reported functional workflow, not assumed clean-room reconstruction, original-tool equivalence, offline recognition, transcription accuracy or cross-platform support. No public code, installation or acceptance material was available for inspection here, and nothing was run.",
+      "metadata": ["Inputs and outputs are unnamed; three applications are an author claim, not three independent reproductions."],
+      "source_labels": ["REA usage report for three application workflows"]
+    }
+  },
+  {
+    "id": "perplexity-computer-reverse-idea",
+    "title": "Perplexity Computer：对 Agent 产品本身提出逆向请求的 idea",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "用户向 AskPerplexity 与 morluto 请求研究 Computer，没有展示实现或结果。",
+    "description": "10月17日02:06（北京时间），@rohithreddy1095 在回复 @AskPerplexity 与 @morluto 时写下 /reverse-engineer preplixity computer。原文拼写如此；语境指向 Perplexity 的 Computer 产品。这里的目标不是已有 Computer 接入 REA 的五款演示应用，而是请求研究 Agent 产品本身。它只是具体目标的 idea，没有动机细节、行为规格、代码、回复或运行结果，也未证实请求实际调用 REA。本合集不将命令式发帖当作已启动任务、成功重建或可用替代品。",
+    "sources": [{"label": "面向 Computer 的原始逆向请求", "url": "https://x.com/i/status/2111156947185700916"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["仅具体目标请求；原文 preplixity 拼写保留，不视为已执行命令。"],
+    "en": {
+      "title": "Perplexity Computer: an idea to investigate the agent product itself",
+      "summary": "A user asks AskPerplexity and morluto to investigate Computer, without an implementation or result.",
+      "description": "At 02:06 Beijing time on October 17, @rohithreddy1095 replies to @AskPerplexity and @morluto with /reverse-engineer preplixity computer. That spelling is preserved; the context points to Perplexity's Computer product. Unlike the existing five-app Computer/REA demos, the target here is the agent product itself. This is only a specific-target idea, without detailed motivation, behavioral specifications, code, replies or execution results, and it is not established that REA was actually invoked. Command-like post text is not treated as a started task, successful reconstruction or usable substitute.",
+      "metadata": ["Specific-target request only; original spelling preplixity retained, not treated as an executed command."],
+      "source_labels": ["Original request to reverse-engineer Computer"]
+    }
+  },
+  {
+    "id": "gemini-argon-codex-proxy-idea",
+    "title": "Gemini App：研究 Argon 接口并代理给 Codex 的 idea",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "用户询问是否有人逆向 Gemini App，使 Codex 通过代理使用 Argon；没有实现证据。",
+    "description": "10月17日02:43（北京时间），@hoenogatari 问是否有人逆向 Gemini App 以访问 Argon，再把它作为 Codex 的代理后端。目标是让一个编程 Agent 使用另一个产品中的模型入口，而不是反编译 Gemini 模型权重。可用材料只有请求，没有 API、仓库、认证方案、成功调用或授权说明。作为跨 Agent/模型互通的具体 idea 收录；不证明 Argon 可由该方式调用、已绕过访问限制或符合产品条款，亦不建议提供凭据。REA 使用未确认，未作任何服务访问测试。",
+    "sources": [{"label": "Gemini 到 Codex 代理的原始提问", "url": "https://x.com/i/status/2111166099018678687"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["仅 idea；未确认接口、授权或可用性。"],
+    "en": {
+      "title": "Gemini app: an Argon-to-Codex proxy idea",
+      "summary": "A user asks about reverse-engineering Gemini to proxy Argon for Codex; no implementation is shown.",
+      "description": "At 02:43 Beijing time on October 17, @hoenogatari asks whether anyone has reverse-engineered the Gemini app to access Argon and use it as a proxy backend for Codex. The aim is to connect one coding agent to a model entry point in another product, not decompile Gemini model weights. The available material is a request only: no API, repository, authentication design, successful call or authorization statement. It is included as a concrete cross-agent/model interoperability idea, not proof that Argon is accessible this way, access restrictions were bypassed or the approach meets product terms, and it does not recommend supplying credentials. REA use is unconfirmed and no service access was tested.",
+      "metadata": ["Idea only; interface, authorization and availability unconfirmed."],
+      "source_labels": ["Original Gemini-to-Codex proxy question"]
+    }
+  },
+  {
+    "id": "lmdrum-claude-firmware-refusal",
+    "title": "LmDrum 固件：Claude 辅助反编译后拒绝继续的报告",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。",
+    "description": "10月17日02:54（北京时间），@midmachiavelli 在讨论 AI 反编译是否实际可行时报告，自己已让 LmDrum 的反编译固件版本工作，随后 Claude 却决定不再协助。补读同一作者02:56、同一会话下的回复，作者说明 Claude 自行使用 Ghidra 没有问题，只是在某一步停止。原串上游10月16日22:44的提问属于本窗口外背景，只用于确认同一作者与受阻语境，不当作本轮新候选。这里的具体问题是研究自有鼓机固件时出现工具可用、模型却拒绝的边界，未说明拒绝原因、任务细节、设备版本、源码或运行验证。作者称工作不等于本合集验证重编译固件能在实体鼓机安全使用，也不推定使用 REA、解锁或绕过任何机制。",
+    "sources": [{"label": "LmDrum 固件进展与拒绝的作者回复", "url": "https://x.com/i/status/2111169026160480290"}, {"label": "同一作者与会话：Claude/Ghidra 使用和停止边界", "url": "https://x.com/i/status/2111169367451054216"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["两个本窗口回复属于同一作者和会话；未独立运行固件或确定拒绝原因。"],
+    "en": {
+      "title": "LmDrum firmware: Claude reportedly stops after decompilation progress",
+      "summary": "The author says a decompiled firmware version worked before Claude refused further work; a same-conversation reply names Ghidra.",
+      "description": "At 02:54 Beijing time on October 17, @midmachiavelli responds to debate about AI decompilation's practicality by saying a decompiled version of their LmDrum firmware worked before Claude decided to stop helping. Reading the same author's 02:56 reply in the same conversation adds that Claude works with Ghidra on its own but stops at a certain point. An upstream question at 22:44 on October 16 is outside this window and serves only as background confirming author and refusal context, not a new candidate. The concrete issue is a model refusing to continue research on the author's drum-machine firmware despite the tool working. No refusal reason, detailed task, device version, source or execution validation is supplied. The author's 'working' claim does not verify that recompiled firmware is safe on physical hardware. REA use, unlocking and mechanism bypasses are not inferred.",
+      "metadata": ["Both in-window replies share author and conversation; firmware execution and refusal cause were not independently established."],
+      "source_labels": ["Author's LmDrum firmware progress and refusal reply", "Same author and conversation: Claude/Ghidra operation and stopping boundary"]
+    }
+  },
+  {
+    "id": "des-1977-test-vectors-claude",
+    "title": "1977 年 DES 测试向量：Claude 追溯随机生成环境的报告",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Steve Weis 称 Claude 将 NBS 的 DES S-box 测试向量追溯到 PDP-11 Unix V6 rand()。",
+    "description": "10月17日03:01（北京时间），Steve Weis（@sweis）称 Claude 还逆向研究了 NBS 1977年的 DES S-box 测试向量，并判断它们由 PDP-11 上 Unix V6 的 rand() 生成。这里的研究对象是历史密码测试数据的生成来历，不是声称破解 DES 或恢复用户密钥。补读原串确认作者与这条陈述；评论对种子、周期和复现的提问没有作者答案，不能当作验证记录。原帖为 quote，但可获得工具输出没有提供被引用原文；未取得向量集、代码、匹配日志或具体模型版本，不能独立确认平台归因。保留为具体算法取证的待验证报告，REA 使用未确认。",
+    "sources": [{"label": "Steve Weis 对 DES 测试向量的原始报告", "url": "https://x.com/i/status/2111170587792208361"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["10月17日候选快照：79赞、4,668浏览、8转发；生成来历报告不是密码安全被攻破。"],
+    "en": {
+      "title": "1977 DES test vectors: Claude reportedly traces their random-generation environment",
+      "summary": "Steve Weis says Claude traced NBS's DES S-box test vectors to Unix V6 rand() on a PDP-11.",
+      "description": "At 03:01 Beijing time on October 17, Steve Weis (@sweis) says Claude also reverse-engineered NBS's 1977 DES S-box test vectors and determined they were generated using rand() on PDP-11 Unix V6. The subject is the provenance of historical cryptographic test data, not a claim to break DES or recover user keys. Reading the original conversation confirmed the author and statement. Commenters' questions about seeds, periods and reproducibility have no author answer and are not validation records. The post is a quote, but the available tool output does not supply the quoted original. No vector set, code, matching logs or specific model version was obtained to independently confirm the platform attribution. This remains an unverified algorithm-forensics report; REA use is unconfirmed.",
+      "metadata": ["October 17 candidate snapshot: 79 likes, 4,668 views, 8 reposts; a generation-provenance report is not a cryptographic break."],
+      "source_labels": ["Steve Weis's original DES test-vector report"]
+    }
+  },
+  {
+    "id": "rea-jq-fossify-analysis-test",
+    "title": "jq 与 Fossify Calculator：REA 定位函数和初步调查",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "作者称在 stripped jq 1.8.2 中用 Ghidra 定位一个函数并回溯源码，尚未重建软件。",
+    "description": "10月17日03:05（北京时间），@JohanSlattavik 用挪威语说明自己还没有重建任何东西，但已测试 REA 对去符号 Linux 二进制 jq 1.8.2 的分析，用 Ghidra 识别一个函数并把它对应回原始源码。jq 是 JSON 命令行处理器，这里的目标是检查无符号程序是否仍可定位已知实现，而非宣称整个程序被恢复。作者同时说开始调查 Android 的 Fossify Calculator，尚未给该应用具体发现。没有函数名、构建参数、对应源码位置、反编译输出或对照记录供核验；原版本号按帖子保留，不据此推定发行状态。属于初步分析测试，不能改写为完成移植或功能等价复刻。",
+    "sources": [{"label": "作者对 jq 与 Fossify 初步测试的回复", "url": "https://x.com/i/status/2111171612149985567"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["明确尚未重建；jq 1.8.2 是作者标注，未核对二进制或发行信息。"],
+    "en": {
+      "title": "jq and Fossify Calculator: REA function identification and early inspection",
+      "summary": "The author reports mapping one function in stripped jq 1.8.2 back to source with Ghidra, explicitly without rebuilding software yet.",
+      "description": "At 03:05 Beijing time on October 17, @JohanSlattavik writes in Norwegian that nothing has been reconstructed yet, but REA was tested on a stripped Linux jq 1.8.2 binary, using Ghidra to identify one function and trace it back to original source. jq is a command-line JSON processor; the concrete test concerns locating a known implementation without symbols, not recovering the entire program. The author also says investigation of Android's Fossify Calculator has started, without specific findings for that app. No function name, build parameters, source location, decompiler output or comparison log is supplied for checking. The version is retained as posted without inferring release status. This is an early analysis test, not a completed port or behaviorally equivalent reconstruction.",
+      "metadata": ["Explicitly no reconstruction yet; jq 1.8.2 is the author's label, without binary or release-information verification."],
+      "source_labels": ["Author's reply about early jq and Fossify tests"]
+    }
+  },
+  {
+    "id": "ai-drag-drop-recompile-ui-idea",
+    "title": "拖放式 AI 重编译界面：选择复古平台或操作系统的 idea",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "用户设想拖入游戏或程序，反编译后为选定系统重编译，没有实现或验证。",
+    "description": "10月17日03:44（北京时间），@BreakThymes 设想一种简化界面：用户拖入游戏或程序，工具反编译后为所选复古游戏系统或操作系统重新编译，并认为 AI 更准确后界面会简化。其具体用途是降低移植工作流的操作门槛，不是已经存在的通用转换器。帖子没有项目名、源码、目标架构、图形/音频接口迁移方案、资产与许可处理或演示。作为界面与工作流的具体 idea 收录，不暗示任意二进制能自动在任意系统运行；REA 或其他模型的实际参与未确定。",
+    "sources": [{"label": "拖放式跨系统重编译的原始设想", "url": "https://x.com/i/status/2111181436338237519"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["预测性 idea，无可用转换器、兼容范围或完成结果。"],
+    "en": {
+      "title": "A drag-and-drop AI recompilation UI idea for retro systems and operating systems",
+      "summary": "A user imagines dropping in a game or program and recompiling for a selected system, without implementation or validation.",
+      "description": "At 03:44 Beijing time on October 17, @BreakThymes imagines a simplified interface where users drop in a game or program, have it decompiled and recompiled for a selected retro game system or operating system, and expects simpler interfaces as AI accuracy improves. Its specific purpose is reducing operational friction in porting, not announcing an existing universal converter. The post gives no project name, source, target architecture, graphics/audio interface migration design, asset/licensing treatment or demo. It is included as a concrete interface/workflow idea without implying arbitrary binaries can automatically run on arbitrary systems. Actual use of REA or another model is unestablished.",
+      "metadata": ["Predictive idea, with no available converter, compatibility scope or completed result."],
+      "source_labels": ["Original drag-and-drop cross-system recompilation idea"]
+    }
+  },
+  {
+    "id": "notion-asar-claude-readonly-audit",
+    "title": "Notion app.asar：Claude 只读检查文件与域名字符串",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者报告6.8 MB 包内147文件、58个JS和47域名，明确字符串存在不等于实际上传。",
+    "description": "10月17日03:50（北京时间），@ChristineAnd1 想在安装 REA 前先做手工基线，要求 Claude 只读本地 Notion app.asar，不运行应用、不编辑，并称没有内容离开机器。作者报告包为6.8 MB，列出147个文件，其中58个 JavaScript，代码写入47个不同域名，另有一个只出现一次的 Sentry ingest 错误报告地址。作者说多数域名是库文档或链接，某个未展开短链指向的域名出现123次，下一个实际域名出现11次，据此将客户端理解为网站外壳。域名目标未确定，不能猜作特定地址。作者明确承认还不知道发送什么、何时发送；字符串只是可能通信的地址，不证明实际发出请求。第二款应用与 REA 对照仍为计划，不是已完成实验。与既有 Notion 剪贴板调用链案例目标不同；本合集未取得 ASAR、计数脚本、图片数据或网络验证，不独立确认计数、包的完整性或其不外发的执行承诺。",
+    "sources": [{"label": "作者的 Notion 只读静态基线实验", "url": "https://x.com/i/status/2111182893313613877"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["147文件、58JS、47域名、123次与11次均为作者计数；非网络抓包。", "已报告的阶段未用 REA；后续跨应用/REA 对照仅为计划。"],
+    "en": {
+      "title": "Notion app.asar: a Claude read-only file and domain-string inspection",
+      "summary": "The author reports 147 files, 58 JavaScript files and 47 domains in a 6.8 MB package, explicitly distinguishing strings from actual uploads.",
+      "description": "At 03:50 Beijing time on October 17, @ChristineAnd1 describes a manual baseline before installing REA: Claude was instructed to read the local Notion app.asar only, without running or editing the app, and the author says nothing left the machine. The reported 6.8 MB package contains 147 files, including 58 JavaScript files, 47 distinct domains written into code, and one Sentry ingest error-reporting address mentioned once. Most domains are reportedly library documentation or links; a domain hidden behind an unresolved short link appears 123 times, and the next actual domain appears 11 times. The author interprets the client as a website shell. The hidden domain is unidentified and is not guessed. Crucially, the author says they do not yet know what is sent or when: a string is a possible destination, not evidence of a request. A second app and comparison with REA remain plans, not completed experiments. This has a different goal from the existing Notion clipboard call-chain case. This collection obtained no ASAR, counting script, image data or network validation and does not independently confirm the counts, package completeness or the claimed no-egress execution constraint.",
+      "metadata": ["147 files, 58 JS files, 47 domains and occurrence counts of 123 and 11 are author counts, not packet captures.", "The reported phase did not use REA; cross-app and REA comparisons remain planned."],
+      "source_labels": ["Author's read-only static Notion baseline experiment"]
+    }
+  },
+  {
+    "id": "grok-bot-rea-chat-template",
+    "title": "Grok Bot + REA：在聊天中研究软件的模板报告",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "作者称一次构建了 REA 聊天模板，可提交待分析工具；没有目标样本与验证。",
+    "description": "10月17日03:56（北京时间），@ChaiWithAi 称用 Grok Bot 一次构建了连接 REA 的模板，让用户在聊天内提交希望分析的软件，而不切换应用，并提供模板短链。具体目标是把逆向工具放到聊天工作台；不是此前研究 Grok Build 源码或 Arkham 的目标项目。正文未给连接代码、部署位置、权限与数据流、可用工具清单或成功分析的二进制样本。保留作者对集成模板的报告，所谓无需设置只按宣传归因，不等于用户无需准备分析后端、已安全隔离、完整支持任意软件或本合集验证模板可用；未访问短链目标、部署或运行。",
+    "sources": [{"label": "作者发布 Grok Bot 的 REA 聊天模板", "url": "https://x.com/i/status/2111184500093026340"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["作者称一次构建；未检查模板实现、权限或分析结果。"],
+    "en": {
+      "title": "Grok Bot + REA: a reported software-investigation chat template",
+      "summary": "The author says a one-shot REA chat template accepts tools to analyze, without a target sample or validation.",
+      "description": "At 03:56 Beijing time on October 17, @ChaiWithAi says they built a Grok Bot template in one go that connects REA and lets users submit software for investigation inside chat without switching apps, linking a template short URL. The specific goal is a chat workbench for reverse-engineering tools, distinct from earlier Grok Build source investigation or Arkham projects. The text supplies no connector code, deployment location, permissions/data flows, tool inventory or binary successfully analyzed. This remains an author-reported integration template. 'No setup' is promotional wording, not proof that no analysis backend is needed, isolation is safe, arbitrary software is fully supported or the template works in this collection's tests. The short-link destination was not accessed, and nothing was deployed or run.",
+      "metadata": ["One-shot construction is an author claim; template implementation, permissions and analysis results were not inspected."],
+      "source_labels": ["Author's Grok Bot REA chat-template announcement"]
+    }
+  },
+  {
+    "id": "rea-own-hardware-agent-voice-idea",
+    "title": "自有硬件到语音 Agent：受耳机与智能戒指启发的 REA 尝试",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "用户称用 Claude 与 REA，在已有硬件上尝试语音控制 Agent、听写与记录想法。",
+    "description": "10月17日02:12（北京时间），@Sp00kyD00kyXRS 回复 antimattr 的耳机加智能戒指产品介绍，称自己正用 Claude、REA 和已有硬件做这件事。补查原串的父帖发布于10月14日23:26，是窗口外的目标背景：通过耳机与戒指控制 AI Agent、听写和用语音记录想法。它帮助解释回复的用途，不证明用户正在复制同一设备或已做出戒指。用户没有命名自有硬件、协议、实际研究步骤、代码或结果；以功能目标明确的进行中尝试收录，不把父帖的产品能力转移给该用户，也不推定硬件兼容、可工作语音接口或绕过厂商服务。未独立测试。",
+    "sources": [{"label": "用户使用 Claude/REA 与自有硬件的回复", "url": "https://x.com/i/status/2111158379896877249"}, {"label": "窗口外背景：antimattr 的语音与 Agent 产品目标", "url": "https://x.com/i/status/2110391893419073881"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["父帖为10月14日背景，不计作本轮新候选；具体硬件和实现未命名。"],
+    "en": {
+      "title": "Owned hardware for voice agents: an REA attempt inspired by earbuds and a smart ring",
+      "summary": "A user reports using Claude and REA with existing hardware toward voice agent control, dictation and thought capture.",
+      "description": "At 02:12 Beijing time on October 17, @Sp00kyD00kyXRS replies to antimattr's earbuds-and-smart-ring introduction, saying they are doing this with Claude, REA and hardware they already own. Reading the conversation identifies the parent at 23:26 on October 14 as out-of-window background: controlling AI agents, dictating and capturing thoughts by voice through earbuds and a ring. This explains the reply's purpose, not proof the user is copying that device or has built a ring. The user names no owned hardware, protocol, investigation steps, code or result. It is included as an ongoing attempt with a concrete functional aim, without transferring the parent product's capabilities to the user or assuming hardware compatibility, a working voice interface or vendor-service bypasses. Nothing was independently tested.",
+      "metadata": ["Parent post is October 14 background, not a new candidate in this window; specific hardware and implementation are unnamed."],
+      "source_labels": ["User's Claude/REA and owned-hardware reply", "Out-of-window background: antimattr's voice and agent product goals"]
+    }
+  },
+  {
+    "id": "patrick-ai-reverse-games-directory",
+    "title": "Patrick 的 AI 逆向游戏目录：进行中的资料项目",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "Patrick Keane 称正建设 AI 逆向游戏目录；条目与验证标准尚未检查。",
+    "description": "10月17日03:59（北京时间），Patrick Keane（@KeaneMachine101）在讨论细分 AI 目录时称正建设 AI 逆向游戏目录，并附图。他提到把 Mario 玩法放入 Elden Ring 等趋势作为动机，但未给可复核的具体条目、游戏列表、来源或验收标准。原串确认是这位作者的建设报告，不能合并成已有 whyamas 的多领域逆向目录，也不能将其例子直接当作新游戏成果。按帮助读者定位 AI 游戏保存与改造项目的相关资料收录；目录是否已上线、收录多少、是否持续维护及内容准确性均未确认，REA 使用未说明。",
+    "sources": [{"label": "Patrick Keane 的目录建设回复", "url": "https://x.com/i/status/2111185397782880475"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["作者称正在建设，未检查目录或采纳其游戏成果举例。"],
+    "en": {
+      "title": "Patrick's AI reverse-engineered games directory: an ongoing resource project",
+      "summary": "Patrick Keane says a directory of AI reverse-engineered games is being built; entries and validation standards were not inspected.",
+      "description": "At 03:59 Beijing time on October 17, Patrick Keane (@KeaneMachine101) says they are building a directory of AI-powered, reverse-engineered games while discussing niche AI directories, attaching an image. They cite trends such as Mario gameplay in Elden Ring as motivation but provide no inspectable entries, game list, sources or acceptance standard. The conversation confirms this author's construction report; it should not be merged with whyamas's existing multi-domain reverse-engineering directory, and the examples are not adopted as new game results. It is included as a related resource intended to help locate AI game-preservation and modification projects. Public availability, size, continued maintenance and content accuracy remain unconfirmed, and REA use is not stated.",
+      "metadata": ["Author says it is being built; the directory was not inspected and its example game results were not adopted."],
+      "source_labels": ["Patrick Keane's directory-construction reply"]
     }
   }
 ]

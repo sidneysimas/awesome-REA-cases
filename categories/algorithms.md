@@ -30,3 +30,5 @@
 - [CSV 导出验收器：三个故意改坏的实现如何逃过简单测试](../cases/rea-csv-evaluator-mutation-test.md) — 作者称简单测试全绿，换成215组原版字节对照才发现三个错误实现。 **[REA · 分析测试]**
 - [混淆 JS 请求签名：REA 分析后恢复取数的作者报告](../cases/rea-obfuscated-web-request-signature.md) — 作者称 REA 五分钟梳理动态签名，改几行代码后得到数据；网站与验证材料未公开。 **[REA · 待验证]**
 - [Polymarket Up/Down bot：REA 分析策略与历史回放的推广自述](../cases/polymarket-updown-rea-replay-report.md) — 作者称用 REA/Opus 理解订单簿策略并逐 tick 回放；没有可检查代码、指标或收益证明。 **[REA · 待验证]**
+- [1977 年 DES 测试向量：Claude 追溯随机生成环境的报告](../cases/des-1977-test-vectors-claude.md) — Steve Weis 称 Claude 将 NBS 的 DES S-box 测试向量追溯到 PDP-11 Unix V6 rand()。 **[其他 AI 逆向 · 待验证]**
+- [jq 与 Fossify Calculator：REA 定位函数和初步调查](../cases/rea-jq-fossify-analysis-test.md) — 作者称在 stripped jq 1.8.2 中用 Ghidra 定位一个函数并回溯源码，尚未重建软件。 **[REA · 分析测试]**

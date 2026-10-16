@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **311 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **326 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（72）
-- [硬件与设备互通](categories/hardware.md)（69）
-- [应用与客户端](categories/apps.md)（142）
-- [算法与功能重建](categories/algorithms.md)（28）
+- [游戏与游戏保存](categories/games.md)（73）
+- [硬件与设备互通](categories/hardware.md)（72）
+- [应用与客户端](categories/apps.md)（151）
+- [算法与功能重建](categories/algorithms.md)（30）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -87,7 +87,7 @@
 - [Open-BFME：AI 辅助反编译《中土战争》并字节匹配的转述](cases/open-bfme-ai-byte-matching-report.md) — jfwfreo 称 Open-BFME 生成的 C++ 经合适编译器可得到原始字节，不提供匹配覆盖率。 **[其他 AI 逆向 · 待验证]**
 - [Jet Set Radio Future：AI 反编译尝试的争议线索](cases/jsrf-ai-decompilation-controversy.md) — 候选批评 JSRF 的 AI 反编译，另建议支持人类主导项目；未提供技术结果。 **[其他 AI 逆向 · 待验证]**
 - [视频主页角色演示：傅盛部署 REA 后的游戏内容混搭转述](cases/fu-sheng-video-homepage-character-demo.md) — 帖子称傅盛一句话让游戏角色在视频主页破坏，未说明角色来源或实际逆向步骤。 **[REA · 待验证]**
-- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程；另有第三方称停更，未核实作者公告。 **[其他 AI 逆向 · 相关项目]**
+- [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](cases/decompwtf-agent-game-decompilation.md) — 本地 AI 反编译与编译对比的项目转述；停更、归档及使用请求仍未核实作者原文。 **[其他 AI 逆向 · 相关项目]**
 - [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
 - [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
 - [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
@@ -98,6 +98,7 @@
 - [QQPet：从 Arctic Penguin T800 重建跨平台桌宠](cases/qqpet-arctic-penguin-ai-rebuild.md) — 公开项目自称 AI 复刻 QQ 宠物，逆向 T800 并以 Ruffle 播放 Flash；平台和素材限制仍在。 **[其他 AI 逆向 · 相关项目]**
 - [Mega Man Battle Network：AI 反编译与 Mod 的二手线索](cases/megaman-battle-network-ai-mod-report.md) — 评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。 **[其他 AI 逆向 · 待验证]**
 - [Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述](cases/ben-claude-rts-metal-alpha-report.md) — Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。 **[其他 AI 逆向 · 进行中]**
+- [Gears of War 3：AI 辅助静态重编译与图形后端研究](cases/gears3-ai-graphics-recompile.md) — GloriousEggroll 澄清为 ReXGlue 机械翻译而非恢复原始源码，报告4K演示仍有战斗掉帧。 **[其他 AI 逆向 · 进行中]**
 
 ### 硬件与设备互通
 
@@ -170,6 +171,9 @@
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
 - [iOS 到安卓硬件：AI 逆向移植的假设性 idea](cases/ios-android-ai-port-idea.md) — 设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
+- [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
+- [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
+- [自有硬件到语音 Agent：受耳机与智能戒指启发的 REA 尝试](cases/rea-own-hardware-agent-voice-idea.md) — 用户称用 Claude 与 REA，在已有硬件上尝试语音控制 Agent、听写与记录想法。 **[REA · 进行中]**
 
 ### 应用与客户端
 
@@ -283,7 +287,7 @@
 - [BINNY：面向逆向研究的多模型 Agent harness 公测](cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
 - [Chrome 深色模式扩展：用 REA 研究以便改进](cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
 - [建设投标解密器：Claude Code 辅助研究密码报错的转述](cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
-- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](cases/hermes-rea-plugin-release.md) — 发布转述之外，用户报告已接入REA MCP并补充传统分析工具；Python支持仍有自述缺口。 **[REA · 相关项目]**
+- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](cases/hermes-rea-plugin-release.md) — 用户报告集成与Python分析缺口，新工程摘要补充版本pin兼容和工具审批边界。 **[REA · 相关项目]**
 - [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
 - [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
 - [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
@@ -315,6 +319,15 @@
 - [1997 年音频软件：为继续旧工作探索 Windows 11 兼容](cases/1997-audio-software-ai-win11-revival.md) — 作者称用 Claude 规划、headless Ghidra 研究旧音频程序，再考虑较便宜的 GLM 5.3。 **[其他 AI 逆向 · 进行中]**
 - [Computer 接入 REA：Figma 等五款应用功能重建演示](cases/computer-rea-five-app-rebuild-demos.md) — Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。 **[REA · 待验证]**
 - [Claude Intercept：把授权 HTTP/S 抓包交给 Claude Code 分析](cases/claude-intercept-api-traffic-analysis.md) — 公开代理项目提供 /intercept skill 与结构化流量导出，辅助发现未文档化 API；不保证所有流量可解密。 **[其他 AI 逆向 · 相关项目]**
+- [Claude 客户端：用 REA 检查环境遥测参数](cases/claude-client-environment-telemetry.md) — 作者报告发现 ARM 转译、内存和远程/SSH 参数；VPS 风控用途仍是作者解释。 **[REA · 分析测试]**
+- [Codex 光标：从编译程序恢复绘制几何，设为 Windows 光标](cases/codex-cursor-windows-opus.md) — Ananth 报告 Opus 在 Ghidra 失败后改用 pefile/Capstone，恢复光标形状与颜色。 **[其他 AI 逆向 · 待验证]**
+- [三款开源工具到个人应用：REA 录屏、截图与听写报告](cases/rea-three-open-tool-apps-report.md) — 作者称从三款免费开源工具构建录屏编辑、截图标注、听写会议笔记三类应用。 **[REA · 待验证]**
+- [Perplexity Computer：对 Agent 产品本身提出逆向请求的 idea](cases/perplexity-computer-reverse-idea.md) — 用户向 AskPerplexity 与 morluto 请求研究 Computer，没有展示实现或结果。 **[未确认使用 REA · 待验证]**
+- [Gemini App：研究 Argon 接口并代理给 Codex 的 idea](cases/gemini-argon-codex-proxy-idea.md) — 用户询问是否有人逆向 Gemini App，使 Codex 通过代理使用 Argon；没有实现证据。 **[未确认使用 REA · 待验证]**
+- [拖放式 AI 重编译界面：选择复古平台或操作系统的 idea](cases/ai-drag-drop-recompile-ui-idea.md) — 用户设想拖入游戏或程序，反编译后为选定系统重编译，没有实现或验证。 **[未确认使用 REA · 待验证]**
+- [Notion app.asar：Claude 只读检查文件与域名字符串](cases/notion-asar-claude-readonly-audit.md) — 作者报告6.8 MB 包内147文件、58个JS和47域名，明确字符串存在不等于实际上传。 **[其他 AI 逆向 · 分析测试]**
+- [Grok Bot + REA：在聊天中研究软件的模板报告](cases/grok-bot-rea-chat-template.md) — 作者称一次构建了 REA 聊天模板，可提交待分析工具；没有目标样本与验证。 **[REA · 相关项目]**
+- [Patrick 的 AI 逆向游戏目录：进行中的资料项目](cases/patrick-ai-reverse-games-directory.md) — Patrick Keane 称正建设 AI 逆向游戏目录；条目与验证标准尚未检查。 **[未确认使用 REA · 相关项目]**
 
 ### 算法与功能重建
 
@@ -346,6 +359,8 @@
 - [CSV 导出验收器：三个故意改坏的实现如何逃过简单测试](cases/rea-csv-evaluator-mutation-test.md) — 作者称简单测试全绿，换成215组原版字节对照才发现三个错误实现。 **[REA · 分析测试]**
 - [混淆 JS 请求签名：REA 分析后恢复取数的作者报告](cases/rea-obfuscated-web-request-signature.md) — 作者称 REA 五分钟梳理动态签名，改几行代码后得到数据；网站与验证材料未公开。 **[REA · 待验证]**
 - [Polymarket Up/Down bot：REA 分析策略与历史回放的推广自述](cases/polymarket-updown-rea-replay-report.md) — 作者称用 REA/Opus 理解订单簿策略并逐 tick 回放；没有可检查代码、指标或收益证明。 **[REA · 待验证]**
+- [1977 年 DES 测试向量：Claude 追溯随机生成环境的报告](cases/des-1977-test-vectors-claude.md) — Steve Weis 称 Claude 将 NBS 的 DES S-box 测试向量追溯到 PDP-11 Unix V6 rand()。 **[其他 AI 逆向 · 待验证]**
+- [jq 与 Fossify Calculator：REA 定位函数和初步调查](cases/rea-jq-fossify-analysis-test.md) — 作者称在 stripped jq 1.8.2 中用 Ghidra 定位一个函数并回溯源码，尚未重建软件。 **[REA · 分析测试]**
 
 ## 贡献与收录
 

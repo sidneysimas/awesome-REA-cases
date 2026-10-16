@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**311 entries**, organized by use case, without a Top-N or popularity threshold.
+**326 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (72)
-- [Hardware and interoperability](categories/en/hardware.md) (69)
-- [Applications and clients](categories/en/apps.md) (142)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (28)
+- [Games and preservation](categories/en/games.md) (73)
+- [Hardware and interoperability](categories/en/hardware.md) (72)
+- [Applications and clients](categories/en/apps.md) (151)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (30)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -89,7 +89,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Open-BFME: a report of AI-assisted Battle for Middle Earth decompilation and byte matching](cases/en/open-bfme-ai-byte-matching-report.md) — jfwfreo says Open-BFME produces C++ that matches original bytes with the right compiler, without a coverage figure. **[Other AI-assisted work · Needs verification]**
 - [Jet Set Radio Future: a disputed AI-decompilation project lead](cases/en/jsrf-ai-decompilation-controversy.md) — A candidate criticizes AI decompilation of JSRF and recommends a human-led alternative, without technical results. **[Other AI-assisted work · Needs verification]**
 - [A character on a video homepage: a report of Fu Sheng's REA mashup demonstration](cases/en/fu-sheng-video-homepage-character-demo.md) — A post says Fu Sheng used one prompt to make a game character smash up his video homepage, without identifying the character or reverse-engineering steps. **[REA · Needs verification]**
-- [Decompwtf: agents reconstruct game C/C++ and compare machine code](cases/en/decompwtf-agent-game-decompilation.md) — Accounts describe local AI decompilation with compile-and-compare checks; third-party discontinuation claims lack a verified author announcement. **[Other AI-assisted work · Related project]**
+- [Decompwtf: agents reconstruct game C/C++ and compare machine code](cases/en/decompwtf-agent-game-decompilation.md) — Accounts describe local AI decompilation and compile-and-compare checks; discontinuation, archival and usage requests lack verified author text. **[Other AI-assisted work · Related project]**
 - [Immersive Portals: an AI-assisted Minecraft JE 26.2 compatibility report](cases/en/immersive-portals-ai-je262.md) — The author reports compatibility with newer Minecraft, Fabric and shaders, explicitly noting the recording is not the first attempt. **[Other AI-assisted work · Needs verification]**
 - [Obfuscated old games: a report of Claude guessing structure sizes incorrectly](cases/en/claude-obfuscated-game-struct-size-failure.md) — The author says pseudo-C conversion was fast, but obfuscation led to guessed structure sizes requiring manual IDA review. **[Other AI-assisted work · Analysis test]**
 - [Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port](cases/en/sonic-3d-blast-saturn-opus-port.md) — The author clarifies that this is a native port from decompiled source, not static recompilation; AI accelerated a months-long process. **[Other AI-assisted work · In progress]**
@@ -100,6 +100,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [QQPet: a cross-platform pet rebuilt from Arctic Penguin T800](cases/en/qqpet-arctic-penguin-ai-rebuild.md) — A public project describes an AI-made QQ Pet recreation from T800 with Ruffle Flash playback; platform and asset limitations remain. **[Other AI-assisted work · Related project]**
 - [Mega Man Battle Network: a secondhand AI decompilation and modding lead](cases/en/megaman-battle-network-ai-mod-report.md) — A comment reports AI decompilation and modding of a Battle Network game; version, implementation and outcome are unspecified. **[Other AI-assisted work · Needs verification]**
 - [Ben's childhood RTS: a reported Claude Code C++/Metal Mac alpha](cases/en/ben-claude-rts-metal-alpha-report.md) — Ben reports roughly 70k C++ lines, over 30 reverse-engineered specifications and an opponent that builds and attacks. **[Other AI-assisted work · In progress]**
+- [Gears of War 3: AI-assisted static recompilation and graphics work](cases/en/gears3-ai-graphics-recompile.md) — GloriousEggroll clarifies ReXGlue's mechanical translation rather than recovered original source; the reported 4K WIP still drops frames in combat. **[Other AI-assisted work · In progress]**
 
 ### Hardware and interoperability
 
@@ -172,6 +173,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Race recorder: reported Claude Code recovery of video and telemetry files on Mac](cases/en/race-recorder-claude-format-mac-report.md) — A roundup says a developer investigated a proprietary recorder format in four hours to access years of video and driving telemetry on a Mac. **[Other AI-assisted work · Needs verification]**
 - [iOS on Android hardware: a hypothetical AI reverse-engineering idea](cases/en/ios-android-ai-port-idea.md) — A post imagines AI understanding iOS and moving it to Android phones; no actual port or performance measurement is supplied. **[Other AI-assisted work · Needs verification]**
 - [A twelve-year-old Kindle: reported Claude safety refusal during a jailbreak attempt](cases/en/old-kindle-claude-refusal-report.md) — A user reports safety blocks while investigating an owned old Kindle, not a successful unlock or firmware change. **[Other AI-assisted work · Needs verification]**
+- [Garmin watch: a reported Mac health menu bar and MCP bridge](cases/en/garmin-health-menubar-mcp-report.md) — A secondhand account describes Bluetooth research exposing Body Battery, stress and heart rate to a menu bar and local AI interface. **[REA use unconfirmed · Related project]**
+- [LmDrum firmware: Claude reportedly stops after decompilation progress](cases/en/lmdrum-claude-firmware-refusal.md) — The author says a decompiled firmware version worked before Claude refused further work; a same-conversation reply names Ghidra. **[Other AI-assisted work · In progress]**
+- [Owned hardware for voice agents: an REA attempt inspired by earbuds and a smart ring](cases/en/rea-own-hardware-agent-voice-idea.md) — A user reports using Claude and REA with existing hardware toward voice agent control, dictation and thought capture. **[REA · In progress]**
 
 ### Applications and clients
 
@@ -285,7 +289,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [BINNY: public beta of a multi-model reverse-engineering harness](cases/en/binny-agentic-reverse-harness.md) — The launch post claims multi-LLM support, Ghidra integration, sandboxed execution and autonomous binary analysis; implementation is not verified. **[Other AI-assisted work · Related project]**
 - [A Chrome dark-mode extension: REA research for improvements](cases/en/chrome-dark-mode-extension-rea.md) — The poster says they used REA on a dark-mode extension, without naming it or reporting a completed improvement. **[REA · In progress]**
 - [A construction-bid decryptor: reported Claude Code research into a password error](cases/en/construction-bid-decryptor-claude-report.md) — A post describes a ₩1 billion bid blocked by decryption failure; the stated cause was ^^ becoming ^6. **[Other AI-assisted work · Needs verification]**
-- [Hermes REA plugin: a reported MCP and adapted Skill release](cases/en/hermes-rea-plugin-release.md) — Beyond the release report, a user describes adding REA MCP and traditional tools, while reporting a Python-analysis gap. **[REA · Related project]**
+- [Hermes REA plugin: a reported MCP and adapted Skill release](cases/en/hermes-rea-plugin-release.md) — User reports cover integration and a Python-analysis gap; a new engineering digest adds version-pin compatibility and tool-approval limits. **[REA · Related project]**
 - [A Resend alternative: reported email APIs and inboxes for agents](cases/en/resend-agentic-email-rebuild.md) — The poster describes an open-source email service after studying Resend, with UI features available to AI; implementation is unverified. **[REA use unconfirmed · Related project]**
 - [iTunes: an AI-modernization idea for old-iPod music workflows](cases/en/itunes-ai-modernization-idea.md) — The poster asks for an AI research and rebuild approach to update iTunes for modern computers and users returning to old iPods. **[Other AI-assisted work · Needs verification]**
 - [Self-owned Android/Windows 95 apps: an Opus reverse-engineering test without REA](cases/en/opus-own-android-win95-test.md) — The poster reports testing Opus 5.5 on two of their own applications, without feature details or acceptance records. **[Other AI-assisted work · Analysis test]**
@@ -317,6 +321,15 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [1997 audio software: investigating Windows 11 compatibility to continue old work](cases/en/1997-audio-software-ai-win11-revival.md) — The poster reports a revival effort and suggests Claude planning with headless Ghidra, followed by a cheaper model such as GLM 5.3. **[Other AI-assisted work · In progress]**
 - [Computer integrates REA: five app-feature rebuilding demos including Figma](cases/en/computer-rea-five-app-rebuild-demos.md) — Computer announces an REA skill with design, spreadsheet, image, contract and audio demos; equivalence to the originals is untested. **[REA · Needs verification]**
 - [Claude Intercept: authorized HTTP/S captures for Claude Code analysis](cases/en/claude-intercept-api-traffic-analysis.md) — A public proxy project provides an /intercept skill and structured traffic exports for undocumented API research, not guaranteed decryption of all traffic. **[Other AI-assisted work · Related project]**
+- [Claude client: inspecting environment telemetry with REA](cases/en/claude-client-environment-telemetry.md) — The author reports ARM translation, memory and remote/SSH indicators; their use for VPS risk assessment remains an interpretation. **[REA · Analysis test]**
+- [Codex cursor: recovering drawing geometry for a Windows pointer](cases/en/codex-cursor-windows-opus.md) — Ananth says Opus switched from a failed Ghidra run to pefile/Capstone to recover the cursor's shape and colors. **[Other AI-assisted work · Needs verification]**
+- [Three open tools to personal apps: an REA recording, markup and dictation report](cases/en/rea-three-open-tool-apps-report.md) — The author reports rebuilding screen recording/editing, screenshot markup and dictation/meeting notes from three free open tools. **[REA · Needs verification]**
+- [Perplexity Computer: an idea to investigate the agent product itself](cases/en/perplexity-computer-reverse-idea.md) — A user asks AskPerplexity and morluto to investigate Computer, without an implementation or result. **[REA use unconfirmed · Needs verification]**
+- [Gemini app: an Argon-to-Codex proxy idea](cases/en/gemini-argon-codex-proxy-idea.md) — A user asks about reverse-engineering Gemini to proxy Argon for Codex; no implementation is shown. **[REA use unconfirmed · Needs verification]**
+- [A drag-and-drop AI recompilation UI idea for retro systems and operating systems](cases/en/ai-drag-drop-recompile-ui-idea.md) — A user imagines dropping in a game or program and recompiling for a selected system, without implementation or validation. **[REA use unconfirmed · Needs verification]**
+- [Notion app.asar: a Claude read-only file and domain-string inspection](cases/en/notion-asar-claude-readonly-audit.md) — The author reports 147 files, 58 JavaScript files and 47 domains in a 6.8 MB package, explicitly distinguishing strings from actual uploads. **[Other AI-assisted work · Analysis test]**
+- [Grok Bot + REA: a reported software-investigation chat template](cases/en/grok-bot-rea-chat-template.md) — The author says a one-shot REA chat template accepts tools to analyze, without a target sample or validation. **[REA · Related project]**
+- [Patrick's AI reverse-engineered games directory: an ongoing resource project](cases/en/patrick-ai-reverse-games-directory.md) — Patrick Keane says a directory of AI reverse-engineered games is being built; entries and validation standards were not inspected. **[REA use unconfirmed · Related project]**
 
 ### Algorithms and feature recovery
 
@@ -348,6 +361,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [CSV export evaluators: three deliberately broken implementations pass simple tests](cases/en/rea-csv-evaluator-mutation-test.md) — The author says simple tests stayed green, while 215 byte-level comparisons against the original exposed all three broken exporters. **[REA · Analysis test]**
 - [Obfuscated JavaScript request signatures: an author reports restoring data retrieval with REA](cases/en/rea-obfuscated-web-request-signature.md) — The author says REA mapped a dynamic signature in five minutes and a few code changes restored data; the site and validation materials are not public. **[REA · Needs verification]**
 - [Polymarket Up/Down bot: a promotional REA strategy-analysis and replay report](cases/en/polymarket-updown-rea-replay-report.md) — The author reports using REA/Opus to understand an order-book strategy and replay it tick by tick; no inspectable code, metrics or profit evidence is supplied. **[REA · Needs verification]**
+- [1977 DES test vectors: Claude reportedly traces their random-generation environment](cases/en/des-1977-test-vectors-claude.md) — Steve Weis says Claude traced NBS's DES S-box test vectors to Unix V6 rand() on a PDP-11. **[Other AI-assisted work · Needs verification]**
+- [jq and Fossify Calculator: REA function identification and early inspection](cases/en/rea-jq-fossify-analysis-test.md) — The author reports mapping one function in stripped jq 1.8.2 back to source with Ghidra, explicitly without rebuilding software yet. **[REA · Analysis test]**
 
 ## Contributing and selection
 
