@@ -176,6 +176,20 @@ def main():
     args = parser.parse_args()
     records = validate(json.loads((ROOT / 'data/cases.json').read_text(encoding='utf-8')))
     outputs = render(records)
+    # Snapshot only on a real build. CI --check never advances the calendar.
+    history_path = ROOT / 'data/case-growth.json'
+    if history_path.exists():
+        from growth import record_daily, render_svg
+        from zoneinfo import ZoneInfo
+        history = json.loads(history_path.read_text(encoding='utf-8'))
+        if not args.check:
+            day = datetime.datetime.now(ZoneInfo('Asia/Shanghai')).date().isoformat()
+            history = record_daily(history, len(records), day)
+            history_path.write_text(json.dumps(history, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        if history['daily'][-1]['total'] != len(records):
+            raise SystemExit('Growth history is stale; run scripts/build.py')
+        for language in ('en', 'zh'):
+            outputs[f'assets/case-growth.{language}.svg'] = render_svg(history, language)
     stale = []
     for rel, content in outputs.items():
         path = ROOT / rel

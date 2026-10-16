@@ -1,0 +1,27 @@
+{
+  "timezone": "Asia/Shanghai",
+  "basis": "Collection totals by actual publication day (Git committer timestamps); past days use the last published snapshot, latest day is partial. Counts include cases, projects and ideas, not independently verified successes.",
+  "seed_commit": "29c270bd87f0e170bd98785868309090ac1471b1",
+  "daily": [
+    {
+      "date": "2026-10-12",
+      "total": 81
+    },
+    {
+      "date": "2026-10-13",
+      "total": 128
+    },
+    {
+      "date": "2026-10-14",
+      "total": 145
+    },
+    {
+      "date": "2026-10-15",
+      "total": 203
+    },
+    {
+      "date": "2026-10-16",
+      "total": 277
+    }
+  ]
+}

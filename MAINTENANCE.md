@@ -5,7 +5,7 @@
 ## 数据与编辑分工
 
 - `data/cases.json` 是完整案例集合的唯一数据源。
-- `scripts/build.py` 只生成 `cases/*.md`、`cases/en/*.md`、`categories/*.md`、`categories/en/*.md`、`INDEX.md`、`INDEX.en.md`，不写入 `README.md`、`README.zh-CN.md`、`README.en.md`，也不要求首页与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
+- `scripts/build.py` 生成 `cases/*.md`、`cases/en/*.md`、`categories/*.md`、`categories/en/*.md`、`INDEX.md`、`INDEX.en.md`，并维护累计图历史与 `assets/case-growth.*.svg`；不写入 `README.md`、`README.zh-CN.md`、`README.en.md`，也不要求首页与全量记录一致。脚本仅用 Python 标准库，无服务、数据库或 API 密钥。
 - `README.md`（英文默认首页）与 `README.zh-CN.md`（中文首页）是维护者亲自判断、直接编辑的精选首页。它们是仓库的门面，不是数据库导出。`README.en.md` 仅为链接两版首页的静态兼容入口，不是第三份选编目标。
 - 每条 `en` 恰好包含非空字符串 `title`、`summary`、`description` 以及列表 `metadata`、`source_labels`。详情必须完整忠实翻译，不用摘要占位；两个列表分别与原 `metadata`、`sources` 数量一致且逐项对应，元素为非空字符串，原 metadata 为空时译文也为空。来源 URL 只保存在 `sources`。新增或改动记录须同步两种语言，保留归属、日期、数值单位、待验证和静态分析等全部边界；翻译本身不刷新证据日期、热度或状态。
 - 中英文详情和分类页保留语言互链；英文 README、总目录与分类页直接链接英文详情。维护时核对双向切换、返回链接与本地链接目标（含锚点），手工 README 不受生成器覆盖。
@@ -34,6 +34,12 @@
 - 自动监控每天按北京时间 00、04、08、12、16、20 点执行。检索是关键词与有限分页的有界覆盖，不声称全网全量抓取。获授权的监控提交直接更新 main；外部贡献按 PR 人工审阅。
 - 维护者检查本轮精选、本地链接、实际 diff 与证据边界后才能提交。公开仓库不保存私有运行路径、原始抓取数据或认证材料。
 
+## 累计收录图
+
+两版首页分别嵌入 `assets/case-growth.en.svg` 和 `assets/case-growth.zh.svg`。初始每日总数从首个收录日开始，按 Git 提交的实际发布时间（北京时间）重建；对应初始历史截止提交保存在 `data/case-growth.json` 的 `seed_commit`。这里是已收录案例、项目和 idea 的数量，不是已独立验证成功的项目数，也不是原帖发布日分布。
+
+正常运行 `scripts/build.py` 时会记录北京时间当日的当前总量并重新生成图表；同一天覆盖当前点，不重复累加，间隔无发布的日期保持上次总量。过去日期表示日末累计，最后一天是截至当前，不能当成整日增长量。`--check` 只验证已记录的数据与 SVG，不因 CI 的运行日期改变图表或历史。保留首页图片引用，无需手工绘图或刷新图片链接。
+
 ## 自动检查
 
 GitHub Actions 在 push、PR、每周及手动触发时验证字段、重复 ID / 来源集、HTTPS 链接格式、生成文件同步及单元测试。生成一致性只针对两种语言的完整总目录、分类页和案例详情；`--check` 检测中英文详情的过期、缺失及孤立文件。缺少完整英文或列表数量不符时校验失败，不回退中文或摘要；测试保证生成器不会覆盖手工 README，并核对语言导航与本地链接。
@@ -49,7 +55,7 @@ git diff --check
 
 ## 发布与版权
 
-仓库仅提供 Markdown，不生成 HTML。英文 `README.md` 为默认入口，可切换至中文 `README.zh-CN.md`；`README.en.md` 保留为静态兼容入口。英文首页、总目录、分类页与全部案例详情形成完整英文阅读路径；中英文返回首页链接分别指向各自语言的首页。贡献与维护文档仍以中文为主，英文导航明确标注。完整数据中的 `en` 字段用于生成英文总目录、分类页和详情；首页另由维护者选编。
+仓库以 Markdown 和 SVG 图表呈现，不生成 HTML。英文 `README.md` 为默认入口，可切换至中文 `README.zh-CN.md`；`README.en.md` 保留为静态兼容入口。英文首页、总目录、分类页与全部案例详情形成完整英文阅读路径；中英文返回首页链接分别指向各自语言的首页。贡献与维护文档仍以中文为主，英文导航明确标注。完整数据中的 `en` 字段用于生成英文总目录、分类页和详情；首页另由维护者选编。
 
 English maintenance: translate the full description, each metadata note and each source label whenever a record changes. Keep original evidence boundaries and single-sourced URLs, regenerate both languages, and check navigation. README selections, prose and timestamps remain hand-maintained.
 

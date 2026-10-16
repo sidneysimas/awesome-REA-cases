@@ -16,6 +16,8 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 *Based on author and project reports; not independently reproduced here. Evidence and project status are recorded in each case.*
 
+![Cumulative case collection growth, by day](assets/case-growth.en.svg)
+
 ## Recent picks
 
 **10 worth reading**, selected for practical use, evidence, and recency—not an automated ranking. Dates refer to featured sources or author updates, not collection dates.
