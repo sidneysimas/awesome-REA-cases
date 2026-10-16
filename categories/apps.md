@@ -112,7 +112,7 @@
 - [BINNY：面向逆向研究的多模型 Agent harness 公测](../cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
 - [Chrome 深色模式扩展：用 REA 研究以便改进](../cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
 - [建设投标解密器：Claude Code 辅助研究密码报错的转述](../cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
-- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 帖子称插件一次安装 MCP 与 Skill，以工具搜索暴露约 170 项工具；并非本次安装测试。 **[REA · 相关项目]**
+- [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 发布转述之外，用户报告已接入REA MCP并补充传统分析工具；Python支持仍有自述缺口。 **[REA · 相关项目]**
 - [Resend 替代服务：面向 Agent 的邮件 API 与收件箱报告](../cases/resend-agentic-email-rebuild.md) — 作者称研究 Resend 后发布开源邮件服务，UI 操作也可由 AI 使用；实现未核验。 **[未确认使用 REA · 相关项目]**
 - [iTunes：用 AI 研究并现代化旧 iPod 音乐工作流的 idea](../cases/itunes-ai-modernization-idea.md) — 作者希望把 AI 重建路线用于 iTunes，为当代电脑及旧 iPod 使用者优化。 **[其他 AI 逆向 · 待验证]**
 - [自有 Android / Windows 95 App：不用 REA 的 Opus 逆向测试](../cases/opus-own-android-win95-test.md) — 作者称用 Opus 5.5 测试自己写的两类应用，未给功能与验收记录。 **[其他 AI 逆向 · 分析测试]**
@@ -126,3 +126,7 @@
 - [OpenCodex / Antigravity：用 REA 调查多轮工具调用签名丢失](../cases/opencodex-antigravity-signature-fallback.md) — 作者称研究 Rust 工具与 Go language_server 后，为 Gemini 请求补上签名缺失兜底。 **[REA · 待验证]**
 - [扫雷与 B 站：REA 视频演示标题的二手汇总](../cases/rea-bilibili-minesweeper-demo-roundup.md) — 读者列出扫雷、B站及手机 App 的 REA 演示视频，实现和测试尚待核对。 **[REA · 待验证]**
 - [网易 UU 远程：Claude / Codex 辅助制作非官方 Linux 被控端](../cases/uu-remote-linux-ai-client.md) — 作者为官方缺少 Linux 端的问题做 Rust 兼容实现，本轮讨论多模型逆向协作。 **[其他 AI 逆向 · 进行中]**
+- [DexSQL：让 Agent 用 SQL 查询 APK 与 DEX 的调用关系](../cases/dexsql-agent-apk-query.md) — LSPosed 提供直接读取 DEX 的 CLI / MCP；公开 QQ 样本对照，但核心工具并非开源。 **[其他 AI 逆向 · 相关项目]**
+- [沉浸式翻译类扩展：用 Codex 研究自带 Token 的替代版本](../cases/codex-immersive-translation-extension.md) — 作者正在逆向 Chrome 翻译扩展，希望直接使用自己购买的模型 Token。 **[其他 AI 逆向 · 进行中]**
+- [ChatGPT Intelligent UI：交给 Codex 研究实现的尝试](../cases/chatgpt-intelligent-ui-codex-study.md) — 作者已让 Codex 调查 ChatGPT Intelligent UI 的实现，尚无技术结果。 **[其他 AI 逆向 · 进行中]**
+- [Claude Code 主页背景：REA 辅助重建宁静动画的报告](../cases/claude-code-home-animation-rea.md) — Henry Fan 称用 REA 检查软件，一次重建主页背景动画并开源；不等于开源 Claude Code。 **[REA · 待验证]**

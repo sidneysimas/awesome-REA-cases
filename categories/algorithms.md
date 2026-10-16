@@ -27,3 +27,5 @@
 - [博彩 App：用 REA 研究结果机制的假设性提问](../cases/betting-app-rea-outcome-idea.md) — 作者问能否通过研究博彩应用影响结果；没有命名服务或报告可行性。 **[REA · 待验证]**
 - [Excel 对账表：从已验收产物逆向业务程序再交给 Agent](../cases/reconciliation-workbook-agent-distillation.md) — 从签核工作簿恢复隐含流程，研究跨期对账和过程问答，而非只检索文档。 **[其他 AI 逆向 · 分析测试]**
 - [MoonBit：Claude 研究符号改名，让 VSCode 调试更易读](../cases/moonbit-claude-debugger-demangling.md) — 作者称 Claude 逆向 name mangling 并写 customDescriptionGenerator 改善调试显示。 **[其他 AI 逆向 · 待验证]**
+- [CSV 导出验收器：三个故意改坏的实现如何逃过简单测试](../cases/rea-csv-evaluator-mutation-test.md) — 作者称简单测试全绿，换成215组原版字节对照才发现三个错误实现。 **[REA · 分析测试]**
+- [混淆 JS 请求签名：REA 分析后恢复取数的作者报告](../cases/rea-obfuscated-web-request-signature.md) — 作者称 REA 五分钟梳理动态签名，改几行代码后得到数据；网站与验证材料未公开。 **[REA · 待验证]**

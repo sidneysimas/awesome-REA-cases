@@ -55,8 +55,8 @@
 - [H1Z1：研究后用 Opus / Astra / Tripo 构建自己的 MMO](../cases/h1z1-ai-mmo-research.md) — 作者称已完成 H1Z1 逆向，正在做自己的多人在线游戏，动画仍困难。 **[其他 AI 逆向 · 进行中]**
 - [Uncharted 1–3：Claude 逆向与 Windows 原生版的转述](../cases/uncharted-trilogy-claude-windows-report.md) — 帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [Slipstream 5000：Codex 两天反编译的作者报告](../cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
-- [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](../cases/pokemon-hgss-multi-agent-decompile-report.md) — 回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。 **[其他 AI 逆向 · 待验证]**
-- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — 读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。 **[其他 AI 逆向 · 待验证]**
+- [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](../cases/pokemon-hgss-multi-agent-decompile-report.md) — 传播帖称4.1 MB字节匹配反编译；回复提醒依赖pret既有工作，费用不是已核验账单。 **[其他 AI 逆向 · 待验证]**
+- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — Destiny重建的二手报告新增兼容性质疑；另一项目参与者自述也用AI，但不能证明两者为同一实现。 **[其他 AI 逆向 · 待验证]**
 - [RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述](../cases/ringfall-th04-bullet-hell-report.md) — 帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。 **[REA · 待验证]**
 - [Source Engine：用 AI 反编译游戏引擎的 idea](../cases/source-engine-ai-decompile-idea.md) — 作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。 **[其他 AI 逆向 · 待验证]**
 - [Total War: Shogun 2：对自有原版进行 AI 反编译的 idea](../cases/shogun2-ai-decompile-idea.md) — 作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。 **[其他 AI 逆向 · 待验证]**
@@ -66,4 +66,6 @@
 - [Decompwtf：让 AI Agent 重建游戏 C/C++ 并对照机器码](../cases/decompwtf-agent-game-decompilation.md) — 项目转述描述本地 AI 反编译与编译对比流程，可衔接已有社区工程。 **[其他 AI 逆向 · 相关项目]**
 - [Immersive Portals：AI 辅助适配 Minecraft JE 26.2 的报告](../cases/immersive-portals-ai-je262.md) — 作者称兼容新版 Minecraft、Fabric 与着色器，明说演示不是首次尝试。 **[其他 AI 逆向 · 待验证]**
 - [老游戏混淆：Claude 转伪 C 后猜错结构体尺寸的报告](../cases/claude-obfuscated-game-struct-size-failure.md) — 作者称转伪 C 很快，但遇混淆会猜结构体大小，仍须人工用 IDA 复核。 **[其他 AI 逆向 · 分析测试]**
-- [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者本轮确认 Opus 加速反编译，历史更新说明 Claude 重建编译环境与仍有问题的 PC 版。 **[其他 AI 逆向 · 进行中]**
+- [Saturn《Sonic 3D Blast》：字节匹配反编译与原生 PC 移植](../cases/sonic-3d-blast-saturn-opus-port.md) — 作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。 **[其他 AI 逆向 · 进行中]**
+- [Spectrum《Stonkers》：用 AI 反编译修复崩溃的 idea](../cases/stonkers-spectrum-ai-crash-fix-idea.md) — Martin Scott 提议从老游戏代码找出并修复崩溃问题，未报告实施。 **[其他 AI 逆向 · 待验证]**
+- [Stunts：AI 逆向后重做浏览器赛车的二手线索](../cases/stunts-ai-browser-remake-report.md) — 读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。 **[其他 AI 逆向 · 待验证]**

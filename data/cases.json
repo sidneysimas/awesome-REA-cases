@@ -8109,17 +8109,17 @@
     "category": "apps",
     "rea": "REA",
     "status": "related-project",
-    "summary": "帖子称插件一次安装 MCP 与 Skill，以工具搜索暴露约 170 项工具；并非本次安装测试。",
-    "description": "一则转述帖称Hermes的官方REA插件已发布，一次安装带入REA MCP与为Hermes适配的reverse-engineer-anything Skill。帖子列出原生二进制、.NET、Electron、Android包、固件、浏览器捕获及进程活动等检查对象，称约170项工具放在工具搜索之后按需发现，以减轻上下文负担；安装入口写为hermes plugins install rea，要求Hermes 0.22.1及Node，原生反编译另需自备Ghidra、Hopper或IDA。它还称Skill要求运行程序或改变设备前先询问。发帖者最后说今晚安装，因此这不是其已完成的安装或目标分析验收；官方归属、版本、数量和权限提示均按转述保留，未在本轮安装或执行。与既有Hermes/WinSCP导入测试分开，作为集成项目说明，不推断所有Hermes版本都支持或所有操作都有强制拦截。",
-    "sources": [{"label": "Hermes REA 插件发布与使用边界转述", "url": "https://x.com/i/status/2110805485939249561"}],
+    "summary": "发布转述之外，用户报告已接入REA MCP并补充传统分析工具；Python支持仍有自述缺口。",
+    "description": "此前转述称Hermes官方REA插件一次安装REA MCP与适配的reverse-engineer-anything Skill，约170项工具通过工具搜索按需发现，覆盖原生二进制、.NET、Electron、Android包、固件、浏览器捕获及进程活动。帖子列安装入口hermes plugins install rea、Hermes 0.22.1及Node要求，原生反编译另备Ghidra、Hopper或IDA，并称Skill要求运行程序或改变设备前先问。原发帖者只是计划当晚安装，官方归属、版本、数量与权限提示仍是转述，非本合集安装测试。10月16日13:44 @wyant_dalto 回复称前一两天已给自己的Hermes加入REA及MCP，发现其Python逆向不足，并提及jadx 1.5.6、pycdc-rapid和Ghidra，称也已加到自己的配置。这是用户的集成经验与需求，不是官方Python兼容矩阵或全部软件均可逆向的证明；没有提供配置、目标样本、日志或验收测试。本合集未安装或执行，亦不把这些用户自加工具写成官方插件必带能力。与既有Hermes/WinSCP导入测试分开，不推断所有版本都支持或所有敏感操作都有强制拦截。",
+    "sources": [{"label": "Hermes REA 插件发布与使用边界转述", "url": "https://x.com/i/status/2110805485939249561"}, {"label": "10月16日用户报告REA MCP及补充工具集成", "url": "https://x.com/i/status/2110970183372116411"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：6赞、549浏览；插件功能与约170工具是帖子口径，不是本合集实测。"],
+    "metadata": ["较早10月16日候选快照：6赞、549浏览；插件功能与约170工具是帖子口径，不是本合集实测。", "13:44用户候选快照：0赞、19浏览；Python不足与自行接入工具是用户自述，不是官方支持结论。"],
     "en": {
       "title": "Hermes REA plugin: a reported MCP and adapted Skill release",
-      "summary": "A post describes one install for MCP and a Hermes-adapted Skill, with roughly 170 tools behind tool search; no installation was tested here.",
-      "description": "A circulating post says an official REA plugin for Hermes has been released, installing REA MCP and a Hermes-adapted reverse-engineer-anything Skill together. It lists native binaries, .NET, Electron, Android packages, firmware, browser captures and live process activity as inspection targets. Roughly 170 tools are reportedly discoverable behind tool search to keep context light. The stated entry point is hermes plugins install rea, requiring Hermes 0.22.1 and Node, with users supplying Ghidra, Hopper or IDA for native decompilation. The post also says the Skill tells the agent to ask before running programs or changing a device. The poster ends with plans to install that night, so this is not a completed installation test or target-analysis acceptance report. Official attribution, version, counts and permission guidance remain the post's claims; no installation or execution occurred in this review. This integration project is distinct from the existing Hermes/WinSCP import test and does not imply support in every Hermes version or enforced blocking of every operation.",
-      "metadata": ["October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 tools are post claims, not tests by this collection."],
-      "source_labels": ["Secondhand Hermes REA plugin release and usage-boundary introduction"]
+      "summary": "Beyond the release report, a user describes adding REA MCP and traditional tools, while reporting a Python-analysis gap.",
+      "description": "An earlier circulating post says an official Hermes REA plugin installs REA MCP and an adapted reverse-engineer-anything Skill together, with roughly 170 tools discoverable through tool search for native binaries, .NET, Electron, Android packages, firmware, browser captures and live process activity. It names hermes plugins install rea, Hermes 0.22.1 and Node, with Ghidra, Hopper or IDA separately required for native decompilation, and says the Skill asks before running programs or changing devices. That poster only planned to install that night: official attribution, versions, counts and permission guidance remain secondhand, not installation tests by this collection. At 13:44 Beijing time on October 16, @wyant_dalto says REA and MCP were added to their own Hermes a day or two earlier, reports inadequate Python reverse engineering, mentions jadx 1.5.6, pycdc-rapid and Ghidra, and says these were also added locally. This is user integration experience and a request, not an official Python compatibility matrix or proof that all software can be reverse engineered. No configuration, target sample, log or acceptance test is provided. This collection did not install or execute anything, and the user's additional tools are not presented as official plugin features. This remains distinct from the Hermes/WinSCP import test and implies neither universal version support nor enforced interception of every sensitive operation.",
+      "metadata": ["Earlier October 16 candidate snapshot: 6 likes, 549 views; plugin scope and roughly 170 tools are post claims, not tests by this collection.", "13:44 user candidate snapshot: 0 likes, 19 views; the Python gap and extra integrations are user reports, not official support conclusions."],
+      "source_labels": ["Secondhand Hermes REA plugin release and usage-boundary introduction", "October 16 user report of REA MCP and additional tool integration"]
     }
   },
   {
@@ -8147,17 +8147,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "回复称一月使用约 710 亿 token；5.6 万美元是补贴情况下的假设标价费用。",
-    "description": "一则回复称有人用多个AI Agent分别反编译《宝可梦心金》和《魂银》的片段，再将它们组合，一月内完成，累计约71 billion（710亿）token。帖子特别说这些不是本地模型token，而是Claude/OpenAI API，并称工作得到补贴，约56,000美元是按这些平台API用量估出的假设费用，不是实付账单。未提供开发者身份、仓库、匹配比例、测试或费用计算表，因此游戏范围、完成度、时间和token均保留为二手说法，不能认定clean room、没有使用既有公开成果或已完成可玩移植。本轮另一短讯仅重复心金一月和标价费用，未增加实质证据。REA未确认。",
-    "sources": [{"label": "心金 / 魂银多 Agent、token 与假设费用转述", "url": "https://x.com/i/status/2110816115718824296"}],
+    "summary": "传播帖称4.1 MB字节匹配反编译；回复提醒依赖pret既有工作，费用不是已核验账单。",
+    "description": "此前一则回复称多个AI Agent分块反编译《宝可梦心金》和《魂银》，一月内组合完成，约71 billion（710亿）token，使用Claude/OpenAI API。它明确称工作得到补贴，约56,000美元是假设按API用量标价估算，不是实付账单。10月16日15:01 @Pirat_Nation 的新传播帖称心金全部4.1 MB编译代码恢复为可读C/C++，仓库也涵盖魂银，并声称能生成字节相同的ROM；这些完成度和匹配说法仍未从仓库或构建输出复核。15:25 @Alex_Vainshtein 回复指出项目建立在pret既有反编译和工具上，应分开衡量上游基础与Agent新增工作。这条归因提醒不等于已审计两者贡献，但明确阻止把总成果归为AI从零完成。未取得可核验仓库地址、匹配报告、开发者确认或费用表，不认定clean room、独立复现或已完成可玩移植；也不把新帖中“花费5.6万美元”的简化说法覆盖此前的补贴与假设费用边界。REA未确认。",
+    "sources": [{"label": "心金 / 魂银多 Agent、token 与假设费用转述", "url": "https://x.com/i/status/2110816115718824296"}, {"label": "10月16日15:01的4.1 MB与ROM匹配传播帖", "url": "https://x.com/i/status/2110989368454189268"}, {"label": "15:25回复：应区分pret上游成果与Agent工作", "url": "https://x.com/i/status/2110995475222466925"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：1赞、22浏览；约710亿token、一月和56000美元均未经独立核验。"],
+    "metadata": ["较早10月16日候选快照：1赞、22浏览；约710亿token、一月和56000美元均未经独立核验。", "15:01传播帖的10月16日候选快照：462赞、14048浏览、29转发；热度不是匹配或贡献比例的证明。", "4.1 MB与字节相同ROM为二手报告；pret基础的提醒也未独立审计。"],
     "en": {
       "title": "Pokémon HeartGold/SoulSilver: a secondhand multi-agent decompilation and cost report",
-      "summary": "A reply claims a month and about 71 billion tokens; $56,000 is a hypothetical API list-price estimate for subsidized work, not a paid bill.",
-      "description": "A reply says multiple AI agents separately decompiled chunks of Pokémon HeartGold and SoulSilver and assembled them, finishing in one month with roughly 71 billion tokens. It explicitly distinguishes these from local-model tokens, naming Claude/OpenAI APIs, and says the work was subsidized. Around $56,000 is described as a hypothetical cost estimated from API usage on those platforms, not an actual bill. No developer identity, repository, matching percentage, tests or cost worksheet is supplied. Game scope, completion, time and tokens remain secondhand claims; they do not establish clean-room work, absence of existing public material or a completed playable port. Another short item in this review only repeats HeartGold, a month and the list-price estimate, adding no substantive evidence. REA use is unconfirmed.",
-      "metadata": ["October 16 candidate snapshot: 1 like, 22 views; roughly 71 billion tokens, one month and $56,000 are not independently verified."],
-      "source_labels": ["Secondhand HeartGold/SoulSilver multi-agent, token and hypothetical-cost report"]
+      "summary": "A circulating post claims 4.1 MB of byte-matching decompilation; a reply stresses pret's existing work, and costs are not a verified bill.",
+      "description": "An earlier reply says multiple AI agents decompiled chunks of Pokémon HeartGold and SoulSilver, assembling them in one month with roughly 71 billion tokens using Claude/OpenAI APIs. It explicitly says the work was subsidized and about $56,000 is a hypothetical API list-price estimate, not an actual bill. At 15:01 Beijing time on October 16, @Pirat_Nation's new circulating post says all 4.1 MB of HeartGold's compiled code became readable C/C++, that the repository also covers SoulSilver, and that it can generate byte-identical ROMs. Completion and matching have not been checked against the repository or build output. At 15:25, @Alex_Vainshtein replies that the project builds on pret's existing decompilation and tooling, urging separate measurement of the upstream baseline and new agent work. This attribution warning is not an audit of either contribution, but prevents presenting the total result as AI work from zero. A checkable repository address, matching report, developer confirmation and cost worksheet were not obtained. Clean-room work, independent reproduction and a completed playable port are not established. The newer post's simplified '$56,000 cost' wording does not override the earlier subsidy and hypothetical-cost caveat. REA use is unconfirmed.",
+      "metadata": ["Earlier October 16 candidate snapshot: 1 like, 22 views; roughly 71 billion tokens, one month and $56,000 are not independently verified.", "October 16 candidate snapshot for the 15:01 circulating post: 462 likes, 14,048 views, 29 reposts; engagement does not prove matching or contribution shares.", "The 4.1 MB and byte-identical ROM claims are secondhand; the pret-baseline warning has not been independently audited either."],
+      "source_labels": ["Secondhand HeartGold/SoulSilver multi-agent, token and hypothetical-cost report", "October 16 15:01 post claiming 4.1 MB and ROM matching", "15:25 reply: distinguish pret upstream work from agent contributions"]
     }
   },
   {
@@ -8204,17 +8204,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "读者称使用 Claude 反编译并在引擎重做素材；原串显示 Destiny / WoTM 背景，未获原作者验证。",
-    "description": "本轮候选是一条为社区项目辩护的回复：称项目使用Claude反编译Steam上可下载的d2代码，并在引擎中重新制作素材。为判断d2指向，本轮补读原串：10月15日01:26（北京时间）的根帖呼吁Bungie联系Destiny社区创作者，后续讨论提及WoTM raid。该往期串只用于澄清背景，不算本轮新候选。可保守描述为Destiny社区重建的二手报告，不能确认具体项目名称、复刻范围、代码公开程度或可玩性。回复同时说用了Claude但“0 generative ai”，其意似区分反编译辅助与生成素材；这不是未使用AI的证明，也不据讨论者的法律意见断言合法。没有取得原作者开发说明、仓库或测试，REA未确认。",
-    "sources": [{"label": "本轮读者关于 Claude 反编译与引擎素材重建的回复", "url": "https://x.com/i/status/2110818698109899108"}, {"label": "补查往期 Destiny / Bungie 根帖（只作背景）", "url": "https://x.com/i/status/2110422033662124277"}],
+    "summary": "Destiny重建的二手报告新增兼容性质疑；另一项目参与者自述也用AI，但不能证明两者为同一实现。",
+    "description": "此前一条为社区项目辩护的回复称，使用Claude反编译Steam上可下载的d2代码，并在引擎中重做素材。补读10月15日01:26（北京时间）的Bungie / Destiny根帖与WoTM raid讨论，只用于确认背景。该回复同时说使用Claude但“0 generative ai”，似在区分反编译辅助与生成素材，不能写成未使用AI或法律结论。10月16日14:38 @isinternets 的新回复称己方项目也使用AI，已花数月逆向，并质疑他人24小时完成的说法。补读其14:34父串，确认争论对象是Destiny在Godot重建，质疑涉及bubble authority协议、任务主机、Havok 2012碰撞与Umbra 3，认为可能只是启动器或引擎混合。这些是参与者的技术质疑，不是本合集验证了“不可能”；其自述的己方项目也不能直接等同于此前被辩护项目。尚无可核对的项目身份、代码或运行测试，因此保留同目标争议线索，不确认完整移植、可玩性或24小时成果。REA未确认。",
+    "sources": [{"label": "较早读者关于 Claude 反编译与引擎素材重建的回复", "url": "https://x.com/i/status/2110818698109899108"}, {"label": "10月15日 Destiny / Bungie 根帖（背景）", "url": "https://x.com/i/status/2110422033662124277"}, {"label": "10月16日参与者自述数月AI研究并提出质疑", "url": "https://x.com/i/status/2110983618155929648"}, {"label": "14:34父帖：Godot、协议及物理引擎兼容性质疑", "url": "https://x.com/i/status/2110982629214327033"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：0赞、16浏览；补查材料保留原始日期，不将回复升级为项目作者确认。"],
+    "metadata": ["较早10月16日候选快照：0赞、16浏览；补查材料保留原始日期，不将回复升级为项目作者确认。", "14:38新候选快照：3赞、68浏览；参与者身份、两个项目关系与技术质疑均未独立验证。"],
     "en": {
       "title": "A Destiny community rebuild: reported Claude decompilation and in-engine assets",
-      "summary": "A reader claims Claude-assisted d2 decompilation and recreated assets; the thread supplies Destiny/WoTM context, not validation by the project author.",
-      "description": "The candidate is a reply defending a community project, saying Claude was used to decompile d2 code downloadable on Steam and assets were recreated in-engine. To identify the d2 context, this review read the original thread: its root post at 01:26 Beijing time on October 15 asks Bungie to contact Destiny community creators, and later discussion mentions the WoTM raid. That earlier thread clarifies context only; it is not a new candidate in this window. The supported description is a secondhand Destiny community-rebuild report, without confirmation of the project name, reconstruction scope, source availability or playability. The reply says both that Claude was used and that there was '0 generative ai', apparently distinguishing decompilation assistance from generated assets. This does not prove absence of AI, and commenters' legal opinions do not establish legality. The original developer's account, repository and tests were not obtained. REA use is unconfirmed.",
-      "metadata": ["October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains its original date and the reply is not treated as project-author confirmation."],
-      "source_labels": ["This window's reader reply on Claude decompilation and in-engine assets", "Earlier Destiny/Bungie root post retrieved for context only"]
+      "summary": "A Destiny rebuild report gains compatibility objections; another participant reports AI use but their project cannot be equated with the earlier implementation.",
+      "description": "An earlier reply defending a community project says Claude decompiled d2 code downloadable on Steam and assets were recreated in-engine. The October 15, 01:26 Beijing-time Bungie/Destiny root post and WoTM raid discussion were read only to identify the background. The reply's simultaneous claims of Claude use and '0 generative ai' apparently distinguish decompilation assistance from generated assets, not absence of AI or a legal conclusion. At 14:38 on October 16, @isinternets says their own project also used AI and involved months of reverse engineering, questioning someone else's claim of completion in 24 hours. Reading their 14:34 parent thread identifies a dispute over rebuilding Destiny in Godot: objections concern the bubble-authority protocol, mission hosting, Havok 2012 collision and Umbra 3, suggesting a launcher or engine meshing instead. These are a participant's technical objections, not this collection establishing impossibility. Their own project cannot simply be equated with the one previously defended. No checkable project identity, code or runtime tests were obtained, so the entry retains a controversy around the same target without confirming a complete port, playability or a 24-hour achievement. REA use is unconfirmed.",
+      "metadata": ["Earlier October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains its original date and the reply is not project-author confirmation.", "New 14:38 candidate snapshot: 3 likes, 68 views; participant identity, the relationship between the projects and technical objections are not independently verified."],
+      "source_labels": ["Earlier reader reply on Claude decompilation and in-engine assets", "October 15 Destiny/Bungie root post as background", "October 16 participant reports months of AI-assisted work and raises objections", "14:34 parent post questioning Godot, protocol and physics-engine compatibility"]
     }
   },
   {
@@ -8726,17 +8726,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "in-progress",
-    "summary": "作者本轮确认 Opus 加速反编译，历史更新说明 Claude 重建编译环境与仍有问题的 PC 版。",
-    "description": "10月16日 @TheOneMrMatt 回应质疑，承认 Opus 加速字节匹配反编译，称因反 AI 言论删除过说明。补查历史更新确认目标为 Saturn 版 Sonic 3D Blast：7月研究 SH2 代码和自制模拟器逐帧状态，8月3日称借 Claude Code 重建 Hitachi 编译环境，SSSS.BIN 特殊关卡引擎恢复为 C 与手写汇编并字节匹配，其余三个程序当时受特定 GCC 环境阻碍。9月26日称反编译进度100%，仍需多地区版本、文档和移植。10月16日06:04（早于本轮窗口）的更新描述 C/SDL 原生 PC 版、软件渲染后用 OpenGL 显示，支持宽屏与特殊关卡插帧；仍有边缘杂图和多边形接缝，计划11月20日首次发布，须自备 US/EU/JP 原盘文件。历史帖用于识别目标、AI用途与阶段，不是本轮新进展。匹配与画面表现均为作者报告，本合集未取得并运行源码，不把未来发布日期写成已发行。",
-    "sources": [{"label": "本轮作者确认 Opus 参与", "url": "https://x.com/i/status/2110939629516186067"}, {"label": "8月3日 Claude 重建编译环境的历史更新", "url": "https://x.com/i/status/2084352916253762001"}, {"label": "9月26日反编译进度报告", "url": "https://x.com/i/status/2103692693037826484"}, {"label": "10月16日06:04的PC移植更新（窗口外补证）", "url": "https://x.com/i/status/2110854238989582709"}, {"label": "7月16日 SH2 与模拟器分析路线", "url": "https://x.com/i/status/2077571522248732787"}],
+    "summary": "作者澄清是基于反编译源码的原生移植，而非静态重编译；AI加速过程历时数月。",
+    "description": "10月16日 @TheOneMrMatt 回应质疑，确认Opus加速字节匹配反编译，称曾因反AI言论删除说明。历史更新确认目标为Saturn版Sonic 3D Blast：7月研究SH2代码和自制模拟器逐帧状态；8月3日称借Claude Code重建Hitachi编译环境，将SSSS.BIN特殊关卡引擎恢复为C与手写汇编并字节匹配，其余三个程序当时受特定GCC环境阻碍；9月26日称反编译100%，仍需多地区版本、文档和移植。10月16日06:04的更新描述C/SDL原生PC版，软件渲染后用OpenGL显示，支持宽屏和特殊关卡插帧，仍有边缘杂图与多边形接缝；计划11月20日首次发布，须自备US/EU/JP原盘文件。这些历史材料只作阶段与技术背景。12:26新候选中作者进一步明确：这不是静态重编译，而是从其所称完整字节精确、带文档的反编译代码构建原生PC移植；Agent AI使本来手工可能需数年的过程缩至数月。这是作者回顾，不是受控工时比较，也没有新公开匹配输出供本合集独立复核。未取得并运行源码，保留画面缺陷与未来发行边界，不把该声明写成已发布或独立验证。",
+    "sources": [{"label": "作者确认 Opus 参与", "url": "https://x.com/i/status/2110939629516186067"}, {"label": "8月3日 Claude 重建编译环境的历史更新", "url": "https://x.com/i/status/2084352916253762001"}, {"label": "9月26日反编译进度报告", "url": "https://x.com/i/status/2103692693037826484"}, {"label": "10月16日06:04的PC移植更新（补充背景）", "url": "https://x.com/i/status/2110854238989582709"}, {"label": "7月16日 SH2 与模拟器分析路线", "url": "https://x.com/i/status/2077571522248732787"}, {"label": "10月16日12:26：作者澄清原生移植与数月AI反编译", "url": "https://x.com/i/status/2110950579254264278"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["本轮声明候选快照：0赞、14浏览；补证原帖从7月到10月16日，非本轮新成果。"],
+    "metadata": ["较早声明候选快照：0赞、14浏览；补证原帖从7月到10月16日，不冒充新成果。", "12:26声明的10月16日候选快照：1赞、147浏览；数月与手工数年的比较为作者自述。"],
     "en": {
       "title": "Saturn Sonic 3D Blast: byte-matching decompilation and a native PC port",
-      "summary": "The author confirms Opus-assisted decompilation; earlier updates describe Claude-built compiler tooling and a still-imperfect PC port.",
-      "description": "On October 16, @TheOneMrMatt acknowledged Opus accelerated byte-matching decompilation and said an AI disclosure was removed because of anti-AI reactions. Historical updates identify Saturn Sonic 3D Blast: in July the author studied SH2 code and frame-by-frame state from a custom emulator; on August 3 they reported using Claude Code to recreate a Hitachi compiler environment, recovering the SSSS.BIN Special Stage engine as C and handwritten assembly with byte matching, while three other executables were blocked by a particular GCC environment. On September 26 they reported 100% decompilation progress, with regional versions, documentation and porting still to do. An October 16 update at 06:04 Beijing time, before this window, describes a native C/SDL PC port with software rendering and OpenGL presentation, widescreen and Special Stage interpolation. Edge garbage and polygon seams remain; first release is planned for November 20 with user-supplied US/EU/JP disc files. Historical posts identify the target, AI use and stage, not new-window developments. Matching and visual results are author reports. This collection did not obtain and run source or treat the future release as already shipped.",
-      "metadata": ["Current-window statement candidate snapshot: 0 likes, 14 views; supplementary originals range from July to October 16 and are not new-window achievements."],
-      "source_labels": ["Current-window author confirmation of Opus involvement", "August 3 historical update on Claude-built compiler tooling", "September 26 decompilation progress report", "October 16 06:04 PC-port update, outside-window supplementary evidence", "July 16 SH2 and emulator investigation approach"]
+      "summary": "The author clarifies that this is a native port from decompiled source, not static recompilation; AI accelerated a months-long process.",
+      "description": "On October 16, @TheOneMrMatt confirmed Opus accelerated byte-matching decompilation and said an AI disclosure had been removed because of anti-AI reactions. Historical updates identify Saturn Sonic 3D Blast: July research used SH2 code and frame-by-frame state from a custom emulator; on August 3 the author reported recreating a Hitachi compiler environment with Claude Code, recovering the SSSS.BIN Special Stage engine as C and handwritten assembly with byte matching, while three other executables were blocked by a particular GCC environment. On September 26 they reported 100% decompilation, with regional versions, documentation and porting still required. The October 16, 06:04 update describes a native C/SDL PC port with software rendering and OpenGL presentation, widescreen and Special Stage interpolation, but edge garbage and polygon seams remain. First release is planned for November 20 with user-supplied US/EU/JP disc files. These historical materials provide stage and technical background only. In the new 12:26 candidate, the author explicitly says this is not static recompilation: it is a native PC port built from what they describe as fully byte-exact, documented decompiled code. Agentic AI reportedly reduced a process that might have taken years by hand to a few months. This is retrospective author attribution, not a controlled labor comparison or new public matching output independently checked here. This collection did not obtain and run source, and retains the visual defects and future-release caveat rather than presenting the statement as a shipped or independently validated result.",
+      "metadata": ["Earlier statement candidate snapshot: 0 likes, 14 views; supplementary originals range from July to October 16 and are not presented as new achievements.", "October 16 candidate snapshot for the 12:26 statement: 1 like, 147 views; months versus hypothetical manual years is author-reported."],
+      "source_labels": ["Author confirmation of Opus involvement", "August 3 historical update on Claude-built compiler tooling", "September 26 decompilation progress report", "October 16 06:04 PC-port update as supplementary background", "July 16 SH2 and emulator investigation approach", "October 16 12:26: author clarifies native port and months of AI-assisted decompilation"]
     }
   },
   {
@@ -8756,6 +8756,177 @@
       "description": "On October 16, @ai_fengshou said Codex and Gemini could also do reverse engineering under Claude's guidance; a thread reply specifically refers to Linux UU. Earlier posts from the same author identify the project: on October 13 they said most functionality of a native Rust UU Remote Linux version was implemented; on October 15 at 00:04 Beijing time they reported an open-source Linux controlled endpoint built with Claude and Codex, allowing official Mac, Windows and mobile clients to control Linux. The motivation is the absence of an official NetEase UU Remote Linux version. The author calls it unofficial and noncommercial, and says updates will stop if an official Linux version appears. Earlier releases identify this window's target and background, not new-window results. No checkable repository, protocol analysis, test matrix or security audit was obtained. Complete protocol compatibility and safe remote access are not established; this collection did not install it or connect devices.",
       "metadata": ["Current-window candidate snapshot: 2 likes, 148 views; open-source status and compatibility remain author claims, not independent acceptance results."],
       "source_labels": ["Current-window multi-model investigation discussion and Linux UU reply", "Author's October 15 00:04 release report, outside-window supplementary evidence", "October 13 Rust-version progress as historical background"]
+    }
+  },
+  {
+    "id": "dexsql-agent-apk-query",
+    "title": "DexSQL：让 Agent 用 SQL 查询 APK 与 DEX 的调用关系",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "LSPosed 提供直接读取 DEX 的 CLI / MCP；公开 QQ 样本对照，但核心工具并非开源。",
+    "description": "10月16日的工具清单推荐 LSPosed/dexsql-release：让 AI Agent 用 SQL 查询 Android APK / DEX 的类、方法、字符串与调用关系，减少反复人工浏览。补读项目 README 确认同一可执行文件提供 CLI 与 MCP，Agent 可组合签名、字符串和调用条件，并读取 Smali；输入在本地解析且不修改，但结果是否发给模型取决于 AI 客户端设置。项目以约372 MiB 的 QQ 9.3.55 APK 做八类查询对照，列出结果集检查、超时与缓存条件，并承认 DexDec 在该次重复调用者查询中更快。这是项目自己的基准记录，不是本合集复跑，也不证明自动恢复原始源码。特别注意：核心 DexSQL 为闭源二进制，使用 DexSQL Binary License 1.0；安装 Skill、文档和基准材料另以 MIT 发布，不能因有公开 GitHub 仓库就称整个工具开源。README 是补充项目资料，不冒充本窗口作者新测量；本合集未下载或执行二进制。",
+    "sources": [{"label": "10月16日工具清单中的 DexSQL 推荐", "url": "https://x.com/i/status/2110962000675434613"}, {"label": "LSPosed 项目说明、基准边界与许可", "url": "https://github.com/LSPosed/dexsql-release"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["证据：本窗口推荐帖及补读项目 README；项目自报基准，未执行。", "许可区分：核心闭源二进制；公开 Skill、文档与基准材料为 MIT。", "补充README最近提交：e9c89eae180895c8ae7b24da01fa219c58233775，2026-10-15T12:41:41Z；早于本窗口，仅用于核对项目范围与许可。"],
+    "en": {
+      "title": "DexSQL: let agents query APK and DEX call relationships with SQL",
+      "summary": "LSPosed provides a direct-DEX CLI and MCP with public QQ benchmark materials; the core tool is not open source.",
+      "description": "An October 16 tool roundup recommends LSPosed/dexsql-release for AI agents to query classes, methods, strings and call relationships in Android APK/DEX files using SQL, reducing repeated manual browsing. Supplementary reading of the project README confirms that one executable supplies CLI and MCP interfaces, lets agents combine signatures, strings and call predicates, and exposes Smali. Parsing is local and leaves input unchanged, but whether results reach a model depends on the AI client's settings. The project compares eight query types on a roughly 372 MiB QQ 9.3.55 APK, documenting result-set checks, timeouts and cache conditions, and acknowledges that DexDec was faster for its repeated caller query in that run. These are project benchmarks, not rerun by this collection or proof of automatic original-source recovery. Crucially, core DexSQL is a closed-source binary under DexSQL Binary License 1.0; the installation Skill, documentation and benchmark materials are separately MIT-licensed. A public GitHub repository does not make the whole tool open source. The README is supplementary project documentation, not a new author measurement in this window. This collection did not download or execute the binary.",
+      "metadata": ["Evidence: this window's recommendation and supplementary project README; project-reported benchmarks, not executed here.", "License distinction: closed-source core binary; public Skill, documentation and benchmark materials under MIT.", "Latest supplementary README commit: e9c89eae180895c8ae7b24da01fa219c58233775, 2026-10-15T12:41:41Z; before this window, used only to check project scope and licensing."],
+      "source_labels": ["October 16 roundup recommending DexSQL", "LSPosed project description, benchmark caveats and licensing"]
+    }
+  },
+  {
+    "id": "rea-csv-evaluator-mutation-test",
+    "title": "CSV 导出验收器：三个故意改坏的实现如何逃过简单测试",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "作者称简单测试全绿，换成215组原版字节对照才发现三个错误实现。",
+    "description": "10月16日 @superfang119 报告一个围绕 REA 重建验收的实验：故意改坏三个 CSV 导出器，简单测试却全部通过；换成215组与原版输出的字节对照后，三个才全部暴露。作者说研究沿着 REA 的 MCP、Evidence 与 TH08 修复记录展开，关注如何先确认验收器能发现错误，再依靠它判断重建是否正确。候选没有给出导出器名称、变异内容、215组输入输出或可复跑代码；文章短链正文未取得。因此只记录作者报告的测试差异，不推断所有 CSV 边界都已覆盖，不认定 TH08 或某款商业软件因此完成重建，也不是本合集独立验证。",
+    "sources": [{"label": "作者的 CSV 变异与215组对照实验报告", "url": "https://x.com/i/status/2110963427791487391"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：3赞、242浏览、0转发；215组和三个实现均为作者口径。"],
+    "en": {
+      "title": "CSV export evaluators: three deliberately broken implementations pass simple tests",
+      "summary": "The author says simple tests stayed green, while 215 byte-level comparisons against the original exposed all three broken exporters.",
+      "description": "On October 16, @superfang119 reported an experiment about acceptance testing for REA-assisted reconstruction: three deliberately broken CSV exporters passed simple tests, but 215 byte-level comparisons against original output exposed all three. The author traces the investigation through REA's MCP, Evidence and TH08 repair records, focusing on establishing that an evaluator can detect mistakes before relying on it to judge a reconstruction. The candidate does not supply exporter names, mutations, the 215 input/output pairs or runnable code; the linked article body was not obtained. Only the author's reported test contrast is recorded. It does not establish coverage of all CSV boundaries, a completed TH08 or commercial-app reconstruction, or independent verification by this collection.",
+      "metadata": ["October 16 candidate snapshot: 3 likes, 242 views, 0 reposts; the 215 comparisons and three implementations are author-reported."],
+      "source_labels": ["Author's CSV mutation and 215-comparison experiment report"]
+    }
+  },
+  {
+    "id": "rea-obfuscated-web-request-signature",
+    "title": "混淆 JS 请求签名：REA 分析后恢复取数的作者报告",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称 REA 五分钟梳理动态签名，改几行代码后得到数据；网站与验证材料未公开。",
+    "description": "10月16日 @mtxdev 称上周研究某网站时，请求带动态签名，数据逻辑藏在混淆 JavaScript 中，自己花两天和十几个断点仍未得到有效数据。随后把页面交给 REA，称五分钟后拿到说明签名计算、参与字段、处理步骤及证据的报告，修改几行代码后取数恢复。网站未命名，也未提供签名算法、报告、代码、授权背景或返回数据的验证记录；两天与五分钟是作者的回顾性比较，不是受控性能实验。保留为具体失败后推进的作者自述，不推断可泛化到其他网站或已绕过服务端安全机制。本合集未访问目标或复跑。",
+    "sources": [{"label": "MatriX 的请求签名分析报告", "url": "https://x.com/i/status/2110968095850561701"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、15浏览；目标未命名，无公开代码或验收材料。"],
+    "en": {
+      "title": "Obfuscated JavaScript request signatures: an author reports restoring data retrieval with REA",
+      "summary": "The author says REA mapped a dynamic signature in five minutes and a few code changes restored data; the site and validation materials are not public.",
+      "description": "On October 16, @mtxdev said that while investigating an unnamed website the previous week, requests carried changing signatures and data logic was hidden in obfuscated JavaScript. Two days and more than a dozen breakpoints had not yielded useful data. After giving the page to REA, the author reports receiving a report in five minutes describing signature computation, input fields, processing steps and evidence, then restoring data retrieval with a few code changes. No site name, algorithm, report, code, authorization context or validation of returned data is supplied. The two-day versus five-minute contrast is retrospective self-report, not a controlled benchmark. This is a concrete account of progress after an initial failure, not evidence of general applicability or bypassing server-side security. This collection did not access the target or rerun the work.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 15 views; unnamed target, no public code or acceptance materials."],
+      "source_labels": ["MatriX's request-signature investigation report"]
+    }
+  },
+  {
+    "id": "codex-immersive-translation-extension",
+    "title": "沉浸式翻译类扩展：用 Codex 研究自带 Token 的替代版本",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者正在逆向 Chrome 翻译扩展，希望直接使用自己购买的模型 Token。",
+    "description": "10月16日一位作者称正在让 Codex 帮忙逆向开发“沉浸式翻译”这类 Chrome 扩展，动机是不想支付此类订阅费用，希望自行购买 Token 并接入 AI API。作者认为它可能主要由窗口和 API 接入组成，但这只是其初步判断，不是已证实的架构。帖子明确说仍在逆向中，没有完成的扩展、代码、对照测试或功能清单；也没有足够证据确认直接研究的是特定版本的沉浸式翻译原包，而非同类产品。按进行中项目收录，不声称订阅已替代、功能等价或使用 REA。",
+    "sources": [{"label": "Codex 逆向翻译类 Chrome 扩展的进行中报告", "url": "https://x.com/i/status/2110976193671709123"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、29浏览；无完成结果。"],
+    "en": {
+      "title": "Immersive-translation-style extensions: investigating a bring-your-own-token alternative with Codex",
+      "summary": "The author is investigating a Chrome translation extension to use personally purchased model tokens.",
+      "description": "On October 16, an author said Codex was helping reverse engineer and develop a Chrome extension in the style of Immersive Translate, motivated by avoiding such subscription fees and buying model tokens directly for an AI API. The author's suggestion that it may mainly consist of a window and API integration is an initial belief, not an established architecture. The post explicitly says investigation is ongoing, with no completed extension, code, comparison tests or feature list. It also does not establish that a particular version of the original Immersive Translate package, rather than a similar product, is being analyzed. This is an in-progress project, not a demonstrated subscription replacement or feature-equivalent implementation; REA use is not claimed.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 29 views; no completed result."],
+      "source_labels": ["Ongoing Codex investigation of a translation-style Chrome extension"]
+    }
+  },
+  {
+    "id": "chatgpt-intelligent-ui-codex-study",
+    "title": "ChatGPT Intelligent UI：交给 Codex 研究实现的尝试",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者已让 Codex 调查 ChatGPT Intelligent UI 的实现，尚无技术结果。",
+    "description": "10月16日 @buaaxhm 称已让 Codex 逆向研究 Intelligent UI in ChatGPT 如何实现，并表达对账号风险的担忧。可识别的目标是 ChatGPT 的这一界面功能，而不是完整重建 ChatGPT 服务。帖子未给版本、抓取方式、分析报告、代码或测试，也未说明 Intelligent UI 的具体组件范围；不把账号担忧写成已被封禁或已违反条款的事实。保留为进行中的具体研究尝试，尚不能判断架构或复现效果，未确认使用 REA。",
+    "sources": [{"label": "supermao 的 Codex 研究请求报告", "url": "https://x.com/i/status/2110983483271286909"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：5赞、554浏览、0转发；未报告分析结果。"],
+    "en": {
+      "title": "ChatGPT Intelligent UI: asking Codex to investigate the implementation",
+      "summary": "The author has asked Codex to investigate ChatGPT Intelligent UI; no technical results are reported.",
+      "description": "On October 16, @buaaxhm said Codex had been asked to reverse engineer how Intelligent UI in ChatGPT works, while expressing concern about account risk. The identifiable target is this ChatGPT interface feature, not rebuilding the entire ChatGPT service. The post supplies no version, capture method, analysis report, code or tests, and does not define the particular components covered by Intelligent UI. Concern about an account is not evidence of a ban or a terms violation. This is a concrete ongoing investigation, with no established architecture or reconstruction result; REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 5 likes, 554 views, 0 reposts; no analysis results reported."],
+      "source_labels": ["supermao's report of asking Codex to investigate"]
+    }
+  },
+  {
+    "id": "claude-code-home-animation-rea",
+    "title": "Claude Code 主页背景：REA 辅助重建宁静动画的报告",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Henry Fan 称用 REA 检查软件，一次重建主页背景动画并开源；不等于开源 Claude Code。",
+    "description": "10月16日 Henry Fan（@Henry_Fan_lh）先以“开源 Claude Code”吸引注意，紧接着限定为主页背景动画。他称用 REA 检查软件，Agent 一次完成动画重建，希望读者在自己的应用和网站中修改使用，并附仓库短链。目标只是其所称的宁静背景动画，不是 Claude Code 的完整实现，也不能据此推断后台服务、源代码或其他界面功能已公开。本轮未取得仓库实际地址、许可、原版对照或测试，因此“一次完成”和开源均保留为作者自述。它也不是 @BystAnd3rs 的 Claude Desktop UI 手册；作者和所称目标不同，分条记录以免误归因。",
+    "sources": [{"label": "Henry Fan 的主页动画重建报告", "url": "https://x.com/i/status/2110984628836376688"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、37浏览；仓库与视觉等价性未独立核验。"],
+    "en": {
+      "title": "Claude Code home background: a reported REA-assisted reconstruction of its tranquility animation",
+      "summary": "Henry Fan says REA helped reconstruct and open-source a home background animation in one shot, not Claude Code itself.",
+      "description": "On October 16, Henry Fan (@Henry_Fan_lh) opened with 'open-sourced Claude Code' but immediately limited the claim to its home background animation. He says REA inspected the software and an agent reconstructed the animation in one shot, linking a repository and inviting readers to customize it in their own apps and websites. The target is only the claimed tranquility background animation, not Claude Code's complete implementation, backend, original source or other interface features. This review did not obtain the repository's actual address, license, original-versus-reconstruction comparisons or tests, so both 'one shot' and open-source availability remain author claims. This is also distinct from @BystAnd3rs's Claude Desktop UI handbook: the authors and stated targets differ, and are recorded separately to avoid misattribution.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 37 views; repository and visual equivalence not independently checked."],
+      "source_labels": ["Henry Fan's home-animation reconstruction report"]
+    }
+  },
+  {
+    "id": "stonkers-spectrum-ai-crash-fix-idea",
+    "title": "Spectrum《Stonkers》：用 AI 反编译修复崩溃的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Martin Scott 提议从老游戏代码找出并修复崩溃问题，未报告实施。",
+    "description": "10月16日 Martin Scott（@fizzychicken）在反编译讨论中问，AI 能否反编译 Spectrum 上的 Stonkers 并修复崩溃 bug。这是针对具体老游戏故障的保存和修复 idea，不是完成报告。没有给出触发条件、受影响版本、模型、代码或修复测试，也没有说明使用 REA；不能声称已经定位崩溃或让游戏稳定运行。",
+    "sources": [{"label": "Martin Scott 的 Stonkers 修复提议", "url": "https://x.com/i/status/2110992634978427349"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：1赞、28浏览；仅具体 idea。"],
+    "en": {
+      "title": "Spectrum Stonkers: an idea to decompile with AI and fix its crash bug",
+      "summary": "Martin Scott proposes investigating and fixing a crash in the old game; no implementation is reported.",
+      "description": "On October 16, Martin Scott (@fizzychicken) asked in a decompilation discussion whether AI could decompile Stonkers for the Spectrum and fix its crash bug. This is a preservation and repair idea for a specific old game, not a completion report. No trigger conditions, affected version, model, code or repair tests are supplied, and REA is not named. It does not establish that the crash has been located or the game made stable.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 28 views; a concrete idea only."],
+      "source_labels": ["Martin Scott's Stonkers repair proposal"]
+    }
+  },
+  {
+    "id": "stunts-ai-browser-remake-report",
+    "title": "Stunts：AI 逆向后重做浏览器赛车的二手线索",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "读者称有人用 AI 重做 Stunts，改善浏览器画面与帧率；无可核验性能数据。",
+    "description": "10月16日 @Technomagos 回复称，有人用 AI 逆向 Stunts 并做成浏览器版，带有现代画面和更好的帧率。它指向具体赛车游戏与运行平台，值得保留为二手项目线索；但回复没有给开发者、仓库、模型、画面对照、帧率数字或验证记录，附带短链也未取得正文。不把“更好的帧率”扩展为性能提升比例，不认定完整反编译、原作等价或独立复现，REA 未确认。",
+    "sources": [{"label": "Stunts 浏览器重做的读者回复", "url": "https://x.com/i/status/2110995514468479312"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、4浏览；二手线索，未检查实现。"],
+    "en": {
+      "title": "Stunts: a secondhand lead on an AI-assisted browser racing remake",
+      "summary": "A reader says someone remade Stunts with AI, modern graphics and better browser frame rates; no performance data is verified.",
+      "description": "On October 16, @Technomagos replied that someone had reverse engineered Stunts with AI and remade it for the browser with modern graphics and better frame rates. This identifies a specific racing game and target platform, so it is retained as a secondhand project lead. The reply supplies no developer, repository, model, visual comparisons, frame-rate figures or validation records; the linked short URL's body was not obtained. 'Better frame rates' is not converted into a numerical performance gain. Complete decompilation, original-game equivalence and independent reproduction are not established; REA use is unconfirmed.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 4 views; secondhand lead, implementation not inspected."],
+      "source_labels": ["Reader reply about a Stunts browser remake"]
+    }
+  },
+  {
+    "id": "rea-circuit-board-functional-rebuild-idea",
+    "title": "电路板功能重建：把 REA 思路用于硬件的 idea",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。",
+    "description": "10月16日 @carkai01 提出设计一个类似 REA 的程序，分析电路板的功能、逆向电路板，再做出相关功能。它把 Agent 辅助理解现有实现的思路具体延伸到电路板功能重建，但没有命名板卡、输入资料、测量设备或实现方案，也没有给原型与测试。按面向硬件的具体方向 idea 收录，不推断它能从照片自动恢复原理图、PCB 布局、芯片固件或直接生产替代板；REA 是类比对象，未证实实际使用。",
+    "sources": [{"label": "电路板逆向与功能重建提议", "url": "https://x.com/i/status/2111001815592611958"}],
+    "snapshot_date": "2026-10-16",
+    "metadata": ["10月16日候选快照：0赞、4浏览；仅 idea，未命名板卡。"],
+    "en": {
+      "title": "Circuit-board function reconstruction: an idea to extend the REA approach to hardware",
+      "summary": "The author proposes an REA-like program to investigate circuit-board functions and reimplement them; no board or prototype is specified.",
+      "description": "On October 16, @carkai01 proposed designing a program like REA to analyze a circuit board's functions, reverse engineer it and recreate related functionality. This concretely extends agent-assisted understanding of existing implementations toward circuit-board function reconstruction, but names no board, input materials, measurement equipment or implementation method, and supplies no prototype or tests. It is retained as a hardware-oriented idea, not a claim of automatically recovering schematics, PCB layouts or chip firmware from photographs, or producing replacement boards. REA is an analogy, not confirmed tool use.",
+      "metadata": ["October 16 candidate snapshot: 0 likes, 4 views; idea only, no named board."],
+      "source_labels": ["Circuit-board investigation and function-reconstruction proposal"]
     }
   }
 ]
