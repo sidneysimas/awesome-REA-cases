@@ -69,7 +69,7 @@
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](../cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
-- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](../cases/ios-android-ai-port-idea.md) — 保留跨硬件移植设想，补入 HACKIOS 与红米的传播主张；没有确认真实 iOS 启动或 AI 实施。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](../cases/ios-android-ai-port-idea.md) — 保留iOS跨硬件idea与传闻；另有读者自述尝试64位iOS应用在Android运行，但未报告成功，不能等同整套系统移植。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](../cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
 - [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](../cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
 - [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](../cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
@@ -85,3 +85,5 @@
 - [键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查](../cases/keyboard-exe-claude-linux-camera.md) — Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。 **[未确认使用 REA · 待验证]**
 - [NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜](../cases/njfe-claude-ear-camera-usb.md) — ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。 **[其他 AI 逆向]**
 - [Roku 电视：Claude 称锁定启动链阻止修改固件的受阻尝试](../cases/roku-tv-claude-firmware-blocker.md) — 读者想把电视改造方法用于 Roku，但转述 Claude 说 bootloader 锁定；没有设备测试或固件产物。 **[其他 AI 逆向 · 待验证]**
+- [Hue 屏幕同步灯光：Claude 研究 macOS 蓝牙模式的自述](../cases/hue-macos-bluetooth-claude-screen-sync.md) — Max 称为省去 Hue Bridge 与相机，让 Claude 找到 macOS 隐藏蓝牙模式，实现 19 ms 屏幕响应。 **[其他 AI 逆向 · 待验证]**
+- [Starshield 信号：读者询问能否用 REA 研究频率的 idea](../cases/starshield-signal-rea-idea.md) — 一个面向 Starshield 信号频率的 REA 适用性提问，没有实施、信号数据或可行性验证。 **[REA · 待验证]**

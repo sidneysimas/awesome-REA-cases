@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**366 entries**, organized by use case, without a Top-N or popularity threshold.
+**375 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (79)
-- [Hardware and interoperability](categories/en/hardware.md) (83)
-- [Applications and clients](categories/en/apps.md) (169)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (35)
+- [Games and preservation](categories/en/games.md) (80)
+- [Hardware and interoperability](categories/en/hardware.md) (85)
+- [Applications and clients](categories/en/apps.md) (173)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (37)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -107,6 +107,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [League of Legends: a report of AI-assisted Linux gameplay](cases/en/lol-linux-ai-gameplay-report.md) — A circulating post claims a month of AI-assisted work enabled real Linux gameplay, not merely a launcher; implementation and compatibility are unchecked. **[Other AI-assisted work · Needs verification]**
 - [Fallout 4: a brief claim of fixes after Claude reverse engineering](cases/en/fallout4-claude-fix-report.md) — A user says studying Fallout 4 enabled Claude to fix issues it could not guess or brute-force; faults and patches are not public. **[Other AI-assisted work · Needs verification]**
 - [MISE.exe: Claude proposes Ghidra-derived rules instead of screenshot guesses](cases/en/mise-ghidra-claude-rules.md) — The author quotes Claude saying an agent is decompiling MISE.exe to match the SE's exact rules; no completed result is shown. **[Other AI-assisted work · In progress]**
+- [Resident Evil 2 on Nintendo DS: an unfinished REA and Claude Code port report](cases/en/resident-evil2-ds-rea-port-report.md) — A programming community relays an REA/Claude Code DS port that is still unfinished and seeking help. **[REA · In progress]**
 
 ### Hardware and interoperability
 
@@ -177,7 +178,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Samsung AC: local-network control with reported partial Claude assistance](cases/en/samsung-ac-local-claude-report.md) — The author says a personal Samsung AC was reverse-engineered for local control; support for all post-2022 models is not verified. **[Other AI-assisted work · Needs verification]**
 - [Creality SpacePiX4: a Gemini Argon firmware-improvement plan](cases/en/creality-spacepix4-gemini-firmware-idea.md) — The poster wants better firmware for a named device using Gemini Argon; investigation and implementation are not yet described. **[Other AI-assisted work · Needs verification]**
 - [Race recorder: reported Claude Code recovery of video and telemetry files on Mac](cases/en/race-recorder-claude-format-mac-report.md) — A roundup says a developer investigated a proprietary recorder format in four hours to access years of video and driving telemetry on a Mac. **[Other AI-assisted work · Needs verification]**
-- [iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims](cases/en/ios-android-ai-port-idea.md) — A cross-hardware idea is supplemented with HACKIOS and Redmi claims; genuine iOS booting and AI implementation are unconfirmed. **[Other AI-assisted work · Needs verification]**
+- [iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims](cases/en/ios-android-ai-port-idea.md) — An iOS cross-hardware idea and rumors are joined by a reader's attempted 64-bit iOS app compatibility work on Android, not reported success or a full OS port. **[Other AI-assisted work · Needs verification]**
 - [A twelve-year-old Kindle: reported Claude safety refusal during a jailbreak attempt](cases/en/old-kindle-claude-refusal-report.md) — A user reports safety blocks while investigating an owned old Kindle, not a successful unlock or firmware change. **[Other AI-assisted work · Needs verification]**
 - [Garmin watch: a reported Mac health menu bar and MCP bridge](cases/en/garmin-health-menubar-mcp-report.md) — A secondhand account describes Bluetooth research exposing Body Battery, stress and heart rate to a menu bar and local AI interface. **[REA use unconfirmed · Related project]**
 - [LmDrum firmware: Claude reportedly stops after decompilation progress](cases/en/lmdrum-claude-firmware-refusal.md) — The author says a decompiled firmware version worked before Claude refused further work; a same-conversation reply names Ghidra. **[Other AI-assisted work · In progress]**
@@ -193,6 +194,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Windows keyboard utility: Claude builds a Linux version and checks it with a camera](cases/en/keyboard-exe-claude-linux-camera.md) — Mayank Bansal supplies a configuration exe, a reverse-engineering repository and a camera to Claude, reporting a Linux version and Omarchy status-bar plugin. **[REA use unconfirmed · Needs verification]**
 - [NJFE: Claude builds on prior protocol research to turn an ear camera into a PC inspection scope](cases/en/njfe-claude-ear-camera-usb.md) — An ESP32-C3 bridges a Soulear Wi-Fi JPEG stream to USB; the project credits otoscope's prior reverse engineering and reports testing one device. **[Other AI-assisted work]**
 - [Roku TV: a firmware-modification inquiry blocked by Claude's bootloader assessment](cases/en/roku-tv-claude-firmware-blocker.md) — A reader asks whether a TV modification works on Roku and quotes Claude saying its bootloader is locked; no device test or firmware artifact is shown. **[Other AI-assisted work · Needs verification]**
+- [Hue screen-synced lighting: Claude investigates a macOS Bluetooth mode](cases/en/hue-macos-bluetooth-claude-screen-sync.md) — Max reports avoiding a Hue Bridge and camera by having Claude find a hidden macOS Bluetooth mode, with a claimed 19 ms screen response. **[Other AI-assisted work · Needs verification]**
+- [Starshield signals: a reader's idea to investigate frequencies with REA](cases/en/starshield-signal-rea-idea.md) — A specific REA applicability question about Starshield signal frequencies, without implementation, signal data or feasibility evidence. **[REA · Needs verification]**
 
 ### Applications and clients
 
@@ -276,7 +279,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [REA with Claude Code in isolation: a reported A/B test](cases/en/rea-claude-isolated-ab-test.md) — Zenn highlights a real-task A/B test in an isolated setup, saying standard tools sufficed for static analysis. The target, metrics and full methodology are not available in the candidate post. **[REA · Analysis test]**
 - [REA 6.4.0: Windows .NET and Electron sample tests](cases/en/rea-640-windows-managed-electron-test.md) — Posts report managed-decoding budget limits, an AI-made Electron sample's semantic graph, a non-executed Trap.dll constructor and a one-constant version diff. Findings are version-specific and not independently reproduced. **[REA · Analysis test]**
 - [A saved website investigated with WorkBuddy International](cases/en/workbuddy-website-reverse-report.md) — A poster reports a satisfactory website investigation, without naming the site or publishing an artifact; REA use is unconfirmed. **[REA use unconfirmed · Needs verification]**
-- [apk-reverse: an Android analysis skill for coding agents](cases/en/apk-reverse-agent-skill.md) — A public skill organizes APK, DEX and runtime investigation; workflow coverage is not evidence of successful recovery for arbitrary protected apps. **[Other AI-assisted work · Related project]**
+- [apk-reverse: an Android analysis skill for coding agents](cases/en/apk-reverse-agent-skill.md) — A public skill organizes APK, DEX and runtime investigation; a parent-verified fork is added without validating ban or performance claims. **[Other AI-assisted work · Related project]**
 - [Codex: a personal library following REA research](cases/en/codex-rea-custom-library.md) — A poster reports experimenting with Codex and writing a library using REA; its interfaces, function and implementation are not disclosed. **[REA · In progress]**
 - [Notes example: tracing a CSV export button](cases/en/rea-notes-export-walkthrough.md) — A tutorial maps renderer, preload, main and CSV escaping into a specification-and-test workflow; a later proposed role split and cost comparison are not independently measured rebuild results. **[REA · Analysis test]**
 - [Codex next-input prediction recreated for Pi](cases/en/codex-pi-next-hint.md) — The author reports extracting version-5 prompts/configuration and adapting them as pi-next-hint, with a 30-second deadline and suggestions that never auto-send. **[REA use unconfirmed · Needs verification]**
@@ -365,6 +368,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Chrome LINE: AI reads JavaScript to build a TUI and messaging API](cases/en/line-chrome-js-ai-tui-api.md) — @cwh_tw says AI used Chrome LINE's JavaScript to make a terminal interface and API for analyzing and sending customer messages. **[Other AI-assisted work · Needs verification]**
 - [Reverse Engineering Assistant: a framework advertised for offline file-analysis reports](cases/en/kornas-reverse-engineering-assistant-report.md) — Dan Kornas describes a framework also abbreviated REA, advertising file detection and Markdown/PDF/JSON reports; its repository identity is unverified. **[REA use unconfirmed · Related project]**
 - [Zenith collaborative editing: a reader asks about investigating it with REA](cases/en/zenith-collaborative-ide-rea-idea.md) — A parent reply identifies the target as Zenith's collaborative editing and AI project-context features; only an REA applicability question has been posted. **[REA · Needs verification]**
+- [Windows kernel: an REA collaboration idea for a free operating system](cases/en/windows-kernel-rea-free-os-idea.md) — A poster seeks collaborators to investigate the Windows kernel and build a free OS, without recovered source or a system build. **[REA · Needs verification]**
+- [Amazon Prime tvOS: investigating IPA Universal Links to open shows from a personal app](cases/en/prime-tvos-universal-link-ghidra-report.md) — Xiao reports using RAE and Ghidra to find a tvOS IPA's deep-link format, alongside disk exhaustion that blocked Codex. **[REA use unconfirmed · Needs verification]**
+- [Claude and Codex limits: an REA-assisted top-bar display report](cases/en/claude-codex-limits-topbar-rea-report.md) — Dhananjay_Tech reports displaying live limits and agent activity in the desktop top bar, without publishing the data path or code. **[REA · Needs verification]**
+- [LLVM ABI: gingerBill's account of using LLMs to investigate undocumented internals](cases/en/llvm-abi-llm-research-report.md) — Parent-thread reading identifies LLVM calling conventions and internals beyond IR; the author says LLMs help but still struggle despite extensive context. **[Other AI-assisted work · In progress]**
 
 ### Algorithms and feature recovery
 
@@ -403,6 +410,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Game-function matcher: an audit account of wrong constants passing checks](cases/en/rea-game-function-matcher-audit-report.md) — A report describes model relays on three game functions and an audit finding that instruction matching can miss data behind addresses. **[REA · Analysis test]**
 - [Guitar effects: emulate the original firmware, then compare a standalone C++ library](cases/en/valdiorn-audio-effects-firmware-report.md) — valdiorn reports using Opus 5.5 on Big Sky and other effects, comparing C++ output to firmware emulation; no library or measurement logs are public. **[Other AI-assisted work · Needs verification]**
 - [731 functions: an REA reconstruction account using specification isolation and four negative controls](cases/en/rea-731-functions-cleanroom-self-report.md) — A poster reports REA behavior specs, fresh Opus implementation sessions and test-first work: 729 exact matches among 731 functions over nine days, with no public target or logs. **[REA · Needs verification]**
+- [JavaScript divergence: formatting switches the game, an AI reversing-decoy idea](cases/en/javascript-divergence-agent-decoy.md) — A secondary account of Robert Vähhi's processor-divergence work proposes runnable cleaned-up decoys for human and AI reverse engineers. **[Other AI-assisted work · Related project]**
+- [Three-model binary research: function maps, competing hypotheses and an original-binary oracle](cases/en/three-model-binary-evidence-workflow-idea.md) — An idea starts with a self-compiled record.c lab fixture and splits mapping, interpretation and criticism across models; no verifiable run is supplied. **[Other AI-assisted work · Needs verification]**
 
 ## Contributing and selection
 

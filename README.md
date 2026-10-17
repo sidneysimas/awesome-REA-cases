@@ -6,9 +6,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-## 366 cases & projects
+# 375 cases & projects
 
-**Latest case update / maintenance:** October 17, 2026, 16:03 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 17, 2026, 20:11 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -31,7 +31,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Guitar effects: firmware to C++](cases/en/valdiorn-audio-effects-firmware-report.md)** · `2026-10-15` — A pedal maker reports using Claude to **emulate original firmware, then compare a standalone library**, including Big Sky research. The original comment is traceable; code and comparison logs are not public. `Unverified`
 8. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — **A native port from decompiled code, not static recompilation**, according to the author. Visual defects remain; November 20 is a release plan. `In progress`
 9. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
-10. **[Test the CSV evaluator first](cases/en/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — Three deliberately broken exporters reportedly passed simple tests; **215 byte comparisons** exposed them. A useful acceptance-testing experiment, without published test inputs or code. `REA test`
+10. **[Open Prime shows from a personal tvOS app](cases/en/prime-tvos-universal-link-ghidra-report.md)** · `2026-10-17` — Xiao reports finding **Universal Links in the IPA** with “RAE + Ghidra”; disk exhaustion also blocked Codex. No published link format or independent test; the tool name is unconfirmed. `Unverified`
 
 ## Classic cases
 
@@ -46,10 +46,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **79** |
-| [Hardware & interoperability](categories/en/hardware.md) | **83** |
-| [Applications & clients](categories/en/apps.md) | **169** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **35** |
+| [Games & preservation](categories/en/games.md) | **80** |
+| [Hardware & interoperability](categories/en/hardware.md) | **85** |
+| [Applications & clients](categories/en/apps.md) | **173** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **37** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

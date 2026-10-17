@@ -82,7 +82,7 @@
 - [隔离环境中的 REA + Claude Code：静态分析 A/B 测试转述](../cases/rea-claude-isolated-ab-test.md) — Zenn 推荐一篇真实任务 A/B 测试，称静态分析标准工具已足够，并讨论隔离设计。 **[REA · 分析测试]**
 - [REA 6.4.0：Windows 下的 .NET 与 Electron 样本测试](../cases/rea-640-windows-managed-electron-test.md) — 以 Framework 程序集和 AI 构造的 Electron 样本测试版本边界、静态语义与证据输出。 **[REA · 分析测试]**
 - [收藏的网站：用 WorkBuddy International 做逆向研究的报告](../cases/workbuddy-website-reverse-report.md) — 作者报告研究长期收藏的网站，自述效果满意，站名与产物未公开。 **[未确认使用 REA · 待验证]**
-- [apk-reverse：把 Android 分析流程交给编程 Agent 的 Skill](../cases/apk-reverse-agent-skill.md) — 公开 Skill 组织 APK、DEX 与运行时分析流程，不代表任意应用都已破解。 **[其他 AI 逆向 · 相关项目]**
+- [apk-reverse：把 Android 分析流程交给编程 Agent 的 Skill](../cases/apk-reverse-agent-skill.md) — 公开 Skill 组织 APK、DEX 与运行时分析流程；补入已核对父仓库关系的fork，不验证封禁或性能传言。 **[其他 AI 逆向 · 相关项目]**
 - [Codex：用 REA 研究后写个人库的尝试](../cases/codex-rea-custom-library.md) — 作者称 DIY Codex 并用 REA 写库，尚未公开接口或实现。 **[REA · 进行中]**
 - [Notes 示例：沿按钮调用链重建 CSV 导出的教程](../cases/rea-notes-export-walkthrough.md) — 从 renderer 到 preload、main 和 CSV 格式化，把示范行为写成规格与测试。 **[REA · 分析测试]**
 - [Codex 下一句预测：研究提示词与配置后移到 Pi](../cases/codex-pi-next-hint.md) — 作者称提取版本5的预测配置并实现 pi-next-hint，提示不自动发送。 **[未确认使用 REA · 待验证]**
@@ -171,3 +171,7 @@
 - [Chrome 版 LINE：AI 阅读 JS 后制作 TUI 与消息 API](../cases/line-chrome-js-ai-tui-api.md) — @cwh_tw 称让 AI 参考 Chrome 版 LINE 的 JavaScript，制作终端界面和 API，用于客户消息分析与发送。 **[其他 AI 逆向 · 待验证]**
 - [Reverse Engineering Assistant：按文件生成离线分析报告的框架宣传](../cases/kornas-reverse-engineering-assistant-report.md) — Dan Kornas 介绍一个同缩写 REA 的框架，称支持文件检测与 Markdown／PDF／JSON 报告；仓库身份未核实。 **[未确认使用 REA · 相关项目]**
 - [Zenith 多人编辑：读者询问能否用 REA 研究的 idea](../cases/zenith-collaborative-ide-rea-idea.md) — 补读父帖将 this 识别为 Zenith 的多人编辑与 AI 项目上下文功能；目前只有 REA 适用性提问。 **[REA · 待验证]**
+- [Windows 内核：用 REA 研究免费操作系统的招募 idea](../cases/windows-kernel-rea-free-os-idea.md) — 发帖者招募合作者逆向 Windows 内核并制作免费系统；没有源码恢复或系统构建成果。 **[REA · 待验证]**
+- [Amazon Prime tvOS：研究 IPA 的 Universal Link，让自己的 App 跳到节目页](../cases/prime-tvos-universal-link-ghidra-report.md) — Xiao 自述用 RAE + Ghidra 找到 tvOS IPA 的链接格式并接入自己的 App，同时报告磁盘占满使 Codex 受阻。 **[未确认使用 REA · 待验证]**
+- [Claude / Codex 额度：REA 辅助放进电脑顶栏的自述](../cases/claude-codex-limits-topbar-rea-report.md) — Dhananjay_Tech 称把两种 Agent 的实时额度和正在进行的工作放进顶栏，未公开数据链路与代码。 **[REA · 待验证]**
+- [LLVM ABI：gingerBill 用 LLM 研究未文档化内部的自述](../cases/llvm-abi-llm-research-report.md) — 补读父串识别目标为 LLVM 的调用约定和 IR 之外内部；作者称 LLM 有帮助，但大量上下文仍不足以免除困难。 **[其他 AI 逆向 · 进行中]**

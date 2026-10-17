@@ -81,3 +81,4 @@
 - [League of Legends：AI 辅助逆向后在 Linux 实际游玩的转述](../cases/lol-linux-ai-gameplay-report.md) — 传播帖称开发者用一个月研究，让英雄联盟在 Linux 进入游戏；未核对实现或兼容范围。 **[其他 AI 逆向 · 待验证]**
 - [Fallout 4：Claude 逆向后修复故障的简短自述](../cases/fallout4-claude-fix-report.md) — 作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。 **[其他 AI 逆向 · 待验证]**
 - [MISE.exe：Claude 用 Ghidra 提取规则而不是猜截图](../cases/mise-ghidra-claude-rules.md) — 作者转述 Claude 正让 Agent 反编译 MISE.exe，以匹配 SE 的具体规则；尚无完成结果。 **[其他 AI 逆向 · 进行中]**
+- [Resident Evil 2 到 Nintendo DS：REA 与 Claude Code 的未完成移植转述](../cases/resident-evil2-ds-rea-port-report.md) — 程序社区转述有人用 REA 与 Claude Code 制作 DS 移植，仍未完成并寻求帮助。 **[REA · 进行中]**

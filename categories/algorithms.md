@@ -37,3 +37,5 @@
 - [游戏函数匹配器：错误常量仍通过检查的审计转述](../cases/rea-game-function-matcher-audit-report.md) — 转述多模型接力重建三段游戏函数，以及审计发现指令匹配漏看地址背后数据的问题。 **[REA · 分析测试]**
 - [吉他效果器：先模拟原固件，再对照独立 C++ 算法库](../cases/valdiorn-audio-effects-firmware-report.md) — valdiorn 自述用 Opus 5.5 研究 Big Sky 等效果器，以固件模拟器对照 C++ 输出；没有公开库或测量记录。 **[其他 AI 逆向 · 待验证]**
 - [731 个函数：SPEC 隔离与四个负例的 REA 重建自述](../cases/rea-731-functions-cleanroom-self-report.md) — 作者称 REA 写行为规格、新 Opus 会话重建并先写测试，九天内731函数中729精确匹配；程序与日志未公开。 **[REA · 待验证]**
+- [JavaScript divergence：格式化后换游戏，误导 AI 逆向的 idea](../cases/javascript-divergence-agent-decoy.md) — 转述 Robert Vähhi 的处理器差异研究：让清理后的 JS 变成可运行诱饵，作为人类与 AI 分析的防御设想。 **[其他 AI 逆向 · 相关项目]**
+- [三模型二进制研究：函数图、双假说与原程序裁判的 idea](../cases/three-model-binary-evidence-workflow-idea.md) — 从自建 record.c 实验样本开始，让不同模型分工映射、解释和挑错；尚无可核实运行记录。 **[其他 AI 逆向 · 待验证]**

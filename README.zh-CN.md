@@ -6,9 +6,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-## 366 个案例与项目
+# 375 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 17 日 16:03 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 17 日 20:11 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -31,7 +31,7 @@
 7. **[吉他效果器：从固件到 C++](cases/valdiorn-audio-effects-firmware-report.md)** · `2026-10-15` — 效果器厂商自述让 Claude **先模拟原固件，再对照独立算法库**，包括 Big Sky 研究；已追到原评论，但代码与对照日志未公开。`待验证`
 8. **[Sonic 3D Blast：先重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — 作者澄清是**从反编译代码构建原生移植，不是静态重编译**；画面缺陷仍在，11 月 20 日只是发行计划。`进行中`
 9. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-16` — 独立编辑器已有项目报告的导出与插件测试；**版权素材与 AI API 仍是卡点**，签名和平台限制也未消失。`进行中`
-10. **[先验证 CSV 验收器](cases/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — 作者称三个故意改坏的导出器通过简单测试，却被 **215 组字节对照**发现；有价值的验收实验，但未公开输入与代码。`REA 分析测试`
+10. **[从自己的 tvOS App 跳到 Prime 节目](cases/prime-tvos-universal-link-ghidra-report.md)** · `2026-10-17` — Xiao 自述用“RAE + Ghidra”找到 **IPA 的 Universal Link**，也报告磁盘占满使 Codex 受阻；未公开链接格式，无独立测试，工具身份未确认。`待验证`
 
 ## 经典案例
 
@@ -46,10 +46,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **79** |
-| [硬件与设备互通](categories/hardware.md) | **83** |
-| [应用与客户端](categories/apps.md) | **169** |
-| [算法与功能重建](categories/algorithms.md) | **35** |
+| [游戏与游戏保存](categories/games.md) | **80** |
+| [硬件与设备互通](categories/hardware.md) | **85** |
+| [应用与客户端](categories/apps.md) | **173** |
+| [算法与功能重建](categories/algorithms.md) | **37** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

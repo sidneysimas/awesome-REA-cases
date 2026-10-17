@@ -5708,8 +5708,8 @@
     "category": "apps",
     "rea": "other-ai",
     "status": "related-project",
-    "summary": "公开 Skill 组织 APK、DEX 与运行时分析流程，不代表任意应用都已破解。",
-    "description": "候选介绍newliver666/apk-reverse，把Android安装包分析组织成Claude Code、Codex等Agent可使用的Skill，覆盖反编译、DEX检查、逻辑分析和运行时调试。10月15日补查公开README，确认这是具体的分析工具项目，而不是一个具名App的完成报告。本合集未安装Skill、运行APK或验证调试能力；不沿用传播帖关于数千Star的泛称，不把流程文档写成复杂混淆代码必然可恢复。",
+    "summary": "公开 Skill 组织 APK、DEX 与运行时分析流程；补入已核对父仓库关系的fork，不验证封禁或性能传言。",
+    "description": "候选介绍newliver666/apk-reverse，把Android安装包分析组织成Claude Code、Codex等Agent可使用的Skill，覆盖反编译、DEX检查、逻辑分析和运行时调试。10月15日补查公开README，确认这是具体的分析工具项目，而不是一个具名App的完成报告。本合集未安装Skill、运行APK或验证调试能力；不沿用传播帖关于数千Star的泛称，不把流程文档写成复杂混淆代码必然可恢复。\n\n10月17日补审当日02:49的备份传播帖：短链展开为zzusec/apk-reverse，GitHub元数据确认父仓库为newliver666/apk-reverse，因此保留为同一项目的fork入口。原帖所称删库封号与APK能力优于REA未核实，fork关系不是性能测试；未安装或运行fork。",
     "sources": [
       {
         "label": "候选介绍",
@@ -5718,22 +5718,34 @@
       {
         "label": "项目文档与源码",
         "url": "https://github.com/newliver666/apk-reverse"
+    },
+    {
+      "label": "备份传播帖：封禁与性能比较未核实",
+      "url": "https://x.com/i/status/2111167738056167864"
+    },
+    {
+      "label": "补查fork：公开元数据确认父仓库关系",
+      "url": "https://github.com/zzusec/apk-reverse"
       }
     ],
     "snapshot_date": "2026-10-15",
     "metadata": [
-      "相关工具项目；非REA能力测试，未执行目标代码。"
+      "相关工具项目；非REA能力测试，未执行目标代码。",
+      "10月17日补审当日02:49备份帖：短链展开为zzusec/apk-reverse，GitHub元数据确认父仓库为newliver666/apk-reverse。原帖所称删库封号与优于REA未核实；未安装或运行fork。"
     ],
     "en": {
       "title": "apk-reverse: an Android analysis skill for coding agents",
-      "summary": "A public skill organizes APK, DEX and runtime investigation; workflow coverage is not evidence of successful recovery for arbitrary protected apps.",
-      "description": "The candidate introduces newliver666/apk-reverse, which organizes Android-package analysis into a skill for Claude Code, Codex and other agents, covering decompilation, DEX inspection, logic analysis and runtime debugging. Reading the public README on October 15 confirmed a concrete analysis-tool project rather than a completed report about a named app. This collection did not install the skill, run APKs or verify debugging capabilities. The circulating post's vague claims of thousands of stars are not adopted, and workflow documentation is not proof that complex obfuscated code can always be recovered.",
+      "summary": "A public skill organizes APK, DEX and runtime investigation; a parent-verified fork is added without validating ban or performance claims.",
+      "description": "The candidate introduces newliver666/apk-reverse, which organizes Android-package analysis into a skill for Claude Code, Codex and other agents, covering decompilation, DEX inspection, logic analysis and runtime debugging. Reading the public README on October 15 confirmed a concrete analysis-tool project rather than a completed report about a named app. This collection did not install the skill, run APKs or verify debugging capabilities. The circulating post's vague claims of thousands of stars are not adopted, and workflow documentation is not proof that complex obfuscated code can always be recovered.\n\nOn October 17, review of that day's 02:49 backup post expands its short link to zzusec/apk-reverse. GitHub metadata confirms newliver666/apk-reverse as its parent, so it is retained as a fork entry for the same project. Claims of repository/account bans and superior APK capability over REA remain unverified. A fork relationship is not a performance test; the fork was not installed or run.",
       "metadata": [
-        "Related tool project; not an REA capability test; target code not executed."
+        "Related tool project; not an REA capability test; target code not executed.",
+      "On October 17, an older-material review of that day's 02:49 backup post expands its short link to zzusec/apk-reverse. GitHub metadata confirms newliver666/apk-reverse as its parent. Claims of repository/account bans and superiority over REA remain unverified; the fork was not installed or run."
       ],
       "source_labels": [
         "Candidate introduction",
-        "Project documentation and source"
+        "Project documentation and source",
+      "Backup circulation post: ban and performance claims unverified",
+      "Supplementary fork: public metadata confirms its parent"
       ]
     }
   },
@@ -8848,16 +8860,20 @@
     "rea": "other-ai",
     "status": "in-progress",
     "summary": "作者正在逆向 Chrome 翻译扩展，希望直接使用自己购买的模型 Token。",
-    "description": "10月16日一位作者称正在让 Codex 帮忙逆向开发“沉浸式翻译”这类 Chrome 扩展，动机是不想支付此类订阅费用，希望自行购买 Token 并接入 AI API。作者认为它可能主要由窗口和 API 接入组成，但这只是其初步判断，不是已证实的架构。帖子明确说仍在逆向中，没有完成的扩展、代码、对照测试或功能清单；也没有足够证据确认直接研究的是特定版本的沉浸式翻译原包，而非同类产品。按进行中项目收录，不声称订阅已替代、功能等价或使用 REA。",
-    "sources": [{"label": "Codex 逆向翻译类 Chrome 扩展的进行中报告", "url": "https://x.com/i/status/2110976193671709123"}],
+    "description": "10月16日一位作者称正在让 Codex 帮忙逆向开发“沉浸式翻译”这类 Chrome 扩展，动机是不想支付此类订阅费用，希望自行购买 Token 并接入 AI API。作者认为它可能主要由窗口和 API 接入组成，但这只是其初步判断，不是已证实的架构。帖子明确说仍在逆向中，没有完成的扩展、代码、对照测试或功能清单；也没有足够证据确认直接研究的是特定版本的沉浸式翻译原包，而非同类产品。按进行中项目收录，不声称订阅已替代、功能等价或使用 REA。\n\n10月17日补审10月16日14:46（北京时间）的另一读者回复，展开链接确认指向上述原帖。回复称今天正在逆向这个，Codex CLI还在持续运行。它增加同一目标的进行中线索，不证明属于同一项目、已经交付或功能等价；补审日期不是新进展的原始发布日期。",
+    "sources": [{"label": "Codex 逆向翻译类 Chrome 扩展的进行中报告", "url": "https://x.com/i/status/2110976193671709123"
+ },
+ {
+ "label": "往期补审：另一读者的Codex CLI进行中回复",
+ "url": "https://x.com/i/status/2110985668969328852"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["10月16日候选快照：1赞、29浏览；无完成结果。"],
+    "metadata": ["10月16日候选快照：1赞、29浏览；无完成结果。", "补充回复原发于10月16日14:46，北京时间；10月17日补审，仍无交付证据。"],
     "en": {
       "title": "Immersive-translation-style extensions: investigating a bring-your-own-token alternative with Codex",
       "summary": "The author is investigating a Chrome translation extension to use personally purchased model tokens.",
-      "description": "On October 16, an author said Codex was helping reverse engineer and develop a Chrome extension in the style of Immersive Translate, motivated by avoiding such subscription fees and buying model tokens directly for an AI API. The author's suggestion that it may mainly consist of a window and API integration is an initial belief, not an established architecture. The post explicitly says investigation is ongoing, with no completed extension, code, comparison tests or feature list. It also does not establish that a particular version of the original Immersive Translate package, rather than a similar product, is being analyzed. This is an in-progress project, not a demonstrated subscription replacement or feature-equivalent implementation; REA use is not claimed.",
-      "metadata": ["October 16 candidate snapshot: 1 like, 29 views; no completed result."],
-      "source_labels": ["Ongoing Codex investigation of a translation-style Chrome extension"]
+      "description": "On October 16, an author said Codex was helping reverse engineer and develop a Chrome extension in the style of Immersive Translate, motivated by avoiding such subscription fees and buying model tokens directly for an AI API. The author's suggestion that it may mainly consist of a window and API integration is an initial belief, not an established architecture. The post explicitly says investigation is ongoing, with no completed extension, code, comparison tests or feature list. It also does not establish that a particular version of the original Immersive Translate package, rather than a similar product, is being analyzed. This is an in-progress project, not a demonstrated subscription replacement or feature-equivalent implementation; REA use is not claimed.\n\nOn October 17, supplementary review of another reader's October 16 reply at 14:46 Beijing time expands a link to the original post above. The reader says they are investigating this today and Codex CLI is still running. This adds an in-progress lead for the same target, not proof of a shared project, delivery or feature equivalence. The review date is not the original publication date of new progress.",
+      "metadata": ["October 16 candidate snapshot: 1 like, 29 views; no completed result.", "Supplementary reply published October 16 at 14:46 Beijing time; reviewed October 17, still without delivery evidence."],
+      "source_labels": ["Ongoing Codex investigation of a translation-style Chrome extension", "Older-material review: another reader's ongoing Codex CLI reply"]
     }
   },
   {
@@ -9292,17 +9308,24 @@
     "category": "hardware",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "保留跨硬件移植设想，补入 HACKIOS 与红米的传播主张；没有确认真实 iOS 启动或 AI 实施。",
-    "description": "10月16日22:24（北京时间），发帖者以“如果”提出：若 AI 逆向 iOS 并把它装到安卓手机，可能比原苹果设备更顺滑，进而推演软件进步可弱化硬件升级意义。具体目标是操作系统跨硬件移植，但来源没有报告自己的实验、内核、驱动、启动链、设备型号或实现计划。收录的是明确的探索设想，不是已成功的 iOS 移植；顺滑、比苹果理解更深以及手机硬件终局都是未经检验的推论。\n\n本轮补审10月16日22:59的 HACKIOS 宣传和23:03的红米传播帖，并阅读10月17日06:22的新转述，按相同功能目标补充背景，不确认这些帖子或原设想出自同一个项目。HACKIOS 帖声称能移植到任何手机，红米帖声称已运行；原串却未提供机型、启动记录、内核/驱动代码或原作者测试，只有群组入口、赞许与质疑。评论中的 Linux内核加iOS用户态、Android主题等都是猜测，不能拿来解释真实实现。“苹果一定发布公告”也只是宣传推测。未确认 REA 或任何模型实际参与，未验证真实iOS运行、相机/蜂窝网络、应用安装或性能；不把这些传播主张升级为移植成果。",
-    "sources": [{"label": "iOS 跨安卓硬件的条件性设想", "url": "https://x.com/i/status/2111100973238329497"}, {"label": "往期补审：HACKIOS任意手机移植宣传，未核实", "url": "https://x.com/i/status/2111109883210907945"}, {"label": "往期补审：红米运行iOS的传播帖与质疑", "url": "https://x.com/i/status/2111110778854252986"}, {"label": "10月17日新窗口：红米传闻的二手转述", "url": "https://x.com/i/status/2111221283929436658"}],
+    "summary": "保留iOS跨硬件idea与传闻；另有读者自述尝试64位iOS应用在Android运行，但未报告成功，不能等同整套系统移植。",
+    "description": "10月16日22:24（北京时间），发帖者以“如果”提出：若AI逆向iOS并把它装到安卓手机，可能比原苹果设备更顺滑，进而推演软件进步可弱化硬件升级意义。具体目标是操作系统跨硬件移植，但来源没有报告自己的实验、内核、驱动、启动链、设备型号或实现计划。收录的是明确的探索设想，不是已成功的iOS移植；顺滑、比苹果理解更深以及手机硬件终局都是未经检验的推论。\n\n此前补审10月16日22:59的HACKIOS宣传和23:03的红米传播帖，并阅读10月17日06:22的转述，按相同功能目标补充背景，不确认这些帖子或原设想出自同一个项目。HACKIOS帖声称能移植到任何手机，红米帖声称已运行；原串却未提供机型、启动记录、内核/驱动代码或原作者测试，只有群组入口、赞许与质疑。评论中的Linux内核加iOS用户态、Android主题等都是猜测，不能拿来解释真实实现。“苹果一定发布公告”也只是宣传推测。未确认REA或任何模型实际参与整套系统移植，未验证真实iOS运行、相机/蜂窝网络、应用安装或性能。\n\n10月17日16:07的新回复中，另一读者自述即使有AI帮助，64位iOS应用在Android运行仍需大量逆向，自己正在尝试；对于整套iOS传闻，须等可信第三方确认。没有应用名、代码、日志或成功报告，无法确认具体AI用法，不能将应用兼容与操作系统移植混同，也不确认与HACKIOS同一项目。保留进行中自述，不升级为移植成果；REA参与未确认。",
+    "sources": [{"label": "iOS 跨安卓硬件的条件性设想", "url": "https://x.com/i/status/2111100973238329497"}, {"label": "往期补审：HACKIOS任意手机移植宣传，未核实", "url": "https://x.com/i/status/2111109883210907945"}, {"label": "往期补审：红米运行iOS的传播帖与质疑", "url": "https://x.com/i/status/2111110778854252986"}, {"label": "10月17日新窗口：红米传闻的二手转述", "url": "https://x.com/i/status/2111221283929436658"
+ },
+ {
+ "label": "10月17日16:07读者自述：正在尝试64位iOS应用兼容",
+ "url": "https://x.com/i/status/2111368604331749618"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["假设性idea与未核实传播；无实现、启动证明或性能数据，非HACKIOS成果确认。", "10月16日两帖为往期补审，10月17日06:22为本窗口候选；不能确认同一作者或实现。"],
+    "metadata": ["假设性idea与未核实传播；无实现、启动证明或性能数据，非HACKIOS成果确认。", "10月16日两帖为往期补审，10月17日06:22为此前窗口候选；不能确认同一作者或实现。",
+ "10月17日16:07（北京时间）新增读者自述：即使有AI帮助，64位iOS应用在Android运行仍需大量逆向，自己正在尝试；整套iOS传闻须可信第三方确认。没有应用名、代码、日志或成功报告，不能将应用兼容与操作系统移植混同，REA参与未确认。"],
     "en": {
       "title": "iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims",
-      "summary": "A cross-hardware idea is supplemented with HACKIOS and Redmi claims; genuine iOS booting and AI implementation are unconfirmed.",
-      "description": "At 22:24 Beijing time on October 16, the poster conditionally proposes that if AI reverse-engineered iOS and installed it on Android phones, it might run more smoothly than on Apple hardware, then extrapolates that software progress could reduce the value of hardware upgrades. The concrete target is an operating system port across hardware, but the source reports no personal experiment, kernel, drivers, boot chain, device model or implementation plan. What is collected is an explicit exploration idea, not a successful iOS port. Smoothness, deeper understanding than Apple and an end to meaningful phone hardware upgrades are untested inferences.\n\nThis review revisits the October 16 HACKIOS promotion at 22:59 and Redmi post at 23:03, and reads a new account at 06:22 on October 17. These add background on the same functional target, not confirmation that these posts and the original idea describe one project. The HACKIOS promotion claims a port to any phone and the Redmi post claims operation, but the conversation supplies no device model, boot record, kernel/driver code or original-author tests, only a group link, praise and skepticism. Comments about a Linux kernel with iOS userland or an Android theme are speculation, not established implementation explanations. A prediction that Apple will issue a statement is promotional speculation too. Neither REA nor any model is confirmed to have implemented it. Genuine iOS operation, camera/cellular support, app installation and performance remain unverified; these circulating claims are not promoted to porting results.",
-      "metadata": ["Hypothetical idea and unverified claims without implementation, boot evidence or performance data; not confirmation of HACKIOS results.", "Two October 16 posts are older-material reviews; October 17 at 06:22 is an in-window candidate. A shared author or implementation is not confirmed."],
-      "source_labels": ["Conditional idea for iOS across Android hardware", "Older-material review: unverified HACKIOS promotion of a port to any phone", "Older-material review: Redmi/iOS claim and skeptical discussion", "New October 17 window: secondary account of the Redmi rumor"]
+      "summary": "An iOS cross-hardware idea and rumors are joined by a reader's attempted 64-bit iOS app compatibility work on Android, not reported success or a full OS port.",
+      "description": "At 22:24 Beijing time on October 16, the poster conditionally proposes that if AI reverse-engineered iOS and installed it on Android phones, it might run more smoothly than on Apple hardware, then extrapolates that software progress could reduce the value of hardware upgrades. The concrete target is an operating system port across hardware, but the source reports no personal experiment, kernel, drivers, boot chain, device model or implementation plan. What is collected is an explicit exploration idea, not a successful iOS port. Smoothness, deeper understanding than Apple and an end to meaningful phone hardware upgrades are untested inferences.\n\nEarlier review revisited the October 16 HACKIOS promotion at 22:59 and Redmi post at 23:03, and read an account at 06:22 on October 17. These add background on the same functional target, not confirmation that the posts and original idea describe one project. HACKIOS claims a port to any phone and the Redmi post claims operation, but the conversation supplies no device model, boot record, kernel/driver code or original-author tests, only a group link, praise and skepticism. Comments about a Linux kernel with iOS userland or an Android theme are speculation, not implementation explanations. A prediction that Apple will issue a statement is promotional speculation too. Neither REA nor any model is confirmed to have implemented a full OS port. Genuine iOS operation, camera/cellular support, app installation and performance remain unverified.\n\nIn a new October 17 reply at 16:07, another reader says running 64-bit iOS apps on Android requires extensive reverse engineering even with AI help, and that they are trying it. They require a credible third party before believing the full-iOS rumor. No app name, code, logs or success is supplied, and the specific use of AI cannot be confirmed. App compatibility must not be conflated with an OS port, nor is this established as the HACKIOS project. The in-progress account is retained without promoting it to a porting result; REA involvement remains unconfirmed.",
+      "metadata": ["Hypothetical idea and unverified claims without implementation, boot evidence or performance data; not confirmation of HACKIOS results.", "Two October 16 posts are older-material reviews; October 17 at 06:22 is a prior-window candidate. A shared author or implementation is not confirmed.",
+ "A reader's October 17 reply at 16:07 Beijing time says running 64-bit iOS apps on Android requires extensive reverse engineering even with AI help, and that they are trying it. They require a credible third party before believing the full-iOS rumor. No app name, code, logs or success is supplied. App compatibility must not be conflated with an OS port; REA involvement is unconfirmed."],
+      "source_labels": ["Conditional idea for iOS across Android hardware", "Older-material review: unverified HACKIOS promotion of a port to any phone", "Older-material review: Redmi/iOS claim and skeptical discussion", "Earlier October 17 window: secondary account of the Redmi rumor",
+ "October 17 at 16:07: reader reports attempting 64-bit iOS app compatibility"]
     }
   },
   {
@@ -10481,6 +10504,177 @@
       "description": "At 15:29 Beijing time on October 17, 2026, @Its_Vivaann asks Grok and a project discussant whether Reverse Engineer Anything could be used on 'this'. Supplementary reading of the 15:27 parent identifies Zenith: Grok describes an open MERN project with shared project rooms, live Monaco editing, chat, and AI retrieving relevant project files using embeddings and Gemini while streaming code changes to collaborators. It explicitly distinguishes this from a full cloud IDE with runtimes and deployments.\n\nThis supports recording a specific-target REA investigation idea, but the feature account comes from Grok rather than checked source code. The reader does not claim to have started analysis, selected a feature to recover, written a specification or produced a rebuild. An applicability question is not a successful reconstruction of Replit, CodeSandbox or VS Code Live Share. The parent only identifies the candidate's target and is not an additional candidate. The project was not run.",
       "metadata": ["Specific-target idea; Zenith features come from Grok's description, without source inspection or implementation."],
       "source_labels": ["Reader asks whether REA applies", "Supplementary parent: Grok's description of Zenith"]
+    }
+  },
+  {
+    "id": "hue-macos-bluetooth-claude-screen-sync",
+    "title": "Hue 屏幕同步灯光：Claude 研究 macOS 蓝牙模式的自述",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Max 称为省去 Hue Bridge 与相机，让 Claude 找到 macOS 隐藏蓝牙模式，实现 19 ms 屏幕响应。",
+    "description": "2026年10月17日17:16（北京时间），Max（@kudela_maxim）分享自己的第一篇文章，并称不想为 Hue Bridge 和相机花费超过200欧元，于是让 Claude 寻找替代办法。具体目标是让灯光随电脑屏幕内容变化，而不是购买额外桥接器与相机；作者报告 Claude 自行发现 macOS 的一个隐藏蓝牙模式，现在灯光能在19 ms内响应屏幕。\n\n这是一条具体的设备互通与未公开接口研究自述，不是本合集测得的延迟。补查原帖确认作者身份，展开文章链接后，X页面只返回登录与无法显示内容，未取得文章中的实现细节。因此不能说明该模式名称、是否属于私有API、灯具型号、延迟测量方法、端到端范围或稳定性，也未确认使用REA。保留作者报告的19 ms与200欧元以上背景，不推断支持所有Hue灯或macOS版本；未运行代码或独立复现。",
+    "sources": [{"label": "Max 的屏幕同步灯光自述", "url": "https://x.com/i/status/2111385823270625370"}, {"label": "作者链接的文章入口，正文暂不可读", "url": "https://x.com/i/article/2111383990749773824"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17 17:16，北京时间；19 ms与超过200欧元均为作者陈述。", "未取得文章正文、代码或测试；REA参与未确认，未独立复现。"],
+    "en": {
+      "title": "Hue screen-synced lighting: Claude investigates a macOS Bluetooth mode",
+      "summary": "Max reports avoiding a Hue Bridge and camera by having Claude find a hidden macOS Bluetooth mode, with a claimed 19 ms screen response.",
+      "description": "At 17:16 Beijing time on October 17, 2026, Max (@kudela_maxim) shares his first article and says he did not want to spend more than EUR 200 on a Hue Bridge and camera, so he asked Claude to find another approach. The target is lighting that follows computer-screen content without purchasing the extra bridge and camera. He reports that Claude independently found a hidden Bluetooth mode in macOS and that the lights now respond to his screen in 19 ms.\n\nThis is a concrete author account of device interoperability and undocumented-interface investigation, not a latency measurement by this collection. A supplementary original-post lookup confirms the author; expanding the article link leads to an X page showing only login and unavailable-content messages, not implementation details. The mode's name, whether it is a private API, lamp models, measurement method, end-to-end scope and stability therefore remain unknown. REA use is unconfirmed. The reported 19 ms and more-than-EUR-200 motivation are retained as author claims, without implying support for every Hue lamp or macOS version. No code was run or independently reproduced.",
+      "metadata": ["Source published: October 17, 2026, 17:16 Beijing time; 19 ms and more than EUR 200 are author statements.", "Article body, code and tests were not obtained; REA involvement is unconfirmed and there is no independent reproduction."],
+      "source_labels": ["Max's account of screen-synced lighting", "Author-linked article entry; body currently unavailable"]
+    }
+  },
+  {
+    "id": "javascript-divergence-agent-decoy",
+    "title": "JavaScript divergence：格式化后换游戏，误导 AI 逆向的 idea",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "转述 Robert Vähhi 的处理器差异研究：让清理后的 JS 变成可运行诱饵，作为人类与 AI 分析的防御设想。",
+    "description": "2026年10月17日17:20（北京时间），帖子介绍 Robert Vähhi 称为 divergence 的研究：利用JavaScript处理器的错误，使格式化或清理后的程序与原程序行为不同。帖中演示被描述为同一文件原先玩Tetris，格式化后玩Snake；例子是把“+ +m”变成“++m”，由不修改m变成自增。作者转述演示把这些差异串进一个小型虚拟机的字节码，以改变整款游戏，并称研究覆盖186种技巧、37个以上处理器。\n\n与AI逆向的具体关系是防御idea：分析者或Agent先清理脚本，随后可能在一个仍能运行的诱饵上花费时间；若据此重建反机器人或反作弊客户端，服务器可能用行为差异识别副本。这并不证明某个AI Agent已被成功误导，也不说明所有格式化器都会触发，原帖明确依赖工具与配置。本条为具名研究的二手介绍与应用设想，未取得原演示代码、独立复现186种技巧或验证服务端识别效果；未确认REA参与。",
+    "sources": [{"label": "divergence 研究及 AI 逆向诱饵用途的转述", "url": "https://x.com/i/status/2111386823763411016"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17；186种技巧与37个以上处理器为二手报告。", "相关防御研究与idea，不是AI已受骗或反作弊已部署的验证。"],
+    "en": {
+      "title": "JavaScript divergence: formatting switches the game, an AI reversing-decoy idea",
+      "summary": "A secondary account of Robert Vähhi's processor-divergence work proposes runnable cleaned-up decoys for human and AI reverse engineers.",
+      "description": "At 17:20 Beijing time on October 17, 2026, a post describes research Robert Vähhi calls divergence: exploiting JavaScript-processor bugs so formatted or cleaned-up code behaves differently from the original. The reported demo plays Tetris before formatting and Snake afterward. An example changes '+ +m' to '++m', turning an expression that leaves m unchanged into an increment. The account says the demo chains differences into bytecode for a tiny virtual machine to change the entire game, and reports 186 techniques across more than 37 processors.\n\nThe concrete AI-reversing connection is a defensive idea: a human or agent cleans up a script and then spends time analyzing a still-functional decoy. A reconstructed anti-bot or anti-cheat client could consequently differ from the real script in ways a server might detect. This does not establish that a particular AI agent has been misled or that every formatter triggers the effect; the source explicitly makes it tool- and configuration-dependent. This entry is a secondary introduction to named research and a proposed application. Original demo code was not obtained, the 186 techniques were not independently reproduced, and server-side detection was not validated. REA involvement is unconfirmed.",
+      "metadata": ["Source published: October 17, 2026; 186 techniques and more than 37 processors are secondary reports.", "Related defensive research and an idea, not verified agent deception or a deployed anti-cheat system."],
+      "source_labels": ["Secondary account of divergence and its AI-reversing decoy application"]
+    }
+  },
+  {
+    "id": "three-model-binary-evidence-workflow-idea",
+    "title": "三模型二进制研究：函数图、双假说与原程序裁判的 idea",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "从自建 record.c 实验样本开始，让不同模型分工映射、解释和挑错；尚无可核实运行记录。",
+    "description": "2026年10月17日17:30（北京时间），发帖者提出一个可具体实施的二进制研究工作流，以自行编译的 samples/record.c 小型实验样本为起点，而不是声称已重建一款商业软件。规划中Sonnet 5.5先输出地址、角色、证据和置信度的函数图，Opus 5.5对难函数写出两种竞争解释与最少区分测试，再按需要请Fable 5.1寻找三种高影响错误。每条主张应标明OBSERVED、INFERRED或UNKNOWN，附地址、交叉引用或测试日志；参考行为来自原二进制，而不是让模型给自己的重建打分。\n\n第三模型只在两种解释仍成立、依赖链很长或关键构建前介入，意图减少高价模型浪费在列字符串等工作上。原帖列出Sonnet每百万输入/输出2/10美元、Opus 4/20、Fable 10/50，以及100K输入加10K输出约0.30/0.60/1.50美元的预算示例。这些只是帖中模型名称与报价设定，未核实服务是否提供这些型号或价格，也不是实际账单。未提供record.c全文、实验产物、日志、真实成本或成功率；收录的是分工与证据合同idea，不是已执行的基准或REA测试。",
+    "sources": [{"label": "三模型分工与证据合同提示词", "url": "https://x.com/i/status/2111389348339827041"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17；具体工作流idea，无样本全文或运行日志。", "模型名称、2/10、4/20、10/50美元报价与0.30/0.60/1.50美元预算来自帖子，未核实或实测。"],
+    "en": {
+      "title": "Three-model binary research: function maps, competing hypotheses and an original-binary oracle",
+      "summary": "An idea starts with a self-compiled record.c lab fixture and splits mapping, interpretation and criticism across models; no verifiable run is supplied.",
+      "description": "At 17:30 Beijing time on October 17, 2026, a poster proposes a concrete binary-investigation workflow starting with a small, self-compiled samples/record.c lab fixture, not a claimed commercial-software rebuild. In the proposed division, Sonnet 5.5 maps function addresses, roles, evidence and confidence; Opus 5.5 gives difficult functions two competing interpretations and minimal distinguishing tests; Fable 5.1 is called when needed to find three high-impact failure modes. Every claim should be marked OBSERVED, INFERRED or UNKNOWN and backed by an address, cross-reference or test log. Reference behavior comes from the original binary rather than a model grading its own reconstruction.\n\nThe third model is reserved for surviving alternative interpretations, long dependency chains or a high-stakes pre-build review, aiming to avoid expensive-model work on tasks such as listing strings. The post quotes USD 2/10 per million input/output tokens for Sonnet, 4/20 for Opus and 10/50 for Fable, with a budget example of about USD 0.30/0.60/1.50 for 100K input plus 10K output tokens. These are the source's model names and pricing assumptions, not confirmed provider offerings, prices or actual bills. No complete record.c source, artifacts, logs, measured cost or success rate is supplied. What is collected is a division-of-work and evidence-contract idea, not an executed benchmark or REA test.",
+      "metadata": ["Source published: October 17, 2026; a concrete workflow idea without full fixture source or run logs.", "Model names, USD 2/10, 4/20, 10/50 quotes and USD 0.30/0.60/1.50 budgets come from the post, not verified pricing or measurements."],
+      "source_labels": ["Three-model division of work and evidence-contract prompt"]
+    }
+  },
+  {
+    "id": "resident-evil2-ds-rea-port-report",
+    "title": "Resident Evil 2 到 Nintendo DS：REA 与 Claude Code 的未完成移植转述",
+    "category": "games",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "程序社区转述有人用 REA 与 Claude Code 制作 DS 移植，仍未完成并寻求帮助。",
+    "description": "2026年10月17日17:38（北京时间），Hong Kong Programming Society（@hkprogsociety）发布一个Resident Evil 2到Nintendo DS的移植入口，称由Reverse Engineer Anything构建。补读链接指向的World Programming Society同日聚合页面，完整标题补明使用REA与Claude Code，项目尚未100%完成，作者希望获得帮助；聚合页将原作者标作Reddit用户/u/No_Diet_6035。目标具体：把既有生化危机游戏移到DS，而非泛泛谈AI游戏开发。\n\n目前可读材料只有社区入口与聚合标题，没有读取到原Reddit完整讨论、仓库、反编译覆盖、设备运行记录、性能或画面验证，不能断言已能完整游玩，也不能识别原游戏版本、是否复用前人引擎或资产处理方式。状态仅表达来源报告的进行中，不是本合集复现；补充页面用于还原候选省略号后的项目阶段，不作为额外窗口候选。未下载或执行游戏与代码。",
+    "sources": [{"label": "本窗口的 DS 移植入口帖", "url": "https://x.com/i/status/2111391504912748568"}, {"label": "补读社区聚合页：完整标题、工具与未完成状态", "url": "https://www.worldprogramming.org/posts/a-port-of-resident-evil-2-for-the-nintendo-ds-built-by-reverse-engineer-anything-and-claude-code-its-still-not-100-finished-i-would-appreciate-help-ftbscm"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选与补充聚合页均发布于2026-10-17；仍未完成是来源自述。", "二手线索，无原帖全文、源码或DS运行验证，未独立复现。"],
+    "en": {
+      "title": "Resident Evil 2 on Nintendo DS: an unfinished REA and Claude Code port report",
+      "summary": "A programming community relays an REA/Claude Code DS port that is still unfinished and seeking help.",
+      "description": "At 17:38 Beijing time on October 17, 2026, Hong Kong Programming Society (@hkprogsociety) posts an entry for a Resident Evil 2 port to Nintendo DS, attributing it to Reverse Engineer Anything. Supplementary reading of the linked World Programming Society aggregation page, dated the same day, restores the full title: REA and Claude Code were used, the project is not 100% finished, and help is requested. The page attributes the original to Reddit user /u/No_Diet_6035. The concrete target is moving an existing Resident Evil game to DS, not generic AI game development.\n\nThe readable evidence currently consists only of the community entry and aggregation title. The original Reddit discussion, a repository, decompilation coverage, device-running records, performance and visual validation were not obtained. Complete playability cannot be asserted, nor can the original game version, reuse of prior engine work or asset-handling method be established. The status reflects the source's in-progress report, not reproduction by this collection. The supplementary page restores the stage omitted by the candidate's ellipsis and is not an additional in-window candidate. No game or code was downloaded or executed.",
+      "metadata": ["Candidate and supplementary aggregation page both published on October 17, 2026; unfinished status is source-reported.", "Secondhand lead without original-post body, source code or DS runtime validation; not independently reproduced."],
+      "source_labels": ["In-window DS port entry post", "Supplementary community aggregation: full title, tools and unfinished status"]
+    }
+  },
+  {
+    "id": "starshield-signal-rea-idea",
+    "title": "Starshield 信号：读者询问能否用 REA 研究频率的 idea",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "一个面向 Starshield 信号频率的 REA 适用性提问，没有实施、信号数据或可行性验证。",
+    "description": "2026年10月17日17:56（北京时间），发帖者向@FedorovMykhailo提出，乌克兰能否把“REA AI”用于Starshield信号频率，让它变得无法阻止使用。Starshield在此是被点名的卫星通信系统目标；可记录的是具体通信研究设想，而不是已开始的设备逆向或信号实验。\n\n原句对期望效果的表述含糊，没有说明接收设备、频段、采样、协议、模型、授权条件或分析步骤，也没有报告结果。不能把一条适用性提问推演成抗干扰能力、解除访问限制或可用通信实现；REA是否适合该类射频工作本身也未验证。未访问通信系统、运行工具或独立测试，保留为未核实idea。",
+    "sources": [{"label": "读者对 Starshield 信号频率提出的 REA 问题", "url": "https://x.com/i/status/2111395824991097074"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17；只有具体目标提问，无实施与可行性证据。"],
+    "en": {
+      "title": "Starshield signals: a reader's idea to investigate frequencies with REA",
+      "summary": "A specific REA applicability question about Starshield signal frequencies, without implementation, signal data or feasibility evidence.",
+      "description": "At 17:56 Beijing time on October 17, 2026, a poster asks @FedorovMykhailo whether Ukraine could use 'REA AI' on Starshield signal frequencies to make their use unstoppable. Starshield is the named satellite-communications target here. What can be recorded is a specific communications-investigation idea, not an initiated device-reversing project or signal experiment.\n\nThe desired effect is ambiguously phrased. The source specifies no receiver, frequency band, samples, protocol, model, authorization conditions or analysis steps, and reports no result. An applicability question cannot establish anti-jamming capability, removal of access restrictions or a working communications implementation. REA's suitability for this radio-frequency work is itself untested. No communications system was accessed and no tools or independent tests were run; the idea remains unverified.",
+      "metadata": ["Source published: October 17, 2026; a specific-target question only, without implementation or feasibility evidence."],
+      "source_labels": ["Reader's REA question about Starshield signal frequencies"]
+    }
+  },
+  {
+    "id": "windows-kernel-rea-free-os-idea",
+    "title": "Windows 内核：用 REA 研究免费操作系统的招募 idea",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "发帖者招募合作者逆向 Windows 内核并制作免费系统；没有源码恢复或系统构建成果。",
+    "description": "2026年10月17日18:34（北京时间），发帖者询问谁愿意一起用REA逆向Windows内核，期望“获取源代码”后做一个免费的操作系统。目标是内核级研究与独立系统构建，区别于已有Windows图形启动DLL剖析idea；来源没有给出Windows版本、选定子系统、代码、启动实验或团队已经开工的证据。\n\n“获取源代码”是发帖者的愿望，不是REA已恢复微软原始源码的事实。反编译或行为分析得到的结果也不能自动视为原始源码、完整兼容内核或可分发系统。收录这条明确目标的协作设想，不保证技术或许可可行性，不把招募升级成已实现的免费Windows替代品；本合集没有运行目标、编译内核或独立验证。",
+    "sources": [{"label": "Windows 内核 REA 研究与免费系统招募", "url": "https://x.com/i/status/2111405429486211272"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17；招募idea，无Windows版本、源码或启动记录。", "原始源码恢复与免费系统均为期望，不是已实现能力。"],
+    "en": {
+      "title": "Windows kernel: an REA collaboration idea for a free operating system",
+      "summary": "A poster seeks collaborators to investigate the Windows kernel and build a free OS, without recovered source or a system build.",
+      "description": "At 18:34 Beijing time on October 17, 2026, a poster asks who would join an REA investigation of the Windows kernel, hoping to 'get the source code' and then make a free operating system. The target is kernel-level research and an independent system, distinct from the existing idea about analyzing Windows graphical-startup DLLs. The source provides no Windows version, selected subsystem, code, boot experiment or evidence that a team has begun work.\n\n'Getting the source code' is the poster's aspiration, not evidence that REA has recovered Microsoft's original source. Decompilation or behavioral analysis does not automatically establish original source, a fully compatible kernel or a distributable system. This records a collaboration idea with a specific target, without guaranteeing technical or licensing feasibility or promoting recruitment to a completed free Windows replacement. No target was run, kernel compiled or result independently verified here.",
+      "metadata": ["Source published: October 17, 2026; a recruitment idea without Windows version, source or boot records.", "Original-source recovery and a free OS are aspirations, not demonstrated capabilities."],
+      "source_labels": ["Recruitment for Windows-kernel REA research and a free OS"]
+    }
+  },
+  {
+    "id": "prime-tvos-universal-link-ghidra-report",
+    "title": "Amazon Prime tvOS：研究 IPA 的 Universal Link，让自己的 App 跳到节目页",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "Xiao 自述用 RAE + Ghidra 找到 tvOS IPA 的链接格式并接入自己的 App，同时报告磁盘占满使 Codex 受阻。",
+    "description": "2026年10月17日19:51（北京时间），Xiao（@im_xiaoxiao）报告用“RAE+ghidra”分析Amazon Prime的tvOS IPA，找到了该应用支持的Universal Link格式，称自己的App现在可以直接跳到对应动画节目的播放页。逆向用于发现跨应用深链接接口，不是解密视频、绕过订阅或重建整个Prime客户端。原帖写的是RAE而非REA，工具身份没有进一步确认，因此不自行纠正其拼写并据此标为REA实测；正文同时明确出现Codex参与工作环境。\n\n作者还报告RAE或Ghidra中的某一方每分钟消耗10G磁盘，最终占满电脑，导致Codex无法执行，自己手动分析磁盘占用才定位问题。故障归属、10G的单位口径与增长机制未核实，不扩展为Ghidra或REA的普遍缺陷。帖子没有公开链接格式、IPA版本、代码、操作视频或跳转验证记录，所称成功仅是作者自述；不能推断所有节目或tvOS版本兼容。本合集补查原帖确认作者与完整文字，未执行IPA或独立复现。",
+    "sources": [{"label": "Xiao 的 Prime tvOS 深链接研究与磁盘故障自述", "url": "https://x.com/i/status/2111424789827228006"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17 19:51，北京时间；原文工具名RAE，不自动改为REA。", "跳转成功及每分钟10G磁盘消耗均为作者报告，无公开实现与测试记录。"],
+    "en": {
+      "title": "Amazon Prime tvOS: investigating IPA Universal Links to open shows from a personal app",
+      "summary": "Xiao reports using RAE and Ghidra to find a tvOS IPA's deep-link format, alongside disk exhaustion that blocked Codex.",
+      "description": "At 19:51 Beijing time on October 17, 2026, Xiao (@im_xiaoxiao) reports analyzing Amazon Prime's tvOS IPA with 'RAE+ghidra', finding its supported Universal Link format and enabling a personal app to jump directly to an animated show's playback page. Reverse engineering serves cross-app deep-link discovery, not video decryption, subscription bypass or a complete Prime-client rebuild. The post says RAE rather than REA and does not further establish the tool's identity, so the spelling is not silently corrected or treated as a confirmed REA test. Codex is explicitly mentioned in the working environment.\n\nThe author also reports that either RAE or Ghidra consumed 10G of disk per minute until the computer filled up and Codex could no longer execute, requiring manual disk-usage investigation. Attribution, the unit convention behind 10G and the growth mechanism are unverified; this is not generalized into a Ghidra or REA defect. No link format, IPA version, code, demonstration or jump-validation record is published in the post. Success remains author-reported, without implying compatibility with every show or tvOS version. Supplementary original-post reading confirms the author and full wording; no IPA was executed or independently reproduced here.",
+      "metadata": ["Source published: October 17, 2026, 19:51 Beijing time; the tool is written RAE, not silently changed to REA.", "Successful navigation and 10G-per-minute disk growth are author reports without public implementation or test records."],
+      "source_labels": ["Xiao's Prime tvOS deep-link investigation and disk-failure account"]
+    }
+  },
+  {
+    "id": "claude-codex-limits-topbar-rea-report",
+    "title": "Claude / Codex 额度：REA 辅助放进电脑顶栏的自述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Dhananjay_Tech 称把两种 Agent 的实时额度和正在进行的工作放进顶栏，未公开数据链路与代码。",
+    "description": "2026年10月17日19:59（北京时间），@Dhananjay_Tech赞许REA，并称已把自己的Claude与Codex实时使用额度、AI Agent正在做的工作放在电脑顶栏。具体用途是工作期间无需反复打开客户端即可查看额度与任务状态；原帖附三张图片，补查原帖确认作者及附件存在，但本合集没有据图片推断未写出的功能。\n\n来源没有说明分析了哪个客户端或接口、额度如何获取与刷新、任务状态的定义、使用的模型、代码仓库或准确性测试。不能由顶栏展示反推已破解计费、控制付费权限、取得隐藏API或完整逆向Claude/Codex。这里保留REA相关的作者实现自述，不确认具体技术链路、跨平台支持或状态实时性，未独立运行与验证。",
+    "sources": [{"label": "作者的 Claude / Codex 额度与任务顶栏展示帖", "url": "https://x.com/i/status/2111426952162947310"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["来源发布：2026-10-17 19:59，北京时间；作者称使用REA。", "附图不等于接口或准确性验证；没有公开代码与独立测试。"],
+    "en": {
+      "title": "Claude and Codex limits: an REA-assisted top-bar display report",
+      "summary": "Dhananjay_Tech reports displaying live limits and agent activity in the desktop top bar, without publishing the data path or code.",
+      "description": "At 19:59 Beijing time on October 17, 2026, @Dhananjay_Tech praises REA and says he has put his live Claude and Codex limits and the work his AI agent is doing in the desktop top bar. The concrete use is checking limits and task status during work without repeatedly opening clients. The post includes three images; a supplementary lookup confirms the author and attachments, but this collection does not infer unstated functionality from them.\n\nThe source does not identify the investigated client or interface, how limits are obtained and refreshed, what task status means, the model used, a code repository or accuracy tests. A top-bar display does not establish billing-system compromise, control over paid access, discovery of a hidden API or full Claude/Codex reverse engineering. This retains an author-reported REA-related implementation, without confirming its technical data path, cross-platform support or real-time accuracy. It was not independently run or validated.",
+      "metadata": ["Source published: October 17, 2026, 19:59 Beijing time; author attributes the work to REA.", "Attached images do not validate the interface or accuracy; no public code or independent tests."],
+      "source_labels": ["Author's Claude/Codex limits and task top-bar display post"]
+    }
+  },
+  {
+    "id": "llvm-abi-llm-research-report",
+    "title": "LLVM ABI：gingerBill 用 LLM 研究未文档化内部的自述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "补读父串识别目标为 LLVM 的调用约定和 IR 之外内部；作者称 LLM 有帮助，但大量上下文仍不足以免除困难。",
+    "description": "2026年10月17日17:58（北京时间），gingerBill（@TheGingerBill）回复说AI/LLM现在确实帮助了“这项逆向”，但即便给大量上下文，仍会难以理解实现。单看候选并不知道目标；补读作者串后，确认讨论的是LLVM编译器基础设施，尤其ABI调用约定的处理、ABI lowering以及中间表示IR以下或之外的内部行为。作者称相关文档不足，自己不得不逆向不少实现，并说有人把Odin的ABI代码当作参考。\n\n这里的逆向是为了理解与集成一个已有编译器库，而非破解闭源应用；开源并不代表内部契约已有可用文档。作者抱怨版本变化、回归、编译耗时与堆分配，并想要更快更省内存的替代方案，但没有声称已经做出替代编译器。候选只支持LLM参与研究且仍有困难，不提供模型名、提示词、具体修复提交或可量化效果，不能把串中ABI解释视为本合集验证的LLVM缺陷。父帖为同日补充上下文，不作为额外候选；未确认REA，未运行或复现编译器。",
+    "sources": [{"label": "gingerBill 关于 LLM 辅助逆向及困难的原回复", "url": "https://x.com/i/status/2111396413066363009"}, {"label": "补读作者串：LLVM ABI 与 Odin 参考背景", "url": "https://x.com/i/status/2111395850471592274"}, {"label": "补读父回复：IR 之外文档与逆向需求", "url": "https://x.com/i/status/2111396216508383268"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选与目标识别父帖均发布于2026-10-17；父帖只补充上下文。", "LLM协助与仍然困难均为作者报告，无模型、修复提交或性能量化；REA未确认。"],
+    "en": {
+      "title": "LLVM ABI: gingerBill's account of using LLMs to investigate undocumented internals",
+      "summary": "Parent-thread reading identifies LLVM calling conventions and internals beyond IR; the author says LLMs help but still struggle despite extensive context.",
+      "description": "At 17:58 Beijing time on October 17, 2026, gingerBill (@TheGingerBill) says AI/LLMs have helped with 'this reverse engineering' but still struggle to understand implementations even when supplied extensive context. The candidate alone does not identify the target. Supplementary author-thread reading establishes LLVM compiler infrastructure, especially ABI calling-convention handling, ABI lowering and internal behavior below or beyond the intermediate representation, IR. He says documentation is insufficient, he had to reverse-engineer much of it, and people have used Odin's ABI code as a reference.\n\nThe investigation serves understanding and integrating an existing compiler library, not cracking a closed-source application; open source does not mean its internal contracts are adequately documented. The author criticizes version changes, regressions, compile time and heap allocation and wants a faster, lower-memory alternative, but does not claim to have built a replacement compiler. The candidate supports only LLM participation and continuing difficulty. It supplies no model name, prompt, specific fix commit or quantified improvement, and the thread's ABI account is not a collection-verified LLVM defect. Same-day parent posts provide context rather than extra candidates. REA is unconfirmed and no compiler was run or independently reproduced.",
+      "metadata": ["Candidate and target-identifying parent posts all published on October 17, 2026; parents provide context only.", "LLM assistance and continuing difficulty are author reports without a model, fix commit or quantified performance; REA is unconfirmed."],
+      "source_labels": ["gingerBill's original reply about LLM-assisted reversing and difficulty", "Supplementary author thread: LLVM ABI and Odin reference", "Supplementary parent: documentation beyond IR and the need for investigation"]
     }
   }
 ]
