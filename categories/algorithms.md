@@ -35,3 +35,5 @@
 - [NIST ECDSA 曲线：Claude 追溯公开参数的随机生成过程](../cases/nist-ecdsa-origin-claude-report.md) — Anthropic 报告从公开曲线种子识别 lrand48 与时间戳，并公开重算代码；不是破解 ECDSA。 **[其他 AI 逆向 · 分析测试]**
 - [Base 套利合约：REA + Opus 字节码分析的待验证报告](../cases/base-arbitrage-bytecode-rea-opus-report.md) — 帖子描述从未验证 EVM 合约恢复跨池套利与 Solidity，但没有地址、偏移或回放证据。 **[REA · 待验证]**
 - [游戏函数匹配器：错误常量仍通过检查的审计转述](../cases/rea-game-function-matcher-audit-report.md) — 转述多模型接力重建三段游戏函数，以及审计发现指令匹配漏看地址背后数据的问题。 **[REA · 分析测试]**
+- [吉他效果器：先模拟原固件，再对照独立 C++ 算法库](../cases/valdiorn-audio-effects-firmware-report.md) — valdiorn 自述用 Opus 5.5 研究 Big Sky 等效果器，以固件模拟器对照 C++ 输出；没有公开库或测量记录。 **[其他 AI 逆向 · 待验证]**
+- [731 个函数：SPEC 隔离与四个负例的 REA 重建自述](../cases/rea-731-functions-cleanroom-self-report.md) — 作者称 REA 写行为规格、新 Opus 会话重建并先写测试，九天内731函数中729精确匹配；程序与日志未公开。 **[REA · 待验证]**

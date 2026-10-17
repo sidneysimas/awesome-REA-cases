@@ -6,9 +6,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-## 356 cases & projects
+## 366 cases & projects
 
-**Latest case update / maintenance:** October 17, 2026, 12:09 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 17, 2026, 16:03 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -28,7 +28,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 4. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
 5. **[Gears of War 3](cases/en/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI-assisted Linux graphics work through **mechanical PowerPC-to-C++ translation, not recovered original source**. The reported 4K WIP still drops frames in combat. `In progress`
 6. **[ArkWeb: Spider-Man in Gotham](cases/en/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — Run two owned games together, stream collision and composite the character. Public code and Claude setup guidance; **experimental, version-bound, REA use unconfirmed**. `In progress`
-7. **[Computer + REA: five app demos](cases/en/computer-rea-five-app-rebuild-demos.md)** · `2026-10-17` — Design, spreadsheets, images, contracts and audio. A reader reports **only partial Figma features in Assemblage**; official demos are not verified replacements. `REA · Unverified`
+7. **[Guitar effects: firmware to C++](cases/en/valdiorn-audio-effects-firmware-report.md)** · `2026-10-15` — A pedal maker reports using Claude to **emulate original firmware, then compare a standalone library**, including Big Sky research. The original comment is traceable; code and comparison logs are not public. `Unverified`
 8. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — **A native port from decompiled code, not static recompilation**, according to the author. Visual defects remain; November 20 is a release plan. `In progress`
 9. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
 10. **[Test the CSV evaluator first](cases/en/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — Three deliberately broken exporters reportedly passed simple tests; **215 byte comparisons** exposed them. A useful acceptance-testing experiment, without published test inputs or code. `REA test`
@@ -46,10 +46,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **78** |
-| [Hardware & interoperability](categories/en/hardware.md) | **82** |
-| [Applications & clients](categories/en/apps.md) | **163** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **33** |
+| [Games & preservation](categories/en/games.md) | **79** |
+| [Hardware & interoperability](categories/en/hardware.md) | **83** |
+| [Applications & clients](categories/en/apps.md) | **169** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **35** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

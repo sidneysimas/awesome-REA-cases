@@ -6,9 +6,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-## 356 个案例与项目
+## 366 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 17 日 12:09 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 17 日 16:03 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -28,7 +28,7 @@
 4. **[NJFE：把耳镜接到电脑](cases/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude 辅助 USB 桥接，让廉价 Wi-Fi 相机成为检查镜，**复用前人 otoscope 协议研究**；项目只测一台设备，相机 Wi-Fi 仍开放。`公开实现`
 5. **[Gears of War 3](cases/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI 辅助 Linux 图形研究，采用 **PowerPC 到 C++ 的机械翻译，不是恢复原始源码**；报告的 4K 版本仍有战斗掉帧。`进行中`
 6. **[ArkWeb：蜘蛛侠在 Gotham 摆荡](cases/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — 两款自有游戏同时运行，传递碰撞并合成角色画面；有公开代码和 Claude 安装引导，**实验性、绑定版本，未确认使用 REA**。`进行中`
-7. **[Computer + REA：五款应用演示](cases/computer-rea-five-app-rebuild-demos.md)** · `2026-10-17` — 设计、表格、图片、合同与音频；读者称 **Assemblage 仅有部分 Figma 功能**，官方演示不是已验证的替代品。`REA · 待验证`
+7. **[吉他效果器：从固件到 C++](cases/valdiorn-audio-effects-firmware-report.md)** · `2026-10-15` — 效果器厂商自述让 Claude **先模拟原固件，再对照独立算法库**，包括 Big Sky 研究；已追到原评论，但代码与对照日志未公开。`待验证`
 8. **[Sonic 3D Blast：先重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — 作者澄清是**从反编译代码构建原生移植，不是静态重编译**；画面缺陷仍在，11 月 20 日只是发行计划。`进行中`
 9. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-16` — 独立编辑器已有项目报告的导出与插件测试；**版权素材与 AI API 仍是卡点**，签名和平台限制也未消失。`进行中`
 10. **[先验证 CSV 验收器](cases/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — 作者称三个故意改坏的导出器通过简单测试，却被 **215 组字节对照**发现；有价值的验收实验，但未公开输入与代码。`REA 分析测试`
@@ -46,10 +46,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **78** |
-| [硬件与设备互通](categories/hardware.md) | **82** |
-| [应用与客户端](categories/apps.md) | **163** |
-| [算法与功能重建](categories/algorithms.md) | **33** |
+| [游戏与游戏保存](categories/games.md) | **79** |
+| [硬件与设备互通](categories/hardware.md) | **83** |
+| [应用与客户端](categories/apps.md) | **169** |
+| [算法与功能重建](categories/algorithms.md) | **35** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

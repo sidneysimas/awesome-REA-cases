@@ -10292,5 +10292,195 @@
       "metadata": ["Announcement candidate snapshot (2026-10-17): 31 likes, 557 views, 2 reposts; changing view counts during rereading do not overwrite it.", "Author benchmark, not independent reproduction; 74/75 differs from 75/75, and 36 runs are not 36 distinct targets."],
       "source_labels": ["LeanREA announcement and 36-run comparison claim", "Public project README", "Full benchmark and caveats in the initial commit", "Reader question: were installation-approval delays timed?", "Reader question: matched batching and output caps"]
     }
+  },
+  {
+    "id": "mise-ghidra-claude-rules",
+    "title": "MISE.exe：Claude 用 Ghidra 提取规则而不是猜截图",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者转述 Claude 正让 Agent 反编译 MISE.exe，以匹配 SE 的具体规则；尚无完成结果。",
+    "description": "2026年10月17日12:24（北京时间），Wojciech Wojtyniak（@wwojtyniak）记录了一次实现方向纠正：他建议 Claude 实际反编译二进制，不要猜它如何工作。引述的 Claude 回答称，一个 Agent 已在用 Ghidra 反编译 MISE.exe，目的是提取精确规则、匹配 SE，而不是凭截图目测。可辨目标是该可执行文件；帖子没有展开 MISE 或 SE 的全名，因此不擅自指定游戏版本或功能。\n\n补读父帖（同日10:57）只有 Claude 先估数周、再改口两小时的对话，没有交付记录；两小时不是实际工时。原帖也没有反编译输出、恢复的规则、构建或游戏运行证据。本条记录作者转述的进行中分析，不证明后台 Agent 确实完成了 Ghidra 分析，也未确认使用 REA。",
+    "sources": [{"label": "作者记录 MISE.exe 与 Ghidra 分析任务", "url": "https://x.com/i/status/2111312368840126836"}, {"label": "补读父帖：估时对话，不是交付结果", "url": "https://x.com/i/status/2111290472974963005"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["MISE / SE 未由来源展开；进行中自述，未独立执行。"],
+    "en": {
+      "title": "MISE.exe: Claude proposes Ghidra-derived rules instead of screenshot guesses",
+      "summary": "The author quotes Claude saying an agent is decompiling MISE.exe to match the SE's exact rules; no completed result is shown.",
+      "description": "At 12:24 Beijing time on October 17, 2026, Wojciech Wojtyniak (@wwojtyniak) documents a correction in implementation strategy: he suggests that Claude actually decompile the binary rather than guess how it works. The quoted response says an agent is already decompiling MISE.exe with Ghidra to extract exact rules and match the SE instead of eyeballing screenshots. The executable is identifiable, but the post does not expand MISE or SE, so no specific game edition or feature is inferred.\n\nA supplementary reading of the parent post, dated 10:57 the same day, shows only a conversation in which Claude changes an estimate from weeks to two hours, not a delivery record. Two hours is not measured effort. The candidate provides no decompiler output, recovered rules, build or gameplay evidence either. This entry records the author's account of ongoing analysis, not proof that a background agent completed the Ghidra work. REA use is unconfirmed.",
+      "metadata": ["The source does not expand MISE/SE; an in-progress account, not independently executed."],
+      "source_labels": ["Author's account of the MISE.exe Ghidra task", "Supplementary parent: an estimate conversation, not delivery evidence"]
+    }
+  },
+  {
+    "id": "valdiorn-audio-effects-firmware-report",
+    "title": "吉他效果器：先模拟原固件，再对照独立 C++ 算法库",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "valdiorn 自述用 Opus 5.5 研究 Big Sky 等效果器，以固件模拟器对照 C++ 输出；没有公开库或测量记录。",
+    "description": "10月17日13:33（北京时间），@RealYDT 转述吉他效果器厂商 valdiorn 的经历。补查 Hacker News 找到其原评论，发表于10月15日15:19:19 UTC（北京时间23:19），早于本轮候选窗口，仅作为追溯来源。valdiorn 称自己经营小型专业音频公司，正在制作类似 Eventide H90 的多效果处理器，希望提供混响、延迟、合唱等算法；H90 是产品目标，不是已证明被反编译的对象。\n\n他自述过去72小时研究了三家主要竞争者的产品，包括 Strymon Big Sky，并称 Opus 5.5 用一个提示、三小时完成相关反编译。方法是先让 Claude 构建模拟器运行原厂固件／ROM，避免只是生成听起来相似的效果，再转为独立 C++ 库并与模拟器结果比较。他称全部试听很好；Lexicon 224 部分复用了 Claude 找到的一周前公开在 GitHub 的既有代码，另称整个 Ursa Major 产品线只需20分钟。这些时间不能相加成可复现的统一项目工时，也不能把复用代码写成模型独自恢复。\n\n原评论确认了转述的基本内容，但未公开模拟器、C++ 库、固件版本、测试向量或数值／听音对照记录；未核实所指 Lexicon 仓库。没有证据证明位精确、完整覆盖竞争者产品或已上市。作者同时表达担忧，并说不会把竞争者算法装盒转售；不能将研究自述写成已获商业授权。本合集未运行固件或代码，未确认使用 REA。",
+    "sources": [{"label": "窗口内中文转述", "url": "https://x.com/i/status/2111329818914791727"}, {"label": "补充原评论：valdiorn 的方法、工时与限制", "url": "https://news.ycombinator.com/item?id=50104955"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["原评论日期：2026-10-15 23:19，北京时间；本轮候选为10月17日转述。", "作者报告模拟器对照与试听，非公开可复现测试，也不证明商业使用权。"],
+    "en": {
+      "title": "Guitar effects: emulate the original firmware, then compare a standalone C++ library",
+      "summary": "valdiorn reports using Opus 5.5 on Big Sky and other effects, comparing C++ output to firmware emulation; no library or measurement logs are public.",
+      "description": "At 13:33 Beijing time on October 17, @RealYDT recounts guitar-effects maker valdiorn's experience. Supplementary Hacker News research located the original comment, dated October 15 at 15:19:19 UTC, or 23:19 Beijing time. It predates this candidate window and is used only as a traced source. valdiorn says they run a small professional-audio company and are building an Eventide H90-like multi-effects processor with reverb, delay and chorus algorithms. The H90 is the intended product benchmark, not an established decompilation target.\n\nThey report studying three main competitors' products in the preceding 72 hours, including Strymon Big Sky, and say Opus 5.5 handled the relevant decompilation with one prompt in three hours. The method was to ask Claude to build an emulator executing original firmware/ROM, rather than merely generate similar-sounding effects, then convert the logic into a standalone C++ library and compare results against the emulator. They say all sounded excellent. For Lexicon 224, Claude reused code it found on GitHub from a week earlier; the entire Ursa Major range allegedly took 20 minutes. These figures cannot be added into a reproducible overall project duration, nor can reused code be credited as independently recovered by the model.\n\nThe original comment confirms the gist of the retelling but publishes no emulator, C++ library, firmware versions, test vectors or numerical/listening comparison logs. The referenced Lexicon repository was not identified. There is no evidence of bit-exact equivalence, complete competitor-product coverage or a shipped product. The commenter expresses concern and says they will not box and resell competitors' algorithms; the research account does not establish commercial permission. This collection ran no firmware or code, and REA use is unconfirmed.",
+      "metadata": ["Original comment: October 15, 2026, 23:19 Beijing time; the in-window candidate is an October 17 retelling.", "Author-reported emulator comparisons and listening, not a publicly reproducible test or proof of commercial rights."],
+      "source_labels": ["In-window Chinese retelling", "Supplementary original: valdiorn's method, timing and limits"]
+    }
+  },
+  {
+    "id": "retroscope-local-llm-rom-assist",
+    "title": "RetroScope：用本地 LLM 辅助查看 ROM 指令引用",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者正把断点寄存器、ROM 与指令交给 Python，找引用目标地址的其他指令；目前仅支持绝对地址。",
+    "description": "2026年10月17日13:44（北京时间），なごみ（@141_80_call）报告正在实现本地 LLM 分析助手 RetroScope。具体流程是把断点时的寄存器、ROM 和指令等信息交给 Python，挑出引用目标地址的其他指令，帮助分析已有程序中的地址关联，而不是只靠模型猜测。作者明确说当前只能搜索绝对地址，精度还不够，并提到 Ghidra 类工具作为对照。\n\n来源附有截图，但没有公开仓库、模型型号、完整数据流、目标 ROM 名称或准确率测量。不能据此声称支持相对寻址、完整控制流、自动反编译或已替代 Ghidra。本条按具名进行中工具收录，本地 LLM 的角色以作者描述为限；没有安装或运行软件，未确认 REA。",
+    "sources": [{"label": "作者的 RetroScope 实现进度", "url": "https://x.com/i/status/2111332462811087061"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["仅绝对地址检索；未公开准确率或可运行产物，未独立验证。"],
+    "en": {
+      "title": "RetroScope: a local-LLM assistant for ROM instruction references",
+      "summary": "The author feeds breakpoint registers, ROM and instructions to Python to find other instructions referring to a target address; only absolute addresses work so far.",
+      "description": "At 13:44 Beijing time on October 17, 2026, なごみ (@141_80_call) reports implementing RetroScope, a local-LLM analysis assistant. The concrete workflow feeds breakpoint-time registers, ROM and instructions to Python and picks out other instructions referring to a target address, helping inspect address relationships in an existing program rather than relying solely on model guesses. The author explicitly says searching only works with absolute addresses so far, accuracy remains inadequate, and mentions Ghidra-like tools as a comparison.\n\nThe source includes a screenshot but no public repository, model identity, full data flow, target ROM name or accuracy measurement. It does not establish relative-address handling, complete control flow, automatic decompilation or replacement of Ghidra. This is a named tool in progress, with the local LLM's role limited to the author's description. No software was installed or run, and REA use is unconfirmed.",
+      "metadata": ["Absolute-address search only; no published accuracy or runnable artifact, not independently verified."],
+      "source_labels": ["Author's RetroScope implementation update"]
+    }
+  },
+  {
+    "id": "china-mobile-number-selection-ai-protocol",
+    "title": "中国移动 App：AI 研究选号页与接口，准备本地筛选号码",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称在 root 安卓上开启无线调试，让 AI 测试选号接口，20多分钟后识别页面与协议；未给模型或代码。",
+    "description": "2026年10月17日14:06（北京时间），@leeking420 说家人想申请备用中国移动号码，不满意 App 里可选号码及靓号划分，于是让 AI 帮忙研究选号流程。他报告在 root 安卓上打开 App、开启无线 USB 调试，让 AI 自行测试接口，20多分钟后得到选号页地址与接口协议，下一步准备抓取号码后本地筛选，再开卡。\n\n这是作者关于具体 App 协议研究的报告，不是本合集访问运营商接口的结果。帖子没有模型、工具链、接口定义、代码或可核验日志，也没有证明号码已全部抓取或开卡成功。不推定 REA 参与、授权范围、绕过限制或号码可用性；不发布用户数据和接口调用细节。",
+    "sources": [{"label": "作者关于选号页协议研究的自述", "url": "https://x.com/i/status/2111337934406484446"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["20多分钟为作者自报；模型未说明，后续抓取与开卡不是已证实结果。"],
+    "en": {
+      "title": "China Mobile app: AI investigates number-selection pages and protocols for local filtering",
+      "summary": "A user reports testing selection APIs through wireless debugging on rooted Android, identifying the page and protocol in over 20 minutes; no model or code is given.",
+      "description": "At 14:06 Beijing time on October 17, 2026, @leeking420 says a family member wanted a spare China Mobile number but disliked the app's choices and premium-number classification, so they asked AI to investigate selection. They report opening the app on rooted Android, enabling wireless USB debugging and letting AI test APIs. After over 20 minutes it allegedly identified the selection-page address and protocol; the intended next step was collecting numbers for local filtering before activating one.\n\nThis is an author's account of protocol research on a specific app, not this collection accessing carrier APIs. The post gives no model, toolchain, interface specification, code or verifiable logs, and does not establish that all numbers were collected or activation succeeded. REA involvement, authorization scope, bypasses and number availability are not inferred. No user data or API-calling details are published here.",
+      "metadata": ["Over 20 minutes is author-reported; model unspecified, later collection and activation are not established results."],
+      "source_labels": ["Author's account of number-selection protocol research"]
+    }
+  },
+  {
+    "id": "roku-tv-claude-firmware-blocker",
+    "title": "Roku 电视：Claude 称锁定启动链阻止修改固件的受阻尝试",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "读者想把电视改造方法用于 Roku，但转述 Claude 说 bootloader 锁定；没有设备测试或固件产物。",
+    "description": "2026年10月17日14:51（北京时间），一位回复 @DCinvestor 的读者询问相关电视改造能否用于 Roku TV，并说 Claude 告诉自己 Roku 锁定 bootloader，因此无法更换固件。本条记录明确设备家族与固件修改目标下的一次受阻咨询，而不是成功逆向。\n\n来源没有型号、固件版本、启动链分析、实际连接设备的日志或替代实现，也没有独立证据证明所有 Roku 设备都不能修改。锁定与不可行都是读者转述的模型判断，不作为硬件安全定论；不推定具体去广告或移除追踪已经完成。未确认使用 REA，未执行任何设备操作。",
+    "sources": [{"label": "读者转述 Claude 对 Roku 固件的限制判断", "url": "https://x.com/i/status/2111349282745757858"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["受阻咨询；无型号与实机测试，不把模型拒绝升级为普遍不可行。"],
+    "en": {
+      "title": "Roku TV: a firmware-modification inquiry blocked by Claude's bootloader assessment",
+      "summary": "A reader asks whether a TV modification works on Roku and quotes Claude saying its bootloader is locked; no device test or firmware artifact is shown.",
+      "description": "At 14:51 Beijing time on October 17, 2026, a reader replying to @DCinvestor asks whether a TV modification could be used on Roku TV and says Claude told them Roku locks the bootloader, making firmware replacement impossible. This records a blocked inquiry with an identifiable device family and firmware-modification goal, not successful reverse engineering.\n\nThe source gives no model, firmware version, boot-chain analysis, real-device logs or alternative implementation. There is no independent evidence that every Roku device is unmodifiable. Both the lock and impossibility are the reader's account of a model assessment, not a hardware-security conclusion. No completed ad/tracking removal is inferred. REA use is unconfirmed and no device operation was performed.",
+      "metadata": ["Blocked inquiry; no model or device testing, and a model response is not universal proof of impossibility."],
+      "source_labels": ["Reader's account of Claude's Roku firmware assessment"]
+    }
+  },
+  {
+    "id": "serein-grok-nine-bot-rea-workflow",
+    "title": "Serein 九 Bot 工作流：REA 行为规格交给隔离 Builder",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "转述 Grok 云电脑里九个专职 Bot 的产品流程，以 REA 提取行为、SPEC.md 和隔离构建衔接；没有独立验证。",
+    "description": "2026年10月17日15:54（北京时间），一则中文帖转述九个专职 Grok Bot 的每周产品开发流程，称原作者的 Mac 浏览器 Serein 由此做出。具体逆向环节是在 Grok 云电脑中把 REA 接为自定义 MCP：Behavior Reverser 只提取“用户动作→内部步骤→结果”的行为链，Spec Writer 整理为 SPEC.md，再交完全隔离的 Builder 编写代码和自动化测试，禁止导出私有源码。目的是把竞品功能研究转为独立实现的输入。\n\n流程还描述用文件与 HANDOFF.md 交接、上游标记 DONE 后下游才开始，并用市场差评、策略和分销指标决定是否继续。上述是来源对模板和作者实践的转述，不是本合集实际部署九 Bot 或验证隔离。没有读到原始长文、Serein 仓库、被研究的具体竞品、测试结果或运行记录；不能由“clean-room”标签推定隔离或法律合规已获证明，也不把定时任务模板当持续运行的证据。",
+    "sources": [{"label": "九 Bot、Serein 与 REA 规格交接的中文转述", "url": "https://x.com/i/status/2111365135143219711"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["二手流程报告；原长文与实现未核实，未运行 Bot 或调度。"],
+    "en": {
+      "title": "Serein's nine-bot workflow: pass REA behavior specifications to an isolated builder",
+      "summary": "A report describes nine specialist Grok bots using REA, SPEC.md and isolated construction in a product workflow; not independently verified.",
+      "description": "At 15:54 Beijing time on October 17, 2026, a Chinese post recounts a weekly product-development workflow with nine specialist Grok bots, saying the original author's Mac browser Serein was built with it. The reverse-engineering stage connects REA as a custom MCP in Grok's cloud computer. A Behavior Reverser extracts only user-action → internal-steps → result chains; a Spec Writer turns these into SPEC.md; a fully isolated Builder is then meant to write code and automated tests, with private source-code export prohibited. The goal is to turn competitor-feature research into input for an independent implementation.\n\nThe account also describes file/HANDOFF.md exchanges, downstream work starting only after an upstream DONE marker, and customer complaints, strategy and distribution metrics deciding whether to continue. These are the source's descriptions of templates and author practice, not this collection deploying nine bots or verifying isolation. The original long-form article, Serein repository, concrete competitor targets, test outcomes and execution logs were not checked. A clean-room label does not prove isolation or legal compliance, and scheduling templates are not evidence of continuous operation.",
+      "metadata": ["Secondhand workflow account; original article and implementation unverified, no bots or schedules run."],
+      "source_labels": ["Chinese account of nine bots, Serein and REA specification handoff"]
+    }
+  },
+  {
+    "id": "line-chrome-js-ai-tui-api",
+    "title": "Chrome 版 LINE：AI 阅读 JS 后制作 TUI 与消息 API",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "@cwh_tw 称让 AI 参考 Chrome 版 LINE 的 JavaScript，制作终端界面和 API，用于客户消息分析与发送。",
+    "description": "2026年10月17日15:59（北京时间），@cwh_tw 在 LINE 精简客户端讨论下补充自己的实际尝试：此前让 AI 参考 Chrome 版 LINE 的 JavaScript，做出 TUI（终端文字界面）和 API，并称现在 AI 正帮他分析客户消息、发送消息。作者说这份 JS 比较容易读，不需要很深入的逆向；因此本条准确记录已有客户端代码阅读与接口制作，不包装成破解 LINE 服务端。\n\n这是不同于既有 LINE Desktop 精简版 idea 的 Chrome 版本实践。来源未给仓库、工具或模型、认证处理、API 覆盖范围、运行日志或消息投递验证。作者听说 Chrome 版将关闭，并表示届时再请 AI 认真逆向；关闭时间与后续逆向都不是已确认事实。未确认 REA，也未访问客户消息、发送消息或独立复现。",
+    "sources": [{"label": "作者关于 Chrome LINE JS、TUI 与 API 的回复", "url": "https://x.com/i/status/2111366415639064608"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["客户端代码阅读的使用自述；无代码或投递验证，不证明服务端兼容性。"],
+    "en": {
+      "title": "Chrome LINE: AI reads JavaScript to build a TUI and messaging API",
+      "summary": "@cwh_tw says AI used Chrome LINE's JavaScript to make a terminal interface and API for analyzing and sending customer messages.",
+      "description": "At 15:59 Beijing time on October 17, 2026, @cwh_tw adds an actual attempt to a discussion of a lighter LINE client: they previously had AI refer to the Chrome version's JavaScript and make a TUI, a terminal text interface, plus an API. They say AI now helps analyze customer messages and send replies. The author calls this JS relatively easy to read and says deep reverse engineering was unnecessary; this is recorded as client-code reading and interface construction, not a LINE server compromise.\n\nThis Chrome-version practice differs from the existing LINE Desktop lightweight-client idea. No repository, tools/model, authentication handling, API coverage, execution logs or message-delivery checks are supplied. The author heard the Chrome version might close and plans more serious AI reverse engineering then; neither the closure date nor later research is established. REA use is unconfirmed. This collection accessed no customer messages, sent no messages and did not independently reproduce the work.",
+      "metadata": ["A usage account based on client-code reading; no code or delivery verification, not proof of server compatibility."],
+      "source_labels": ["Author's reply about Chrome LINE JS, a TUI and an API"]
+    }
+  },
+  {
+    "id": "kornas-reverse-engineering-assistant-report",
+    "title": "Reverse Engineering Assistant：按文件生成离线分析报告的框架宣传",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "Dan Kornas 介绍一个同缩写 REA 的框架，称支持文件检测与 Markdown／PDF／JSON 报告；仓库身份未核实。",
+    "description": "往期补审候选发表于2026年10月17日06:59（北京时间），Dan Kornas 介绍名为 Reverse Engineering Assistant（REA）的自主逆向框架，目标是让研究二进制、固件等材料的开发者不用先拼装许多工具。宣传的命令为 rea <file>，按内容识别格式，在目标旁输出 Markdown、PDF 和 JSON 报告；称支持二进制、固件、WebAssembly、SQLite、PCAP／HAR、source maps，静态报告涵盖适用的哈希、熵、导入导出与缓解机制。\n\n帖子还称不用 AI API key 或联网也能退回确定性离线报告，并标为 MIT 开源。补读同作者回复确认提供了 GitHub 短链，但未识别仓库或检查实现，没有具体目标分析与测试记录。本轮将明确具名且有具体用途的工具宣传作为相关项目收录，不再仅因仓库未解而搁置；所有功能均保留宣传归因。Assistant 不能据同缩写混为 morluto 的 Reverse Engineer Anything，也没有证据将它归给 ReVa。离线报告不等于 LLM 完成语义恢复，未独立运行或确认其实际 AI 集成。",
+    "sources": [{"label": "Dan Kornas 的 Assistant 框架介绍（往期补审）", "url": "https://x.com/i/status/2111230457568227404"}, {"label": "同作者 GitHub 入口回复，仓库尚未核实", "url": "https://x.com/i/status/2111230627877908914"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["原 source window：10月17日04:00–08:00，北京时间；不是本轮新帖。", "具名工具宣传，MIT 与功能未核对仓库；不等同 morluto REA。"],
+    "en": {
+      "title": "Reverse Engineering Assistant: a framework advertised for offline file-analysis reports",
+      "summary": "Dan Kornas describes a framework also abbreviated REA, advertising file detection and Markdown/PDF/JSON reports; its repository identity is unverified.",
+      "description": "This deferred candidate was posted at 06:59 Beijing time on October 17, 2026. Dan Kornas introduces an autonomous framework called Reverse Engineering Assistant, abbreviated REA, for developers inspecting binaries, firmware and other artifacts without first assembling many tools. Its advertised command is rea <file>, detecting format from content and writing Markdown, PDF and JSON reports beside the target. Claimed inputs include binaries, firmware, WebAssembly, SQLite, PCAP/HAR and source maps, with applicable hashes, entropy, imports/exports and mitigations in static reports.\n\nThe post also advertises deterministic offline fallback reports without an AI API key or network and calls it MIT open source. Supplementary reading confirms a GitHub short-link reply by the same author, but the repository and implementation were not identified or inspected, and there are no concrete target-analysis tests. This review admits a named tool with a specific use as a related project rather than deferring solely for an unresolved repository; every feature remains attributed advertising. Assistant must not be conflated with morluto's Reverse Engineer Anything because of its acronym, and there is no evidence assigning it to ReVa. Offline reporting does not mean an LLM recovered semantics; no execution or actual AI integration was independently checked.",
+      "metadata": ["Original source window: October 17, 04:00–08:00 Beijing time; not a newly posted in-window candidate.", "Named-tool advertising; MIT and features not checked against a repository, not equated with morluto REA."],
+      "source_labels": ["Dan Kornas's Assistant framework introduction, reviewed from an earlier window", "Same-author GitHub-link reply; repository unverified"]
+    }
+  },
+  {
+    "id": "rea-731-functions-cleanroom-self-report",
+    "title": "731 个函数：SPEC 隔离与四个负例的 REA 重建自述",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称 REA 写行为规格、新 Opus 会话重建并先写测试，九天内731函数中729精确匹配；程序与日志未公开。",
+    "description": "往期补审的2026年10月17日02:41（北京时间）帖子，提出并自称实践一套 REA + Opus 5.5 重建流程：REA 先读目标程序、把选定功能行为写到 SPEC.md，另开只拿规格的 Claude 会话重新实现；先写测试，再故意植入四个错误版本，要求全部失败。作者报告九天处理731个函数，其中729个 exact matches、零行复制。\n\n本轮改为收录其具体测试与隔离实验，而不是因程序未命名就一概搁置。但程序、函数表、四个负例、比较器、代码与日志都未公开；exact match 的字节、指令或行为口径也未定义。数字、隔离与零复制都只按作者自述，不等于独立验证或权利证明。它不被合并进东方、MW2 或其他具名游戏，也不能据此推导所有函数的正确性。未独立执行。",
+    "sources": [{"label": "731函数与负例优先流程的自述（往期补审）", "url": "https://x.com/i/status/2111165651599663599"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["原 source window：10月17日00:00–04:00，北京时间；程序未命名，匹配口径未定义。", "731／729、九天、四个负例与零复制均为未核验自述。"],
+    "en": {
+      "title": "731 functions: an REA reconstruction account using specification isolation and four negative controls",
+      "summary": "A poster reports REA behavior specs, fresh Opus implementation sessions and test-first work: 729 exact matches among 731 functions over nine days, with no public target or logs.",
+      "description": "This deferred post, dated October 17, 2026 at 02:41 Beijing time, proposes and claims to have used an REA + Opus 5.5 reconstruction workflow. REA reads the target and writes the selected feature's behavior into SPEC.md; a fresh Claude session receives only that specification and implements it anew. Tests come first, followed by four deliberately broken versions, all required to fail. The poster reports 731 functions handled over nine days, 729 exact matches and zero copied lines.\n\nThis review admits the concrete testing/isolation experiment rather than deferring simply because the program is unnamed. However, the program, function list, four negative controls, comparator, code and logs are not public, and exact match is not defined as byte, instruction or behavioral equivalence. Counts, isolation and zero copying remain author claims, not independent verification or proof of rights. The account is not merged into Touhou, MW2 or another named game, nor does it establish all functions' correctness. Nothing was independently executed.",
+      "metadata": ["Original source window: October 17, 00:00–04:00 Beijing time; program unnamed and matching definition unspecified.", "731/729, nine days, four negative controls and zero copying are unverified self-reports."],
+      "source_labels": ["Self-report of 731 functions and negative-control-first work, reviewed from an earlier window"]
+    }
+  },
+  {
+    "id": "zenith-collaborative-ide-rea-idea",
+    "title": "Zenith 多人编辑：读者询问能否用 REA 研究的 idea",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "补读父帖将 this 识别为 Zenith 的多人编辑与 AI 项目上下文功能；目前只有 REA 适用性提问。",
+    "description": "2026年10月17日15:29（北京时间），@Its_Vivaann 问 Grok 与项目讨论者能否对“这个”使用 Reverse Engineer Anything。补读同日15:27的父回复，确认上下文是 Zenith：Grok 将其描述为有共享项目房间、Monaco 实时编辑、聊天，以及通过 embeddings 和 Gemini 检索相关项目文件并向协作者流式发送代码变更的开放 MERN 项目，不是带运行时与部署的完整云 IDE。\n\n据此可记录一个明确目标的 REA 研究 idea，但功能介绍来自 Grok 回复，未核对项目源码；读者也没有声明已开始研究、指定要恢复的功能、制作规格或重建结果。不把适用性提问写成成功复刻 Replit、CodeSandbox 或 VS Code Live Share。父帖只用于识别候选目标，不作为额外候选；未运行项目。",
+    "sources": [{"label": "读者询问 REA 是否适用", "url": "https://x.com/i/status/2111358914520600998"}, {"label": "补读父回复：Grok 对 Zenith 的描述", "url": "https://x.com/i/status/2111358376642801706"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["具体目标 idea；Zenith 功能来自 Grok 描述，未核对源码或实施。"],
+    "en": {
+      "title": "Zenith collaborative editing: a reader asks about investigating it with REA",
+      "summary": "A parent reply identifies the target as Zenith's collaborative editing and AI project-context features; only an REA applicability question has been posted.",
+      "description": "At 15:29 Beijing time on October 17, 2026, @Its_Vivaann asks Grok and a project discussant whether Reverse Engineer Anything could be used on 'this'. Supplementary reading of the 15:27 parent identifies Zenith: Grok describes an open MERN project with shared project rooms, live Monaco editing, chat, and AI retrieving relevant project files using embeddings and Gemini while streaming code changes to collaborators. It explicitly distinguishes this from a full cloud IDE with runtimes and deployments.\n\nThis supports recording a specific-target REA investigation idea, but the feature account comes from Grok rather than checked source code. The reader does not claim to have started analysis, selected a feature to recover, written a specification or produced a rebuild. An applicability question is not a successful reconstruction of Replit, CodeSandbox or VS Code Live Share. The parent only identifies the candidate's target and is not an additional candidate. The project was not run.",
+      "metadata": ["Specific-target idea; Zenith features come from Grok's description, without source inspection or implementation."],
+      "source_labels": ["Reader asks whether REA applies", "Supplementary parent: Grok's description of Zenith"]
+    }
   }
 ]

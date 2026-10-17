@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **356 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **366 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（78）
-- [硬件与设备互通](categories/hardware.md)（82）
-- [应用与客户端](categories/apps.md)（163）
-- [算法与功能重建](categories/algorithms.md)（33）
+- [游戏与游戏保存](categories/games.md)（79）
+- [硬件与设备互通](categories/hardware.md)（83）
+- [应用与客户端](categories/apps.md)（169）
+- [算法与功能重建](categories/algorithms.md)（35）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -104,6 +104,7 @@
 - [Victoria 3：让 Claude 反编译游戏以便修改的 idea](cases/victoria3-claude-decompile-idea.md) — 回复建议让 Claude 反编译 Vic3；没有报告运行或具体改动成果。 **[其他 AI 逆向 · 待验证]**
 - [League of Legends：AI 辅助逆向后在 Linux 实际游玩的转述](cases/lol-linux-ai-gameplay-report.md) — 传播帖称开发者用一个月研究，让英雄联盟在 Linux 进入游戏；未核对实现或兼容范围。 **[其他 AI 逆向 · 待验证]**
 - [Fallout 4：Claude 逆向后修复故障的简短自述](cases/fallout4-claude-fix-report.md) — 作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。 **[其他 AI 逆向 · 待验证]**
+- [MISE.exe：Claude 用 Ghidra 提取规则而不是猜截图](cases/mise-ghidra-claude-rules.md) — 作者转述 Claude 正让 Agent 反编译 MISE.exe，以匹配 SE 的具体规则；尚无完成结果。 **[其他 AI 逆向 · 进行中]**
 
 ### 硬件与设备互通
 
@@ -189,6 +190,7 @@
 - [九川小智 AI 音响：把原固件与规格交给 Muse 做适配](cases/jiuchuan-xiaozhi-muse-adaptation.md) — 备份 ESP32-S3 固件后让 Muse 按硬件规格调整 Muse Gadgets，尚无刷入或设备运行结果。 **[其他 AI 逆向 · 进行中]**
 - [键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查](cases/keyboard-exe-claude-linux-camera.md) — Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。 **[未确认使用 REA · 待验证]**
 - [NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜](cases/njfe-claude-ear-camera-usb.md) — ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。 **[其他 AI 逆向]**
+- [Roku 电视：Claude 称锁定启动链阻止修改固件的受阻尝试](cases/roku-tv-claude-firmware-blocker.md) — 读者想把电视改造方法用于 Roku，但转述 Claude 说 bootloader 锁定；没有设备测试或固件产物。 **[其他 AI 逆向 · 待验证]**
 
 ### 应用与客户端
 
@@ -355,6 +357,12 @@
 - [Claude Desktop app.asar：Opus 为功能调研主动读包的报告](cases/opus-claude-desktop-asar-inspection.md) — 用户称未要求逆向，Opus 却直接读取桌面包弄清某功能；没有功能名、源码产物或对照测试。 **[其他 AI 逆向 · 分析测试]**
 - [CLO3D DLL：交给 Claude / Codex 重建服装工具的 idea](cases/clo3d-dll-ai-rebuild-idea.md) — 发帖者设想从 CLO3D DLL 反编译并重建；数千 API 费用是猜测，不是已完成项目账单。 **[其他 AI 逆向 · 待验证]**
 - [LeanREA：8 KB CLI Skill 与 REA 的 Notion／原生库／Go 对照](cases/leanrea-cli-skill-benchmark.md) — 公开36次 Sonnet 5.5 对照，项目报更快更省，但细表是74/75对75/75，不能照抄同准确率。 **[其他 AI 逆向 · 分析测试]**
+- [RetroScope：用本地 LLM 辅助查看 ROM 指令引用](cases/retroscope-local-llm-rom-assist.md) — 作者正把断点寄存器、ROM 与指令交给 Python，找引用目标地址的其他指令；目前仅支持绝对地址。 **[其他 AI 逆向 · 进行中]**
+- [中国移动 App：AI 研究选号页与接口，准备本地筛选号码](cases/china-mobile-number-selection-ai-protocol.md) — 作者称在 root 安卓上开启无线调试，让 AI 测试选号接口，20多分钟后识别页面与协议；未给模型或代码。 **[其他 AI 逆向 · 待验证]**
+- [Serein 九 Bot 工作流：REA 行为规格交给隔离 Builder](cases/serein-grok-nine-bot-rea-workflow.md) — 转述 Grok 云电脑里九个专职 Bot 的产品流程，以 REA 提取行为、SPEC.md 和隔离构建衔接；没有独立验证。 **[REA · 待验证]**
+- [Chrome 版 LINE：AI 阅读 JS 后制作 TUI 与消息 API](cases/line-chrome-js-ai-tui-api.md) — @cwh_tw 称让 AI 参考 Chrome 版 LINE 的 JavaScript，制作终端界面和 API，用于客户消息分析与发送。 **[其他 AI 逆向 · 待验证]**
+- [Reverse Engineering Assistant：按文件生成离线分析报告的框架宣传](cases/kornas-reverse-engineering-assistant-report.md) — Dan Kornas 介绍一个同缩写 REA 的框架，称支持文件检测与 Markdown／PDF／JSON 报告；仓库身份未核实。 **[未确认使用 REA · 相关项目]**
+- [Zenith 多人编辑：读者询问能否用 REA 研究的 idea](cases/zenith-collaborative-ide-rea-idea.md) — 补读父帖将 this 识别为 Zenith 的多人编辑与 AI 项目上下文功能；目前只有 REA 适用性提问。 **[REA · 待验证]**
 
 ### 算法与功能重建
 
@@ -391,6 +399,8 @@
 - [NIST ECDSA 曲线：Claude 追溯公开参数的随机生成过程](cases/nist-ecdsa-origin-claude-report.md) — Anthropic 报告从公开曲线种子识别 lrand48 与时间戳，并公开重算代码；不是破解 ECDSA。 **[其他 AI 逆向 · 分析测试]**
 - [Base 套利合约：REA + Opus 字节码分析的待验证报告](cases/base-arbitrage-bytecode-rea-opus-report.md) — 帖子描述从未验证 EVM 合约恢复跨池套利与 Solidity，但没有地址、偏移或回放证据。 **[REA · 待验证]**
 - [游戏函数匹配器：错误常量仍通过检查的审计转述](cases/rea-game-function-matcher-audit-report.md) — 转述多模型接力重建三段游戏函数，以及审计发现指令匹配漏看地址背后数据的问题。 **[REA · 分析测试]**
+- [吉他效果器：先模拟原固件，再对照独立 C++ 算法库](cases/valdiorn-audio-effects-firmware-report.md) — valdiorn 自述用 Opus 5.5 研究 Big Sky 等效果器，以固件模拟器对照 C++ 输出；没有公开库或测量记录。 **[其他 AI 逆向 · 待验证]**
+- [731 个函数：SPEC 隔离与四个负例的 REA 重建自述](cases/rea-731-functions-cleanroom-self-report.md) — 作者称 REA 写行为规格、新 Opus 会话重建并先写测试，九天内731函数中729精确匹配；程序与日志未公开。 **[REA · 待验证]**
 
 ## 贡献与收录
 

@@ -84,3 +84,4 @@
 - [九川小智 AI 音响：把原固件与规格交给 Muse 做适配](../cases/jiuchuan-xiaozhi-muse-adaptation.md) — 备份 ESP32-S3 固件后让 Muse 按硬件规格调整 Muse Gadgets，尚无刷入或设备运行结果。 **[其他 AI 逆向 · 进行中]**
 - [键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查](../cases/keyboard-exe-claude-linux-camera.md) — Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。 **[未确认使用 REA · 待验证]**
 - [NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜](../cases/njfe-claude-ear-camera-usb.md) — ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。 **[其他 AI 逆向]**
+- [Roku 电视：Claude 称锁定启动链阻止修改固件的受阻尝试](../cases/roku-tv-claude-firmware-blocker.md) — 读者想把电视改造方法用于 Roku，但转述 Claude 说 bootloader 锁定；没有设备测试或固件产物。 **[其他 AI 逆向 · 待验证]**

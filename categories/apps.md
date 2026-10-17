@@ -165,3 +165,9 @@
 - [Claude Desktop app.asar：Opus 为功能调研主动读包的报告](../cases/opus-claude-desktop-asar-inspection.md) — 用户称未要求逆向，Opus 却直接读取桌面包弄清某功能；没有功能名、源码产物或对照测试。 **[其他 AI 逆向 · 分析测试]**
 - [CLO3D DLL：交给 Claude / Codex 重建服装工具的 idea](../cases/clo3d-dll-ai-rebuild-idea.md) — 发帖者设想从 CLO3D DLL 反编译并重建；数千 API 费用是猜测，不是已完成项目账单。 **[其他 AI 逆向 · 待验证]**
 - [LeanREA：8 KB CLI Skill 与 REA 的 Notion／原生库／Go 对照](../cases/leanrea-cli-skill-benchmark.md) — 公开36次 Sonnet 5.5 对照，项目报更快更省，但细表是74/75对75/75，不能照抄同准确率。 **[其他 AI 逆向 · 分析测试]**
+- [RetroScope：用本地 LLM 辅助查看 ROM 指令引用](../cases/retroscope-local-llm-rom-assist.md) — 作者正把断点寄存器、ROM 与指令交给 Python，找引用目标地址的其他指令；目前仅支持绝对地址。 **[其他 AI 逆向 · 进行中]**
+- [中国移动 App：AI 研究选号页与接口，准备本地筛选号码](../cases/china-mobile-number-selection-ai-protocol.md) — 作者称在 root 安卓上开启无线调试，让 AI 测试选号接口，20多分钟后识别页面与协议；未给模型或代码。 **[其他 AI 逆向 · 待验证]**
+- [Serein 九 Bot 工作流：REA 行为规格交给隔离 Builder](../cases/serein-grok-nine-bot-rea-workflow.md) — 转述 Grok 云电脑里九个专职 Bot 的产品流程，以 REA 提取行为、SPEC.md 和隔离构建衔接；没有独立验证。 **[REA · 待验证]**
+- [Chrome 版 LINE：AI 阅读 JS 后制作 TUI 与消息 API](../cases/line-chrome-js-ai-tui-api.md) — @cwh_tw 称让 AI 参考 Chrome 版 LINE 的 JavaScript，制作终端界面和 API，用于客户消息分析与发送。 **[其他 AI 逆向 · 待验证]**
+- [Reverse Engineering Assistant：按文件生成离线分析报告的框架宣传](../cases/kornas-reverse-engineering-assistant-report.md) — Dan Kornas 介绍一个同缩写 REA 的框架，称支持文件检测与 Markdown／PDF／JSON 报告；仓库身份未核实。 **[未确认使用 REA · 相关项目]**
+- [Zenith 多人编辑：读者询问能否用 REA 研究的 idea](../cases/zenith-collaborative-ide-rea-idea.md) — 补读父帖将 this 识别为 Zenith 的多人编辑与 AI 项目上下文功能；目前只有 REA 适用性提问。 **[REA · 待验证]**
