@@ -78,3 +78,5 @@
 - [ArkWeb：让蜘蛛侠在 Gotham 摆荡的双游戏实验](../cases/arkweb-spiderman-arkham-report.md) — 公开项目将两款游戏的碰撞、画面和战斗姿态桥接，并提供 Claude 安装引导；REA 参与开发未确认。 **[未确认使用 REA · 进行中]**
 - [Doom：19 个 Claude 的 clean-room 重实现自述](../cases/doom-19-claude-cleanroom-report.md) — 发帖者声称一个周末重实现 Doom、支持 WAD 与三平台；没有可核对代码或测试。 **[其他 AI 逆向 · 待验证]**
 - [Victoria 3：让 Claude 反编译游戏以便修改的 idea](../cases/victoria3-claude-decompile-idea.md) — 回复建议让 Claude 反编译 Vic3；没有报告运行或具体改动成果。 **[其他 AI 逆向 · 待验证]**
+- [League of Legends：AI 辅助逆向后在 Linux 实际游玩的转述](../cases/lol-linux-ai-gameplay-report.md) — 传播帖称开发者用一个月研究，让英雄联盟在 Linux 进入游戏；未核对实现或兼容范围。 **[其他 AI 逆向 · 待验证]**
+- [Fallout 4：Claude 逆向后修复故障的简短自述](../cases/fallout4-claude-fix-report.md) — 作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。 **[其他 AI 逆向 · 待验证]**

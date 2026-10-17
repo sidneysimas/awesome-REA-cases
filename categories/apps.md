@@ -160,3 +160,8 @@
 - [3ds Max：询问 AI 反编译三维工具的 idea](../cases/3ds-max-ai-decompile-idea.md) — 有人询问是否已用 AI 逆向 3ds Max；不是已启动或完成的重建。 **[其他 AI 逆向 · 待验证]**
 - [系统 UI 视频：Claude 逐帧测量与动画参数推断](../cases/claude-system-ui-video-measurement.md) — 作者称 Claude 从参考视频测量系统界面，并尝试插值恢复动画参数；没有精度或完成验收。 **[其他 AI 逆向 · 进行中]**
 - [ENS v2 钓鱼邮件：Claude 辅助追查危险 Agent 仓库](../cases/ens-v2-phishing-claude-repo-investigation.md) — 作者称从可疑邮件查到钱包盗取站点及危险 Skill 文件，并向 GitHub 举报；未公开可核对样本。 **[其他 AI 逆向 · 分析测试]**
+- [Grok Bot 实时功能：让 Hermes 研究并重做，音频仍未解决](../cases/hermes-grok-realtime-research.md) — 回复者称让 Hermes 观察 Grok Bot 实时功能，使用 Opus 与 Sol 并行开发，实时音频仍在做。 **[其他 AI 逆向 · 进行中]**
+- [REA Reconstruction Companion：把分析证据接到规格、实现与验收](../cases/rea-reconstruction-companion.md) — 模型无关的 Agent Skill，组织目标范围、证据、架构与验证；文档与示例不等于跨模型效果认证。 **[REA · 相关项目]**
+- [Claude Desktop app.asar：Opus 为功能调研主动读包的报告](../cases/opus-claude-desktop-asar-inspection.md) — 用户称未要求逆向，Opus 却直接读取桌面包弄清某功能；没有功能名、源码产物或对照测试。 **[其他 AI 逆向 · 分析测试]**
+- [CLO3D DLL：交给 Claude / Codex 重建服装工具的 idea](../cases/clo3d-dll-ai-rebuild-idea.md) — 发帖者设想从 CLO3D DLL 反编译并重建；数千 API 费用是猜测，不是已完成项目账单。 **[其他 AI 逆向 · 待验证]**
+- [LeanREA：8 KB CLI Skill 与 REA 的 Notion／原生库／Go 对照](../cases/leanrea-cli-skill-benchmark.md) — 公开36次 Sonnet 5.5 对照，项目报更快更省，但细表是74/75对75/75，不能照抄同准确率。 **[其他 AI 逆向 · 分析测试]**

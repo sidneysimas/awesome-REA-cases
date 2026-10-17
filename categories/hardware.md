@@ -79,3 +79,8 @@
 - [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](../cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
 - [Google Home：不换硬件的旧音箱复用受阻报告](../cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
 - [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](../cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**
+- [全屋 3D 模型：REA 设备研究到 Mac 菜单栏控制的转述](../cases/home-3d-menubar-rea-report.md) — Michael Guo 转述点击房屋模型控制真灯与空调，并接给 ChatGPT / Claude；未识别原开发者。 **[REA · 待验证]**
+- [AMABOO Frameo 相框：Claude Code 参考已有项目改作 Home HQ 屏幕](../cases/amaboo-frameo-claude-homehq.md) — 转述 j3lte 用 Claude Code 配置可逆的相框 kiosk，不刷机；记录禁用原应用后的重启陷阱。 **[其他 AI 逆向 · 待验证]**
+- [九川小智 AI 音响：把原固件与规格交给 Muse 做适配](../cases/jiuchuan-xiaozhi-muse-adaptation.md) — 备份 ESP32-S3 固件后让 Muse 按硬件规格调整 Muse Gadgets，尚无刷入或设备运行结果。 **[其他 AI 逆向 · 进行中]**
+- [键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查](../cases/keyboard-exe-claude-linux-camera.md) — Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。 **[未确认使用 REA · 待验证]**
+- [NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜](../cases/njfe-claude-ear-camera-usb.md) — ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。 **[其他 AI 逆向]**

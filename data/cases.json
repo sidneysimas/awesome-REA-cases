@@ -8639,16 +8639,16 @@
     "rea": "other-ai",
     "status": "unverified",
     "summary": "同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。",
-    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。该建议是 idea，不是完成的修复。未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试；不能推定刷机安全或签名限制可跨越。\n\n同日22:16（北京时间），另一位回复者称用 Claude 深入研究自己的电视固件并关闭追踪和广告，还建议用 AdGuard 阻止外发。这是实施者自述，未提供固件补丁、前后流量对照或代码；其关于大多数电视麦克风监听一切的泛化没有证据，不予采纳。22:56，@meta_syntactic 在同一父帖下称，曾让 Codex 逆向现有固件以移除不喜欢的部分，但失去兴趣，基本停在逆向阶段。补读父帖确认电视隐私背景，但没有型号或具体要删的模块。两人不是同一项目，不把前者的完成说法套到后者；合并在既有主题下方便比较计划、声称修改和搁置三种证据阶段。所有结果均未经本合集运行或隐私验证。",
-    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}, {"label": "Claude 研究固件并关闭广告追踪的自述", "url": "https://x.com/i/status/2111098983997186126"}, {"label": "meta_syntactic：Codex 分析后搁置，父帖确认电视背景", "url": "https://x.com/i/status/2111108975454281750"}, {"label": "补充背景：DCinvestor 当日09:14提出电视隐私固件问题", "url": "https://x.com/i/status/2110902155783885210"}],
-    "snapshot_date": "2026-10-16",
+    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。该建议是 idea，不是完成的修复。未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试；不能推定刷机安全或签名限制可跨越。\n\n同日22:16（北京时间），另一位回复者称用 Claude 深入研究自己的电视固件并关闭追踪和广告，还建议用 AdGuard 阻止外发。这是实施者自述，未提供固件补丁、前后流量对照或代码；其关于大多数电视麦克风监听一切的泛化没有证据，不予采纳。22:56，@meta_syntactic 在同一父帖下称，曾让 Codex 逆向现有固件以移除不喜欢的部分，但失去兴趣，基本停在逆向阶段。补读父帖确认电视隐私背景，但没有型号或具体要删的模块。两人不是同一项目，不把前者的完成说法套到后者；合并在既有主题下方便比较计划、声称修改和搁置三种证据阶段。所有结果均未经本合集运行或隐私验证。\n\n10月17日08:08，同串回复进一步称 Claude 研究电视固件没有遇到阻碍，只在向 AdGuard 添加条目时请求批准。这补充的是模型权限与操作边界，不证明固件真的被重刷，也不能把 AdGuard 网络阻断当作设备内部追踪已被彻底删除。",
+    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}, {"label": "Claude 研究固件并关闭广告追踪的自述", "url": "https://x.com/i/status/2111098983997186126"}, {"label": "meta_syntactic：Codex 分析后搁置，父帖确认电视背景", "url": "https://x.com/i/status/2111108975454281750"}, {"label": "补充背景：DCinvestor 当日09:14提出电视隐私固件问题", "url": "https://x.com/i/status/2110902155783885210"}, {"label": "10月17日补充：仅 AdGuard 添加操作请求批准", "url": "https://x.com/i/status/2111247870565167560"}],
+    "snapshot_date": "2026-10-17",
     "metadata": ["10月16日原 idea 候选快照：4赞、143浏览；后续两人自述另列来源，均无刷机与隐私验收。"],
     "en": {
       "title": "TV firmware: an AI ad-removal idea and two implementation accounts",
       "summary": "In one TV privacy conversation, a Claude user claims ad/tracking removal while a Codex user stopped after analysis; models and privacy tests are absent.",
-      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. That suggestion is an idea, not a completed repair. No brand, model, firmware, build or signing method, or ad/telemetry tests are supplied; safe flashing and overcoming signing restrictions cannot be assumed.\n\nAt 22:16 Beijing time that day, another respondent says they used Claude to investigate their TV firmware and disable tracking and advertising, also recommending AdGuard to block outbound traffic. This is the participant's own account without firmware patches, before-and-after traffic comparisons or code. Their generalization that most TV microphones listen to everything is unsupported and is not adopted here. At 22:56, @meta_syntactic replies to the same parent post that Codex had investigated existing firmware to remove unwanted parts, but they lost interest and got little beyond reverse engineering. Reading the parent confirms the TV privacy context, but not a model or modules to remove. These are different participants, not the same project; the first person's completion claim does not apply to the second. They are grouped under the existing topic to compare a proposal, claimed changes and a stalled investigation. None was run or privacy-tested by this collection.",
+      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. That suggestion is an idea, not a completed repair. No brand, model, firmware, build or signing method, or ad/telemetry tests are supplied; safe flashing and overcoming signing restrictions cannot be assumed.\n\nAt 22:16 Beijing time that day, another respondent says they used Claude to investigate their TV firmware and disable tracking and advertising, also recommending AdGuard to block outbound traffic. This is the participant's own account without firmware patches, before-and-after traffic comparisons or code. Their generalization that most TV microphones listen to everything is unsupported and is not adopted here. At 22:56, @meta_syntactic replies to the same parent post that Codex had investigated existing firmware to remove unwanted parts, but they lost interest and got little beyond reverse engineering. Reading the parent confirms the TV privacy context, but not a model or modules to remove. These are different participants, not the same project; the first person's completion claim does not apply to the second. They are grouped under the existing topic to compare a proposal, claimed changes and a stalled investigation. None was run or privacy-tested by this collection.\n\nAt 08:08 on October 17, a reply in the same conversation adds that Claude had no difficulty investigating the TV firmware and requested approval only to add entries to AdGuard. This clarifies reported model permissions and action boundaries, not proof of firmware reflashing; AdGuard network blocking must not be treated as complete removal of tracking inside the device.",
       "metadata": ["October 16 original idea's candidate snapshot: 4 likes, 143 views; two later personal accounts have separate sources, neither with flashing or privacy acceptance tests."],
-      "source_labels": ["TV firmware modification proposal and conversation", "Account of Claude firmware investigation and claimed ad/tracking removal", "meta_syntactic: Codex analysis followed by abandonment; parent confirms TV context", "Supplementary context: DCinvestor's TV privacy firmware question at 09:14 that day"]
+      "source_labels": ["TV firmware modification proposal and conversation", "Account of Claude firmware investigation and claimed ad/tracking removal", "meta_syntactic: Codex analysis followed by abandonment; parent confirms TV context", "Supplementary context: DCinvestor's TV privacy firmware question at 09:14 that day", "October 17 follow-up: approval requested only for AdGuard additions"]
     }
   },
   {
@@ -9388,16 +9388,16 @@
     "rea": "other-ai",
     "status": "in-progress",
     "summary": "Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。",
-    "description": "10月16日23:28（北京时间），Ben（@benw_____）称用 Claude Code 重建自己最喜欢的童年 RTS 引擎，报告约70k行 C++、30多份逆向规格、Metal 渲染器、原游戏脚本语言，以及会建造和进攻的电脑对手。他称项目开源、Mac 原生、处于 alpha。补读原串确认账号和正文；次日00:03另一用户问规格是否先于实现，属于窗口外补充提问，没有作者回答，不能据此认定净室顺序。\n\n游戏、仓库和脚本语言的名称在可用正文中未给出，公开仓库关键词检索也没有确定匹配。不能因 RTS 题材便合并为已有 Go 语言 Nanolathe，也不把行数当作覆盖率、可玩性或原版行为等价。保留作者报告的正在开发项目，未下载目标、编译或运行；70k 和30多份均未独立统计，REA 使用未确认。",
-    "sources": [{"label": "Ben 的 RTS 引擎 alpha 原帖及补读原串", "url": "https://x.com/i/status/2111116976168779845"}],
-    "snapshot_date": "2026-10-16",
+    "description": "10月16日23:28（北京时间），Ben（@benw_____）称用 Claude Code 重建自己最喜欢的童年 RTS 引擎，报告约70k行 C++、30多份逆向规格、Metal 渲染器、原游戏脚本语言，以及会建造和进攻的电脑对手。他称项目开源、Mac 原生、处于 alpha。10月17日08:57作者回答规格顺序问题：自己先在 Ghidra 逆向，用自己的话为每个系统写规格，然后指挥 Claude Code 按规格重建，同时人工审阅。这修正此前只有提问、未获得回答的证据状态；是作者对顺序的明确报告，但不独立证明净室隔离或法律合规。\n\n游戏、仓库和脚本语言的名称在可用正文中未给出，公开仓库关键词检索也没有确定匹配。不能因 RTS 题材便合并为已有 Go 语言 Nanolathe，也不把行数当作覆盖率、可玩性或原版行为等价。保留作者报告的正在开发项目，未下载目标、编译或运行；70k 和30多份均未独立统计，REA 使用未确认。",
+    "sources": [{"label": "Ben 的 RTS 引擎 alpha 原帖及补读原串", "url": "https://x.com/i/status/2111116976168779845"}, {"label": "10月17日作者回答：Ghidra 规格先行，Claude 重建并人工审阅", "url": "https://x.com/i/status/2111260204884967933"}],
+    "snapshot_date": "2026-10-17",
     "metadata": ["约70k行、30多份规格、Metal 和电脑对手均为作者声明，未独立核验。", "游戏与公开仓库未确定，alpha 不等于完整兼容。"],
     "en": {
       "title": "Ben's childhood RTS: a reported Claude Code C++/Metal Mac alpha",
       "summary": "Ben reports roughly 70k C++ lines, over 30 reverse-engineered specifications and an opponent that builds and attacks.",
-      "description": "At 23:28 Beijing time on October 16, Ben (@benw_____) says Claude Code helped rebuild the engine of their favorite childhood RTS, reporting roughly 70k C++ lines, over 30 reverse-engineered specifications, a Metal renderer, the original game's scripting language and a computer opponent that builds and attacks. They describe an open-source, native Mac alpha. Reading the conversation confirmed the account and text. Another user asks at 00:03 the following day whether specs preceded implementation; that is a supplementary question outside the window, without an author answer, not evidence of a clean-room sequence.\n\nThe available text does not name the game, repository or scripting language, and public repository-keyword searches did not establish a match. An RTS theme does not justify merging it with the existing Go-based Nanolathe, and line counts are not coverage, playability or behavioral equivalence. This remains an author-reported ongoing project. No target was downloaded, compiled or run; 70k lines and over 30 specs were not independently counted. REA use is unconfirmed.",
+      "description": "At 23:28 Beijing time on October 16, Ben (@benw_____) says Claude Code helped rebuild the engine of their favorite childhood RTS, reporting roughly 70k C++ lines, over 30 reverse-engineered specifications, a Metal renderer, the original game's scripting language and a computer opponent that builds and attacks. They describe an open-source, native Mac alpha. At 08:57 on October 17, the author answers the sequencing question: they first reverse-engineered in Ghidra, wrote a specification for each system in their own words, then directed Claude Code to rebuild from those while reviewing its work. This corrects the earlier evidence state in which only the question was available. It is an explicit author account of the sequence, not independent proof of clean-room isolation or legal compliance.\n\nThe available text does not name the game, repository or scripting language, and public repository-keyword searches did not establish a match. An RTS theme does not justify merging it with the existing Go-based Nanolathe, and line counts are not coverage, playability or behavioral equivalence. This remains an author-reported ongoing project. No target was downloaded, compiled or run; 70k lines and over 30 specs were not independently counted. REA use is unconfirmed.",
       "metadata": ["Roughly 70k lines, over 30 specs, Metal and the computer opponent are author claims, not independently checked.", "Game and public repository unidentified; alpha is not complete compatibility."],
-      "source_labels": ["Ben's original RTS engine alpha post and supplementary conversation reading"]
+      "source_labels": ["Ben's original RTS engine alpha post and supplementary conversation reading", "October 17 author answer: Ghidra specifications first, Claude reconstruction with human review"]
     }
   },
   {
@@ -9407,16 +9407,16 @@
     "rea": "REA",
     "status": "unverified",
     "summary": "Computer 官方发布 REA skill，展示设计、表格、图片、合同和音频五类功能；未验证与原应用等价。",
-    "description": "10月16日23:42（北京时间），Computer 官方账号 @AskPerplexity 宣布将 @morluto 的 REA 作为 skill 接入 Computer，并称可在没有源码的情况下研究应用、构建可工作的版本。候选直接展示 Figma 方向：图层、auto-layout、登录、跨设备同步和多人编辑。补读同作者23:43的连续回复，另有 LibreOffice Calc 的单元格、公式和联动图表；Photopea 的图层、蒙版、调色和可编辑文本；Harvey 的合同检索、版本比较、按规则标记条款与来源引用；Audacity 的音轨剪裁混合、音量、淡入淡出和 WAV 导出。五项是同一次产品发布的演示合集，不是五个独立复现。\n\n官方称演示仅限时可试，使用 /reverse-engineer 的任务免费到10月31日、每用户最多10,000 credits；这些是当时促销口径，不是永久免费承诺。正文及演示链接未提供本合集取得的分析日志、源码、原版对照或持久服务保证。没有验证多人协作、真实文件兼容、公式覆盖或合同分析正确性；官方发布确认平台的功能主张，不证明完整复刻或安全上线。未执行演示、注册服务或处理真实合同与账户。",
-    "sources": [{"label": "Computer 官方 REA skill 与 Figma 演示发布", "url": "https://x.com/i/status/2111120664543596957"}, {"label": "同作者补充：LibreOffice Calc 演示", "url": "https://x.com/i/status/2111120738078044244"}, {"label": "同作者补充：Photopea 演示", "url": "https://x.com/i/status/2111120790683050106"}, {"label": "同作者补充：Harvey 演示", "url": "https://x.com/i/status/2111120848186982838"}, {"label": "同作者补充：Audacity 演示", "url": "https://x.com/i/status/2111120943540289627"}],
-    "snapshot_date": "2026-10-16",
+    "description": "10月16日23:42（北京时间），Computer 官方账号 @AskPerplexity 宣布将 @morluto 的 REA 作为 skill 接入 Computer，并称可在没有源码的情况下研究应用、构建可工作的版本。候选直接展示 Figma 方向：图层、auto-layout、登录、跨设备同步和多人编辑。补读同作者23:43的连续回复，另有 LibreOffice Calc 的单元格、公式和联动图表；Photopea 的图层、蒙版、调色和可编辑文本；Harvey 的合同检索、版本比较、按规则标记条款与来源引用；Audacity 的音轨剪裁混合、音量、淡入淡出和 WAV 导出。五项是同一次产品发布的演示合集，不是五个独立复现。\n\n官方称演示仅限时可试，使用 /reverse-engineer 的任务免费到10月31日、每用户最多10,000 credits；这些是当时促销口径，不是永久免费承诺。正文及演示链接未提供本合集取得的分析日志、源码、原版对照或持久服务保证。没有验证多人协作、真实文件兼容、公式覆盖或合同分析正确性；官方发布确认平台的功能主张，不证明完整复刻或安全上线。未执行演示、注册服务或处理真实合同与账户。\n\n10月17日11:45，一位读者称登录 Figma 方向的 Assemblage 后，只看到部分核心能力，很多功能未实现；这是用户观察自述，不是完整功能矩阵或本合集独立试用。其推测开发方担心诉讼而故意停下，没有证据，不采纳，也不据此宣称个人可完整复刻。",
+    "sources": [{"label": "Computer 官方 REA skill 与 Figma 演示发布", "url": "https://x.com/i/status/2111120664543596957"}, {"label": "同作者补充：LibreOffice Calc 演示", "url": "https://x.com/i/status/2111120738078044244"}, {"label": "同作者补充：Photopea 演示", "url": "https://x.com/i/status/2111120790683050106"}, {"label": "同作者补充：Harvey 演示", "url": "https://x.com/i/status/2111120848186982838"}, {"label": "同作者补充：Audacity 演示", "url": "https://x.com/i/status/2111120943540289627"}, {"label": "10月17日用户称 Assemblage 只提供部分功能", "url": "https://x.com/i/status/2111302536846258223"}],
+    "snapshot_date": "2026-10-17",
     "metadata": ["候选快照（10月16日）：25赞、2,317浏览、4转发；与补读时变化的指标分开。", "官方功能演示，未经独立运行或原版等价测试；10月31日与10,000 credits 是当时活动限制。"],
     "en": {
       "title": "Computer integrates REA: five app-feature rebuilding demos including Figma",
       "summary": "Computer announces an REA skill with design, spreadsheet, image, contract and audio demos; equivalence to the originals is untested.",
-      "description": "At 23:42 Beijing time on October 16, Computer's official @AskPerplexity account announced @morluto's REA as a skill inside Computer, claiming it can investigate apps without source and build working versions. The candidate directly presents Figma-like layers, auto-layout, sign-in, cross-device sync and multiplayer editing. Supplementary reading of the same author's 23:43 replies adds LibreOffice Calc cells, formulas and updating charts; Photopea layers, masks, color adjustments and editable text; Harvey contract search, version comparison, rule-based clause flags and source citations; and Audacity track trimming/mixing, volume, fades and WAV export. These are five demos in one product announcement, not five independent reproductions.\n\nThe account says the demos are temporarily available and /reverse-engineer tasks are free through October 31, up to 10,000 credits per user. These are contemporaneous promotional terms, not permanent free access. The text and demo links did not supply analysis logs, source, original-app comparisons or persistent-service guarantees obtained by this collection. Multiplayer behavior, real-file compatibility, formula coverage and contract-analysis correctness were not verified. An official announcement establishes the platform's feature claims, not complete cloning or safe production deployment. This collection did not run demos, register for the service or process real contracts or accounts.",
+      "description": "At 23:42 Beijing time on October 16, Computer's official @AskPerplexity account announced @morluto's REA as a skill inside Computer, claiming it can investigate apps without source and build working versions. The candidate directly presents Figma-like layers, auto-layout, sign-in, cross-device sync and multiplayer editing. Supplementary reading of the same author's 23:43 replies adds LibreOffice Calc cells, formulas and updating charts; Photopea layers, masks, color adjustments and editable text; Harvey contract search, version comparison, rule-based clause flags and source citations; and Audacity track trimming/mixing, volume, fades and WAV export. These are five demos in one product announcement, not five independent reproductions.\n\nThe account says the demos are temporarily available and /reverse-engineer tasks are free through October 31, up to 10,000 credits per user. These are contemporaneous promotional terms, not permanent free access. The text and demo links did not supply analysis logs, source, original-app comparisons or persistent-service guarantees obtained by this collection. Multiplayer behavior, real-file compatibility, formula coverage and contract-analysis correctness were not verified. An official announcement establishes the platform's feature claims, not complete cloning or safe production deployment. This collection did not run demos, register for the service or process real contracts or accounts.\n\nAt 11:45 on October 17, a reader says they logged into the Figma-like Assemblage and found only some core capabilities, with many features missing. This is a user's observation account, not a complete feature matrix or this collection's independent trial. Their suggestion that the developers intentionally stopped for fear of litigation is unsupported and is not adopted, nor does it establish that an individual could fully clone the original.",
       "metadata": ["Candidate snapshot (October 16): 25 likes, 2,317 views, 4 reposts; kept separate from changing metrics during rereading.", "Official feature demos, not independently run or tested for equivalence; October 31 and 10,000 credits are the announcement's promotion limits."],
-      "source_labels": ["Computer's official REA skill and Figma demo announcement", "Same-author supplementary reply: LibreOffice Calc demo", "Same-author supplementary reply: Photopea demo", "Same-author supplementary reply: Harvey demo", "Same-author supplementary reply: Audacity demo"]
+      "source_labels": ["Computer's official REA skill and Figma demo announcement", "Same-author supplementary reply: LibreOffice Calc demo", "Same-author supplementary reply: Photopea demo", "Same-author supplementary reply: Harvey demo", "Same-author supplementary reply: Audacity demo", "October 17 user report: Assemblage offers only some features"]
     }
   },
   {
@@ -10063,6 +10063,234 @@
       "description": "At 07:05 Beijing time on October 17, @jmassisi01 suggests giving AI two virtual machines for a scanner with only Windows XP drivers: XP with the old driver installed and Windows 11 for testing a new driver, and asks whether REA has been considered. Reading the parent at 19:43 on October 16 finds @ladeutschevida saying the manufacturer no longer updates the driver and asking whether vibe coding could make the old scanner work on Windows 11. The parent is out-of-window background establishing the interoperability target; the current reply proposes separating reference and acceptance environments. Device brand/model, USB protocol, driver code and test results are absent, and REA remains only a suggestion. This is not the existing Plustek Linux driver project and does not establish a working Windows 11-compatible driver.",
       "metadata": ["Method proposal, not an executed experiment; REA use, device model and compatibility remain unconfirmed."],
       "source_labels": ["In-window suggestion of AI, two-VM comparison and REA", "Out-of-window parent: demand to use an old XP scanner on Windows 11"]
+    }
+  },
+  {
+    "id": "lol-linux-ai-gameplay-report",
+    "title": "League of Legends：AI 辅助逆向后在 Linux 实际游玩的转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "传播帖称开发者用一个月研究，让英雄联盟在 Linux 进入游戏；未核对实现或兼容范围。",
+    "description": "10月17日08:17（北京时间）的传播帖称，一位开发者花一个月进行 AI 辅助逆向开发，让 League of Legends（英雄联盟）在 Linux 可玩，展示的不只是启动器而是实际游戏。目标是恢复这款多人竞技游戏的 Linux 运行能力。可读正文没有开发者身份、仓库、具体修改、游戏版本或测试条件；一个月是转述的工时，不能视为独立核实。未确认 REA、未执行目标，也不能从游戏画面推定完整兼容、反作弊支持或长期服务可用。",
+    "sources": [{"label": "10月17日 Linux 实际玩法的二手报告", "url": "https://x.com/i/status/2111250313164607859"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（2026-10-17）：1赞、709浏览、0转发；二手报告，未独立运行。"],
+    "en": {
+      "title": "League of Legends: a report of AI-assisted Linux gameplay",
+      "summary": "A circulating post claims a month of AI-assisted work enabled real Linux gameplay, not merely a launcher; implementation and compatibility are unchecked.",
+      "description": "A circulating post at 08:17 Beijing time on October 17 says a developer spent a month on AI-assisted reverse-engineering development to make League of Legends playable on Linux, showing actual gameplay rather than just a launcher. The goal is restoring Linux access to the multiplayer competitive game. The readable text does not identify the developer, repository, changes, game version or test conditions. The month is secondhand effort reporting, not independently established. REA use is unconfirmed and no target was executed here. Gameplay footage cannot establish complete compatibility, anti-cheat support or long-term service availability.",
+      "metadata": ["Candidate snapshot (2026-10-17): 1 like, 709 views, 0 reposts; secondhand report, not independently run."],
+      "source_labels": ["October 17 secondhand report of actual Linux gameplay"]
+    }
+  },
+  {
+    "id": "home-3d-menubar-rea-report",
+    "title": "全屋 3D 模型：REA 设备研究到 Mac 菜单栏控制的转述",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Michael Guo 转述点击房屋模型控制真灯与空调，并接给 ChatGPT / Claude；未识别原开发者。",
+    "description": "10月17日08:19（北京时间），Michael Guo（@Michaelzsguo）转述有人用 REA 研究家中 IoT 设备，把整屋做成 Mac 菜单栏里的 3D 模型：点击模型中的灯控制真实灯具，也能操作空调，并让 ChatGPT / Claude 帮忙开灯。其称应用开源，但正文仅有未解析的短链，本轮没有读取到对应仓库或原作者串。这里收录的是空间化家居控制的具体项目报告，不是本合集确认所有设备协议或功能已实现。原开发者、设备型号、协议与测试未核实，未操作设备；也未确定与 thinkszyg 智能马桶或 Jumpan1111 全屋控制项目的身份关系，不把他们的证据搬到本条。",
+    "sources": [{"label": "Michael Guo 的 3D 全屋控制转述", "url": "https://x.com/i/status/2111250669491392909"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（2026-10-17）：4赞、625浏览、2转发；开源与可用性为转述，未核对仓库。"],
+    "en": {
+      "title": "A 3D home model: a reported REA-assisted Mac menu-bar controller",
+      "summary": "Michael Guo describes clicking a house model to control lights and AC, with ChatGPT/Claude access; the original developer is unidentified.",
+      "description": "At 08:19 Beijing time on October 17, Michael Guo (@Michaelzsguo) recounts someone using REA to study home IoT devices and represent the house as a 3D model in the Mac menu bar: clicking a modeled light controls the physical lamp, AC is controllable, and ChatGPT/Claude can turn lights on. He calls the app open source, but the text contains only unresolved shortened links; this review did not obtain the corresponding repository or original developer's conversation. This records a specific spatial home-control project report, not confirmation that every protocol or feature works. The developer, device models, protocols and tests are unverified, and no device was operated. Its identity relationship to thinkszyg's smart-toilet work or Jumpan1111's whole-home controller is also unestablished; their evidence is not transferred to this entry.",
+      "metadata": ["Candidate snapshot (2026-10-17): 4 likes, 625 views, 2 reposts; open-source and functionality claims are secondhand, without repository inspection."],
+      "source_labels": ["Michael Guo's account of 3D whole-home controls"]
+    }
+  },
+  {
+    "id": "amaboo-frameo-claude-homehq",
+    "title": "AMABOO Frameo 相框：Claude Code 参考已有项目改作 Home HQ 屏幕",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "转述 j3lte 用 Claude Code 配置可逆的相框 kiosk，不刷机；记录禁用原应用后的重启陷阱。",
+    "description": "10月17日08:20（北京时间），@InvestingVault 转述荷兰用户 @j3lte 参考 @wesbos 的相框改造，让 Claude 阅读 Wes 的 GitHub 仓库，把 AMABOO 10.1英寸 Frameo 相框改作 Home HQ kiosk，并提交记录设置的 PR。正文给出从 Beta Program 启用 ADB、先备份固件、禁用两个自动更新器、设 Home HQ 为主屏，再禁用 Frameo 应用的过程；备份据称压缩后约800 MB。该设备内置浏览器够新，无需替换。作者提醒禁用 Frameo 后等约10秒再重启，否则原应用会回来，并称另一位相同板型用户也遇到。\n\n这是 AI 辅助的旧硬件适配与配置转述，不是重新恢复 Frameo 源码或确认新的协议逆向。来源明确称没有刷固件、更改可撤销；本合集未核对 PR、测试备份恢复或运行设备，不保证其他板型同样适用，也不把约800 MB和10秒扩大为通用规格。",
+    "sources": [{"label": "AMABOO 相框配置与重启时序的转述", "url": "https://x.com/i/status/2111250941886226471"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["Claude Code 参考已有项目；未确认 REA，未复测可逆性或相同板型行为。"],
+    "en": {
+      "title": "AMABOO Frameo: Claude Code adapts an existing Home HQ frame setup",
+      "summary": "An account of j3lte's reversible kiosk configuration without flashing, including a reboot-timing trap after disabling Frameo.",
+      "description": "At 08:20 Beijing time on October 17, @InvestingVault recounts Netherlands user @j3lte following @wesbos's frame hack, pointing Claude at Wes's GitHub repository, adapting an AMABOO 10.1-inch Frameo into a Home HQ kiosk and submitting a setup-documentation PR. The text describes enabling ADB through Beta Program, backing up firmware first, disabling two auto-updaters, making Home HQ the home screen, then disabling Frameo. The zipped backup reportedly measured about 800 MB. This unit's built-in browser was recent enough not to need replacement. The account warns to wait about 10 seconds after disabling Frameo before rebooting or the app returns, and says another builder with the same board experienced it.\n\nThis is an account of AI-assisted old-hardware adaptation and configuration, not recovery of Frameo source or confirmation of newly reversed protocols. The source explicitly says there was no firmware flashing and changes are reversible. This collection did not inspect the PR, test restoration or run the device; other boards are not guaranteed compatible, and about 800 MB and 10 seconds are not universal specifications.",
+      "metadata": ["Claude Code follows an existing project; REA use unconfirmed; reversibility and same-board behavior not retested."],
+      "source_labels": ["Account of AMABOO setup and reboot timing"]
+    }
+  },
+  {
+    "id": "hermes-grok-realtime-research",
+    "title": "Grok Bot 实时功能：让 Hermes 研究并重做，音频仍未解决",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "回复者称让 Hermes 观察 Grok Bot 实时功能，使用 Opus 与 Sol 并行开发，实时音频仍在做。",
+    "description": "10月17日08:22（北京时间），一位回复 @IndependentEco 与 @Adamdesgns 的用户称，让自己的 Hermes 观察 Grok Bot 的实时功能并进行逆向，开发时使用 Opus 与 Sol 并行。其称尚未解决的是 Hermes 音频，实时音频正在由 Codex 推进。目标是把另一 Agent 产品的实时使用体验带入自己的 Hermes 工作流，而非报告已完成可兼容的 Grok 客户端。未提供接口、代码、验证或具体已完成的功能，不把“只有音频未解决”推成其他功能全部实现；未确认 REA，也未确定与既有 Alan + REA 提问者是否同一人，保持证据分开。",
+    "sources": [{"label": "Hermes 研究 Grok 实时功能的用户自述", "url": "https://x.com/i/status/2111251559275487538"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（2026-10-17）：4赞、40浏览、0转发；进行中自述，无公开实现核验。"],
+    "en": {
+      "title": "Grok Bot real-time features: a Hermes investigation with audio unresolved",
+      "summary": "A respondent reports having Hermes study Grok Bot, developing with Opus and Sol in parallel, while Codex works on unresolved real-time audio.",
+      "description": "At 08:22 Beijing time on October 17, a user replying to @IndependentEco and @Adamdesgns says their Hermes observes and reverse-engineers Grok Bot's real-time features, with Opus and Sol used in parallel for development. They identify Hermes audio as unresolved and say Codex is working on real-time audio. The goal is bringing another agent product's real-time experience into their Hermes workflow, not a report of a finished compatible Grok client. No interfaces, code, validation or specific completed features are supplied. Saying only audio remains unresolved is not treated as proof that all other features work. REA use is unconfirmed, and the user's identity relationship to the earlier Alan/REA questioner is unestablished, so the evidence remains separate.",
+      "metadata": ["Candidate snapshot (2026-10-17): 4 likes, 40 views, 0 reposts; ongoing personal account, without public implementation validation."],
+      "source_labels": ["User account of Hermes research into Grok real-time features"]
+    }
+  },
+  {
+    "id": "jiuchuan-xiaozhi-muse-adaptation",
+    "title": "九川小智 AI 音响：把原固件与规格交给 Muse 做适配",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "备份 ESP32-S3 固件后让 Muse 按硬件规格调整 Muse Gadgets，尚无刷入或设备运行结果。",
+    "description": "10月17日08:21（北京时间）的开场帖提出在 Muse Wonder 中给九川小智 AI 音响刷 Muse 固件。08:35的连续步骤说明通过 USB 数据线连接 Windows，识别 ESP32-S3 串口、查询 flash 信息并先完整备份原固件，然后把信息和备份交给 Muse，让它依据具体硬件规格调整 Muse Gadgets 的 GitHub 源码。这里有明确的设备研究输入和 AI 适配动作，不只是泛称做 AI 音箱。可用正文没有说明 Muse 已提取出哪些引脚或外设配置，也没有成功刷入、启动、音频测试或恢复记录；保留为进行中适配流程，不把建议命令当成已执行结果。本合集没有读取设备固件或执行这些命令。",
+    "sources": [{"label": "Muse Wonder 适配九川音响的开场帖", "url": "https://x.com/i/status/2111251131665940519"}, {"label": "同串：先备份，再把固件和规格交给 Muse", "url": "https://x.com/i/status/2111254840772829549"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选只报告准备与适配方法；ESP32-S3 型号按正文，未独立识别设备。"],
+    "en": {
+      "title": "Jiuchuan Xiaozhi AI speaker: give Muse stock firmware and hardware specifications",
+      "summary": "A workflow backs up ESP32-S3 firmware and asks Muse to adapt Muse Gadgets to the hardware; no flashing or device-run result is reported.",
+      "description": "An opening post at 08:21 Beijing time on October 17 proposes flashing Muse firmware onto a Jiuchuan Xiaozhi AI speaker in Muse Wonder. A follow-up at 08:35 describes connecting it to Windows over a USB data cable, identifying the ESP32-S3 serial port, querying flash information and fully backing up stock firmware first. The information and backup are then to be given to Muse to adapt Muse Gadgets' GitHub source to the device's hardware specifications. This supplies concrete device-research inputs and an AI adaptation step, rather than merely proposing an AI speaker. The available text does not identify recovered pins or peripheral settings, or report successful flashing, booting, audio tests or restoration. It remains an ongoing adaptation workflow; suggested commands are not treated as executed results. This collection did not read device firmware or execute those commands.",
+      "metadata": ["Candidates describe preparation and an adaptation method only; ESP32-S3 is identified by the text, not independent device inspection."],
+      "source_labels": ["Opening post on adapting a Jiuchuan speaker in Muse Wonder", "Same conversation: back up first, then supply firmware and specifications to Muse"]
+    }
+  },
+  {
+    "id": "fallout4-claude-fix-report",
+    "title": "Fallout 4：Claude 逆向后修复故障的简短自述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。",
+    "description": "10月17日09:08（北京时间），回复者称自己确实需要研究 Fallout 4，并称 Claude “完全逆向”后，得以修复它此前无法猜出或暴力解决的问题。目标明确是这款游戏的故障修复，而非一般模型能力评论。但作者没有列出故障、受影响版本、恢复的函数、代码或前后测试；“完全逆向”只是作者措辞，不能据此确认整款游戏覆盖率或恢复源码。收录这一具体修复尝试的自述，未独立验证修复与因果关系，也未确认 REA。",
+    "sources": [{"label": "Fallout 4 故障修复的作者回复", "url": "https://x.com/i/status/2111262935293038623"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（2026-10-17）：3赞、674浏览、0转发；无公开补丁或测试。"],
+    "en": {
+      "title": "Fallout 4: a brief claim of fixes after Claude reverse engineering",
+      "summary": "A user says studying Fallout 4 enabled Claude to fix issues it could not guess or brute-force; faults and patches are not public.",
+      "description": "At 09:08 Beijing time on October 17, a respondent says they did need to study Fallout 4, and that after Claude had 'fully reverse engineered' it, it could fix things it previously could not guess or brute-force. The specific goal is fixing this game, not a general statement about model capability. However, the author supplies no faults, affected versions, recovered functions, code or before-and-after tests. 'Fully reverse engineered' is the author's phrasing, not established whole-game coverage or source recovery. This records a concrete repair-attempt account without independent verification of the fixes or causal claim. REA use is unconfirmed.",
+      "metadata": ["Candidate snapshot (2026-10-17): 3 likes, 674 views, 0 reposts; no public patch or tests."],
+      "source_labels": ["Author reply about Fallout 4 fixes"]
+    }
+  },
+  {
+    "id": "keyboard-exe-claude-linux-camera",
+    "title": "键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。",
+    "description": "10月17日09:35（北京时间），Mayank Bansal（@mayank_8127）说键盘配置软件只有 Windows exe，为了在 Linux 使用，把 exe、一个逆向仓库和摄像头权限交给 Claude。其称 Claude 反编译程序、做出 Linux 可用版本，再通过摄像头核验。补读同秒作者回复，另称扩展自定义配置面板、改进界面，并给 Omarchy 做了可从状态栏操作大部分功能的插件。\n\n作者发布图像和视频附件，但本轮只读取文本与媒体元数据，没有逐项观看或运行。未说明键盘型号、仓库名、协议、实际核验项目或通过率；“逆向仓库”不能自动认定为 REA。摄像头观察为作者报告的验证方式，不是本合集复测，也不能证明所有配置与原版一致。与已收录 GAMEKB-K17 不建立未经证实的型号关系。",
+    "sources": [{"label": "Mayank 的 exe 到 Linux 与摄像头验证原帖", "url": "https://x.com/i/status/2111269740249489643"}, {"label": "同作者补充：配置面板与 Omarchy 插件", "url": "https://x.com/i/status/2111269743000998301"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["主候选快照（2026-10-17）：2赞、33浏览、0转发；型号和 REA 身份未确认。"],
+    "en": {
+      "title": "A Windows keyboard utility: Claude builds a Linux version and checks it with a camera",
+      "summary": "Mayank Bansal supplies a configuration exe, a reverse-engineering repository and a camera to Claude, reporting a Linux version and Omarchy status-bar plugin.",
+      "description": "At 09:35 Beijing time on October 17, Mayank Bansal (@mayank_8127) says their keyboard configuration software was Windows-exe-only, so they gave Claude the exe, a reverse-engineering repository and camera access to make it usable on Linux. They report that Claude decompiled the program, built a Linux version and checked it using the camera. A same-second author reply additionally claims an expanded custom configuration palette, improved UI and an Omarchy plugin controlling most features from the status bar.\n\nThe author posted image and video attachments, but this review read only text and media metadata, without watching each feature or executing anything. The keyboard model, repository name, protocol, checks performed and pass rate are unspecified; 'the reverse engineering repo' does not automatically establish REA. Camera observation is an author-reported validation method, not this collection's retest or proof that every setting matches the original. No unsubstantiated model relationship to the existing GAMEKB-K17 entry is asserted.",
+      "metadata": ["Main candidate snapshot (2026-10-17): 2 likes, 33 views, 0 reposts; model and REA identity unconfirmed."],
+      "source_labels": ["Mayank's original exe-to-Linux and camera-check report", "Author follow-up: custom configuration palette and Omarchy plugin"]
+    }
+  },
+  {
+    "id": "rea-reconstruction-companion",
+    "title": "REA Reconstruction Companion：把分析证据接到规格、实现与验收",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "模型无关的 Agent Skill，组织目标范围、证据、架构与验证；文档与示例不等于跨模型效果认证。",
+    "description": "10月17日09:51（北京时间）的候选介绍 REA Reconstruction Companion，目标是把软件逆向的零散发现变成可执行的规格与检查清单，范围可到应用、单功能、接口或数据格式。本轮按项目名查到 ShadowSwaps/REA-Reconstruction-Companion 并补读公开 README，确认其自述为模型无关的 Agent Skill：REA 提供分析工具，伴侣组织需求、原架构与新实现的区别、分步开发和验收；可选择是否增加联用指令，不是另起两个后台 Agent，也不授予额外权限。\n\n补读时 README 列出 Pocket Tasks 教学调查与重建、检查点恢复等示例，并披露维护者先前看过源码与测试，不是独立评测；安装器与本地 checker 测试也不证明任意模型都能准确重建软件。仓库阅读是10月17日的补充材料，不把文档中的后续版本特性都当成09:51候选已演示。本合集没有安装 Skill、运行目标或执行仓库测试，记录的是有公开文档可追查的相关项目。",
+    "sources": [{"label": "10月17日 Companion 功能介绍", "url": "https://x.com/i/status/2111273763799191896"}, {"label": "按名称查到的公开项目及证据限制", "url": "https://github.com/ShadowSwaps/REA-Reconstruction-Companion"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照：0赞、24浏览、0转发（2026-10-17）；只读项目文档，未安装或独立验证。"],
+    "en": {
+      "title": "REA Reconstruction Companion: connect evidence to specifications, implementation and acceptance",
+      "summary": "A model-independent Agent Skill organizes scope, evidence, architecture and validation; documentation and examples are not cross-model certification.",
+      "description": "The candidate at 09:51 Beijing time on October 17 introduces REA Reconstruction Companion, intended to turn scattered reverse-engineering findings into actionable specifications and checklists for an application, feature, interface or data format. A project-name search found ShadowSwaps/REA-Reconstruction-Companion. Its public README describes a model-independent Agent Skill: REA supplies investigation tools while the companion organizes requirements, distinguishes original architecture from new implementation choices, and guides incremental development and acceptance. Optional integration adds instructions; it neither creates two background agents nor grants extra permissions.\n\nAt inspection, the README lists Pocket Tasks teaching investigations and reconstruction, checkpoint/resume examples and other material, disclosing prior maintainer exposure to source and tests rather than independent evaluation. Installer and local checker tests do not establish accurate reconstruction by every model. Repository reading is supplementary October 17 material, not evidence that every later documented version feature was demonstrated in the 09:51 candidate. This collection did not install the skill, run a target or execute repository tests. This is a related project with public documentation available for further inspection.",
+      "metadata": ["Candidate snapshot: 0 likes, 24 views, 0 reposts (2026-10-17); documentation read only, without installation or independent validation."],
+      "source_labels": ["October 17 Companion introduction", "Public project found by name, including evidence caveats"]
+    }
+  },
+  {
+    "id": "opus-claude-desktop-asar-inspection",
+    "title": "Claude Desktop app.asar：Opus 为功能调研主动读包的报告",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "用户称未要求逆向，Opus 却直接读取桌面包弄清某功能；没有功能名、源码产物或对照测试。",
+    "description": "10月17日09:57（北京时间），一位用户称自己只让 Opus 调研一个功能，并未要求逆向，但模型自行读取 Claude Desktop 的 app.asar，查出该功能的实现方式。app.asar 是 Electron 应用的打包载体；此处实际报告是模型把本地桌面包当作研究材料。没有公开具体功能名、追到的调用链、代码或核验结果，不能与既有 Open Claude UI 作者或其他 Claude 包分析者混同，也不能写成重建了整个客户端。本条保留为具体包分析行为的用户自述，未确认 REA，未独立重放。",
+    "sources": [{"label": "Opus 自行读取 Claude Desktop 包的用户报告", "url": "https://x.com/i/status/2111275332989059193"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["候选快照（2026-10-17）：22赞、6120浏览、0转发；功能与方法细节未公开。"],
+    "en": {
+      "title": "Claude Desktop app.asar: Opus reportedly opens the package during feature research",
+      "summary": "A user says Opus read the desktop package without an explicit reverse-engineering request; the feature, artifacts and comparisons are unspecified.",
+      "description": "At 09:57 Beijing time on October 17, a user says they asked Opus only to investigate a feature, not to reverse-engineer anything, but it independently opened Claude Desktop's app.asar and worked out the implementation. app.asar is an Electron application package; the concrete behavior reported is a model using a local desktop package as research evidence. No feature name, traced call chain, code or validation result is public. This is not conflated with the Open Claude UI author or other Claude package analysts, and is not described as a full client reconstruction. It remains a user's account of specific package-analysis behavior, with REA use unconfirmed and no independent replay.",
+      "metadata": ["Candidate snapshot (2026-10-17): 22 likes, 6,120 views, 0 reposts; feature and method details are not public."],
+      "source_labels": ["User report of Opus independently reading the Claude Desktop package"]
+    }
+  },
+  {
+    "id": "clo3d-dll-ai-rebuild-idea",
+    "title": "CLO3D DLL：交给 Claude / Codex 重建服装工具的 idea",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "发帖者设想从 CLO3D DLL 反编译并重建；数千 API 费用是猜测，不是已完成项目账单。",
+    "description": "10月17日10:21（北京时间），发帖者借 PS5 逆向话题提出，可以把 CLO3D 的 DLL 交给 Claude Code / Codex 反编译并重建。CLO3D 是服装三维设计工具；本条具体目标是研究它的编译库以制作类似实现，而非已恢复设计软件。正文没有表明已开始分析，没有模型日志、功能范围、求解器结果或兼容性测试。所称数千 API 费用只是假设，不是实际工时或成本，不能从 PS5 话题推定 CLO3D 的可行性或 REA 参与。",
+    "sources": [{"label": "CLO3D DLL 重建设想", "url": "https://x.com/i/status/2111281354910704058"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["具体目标 idea；未实施、未估验成本、未独立验证。"],
+    "en": {
+      "title": "CLO3D DLLs: an idea to rebuild a garment-design tool with Claude/Codex",
+      "summary": "A poster proposes decompiling and rebuilding CLO3D DLLs; thousands in API spending is speculation, not a completed project's bill.",
+      "description": "At 10:21 Beijing time on October 17, a poster uses the PS5 reverse-engineering discussion to suggest giving CLO3D DLLs to Claude Code/Codex for decompilation and reconstruction. CLO3D is a 3D garment-design tool; the concrete target is studying its compiled libraries to make a similar implementation, not an already recovered design application. The text does not establish that analysis began, and contains no model logs, feature scope, solver results or compatibility tests. The claimed thousands in API spending is hypothetical, not measured effort or cost. The PS5 discussion does not establish feasibility for CLO3D or REA participation.",
+      "metadata": ["Specific-target idea; not implemented, cost not tested, not independently verified."],
+      "source_labels": ["Proposal to rebuild CLO3D DLLs"]
+    }
+  },
+  {
+    "id": "njfe-claude-ear-camera-usb",
+    "title": "NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "case",
+    "summary": "ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。",
+    "description": "10月17日08:29（北京时间）的候选以七项 AI 构建串为入口，补读08:29:51回复识别为 NJFE（Not Just For Ears）。本轮按名称查到 WildweaselMS/NJFE，阅读 README 和提交元数据：项目10月10日已有实现与英文文档，早于本轮窗口，作为补充来源而非新抓取帖子。它让 ESP32-C3 接入 Soulear 耳镜 Wi-Fi，以 i4season UDP 协议接收 JPEG，再经 USB 串口送到 Python 电脑界面，用于电子与机械检查，不必在手机安装原厂 App。\n\n项目称研究、协议实现、桥接固件、电脑工具、测试与文档均在 Claude Code 对话中完成；人负责想法、硬件、真机测试与决策。但 README 明确承认 rbeilvert/otoscope 的既有协议实现是蓝图，不能把传播帖“从手机 App 逆向”的简写改写成 Claude 独自首次破解协议。项目报告 Hopefox Find T／HKV41B 一台设备、Windows 测试、480×480 JPEG 约17 fps，提供照片、录制、旋转与 LED 控制。\n\n这些是项目自报，并非本合集运行：没有安装依赖、刷桥接板或连接相机。相机本身 Wi-Fi 仍开放且协议无认证，隔离桥接不能消除无线近场访问风险；其他相机兼容只是预期。该工具不是医疗器械，不应把电脑画面用于诊断或治疗。",
+    "sources": [{"label": "本轮候选：AI 构建汇总入口", "url": "https://x.com/i/status/2111253121204994318"}, {"label": "补读同串：NJFE 耳镜具体项目", "url": "https://x.com/i/status/2111253320170164278"}, {"label": "NJFE README：Claude 参与、前人归因与限制", "url": "https://github.com/WildweaselMS/NJFE"}, {"label": "10月10日文档提交，早于候选窗口", "url": "https://github.com/WildweaselMS/NJFE/commit/992866c6609f8c813f459ff79840cf04d5883f8e"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["项目报告只测一台 Hopefox Find T；没有本合集独立复现。", "GPL-3.0-or-later，协议实现源自 GPL otoscope；未确认 REA。"],
+    "en": {
+      "title": "NJFE: Claude builds on prior protocol research to turn an ear camera into a PC inspection scope",
+      "summary": "An ESP32-C3 bridges a Soulear Wi-Fi JPEG stream to USB; the project credits otoscope's prior reverse engineering and reports testing one device.",
+      "description": "The 08:29 Beijing-time candidate on October 17 opens a seven-build AI thread; a supplementary reply at 08:29:51 identifies NJFE, Not Just For Ears. A name search found WildweaselMS/NJFE. Reading its README and commit metadata showed implementation and English documentation already existed on October 10, before this window; these are supplementary sources, not newly collected candidate posts. An ESP32-C3 joins a Soulear ear camera's Wi-Fi, receives JPEG over i4season UDP and forwards it over USB serial to a Python PC interface for electronics and mechanical inspection, without the vendor phone app.\n\nThe project says research, protocol implementation, bridge firmware, PC tools, tests and documentation were developed in Claude Code conversations; the human supplied the idea, hardware, real-device testing and decisions. However, the README explicitly credits rbeilvert/otoscope's existing protocol implementation as the blueprint. The circulating shorthand about reversing the phone app must not become a claim that Claude independently discovered the protocol first. The project reports a single Hopefox Find T/HKV41B device, Windows testing, 480×480 JPEG at about 17 fps, and photos, recording, rotation and LED controls.\n\nThese are project reports, not execution by this collection: no dependencies were installed, bridge flashed or camera connected. The camera's Wi-Fi remains open and its protocol unauthenticated; bridge isolation does not remove nearby wireless access risk. Compatibility with other cameras is an expectation. The tool is not a medical device and its PC image should not be treated as diagnosis or treatment.",
+      "metadata": ["Project reports testing only one Hopefox Find T; no independent reproduction by this collection.", "GPL-3.0-or-later; protocol implementation derives from GPL otoscope; REA use unconfirmed."],
+      "source_labels": ["In-window candidate: AI-build roundup opening", "Supplementary same-thread reply identifying NJFE", "NJFE README: Claude involvement, prior-work attribution and limits", "October 10 documentation commit, predating the candidate window"]
+    }
+  },
+  {
+    "id": "leanrea-cli-skill-benchmark",
+    "title": "LeanREA：8 KB CLI Skill 与 REA 的 Notion／原生库／Go 对照",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "公开36次 Sonnet 5.5 对照，项目报更快更省，但细表是74/75对75/75，不能照抄同准确率。",
+    "description": "10月17日11:09（北京时间），@aicodeking 发布 LeanREA，称用一个8 KB Skill 指导 Agent 直接调用 CLI 工具，不经过 MCP。按名称查到 aicodeking/leanrea，补读 README、bench/BENCHMARK.md 与提交元数据，确认初始仓库提交在当日10:53，基准文档自标10月16日。四项任务是 Notion app.asar 的麦克风／会议检测调用链、mac_utils.node 的导出与 TCC 权限和单实例锁、去符号 gh 的构建依赖信息，以及仅凭反汇编恢复锁的 socket 路径、通信协议与对端认证。\n\n项目用 Claude Code 2.1.301 headless、Sonnet 5.5、macOS arm64，对 LeanREA、无 Skill、REA 6.5.0 MCP 加原 Skill 三组各做每任务三次，共36次。细表列每组12次累计：LeanREA 388秒、2.17美元、55轮、240万 tokens，得分74/75；REA 627秒、3.36美元、124轮、593万 tokens，75/75；无 Skill 479秒、2.21美元、81轮、311万 tokens，67/75且一次拒绝。所谓快38%、便宜35%、少56%轮次是项目的聚合结果，不是本合集测量；宣传“同准确率”不严谨，LeanREA 曾把 v2 IPC 通道答成同时存在的 v1。\n\n答案按作者手写答案表和正则评分，文档还披露无 Skill 的 Go 版本字符串曾被正则误判并更正。单模型、单机器、每格三次；没有安装完整原生分析引擎，不能外推 Ghidra／Hopper／IDA 或 APK 任务。README 另称 jadx 也未安装。REA 组启用按需工具检索，400.7k 上下文数字只对应关闭检索、一次加载全部工具的独立探针，不是36次主对照的默认成本。同串有人质疑 Electron 依赖安装审批等待和统一批处理／输出限制是否计入，本轮没有作者解答。公开基准与原始指标路径使它比单句宣传更可追查，但本合集没有执行仓库、模型或目标，不将本测试推广为 LeanREA 普遍替代 REA。",
+    "sources": [{"label": "LeanREA 发布与36次对照声明", "url": "https://x.com/i/status/2111293595529703853"}, {"label": "公开项目 README", "url": "https://github.com/aicodeking/leanrea"}, {"label": "初始提交中的完整基准与限制", "url": "https://github.com/aicodeking/leanrea/blob/a07ed0ebf1c585d9db535f91a91ef555b8920b90/bench/BENCHMARK.md"}, {"label": "同串读者追问：安装审批等待是否计时", "url": "https://x.com/i/status/2111299719888884167"}, {"label": "同串读者追问：统一批处理与输出限制", "url": "https://x.com/i/status/2111298045421953535"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["发布候选快照（2026-10-17）：31赞、557浏览、2转发；补读时变化的浏览数不覆盖原快照。", "作者基准，不是独立复现；74/75与75/75有差异，36次不等于36个不同目标。"],
+    "en": {
+      "title": "LeanREA: an 8 KB CLI skill benchmarked against REA on Notion, a native addon and Go",
+      "summary": "A public 36-run Sonnet 5.5 comparison reports lower time and cost, but the detailed scores are 74/75 versus 75/75, not literally equal accuracy.",
+      "description": "At 11:09 Beijing time on October 17, @aicodeking announced LeanREA, an 8 KB skill guiding agents to use CLI tools directly rather than MCP. A name search found aicodeking/leanrea. Supplementary reading of its README, bench/BENCHMARK.md and commit metadata confirmed the initial repository commit at 10:53 that day; the benchmark document labels itself October 16. Four tasks cover the microphone/meeting-detection chain in Notion app.asar; mac_utils.node exports, TCC permission checking and its single-instance lock; build/dependency information from a stripped gh binary; and recovering the lock's socket path, wire protocol and peer authentication from disassembly alone.\n\nThe project used Claude Code 2.1.301 headless, Sonnet 5.5 and macOS arm64, comparing LeanREA, no skill, and REA 6.5.0 MCP plus its own skill with three repetitions per task per arm, 36 runs altogether. Detailed totals over 12 runs per arm are: LeanREA 388 seconds, $2.17, 55 turns, 2.40 million tokens, score 74/75; REA 627 seconds, $3.36, 124 turns, 5.93 million tokens, 75/75; no skill 479 seconds, $2.21, 81 turns, 3.11 million tokens, 67/75 with one refusal. The advertised 38% less time, 35% lower cost and 56% fewer turns are project aggregates, not measurements by this collection. 'Same accuracy' is imprecise: LeanREA once named an existing v1 IPC channel instead of v2.\n\nAnswers were regex-graded against author-written keys. The document discloses a corrected regex false negative for the bare model's Go version string. There was one model, one machine and three repetitions per cell; full native analysis engines were not installed, so this cannot be generalized to Ghidra/Hopper/IDA or APK work. The README additionally says jadx was absent. REA used deferred tool search; the 400.7k context figure belongs only to a separate probe loading every tool with search disabled, not default cost in the 36-run comparison. Readers ask whether Electron dependency-install approval delays and matched batching/output caps were counted; no author answer was obtained. Public benchmark and raw-metric paths make this more inspectable than a promotional sentence, but this collection did not execute the repository, models or targets, and does not infer that LeanREA universally replaces REA.",
+      "metadata": ["Announcement candidate snapshot (2026-10-17): 31 likes, 557 views, 2 reposts; changing view counts during rereading do not overwrite it.", "Author benchmark, not independent reproduction; 74/75 differs from 75/75, and 36 runs are not 36 distinct targets."],
+      "source_labels": ["LeanREA announcement and 36-run comparison claim", "Public project README", "Full benchmark and caveats in the initial commit", "Reader question: were installation-approval delays timed?", "Reader question: matched batching and output caps"]
     }
   }
 ]

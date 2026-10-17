@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**344 entries**, organized by use case, without a Top-N or popularity threshold.
+**356 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (76)
-- [Hardware and interoperability](categories/en/hardware.md) (77)
-- [Applications and clients](categories/en/apps.md) (158)
+- [Games and preservation](categories/en/games.md) (78)
+- [Hardware and interoperability](categories/en/hardware.md) (82)
+- [Applications and clients](categories/en/apps.md) (163)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (33)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -104,6 +104,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [ArkWeb: a two-game experiment bringing Spider-Man to Gotham](cases/en/arkweb-spiderman-arkham-report.md) — A public project bridges collision, rendered frames and combat poses, with Claude setup guidance; REA's development role is unconfirmed. **[REA use unconfirmed · In progress]**
 - [Doom: a claimed clean-room reimplementation with 19 Claude agents](cases/en/doom-19-claude-cleanroom-report.md) — A poster claims a weekend Doom rebuild with WAD and three-platform support, without inspectable code or tests. **[Other AI-assisted work · Needs verification]**
 - [Victoria 3: an idea to use Claude for decompilation and modification](cases/en/victoria3-claude-decompile-idea.md) — A reply suggests having Claude decompile Vic3, without reporting execution or a concrete modification result. **[Other AI-assisted work · Needs verification]**
+- [League of Legends: a report of AI-assisted Linux gameplay](cases/en/lol-linux-ai-gameplay-report.md) — A circulating post claims a month of AI-assisted work enabled real Linux gameplay, not merely a launcher; implementation and compatibility are unchecked. **[Other AI-assisted work · Needs verification]**
+- [Fallout 4: a brief claim of fixes after Claude reverse engineering](cases/en/fallout4-claude-fix-report.md) — A user says studying Fallout 4 enabled Claude to fix issues it could not guess or brute-force; faults and patches are not public. **[Other AI-assisted work · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -184,6 +186,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [E-paper vocabulary device: an idea to investigate custom firmware with an LLM](cases/en/epaper-vocabulary-llm-firmware-idea.md) — Participants want to reverse a closed device's translation direction and ask whether an LLM could help boot custom firmware; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Google Home: a blocked attempt to revive an old speaker without replacing hardware](cases/en/google-home-openai-bootloader-revival.md) — The author wants open smart-home software on an old speaker but reports a locked bootloader and OpenAI safeguards. **[Other AI-assisted work · In progress]**
 - [XP scanner to Windows 11: an AI and two-VM comparison idea](cases/en/xp-scanner-win11-ai-two-vm-idea.md) — For a scanner with XP-only drivers, a reply suggests AI observation on the old system and testing on Windows 11, possibly with REA; nothing is implemented. **[Other AI-assisted work · Needs verification]**
+- [A 3D home model: a reported REA-assisted Mac menu-bar controller](cases/en/home-3d-menubar-rea-report.md) — Michael Guo describes clicking a house model to control lights and AC, with ChatGPT/Claude access; the original developer is unidentified. **[REA · Needs verification]**
+- [AMABOO Frameo: Claude Code adapts an existing Home HQ frame setup](cases/en/amaboo-frameo-claude-homehq.md) — An account of j3lte's reversible kiosk configuration without flashing, including a reboot-timing trap after disabling Frameo. **[Other AI-assisted work · Needs verification]**
+- [Jiuchuan Xiaozhi AI speaker: give Muse stock firmware and hardware specifications](cases/en/jiuchuan-xiaozhi-muse-adaptation.md) — A workflow backs up ESP32-S3 firmware and asks Muse to adapt Muse Gadgets to the hardware; no flashing or device-run result is reported. **[Other AI-assisted work · In progress]**
+- [A Windows keyboard utility: Claude builds a Linux version and checks it with a camera](cases/en/keyboard-exe-claude-linux-camera.md) — Mayank Bansal supplies a configuration exe, a reverse-engineering repository and a camera to Claude, reporting a Linux version and Omarchy status-bar plugin. **[REA use unconfirmed · Needs verification]**
+- [NJFE: Claude builds on prior protocol research to turn an ear camera into a PC inspection scope](cases/en/njfe-claude-ear-camera-usb.md) — An ESP32-C3 bridges a Soulear Wi-Fi JPEG stream to USB; the project credits otoscope's prior reverse engineering and reports testing one device. **[Other AI-assisted work]**
 
 ### Applications and clients
 
@@ -345,6 +352,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [3ds Max: an idea to investigate the 3D tool with AI](cases/en/3ds-max-ai-decompile-idea.md) — A poster asks whether anyone has reverse-engineered 3ds Max with AI; this is not a started or completed rebuild. **[Other AI-assisted work · Needs verification]**
 - [System UI from video: Claude measures frames and infers animation parameters](cases/en/claude-system-ui-video-measurement.md) — The author says Claude measured a reference video and attempted animation-parameter interpolation, without accuracy or completion checks. **[Other AI-assisted work · In progress]**
 - [ENS v2 phishing email: a Claude-assisted investigation of dangerous agent repositories](cases/en/ens-v2-phishing-claude-repo-investigation.md) — The author reports tracing an email to a wallet-draining site and dangerous skill files, then reporting them to GitHub; inspectable samples are absent. **[Other AI-assisted work · Analysis test]**
+- [Grok Bot real-time features: a Hermes investigation with audio unresolved](cases/en/hermes-grok-realtime-research.md) — A respondent reports having Hermes study Grok Bot, developing with Opus and Sol in parallel, while Codex works on unresolved real-time audio. **[Other AI-assisted work · In progress]**
+- [REA Reconstruction Companion: connect evidence to specifications, implementation and acceptance](cases/en/rea-reconstruction-companion.md) — A model-independent Agent Skill organizes scope, evidence, architecture and validation; documentation and examples are not cross-model certification. **[REA · Related project]**
+- [Claude Desktop app.asar: Opus reportedly opens the package during feature research](cases/en/opus-claude-desktop-asar-inspection.md) — A user says Opus read the desktop package without an explicit reverse-engineering request; the feature, artifacts and comparisons are unspecified. **[Other AI-assisted work · Analysis test]**
+- [CLO3D DLLs: an idea to rebuild a garment-design tool with Claude/Codex](cases/en/clo3d-dll-ai-rebuild-idea.md) — A poster proposes decompiling and rebuilding CLO3D DLLs; thousands in API spending is speculation, not a completed project's bill. **[Other AI-assisted work · Needs verification]**
+- [LeanREA: an 8 KB CLI skill benchmarked against REA on Notion, a native addon and Go](cases/en/leanrea-cli-skill-benchmark.md) — A public 36-run Sonnet 5.5 comparison reports lower time and cost, but the detailed scores are 74/75 versus 75/75, not literally equal accuracy. **[Other AI-assisted work · Analysis test]**
 
 ### Algorithms and feature recovery
 

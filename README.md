@@ -6,9 +6,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-## 344 cases & projects
+## 356 cases & projects
 
-**Latest case update / maintenance:** October 17, 2026, 08:11 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 17, 2026, 12:09 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -24,13 +24,13 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
-3. **[Gears of War 3](cases/en/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI-assisted Linux recompilation and graphics work. The author clarifies **mechanical PowerPC-to-C++ translation, not recovered original source**; the reported 4K WIP still drops frames in combat. `In progress`
-4. **[ArkWeb: Spider-Man in Gotham](cases/en/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — Run two owned games together, stream collision and composite the character. Public code and Claude setup guidance; **experimental, version-bound, REA use unconfirmed**. `In progress`
-5. **[Computer + REA: five app demos](cases/en/computer-rea-five-app-rebuild-demos.md)** · `2026-10-16` — Design layouts, edit spreadsheets, process images, review contracts, and mix audio. **Official demos, not verified replacements** for Figma, Calc, Photopea, Harvey, or Audacity. `REA · Unverified`
-6. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — **A native port from decompiled code, not static recompilation**, according to the author. Visual defects remain; November 20 is a release plan. `In progress`
-7. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
-8. **[LASRecomp](cases/en/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — An AI-assisted Link’s Awakening desktop port. Requires the original game; beta crashes and untested platform support are documented. `Public project`
-9. **[KEF LSX II volume keys](cases/en/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — A USB/LAN bridge improves desktop volume control without patching signed firmware. Latency figures are the author’s measurements. `Public implementation`
+3. **[LeanREA: direct CLI vs MCP](cases/en/leanrea-cli-skill-benchmark.md)** · `2026-10-17` — Trace Notion features, inspect a native lock and identify Go dependencies. The public **36-run comparison** reports lower time and cost, but scores are **74/75 vs 75/75**, not identical accuracy. One model and machine; not independently rerun. `Analysis test`
+4. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
+5. **[Gears of War 3](cases/en/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI-assisted Linux graphics work through **mechanical PowerPC-to-C++ translation, not recovered original source**. The reported 4K WIP still drops frames in combat. `In progress`
+6. **[ArkWeb: Spider-Man in Gotham](cases/en/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — Run two owned games together, stream collision and composite the character. Public code and Claude setup guidance; **experimental, version-bound, REA use unconfirmed**. `In progress`
+7. **[Computer + REA: five app demos](cases/en/computer-rea-five-app-rebuild-demos.md)** · `2026-10-17` — Design, spreadsheets, images, contracts and audio. A reader reports **only partial Figma features in Assemblage**; official demos are not verified replacements. `REA · Unverified`
+8. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — **A native port from decompiled code, not static recompilation**, according to the author. Visual defects remain; November 20 is a release plan. `In progress`
+9. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
 10. **[Test the CSV evaluator first](cases/en/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — Three deliberately broken exporters reportedly passed simple tests; **215 byte comparisons** exposed them. A useful acceptance-testing experiment, without published test inputs or code. `REA test`
 
 ## Classic cases
@@ -46,9 +46,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **76** |
-| [Hardware & interoperability](categories/en/hardware.md) | **77** |
-| [Applications & clients](categories/en/apps.md) | **158** |
+| [Games & preservation](categories/en/games.md) | **78** |
+| [Hardware & interoperability](categories/en/hardware.md) | **82** |
+| [Applications & clients](categories/en/apps.md) | **163** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **33** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
@@ -57,7 +57,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 <summary><strong>Update & evidence notes</strong></summary>
 
 - **Continuous resolved-material cutoff:** October 15, 2026, 16:00, Beijing time. Older unresolved sources can hold this cutoff back while newer entries are added; it is not a verification date for every project.
-- Searches run six times daily with keyword and pagination limits; coverage is not exhaustive. Source dates, evidence boundaries, and any engagement snapshots are recorded in case details.
+- Searches run six times daily with keyword and pagination limits; coverage is bounded, not exhaustive, and some linked evidence remains unresolved. Source dates, evidence boundaries, and engagement snapshots are recorded in case details.
 - Full descriptions, sources, and language switching are available on every case page.
 
 </details>

@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **344 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **356 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（76）
-- [硬件与设备互通](categories/hardware.md)（77）
-- [应用与客户端](categories/apps.md)（158）
+- [游戏与游戏保存](categories/games.md)（78）
+- [硬件与设备互通](categories/hardware.md)（82）
+- [应用与客户端](categories/apps.md)（163）
 - [算法与功能重建](categories/algorithms.md)（33）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -102,6 +102,8 @@
 - [ArkWeb：让蜘蛛侠在 Gotham 摆荡的双游戏实验](cases/arkweb-spiderman-arkham-report.md) — 公开项目将两款游戏的碰撞、画面和战斗姿态桥接，并提供 Claude 安装引导；REA 参与开发未确认。 **[未确认使用 REA · 进行中]**
 - [Doom：19 个 Claude 的 clean-room 重实现自述](cases/doom-19-claude-cleanroom-report.md) — 发帖者声称一个周末重实现 Doom、支持 WAD 与三平台；没有可核对代码或测试。 **[其他 AI 逆向 · 待验证]**
 - [Victoria 3：让 Claude 反编译游戏以便修改的 idea](cases/victoria3-claude-decompile-idea.md) — 回复建议让 Claude 反编译 Vic3；没有报告运行或具体改动成果。 **[其他 AI 逆向 · 待验证]**
+- [League of Legends：AI 辅助逆向后在 Linux 实际游玩的转述](cases/lol-linux-ai-gameplay-report.md) — 传播帖称开发者用一个月研究，让英雄联盟在 Linux 进入游戏；未核对实现或兼容范围。 **[其他 AI 逆向 · 待验证]**
+- [Fallout 4：Claude 逆向后修复故障的简短自述](cases/fallout4-claude-fix-report.md) — 作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -182,6 +184,11 @@
 - [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
 - [Google Home：不换硬件的旧音箱复用受阻报告](cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
 - [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**
+- [全屋 3D 模型：REA 设备研究到 Mac 菜单栏控制的转述](cases/home-3d-menubar-rea-report.md) — Michael Guo 转述点击房屋模型控制真灯与空调，并接给 ChatGPT / Claude；未识别原开发者。 **[REA · 待验证]**
+- [AMABOO Frameo 相框：Claude Code 参考已有项目改作 Home HQ 屏幕](cases/amaboo-frameo-claude-homehq.md) — 转述 j3lte 用 Claude Code 配置可逆的相框 kiosk，不刷机；记录禁用原应用后的重启陷阱。 **[其他 AI 逆向 · 待验证]**
+- [九川小智 AI 音响：把原固件与规格交给 Muse 做适配](cases/jiuchuan-xiaozhi-muse-adaptation.md) — 备份 ESP32-S3 固件后让 Muse 按硬件规格调整 Muse Gadgets，尚无刷入或设备运行结果。 **[其他 AI 逆向 · 进行中]**
+- [键盘 Windows 配置工具：Claude 重做 Linux 版，再用摄像头检查](cases/keyboard-exe-claude-linux-camera.md) — Mayank Bansal 把配置 exe、逆向仓库与摄像头交给 Claude，报告得到 Linux 端和 Omarchy 状态栏插件。 **[未确认使用 REA · 待验证]**
+- [NJFE：Claude 借前人协议研究，把耳镜变成电脑 USB 检查镜](cases/njfe-claude-ear-camera-usb.md) — ESP32-C3 桥接 Soulear 耳镜的 Wi-Fi JPEG 到电脑；项目明确复用 otoscope 的逆向成果，仅测一台设备。 **[其他 AI 逆向]**
 
 ### 应用与客户端
 
@@ -343,6 +350,11 @@
 - [3ds Max：询问 AI 反编译三维工具的 idea](cases/3ds-max-ai-decompile-idea.md) — 有人询问是否已用 AI 逆向 3ds Max；不是已启动或完成的重建。 **[其他 AI 逆向 · 待验证]**
 - [系统 UI 视频：Claude 逐帧测量与动画参数推断](cases/claude-system-ui-video-measurement.md) — 作者称 Claude 从参考视频测量系统界面，并尝试插值恢复动画参数；没有精度或完成验收。 **[其他 AI 逆向 · 进行中]**
 - [ENS v2 钓鱼邮件：Claude 辅助追查危险 Agent 仓库](cases/ens-v2-phishing-claude-repo-investigation.md) — 作者称从可疑邮件查到钱包盗取站点及危险 Skill 文件，并向 GitHub 举报；未公开可核对样本。 **[其他 AI 逆向 · 分析测试]**
+- [Grok Bot 实时功能：让 Hermes 研究并重做，音频仍未解决](cases/hermes-grok-realtime-research.md) — 回复者称让 Hermes 观察 Grok Bot 实时功能，使用 Opus 与 Sol 并行开发，实时音频仍在做。 **[其他 AI 逆向 · 进行中]**
+- [REA Reconstruction Companion：把分析证据接到规格、实现与验收](cases/rea-reconstruction-companion.md) — 模型无关的 Agent Skill，组织目标范围、证据、架构与验证；文档与示例不等于跨模型效果认证。 **[REA · 相关项目]**
+- [Claude Desktop app.asar：Opus 为功能调研主动读包的报告](cases/opus-claude-desktop-asar-inspection.md) — 用户称未要求逆向，Opus 却直接读取桌面包弄清某功能；没有功能名、源码产物或对照测试。 **[其他 AI 逆向 · 分析测试]**
+- [CLO3D DLL：交给 Claude / Codex 重建服装工具的 idea](cases/clo3d-dll-ai-rebuild-idea.md) — 发帖者设想从 CLO3D DLL 反编译并重建；数千 API 费用是猜测，不是已完成项目账单。 **[其他 AI 逆向 · 待验证]**
+- [LeanREA：8 KB CLI Skill 与 REA 的 Notion／原生库／Go 对照](cases/leanrea-cli-skill-benchmark.md) — 公开36次 Sonnet 5.5 对照，项目报更快更省，但细表是74/75对75/75，不能照抄同准确率。 **[其他 AI 逆向 · 分析测试]**
 
 ### 算法与功能重建
 
