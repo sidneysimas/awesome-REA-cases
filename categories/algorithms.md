@@ -39,3 +39,4 @@
 - [731 个函数：SPEC 隔离与四个负例的 REA 重建自述](../cases/rea-731-functions-cleanroom-self-report.md) — 作者称 REA 写行为规格、新 Opus 会话重建并先写测试，九天内731函数中729精确匹配；程序与日志未公开。 **[REA · 待验证]**
 - [JavaScript divergence：格式化后换游戏，误导 AI 逆向的 idea](../cases/javascript-divergence-agent-decoy.md) — 转述 Robert Vähhi 的处理器差异研究：让清理后的 JS 变成可运行诱饵，作为人类与 AI 分析的防御设想。 **[其他 AI 逆向 · 相关项目]**
 - [三模型二进制研究：函数图、双假说与原程序裁判的 idea](../cases/three-model-binary-evidence-workflow-idea.md) — 从自建 record.c 实验样本开始，让不同模型分工映射、解释和挑错；尚无可核实运行记录。 **[其他 AI 逆向 · 待验证]**
+- [Eidolon：多 Agent 从演示二进制到 Rust 的对照报告](../cases/eidolon-rust-multiagent-report.md) — Rovshan 报告解包 64 KB 级演示程序、恢复着色器与合成器，重写 Rust 并比较 27,000 帧和音频；日志未核验。 **[其他 AI 逆向 · 待验证]**

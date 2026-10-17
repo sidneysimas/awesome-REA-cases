@@ -175,3 +175,6 @@
 - [Amazon Prime tvOS：研究 IPA 的 Universal Link，让自己的 App 跳到节目页](../cases/prime-tvos-universal-link-ghidra-report.md) — Xiao 自述用 RAE + Ghidra 找到 tvOS IPA 的链接格式并接入自己的 App，同时报告磁盘占满使 Codex 受阻。 **[未确认使用 REA · 待验证]**
 - [Claude / Codex 额度：REA 辅助放进电脑顶栏的自述](../cases/claude-codex-limits-topbar-rea-report.md) — Dhananjay_Tech 称把两种 Agent 的实时额度和正在进行的工作放进顶栏，未公开数据链路与代码。 **[REA · 待验证]**
 - [LLVM ABI：gingerBill 用 LLM 研究未文档化内部的自述](../cases/llvm-abi-llm-research-report.md) — 补读父串识别目标为 LLVM 的调用约定和 IR 之外内部；作者称 LLM 有帮助，但大量上下文仍不足以免除困难。 **[其他 AI 逆向 · 进行中]**
+- [Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述](../cases/cursor-custom-relay-foxsnowing-report.md) — SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。 **[未确认使用 REA · 相关项目]**
+- [Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎](../cases/johnny-castaway-rust-rea.md) — 从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。 **[REA · 进行中]**
+- [REA Workspace Template：把原件、分析副本与证据分开的工作区](../cases/rea-workspace-template-gundy.md) — Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。 **[REA · 相关项目]**

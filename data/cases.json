@@ -10676,5 +10676,187 @@
       "metadata": ["Candidate and target-identifying parent posts all published on October 17, 2026; parents provide context only.", "LLM assistance and continuing difficulty are author reports without a model, fix commit or quantified performance; REA is unconfirmed."],
       "source_labels": ["gingerBill's original reply about LLM-assisted reversing and difficulty", "Supplementary author thread: LLVM ABI and Odin reference", "Supplementary parent: documentation beyond IR and the need for investigation"]
     }
+  },
+  {
+    "id": "mario-kart8-deluxe-0xsvsv-report",
+    "title": "Mario Kart 8 Deluxe：0xsvsv 的 Claude / REA PC 移植自述",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称与 Claude 将游戏移到 PC，补充所用工具为 Claude Code、经 REA 接入的 IDA Pro MCP 和游戏 ROM。",
+    "description": "2026年10月17日20:19（北京时间），sv（@0xsvsv）回答移植工具问题，称使用Claude Code、经REA接入的IDA Pro MCP和游戏ROM。补读父串确认目标是Switch游戏Mario Kart 8 Deluxe：作者在同日00:48的原帖称自己与Claude已将其移到PC，并附视频。这里的目标是让已有主机游戏在PC运行，不是一般的赛车玩法复刻。\n\n作者在23:24的后续回复概述，让Claude先在claude.md里制定计划，再要求它移植。补充父帖和后续回复用于识别目标与方法，不作为额外候选。原串没有源码、构建步骤、ROM版本、性能测量或可审查的二进制对照；视频附件存在不等于证实原生移植而非模拟器运行，也不证明完整游戏兼容。保留为作者自述，不认定已经完成可复现的PC移植；未下载ROM、运行游戏或独立验证。",
+    "sources": [
+      {"label": "候选：作者说明 Claude Code / REA / IDA Pro 工具", "url": "https://x.com/i/status/2111431983691862272"},
+      {"label": "补充父帖：Mario Kart 8 Deluxe PC 移植自述", "url": "https://x.com/i/status/2111137241674522772"},
+      {"label": "同日后续：先制定 claude.md 计划", "url": "https://x.com/i/status/2111478486678548735"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17；工具回复20:19，补充父帖00:48、后续23:24，均为北京时间。", "PC移植与工具使用为作者报告；未有公开代码、构建或原生运行验证。"],
+    "en": {
+      "title": "Mario Kart 8 Deluxe: 0xsvsv's Claude/REA PC-port account",
+      "summary": "The author claims a PC port with Claude and identifies Claude Code, IDA Pro MCP through REA, and the game ROM as the tools.",
+      "description": "At 20:19 Beijing time on October 17, 2026, sv (@0xsvsv) answers a porting-tools question with Claude Code, IDA Pro MCP through REA and the game ROM. Supplementary parent-thread reading identifies the Switch game Mario Kart 8 Deluxe: in the original post at 00:48 that day, the author says he and Claude have ported it to PC and attaches a video. The intended goal is running an existing console game on PC, not merely recreating kart-racing mechanics.\n\nIn a follow-up at 23:24, the author outlines asking Claude to make a plan in claude.md and then asking it to port the game. These parent and follow-up posts identify the target and method rather than supplying extra candidates. The thread provides no source code, build instructions, ROM version, performance measurements or inspectable binary comparisons. A video attachment does not establish native porting rather than emulation, or complete game compatibility. This remains an author account, not a confirmed reproducible PC port. No ROM was downloaded and no game was run or independently verified here.",
+      "metadata": ["Sources published October 17, 2026: tools reply at 20:19, supplementary parent at 00:48 and follow-up at 23:24, all Beijing time.", "PC porting and tool use are author reports without public code, builds or native-execution validation."],
+      "source_labels": ["Candidate: author's Claude Code/REA/IDA Pro tools reply", "Supplementary parent: Mario Kart 8 Deluxe PC-port claim", "Same-day follow-up: make a claude.md plan first"]
+    }
+  },
+  {
+    "id": "ksp2-ai-decompile-community-idea",
+    "title": "Kerbal Space Program 2：用 AI 反编译以交给社区维护的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Jordan 在 KSP 2 弃置后仍有人做 Mod 的讨论中，提出开源或用 AI 反编译；尚非已启动的工程。",
+    "description": "2026年10月17日20:30（北京时间），Jordan（@IHateMyXHandle）建议权利方直接开放源码让社区继续开发，或由人用AI反编译。补读同日16:37的父帖，确认讨论的是太空飞行与建造游戏Kerbal Space Program 2（KSP 2）：Blobifi说游戏在抢先体验阶段被弃置两年后，仍有人做Mod和游玩。这个背景为父帖的表述，不是本合集调查开发商现状的结论。\n\n具体想法是从现有游戏恢复可维护代码，服务于继续开发，而非只是讨论AI能否写游戏。没有作者已经开始反编译的声明，也没有选定模型、REA、代码、路线图或测试。以idea收录；in-progress仅表示尚未完成的设想，不表示工程已启动或获得权利方许可。未执行游戏或验证可行性。",
+    "sources": [{"label": "候选：Jordan 提议 AI 反编译与社区开发", "url": "https://x.com/i/status/2111434708575805636"}, {"label": "补充父帖：KSP 2 的 Mod 与弃置背景", "url": "https://x.com/i/status/2111376025519292484"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17 20:30；背景父帖16:37，北京时间。", "具体idea，非已启动的移植；没有模型、代码或可行性实测，REA未确认。"],
+    "en": {
+      "title": "Kerbal Space Program 2: an AI-decompilation idea for community maintenance",
+      "summary": "Jordan suggests open sourcing or AI-decompiling KSP 2 in a discussion about continued modding after abandonment; no engineering effort is established.",
+      "description": "At 20:30 Beijing time on October 17, 2026, Jordan (@IHateMyXHandle) suggests that the rights holders release the source for community development, or that someone decompile it with AI. Reading the parent post from 16:37 that day identifies the spaceflight and construction game Kerbal Space Program 2 (KSP 2): Blobifi says people are still modding and playing it over two years after abandonment in early access. That background is the parent's account, not this collection's investigation of the developer's current situation.\n\nThe concrete idea is recovering maintainable code from the existing game to continue development, rather than a general discussion of whether AI can write games. Nobody in the cited exchange claims to have started decompiling it; there is no selected model, REA attribution, code, roadmap or test. It is included as an idea. The in-progress status denotes an unfinished proposal, not an established engineering effort or permission from the rights holders. No game was executed or feasibility verified here.",
+      "metadata": ["Candidate published October 17, 2026, 20:30; background parent at 16:37, Beijing time.", "Concrete idea, not an established porting effort; no model, code or feasibility test, and REA is unconfirmed."],
+      "source_labels": ["Candidate: Jordan's AI-decompilation and community-development proposal", "Supplementary parent: KSP 2 modding and abandonment context"]
+    }
+  },
+  {
+    "id": "eidolon-rust-multiagent-report",
+    "title": "Eidolon：多 Agent 从演示二进制到 Rust 的对照报告",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Rovshan 报告解包 64 KB 级演示程序、恢复着色器与合成器，重写 Rust 并比较 27,000 帧和音频；日志未核验。",
+    "description": "2026年10月17日22:07—22:08（北京时间），Rovshan（@mrboldpineapple）报告把一个64 KB级demoscene演示程序的.exe交给AI，从解包、提取着色器和动画曲线、恢复音乐合成器到Rust重写，测试前沿模型能否端到端逆向。续帖把原目标称为Poo-Brain的Eidolon，并称其为Revision 2017 PC 64k第一名；作品归属与获奖信息在本次未另核实。\n\n作者称由一个协调Agent分派任务，工作Agent负责解包、合成器恢复、Rust移植及逐帧SHA-256检查；列出GPT-6 Astra、GPT-6.1 Sol与Claude Opus 5.5，约760M tokens。作者报告约40小时完成，27,000帧和每个音频采样均与原版一致，体积从60,928降为48,128字节，称缩小21%。这里的一致是作者所称输出画面和声音一致，不是Rust可执行文件与原.exe逐字节相同；模型名、时间、tokens和数值均保留原帖口径。\n\n原帖有短链，但本次未取得其目标内容，也未取得源码、比较日志、帧哈希或音频记录。不能把这些数字或端到端成功视为独立验证；REA未被提及，未运行目标代码。",
+    "sources": [{"label": "作者主帖：解包、Rust 重写与输出一致性自述", "url": "https://x.com/i/status/2111459038823157986"}, {"label": "作者续帖：目标、模型、分工与体积数值", "url": "https://x.com/i/status/2111459359867699273"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17 22:07与22:08，北京时间。", "约40小时、760M tokens、27,000帧及60,928→48,128字节均为作者报告，未取得对照日志。", "原作身份/获奖、模型标签及输出一致性未独立核验；未确认REA。"],
+    "en": {
+      "title": "Eidolon: a multi-agent binary-to-Rust comparison report",
+      "summary": "Rovshan reports unpacking a 64 KB-class demo, recovering shaders and its synthesizer, and comparing a Rust rewrite over 27,000 frames and audio; logs are unverified.",
+      "description": "At 22:07–22:08 Beijing time on October 17, 2026, Rovshan (@mrboldpineapple) reports giving AI a 64 KB-class demoscene .exe to test end-to-end reverse engineering: unpacking, extracting shaders and animation curves, recovering the music synthesizer and rewriting it in Rust. The follow-up identifies the original as Eidolon by Poo-Brain and calls it the Revision 2017 PC 64k winner; that identity and award were not separately checked in this review.\n\nThe author says a coordinator split the work among agents handling unpacking, synth recovery, Rust porting and per-frame SHA-256 checks. He lists GPT-6 Astra, GPT-6.1 Sol and Claude Opus 5.5, with about 760M tokens. He reports roughly 40 hours, matching all 27,000 frames and every audio sample, and shrinking from 60,928 to 48,128 bytes, described as 21% smaller. Matching means the claimed rendered pictures and sound, not a Rust executable byte-identical to the original .exe. Model names, time, tokens and figures retain the posts' conventions.\n\nThe main post has a short link, but its destination content, source code, comparison logs, frame hashes and audio records were not obtained. Neither the figures nor end-to-end success are independently verified. REA is not mentioned and no target code was run here.",
+      "metadata": ["Sources published October 17, 2026, at 22:07 and 22:08 Beijing time.", "About 40 hours, 760M tokens, 27,000 frames and 60,928→48,128 bytes are author reports without obtained comparison logs.", "Original-work identity/award, model labels and output equivalence were not independently verified; REA is unconfirmed."],
+      "source_labels": ["Author's main post: unpacking, Rust rewrite and claimed output equivalence", "Author's follow-up: target, models, delegation and size figures"]
+    }
+  },
+  {
+    "id": "cursor-custom-relay-foxsnowing-report",
+    "title": "Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。",
+    "description": "2026年10月17日22:31（北京时间），SnowingFox（@FoxSnowing）称已逆向Cursor，使其支持自定义中转站，以及使用自己的Codex/Claude Code额度。目标是为AI代码编辑器改变模型请求的接入路径，不是声明取得Cursor服务端或免费额度。补查原帖确认作者与两张图片附件存在，但没有从图片推断未写明的功能。\n\n帖子没有公开文字版实现、协议字段、Cursor版本、认证路径或配额正确性测试；所附短链目标本次未读取。尤其没有说明由AI辅助完成逆向，也没有明确REA，因此作为AI工具互通的相关项目收录，不能当REA案例或认定配额复用已验证。未访问账户、凭据、中转服务或运行实现。",
+    "sources": [{"label": "SnowingFox 的 Cursor 接入改造自述", "url": "https://x.com/i/status/2111465121126207605"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17 22:31，北京时间。", "AI客户端互通相关项目；AI参与逆向和REA使用均未确认，功能未经独立验证。"],
+    "en": {
+      "title": "Cursor: an account of custom relays and personal Codex/Claude Code quotas",
+      "summary": "SnowingFox claims to have reverse-engineered Cursor for custom relays and personal agent quotas; AI is the integration target, not a confirmed reversing assistant.",
+      "description": "At 22:31 Beijing time on October 17, 2026, SnowingFox (@FoxSnowing) says he reverse-engineered Cursor to support custom relay services and his own Codex/Claude Code quotas. The goal is changing the model-request integration path of an AI code editor, not a claim of obtaining Cursor's server or free quotas. Reading the original confirms the author and two image attachments, without inferring unstated features from those images.\n\nThe post provides no textual implementation, protocol fields, Cursor version, authentication path or quota-correctness tests; the short-link destinations were not read in this review. In particular, it does not establish AI assistance in the reversing process or REA use. This is included as a related AI-tool interoperability project, not an REA case or verified quota reuse. No account, credential, relay service or implementation was accessed or executed.",
+      "metadata": ["Source published October 17, 2026, 22:31 Beijing time.", "Related AI-client interoperability project; AI-assisted reversing and REA use are unconfirmed, and functionality was not independently verified."],
+      "source_labels": ["SnowingFox's account of modifying Cursor's integration path"]
+    }
+  },
+  {
+    "id": "johnny-castaway-rust-rea",
+    "title": "Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。",
+    "description": "2026年10月17日22:45（北京时间），Glauber Lima（@glauberlima）在作者串中说明，以REA负责逆向、Claude Code写实现，自己指导和审阅。目标是Sierra/Dynamix的Windows 3.1屏保Screen Antics: Johnny Castaway，让怀旧的荒岛人物与逐日故事在现代Windows、macOS和Linux继续运行。父帖22:42报告从反汇编重建为Rust，22:43说明MIT开源且不分发原文件。\n\n补读公开仓库glauberlima/open-scrantic的README，确认项目名Open Scrantic，以及明确的AI披露：拆解SCRANTIC.SCR，恢复资源格式和TTM/ADS脚本语义，再实现Rust引擎、测试与文档；开发者对照原屏保检查。架构将资源解码、故事规划、脚本调度、帧绘制和音效分开。运行仍需自备SCRANTIC.SCR、RESOURCE.MAP和RESOURCE.001；加载器仅接受已知原程序版本，不能推定任意版本兼容。\n\n项目也说明刻意偏差，例如全帧重绘代替脏矩形，以及未重建原设置对话框、改用SCRANTIC.INI。不能把“同样行为”扩大为逐帧或逐字节完全一致。补查10月17日22:14提交2bdbd87af4cd9641dd33739ba4681c0273f095aa及对应GitHub CI结果为success；这是项目构建检查记录，不是本合集实机复现或全部故事路径验收。公开文档和流程可读，未下载资产、编译或运行目标。",
+    "sources": [
+      {"label": "候选：作者披露 REA、Claude Code 与人工审阅", "url": "https://x.com/i/status/2111468525286002699"},
+      {"label": "补充父帖：Johnny Castaway 三平台 Rust 重建", "url": "https://x.com/i/status/2111467934082363521"},
+      {"label": "同串：MIT 与需自备原文件", "url": "https://x.com/i/status/2111468253394485547"},
+      {"label": "公开仓库与 AI 披露、实现和兼容边界", "url": "https://github.com/glauberlima/open-scrantic"},
+      {"label": "2026-10-17 文档提交", "url": "https://github.com/glauberlima/open-scrantic/commit/2bdbd87af4cd9641dd33739ba4681c0273f095aa"},
+      {"label": "项目 CI 记录（可变状态，本次对应提交成功）", "url": "https://github.com/glauberlima/open-scrantic/actions/workflows/ci.yml"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选与父串发布：2026-10-17 22:42—22:45，北京时间；仓库补查用于核对项目与AI披露。", "2bdbd87提交时间2026-10-17 22:14，北京时间，对应CI成功；未独立编译运行。", "仅重建引擎；原资产自备，已知版本限制与刻意行为偏差不能省略。"],
+    "en": {
+      "title": "Open Scrantic: rebuilding the Johnny Castaway screensaver engine with REA and Claude Code",
+      "summary": "Recover formats, scripts and engine behavior from a Windows 3.1 disassembly for a three-platform Rust implementation; original assets are required and deliberate deviations remain.",
+      "description": "At 22:45 Beijing time on October 17, 2026, Glauber Lima (@glauberlima) explains that REA handled reverse engineering, Claude Code the implementation, and he directed and reviewed the work. The target is Sierra/Dynamix's Windows 3.1 screensaver Screen Antics: Johnny Castaway, preserving its nostalgic island character and day-by-day story on modern Windows, macOS and Linux. The parent at 22:42 reports rebuilding it in Rust from disassembly; the 22:43 reply states MIT licensing and that original files are not distributed.\n\nReading the public glauberlima/open-scrantic README confirms the Open Scrantic project name and explicit AI disclosure: disassembling SCRANTIC.SCR, recovering resource formats and TTM/ADS script semantics, and implementing the Rust engine, tests and documentation, with developer comparisons against the original. The architecture separates resource decoding, story planning, script scheduling, frame rendering and sound. Users still need their own SCRANTIC.SCR, RESOURCE.MAP and RESOURCE.001. The loader accepts only a known original executable build, not arbitrary versions.\n\nThe project documents deliberate deviations, including full-frame redraw instead of dirty rectangles and using SCRANTIC.INI rather than recreating the original settings dialog. 'Same behavior' is not a claim of complete frame-by-frame or byte-for-byte identity. Supplementary reading checks commit 2bdbd87af4cd9641dd33739ba4681c0273f095aa from 22:14 on October 17 and a corresponding GitHub CI success. This is project build-check evidence, not this collection's hardware reproduction or acceptance of every story path. Public documentation and workflows were read; no assets were downloaded and no target was compiled or run.",
+      "metadata": ["Candidate and parent thread published October 17, 2026, 22:42–22:45 Beijing time; repository reading checks project identity and AI disclosure.", "Commit 2bdbd87 is dated October 17, 2026, 22:14 Beijing time, with corresponding CI success; no independent build or execution.", "Engine reimplementation only; original assets are required, with known-build restrictions and deliberate behavioral deviations."],
+      "source_labels": ["Candidate: author's REA, Claude Code and human-review disclosure", "Supplementary parent: three-platform Johnny Castaway Rust rebuild", "Same thread: MIT license and original files required", "Public repository: AI disclosure, implementation and compatibility boundaries", "October 17, 2026 documentation commit", "Project CI records (mutable; matching commit successful when checked)"]
+    }
+  },
+  {
+    "id": "honda-roadsync-bluetooth-music-report",
+    "title": "Honda RoadSync：Claude 辅助研究踏板车蓝牙，让按键控制其他音乐 App",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Busy K 报告自建 App，把 Honda 车把按键接到 Spotify、YouTube Music 和播客；车型与协议未公开。",
+    "description": "2026年10月17日22:52（北京时间），Busy K（@Busy__K）称Honda的iPhone版RoadSync只让自己播放Apple Music，因此让Claude逆向踏板车蓝牙并制作自己的App。作者报告车上按键现在能控制Spotify、YouTube Music和播客等音频。具体用途是让已有车辆控制按钮服务于其他播放器，而不是更换车辆固件或控制行驶系统。RoadSync限制是作者的使用体验，不扩展为所有地区、版本或车型的官方功能结论。\n\n补查原帖确认作者和两张图片附件；没有公开车型、协议字段、实现代码、配对步骤或播放器兼容性记录。本帖没有说明使用REA，所称“anything”也不能扩大为全部App都经过测试。蓝牙逆向与控制成功均为作者报告，本合集未接触车辆或独立测试。",
+    "sources": [{"label": "Busy K 的 RoadSync 蓝牙与音乐控制自述", "url": "https://x.com/i/status/2111470520688665052"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17 22:52，北京时间；Claude参与，REA未确认。", "无车型、协议或代码；播放器控制与RoadSync限制均为作者报告，不泛化兼容性。"],
+    "en": {
+      "title": "Honda RoadSync: Claude-assisted scooter Bluetooth research for other music apps",
+      "summary": "Busy K reports a personal app connecting Honda handlebar buttons to Spotify, YouTube Music and podcasts; model and protocol are unpublished.",
+      "description": "At 22:52 Beijing time on October 17, 2026, Busy K (@Busy__K) says Honda's iPhone RoadSync app only lets him play Apple Music, so he had Claude reverse-engineer the scooter's Bluetooth and build a personal app. He reports that the vehicle's buttons now control Spotify, YouTube Music and podcasts. The concrete purpose is reusing existing vehicle controls with other players, not replacing vehicle firmware or controlling driving systems. The RoadSync limitation is the author's experience, not an official feature conclusion across regions, versions or models.\n\nReading the original confirms the author and two image attachments, but no vehicle model, protocol fields, source code, pairing steps or player-compatibility record is published. The post does not attribute REA use, and 'anything' is not evidence that every app was tested. Bluetooth reversing and successful control remain author reports; this collection did not access a vehicle or independently test them.",
+      "metadata": ["Source published October 17, 2026, 22:52 Beijing time; Claude is named, REA unconfirmed.", "No vehicle model, protocol or code; player control and RoadSync limitations are author reports, not generalized compatibility."],
+      "source_labels": ["Busy K's account of RoadSync Bluetooth and music control"]
+    }
+  },
+  {
+    "id": "samsung-tv-web-remote-aswin-report",
+    "title": "Samsung TV：用 Claude 与 REA skill 做网页遥控器的自述",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Aswin DG 报告研究电视协议并搭建可控制音量、频道和应用的网页遥控器，Anatomy skill 负责等距 UI。",
+    "description": "2026年10月17日22:57（北京时间），Aswin DG（@dg_aswin）报告用Claude为自己的Samsung电视做网页遥控器。他明确把工作拆为REA skill逆向电视协议，Anatomy skill制作等距视角UI；自述可处理音量、频道和应用。目标是从网页控制已有电视，而不是重建整套电视系统。\n\n补查原帖确认作者和一张界面图片附件，但没有取得所附skill和演示短链的目标内容。帖子没有给电视型号、固件版本、协议细节、授权或配对方式、源码和操作测试记录。界面图片不证明设备实际响应，不能把“apps”扩展为安装、卸载或任意应用控制，也不能推定所有Samsung TV兼容。REA与Claude角色及成功功能保留作者口径，未经独立复现。",
+    "sources": [{"label": "Aswin DG 的 Samsung TV 网页遥控器与工具分工自述", "url": "https://x.com/i/status/2111471785946562815"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17 22:57，北京时间；作者称REA skill与Claude参与。", "界面附件存在，不等于设备响应验证；没有型号、协议、配对或代码记录。"],
+    "en": {
+      "title": "Samsung TV: Aswin DG's Claude/REA-skill web-remote account",
+      "summary": "Aswin DG reports investigating the TV protocol and building a web remote for volume, channels and apps, with Anatomy handling the isometric UI.",
+      "description": "At 22:57 Beijing time on October 17, 2026, Aswin DG (@dg_aswin) reports using Claude to build a web remote for his Samsung TV. He explicitly separates REA-skill protocol reversing from Anatomy-skill isometric UI design, and says it handles volume, channels and apps. The goal is controlling an existing TV from a webpage, not rebuilding the television's entire system.\n\nReading the original confirms the author and one interface image, but the skill and demonstration short-link destinations were not obtained. No TV model, firmware version, protocol details, authorization or pairing mechanism, code or operational test record is supplied. An interface image does not prove device responses. 'Apps' is not expanded into installation, removal or arbitrary-app control, and compatibility is not generalized to all Samsung TVs. REA and Claude roles and working functionality retain the author's attribution, without independent reproduction.",
+      "metadata": ["Source published October 17, 2026, 22:57 Beijing time; the author names REA skill and Claude.", "An interface attachment exists but does not validate device responses; no model, protocol, pairing or code record."],
+      "source_labels": ["Aswin DG's Samsung TV web-remote account and tool-role disclosure"]
+    }
+  },
+  {
+    "id": "rea-workspace-template-gundy",
+    "title": "REA Workspace Template：把原件、分析副本与证据分开的工作区",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。",
+    "description": "2026年10月17日23:05（北京时间），Gundy（@Gundy886）发布REA Workspace Template，针对AI逆向时难以分清直接观察与推测、原件易被修改、跨会话丢失进度的问题。模板以一个目标一个工作区组织target原件、work副本、notes证据与prompts任务；结论标CONFIRMED/GUESS，附源码行号、函数地址或抓包位置；导入生成SHA-256基线，修改在副本进行，并留重命名与交接记录。支持源码、APK、原生、JS/Electron、HAR和未知格式流程，原帖称首轮最多深入30个函数。\n\n补读dobest1024/rea-workspace-template的README和2026年10月17日VALIDATION记录：项目提供Claude Code和Codex的项目级MCP配置；脚手架复制样本而不执行，HAR脚本生成仅保留结构的分析副本。记录称12项标准库测试通过，REA 6.4.0握手healthy，合成JS静态分析以及一条合成POST HAR的脱敏后读取通过。它没有验证真实APK/native目标、真实业务HAR完整匿名化、API客户端联调或重启后的Claude/Codex UI接入。\n\n仓库明确0444与客户端规则不是不可绕过的沙盒，SHA基线本身不是防篡改存储，脱敏仍需人工检查主机、路径与字段名。不可把模板测试变为真实软件成功逆向或强隔离保证。补读源码仓库与文档用于确认可公开查阅的实现和边界；最新提交fc15b9a4ba2a8b40510d19a2dd80209f665711c5发表于同日22:43。本合集未执行模板、安装REA或运行其测试。",
+    "sources": [{"label": "候选：Gundy 发布工作区模板与使用约定", "url": "https://x.com/i/status/2111473593305682203"}, {"label": "公开模板：项目配置与保护边界", "url": "https://github.com/dobest1024/rea-workspace-template"}, {"label": "项目验收记录：合成样本与未验证项", "url": "https://github.com/dobest1024/rea-workspace-template/blob/fc15b9a4ba2a8b40510d19a2dd80209f665711c5/docs/VALIDATION.md"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选发布：2026-10-17 23:05；仓库提交22:43，北京时间；验收文档原日期2026-10-17。", "12项测试、MCP握手和合成JS/HAR分析为项目内部记录，本合集未重跑。", "不承诺真实目标效果、完整匿名化或不可绕过隔离；真实APK/native与客户端UI接入待验证。"],
+    "en": {
+      "title": "REA Workspace Template: separate originals, analysis copies and evidence",
+      "summary": "Gundy's public template supplies project-level REA setup, evidence notes and sample verification for Claude Code/Codex; 12 tests and JS/HAR acceptance are project records only.",
+      "description": "At 23:05 Beijing time on October 17, 2026, Gundy (@Gundy886) publishes REA Workspace Template to address confusing observations with guesses, accidental changes to originals and lost cross-session progress. Each target gets a workspace separating target originals, work copies, notes evidence and prompts. Claims are tagged CONFIRMED/GUESS with source lines, function addresses or capture locations. Import creates a SHA-256 baseline; modifications happen on copies, with renaming and handoff logs. Workflows cover source, APKs, native binaries, JS/Electron, HAR and unknown formats; the post caps the first pass at 30 functions.\n\nReading the dobest1024/rea-workspace-template README and its October 17, 2026 VALIDATION record confirms project-level MCP configurations for Claude Code and Codex. The scaffold copies rather than executes samples; the HAR script produces a structure-only analysis copy. The project reports 12 standard-library tests, a healthy REA 6.4.0 handshake, synthetic-JS static analysis and sanitized inspection of one synthetic POST HAR record. It has not validated real APK/native targets, complete anonymization of business HARs, API-client integration or restarted Claude/Codex UI connections.\n\nThe repository explicitly says 0444 permissions and client rules are not an unbypassable sandbox, the hash baseline is not tamper-proof storage, and anonymization still requires human review of hosts, paths and field names. Template checks do not demonstrate successful reversing of real software or strong isolation. Public repository and documentation reading confirms inspectable implementation and boundaries; the latest commit fc15b9a4ba2a8b40510d19a2dd80209f665711c5 is dated 22:43 that day. This collection did not execute the template, install REA or run its tests.",
+      "metadata": ["Candidate published October 17, 2026, 23:05; repository commit at 22:43 Beijing time; validation document dated October 17, 2026.", "The 12 tests, MCP handshake and synthetic JS/HAR checks are internal project records, not rerun here.", "No promise of real-target success, complete anonymization or unbypassable isolation; real APK/native analysis and client UI integration remain unverified."],
+      "source_labels": ["Candidate: Gundy's workspace template and conventions", "Public template: project configuration and protection boundaries", "Project acceptance record: synthetic samples and unverified items"]
+    }
+  },
+  {
+    "id": "hitachi-oven-codex-rea-report",
+    "title": "日立微蒸烤炉：Codex 经 Android App 与 REA 研究实现直接控制的自述",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "郭宇报告从 iPhone App 操作转向 Android 模拟器联调，称 REA 逆向后可直接控制烤炉；约不到 5 分钟为作者口径。",
+    "description": "2026年10月17日23:09（北京时间），郭宇（@turingou）补充自家日立微蒸烤炉控制过程：Codex原先操作iPhone版日立App，作者提示可用REA直接逆向，于是转用Android模拟器与Android版App联调，称随后能直接操作烤箱，整个过程“不到5分钟左右”。补读同日22:54父帖，作者称Codex接管烤炉并对几百种菜单做实验，计划次日挑战复杂料理，再让Grokbot从附近超市网店购买所需食材。后者是计划，不是已完成采购。\n\n逆向的用途是建立设备控制路径而不只在iPhone界面点击；“直接”并未公开说明是局域网、蓝牙还是厂商云端，不能补写协议或绕过认证。没有型号、App版本、代码、指令、菜单实验记录、温控或安全验收。几百种菜单和不到5分钟均为作者自述，不当作已实际烹饪几百道菜、完整逆向耗时或任何日立设备都可复用的结论。本合集未操作设备、下单、运行代码或独立复现。",
+    "sources": [{"label": "候选：郭宇说明 REA 与 Android App 联调路径", "url": "https://x.com/i/status/2111474749855670664"}, {"label": "补充父帖：Codex 控烤炉与下一步料理计划", "url": "https://x.com/i/status/2111470955457601540"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选发布：2026-10-17 23:09；父帖22:54，北京时间。", "REA、Codex、约不到5分钟和几百种菜单均为作者口径；无协议、型号或安全验收。", "Grokbot采购与复杂料理是次日计划，不是已完成结果。"],
+    "en": {
+      "title": "Hitachi combination oven: a Codex/REA account using an Android app for direct control",
+      "summary": "Guo Yu reports moving from iPhone-app operation to Android-emulator integration and REA research for direct oven control; roughly under five minutes is author-reported.",
+      "description": "At 23:09 Beijing time on October 17, 2026, Guo Yu (@turingou) explains the control path for his Hitachi microwave/steam/oven appliance. Codex initially operated the iPhone Hitachi app; after he suggested direct reversing with REA, it used an Android emulator and the Android app for integration, reportedly achieving direct oven control in 'roughly under five minutes'. The parent at 22:54 says Codex took over the oven and experimented with hundreds of menus, with plans for more complex cooking the next day and Grokbot ordering ingredients from nearby supermarket web stores. The latter is a plan, not completed procurement.\n\nThe reversing serves a device-control path beyond clicking the iPhone interface. 'Direct' does not establish LAN, Bluetooth or vendor-cloud transport, and no protocol or authentication bypass is inferred. There is no model number, app version, code, command set, menu-experiment log, temperature-control or safety acceptance record. Hundreds of menus and under five minutes are author accounts, not evidence of cooking hundreds of dishes, total reversing time or transferability to every Hitachi device. This collection did not operate an appliance, place an order, run code or independently reproduce the work.",
+      "metadata": ["Candidate published October 17, 2026, 23:09; parent at 22:54 Beijing time.", "REA, Codex, roughly under five minutes and hundreds of menus retain the author's conventions; no protocol, model or safety acceptance record.", "Grokbot shopping and complex cooking are next-day plans, not completed results."],
+      "source_labels": ["Candidate: Guo Yu explains REA and Android-app integration", "Supplementary parent: Codex oven control and further cooking plans"]
+    }
   }
 ]

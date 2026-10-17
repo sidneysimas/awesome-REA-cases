@@ -82,3 +82,5 @@
 - [Fallout 4：Claude 逆向后修复故障的简短自述](../cases/fallout4-claude-fix-report.md) — 作者称 Claude 研究 Fallout 4 后能修复原先无法猜测或暴力解决的问题，未公开故障或补丁。 **[其他 AI 逆向 · 待验证]**
 - [MISE.exe：Claude 用 Ghidra 提取规则而不是猜截图](../cases/mise-ghidra-claude-rules.md) — 作者转述 Claude 正让 Agent 反编译 MISE.exe，以匹配 SE 的具体规则；尚无完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Resident Evil 2 到 Nintendo DS：REA 与 Claude Code 的未完成移植转述](../cases/resident-evil2-ds-rea-port-report.md) — 程序社区转述有人用 REA 与 Claude Code 制作 DS 移植，仍未完成并寻求帮助。 **[REA · 进行中]**
+- [Mario Kart 8 Deluxe：0xsvsv 的 Claude / REA PC 移植自述](../cases/mario-kart8-deluxe-0xsvsv-report.md) — 作者称与 Claude 将游戏移到 PC，补充所用工具为 Claude Code、经 REA 接入的 IDA Pro MCP 和游戏 ROM。 **[REA · 待验证]**
+- [Kerbal Space Program 2：用 AI 反编译以交给社区维护的 idea](../cases/ksp2-ai-decompile-community-idea.md) — Jordan 在 KSP 2 弃置后仍有人做 Mod 的讨论中，提出开源或用 AI 反编译；尚非已启动的工程。 **[其他 AI 逆向 · 进行中]**
