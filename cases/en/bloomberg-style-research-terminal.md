@@ -8,14 +8,18 @@ The poster reports firsthand building a Bloomberg-style financial-research works
 
 A separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.
 
+At 06:26 on October 17, @sopersone reports a weekend spent externally studying function-code chaining, Launchpad panel communication and ticker-to-fundamentals/options navigation, then using REA/Opus specifications with owned feeds for quotes, news, economic calendars, yield curves, financials and options. They also claim cross-asset screening, backtesting with fees, slippage and drawdowns, and function-by-function comparisons. The roughly $30,000 annual fee, labor and testing are their claims. This is not confirmed as an earlier poster's implementation; no code or comparison records were obtained, and Bloomberg equivalence is unconfirmed.
+
 Posted: 2026-10-14T02:58:43+08:00
 Author reports using REA MCP and Claude Opus 5.5; this collection did not independently run or verify features.
 Author says free, independent market data was used, without unlocking Bloomberg's proprietary data.
 New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified.
+October 17 adds claims of external workflow investigation and backtesting, without inspectable code or comparison records; existing engagement snapshots retain their original dates.
 
 ## Sources
 
 - [Author's original post on an REA-assisted research terminal (firsthand report)](https://x.com/i/status/2110082824371908790)
 - [October 16 promotional alerts report, not confirmed as the same implementation](https://x.com/i/status/2110880082289922361)
+- [October 17 build account of function codes, linked panels and owned data feeds](https://x.com/i/status/2111222172698218781)
 
 [中文](../bloomberg-style-research-terminal.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

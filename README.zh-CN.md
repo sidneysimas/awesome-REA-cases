@@ -6,9 +6,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-## 326 个案例与项目
+## 344 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 17 日 04:10 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 17 日 08:11 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -23,14 +23,14 @@
 **10 个值得读的案例**，综合实际用途、证据与近期性选编，不是自动排行榜。日期为所选来源或作者更新日期，不是收录日期。
 
 1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
-2. **[Gears of War 3](cases/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI 辅助 Linux 重编译与图形后端研究；作者澄清是 **PowerPC 到 C++ 的机械翻译，不是恢复原始源码**，报告的 4K 版本仍有战斗掉帧。`进行中`
-3. **[把 Codex 光标设到 Windows](cases/codex-cursor-windows-opus.md)** · `2026-10-17` — 作者称 Opus 在 Ghidra 失败后用 pefile/Capstone 恢复绘制几何。**只取一个视觉元素，不是复刻 Codex**；动画与点击热点未验证。`作者自述`
-4. **[Computer + REA：五款应用演示](cases/computer-rea-five-app-rebuild-demos.md)** · `2026-10-16` — 从设计布局、表格与图片，到合同审阅和音轨混合。**官方演示，不是已验证的替代品**，不代表完整复刻 Figma、Calc、Photopea、Harvey 或 Audacity。`REA · 待验证`
-5. **[Sonic 3D Blast：先重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — 作者澄清是**从反编译代码构建原生移植，不是静态重编译**；画面缺陷仍在，11 月 20 日只是发行计划。`进行中`
-6. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-16` — 独立编辑器已有项目报告的导出与插件测试；**版权素材与 AI API 仍是卡点**，签名和平台限制也未消失。`进行中`
-7. **[LASRecomp：让《织梦岛》运行在电脑上](cases/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — AI 辅助移植，需自备原作；beta 崩溃及部分平台未实测的限制已公开。`公开项目`
-8. **[KEF LSX II：修好音量键体验](cases/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — USB／局域网桥接改善桌面控制，不修改签名固件；延迟数据为作者测量。`公开实现`
-9. **[先读 Notion，再谈通信行为](cases/notion-asar-claude-readonly-audit.md)** · `2026-10-17` — 作者称 Claude 检查 6.8 MB ASAR 与 47 个域名字符串。**可能的目的地不等于实际发出流量**；REA 对照仍为计划。`静态分析`
+2. **[NIST 曲线种子从哪来](cases/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic 报告 Claude 追到 **lrand48 与时间戳**，公开代码，也保留未解问题。**不是破解 ECDSA**，本合集未独立复算。`研究报告`
+3. **[Gears of War 3](cases/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI 辅助 Linux 重编译与图形后端研究；作者澄清是 **PowerPC 到 C++ 的机械翻译，不是恢复原始源码**，报告的 4K 版本仍有战斗掉帧。`进行中`
+4. **[ArkWeb：蜘蛛侠在 Gotham 摆荡](cases/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — 两款自有游戏同时运行，传递碰撞并合成角色画面；有公开代码和 Claude 安装引导，**实验性、绑定版本，未确认使用 REA**。`进行中`
+5. **[Computer + REA：五款应用演示](cases/computer-rea-five-app-rebuild-demos.md)** · `2026-10-16` — 从设计布局、表格与图片，到合同审阅和音轨混合。**官方演示，不是已验证的替代品**，不代表完整复刻 Figma、Calc、Photopea、Harvey 或 Audacity。`REA · 待验证`
+6. **[Sonic 3D Blast：先重建编译环境](cases/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — 作者澄清是**从反编译代码构建原生移植，不是静态重编译**；画面缺陷仍在，11 月 20 日只是发行计划。`进行中`
+7. **[ReaCut](cases/reacut-jianying-open-editor.md)** · `2026-10-16` — 独立编辑器已有项目报告的导出与插件测试；**版权素材与 AI API 仍是卡点**，签名和平台限制也未消失。`进行中`
+8. **[LASRecomp：让《织梦岛》运行在电脑上](cases/links-awakening-claude-pc-port-report.md)** · `2026-10-15` — AI 辅助移植，需自备原作；beta 崩溃及部分平台未实测的限制已公开。`公开项目`
+9. **[KEF LSX II：修好音量键体验](cases/kef-lsx-ii-volume-fixer.md)** · `2026-10-15` — USB／局域网桥接改善桌面控制，不修改签名固件；延迟数据为作者测量。`公开实现`
 10. **[先验证 CSV 验收器](cases/rea-csv-evaluator-mutation-test.md)** · `2026-10-16` — 作者称三个故意改坏的导出器通过简单测试，却被 **215 组字节对照**发现；有价值的验收实验，但未公开输入与代码。`REA 分析测试`
 
 ## 经典案例
@@ -46,10 +46,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **73** |
-| [硬件与设备互通](categories/hardware.md) | **72** |
-| [应用与客户端](categories/apps.md) | **151** |
-| [算法与功能重建](categories/algorithms.md) | **30** |
+| [游戏与游戏保存](categories/games.md) | **76** |
+| [硬件与设备互通](categories/hardware.md) | **77** |
+| [应用与客户端](categories/apps.md) | **158** |
+| [算法与功能重建](categories/algorithms.md) | **33** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

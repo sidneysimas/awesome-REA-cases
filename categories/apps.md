@@ -68,7 +68,7 @@
 - [GTM 工具：用 REA 构建线索与邮件营销工作流](../cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
 - [茶叶出海网站：REA 辅助的本地重建报告](../cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
 - [iTerm：借助 REA 规格实现阿拉伯语文本绘制](../cases/arabic-terminal-rendering.md) — 作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。 **[REA · 待验证]**
-- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。 **[REA · 待验证]**
+- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 多帖描述用 REA 与 Claude 观察 Bloomberg 风格工作流，再接独立数据源；新增功能代码、面板联动与回测自述仍未验证。 **[REA · 待验证]**
 - [闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件](../cases/closed-agent-pi-plugin.md) — 作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。 **[REA · 待验证]**
 - [ChatGPT App：用 REA 分析并为聊天窗口添加渐变背景](../cases/chatgpt-app-gradient-background.md) — 作者称用 ChatGPT 与 REA 分析 Electron 应用，并为右侧聊天窗口注入渐变背景。 **[REA · 待验证]**
 - [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](../cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**
@@ -153,3 +153,10 @@
 - [Notion app.asar：Claude 只读检查文件与域名字符串](../cases/notion-asar-claude-readonly-audit.md) — 作者报告6.8 MB 包内147文件、58个JS和47域名，明确字符串存在不等于实际上传。 **[其他 AI 逆向 · 分析测试]**
 - [Grok Bot + REA：在聊天中研究软件的模板报告](../cases/grok-bot-rea-chat-template.md) — 作者称一次构建了 REA 聊天模板，可提交待分析工具；没有目标样本与验证。 **[REA · 相关项目]**
 - [Patrick 的 AI 逆向游戏目录：进行中的资料项目](../cases/patrick-ai-reverse-games-directory.md) — Patrick Keane 称正建设 AI 逆向游戏目录；条目与验证标准尚未检查。 **[未确认使用 REA · 相关项目]**
+- [牛牛 AI / MT5：代理合作中断后的 REA 重建报告](../cases/niuniu-ai-mt5-rea-rebuild.md) — 作者称用 REA 重建牛牛 AI；随后只标为概念设计稿，不能确认与交易终端集成可用。 **[REA · 待验证]**
+- [Mac 视频导出：研究 DaVinci 与 CapCut 改进自己的编辑器](../cases/mac-video-export-davinci-capcut-rea.md) — 作者称用 REA 研究两款本机编辑器的导出方式，解决自制 AI 视频编辑器的导出慢问题。 **[REA · 待验证]**
+- [Wiki Lab：声称用 REA 研究 Wikipedia 的 Agent 知识站](../cases/wiki-lab-agent-wikipedia-rea-report.md) — 宣传帖称 Wiki Lab 把 Wikipedia 模式提供给 AI Agent；没有代码、数据来源或可用性验证。 **[REA · 待验证]**
+- [机顶盒 APK：WorkBuddy 提取与逆向的简短自述](../cases/workbuddy-settop-apk-analysis-report.md) — 作者称 WorkBuddy 从机顶盒获取 APK 并逆向，未说明具体应用或恢复了哪些行为。 **[其他 AI 逆向 · 分析测试]**
+- [3ds Max：询问 AI 反编译三维工具的 idea](../cases/3ds-max-ai-decompile-idea.md) — 有人询问是否已用 AI 逆向 3ds Max；不是已启动或完成的重建。 **[其他 AI 逆向 · 待验证]**
+- [系统 UI 视频：Claude 逐帧测量与动画参数推断](../cases/claude-system-ui-video-measurement.md) — 作者称 Claude 从参考视频测量系统界面，并尝试插值恢复动画参数；没有精度或完成验收。 **[其他 AI 逆向 · 进行中]**
+- [ENS v2 钓鱼邮件：Claude 辅助追查危险 Agent 仓库](../cases/ens-v2-phishing-claude-repo-investigation.md) — 作者称从可疑邮件查到钱包盗取站点及危险 Skill 文件，并向 GitHub 举报；未公开可核对样本。 **[其他 AI 逆向 · 分析测试]**

@@ -32,3 +32,6 @@
 - [Polymarket Up/Down bot：REA 分析策略与历史回放的推广自述](../cases/polymarket-updown-rea-replay-report.md) — 作者称用 REA/Opus 理解订单簿策略并逐 tick 回放；没有可检查代码、指标或收益证明。 **[REA · 待验证]**
 - [1977 年 DES 测试向量：Claude 追溯随机生成环境的报告](../cases/des-1977-test-vectors-claude.md) — Steve Weis 称 Claude 将 NBS 的 DES S-box 测试向量追溯到 PDP-11 Unix V6 rand()。 **[其他 AI 逆向 · 待验证]**
 - [jq 与 Fossify Calculator：REA 定位函数和初步调查](../cases/rea-jq-fossify-analysis-test.md) — 作者称在 stripped jq 1.8.2 中用 Ghidra 定位一个函数并回溯源码，尚未重建软件。 **[REA · 分析测试]**
+- [NIST ECDSA 曲线：Claude 追溯公开参数的随机生成过程](../cases/nist-ecdsa-origin-claude-report.md) — Anthropic 报告从公开曲线种子识别 lrand48 与时间戳，并公开重算代码；不是破解 ECDSA。 **[其他 AI 逆向 · 分析测试]**
+- [Base 套利合约：REA + Opus 字节码分析的待验证报告](../cases/base-arbitrage-bytecode-rea-opus-report.md) — 帖子描述从未验证 EVM 合约恢复跨池套利与 Solidity，但没有地址、偏移或回放证据。 **[REA · 待验证]**
+- [游戏函数匹配器：错误常量仍通过检查的审计转述](../cases/rea-game-function-matcher-audit-report.md) — 转述多模型接力重建三段游戏函数，以及审计发现指令匹配漏看地址背后数据的问题。 **[REA · 分析测试]**

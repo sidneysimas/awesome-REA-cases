@@ -75,3 +75,6 @@
 - [Mega Man Battle Network：AI 反编译与 Mod 的二手线索](../cases/megaman-battle-network-ai-mod-report.md) — 评论称有人用 AI 反编译并修改洛克人 EXE 系列游戏；版本、实现和效果未公开。 **[其他 AI 逆向 · 待验证]**
 - [Ben 的童年 RTS：Claude Code 重建 C++ / Metal Mac alpha 的自述](../cases/ben-claude-rts-metal-alpha-report.md) — Ben 称从30多份逆向规格重建约7万行 C++ 引擎，已有建造和进攻的电脑对手。 **[其他 AI 逆向 · 进行中]**
 - [Gears of War 3：AI 辅助静态重编译与图形后端研究](../cases/gears3-ai-graphics-recompile.md) — GloriousEggroll 澄清为 ReXGlue 机械翻译而非恢复原始源码，报告4K演示仍有战斗掉帧。 **[其他 AI 逆向 · 进行中]**
+- [ArkWeb：让蜘蛛侠在 Gotham 摆荡的双游戏实验](../cases/arkweb-spiderman-arkham-report.md) — 公开项目将两款游戏的碰撞、画面和战斗姿态桥接，并提供 Claude 安装引导；REA 参与开发未确认。 **[未确认使用 REA · 进行中]**
+- [Doom：19 个 Claude 的 clean-room 重实现自述](../cases/doom-19-claude-cleanroom-report.md) — 发帖者声称一个周末重实现 Doom、支持 WAD 与三平台；没有可核对代码或测试。 **[其他 AI 逆向 · 待验证]**
+- [Victoria 3：让 Claude 反编译游戏以便修改的 idea](../cases/victoria3-claude-decompile-idea.md) — 回复建议让 Claude 反编译 Vic3；没有报告运行或具体改动成果。 **[其他 AI 逆向 · 待验证]**

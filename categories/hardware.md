@@ -69,8 +69,13 @@
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](../cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
-- [iOS 到安卓硬件：AI 逆向移植的假设性 idea](../cases/ios-android-ai-port-idea.md) — 设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](../cases/ios-android-ai-port-idea.md) — 保留跨硬件移植设想，补入 HACKIOS 与红米的传播主张；没有确认真实 iOS 启动或 AI 实施。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](../cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
 - [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](../cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
 - [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](../cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
 - [自有硬件到语音 Agent：受耳机与智能戒指启发的 REA 尝试](../cases/rea-own-hardware-agent-voice-idea.md) — 用户称用 Claude 与 REA，在已有硬件上尝试语音控制 Agent、听写与记录想法。 **[REA · 进行中]**
+- [Linux 鼠标驱动：一周 AI 项目中的逆向自述](../cases/linux-mouse-driver-ai-week-report.md) — 作者称最近一周借助 AI 逆向 Linux 鼠标驱动，未给设备型号、协议或实现。 **[其他 AI 逆向 · 待验证]**
+- [Roadster 视频：Claude 辅助的 three.js 视觉拆解实验](../cases/roadster-video-claude-threejs-analysis.md) — 作者称用视频帧估计比例、拆成可动网格并做20秒动画；不能据此确认车辆内部结构或飞行原理。 **[其他 AI 逆向 · 分析测试]**
+- [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](../cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
+- [Google Home：不换硬件的旧音箱复用受阻报告](../cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
+- [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](../cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**

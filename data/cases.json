@@ -4767,8 +4767,8 @@
     "category": "apps",
     "status": "unverified",
     "rea": "REA",
-    "summary": "作者称用 REA 与 Claude 构建金融研究终端；使用独立市场数据，未解锁 Bloomberg 专有数据。",
-    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。\n\n10月16日另一宣传帖声称18岁用户用REA与Opus在一晚重建年费32,000美元终端的告警子集：输入股票与币种、连接Telegram，每个工作日8:00查持仓异动与原因，附来源和时间发送，称一个问题约读23个来源。这一新用途证据按同目标补充，并非确认与原作者同一个实现。宣传帖虽说追踪真实App、写规格、零复制，却又从未具名市场App选模型开始，缺原作者、源码、网络证据与测试；无法确认逆向与普通AI市场助手的分界。年龄、年费、工时、来源数均仅为该帖主张，不证明取得专有数据或交易优势。",
+    "summary": "多帖描述用 REA 与 Claude 观察 Bloomberg 风格工作流，再接独立数据源；新增功能代码、面板联动与回测自述仍未验证。",
+    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。\n\n10月16日另一宣传帖声称18岁用户用REA与Opus在一晚重建年费32,000美元终端的告警子集：输入股票与币种、连接Telegram，每个工作日8:00查持仓异动与原因，附来源和时间发送，称一个问题约读23个来源。这一新用途证据按同目标补充，并非确认与原作者同一个实现。宣传帖虽说追踪真实App、写规格、零复制，却又从未具名市场App选模型开始，缺原作者、源码、网络证据与测试；无法确认逆向与普通AI市场助手的分界。年龄、年费、工时、来源数均仅为该帖主张，不证明取得专有数据或交易优势。\n\n10月17日06:26，@sopersone 称一个周末从外部研究功能代码串联、Launchpad面板通信、股票到基本面与期权链切换，再用REA与Opus规格接自有报价、新闻、经济日历、收益率曲线、财务与期权数据；还称加入跨资产筛选语言与含费用、滑点、回撤的回测并逐功能对照。约30,000美元年费、工时与测试均为该作者说法，未确认与前帖同一实现，未取得代码或对照记录，不确认Bloomberg等价。",
     "sources": [
       {
         "label": "作者关于 REA 辅助研究终端的原帖（第一手自述）",
@@ -4777,6 +4777,10 @@
       {
         "label": "10月16日告警子集宣传转述（未确认同一实现）",
         "url": "https://x.com/i/status/2110880082289922361"
+      },
+      {
+        "label": "10月17日功能代码、面板联动与自有数据源的构建自述",
+        "url": "https://x.com/i/status/2111222172698218781"
       }
     ],
     "snapshot_date": "2026-10-16",
@@ -4784,21 +4788,24 @@
       "发帖时间：2026-10-14T02:58:43+08:00",
       "作者自述使用 REA MCP 与 Claude Opus 5.5；本合集未独立运行或核验功能。",
       "作者称使用免费、独立市场数据，未解锁 Bloomberg 专有数据。",
-      "新增来源10月16日候选快照：8赞、32浏览；18岁、32,000美元年费、一晚与约23来源未核验。"
+      "新增来源10月16日候选快照：8赞、32浏览；18岁、32,000美元年费、一晚与约23来源未核验。",
+      "10月17日新增外部工作流研究与回测自述，无可复核代码或对照记录；既有热度快照保留原日期。"
     ],
     "en": {
       "title": "Bloomberg-style research terminal: a reported REA/Claude build",
-      "summary": "The author reports building a financial research workstation with REA and Claude using independent market data; code, feature coverage and tests are not independently verified.",
-      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.\n\nA separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.",
+      "summary": "Posts describe observing Bloomberg-style workflows with REA and Claude before connecting independent data; new claims about function codes, linked panels and backtesting remain unverified.",
+      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.\n\nA separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.\n\nAt 06:26 on October 17, @sopersone reports a weekend spent externally studying function-code chaining, Launchpad panel communication and ticker-to-fundamentals/options navigation, then using REA/Opus specifications with owned feeds for quotes, news, economic calendars, yield curves, financials and options. They also claim cross-asset screening, backtesting with fees, slippage and drawdowns, and function-by-function comparisons. The roughly $30,000 annual fee, labor and testing are their claims. This is not confirmed as an earlier poster's implementation; no code or comparison records were obtained, and Bloomberg equivalence is unconfirmed.",
       "metadata": [
         "Posted: 2026-10-14T02:58:43+08:00",
         "Author reports using REA MCP and Claude Opus 5.5; this collection did not independently run or verify features.",
         "Author says free, independent market data was used, without unlocking Bloomberg's proprietary data.",
-        "New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified."
+        "New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified.",
+        "October 17 adds claims of external workflow investigation and backtesting, without inspectable code or comparison records; existing engagement snapshots retain their original dates."
       ],
       "source_labels": [
         "Author's original post on an REA-assisted research terminal (firsthand report)",
-        "October 16 promotional alerts report, not confirmed as the same implementation"
+        "October 16 promotional alerts report, not confirmed as the same implementation",
+        "October 17 build account of function codes, linked panels and owned data feeds"
       ]
     }
   },
@@ -9281,21 +9288,21 @@
   },
   {
     "id": "ios-android-ai-port-idea",
-    "title": "iOS 到安卓硬件：AI 逆向移植的假设性 idea",
+    "title": "iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻",
     "category": "hardware",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "设想 AI 理解 iOS 后让它运行在安卓手机上；没有实际移植或性能测量。",
-    "description": "10月16日22:24（北京时间），发帖者以“如果”提出：若 AI 逆向 iOS 并把它装到安卓手机，可能比原苹果设备更顺滑，进而推演软件进步可弱化硬件升级意义。具体目标是操作系统跨硬件移植，但来源没有报告自己的实验、内核、驱动、启动链、设备型号或实现计划。收录的是明确的探索设想，不是已成功的 iOS 移植；顺滑、比苹果理解更深以及手机硬件终局都是未经检验的推论。也不能把同时传播的 HACKIOS 或红米视频自动当成该作者的证据；没有确认 REA 或任何模型实际参与实施。",
-    "sources": [{"label": "iOS 跨安卓硬件的条件性设想", "url": "https://x.com/i/status/2111100973238329497"}],
+    "summary": "保留跨硬件移植设想，补入 HACKIOS 与红米的传播主张；没有确认真实 iOS 启动或 AI 实施。",
+    "description": "10月16日22:24（北京时间），发帖者以“如果”提出：若 AI 逆向 iOS 并把它装到安卓手机，可能比原苹果设备更顺滑，进而推演软件进步可弱化硬件升级意义。具体目标是操作系统跨硬件移植，但来源没有报告自己的实验、内核、驱动、启动链、设备型号或实现计划。收录的是明确的探索设想，不是已成功的 iOS 移植；顺滑、比苹果理解更深以及手机硬件终局都是未经检验的推论。\n\n本轮补审10月16日22:59的 HACKIOS 宣传和23:03的红米传播帖，并阅读10月17日06:22的新转述，按相同功能目标补充背景，不确认这些帖子或原设想出自同一个项目。HACKIOS 帖声称能移植到任何手机，红米帖声称已运行；原串却未提供机型、启动记录、内核/驱动代码或原作者测试，只有群组入口、赞许与质疑。评论中的 Linux内核加iOS用户态、Android主题等都是猜测，不能拿来解释真实实现。“苹果一定发布公告”也只是宣传推测。未确认 REA 或任何模型实际参与，未验证真实iOS运行、相机/蜂窝网络、应用安装或性能；不把这些传播主张升级为移植成果。",
+    "sources": [{"label": "iOS 跨安卓硬件的条件性设想", "url": "https://x.com/i/status/2111100973238329497"}, {"label": "往期补审：HACKIOS任意手机移植宣传，未核实", "url": "https://x.com/i/status/2111109883210907945"}, {"label": "往期补审：红米运行iOS的传播帖与质疑", "url": "https://x.com/i/status/2111110778854252986"}, {"label": "10月17日新窗口：红米传闻的二手转述", "url": "https://x.com/i/status/2111221283929436658"}],
     "snapshot_date": "2026-10-16",
-    "metadata": ["假设性 idea；无实现、启动证明或性能数据，非 HACKIOS 成果确认。"],
+    "metadata": ["假设性idea与未核实传播；无实现、启动证明或性能数据，非HACKIOS成果确认。", "10月16日两帖为往期补审，10月17日06:22为本窗口候选；不能确认同一作者或实现。"],
     "en": {
-      "title": "iOS on Android hardware: a hypothetical AI reverse-engineering idea",
-      "summary": "A post imagines AI understanding iOS and moving it to Android phones; no actual port or performance measurement is supplied.",
-      "description": "At 22:24 Beijing time on October 16, the poster conditionally proposes that if AI reverse-engineered iOS and installed it on Android phones, it might run more smoothly than on Apple hardware, then extrapolates that software progress could reduce the value of hardware upgrades. The concrete target is an operating system port across hardware, but the source reports no personal experiment, kernel, drivers, boot chain, device model or implementation plan. What is collected is an explicit exploration idea, not a successful iOS port. Smoothness, deeper understanding than Apple and an end to meaningful phone hardware upgrades are untested inferences. Contemporaneous HACKIOS claims or Redmi videos cannot automatically serve as this author's evidence. Neither REA nor any model is confirmed to have performed an implementation.",
-      "metadata": ["Hypothetical idea without implementation, boot evidence or performance data; not confirmation of HACKIOS results."],
-      "source_labels": ["Conditional idea for iOS across Android hardware"]
+      "title": "iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims",
+      "summary": "A cross-hardware idea is supplemented with HACKIOS and Redmi claims; genuine iOS booting and AI implementation are unconfirmed.",
+      "description": "At 22:24 Beijing time on October 16, the poster conditionally proposes that if AI reverse-engineered iOS and installed it on Android phones, it might run more smoothly than on Apple hardware, then extrapolates that software progress could reduce the value of hardware upgrades. The concrete target is an operating system port across hardware, but the source reports no personal experiment, kernel, drivers, boot chain, device model or implementation plan. What is collected is an explicit exploration idea, not a successful iOS port. Smoothness, deeper understanding than Apple and an end to meaningful phone hardware upgrades are untested inferences.\n\nThis review revisits the October 16 HACKIOS promotion at 22:59 and Redmi post at 23:03, and reads a new account at 06:22 on October 17. These add background on the same functional target, not confirmation that these posts and the original idea describe one project. The HACKIOS promotion claims a port to any phone and the Redmi post claims operation, but the conversation supplies no device model, boot record, kernel/driver code or original-author tests, only a group link, praise and skepticism. Comments about a Linux kernel with iOS userland or an Android theme are speculation, not established implementation explanations. A prediction that Apple will issue a statement is promotional speculation too. Neither REA nor any model is confirmed to have implemented it. Genuine iOS operation, camera/cellular support, app installation and performance remain unverified; these circulating claims are not promoted to porting results.",
+      "metadata": ["Hypothetical idea and unverified claims without implementation, boot evidence or performance data; not confirmation of HACKIOS results.", "Two October 16 posts are older-material reviews; October 17 at 06:22 is an in-window candidate. A shared author or implementation is not confirmed."],
+      "source_labels": ["Conditional idea for iOS across Android hardware", "Older-material review: unverified HACKIOS promotion of a port to any phone", "Older-material review: Redmi/iOS claim and skeptical discussion", "New October 17 window: secondary account of the Redmi rumor"]
     }
   },
   {
@@ -9714,6 +9721,348 @@
       "description": "At 03:59 Beijing time on October 17, Patrick Keane (@KeaneMachine101) says they are building a directory of AI-powered, reverse-engineered games while discussing niche AI directories, attaching an image. They cite trends such as Mario gameplay in Elden Ring as motivation but provide no inspectable entries, game list, sources or acceptance standard. The conversation confirms this author's construction report; it should not be merged with whyamas's existing multi-domain reverse-engineering directory, and the examples are not adopted as new game results. It is included as a related resource intended to help locate AI game-preservation and modification projects. Public availability, size, continued maintenance and content accuracy remain unconfirmed, and REA use is not stated.",
       "metadata": ["Author says it is being built; the directory was not inspected and its example game results were not adopted."],
       "source_labels": ["Patrick Keane's directory-construction reply"]
+    }
+  },
+  {
+    "id": "arkweb-spiderman-arkham-report",
+    "title": "ArkWeb：让蜘蛛侠在 Gotham 摆荡的双游戏实验",
+    "category": "games",
+    "rea": "unknown",
+    "status": "in-progress",
+    "summary": "公开项目将两款游戏的碰撞、画面和战斗姿态桥接，并提供 Claude 安装引导；REA 参与开发未确认。",
+    "description": "10月17日04:04（北京时间），@tezzarc 用 REA + Opus 5.5 话题介绍 ArkWeb。补查确认 luki-1/ArkWeb 公开仓库：它同时运行 Marvel's Spider-Man Remastered 与 Batman: Arkham Knight，把 Gotham 的碰撞分块传入蜘蛛侠的物理世界，再把蜘蛛侠画面叠入 Arkham；战斗时由隐藏的 Batman 执行动作，蜘蛛侠逐帧匹配姿态。README 解释了距纽约约2公里的客体场景、50米瓦片、通过录制运动研究骨架，以及让 Agent 帮助安装和排障的流程。这不是把两款游戏完整反编译成新引擎，也不是只换模型。\n\n仓库的10月1日 PHASE2 笔记记录 PhysX 布局与几何导出，并明确其中 Spider-Man 运行时碰撞实现当时仅构建、尚未运行；较新的 README 自称端到端可工作，但仍标 experimental，列出穿过细建筑、加载区碰撞空洞、照明和战斗手部姿态缺陷。要求 Windows、两款自有 Steam 游戏及特定 Spider-Man 4.0630 版本。10月3日文档提交署有 Claude Opus 5.5 协作标记，支持 AI 参与文档与安装流程，不能证明整个逆向由模型完成；项目材料未确认使用 REA。10月1日至3日材料是窗口外背景补证，10月17日帖子才是候选。这里只阅读文档、目录与提交，未运行 Mod 或独立复现。",
+    "sources": [{"label": "10月17日 ArkWeb 技术介绍与 REA 传播帖", "url": "https://x.com/i/status/2111186571252687192"}, {"label": "ArkWeb 公开仓库与实验性状态说明", "url": "https://github.com/luki-1/ArkWeb"}, {"label": "10月1日阶段笔记：几何导出与尚未运行的实现", "url": "https://github.com/luki-1/ArkWeb/blob/main/PHASE2.md"}, {"label": "10月3日 Claude 协作署名的安装引导提交", "url": "https://github.com/luki-1/ArkWeb/commit/a936b62f8ba66864aaae24fd2829303197664e1d"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["项目称实验性端到端运行；本合集只读材料，未运行游戏或验证性能。", "AI 安装引导与文档协作可见；REA 与完整 AI 逆向归因未确认。"],
+    "en": {
+      "title": "ArkWeb: a two-game experiment bringing Spider-Man to Gotham",
+      "summary": "A public project bridges collision, rendered frames and combat poses, with Claude setup guidance; REA's development role is unconfirmed.",
+      "description": "At 04:04 Beijing time on October 17, @tezzarc introduced ArkWeb through the REA + Opus 5.5 topic. A supplementary check identified the public luki-1/ArkWeb repository. It runs Marvel's Spider-Man Remastered alongside Batman: Arkham Knight, streams Gotham collision into Spider-Man's physics world and composites Spider-Man's rendered frame into Arkham. During combat, an invisible Batman performs the moves while Spider-Man follows the pose each frame. The README explains a guest scene about 2 km above New York, 50 m tiles, skeleton investigation from recorded motion, and agent-guided installation and troubleshooting. This is neither complete decompilation of both games into a new engine nor merely a model replacement.\n\nThe October 1 PHASE2 notes document PhysX layouts and geometry exports and explicitly label the Spider-Man runtime-collision implementation at that stage as built but not yet run. The newer README reports end-to-end operation but still calls it experimental, documenting thin-building clipping, collision gaps while areas load, lighting problems and incomplete hand poses in combat. It requires Windows, owned Steam copies of both games and specifically Spider-Man version 4.0630. An October 3 documentation commit credits Claude Opus 5.5 as co-author, supporting AI involvement in documentation and setup, not proof that a model performed all reverse engineering. Project materials do not confirm REA use. October 1–3 materials are out-of-window background evidence; the October 17 post is the candidate. Only documentation, the file tree and commits were read; the mod was not run or independently reproduced.",
+      "metadata": ["The project reports experimental end-to-end operation; this collection only read materials and did not run the games or verify performance.", "AI setup guidance and documentation collaboration are visible; REA use and attribution of the entire reverse-engineering effort to AI remain unconfirmed."],
+      "source_labels": ["October 17 ArkWeb technical introduction and REA promotion", "Public ArkWeb repository and experimental-status documentation", "October 1 phase notes: geometry export and a not-yet-run implementation", "October 3 setup-guide commit crediting Claude collaboration"]
+    }
+  },
+  {
+    "id": "doom-19-claude-cleanroom-report",
+    "title": "Doom：19 个 Claude 的 clean-room 重实现自述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "发帖者声称一个周末重实现 Doom、支持 WAD 与三平台；没有可核对代码或测试。",
+    "description": "10月17日04:09（北京时间），@demonica_fgc 称一个周末运行19个自主 Claude、花费19,000美元 token，做出免费开源、clean-room 的 Doom 重实现，声称与“1994原版”100%功能一致、原生支持 .wad，并可在 Windows、macOS、Linux 运行。目标是重建旧游戏运行能力，而非仅生成相似画面。原串只有该帖和图片，没有仓库地址、玩法对照、构建或测试记录；短链未展开，无法判断是认真报告还是讽刺。所有数量、费用、平台、开源和功能等价均仅为发帖者主张，“1994原版”也保留为原文说法，不据此确定具体发行版或 clean-room 隔离真的成立。未确认 REA，未独立运行。",
+    "sources": [{"label": "发帖者关于19个Claude重实现Doom的说法", "url": "https://x.com/i/status/2111187899479658673"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["19个Agent、19,000美元、一个周末及100%功能等价均未核验；可能含讽刺语境。"],
+    "en": {
+      "title": "Doom: a claimed clean-room reimplementation with 19 Claude agents",
+      "summary": "A poster claims a weekend Doom rebuild with WAD and three-platform support, without inspectable code or tests.",
+      "description": "At 04:09 Beijing time on October 17, @demonica_fgc says that running 19 autonomous Claude agents over a weekend and spending $19,000 in tokens produced a free, open-source, clean-room Doom reimplementation. The post claims 100% feature parity with the '1994 Original', native .wad support and operation on Windows, macOS and Linux. The claimed target is the old game's runtime behavior, not simply similar imagery. The conversation contains only this post and an image, with no repository address, gameplay comparisons, builds or test records. The short link was not expanded, so a serious report cannot be distinguished from satire. All counts, costs, platforms, open-source status and equivalence remain solely the poster's claims. '1994 Original' is retained as their wording, not used to establish an exact release or genuine clean-room separation. REA use is unconfirmed, and nothing was independently run.",
+      "metadata": ["19 agents, $19,000, one weekend and 100% feature parity are unverified; the context may be satirical."],
+      "source_labels": ["Post claiming a Doom reimplementation with 19 Claude agents"]
+    }
+  },
+  {
+    "id": "nist-ecdsa-origin-claude-report",
+    "title": "NIST ECDSA 曲线：Claude 追溯公开参数的随机生成过程",
+    "category": "algorithms",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "Anthropic 报告从公开曲线种子识别 lrand48 与时间戳，并公开重算代码；不是破解 ECDSA。",
+    "description": "10月17日04:59与07:05（北京时间）的候选讨论 Claude 追溯 NIST ECDSA 曲线参数。ECDSA 用于数字签名，这里的问题不是恢复私钥，而是解释 NSA 提交、NIST 标准公开的曲线生成种子从何而来。补读10月16日 Anthropic 原始研究：团队称内部研究模型在不到半小时内识别 P-192、P-224、P-256、P-384、P-521 的种子由 C 库 lrand48 以 Unix 时间戳初始化生成。方法包括扫描相邻输出及高位模式、枚举隐藏位、用 LLL 格约化恢复截断生成器状态，再倒推 srand48 初始化。文章给出生成代码与输出，例如 P-256 对应1997-08-16 01:52:34 UTC及第1842个候选；本合集未执行代码。\n\n研究还将 P-192 和五条 ANSI 示例曲线的基点联系到 FreeLIP zrandom，以小整数初始化并跳过七次输出；这与曲线种子的 lrand48 是两项不同发现，候选将二者笼统混合的说法在此更正。原文保留 B-163 种子、其他若干基点及为何跳过部分可用候选等未解问题，不能写成全部参数来源已解决。Anthropic 明确说不是密码学破解、新攻击或曲线弱点，也不要求用户改变使用方式。半小时和36,864美元奖金捐给 ISRG 均为团队报告；有公开算法与项目报告输出，但未经本合集独立复算。10月16日文章为补充原始来源，不计作本窗口新帖子，也不将 REA 的同期热度当作参与证据。",
+    "sources": [{"label": "10月17日 NIST 曲线来源传播帖", "url": "https://x.com/i/status/2111200317866172887"}, {"label": "10月17日关于生成器与公共参数的讨论", "url": "https://x.com/i/status/2111231968549666836"}, {"label": "10月16日 Anthropic 原始研究、重算代码与未解问题", "url": "https://www.anthropic.com/research/ecdsa-curve-origins"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["原始研究日期2026-10-16；窗口内候选为2026-10-17；未独立执行重算代码。", "lrand48解释曲线种子，FreeLIP解释部分基点；不是恢复签名私钥或破解ECDSA。"],
+    "en": {
+      "title": "NIST ECDSA curves: Claude traces the generation of public parameters",
+      "summary": "Anthropic reports identifying lrand48 and timestamps behind public curve seeds and publishes reproduction code; this is not an ECDSA break.",
+      "description": "Candidates at 04:59 and 07:05 Beijing time on October 17 discuss Claude tracing NIST ECDSA parameters. ECDSA is used for digital signatures; the question here is not private-key recovery but the provenance of curve-generation seeds supplied by the NSA and published in NIST standards. A supplementary reading of Anthropic's October 16 original research found the team's report that an internal research model identified the P-192, P-224, P-256, P-384 and P-521 seeds in under half an hour as outputs of the C library's lrand48 generator initialized with Unix timestamps. The method scans adjacent outputs and high-bit patterns, enumerates hidden bits, uses LLL lattice reduction to recover truncated-generator states and reverses them to srand48 initialization. The article provides generation code and outputs: for example, P-256 corresponds to 1997-08-16 01:52:34 UTC and candidate 1842. This collection did not execute that code.\n\nThe research separately links the base points of P-192 and five ANSI example curves to FreeLIP's zrandom, initialized with small integers and skipping seven outputs. That is distinct from the lrand48 curve-seed finding; loose conflation in candidate commentary is corrected here. The original retains unanswered questions about the B-163 seed, several other base points and why some viable candidates were skipped, so not all parameter origins are explained. Anthropic explicitly says this is not a cryptographic break, new attack or curve weakness and calls for no change in use. The half-hour duration and donation of the $36,864 bounty to ISRG are team reports. Algorithms and project-reported outputs are public, but were not independently recomputed here. The October 16 article is supplementary primary evidence, not a new post in this window; contemporaneous REA popularity does not establish REA involvement.",
+      "metadata": ["Original research dated 2026-10-16; in-window candidates dated 2026-10-17; reproduction code was not independently executed.", "lrand48 explains curve seeds and FreeLIP explains some base points; neither means recovery of signing keys or an ECDSA break."],
+      "source_labels": ["October 17 post on NIST curve origins", "October 17 discussion of generators and public parameters", "October 16 Anthropic original research, reproduction code and open questions"]
+    }
+  },
+  {
+    "id": "victoria3-claude-decompile-idea",
+    "title": "Victoria 3：让 Claude 反编译游戏以便修改的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "回复建议让 Claude 反编译 Vic3；没有报告运行或具体改动成果。",
+    "description": "10月17日05:14（北京时间），一条给 @IchbinHussite 的回复建议“让 Claude 反编译 Vic3，然后就能这么做”。Vic3 指 Victoria 3 这款策略游戏，具体目标是借助反编译获得修改游戏的空间。可读正文没有说明“这么做”是哪项机制，也没有报告已执行、函数恢复、Mod、代码或测试；因此仅收为针对明确游戏的建议，不补造所需改动或成功结果。未说明使用 REA，也未独立尝试。",
+    "sources": [{"label": "针对 Vic3 的 Claude 反编译建议", "url": "https://x.com/i/status/2111204270879969582"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["只有建议；具体欲修改机制与实施结果未提供。"],
+    "en": {
+      "title": "Victoria 3: an idea to use Claude for decompilation and modification",
+      "summary": "A reply suggests having Claude decompile Vic3, without reporting execution or a concrete modification result.",
+      "description": "At 05:14 Beijing time on October 17, a reply to @IchbinHussite suggests having Claude decompile Vic3 so that 'you can do this'. Vic3 refers to the strategy game Victoria 3; the specific direction is gaining scope to modify a game through decompilation. The available text does not explain which mechanic 'this' refers to and reports no execution, recovered functions, mod, code or tests. It is included only as a suggestion aimed at an identifiable game, without inventing the desired modification or a successful outcome. REA use is not stated, and nothing was independently attempted.",
+      "metadata": ["Suggestion only; the intended mechanic and implementation results are not supplied."],
+      "source_labels": ["Suggestion to decompile Vic3 with Claude"]
+    }
+  },
+  {
+    "id": "niuniu-ai-mt5-rea-rebuild",
+    "title": "牛牛 AI / MT5：代理合作中断后的 REA 重建报告",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称用 REA 重建牛牛 AI；随后只标为概念设计稿，不能确认与交易终端集成可用。",
+    "description": "10月17日05:25（北京时间），@sera00111 称此前为资方做过牛牛 AI 连接 MT5 的插件并取得代理资格，客户付费后代理权却被取消，因此用 REA 一比一逆向、复刻“牛牛”。MT5 是这里被连接的交易终端；帖子提供了业务背景与目标，但没有说明逆向的是哪一版客户端、接口还是插件，也没有源代码或交易终端联调记录。06:36 同一作者另发“牛牛 AI（逆向版）概念设计稿”，给强烈的完成说法增加明确阶段限制。按同一项目合并两帖，不把概念界面写成已交付系统，不确认账户、信号、下单或付费功能等价；合作争议仅为作者陈述。未独立验证。",
+    "sources": [{"label": "作者关于牛牛AI与MT5合作及REA复刻的自述", "url": "https://x.com/i/status/2111206851606159655"}, {"label": "同作者随后发布的逆向版概念设计稿", "url": "https://x.com/i/status/2111224753449312383"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["自述一比一复刻，但后续来源明确称概念设计稿；无功能等价或MT5联调验收。"],
+    "en": {
+      "title": "Niuniu AI / MT5: an REA rebuild report after a reseller relationship ended",
+      "summary": "The author claims an REA rebuild of Niuniu AI, then labels a follow-up as concept design; trading-terminal integration is unverified.",
+      "description": "At 05:25 Beijing time on October 17, @sera00111 says they previously built a plugin connecting Niuniu AI to MT5 for a financial backer and received reseller rights, which were cancelled after a customer paid. They therefore claim to have reverse-engineered and rebuilt Niuniu one-to-one with REA. MT5 is the trading terminal being connected. The post supplies business context and a target but does not identify a client version or whether a client, interface or plugin was analyzed, and supplies no code or terminal-integration records. At 06:36 the same author posts a 'Niuniu AI (reverse-engineered version) concept design', adding a clear stage limitation to the stronger completion claim. The two posts are combined as one project. Concept interfaces are not presented as a delivered system, and account, signal, order or payment-feature equivalence is not established. The business dispute is solely the author's account. Nothing was independently verified.",
+      "metadata": ["A one-to-one rebuild is claimed, but the follow-up explicitly says concept design; no functional-equivalence or MT5-integration acceptance evidence."],
+      "source_labels": ["Author's account of Niuniu AI, MT5 and an REA rebuild", "Same author's subsequent reverse-engineered-version concept design"]
+    }
+  },
+  {
+    "id": "mac-video-export-davinci-capcut-rea",
+    "title": "Mac 视频导出：研究 DaVinci 与 CapCut 改进自己的编辑器",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者称用 REA 研究两款本机编辑器的导出方式，解决自制 AI 视频编辑器的导出慢问题。",
+    "description": "10月17日05:54（北京时间），@khaled_cli 用阿拉伯语介绍一次单功能逆向：自己正在做 Mac AI 视频编辑器，其他部分正常，但视频导出非常慢，于是用 REA 研究本机 DaVinci 与 CapCut 如何导出。作者称分析显示自己的方法过时、不合适，把研究所得用于自己的项目后问题完全解决。来源没有给导出 API、编码器、分辨率、文件样本、耗时前后对照或源码；不能猜成硬件编码、零复制或特定加速技术，也不把“完全解决”当独立基准。收录重点是为已有项目研究一个瓶颈，不是复刻整款 DaVinci 或 CapCut。",
+    "sources": [{"label": "作者关于REA研究视频导出并修复瓶颈的自述", "url": "https://x.com/i/status/2111214346428686478"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["单功能改善的作者报告；无前后耗时、编码路径或可复核测试。"],
+    "en": {
+      "title": "Mac video export: studying DaVinci and CapCut to improve a personal editor",
+      "summary": "The author says REA analysis of two installed editors solved slow exports in a personal AI video editor.",
+      "description": "At 05:54 Beijing time on October 17, @khaled_cli describes a single-feature reverse-engineering attempt in Arabic. They are building a Mac AI video editor whose other parts worked but whose video export was very slow, so they used REA to study how their installed DaVinci and CapCut apps export. The author says the analysis showed their own approach was outdated and unsuitable and that applying the findings completely solved the problem. No export API, encoder, resolution, file samples, before-and-after times or source code is supplied. Hardware encoding, zero-copy paths or a particular acceleration technique must not be inferred, and 'completely solved' is not an independent benchmark. The useful target is an existing project's bottleneck, not rebuilding all of DaVinci or CapCut.",
+      "metadata": ["Author-reported improvement to one feature; no before-and-after timings, encoding path or inspectable tests."],
+      "source_labels": ["Author's report of REA export analysis and a bottleneck fix"]
+    }
+  },
+  {
+    "id": "wiki-lab-agent-wikipedia-rea-report",
+    "title": "Wiki Lab：声称用 REA 研究 Wikipedia 的 Agent 知识站",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "宣传帖称 Wiki Lab 把 Wikipedia 模式提供给 AI Agent；没有代码、数据来源或可用性验证。",
+    "description": "10月17日05:59（北京时间），@BrianDevoor 宣传 Wiki Lab，称一位叫 Raze 的开发者使用 REA 研究人类 Wikipedia，做面向 AI Agent 的 Wikipedia。具体方向是把已有知识站的组织或访问方式用于 Agent，但帖子没有说明分析页面、协议还是程序，也没有给数据许可、索引方法、编辑机制或实际 Agent 使用结果。链接仍是短链，未确认仓库或产品。作者履历、代币创作者费用全部给 GitHub 等营销主张不作为技术证据；不把“逆向 Wikipedia”解释成获得完整后端或可验证百科覆盖。按具名项目的未核实宣传报告收录，而不是已工作的知识服务。",
+    "sources": [{"label": "Wiki Lab 与 REA 的宣传转述", "url": "https://x.com/i/status/2111215569047314589"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["REA归因仅来自宣传帖；未确认项目代码、产品可用性或知识数据许可。"],
+    "en": {
+      "title": "Wiki Lab: a claimed REA-based Wikipedia for agents",
+      "summary": "A promotion says Wiki Lab adapts Wikipedia for AI agents, without code, data-provenance or availability verification.",
+      "description": "At 05:59 Beijing time on October 17, @BrianDevoor promotes Wiki Lab, saying a developer called Raze used REA to reverse-engineer human Wikipedia and create Wikipedia for AI agents. The concrete direction is adapting an existing knowledge site's organization or access patterns to agents, but the post does not say whether pages, protocols or software were analyzed. It supplies no data license, indexing method, editing mechanism or actual agent-use results. Links remain short URLs, and no repository or product was confirmed. Career credentials and claims about token creator fees going to GitHub are marketing, not technical evidence. 'Reverse-engineering Wikipedia' is not interpreted as recovering a full backend or verified encyclopedic coverage. This is collected as an unverified promotion of a named project, not a working knowledge service.",
+      "metadata": ["REA attribution comes only from the promotional post; project code, availability and knowledge-data licensing are unconfirmed."],
+      "source_labels": ["Promotional account of Wiki Lab and REA"]
+    }
+  },
+  {
+    "id": "workbuddy-settop-apk-analysis-report",
+    "title": "机顶盒 APK：WorkBuddy 提取与逆向的简短自述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者称 WorkBuddy 从机顶盒获取 APK 并逆向，未说明具体应用或恢复了哪些行为。",
+    "description": "10月17日06:04（北京时间），@hanlei 回复 @zhengyun 与 @dotey，称前一天让 WorkBuddy 从一台机顶盒获取 APK 并逆向，“完全没问题”，但自己没关注是否用了 REA。APK 是 Android 应用安装包，目标是在真实设备上取得应用后交给 Agent 分析。原文没有给机顶盒型号、包名、提取手段、反编译结果或功能验证。因此只记录作者报告完成的提取与分析操作，不写成重建应用、设备控制或兼容性已成功，也不推定使用 REA。此条与此前 WorkBuddy 研究收藏网站的目标不同。未独立运行。",
+    "sources": [{"label": "作者关于WorkBuddy取得并逆向机顶盒APK的回复", "url": "https://x.com/i/status/2111216713245364424"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["前一天工作的自述，发表于10月17日；包名、分析输出与REA使用均未确认。"],
+    "en": {
+      "title": "Set-top-box APK: a short WorkBuddy extraction and analysis report",
+      "summary": "The author says WorkBuddy obtained and reverse-engineered an APK from a set-top box, without identifying the app or recovered behavior.",
+      "description": "At 06:04 Beijing time on October 17, @hanlei replies to @zhengyun and @dotey that the previous day WorkBuddy obtained an APK from a set-top box and reverse-engineered it with 'no problem', but they did not check whether it used REA. An APK is an Android application package; the target is obtaining an app from a real device and having an agent analyze it. The text provides no box model, package name, extraction method, decompilation output or functional checks. Only the author's reported extraction and analysis are recorded, not a rebuilt app, successful device control or compatibility, and REA use is not inferred. The target differs from the existing WorkBuddy report on bookmarked websites. Nothing was independently run.",
+      "metadata": ["Work reportedly done the previous day, posted October 17; package name, analysis output and REA use are unconfirmed."],
+      "source_labels": ["Author's reply about WorkBuddy obtaining and analyzing a set-top-box APK"]
+    }
+  },
+  {
+    "id": "3ds-max-ai-decompile-idea",
+    "title": "3ds Max：询问 AI 反编译三维工具的 idea",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "有人询问是否已用 AI 逆向 3ds Max；不是已启动或完成的重建。",
+    "description": "10月17日06:10（北京时间），发帖者询问是否有人像研究其他软件那样逆向过 3ds Max，并使用 AI、Decompile、ChatGPT 与三维建模标签。目标是具体的三维建模软件，但来源只是需求或好奇，没有说明要恢复哪项建模功能、采取何种分析方法，也没有自己的运行或交付报告。宽松收录为针对具名工具的探索 idea，不推断 ChatGPT 实际执行了分析，不把标签当 REA 使用证据，更不声称已有可替代 3ds Max 的产品。",
+    "sources": [{"label": "关于AI逆向3ds Max的询问", "url": "https://x.com/i/status/2111218318728462494"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["探索性询问，无具体恢复功能、代码或结果。"],
+    "en": {
+      "title": "3ds Max: an idea to investigate the 3D tool with AI",
+      "summary": "A poster asks whether anyone has reverse-engineered 3ds Max with AI; this is not a started or completed rebuild.",
+      "description": "At 06:10 Beijing time on October 17, a poster asks whether anyone has reverse-engineered 3ds Max as people have other software, using AI, Decompile, ChatGPT and 3D-modeling tags. The target is a specific 3D-modeling application, but the source is only a request or expression of curiosity. It identifies no modeling feature to recover, analysis method or personal execution or delivery. It is included permissively as an exploration idea for a named tool, without assuming ChatGPT actually analyzed it, treating tags as evidence of REA use or claiming a replacement for 3ds Max exists.",
+      "metadata": ["Exploratory question without a concrete recovered feature, code or results."],
+      "source_labels": ["Question about AI reverse engineering of 3ds Max"]
+    }
+  },
+  {
+    "id": "base-arbitrage-bytecode-rea-opus-report",
+    "title": "Base 套利合约：REA + Opus 字节码分析的待验证报告",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "帖子描述从未验证 EVM 合约恢复跨池套利与 Solidity，但没有地址、偏移或回放证据。",
+    "description": "10月17日06:18（北京时间），@mal0r1key 称用 REA 反编译 Base 链上一份未验证合约的 EVM 字节码，再由 Opus 5.5 解释 ETH/USDC 在 Uniswap 与 Aerodrome 两池间的套利、交易前净收益检查、闪电贷与单块内偿还，最后重写成41行 Solidity。这里“未验证”指浏览器未公开验证源码，不是本合集认可合约安全。作者声称每条结论都有字节码偏移，还声称296天收益1,248,530美元、日收益4,218美元、每笔约11.40美元、每小时约15笔；这些是未经核验的营销数值，不是投资表现确认。\n\n原串没有所承诺的合约地址，也未列偏移、重写代码、交易记录或回放。正文把较浅池30%的仓位与常量0x1e、30基点滑点并列，不能仅凭同一个数值推导出单位与业务含义；来源没有提供解开这一歧义的代码上下文。只收录具体的字节码研究叙述，不确认策略完整性、利润、不会亏损或已做出可部署交易机器人。未执行合约或测试。",
+    "sources": [{"label": "Base套利合约字节码分析与收益主张原帖", "url": "https://x.com/i/status/2111220274226217276"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["原串未见地址、偏移、代码与交易回放；收益与41行重写均是作者主张。", "30%仓位与30基点滑点不是同一单位，不能靠常量值确认其含义。"],
+    "en": {
+      "title": "Base arbitrage contract: an unverified REA/Opus bytecode report",
+      "summary": "A post describes recovering cross-pool arbitrage and Solidity from an unverified EVM contract, without an address, offsets or replay evidence.",
+      "description": "At 06:18 Beijing time on October 17, @mal0r1key says REA decompiled EVM bytecode from an unverified contract on Base, after which Opus 5.5 explained ETH/USDC arbitrage between Uniswap and Aerodrome, a pre-trade net-edge check, flash borrowing and repayment within one block, then rewrote it in 41 lines of Solidity. Here 'unverified' means the explorer lacks verified source, not that this collection endorses contract safety. The author claims every finding has a bytecode offset and alleges $1,248,530 profit over 296 days, $4,218 per day, about $11.40 per trade and roughly 15 trades per hour. These are unverified promotional figures, not confirmed investment performance.\n\nThe conversation does not contain the promised contract address, offsets, rewritten code, transaction records or a replay. The text juxtaposes sizing at 30% of the shallower pool with the constant 0x1e and 30 basis points of slippage. A numeric constant alone cannot establish units and business meaning, and the source supplies no code context resolving that ambiguity. Only the concrete bytecode-investigation narrative is collected, not confirmation of strategy completeness, profits, loss prevention or a deployable trading bot. No contract or tests were executed.",
+      "metadata": ["No address, offsets, code or transaction replay were found in the conversation; profits and a 41-line rewrite remain author claims.", "30% position sizing and 30-basis-point slippage have different units; a constant alone does not establish meaning."],
+      "source_labels": ["Original Base-arbitrage bytecode analysis and profit claims"]
+    }
+  },
+  {
+    "id": "claude-system-ui-video-measurement",
+    "title": "系统 UI 视频：Claude 逐帧测量与动画参数推断",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者称 Claude 从参考视频测量系统界面，并尝试插值恢复动画参数；没有精度或完成验收。",
+    "description": "10月17日06:26（北京时间），@pondorasti 称要求 Claude 根据所发视频重建一些系统 UI 后，模型开始逐像素测量元素、逐帧分析，甚至尝试插值原动画参数。目标是从外观行为恢复界面与运动，而不是读取程序源码。来源没有命名操作系统、界面组件或原视频版本，也没有给重建代码、误差测量或已交付结果。保留为作者报告的进行中视觉逆向过程，不把“尝试插值”升级为恢复了真实内部参数，也不推断 REA 参与。",
+    "sources": [{"label": "作者关于Claude从视频测量系统UI的自述", "url": "https://x.com/i/status/2111222217849946308"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["操作系统与组件未命名；只报告分析动作，未提供重建精度或完成测试。"],
+    "en": {
+      "title": "System UI from video: Claude measures frames and infers animation parameters",
+      "summary": "The author says Claude measured a reference video and attempted animation-parameter interpolation, without accuracy or completion checks.",
+      "description": "At 06:26 Beijing time on October 17, @pondorasti says that after asking Claude to recreate some system UIs from a video, the model began measuring elements pixel by pixel, analyzing frame by frame and even attempting to interpolate original animation parameters. The target is recovering interfaces and motion from visible behavior rather than reading source code. The post does not name an operating system, UI component or video version and supplies no reconstruction code, error measurements or delivered result. This remains an author-reported ongoing visual reverse-engineering process. Attempted interpolation is not promoted to recovery of the true internal parameters, and REA involvement is not inferred.",
+      "metadata": ["Operating system and components are unnamed; only analysis actions are reported, without reconstruction accuracy or completion tests."],
+      "source_labels": ["Author's account of Claude measuring system UI from video"]
+    }
+  },
+  {
+    "id": "linux-mouse-driver-ai-week-report",
+    "title": "Linux 鼠标驱动：一周 AI 项目中的逆向自述",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称最近一周借助 AI 逆向 Linux 鼠标驱动，未给设备型号、协议或实现。",
+    "description": "10月17日06:36（北京时间），@doc_hex1337 在讨论 AI 是否有用时，以自己上一周把 Godot 游戏改为 VR、逆向 Linux 鼠标驱动作为例子，并笼统说过去数周的项目可缩短到几天。逆向目标是 Linux 鼠标驱动，而非那项普通的 VR 改编；来源没有给设备、驱动名称、协议字段、模型、代码或可用功能。因此收录具体方向与作者的操作自述，不推导确切节省工时，也不与已有 macOS 游戏鼠标设置案例混为一项。未确认 REA 或独立验证。",
+    "sources": [{"label": "作者关于AI项目与Linux鼠标驱动逆向的回复", "url": "https://x.com/i/status/2111224894297870413"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["未命名鼠标、驱动、模型或代码；泛化工时说法不能分配给该项逆向。"],
+    "en": {
+      "title": "Linux mouse driver: reverse engineering among a week's AI projects",
+      "summary": "The author says AI helped reverse-engineer a Linux mouse driver during the previous week, without a device model, protocol or implementation.",
+      "description": "At 06:36 Beijing time on October 17, @doc_hex1337 argues that AI is useful by citing the previous week's conversion of a Godot game to VR and reverse engineering of a Linux mouse driver, broadly saying projects that once took weeks now take days. The reverse-engineering target is the mouse driver on Linux, not the ordinary VR adaptation. No device, driver name, protocol fields, model, code or working features are supplied. The concrete direction and author-reported action are collected without inferring exact labor savings or merging it with the existing macOS gaming-mouse configuration case. REA use is unconfirmed, and nothing was independently verified.",
+      "metadata": ["Mouse, driver, model and code are unnamed; general time-saving claims cannot be assigned to this reverse-engineering task."],
+      "source_labels": ["Author's reply on AI projects and Linux mouse-driver reverse engineering"]
+    }
+  },
+  {
+    "id": "roadster-video-claude-threejs-analysis",
+    "title": "Roadster 视频：Claude 辅助的 three.js 视觉拆解实验",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者称用视频帧估计比例、拆成可动网格并做20秒动画；不能据此确认车辆内部结构或飞行原理。",
+    "description": "10月17日06:38（北京时间），@Flinzu 称从 Tesla Roadster 演示视频提取参考帧，交给 Claude Code 在无蓝图条件下研究外观与运动，再用 three.js 分离部件、标注并生成20秒拆解动画。帖子给出先确认轴距和车顶轮廓、每项断言对应画面、逐帧确定渲染的工作流；称最初盒状模型像玩具，先校正比例才改善，14个部件中6个看不见而标为未知。\n\n这是从影像推断外形并可视化的作者报告，不是读取车辆软件或拆解真实硬件。升空、翻转、推力及“46百万浏览”等均来自该帖对视频的叙述，不能当成本合集核验的实车性能、结构、制造能力或热度快照。REA 只被拿来类比 App 分析思路，并未报告用于车辆；未检查视频原始真实性、模型代码或渲染结果，不将隐藏面板下的猜想当机械事实。",
+    "sources": [{"label": "作者关于Roadster视频到three.js拆解动画的自述", "url": "https://x.com/i/status/2111225325531074716"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["20秒与6/14部件未知为作者报告；没有核实车辆演示或内部机械结构。", "REA仅作类比，不是已确认的车辆逆向工具。"],
+    "en": {
+      "title": "Roadster video: a Claude-assisted three.js visual teardown experiment",
+      "summary": "The author reports estimating proportions, separating movable meshes and making a 20-second film; vehicle internals and flight physics are not established.",
+      "description": "At 06:38 Beijing time on October 17, @Flinzu says reference frames from a Tesla Roadster demonstration were given to Claude Code to study appearance and motion without blueprints, then separate and label parts in three.js and produce a 20-second exploded-view animation. The post describes first establishing wheelbase and roofline, tying claims to frames and using deterministic frame rendering. The author says an initial box-like model looked like a toy and improved only after proportions were corrected, while six of fourteen parts stayed unknown because they were not visible.\n\nThis is an author report of image-based shape inference and visualization, not vehicle-software inspection or a physical teardown. Lift, flips, thrust and '46 million views' come from the post's narrative about the video, not this collection's verified vehicle performance, structure, manufacturability or engagement snapshot. REA is an analogy to app analysis, not a reported vehicle tool. The original video's authenticity, model code and render output were not checked, and speculation under hidden panels is not treated as mechanical fact.",
+      "metadata": ["20 seconds and six of fourteen parts remaining unknown are author reports; the vehicle demonstration and internal mechanics were not verified.", "REA is an analogy, not a confirmed vehicle reverse-engineering tool."],
+      "source_labels": ["Author's report of a Roadster-video-to-three.js teardown animation"]
+    }
+  },
+  {
+    "id": "ens-v2-phishing-claude-repo-investigation",
+    "title": "ENS v2 钓鱼邮件：Claude 辅助追查危险 Agent 仓库",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "作者称从可疑邮件查到钱包盗取站点及危险 Skill 文件，并向 GitHub 举报；未公开可核对样本。",
+    "description": "10月17日07:13（北京时间），@rickydata42 称收到来自奇怪域名、以 ENS v2 为主题的邮件，交给 Claude 后发现指向盗取钱包的网站。随后作者说对可取得材料进行逆向，把代码联系到已封禁 GitHub 账号及其中 fork 的热门 Skill、Agent 仓库危险文件，又找出两个仍活跃、带相同文件的账号，并已向 GitHub 报告。具体用途是从一次钓鱼线索追到 Agent 生态里的可疑代码复用，不是操作钱包或执行危险仓库。原文没有域名、代码差异、文件路径、样本哈希、检测记录或举报回执；因此恶意性、账号关联与举报均保留为作者自述，不公开猜测具体账号，也不声称 GitHub 已处理。未说明 REA，未访问邮件目标或运行任何样本。",
+    "sources": [{"label": "作者关于ENS v2邮件与危险Agent仓库的调查自述", "url": "https://x.com/i/status/2111234225022067029"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["Claude参与是作者自述；无公开样本、可核对账号关联或GitHub处置结果。"],
+    "en": {
+      "title": "ENS v2 phishing email: a Claude-assisted investigation of dangerous agent repositories",
+      "summary": "The author reports tracing an email to a wallet-draining site and dangerous skill files, then reporting them to GitHub; inspectable samples are absent.",
+      "description": "At 07:13 Beijing time on October 17, @rickydata42 says an email about ENS v2 from a strange domain was given to Claude, which identified a wallet-draining destination. The author then says they reverse-engineered available material, linked code to a banned GitHub account and dangerous files in its forks of popular skill and agent repositories, found two still-active accounts with the same files and reported them to GitHub. The concrete purpose is tracing a phishing lead to suspected code reuse in the agent ecosystem, not operating a wallet or executing dangerous repositories. The text gives no domain, code diff, file paths, sample hashes, detection records or report receipt. Maliciousness, account relationships and reporting remain author claims; no specific account is guessed and no GitHub action is asserted. REA is not mentioned, and this collection neither visited the email destination nor ran samples.",
+      "metadata": ["Claude involvement is author-reported; no public samples, inspectable account linkage or GitHub resolution."],
+      "source_labels": ["Author's ENS v2 email and dangerous-agent-repository investigation report"]
+    }
+  },
+  {
+    "id": "rea-game-function-matcher-audit-report",
+    "title": "游戏函数匹配器：错误常量仍通过检查的审计转述",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "转述多模型接力重建三段游戏函数，以及审计发现指令匹配漏看地址背后数据的问题。",
+    "description": "10月17日07:42（北京时间），@xmyttle 转述 REA 博客的三段游戏函数重建接力：GPT-6-Sol 到 GPT-6.1-Sol、GPT-6.1-Sol 到 GPT-6 Astra，以及 GPT-6-Luna-max 分别得到 match；称 Astra 调整控制流图让编译器合并出相同分支。更有价值的是其验收限制：指令比较只有在记录了地址所指内容时才读该值，后续审计发现有函数使用错误常量仍获接受，例如原来加32.0f却改成加1.0f。\n\n这是对函数匹配 oracle 的具体测试问题，不与 CSV 导出负例实验混为同一案例。来源没有命名游戏、给函数列表、比较器代码、审计报告或修复提交；三次成功和错误常量都只按转述记录，不宣称已经复现缺陷或修好工具。帖子建议先给验收器喂必败代码再信任绿勾，可解释其测试目标，不能证明所有字节匹配项目都存在同样漏洞。未独立运行。",
+    "sources": [{"label": "三段游戏函数接力与匹配器常量漏洞的转述", "url": "https://x.com/i/status/2111241506006700380"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["游戏和函数未命名，未核对原博客或审计代码；32.0f/1.0f为来源示例。"],
+    "en": {
+      "title": "Game-function matcher: an audit account of wrong constants passing checks",
+      "summary": "A report describes model relays on three game functions and an audit finding that instruction matching can miss data behind addresses.",
+      "description": "At 07:42 Beijing time on October 17, @xmyttle recounts three game-function reconstruction relays from an REA blog: GPT-6-Sol to GPT-6.1-Sol, GPT-6.1-Sol to GPT-6 Astra, and GPT-6-Luna-max reportedly achieved matches. Astra is said to have rewired the control-flow graph so the compiler merged branches as in the original. More importantly, the post describes an acceptance limitation: instruction comparison reads a value behind an address only when that value was recorded. A later audit allegedly found accepted functions with wrong constants, such as adding 1.0f instead of the original 32.0f.\n\nThis is a specific test-oracle issue for function matching, separate from the CSV-export negative-control experiment. The source does not name a game or provide function lists, comparator code, an audit report or a fix commit. Both the three successes and the wrong constants remain attributed accounts, not independently reproduced defects or a confirmed repair. Feeding known-wrong code to a checker before trusting a green tick explains the proposed test, but does not establish that all byte-matching projects have the same flaw. Nothing was independently run.",
+      "metadata": ["Game and functions are unnamed; the original blog and audit code were not checked; 32.0f/1.0f is the source's example."],
+      "source_labels": ["Account of three game-function relays and a matcher constant-checking flaw"]
+    }
+  },
+  {
+    "id": "epaper-vocabulary-llm-firmware-idea",
+    "title": "电子墨水词汇设备：用 LLM 研究自定义固件的 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。",
+    "description": "10月17日05:17（北京时间），@avg_gary 在电子墨水词典讨论中询问能否用 LLM 让设备启动自定义固件，或用于类似设备。补读同串05:02的背景：@matthewvuk2 希望把只支持亚洲语言到英语的闭源词汇设备改为反方向，通过 USB 更新软件。Grok 的05:18回复称设备为 Wordmelon，并讨论取得 MCU 与逆向入口的必要性；名称、IR 硬件和价格并未从制造商资料确认，不把机器人回复当技术验证。收录的是改变翻译方向和研究固件的具体 idea，无固件转储、解锁、代码或可用设备报告。补充父帖与回复只用于识别语境，不替代原候选，也未确认 REA。",
+    "sources": [{"label": "用LLM研究自定义固件的原候选提问", "url": "https://x.com/i/status/2111204857335915007"}, {"label": "同串背景：改变电子词汇设备的翻译方向", "url": "https://x.com/i/status/2111201025189449984"}, {"label": "同串Grok回复：Wordmelon名称尚未独立核实", "url": "https://x.com/i/status/2111205096524583071"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["idea，无固件实验；Wordmelon名称只来自同串Grok，不是制造商确认。"],
+    "en": {
+      "title": "E-paper vocabulary device: an idea to investigate custom firmware with an LLM",
+      "summary": "Participants want to reverse a closed device's translation direction and ask whether an LLM could help boot custom firmware; no implementation is reported.",
+      "description": "At 05:17 Beijing time on October 17, @avg_gary asks in an e-paper dictionary discussion whether an LLM could help the device boot custom firmware, or work with similar devices. A supplementary reading of the 05:02 context finds @matthewvuk2 wanting to reverse the direction of a closed vocabulary device that currently translates Asian languages into English and update its software over USB. Grok's 05:18 reply calls it Wordmelon and discusses the need to identify its MCU and obtain reverse-engineering access. That name, IR hardware and pricing were not confirmed from manufacturer materials; a bot reply is not technical validation. The collected idea is changing translation direction and investigating firmware, without a firmware dump, unlock, code or working-device report. Supplementary posts identify context rather than replace the original candidate. REA use is unconfirmed.",
+      "metadata": ["Idea without firmware experiments; Wordmelon is named only by Grok in the conversation, not confirmed by a manufacturer."],
+      "source_labels": ["Original candidate asking about LLM-assisted custom firmware", "Conversation background: reversing an e-paper vocabulary device's translation direction", "Grok reply: Wordmelon name not independently verified"]
+    }
+  },
+  {
+    "id": "google-home-openai-bootloader-revival",
+    "title": "Google Home：不换硬件的旧音箱复用受阻报告",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。",
+    "description": "10月17日06:01（北京时间），@TheTJKennedy 说希望让闲置旧设备在 AI 时代重新有用，但目前遇到锁定 bootloader 与 OpenAI 网络安全护栏。补读00:21父帖才确认目标：本周末尝试逆向 Google Home 音箱，希望给旧 Google/Amazon 音箱刷开源软件来控制 IoT，不再依赖订阅。04:06同串有人建议 Onju Voice 换用 ESP32-S3 板，但作者明确不想改硬件，因为违背复用原设备的目标。\n\n这不是换板方案的成功案例，也没有表明已解锁、启动自定义固件或控制家庭设备。具体 Google Home 代际、分析步骤、模型和拒绝记录都未提供；OpenAI 参与与受阻只按作者描述，未确认 REA。00:21父帖早于本轮04:00窗口，仅作识别目标的背景；06:01进展回复是本轮候选。",
+    "sources": [{"label": "作者在本窗口报告锁定启动链与OpenAI护栏", "url": "https://x.com/i/status/2111215951857246251"}, {"label": "窗口外父帖：逆向Google Home并复用旧音箱的计划", "url": "https://x.com/i/status/2111130295692849212"}, {"label": "同串换板建议，作者未采用", "url": "https://x.com/i/status/2111187043779068036"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["不换板复用目标；启动锁定与护栏为作者报告，尚无自定义固件运行。"],
+    "en": {
+      "title": "Google Home: a blocked attempt to revive an old speaker without replacing hardware",
+      "summary": "The author wants open smart-home software on an old speaker but reports a locked bootloader and OpenAI safeguards.",
+      "description": "At 06:01 Beijing time on October 17, @TheTJKennedy says they want idle old hardware to become useful in the AI age but currently face a locked bootloader and OpenAI cybersecurity safeguards. Reading the 00:21 parent identifies the target: trying to reverse-engineer a Google Home speaker over the weekend, with open software on old Google/Amazon speakers to control IoT without subscriptions. At 04:06 another participant suggests an Onju Voice ESP32-S3 replacement board, but the author explicitly rejects hardware changes because they defeat the goal of reusing the original device.\n\nThis is not a successful board-replacement project and does not establish an unlock, booting custom firmware or working home control. The Google Home generation, analysis steps, model and refusal records are absent. OpenAI involvement and blockers remain the author's account; REA use is unconfirmed. The 00:21 parent predates this window's 04:00 start and supplies target-identification background only; the 06:01 progress reply is the in-window candidate.",
+      "metadata": ["Goal is reuse without replacing the board; boot locking and safeguards are author reports, with no running custom firmware."],
+      "source_labels": ["In-window author report of boot locking and OpenAI safeguards", "Out-of-window parent: Google Home investigation and old-speaker reuse plan", "Conversation suggestion of board replacement, not adopted by the author"]
+    }
+  },
+  {
+    "id": "xp-scanner-win11-ai-two-vm-idea",
+    "title": "XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。",
+    "description": "10月17日07:05（北京时间），@jmassisi01 建议为一台只有 Windows XP 驱动的扫描仪给 AI 两台虚拟机：一台 XP 安装旧驱动，一台 Windows 11 测试新驱动，并问是否考虑 REA。补读10月16日19:43父帖，@ladeutschevida 说厂商不再更新驱动，想让旧扫描仪继续在 Windows 11 工作，询问 vibe coding 是否也适合驱动开发。父帖是窗口外背景，说明具体互通目标；本轮回复提出参考环境与验收环境分离的方法。设备品牌型号、USB协议、驱动代码与测试结果均未提供，REA仍只是建议。它不是已收录的 Plustek Linux 驱动工作，也不能当作已获得 Win11 兼容驱动。",
+    "sources": [{"label": "本轮AI双VM对照与REA建议", "url": "https://x.com/i/status/2111232123524829247"}, {"label": "窗口外父帖：旧XP扫描仪在Win11继续工作的需求", "url": "https://x.com/i/status/2111060583059460316"}],
+    "snapshot_date": "2026-10-17",
+    "metadata": ["方法建议而非已执行实验；REA、设备型号及兼容性未确认。"],
+    "en": {
+      "title": "XP scanner to Windows 11: an AI and two-VM comparison idea",
+      "summary": "For a scanner with XP-only drivers, a reply suggests AI observation on the old system and testing on Windows 11, possibly with REA; nothing is implemented.",
+      "description": "At 07:05 Beijing time on October 17, @jmassisi01 suggests giving AI two virtual machines for a scanner with only Windows XP drivers: XP with the old driver installed and Windows 11 for testing a new driver, and asks whether REA has been considered. Reading the parent at 19:43 on October 16 finds @ladeutschevida saying the manufacturer no longer updates the driver and asking whether vibe coding could make the old scanner work on Windows 11. The parent is out-of-window background establishing the interoperability target; the current reply proposes separating reference and acceptance environments. Device brand/model, USB protocol, driver code and test results are absent, and REA remains only a suggestion. This is not the existing Plustek Linux driver project and does not establish a working Windows 11-compatible driver.",
+      "metadata": ["Method proposal, not an executed experiment; REA use, device model and compatibility remain unconfirmed."],
+      "source_labels": ["In-window suggestion of AI, two-VM comparison and REA", "Out-of-window parent: demand to use an old XP scanner on Windows 11"]
     }
   }
 ]
