@@ -90,3 +90,5 @@
 - [Honda RoadSync：Claude 辅助研究踏板车蓝牙，让按键控制其他音乐 App](../cases/honda-roadsync-bluetooth-music-report.md) — Busy K 报告自建 App，把 Honda 车把按键接到 Spotify、YouTube Music 和播客；车型与协议未公开。 **[其他 AI 逆向 · 待验证]**
 - [Samsung TV：用 Claude 与 REA skill 做网页遥控器的自述](../cases/samsung-tv-web-remote-aswin-report.md) — Aswin DG 报告研究电视协议并搭建可控制音量、频道和应用的网页遥控器，Anatomy skill 负责等距 UI。 **[REA · 待验证]**
 - [日立微蒸烤炉：Codex 经 Android App 与 REA 研究实现直接控制的自述](../cases/hitachi-oven-codex-rea-report.md) — 郭宇报告从 iPhone App 操作转向 Android 模拟器联调，称 REA 逆向后可直接控制烤炉；约不到 5 分钟为作者口径。 **[REA · 待验证]**
+- [非开源版小智盒子：AI 改固件后连接自有 VPS 与共享记忆](../cases/xiaozhi-box-ai-vps-memory.md) — luckythehusky 自述导出、逆向、修改和重刷盒子固件，为家中 Agent 增加可唤醒语音端。 **[其他 AI 逆向 · 待验证]**
+- [LG 电视流畅度：用 REA 研究改善响应的 idea](../cases/lg-tv-smoothness-rea-idea.md) — TheAvinashSingh 询问是否有人逆向 LG 电视来改善流畅度，尚无方案或结果。 **[REA · 待验证]**

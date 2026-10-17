@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**384 entries**, organized by use case, without a Top-N or popularity threshold.
+**401 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (82)
-- [Hardware and interoperability](categories/en/hardware.md) (88)
-- [Applications and clients](categories/en/apps.md) (176)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (38)
+- [Games and preservation](categories/en/games.md) (87)
+- [Hardware and interoperability](categories/en/hardware.md) (90)
+- [Applications and clients](categories/en/apps.md) (184)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (40)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -110,6 +110,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Resident Evil 2 on Nintendo DS: an unfinished REA and Claude Code port report](cases/en/resident-evil2-ds-rea-port-report.md) — A programming community relays an REA/Claude Code DS port that is still unfinished and seeking help. **[REA · In progress]**
 - [Mario Kart 8 Deluxe: 0xsvsv's Claude/REA PC-port account](cases/en/mario-kart8-deluxe-0xsvsv-report.md) — The author claims a PC port with Claude and identifies Claude Code, IDA Pro MCP through REA, and the game ROM as the tools. **[REA · Needs verification]**
 - [Kerbal Space Program 2: an AI-decompilation idea for community maintenance](cases/en/ksp2-ai-decompile-community-idea.md) — Jordan suggests open sourcing or AI-decompiling KSP 2 in a discussion about continued modding after abandonment; no engineering effort is established. **[Other AI-assisted work · In progress]**
+- [Makara game maker: an idea for scoped analysis of authorized inputs](cases/en/makara-scoped-game-creation-idea.md) — skyshark88 proposes a dedicated Android game maker that analyzes sprites and mechanics, previews and packages games without exposing general APK analysis. **[Other AI-assisted work · Needs verification]**
+- [ROM analysis setup: Gemini Argon with REA, Ghidra and libretro](cases/en/gemini-rea-libretro-rom-setup.md) — Sergio Suzano reports quickly setting up a ROM-decompilation environment, without a specific game's recovery result. **[REA · Analysis test]**
+- [Old game saves in the browser: a REA rules-and-progress migration idea](cases/en/rea-old-save-browser-migration-idea.md) — mika_systems proposes separating mechanics research, rebuilding, save mapping and a full continue-playing acceptance sequence. **[REA · Needs verification]**
+- [inFAMOUS Second Son: an unverified AI-reversing/PC-playability report](cases/en/infamous-second-son-ai-pc-report.md) — 0x0SojalSec relays Windows and Linux playability for the PlayStation game, without implementation or compatibility records. **[Other AI-assisted work · Needs verification]**
+- [Switch Diablo II to Android: an unverified AI-assisted native-port report](cases/en/diablo2-switch-android-ai-port-report.md) — paomiange1 relays decompilation, symbol recovery and cross-platform work within days; 60 fps and open-source claims are unverified. **[Other AI-assisted work · Needs verification]**
 
 ### Hardware and interoperability
 
@@ -201,6 +206,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Honda RoadSync: Claude-assisted scooter Bluetooth research for other music apps](cases/en/honda-roadsync-bluetooth-music-report.md) — Busy K reports a personal app connecting Honda handlebar buttons to Spotify, YouTube Music and podcasts; model and protocol are unpublished. **[Other AI-assisted work · Needs verification]**
 - [Samsung TV: Aswin DG's Claude/REA-skill web-remote account](cases/en/samsung-tv-web-remote-aswin-report.md) — Aswin DG reports investigating the TV protocol and building a web remote for volume, channels and apps, with Anatomy handling the isometric UI. **[REA · Needs verification]**
 - [Hitachi combination oven: a Codex/REA account using an Android app for direct control](cases/en/hitachi-oven-codex-rea-report.md) — Guo Yu reports moving from iPhone-app operation to Android-emulator integration and REA research for direct oven control; roughly under five minutes is author-reported. **[REA · Needs verification]**
+- [Non-open-hardware Xiaozhi box: AI firmware changes for a personal VPS and shared memory](cases/en/xiaozhi-box-ai-vps-memory.md) — luckythehusky reports dumping, reversing, modifying and reflashing firmware to add a wakeable voice endpoint for a home agent. **[Other AI-assisted work · Needs verification]**
+- [LG TV smoothness: an idea for REA-assisted responsiveness research](cases/en/lg-tv-smoothness-rea-idea.md) — TheAvinashSingh asks whether reversing LG TVs could improve smoothness, without a method or result. **[REA · Needs verification]**
 
 ### Applications and clients
 
@@ -380,6 +387,14 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Cursor: an account of custom relays and personal Codex/Claude Code quotas](cases/en/cursor-custom-relay-foxsnowing-report.md) — SnowingFox claims to have reverse-engineered Cursor for custom relays and personal agent quotas; AI is the integration target, not a confirmed reversing assistant. **[REA use unconfirmed · Related project]**
 - [Open Scrantic: rebuilding the Johnny Castaway screensaver engine with REA and Claude Code](cases/en/johnny-castaway-rust-rea.md) — Recover formats, scripts and engine behavior from a Windows 3.1 disassembly for a three-platform Rust implementation; original assets are required and deliberate deviations remain. **[REA · In progress]**
 - [REA Workspace Template: separate originals, analysis copies and evidence](cases/en/rea-workspace-template-gundy.md) — Gundy's public template supplies project-level REA setup, evidence notes and sample verification for Claude Code/Codex; 12 tests and JS/HAR acceptance are project records only. **[REA · Related project]**
+- [Ableton Live 12: an agent reversing attempt running for 96 hours](cases/en/ableton-live12-agent-96h.md) — patrick__eff reports sustained agent work on the music-production app, without identifying a recovered feature. **[REA use unconfirmed · In progress]**
+- [Decepticon Reverser: REA/Ghidra static evidence in authorized security investigations](cases/en/decepticon-reverser-rea-project.md) — The public project starts reversing workloads on demand and preserves Evidence; its XBOW 102/104 is a pentesting benchmark, not reversing accuracy. **[REA · Related project]**
+- [Pandemic-relief websites: an idea for AI-assisted investigation of legacy backdoors](cases/en/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge proposes decompiling state relief websites; outsourcing, backdoors and loss attribution are unsupported. **[Other AI-assisted work · Needs verification]**
+- [Forked pi and two Sparks: starting a GLM-5.3-flash/REA trial](cases/en/pi-glm-two-sparks-rea-trial.md) — alexrudloff is trying REA in a personal pi fork, without a named target or analysis result yet. **[REA · In progress]**
+- [Mac video downloader: an author-reported rebuild adding transcription](cases/en/mac-video-downloader-transcription-report.md) — riabcevv reports replacing a subscription downloader with a 39 MB download/audio/transcription app; five-minute and afternoon timelines conflict. **[REA use unconfirmed · Needs verification]**
+- [Codex/Claude clients: asking whether tokens are hidden in the app package](cases/en/codex-claude-client-token-location-idea.md) — NickSvaik asks Grok what client decompilation reveals, without reporting extraction or a quota bypass. **[Other AI-assisted work · Needs verification]**
+- [Illustrative legacy/billing demo: 212 files to a spec and twelve Sonnet agents](cases/en/rea-legacy-billing-illustrative-demo.md) — Primee32 explicitly calls the 7m05s/$0.88/148-behavior comparison illustrative, not evidence of a commercial migration. **[REA · Needs verification]**
+- [Windows XP/7: an AI compatibility idea instead of rewriting the whole OS](cases/en/windows-xp7-ai-compatibility-idea.md) — LaSpookyEXE suggests directing AI reversing toward unsupported software and hardware on older Windows versions. **[Other AI-assisted work · Needs verification]**
 
 ### Algorithms and feature recovery
 
@@ -421,6 +436,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [JavaScript divergence: formatting switches the game, an AI reversing-decoy idea](cases/en/javascript-divergence-agent-decoy.md) — A secondary account of Robert Vähhi's processor-divergence work proposes runnable cleaned-up decoys for human and AI reverse engineers. **[Other AI-assisted work · Related project]**
 - [Three-model binary research: function maps, competing hypotheses and an original-binary oracle](cases/en/three-model-binary-evidence-workflow-idea.md) — An idea starts with a self-compiled record.c lab fixture and splits mapping, interpretation and criticism across models; no verifiable run is supplied. **[Other AI-assisted work · Needs verification]**
 - [Eidolon: a multi-agent binary-to-Rust comparison report](cases/en/eidolon-rust-multiagent-report.md) — Rovshan reports unpacking a 64 KB-class demo, recovering shaders and its synthesizer, and comparing a Rust rewrite over 27,000 frames and audio; logs are unverified. **[Other AI-assisted work · Needs verification]**
+- [Frontkick vs Rikugan: a prompt confound in two cryptographic binary tasks](cases/en/synacktiv-frontkick-rikugan-crebench.md) — Synacktiv compares CodeAct and ToolAgent, but unequal library information prevents attributing the measured gap to architecture. **[Other AI-assisted work · Analysis test]**
+- [EVM contracts: a REA idea for inspecting state-changing entry points](cases/en/evm-rea-state-change-audit-idea.md) — 88n77n proposes using Claude Code and bytecode to inspect minting, blacklists and mutable fees, separating observation from inference. **[REA · Needs verification]**
 
 ## Contributing and selection
 

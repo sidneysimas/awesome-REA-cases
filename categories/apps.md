@@ -178,3 +178,11 @@
 - [Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述](../cases/cursor-custom-relay-foxsnowing-report.md) — SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。 **[未确认使用 REA · 相关项目]**
 - [Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎](../cases/johnny-castaway-rust-rea.md) — 从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。 **[REA · 进行中]**
 - [REA Workspace Template：把原件、分析副本与证据分开的工作区](../cases/rea-workspace-template-gundy.md) — Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。 **[REA · 相关项目]**
+- [Ableton Live 12：Agent 已运行 96 小时的逆向尝试](../cases/ableton-live12-agent-96h.md) — patrick__eff 报告让 Agent 持续逆向音乐制作软件，尚未报告恢复了什么功能。 **[未确认使用 REA · 进行中]**
+- [Decepticon Reverser：把 REA/Ghidra 静态证据接进授权安全调查](../cases/decepticon-reverser-rea-project.md) — 公开项目按需启动逆向工作负载并保留 Evidence；XBOW 102/104 是项目渗透基准，不是逆向正确率。 **[REA · 相关项目]**
+- [疫情救济网站：让 AI 调查旧系统后门的 idea](../cases/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge 提出用 AI 反编译州级救济网站；外包、后门与损失归因没有证据。 **[其他 AI 逆向 · 待验证]**
+- [fork pi 与双 Spark：用 GLM-5.3-flash 试 REA 的启动报告](../cases/pi-glm-two-sparks-rea-trial.md) — alexrudloff 在自己的 pi 分支中试用 REA，尚无具名目标与分析结果。 **[REA · 进行中]**
+- [Mac 视频下载器：重做下载与抽音频，再补转写的作者报告](../cases/mac-video-downloader-transcription-report.md) — riabcevv 自述替代订阅下载器，增加视频转文字并打包 39MB；五分钟与一下午的工时叙述不一致。 **[未确认使用 REA · 待验证]**
+- [Codex / Claude 客户端：检查 tokens 是否藏在安装包里的提问](../cases/codex-claude-client-token-location-idea.md) — NickSvaik 向 Grok 提问客户端反编译能看到什么，没有实际提取或配额绕过结果。 **[其他 AI 逆向 · 待验证]**
+- [legacy/billing 示意演示：212 文件到规格，再交给 12 个 Sonnet](../cases/rea-legacy-billing-illustrative-demo.md) — Primee32 明确把 7 分 05 秒、0.88 美元与 148 行为的比较称作 illustrative，不当真实商业迁移成绩。 **[REA · 待验证]**
+- [Windows XP / 7：不重写系统，先研究不支持软硬件的兼容 idea](../cases/windows-xp7-ai-compatibility-idea.md) — LaSpookyEXE 建议把 AI 逆向投入旧 Windows 兼容工作，而不是重建整个 Windows。 **[其他 AI 逆向 · 待验证]**

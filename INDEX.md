@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **384 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **401 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（82）
-- [硬件与设备互通](categories/hardware.md)（88）
-- [应用与客户端](categories/apps.md)（176）
-- [算法与功能重建](categories/algorithms.md)（38）
+- [游戏与游戏保存](categories/games.md)（87）
+- [硬件与设备互通](categories/hardware.md)（90）
+- [应用与客户端](categories/apps.md)（184）
+- [算法与功能重建](categories/algorithms.md)（40）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -108,6 +108,11 @@
 - [Resident Evil 2 到 Nintendo DS：REA 与 Claude Code 的未完成移植转述](cases/resident-evil2-ds-rea-port-report.md) — 程序社区转述有人用 REA 与 Claude Code 制作 DS 移植，仍未完成并寻求帮助。 **[REA · 进行中]**
 - [Mario Kart 8 Deluxe：0xsvsv 的 Claude / REA PC 移植自述](cases/mario-kart8-deluxe-0xsvsv-report.md) — 作者称与 Claude 将游戏移到 PC，补充所用工具为 Claude Code、经 REA 接入的 IDA Pro MCP 和游戏 ROM。 **[REA · 待验证]**
 - [Kerbal Space Program 2：用 AI 反编译以交给社区维护的 idea](cases/ksp2-ai-decompile-community-idea.md) — Jordan 在 KSP 2 弃置后仍有人做 Mod 的讨论中，提出开源或用 AI 反编译；尚非已启动的工程。 **[其他 AI 逆向 · 进行中]**
+- [Makara 游戏创建程序：把有限逆向留在授权输入沙盒内的 idea](cases/makara-scoped-game-creation-idea.md) — skyshark88 提议用专用 Android 游戏制作程序分析精灵与机制，再预览和打包，不暴露通用 APK 分析入口。 **[其他 AI 逆向 · 待验证]**
+- [ROM 分析环境：Gemini Argon 配合 REA、Ghidra 与 libretro 的搭建自述](cases/gemini-rea-libretro-rom-setup.md) — Sergio Suzano 报告短时间内搭好 ROM 反编译环境，未提供特定游戏恢复结果。 **[REA · 分析测试]**
+- [旧游戏存档到浏览器：用 REA 追规则与迁移进度的 idea](cases/rea-old-save-browser-migration-idea.md) — mika_systems 提议分工研究机制、重建游戏、映射存档，再验证完整的继续游戏链。 **[REA · 待验证]**
+- [inFAMOUS Second Son：AI 逆向后在 PC 游玩的待验证转述](cases/infamous-second-son-ai-pc-report.md) — 0x0SojalSec 转述 PlayStation 游戏可在 Windows 与 Linux 运行，没有取得实现与兼容性记录。 **[其他 AI 逆向 · 待验证]**
+- [Switch《暗黑破坏神2》到 Android：AI 原生移植的待验证转述](cases/diablo2-switch-android-ai-port-report.md) — paomiange1 转述数天内完成反编译、符号还原与跨平台重构，60fps 和开源说法未核实。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
@@ -199,6 +204,8 @@
 - [Honda RoadSync：Claude 辅助研究踏板车蓝牙，让按键控制其他音乐 App](cases/honda-roadsync-bluetooth-music-report.md) — Busy K 报告自建 App，把 Honda 车把按键接到 Spotify、YouTube Music 和播客；车型与协议未公开。 **[其他 AI 逆向 · 待验证]**
 - [Samsung TV：用 Claude 与 REA skill 做网页遥控器的自述](cases/samsung-tv-web-remote-aswin-report.md) — Aswin DG 报告研究电视协议并搭建可控制音量、频道和应用的网页遥控器，Anatomy skill 负责等距 UI。 **[REA · 待验证]**
 - [日立微蒸烤炉：Codex 经 Android App 与 REA 研究实现直接控制的自述](cases/hitachi-oven-codex-rea-report.md) — 郭宇报告从 iPhone App 操作转向 Android 模拟器联调，称 REA 逆向后可直接控制烤炉；约不到 5 分钟为作者口径。 **[REA · 待验证]**
+- [非开源版小智盒子：AI 改固件后连接自有 VPS 与共享记忆](cases/xiaozhi-box-ai-vps-memory.md) — luckythehusky 自述导出、逆向、修改和重刷盒子固件，为家中 Agent 增加可唤醒语音端。 **[其他 AI 逆向 · 待验证]**
+- [LG 电视流畅度：用 REA 研究改善响应的 idea](cases/lg-tv-smoothness-rea-idea.md) — TheAvinashSingh 询问是否有人逆向 LG 电视来改善流畅度，尚无方案或结果。 **[REA · 待验证]**
 
 ### 应用与客户端
 
@@ -378,6 +385,14 @@
 - [Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述](cases/cursor-custom-relay-foxsnowing-report.md) — SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。 **[未确认使用 REA · 相关项目]**
 - [Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎](cases/johnny-castaway-rust-rea.md) — 从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。 **[REA · 进行中]**
 - [REA Workspace Template：把原件、分析副本与证据分开的工作区](cases/rea-workspace-template-gundy.md) — Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。 **[REA · 相关项目]**
+- [Ableton Live 12：Agent 已运行 96 小时的逆向尝试](cases/ableton-live12-agent-96h.md) — patrick__eff 报告让 Agent 持续逆向音乐制作软件，尚未报告恢复了什么功能。 **[未确认使用 REA · 进行中]**
+- [Decepticon Reverser：把 REA/Ghidra 静态证据接进授权安全调查](cases/decepticon-reverser-rea-project.md) — 公开项目按需启动逆向工作负载并保留 Evidence；XBOW 102/104 是项目渗透基准，不是逆向正确率。 **[REA · 相关项目]**
+- [疫情救济网站：让 AI 调查旧系统后门的 idea](cases/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge 提出用 AI 反编译州级救济网站；外包、后门与损失归因没有证据。 **[其他 AI 逆向 · 待验证]**
+- [fork pi 与双 Spark：用 GLM-5.3-flash 试 REA 的启动报告](cases/pi-glm-two-sparks-rea-trial.md) — alexrudloff 在自己的 pi 分支中试用 REA，尚无具名目标与分析结果。 **[REA · 进行中]**
+- [Mac 视频下载器：重做下载与抽音频，再补转写的作者报告](cases/mac-video-downloader-transcription-report.md) — riabcevv 自述替代订阅下载器，增加视频转文字并打包 39MB；五分钟与一下午的工时叙述不一致。 **[未确认使用 REA · 待验证]**
+- [Codex / Claude 客户端：检查 tokens 是否藏在安装包里的提问](cases/codex-claude-client-token-location-idea.md) — NickSvaik 向 Grok 提问客户端反编译能看到什么，没有实际提取或配额绕过结果。 **[其他 AI 逆向 · 待验证]**
+- [legacy/billing 示意演示：212 文件到规格，再交给 12 个 Sonnet](cases/rea-legacy-billing-illustrative-demo.md) — Primee32 明确把 7 分 05 秒、0.88 美元与 148 行为的比较称作 illustrative，不当真实商业迁移成绩。 **[REA · 待验证]**
+- [Windows XP / 7：不重写系统，先研究不支持软硬件的兼容 idea](cases/windows-xp7-ai-compatibility-idea.md) — LaSpookyEXE 建议把 AI 逆向投入旧 Windows 兼容工作，而不是重建整个 Windows。 **[其他 AI 逆向 · 待验证]**
 
 ### 算法与功能重建
 
@@ -419,6 +434,8 @@
 - [JavaScript divergence：格式化后换游戏，误导 AI 逆向的 idea](cases/javascript-divergence-agent-decoy.md) — 转述 Robert Vähhi 的处理器差异研究：让清理后的 JS 变成可运行诱饵，作为人类与 AI 分析的防御设想。 **[其他 AI 逆向 · 相关项目]**
 - [三模型二进制研究：函数图、双假说与原程序裁判的 idea](cases/three-model-binary-evidence-workflow-idea.md) — 从自建 record.c 实验样本开始，让不同模型分工映射、解释和挑错；尚无可核实运行记录。 **[其他 AI 逆向 · 待验证]**
 - [Eidolon：多 Agent 从演示二进制到 Rust 的对照报告](cases/eidolon-rust-multiagent-report.md) — Rovshan 报告解包 64 KB 级演示程序、恢复着色器与合成器，重写 Rust 并比较 27,000 帧和音频；日志未核验。 **[其他 AI 逆向 · 待验证]**
+- [Frontkick 与 Rikugan：两项密码二进制任务中的提示词混杂因素](cases/synacktiv-frontkick-rikugan-crebench.md) — Synacktiv 比较 CodeAct 与 ToolAgent；逐次结果有差异，但可用库提示不对等，不能证明架构优越。 **[其他 AI 逆向 · 分析测试]**
+- [EVM 合约：用 REA 研究状态修改入口的审计 idea](cases/evm-rea-state-change-audit-idea.md) — 88n77n 提出让 Claude Code 从字节码检查增发、黑名单与可变费用，要求区分观察与推断。 **[REA · 待验证]**
 
 ## 贡献与收录
 

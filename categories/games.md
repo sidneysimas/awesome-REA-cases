@@ -84,3 +84,8 @@
 - [Resident Evil 2 到 Nintendo DS：REA 与 Claude Code 的未完成移植转述](../cases/resident-evil2-ds-rea-port-report.md) — 程序社区转述有人用 REA 与 Claude Code 制作 DS 移植，仍未完成并寻求帮助。 **[REA · 进行中]**
 - [Mario Kart 8 Deluxe：0xsvsv 的 Claude / REA PC 移植自述](../cases/mario-kart8-deluxe-0xsvsv-report.md) — 作者称与 Claude 将游戏移到 PC，补充所用工具为 Claude Code、经 REA 接入的 IDA Pro MCP 和游戏 ROM。 **[REA · 待验证]**
 - [Kerbal Space Program 2：用 AI 反编译以交给社区维护的 idea](../cases/ksp2-ai-decompile-community-idea.md) — Jordan 在 KSP 2 弃置后仍有人做 Mod 的讨论中，提出开源或用 AI 反编译；尚非已启动的工程。 **[其他 AI 逆向 · 进行中]**
+- [Makara 游戏创建程序：把有限逆向留在授权输入沙盒内的 idea](../cases/makara-scoped-game-creation-idea.md) — skyshark88 提议用专用 Android 游戏制作程序分析精灵与机制，再预览和打包，不暴露通用 APK 分析入口。 **[其他 AI 逆向 · 待验证]**
+- [ROM 分析环境：Gemini Argon 配合 REA、Ghidra 与 libretro 的搭建自述](../cases/gemini-rea-libretro-rom-setup.md) — Sergio Suzano 报告短时间内搭好 ROM 反编译环境，未提供特定游戏恢复结果。 **[REA · 分析测试]**
+- [旧游戏存档到浏览器：用 REA 追规则与迁移进度的 idea](../cases/rea-old-save-browser-migration-idea.md) — mika_systems 提议分工研究机制、重建游戏、映射存档，再验证完整的继续游戏链。 **[REA · 待验证]**
+- [inFAMOUS Second Son：AI 逆向后在 PC 游玩的待验证转述](../cases/infamous-second-son-ai-pc-report.md) — 0x0SojalSec 转述 PlayStation 游戏可在 Windows 与 Linux 运行，没有取得实现与兼容性记录。 **[其他 AI 逆向 · 待验证]**
+- [Switch《暗黑破坏神2》到 Android：AI 原生移植的待验证转述](../cases/diablo2-switch-android-ai-port-report.md) — paomiange1 转述数天内完成反编译、符号还原与跨平台重构，60fps 和开源说法未核实。 **[其他 AI 逆向 · 待验证]**
