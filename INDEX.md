@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **439 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **457 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（98）
-- [硬件与设备互通](categories/hardware.md)（93）
-- [应用与客户端](categories/apps.md)（205）
+- [游戏与游戏保存](categories/games.md)（103）
+- [硬件与设备互通](categories/hardware.md)（97）
+- [应用与客户端](categories/apps.md)（214）
 - [算法与功能重建](categories/algorithms.md)（43）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,11 @@
 
 ### 游戏与游戏保存
 
+- [炉石传说 macOS：为大模型操作研究游戏，再做卡组与逐盘反思](cases/hearthstone-macos-ai-control-report.md) — Roge 报告为 AI 操作逆向 Mac 版炉石，结合贪心卡组优化及100盘逐局反思；没有胜率或补丁。 **[其他 AI 逆向 · 待验证]**
+- [TTT2：读者称已有 Steam 版，计划试用 AI 移植成果](cases/ttt2-ai-steam-port-reader-report.md) — K1xkstart 把 TTT2 Steam 版放在 AI 反编译移植讨论中，尚未亲自试用；游戏全名与项目未确认。 **[其他 AI 逆向 · 待验证]**
+- [GTA5：读者希望用 REA 制作个人定制版本](cases/gta5-rea-personalization-idea.md) — 读者看过REA介绍后提出定制GTA5的idea，未列出具体Mod机制或实施结果。 **[REA · 待验证]**
+- [Bloodborne_pc：Opus 参与重编译与图形优化的读者转述](cases/bloodborne-pc-opus-recompile-reader-report.md) — 父帖展示Jgamrot/Supermedo的Bloodborne_pc画面，回复者称Opus做了大量逆向优化；未核验架构与运行记录。 **[其他 AI 逆向 · 待验证]**
+- [T6 rollback：AI 辅助恢复旧游戏在线功能的社区讨论](cases/t6-ai-rollback-online-restoration-report.md) — 补审确认讨论目标为T6 rollback；回复者描述AI辅助社区逆向，但未提供代码、测试或发布。 **[其他 AI 逆向 · 待验证]**
 - [PD Saga：反编译后用自有资产重做的 Claude idea](cases/pd-saga-claude-remake-idea.md) — 读者建议将 PD Saga 交给 Claude 反编译，再用自选引擎和自有资产重做；没有实施报告。 **[其他 AI 逆向 · 待验证]**
 - [Skyrim：Codex 调整瑟拉娜召唤外观并排查 Mod 故障](cases/skyrim-codex-serana-mod-report.md) — 作者报告 Codex 修正召唤人物外观、吸血鬼形态、黑脸及随从噪声；引擎现代化逆向只是后续设想。 **[其他 AI 逆向 · 待验证]**
 - [Slay The Spire：在反编译成果上用 Claude 改玩法的报告](cases/slay-spire-claude-gameplay-report.md) — maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。 **[其他 AI 逆向 · 待验证]**
@@ -127,6 +132,10 @@
 
 ### 硬件与设备互通
 
+- [Brother 扫描按键：Claude + REA 把 Scan to PC 接到 NAS 与对象存储](cases/brother-scan-button-claude-rea-server.md) — Aurimas Niekis 发布 Go 服务替代 Brother 电脑端，扫描按键可保存到 SMB、FTP、S3 或本地；项目只报告测试 MFC-L2800DW。 **[REA]**
+- [Apple Neural Engine：Claude 辅助私有 API 研究与600M模型训练的转述](cases/apple-neural-engine-claude-training-report.md) — Vaishnavi 转述有人用 Claude 研究苹果神经引擎、绕开 CoreML 训练600M参数模型；未取得训练记录。 **[其他 AI 逆向 · 待验证]**
+- [闲置旧音箱：用 AI 逆向补 AirPlay、Chromecast 与 Spotify Connect 的 idea](cases/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 想让家中旧音箱恢复价值，询问能否找回旧代码或用AI增加三个投放协议；尚未实施。 **[其他 AI 逆向 · 待验证]**
+- [旧 Android 手机：询问用 REA 研究自定义固件以延寿](cases/old-android-rea-firmware-revival-idea.md) — 读者向morluto询问能否研究旧安卓手机固件，让旧机获得第二次生命；尚无指定机型。 **[REA · 待验证]**
 - [旧款小屏 iPhone：用 AI 研究 iOS 延长使用寿命的 idea](cases/old-iphone-ios-ai-revival-idea.md) — 读者希望反编译并重写 iOS，让十年前的小屏 iPhone 继续工作；不是 iOS 到 Android 的移植成果。 **[其他 AI 逆向 · 待验证]**
 - [GR Viewer：用相机固件模拟器解除手动调试瓶颈](cases/gr-viewer-firmware-simulator-report.md) — Xiao 报告研究 GR 固件制作 simulator，让 AI 测试 GR Viewer，并于前一天重新提交新版本；覆盖未验证。 **[未确认使用 REA · 待验证]**
 - [LG OLED 暂停广告：让 Codex 改固件的 idea](cases/lg-oled-codex-ad-removal-idea.md) — 作者称封锁广告服务器会让电视 App 失效，因此考虑 Codex 修改固件；尚未报告实施。 **[其他 AI 逆向 · 待验证]**
@@ -192,7 +201,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究和清理自述](cases/tv-firmware-ai-ad-removal-idea.md) — 电视固件去广告设想加入 Claude 清理父母电视的自述；不同作者的修改、搁置与网络阻断不等于隐私验收。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — 电视去广告目标新增tv-vibehack公开ADB禁包与启动器方案；不是固件重写，亦不证明隐私追踪全部删除。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
@@ -223,6 +232,15 @@
 
 ### 应用与客户端
 
+- [Toolport：含 REA 的371工具配置减少初始上下文的报告](cases/toolport-rea-schema-loading-report.md) — 作者称将含207个REA工具的配置从358K降到19.1K初始tokens，371工具仍可用；不是逆向任务准确率评测。 **[REA · 分析测试]**
+- [Ventris：用于源码与二进制安全研究的 Agent 平台转述](cases/ventris-agent-binary-security-platform-report.md) — 收购报道描述Ventris以Agent分析源码和二进制、配置安全研究流程；没有给出漏洞样本或验证。 **[其他 AI 逆向 · 相关项目]**
+- [Hermes + REA：日视图、筛选与新增预约的日历重建自述](cases/hermes-rea-calendar-scheduler-report.md) — Julian Goldie 称把日历链接交给Hermes与REA，得到可用调度器；零成本与功能正确性未核验。 **[REA · 待验证]**
+- [Panels 壁纸 App：AI 反编译 APK 与免费版本的自述](cases/panels-apk-ai-reverse-report.md) — 作者称用48小时AI研究MKBHD的Panels APK并做成免费版本；未说明后端技术与可验证产物。 **[其他 AI 逆向 · 待验证]**
+- [Adrenox APK：公司账户 Codex 拒绝 REA 重建请求的自述](cases/adrenox-rea-codex-refusal-report.md) — 读者请求从现有Adrenox APK重建应用，被Codex以安全理由拒绝；不知道是否公司策略变化。 **[REA · 待验证]**
+- [x64dbg MCP：让 Claude Code 与 Codex 下断点、读内存的项目介绍](cases/x64dbg-mcp-agent-debugging-report.md) — 第三方介绍将Windows调试器接给Agent的MCP Server；未确认具体桥接仓库或实际调试结果。 **[其他 AI 逆向 · 相关项目]**
+- [iPhone IPA 注入插件：因担心资产被盗，建议 Claude 逆向检查](cases/ios-ipa-plugin-claude-audit-idea.md) — 拓跋鼠建议用Claude检查免越狱签名IPA中的插件风险；只是审查idea，不是插件安全结论。 **[其他 AI 逆向 · 待验证]**
+- [colab-dfs-ext：为 Agent 自动化逆向 Google Drive 挂载授权流程](cases/colab-drive-mount-reverse-agent-workflow.md) — Deluxebear 说因Agent频繁挂载需手动授权才研究流程；父串介绍一次授权后的静默挂载扩展。 **[未确认使用 REA · 待验证]**
+- [虎扑与酷安 APK：REA／LLM 广告逻辑调查，仍受完整性与重签名限制](cases/hupu-coolapk-rea-ad-removal-investigation.md) — ADL建议LLM归纳广告API模式；补读Kxians父帖确认虎扑酷安目标及启动完整性、签名后403阻碍，不是一键去广告。 **[REA · 进行中]**
 - [三星手机 App 独立桌面窗口：读者提出 AI 逆向 idea](cases/samsung-phone-desktop-windows-ai-idea.md) — 读者看到 vivo 手机 App 在电脑独立开窗，询问三星能否用 AI 逆向做到；未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Blender：用开源实现作答案校验 AI 逆向的 idea](cases/blender-ai-reverse-groundtruth-idea.md) — 读者提出选择 Blender 测试 AI 逆向可行性和效率，以源码作答案；未报告实际评测。 **[其他 AI 逆向 · 待验证]**
 - [REA 本身：增加文件拖放入口的重实现自述](cases/rea-drag-drop-reimplementation-report.md) — 作者称正在逆向 REA 并做文件拖放入口；每小时改进工具与一键品牌 Linux 都没有产物验证。 **[未确认使用 REA · 进行中]**

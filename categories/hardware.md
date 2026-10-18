@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Brother 扫描按键：Claude + REA 把 Scan to PC 接到 NAS 与对象存储](../cases/brother-scan-button-claude-rea-server.md) — Aurimas Niekis 发布 Go 服务替代 Brother 电脑端，扫描按键可保存到 SMB、FTP、S3 或本地；项目只报告测试 MFC-L2800DW。 **[REA]**
+- [Apple Neural Engine：Claude 辅助私有 API 研究与600M模型训练的转述](../cases/apple-neural-engine-claude-training-report.md) — Vaishnavi 转述有人用 Claude 研究苹果神经引擎、绕开 CoreML 训练600M参数模型；未取得训练记录。 **[其他 AI 逆向 · 待验证]**
+- [闲置旧音箱：用 AI 逆向补 AirPlay、Chromecast 与 Spotify Connect 的 idea](../cases/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 想让家中旧音箱恢复价值，询问能否找回旧代码或用AI增加三个投放协议；尚未实施。 **[其他 AI 逆向 · 待验证]**
+- [旧 Android 手机：询问用 REA 研究自定义固件以延寿](../cases/old-android-rea-firmware-revival-idea.md) — 读者向morluto询问能否研究旧安卓手机固件，让旧机获得第二次生命；尚无指定机型。 **[REA · 待验证]**
 - [旧款小屏 iPhone：用 AI 研究 iOS 延长使用寿命的 idea](../cases/old-iphone-ios-ai-revival-idea.md) — 读者希望反编译并重写 iOS，让十年前的小屏 iPhone 继续工作；不是 iOS 到 Android 的移植成果。 **[其他 AI 逆向 · 待验证]**
 - [GR Viewer：用相机固件模拟器解除手动调试瓶颈](../cases/gr-viewer-firmware-simulator-report.md) — Xiao 报告研究 GR 固件制作 simulator，让 AI 测试 GR Viewer，并于前一天重新提交新版本；覆盖未验证。 **[未确认使用 REA · 待验证]**
 - [LG OLED 暂停广告：让 Codex 改固件的 idea](../cases/lg-oled-codex-ad-removal-idea.md) — 作者称封锁广告服务器会让电视 App 失效，因此考虑 Codex 修改固件；尚未报告实施。 **[其他 AI 逆向 · 待验证]**
@@ -67,7 +71,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究和清理自述](../cases/tv-firmware-ai-ad-removal-idea.md) — 电视固件去广告设想加入 Claude 清理父母电视的自述；不同作者的修改、搁置与网络阻断不等于隐私验收。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — 电视去广告目标新增tv-vibehack公开ADB禁包与启动器方案；不是固件重写，亦不证明隐私追踪全部删除。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](../cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**

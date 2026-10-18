@@ -2,6 +2,15 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Toolport：含 REA 的371工具配置减少初始上下文的报告](../cases/toolport-rea-schema-loading-report.md) — 作者称将含207个REA工具的配置从358K降到19.1K初始tokens，371工具仍可用；不是逆向任务准确率评测。 **[REA · 分析测试]**
+- [Ventris：用于源码与二进制安全研究的 Agent 平台转述](../cases/ventris-agent-binary-security-platform-report.md) — 收购报道描述Ventris以Agent分析源码和二进制、配置安全研究流程；没有给出漏洞样本或验证。 **[其他 AI 逆向 · 相关项目]**
+- [Hermes + REA：日视图、筛选与新增预约的日历重建自述](../cases/hermes-rea-calendar-scheduler-report.md) — Julian Goldie 称把日历链接交给Hermes与REA，得到可用调度器；零成本与功能正确性未核验。 **[REA · 待验证]**
+- [Panels 壁纸 App：AI 反编译 APK 与免费版本的自述](../cases/panels-apk-ai-reverse-report.md) — 作者称用48小时AI研究MKBHD的Panels APK并做成免费版本；未说明后端技术与可验证产物。 **[其他 AI 逆向 · 待验证]**
+- [Adrenox APK：公司账户 Codex 拒绝 REA 重建请求的自述](../cases/adrenox-rea-codex-refusal-report.md) — 读者请求从现有Adrenox APK重建应用，被Codex以安全理由拒绝；不知道是否公司策略变化。 **[REA · 待验证]**
+- [x64dbg MCP：让 Claude Code 与 Codex 下断点、读内存的项目介绍](../cases/x64dbg-mcp-agent-debugging-report.md) — 第三方介绍将Windows调试器接给Agent的MCP Server；未确认具体桥接仓库或实际调试结果。 **[其他 AI 逆向 · 相关项目]**
+- [iPhone IPA 注入插件：因担心资产被盗，建议 Claude 逆向检查](../cases/ios-ipa-plugin-claude-audit-idea.md) — 拓跋鼠建议用Claude检查免越狱签名IPA中的插件风险；只是审查idea，不是插件安全结论。 **[其他 AI 逆向 · 待验证]**
+- [colab-dfs-ext：为 Agent 自动化逆向 Google Drive 挂载授权流程](../cases/colab-drive-mount-reverse-agent-workflow.md) — Deluxebear 说因Agent频繁挂载需手动授权才研究流程；父串介绍一次授权后的静默挂载扩展。 **[未确认使用 REA · 待验证]**
+- [虎扑与酷安 APK：REA／LLM 广告逻辑调查，仍受完整性与重签名限制](../cases/hupu-coolapk-rea-ad-removal-investigation.md) — ADL建议LLM归纳广告API模式；补读Kxians父帖确认虎扑酷安目标及启动完整性、签名后403阻碍，不是一键去广告。 **[REA · 进行中]**
 - [三星手机 App 独立桌面窗口：读者提出 AI 逆向 idea](../cases/samsung-phone-desktop-windows-ai-idea.md) — 读者看到 vivo 手机 App 在电脑独立开窗，询问三星能否用 AI 逆向做到；未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Blender：用开源实现作答案校验 AI 逆向的 idea](../cases/blender-ai-reverse-groundtruth-idea.md) — 读者提出选择 Blender 测试 AI 逆向可行性和效率，以源码作答案；未报告实际评测。 **[其他 AI 逆向 · 待验证]**
 - [REA 本身：增加文件拖放入口的重实现自述](../cases/rea-drag-drop-reimplementation-report.md) — 作者称正在逆向 REA 并做文件拖放入口；每小时改进工具与一键品牌 Linux 都没有产物验证。 **[未确认使用 REA · 进行中]**

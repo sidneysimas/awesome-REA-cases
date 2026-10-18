@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**439 entries**, organized by use case, without a Top-N or popularity threshold.
+**457 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (98)
-- [Hardware and interoperability](categories/en/hardware.md) (93)
-- [Applications and clients](categories/en/apps.md) (205)
+- [Games and preservation](categories/en/games.md) (103)
+- [Hardware and interoperability](categories/en/hardware.md) (97)
+- [Applications and clients](categories/en/apps.md) (214)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (43)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Hearthstone on macOS: reversing for model control, deck optimization and game-by-game reflection](cases/en/hearthstone-macos-ai-control-report.md) — Roge reports investigating Mac Hearthstone for AI control, greedy deck optimization and reflection over 100 games, without win rates or patches. **[Other AI-assisted work · Needs verification]**
+- [TTT2: a reader claims a Steam version and plans to try the AI-porting result](cases/en/ttt2-ai-steam-port-reader-report.md) — K1xkstart mentions a TTT2 Steam version in an AI-decompilation discussion but has not tried it; the expanded game name and project remain unconfirmed. **[Other AI-assisted work · Needs verification]**
+- [GTA5: a reader's idea for a personalized version with REA](cases/en/gta5-rea-personalization-idea.md) — A reader suggests personalized GTA5 after seeing REA, without a specified mod mechanic or implementation result. **[REA · Needs verification]**
+- [Bloodborne_pc: a reader's Opus recompilation and graphics-optimization retelling](cases/en/bloodborne-pc-opus-recompile-reader-report.md) — A parent shows Jgamrot/Supermedo's Bloodborne_pc visuals; a respondent credits Opus with substantial reversing and optimization, without verified architecture or execution records. **[Other AI-assisted work · Needs verification]**
+- [T6 rollback: community discussion of AI-assisted restoration of online play](cases/en/t6-ai-rollback-online-restoration-report.md) — A deferred review identifies the target as T6 rollback; a respondent describes community AI-assisted reversing without code, tests or a release. **[Other AI-assisted work · Needs verification]**
 - [PD Saga: a Claude idea to decompile and remake with one's own assets](cases/en/pd-saga-claude-remake-idea.md) — A reader proposes Claude decompilation followed by a remake in a chosen engine using original assets of their own; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Skyrim: Codex adjusts summoned Serana's appearance and investigates mod defects](cases/en/skyrim-codex-serana-mod-report.md) — The author reports appearance, vampire-form, black-face and follower-noise fixes; reverse-engineering the engine for modernization is only a later idea. **[Other AI-assisted work · Needs verification]**
 - [Slay The Spire: reported Claude-assisted gameplay changes on top of a decompilation](cases/en/slay-spire-claude-gameplay-report.md) — Maya reports new bosses, visuals, UI and deckbuilding using an existing decompilation, not confirmed Claude involvement in the original decompilation. **[Other AI-assisted work · Needs verification]**
@@ -129,6 +134,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Brother's scan button: Claude and REA connect Scan to PC to NAS and object storage](cases/en/brother-scan-button-claude-rea-server.md) — Aurimas Niekis publishes a Go replacement for Brother's PC software, saving button-triggered scans to SMB, FTP, S3 or local storage; only an MFC-L2800DW is reported tested. **[REA]**
+- [Apple Neural Engine: a report of Claude-assisted private-API research and 600M-model training](cases/en/apple-neural-engine-claude-training-report.md) — Vaishnavi retells a claim that Claude helped investigate Apple's Neural Engine and train a 600M-parameter model without CoreML; training records were not obtained. **[Other AI-assisted work · Needs verification]**
+- [An idle old speaker: an AI-reversing idea for AirPlay, Chromecast and Spotify Connect](cases/en/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 asks whether old code or AI investigation could add three casting protocols to a disused speaker; no implementation is reported. **[Other AI-assisted work · Needs verification]**
+- [Old Android phones: an REA custom-firmware revival question](cases/en/old-android-rea-firmware-revival-idea.md) — A reader asks morluto about investigating old Android firmware for a second life, without naming a device. **[REA · Needs verification]**
 - [Old small iPhones: an idea to investigate iOS with AI and extend device life](cases/en/old-iphone-ios-ai-revival-idea.md) — A reader imagines decompiling and rewriting iOS to keep decade-old small iPhones useful, not an iOS-on-Android porting result. **[Other AI-assisted work · Needs verification]**
 - [GR Viewer: a camera-firmware simulator to reduce manual debugging](cases/en/gr-viewer-firmware-simulator-report.md) — Xiao reports a GR simulator for AI-driven GR Viewer testing and a new app version submitted the previous day; coverage is unverified. **[REA use unconfirmed · Needs verification]**
 - [LG OLED pause ads: an idea to modify firmware with Codex](cases/en/lg-oled-codex-ad-removal-idea.md) — Blocking ad servers reportedly breaks TV apps, prompting a Codex firmware-modification idea; no implementation is reported. **[Other AI-assisted work · Needs verification]**
@@ -194,7 +203,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors](cases/en/whirlpool-f13-rea-investigation-idea.md) — A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established. **[REA · Needs verification]**
 - [Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity](cases/en/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android. **[Other AI-assisted work · Needs verification]**
 - [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
-- [TV ads and privacy: a firmware idea, stalled research and cleanup accounts](cases/en/tv-firmware-ai-ad-removal-idea.md) — TV firmware ad-removal ideas gain a Claude cleanup account for parents' TV; different authors' changes, stalled work and network blocking are not privacy acceptance tests. **[Other AI-assisted work · Needs verification]**
+- [TV ads and privacy: a firmware idea, stalled research and ADB cleanup](cases/en/tv-firmware-ai-ad-removal-idea.md) — TV ad-removal reports gain the public tv-vibehack ADB disabling and launcher approach, not firmware rewriting or proof all tracking is removed. **[Other AI-assisted work · Needs verification]**
 - [Circuit-board function reconstruction: an idea to extend the REA approach to hardware](cases/en/rea-circuit-board-functional-rebuild-idea.md) — The author proposes an REA-like program to investigate circuit-board functions and reimplement them; no board or prototype is specified. **[REA use unconfirmed · Needs verification]**
 - [Samsung AC: local-network control with reported partial Claude assistance](cases/en/samsung-ac-local-claude-report.md) — The author says a personal Samsung AC was reverse-engineered for local control; support for all post-2022 models is not verified. **[Other AI-assisted work · Needs verification]**
 - [Creality SpacePiX4: a Gemini Argon firmware-improvement plan](cases/en/creality-spacepix4-gemini-firmware-idea.md) — The poster wants better firmware for a named device using Gemini Argon; investigation and implementation are not yet described. **[Other AI-assisted work · Needs verification]**
@@ -225,6 +234,15 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Toolport: reported initial-context reduction for a 371-tool setup including REA](cases/en/toolport-rea-schema-loading-report.md) — A post claims 358K to 19.1K initial tokens for a setup containing 207 REA tools while retaining 371 tools, not an accuracy benchmark for reverse-engineering tasks. **[REA · Analysis test]**
+- [Ventris: a reported agent platform for source and binary security research](cases/en/ventris-agent-binary-security-platform-report.md) — An acquisition report describes Ventris agents analyzing source and binaries with configurable security workflows, without vulnerability fixtures or validation. **[Other AI-assisted work · Related project]**
+- [Hermes and REA: a reported calendar rebuild with day views, filters and appointments](cases/en/hermes-rea-calendar-scheduler-report.md) — Julian Goldie says a calendar link given to Hermes and REA produced a working scheduler; zero cost and functional correctness remain unverified. **[REA · Needs verification]**
+- [Panels wallpaper app: a report of AI APK decompilation and a free version](cases/en/panels-apk-ai-reverse-report.md) — A poster claims 48 hours of AI investigation into MKBHD's Panels APK and a free version, without identifying backend technology or a verified artifact. **[Other AI-assisted work · Needs verification]**
+- [Adrenox APK: reported Codex refusal of an REA rebuild request on a company account](cases/en/adrenox-rea-codex-refusal-report.md) — A reader says Codex refused to rebuild Adrenox from an existing APK for security reasons, without knowing whether company policy changed. **[REA · Needs verification]**
+- [x64dbg MCP: a project introduction for Claude Code and Codex breakpoints and memory reads](cases/en/x64dbg-mcp-agent-debugging-report.md) — A third-party post describes exposing the Windows debugger to agents through MCP; the exact bridge repository and actual debugging results are unconfirmed. **[Other AI-assisted work · Related project]**
+- [Injected iPhone IPA plugins: a Claude inspection idea prompted by asset-theft concerns](cases/en/ios-ipa-plugin-claude-audit-idea.md) — Tuobashu suggests Claude investigation of plugins in non-jailbreak signed IPAs; this is an audit idea, not a safety finding. **[Other AI-assisted work · Needs verification]**
+- [colab-dfs-ext: investigating Google Drive mounting authorization for agent automation](cases/en/colab-drive-mount-reverse-agent-workflow.md) — Deluxebear says repeated manual authorization prompted investigation; the parent describes a one-consent extension for later silent mounting. **[REA use unconfirmed · Needs verification]**
+- [Hupu and Coolapk APKs: REA/LLM ad-logic investigation with integrity and re-signing blockers](cases/en/hupu-coolapk-rea-ad-removal-investigation.md) — ADL proposes LLM ad-API patterns; Kxians's parent identifies Hupu/Coolapk and startup-integrity and post-signing 403 blockers, not one-click ad removal. **[REA · In progress]**
 - [Samsung phone apps in separate desktop windows: a reader's AI-reversing idea](cases/en/samsung-phone-desktop-windows-ai-idea.md) — After seeing vivo apps run in independent PC windows, a reader asks whether AI reverse engineering could do it for Samsung; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Blender: an idea to check AI reverse engineering against an open implementation](cases/en/blender-ai-reverse-groundtruth-idea.md) — A reader proposes Blender as an AI feasibility and efficiency test with source as ground truth; no evaluation is reported. **[Other AI-assisted work · Needs verification]**
 - [REA itself: a reported reimplementation with file drag and drop](cases/en/rea-drag-drop-reimplementation-report.md) — The author says REA is being reverse-engineered with a file-drop interface; hourly tool improvements and one-click branded Linux lack artifact verification. **[REA use unconfirmed · In progress]**

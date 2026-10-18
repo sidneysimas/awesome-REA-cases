@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [炉石传说 macOS：为大模型操作研究游戏，再做卡组与逐盘反思](../cases/hearthstone-macos-ai-control-report.md) — Roge 报告为 AI 操作逆向 Mac 版炉石，结合贪心卡组优化及100盘逐局反思；没有胜率或补丁。 **[其他 AI 逆向 · 待验证]**
+- [TTT2：读者称已有 Steam 版，计划试用 AI 移植成果](../cases/ttt2-ai-steam-port-reader-report.md) — K1xkstart 把 TTT2 Steam 版放在 AI 反编译移植讨论中，尚未亲自试用；游戏全名与项目未确认。 **[其他 AI 逆向 · 待验证]**
+- [GTA5：读者希望用 REA 制作个人定制版本](../cases/gta5-rea-personalization-idea.md) — 读者看过REA介绍后提出定制GTA5的idea，未列出具体Mod机制或实施结果。 **[REA · 待验证]**
+- [Bloodborne_pc：Opus 参与重编译与图形优化的读者转述](../cases/bloodborne-pc-opus-recompile-reader-report.md) — 父帖展示Jgamrot/Supermedo的Bloodborne_pc画面，回复者称Opus做了大量逆向优化；未核验架构与运行记录。 **[其他 AI 逆向 · 待验证]**
+- [T6 rollback：AI 辅助恢复旧游戏在线功能的社区讨论](../cases/t6-ai-rollback-online-restoration-report.md) — 补审确认讨论目标为T6 rollback；回复者描述AI辅助社区逆向，但未提供代码、测试或发布。 **[其他 AI 逆向 · 待验证]**
 - [PD Saga：反编译后用自有资产重做的 Claude idea](../cases/pd-saga-claude-remake-idea.md) — 读者建议将 PD Saga 交给 Claude 反编译，再用自选引擎和自有资产重做；没有实施报告。 **[其他 AI 逆向 · 待验证]**
 - [Skyrim：Codex 调整瑟拉娜召唤外观并排查 Mod 故障](../cases/skyrim-codex-serana-mod-report.md) — 作者报告 Codex 修正召唤人物外观、吸血鬼形态、黑脸及随从噪声；引擎现代化逆向只是后续设想。 **[其他 AI 逆向 · 待验证]**
 - [Slay The Spire：在反编译成果上用 Claude 改玩法的报告](../cases/slay-spire-claude-gameplay-report.md) — maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。 **[其他 AI 逆向 · 待验证]**
