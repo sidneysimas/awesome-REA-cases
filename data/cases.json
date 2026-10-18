@@ -1,5 +1,236 @@
 [
   {
+    "id": "lg-oled-codex-ad-removal-idea",
+    "title": "LG OLED 暂停广告：让 Codex 改固件的 idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "作者称封锁广告服务器会让电视 App 失效，因此考虑 Codex 修改固件；尚未报告实施。",
+    "description": "10月18日04:32（北京时间），@mxcondor 说自己的 LG OLED 从前一天开始，在内容暂停和屏保时显示广告；直接阻断广告服务器又会让 App 无法工作。他提出两个选择：另用 Apple TV，或让 Codex 修改电视固件。这里记录的是为保留 App 功能而去除暂停广告的具体 idea，不是已经完成的固件修改。帖子未给电视型号、固件版本、广告与 App 共用的具体服务、可刷写镜像或构建测试；不能推断 Codex 已分析设备、突破签名或安全去掉广告。这也不是既有 LG Plex 客户端或 LG 上运行 Claude Code 的项目，未将不同作者的电视经历合并成一次成功改造。",
+    "sources": [{"label": "Cóndor：LG OLED 广告与 Codex 固件修改设想", "url": "https://x.com/i/status/2111556091712581745"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["Idea；原帖快照1赞、43浏览，不代表固件修改已实现。"],
+    "en": {
+      "title": "LG OLED pause ads: an idea to modify firmware with Codex",
+      "summary": "Blocking ad servers reportedly breaks TV apps, prompting a Codex firmware-modification idea; no implementation is reported.",
+      "description": "At 04:32 Beijing time on October 18, @mxcondor says their LG OLED started showing ads during content pauses and as a screensaver the previous day. Blocking its ad servers reportedly also stops apps working. They propose two alternatives: use an Apple TV, or have Codex modify the TV firmware. This records a concrete idea to remove pause ads while retaining app functionality, not a completed firmware modification. The post supplies no TV model, firmware version, particular service shared by ads and apps, flashable image or build tests. It does not establish that Codex inspected the device, bypassed signing or safely removed ads. This is also separate from the existing LG Plex client and native Claude Code-on-LG projects; different authors' TV experiences are not combined into one successful modification.",
+      "metadata": ["Idea; candidate snapshot: 1 like, 43 views, not evidence of an implemented firmware change."],
+      "source_labels": ["Cóndor: LG OLED ads and a proposed Codex firmware change"]
+    }
+  },
+  {
+    "id": "dhaedalida-ai-keygen-protection-test",
+    "title": "Dhaedalida：自制许可样本的 AI 逆向保护对照",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "保护软件厂商称未保护样本3分钟生成可用keygen，加保护后超过4小时未成功；简单算法仍被攻破。",
+    "description": "10月18日04:51（北京时间），保护工具厂商 @dhaedalida 报告对自己制作的应用进行 AI 逆向测试，背景是 AI 重建商业软件的讨论。它称未保护版本在3分钟内被生成可工作的 keygen；用 Dhaedalida 保护后，模型运行超过4小时仍未生成可工作的 keygen，但一个更简单的算法即使受保护仍被恢复。测试因而涉及许可算法设计和代码保护两者，不能总结为加壳必然挡住 AI。\n\n原帖未说明模型版本、样本算法、提示词、成功验收或完整日志；首条回复只提供文章短链，本次未取得文章正文，也未执行样本。同串07:17的读者追问四小时停止究竟源于 token 上限、时间限制还是模型放弃，所读串未见厂商回答。这是有商业利益关联的厂商自测，时间及成功结果均按其报告记录，不是独立基准，更不是对所有许可或所有模型的安全保证。未确认使用 REA。",
+    "sources": [{"label": "Dhaedalida 自测报告及读者关于停止条件的追问", "url": "https://x.com/i/status/2111560797855916293"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖候选快照：3赞、1086浏览；3分钟与超过4小时为厂商报告，未独立重跑。"],
+    "en": {
+      "title": "Dhaedalida: an AI reverse-engineering comparison on a self-made licensing sample",
+      "summary": "The protector vendor reports a working keygen in 3 minutes without protection and none after over 4 hours with it; a simpler protected algorithm still fell.",
+      "description": "At 04:51 Beijing time on October 18, software-protector vendor @dhaedalida reports an AI reverse-engineering test on an application it made, amid discussion of AI recreating commercial software. It says AI generated a working keygen for the unprotected version in 3 minutes. After Dhaedalida protection was applied, the model ran for over 4 hours without producing a working keygen, while a simpler algorithm was still recovered despite protection. The test therefore concerns both licensing design and code protection, not a conclusion that protection inevitably defeats AI.\n\nThe post does not specify the model version, sample algorithm, prompts, acceptance criteria or full logs. Its first reply contains only an article short link; the article was not obtained and no sample was run here. At 07:17 in the same conversation, a reader asks whether a token limit, time limit or the model giving up ended the four-hour run; no vendor answer was visible in the retrieved thread. This is a commercially interested vendor's own test. Durations and outcomes remain its reports, not an independent benchmark or a security guarantee for every licensing scheme or model. REA use is unconfirmed.",
+      "metadata": ["Original candidate snapshot: 3 likes, 1,086 views; 3 minutes and over 4 hours are vendor reports, not independently rerun."],
+      "source_labels": ["Dhaedalida's test report and a reader's question about the stopping condition"]
+    }
+  },
+  {
+    "id": "formeasy-agent-native-forms-report",
+    "title": "FormEasy：声称研究 Google Forms 后做 Agent 原生表单",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "作者称逆向 Google Forms 并制作开源 FormEasy，让 Agent 不经浏览器创建、发布表单；两分钟是推广自述。",
+    "description": "10月18日04:57（北京时间），Aawej Pathan（@atpaawej）发布 FormEasy，称自己逆向 Google Forms 后做出开源、Agent 原生的表单工具，powered by @AgentOnboardz。目标是让 AI Agent 在不打开浏览器、无需手动设置的情况下创建并发布表单，作者宣称用时两分钟。\n\n可用正文没有给源码仓库、演示步骤、Google Forms 兼容格式、接口恢复过程或实际发布记录；也没有明说 AI 是否参与逆向本身。故按为 Agent 提供互通的相关项目收录，不将 Agent 作为用户等同于 AI 已完成逆向，不确认使用 REA，不保证与 Google Forms 等价或两分钟可重复实现。开源与功能均为作者报告，未独立测试。",
+    "sources": [{"label": "Aawej Pathan 发布 FormEasy", "url": "https://x.com/i/status/2111562194660016471"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选快照0赞、22浏览；两分钟创建发布为作者说法。"],
+    "en": {
+      "title": "FormEasy: an agent-native forms project reportedly based on studying Google Forms",
+      "summary": "The author claims an open-source Google Forms reconstruction that lets agents create and publish forms without a browser; two minutes is a promotional claim.",
+      "description": "At 04:57 Beijing time on October 18, Aawej Pathan (@atpaawej) introduces FormEasy, claiming to have reverse-engineered Google Forms and made an open-source, agent-native forms tool powered by @AgentOnboardz. The intended use is for an AI agent to create and publish forms without opening a browser or performing manual setup; the author claims this takes two minutes.\n\nThe available text provides no source repository, demonstration steps, Google Forms-compatible format, interface-recovery process or actual publication record. It also does not explicitly say AI participated in the reverse engineering itself. This is included as a related interoperability project for agents: agents as users do not establish AI-led reverse engineering. REA use is unconfirmed, and neither Google Forms equivalence nor repeatable two-minute publication is established. Open-source availability and functionality are the author's reports, not independently tested here.",
+      "metadata": ["Candidate snapshot: 0 likes, 22 views; two-minute creation and publication is the author's claim."],
+      "source_labels": ["Aawej Pathan introduces FormEasy"]
+    }
+  },
+  {
+    "id": "coding-harness-rea-skill-distillation",
+    "title": "Coding harness 到 Skill：研究 Agent 编排实现的计划",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "Yashas 计划用 REA 研究编码 Agent 框架再蒸馏成 Skill，并称已有 Claude Code 源码研究技能。",
+    "description": "10月18日06:06（北京时间），@YashasGunderia 说准备以 REA 研究 coding harness，即包裹模型、工具和工作流的编码 Agent 框架，再把研究结果蒸馏成 Skill 上传 GitHub，让其他 Agent 学着构建类似产品。他还称前一年已从 Claude Code 的源码做过类似工作，相关仓库接近40星，计划下个月更新 Claude 相关技能。\n\n这是把软件实现研究转换成可复用 Agent 指导材料的进行中计划，不是恢复完整商业产品的完成报告。正文只给短链，本次未确认仓库、Skill 内容、复现效果或源码获取方式；接近40星是作者说法，不是本合集核实的仓库快照。REA 用于新计划，不能倒推到前一年的工作。作者关于合法学习任何在用软件的泛化法律断言不作为本合集结论，仍需遵守具体授权。",
+    "sources": [{"label": "Yashas：harness 研究与 Skill 蒸馏计划", "url": "https://x.com/i/status/2111579690532278697"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖候选快照0赞、32浏览；已有仓库及近40星均未独立确认。"],
+    "en": {
+      "title": "Coding harnesses into skills: a plan to study agent orchestration implementations",
+      "summary": "Yashas plans to study coding-agent harnesses with REA and distill skills, also reporting prior Claude Code source-based skills.",
+      "description": "At 06:06 Beijing time on October 18, @YashasGunderia says they plan to use REA to study coding harnesses—the frameworks surrounding models with tools and workflows—then distill the findings into skills on GitHub so other agents can build similar products. They also report doing similar work with Claude Code source the previous year, say the repository has nearly 40 stars, and plan to update Claude-related skills next month.\n\nThis is an in-progress plan to turn software implementation research into reusable agent guidance, not a completed reconstruction of a commercial product. The text supplies only a short link; the repository, skill contents, reproducibility and source-acquisition method were not confirmed here. Nearly 40 stars is the author's claim, not a verified repository snapshot. REA is proposed for the new work and must not be retroactively assigned to the previous year's work. The author's broad legal assertion that agents may learn from any software in use is not adopted as this collection's conclusion; specific authorization still matters.",
+      "metadata": ["Original candidate snapshot: 0 likes, 32 views; the existing repository and nearly 40 stars were not independently confirmed."],
+      "source_labels": ["Yashas: harness research and skill-distillation plan"]
+    }
+  },
+  {
+    "id": "gemini-web-api-argusic-standin-test",
+    "title": "Gemini Web To API：Agent 仅对替身服务做安装测试",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "Argusic 报告 Agent 对固定版本构建、启动及测试成功，但未连接真实 Gemini，不能证明线上协议兼容。",
+    "description": "10月18日06:30（北京时间）的候选介绍 ntthanh2603/gemini-web-to-api，并报告 Argusic Agent 在干净机器上、无人协助地测试固定提交3633170：安装至首次启动2分钟，全程18分钟，未遇错误，评分92/100。引述的 Agent 结语称安装 Go 1.27.2 后构建成功，4981端口 /health 返回HTTP 200，9套测试、85余子测试通过；虚假 cookies 的 Gemini 认证按预期失败。帖子明确所有测试只对替身服务，未访问真实 Gemini。\n\n补读该固定提交的公开 README，确认这是用网页会话 cookies 将 Gemini 网页接口桥接为 OpenAI、Claude、Gemini 兼容 REST 接口的 Go 项目，并明确警告账号风险及可能不符合 Google 条款。此补充文档是固定版本的用途说明，不是窗口内新增实测。未执行项目、安装其依赖或使用账号。这里记录 Agent 检查逆向接口实现的有限结果，不能把构建与替身通过当成真实 Gemini 认证、生成、配额处理或长期稳定性通过；也未证明原协议逆向由 AI 完成，REA 未确认。592星是候选的项目介绍值，不另作实时核实。",
+    "sources": [
+      {"label": "Argusic 安装与替身测试报告", "url": "https://x.com/i/status/2111585716195004425"},
+      {"label": "补充：9月14日固定提交3633170的项目说明", "url": "https://github.com/ntthanh2603/gemini-web-to-api/blob/3633170/README.md"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["2分钟、18分钟、92/100及9套85余子测试为报告值；只测替身服务，无真实Gemini验收。", "补充文档提交3633170的作者及提交时间均为2026-09-14 05:07:02 UTC；仅用于确认项目用途，不是10月18日新增实测。"],
+    "en": {
+      "title": "Gemini Web To API: an agent installation test against stand-in services only",
+      "summary": "Argusic reports a pinned build, launch and test success, but no real Gemini connection; live protocol compatibility is not established.",
+      "description": "A candidate posted at 06:30 Beijing time on October 18 introduces ntthanh2603/gemini-web-to-api and reports an Argusic agent testing pinned commit 3633170 on a clean machine without human help: two minutes from installation to first launch, an 18-minute session, no errors encountered and a score of 92/100. The quoted agent conclusion says Go 1.27.2 was installed, the project built, /health on port 4981 returned HTTP 200, all nine test suites with over 85 subtests passed, and Gemini authentication with dummy cookies failed as expected. The post explicitly says every test used stand-in services, never real Gemini.\n\nReading the public README at that commit confirms a Go project that uses web-session cookies to bridge Gemini's web interface into OpenAI-, Claude- and Gemini-compatible REST endpoints, with explicit warnings about account risks and possible Google terms violations. This supplementary pinned documentation explains intended use; it is not a new in-window live test. The project was not run, its dependencies were not installed and no account was used here. This records an agent's limited inspection of a reverse-engineered interface implementation. Build and stand-in success do not establish real Gemini authentication, generation, quota handling or long-term reliability. Nor does this prove AI performed the original protocol reverse engineering; REA use is unconfirmed. The candidate's 592-star project description was not separately checked as a live statistic.",
+      "metadata": ["Two minutes, 18 minutes, 92/100 and nine suites with over 85 subtests are reported values; stand-ins only, no real Gemini acceptance test.", "Supplementary documentation commit 3633170 has author and committer timestamps of 2026-09-14 05:07:02 UTC; used only to confirm intended use, not a new October 18 live test."],
+      "source_labels": ["Argusic installation and stand-in-service test report", "Supplement: project documentation at September 14 pinned commit 3633170"]
+    }
+  },
+  {
+    "id": "deepseek-v8-electron-chain-report",
+    "title": "DeepSeek V4.1：V8 已知漏洞到 Electron IPC 的研究自述",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Kapeka 声称免费层 DeepSeek 恢复 V8 n-day 并串至 Electron 特权 IPC；无CVE、目标应用或验证日志。",
+    "description": "10月18日06:38（北京时间），@kapeka 用一则对比帖声称，DeepSeek V4.1 免费层帮助逆向一个 V8 n-day（已知漏洞），随后经历 V8 任意读写、经 JSGlobalObject 进入 Main World、利用打包器模块加载器、调用 Electron 特权 IPC，最终到操作系统代码执行。背景是与其所称 Anthropic/OpenAI 模型内容不可显示的限制进行对比，目标是从 JavaScript 引擎问题追到桌面应用权限边界。\n\n帖子只列链路名称，没有 CVE、受影响 V8/Electron 版本、应用名、样本、提示词、补丁或运行日志。因此不能确认完整链路存在于一个真实目标，也不能声称零日、新发现、模型安全限制对照公平，或任何指定应用已经被攻破。这里只记录作者报告的逆向链路，不提供利用实现，未运行或独立验证；未确认使用 REA。",
+    "sources": [{"label": "Kapeka 的 DeepSeek/V8/Electron 链路自述", "url": "https://x.com/i/status/2111587595750637954"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选快照0赞、46浏览；未提供可核的目标版本或复现记录。"],
+    "en": {
+      "title": "DeepSeek V4.1: a reported V8 n-day to Electron IPC investigation",
+      "summary": "Kapeka claims free-tier DeepSeek recovered a V8 n-day and chained it into privileged Electron IPC; no CVE, target app or validation logs are supplied.",
+      "description": "At 06:38 Beijing time on October 18, @kapeka claims in a comparison post that free-tier DeepSeek V4.1 helped reverse-engineer a V8 n-day—a known vulnerability—followed by V8 arbitrary read/write, entry into the Main World through JSGlobalObject, abuse of a bundler module loader, privileged Electron IPC and ultimately operating-system code execution. The context contrasts this with what the poster describes as Anthropic/OpenAI models' inability to display the content. The research target is a path from a JavaScript engine issue to desktop-application privilege boundaries.\n\nThe post lists only chain stages, without a CVE, affected V8/Electron version, application name, sample, prompts, patch or execution logs. It cannot establish that a full chain exists in one real target, a zero-day or new discovery, a fair comparison of model restrictions, or compromise of any particular app. This records the author's reported reverse-engineering chain without an exploit implementation. Nothing was run or independently validated here; REA use is unconfirmed.",
+      "metadata": ["Candidate snapshot: 0 likes, 46 views; no verifiable target versions or reproduction records supplied."],
+      "source_labels": ["Kapeka's account of a DeepSeek/V8/Electron chain"]
+    }
+  },
+  {
+    "id": "codex-rea-offline-linux-isolation",
+    "title": "离线 Linux 逆向工作机：隔离 Codex 与私人文件",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "Johan Slåttavik 正搭建供 Codex 使用 REA、Ghidra、JADX 的隔离 Linux 环境，计划无网络且不能访问私人文件。",
+    "description": "10月18日06:41（北京时间），Johan Slåttavik（@JohanSlattavik）说 REA 很有意思，但不愿给 AI 工具自由访问自己的电脑，因此正在搭建一个隔离 Linux 工作机，让 Codex 使用 REA、Ghidra 和 JADX，同时无网络、不能访问私人文件。具体用途是保留 Agent 逆向工具链，又缩小工具对个人主机和数据的访问面。\n\n这是正在建设的环境方案，未给仓库、虚拟化或沙盒机制、文件传递方法、Codex 推理连接方式或隔离测试。特别是无网络与 Codex 如何配合尚未解释，不能自行补成已验证的离线模型系统或安全沙盒；没有报告对具体二进制的分析成功。",
+    "sources": [{"label": "Johan Slåttavik 的隔离 Linux 工作机建设报告", "url": "https://x.com/i/status/2111588450969231812"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖候选快照1赞、98浏览；隔离属性是作者计划，未进行安全验证。"],
+    "en": {
+      "title": "An offline Linux reverse-engineering workspace: separating Codex from private files",
+      "summary": "Johan Slåttavik is building an isolated Linux environment for Codex with REA, Ghidra and JADX, intended to have no network or private-file access.",
+      "description": "At 06:41 Beijing time on October 18, Johan Slåttavik (@JohanSlattavik) says REA is interesting but they do not want AI tools to have unrestricted access to their computer. They are building an isolated Linux machine where Codex can use REA, Ghidra and JADX without networking or access to private files. The intended use is to retain an agent's reverse-engineering toolchain while narrowing its access to the personal host and data.\n\nThis is an environment under construction. No repository, virtualization or sandbox mechanism, file-transfer method, Codex inference connection or isolation tests are provided. In particular, how Codex works with the no-network requirement is unexplained. It must not be expanded into a verified offline-model system or secure sandbox, and no successful analysis of a particular binary is reported.",
+      "metadata": ["Original candidate snapshot: 1 like, 98 views; isolation properties are the author's plan, not security-validated here."],
+      "source_labels": ["Johan Slåttavik's isolated Linux workspace development report"]
+    }
+  },
+  {
+    "id": "cm0102-fm26-rea-data-migration-idea",
+    "title": "CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。",
+    "description": "10月18日06:52（北京时间），一位回复 @fmdestekcom 的读者询问，如何把已从 cm 01-02 导出的数据导入 fm 26，并明确提出是否可用 REA 逆向帮助。这里的上下文是足球经理游戏 Championship Manager 01/02 与 Football Manager 26 之间的数据迁移，而不是把整个游戏引擎移植到新平台。作者自述已完成源数据导出，尚未报告研究目标格式、字段映射、版本兼容或实际导入。\n\n这是具体迁移目标的 idea，不能把提问写成已经用 REA 恢复存档格式或存在可用转换器；帖子也未给导出文件和测试结果。本合集未运行游戏或检查私人存档。",
+    "sources": [{"label": "已导出 CM 01-02 数据的读者询问 REA 与 FM26 导入", "url": "https://x.com/i/status/2111591082119106953"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选快照0赞、52浏览；已导出为自述，REA导入研究仅设想。"],
+    "en": {
+      "title": "CM 01-02 to FM26: an idea to study football-manager data migration with REA",
+      "summary": "A reader has reportedly exported CM 01-02 data and asks whether REA could help import it into FM26; no format research or converter is reported.",
+      "description": "At 06:52 Beijing time on October 18, a reader replying to @fmdestekcom asks how to import data already exported from cm 01-02 into fm 26, explicitly suggesting REA reverse engineering as a possible aid. The context is data migration between the football-management games Championship Manager 01/02 and Football Manager 26, not porting the entire game engine to a new platform. The reader reports completing the source-data export, but no target-format investigation, field mapping, version compatibility work or actual import.\n\nThis is an idea with a concrete migration target. The question must not become a claim that REA recovered a save format or that a usable converter exists. No export files or test results are supplied. No games were run or private saves inspected here.",
+      "metadata": ["Candidate snapshot: 0 likes, 52 views; export is self-reported, REA-assisted import research is only proposed."],
+      "source_labels": ["Reader with exported CM 01-02 data asks about REA and FM26 import"]
+    }
+  },
+  {
+    "id": "six-app-two-room-rea-rebuild-report",
+    "title": "六款 App 的双房间重建：299 断言与负例裁判规则自述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "作者报告两账号隔离原件与 SPEC 重建，299断言中7条未知；412测试是所述裁判规则，不是已核验通过数。",
+    "description": "10月18日06:53（北京时间），发帖者称花九晚用 REA 6.5.0 与 Opus 5.5 研究自己使用的六款 App：A房间记录299条断言，标为 observed、derived 或 inferred，7条保留未知，再输出六份只有行为、没有代码的 SPEC.md；第二账号的B房间看不到原App，仅据规格构建。作者强调 REA 是 MCP server 而非 Agent，本身没有附带 clean room，因此隔离由他搭建。\n\n帖中提出一个裁判规则：植入故意损坏的构建必须在所称412项测试中全部失败，动机是曾见东方重建把128.0错成0.0仍通过的例子。这里的412是作者描述的规则和测试规模，不是本合集检查过的负例结果，也不是六App全部通过的证明。作者称三次会话中途被改路由至 Opus 4.8，未触碰 DRM 或许可检查，token账单187美元，并取消每月共214美元的六项订阅、折年2568美元。这些是报告值，不作模型统一性、行为等价或节省已经独立验证的结论。\n\n没有提供六款App名称、规格、断言证据、测试实现或账单，故保留为具体隔离实验自述，而非已经复现的替代品；未知七条如何影响重建覆盖也未解释。不因工具的重建日志没有Claude就推断Claude无法使用REA。",
+    "sources": [{"label": "六App、双房间与裁判规则的作者自述", "url": "https://x.com/i/status/2111591362449592514"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选快照11赞、274浏览；299断言、7未知、412测试、187美元及订阅节省均为未核验报告值。"],
+    "en": {
+      "title": "Six-app two-room reconstruction: a report of 299 claims and a negative-control judge rule",
+      "summary": "The author reports two-account separation of originals and SPEC-only builds, with 7 of 299 claims unknown; 412 tests describe a judge rule, not verified passes.",
+      "description": "At 06:53 Beijing time on October 18, a poster reports nine nights using REA 6.5.0 and Opus 5.5 to study six apps they use. Room A records 299 claims labelled observed, derived or inferred, retains seven unknowns and produces six behavior-only SPEC.md files without code. Room B, on a second account, cannot see the original apps and builds from those specifications alone. The author stresses that REA is an MCP server, not an agent, and ships no clean room; they built the separation themselves.\n\nThe post proposes a judge rule: a deliberately broken build must fail all of the stated 412 tests, motivated by a Touhou reconstruction example where 0.0 reportedly passed in place of 128.0. Here 412 is the author's described rule and test scale, not inspected negative-control results or proof that all six apps passed. The author reports three sessions being rerouted to Opus 4.8 mid-run, no DRM or licensing-check work, a $187 token bill and cancellation of six subscriptions totalling $214 per month or $2,568 per year. These are reported figures, not independent confirmation of a uniform model setup, behavioral equivalence or savings.\n\nNo app names, specifications, claim evidence, test implementation or bills are supplied. This remains a concrete account of an isolation experiment, not reproduced replacement products; how the seven unknowns affect coverage is unexplained. Absence of Claude from a tool's reconstruction log does not imply Claude cannot use REA.",
+      "metadata": ["Candidate snapshot: 11 likes, 274 views; 299 claims, seven unknowns, 412 tests, $187 and subscription savings are unverified reported figures."],
+      "source_labels": ["Author's six-app, two-room and judge-rule account"]
+    }
+  },
+  {
+    "id": "windows-loader-rea-codex-static-analysis",
+    "title": "Windows loader：REA 与 Codex 的不运行样本分析",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "Fedele Mantuano 报告用 REA、Ghidra、Codex 静态识别硬编码服务器及内存载荷加载，未作动态确认。",
+    "description": "10月18日07:21（北京时间），Fedele Mantuano（@fedelemantuano）介绍一次 Windows loader 分析，提出不运行恶意软件也能得到什么信息的问题。他称使用 REA、Ghidra 和 Codex，发现硬编码服务器以及内存中加载载荷的行为。loader 是负责装入后续载荷的程序；这里的目标是理解样本结构和潜在通信/加载路径，而不是让其实际联网执行。\n\n可用原帖未给样本哈希、恶意软件家族、函数地址、服务器值、完整证据链或反编译结果，文章只有短链且未取得正文。因此这只是作者报告的静态分析，不将硬编码地址等同当前活跃服务，也不将可能的载荷路径升级为已经观测到的执行。未下载或运行样本，未做独立复现。",
+    "sources": [{"label": "Fedele Mantuano：REA/Ghidra/Codex 静态 loader 分析", "url": "https://x.com/i/status/2111598581421670782"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选快照0赞、36浏览；结论为作者报告的静态发现，无动态验收。"],
+    "en": {
+      "title": "Windows loader: REA and Codex analysis without running the sample",
+      "summary": "Fedele Mantuano reports identifying hardcoded servers and in-memory payload loading with REA, Ghidra and Codex; no dynamic confirmation is provided.",
+      "description": "At 07:21 Beijing time on October 18, Fedele Mantuano (@fedelemantuano) introduces a Windows loader analysis by asking what can be learned about malware without running it. He reports using REA, Ghidra and Codex to uncover hardcoded servers and in-memory payload loading. A loader is a program responsible for loading a subsequent payload; the purpose here is to understand sample structure and potential communication/loading paths, not actually connect and execute it.\n\nThe available original post provides no sample hash, malware family, function addresses, server values, full evidence chain or decompilation results. The article is only a short link and its text was not obtained. This is therefore the author's reported static analysis. Hardcoded addresses are not established as currently active services, and a possible payload path must not become observed execution. No sample was downloaded or run and no independent reproduction was performed.",
+      "metadata": ["Candidate snapshot: 0 likes, 36 views; conclusions are author-reported static findings, not dynamic acceptance results."],
+      "source_labels": ["Fedele Mantuano: static loader analysis with REA/Ghidra/Codex"]
+    }
+  },
+  {
+    "id": "t3-code-hundred-claude-rebuild-report",
+    "title": "T3 Code：100 个 Claude 重建与开源发布的未验证宣称",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "@axmed_bl 声称用100个Claude逆向T3 Code并开源，未确认仓库、功能或构建结果。",
+    "description": "10月18日03:47（北京时间），@axmed_bl 发帖称已用100个 Claude agents 成功逆向 @theo 的 T3 Code，并要把结果作为开源项目发布。T3 Code 是本帖明确命名的编码工具目标；动机与产物是做出其开源重建版本，而非只讨论AI逆向是否可能。\n\n此条来自00:00—04:00往期窗口的补审，不冒充本轮04:00—08:00的新帖。重新判断后，目标和作者宣称足够记录为待验证案例，但正文只有发布短链，没有可核仓库、Agent记录、功能清单、对照测试或构建结果；语境也不足排除调侃。因此“100个”“成功”和“开源”均只归因于发帖者，不保证确有产物，不把它写成独立复现，未确认使用REA。",
+    "sources": [{"label": "axmed_bl 关于 T3 Code 与100 Claude的原帖", "url": "https://x.com/i/status/2111544615669014664"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["往期窗口补审；候选快照0赞、6浏览，不用补查后的热度冒充原快照。"],
+    "en": {
+      "title": "T3 Code: an unverified claim of reconstruction and open-source release with 100 Claude agents",
+      "summary": "@axmed_bl claims to have reverse-engineered T3 Code with 100 Claude agents and released it; repository, features and builds are unconfirmed.",
+      "description": "At 03:47 Beijing time on October 18, @axmed_bl claims to have successfully reverse-engineered @theo's T3 Code with 100 Claude agents and to be releasing the result as an open-source project. T3 Code is the explicitly named coding-tool target; the proposed purpose and output are its open-source reconstruction, not merely discussion of whether AI reverse engineering is possible.\n\nThis is a re-reviewed candidate from the earlier 00:00–04:00 window, not a new post from the present 04:00–08:00 window. On reconsideration, the named target and author's claim support an unverified entry. However, the text contains only a release short link, without a confirmed repository, agent records, feature list, comparison tests or build results; the context also does not exclude a joke. The number 100, success and open-source availability are attributed solely to the poster, not guaranteed artifacts or an independent reproduction. REA use is unconfirmed.",
+      "metadata": ["Re-reviewed from an earlier window; candidate snapshot: 0 likes, 6 views. Later lookup engagement is not substituted for that snapshot."],
+      "source_labels": ["axmed_bl's original T3 Code and 100-Claude claim"]
+    }
+  },
+  {
+    "id": "ai-desktop-shell-1842-file-demo",
+    "title": "1842 文件的 AI 桌面壳：本地与服务端边界的动画演示",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "analysis-test",
+    "summary": "作者用未命名桌面AI应用动画展示拆包、变量观察与网络对照，并称模型和配额在服务端；不是具名应用的独立审计。",
+    "description": "10月17日21:16（北京时间）的往期候选称制作一段逐层拆解流行 AI 桌面应用的动画。流程是先在自己的机器观察进程与网络调用，做熵扫描和解包，再读出压缩代码、断点检查变量，最后比较重建与原件的网络调用顺序。作者称包里1842个文件只有5个重要，并纠正自己两个猜测：未见本地模型权重、回答依赖网络；每日额度作为服务端设置到达，而非本地许可检查。其目的包括核查数据流和理解未文档化实现。\n\n重新补审认为这些具体步骤及边界值得保留，但应用没有命名，未给包版本、权重清单、抓包、断点记录或重建代码。因此按示意分析演示记录，不把1842/5视作可复核样本统计，也不声称任何具名AI产品都是薄壳。未见本地权重不证明全部计算都在云端；服务端额度不代表授权限制可以移除。文中的Compaq/Wine是历史类比，REA使用未确认，“SpaceXAI工程师”身份宣传亦未核实。未运行目标或独立审计。",
+    "sources": [{"label": "未命名AI桌面应用拆解动画与方法说明", "url": "https://x.com/i/status/2111446154713964643"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖日期10月17日；候选快照37赞、721浏览、5转发。1842文件/5关键文件为作者说法。"],
+    "en": {
+      "title": "An 1,842-file AI desktop shell: an animated demonstration of local/server boundaries",
+      "summary": "The author illustrates unpacking, variable inspection and network comparison in an unnamed AI desktop app, claiming cloud-side models and quotas; not an independent named-app audit.",
+      "description": "An earlier-window candidate posted at 21:16 Beijing time on October 17 describes making an animation that takes a popular AI desktop app apart layer by layer. Its workflow observes processes and network calls on the user's own machine, scans entropy and unpacks files, reads minified code, examines variables at breakpoints and compares the rebuilt and original network-call sequences. The author says only five of 1,842 packaged files matter and corrects two initial guesses: no local model weights were found and answers rely on network calls; daily limits arrive as a server-side setting rather than a local licensing check. Intended uses include inspecting data flows and understanding undocumented implementations.\n\nRe-review finds these steps and boundaries concrete enough to retain, but the app is unnamed and no package version, weights inventory, traffic capture, breakpoint records or reconstruction code are supplied. This is an illustrative analysis demonstration, not a reproducible 1,842/five-file sample statistic or a conclusion that any named AI product is merely a thin shell. Not finding local weights does not prove all computation is cloud-based; server-side quotas do not mean authorization restrictions can be removed. Compaq and Wine are historical analogies. REA use and the promotional 'SpaceXAI engineer' identity are unconfirmed. No target was run or independently audited here.",
+      "metadata": ["Original post: October 17; candidate snapshot: 37 likes, 721 views, 5 reposts. The 1,842 files/five important files are author claims."],
+      "source_labels": ["Unnamed AI desktop-app teardown animation and workflow"]
+    }
+  },
+  {
     "id": "universal-modder",
     "title": "Universal Modder：用 AI 给现有游戏做 Mod",
     "category": "games",
@@ -9980,17 +10211,20 @@
     "category": "hardware",
     "rea": "other-ai",
     "status": "analysis-test",
-    "summary": "作者称用视频帧估计比例、拆成可动网格并做20秒动画；不能据此确认车辆内部结构或飞行原理。",
-    "description": "10月17日06:38（北京时间），@Flinzu 称从 Tesla Roadster 演示视频提取参考帧，交给 Claude Code 在无蓝图条件下研究外观与运动，再用 three.js 分离部件、标注并生成20秒拆解动画。帖子给出先确认轴距和车顶轮廓、每项断言对应画面、逐帧确定渲染的工作流；称最初盒状模型像玩具，先校正比例才改善，14个部件中6个看不见而标为未知。\n\n这是从影像推断外形并可视化的作者报告，不是读取车辆软件或拆解真实硬件。升空、翻转、推力及“46百万浏览”等均来自该帖对视频的叙述，不能当成本合集核验的实车性能、结构、制造能力或热度快照。REA 只被拿来类比 App 分析思路，并未报告用于车辆；未检查视频原始真实性、模型代码或渲染结果，不将隐藏面板下的猜想当机械事实。",
-    "sources": [{"label": "作者关于Roadster视频到three.js拆解动画的自述", "url": "https://x.com/i/status/2111225325531074716"}],
-    "snapshot_date": "2026-10-17",
-    "metadata": ["20秒与6/14部件未知为作者报告；没有核实车辆演示或内部机械结构。", "REA仅作类比，不是已确认的车辆逆向工具。"],
+    "summary": "两位作者分别报告20秒three.js拆解动画与50帧HUD规格分析；视频读数不能确认车辆内部结构或飞行原理。",
+    "description": "10月17日06:38（北京时间），@Flinzu 称从 Tesla Roadster 演示视频提取参考帧，交给 Claude Code 在无蓝图条件下研究外观与运动，再用 three.js 分离部件、标注并生成20秒拆解动画。帖子给出先确认轴距和车顶轮廓、每项断言对应画面、逐帧确定渲染的工作流；称最初盒状模型像玩具，先校正比例才改善，14个部件中6个看不见而标为未知。\n\n这是从影像推断外形并可视化的作者报告，不是读取车辆软件或拆解真实硬件。升空、翻转、推力及“46百万浏览”等均来自该帖对视频的叙述，不能当成本合集核验的实车性能、结构、制造能力或热度快照。REA 只被拿来类比 App 分析思路，并未报告用于车辆；未检查视频原始真实性、模型代码或渲染结果，不将隐藏面板下的猜想当机械事实。\n\n10月18日06:00，另一位作者 @razeden0 称从105秒发布视频选取50帧HUD，交给Opus 5.5形成运动规格；称ffmpeg每0.5秒抽帧、搭环境15分钟、token费用0.94美元，并指出16.5秒时HUD显示9英尺而车轮已在烟雾中的读数不一致。这是同一车辆视频主题下的另一份影像分析，不是前一作者项目的新构建。没有完整帧集、规格、账单或原始仪表验证，抽帧间隔与所选50帧的覆盖关系也未解释。HUD中的高度、俯仰和下压力至多是视频显示，不能单独证明实车飞行、风扇推力来源或压缩空气质量。其费用与整车研发成本的倍数比较不具有等价任务基础，不作工程效率结论；未独立重算或验证物理推断。",
+    "sources": [
+      {"label": "作者关于Roadster视频到three.js拆解动画的自述", "url": "https://x.com/i/status/2111225325531074716"},
+      {"label": "RazeDen：50帧HUD到运动规格的另一份自述", "url": "https://x.com/i/status/2111578088270377306"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["20秒与6/14部件未知为作者报告；没有核实车辆演示或内部机械结构。", "REA仅作类比，不是已确认的车辆逆向工具。", "10月18日候选快照6赞、327浏览；50帧、15分钟及0.94美元为第二位作者报告。"],
     "en": {
       "title": "Roadster video: a Claude-assisted three.js visual teardown experiment",
-      "summary": "The author reports estimating proportions, separating movable meshes and making a 20-second film; vehicle internals and flight physics are not established.",
-      "description": "At 06:38 Beijing time on October 17, @Flinzu says reference frames from a Tesla Roadster demonstration were given to Claude Code to study appearance and motion without blueprints, then separate and label parts in three.js and produce a 20-second exploded-view animation. The post describes first establishing wheelbase and roofline, tying claims to frames and using deterministic frame rendering. The author says an initial box-like model looked like a toy and improved only after proportions were corrected, while six of fourteen parts stayed unknown because they were not visible.\n\nThis is an author report of image-based shape inference and visualization, not vehicle-software inspection or a physical teardown. Lift, flips, thrust and '46 million views' come from the post's narrative about the video, not this collection's verified vehicle performance, structure, manufacturability or engagement snapshot. REA is an analogy to app analysis, not a reported vehicle tool. The original video's authenticity, model code and render output were not checked, and speculation under hidden panels is not treated as mechanical fact.",
-      "metadata": ["20 seconds and six of fourteen parts remaining unknown are author reports; the vehicle demonstration and internal mechanics were not verified.", "REA is an analogy, not a confirmed vehicle reverse-engineering tool."],
-      "source_labels": ["Author's report of a Roadster-video-to-three.js teardown animation"]
+      "summary": "Two authors report a 20-second three.js teardown animation and a 50-frame HUD specification analysis; video readings do not establish vehicle internals or flight physics.",
+      "description": "At 06:38 Beijing time on October 17, @Flinzu says reference frames from a Tesla Roadster demonstration were given to Claude Code to study appearance and motion without blueprints, then separate and label parts in three.js and produce a 20-second exploded-view animation. The post describes first establishing wheelbase and roofline, tying claims to frames and using deterministic frame rendering. The author says an initial box-like model looked like a toy and improved only after proportions were corrected, while six of fourteen parts stayed unknown because they were not visible.\n\nThis is an author report of image-based shape inference and visualization, not vehicle-software inspection or a physical teardown. Lift, flips, thrust and '46 million views' come from the post's narrative about the video, not this collection's verified vehicle performance, structure, manufacturability or engagement snapshot. REA is an analogy to app analysis, not a reported vehicle tool. The original video's authenticity, model code and render output were not checked, and speculation under hidden panels is not treated as mechanical fact.\n\nAt 06:00 on October 18, another author, @razeden0, reports selecting 50 HUD frames from a 105-second launch video and having Opus 5.5 produce a motion specification. They describe ffmpeg sampling every 0.5 seconds, 15 minutes of setup and a $0.94 token bill, and flag an inconsistency where the HUD shows nine feet at 16.5 seconds while the wheels are already in smoke. This is a separate image-analysis account under the same vehicle-video topic, not a new build from the earlier author. No complete frame set, specification, bill or original instrument validation is provided, and the relationship between the sampling interval and 50 selected frames is unexplained. HUD altitude, pitch and downforce are at most displayed video readings, not independent proof of real flight, fan-derived thrust or compressed-air mass. Comparing its bill with whole-car development costs is not an equivalent-task comparison and does not establish engineering efficiency. Physical inferences were not independently recalculated or verified.",
+      "metadata": ["20 seconds and six of fourteen parts remaining unknown are author reports; the vehicle demonstration and internal mechanics were not verified.", "REA is an analogy, not a confirmed vehicle reverse-engineering tool.", "October 18 candidate snapshot: 6 likes, 327 views; 50 frames, 15 minutes and $0.94 are the second author's reports."],
+      "source_labels": ["Author's report of a Roadster-video-to-three.js teardown animation", "RazeDen: a separate account of 50 HUD frames into a motion specification"]
     }
   },
   {

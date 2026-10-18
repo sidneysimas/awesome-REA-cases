@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [CM 01-02 to FM26: an idea to study football-manager data migration with REA](../../cases/en/cm0102-fm26-rea-data-migration-idea.md) — A reader has reportedly exported CM 01-02 data and asks whether REA could help import it into FM26; no format research or converter is reported. **[REA · Needs verification]**
 - [Universal Modder: AI-assisted game mods](../../cases/en/universal-modder.md) — Analyze engines and asset formats, then create and test cross-game mods. **[Other AI-assisted work]**
 - [Firefighter: from DOS binary to Rust](../../cases/en/firefighter-rust.md) — Recover Pascal logic from an old binary and rewrite it in Rust. **[Other AI-assisted work]**
 - [Modern Warfare 2: multi-agent decompilation](../../cases/en/mw2-decompilation.md) — Reconstruct game functions and compare compiled bytes to the original binary. **[Other AI-assisted work]**

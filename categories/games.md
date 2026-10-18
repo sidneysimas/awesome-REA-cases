@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea](../cases/cm0102-fm26-rea-data-migration-idea.md) — 读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。 **[REA · 待验证]**
 - [Universal Modder：用 AI 给现有游戏做 Mod](../cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏内容 Mod。 **[其他 AI 逆向]**
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](../cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**
 - [《现代战争 2》：用多 Agent 重建游戏代码](../cases/mw2-decompilation.md) — 多 Agent 反编译游戏，以原二进制核对恢复函数。 **[其他 AI 逆向]**

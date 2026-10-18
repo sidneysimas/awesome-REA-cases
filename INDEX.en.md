@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**401 entries**, organized by use case, without a Top-N or popularity threshold.
+**413 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (87)
-- [Hardware and interoperability](categories/en/hardware.md) (90)
-- [Applications and clients](categories/en/apps.md) (184)
+- [Games and preservation](categories/en/games.md) (88)
+- [Hardware and interoperability](categories/en/hardware.md) (91)
+- [Applications and clients](categories/en/apps.md) (194)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (40)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [CM 01-02 to FM26: an idea to study football-manager data migration with REA](cases/en/cm0102-fm26-rea-data-migration-idea.md) — A reader has reportedly exported CM 01-02 data and asks whether REA could help import it into FM26; no format research or converter is reported. **[REA · Needs verification]**
 - [Universal Modder: AI-assisted game mods](cases/en/universal-modder.md) — Analyze engines and asset formats, then create and test cross-game mods. **[Other AI-assisted work]**
 - [Firefighter: from DOS binary to Rust](cases/en/firefighter-rust.md) — Recover Pascal logic from an old binary and rewrite it in Rust. **[Other AI-assisted work]**
 - [Modern Warfare 2: multi-agent decompilation](cases/en/mw2-decompilation.md) — Reconstruct game functions and compare compiled bytes to the original binary. **[Other AI-assisted work]**
@@ -118,6 +119,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [LG OLED pause ads: an idea to modify firmware with Codex](cases/en/lg-oled-codex-ad-removal-idea.md) — Blocking ad servers reportedly breaks TV apps, prompting a Codex firmware-modification idea; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Siri Remote on Linux](cases/en/siri-remote-linux.md) — Decode the Bluetooth protocol to use an Apple TV remote on Linux. **[REA use unconfirmed]**
 - [Tuya RGB lights from a Mac](cases/en/tuya-rgb-mac.md) — Analyze phone Bluetooth traffic and directly control lights with a script. **[Other AI-assisted work]**
 - [MIPS32 firmware analysis](cases/en/mips-firmware.md) — Select the correct architecture and cross-check analysis on real firmware. **[REA]**
@@ -191,7 +193,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [LmDrum firmware: Claude reportedly stops after decompilation progress](cases/en/lmdrum-claude-firmware-refusal.md) — The author says a decompiled firmware version worked before Claude refused further work; a same-conversation reply names Ghidra. **[Other AI-assisted work · In progress]**
 - [Owned hardware for voice agents: an REA attempt inspired by earbuds and a smart ring](cases/en/rea-own-hardware-agent-voice-idea.md) — A user reports using Claude and REA with existing hardware toward voice agent control, dictation and thought capture. **[REA · In progress]**
 - [Linux mouse driver: reverse engineering among a week's AI projects](cases/en/linux-mouse-driver-ai-week-report.md) — The author says AI helped reverse-engineer a Linux mouse driver during the previous week, without a device model, protocol or implementation. **[Other AI-assisted work · Needs verification]**
-- [Roadster video: a Claude-assisted three.js visual teardown experiment](cases/en/roadster-video-claude-threejs-analysis.md) — The author reports estimating proportions, separating movable meshes and making a 20-second film; vehicle internals and flight physics are not established. **[Other AI-assisted work · Analysis test]**
+- [Roadster video: a Claude-assisted three.js visual teardown experiment](cases/en/roadster-video-claude-threejs-analysis.md) — Two authors report a 20-second three.js teardown animation and a 50-frame HUD specification analysis; video readings do not establish vehicle internals or flight physics. **[Other AI-assisted work · Analysis test]**
 - [E-paper vocabulary device: an idea to investigate custom firmware with an LLM](cases/en/epaper-vocabulary-llm-firmware-idea.md) — Participants want to reverse a closed device's translation direction and ask whether an LLM could help boot custom firmware; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Google Home: a blocked attempt to revive an old speaker without replacing hardware](cases/en/google-home-openai-bootloader-revival.md) — The author wants open smart-home software on an old speaker but reports a locked bootloader and OpenAI safeguards. **[Other AI-assisted work · In progress]**
 - [XP scanner to Windows 11: an AI and two-VM comparison idea](cases/en/xp-scanner-win11-ai-two-vm-idea.md) — For a scanner with XP-only drivers, a reply suggests AI observation on the old system and testing on Windows 11, possibly with REA; nothing is implemented. **[Other AI-assisted work · Needs verification]**
@@ -211,6 +213,16 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Dhaedalida: an AI reverse-engineering comparison on a self-made licensing sample](cases/en/dhaedalida-ai-keygen-protection-test.md) — The protector vendor reports a working keygen in 3 minutes without protection and none after over 4 hours with it; a simpler protected algorithm still fell. **[Other AI-assisted work · Analysis test]**
+- [FormEasy: an agent-native forms project reportedly based on studying Google Forms](cases/en/formeasy-agent-native-forms-report.md) — The author claims an open-source Google Forms reconstruction that lets agents create and publish forms without a browser; two minutes is a promotional claim. **[REA use unconfirmed · Related project]**
+- [Coding harnesses into skills: a plan to study agent orchestration implementations](cases/en/coding-harness-rea-skill-distillation.md) — Yashas plans to study coding-agent harnesses with REA and distill skills, also reporting prior Claude Code source-based skills. **[REA · In progress]**
+- [Gemini Web To API: an agent installation test against stand-in services only](cases/en/gemini-web-api-argusic-standin-test.md) — Argusic reports a pinned build, launch and test success, but no real Gemini connection; live protocol compatibility is not established. **[Other AI-assisted work · Analysis test]**
+- [DeepSeek V4.1: a reported V8 n-day to Electron IPC investigation](cases/en/deepseek-v8-electron-chain-report.md) — Kapeka claims free-tier DeepSeek recovered a V8 n-day and chained it into privileged Electron IPC; no CVE, target app or validation logs are supplied. **[Other AI-assisted work · Needs verification]**
+- [An offline Linux reverse-engineering workspace: separating Codex from private files](cases/en/codex-rea-offline-linux-isolation.md) — Johan Slåttavik is building an isolated Linux environment for Codex with REA, Ghidra and JADX, intended to have no network or private-file access. **[REA · In progress]**
+- [Six-app two-room reconstruction: a report of 299 claims and a negative-control judge rule](cases/en/six-app-two-room-rea-rebuild-report.md) — The author reports two-account separation of originals and SPEC-only builds, with 7 of 299 claims unknown; 412 tests describe a judge rule, not verified passes. **[REA · Needs verification]**
+- [Windows loader: REA and Codex analysis without running the sample](cases/en/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano reports identifying hardcoded servers and in-memory payload loading with REA, Ghidra and Codex; no dynamic confirmation is provided. **[REA · Analysis test]**
+- [T3 Code: an unverified claim of reconstruction and open-source release with 100 Claude agents](cases/en/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl claims to have reverse-engineered T3 Code with 100 Claude agents and released it; repository, features and builds are unconfirmed. **[Other AI-assisted work · Needs verification]**
+- [An 1,842-file AI desktop shell: an animated demonstration of local/server boundaries](cases/en/ai-desktop-shell-1842-file-demo.md) — The author illustrates unpacking, variable inspection and network comparison in an unnamed AI desktop app, claiming cloud-side models and quotas; not an independent named-app audit. **[REA use unconfirmed · Analysis test]**
 - [LG PlxNative: a faster Plex client](cases/en/lg-plxnative.md) — Investigate the media stack and build a Rust/OpenGL client; a later secondary report adds SDL-layout and shader-optimization details, not independently verified. **[Other AI-assisted work]**
 - [Claude Slides: rebuilding the editor](cases/en/claude-slides.md) — Analyze bundled front-end code and rebuild slide-editing functionality. **[REA]**
 - [Claude Code: inspecting a compressed codebase](cases/en/claude-code-analysis.md) — Use Muse and REA to investigate a large compressed JavaScript package. **[REA]**

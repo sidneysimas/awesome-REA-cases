@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [LG OLED 暂停广告：让 Codex 改固件的 idea](../cases/lg-oled-codex-ad-removal-idea.md) — 作者称封锁广告服务器会让电视 App 失效，因此考虑 Codex 修改固件；尚未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Apple TV 遥控器：让专用配件在 Linux 上工作](../cases/siri-remote-linux.md) — 解析蓝牙协议，让 Apple TV 遥控器接入 Linux。 **[未确认使用 REA]**
 - [涂鸦 RGB 灯：绕开厂商 App，直接从 Mac 控灯](../cases/tuya-rgb-mac.md) — 分析手机蓝牙控灯数据，用 Mac 脚本直接控灯。 **[其他 AI 逆向]**
 - [老设备 MIPS 固件：把程序按正确架构读出来](../cases/mips-firmware.md) — 为旧设备固件选定正确架构，核对分析结果。 **[REA]**
@@ -75,7 +76,7 @@
 - [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](../cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
 - [自有硬件到语音 Agent：受耳机与智能戒指启发的 REA 尝试](../cases/rea-own-hardware-agent-voice-idea.md) — 用户称用 Claude 与 REA，在已有硬件上尝试语音控制 Agent、听写与记录想法。 **[REA · 进行中]**
 - [Linux 鼠标驱动：一周 AI 项目中的逆向自述](../cases/linux-mouse-driver-ai-week-report.md) — 作者称最近一周借助 AI 逆向 Linux 鼠标驱动，未给设备型号、协议或实现。 **[其他 AI 逆向 · 待验证]**
-- [Roadster 视频：Claude 辅助的 three.js 视觉拆解实验](../cases/roadster-video-claude-threejs-analysis.md) — 作者称用视频帧估计比例、拆成可动网格并做20秒动画；不能据此确认车辆内部结构或飞行原理。 **[其他 AI 逆向 · 分析测试]**
+- [Roadster 视频：Claude 辅助的 three.js 视觉拆解实验](../cases/roadster-video-claude-threejs-analysis.md) — 两位作者分别报告20秒three.js拆解动画与50帧HUD规格分析；视频读数不能确认车辆内部结构或飞行原理。 **[其他 AI 逆向 · 分析测试]**
 - [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](../cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
 - [Google Home：不换硬件的旧音箱复用受阻报告](../cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
 - [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](../cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**
