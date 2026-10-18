@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [iOS 与 Android：用 REA 研究恢复应用侧载的 idea](../cases/ios-android-rea-sideloading-idea.md) — 读者请求研究两种手机系统，以恢复侧载自由；没有具体设备、限制或实现。 **[REA · 待验证]**
+- [小米路由器：本地 Qwen 经 CGI 与 SSH 刷入 OpenWrt 的自述](../cases/xiaomi-router-local-qwen-openwrt-report.md) — 王小庄称本地Qwen为自家小米路由器启用SSH并刷入OpenWrt；没有型号、漏洞分析或刷机记录。 **[其他 AI 逆向 · 待验证]**
+- [养猫家庭的扫地机器人：用 REA 接入呕吐物识别的 idea](../cases/robot-vacuum-rea-vomit-detection-idea.md) — 试用石头与科沃斯后，作者想研究机器人并补上呕吐物和污渍识别，尚未进行逆向。 **[REA · 待验证]**
+- [腌肉室控制器：Claude 项目清单中的实时仪表盘](../cases/meat-curing-controller-claude-dashboard-report.md) — ChainlinkP在Claude项目串中列出逆向腌肉室控制器后制作的实时仪表盘，没有设备或协议细节。 **[其他 AI 逆向 · 待验证]**
 - [Brother 扫描按键：Claude + REA 把 Scan to PC 接到 NAS 与对象存储](../cases/brother-scan-button-claude-rea-server.md) — Aurimas Niekis 发布 Go 服务替代 Brother 电脑端，扫描按键可保存到 SMB、FTP、S3 或本地；项目只报告测试 MFC-L2800DW。 **[REA]**
 - [Apple Neural Engine：Claude 辅助私有 API 研究与600M模型训练的转述](../cases/apple-neural-engine-claude-training-report.md) — Vaishnavi 转述有人用 Claude 研究苹果神经引擎、绕开 CoreML 训练600M参数模型；未取得训练记录。 **[其他 AI 逆向 · 待验证]**
 - [闲置旧音箱：用 AI 逆向补 AirPlay、Chromecast 与 Spotify Connect 的 idea](../cases/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 想让家中旧音箱恢复价值，询问能否找回旧代码或用AI增加三个投放协议；尚未实施。 **[其他 AI 逆向 · 待验证]**

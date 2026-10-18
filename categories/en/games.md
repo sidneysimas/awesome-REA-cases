@@ -2,6 +2,9 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [Etherlords: an REA-assisted battle-screen remake, with the map still to come](../../cases/en/etherlords-rea-battle-remake.md) — Eric Costa says REA improved an earlier unsuccessful remake attempt; the battle screen is more faithful but still buggy, with the map next. **[REA · In progress]**
+- [Library of Ruina: Claude-assisted bosses, UI and deckbuilding on a decompilation](../../cases/en/library-ruina-claude-gameplay-report.md) — A poster claims a new experience using Library of Ruina's decompilation and Claude; code, mechanics and artifacts remain unverified. **[Other AI-assisted work · Needs verification]**
+- [From UE to Fortnite: a reader's AI-decompilation and server-inference idea](../../cases/en/unreal-fortnite-ai-reverse-idea.md) — A respondent says people are investigating UE and suggests Fortnite next; inferring the server from the client remains speculation. **[Other AI-assisted work · Needs verification]**
 - [Hearthstone on macOS: reversing for model control, deck optimization and game-by-game reflection](../../cases/en/hearthstone-macos-ai-control-report.md) — Roge reports investigating Mac Hearthstone for AI control, greedy deck optimization and reflection over 100 games, without win rates or patches. **[Other AI-assisted work · Needs verification]**
 - [TTT2: a reader claims a Steam version and plans to try the AI-porting result](../../cases/en/ttt2-ai-steam-port-reader-report.md) — K1xkstart mentions a TTT2 Steam version in an AI-decompilation discussion but has not tried it; the expanded game name and project remain unconfirmed. **[Other AI-assisted work · Needs verification]**
 - [GTA5: a reader's idea for a personalized version with REA](../../cases/en/gta5-rea-personalization-idea.md) — A reader suggests personalized GTA5 after seeing REA, without a specified mod mechanic or implementation result. **[REA · Needs verification]**

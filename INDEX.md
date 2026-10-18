@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **457 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **476 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（103）
-- [硬件与设备互通](categories/hardware.md)（97）
-- [应用与客户端](categories/apps.md)（214）
-- [算法与功能重建](categories/algorithms.md)（43）
+- [游戏与游戏保存](categories/games.md)（106）
+- [硬件与设备互通](categories/hardware.md)（101）
+- [应用与客户端](categories/apps.md)（223）
+- [算法与功能重建](categories/algorithms.md)（46）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Etherlords：REA 辅助重做战斗画面，地图仍待实现](cases/etherlords-rea-battle-remake.md) — Eric Costa称旧尝试效果不好，改用REA后战斗画面更忠实，但仍有bug；下一步是地图。 **[REA · 进行中]**
+- [Library of Ruina：在反编译成果上用 Claude 改 Boss、UI 与组牌](cases/library-ruina-claude-gameplay-report.md) — 作者称利用Library of Ruina反编译成果与Claude制作新体验；具体代码、玩法与产物未验证。 **[其他 AI 逆向 · 待验证]**
+- [UE 到 Fortnite：AI 反编译与服务端推断的读者设想](cases/unreal-fortnite-ai-reverse-idea.md) — 回复者称有人研究UE反编译，并设想随后研究Fortnite；从客户端推断服务端仍只是猜想。 **[其他 AI 逆向 · 待验证]**
 - [炉石传说 macOS：为大模型操作研究游戏，再做卡组与逐盘反思](cases/hearthstone-macos-ai-control-report.md) — Roge 报告为 AI 操作逆向 Mac 版炉石，结合贪心卡组优化及100盘逐局反思；没有胜率或补丁。 **[其他 AI 逆向 · 待验证]**
 - [TTT2：读者称已有 Steam 版，计划试用 AI 移植成果](cases/ttt2-ai-steam-port-reader-report.md) — K1xkstart 把 TTT2 Steam 版放在 AI 反编译移植讨论中，尚未亲自试用；游戏全名与项目未确认。 **[其他 AI 逆向 · 待验证]**
 - [GTA5：读者希望用 REA 制作个人定制版本](cases/gta5-rea-personalization-idea.md) — 读者看过REA介绍后提出定制GTA5的idea，未列出具体Mod机制或实施结果。 **[REA · 待验证]**
@@ -132,6 +135,10 @@
 
 ### 硬件与设备互通
 
+- [iOS 与 Android：用 REA 研究恢复应用侧载的 idea](cases/ios-android-rea-sideloading-idea.md) — 读者请求研究两种手机系统，以恢复侧载自由；没有具体设备、限制或实现。 **[REA · 待验证]**
+- [小米路由器：本地 Qwen 经 CGI 与 SSH 刷入 OpenWrt 的自述](cases/xiaomi-router-local-qwen-openwrt-report.md) — 王小庄称本地Qwen为自家小米路由器启用SSH并刷入OpenWrt；没有型号、漏洞分析或刷机记录。 **[其他 AI 逆向 · 待验证]**
+- [养猫家庭的扫地机器人：用 REA 接入呕吐物识别的 idea](cases/robot-vacuum-rea-vomit-detection-idea.md) — 试用石头与科沃斯后，作者想研究机器人并补上呕吐物和污渍识别，尚未进行逆向。 **[REA · 待验证]**
+- [腌肉室控制器：Claude 项目清单中的实时仪表盘](cases/meat-curing-controller-claude-dashboard-report.md) — ChainlinkP在Claude项目串中列出逆向腌肉室控制器后制作的实时仪表盘，没有设备或协议细节。 **[其他 AI 逆向 · 待验证]**
 - [Brother 扫描按键：Claude + REA 把 Scan to PC 接到 NAS 与对象存储](cases/brother-scan-button-claude-rea-server.md) — Aurimas Niekis 发布 Go 服务替代 Brother 电脑端，扫描按键可保存到 SMB、FTP、S3 或本地；项目只报告测试 MFC-L2800DW。 **[REA]**
 - [Apple Neural Engine：Claude 辅助私有 API 研究与600M模型训练的转述](cases/apple-neural-engine-claude-training-report.md) — Vaishnavi 转述有人用 Claude 研究苹果神经引擎、绕开 CoreML 训练600M参数模型；未取得训练记录。 **[其他 AI 逆向 · 待验证]**
 - [闲置旧音箱：用 AI 逆向补 AirPlay、Chromecast 与 Spotify Connect 的 idea](cases/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 想让家中旧音箱恢复价值，询问能否找回旧代码或用AI增加三个投放协议；尚未实施。 **[其他 AI 逆向 · 待验证]**
@@ -232,7 +239,16 @@
 
 ### 应用与客户端
 
-- [Toolport：含 REA 的371工具配置减少初始上下文的报告](cases/toolport-rea-schema-loading-report.md) — 作者称将含207个REA工具的配置从358K降到19.1K初始tokens，371工具仍可用；不是逆向任务准确率评测。 **[REA · 分析测试]**
+- [Topaz Wonder 3.5：GLM 辅助原生 Linux 版的使用者说法](cases/topaz-wonder35-glm-linux-report.md) — H3LIX使用者称GLM-5.3逆向Wonder 3.5后做成Linux原生版，并用于图像放大；没有移植或一致性验证。 **[其他 AI 逆向 · 待验证]**
+- [vivo Mac 办公套件：让其他 Android 手机也能使用的 AI idea](cases/vivo-mac-suite-android-interoperability-idea.md) — 作者询问AI能否逆向或伪造vivo Mac办公套件所需条件，以兼容其他安卓手机；没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [Razorpay：AI 逆向支付网关克隆的未验证转述](cases/razorpay-ai-clone-reader-report.md) — 读者称开发者已克隆Razorpay并规避网关费用；没有开发者、实现或真实结算证据。 **[未确认使用 REA · 待验证]**
+- [无线电竞赛软件：本地 REA 与 Qwen 重写 Python 的自述](cases/ham-contest-software-rea-qwen-report.md) — 作者称用192GB显存本地硬件和REA/Qwen重写竞赛爱好者常用软件，因担心诉讼未发布；产品未具名。 **[REA · 待验证]**
+- [Fing 替代尝试：Claude 与 REA 制作 PC 网络管理应用](cases/fing-claude-rea-pc-network-app.md) — Makergeek1称因不满Fing付费限制，让Claude配合REA做PC连接管理应用；超越原版的说法未验证。 **[REA · 待验证]**
+- [Could AI Decompile Windows：DesignerDave 的视频讨论入口](cases/windows-ai-decompile-designerdave-idea.md) — DesignerDave发布能否用AI反编译Windows的视频标题；仅收作讨论idea，没有系统重建证据。 **[未确认使用 REA · 待验证]**
+- [常驻 REA bot：把认证与广告问题整理成可点击证据站点](cases/rea-swarm-evidence-site-workflow.md) — 作者描述让REA bot接收自己与其他bot的问题，用隔离机器调查并为每次调查建证据站点；未给具体App和产物。 **[REA · 待验证]**
+- [dot Agent harness：读者期待出现逆向替代品的 idea](cases/dot-agent-harness-rea-idea.md) — 在Agent harness可靠性讨论中，读者预期有人用REA研究dot；没有实际研究或替代实现。 **[REA · 待验证]**
+- [FL Studio：读者请求用 Claude 研究音乐制作软件](cases/fl-studio-claude-reverse-idea.md) — 看到Claude逆向软件的讨论后，读者询问能否研究FL Studio；没有启动项目或指定功能。 **[其他 AI 逆向 · 待验证]**
+- [Toolport：含 REA 的371工具配置减少初始上下文的报告](cases/toolport-rea-schema-loading-report.md) — 371工具配置的初始tokens报告后，btsouth补充两款crackme自测；6.1倍token差异仅归于预载工具的OpenCode 1.19。 **[REA · 分析测试]**
 - [Ventris：用于源码与二进制安全研究的 Agent 平台转述](cases/ventris-agent-binary-security-platform-report.md) — 收购报道描述Ventris以Agent分析源码和二进制、配置安全研究流程；没有给出漏洞样本或验证。 **[其他 AI 逆向 · 相关项目]**
 - [Hermes + REA：日视图、筛选与新增预约的日历重建自述](cases/hermes-rea-calendar-scheduler-report.md) — Julian Goldie 称把日历链接交给Hermes与REA，得到可用调度器；零成本与功能正确性未核验。 **[REA · 待验证]**
 - [Panels 壁纸 App：AI 反编译 APK 与免费版本的自述](cases/panels-apk-ai-reverse-report.md) — 作者称用48小时AI研究MKBHD的Panels APK并做成免费版本；未说明后端技术与可验证产物。 **[其他 AI 逆向 · 待验证]**
@@ -438,7 +454,7 @@
 - [Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述](cases/cursor-custom-relay-foxsnowing-report.md) — SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。 **[未确认使用 REA · 相关项目]**
 - [Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎](cases/johnny-castaway-rust-rea.md) — 从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。 **[REA · 进行中]**
 - [REA Workspace Template：把原件、分析副本与证据分开的工作区](cases/rea-workspace-template-gundy.md) — Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。 **[REA · 相关项目]**
-- [Ableton Live 12：Agent 已运行 96 小时的逆向尝试](cases/ableton-live12-agent-96h.md) — patrick__eff 报告让 Agent 持续逆向音乐制作软件，尚未报告恢复了什么功能。 **[未确认使用 REA · 进行中]**
+- [Ableton Live 12：96 小时研究与另一位使用者的复杂度评估](cases/ableton-live12-agent-96h.md) — patrick__eff的96小时尝试仍无成果验收；taelo_kim另称REA/Claude评估89MB程序后认为个人难以复制，继续付费。 **[REA · 进行中]**
 - [Decepticon Reverser：把 REA/Ghidra 静态证据接进授权安全调查](cases/decepticon-reverser-rea-project.md) — 公开项目按需启动逆向工作负载并保留 Evidence；XBOW 102/104 是项目渗透基准，不是逆向正确率。 **[REA · 相关项目]**
 - [疫情救济网站：让 AI 调查旧系统后门的 idea](cases/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge 提出用 AI 反编译州级救济网站；外包、后门与损失归因没有证据。 **[其他 AI 逆向 · 待验证]**
 - [fork pi 与双 Spark：用 GLM-5.3-flash 试 REA 的启动报告](cases/pi-glm-two-sparks-rea-trial.md) — alexrudloff 在自己的 pi 分支中试用 REA，尚无具名目标与分析结果。 **[REA · 进行中]**
@@ -449,6 +465,9 @@
 
 ### 算法与功能重建
 
+- [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
+- [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**
+- [Alvosec：逆向智能合约复盘攻击，再用 Agent 找漏洞](cases/alvosec-contract-attack-agent-reconstruction.md) — Alvosec称已重建攻击者流程并用AI Agent识别漏洞，外部测试与协助修补仍是下一步。 **[其他 AI 逆向 · 进行中]**
 - [神经反编译研究：从专用模型到变量与类型恢复](cases/neural-decompilation-research-survey.md) — 日语综述串起 LLM4Decompile、DIRTY 与黑盒合成；补查2024年论文确认模型目标，不采纳闭源保护已经失效的结论。 **[其他 AI 逆向 · 相关项目]**
 - [Claude Bun 单文件：REA 提取证据后让 Gemini 重写 gzip 判定](cases/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ 报告拆包后重写一个 gzip 判定函数，69,121组自测通过；这不是直接反编译整个 Native 客户端。 **[REA · 分析测试]**
 - [SoftProtect：100 行对抗样本使 REA 停止分析的自测](cases/softprotect-ai-adversarial-rea-test.md) — TokenRebate 称新增 AI 样本对抗后，REA 分析半小时放弃；未公开样本或完整记录，不证明通用防逆向。 **[REA · 分析测试]**

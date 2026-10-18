@@ -2,7 +2,16 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
-- [Toolport：含 REA 的371工具配置减少初始上下文的报告](../cases/toolport-rea-schema-loading-report.md) — 作者称将含207个REA工具的配置从358K降到19.1K初始tokens，371工具仍可用；不是逆向任务准确率评测。 **[REA · 分析测试]**
+- [Topaz Wonder 3.5：GLM 辅助原生 Linux 版的使用者说法](../cases/topaz-wonder35-glm-linux-report.md) — H3LIX使用者称GLM-5.3逆向Wonder 3.5后做成Linux原生版，并用于图像放大；没有移植或一致性验证。 **[其他 AI 逆向 · 待验证]**
+- [vivo Mac 办公套件：让其他 Android 手机也能使用的 AI idea](../cases/vivo-mac-suite-android-interoperability-idea.md) — 作者询问AI能否逆向或伪造vivo Mac办公套件所需条件，以兼容其他安卓手机；没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [Razorpay：AI 逆向支付网关克隆的未验证转述](../cases/razorpay-ai-clone-reader-report.md) — 读者称开发者已克隆Razorpay并规避网关费用；没有开发者、实现或真实结算证据。 **[未确认使用 REA · 待验证]**
+- [无线电竞赛软件：本地 REA 与 Qwen 重写 Python 的自述](../cases/ham-contest-software-rea-qwen-report.md) — 作者称用192GB显存本地硬件和REA/Qwen重写竞赛爱好者常用软件，因担心诉讼未发布；产品未具名。 **[REA · 待验证]**
+- [Fing 替代尝试：Claude 与 REA 制作 PC 网络管理应用](../cases/fing-claude-rea-pc-network-app.md) — Makergeek1称因不满Fing付费限制，让Claude配合REA做PC连接管理应用；超越原版的说法未验证。 **[REA · 待验证]**
+- [Could AI Decompile Windows：DesignerDave 的视频讨论入口](../cases/windows-ai-decompile-designerdave-idea.md) — DesignerDave发布能否用AI反编译Windows的视频标题；仅收作讨论idea，没有系统重建证据。 **[未确认使用 REA · 待验证]**
+- [常驻 REA bot：把认证与广告问题整理成可点击证据站点](../cases/rea-swarm-evidence-site-workflow.md) — 作者描述让REA bot接收自己与其他bot的问题，用隔离机器调查并为每次调查建证据站点；未给具体App和产物。 **[REA · 待验证]**
+- [dot Agent harness：读者期待出现逆向替代品的 idea](../cases/dot-agent-harness-rea-idea.md) — 在Agent harness可靠性讨论中，读者预期有人用REA研究dot；没有实际研究或替代实现。 **[REA · 待验证]**
+- [FL Studio：读者请求用 Claude 研究音乐制作软件](../cases/fl-studio-claude-reverse-idea.md) — 看到Claude逆向软件的讨论后，读者询问能否研究FL Studio；没有启动项目或指定功能。 **[其他 AI 逆向 · 待验证]**
+- [Toolport：含 REA 的371工具配置减少初始上下文的报告](../cases/toolport-rea-schema-loading-report.md) — 371工具配置的初始tokens报告后，btsouth补充两款crackme自测；6.1倍token差异仅归于预载工具的OpenCode 1.19。 **[REA · 分析测试]**
 - [Ventris：用于源码与二进制安全研究的 Agent 平台转述](../cases/ventris-agent-binary-security-platform-report.md) — 收购报道描述Ventris以Agent分析源码和二进制、配置安全研究流程；没有给出漏洞样本或验证。 **[其他 AI 逆向 · 相关项目]**
 - [Hermes + REA：日视图、筛选与新增预约的日历重建自述](../cases/hermes-rea-calendar-scheduler-report.md) — Julian Goldie 称把日历链接交给Hermes与REA，得到可用调度器；零成本与功能正确性未核验。 **[REA · 待验证]**
 - [Panels 壁纸 App：AI 反编译 APK 与免费版本的自述](../cases/panels-apk-ai-reverse-report.md) — 作者称用48小时AI研究MKBHD的Panels APK并做成免费版本；未说明后端技术与可验证产物。 **[其他 AI 逆向 · 待验证]**
@@ -208,7 +217,7 @@
 - [Cursor：接入自定义中转与个人 Codex / Claude Code 额度的逆向自述](../cases/cursor-custom-relay-foxsnowing-report.md) — SnowingFox 称逆向 Cursor 后可用自定义中转和个人 Agent 额度；AI 是接入对象，未确认参与逆向。 **[未确认使用 REA · 相关项目]**
 - [Open Scrantic：用 REA 与 Claude Code 重建 Johnny Castaway 屏保引擎](../cases/johnny-castaway-rust-rea.md) — 从 Windows 3.1 屏保反汇编恢复格式、脚本与引擎，Rust 实现支持三平台；需自备原资产，存在刻意偏差。 **[REA · 进行中]**
 - [REA Workspace Template：把原件、分析副本与证据分开的工作区](../cases/rea-workspace-template-gundy.md) — Gundy 的公开模板为 Claude Code / Codex 配置项目级 REA、证据笔记与样本校验；12 项测试和 JS / HAR 验收仅为项目记录。 **[REA · 相关项目]**
-- [Ableton Live 12：Agent 已运行 96 小时的逆向尝试](../cases/ableton-live12-agent-96h.md) — patrick__eff 报告让 Agent 持续逆向音乐制作软件，尚未报告恢复了什么功能。 **[未确认使用 REA · 进行中]**
+- [Ableton Live 12：96 小时研究与另一位使用者的复杂度评估](../cases/ableton-live12-agent-96h.md) — patrick__eff的96小时尝试仍无成果验收；taelo_kim另称REA/Claude评估89MB程序后认为个人难以复制，继续付费。 **[REA · 进行中]**
 - [Decepticon Reverser：把 REA/Ghidra 静态证据接进授权安全调查](../cases/decepticon-reverser-rea-project.md) — 公开项目按需启动逆向工作负载并保留 Evidence；XBOW 102/104 是项目渗透基准，不是逆向正确率。 **[REA · 相关项目]**
 - [疫情救济网站：让 AI 调查旧系统后门的 idea](../cases/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge 提出用 AI 反编译州级救济网站；外包、后门与损失归因没有证据。 **[其他 AI 逆向 · 待验证]**
 - [fork pi 与双 Spark：用 GLM-5.3-flash 试 REA 的启动报告](../cases/pi-glm-two-sparks-rea-trial.md) — alexrudloff 在自己的 pi 分支中试用 REA，尚无具名目标与分析结果。 **[REA · 进行中]**

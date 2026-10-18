@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Etherlords：REA 辅助重做战斗画面，地图仍待实现](../cases/etherlords-rea-battle-remake.md) — Eric Costa称旧尝试效果不好，改用REA后战斗画面更忠实，但仍有bug；下一步是地图。 **[REA · 进行中]**
+- [Library of Ruina：在反编译成果上用 Claude 改 Boss、UI 与组牌](../cases/library-ruina-claude-gameplay-report.md) — 作者称利用Library of Ruina反编译成果与Claude制作新体验；具体代码、玩法与产物未验证。 **[其他 AI 逆向 · 待验证]**
+- [UE 到 Fortnite：AI 反编译与服务端推断的读者设想](../cases/unreal-fortnite-ai-reverse-idea.md) — 回复者称有人研究UE反编译，并设想随后研究Fortnite；从客户端推断服务端仍只是猜想。 **[其他 AI 逆向 · 待验证]**
 - [炉石传说 macOS：为大模型操作研究游戏，再做卡组与逐盘反思](../cases/hearthstone-macos-ai-control-report.md) — Roge 报告为 AI 操作逆向 Mac 版炉石，结合贪心卡组优化及100盘逐局反思；没有胜率或补丁。 **[其他 AI 逆向 · 待验证]**
 - [TTT2：读者称已有 Steam 版，计划试用 AI 移植成果](../cases/ttt2-ai-steam-port-reader-report.md) — K1xkstart 把 TTT2 Steam 版放在 AI 反编译移植讨论中，尚未亲自试用；游戏全名与项目未确认。 **[其他 AI 逆向 · 待验证]**
 - [GTA5：读者希望用 REA 制作个人定制版本](../cases/gta5-rea-personalization-idea.md) — 读者看过REA介绍后提出定制GTA5的idea，未列出具体Mod机制或实施结果。 **[REA · 待验证]**

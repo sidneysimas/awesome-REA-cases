@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](../cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
+- [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](../cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**
+- [Alvosec：逆向智能合约复盘攻击，再用 Agent 找漏洞](../cases/alvosec-contract-attack-agent-reconstruction.md) — Alvosec称已重建攻击者流程并用AI Agent识别漏洞，外部测试与协助修补仍是下一步。 **[其他 AI 逆向 · 进行中]**
 - [神经反编译研究：从专用模型到变量与类型恢复](../cases/neural-decompilation-research-survey.md) — 日语综述串起 LLM4Decompile、DIRTY 与黑盒合成；补查2024年论文确认模型目标，不采纳闭源保护已经失效的结论。 **[其他 AI 逆向 · 相关项目]**
 - [Claude Bun 单文件：REA 提取证据后让 Gemini 重写 gzip 判定](../cases/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ 报告拆包后重写一个 gzip 判定函数，69,121组自测通过；这不是直接反编译整个 Native 客户端。 **[REA · 分析测试]**
 - [SoftProtect：100 行对抗样本使 REA 停止分析的自测](../cases/softprotect-ai-adversarial-rea-test.md) — TokenRebate 称新增 AI 样本对抗后，REA 分析半小时放弃；未公开样本或完整记录，不证明通用防逆向。 **[REA · 分析测试]**

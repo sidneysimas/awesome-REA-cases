@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**457 entries**, organized by use case, without a Top-N or popularity threshold.
+**476 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (103)
-- [Hardware and interoperability](categories/en/hardware.md) (97)
-- [Applications and clients](categories/en/apps.md) (214)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (43)
+- [Games and preservation](categories/en/games.md) (106)
+- [Hardware and interoperability](categories/en/hardware.md) (101)
+- [Applications and clients](categories/en/apps.md) (223)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (46)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Etherlords: an REA-assisted battle-screen remake, with the map still to come](cases/en/etherlords-rea-battle-remake.md) — Eric Costa says REA improved an earlier unsuccessful remake attempt; the battle screen is more faithful but still buggy, with the map next. **[REA · In progress]**
+- [Library of Ruina: Claude-assisted bosses, UI and deckbuilding on a decompilation](cases/en/library-ruina-claude-gameplay-report.md) — A poster claims a new experience using Library of Ruina's decompilation and Claude; code, mechanics and artifacts remain unverified. **[Other AI-assisted work · Needs verification]**
+- [From UE to Fortnite: a reader's AI-decompilation and server-inference idea](cases/en/unreal-fortnite-ai-reverse-idea.md) — A respondent says people are investigating UE and suggests Fortnite next; inferring the server from the client remains speculation. **[Other AI-assisted work · Needs verification]**
 - [Hearthstone on macOS: reversing for model control, deck optimization and game-by-game reflection](cases/en/hearthstone-macos-ai-control-report.md) — Roge reports investigating Mac Hearthstone for AI control, greedy deck optimization and reflection over 100 games, without win rates or patches. **[Other AI-assisted work · Needs verification]**
 - [TTT2: a reader claims a Steam version and plans to try the AI-porting result](cases/en/ttt2-ai-steam-port-reader-report.md) — K1xkstart mentions a TTT2 Steam version in an AI-decompilation discussion but has not tried it; the expanded game name and project remain unconfirmed. **[Other AI-assisted work · Needs verification]**
 - [GTA5: a reader's idea for a personalized version with REA](cases/en/gta5-rea-personalization-idea.md) — A reader suggests personalized GTA5 after seeing REA, without a specified mod mechanic or implementation result. **[REA · Needs verification]**
@@ -134,6 +137,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [iOS and Android: an REA idea to restore app sideloading](cases/en/ios-android-rea-sideloading-idea.md) — A reader asks about investigating both mobile systems for sideloading freedom, without a device, restriction or implementation. **[REA · Needs verification]**
+- [Xiaomi router: a report of local Qwen flashing OpenWrt through CGI and SSH](cases/en/xiaomi-router-local-qwen-openwrt-report.md) — Wang Xiaozhuang says local Qwen enabled SSH and flashed OpenWrt on a Xiaomi router, without a model, vulnerability analysis or flashing records. **[Other AI-assisted work · Needs verification]**
+- [A cat household's robot vacuum: an REA idea for vomit detection](cases/en/robot-vacuum-rea-vomit-detection-idea.md) — After trying Roborock and Ecovacs vacuums, a user proposes investigating the robot to distinguish vomit from stains; reversing has not begun. **[REA · Needs verification]**
+- [Meat-curing controller: a live dashboard in a user's Claude project list](cases/en/meat-curing-controller-claude-dashboard-report.md) — In a Claude project thread, ChainlinkP lists a live dashboard built by reversing a curing-chamber controller, without device or protocol details. **[Other AI-assisted work · Needs verification]**
 - [Brother's scan button: Claude and REA connect Scan to PC to NAS and object storage](cases/en/brother-scan-button-claude-rea-server.md) — Aurimas Niekis publishes a Go replacement for Brother's PC software, saving button-triggered scans to SMB, FTP, S3 or local storage; only an MFC-L2800DW is reported tested. **[REA]**
 - [Apple Neural Engine: a report of Claude-assisted private-API research and 600M-model training](cases/en/apple-neural-engine-claude-training-report.md) — Vaishnavi retells a claim that Claude helped investigate Apple's Neural Engine and train a 600M-parameter model without CoreML; training records were not obtained. **[Other AI-assisted work · Needs verification]**
 - [An idle old speaker: an AI-reversing idea for AirPlay, Chromecast and Spotify Connect](cases/en/old-speaker-ai-casting-protocols-idea.md) — wangcheng678 asks whether old code or AI investigation could add three casting protocols to a disused speaker; no implementation is reported. **[Other AI-assisted work · Needs verification]**
@@ -234,7 +241,16 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
-- [Toolport: reported initial-context reduction for a 371-tool setup including REA](cases/en/toolport-rea-schema-loading-report.md) — A post claims 358K to 19.1K initial tokens for a setup containing 207 REA tools while retaining 371 tools, not an accuracy benchmark for reverse-engineering tasks. **[REA · Analysis test]**
+- [Topaz Wonder 3.5: a user's claim of a GLM-assisted native Linux version](cases/en/topaz-wonder35-glm-linux-report.md) — An H3LIX user says GLM-5.3 reversed Wonder 3.5 into a native Linux app used for upscaling, without port or equivalence validation. **[Other AI-assisted work · Needs verification]**
+- [vivo's Mac office suite: an AI idea for other Android phones](cases/en/vivo-mac-suite-android-interoperability-idea.md) — A user asks AI whether reversing or emulating vivo's Mac-suite requirements could enable other Android phones; no implementation is reported. **[Other AI-assisted work · Needs verification]**
+- [Razorpay: an unverified retelling of an AI-reversed payment-gateway clone](cases/en/razorpay-ai-clone-reader-report.md) — A reader claims developers cloned Razorpay and avoided gateway charges, without a developer, implementation or real settlement evidence. **[REA use unconfirmed · Needs verification]**
+- [Ham-contest software: a report of a local REA/Qwen Python rewrite](cases/en/ham-contest-software-rea-qwen-report.md) — A user claims a rewrite of contesters' everyday software with REA/Qwen on 192GB-VRAM hardware, withheld over lawsuit concerns; the product is unnamed. **[REA · Needs verification]**
+- [A Fing alternative attempt: Claude and REA build a PC network-management app](cases/en/fing-claude-rea-pc-network-app.md) — Makergeek1 reports asking Claude and REA for a PC connection-management app over Fing's paid features; superiority to the original is unverified. **[REA · Needs verification]**
+- [Could AI Decompile Windows? DesignerDave's video-discussion pointer](cases/en/windows-ai-decompile-designerdave-idea.md) — DesignerDave shares a video asking whether AI could decompile Windows; this is a discussion idea, not evidence of a rebuilt operating system. **[REA use unconfirmed · Needs verification]**
+- [A resident REA bot: turning authentication and ad questions into clickable evidence sites](cases/en/rea-swarm-evidence-site-workflow.md) — A user describes a swarm bot investigating questions on isolated machines and producing evidence sites, without named target apps or public artifacts. **[REA · Needs verification]**
+- [dot agent harness: a reader's expectation of a reverse-engineered alternative](cases/en/dot-agent-harness-rea-idea.md) — In a harness-reliability discussion, a reader anticipates REA investigation of dot, without actual research or an alternative implementation. **[REA · Needs verification]**
+- [FL Studio: a reader requests Claude-assisted investigation of the music app](cases/en/fl-studio-claude-reverse-idea.md) — After seeing software-reversing discussions, a reader asks about FL Studio, without starting a project or specifying a feature. **[Other AI-assisted work · Needs verification]**
+- [Toolport: initial-context claims and two-crackme tests with REA](cases/en/toolport-rea-schema-loading-report.md) — After a 371-tool context claim, btsouth reports two crackme tests; the claimed 6.1x token reduction applies to tool-preloading OpenCode 1.19. **[REA · Analysis test]**
 - [Ventris: a reported agent platform for source and binary security research](cases/en/ventris-agent-binary-security-platform-report.md) — An acquisition report describes Ventris agents analyzing source and binaries with configurable security workflows, without vulnerability fixtures or validation. **[Other AI-assisted work · Related project]**
 - [Hermes and REA: a reported calendar rebuild with day views, filters and appointments](cases/en/hermes-rea-calendar-scheduler-report.md) — Julian Goldie says a calendar link given to Hermes and REA produced a working scheduler; zero cost and functional correctness remain unverified. **[REA · Needs verification]**
 - [Panels wallpaper app: a report of AI APK decompilation and a free version](cases/en/panels-apk-ai-reverse-report.md) — A poster claims 48 hours of AI investigation into MKBHD's Panels APK and a free version, without identifying backend technology or a verified artifact. **[Other AI-assisted work · Needs verification]**
@@ -440,7 +456,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Cursor: an account of custom relays and personal Codex/Claude Code quotas](cases/en/cursor-custom-relay-foxsnowing-report.md) — SnowingFox claims to have reverse-engineered Cursor for custom relays and personal agent quotas; AI is the integration target, not a confirmed reversing assistant. **[REA use unconfirmed · Related project]**
 - [Open Scrantic: rebuilding the Johnny Castaway screensaver engine with REA and Claude Code](cases/en/johnny-castaway-rust-rea.md) — Recover formats, scripts and engine behavior from a Windows 3.1 disassembly for a three-platform Rust implementation; original assets are required and deliberate deviations remain. **[REA · In progress]**
 - [REA Workspace Template: separate originals, analysis copies and evidence](cases/en/rea-workspace-template-gundy.md) — Gundy's public template supplies project-level REA setup, evidence notes and sample verification for Claude Code/Codex; 12 tests and JS/HAR acceptance are project records only. **[REA · Related project]**
-- [Ableton Live 12: an agent reversing attempt running for 96 hours](cases/en/ableton-live12-agent-96h.md) — patrick__eff reports sustained agent work on the music-production app, without identifying a recovered feature. **[REA use unconfirmed · In progress]**
+- [Ableton Live 12: a 96-hour investigation and another user's complexity assessment](cases/en/ableton-live12-agent-96h.md) — patrick__eff's 96-hour attempt lacks acceptance results; taelo_kim separately reports an REA/Claude assessment of an 89MB program and keeps paying. **[REA · In progress]**
 - [Decepticon Reverser: REA/Ghidra static evidence in authorized security investigations](cases/en/decepticon-reverser-rea-project.md) — The public project starts reversing workloads on demand and preserves Evidence; its XBOW 102/104 is a pentesting benchmark, not reversing accuracy. **[REA · Related project]**
 - [Pandemic-relief websites: an idea for AI-assisted investigation of legacy backdoors](cases/en/pandemic-relief-sites-ai-audit-idea.md) — mentaldischarge proposes decompiling state relief websites; outsourcing, backdoors and loss attribution are unsupported. **[Other AI-assisted work · Needs verification]**
 - [Forked pi and two Sparks: starting a GLM-5.3-flash/REA trial](cases/en/pi-glm-two-sparks-rea-trial.md) — alexrudloff is trying REA in a personal pi fork, without a named target or analysis result yet. **[REA · In progress]**
@@ -451,6 +467,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [An REA verification engine: checking claims with CFGs, symbolic paths and runtime traces](cases/en/rea-cross-tool-verification-engine-idea.md) — A proposal would cross-check REA findings against angr, radare2 and Binary Ninja before agents start rebuilding from unconfirmed claims. **[REA · Needs verification]**
+- [Wallet transaction history: a promotional report of four REA rules traded by Grok Bot](cases/en/rea-wallet-four-rule-grok-report.md) — A poster claims four rules from 312 trades, 41/44 replay agreement and four profitable trades, without a wallet, transactions or replay records. **[REA · Needs verification]**
+- [Alvosec: reversing contracts to reconstruct an attack, then finding vulnerabilities with agents](cases/en/alvosec-contract-attack-agent-reconstruction.md) — Alvosec reports reconstructing attacker behavior and identifying vulnerabilities with AI agents; external testing and patch assistance remain next steps. **[Other AI-assisted work · In progress]**
 - [Neural decompilation research: specialized models, variable names and types](cases/en/neural-decompilation-research-survey.md) — A Japanese survey connects LLM4Decompile, DIRTY and black-box synthesis; a 2024 primary paper clarifies the target, not an end to closed-source protection. **[Other AI-assisted work · Related project]**
 - [Claude's Bun single-file build: REA evidence for a Gemini gzip-predicate rewrite](cases/en/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ reports 69,121 passing self-tests for a gzip predicate rewritten after unpacking, not direct decompilation of an entire native client. **[REA · Analysis test]**
 - [SoftProtect: a self-test claiming REA stopped on a 100-line adversarial fixture](cases/en/softprotect-ai-adversarial-rea-test.md) — TokenRebate says an AI-adversarial update led REA to abandon analysis after half an hour; no public fixture or full logs establish general protection. **[REA · Analysis test]**
