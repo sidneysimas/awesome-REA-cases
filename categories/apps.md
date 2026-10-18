@@ -2,12 +2,18 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [内核反作弊隐私：用 REA 调查发送给厂商的机器信息](../cases/rea-kernel-anticheat-privacy-inspection.md) — Jhaddix 报告首次用 REA 检查现代反作弊的数据外发；产品、字段和分析记录没有公开。 **[REA · 分析测试]**
+- [REDOC：声称把 Agent 逆向与能力重建带到链上](../cases/redoc-onchain-agent-reverse-platform.md) — Bricar_dev 宣布文件／链接输入的开源逆向平台；链上机制、源码和实际分析能力均未核验。 **[未确认使用 REA · 相关项目]**
+- [231 函数的逆向工作室：REA 与 Opus 多工具流程演示](../cases/rea-opus-231-function-studio-demo.md) — Capslock404 宣称 Opus 经 REA 调度 Ghidra、Frida、x64dbg 和 mitmproxy；231 函数与 oracle 结果无原始记录。 **[REA · 待验证]**
+- [Codex 去广告重建：20 分钟自述包含无线 ADB 排障](../cases/codex-20min-adfree-app-report.md) — vvilliam 称用 Codex 逆向并重建去广告版本，一半时间处理无线 ADB；未公开 App 身份与产物。 **[其他 AI 逆向 · 待验证]**
+- [Pro 软件许可算法：REA 数小时 keygen 的未验证自述](../cases/rea-unnamed-pro-license-self-report.md) — adamdived1 自称无逆向经验，用 REA 数小时为一款 pro 软件制作 keygen；目标及验收缺失。 **[REA · 待验证]**
+- [REA 证据架构：noflag 为漏洞研究 Agent 拆解 Evidence 与 unknown ledger](../cases/noflag-rea-evidence-architecture-study.md) — noflag 介绍对 REA 架构的研究，想把证据寻址和未知项管理用于漏洞调查；未取得文章或压力测试记录。 **[REA · 相关项目]**
 - [Dhaedalida：自制许可样本的 AI 逆向保护对照](../cases/dhaedalida-ai-keygen-protection-test.md) — 保护软件厂商称未保护样本3分钟生成可用keygen，加保护后超过4小时未成功；简单算法仍被攻破。 **[其他 AI 逆向 · 分析测试]**
 - [FormEasy：声称研究 Google Forms 后做 Agent 原生表单](../cases/formeasy-agent-native-forms-report.md) — 作者称逆向 Google Forms 并制作开源 FormEasy，让 Agent 不经浏览器创建、发布表单；两分钟是推广自述。 **[未确认使用 REA · 相关项目]**
 - [Coding harness 到 Skill：研究 Agent 编排实现的计划](../cases/coding-harness-rea-skill-distillation.md) — Yashas 计划用 REA 研究编码 Agent 框架再蒸馏成 Skill，并称已有 Claude Code 源码研究技能。 **[REA · 进行中]**
 - [Gemini Web To API：Agent 仅对替身服务做安装测试](../cases/gemini-web-api-argusic-standin-test.md) — Argusic 报告 Agent 对固定版本构建、启动及测试成功，但未连接真实 Gemini，不能证明线上协议兼容。 **[其他 AI 逆向 · 分析测试]**
 - [DeepSeek V4.1：V8 已知漏洞到 Electron IPC 的研究自述](../cases/deepseek-v8-electron-chain-report.md) — Kapeka 声称免费层 DeepSeek 恢复 V8 n-day 并串至 Electron 特权 IPC；无CVE、目标应用或验证日志。 **[其他 AI 逆向 · 待验证]**
-- [离线 Linux 逆向工作机：隔离 Codex 与私人文件](../cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 正搭建供 Codex 使用 REA、Ghidra、JADX 的隔离 Linux 环境，计划无网络且不能访问私人文件。 **[REA · 进行中]**
+- [离线 Linux 逆向工作机：隔离 Codex 与私人文件](../cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 澄清把 REA、Ghidra、JADX 放在隔离 VM，由 Linux VS Code 中的 AI 控制；离线与私人文件隔离仍未测试。 **[REA · 进行中]**
 - [六款 App 的双房间重建：299 断言与负例裁判规则自述](../cases/six-app-two-room-rea-rebuild-report.md) — 作者报告两账号隔离原件与 SPEC 重建，299断言中7条未知；412测试是所述裁判规则，不是已核验通过数。 **[REA · 待验证]**
 - [Windows loader：REA 与 Codex 的不运行样本分析](../cases/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano 报告用 REA、Ghidra、Codex 静态识别硬编码服务器及内存载荷加载，未作动态确认。 **[REA · 分析测试]**
 - [T3 Code：100 个 Claude 重建与开源发布的未验证宣称](../cases/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl 声称用100个Claude逆向T3 Code并开源，未确认仓库、功能或构建结果。 **[其他 AI 逆向 · 待验证]**

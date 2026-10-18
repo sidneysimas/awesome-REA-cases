@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**413 entries**, organized by use case, without a Top-N or popularity threshold.
+**423 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (88)
+- [Games and preservation](categories/en/games.md) (92)
 - [Hardware and interoperability](categories/en/hardware.md) (91)
-- [Applications and clients](categories/en/apps.md) (194)
+- [Applications and clients](categories/en/apps.md) (200)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (40)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Pre-CU Star Wars Galaxies: an idea to accelerate emulator reverse engineering with AI](cases/en/swg-precu-ai-emulator-idea.md) — A reader asks whether AI could shorten years of reverse engineering for an early Star Wars Galaxies emulator; no implementation is reported. **[Other AI-assisted work · Needs verification]**
+- [Animal Jam / Burrow: an unconfirmed account of Claude-assisted decompilation](cases/en/animal-jam-burrow-claude-report.md) — A reader speculates that Burrow used Claude to study Animal Jam and minimally in its client, explicitly saying the project could not be consulted. **[Other AI-assisted work · Needs verification]**
+- [LittleBigPlanet: an AI-decompilation idea for a moddable native PC port](cases/en/littlebigplanet-ai-native-port-idea.md) — Duggsby wants AI decompilation to enable a moddable native PC version; a same-thread claim of an LBP1 artifact still supplies no project source. **[Other AI-assisted work · Needs verification]**
+- [Game ad behavior: a reported Claude inspection of obfuscated JavaScript](cases/en/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia says Claude read obfuscated game JavaScript; the parent conversation concerns ad-driven forced-failure allegations, without runtime validation. **[Other AI-assisted work · Analysis test]**
 - [CM 01-02 to FM26: an idea to study football-manager data migration with REA](cases/en/cm0102-fm26-rea-data-migration-idea.md) — A reader has reportedly exported CM 01-02 data and asks whether REA could help import it into FM26; no format research or converter is reported. **[REA · Needs verification]**
 - [Universal Modder: AI-assisted game mods](cases/en/universal-modder.md) — Analyze engines and asset formats, then create and test cross-game mods. **[Other AI-assisted work]**
 - [Firefighter: from DOS binary to Rust](cases/en/firefighter-rust.md) — Recover Pascal logic from an old binary and rewrite it in Rust. **[Other AI-assisted work]**
@@ -213,12 +217,18 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Kernel anticheat privacy: using REA to investigate machine information sent to a vendor](cases/en/rea-kernel-anticheat-privacy-inspection.md) — Jhaddix reports a first REA investigation of modern anticheat telemetry; the product, fields and analysis records are not public. **[REA · Analysis test]**
+- [REDOC: a claimed on-chain platform for agent reverse engineering and capability reconstruction](cases/en/redoc-onchain-agent-reverse-platform.md) — Bricar_dev announces an open-source reversing platform taking files or links; on-chain mechanisms, source and actual analysis capabilities are unverified. **[REA use unconfirmed · Related project]**
+- [A 231-function reversing studio: a REA and Opus multi-tool workflow demonstration](cases/en/rea-opus-231-function-studio-demo.md) — Capslock404 claims Opus orchestrates Ghidra, Frida, x64dbg and mitmproxy through REA; no original records substantiate 231 functions or oracle outcomes. **[REA · Needs verification]**
+- [Codex ad-free app reconstruction: a 20-minute report includes wireless ADB troubleshooting](cases/en/codex-20min-adfree-app-report.md) — Vvilliam says Codex helped reverse-engineer and rebuild an ad-free app, with half the time spent on wireless ADB; the app and artifact are not public. **[Other AI-assisted work · Needs verification]**
+- [A pro-software licensing algorithm: an unverified report of a REA keygen in hours](cases/en/rea-unnamed-pro-license-self-report.md) — Adamdived1 claims to have made a pro-software keygen with REA in a few hours without reversing experience; the target and acceptance evidence are absent. **[REA · Needs verification]**
+- [REA evidence architecture: noflag studies Evidence and the unknown ledger for vulnerability agents](cases/en/noflag-rea-evidence-architecture-study.md) — Noflag introduces research into REA's evidence addressing and unknown tracking for vulnerability investigations; the article and stress-test records were not obtained. **[REA · Related project]**
 - [Dhaedalida: an AI reverse-engineering comparison on a self-made licensing sample](cases/en/dhaedalida-ai-keygen-protection-test.md) — The protector vendor reports a working keygen in 3 minutes without protection and none after over 4 hours with it; a simpler protected algorithm still fell. **[Other AI-assisted work · Analysis test]**
 - [FormEasy: an agent-native forms project reportedly based on studying Google Forms](cases/en/formeasy-agent-native-forms-report.md) — The author claims an open-source Google Forms reconstruction that lets agents create and publish forms without a browser; two minutes is a promotional claim. **[REA use unconfirmed · Related project]**
 - [Coding harnesses into skills: a plan to study agent orchestration implementations](cases/en/coding-harness-rea-skill-distillation.md) — Yashas plans to study coding-agent harnesses with REA and distill skills, also reporting prior Claude Code source-based skills. **[REA · In progress]**
 - [Gemini Web To API: an agent installation test against stand-in services only](cases/en/gemini-web-api-argusic-standin-test.md) — Argusic reports a pinned build, launch and test success, but no real Gemini connection; live protocol compatibility is not established. **[Other AI-assisted work · Analysis test]**
 - [DeepSeek V4.1: a reported V8 n-day to Electron IPC investigation](cases/en/deepseek-v8-electron-chain-report.md) — Kapeka claims free-tier DeepSeek recovered a V8 n-day and chained it into privileged Electron IPC; no CVE, target app or validation logs are supplied. **[Other AI-assisted work · Needs verification]**
-- [An offline Linux reverse-engineering workspace: separating Codex from private files](cases/en/codex-rea-offline-linux-isolation.md) — Johan Slåttavik is building an isolated Linux environment for Codex with REA, Ghidra and JADX, intended to have no network or private-file access. **[REA · In progress]**
+- [An offline Linux reverse-engineering workspace: separating Codex from private files](cases/en/codex-rea-offline-linux-isolation.md) — Johan Slåttavik clarifies an isolated VM for REA, Ghidra and JADX, controlled by AI in Linux VS Code; offline operation and private-file isolation remain untested. **[REA · In progress]**
 - [Six-app two-room reconstruction: a report of 299 claims and a negative-control judge rule](cases/en/six-app-two-room-rea-rebuild-report.md) — The author reports two-account separation of originals and SPEC-only builds, with 7 of 299 claims unknown; 412 tests describe a judge rule, not verified passes. **[REA · Needs verification]**
 - [Windows loader: REA and Codex analysis without running the sample](cases/en/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano reports identifying hardcoded servers and in-memory payload loading with REA, Ghidra and Codex; no dynamic confirmation is provided. **[REA · Analysis test]**
 - [T3 Code: an unverified claim of reconstruction and open-source release with 100 Claude agents](cases/en/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl claims to have reverse-engineered T3 Code with 100 Claude agents and released it; repository, features and builds are unconfirmed. **[Other AI-assisted work · Needs verification]**

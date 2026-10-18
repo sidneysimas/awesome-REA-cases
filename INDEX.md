@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **413 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **423 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（88）
+- [游戏与游戏保存](categories/games.md)（92）
 - [硬件与设备互通](categories/hardware.md)（91）
-- [应用与客户端](categories/apps.md)（194）
+- [应用与客户端](categories/apps.md)（200）
 - [算法与功能重建](categories/algorithms.md)（40）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,10 @@
 
 ### 游戏与游戏保存
 
+- [Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea](cases/swg-precu-ai-emulator-idea.md) — 读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。 **[其他 AI 逆向 · 待验证]**
+- [Animal Jam / Burrow：Claude 反编译的未确认转述](cases/animal-jam-burrow-claude-report.md) — 读者猜测 Burrow 用 Claude 研究 Animal Jam 并用于客户端，但明确说无法向项目确认。 **[其他 AI 逆向 · 待验证]**
+- [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
+- [JS 游戏广告行为：Claude 读混淆逻辑的调查自述](cases/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia 称让 Claude 阅读游戏混淆 JavaScript；父串在讨论广告与故意失败的指控，尚无运行验证。 **[其他 AI 逆向 · 分析测试]**
 - [CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea](cases/cm0102-fm26-rea-data-migration-idea.md) — 读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。 **[REA · 待验证]**
 - [Universal Modder：用 AI 给现有游戏做 Mod](cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏内容 Mod。 **[其他 AI 逆向]**
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**
@@ -211,12 +215,18 @@
 
 ### 应用与客户端
 
+- [内核反作弊隐私：用 REA 调查发送给厂商的机器信息](cases/rea-kernel-anticheat-privacy-inspection.md) — Jhaddix 报告首次用 REA 检查现代反作弊的数据外发；产品、字段和分析记录没有公开。 **[REA · 分析测试]**
+- [REDOC：声称把 Agent 逆向与能力重建带到链上](cases/redoc-onchain-agent-reverse-platform.md) — Bricar_dev 宣布文件／链接输入的开源逆向平台；链上机制、源码和实际分析能力均未核验。 **[未确认使用 REA · 相关项目]**
+- [231 函数的逆向工作室：REA 与 Opus 多工具流程演示](cases/rea-opus-231-function-studio-demo.md) — Capslock404 宣称 Opus 经 REA 调度 Ghidra、Frida、x64dbg 和 mitmproxy；231 函数与 oracle 结果无原始记录。 **[REA · 待验证]**
+- [Codex 去广告重建：20 分钟自述包含无线 ADB 排障](cases/codex-20min-adfree-app-report.md) — vvilliam 称用 Codex 逆向并重建去广告版本，一半时间处理无线 ADB；未公开 App 身份与产物。 **[其他 AI 逆向 · 待验证]**
+- [Pro 软件许可算法：REA 数小时 keygen 的未验证自述](cases/rea-unnamed-pro-license-self-report.md) — adamdived1 自称无逆向经验，用 REA 数小时为一款 pro 软件制作 keygen；目标及验收缺失。 **[REA · 待验证]**
+- [REA 证据架构：noflag 为漏洞研究 Agent 拆解 Evidence 与 unknown ledger](cases/noflag-rea-evidence-architecture-study.md) — noflag 介绍对 REA 架构的研究，想把证据寻址和未知项管理用于漏洞调查；未取得文章或压力测试记录。 **[REA · 相关项目]**
 - [Dhaedalida：自制许可样本的 AI 逆向保护对照](cases/dhaedalida-ai-keygen-protection-test.md) — 保护软件厂商称未保护样本3分钟生成可用keygen，加保护后超过4小时未成功；简单算法仍被攻破。 **[其他 AI 逆向 · 分析测试]**
 - [FormEasy：声称研究 Google Forms 后做 Agent 原生表单](cases/formeasy-agent-native-forms-report.md) — 作者称逆向 Google Forms 并制作开源 FormEasy，让 Agent 不经浏览器创建、发布表单；两分钟是推广自述。 **[未确认使用 REA · 相关项目]**
 - [Coding harness 到 Skill：研究 Agent 编排实现的计划](cases/coding-harness-rea-skill-distillation.md) — Yashas 计划用 REA 研究编码 Agent 框架再蒸馏成 Skill，并称已有 Claude Code 源码研究技能。 **[REA · 进行中]**
 - [Gemini Web To API：Agent 仅对替身服务做安装测试](cases/gemini-web-api-argusic-standin-test.md) — Argusic 报告 Agent 对固定版本构建、启动及测试成功，但未连接真实 Gemini，不能证明线上协议兼容。 **[其他 AI 逆向 · 分析测试]**
 - [DeepSeek V4.1：V8 已知漏洞到 Electron IPC 的研究自述](cases/deepseek-v8-electron-chain-report.md) — Kapeka 声称免费层 DeepSeek 恢复 V8 n-day 并串至 Electron 特权 IPC；无CVE、目标应用或验证日志。 **[其他 AI 逆向 · 待验证]**
-- [离线 Linux 逆向工作机：隔离 Codex 与私人文件](cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 正搭建供 Codex 使用 REA、Ghidra、JADX 的隔离 Linux 环境，计划无网络且不能访问私人文件。 **[REA · 进行中]**
+- [离线 Linux 逆向工作机：隔离 Codex 与私人文件](cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 澄清把 REA、Ghidra、JADX 放在隔离 VM，由 Linux VS Code 中的 AI 控制；离线与私人文件隔离仍未测试。 **[REA · 进行中]**
 - [六款 App 的双房间重建：299 断言与负例裁判规则自述](cases/six-app-two-room-rea-rebuild-report.md) — 作者报告两账号隔离原件与 SPEC 重建，299断言中7条未知；412测试是所述裁判规则，不是已核验通过数。 **[REA · 待验证]**
 - [Windows loader：REA 与 Codex 的不运行样本分析](cases/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano 报告用 REA、Ghidra、Codex 静态识别硬编码服务器及内存载荷加载，未作动态确认。 **[REA · 分析测试]**
 - [T3 Code：100 个 Claude 重建与开源发布的未验证宣称](cases/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl 声称用100个Claude逆向T3 Code并开源，未确认仓库、功能或构建结果。 **[其他 AI 逆向 · 待验证]**

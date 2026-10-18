@@ -1,5 +1,205 @@
 [
   {
+    "id": "swg-precu-ai-emulator-idea",
+    "title": "Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。",
+    "description": "10月18日08:29（北京时间），@Hammerstone911 提到程序员曾为 Pre-CU Star Wars Galaxies 模拟器投入多年逆向工作，并问 AI 会需要多久。目标是这款网络游戏早期、Combat Upgrade 改版之前的玩法版本及其模拟器研究，不是从零生成一款新游戏。这里收录的是让 AI 协助既有游戏保存工作的具体设想，帖子并没有说作者已经启动 Agent、分析客户端或实现服务端。\n\n没有指定模拟器仓库、客户端版本、待恢复协议或任务基准；多年是读者对既有工作的概述，不是已核验的工时对照。不能据此推算 AI 加速比例、宣称服务器兼容或确认使用 REA。",
+    "sources": [{"label": "Hammerstone911 关于 Pre-CU SWG 模拟器与 AI 的提问", "url": "https://x.com/i/status/2111615624678088837"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["10月18日候选快照0赞、158浏览；仅 idea，无实施或加速测试。"],
+    "en": {
+      "title": "Pre-CU Star Wars Galaxies: an idea to accelerate emulator reverse engineering with AI",
+      "summary": "A reader asks whether AI could shorten years of reverse engineering for an early Star Wars Galaxies emulator; no implementation is reported.",
+      "description": "At 08:29 Beijing time on October 18, @Hammerstone911 says programmers spent years reverse-engineering Pre-CU Star Wars Galaxies emulators and wonders how long AI would take. The target is the online game's early, pre-Combat Upgrade version and emulator research, not generating a new game from scratch. This records a concrete idea to assist existing game-preservation work with AI. The post does not say the author has started an agent, analyzed a client or implemented a server.\n\nNo emulator repository, client version, protocol to recover or benchmark task is specified. Years is the reader's overview of earlier work, not a verified effort comparison. It cannot support a calculated AI speedup, server compatibility or confirmed REA use.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 158 views; idea only, with no implementation or speedup test."],
+      "source_labels": ["Hammerstone911's question about Pre-CU SWG emulators and AI"]
+    }
+  },
+  {
+    "id": "animal-jam-burrow-claude-report",
+    "title": "Animal Jam / Burrow：Claude 反编译的未确认转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "读者猜测 Burrow 用 Claude 研究 Animal Jam 并用于客户端，但明确说无法向项目确认。",
+    "description": "10月18日09:02（北京时间），@307_33m15 在讨论 Animal Jam 与 Burrow 时说，自己认为项目用 Claude 反编译 Animal Jam，之后只在客户端中少量使用，可能也用于服务端。作者随即要求读者保留怀疑：自己无法进入 Burrow 的 Discord 向项目询问，因此不能确认任何细节。目标是既有游戏客户端及可能的服务端行为研究，而非一般模型生成游戏。\n\n这是具名目标的二手线索，不是项目作者确认，也没有可核仓库、模型记录、功能范围或构建结果。客户端中少量使用与服务端可能使用都只是该读者的猜测，不能写成已经恢复原始源码、建成兼容服务器或通过游戏测试；未确认 REA。",
+    "sources": [{"label": "307_33m15 关于 Animal Jam/Burrow 的带保留转述", "url": "https://x.com/i/status/2111623879487795255"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["10月18日候选快照3赞、44浏览；作者明确无法确认项目内部情况，非开发者证实。"],
+    "en": {
+      "title": "Animal Jam / Burrow: an unconfirmed account of Claude-assisted decompilation",
+      "summary": "A reader speculates that Burrow used Claude to study Animal Jam and minimally in its client, explicitly saying the project could not be consulted.",
+      "description": "At 09:02 Beijing time on October 18, @307_33m15 says in an Animal Jam/Burrow discussion that they think Claude was used to decompile Animal Jam and then used minimally in the client, possibly the server too. The reader immediately asks for skepticism: they cannot enter Burrow's Discord to ask the project and cannot confirm the details. The target is investigation of an existing game's client and possibly server behavior, not generic AI game generation.\n\nThis is a secondhand lead with a named target, not project-author confirmation. No verifiable repository, model records, feature scope or build results are supplied. Minimal client use and possible server use are both this reader's speculation, not recovered original source, a working compatible server or passed gameplay tests. REA use is unconfirmed.",
+      "metadata": ["October 18 candidate snapshot: 3 likes, 44 views; the reader explicitly cannot confirm the project's internal work, and is not developer confirmation."],
+      "source_labels": ["307_33m15's explicitly qualified Animal Jam/Burrow account"]
+    }
+  },
+  {
+    "id": "rea-kernel-anticheat-privacy-inspection",
+    "title": "内核反作弊隐私：用 REA 调查发送给厂商的机器信息",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "Jhaddix 报告首次用 REA 检查现代反作弊的数据外发；产品、字段和分析记录没有公开。",
+    "description": "10月18日09:15（北京时间），@Jhaddix 报告用 REA 研究一款现代反作弊，想弄清关于自己机器的哪些信息会被发送给提供商。他强调关注的是内核级反作弊的隐私影响，并对 REA 第一次使用给出正面评价。目标是软件的数据收集与通信行为，而不是规避反作弊、修改游戏或恢复整套产品。\n\n原帖没有产品名、版本、采集字段、目的地址、函数位置、抓包或具体分析结论，也未说明哪些发现来自静态分析、哪些来自实际通信观察。因此只记录作者实施了隐私调查的自述，不把好评变成已证实存在敏感信息外发、已全面覆盖隐私风险或工具准确率的证明；未独立复现。",
+    "sources": [{"label": "Jhaddix 的 REA 反作弊隐私调查自述", "url": "https://x.com/i/status/2111627155449004086"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖报告首次试用；未公开产品身份、字段或原始证据，分析结果未独立核验。", "2026-10-18候选快照94赞、5538浏览、4转发；传播不等于隐私发现获验证。"],
+    "en": {
+      "title": "Kernel anticheat privacy: using REA to investigate machine information sent to a vendor",
+      "summary": "Jhaddix reports a first REA investigation of modern anticheat telemetry; the product, fields and analysis records are not public.",
+      "description": "At 09:15 Beijing time on October 18, @Jhaddix reports using REA on a modern anticheat to learn what information about their machine was being sent to its provider. They emphasize the privacy implications of kernel-level anticheat and give REA a positive first-run assessment. The target is data collection and communication behavior, not evading anticheat, modifying a game or recovering an entire product.\n\nThe post does not identify the product, version, collected fields, destination addresses, function locations, packet captures or specific findings. It does not distinguish static findings from observed communications. This therefore records the author's account of conducting a privacy investigation. Praise is not proof of sensitive-data exfiltration, comprehensive privacy coverage or tool accuracy; no independent reproduction was performed.",
+      "metadata": ["The author reports a first trial; product identity, fields and original evidence are not public, and findings were not independently verified.", "October 18, 2026 candidate snapshot: 94 likes, 5,538 views, 4 reposts; attention does not validate privacy findings."],
+      "source_labels": ["Jhaddix's account of an anticheat privacy investigation with REA"]
+    }
+  },
+  {
+    "id": "littlebigplanet-ai-native-port-idea",
+    "title": "LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。",
+    "description": "10月18日10:05（北京时间），@duggsby 询问为什么还没人用 AI 反编译 LittleBigPlanet，理由是游戏有网络社区，而原生 PC 版会更便于修改；他同时表示不希望只是 vibe-coded 的重做。这里收录的是利用既有游戏研究支持原生移植和编辑的具体想法，不是已经完成的 PC 版本。\n\n11:24 同串，@cyberiaaaaaaa 回复称自己见过 LittleBigPlanet 1 的 AI“反编译”，但没有给项目名、作者、仓库、匹配测试或可玩的构建。补读父串只确认这些回复的关系，不能据此证明已经存在可用移植，也不能把带引号的反编译等同原始源码恢复。两则意见在同一目标下记录；没有确认 REA，未执行游戏或验证实现。",
+    "sources": [
+      {"label": "duggsby 的 LittleBigPlanet 原生 PC 版设想", "url": "https://x.com/i/status/2111639768270594300"},
+      {"label": "emma 回复称见过 LBP1 AI 反编译，未给产物来源", "url": "https://x.com/i/status/2111659540790010306"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["两帖均在10月18日08:00–12:00窗口；父串补读仅确认对话关系，不构成独立复现。"],
+    "en": {
+      "title": "LittleBigPlanet: an AI-decompilation idea for a moddable native PC port",
+      "summary": "Duggsby wants AI decompilation to enable a moddable native PC version; a same-thread claim of an LBP1 artifact still supplies no project source.",
+      "description": "At 10:05 Beijing time on October 18, @duggsby asks why nobody has used AI to decompile LittleBigPlanet, citing its online community and the editing opportunities of a native PC port, preferably not a vibe-coded remake. This records a concrete idea to use investigation of the existing game for native porting and modification, not a completed PC version.\n\nAt 11:24 in the same conversation, @cyberiaaaaaaa says they have seen an AI 'decompile' of LittleBigPlanet 1, without a project name, author, repository, matching tests or playable build. Reading the parent thread only confirms the relationship between these replies. It cannot establish a usable port or equate the quoted word decompilation with recovery of original source. Both comments are recorded under the same target. REA use is unconfirmed; no game was run or implementation verified here.",
+      "metadata": ["Both posts fall in the October 18 08:00–12:00 window; supplementary parent-thread reading only confirms the conversation, not independent reproduction."],
+      "source_labels": ["Duggsby's LittleBigPlanet native-PC idea", "Emma's reply claiming an LBP1 AI decompilation, without an artifact source"]
+    }
+  },
+  {
+    "id": "redoc-onchain-agent-reverse-platform",
+    "title": "REDOC：声称把 Agent 逆向与能力重建带到链上",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "Bricar_dev 宣布文件／链接输入的开源逆向平台；链上机制、源码和实际分析能力均未核验。",
+    "description": "10月18日11:58（北京时间），@bricar_dev 宣布 REDOC，称要把网络上流行的逆向带到链上，平台允许其所称“SI agents”理解目标如何工作并重建能力；输入方式是放入文件或粘贴链接。它自称开源，口号是 Understand、Reconstruct、Build。这里收录的是具名的 Agent 逆向相关项目介绍，不是某个软件已被恢复的案例。\n\n原帖未解释 SI 的含义、链上保存什么、支持的文件格式、分析工具、可检查的源码位置或测试记录。只有宣传文字、图片和短链，未核验开源许可或实现，也没有确认 REA。不能把链上包装理解成证据不可篡改、合法授权或分析正确性的保证；没有运行平台、连接钱包或提交样本。",
+    "sources": [{"label": "Bricar_dev 宣布 REDOC", "url": "https://x.com/i/status/2111668130489549026"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["开源、链上与能力重建均为发布者主张；无已核验的目标或结果。"],
+    "en": {
+      "title": "REDOC: a claimed on-chain platform for agent reverse engineering and capability reconstruction",
+      "summary": "Bricar_dev announces an open-source reversing platform taking files or links; on-chain mechanisms, source and actual analysis capabilities are unverified.",
+      "description": "At 11:58 Beijing time on October 18, @bricar_dev announces REDOC, claiming to bring the online reverse-engineering trend on-chain. The platform is described as allowing what it calls 'SI agents' to understand how targets work and reconstruct their capabilities, with file-drop or link-paste inputs. It calls itself open source and uses the slogan Understand, Reconstruct, Build. This is a named agent-reversing related-project announcement, not recovery of a particular software target.\n\nThe post does not explain SI, what is stored on-chain, supported file formats, analysis tools, an inspectable source location or test records. Only promotional text, an image and a short link are available. The open-source license and implementation were not checked, and REA use is unconfirmed. On-chain branding must not become a guarantee of tamper-resistant evidence, lawful authorization or analysis correctness. No platform was run, wallet connected or sample submitted.",
+      "metadata": ["Open-source status, on-chain operation and capability reconstruction are publisher claims; no verified target or result."],
+      "source_labels": ["Bricar_dev announces REDOC"]
+    }
+  },
+  {
+    "id": "rea-opus-231-function-studio-demo",
+    "title": "231 函数的逆向工作室：REA 与 Opus 多工具流程演示",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Capslock404 宣称 Opus 经 REA 调度 Ghidra、Frida、x64dbg 和 mitmproxy；231 函数与 oracle 结果无原始记录。",
+    "description": "10月18日05:03（北京时间），@Capslock404 介绍“20工具、1 Agent”的逆向工作室：Opus 5.5 通过居中的 REA MCP 选择工具，分别用 Ghidra 打开程序、Frida 做 hook、x64dbg 单步、mitmproxy 观察通信。帖中给出 binary → analyze → spec → rebuild → oracle 的流程，声称映射231个函数且没有交给模型任何源码，并邀请回复索取配置。\n\n这是往期04:00–08:00候选的补审。流程足以记录为未验证的多工具演示，但没有软件名、二进制身份、完整20工具清单、配置、调用日志、规格、重建代码或 oracle 对照结果。231是作者报告，不等于231函数全部正确恢复；零源码也不能证明法律意义上的 clean room。工具角色是作者所述编排，不是本合集确认各接口已经集成或成功执行，没有独立复现。",
+    "sources": [{"label": "Capslock404 的20工具／231函数流程帖", "url": "https://x.com/i/status/2111563711005745602"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["往期04:00–08:00窗口补审；20工具、231函数、零源码均为作者说法，未核验原始运行。"],
+    "en": {
+      "title": "A 231-function reversing studio: a REA and Opus multi-tool workflow demonstration",
+      "summary": "Capslock404 claims Opus orchestrates Ghidra, Frida, x64dbg and mitmproxy through REA; no original records substantiate 231 functions or oracle outcomes.",
+      "description": "At 05:03 Beijing time on October 18, @Capslock404 presents a '20 tools, 1 agent' reversing studio. Opus 5.5 reportedly chooses tools through a central REA MCP: Ghidra opens the program, Frida hooks it, x64dbg single-steps and mitmproxy observes traffic. The post gives a binary → analyze → spec → rebuild → oracle workflow, claims 231 mapped functions with no source supplied to the model, and invites replies for the setup.\n\nThis is re-reviewed from the earlier 04:00–08:00 window. The workflow supports an unverified multi-tool demonstration entry, but no software name, binary identity, complete 20-tool list, configuration, invocation logs, specification, rebuilt code or oracle comparison results are provided. The number 231 is the author's claim, not 231 correctly recovered functions. No supplied source does not establish a legally valid clean room. Tool roles describe the author's proposed orchestration, not this collection's confirmation that every interface is integrated or ran successfully. No independent reproduction was performed.",
+      "metadata": ["Re-reviewed from the earlier 04:00–08:00 window; 20 tools, 231 functions and no supplied source are author claims, without verification of an original run."],
+      "source_labels": ["Capslock404's 20-tool / 231-function workflow post"]
+    }
+  },
+  {
+    "id": "codex-20min-adfree-app-report",
+    "title": "Codex 去广告重建：20 分钟自述包含无线 ADB 排障",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "vvilliam 称用 Codex 逆向并重建去广告版本，一半时间处理无线 ADB；未公开 App 身份与产物。",
+    "description": "10月17日23:27（北京时间），vvilliam（@Squilliam_Speed）说自己已经逆向一款 App，并重建为移除全部广告的版本，整个过程用 Codex 花20分钟，其中一半是在诊断无线 ADB 问题。ADB 是 Android 调试连接工具；帖中这个细节说明计时包含连接排障，但不能据此补出设备型号、App 或修改手法。\n\n此条为往期20:00–00:00候选补审，重新判断后按有具体去广告目标和操作的未验证自述收录，保留独立记录而不归并红果短剧或任何电视项目。补读原串仍未显示被引用的 App 身份，没有构建、代码、广告路径分析、安装记录或功能回归测试。全部广告移除与20分钟均只归因于作者，不表示订阅、远程服务、授权或长期兼容性已解决；未确认 REA，未独立重现。",
+    "sources": [{"label": "vvilliam 的 Codex 去广告及无线 ADB 排障报告", "url": "https://x.com/i/status/2111479225890865430"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖2026-10-17 23:27；10月18日补审，20分钟为含排障的自述，不是独立计时。"],
+    "en": {
+      "title": "Codex ad-free app reconstruction: a 20-minute report includes wireless ADB troubleshooting",
+      "summary": "Vvilliam says Codex helped reverse-engineer and rebuild an ad-free app, with half the time spent on wireless ADB; the app and artifact are not public.",
+      "description": "At 23:27 Beijing time on October 17, vvilliam (@Squilliam_Speed) says they have reverse-engineered an app and rebuilt it with all advertising removed using Codex. The reported total is 20 minutes, half spent diagnosing wireless ADB issues. ADB is an Android debugging connection tool; the detail indicates connection troubleshooting is included in the timing, but does not supply a device model, app identity or modification method.\n\nThis candidate is re-reviewed from the earlier 20:00–00:00 window. On reconsideration, the concrete ad-removal objective and reported action support an unverified account, kept separate from Hongguo Short Drama and every TV project. Reading the thread still does not reveal the quoted app's identity. No build, code, ad-path analysis, installation records or regression tests are supplied. All-ad removal and 20 minutes remain the author's claims, not resolution of subscriptions, remote services, authorization or long-term compatibility. REA use is unconfirmed and the work was not independently reproduced.",
+      "metadata": ["Original post: October 17, 2026, 23:27; re-reviewed October 18. The reported 20 minutes includes troubleshooting and is not an independent measurement."],
+      "source_labels": ["Vvilliam's Codex ad-removal and wireless-ADB troubleshooting report"]
+    }
+  },
+  {
+    "id": "rea-unnamed-pro-license-self-report",
+    "title": "Pro 软件许可算法：REA 数小时 keygen 的未验证自述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "adamdived1 自称无逆向经验，用 REA 数小时为一款 pro 软件制作 keygen；目标及验收缺失。",
+    "description": "10月17日19:45（北京时间），@adamdived1 在预测软件交付方式变化的帖子中说，自己为了实验，在没有逆向经验的情况下，用 REA 为一款 pro 软件在数小时内制作了 keygen。这里关注的是作者报告研究本地许可算法并制作生成器的行为，而不是采纳其所有可下载软件都可数小时克隆的泛化结论。\n\n此条来自往期16:00–20:00窗口补审。原帖没有软件身份、版本、授权背景、算法、样本、生成器或激活验收；不能确认工具确实可用、可在线激活或适用于其他保护机制。本条不提供绕过许可步骤，不与另一厂商的自制样本保护对照合并，几小时只归因于该作者，没有独立复现。",
+    "sources": [{"label": "adamdived1 关于 pro 软件 keygen 的个人实验自述", "url": "https://x.com/i/status/2111423397095723483"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原帖2026-10-17 19:45；往期补审，目标、授权和成功验收均未核实。"],
+    "en": {
+      "title": "A pro-software licensing algorithm: an unverified report of a REA keygen in hours",
+      "summary": "Adamdived1 claims to have made a pro-software keygen with REA in a few hours without reversing experience; the target and acceptance evidence are absent.",
+      "description": "At 19:45 Beijing time on October 17, @adamdived1 says in a post predicting changes to software distribution that they experimentally made a keygen for a pro application with REA in a couple of hours, without previous reverse-engineering experience. The entry concerns the reported investigation of a local licensing algorithm and creation of a generator, not adoption of the broader assertion that every downloadable product can be cloned in hours.\n\nThis is re-reviewed from the earlier 16:00–20:00 window. The post supplies no software identity, version, authorization context, algorithm, sample, generator or activation acceptance test. It does not establish that the tool works, enables online activation or generalizes to other protections. No licensing-bypass steps are provided here. This is not merged with a separate vendor's protected self-made sample comparison. A few hours is attributed only to this author, with no independent reproduction.",
+      "metadata": ["Original post: October 17, 2026, 19:45; re-reviewed from an earlier window. Target, authorization and successful acceptance remain unverified."],
+      "source_labels": ["Adamdived1's personal account of a pro-software keygen experiment"]
+    }
+  },
+  {
+    "id": "noflag-rea-evidence-architecture-study",
+    "title": "REA 证据架构：noflag 为漏洞研究 Agent 拆解 Evidence 与 unknown ledger",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "noflag 介绍对 REA 架构的研究，想把证据寻址和未知项管理用于漏洞调查；未取得文章或压力测试记录。",
+    "description": "10月18日09:11（北京时间），@Noflag404 解释自己的研究动机：先学习成功的 AI 架构，再把方法用于 AI 辅助漏洞寻找。补读其09:09父帖，作者称已对 REA 做压力测试，并撰写架构拆解，关注内容寻址的 Evidence 与按修订串联的 unknown ledger，认为它们有助于抑制 Agent 过度宣称。这把研究对象定位为 REA 自身的证据管理设计，而不是某个目标漏洞已经被发现。\n\n父帖是用于说明候选动机的同日补充来源，不替换候选。研究文章和原项目均只给短链，本次没有取得完整文章、代码审计、测试样本或失败／通过记录。因此不能证明这些机制真正阻止所有过度宣称，不能推断找到漏洞或完成新的安全 Agent；这里只记录具名的架构研究及应用方向。",
+    "sources": [
+      {"label": "noflag 解释学习 AI 架构并用于漏洞研究的动机", "url": "https://x.com/i/status/2111626304097538278"},
+      {"label": "补充父帖：09:09 的 REA Evidence 与 unknown ledger 研究介绍", "url": "https://x.com/i/status/2111625626893660269"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["补充父帖发表于2026-10-18 09:09，北京时间，仅用于定位研究对象；压力测试和抑制过度宣称均未独立验证。"],
+    "en": {
+      "title": "REA evidence architecture: noflag studies Evidence and the unknown ledger for vulnerability agents",
+      "summary": "Noflag introduces research into REA's evidence addressing and unknown tracking for vulnerability investigations; the article and stress-test records were not obtained.",
+      "description": "At 09:11 Beijing time on October 18, @Noflag404 explains a motivation to learn from successful AI architectures and apply the techniques to AI-assisted vulnerability hunting. Supplementary reading of their 09:09 parent post finds a claimed REA stress test and architecture dissection, focused on content-addressed Evidence and a revision-chained unknown ledger as ways to limit agent overclaiming. This identifies REA's own evidence-management design as the research target, not an already discovered target vulnerability.\n\nThe parent is same-day supplementary context for the candidate's motivation, not a substitute candidate. The research article and original project are only short links; the full article, code audit, test samples and pass/fail records were not obtained here. It does not establish that these mechanisms prevent every overclaim, that a vulnerability was found or that a new security agent was completed. This records a named architecture study and intended application only.",
+      "metadata": ["Supplementary parent posted October 18, 2026, 09:09 Beijing time, used only to identify the research subject; stress testing and overclaim prevention were not independently validated."],
+      "source_labels": ["Noflag explains the motivation to study AI architectures for vulnerability research", "Supplementary 09:09 parent: REA Evidence and unknown-ledger research introduction"]
+    }
+  },
+  {
+    "id": "claude-js-game-ad-behavior-inspection",
+    "title": "JS 游戏广告行为：Claude 读混淆逻辑的调查自述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "AnechoicMedia 称让 Claude 阅读游戏混淆 JavaScript；父串在讨论广告与故意失败的指控，尚无运行验证。",
+    "description": "10月18日06:19（北京时间），@AnechoicMedia_ 回复称，自己已让 Claude“反编译”讨论中的 App，过程很容易，因为大部分游戏逻辑是混淆的 JavaScript，属性名和文本值仍可直接阅读。补读父串，10月17日23:41的 @tracewoodgrains 帖是在转述一项指控：游戏识别常看广告的玩家，先安排顺利的局，再在接近高分时故意让其失败并提供看广告复活。@Worm 质疑不反复玩游戏，模型怎样判断广告行为；候选回复的作用是解释代码可读性，而非提供反复游玩的证据。\n\n这是往期04:00–08:00候选补审，按具体广告行为调查中的 AI 静态代码阅读自述收录。现有父串仍没有游戏名、版本、代码位置、分支条件、运行轨迹或对照测试。故意失败与一亿美元年收入都是父帖转述的指控，不是此条确认的结果；候选只说明能够读到部分逻辑，不能证明操纵难度确实发生。也不把读取混淆 JS 写成从机器码恢复原始源码，未确认 REA，未独立复现。",
+    "sources": [
+      {"label": "AnechoicMedia 说明 Claude 可读混淆 JavaScript", "url": "https://x.com/i/status/2111582817251738031"},
+      {"label": "补充父串：10月17日广告与故意失败指控的转述", "url": "https://x.com/i/status/2111482639052116051"},
+      {"label": "补充质疑：缺少实际游戏观察如何推断广告行为", "url": "https://x.com/i/status/2111506460551389258"}
+    ],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["候选原帖2026-10-18 06:19；父帖10月17日23:41、质疑帖10月18日01:15，北京时间，均为补充上下文而非本轮新候选。", "游戏身份未显示；广告操控和一亿美元年收入是指控，不是已核验发现。"],
+    "en": {
+      "title": "Game ad behavior: a reported Claude inspection of obfuscated JavaScript",
+      "summary": "AnechoicMedia says Claude read obfuscated game JavaScript; the parent conversation concerns ad-driven forced-failure allegations, without runtime validation.",
+      "description": "At 06:19 Beijing time on October 18, @AnechoicMedia_ replies that they had Claude 'decompile' the app under discussion, which was easy because most game logic is obfuscated JavaScript and object properties and text values remain readable. Supplementary parent-thread reading finds an October 17, 23:41 post by @tracewoodgrains relaying an allegation: a game identifies frequent ad watchers, gives them smooth runs, then deliberately kills them near a high score and offers an ad-funded revive. @Worm asks how a model could infer ad behavior without repeatedly playing the game. The candidate reply explains code readability, not evidence of repeated play.\n\nThis candidate is re-reviewed from the earlier 04:00–08:00 window as an account of AI-assisted static code reading in a specific ad-behavior investigation. The available parent conversation still gives no game name, version, code locations, branch conditions, runtime traces or comparison tests. Deliberate failure and $100 million annual revenue are allegations relayed by the parent, not established findings here. The candidate only says some logic is readable; it does not prove manipulated difficulty occurred. Reading obfuscated JS is not recovery of original source from machine code. REA use is unconfirmed and no independent reproduction was performed.",
+      "metadata": ["Candidate: October 18, 2026, 06:19; parent: October 17, 23:41; skeptical reply: October 18, 01:15, all Beijing time. The latter two are supplementary context, not new candidates in the current window.", "Game identity is absent; ad manipulation and $100 million annual revenue are allegations, not verified findings."],
+      "source_labels": ["AnechoicMedia explains Claude's ability to read obfuscated JavaScript", "Supplementary parent: October 17 account of ad-driven forced-failure allegations", "Supplementary skepticism about inferring ad behavior without gameplay observations"]
+    }
+  },
+  {
     "id": "lg-oled-codex-ad-removal-idea",
     "title": "LG OLED 暂停广告：让 Codex 改固件的 idea",
     "category": "hardware",
@@ -122,17 +322,17 @@
     "category": "apps",
     "rea": "REA",
     "status": "in-progress",
-    "summary": "Johan Slåttavik 正搭建供 Codex 使用 REA、Ghidra、JADX 的隔离 Linux 环境，计划无网络且不能访问私人文件。",
-    "description": "10月18日06:41（北京时间），Johan Slåttavik（@JohanSlattavik）说 REA 很有意思，但不愿给 AI 工具自由访问自己的电脑，因此正在搭建一个隔离 Linux 工作机，让 Codex 使用 REA、Ghidra 和 JADX，同时无网络、不能访问私人文件。具体用途是保留 Agent 逆向工具链，又缩小工具对个人主机和数据的访问面。\n\n这是正在建设的环境方案，未给仓库、虚拟化或沙盒机制、文件传递方法、Codex 推理连接方式或隔离测试。特别是无网络与 Codex 如何配合尚未解释，不能自行补成已验证的离线模型系统或安全沙盒；没有报告对具体二进制的分析成功。",
-    "sources": [{"label": "Johan Slåttavik 的隔离 Linux 工作机建设报告", "url": "https://x.com/i/status/2111588450969231812"}],
+    "summary": "Johan Slåttavik 澄清把 REA、Ghidra、JADX 放在隔离 VM，由 Linux VS Code 中的 AI 控制；离线与私人文件隔离仍未测试。",
+    "description": "10月18日06:41（北京时间），Johan Slåttavik（@JohanSlattavik）说 REA 很有意思，但不愿给 AI 工具自由访问自己的电脑，因此正在搭建一个隔离 Linux 工作机，让 Codex 使用 REA、Ghidra 和 JADX，同时无网络、不能访问私人文件。具体用途是保留 Agent 逆向工具链，又缩小工具对个人主机和数据的访问面。\n\n09:43 同一账号在同串澄清当前架构目标：REA、Ghidra、JADX 运行在隔离虚拟机（VM）内，他通过 Linux 上 VS Code 中的 AI 控制这些工具。补查原帖确认作者和对话与早先记录一致，因此追加到本条，不另建隔离工作台。VM 是计划采用的部署边界，不是本合集验证的安全属性。\n\n方案仍在建设，没有给仓库、虚拟化产品、文件传递方式、Codex 推理连接或隔离测试；具体怎样同时满足无网络与外部控制仍未解释。不能补成已验证的离线模型系统或安全沙盒，也没有报告对具体二进制的分析成功。",
+    "sources": [{"label": "Johan Slåttavik 的隔离 Linux 工作机建设报告", "url": "https://x.com/i/status/2111588450969231812"}, {"label": "10月18日09:43：同作者澄清隔离 VM 与 Linux VS Code 控制", "url": "https://x.com/i/status/2111634258649608673"}],
     "snapshot_date": "2026-10-18",
-    "metadata": ["原帖候选快照1赞、98浏览；隔离属性是作者计划，未进行安全验证。"],
+    "metadata": ["原帖候选快照1赞、98浏览；隔离属性是作者计划，未进行安全验证。", "10月18日09:43候选快照1赞、12浏览；VM/VS Code是同一作者的架构澄清，没有样本或隔离验收。"],
     "en": {
       "title": "An offline Linux reverse-engineering workspace: separating Codex from private files",
-      "summary": "Johan Slåttavik is building an isolated Linux environment for Codex with REA, Ghidra and JADX, intended to have no network or private-file access.",
-      "description": "At 06:41 Beijing time on October 18, Johan Slåttavik (@JohanSlattavik) says REA is interesting but they do not want AI tools to have unrestricted access to their computer. They are building an isolated Linux machine where Codex can use REA, Ghidra and JADX without networking or access to private files. The intended use is to retain an agent's reverse-engineering toolchain while narrowing its access to the personal host and data.\n\nThis is an environment under construction. No repository, virtualization or sandbox mechanism, file-transfer method, Codex inference connection or isolation tests are provided. In particular, how Codex works with the no-network requirement is unexplained. It must not be expanded into a verified offline-model system or secure sandbox, and no successful analysis of a particular binary is reported.",
-      "metadata": ["Original candidate snapshot: 1 like, 98 views; isolation properties are the author's plan, not security-validated here."],
-      "source_labels": ["Johan Slåttavik's isolated Linux workspace development report"]
+      "summary": "Johan Slåttavik clarifies an isolated VM for REA, Ghidra and JADX, controlled by AI in Linux VS Code; offline operation and private-file isolation remain untested.",
+      "description": "At 06:41 Beijing time on October 18, Johan Slåttavik (@JohanSlattavik) says REA is interesting but they do not want AI tools to have unrestricted access to their computer. They are building an isolated Linux machine where Codex can use REA, Ghidra and JADX without networking or access to private files. The intended use is to retain an agent's reverse-engineering toolchain while narrowing its access to the personal host and data.\n\nAt 09:43 the same account clarifies the current architectural goal in the same conversation: REA, Ghidra and JADX run inside an isolated virtual machine (VM), controlled through AI in VS Code on Linux. Rereading the original confirms that the author and conversation match the earlier record, so this is appended rather than creating another workspace entry. A VM is the intended deployment boundary, not a security property verified by this collection.\n\nThe environment remains under construction. No repository, virtualization product, file-transfer method, Codex inference connection or isolation tests are supplied. How the no-network requirement and external control coexist is still unexplained. It must not become a verified offline-model system or secure sandbox, and no successful analysis of a particular binary is reported.",
+      "metadata": ["Original candidate snapshot: 1 like, 98 views; isolation properties are the author's plan, not security-validated here.", "October 18, 09:43 candidate snapshot: 1 like, 12 views; VM/VS Code is the same author's architecture clarification, without a sample or isolation acceptance test."],
+      "source_labels": ["Johan Slåttavik's isolated Linux workspace development report", "October 18, 09:43: same author clarifies the isolated VM and Linux VS Code control"]
     }
   },
   {

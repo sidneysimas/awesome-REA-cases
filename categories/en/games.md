@@ -2,6 +2,10 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [Pre-CU Star Wars Galaxies: an idea to accelerate emulator reverse engineering with AI](../../cases/en/swg-precu-ai-emulator-idea.md) — A reader asks whether AI could shorten years of reverse engineering for an early Star Wars Galaxies emulator; no implementation is reported. **[Other AI-assisted work · Needs verification]**
+- [Animal Jam / Burrow: an unconfirmed account of Claude-assisted decompilation](../../cases/en/animal-jam-burrow-claude-report.md) — A reader speculates that Burrow used Claude to study Animal Jam and minimally in its client, explicitly saying the project could not be consulted. **[Other AI-assisted work · Needs verification]**
+- [LittleBigPlanet: an AI-decompilation idea for a moddable native PC port](../../cases/en/littlebigplanet-ai-native-port-idea.md) — Duggsby wants AI decompilation to enable a moddable native PC version; a same-thread claim of an LBP1 artifact still supplies no project source. **[Other AI-assisted work · Needs verification]**
+- [Game ad behavior: a reported Claude inspection of obfuscated JavaScript](../../cases/en/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia says Claude read obfuscated game JavaScript; the parent conversation concerns ad-driven forced-failure allegations, without runtime validation. **[Other AI-assisted work · Analysis test]**
 - [CM 01-02 to FM26: an idea to study football-manager data migration with REA](../../cases/en/cm0102-fm26-rea-data-migration-idea.md) — A reader has reportedly exported CM 01-02 data and asks whether REA could help import it into FM26; no format research or converter is reported. **[REA · Needs verification]**
 - [Universal Modder: AI-assisted game mods](../../cases/en/universal-modder.md) — Analyze engines and asset formats, then create and test cross-game mods. **[Other AI-assisted work]**
 - [Firefighter: from DOS binary to Rust](../../cases/en/firefighter-rust.md) — Recover Pascal logic from an old binary and rewrite it in Rust. **[Other AI-assisted work]**
