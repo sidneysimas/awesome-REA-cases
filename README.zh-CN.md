@@ -1,3 +1,5 @@
+<img src="assets/rea-icon.svg" alt="REA Cases" width="88" height="88">
+
 # Awesome REA Cases
 
 [English](README.md) | **简体中文**
