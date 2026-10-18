@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="REA Cases: reverse arrow above code brackets">
 <rect width="512" height="512" rx="104" fill="#101716"/>
+<path d="M125 144L187 82L205 100L174 131H320Q381 131 381 192V240H355V192Q355 157 320 157H174L205 188L187 206Z" fill="#b6f36a"/>
 <g fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="26">
-<path d="M368 240V192Q368 144 320 144H144M192 96L144 144L192 192" stroke="#b6f36a"/>
 <path d="M204 252L160 296L204 340M308 252L352 296L308 340M278 244L234 348" stroke="#f1f4ec"/>
 </g></svg>

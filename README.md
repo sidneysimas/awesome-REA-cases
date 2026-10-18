@@ -1,4 +1,4 @@
-<img src="assets/rea-icon.svg" alt="REA Cases" width="88" height="88">
+<img src="assets/rea-social-preview.png" alt="REA Cases — AI + Reverse Engineering" width="1280">
 
 # Awesome REA Cases
 
