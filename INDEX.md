@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **476 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **501 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（106）
-- [硬件与设备互通](categories/hardware.md)（101）
-- [应用与客户端](categories/apps.md)（223）
+- [游戏与游戏保存](categories/games.md)（116）
+- [硬件与设备互通](categories/hardware.md)（110）
+- [应用与客户端](categories/apps.md)（229）
 - [算法与功能重建](categories/algorithms.md)（46）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,16 @@
 
 ### 游戏与游戏保存
 
+- [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
+- [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
+- [Block Blaster：读者称 AI 逆向发现随机机制服务广告收益](cases/block-blaster-ai-randomness-reader-report.md) — 读者指控Block Blaster用长局后终结的机制提高广告收益，未给原始代码与分析，不能据此认定欺诈。 **[未确认使用 REA · 待验证]**
+- [越狱 PS5 运行 PS2 原盘：AI 辅助模拟器工作的读者转述](cases/ps5-ps2-disc-ai-emulation-reader-report.md) — 作者把PS5上的PS2原盘运行与实验性PS3模拟归于AI辅助和开源研究；未具名实现或验证。 **[其他 AI 逆向 · 待验证]**
+- [Age of Mythology 到 Mac：读者建议用 REA 与 Claude 研究移植](cases/age-mythology-mac-rea-reader-idea.md) — Toledo回复Mac游玩Age of Mythology不佳的用户，建议REA/Claude克隆；他自己的未具名童年游戏项目未确认是此游戏。 **[REA · 待验证]**
+- [Super Mario 64：保留运动规则、换地狱场景的 REA/Opus 宣传](cases/mario64-hell-opus-rea-promotion.md) — 作者称一晚提取Mario64速度、重力和跳跃参数，移入现代引擎地狱场景；没有参数与对照证据。 **[REA · 待验证]**
+- [Mega Man X7：分析原游戏图形与物理，再转换到 Unity 的自述](cases/megaman-x7-unity-ai-reverse-report.md) — 作者澄清并非一句话让AI克隆Mega Man X7，而是结合二进制工具研究实际逻辑、逐步移到Unity。 **[未确认使用 REA · 进行中]**
+- [CS2 × Minecraft：把 Dust2、弓与心形血条混合的 REA 宣传自述](cases/cs2-minecraft-rea-crossover-promotion.md) — 推广帖称REA/Opus把CS2与Minecraft规则写入规格并混合运行；49构建、16规则及性能数字没有验证。 **[REA · 待验证]**
+- [Brilliant Diamond：Claude 研究音频库，把 Windows 重建版移到 SteamOS 的自述](cases/brilliant-diamond-claude-linux-steamos.md) — 作者称Claude把Brilliant Diamond的Windows反编译项目移到Linux并制作Flatpak，SteamOS上报告1080p/120fps。 **[其他 AI 逆向 · 待验证]**
+- [Civilization VI：先反编译 AI 部分，再尝试改善策略对手](cases/civ6-claude-ai-logic-improvement.md) — 作者称Claude在ultracode花一周反编译翻译Civ6 AI部分，下一步看能否改善；未报告策略提升。 **[其他 AI 逆向 · 进行中]**
 - [Etherlords：REA 辅助重做战斗画面，地图仍待实现](cases/etherlords-rea-battle-remake.md) — Eric Costa称旧尝试效果不好，改用REA后战斗画面更忠实，但仍有bug；下一步是地图。 **[REA · 进行中]**
 - [Library of Ruina：在反编译成果上用 Claude 改 Boss、UI 与组牌](cases/library-ruina-claude-gameplay-report.md) — 作者称利用Library of Ruina反编译成果与Claude制作新体验；具体代码、玩法与产物未验证。 **[其他 AI 逆向 · 待验证]**
 - [UE 到 Fortnite：AI 反编译与服务端推断的读者设想](cases/unreal-fortnite-ai-reverse-idea.md) — 回复者称有人研究UE反编译，并设想随后研究Fortnite；从客户端推断服务端仍只是猜想。 **[其他 AI 逆向 · 待验证]**
@@ -135,6 +145,15 @@
 
 ### 硬件与设备互通
 
+- [LG UltraFine：Codex 修补 Screen Manager 更新器的内存错误](cases/lg-ultrafine-codex-updater-patch.md) — Hirbod公开Codex辅助的单构建补丁与验证说明，报告UltraFine更新从20%崩溃到100%及CRC通过；仅一套设备。 **[其他 AI 逆向]**
+- [极米 Z7X：Codex 研究 UDP 与蓝牙开机，做 Mac 菜单栏遥控器](cases/codex-udp-mac-remote-report.md) — AI FOMO报告极米Z7X经UDP日常遥控、iBeacon待机开机；原生前台助手据称已点亮投影，静默发送仍优化。 **[其他 AI 逆向 · 进行中]**
+- [Sony KDL-55W955：向 Claude 询问旧电视改固件，收到签名受阻回答](cases/linux-tv-claude-firmware-refusal.md) — mecetnoca想恢复旧Sony电视可用性，称Claude以Linux与Sony签名说明阻碍；没有实际固件分析或刷写。 **[其他 AI 逆向 · 待验证]**
+- [STARVIS 行车记录仪：用 DeepSeek 与 Ghidra 研究 USB 输出画面](cases/starvis-dashcam-deepseek-usb-research.md) — 作者为个人自动驾驶栈研究root行车记录仪、经USB取帧；称DeepSeek能继续Ghidra任务，未报告解锁成功。 **[其他 AI 逆向 · 进行中]**
+- [BMW iDrive CarPlay：Opus 五分钟语音控制与任意 App 的推广宣称](cases/carplay-opus-idrive-promotion.md) — 宣传帖称Opus研究BMW iDrive CarPlay后可语音操作、跳广告与装任意App；无版本、源码和验证。 **[其他 AI 逆向 · 待验证]**
+- [LG G4 65 英寸电视：Codex 修改最新固件设备的简短自述](cases/lg-g4-codex-mod-report.md) — Charles称其LG G4当天经Codex改造，未给实际修改内容和固件版本；不等于破解固件签名。 **[其他 AI 逆向 · 待验证]**
+- [涂鸦 Wi-Fi 灯：Matías 用 Claude 与 REA 做个人替代 App](cases/tuya-wifi-lamp-limardo-rea-app.md) — Matías不满Tuya App广告，称用Claude/REA做个性化控灯应用；UI尚未打磨，无协议或离线验证。 **[REA · 待验证]**
+- [BLE 咖啡秤：Codex 直接修改固件二进制的作者报告](cases/ble-coffee-scale-codex-binary-patch.md) — 作者称Codex未重新生成整个固件，而是直接给蓝牙咖啡秤打补丁；未说明功能或验证。 **[其他 AI 逆向 · 待验证]**
+- [Samsung Tizen：用 REA 做不自动播放频道的电视主页自述](cases/samsung-tizen-rea-clean-launcher.md) — 作者因Samsung电视慢，称用REA在Tizen做清爽启动器与主页，去掉免费频道自动播放；未给实现。 **[REA · 待验证]**
 - [iOS 与 Android：用 REA 研究恢复应用侧载的 idea](cases/ios-android-rea-sideloading-idea.md) — 读者请求研究两种手机系统，以恢复侧载自由；没有具体设备、限制或实现。 **[REA · 待验证]**
 - [小米路由器：本地 Qwen 经 CGI 与 SSH 刷入 OpenWrt 的自述](cases/xiaomi-router-local-qwen-openwrt-report.md) — 王小庄称本地Qwen为自家小米路由器启用SSH并刷入OpenWrt；没有型号、漏洞分析或刷机记录。 **[其他 AI 逆向 · 待验证]**
 - [养猫家庭的扫地机器人：用 REA 接入呕吐物识别的 idea](cases/robot-vacuum-rea-vomit-detection-idea.md) — 试用石头与科沃斯后，作者想研究机器人并补上呕吐物和污渍识别，尚未进行逆向。 **[REA · 待验证]**
@@ -176,7 +195,7 @@
 - [Android 触屏相框：拆机后接 Codex 研究设备](cases/android-photo-frame-codex-bringup.md) — 作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。 **[其他 AI 逆向 · 进行中]**
 - [Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防](cases/echo-show5-hermes-intercom.md) — 作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。 **[未确认使用 REA · 待验证]**
 - [Elgato X 4K 采集卡：用 REA 研究性能和低延迟](cases/elgato-4k-x-latency-research.md) — 作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。 **[REA · 进行中]**
-- [Gardena 割草机：Codex 控制电机并研究新固件](cases/gardena-mower-codex.md) — 作者称 Codex 已取得割草机电机控制，正研究 ESP32 与蓝牙链路的新固件。 **[未确认使用 REA · 进行中]**
+- [Gardena 割草机：Codex 研究固件与电机，Claude 接手后续开发](cases/gardena-mower-codex.md) — Bder Khan称Codex取得Gardena电机控制并研究固件；后续描述Codex处理解锁部署、Claude接手项目，未给完整替换验证。 **[未确认使用 REA · 进行中]**
 - [电视：用 REA 逆向并制作电脑控制工作台](cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**
 - [Canon Pro-1000：用 Claude 研究并模拟打印机固件](cases/canon-pro-1000-firmware-emulation.md) — 作者称正尝试用 Claude 逆向并模拟 Canon Pro-1000 固件；未报告完成或验证。 **[未确认使用 REA · 进行中]**
 - [TCL 空调：逆向 TCL Home 并制作 macOS 控制端](cases/tclimate-macos.md) — 第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。 **[未确认使用 REA · 待验证]**
@@ -239,6 +258,12 @@
 
 ### 应用与客户端
 
+- [Codex：用 Claude Opus 研究另一编码工具的读者 idea](cases/codex-opus-reverse-reader-idea.md) — 读者提出用Claude Opus逆向Codex，未指定CLI、桌面版、功能或实际研究结果。 **[其他 AI 逆向 · 待验证]**
+- [GNOME Calculator：LowLevelTV 用 REA 与 Claude 重建的读者转述](cases/gnome-calculator-rea-lowlevel-report.md) — Brian转述LowLevelTV约28分钟重建可用GNOME Calculator，未取得原视频测试与行为对照。 **[REA · 待验证]**
+- [Axo 与 REA：把软件行为证据变成持续关联的 wiki](cases/axo-rea-evidence-wiki-idea.md) — 作者设想用REA读取软件，再由Axo按行为存证据笔记、交叉链接与标记冲突；未给实际软件样本或wiki。 **[REA · 待验证]**
+- [Hycli：研究网站接口，为 AI Agent 做可复用 CLI 与 MCP 操作](cases/hycli-website-cli-agents.md) — Hybirdss公开将网站接口和观察证据变成带类型的CLI/MCP操作的项目；效率与安全性未独立测试。 **[其他 AI 逆向 · 相关项目]**
+- [REA 分析自身包：AST 规模、证据文件与 8 KB fork 的作者测试说法](cases/rea-self-package-ast-analysis-report.md) — 作者报告REA对自身包分析1706文件、3315012个AST节点，289秒生成234MB证据；没有取得原始记录。 **[REA · 分析测试]**
+- [Sennheiser Control：Claude 研究 Android 应用，制作 Windows 控制端的自述](cases/sennheiser-control-claude-windows-report.md) — Bogdan Mihai称让Claude反编译Sennheiser Android控制App来做Windows版；协议、设备支持与代码未核实。 **[其他 AI 逆向 · 待验证]**
 - [Topaz Wonder 3.5：GLM 辅助原生 Linux 版的使用者说法](cases/topaz-wonder35-glm-linux-report.md) — H3LIX使用者称GLM-5.3逆向Wonder 3.5后做成Linux原生版，并用于图像放大；没有移植或一致性验证。 **[其他 AI 逆向 · 待验证]**
 - [vivo Mac 办公套件：让其他 Android 手机也能使用的 AI idea](cases/vivo-mac-suite-android-interoperability-idea.md) — 作者询问AI能否逆向或伪造vivo Mac办公套件所需条件，以兼容其他安卓手机；没有实施结果。 **[其他 AI 逆向 · 待验证]**
 - [Razorpay：AI 逆向支付网关克隆的未验证转述](cases/razorpay-ai-clone-reader-report.md) — 读者称开发者已克隆Razorpay并规避网关费用；没有开发者、实现或真实结算证据。 **[未确认使用 REA · 待验证]**
@@ -276,7 +301,7 @@
 - [离线 Linux 逆向工作机：隔离 Codex 与私人文件](cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 澄清把 REA、Ghidra、JADX 放在隔离 VM，由 Linux VS Code 中的 AI 控制；离线与私人文件隔离仍未测试。 **[REA · 进行中]**
 - [六款 App 的双房间重建：299 断言与负例裁判规则自述](cases/six-app-two-room-rea-rebuild-report.md) — 作者报告两账号隔离原件与 SPEC 重建，299断言中7条未知；412测试是所述裁判规则，不是已核验通过数。 **[REA · 待验证]**
 - [Windows loader：REA 与 Codex 的不运行样本分析](cases/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano 报告用 REA、Ghidra、Codex 静态识别硬编码服务器及内存载荷加载，未作动态确认。 **[REA · 分析测试]**
-- [T3 Code：100 个 Claude 重建与开源发布的未验证宣称](cases/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl 声称用100个Claude逆向T3 Code并开源，未确认仓库、功能或构建结果。 **[其他 AI 逆向 · 待验证]**
+- [T3 Code：100 Agent 重建宣称与 REA 桥接口分析报告](cases/t3-code-hundred-claude-rebuild-report.md) — 保留100 Claude重建的未验证说法；devtoollab另报告REA恢复121个Electron桥成员但漏掉webview隔离覆盖，不能相互充当验证。 **[REA · 待验证]**
 - [1842 文件的 AI 桌面壳：本地与服务端边界的动画演示](cases/ai-desktop-shell-1842-file-demo.md) — 作者用未命名桌面AI应用动画展示拆包、变量观察与网络对照，并称模型和配额在服务端；不是具名应用的独立审计。 **[未确认使用 REA · 分析测试]**
 - [LG 电视：重做更快的 Plex 客户端](cases/lg-plxnative.md) — 研究 LG 媒体栈，开发更快的原生 Plex 客户端。 **[其他 AI 逆向]**
 - [Claude Slides：分析前端代码，重建幻灯片编辑器](cases/claude-slides.md) — 分析混淆前端，重建幻灯片编辑器。 **[REA]**

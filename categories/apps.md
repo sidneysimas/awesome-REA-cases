@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Codex：用 Claude Opus 研究另一编码工具的读者 idea](../cases/codex-opus-reverse-reader-idea.md) — 读者提出用Claude Opus逆向Codex，未指定CLI、桌面版、功能或实际研究结果。 **[其他 AI 逆向 · 待验证]**
+- [GNOME Calculator：LowLevelTV 用 REA 与 Claude 重建的读者转述](../cases/gnome-calculator-rea-lowlevel-report.md) — Brian转述LowLevelTV约28分钟重建可用GNOME Calculator，未取得原视频测试与行为对照。 **[REA · 待验证]**
+- [Axo 与 REA：把软件行为证据变成持续关联的 wiki](../cases/axo-rea-evidence-wiki-idea.md) — 作者设想用REA读取软件，再由Axo按行为存证据笔记、交叉链接与标记冲突；未给实际软件样本或wiki。 **[REA · 待验证]**
+- [Hycli：研究网站接口，为 AI Agent 做可复用 CLI 与 MCP 操作](../cases/hycli-website-cli-agents.md) — Hybirdss公开将网站接口和观察证据变成带类型的CLI/MCP操作的项目；效率与安全性未独立测试。 **[其他 AI 逆向 · 相关项目]**
+- [REA 分析自身包：AST 规模、证据文件与 8 KB fork 的作者测试说法](../cases/rea-self-package-ast-analysis-report.md) — 作者报告REA对自身包分析1706文件、3315012个AST节点，289秒生成234MB证据；没有取得原始记录。 **[REA · 分析测试]**
+- [Sennheiser Control：Claude 研究 Android 应用，制作 Windows 控制端的自述](../cases/sennheiser-control-claude-windows-report.md) — Bogdan Mihai称让Claude反编译Sennheiser Android控制App来做Windows版；协议、设备支持与代码未核实。 **[其他 AI 逆向 · 待验证]**
 - [Topaz Wonder 3.5：GLM 辅助原生 Linux 版的使用者说法](../cases/topaz-wonder35-glm-linux-report.md) — H3LIX使用者称GLM-5.3逆向Wonder 3.5后做成Linux原生版，并用于图像放大；没有移植或一致性验证。 **[其他 AI 逆向 · 待验证]**
 - [vivo Mac 办公套件：让其他 Android 手机也能使用的 AI idea](../cases/vivo-mac-suite-android-interoperability-idea.md) — 作者询问AI能否逆向或伪造vivo Mac办公套件所需条件，以兼容其他安卓手机；没有实施结果。 **[其他 AI 逆向 · 待验证]**
 - [Razorpay：AI 逆向支付网关克隆的未验证转述](../cases/razorpay-ai-clone-reader-report.md) — 读者称开发者已克隆Razorpay并规避网关费用；没有开发者、实现或真实结算证据。 **[未确认使用 REA · 待验证]**
@@ -39,7 +45,7 @@
 - [离线 Linux 逆向工作机：隔离 Codex 与私人文件](../cases/codex-rea-offline-linux-isolation.md) — Johan Slåttavik 澄清把 REA、Ghidra、JADX 放在隔离 VM，由 Linux VS Code 中的 AI 控制；离线与私人文件隔离仍未测试。 **[REA · 进行中]**
 - [六款 App 的双房间重建：299 断言与负例裁判规则自述](../cases/six-app-two-room-rea-rebuild-report.md) — 作者报告两账号隔离原件与 SPEC 重建，299断言中7条未知；412测试是所述裁判规则，不是已核验通过数。 **[REA · 待验证]**
 - [Windows loader：REA 与 Codex 的不运行样本分析](../cases/windows-loader-rea-codex-static-analysis.md) — Fedele Mantuano 报告用 REA、Ghidra、Codex 静态识别硬编码服务器及内存载荷加载，未作动态确认。 **[REA · 分析测试]**
-- [T3 Code：100 个 Claude 重建与开源发布的未验证宣称](../cases/t3-code-hundred-claude-rebuild-report.md) — @axmed_bl 声称用100个Claude逆向T3 Code并开源，未确认仓库、功能或构建结果。 **[其他 AI 逆向 · 待验证]**
+- [T3 Code：100 Agent 重建宣称与 REA 桥接口分析报告](../cases/t3-code-hundred-claude-rebuild-report.md) — 保留100 Claude重建的未验证说法；devtoollab另报告REA恢复121个Electron桥成员但漏掉webview隔离覆盖，不能相互充当验证。 **[REA · 待验证]**
 - [1842 文件的 AI 桌面壳：本地与服务端边界的动画演示](../cases/ai-desktop-shell-1842-file-demo.md) — 作者用未命名桌面AI应用动画展示拆包、变量观察与网络对照，并称模型和配额在服务端；不是具名应用的独立审计。 **[未确认使用 REA · 分析测试]**
 - [LG 电视：重做更快的 Plex 客户端](../cases/lg-plxnative.md) — 研究 LG 媒体栈，开发更快的原生 Plex 客户端。 **[其他 AI 逆向]**
 - [Claude Slides：分析前端代码，重建幻灯片编辑器](../cases/claude-slides.md) — 分析混淆前端，重建幻灯片编辑器。 **[REA]**

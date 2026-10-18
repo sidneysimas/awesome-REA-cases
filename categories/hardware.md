@@ -2,6 +2,15 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [LG UltraFine：Codex 修补 Screen Manager 更新器的内存错误](../cases/lg-ultrafine-codex-updater-patch.md) — Hirbod公开Codex辅助的单构建补丁与验证说明，报告UltraFine更新从20%崩溃到100%及CRC通过；仅一套设备。 **[其他 AI 逆向]**
+- [极米 Z7X：Codex 研究 UDP 与蓝牙开机，做 Mac 菜单栏遥控器](../cases/codex-udp-mac-remote-report.md) — AI FOMO报告极米Z7X经UDP日常遥控、iBeacon待机开机；原生前台助手据称已点亮投影，静默发送仍优化。 **[其他 AI 逆向 · 进行中]**
+- [Sony KDL-55W955：向 Claude 询问旧电视改固件，收到签名受阻回答](../cases/linux-tv-claude-firmware-refusal.md) — mecetnoca想恢复旧Sony电视可用性，称Claude以Linux与Sony签名说明阻碍；没有实际固件分析或刷写。 **[其他 AI 逆向 · 待验证]**
+- [STARVIS 行车记录仪：用 DeepSeek 与 Ghidra 研究 USB 输出画面](../cases/starvis-dashcam-deepseek-usb-research.md) — 作者为个人自动驾驶栈研究root行车记录仪、经USB取帧；称DeepSeek能继续Ghidra任务，未报告解锁成功。 **[其他 AI 逆向 · 进行中]**
+- [BMW iDrive CarPlay：Opus 五分钟语音控制与任意 App 的推广宣称](../cases/carplay-opus-idrive-promotion.md) — 宣传帖称Opus研究BMW iDrive CarPlay后可语音操作、跳广告与装任意App；无版本、源码和验证。 **[其他 AI 逆向 · 待验证]**
+- [LG G4 65 英寸电视：Codex 修改最新固件设备的简短自述](../cases/lg-g4-codex-mod-report.md) — Charles称其LG G4当天经Codex改造，未给实际修改内容和固件版本；不等于破解固件签名。 **[其他 AI 逆向 · 待验证]**
+- [涂鸦 Wi-Fi 灯：Matías 用 Claude 与 REA 做个人替代 App](../cases/tuya-wifi-lamp-limardo-rea-app.md) — Matías不满Tuya App广告，称用Claude/REA做个性化控灯应用；UI尚未打磨，无协议或离线验证。 **[REA · 待验证]**
+- [BLE 咖啡秤：Codex 直接修改固件二进制的作者报告](../cases/ble-coffee-scale-codex-binary-patch.md) — 作者称Codex未重新生成整个固件，而是直接给蓝牙咖啡秤打补丁；未说明功能或验证。 **[其他 AI 逆向 · 待验证]**
+- [Samsung Tizen：用 REA 做不自动播放频道的电视主页自述](../cases/samsung-tizen-rea-clean-launcher.md) — 作者因Samsung电视慢，称用REA在Tizen做清爽启动器与主页，去掉免费频道自动播放；未给实现。 **[REA · 待验证]**
 - [iOS 与 Android：用 REA 研究恢复应用侧载的 idea](../cases/ios-android-rea-sideloading-idea.md) — 读者请求研究两种手机系统，以恢复侧载自由；没有具体设备、限制或实现。 **[REA · 待验证]**
 - [小米路由器：本地 Qwen 经 CGI 与 SSH 刷入 OpenWrt 的自述](../cases/xiaomi-router-local-qwen-openwrt-report.md) — 王小庄称本地Qwen为自家小米路由器启用SSH并刷入OpenWrt；没有型号、漏洞分析或刷机记录。 **[其他 AI 逆向 · 待验证]**
 - [养猫家庭的扫地机器人：用 REA 接入呕吐物识别的 idea](../cases/robot-vacuum-rea-vomit-detection-idea.md) — 试用石头与科沃斯后，作者想研究机器人并补上呕吐物和污渍识别，尚未进行逆向。 **[REA · 待验证]**
@@ -43,7 +52,7 @@
 - [Android 触屏相框：拆机后接 Codex 研究设备](../cases/android-photo-frame-codex-bringup.md) — 作者报告拆开廉价 Android 相框，参考 wesbos 项目接入 Codex 研究。 **[其他 AI 逆向 · 进行中]**
 - [Echo Show 5 Gen2：研究设备，接入 Hermes 做跨住宅对讲和安防](../cases/echo-show5-hermes-intercom.md) — 作者报告改造 Echo Show 5，与 Hermes Agent 连接实现对讲及摄像系统。 **[未确认使用 REA · 待验证]**
 - [Elgato X 4K 采集卡：用 REA 研究性能和低延迟](../cases/elgato-4k-x-latency-research.md) — 作者开始逆向研究自己的采集卡，目标是更好性能与更低延迟。 **[REA · 进行中]**
-- [Gardena 割草机：Codex 控制电机并研究新固件](../cases/gardena-mower-codex.md) — 作者称 Codex 已取得割草机电机控制，正研究 ESP32 与蓝牙链路的新固件。 **[未确认使用 REA · 进行中]**
+- [Gardena 割草机：Codex 研究固件与电机，Claude 接手后续开发](../cases/gardena-mower-codex.md) — Bder Khan称Codex取得Gardena电机控制并研究固件；后续描述Codex处理解锁部署、Claude接手项目，未给完整替换验证。 **[未确认使用 REA · 进行中]**
 - [电视：用 REA 逆向并制作电脑控制工作台](../cases/rea-tv-control-workbench.md) — 作者称用 REA 逆向电视，并列出输入切换、音量、遥控、Mac 屏幕镜像、屏幕时间及画面控制等功能。 **[REA · 待验证]**
 - [Canon Pro-1000：用 Claude 研究并模拟打印机固件](../cases/canon-pro-1000-firmware-emulation.md) — 作者称正尝试用 Claude 逆向并模拟 Canon Pro-1000 固件；未报告完成或验证。 **[未确认使用 REA · 进行中]**
 - [TCL 空调：逆向 TCL Home 并制作 macOS 控制端](../cases/tclimate-macos.md) — 第三方称开发者用 REA 分析 TCL Home，并制作原生 Mac 菜单栏控制应用。 **[未确认使用 REA · 待验证]**

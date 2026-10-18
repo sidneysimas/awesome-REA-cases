@@ -2,6 +2,16 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](../cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
+- [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](../cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
+- [Block Blaster：读者称 AI 逆向发现随机机制服务广告收益](../cases/block-blaster-ai-randomness-reader-report.md) — 读者指控Block Blaster用长局后终结的机制提高广告收益，未给原始代码与分析，不能据此认定欺诈。 **[未确认使用 REA · 待验证]**
+- [越狱 PS5 运行 PS2 原盘：AI 辅助模拟器工作的读者转述](../cases/ps5-ps2-disc-ai-emulation-reader-report.md) — 作者把PS5上的PS2原盘运行与实验性PS3模拟归于AI辅助和开源研究；未具名实现或验证。 **[其他 AI 逆向 · 待验证]**
+- [Age of Mythology 到 Mac：读者建议用 REA 与 Claude 研究移植](../cases/age-mythology-mac-rea-reader-idea.md) — Toledo回复Mac游玩Age of Mythology不佳的用户，建议REA/Claude克隆；他自己的未具名童年游戏项目未确认是此游戏。 **[REA · 待验证]**
+- [Super Mario 64：保留运动规则、换地狱场景的 REA/Opus 宣传](../cases/mario64-hell-opus-rea-promotion.md) — 作者称一晚提取Mario64速度、重力和跳跃参数，移入现代引擎地狱场景；没有参数与对照证据。 **[REA · 待验证]**
+- [Mega Man X7：分析原游戏图形与物理，再转换到 Unity 的自述](../cases/megaman-x7-unity-ai-reverse-report.md) — 作者澄清并非一句话让AI克隆Mega Man X7，而是结合二进制工具研究实际逻辑、逐步移到Unity。 **[未确认使用 REA · 进行中]**
+- [CS2 × Minecraft：把 Dust2、弓与心形血条混合的 REA 宣传自述](../cases/cs2-minecraft-rea-crossover-promotion.md) — 推广帖称REA/Opus把CS2与Minecraft规则写入规格并混合运行；49构建、16规则及性能数字没有验证。 **[REA · 待验证]**
+- [Brilliant Diamond：Claude 研究音频库，把 Windows 重建版移到 SteamOS 的自述](../cases/brilliant-diamond-claude-linux-steamos.md) — 作者称Claude把Brilliant Diamond的Windows反编译项目移到Linux并制作Flatpak，SteamOS上报告1080p/120fps。 **[其他 AI 逆向 · 待验证]**
+- [Civilization VI：先反编译 AI 部分，再尝试改善策略对手](../cases/civ6-claude-ai-logic-improvement.md) — 作者称Claude在ultracode花一周反编译翻译Civ6 AI部分，下一步看能否改善；未报告策略提升。 **[其他 AI 逆向 · 进行中]**
 - [Etherlords：REA 辅助重做战斗画面，地图仍待实现](../cases/etherlords-rea-battle-remake.md) — Eric Costa称旧尝试效果不好，改用REA后战斗画面更忠实，但仍有bug；下一步是地图。 **[REA · 进行中]**
 - [Library of Ruina：在反编译成果上用 Claude 改 Boss、UI 与组牌](../cases/library-ruina-claude-gameplay-report.md) — 作者称利用Library of Ruina反编译成果与Claude制作新体验；具体代码、玩法与产物未验证。 **[其他 AI 逆向 · 待验证]**
 - [UE 到 Fortnite：AI 反编译与服务端推断的读者设想](../cases/unreal-fortnite-ai-reverse-idea.md) — 回复者称有人研究UE反编译，并设想随后研究Fortnite；从客户端推断服务端仍只是猜想。 **[其他 AI 逆向 · 待验证]**
