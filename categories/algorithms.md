@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [神经反编译研究：从专用模型到变量与类型恢复](../cases/neural-decompilation-research-survey.md) — 日语综述串起 LLM4Decompile、DIRTY 与黑盒合成；补查2024年论文确认模型目标，不采纳闭源保护已经失效的结论。 **[其他 AI 逆向 · 相关项目]**
+- [Claude Bun 单文件：REA 提取证据后让 Gemini 重写 gzip 判定](../cases/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ 报告拆包后重写一个 gzip 判定函数，69,121组自测通过；这不是直接反编译整个 Native 客户端。 **[REA · 分析测试]**
+- [SoftProtect：100 行对抗样本使 REA 停止分析的自测](../cases/softprotect-ai-adversarial-rea-test.md) — TokenRebate 称新增 AI 样本对抗后，REA 分析半小时放弃；未公开样本或完整记录，不证明通用防逆向。 **[REA · 分析测试]**
 - [二进制库：先分析原实现，再写替代代码](../cases/binary-library-rewrite.md) — 分析二进制库并重写；库名和评测细节未公开。 **[REA]**
 - [DownUnderCTF：从校验程序中找出正确输入](../cases/masked-squares-ctf.md) — 恢复校验约束，用 Z3 求出被原程序接受的输入。 **[REA]**
 - [Aegis：还原验证器 App 的一次性验证码计算](../cases/aegis-totp.md) — 从验证器 APK 提取验证码逻辑并做多实现对照。 **[REA]**

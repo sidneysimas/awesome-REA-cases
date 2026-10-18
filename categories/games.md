@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [PD Saga：反编译后用自有资产重做的 Claude idea](../cases/pd-saga-claude-remake-idea.md) — 读者建议将 PD Saga 交给 Claude 反编译，再用自选引擎和自有资产重做；没有实施报告。 **[其他 AI 逆向 · 待验证]**
+- [Skyrim：Codex 调整瑟拉娜召唤外观并排查 Mod 故障](../cases/skyrim-codex-serana-mod-report.md) — 作者报告 Codex 修正召唤人物外观、吸血鬼形态、黑脸及随从噪声；引擎现代化逆向只是后续设想。 **[其他 AI 逆向 · 待验证]**
+- [Slay The Spire：在反编译成果上用 Claude 改玩法的报告](../cases/slay-spire-claude-gameplay-report.md) — maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。 **[其他 AI 逆向 · 待验证]**
+- [New Vegas：希望 AI 逆向带来可 Mod 的重制版](../cases/new-vegas-ai-moddable-remaster-idea.md) — 读者希望 AI 逆向带来可修改的 New Vegas 重制版，而非更多云游戏；没有项目或成果。 **[其他 AI 逆向 · 待验证]**
+- [Battlefield／Frostbite：让玩家获得开放实现的 AI 逆向设想](../cases/battlefield-frostbite-ai-open-idea.md) — 读者猜想有人可能正在用 AI 逆向 Battlefield 或 Frostbite，以做玩家想要的游戏；没有项目证据。 **[其他 AI 逆向 · 待验证]**
+- [GTA 6：拿到可执行文件后三个月逆向一半的预测](../cases/gta6-ai-decompile-prediction.md) — 读者押注 AI Agent 三个月逆向 GTA 6 的50%；获取主机二进制本身仍被其视为瓶颈。 **[其他 AI 逆向 · 待验证]**
 - [Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea](../cases/swg-precu-ai-emulator-idea.md) — 读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Animal Jam / Burrow：Claude 反编译的未确认转述](../cases/animal-jam-burrow-claude-report.md) — 读者猜测 Burrow 用 Claude 研究 Animal Jam 并用于客户端，但明确说无法向项目确认。 **[其他 AI 逆向 · 待验证]**
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](../cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**

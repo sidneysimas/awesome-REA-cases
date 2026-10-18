@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **423 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **439 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（92）
-- [硬件与设备互通](categories/hardware.md)（91）
-- [应用与客户端](categories/apps.md)（200）
-- [算法与功能重建](categories/algorithms.md)（40）
+- [游戏与游戏保存](categories/games.md)（98）
+- [硬件与设备互通](categories/hardware.md)（93）
+- [应用与客户端](categories/apps.md)（205）
+- [算法与功能重建](categories/algorithms.md)（43）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,12 @@
 
 ### 游戏与游戏保存
 
+- [PD Saga：反编译后用自有资产重做的 Claude idea](cases/pd-saga-claude-remake-idea.md) — 读者建议将 PD Saga 交给 Claude 反编译，再用自选引擎和自有资产重做；没有实施报告。 **[其他 AI 逆向 · 待验证]**
+- [Skyrim：Codex 调整瑟拉娜召唤外观并排查 Mod 故障](cases/skyrim-codex-serana-mod-report.md) — 作者报告 Codex 修正召唤人物外观、吸血鬼形态、黑脸及随从噪声；引擎现代化逆向只是后续设想。 **[其他 AI 逆向 · 待验证]**
+- [Slay The Spire：在反编译成果上用 Claude 改玩法的报告](cases/slay-spire-claude-gameplay-report.md) — maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。 **[其他 AI 逆向 · 待验证]**
+- [New Vegas：希望 AI 逆向带来可 Mod 的重制版](cases/new-vegas-ai-moddable-remaster-idea.md) — 读者希望 AI 逆向带来可修改的 New Vegas 重制版，而非更多云游戏；没有项目或成果。 **[其他 AI 逆向 · 待验证]**
+- [Battlefield／Frostbite：让玩家获得开放实现的 AI 逆向设想](cases/battlefield-frostbite-ai-open-idea.md) — 读者猜想有人可能正在用 AI 逆向 Battlefield 或 Frostbite，以做玩家想要的游戏；没有项目证据。 **[其他 AI 逆向 · 待验证]**
+- [GTA 6：拿到可执行文件后三个月逆向一半的预测](cases/gta6-ai-decompile-prediction.md) — 读者押注 AI Agent 三个月逆向 GTA 6 的50%；获取主机二进制本身仍被其视为瓶颈。 **[其他 AI 逆向 · 待验证]**
 - [Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea](cases/swg-precu-ai-emulator-idea.md) — 读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Animal Jam / Burrow：Claude 反编译的未确认转述](cases/animal-jam-burrow-claude-report.md) — 读者猜测 Burrow 用 Claude 研究 Animal Jam 并用于客户端，但明确说无法向项目确认。 **[其他 AI 逆向 · 待验证]**
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
@@ -121,6 +127,8 @@
 
 ### 硬件与设备互通
 
+- [旧款小屏 iPhone：用 AI 研究 iOS 延长使用寿命的 idea](cases/old-iphone-ios-ai-revival-idea.md) — 读者希望反编译并重写 iOS，让十年前的小屏 iPhone 继续工作；不是 iOS 到 Android 的移植成果。 **[其他 AI 逆向 · 待验证]**
+- [GR Viewer：用相机固件模拟器解除手动调试瓶颈](cases/gr-viewer-firmware-simulator-report.md) — Xiao 报告研究 GR 固件制作 simulator，让 AI 测试 GR Viewer，并于前一天重新提交新版本；覆盖未验证。 **[未确认使用 REA · 待验证]**
 - [LG OLED 暂停广告：让 Codex 改固件的 idea](cases/lg-oled-codex-ad-removal-idea.md) — 作者称封锁广告服务器会让电视 App 失效，因此考虑 Codex 修改固件；尚未报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Apple TV 遥控器：让专用配件在 Linux 上工作](cases/siri-remote-linux.md) — 解析蓝牙协议，让 Apple TV 遥控器接入 Linux。 **[未确认使用 REA]**
 - [涂鸦 RGB 灯：绕开厂商 App，直接从 Mac 控灯](cases/tuya-rgb-mac.md) — 分析手机蓝牙控灯数据，用 Mac 脚本直接控灯。 **[其他 AI 逆向]**
@@ -184,7 +192,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视固件：AI 去广告 idea 与两种实施自述](cases/tv-firmware-ai-ad-removal-idea.md) — 同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究和清理自述](cases/tv-firmware-ai-ad-removal-idea.md) — 电视固件去广告设想加入 Claude 清理父母电视的自述；不同作者的修改、搁置与网络阻断不等于隐私验收。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
@@ -215,6 +223,11 @@
 
 ### 应用与客户端
 
+- [三星手机 App 独立桌面窗口：读者提出 AI 逆向 idea](cases/samsung-phone-desktop-windows-ai-idea.md) — 读者看到 vivo 手机 App 在电脑独立开窗，询问三星能否用 AI 逆向做到；未报告实施。 **[其他 AI 逆向 · 待验证]**
+- [Blender：用开源实现作答案校验 AI 逆向的 idea](cases/blender-ai-reverse-groundtruth-idea.md) — 读者提出选择 Blender 测试 AI 逆向可行性和效率，以源码作答案；未报告实际评测。 **[其他 AI 逆向 · 待验证]**
+- [REA 本身：增加文件拖放入口的重实现自述](cases/rea-drag-drop-reimplementation-report.md) — 作者称正在逆向 REA 并做文件拖放入口；每小时改进工具与一键品牌 Linux 都没有产物验证。 **[未确认使用 REA · 进行中]**
+- [Awesome Reverse Engineering：面向任务的逆向资源目录](cases/awesome-reverse-engineering-resource-directory.md) — 发布者介绍涵盖 AI 辅助、二进制差异与 MCP 的工具目录；源码审查和复现示例未在此核验。 **[未确认使用 REA · 相关项目]**
+- [360 安全卫士：REA 请求与模型反应的玩笑式自述](cases/360-security-rea-model-response-report.md) — 作者称请求 REA 研究360安全卫士，并以笑话描述不同模型反应；没有技术分析或真实封号证明。 **[REA · 待验证]**
 - [内核反作弊隐私：用 REA 调查发送给厂商的机器信息](cases/rea-kernel-anticheat-privacy-inspection.md) — Jhaddix 报告首次用 REA 检查现代反作弊的数据外发；产品、字段和分析记录没有公开。 **[REA · 分析测试]**
 - [REDOC：声称把 Agent 逆向与能力重建带到链上](cases/redoc-onchain-agent-reverse-platform.md) — Bricar_dev 宣布文件／链接输入的开源逆向平台；链上机制、源码和实际分析能力均未核验。 **[未确认使用 REA · 相关项目]**
 - [231 函数的逆向工作室：REA 与 Opus 多工具流程演示](cases/rea-opus-231-function-studio-demo.md) — Capslock404 宣称 Opus 经 REA 调度 Ghidra、Frida、x64dbg 和 mitmproxy；231 函数与 oracle 结果无原始记录。 **[REA · 待验证]**
@@ -418,6 +431,9 @@
 
 ### 算法与功能重建
 
+- [神经反编译研究：从专用模型到变量与类型恢复](cases/neural-decompilation-research-survey.md) — 日语综述串起 LLM4Decompile、DIRTY 与黑盒合成；补查2024年论文确认模型目标，不采纳闭源保护已经失效的结论。 **[其他 AI 逆向 · 相关项目]**
+- [Claude Bun 单文件：REA 提取证据后让 Gemini 重写 gzip 判定](cases/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ 报告拆包后重写一个 gzip 判定函数，69,121组自测通过；这不是直接反编译整个 Native 客户端。 **[REA · 分析测试]**
+- [SoftProtect：100 行对抗样本使 REA 停止分析的自测](cases/softprotect-ai-adversarial-rea-test.md) — TokenRebate 称新增 AI 样本对抗后，REA 分析半小时放弃；未公开样本或完整记录，不证明通用防逆向。 **[REA · 分析测试]**
 - [二进制库：先分析原实现，再写替代代码](cases/binary-library-rewrite.md) — 分析二进制库并重写；库名和评测细节未公开。 **[REA]**
 - [DownUnderCTF：从校验程序中找出正确输入](cases/masked-squares-ctf.md) — 恢复校验约束，用 Z3 求出被原程序接受的输入。 **[REA]**
 - [Aegis：还原验证器 App 的一次性验证码计算](cases/aegis-totp.md) — 从验证器 APK 提取验证码逻辑并做多实现对照。 **[REA]**

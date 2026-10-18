@@ -6,9 +6,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 423 cases & projects
+# 439 cases & projects
 
-**Latest case update / maintenance:** October 18, 2026, 12:08 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 18, 2026, 16:15 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -29,9 +29,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 5. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 6. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
 7. **[Gears of War 3](cases/en/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI-assisted Linux graphics work through **mechanical PowerPC-to-C++ translation, not recovered original source**. The reported 4K WIP still drops frames in combat. `In progress`
-8. **[ArkWeb: Spider-Man in Gotham](cases/en/arkweb-spiderman-arkham-report.md)** · `2026-10-03` — Run two owned games together, stream collision and composite the character. Public code and Claude setup guidance; **experimental, version-bound, REA use unconfirmed**. `In progress`
+8. **[GR Viewer: test without the camera](cases/en/gr-viewer-firmware-simulator-report.md)** · `2026-10-18` — Xiao reports investigating GR firmware with Ghidra to build a simulator for AI-driven app testing. **No simulator code or coverage records supplied**; the source spells the other tool “RAE,” not confirmed REA. `Author report`
 9. **[Sonic 3D Blast: recreate the compiler first](cases/en/sonic-3d-blast-saturn-opus-port.md)** · `2026-10-16` — **A native port from decompiled code, not static recompilation**, according to the author. Visual defects remain; November 20 is a release plan. `In progress`
-10. **[ReaCut](cases/en/reacut-jianying-open-editor.md)** · `2026-10-16` — An independent editor with project-reported exports and plugin tests. **Licensed assets and AI APIs remain bottlenecks**; signing and platform limits remain. `In progress`
+10. **[A gzip predicate inside Claude's Bun build](cases/en/claude-bun-gzip-gemini-rea-test.md)** · `2026-10-18` — After unpacking, REA supplies evidence for a Gemini rewrite; the author reports **69,121 passing tests**. One function, no public test harness here—not whole-client decompilation or independent reproduction. `Self-test`
 
 ## Classic cases
 
@@ -46,10 +46,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **92** |
-| [Hardware & interoperability](categories/en/hardware.md) | **91** |
-| [Applications & clients](categories/en/apps.md) | **200** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **40** |
+| [Games & preservation](categories/en/games.md) | **98** |
+| [Hardware & interoperability](categories/en/hardware.md) | **93** |
+| [Applications & clients](categories/en/apps.md) | **205** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **43** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

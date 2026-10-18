@@ -1,5 +1,261 @@
 [
   {
+    "id": "old-iphone-ios-ai-revival-idea",
+    "title": "旧款小屏 iPhone：用 AI 研究 iOS 延长使用寿命的 idea",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "读者希望反编译并重写 iOS，让十年前的小屏 iPhone 继续工作；不是 iOS 到 Android 的移植成果。",
+    "description": "10月18日15:15（北京时间），读者以AI标签提出：若有人能反编译并重写iOS，旧款小巧的iPhone或可继续工作。他认为现代手机的许多事情十年前设备也能做，目标是延长原有苹果硬件的可用寿命，而不是把系统移植到Android。查过既有跨安卓硬件条目后，因硬件目标与用途不同单列。\n\n帖子没有具体机型、iOS版本、应用兼容需求、启动链、驱动、源码、模型或测试。仅是具体设备家族的复用idea，不表明作者已开始研究，也不确认任何固件可签名安装、现代服务兼容或性能结果。未确认REA、没有执行设备操作。",
+    "sources": [{"label": "旧款 iPhone 的 AI／iOS 复用设想", "url": "https://x.com/i/status/2111717865644597367"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、11浏览；十年为来源概述，无具体机型或实现。"],
+    "en": {
+      "title": "Old small iPhones: an idea to investigate iOS with AI and extend device life",
+      "summary": "A reader imagines decompiling and rewriting iOS to keep decade-old small iPhones useful, not an iOS-on-Android porting result.",
+      "description": "At 15:15 Beijing time on October 18, a reader using an AI hashtag imagines someone decompiling and rewriting iOS so old, small and handy iPhones could work again. They argue many modern-phone tasks were possible ten years ago. The purpose is extending the useful life of existing Apple hardware, not porting iOS to Android. After checking the existing cross-Android-hardware entry, this is kept separate because the hardware target and intended use differ.\n\nNo device model, iOS version, app-compatibility requirement, boot chain, drivers, source, model or tests are supplied. This is a reuse idea for a concrete device family, not evidence that the poster has started research, that any firmware can be signed and installed, or that modern services or performance are supported. REA use is unconfirmed; no device operations were performed.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 11 views; ten years is the source's overview without a particular device or implementation."],
+      "source_labels": ["AI/iOS reuse idea for older iPhones"]
+    }
+  },
+  {
+    "id": "samsung-phone-desktop-windows-ai-idea",
+    "title": "三星手机 App 独立桌面窗口：读者提出 AI 逆向 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "读者看到 vivo 手机 App 在电脑独立开窗，询问三星能否用 AI 逆向做到；未报告实施。",
+    "description": "10月18日15:38（北京时间），@oshanosoi 问三星能否做到并让AI逆向。补读父串确定所指用途：10月18日07:42的一篇帖子介绍vivo手机App在电脑上以独立窗口运行，可排列切换，不只是镜像当前手机画面。目标因此是三星手机到电脑的多窗口应用互通，而非泛指三星电视或硬件。既有Samsung DeX条目面向Mac客户端，此帖未指定Mac，不认定同一项目。\n\n回复中的Grok声称Phone Link已有官方支持、最多五窗口；这是模型回复，此处没有查官方文档，不当作已核验的替代方案或逆向结果。读者没有提供型号、系统版本、协议、工具、代码或实际研究，不能声称AI实现了互通或需要绕过限制。父帖用于解释原候选的功能，不新增为另一候选；REA参与未确认。",
+    "sources": [{"label": "oshanosoi 的三星 AI 逆向提问", "url": "https://x.com/i/status/2111723525375770709"}, {"label": "补充父帖：vivo 手机 App 在电脑独立开窗的背景", "url": "https://x.com/i/status/2111603686116143209"}, {"label": "补充同串：Grok 的 Phone Link 既有支持说法，未核验", "url": "https://x.com/i/status/2111723693265076532"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、2浏览；补读父串只确认需求，非实现测试。", "父帖发布于07:42，早于12:00窗口起点；五窗口为模型回复的未核验说法。"],
+    "en": {
+      "title": "Samsung phone apps in separate desktop windows: a reader's AI-reversing idea",
+      "summary": "After seeing vivo apps run in independent PC windows, a reader asks whether AI reverse engineering could do it for Samsung; no implementation is reported.",
+      "description": "At 15:38 Beijing time on October 18, @oshanosoi asks whether Samsung could do the same and suggests AI reverse engineering. Reading the parent conversation identifies the intended use: an October 18 post at 07:42 describes vivo phone apps running in independent desktop windows that can be arranged and switched, rather than mirroring only the current phone screen. The target is therefore multi-window Samsung-phone-to-computer interoperability, not Samsung TVs or generic hardware. The existing Samsung DeX entry targets a Mac client; this post does not specify Mac and is not identified as the same project.\n\nA Grok reply claims Phone Link already officially supports up to five windows. That is a model response; official documentation was not checked here, so it is not treated as a verified alternative or reversing result. The reader supplies no device, OS version, protocol, tool, code or actual investigation. No AI implementation or need to bypass restrictions is established. The parent is supplementary context for the original candidate, not an additional candidate. REA involvement is unconfirmed.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 2 views; parent-thread reading identifies the requirement, not an implementation test.", "The parent was published at 07:42, before the 12:00 window start; five windows is an unverified model-response claim."],
+      "source_labels": ["oshanosoi's Samsung AI-reversing question", "Supplementary parent: vivo phone apps in independent PC windows", "Supplementary thread: Grok's unverified existing Phone Link support claim"]
+    }
+  },
+  {
+    "id": "pd-saga-claude-remake-idea",
+    "title": "PD Saga：反编译后用自有资产重做的 Claude idea",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "读者建议将 PD Saga 交给 Claude 反编译，再用自选引擎和自有资产重做；没有实施报告。",
+    "description": "10月18日12:16（北京时间），一位回复者建议不懂编程的读者将 PD Saga 的 ISO 交给 Claude Opus，或其所称的 Claude Fable，要求先反编译，再在自选引擎中用自己的资产重做。具体目标是既有游戏的逻辑研究与新引擎重建，而非单纯生成游戏。原帖只写 PD Saga，此处保留该名称，不擅自展开游戏全名。\n\n这是建议，不是作者已取得镜像、运行模型或构建成功的报告。没有版本、函数、机制、模型记录、仓库或测试；模型名称亦只是帖中称呼，不能据此确认服务可用。帖子建议从归档站取得镜像并不证明有下载或改编授权；本合集不提供镜像、不执行游戏，也不确认 REA 参与。",
+    "sources": [{"label": "PD Saga 的 Claude 重做建议", "url": "https://x.com/i/status/2111672798343217469"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、10浏览；仅 idea，无构建或授权证明。"],
+    "en": {
+      "title": "PD Saga: a Claude idea to decompile and remake with one's own assets",
+      "summary": "A reader proposes Claude decompilation followed by a remake in a chosen engine using original assets of their own; no implementation is reported.",
+      "description": "At 12:16 Beijing time on October 18, a respondent suggests that a reader without programming experience give a PD Saga ISO to Claude Opus, or what they call Claude Fable, request decompilation, and then remake it in an engine of their choice using their own assets. The target is investigation of an existing game's logic and reconstruction in a new engine, rather than generic game generation. The post says only PD Saga; that name is retained without guessing its expansion.\n\nThis is advice, not an account of obtaining an image, running a model or building a working game. No version, functions, mechanics, model records, repository or tests are supplied. Model names are the post's wording, not confirmation of available services. Its suggestion to obtain an image from an archive site does not establish download or adaptation rights. This collection supplies no image, ran no game and cannot confirm REA involvement.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 10 views; idea only, without a build or proof of permission."],
+      "source_labels": ["Claude remake proposal for PD Saga"]
+    }
+  },
+  {
+    "id": "neural-decompilation-research-survey",
+    "title": "神经反编译研究：从专用模型到变量与类型恢复",
+    "category": "algorithms", "rea": "other-ai", "status": "related-project",
+    "summary": "日语综述串起 LLM4Decompile、DIRTY 与黑盒合成；补查2024年论文确认模型目标，不采纳闭源保护已经失效的结论。",
+    "description": "10月18日12:40（北京时间），一篇日语综述用闭源软件保护为背景，介绍从机器指令恢复可读程序、推断丢失的名称与类型，以及从输入输出合成替代程序的研究。它列出2019年的 Towards Neural Decompilation 与 Coda、2024年的 LLM4Decompile、2022年的 DIRTY，以及2021年的 IReEn。具体研究用途分别是学习反编译、改善反编译结果的可读性、以及在黑盒观察下恢复功能，而非作者自己重建了一款商业应用。\n\n补查 ACL Anthology 的 LLM4Decompile 原论文页面：论文发表于2024年11月，作者为 Hanzhuo Tan、Qi Luo、Jing Li 与 Yuqun Zhang，提供1.3B至33B模型；End路线直接反编译，Ref路线细化 Ghidra 输出。摘要报告在 HumanEval 和 ExeBench 上的可再执行率相对 GPT-4o 与 Ghidra 提升超过100%，Ref相对End再提升16.2%。这些是论文作者的基准主张，不是100%绝对成功率，更不代表整款闭源软件被恢复；未独立运行评测。原论文是窗口之外的历史补充材料，不能冒充本轮新成果。\n\n综述另转述 DIRTY 的变量名66.4%、类型75.8%，及 IReEn 在 Karel 上约78%的结果；这里未逐篇核查这些数字。其关于编译近乎可逆、难读化防御消失、解析成本近零的泛化不由上述基准证明，不予采纳。没有确认 REA 参与，也没有证据说明当前通用模型能无损找回原始注释或设计意图。",
+    "sources": [{"label": "10月18日神经反编译日语综述", "url": "https://x.com/i/status/2111678828599021657"}, {"label": "历史补充：LLM4Decompile，EMNLP 2024论文摘要与元数据", "url": "https://aclanthology.org/2024.emnlp-main.203/"}],
+    "snapshot_date": "2026-10-18", "metadata": ["2026-10-18综述候选快照7赞、746浏览；2024年论文为追溯补充，不是新窗口实验。", "DIRTY和IReEn数值仅综述转述；LLM4Decompile只核对论文摘要，未重跑。"],
+    "en": {
+      "title": "Neural decompilation research: specialized models, variable names and types",
+      "summary": "A Japanese survey connects LLM4Decompile, DIRTY and black-box synthesis; a 2024 primary paper clarifies the target, not an end to closed-source protection.",
+      "description": "At 12:40 Beijing time on October 18, a Japanese survey frames research in terms of closed-source protection and describes recovering readable programs from instructions, inferring missing names and types, and synthesizing substitutes from input/output observations. It cites Towards Neural Decompilation and Coda from 2019, LLM4Decompile from 2024, DIRTY from 2022 and IReEn from 2021. Their concrete purposes are learned decompilation, more readable decompiler output and functional reconstruction from black-box observations, not a commercial application rebuilt by the poster.\n\nSupplementary reading of the primary LLM4Decompile page on ACL Anthology confirms a November 2024 paper by Hanzhuo Tan, Qi Luo, Jing Li and Yuqun Zhang, with 1.3B–33B models. End directly decompiles, while Ref refines Ghidra output. Its abstract reports over 100% relative improvement in re-executability over GPT-4o and Ghidra on HumanEval and ExeBench, and a further 16.2% improvement for Ref over End. These are the paper authors' benchmark claims, not a 100% absolute success rate or recovery of an entire closed application. No evaluation was independently run here. The paper is historical supplementary evidence outside the candidate window, not a new result from this run.\n\nThe survey also quotes DIRTY name/type recovery at 66.4%/75.8% and about 78% for IReEn on Karel; those figures were not checked against each original paper. The benchmarks do not establish its generalizations about nearly reversible compilation, ineffective obfuscation or near-zero analysis cost, which are not adopted. REA involvement is unconfirmed, and nothing here establishes lossless recovery of original comments or design intent by current general-purpose models.",
+      "metadata": ["October 18, 2026 survey candidate snapshot: 7 likes, 746 views; the 2024 paper is traced background, not an in-window experiment.", "DIRTY and IReEn numbers are survey quotations only; for LLM4Decompile only the primary abstract was checked, without rerunning tests."],
+      "source_labels": ["October 18 Japanese neural-decompilation survey", "Historical supplement: LLM4Decompile EMNLP 2024 abstract and metadata"]
+    }
+  },
+  {
+    "id": "claude-bun-gzip-gemini-rea-test",
+    "title": "Claude Bun 单文件：REA 提取证据后让 Gemini 重写 gzip 判定",
+    "category": "algorithms", "rea": "REA", "status": "analysis-test",
+    "summary": "jiangkoumo_ 报告拆包后重写一个 gzip 判定函数，69,121组自测通过；这不是直接反编译整个 Native 客户端。",
+    "description": "10月18日13:15（北京时间），@jiangkoumo_ 报告研究 Claude 的 Mach-O 单文件程序。目的是检验 REA 在本机没有 Hopper、Ghidra 或 IDA 时能做什么，而不是验证能自动重建整款客户端。作者只跑通 inspect-macho，看到 Load Command 与175MB的 __BUN 容器段；直接交给 JS 分析器返回 unsupported_target。他把这三种底层工具统称商业底座，但此处不采纳这一称呼：并不是三者都属商业软件。\n\n作者说用 unbuned 拆出代码，再将带 gzip 判定逻辑的13KB模块交给 REA，得到2,388个AST节点与51项findings。2,451文件目录的完整Evidence由tokenx估算为1,143万tokens，使用 --filter-output 只提关键结构后为395tokens；两者输出范围不同，不是无损压缩率。随后把AST与115行JS片段交给 Gemini 3.8 Flash，一轮9,352tokens、约0.0017美元，重写判定函数；作者报告针对原逻辑构造的69,121组用例全过，并杀死边界变异用例。\n\n补取原帖确认作者与正文，未取得完整样本、测试生成器、模型记录或账单，所有计数、费用和通过结果均为作者自测自述。模型名称按原帖记录，未核验服务型号；测试只覆盖这个函数和作者的用例，不证明整个程序等价、无广告或原始源码恢复。候选中的 Perplexity 额度宣传不是本实验成本证明。本合集未下载目标、运行代码或独立复现。",
+    "sources": [{"label": "jiangkoumo_ 的 Mach-O／Bun／gzip 实测自述", "url": "https://x.com/i/status/2111687633755910612"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照6赞、514浏览；补取原帖确认身份，不等于复现。", "69,121组用例、9,352tokens与约0.0017美元均为作者报告；395tokens仅为过滤后的关键结构。"],
+    "en": {
+      "title": "Claude's Bun single-file build: REA evidence for a Gemini gzip-predicate rewrite",
+      "summary": "jiangkoumo_ reports 69,121 passing self-tests for a gzip predicate rewritten after unpacking, not direct decompilation of an entire native client.",
+      "description": "At 13:15 Beijing time on October 18, @jiangkoumo_ reports investigating Claude's single-file Mach-O program to test what REA can do without Hopper, Ghidra or IDA installed, not to establish automatic reconstruction of the whole client. Only inspect-macho worked, exposing Load Commands and a 175MB __BUN container segment; giving the file directly to the JS analyzer returned unsupported_target. The author calls all three backends commercial, terminology not adopted here because not all three are commercial software.\n\nThe author says unbuned extracted the code, after which REA analyzed a 13KB module containing a gzip predicate, producing 2,388 AST nodes and 51 findings. tokenx estimated full Evidence for the 2,451-file directory at 11.43 million tokens; --filter-output reduced the selected key structures to 395 tokens. The scopes differ, so this is not lossless compression. AST evidence and 115 lines of JS were then given to Gemini 3.8 Flash, reportedly rewriting the predicate in one round using 9,352 tokens for about USD 0.0017. The author reports all 69,121 tests constructed against the original logic passed and boundary mutants were killed.\n\nRetrieving the original post confirmed identity and text, not the full fixture, test generator, model trace or bill. Counts, cost and passing results remain the author's self-test claims. The model name is retained as reported, not verified as a service offering. Tests cover only this function and these inputs, not whole-program equivalence, ad removal or recovery of original source. Perplexity credit promotion in the candidate is not evidence of this experiment's cost. No target was downloaded or code run, and no independent reproduction was performed.",
+      "metadata": ["October 18 candidate snapshot: 6 likes, 514 views; retrieving the original confirms attribution, not reproduction.", "69,121 tests, 9,352 tokens and about USD 0.0017 are author reports; 395 tokens covers only filtered key structures."],
+      "source_labels": ["jiangkoumo_'s Mach-O/Bun/gzip experiment account"]
+    }
+  },
+  {
+    "id": "skyrim-codex-serana-mod-report",
+    "title": "Skyrim：Codex 调整瑟拉娜召唤外观并排查 Mod 故障",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "作者报告 Codex 修正召唤人物外观、吸血鬼形态、黑脸及随从噪声；引擎现代化逆向只是后续设想。",
+    "description": "10月18日13:16（北京时间），作者说重新安装《上古卷轴5》后，让 Codex 修改已有 Mod：某召唤法术使用原版瑟拉娜外观，他希望改为已装美化后的样子，并美化其吸血鬼大君形态。作者还报告解决黑脸，以及某随从因身形或动画异常持续发出滋滋声的问题，称 Codex 会发现并调用自己已装的工具。\n\n这是对既有游戏内容的AI辅助修改自述，没有Mod名称、工具日志、补丁或前后测试，不能确认具体是否涉及二进制逆向，也不能验证全部故障确已修好。作者最后提出若有精力，或可让 Codex 逆向优化整款老游戏为高性能现代版本；该部分只是 idea，不是已完成引擎重写或性能提升。REA参与未确认，未独立复现。",
+    "sources": [{"label": "Skyrim Mod 调整与后续逆向设想", "url": "https://x.com/i/status/2111687750714032138"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照2赞、1022浏览；Mod修复为自述，未提供补丁，性能优化未实施。"],
+    "en": {
+      "title": "Skyrim: Codex adjusts summoned Serana's appearance and investigates mod defects",
+      "summary": "The author reports appearance, vampire-form, black-face and follower-noise fixes; reverse-engineering the engine for modernization is only a later idea.",
+      "description": "At 13:16 Beijing time on October 18, the author says that after reinstalling Skyrim, Codex modified existing mods. A summoning spell used vanilla Serana, and they wanted her installed appearance overhaul instead, also altering her Vampire Lord form. They report fixing black-face problems and a follower's persistent buzzing attributed to body or animation issues, saying Codex discovered and invoked already-installed tools.\n\nThis is an account of AI-assisted modification of existing game content. No mod names, tool logs, patches or before/after tests are provided, so binary reverse engineering specifically and successful resolution of all defects cannot be confirmed. The closing proposal to reverse-engineer and optimize the old game into a high-performance modern version, if time and energy permit, is only an idea, not an engine rewrite or measured performance gain. REA involvement is unconfirmed; no independent reproduction was performed.",
+      "metadata": ["October 18 candidate snapshot: 2 likes, 1,022 views; reported mod fixes lack patches, and performance optimization is not implemented."],
+      "source_labels": ["Skyrim mod changes and subsequent reverse-engineering idea"]
+    }
+  },
+  {
+    "id": "slay-spire-claude-gameplay-report",
+    "title": "Slay The Spire：在反编译成果上用 Claude 改玩法的报告",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。",
+    "description": "10月18日13:16（北京时间），@lol2fast_（maya）称使用最近出现的 Slay The Spire 反编译成果，在 Claude 帮助下做了改进玩法。Slay The Spire 是以卡牌构筑推进战斗的游戏；帖子列出新Boss、新画面、新UI、新代码与新构筑，并邀请查看演示。\n\n补取原帖确认身份和文字，但没有得到反编译项目身份、改动仓库、构建或可玩测试记录。作者明确说利用既有反编译成果，不等于 Claude 完成原游戏反编译，更不证明恢复原始源码。新代码和改进均为作者主张，未独立运行，未确认REA；传播较高也不是玩法等价或版权许可的证明。",
+    "sources": [{"label": "maya 的 Slay The Spire 玩法改造自述", "url": "https://x.com/i/status/2111687863477649526"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照292赞、5058浏览、62转发；后续原帖补取为342赞、5906浏览、70转发，两者不是同一快照。"],
+    "en": {
+      "title": "Slay The Spire: reported Claude-assisted gameplay changes on top of a decompilation",
+      "summary": "Maya reports new bosses, visuals, UI and deckbuilding using an existing decompilation, not confirmed Claude involvement in the original decompilation.",
+      "description": "At 13:16 Beijing time on October 18, @lol2fast_ (maya) says a recently created Slay The Spire decompilation was used to build an improved gameplay experience with Claude's help. Slay The Spire advances combat through deckbuilding. The post lists new bosses, graphics, UI, code and deckbuilding and invites readers to view a demonstration.\n\nRetrieving the original confirmed identity and wording, but did not supply the decompilation project's identity, a modification repository, build or gameplay test records. The author explicitly uses an existing decompilation; this does not establish that Claude decompiled the original game or recovered original source. New code and improvements are author claims, not independently run here. REA use is unconfirmed, and attention does not establish behavioral equivalence or copyright permission.",
+      "metadata": ["October 18 candidate snapshot: 292 likes, 5,058 views, 62 reposts; later original-post retrieval showed 342 likes, 5,906 views, 70 reposts, a different snapshot."],
+      "source_labels": ["Maya's account of Slay The Spire gameplay changes"]
+    }
+  },
+  {
+    "id": "blender-ai-reverse-groundtruth-idea",
+    "title": "Blender：用开源实现作答案校验 AI 逆向的 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "读者提出选择 Blender 测试 AI 逆向可行性和效率，以源码作答案；未报告实际评测。",
+    "description": "10月18日13:51（北京时间），一位回复者提出理由：为了测试AI逆向可行性和效率，可以故意选免费开源的 Blender，既减少法律纠纷，也有答案可以对照。Blender 是三维制作软件，这里研究目标是可与已知实现对照的逆向实验，而不是重建一款付费应用。\n\n语气是“这个理由如何”的建议，没有二进制版本、要恢复的功能、隔离源码的方法、运行或成绩。开源可用于参考不代表任何用途自动获授权，也不能保证模型未在训练中接触源码。是否使用REA、具体模型与效率均未确认；只收录对照实验idea。",
+    "sources": [{"label": "以 Blender 作为有答案的逆向测试目标的提议", "url": "https://x.com/i/status/2111696702826840355"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照1赞、14浏览；建议而非已执行的盲测。"],
+    "en": {
+      "title": "Blender: an idea to check AI reverse engineering against an open implementation",
+      "summary": "A reader proposes Blender as an AI feasibility and efficiency test with source as ground truth; no evaluation is reported.",
+      "description": "At 13:51 Beijing time on October 18, a respondent proposes deliberately choosing free, open-source Blender to test AI reverse-engineering feasibility and efficiency, both to reduce legal disputes and to have an answer to compare against. Blender is 3D creation software; the target here is a reverse-engineering experiment with a known implementation, not rebuilding a paid app.\n\nThe wording asks whether this is a good rationale. No binary version, feature to recover, source-isolation procedure, run or score is supplied. Open source as reference does not automatically authorize every use, or guarantee a model did not encounter the source in training. REA use, model and efficiency remain unconfirmed. This records a controlled-experiment idea only.",
+      "metadata": ["October 18 candidate snapshot: 1 like, 14 views; a proposal rather than an executed blind test."],
+      "source_labels": ["Proposal to use Blender as a reverse-engineering target with known answers"]
+    }
+  },
+  {
+    "id": "rea-drag-drop-reimplementation-report",
+    "title": "REA 本身：增加文件拖放入口的重实现自述",
+    "category": "apps", "rea": "unknown", "status": "in-progress",
+    "summary": "作者称正在逆向 REA 并做文件拖放入口；每小时改进工具与一键品牌 Linux 都没有产物验证。",
+    "description": "10月18日14:01（北京时间），作者称正在逆向 REA，并提到文件拖放选项。此处目标是逆向研究工具本身的交互与重实现，而不是用REA恢复另一款应用。作者另称有Agent每小时寻找热门但有用的工具并做更好版本，还设想让艺术家一键创建自己品牌的Linux系统，提到Hannah Montana OS可能回归。\n\n帖子没有新工具名、源码、拖放演示、运行记录或评测，不说明分析REA源码还是已编译程序，也未说明哪个模型完成研究。因此只记录进行中自述；每小时、版本更好及一键系统创建都是未经验证的主张或愿景，不当作已实现功能。未确认REA参与其自身分析，也未执行任何工具。",
+    "sources": [{"label": "逆向 REA 与文件拖放的进行中自述", "url": "https://x.com/i/status/2111699197523308872"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、16浏览；无公开产物或运行记录。"],
+    "en": {
+      "title": "REA itself: a reported reimplementation with file drag and drop",
+      "summary": "The author says REA is being reverse-engineered with a file-drop interface; hourly tool improvements and one-click branded Linux lack artifact verification.",
+      "description": "At 14:01 Beijing time on October 18, the author says they are reverse-engineering REA and mentions a drag-and-drop file option. The target is the interaction and reimplementation of the reversing tool itself, not another application recovered with REA. They also claim an agent finds trending useful tools and makes better versions every hour, and envisage artists creating branded Linux systems in one click, mentioning a possible Hannah Montana OS return.\n\nNo new tool name, source, drag-and-drop demonstration, run records or evaluation is supplied. The post does not distinguish reading REA source from investigating compiled code, or identify the model doing the investigation. This records an in-progress account only. Hourly operation, better versions and one-click OS creation remain unverified claims or aspirations, not established features. REA use in its own analysis is unconfirmed; no tools were executed here.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 16 views; no public artifact or run records."],
+      "source_labels": ["In-progress account of investigating REA and adding file drag and drop"]
+    }
+  },
+  {
+    "id": "new-vegas-ai-moddable-remaster-idea",
+    "title": "New Vegas：希望 AI 逆向带来可 Mod 的重制版",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "读者希望 AI 逆向带来可修改的 New Vegas 重制版，而非更多云游戏；没有项目或成果。",
+    "description": "10月18日14:06（北京时间），读者在讨论AI逆向可能促使AAA游戏转向串流时，提出另一个期望：能否得到可Mod的New Vegas重制版，还是只能继续现有Mod工作。目标是保留玩家可修改能力的游戏重制，不是报告某个移植已经存在。\n\n帖子没有研究版本、机制、工具、作者团队、代码或计划时间，未指定模型或REA。它是明确游戏与用途的愿望性idea，不能写成已启动项目、完成反编译或性能现代化。",
+    "sources": [{"label": "可 Mod 的 New Vegas 重制愿望", "url": "https://x.com/i/status/2111700326638399781"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照1赞、40浏览；未实施的idea。"],
+    "en": {
+      "title": "New Vegas: hoping AI reverse engineering leads to a moddable remaster",
+      "summary": "A reader wants a moddable New Vegas remaster rather than more streamed games; no project or result is reported.",
+      "description": "At 14:06 Beijing time on October 18, amid discussion that AI reverse engineering could push AAA games toward streaming, a reader asks for a different outcome: a moddable New Vegas remaster, or whether they should simply continue existing modding. The target is a remaster that preserves player modification, not a claim that a port exists.\n\nNo version, mechanics, tools, team, code or timeline is given, and neither a model nor REA is specified. This is a wishful idea with a concrete game and purpose, not an initiated project, completed decompilation or modernized performance.",
+      "metadata": ["October 18 candidate snapshot: 1 like, 40 views; an unimplemented idea."],
+      "source_labels": ["Wish for a moddable New Vegas remaster"]
+    }
+  },
+  {
+    "id": "awesome-reverse-engineering-resource-directory",
+    "title": "Awesome Reverse Engineering：面向任务的逆向资源目录",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "发布者介绍涵盖 AI 辅助、二进制差异与 MCP 的工具目录；源码审查和复现示例未在此核验。",
+    "description": "10月18日14:16（北京时间），发布者介绍 Awesome Reverse Engineering，称其为二进制分析、调试、恶意软件、固件、协议及AI辅助逆向的精选工具资源集合。具体用途是按任务导航到工具，包含二进制差异框架、MCP集成和已记录的工具限制，并声称为部分资源提供源码审查和可复现示例。\n\n此处收录的是具名资料项目，不是被逆向目标或已验证工具能力。候选仅给短链，没有在正文显示仓库所有者或示例内容；未核验目录完整性、审查质量、复现结果或REA关联。不把“可复现”当成本合集已运行，也不将目录名称与已有AI游戏目录自动视为同一个项目。",
+    "sources": [{"label": "Awesome Reverse Engineering 资源目录介绍", "url": "https://x.com/i/status/2111702833439388160"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照8赞、241浏览、4转发；目录内容与复现宣称未核验。"],
+    "en": {
+      "title": "Awesome Reverse Engineering: a task-oriented reversing resource directory",
+      "summary": "A publisher describes tools covering AI assistance, binary diffing and MCP; source reviews and reproducible examples were not verified here.",
+      "description": "At 14:16 Beijing time on October 18, a publisher introduces Awesome Reverse Engineering as a curated resource collection for binary analysis, debugging, malware, firmware, protocols and AI-assisted reversing. Its concrete purpose is task-oriented navigation to tools, including binary-diffing frameworks, MCP integrations and documented constraints. It claims source reviews and reproducible examples for selected resources.\n\nThis is a named information project, not a reversed target or verified tool capability. The candidate gives only a short link without a repository owner or example contents in the text. Directory completeness, review quality, reproduction results and REA connections were not verified. Reproducible is not evidence that this collection ran the examples, and the name does not establish identity with existing AI-game directories.",
+      "metadata": ["October 18 candidate snapshot: 8 likes, 241 views, 4 reposts; directory contents and reproducibility claims remain unverified."],
+      "source_labels": ["Introduction to the Awesome Reverse Engineering resource directory"]
+    }
+  },
+  {
+    "id": "battlefield-frostbite-ai-open-idea",
+    "title": "Battlefield／Frostbite：让玩家获得开放实现的 AI 逆向设想",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "读者猜想有人可能正在用 AI 逆向 Battlefield 或 Frostbite，以做玩家想要的游戏；没有项目证据。",
+    "description": "10月18日14:41（北京时间），一位回复者说，如果已有人投入大量AI tokens逆向Battlefield或Frostbite引擎、想使其开源来做玩家真正想要的游戏，自己不会惊讶。这明确指出游戏系列及其引擎，以及开放实现以支持玩家修改的目的。\n\n但语气完全是猜想，不是作者开始实施或认识项目开发者。没有具体游戏版本、功能、模型、REA、源码、开源许可或构建证据。这里只收录目标明确的探索idea，不声称项目存在，更不将闭源代码逆向产物自动认作可合法开源。",
+    "sources": [{"label": "Battlefield／Frostbite 开放实现的 AI 逆向设想", "url": "https://x.com/i/status/2111709151860814285"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、24浏览；猜想非项目存在证明。"],
+    "en": {
+      "title": "Battlefield / Frostbite: an AI-reversing idea for a player-oriented open implementation",
+      "summary": "A reader speculates someone may be using AI on Battlefield or Frostbite to make the game players want; no project evidence is supplied.",
+      "description": "At 14:41 Beijing time on October 18, a respondent says they would not be surprised if someone were already spending AI tokens reverse-engineering Battlefield or the Frostbite engine to make it open source and give players the game they want. This identifies a game series and its engine, with an open implementation intended to support player changes.\n\nThe wording is entirely speculative, not an account of starting work or knowing the developers. No game version, feature, model, REA involvement, source, open-source license or build evidence is provided. This records a concrete exploration idea, not proof a project exists, and does not assume a closed-source reverse-engineering output can lawfully be open-sourced.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 24 views; speculation is not evidence a project exists."],
+      "source_labels": ["AI-reversing idea for an open Battlefield/Frostbite implementation"]
+    }
+  },
+  {
+    "id": "gr-viewer-firmware-simulator-report",
+    "title": "GR Viewer：用相机固件模拟器解除手动调试瓶颈",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "Xiao 报告研究 GR 固件制作 simulator，让 AI 测试 GR Viewer，并于前一天重新提交新版本；覆盖未验证。",
+    "description": "10月18日14:48（北京时间），@im_xiaoxiao（Xiao）说，自己多年未继续GR Viewer App，是因为连接相机调试总要手动操作，太费时间。现在将GR各个固件交给帖中写作RAE的工具，配合Ghidra研究API和逻辑，做了GR simulator，希望把App开发测试交给AI。他说前一天、即10月17日，时隔数年重新提交了GR Viewer新版本。\n\n补取原帖确认作者与措辞。原文写RAE，不静默改为REA；可能相关但没有足够材料确认工具身份。作者所称所有API和逻辑是自述，没有相机型号、固件版本、模拟器源码、API清单、测试矩阵或商店提交记录，不能确认完整覆盖、真实设备兼容或新版本获审通过。这里关注模拟设备行为以减少硬件在环的手动测试，而非宣称恢复整款相机源码；未运行固件或独立复现。",
+    "sources": [{"label": "Xiao 的 GR 固件模拟与 GR Viewer 更新自述", "url": "https://x.com/i/status/2111711060101304377"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照1赞、101浏览、1转发；前一天提交新版本为作者报告，不是商店审核验证。", "RAE为来源原拼写；REA身份、所有API覆盖和设备兼容未确认。"],
+    "en": {
+      "title": "GR Viewer: a camera-firmware simulator to reduce manual debugging",
+      "summary": "Xiao reports a GR simulator for AI-driven GR Viewer testing and a new app version submitted the previous day; coverage is unverified.",
+      "description": "At 14:48 Beijing time on October 18, @im_xiaoxiao (Xiao) says GR Viewer development had stalled for years because debugging with a connected camera required too much manual operation. They now give GR firmware images to a tool spelled RAE in the post and use Ghidra to investigate APIs and logic, creating a GR simulator so AI can handle app development and testing. They say a new GR Viewer version was submitted the previous day, October 17, after years without one.\n\nRetrieving the original confirmed the author and wording. RAE is not silently corrected to REA; a connection is possible but the tool's identity is not established. All APIs and logic is the author's claim. No camera model, firmware version, simulator source, API inventory, test matrix or app-store submission record is supplied. Complete coverage, physical-device compatibility and approval of the new version are not verified. The useful target is simulated device behavior that reduces manual hardware-in-the-loop testing, not recovery of the camera's complete original source. No firmware was run and no independent reproduction performed.",
+      "metadata": ["October 18 candidate snapshot: 1 like, 101 views, 1 repost; the previous day's version submission is author-reported, not verified store approval.", "RAE preserves the source spelling; REA identity, all-API coverage and device compatibility are unconfirmed."],
+      "source_labels": ["Xiao's account of GR firmware simulation and the GR Viewer update"]
+    }
+  },
+  {
+    "id": "gta6-ai-decompile-prediction",
+    "title": "GTA 6：拿到可执行文件后三个月逆向一半的预测",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "读者押注 AI Agent 三个月逆向 GTA 6 的50%；获取主机二进制本身仍被其视为瓶颈。",
+    "description": "10月18日14:59（北京时间），发帖者押注：一旦有人导出GTA 6可执行文件，AI Agent将在三个月内逆向约50%的游戏。他同时推测光盘会要求阻止现有越狱的新PS5固件，所以取得可执行文件可能先花时间。具体目标是游戏二进制研究，但此处没有报告已取得样本或启动Agent。\n\n50%没有函数、字节、系统或玩法覆盖的定义，三个月也只是预测，不是项目工时或已测速度。主机固件行为同样是作者猜想，未核验。没有版本、模型、REA、仓库或测试；收录为具体目标的预测性idea，不当作GTA 6已被逆向、已泄露或PS5已被攻破。",
+    "sources": [{"label": "GTA 6 AI 逆向比例与时间的个人预测", "url": "https://x.com/i/status/2111713787384664436"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照22赞、498浏览；50%和三个月均为预测，非结果。"],
+    "en": {
+      "title": "GTA 6: predicting half the game reverse-engineered within three months of an executable dump",
+      "summary": "A reader bets AI agents could reverse-engineer 50% of GTA 6 in three months, while seeing access to the console binary as a bottleneck.",
+      "description": "At 14:59 Beijing time on October 18, a poster bets that once someone dumps GTA 6's executable, AI agents will reverse-engineer about 50% of the game within three months. They also speculate that the disc will require new PS5 firmware blocking current jailbreaks, so obtaining the executable may take time first. The concrete target is game-binary research, but no acquired sample or started agent is reported.\n\nThe post does not define 50% in terms of functions, bytes, systems or gameplay coverage. Three months is a prediction, not measured effort or speed. Console firmware behavior is likewise unverified speculation. No version, model, REA involvement, repository or tests are supplied. This is a target-specific predictive idea, not evidence GTA 6 has been reversed or leaked, or the PS5 compromised.",
+      "metadata": ["October 18 candidate snapshot: 22 likes, 498 views; 50% and three months are predictions, not results."],
+      "source_labels": ["Personal prediction of GTA 6 AI-reversing scope and timing"]
+    }
+  },
+  {
+    "id": "360-security-rea-model-response-report",
+    "title": "360 安全卫士：REA 请求与模型反应的玩笑式自述",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "作者称请求 REA 研究360安全卫士，并以笑话描述不同模型反应；没有技术分析或真实封号证明。",
+    "description": "10月18日15:37（北京时间），作者引述自己的请求“请使用REA逆向360安全卫士”，随后以拟人化方式说大肥鱼拿着刚充的8元冲上去，Claude拿着200美元封号离开，GPT慢吞吞给重置卡。具体目标是桌面安全软件360安全卫士，但其余内容明显采用笑话叙述，不能直接视为真实账号处置或费用记录。\n\n帖子没有版本、要调查的功能、模型原始对话、反编译结果、日志或完成产物。大肥鱼也未明确对应哪个服务，不能自行认定为某模型。只记录具名目标的REA尝试自述，不确认任何模型完成分析、Claude实际封号、GPT拒绝原因或花费8元与200美元。未独立复现。",
+    "sources": [{"label": "360安全卫士 REA 请求与拟人化模型反应", "url": "https://x.com/i/status/2111723430076956944"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照5赞、173浏览；笑话式自述，无技术结果或账号处置证明。"],
+    "en": {
+      "title": "360 Security: a joking account of an REA request and model reactions",
+      "summary": "The author names 360 Security as an REA target and jokes about different models' responses; neither analysis nor actual account bans are evidenced.",
+      "description": "At 15:37 Beijing time on October 18, the author quotes a request to use REA to reverse-engineer 360 Security, then personifies responses: a 'big fat fish' charges ahead with a newly topped-up CNY 8, Claude takes USD 200 and bans the account, and GPT slowly offers a reset card. The concrete target is the desktop security application 360 Security, but the rest is clearly joking narration, not a reliable account-action or billing record.\n\nNo version, feature to investigate, original model conversation, decompiler output, logs or completed artifact is supplied. The fish nickname does not explicitly identify a service and is not expanded into a model name here. This records a reported REA attempt on a named target, not successful analysis by any model, an actual Claude ban, GPT's refusal rationale or verified CNY 8/USD 200 expenses. No independent reproduction was performed.",
+      "metadata": ["October 18 candidate snapshot: 5 likes, 173 views; joking account without technical results or proof of account action."],
+      "source_labels": ["REA request for 360 Security and personified model reactions"]
+    }
+  },
+  {
+    "id": "softprotect-ai-adversarial-rea-test",
+    "title": "SoftProtect：100 行对抗样本使 REA 停止分析的自测",
+    "category": "algorithms", "rea": "REA", "status": "analysis-test",
+    "summary": "TokenRebate 称新增 AI 样本对抗后，REA 分析半小时放弃；未公开样本或完整记录，不证明通用防逆向。",
+    "description": "10月18日15:51（北京时间），@tokenrebate 说其SoftProtect增加了新的AI样本对抗，并写一个100行代码的demo让REA测试，报告分析半小时后放弃。他还说REA尝试根据API调用行为模拟代码，表明模型可能转向行为重建，而非只读受保护实现。\n\n补取原帖确认身份与正文，但没有样本语言、保护前后对照、具体对抗方法、模型、工具版本、完整日志或停止原因。100行与半小时均为发布者自测自述，不能区分保护有效、模型策略、预算耗尽或工具限制，更不证明所有AI与人工研究者都无法逆向。API行为模拟只是报告的尝试，不是成功恢复；未执行样本、没有独立复现。",
+    "sources": [{"label": "TokenRebate 的 SoftProtect 对抗样本自测", "url": "https://x.com/i/status/2111726774983995674"}],
+    "snapshot_date": "2026-10-18", "metadata": ["10月18日候选快照0赞、4浏览；100行和半小时均为作者报告，无公开可复现样本。"],
+    "en": {
+      "title": "SoftProtect: a self-test claiming REA stopped on a 100-line adversarial fixture",
+      "summary": "TokenRebate says an AI-adversarial update led REA to abandon analysis after half an hour; no public fixture or full logs establish general protection.",
+      "description": "At 15:51 Beijing time on October 18, @tokenrebate says SoftProtect gained new AI-sample countermeasures, tested with a 100-line demo in REA, and that analysis was abandoned after half an hour. They also say REA considered simulating code from API-call behavior, suggesting a possible move toward behavioral reconstruction rather than only reading the protected implementation.\n\nRetrieving the original confirmed identity and text, but not the fixture language, protected/unprotected comparison, countermeasure details, model, tool version, complete logs or stopping reason. The 100 lines and half hour are publisher-reported self-test figures. They cannot distinguish effective protection from model strategy, exhausted budget or tool limits, much less prove resistance to all AI or human investigators. API-behavior simulation is only a reported attempt, not successful recovery. No fixture was executed or independently reproduced.",
+      "metadata": ["October 18 candidate snapshot: 0 likes, 4 views; 100 lines and half an hour are author reports without a public reproducible fixture."],
+      "source_labels": ["TokenRebate's SoftProtect adversarial-fixture self-test"]
+    }
+  },
+  {
     "id": "swg-precu-ai-emulator-idea",
     "title": "Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea",
     "category": "games",
@@ -9077,21 +9333,21 @@
   },
   {
     "id": "tv-firmware-ai-ad-removal-idea",
-    "title": "电视固件：AI 去广告 idea 与两种实施自述",
+    "title": "电视广告与隐私：固件 idea、搁置研究和清理自述",
     "category": "hardware",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "同一电视隐私话题下，一位称 Claude 移除广告追踪，另一位称 Codex 研究后搁置；无型号或隐私验收。",
-    "description": "10月16日 @j_larrieux 回复 @DCinvestor 关于 AI 制作不窥探用户的电视固件的提问，建议反编译当前固件、移除广告、重新编译并刷回，让 AI 做充分测试。该建议是 idea，不是完成的修复。未给品牌、型号、固件、构建或签名方法，也未给广告和遥测测试；不能推定刷机安全或签名限制可跨越。\n\n同日22:16（北京时间），另一位回复者称用 Claude 深入研究自己的电视固件并关闭追踪和广告，还建议用 AdGuard 阻止外发。这是实施者自述，未提供固件补丁、前后流量对照或代码；其关于大多数电视麦克风监听一切的泛化没有证据，不予采纳。22:56，@meta_syntactic 在同一父帖下称，曾让 Codex 逆向现有固件以移除不喜欢的部分，但失去兴趣，基本停在逆向阶段。补读父帖确认电视隐私背景，但没有型号或具体要删的模块。两人不是同一项目，不把前者的完成说法套到后者；合并在既有主题下方便比较计划、声称修改和搁置三种证据阶段。所有结果均未经本合集运行或隐私验证。\n\n10月17日08:08，同串回复进一步称 Claude 研究电视固件没有遇到阻碍，只在向 AdGuard 添加条目时请求批准。这补充的是模型权限与操作边界，不证明固件真的被重刷，也不能把 AdGuard 网络阻断当作设备内部追踪已被彻底删除。",
-    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}, {"label": "Claude 研究固件并关闭广告追踪的自述", "url": "https://x.com/i/status/2111098983997186126"}, {"label": "meta_syntactic：Codex 分析后搁置，父帖确认电视背景", "url": "https://x.com/i/status/2111108975454281750"}, {"label": "补充背景：DCinvestor 当日09:14提出电视隐私固件问题", "url": "https://x.com/i/status/2110902155783885210"}, {"label": "10月17日补充：仅 AdGuard 添加操作请求批准", "url": "https://x.com/i/status/2111247870565167560"}],
-    "snapshot_date": "2026-10-17",
-    "metadata": ["10月16日原 idea 候选快照：4赞、143浏览；后续两人自述另列来源，均无刷机与隐私验收。"],
+    "summary": "电视固件去广告设想加入 Claude 清理父母电视的自述；不同作者的修改、搁置与网络阻断不等于隐私验收。",
+    "description": "10月16日，@j_larrieux 回复 @DCinvestor 关于不窥探用户的电视固件提问，建议反编译、去广告、重编译并刷回，再让AI充分测试。这是idea，无品牌、型号、固件、构建、签名、广告或遥测测试，不能推定刷机安全或能跨越签名限制。\n\n同日22:16（北京时间），另一回复者称用Claude研究电视固件并关闭广告追踪，另建议AdGuard阻止外发；无补丁、代码或前后流量记录。关于多数电视麦克风监听一切的泛化无证据，不采纳。22:56，@meta_syntactic 在同一父帖称Codex曾逆向固件以删除不喜欢的部分，但失去兴趣，基本止于逆向。补读父帖只确认电视隐私背景，未给型号或模块。两人不是同一项目，不能把一人的完成套到另一人。10月17日08:08，同串称Claude研究固件没有阻碍，只在AdGuard添加条目时请求批准；这只是权限自述，不证明重刷或设备内部追踪已移除。\n\n10月18日13:21，另一作者称只向Claude Code描述要求，就为父母电视清除了广告、诱导安装和其所称木马，背景包括机顶盒、第三方固件自动安装推广App与PCDN。这不在前述父串，未给设备型号、包名、诊断、补丁或流量对照，不能确认恶意软件鉴定、追踪彻底删除或实际修改固件；也未明示逆向技术。仅作为相同去广告目标的另一实施自述，不合并成同一项目。所有结果未经本合集运行或隐私验证，未确认REA。",
+    "sources": [{"label": "电视固件修改建议及原串", "url": "https://x.com/i/status/2110919403961192504"}, {"label": "Claude 研究固件并关闭广告追踪的自述", "url": "https://x.com/i/status/2111098983997186126"}, {"label": "meta_syntactic：Codex 分析后搁置，父帖确认电视背景", "url": "https://x.com/i/status/2111108975454281750"}, {"label": "补充背景：DCinvestor 当日09:14提出电视隐私固件问题", "url": "https://x.com/i/status/2110902155783885210"}, {"label": "10月17日补充：仅 AdGuard 添加操作请求批准", "url": "https://x.com/i/status/2111247870565167560"}, {"label": "10月18日另一作者的父母电视清理自述", "url": "https://x.com/i/status/2111688995143110726"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["10月16日原 idea 候选快照：4赞、143浏览；后续两人自述另列来源，均无刷机与隐私验收。", "10月18日清理帖候选快照22赞、4015浏览；无诊断和补丁，非独立确认木马移除。"],
     "en": {
-      "title": "TV firmware: an AI ad-removal idea and two implementation accounts",
-      "summary": "In one TV privacy conversation, a Claude user claims ad/tracking removal while a Codex user stopped after analysis; models and privacy tests are absent.",
-      "description": "On October 16, @j_larrieux replied to @DCinvestor's question about AI-made TV firmware that does not spy on its user, proposing decompiling current firmware, removing ads, recompiling and flashing it back with thorough AI-requested tests. That suggestion is an idea, not a completed repair. No brand, model, firmware, build or signing method, or ad/telemetry tests are supplied; safe flashing and overcoming signing restrictions cannot be assumed.\n\nAt 22:16 Beijing time that day, another respondent says they used Claude to investigate their TV firmware and disable tracking and advertising, also recommending AdGuard to block outbound traffic. This is the participant's own account without firmware patches, before-and-after traffic comparisons or code. Their generalization that most TV microphones listen to everything is unsupported and is not adopted here. At 22:56, @meta_syntactic replies to the same parent post that Codex had investigated existing firmware to remove unwanted parts, but they lost interest and got little beyond reverse engineering. Reading the parent confirms the TV privacy context, but not a model or modules to remove. These are different participants, not the same project; the first person's completion claim does not apply to the second. They are grouped under the existing topic to compare a proposal, claimed changes and a stalled investigation. None was run or privacy-tested by this collection.\n\nAt 08:08 on October 17, a reply in the same conversation adds that Claude had no difficulty investigating the TV firmware and requested approval only to add entries to AdGuard. This clarifies reported model permissions and action boundaries, not proof of firmware reflashing; AdGuard network blocking must not be treated as complete removal of tracking inside the device.",
-      "metadata": ["October 16 original idea's candidate snapshot: 4 likes, 143 views; two later personal accounts have separate sources, neither with flashing or privacy acceptance tests."],
-      "source_labels": ["TV firmware modification proposal and conversation", "Account of Claude firmware investigation and claimed ad/tracking removal", "meta_syntactic: Codex analysis followed by abandonment; parent confirms TV context", "Supplementary context: DCinvestor's TV privacy firmware question at 09:14 that day", "October 17 follow-up: approval requested only for AdGuard additions"]
+      "title": "TV ads and privacy: a firmware idea, stalled research and cleanup accounts",
+      "summary": "TV firmware ad-removal ideas gain a Claude cleanup account for parents' TV; different authors' changes, stalled work and network blocking are not privacy acceptance tests.",
+      "description": "On October 16, @j_larrieux replies to @DCinvestor's question about TV firmware that does not spy on users, proposing decompilation, ad removal, recompilation and reflashing with thorough AI-requested tests. This is an idea without a brand, model, firmware, build, signing method or ad/telemetry tests. Safe flashing or overcoming signing restrictions cannot be assumed.\n\nAt 22:16 Beijing time that day, another respondent says Claude investigated their TV firmware and disabled ads and tracking, also recommending AdGuard to block outbound traffic. No patches, code or before/after traffic records are supplied. Their generalization that most TV microphones listen to everything is unsupported and not adopted. At 22:56, @meta_syntactic replies to the same parent that Codex investigated firmware to remove unwanted parts, but they lost interest and stopped mostly at analysis. Reading the parent confirms only the TV privacy background, not a device model or modules. These are different projects: one person's completion must not be applied to another. At 08:08 on October 17, a same-thread reply says Claude encountered no resistance investigating firmware, requesting approval only for AdGuard additions. This describes permissions, not proof of reflashing or removal of internal tracking.\n\nAt 13:21 on October 18, another author says simply describing requirements to Claude Code cleaned ads, installation inducements and what they call malware from their parents' TV. The background includes set-top boxes, third-party firmware installing promoted apps and PCDN. This is not in the earlier conversation and supplies no device model, package names, diagnostics, patches or traffic comparisons. Malware identification, complete tracking removal and actual firmware changes cannot be confirmed; reversing techniques are not explicit either. It adds a separate implementation account under the same ad-removal target, not one shared project. None of these results was run or privacy-tested by this collection, and REA use is unconfirmed.",
+      "metadata": ["October 16 original idea's candidate snapshot: 4 likes, 143 views; two later personal accounts have separate sources, neither with flashing or privacy acceptance tests.", "October 18 cleanup candidate snapshot: 22 likes, 4,015 views; no diagnostics or patches, not independent confirmation of malware removal."],
+      "source_labels": ["TV firmware modification proposal and conversation", "Account of Claude firmware investigation and claimed ad/tracking removal", "meta_syntactic: Codex analysis followed by abandonment; parent confirms TV context", "Supplementary context: DCinvestor's TV privacy firmware question at 09:14 that day", "October 17 follow-up: approval requested only for AdGuard additions", "October 18 separate author's account of cleaning parents' TV"]
     }
   },
   {
@@ -10776,16 +11032,16 @@
     "rea": "other-ai",
     "status": "unverified",
     "summary": "valdiorn 自述用 Opus 5.5 研究 Big Sky 等效果器，以固件模拟器对照 C++ 输出；没有公开库或测量记录。",
-    "description": "10月17日13:33（北京时间），@RealYDT 转述吉他效果器厂商 valdiorn 的经历。补查 Hacker News 找到其原评论，发表于10月15日15:19:19 UTC（北京时间23:19），早于本轮候选窗口，仅作为追溯来源。valdiorn 称自己经营小型专业音频公司，正在制作类似 Eventide H90 的多效果处理器，希望提供混响、延迟、合唱等算法；H90 是产品目标，不是已证明被反编译的对象。\n\n他自述过去72小时研究了三家主要竞争者的产品，包括 Strymon Big Sky，并称 Opus 5.5 用一个提示、三小时完成相关反编译。方法是先让 Claude 构建模拟器运行原厂固件／ROM，避免只是生成听起来相似的效果，再转为独立 C++ 库并与模拟器结果比较。他称全部试听很好；Lexicon 224 部分复用了 Claude 找到的一周前公开在 GitHub 的既有代码，另称整个 Ursa Major 产品线只需20分钟。这些时间不能相加成可复现的统一项目工时，也不能把复用代码写成模型独自恢复。\n\n原评论确认了转述的基本内容，但未公开模拟器、C++ 库、固件版本、测试向量或数值／听音对照记录；未核实所指 Lexicon 仓库。没有证据证明位精确、完整覆盖竞争者产品或已上市。作者同时表达担忧，并说不会把竞争者算法装盒转售；不能将研究自述写成已获商业授权。本合集未运行固件或代码，未确认使用 REA。",
-    "sources": [{"label": "窗口内中文转述", "url": "https://x.com/i/status/2111329818914791727"}, {"label": "补充原评论：valdiorn 的方法、工时与限制", "url": "https://news.ycombinator.com/item?id=50104955"}],
-    "snapshot_date": "2026-10-17",
-    "metadata": ["原评论日期：2026-10-15 23:19，北京时间；本轮候选为10月17日转述。", "作者报告模拟器对照与试听，非公开可复现测试，也不证明商业使用权。"],
+    "description": "10月17日13:33（北京时间），@RealYDT 转述吉他效果器厂商 valdiorn 的经历。此前补查 Hacker News 找到原评论，发表于10月15日15:19:19 UTC（北京时间23:19），是历史追溯材料，不是10月18日新实验。valdiorn 称经营小型专业音频公司，正制作类似 Eventide H90 的多效果处理器，提供混响、延迟、合唱；H90是产品目标，不是已证明被反编译的对象。\n\n他自述此前72小时研究三家主要竞争者，包括Strymon Big Sky，称Opus 5.5用一个提示、三小时完成相关反编译。先让Claude做模拟器运行原厂固件／ROM，避免仅生成相似声音，再转成独立C++库并对照模拟器；全部试听很好。Lexicon 224复用了Claude找到的一周前GitHub代码，整个Ursa Major产品线据称只需20分钟。不能将这些时间相加为统一项目工时，也不能将复用归为模型独立恢复。原评论无模拟器、库、固件版本、向量或数值／听音记录；Lexicon仓库未核实，没有位精确、完整覆盖或已上市证据。作者说不会装盒转售竞争者算法，研究不等于商业授权。\n\n10月18日15:27的新文章再次转述HN的三台／72小时与BigSky混响说法，并称一名爱好者用Opus 5.5为Lexicon 224XL做固件模拟器并放上GitHub。它没有提供仓库或测试；224XL是新文章的称呼，不擅自与原评论的224认定同一实现。文章以69美元仿制踏板和约5000美元收藏原版等价格讨论品牌价值；这些不是本项目费用或逆向性能测量，此处不采纳为技术结果。新文是传播补充，不是新实验或独立确认。本合集未运行固件或代码，未确认REA。",
+    "sources": [{"label": "10月17日中文转述", "url": "https://x.com/i/status/2111329818914791727"}, {"label": "补充原评论：valdiorn 的方法、工时与限制", "url": "https://news.ycombinator.com/item?id=50104955"}, {"label": "10月18日再次传播：效果器算法与品牌价值文章", "url": "https://x.com/i/status/2111720688038072631"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["原评论日期：2026-10-15 23:19，北京时间；10月17日与18日帖子为转述，不是两次独立实验。", "作者报告模拟器对照与试听，非公开可复现测试，也不证明商业使用权。", "10月18日文章候选快照3赞、1386浏览；Lexicon 224XL仓库与运行仍未核验。"],
     "en": {
       "title": "Guitar effects: emulate the original firmware, then compare a standalone C++ library",
       "summary": "valdiorn reports using Opus 5.5 on Big Sky and other effects, comparing C++ output to firmware emulation; no library or measurement logs are public.",
-      "description": "At 13:33 Beijing time on October 17, @RealYDT recounts guitar-effects maker valdiorn's experience. Supplementary Hacker News research located the original comment, dated October 15 at 15:19:19 UTC, or 23:19 Beijing time. It predates this candidate window and is used only as a traced source. valdiorn says they run a small professional-audio company and are building an Eventide H90-like multi-effects processor with reverb, delay and chorus algorithms. The H90 is the intended product benchmark, not an established decompilation target.\n\nThey report studying three main competitors' products in the preceding 72 hours, including Strymon Big Sky, and say Opus 5.5 handled the relevant decompilation with one prompt in three hours. The method was to ask Claude to build an emulator executing original firmware/ROM, rather than merely generate similar-sounding effects, then convert the logic into a standalone C++ library and compare results against the emulator. They say all sounded excellent. For Lexicon 224, Claude reused code it found on GitHub from a week earlier; the entire Ursa Major range allegedly took 20 minutes. These figures cannot be added into a reproducible overall project duration, nor can reused code be credited as independently recovered by the model.\n\nThe original comment confirms the gist of the retelling but publishes no emulator, C++ library, firmware versions, test vectors or numerical/listening comparison logs. The referenced Lexicon repository was not identified. There is no evidence of bit-exact equivalence, complete competitor-product coverage or a shipped product. The commenter expresses concern and says they will not box and resell competitors' algorithms; the research account does not establish commercial permission. This collection ran no firmware or code, and REA use is unconfirmed.",
-      "metadata": ["Original comment: October 15, 2026, 23:19 Beijing time; the in-window candidate is an October 17 retelling.", "Author-reported emulator comparisons and listening, not a publicly reproducible test or proof of commercial rights."],
-      "source_labels": ["In-window Chinese retelling", "Supplementary original: valdiorn's method, timing and limits"]
+      "description": "At 13:33 Beijing time on October 17, @RealYDT recounts guitar-effects maker valdiorn's experience. Earlier supplementary Hacker News research located the original comment, dated October 15 at 15:19:19 UTC, or 23:19 Beijing time. This is historical traced evidence, not a new October 18 experiment. valdiorn says they run a small professional-audio company building an Eventide H90-like multi-effects processor for reverb, delay and chorus. H90 is the intended product benchmark, not an established decompilation target.\n\nThey report studying three main competitors over the preceding 72 hours, including Strymon Big Sky, saying Opus 5.5 handled relevant decompilation with one prompt in three hours. Claude first builds an emulator running original firmware/ROM rather than merely generating similar sounds, then converts logic to a standalone C++ library and compares against the emulator; all allegedly sounded excellent. Lexicon 224 reused code Claude found on GitHub from a week earlier, while the whole Ursa Major range allegedly took 20 minutes. The timings cannot be added into one overall project duration or reused code credited as independent model recovery. The original supplies no emulator, library, firmware versions, vectors or numerical/listening logs. The Lexicon repository is unverified, with no evidence of bit-exact equivalence, complete coverage or a shipped product. The author says competitors' algorithms will not be boxed and resold; research is not commercial permission.\n\nA new article at 15:27 on October 18 retells the HN three-unit/72-hour and BigSky reverb claims, also saying a hobbyist used Opus 5.5 for a Lexicon 224XL firmware emulator on GitHub. It provides no repository or tests. 224XL is the new article's wording and is not silently equated to the original comment's 224 implementation. Prices such as a USD 69 clone pedal and roughly USD 5,000 collectible original frame a brand-value argument, not this project's cost or reverse-engineering measurements, and are not adopted as technical results. This is additional circulation, not a new experiment or independent confirmation. This collection ran no firmware or code, and REA use is unconfirmed.",
+      "metadata": ["Original comment: October 15, 2026, 23:19 Beijing time; the October 17 and 18 posts are retellings, not two independent experiments.", "Author-reported emulator comparisons and listening, not a publicly reproducible test or proof of commercial rights.", "October 18 article candidate snapshot: 3 likes, 1,386 views; the Lexicon 224XL repository and operation remain unverified."],
+      "source_labels": ["October 17 Chinese retelling", "Supplementary original: valdiorn's method, timing and limits", "October 18 recirculation: effects algorithms and brand value"]
     }
   },
   {
@@ -10985,16 +11241,16 @@
     "rea": "other-ai",
     "status": "unverified",
     "summary": "从自建 record.c 实验样本开始，让不同模型分工映射、解释和挑错；尚无可核实运行记录。",
-    "description": "2026年10月17日17:30（北京时间），发帖者提出一个可具体实施的二进制研究工作流，以自行编译的 samples/record.c 小型实验样本为起点，而不是声称已重建一款商业软件。规划中Sonnet 5.5先输出地址、角色、证据和置信度的函数图，Opus 5.5对难函数写出两种竞争解释与最少区分测试，再按需要请Fable 5.1寻找三种高影响错误。每条主张应标明OBSERVED、INFERRED或UNKNOWN，附地址、交叉引用或测试日志；参考行为来自原二进制，而不是让模型给自己的重建打分。\n\n第三模型只在两种解释仍成立、依赖链很长或关键构建前介入，意图减少高价模型浪费在列字符串等工作上。原帖列出Sonnet每百万输入/输出2/10美元、Opus 4/20、Fable 10/50，以及100K输入加10K输出约0.30/0.60/1.50美元的预算示例。这些只是帖中模型名称与报价设定，未核实服务是否提供这些型号或价格，也不是实际账单。未提供record.c全文、实验产物、日志、真实成本或成功率；收录的是分工与证据合同idea，不是已执行的基准或REA测试。",
-    "sources": [{"label": "三模型分工与证据合同提示词", "url": "https://x.com/i/status/2111389348339827041"}],
-    "snapshot_date": "2026-10-17",
-    "metadata": ["来源发布：2026-10-17；具体工作流idea，无样本全文或运行日志。", "模型名称、2/10、4/20、10/50美元报价与0.30/0.60/1.50美元预算来自帖子，未核实或实测。"],
+    "description": "2026年10月17日17:30（北京时间），发帖者提出一个可具体实施的二进制研究工作流，以自行编译的 samples/record.c 小型实验样本为起点，而不是声称已重建一款商业软件。规划中Sonnet 5.5先输出地址、角色、证据和置信度的函数图，Opus 5.5对难函数写出两种竞争解释与最少区分测试，再按需要请Fable 5.1寻找三种高影响错误。每条主张应标明OBSERVED、INFERRED或UNKNOWN，附地址、交叉引用或测试日志；参考行为来自原二进制，而不是让模型给自己的重建打分。\n\n第三模型只在两种解释仍成立、依赖链很长或关键构建前介入，意图减少高价模型浪费在列字符串等工作上。原帖列出Sonnet每百万输入/输出2/10美元、Opus 4/20、Fable 10/50，以及100K输入加10K输出约0.30/0.60/1.50美元的预算示例。这些只是帖中模型名称与报价设定，未核实服务是否提供这些型号或价格，也不是实际账单。未提供record.c全文、实验产物、日志、真实成本或成功率；收录的是分工与证据合同idea，不是已执行的基准或REA测试。\n\n10月18日15:41的另一篇流程帖再次提出tiny C实验：把证据合同写入CLAUDE.md，在Ghidra保存反编译函数，再分工映射、解释、挑错。它以模型把循环称为CRC32、测试却发现是FNV-1a作为纠错示例，并重述Sonnet一轮0.30美元、Fable1.50美元及三项弱点检查。没有样本、测试日志或账单可核，因此纠错与费用仍是流程帖叙述，不升级成实测。新帖没有samples/record.c路径，也无法确认与前文同一作者或实验；按同一方法目标归并，不当独立复现或商业游戏恢复成果。",
+    "sources": [{"label": "三模型分工与证据合同提示词", "url": "https://x.com/i/status/2111389348339827041"}, {"label": "10月18日tiny C与CRC32／FNV-1a纠错流程示例", "url": "https://x.com/i/status/2111724375259148717"}],
+    "snapshot_date": "2026-10-18",
+    "metadata": ["来源发布：2026-10-17；具体工作流idea，无样本全文或运行日志。", "模型名称、2/10、4/20、10/50美元报价与0.30/0.60/1.50美元预算来自帖子，未核实或实测。", "10月18日新流程帖候选快照4赞、69浏览；CRC32误判示例缺日志，不是已验证纠错结果。"],
     "en": {
       "title": "Three-model binary research: function maps, competing hypotheses and an original-binary oracle",
       "summary": "An idea starts with a self-compiled record.c lab fixture and splits mapping, interpretation and criticism across models; no verifiable run is supplied.",
-      "description": "At 17:30 Beijing time on October 17, 2026, a poster proposes a concrete binary-investigation workflow starting with a small, self-compiled samples/record.c lab fixture, not a claimed commercial-software rebuild. In the proposed division, Sonnet 5.5 maps function addresses, roles, evidence and confidence; Opus 5.5 gives difficult functions two competing interpretations and minimal distinguishing tests; Fable 5.1 is called when needed to find three high-impact failure modes. Every claim should be marked OBSERVED, INFERRED or UNKNOWN and backed by an address, cross-reference or test log. Reference behavior comes from the original binary rather than a model grading its own reconstruction.\n\nThe third model is reserved for surviving alternative interpretations, long dependency chains or a high-stakes pre-build review, aiming to avoid expensive-model work on tasks such as listing strings. The post quotes USD 2/10 per million input/output tokens for Sonnet, 4/20 for Opus and 10/50 for Fable, with a budget example of about USD 0.30/0.60/1.50 for 100K input plus 10K output tokens. These are the source's model names and pricing assumptions, not confirmed provider offerings, prices or actual bills. No complete record.c source, artifacts, logs, measured cost or success rate is supplied. What is collected is a division-of-work and evidence-contract idea, not an executed benchmark or REA test.",
-      "metadata": ["Source published: October 17, 2026; a concrete workflow idea without full fixture source or run logs.", "Model names, USD 2/10, 4/20, 10/50 quotes and USD 0.30/0.60/1.50 budgets come from the post, not verified pricing or measurements."],
-      "source_labels": ["Three-model division of work and evidence-contract prompt"]
+      "description": "At 17:30 Beijing time on October 17, 2026, a poster proposes a concrete binary-investigation workflow starting with a small, self-compiled samples/record.c lab fixture, not a claimed commercial-software rebuild. In the proposed division, Sonnet 5.5 maps function addresses, roles, evidence and confidence; Opus 5.5 gives difficult functions two competing interpretations and minimal distinguishing tests; Fable 5.1 is called when needed to find three high-impact failure modes. Every claim should be marked OBSERVED, INFERRED or UNKNOWN and backed by an address, cross-reference or test log. Reference behavior comes from the original binary rather than a model grading its own reconstruction.\n\nThe third model is reserved for surviving alternative interpretations, long dependency chains or a high-stakes pre-build review, aiming to avoid expensive-model work on tasks such as listing strings. The post quotes USD 2/10 per million input/output tokens for Sonnet, 4/20 for Opus and 10/50 for Fable, with a budget example of about USD 0.30/0.60/1.50 for 100K input plus 10K output tokens. These are the source's model names and pricing assumptions, not confirmed provider offerings, prices or actual bills. No complete record.c source, artifacts, logs, measured cost or success rate is supplied. What is collected is a division-of-work and evidence-contract idea, not an executed benchmark or REA test.\n\nAnother workflow post at 15:41 on October 18 again proposes a tiny C lab: place the evidence contract in CLAUDE.md, save Ghidra-decompiled functions, and divide mapping, interpretation and criticism. Its correction example is a loop the model calls CRC32 but tests identify as FNV-1a. It repeats USD 0.30 for a Sonnet pass, USD 1.50 for Fable and a three-weak-point review. No fixture, test logs or bills are checkable, so the correction and costs remain workflow-post narrative, not measured results. The new post does not identify samples/record.c, and a shared author or experiment is unconfirmed. It is grouped by the same methodological target, not treated as independent reproduction or recovery of a commercial game.",
+      "metadata": ["Source published: October 17, 2026; a concrete workflow idea without full fixture source or run logs.", "Model names, USD 2/10, 4/20, 10/50 quotes and USD 0.30/0.60/1.50 budgets come from the post, not verified pricing or measurements.", "October 18 workflow candidate snapshot: 4 likes, 69 views; the CRC32 misidentification example lacks logs and is not a verified correction result."],
+      "source_labels": ["Three-model division of work and evidence-contract prompt", "October 18 tiny-C and CRC32/FNV-1a correction workflow example"]
     }
   },
   {

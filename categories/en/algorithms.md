@@ -2,6 +2,9 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
+- [Neural decompilation research: specialized models, variable names and types](../../cases/en/neural-decompilation-research-survey.md) — A Japanese survey connects LLM4Decompile, DIRTY and black-box synthesis; a 2024 primary paper clarifies the target, not an end to closed-source protection. **[Other AI-assisted work · Related project]**
+- [Claude's Bun single-file build: REA evidence for a Gemini gzip-predicate rewrite](../../cases/en/claude-bun-gzip-gemini-rea-test.md) — jiangkoumo_ reports 69,121 passing self-tests for a gzip predicate rewritten after unpacking, not direct decompilation of an entire native client. **[REA · Analysis test]**
+- [SoftProtect: a self-test claiming REA stopped on a 100-line adversarial fixture](../../cases/en/softprotect-ai-adversarial-rea-test.md) — TokenRebate says an AI-adversarial update led REA to abandon analysis after half an hour; no public fixture or full logs establish general protection. **[REA · Analysis test]**
 - [Binary-library rewrite](../../cases/en/binary-library-rewrite.md) — Analyze and reimplement an unnamed library; evaluation details remain private. **[REA]**
 - [DownUnderCTF: masked squares checker](../../cases/en/masked-squares-ctf.md) — Recover input constraints and solve them with Z3; test against the original. **[REA]**
 - [Aegis: one-time code calculation](../../cases/en/aegis-totp.md) — Extract a TOTP routine and compare reconstructed implementations. **[REA]**

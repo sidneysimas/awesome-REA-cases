@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [三星手机 App 独立桌面窗口：读者提出 AI 逆向 idea](../cases/samsung-phone-desktop-windows-ai-idea.md) — 读者看到 vivo 手机 App 在电脑独立开窗，询问三星能否用 AI 逆向做到；未报告实施。 **[其他 AI 逆向 · 待验证]**
+- [Blender：用开源实现作答案校验 AI 逆向的 idea](../cases/blender-ai-reverse-groundtruth-idea.md) — 读者提出选择 Blender 测试 AI 逆向可行性和效率，以源码作答案；未报告实际评测。 **[其他 AI 逆向 · 待验证]**
+- [REA 本身：增加文件拖放入口的重实现自述](../cases/rea-drag-drop-reimplementation-report.md) — 作者称正在逆向 REA 并做文件拖放入口；每小时改进工具与一键品牌 Linux 都没有产物验证。 **[未确认使用 REA · 进行中]**
+- [Awesome Reverse Engineering：面向任务的逆向资源目录](../cases/awesome-reverse-engineering-resource-directory.md) — 发布者介绍涵盖 AI 辅助、二进制差异与 MCP 的工具目录；源码审查和复现示例未在此核验。 **[未确认使用 REA · 相关项目]**
+- [360 安全卫士：REA 请求与模型反应的玩笑式自述](../cases/360-security-rea-model-response-report.md) — 作者称请求 REA 研究360安全卫士，并以笑话描述不同模型反应；没有技术分析或真实封号证明。 **[REA · 待验证]**
 - [内核反作弊隐私：用 REA 调查发送给厂商的机器信息](../cases/rea-kernel-anticheat-privacy-inspection.md) — Jhaddix 报告首次用 REA 检查现代反作弊的数据外发；产品、字段和分析记录没有公开。 **[REA · 分析测试]**
 - [REDOC：声称把 Agent 逆向与能力重建带到链上](../cases/redoc-onchain-agent-reverse-platform.md) — Bricar_dev 宣布文件／链接输入的开源逆向平台；链上机制、源码和实际分析能力均未核验。 **[未确认使用 REA · 相关项目]**
 - [231 函数的逆向工作室：REA 与 Opus 多工具流程演示](../cases/rea-opus-231-function-studio-demo.md) — Capslock404 宣称 Opus 经 REA 调度 Ghidra、Frida、x64dbg 和 mitmproxy；231 函数与 oracle 结果无原始记录。 **[REA · 待验证]**
