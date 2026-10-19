@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](../cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**
+- [实盘记录到交易策略：FMZ Quant 提出的 AI 逆向实验问题](../cases/ai-live-trades-strategy-inference-test.md) — 视频标题询问AI能否靠作者实盘记录猜出策略；只确认具体实验问题，未取得输入、方法或结果。 **[未确认使用 REA · 待验证]**
+- [Kaggle 代码向量：为 Gemma 4 后训练用 GNN 仿制未公开的 embedding 生成过程](../cases/kaggle-code-graph-embedding-gnn-imitation.md) — Vaibhav报告匹配127调用图，再用小GNN仿制368k向量；仓内排名一致度0.84，未见仓仅0.08–0.24，仍在60配置搜索。 **[其他 AI 逆向 · 进行中]**
 - [Satoshi 2009 构建环境：Agent 从二进制恢复工具链并字节匹配的转述](../cases/satoshi-2009-agent-build-environment-report.md) — niels .1称Agent从Satoshi的2009二进制恢复精确构建环境；没有原研究、版本、工具链清单或匹配产物。 **[其他 AI 逆向 · 待验证]**
 - [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](../cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
 - [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](../cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**

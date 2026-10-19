@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [显卡驱动开源替代：请求 AI 辅助逆向的读者 idea](../cases/gpu-driver-ai-opensource-idea.md) — 读者询问能否让AI研究显卡驱动并开源；没有指定厂商、设备或实现，Adobe逆向类比未获证实。 **[其他 AI 逆向 · 待验证]**
 - [2009 年车载收音导航：Claude 固件排障后拒绝打包测试的自述](../cases/car-2009-radionavigator-claude-refusal.md) — luizfilipelv为自己的旧车导航修bug，称上传固件后Claude找到问题，但拒绝组装待测文件；未有修复验证。 **[其他 AI 逆向 · 待验证]**
 - [Dell 显示器：Claude 研究控制后制作 macOS 画中画／画外画菜单栏 App](../cases/dell-display-claude-macos-pip-pbp.md) — codeandrewford称新macOS缺Dell显示管理器，Claude辅助研究后用菜单栏控制PiP/PbP；无型号或协议日志。 **[其他 AI 逆向 · 待验证]**
 - [Kindle：Claude Code 辅助越狱、Tailscale SSH 与 Readeck 文章同步的转述](../cases/kindle-claude-tailscale-readeck-report.md) — keyiLeYi描述USB连接后用Claude Code解锁旧Kindle、运行KOReader与家庭服务器文章同步；设备与方法未明。 **[其他 AI 逆向 · 待验证]**
@@ -97,12 +98,12 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — tv-vibehack以ADB禁包和启动器清理Android电视；新增恢复与停用更新的风险说明，不是固件重写或全部去追踪证明。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理新增Codex／GPT6.1 SOL high教程与固件逆向说法的质疑；ADB禁包不是固件重写，也不证明全部去追踪。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](../cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](../cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
-- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](../cases/ios-android-ai-port-idea.md) — 保留iOS跨硬件idea与传闻；另有读者自述尝试64位iOS应用在Android运行，但未报告成功，不能等同整套系统移植。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](../cases/ios-android-ai-port-idea.md) — 新增ios-topaz／Redmi Note 12运行iOS16及触控音量可用、Wi-Fi待修的转述；未取得可核源码或启动证据，非成功移植确认。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](../cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
 - [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](../cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
 - [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](../cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**

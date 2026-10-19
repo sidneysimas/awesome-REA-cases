@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **533 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **544 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（124）
-- [硬件与设备互通](categories/hardware.md)（123）
-- [应用与客户端](categories/apps.md)（239）
-- [算法与功能重建](categories/algorithms.md)（47）
+- [游戏与游戏保存](categories/games.md)（127）
+- [硬件与设备互通](categories/hardware.md)（124）
+- [应用与客户端](categories/apps.md)（243）
+- [算法与功能重建](categories/algorithms.md)（50）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
+- [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
+- [GTA 5 × Spider-Man × Hulk：REA／Opus 提取机制再做 Godot 混合作品的宣传](cases/gta-spiderman-hulk-godot-mashup.md) — Deni称两小时把摆荡、踩踏与街道组合进同一城市，提供扫描到规格的流程，未给原游戏版本、代码或验收日志。 **[REA · 待验证]**
 - [sm64-gba：Claude 适配既有人类反编译成果，用逐帧 oracle 保持 GBA 运动逻辑](cases/sm64-gba-claude-bitexact-port.md) — 基于 n64decomp 的运动与碰撞代码，Claude Opus 5.5 辅助 GBA 适配和测试；有公开项目 CI 成功记录，非完整游戏或实机验证。 **[其他 AI 逆向 · 进行中]**
 - [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究游戏状态同步；README列Deus Ex等项目，不保证任何游戏自动成功。 **[REA · 相关项目]**
 - [魔界村：REA／AI 解析后重做浏览器版，加入落雷与巨大 Boss 的视频自述](cases/ghosts-goblins-rea-browser-lightning-boss.md) — J_un_Suzuki的视频标题给出魔界村解析、浏览器重现和新机制改造；未取得视频内步骤或可玩产物。 **[REA · 待验证]**
@@ -153,6 +156,7 @@
 
 ### 硬件与设备互通
 
+- [显卡驱动开源替代：请求 AI 辅助逆向的读者 idea](cases/gpu-driver-ai-opensource-idea.md) — 读者询问能否让AI研究显卡驱动并开源；没有指定厂商、设备或实现，Adobe逆向类比未获证实。 **[其他 AI 逆向 · 待验证]**
 - [2009 年车载收音导航：Claude 固件排障后拒绝打包测试的自述](cases/car-2009-radionavigator-claude-refusal.md) — luizfilipelv为自己的旧车导航修bug，称上传固件后Claude找到问题，但拒绝组装待测文件；未有修复验证。 **[其他 AI 逆向 · 待验证]**
 - [Dell 显示器：Claude 研究控制后制作 macOS 画中画／画外画菜单栏 App](cases/dell-display-claude-macos-pip-pbp.md) — codeandrewford称新macOS缺Dell显示管理器，Claude辅助研究后用菜单栏控制PiP/PbP；无型号或协议日志。 **[其他 AI 逆向 · 待验证]**
 - [Kindle：Claude Code 辅助越狱、Tailscale SSH 与 Readeck 文章同步的转述](cases/kindle-claude-tailscale-readeck-report.md) — keyiLeYi描述USB连接后用Claude Code解锁旧Kindle、运行KOReader与家庭服务器文章同步；设备与方法未明。 **[其他 AI 逆向 · 待验证]**
@@ -248,12 +252,12 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — tv-vibehack以ADB禁包和启动器清理Android电视；新增恢复与停用更新的风险说明，不是固件重写或全部去追踪证明。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理新增Codex／GPT6.1 SOL high教程与固件逆向说法的质疑；ADB禁包不是固件重写，也不证明全部去追踪。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
 - [赛车记录仪：Claude Code 恢复私有视频与遥测格式的转述](cases/race-recorder-claude-format-mac-report.md) — 帖子称开发者四小时研究记录仪格式，让多年视频和驾驶遥测可在 Mac 访问。 **[其他 AI 逆向 · 待验证]**
-- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](cases/ios-android-ai-port-idea.md) — 保留iOS跨硬件idea与传闻；另有读者自述尝试64位iOS应用在Android运行，但未报告成功，不能等同整套系统移植。 **[其他 AI 逆向 · 待验证]**
+- [iOS 到安卓硬件：移植 idea 与 HACKIOS／红米未核实传闻](cases/ios-android-ai-port-idea.md) — 新增ios-topaz／Redmi Note 12运行iOS16及触控音量可用、Wi-Fi待修的转述；未取得可核源码或启动证据，非成功移植确认。 **[其他 AI 逆向 · 待验证]**
 - [十二年旧 Kindle：Claude 拒绝协助越狱的受阻报告](cases/old-kindle-claude-refusal-report.md) — 作者称研究自有旧 Kindle 时遭 Claude 安全拒绝；没有成功解锁或固件改写。 **[其他 AI 逆向 · 待验证]**
 - [佳明手表：蓝牙健康数据进入 Mac 菜单栏与 MCP 的转述](cases/garmin-health-menubar-mcp-report.md) — 转述称逆向手表蓝牙，将身体电量、压力、心率交给菜单栏与本地 AI 接口。 **[未确认使用 REA · 相关项目]**
 - [LmDrum 固件：Claude 辅助反编译后拒绝继续的报告](cases/lmdrum-claude-firmware-refusal.md) — 作者称自己的 LmDrum 反编译固件版已工作，但 Claude 随后拒绝；同串说明使用 Ghidra。 **[其他 AI 逆向 · 进行中]**
@@ -279,6 +283,10 @@
 
 ### 应用与客户端
 
+- [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
+- [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
+- [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**
+- [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
 - [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](cases/termix-rea-escrow-analysis-service.md) — 第三方称TermiX的REA接受合约、文件和URL，按报告验收结算，10美元起；未取得真实订单或分析报告。 **[未确认使用 REA · 相关项目]**
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
@@ -521,6 +529,9 @@
 
 ### 算法与功能重建
 
+- [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**
+- [实盘记录到交易策略：FMZ Quant 提出的 AI 逆向实验问题](cases/ai-live-trades-strategy-inference-test.md) — 视频标题询问AI能否靠作者实盘记录猜出策略；只确认具体实验问题，未取得输入、方法或结果。 **[未确认使用 REA · 待验证]**
+- [Kaggle 代码向量：为 Gemma 4 后训练用 GNN 仿制未公开的 embedding 生成过程](cases/kaggle-code-graph-embedding-gnn-imitation.md) — Vaibhav报告匹配127调用图，再用小GNN仿制368k向量；仓内排名一致度0.84，未见仓仅0.08–0.24，仍在60配置搜索。 **[其他 AI 逆向 · 进行中]**
 - [Satoshi 2009 构建环境：Agent 从二进制恢复工具链并字节匹配的转述](cases/satoshi-2009-agent-build-environment-report.md) — niels .1称Agent从Satoshi的2009二进制恢复精确构建环境；没有原研究、版本、工具链清单或匹配产物。 **[其他 AI 逆向 · 待验证]**
 - [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
 - [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**

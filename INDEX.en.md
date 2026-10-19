@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**533 entries**, organized by use case, without a Top-N or popularity threshold.
+**544 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (124)
-- [Hardware and interoperability](categories/en/hardware.md) (123)
-- [Applications and clients](categories/en/apps.md) (239)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (47)
+- [Games and preservation](categories/en/games.md) (127)
+- [Hardware and interoperability](categories/en/hardware.md) (124)
+- [Applications and clients](categories/en/apps.md) (243)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (50)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [enRAGE for Red Dead Redemption 2: a reader's AI/Nemesis recompilation speculation](cases/en/nemesis-red-dead-ai-recompiler-speculation.md) — The parent identifies RDR2's enRAGE mod; a respondent speculates that AI decompiled Nemesis and recompiled it for Red Dead, without developer confirmation. **[Other AI-assisted work · Needs verification]**
+- [Final Fantasy XIV: a claim of Claude-assisted bosses, graphics and UI on a decompilation](cases/en/ffxiv-claude-gameplay-report.md) — Yuyu claims new gameplay based on a recent FFXIV decompilation, without code, a version or a playable artifact; full MMO decompilation is not confirmed. **[Other AI-assisted work · Needs verification]**
+- [GTA 5, Spider-Man and Hulk: a promoted REA/Opus mechanic mashup rebuilt in Godot](cases/en/gta-spiderman-hulk-godot-mashup.md) — Deni claims to combine swinging, stomping and streets in one city within two hours; no original-game versions, code or acceptance logs are supplied. **[REA · Needs verification]**
 - [sm64-gba: Claude adapts a human-made decompilation with frame-by-frame GBA physics oracles](cases/en/sm64-gba-claude-bitexact-port.md) — Claude Opus 5.5 helps adapt and test n64decomp movement/collision code for GBA; public project CI passes, but this is neither a complete game nor a hardware-verified port. **[Other AI-assisted work · In progress]**
 - [Co-op Anything: agent playbooks for adding multiplayer and reviving old co-op mods](cases/en/coop-anything-agent-multiplayer-workflow.md) — Public MCP tools and playbooks find existing mods before repair or state-synchronization work; the README lists Deus Ex and other projects, not guaranteed automatic success for every game. **[REA · Related project]**
 - [Ghosts 'n Goblins: a reported REA/AI browser recreation with lightning and a giant boss](cases/en/ghosts-goblins-rea-browser-lightning-boss.md) — J_un_Suzuki's video title describes analyzing Ghosts 'n Goblins, recreating it in a browser and adding mechanics; video steps and a playable artifact were not obtained. **[REA · Needs verification]**
@@ -155,6 +158,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Open graphics-driver replacements: a reader's AI reverse-engineering idea](cases/en/gpu-driver-ai-opensource-idea.md) — A reader asks whether AI could investigate and open-source graphics drivers; no vendor, device or implementation is specified, and the Adobe analogy is unverified. **[Other AI-assisted work · Needs verification]**
 - [A 2009 car radio/navigation unit: reported Claude refusal to package a firmware test](cases/en/car-2009-radionavigator-claude-refusal.md) — luizfilipelv says Claude found a bug after receiving firmware from an old car navigation unit, but refused to assemble a test file; no repair was verified. **[Other AI-assisted work · Needs verification]**
 - [Dell displays: a Claude-assisted macOS menu-bar app for PiP/PbP](cases/en/dell-display-claude-macos-pip-pbp.md) — codeandrewford reports a menu-bar PiP/PbP controller after Claude investigated display control missing from newer macOS support; model and protocol logs are absent. **[Other AI-assisted work · Needs verification]**
 - [Kindle: a report of Claude Code-assisted jailbreaking, Tailscale SSH and Readeck reading sync](cases/en/kindle-claude-tailscale-readeck-report.md) — keyiLeYi describes USB-connected Claude Code jailbreaking, KOReader and home-server article synchronization on a Kindle; device and method are unspecified. **[Other AI-assisted work · Needs verification]**
@@ -250,12 +254,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [A Whirlpool washer-dryer: an REA plan to investigate intermittent F13 errors](cases/en/whirlpool-f13-rea-investigation-idea.md) — A frustrated user proposes researching a device after intermittent errors and inadequate support; planned obsolescence is not established. **[REA · Needs verification]**
 - [Apple Watch Ultra 2: an unverified AI-reverse-engineering report of Android connectivity](cases/en/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm says an open-source tool pairs Ultra 2 with Android, with root currently required on Android. **[Other AI-assisted work · Needs verification]**
 - [Plustek 8200i / ThinkPad MIPI: improve Linux drivers using Windows reference behavior](cases/en/schaller-opticfilm-thinkpad-linux.md) — Schaller uses Claude and known-good device references to investigate a film scanner's USB behavior and laptop-camera configuration, publishing measurements and remaining defects. **[Other AI-assisted work · In progress]**
-- [TV ads and privacy: a firmware idea, stalled research and ADB cleanup](cases/en/tv-firmware-ai-ad-removal-idea.md) — tv-vibehack uses ADB package disabling and a launcher to clean Android TVs; new recovery and disabled-update caveats do not establish firmware rewriting or complete tracking removal. **[Other AI-assisted work · Needs verification]**
+- [TV ads and privacy: a firmware idea, stalled research and ADB cleanup](cases/en/tv-firmware-ai-ad-removal-idea.md) — Android TV cleanup gains a Codex/GPT6.1 SOL high tutorial and criticism of firmware-reversing claims; ADB disabling is not firmware rewriting or proof of complete tracking removal. **[Other AI-assisted work · Needs verification]**
 - [Circuit-board function reconstruction: an idea to extend the REA approach to hardware](cases/en/rea-circuit-board-functional-rebuild-idea.md) — The author proposes an REA-like program to investigate circuit-board functions and reimplement them; no board or prototype is specified. **[REA use unconfirmed · Needs verification]**
 - [Samsung AC: local-network control with reported partial Claude assistance](cases/en/samsung-ac-local-claude-report.md) — The author says a personal Samsung AC was reverse-engineered for local control; support for all post-2022 models is not verified. **[Other AI-assisted work · Needs verification]**
 - [Creality SpacePiX4: a Gemini Argon firmware-improvement plan](cases/en/creality-spacepix4-gemini-firmware-idea.md) — The poster wants better firmware for a named device using Gemini Argon; investigation and implementation are not yet described. **[Other AI-assisted work · Needs verification]**
 - [Race recorder: reported Claude Code recovery of video and telemetry files on Mac](cases/en/race-recorder-claude-format-mac-report.md) — A roundup says a developer investigated a proprietary recorder format in four hours to access years of video and driving telemetry on a Mac. **[Other AI-assisted work · Needs verification]**
-- [iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims](cases/en/ios-android-ai-port-idea.md) — An iOS cross-hardware idea and rumors are joined by a reader's attempted 64-bit iOS app compatibility work on Android, not reported success or a full OS port. **[Other AI-assisted work · Needs verification]**
+- [iOS on Android hardware: a porting idea and unverified HACKIOS/Redmi claims](cases/en/ios-android-ai-port-idea.md) — A secondary account names ios-topaz, Redmi Note 12 and iOS 16, claiming working touch and volume while Wi-Fi needs fixing; no verifiable source or boot evidence establishes a successful port. **[Other AI-assisted work · Needs verification]**
 - [A twelve-year-old Kindle: reported Claude safety refusal during a jailbreak attempt](cases/en/old-kindle-claude-refusal-report.md) — A user reports safety blocks while investigating an owned old Kindle, not a successful unlock or firmware change. **[Other AI-assisted work · Needs verification]**
 - [Garmin watch: a reported Mac health menu bar and MCP bridge](cases/en/garmin-health-menubar-mcp-report.md) — A secondhand account describes Bluetooth research exposing Body Battery, stress and heart rate to a menu bar and local AI interface. **[REA use unconfirmed · Related project]**
 - [LmDrum firmware: Claude reportedly stops after decompilation progress](cases/en/lmdrum-claude-firmware-refusal.md) — The author says a decompiled firmware version worked before Claude refused further work; a same-conversation reply names Ghidra. **[Other AI-assisted work · In progress]**
@@ -281,6 +285,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [UFOX: MCP access to local APK decompilation and scripted analysis for AI agents](cases/en/ufox-mcp-apk-analysis.md) — orvian introduces local APK analysis through MCP and advertises AI-written JavaScript combining ELF, Capstone and Unicorn; no execution was tested here. **[Other AI-assisted work · Related project]**
+- [Instagram 448: Claude/REA investigation of Reels-ranking clues in APK strings](cases/en/instagram-448-ranking-rea-strings.md) — err_cod reports extracting 787,000 text lines from 22 code files and searching ranking names; names do not establish signal weights, as the author explicitly cautions. **[REA · Analysis test]**
+- [HyperFrames editor: reconstructing Xiaolin-style motion and narrative templates for a Thailand video](cases/en/hyperframes-xiaolin-video-template.md) — Miao Yang describes extracting editing, motion and audio templates for a new 9:34 video; this is a promoted AI visual-workflow reconstruction, not software decompilation. **[Other AI-assisted work · Needs verification]**
+- [Blackbox/opnblckbox: claims and criticism of an agent-swarm source-reconstruction service](cases/en/blackbox-opnblckbox-source-service-claim.md) — Parent-thread research identifies Blackbox's paid-software/binary-to-source promotion; Larpcheck Bot says no delivery exists, but neither supplies inspectable job records. **[REA use unconfirmed · Needs verification]**
 - [A reverse-engineered synthesizer: an AI-assisted raylib/raygui GUI account](cases/en/synthesizer-ai-raylib-raygui-interface.md) — povverpoint reports using AI to build a GUI for a synthesizer they reverse-engineered; the interface role is explicit, but AI-led synthesis-algorithm recovery is not established. **[Other AI-assisted work · Needs verification]**
 - [TermiX REA: promoted contract/binary analysis with evidence hashes and BNB escrow](cases/en/termix-rea-escrow-analysis-service.md) — Third parties describe a TermiX REA service accepting contracts, files and URLs, with report-acceptance settlement from $10; no actual order or analysis report was obtained. **[REA use unconfirmed · Related project]**
 - [Kindle and ZenOS: a Codex-assisted Apple Books/WeRead EPUB delivery interface](cases/en/kindle-zenos-codex-epub-sync.md) — Guo Yu reports having Codex investigate ZenOS and Kindle's original system, then design a unified library and one-click EPUB delivery; versions, code and transfer verification are absent. **[Other AI-assisted work · Needs verification]**
@@ -523,6 +531,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Ghidra MCP and Claude Desktop: a reported crackme demo yielding 123456](cases/en/ghidra-mcp-claude-crackme-123456.md) — ISOfunds relays a toy EXE demo in which Claude uses Ghidra to read a check and return a password; no sample, analysis log or independent rerun is available. **[Other AI-assisted work · Needs verification]**
+- [Inferring a trading strategy from live trade records: FMZ Quant's AI experiment question](cases/en/ai-live-trades-strategy-inference-test.md) — A video title asks whether AI can infer the author's strategy from live trade records; the question is identifiable, but inputs, method and results were not obtained. **[REA use unconfirmed · Needs verification]**
+- [Kaggle code embeddings: GNN imitation of an undisclosed generator for Gemma 4 post-training](cases/en/kaggle-code-graph-embedding-gnn-imitation.md) — Vaibhav reports matching 127 call graphs and imitating 368k vectors with a small GNN; ranking agreement is 0.84 within a repo but only 0.08–0.24 on unseen repos, with a 60-configuration sweep ongoing. **[Other AI-assisted work · In progress]**
 - [Satoshi's 2009 build environment: a report of agent-assisted reconstruction and byte matching](cases/en/satoshi-2009-agent-build-environment-report.md) — niels .1 says an agent recovered Satoshi's exact 2009 build environment from a binary; the original study, version, toolchain inventory and matching artifacts are missing. **[Other AI-assisted work · Needs verification]**
 - [An REA verification engine: checking claims with CFGs, symbolic paths and runtime traces](cases/en/rea-cross-tool-verification-engine-idea.md) — A proposal would cross-check REA findings against angr, radare2 and Binary Ninja before agents start rebuilding from unconfirmed claims. **[REA · Needs verification]**
 - [Wallet transaction history: a promotional report of four REA rules traded by Grok Bot](cases/en/rea-wallet-four-rule-grok-report.md) — A poster claims four rules from 312 trades, 41/44 replay agreement and four profitable trades, without a wallet, transactions or replay records. **[REA · Needs verification]**

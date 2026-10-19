@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 533 cases & projects
+# 544 cases & projects
 
-**Latest case update / maintenance:** October 19, 2026, 16:16 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 19, 2026, 20:14 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading**, chosen for concrete uses, inspectable evidence and dated engagement—not an automated ranking. Dates refer to featured sources or author updates, not collection dates.
+**10 worth reading**, favoring useful implementations and inspectable tests over viral claims. Dated engagement informs the selection, not an automated ranking; dates below are source or author-update dates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **124** |
-| [Hardware & interoperability](categories/en/hardware.md) | **123** |
-| [Applications & clients](categories/en/apps.md) | **239** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **47** |
+| [Games & preservation](categories/en/games.md) | **127** |
+| [Hardware & interoperability](categories/en/hardware.md) | **124** |
+| [Applications & clients](categories/en/apps.md) | **243** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **50** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

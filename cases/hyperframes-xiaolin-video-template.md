@@ -1,0 +1,15 @@
+# HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频
+
+分类：应用与客户端 · 其他 AI 逆向
+记录日期：2026-10-19
+阶段：待验证
+
+10月19日18:03（北京时间），@WaterrrMiao（Miao Yang）介绍HyperFrames editor：先研究小Lin说视频的文案、画面编排、逐帧动效、音效和背景音乐时机，再把这些拆成可复用模板。帖子以Opus 5.5后的code-to-video为背景，称使用HeyGen数字人与声音克隆，将模板用于小Lin没讲过的‘一口气了解泰国经济’，时长9分34秒。目标是从可观察作品恢复制作流程，再生成不同主题，而非反编译HyperFrames软件。
+
+作者称动效可逐帧1:1重建、模板可持续制作系列；本合集没有原片对齐数据、模板源码、渲染记录或观看完整演示，不能验证一比一、制作成本或无限泛化。未确认具体由哪个模型完成各步骤或使用REA。帖子明确画面主持人与声音均为AI生成、不是小Lin本人，仅技术演示；这不代表获得本人认可或授权。
+
+## 来源
+
+- [Miao Yang介绍HyperFrames模板与9分34秒泰国经济演示](https://x.com/i/status/2112122511509065797)
+
+[English](en/hyperframes-xiaolin-video-template.md) | [返回目录](../README.zh-CN.md)
