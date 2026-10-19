@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [sm64-gba：Claude 适配既有人类反编译成果，用逐帧 oracle 保持 GBA 运动逻辑](../cases/sm64-gba-claude-bitexact-port.md) — 基于 n64decomp 的运动与碰撞代码，Claude Opus 5.5 辅助 GBA 适配和测试；有公开项目 CI 成功记录，非完整游戏或实机验证。 **[其他 AI 逆向 · 进行中]**
+- [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](../cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究游戏状态同步；README列Deus Ex等项目，不保证任何游戏自动成功。 **[REA · 相关项目]**
+- [魔界村：REA／AI 解析后重做浏览器版，加入落雷与巨大 Boss 的视频自述](../cases/ghosts-goblins-rea-browser-lightning-boss.md) — J_un_Suzuki的视频标题给出魔界村解析、浏览器重现和新机制改造；未取得视频内步骤或可玩产物。 **[REA · 待验证]**
+- [Deltarune 到 Roblox／Luau：社区质疑 AI 重编译与原作精度的线索](../cases/deltarune-roblox-luau-ai-recomp-controversy.md) — 补读父帖确认所指是Deltarune引擎的Roblox重建；评论者指其AI生成，但无开发者说明或源码验证。 **[其他 AI 逆向 · 待验证]**
 - [Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制](../cases/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。 **[其他 AI 逆向 · 进行中]**
 - [The Sims 3 Mac 64位版：Claude 辅助逆向与主线程优化的帧率自述](../cases/sims3-mac64-claude-main-thread.md) — Feede称Claude辅助研究并优化主线程后最高150 FPS，重载约60–70 FPS；没有基线、配置与可复跑补丁。 **[其他 AI 逆向 · 待验证]**
 - [Dwarf Fortress：AI 反编译并重编译为原生 Mac 版的进行中自述](../cases/dwarf-fortress-ai-native-mac-plan.md) — TheAnonLebowski称正在用AI研究Dwarf Fortress以原生运行于Mac；未给版本、模型或构建验证。 **[其他 AI 逆向 · 进行中]**
@@ -31,7 +35,7 @@
 - [Battlefield／Frostbite：让玩家获得开放实现的 AI 逆向设想](../cases/battlefield-frostbite-ai-open-idea.md) — 读者猜想有人可能正在用 AI 逆向 Battlefield 或 Frostbite，以做玩家想要的游戏；没有项目证据。 **[其他 AI 逆向 · 待验证]**
 - [GTA 6：拿到可执行文件后三个月逆向一半的预测](../cases/gta6-ai-decompile-prediction.md) — 读者押注 AI Agent 三个月逆向 GTA 6 的50%；获取主机二进制本身仍被其视为瓶颈。 **[其他 AI 逆向 · 待验证]**
 - [Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea](../cases/swg-precu-ai-emulator-idea.md) — 读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。 **[其他 AI 逆向 · 待验证]**
-- [Animal Jam / Burrow：Claude 反编译的未确认转述](../cases/animal-jam-burrow-claude-report.md) — 读者猜测 Burrow 用 Claude 研究 Animal Jam 并用于客户端，但明确说无法向项目确认。 **[其他 AI 逆向 · 待验证]**
+- [Animal Jam / Burrow：Claude 反编译的未确认转述](../cases/animal-jam-burrow-claude-report.md) — 多位社区读者将AI作用限定为Animal Jam辅助逆向，而非生成整个游戏；仍无开发者确认或正式安全审计。 **[其他 AI 逆向 · 待验证]**
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](../cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
 - [JS 游戏广告行为：Claude 读混淆逻辑的调查自述](../cases/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia 称让 Claude 阅读游戏混淆 JavaScript；父串在讨论广告与故意失败的指控，尚无运行验证。 **[其他 AI 逆向 · 分析测试]**
 - [CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea](../cases/cm0102-fm26-rea-data-migration-idea.md) — 读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。 **[REA · 待验证]**
@@ -39,7 +43,7 @@
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](../cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**
 - [《现代战争 2》：用多 Agent 重建游戏代码](../cases/mw2-decompilation.md) — 多 Agent 反编译游戏，以原二进制核对恢复函数。 **[其他 AI 逆向]**
 - [Urban Terror：把桌面多人射击游戏移植到浏览器](../cases/urban-terror-web.md) — 定位引擎与字节码布局差异，将游戏移植到浏览器。 **[其他 AI 逆向]**
-- [DX-Ball：恢复老打砖块游戏的声像算法](../cases/dx-ball-sound-pan.md) — 还原打砖块游戏按位置分配左右声道的函数。 **[REA]**
+- [DX-Ball：恢复老打砖块游戏的声像算法](../cases/dx-ball-sound-pan.md) — 恢复并对照验证单个声像函数；10月19日评述另提醒整款游戏构建尚未完成，不能以63字节匹配代表全游戏。 **[REA]**
 - [《东方幻想乡》：恢复环形弹幕的角度计算](../cases/th04-bullet-ring.md) — 恢复《东方幻想乡》环形弹幕的角度计算。 **[REA]**
 - [东方系列：用 Agent 重建旧游戏，并迁移到新平台](../cases/touhou-reconstruction.md) — 重建东方系列代码并迁移平台；新增浮点常量漏验的历史修复证据。 **[REA]**
 - [Dinosaur：解释网页跑酷游戏如何逐渐加速](../cases/dinosaur-speed.md) — 读网页脚本，实验验证跑酷游戏的加速规则。 **[REA]**

@@ -1,7 +1,7 @@
 # TV ads and privacy: a firmware idea, stalled research and ADB cleanup
 
 Category: Hardware and interoperability · Other AI-assisted work
-Record date: 2026-10-18
+Record date: 2026-10-19
 Stage: Needs verification
 
 On October 16, @j_larrieux replies to @DCinvestor's question about TV firmware that does not spy on users, proposing decompilation, ad removal, recompilation and reflashing with thorough AI-requested tests. This is an idea without a brand, model, firmware, build, signing method or ad/telemetry tests. Safe flashing or overcoming signing restrictions cannot be assumed.
@@ -15,6 +15,7 @@ Two October 18 candidates at 17:03 and 18:20 add Gathin23/tv-vibehack. A third p
 October 16 original idea's candidate snapshot: 4 likes, 143 views; two later personal accounts have separate sources, neither with flashing or privacy acceptance tests.
 October 18 cleanup candidate snapshot: 22 likes, 4,015 views; no diagnostics or patches, not independent confirmation of malware removal.
 October 18 candidates at 17:03 and 18:20: 4 likes/446 views and 0 likes/58 views respectively. The later post's 675 stars is an unverified project-snapshot claim. The public README was read this run, without physical-device or privacy testing.
+October 19, 13:47 candidate snapshot: 25 likes, 826 views and 2 reposts. It adds Android/Google TV scope, claiming Xiaomi, TCL, OnePlus, Sony and Hisense support, not Samsung, LG or Fire TV. This disables packages rather than deleting them or reversing firmware. The described workflow enables developer options and ADB debugging, asks an agent on a same-network computer to act for the specified model, and approves access on the TV. One-line recovery is claimed but was not device-tested here. Most lists also disable firmware updates until explicitly restored. Ad removal does not erase security-update risks, and the brand list is not proof of support for every model.
 
 ## Sources
 
@@ -27,5 +28,6 @@ October 18 candidates at 17:03 and 18:20: 4 likes/446 views and 0 likes/58 views
 - [17:03 supplement: Android ADB disabling and recovery boundaries](https://x.com/i/status/2111744857114919257)
 - [18:20 supplement: tv-vibehack repository identity and disabling rather than uninstalling](https://x.com/i/status/2111764419361350088)
 - [Public project README: ADB, launcher, recovery and known problems](https://github.com/Gathin23/tv-vibehack)
+- [October 19, 13:47: brand scope, recovery and firmware-update risks](https://x.com/i/status/2112057932724469950)
 
 [中文](../tv-firmware-ai-ad-removal-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

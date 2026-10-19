@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 523 cases & projects
+# 533 cases & projects
 
-**Latest case update / maintenance:** October 19, 2026, 12:14 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 19, 2026, 16:16 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -32,7 +32,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 6. **[Frontkick vs Rikugan](cases/en/synacktiv-frontkick-rikugan-crebench.md)** · `2026-10-13` — Recover algorithms and keys from AES/ChaCha20 binaries. Synacktiv publishes per-run results, but **unequal library prompts confound the comparison**—not proof that CodeAct beats tool calling. Two tasks only; not independently rerun. `Analysis test`
 7. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 8. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
-9. **[Mauro's DOS-to-Mega Drive port](cases/en/mauro-dos-sgdk-megadrive-ai-port.md)** · `2026-10-19` — AI converts code to C/SGDK and helps pre-render sprites; **64 KB RAM and 64 KB VRAM still require manual adaptation**. The author reports a crash-free playthrough, not an unattended port; game title and build artifacts unavailable. `In progress`
+9. **[sm64-gba: physics before the whole game](cases/en/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude adapts **human-made n64decomp code** for GBA, with frame-by-frame movement/collision oracles and **successful public project CI**. A limited four-level demo, not a complete game; real hardware untested. `In progress`
 10. **[Kestrel: Android games on Apple Silicon](cases/en/kestrel-colate-rea-mac-android-player.md)** · `2026-10-19` — REA-assisted MuMu research informs a **public Metal player and keymapping layer over Google's emulator**. BGMI reportedly runs; the experiment ledger preserves rejected optimizations. One host, no general speedup claim; current public Swift CI tests fail. `Early preview`
 
 ## Classic cases
@@ -48,9 +48,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **120** |
-| [Hardware & interoperability](categories/en/hardware.md) | **119** |
-| [Applications & clients](categories/en/apps.md) | **237** |
+| [Games & preservation](categories/en/games.md) | **124** |
+| [Hardware & interoperability](categories/en/hardware.md) | **123** |
+| [Applications & clients](categories/en/apps.md) | **239** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **47** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

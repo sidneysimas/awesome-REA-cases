@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](../cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
+- [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](../cases/termix-rea-escrow-analysis-service.md) — 第三方称TermiX的REA接受合约、文件和URL，按报告验收结算，10美元起；未取得真实订单或分析报告。 **[未确认使用 REA · 相关项目]**
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](../cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
 - [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](../cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](../cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
@@ -162,7 +164,7 @@
 - [PDF 二进制最小修改：AI 文档结构操作的 idea](../cases/pdf-binary-minimal-edit-ai-idea.md) — 帖子建议拆解PDF后最小修改文字，未给样本或结构保持测试。 **[其他 AI 逆向 · 待验证]**
 - [Supabase：用 REA 研究欧盟取向兼容版本的 idea](../cases/supabase-eu-rea-idea.md) — 回复建议研究Supabase并制作面向欧盟的版本，没有实现或GDPR验收。 **[REA · 待验证]**
 - [日用语音输入 App：看懂客户端后仍需重建五小时的报告](../cases/voice-input-client-cloud-ai-rebuild.md) — 作者自述AI研究安装包，发现识别润色留在云端，客户端只覆盖录音与粘贴链。 **[其他 AI 逆向 · 进行中]**
-- [BINNY：面向逆向研究的多模型 Agent harness 公测](../cases/binny-agentic-reverse-harness.md) — 发布帖称组合多模型、Ghidra、沙箱与自主二进制分析，尚未核验实现。 **[其他 AI 逆向 · 相关项目]**
+- [BINNY：面向逆向研究的多模型 Agent harness 公测](../cases/binny-agentic-reverse-harness.md) — 补查公开BINNY文档确认多模型分析框架、Ghidra、预算检查点及AGPL声明；报告与Docker隔离效果未经运行验证。 **[其他 AI 逆向 · 相关项目]**
 - [Chrome 深色模式扩展：用 REA 研究以便改进](../cases/chrome-dark-mode-extension-rea.md) — 作者称已用 REA 逆向一款深色模式扩展，但没有给出名称或改进结果。 **[REA · 进行中]**
 - [建设投标解密器：Claude Code 辅助研究密码报错的转述](../cases/construction-bid-decryptor-claude-report.md) — 帖子称为十亿韩元投标研究失败的解密器，最终原因是 ^^ 被输为 ^6。 **[其他 AI 逆向 · 待验证]**
 - [Hermes REA 插件：MCP 与适配 Skill 的发布转述](../cases/hermes-rea-plugin-release.md) — 用户报告集成与Python分析缺口，新工程摘要补充版本pin兼容和工具审批边界。 **[REA · 相关项目]**
