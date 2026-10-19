@@ -2,6 +2,23 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Rosetta：读者提及 AI 时代的兼容层逆向项目](../cases/rosetta-ai-reverse-engineering-reader-report.md) — 读者将Rosetta逆向与AI推动兼容层联系起来；仅有第三方简短提及，未确认实现、AI角色或兼容性。 **[未确认使用 REA · 待验证]**
+- [Bitcoin 2009：Opus 辅助恢复构建环境，而不是恢复源码](../cases/bitcoin-2009-opus-build-environment.md) — t4t5公开历史构建环境重建，报告EXE及RAR逐字节一致；目标是0.1.1时代二进制，DLL未重建。 **[其他 AI 逆向 · 分析测试]**
+- [WayShare：macOS 自带屏幕共享连接 Hyprland，研究 Apple 高性能模式](../cases/wayshare-apple-remote-desktop-linux.md) — Wes Grimes称Grok bot跨机器协调REA、Claude与Codex；有公开项目与成功CI，Standard屏幕及剪贴板未加密。 **[REA · 进行中]**
+- [oma-launcher／oma-cast：REA 研究 Raycast 后为 Omarchy 重建启动器](../cases/omarchy-raycast-rea-launcher.md) — typecraft公开启动器和Raycast 2.8.2研究笔记；搜索与Omarchy集成已有代码，扩展兼容等仍为计划。 **[REA · 进行中]**
+- [旧 Android 手机控制板：AI 研究桌面集成与 OBS 真实状态](../cases/android-phone-ai-desktop-control-pad.md) — 第三方介绍手机浏览器六按钮配桌面助手，报告OBS静音与录制确认；300Agent和零成本未核验。 **[其他 AI 逆向 · 待验证]**
+- [REA MINI：单文件 Python 本地优先逆向 harness 的介绍](../cases/rea-mini-single-file-harness.md) — webXOS介绍受REA启发的单文件Python流水线，称支持本地模型和外部API，实际源码与全流程未核验。 **[未确认使用 REA · 进行中]**
+- [Grokbot 访谈模板：把重建需求转成 Claude Code 提示词](../cases/grokbot-interview-rebuild-prompt.md) — 模板号称用普通英语访谈生成Opus重建提示词，没有具名软件重建验收。 **[其他 AI 逆向 · 相关项目]**
+- [数字足迹清理：REA 调查跟踪方，Claude 辅助删除请求](../cases/rea-claude-digital-footprint-audit.md) — 作者称REA调查旧网站和App数据流向，再用Claude整理退出与删除；53记录、9账号、14公司无独立证据。 **[REA · 待验证]**
+- [从笔记本控制 PC：REA 发现服务，指定显示器播放视频](../cases/rea-laptop-pc-display-control.md) — 作者给出本地服务发现与可逆操作审批流程，称Claude在指定显示器播放Economist采访；无实现或验收。 **[REA · 待验证]**
+- [付费作品集动效：同提示词对照 Claude Code 与 Codex 的 REA 重建](../cases/rea-portfolio-claude-codex-comparison.md) — 阿语作者让两模型研究参考站动效并用本人内容新建portfolio，报告7分钟对20分钟与不同额度比例。 **[REA · 分析测试]**
+- [CME 市场数据：从滚动截图识别改为 AI Agent 读表的自述](../cases/cme-ai-market-data-table-report.md) — 作者为模型验证读取CME网页市场数据，称Agent替代多屏截图识别；未证明协议逆向或访问授权。 **[其他 AI 逆向 · 相关项目]**
+- [Revolut 设计系统：给 Opus 一个 URL，恢复品牌规范的自述](../cases/revolut-opus-design-system-report.md) — 作者称Claude恢复字体、颜色、网格、组件、语调、设计tokens及HTML品牌页，明确非官方。 **[其他 AI 逆向 · 待验证]**
+- [Dreamina Analyze This Video：从参考片段推导可继续创作的提示词](../cases/dreamina-analyze-video-prompt-report.md) — 合作宣传介绍具名视频到提示词功能，没有证明恢复原始生成提示词。 **[其他 AI 逆向 · 相关项目]**
+- [调试器 MCP 风险调查：x64dbg、GhidraMCP 与 IDA Pro MCP](../cases/debugger-mcp-auth-prompt-injection-review.md) — 作者介绍源码级认证、工具权限与提示注入调查，未提供本轮可读技术发现或证明AI参与分析。 **[未确认使用 REA · 相关项目]**
+- [独立 App 授权审计：用 REA 整理客户端风险的服务提案](../cases/rea-owner-authorized-indie-app-audit.md) — 作者提出48小时250美元的自愿授权审计，目标为硬编码密钥、客户端付费判断与未认证端点；无已交付样本。 **[REA · 进行中]**
+- [FreePi：把 REA 接到免费模型命令入口的项目自述](../cases/freepi-rea-free-model-integration.md) — 推广者称FreePi提供reverse-engineer-anything命令，无卡无key；未证明免费模型质量、配额或具体逆向成果。 **[REA · 相关项目]**
+- [Nox 快递员 App：六工具过夜研究竞品与上线的宣传叙事](../cases/nox-courier-app-rea-workflow-claim.md) — 旧窗口帖子称Nox协调Grok bot、REA、Opus、jev、dots和Obsidian做快递App；用户与收入没有可查凭据。 **[REA · 待验证]**
 - [sayn：从 Play Store 功能与 APK 规格生成自己的 Android App](../cases/sayn-rea-native-app-factory.md) — 作者将REA接入本地App工厂；公开代码可见可选APK分析、功能规格及Expo构建路径，不是已验证的任意付费App克隆。 **[REA · 进行中]**
 - [Palmier Pro：视频制作中逆向修 Bug 与交互补丁的自述](../cases/palmier-pro-ai-video-workflow-patches.md) — 李不凯称在Opus视频制作流程中研究Palmier Pro并打补丁，改善交互；没有补丁与版本可复核。 **[其他 AI 逆向 · 待验证]**
 - [Devvy 云控制台：用开源工具重建自己付费云功能的自述](../cases/devvy-selfhosted-cloud-console-rebuild.md) — 作者称用AI重建所需云功能与harness，迁到每月6美元服务器，明确没有反编译。 **[其他 AI 逆向 · 相关项目]**

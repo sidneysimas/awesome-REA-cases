@@ -1,7 +1,7 @@
-# TV ads and privacy: a firmware idea, stalled research and ADB cleanup
+# TV ads and privacy: firmware ideas and the limits of CleanYourTV ADB cleanup
 
 Category: Hardware and interoperability · Other AI-assisted work
-Record date: 2026-10-19
+Record date: 2026-10-20
 Stage: Needs verification
 
 On October 16, @j_larrieux replies to @DCinvestor's question about TV firmware that does not spy on users, proposing decompilation, ad removal, recompilation and reflashing with thorough AI-requested tests. This is an idea without a brand, model, firmware, build, signing method or ad/telemetry tests. Safe flashing or overcoming signing restrictions cannot be assumed.
@@ -20,6 +20,7 @@ The October 19 tutorial at 16:40 Beijing time says it uses Codex with GPT 6.1 SO
 Review of the older October 19 comment at 12:02, with its conversation, confirms a response to 0xCodila's promotion concerning a 2017 TV. The commenter argues the model recognized the platform and replayed a decade-old XDA procedure rather than analyzing firmware. This is a reader's correction, not an independent code audit. The candidate ends mid-sentence; only its readable criticism is retained, without inventing the rest or dismissing other TV research.
 An October 19 candidate at 23:22 recommends disabling network/ADB debugging after TV cleanup, revoking old authorizations, considering a guest network and saving executed commands, warning firmware updates may overwrite modifications. Five minutes and an update undoing half the changes are promotional generalizations, not model-specific tests; guest-network isolation depends on router configuration.
 Separate review of an older-window October 19 post at 19:13: the author claims Claude Code discovers a TV over Wi-Fi, opens its local developer API, inventories apps, removes ads/tracking with approval, creates one row of shows and enables local voice control, claiming complete recovery and no data leaving the network. No model, API, packages, implementation or traffic records are given. The 10%–100% sequence is narrative progress, not a test pass rate. Privacy promises remain unconfirmed; this is not identified as the same project as tv-vibehack.
+The October 20 candidate at 00:49 claims about 15 minutes per TV, 30 tested lists, 250 KB, 4,100 stars and 34 contributors for CleanYourTV. These are third-party snapshots; an incomplete ending does not prevent project identification. Supplementary reading of the README at that day's 02:17 commit 6bcd649bfd6fb4ed0e448c369a258b672a0a1a0b confirms the October 19 rename from tv-vibehack, retaining old links. It now claims 54 lists, 23 brands and about 280 KB: different times/scopes, not independently measured interchangeable figures. Fire TV supports debloating only, not taking over Home; some China-market TCL sets reject launchers. This corrects an earlier blanket Fire TV exclusion. Restoration re-enables packages in the applied list only, excludes outside-list changes and leaves the new launcher installed. Private DNS cannot remove same-origin YouTube ads, and the resolver can see queries. No execution, restoration or privacy-traffic test was performed here.
 
 ## Sources
 
@@ -37,5 +38,7 @@ Separate review of an older-window October 19 post at 19:13: the author claims C
 - [Older-window 12:02 comment questions firmware-reversing claims](https://x.com/i/status/2112031685663764680)
 - [October 19, 23:22: advice to disable ADB and revoke authorizations after cleanup](https://x.com/i/status/2112202860569973211)
 - [Older-window October 19, 19:13: local-API and voice-control claim](https://x.com/i/status/2112140116822999525)
+- [October 20, 00:49: third-party CleanYourTV introduction](https://x.com/i/status/2112224530529763587)
+- [October 20, 02:17 pinned README: rename, compatibility and restoration limits](https://github.com/Gathin23/cleanyourtv/blob/6bcd649bfd6fb4ed0e448c369a258b672a0a1a0b/README.md)
 
 [中文](../tv-firmware-ai-ad-removal-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

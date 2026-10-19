@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [IDA Agent 自测：10 个 nullsub 逐条改名并还原](../cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](../cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**
 - [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](../cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**
 - [实盘记录到交易策略：FMZ Quant 提出的 AI 逆向实验问题](../cases/ai-live-trades-strategy-inference-test.md) — 视频标题询问AI能否靠作者实盘记录猜出策略；只确认具体实验问题，未取得输入、方法或结果。 **[未确认使用 REA · 待验证]**

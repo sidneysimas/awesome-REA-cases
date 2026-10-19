@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [ESP32 自定义固件：Codex 用户称替代 Sonos 与 Amazon Echo](../cases/esp32-codex-sonos-echo-replacement.md) — 用户称与Codex制作ESP32固件替代家中音箱；未说明协议研究或功能等价。 **[其他 AI 逆向 · 相关项目]**
+- [LG 空调：让 bot 研究完全本地控制，去掉初始 App 登录依赖](../cases/lg-ac-local-no-app-login-report.md) — 用户已有Home Assistant集成，仍让bot研究LG空调以脱离首次App登录；无协议或实测记录。 **[其他 AI 逆向 · 待验证]**
+- [2006 Lexus 导航屏总线：Agent 用户称产出接线、BOM 与外壳 STL](../cases/lexus-2006-nav-bus-agent-report.md) — Grok bot回复者称研究旧Lexus导航屏总线；未提供总线协议或车内验证。 **[其他 AI 逆向 · 进行中]**
+- [2GB Android 电视盒：用 Claude 配置常驻 Agent 主机的自述](../cases/android-tvbox-claude-agent-host.md) — 帖子描述识别芯片、安装Linux shell、wake lock与私人Telegram bot，未证明突破固件或可替代Mac Mini性能。 **[其他 AI 逆向 · 相关项目]**
+- [Bluey 每集前做数学题：AI 改造电视的家庭用途自述](../cases/tv-bluey-age-math-gate.md) — Robert Leshner称孩子每集Bluey前需解适龄数学题，无设备型号、实现或防绕过测试。 **[其他 AI 逆向 · 待验证]**
 - [CMF Watch Pro 3：让 AI 研究手表并做 App 与表盘商店](../cases/cmf-watch-pro3-ai-app-store.md) — TechJeeper称过夜让AI研究CMF Watch Pro 3并做应用与表盘商店，未取得协议、仓库或手表实测。 **[其他 AI 逆向 · 进行中]**
 - [Android CarPlay AI box：把四个 Claude 终端显示到停车后的车机屏幕](../cases/android-carplay-box-claude-terminal-idea.md) — 提示词通过Android盒子、ADB及本地网页显示笔记本Agent，不是攻破iPhone CarPlay或修改车辆固件。 **[其他 AI 逆向 · 相关项目]**
 - [旧 iPad：由电视和音箱改造引出的 Claude 研究愿望](../cases/old-ipad-claude-research-idea.md) — 读者问为何还没人用Claude研究旧iPad；目标设备类别明确，未指定功能、型号或可行路径。 **[其他 AI 逆向 · 待验证]**
@@ -101,7 +106,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理与固件研究分开记录；新增撤销ADB调试授权的建议及旧窗口本地API自述，不证明语音控制、完全去追踪或固件重写。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea 与 CleanYourTV 的 ADB 清理边界](../cases/tv-firmware-ai-ad-removal-idea.md) — CleanYourTV已确认由tv-vibehack改名；固定提交说明Fire TV仅支持清理、恢复只覆盖清单，不是固件重写或完整隐私验证。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](../cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**

@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **554 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **579 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（128）
-- [硬件与设备互通](categories/hardware.md)（127）
-- [应用与客户端](categories/apps.md)（248）
-- [算法与功能重建](categories/algorithms.md)（51）
+- [游戏与游戏保存](categories/games.md)（130）
+- [硬件与设备互通](categories/hardware.md)（132）
+- [应用与客户端](categories/apps.md)（265）
+- [算法与功能重建](categories/algorithms.md)（52）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [eFootball：AI 推断准确系数与属性 90 阈值](cases/efootball-ai-accuracy-coefficient-claim.md) — 作者称Passing、Finishing和Heading超过90后的加点收益降约40%，未公开公式或实验。 **[其他 AI 逆向 · 待验证]**
+- [OpenCE 等 Halo 项目：读者区分 AI 反编译与人工功能开发](cases/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy称OpenCE引擎正人工清理、新功能主要由人开发；同帖对其他Halo项目的评价无开发者依据。 **[其他 AI 逆向 · 待验证]**
 - [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
@@ -157,6 +159,11 @@
 
 ### 硬件与设备互通
 
+- [ESP32 自定义固件：Codex 用户称替代 Sonos 与 Amazon Echo](cases/esp32-codex-sonos-echo-replacement.md) — 用户称与Codex制作ESP32固件替代家中音箱；未说明协议研究或功能等价。 **[其他 AI 逆向 · 相关项目]**
+- [LG 空调：让 bot 研究完全本地控制，去掉初始 App 登录依赖](cases/lg-ac-local-no-app-login-report.md) — 用户已有Home Assistant集成，仍让bot研究LG空调以脱离首次App登录；无协议或实测记录。 **[其他 AI 逆向 · 待验证]**
+- [2006 Lexus 导航屏总线：Agent 用户称产出接线、BOM 与外壳 STL](cases/lexus-2006-nav-bus-agent-report.md) — Grok bot回复者称研究旧Lexus导航屏总线；未提供总线协议或车内验证。 **[其他 AI 逆向 · 进行中]**
+- [2GB Android 电视盒：用 Claude 配置常驻 Agent 主机的自述](cases/android-tvbox-claude-agent-host.md) — 帖子描述识别芯片、安装Linux shell、wake lock与私人Telegram bot，未证明突破固件或可替代Mac Mini性能。 **[其他 AI 逆向 · 相关项目]**
+- [Bluey 每集前做数学题：AI 改造电视的家庭用途自述](cases/tv-bluey-age-math-gate.md) — Robert Leshner称孩子每集Bluey前需解适龄数学题，无设备型号、实现或防绕过测试。 **[其他 AI 逆向 · 待验证]**
 - [CMF Watch Pro 3：让 AI 研究手表并做 App 与表盘商店](cases/cmf-watch-pro3-ai-app-store.md) — TechJeeper称过夜让AI研究CMF Watch Pro 3并做应用与表盘商店，未取得协议、仓库或手表实测。 **[其他 AI 逆向 · 进行中]**
 - [Android CarPlay AI box：把四个 Claude 终端显示到停车后的车机屏幕](cases/android-carplay-box-claude-terminal-idea.md) — 提示词通过Android盒子、ADB及本地网页显示笔记本Agent，不是攻破iPhone CarPlay或修改车辆固件。 **[其他 AI 逆向 · 相关项目]**
 - [旧 iPad：由电视和音箱改造引出的 Claude 研究愿望](cases/old-ipad-claude-research-idea.md) — 读者问为何还没人用Claude研究旧iPad；目标设备类别明确，未指定功能、型号或可行路径。 **[其他 AI 逆向 · 待验证]**
@@ -256,7 +263,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理与固件研究分开记录；新增撤销ADB调试授权的建议及旧窗口本地API自述，不证明语音控制、完全去追踪或固件重写。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea 与 CleanYourTV 的 ADB 清理边界](cases/tv-firmware-ai-ad-removal-idea.md) — CleanYourTV已确认由tv-vibehack改名；固定提交说明Fire TV仅支持清理、恢复只覆盖清单，不是固件重写或完整隐私验证。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
@@ -287,6 +294,23 @@
 
 ### 应用与客户端
 
+- [Rosetta：读者提及 AI 时代的兼容层逆向项目](cases/rosetta-ai-reverse-engineering-reader-report.md) — 读者将Rosetta逆向与AI推动兼容层联系起来；仅有第三方简短提及，未确认实现、AI角色或兼容性。 **[未确认使用 REA · 待验证]**
+- [Bitcoin 2009：Opus 辅助恢复构建环境，而不是恢复源码](cases/bitcoin-2009-opus-build-environment.md) — t4t5公开历史构建环境重建，报告EXE及RAR逐字节一致；目标是0.1.1时代二进制，DLL未重建。 **[其他 AI 逆向 · 分析测试]**
+- [WayShare：macOS 自带屏幕共享连接 Hyprland，研究 Apple 高性能模式](cases/wayshare-apple-remote-desktop-linux.md) — Wes Grimes称Grok bot跨机器协调REA、Claude与Codex；有公开项目与成功CI，Standard屏幕及剪贴板未加密。 **[REA · 进行中]**
+- [oma-launcher／oma-cast：REA 研究 Raycast 后为 Omarchy 重建启动器](cases/omarchy-raycast-rea-launcher.md) — typecraft公开启动器和Raycast 2.8.2研究笔记；搜索与Omarchy集成已有代码，扩展兼容等仍为计划。 **[REA · 进行中]**
+- [旧 Android 手机控制板：AI 研究桌面集成与 OBS 真实状态](cases/android-phone-ai-desktop-control-pad.md) — 第三方介绍手机浏览器六按钮配桌面助手，报告OBS静音与录制确认；300Agent和零成本未核验。 **[其他 AI 逆向 · 待验证]**
+- [REA MINI：单文件 Python 本地优先逆向 harness 的介绍](cases/rea-mini-single-file-harness.md) — webXOS介绍受REA启发的单文件Python流水线，称支持本地模型和外部API，实际源码与全流程未核验。 **[未确认使用 REA · 进行中]**
+- [Grokbot 访谈模板：把重建需求转成 Claude Code 提示词](cases/grokbot-interview-rebuild-prompt.md) — 模板号称用普通英语访谈生成Opus重建提示词，没有具名软件重建验收。 **[其他 AI 逆向 · 相关项目]**
+- [数字足迹清理：REA 调查跟踪方，Claude 辅助删除请求](cases/rea-claude-digital-footprint-audit.md) — 作者称REA调查旧网站和App数据流向，再用Claude整理退出与删除；53记录、9账号、14公司无独立证据。 **[REA · 待验证]**
+- [从笔记本控制 PC：REA 发现服务，指定显示器播放视频](cases/rea-laptop-pc-display-control.md) — 作者给出本地服务发现与可逆操作审批流程，称Claude在指定显示器播放Economist采访；无实现或验收。 **[REA · 待验证]**
+- [付费作品集动效：同提示词对照 Claude Code 与 Codex 的 REA 重建](cases/rea-portfolio-claude-codex-comparison.md) — 阿语作者让两模型研究参考站动效并用本人内容新建portfolio，报告7分钟对20分钟与不同额度比例。 **[REA · 分析测试]**
+- [CME 市场数据：从滚动截图识别改为 AI Agent 读表的自述](cases/cme-ai-market-data-table-report.md) — 作者为模型验证读取CME网页市场数据，称Agent替代多屏截图识别；未证明协议逆向或访问授权。 **[其他 AI 逆向 · 相关项目]**
+- [Revolut 设计系统：给 Opus 一个 URL，恢复品牌规范的自述](cases/revolut-opus-design-system-report.md) — 作者称Claude恢复字体、颜色、网格、组件、语调、设计tokens及HTML品牌页，明确非官方。 **[其他 AI 逆向 · 待验证]**
+- [Dreamina Analyze This Video：从参考片段推导可继续创作的提示词](cases/dreamina-analyze-video-prompt-report.md) — 合作宣传介绍具名视频到提示词功能，没有证明恢复原始生成提示词。 **[其他 AI 逆向 · 相关项目]**
+- [调试器 MCP 风险调查：x64dbg、GhidraMCP 与 IDA Pro MCP](cases/debugger-mcp-auth-prompt-injection-review.md) — 作者介绍源码级认证、工具权限与提示注入调查，未提供本轮可读技术发现或证明AI参与分析。 **[未确认使用 REA · 相关项目]**
+- [独立 App 授权审计：用 REA 整理客户端风险的服务提案](cases/rea-owner-authorized-indie-app-audit.md) — 作者提出48小时250美元的自愿授权审计，目标为硬编码密钥、客户端付费判断与未认证端点；无已交付样本。 **[REA · 进行中]**
+- [FreePi：把 REA 接到免费模型命令入口的项目自述](cases/freepi-rea-free-model-integration.md) — 推广者称FreePi提供reverse-engineer-anything命令，无卡无key；未证明免费模型质量、配额或具体逆向成果。 **[REA · 相关项目]**
+- [Nox 快递员 App：六工具过夜研究竞品与上线的宣传叙事](cases/nox-courier-app-rea-workflow-claim.md) — 旧窗口帖子称Nox协调Grok bot、REA、Opus、jev、dots和Obsidian做快递App；用户与收入没有可查凭据。 **[REA · 待验证]**
 - [sayn：从 Play Store 功能与 APK 规格生成自己的 Android App](cases/sayn-rea-native-app-factory.md) — 作者将REA接入本地App工厂；公开代码可见可选APK分析、功能规格及Expo构建路径，不是已验证的任意付费App克隆。 **[REA · 进行中]**
 - [Palmier Pro：视频制作中逆向修 Bug 与交互补丁的自述](cases/palmier-pro-ai-video-workflow-patches.md) — 李不凯称在Opus视频制作流程中研究Palmier Pro并打补丁，改善交互；没有补丁与版本可复核。 **[其他 AI 逆向 · 待验证]**
 - [Devvy 云控制台：用开源工具重建自己付费云功能的自述](cases/devvy-selfhosted-cloud-console-rebuild.md) — 作者称用AI重建所需云功能与harness，迁到每月6美元服务器，明确没有反编译。 **[其他 AI 逆向 · 相关项目]**
@@ -538,6 +562,7 @@
 
 ### 算法与功能重建
 
+- [IDA Agent 自测：10 个 nullsub 逐条改名并还原](cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**
 - [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**
 - [实盘记录到交易策略：FMZ Quant 提出的 AI 逆向实验问题](cases/ai-live-trades-strategy-inference-test.md) — 视频标题询问AI能否靠作者实盘记录猜出策略；只确认具体实验问题，未取得输入、方法或结果。 **[未确认使用 REA · 待验证]**

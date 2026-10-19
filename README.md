@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 554 cases & projects
+# 579 cases & projects
 
-**Latest case update / maintenance:** October 20, 2026, 00:12 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 20, 2026, 04:15 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -31,9 +31,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 5. **[LeanREA: direct CLI vs MCP](cases/en/leanrea-cli-skill-benchmark.md)** · `2026-10-17` — Trace Notion features, inspect a native lock and identify Go dependencies. The public **36-run comparison** reports lower time and cost, but scores are **74/75 vs 75/75**, not identical accuracy. One model and machine; not independently rerun. `Analysis test`
 6. **[Frontkick vs Rikugan](cases/en/synacktiv-frontkick-rikugan-crebench.md)** · `2026-10-13` — Recover algorithms and keys from AES/ChaCha20 binaries. Synacktiv publishes per-run results, but **unequal library prompts confound the comparison**—not proof that CodeAct beats tool calling. Two tasks only; not independently rerun. `Analysis test`
 7. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
-8. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
+8. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
 9. **[sm64-gba: physics before the whole game](cases/en/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude adapts **human-made n64decomp code** for GBA, with frame-by-frame movement/collision oracles and **successful public project CI**. A limited four-level demo, not a complete game; real hardware untested. `In progress`
-10. **[sayn: make your own Android utility](cases/en/sayn-rea-native-app-factory.md)** · `2026-10-19` — A **public REA-to-feature-spec workflow** feeds an Expo app factory and ADB installation. APK analysis is optional and can fall back to store listings; source inspected, builds untested. Not proof of cloning any paid app in five minutes. `In progress`
+10. **[oma-launcher: Raycast-style search on Omarchy](cases/en/omarchy-raycast-rea-launcher.md)** · `2026-10-20` — **Public launcher code and Raycast research notes** connect REA analysis to app/action search. The author claims a few hours and 40 ms opening; extensions and clipboard history remain planned, not a complete Raycast replacement. `In progress`
 
 ## Classic cases
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **128** |
-| [Hardware & interoperability](categories/en/hardware.md) | **127** |
-| [Applications & clients](categories/en/apps.md) | **248** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **51** |
+| [Games & preservation](categories/en/games.md) | **130** |
+| [Hardware & interoperability](categories/en/hardware.md) | **132** |
+| [Applications & clients](categories/en/apps.md) | **265** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **52** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

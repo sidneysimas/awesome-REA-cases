@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [eFootball：AI 推断准确系数与属性 90 阈值](../cases/efootball-ai-accuracy-coefficient-claim.md) — 作者称Passing、Finishing和Heading超过90后的加点收益降约40%，未公开公式或实验。 **[其他 AI 逆向 · 待验证]**
+- [OpenCE 等 Halo 项目：读者区分 AI 反编译与人工功能开发](../cases/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy称OpenCE引擎正人工清理、新功能主要由人开发；同帖对其他Halo项目的评价无开发者依据。 **[其他 AI 逆向 · 待验证]**
 - [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](../cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](../cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](../cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
