@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **513 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **523 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（117）
-- [硬件与设备互通](categories/hardware.md)（115）
-- [应用与客户端](categories/apps.md)（235）
-- [算法与功能重建](categories/algorithms.md)（46）
+- [游戏与游戏保存](categories/games.md)（120）
+- [硬件与设备互通](categories/hardware.md)（119）
+- [应用与客户端](categories/apps.md)（237）
+- [算法与功能重建](categories/algorithms.md)（47）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制](cases/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。 **[其他 AI 逆向 · 进行中]**
+- [The Sims 3 Mac 64位版：Claude 辅助逆向与主线程优化的帧率自述](cases/sims3-mac64-claude-main-thread.md) — Feede称Claude辅助研究并优化主线程后最高150 FPS，重载约60–70 FPS；没有基线、配置与可复跑补丁。 **[其他 AI 逆向 · 待验证]**
+- [Dwarf Fortress：AI 反编译并重编译为原生 Mac 版的进行中自述](cases/dwarf-fortress-ai-native-mac-plan.md) — TheAnonLebowski称正在用AI研究Dwarf Fortress以原生运行于Mac；未给版本、模型或构建验证。 **[其他 AI 逆向 · 进行中]**
 - [Roblox游戏重建：Claude与REA恢复翻转、加速垫及连击机制的宣传自述](cases/roblox-rea-flips-boost-combo-rebuild.md) — Monreal称第二天已在Roblox Studio有可玩版，列翻转、加速垫、连击倍数与能量条；游戏名和对照测试未给。 **[REA · 待验证]**
 - [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
 - [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
@@ -110,7 +113,7 @@
 - [Uncharted 1–3：Claude 逆向与 Windows 原生版的转述](cases/uncharted-trilogy-claude-windows-report.md) — 帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [Slipstream 5000：Codex 两天反编译的作者报告](cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
 - [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](cases/pokemon-hgss-multi-agent-decompile-report.md) — 传播帖称4.1 MB字节匹配反编译；回复提醒依赖pret既有工作，费用不是已核验账单。 **[其他 AI 逆向 · 待验证]**
-- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](cases/d2-claude-engine-rebuild-report.md) — Destiny重建的二手报告新增兼容性质疑；另一项目参与者自述也用AI，但不能证明两者为同一实现。 **[其他 AI 逆向 · 待验证]**
+- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](cases/d2-claude-engine-rebuild-report.md) — Destiny重建转述与兼容性质疑，新增Envy关于社区用AI迁移Wrath的说法；未确认各实现关系或可玩性。 **[其他 AI 逆向 · 待验证]**
 - [RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述](cases/ringfall-th04-bullet-hell-report.md) — 帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。 **[REA · 待验证]**
 - [Source Engine：用 AI 反编译游戏引擎的 idea](cases/source-engine-ai-decompile-idea.md) — 作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。 **[其他 AI 逆向 · 待验证]**
 - [Total War: Shogun 2：对自有原版进行 AI 反编译的 idea](cases/shogun2-ai-decompile-idea.md) — 作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。 **[其他 AI 逆向 · 待验证]**
@@ -146,6 +149,10 @@
 
 ### 硬件与设备互通
 
+- [家中旧路由器：用 Eleven 的 Agent 工作流查看固件在运行什么的计划](cases/eleven-home-router-firmware-inspection-idea.md) — AI Wang在Eleven介绍下提出先分析自家旧路由器固件；目标是理解内部运行内容，尚未报告执行或发现。 **[未确认使用 REA · 待验证]**
+- [2014 年 Samsung TV：Claude 研究加密遥控协议，经 PIN 配对控制旧电视](cases/samsung-2014-claude-encrypted-remote.md) — tezarc称Claude Code找到非Android三星电视，研究加密遥控并经屏幕PIN配对发送命令；明确不是固件破解。 **[其他 AI 逆向 · 待验证]**
+- [LG TV：用 REA 与 Claude 做埃塞俄比亚字母、时间日期屏保主题](cases/lg-tv-ethiopian-theme-rea.md) — Yenu报告LG电视定制主题与时间日期屏保，明确称REA配Claude；没有型号、代码或底层修改证据。 **[REA · 待验证]**
+- [母亲的智能电视：Claude 去臃肿软件尝试因固件下载费用搁置](cases/lucas-mother-tv-claude-firmware-cost-blocker.md) — LucasFisura称尝试用Claude逆向家中Smart TV去臃肿软件，但看到固件下载需20k后停止；币种、型号与分析产物未给。 **[其他 AI 逆向 · 待验证]**
 - [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
 - [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
 - [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**
@@ -264,6 +271,8 @@
 
 ### 应用与客户端
 
+- [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
+- [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
 - [Grokbot：SOL 6.1 辅助恢复 Harness 与 Host 的远程电脑执行链](cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告三天恢复0.72.0-pre.11核心链路，主Agent委派电脑子Agent并打开Chrome；代码整理与宿主能力仍待完成。 **[其他 AI 逆向 · 进行中]**
 - [OrcaCyber Nano 1.0：本地解读反汇编的27B安全模型介绍](cases/orcacyber-nano-local-re-analysis.md) — 日语ChatGPT摘要介绍OrcaRouter的本地安全模型，用于反汇编解释与漏洞分析；没有具体二进制实验，通用数学代码分数不等于逆向能力。 **[其他 AI 逆向 · 相关项目]**
@@ -502,6 +511,7 @@
 
 ### 算法与功能重建
 
+- [Satoshi 2009 构建环境：Agent 从二进制恢复工具链并字节匹配的转述](cases/satoshi-2009-agent-build-environment-report.md) — niels .1称Agent从Satoshi的2009二进制恢复精确构建环境；没有原研究、版本、工具链清单或匹配产物。 **[其他 AI 逆向 · 待验证]**
 - [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
 - [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**
 - [Alvosec：逆向智能合约复盘攻击，再用 Agent 找漏洞](cases/alvosec-contract-attack-agent-reconstruction.md) — Alvosec称已重建攻击者流程并用AI Agent识别漏洞，外部测试与协助修补仍是下一步。 **[其他 AI 逆向 · 进行中]**

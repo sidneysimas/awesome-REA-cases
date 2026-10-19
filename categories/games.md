@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制](../cases/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。 **[其他 AI 逆向 · 进行中]**
+- [The Sims 3 Mac 64位版：Claude 辅助逆向与主线程优化的帧率自述](../cases/sims3-mac64-claude-main-thread.md) — Feede称Claude辅助研究并优化主线程后最高150 FPS，重载约60–70 FPS；没有基线、配置与可复跑补丁。 **[其他 AI 逆向 · 待验证]**
+- [Dwarf Fortress：AI 反编译并重编译为原生 Mac 版的进行中自述](../cases/dwarf-fortress-ai-native-mac-plan.md) — TheAnonLebowski称正在用AI研究Dwarf Fortress以原生运行于Mac；未给版本、模型或构建验证。 **[其他 AI 逆向 · 进行中]**
 - [Roblox游戏重建：Claude与REA恢复翻转、加速垫及连击机制的宣传自述](../cases/roblox-rea-flips-boost-combo-rebuild.md) — Monreal称第二天已在Roblox Studio有可玩版，列翻转、加速垫、连击倍数与能量条；游戏名和对照测试未给。 **[REA · 待验证]**
 - [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](../cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
 - [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](../cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
@@ -86,7 +89,7 @@
 - [Uncharted 1–3：Claude 逆向与 Windows 原生版的转述](../cases/uncharted-trilogy-claude-windows-report.md) — 帖子称 PS4 代码转到 Vulkan，三作共用启动器；性能与功能均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [Slipstream 5000：Codex 两天反编译的作者报告](../cases/slipstream-5000-codex-decompile.md) — 作者称这次反编译相当忠实，三月尝试曾耗数天后混乱失败。 **[其他 AI 逆向 · 待验证]**
 - [《宝可梦心金 / 魂银》：多 Agent 分块反编译的费用转述](../cases/pokemon-hgss-multi-agent-decompile-report.md) — 传播帖称4.1 MB字节匹配反编译；回复提醒依赖pret既有工作，费用不是已核验账单。 **[其他 AI 逆向 · 待验证]**
-- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — Destiny重建的二手报告新增兼容性质疑；另一项目参与者自述也用AI，但不能证明两者为同一实现。 **[其他 AI 逆向 · 待验证]**
+- [Destiny 社区重建：Claude 反编译 d2 与素材重做的转述](../cases/d2-claude-engine-rebuild-report.md) — Destiny重建转述与兼容性质疑，新增Envy关于社区用AI迁移Wrath的说法；未确认各实现关系或可玩性。 **[其他 AI 逆向 · 待验证]**
 - [RINGFALL：从 TH04 环形弹幕笔记制作浏览器 Boss 战的转述](../cases/ringfall-th04-bullet-hell-report.md) — 帖子称用 REA / Ghidra 的 TH04 数学笔记，经 Opus 制作新的 Canvas 弹幕游戏。 **[REA · 待验证]**
 - [Source Engine：用 AI 反编译游戏引擎的 idea](../cases/source-engine-ai-decompile-idea.md) — 作者提出 AI 反编译 Source Engine 的问题，未报告启动研究。 **[其他 AI 逆向 · 待验证]**
 - [Total War: Shogun 2：对自有原版进行 AI 反编译的 idea](../cases/shogun2-ai-decompile-idea.md) — 作者称持有原版《全面战争：幕府将军2》，想反编译该版本回应开发商的 AI 使用。 **[其他 AI 逆向 · 待验证]**

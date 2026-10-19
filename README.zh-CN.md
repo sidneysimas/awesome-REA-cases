@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 513 个案例与项目
+# 523 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 19 日 08:07 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 19 日 12:14 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -32,7 +32,7 @@
 6. **[Frontkick 与 Rikugan 对照](cases/synacktiv-frontkick-rikugan-crebench.md)** · `2026-10-13` — 从 AES / ChaCha20 二进制恢复算法与密钥。Synacktiv 公开逐次结果，但**可用库提示不对等，构成混杂因素**，不能证明 CodeAct 胜过工具调用。只测两题，未独立重跑。`分析测试`
 7. **[Open Scrantic：Johnny Castaway 屏保回归](cases/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA 与 Claude Code 辅助恢复 Windows 3.1 屏保引擎，以 Rust 支持三平台。**有公开代码与项目 CI 成功记录**；原资产需自备，仍有已知版本限制与刻意行为差异。`进行中`
 8. **[NJFE：把耳镜接到电脑](cases/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude 辅助 USB 桥接，让廉价 Wi-Fi 相机成为检查镜，**复用前人 otoscope 协议研究**；项目只测一台设备，相机 Wi-Fi 仍开放。`公开实现`
-9. **[Gears of War 3](cases/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI 辅助 Linux 图形研究，采用 **PowerPC 到 C++ 的机械翻译，不是恢复原始源码**；报告的 4K 版本仍有战斗掉帧。`进行中`
+9. **[Mauro：DOS 游戏移植 Mega Drive](cases/mauro-dos-sgdk-megadrive-ai-port.md)** · `2026-10-19` — AI 转 C/SGDK 并协助预渲染精灵，**64 KB RAM 与 64 KB VRAM 仍需人工适配**。作者报告通关无崩溃，不是无人值守移植；未取得游戏名与构建产物。`进行中`
 10. **[Kestrel：在 Apple Silicon 玩 Android 游戏](cases/kestrel-colate-rea-mac-android-player.md)** · `2026-10-19` — REA 辅助研究 MuMu，在 Google 模拟器上做**公开 Metal 播放器与键鼠映射层**。作者报告 BGMI 可玩，实验账本也保留失败的优化。仅单台主机、不宣称普遍提速；当前公开 Swift CI 测试失败。`早期预览`
 
 ## 经典案例
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **117** |
-| [硬件与设备互通](categories/hardware.md) | **115** |
-| [应用与客户端](categories/apps.md) | **235** |
-| [算法与功能重建](categories/algorithms.md) | **46** |
+| [游戏与游戏保存](categories/games.md) | **120** |
+| [硬件与设备互通](categories/hardware.md) | **119** |
+| [应用与客户端](categories/apps.md) | **237** |
+| [算法与功能重建](categories/algorithms.md) | **47** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

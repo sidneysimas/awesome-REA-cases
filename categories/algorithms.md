@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Satoshi 2009 构建环境：Agent 从二进制恢复工具链并字节匹配的转述](../cases/satoshi-2009-agent-build-environment-report.md) — niels .1称Agent从Satoshi的2009二进制恢复精确构建环境；没有原研究、版本、工具链清单或匹配产物。 **[其他 AI 逆向 · 待验证]**
 - [REA 核验引擎：用 CFG、符号路径与运行轨迹交叉检查结论](../cases/rea-cross-tool-verification-engine-idea.md) — 作者提议把REA发现与angr、radare2及Binary Ninja交叉核对，避免Agent未经证实便开始重建。 **[REA · 待验证]**
 - [钱包交易记录：REA 提四条规则交给 Grok Bot 的推广报告](../cases/rea-wallet-four-rule-grok-report.md) — 作者称从312笔交易提取四条规则、回放41/44吻合并四笔获利；未给钱包、交易和回放记录。 **[REA · 待验证]**
 - [Alvosec：逆向智能合约复盘攻击，再用 Agent 找漏洞](../cases/alvosec-contract-attack-agent-reconstruction.md) — Alvosec称已重建攻击者流程并用AI Agent识别漏洞，外部测试与协助修补仍是下一步。 **[其他 AI 逆向 · 进行中]**

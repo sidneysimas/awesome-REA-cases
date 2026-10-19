@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [家中旧路由器：用 Eleven 的 Agent 工作流查看固件在运行什么的计划](../cases/eleven-home-router-firmware-inspection-idea.md) — AI Wang在Eleven介绍下提出先分析自家旧路由器固件；目标是理解内部运行内容，尚未报告执行或发现。 **[未确认使用 REA · 待验证]**
+- [2014 年 Samsung TV：Claude 研究加密遥控协议，经 PIN 配对控制旧电视](../cases/samsung-2014-claude-encrypted-remote.md) — tezarc称Claude Code找到非Android三星电视，研究加密遥控并经屏幕PIN配对发送命令；明确不是固件破解。 **[其他 AI 逆向 · 待验证]**
+- [LG TV：用 REA 与 Claude 做埃塞俄比亚字母、时间日期屏保主题](../cases/lg-tv-ethiopian-theme-rea.md) — Yenu报告LG电视定制主题与时间日期屏保，明确称REA配Claude；没有型号、代码或底层修改证据。 **[REA · 待验证]**
+- [母亲的智能电视：Claude 去臃肿软件尝试因固件下载费用搁置](../cases/lucas-mother-tv-claude-firmware-cost-blocker.md) — LucasFisura称尝试用Claude逆向家中Smart TV去臃肿软件，但看到固件下载需20k后停止；币种、型号与分析产物未给。 **[其他 AI 逆向 · 待验证]**
 - [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](../cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
 - [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](../cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
 - [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](../cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**

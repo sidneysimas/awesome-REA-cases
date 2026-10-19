@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**513 entries**, organized by use case, without a Top-N or popularity threshold.
+**523 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (117)
-- [Hardware and interoperability](categories/en/hardware.md) (115)
-- [Applications and clients](categories/en/apps.md) (235)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (46)
+- [Games and preservation](categories/en/games.md) (120)
+- [Hardware and interoperability](categories/en/hardware.md) (119)
+- [Applications and clients](categories/en/apps.md) (237)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (47)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Mauro's Mega Drive port: AI converts a DOS game to C, with manual memory and graphics adaptation](cases/en/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier clarifies that AI helped convert an original DOS floppy game to SGDK/C and write asset tools, without Rust or REA; he reports a crash-free playthrough, with optimization still requiring manual work. **[Other AI-assisted work · In progress]**
+- [The Sims 3 64-bit Mac: reported frame rates after Claude-assisted main-thread optimization](cases/en/sims3-mac64-claude-main-thread.md) — Feede reports up to 150 FPS and about 60–70 FPS under heavier load after Claude-assisted reversing and main-thread optimization; baseline, configuration and a reproducible patch are missing. **[Other AI-assisted work · Needs verification]**
+- [Dwarf Fortress: an ongoing AI decompilation and native Mac recompilation account](cases/en/dwarf-fortress-ai-native-mac-plan.md) — TheAnonLebowski says they are using AI to investigate Dwarf Fortress for native Mac execution; version, model and build verification are absent. **[Other AI-assisted work · In progress]**
 - [A Roblox rebuild: promotional claims of Claude/REA flips, boost pads and combos](cases/en/roblox-rea-flips-boost-combo-rebuild.md) — Monreal reports a playable Roblox Studio version on day two, listing flips, boost pads, a combo multiplier and power meter; no original game name or comparative tests are supplied. **[REA · Needs verification]**
 - [Fire Emblem Three Houses: a claim of Claude-assisted bosses and UI on a decompilation](cases/en/fire-emblem-three-houses-claude-gameplay.md) — A poster claims new bosses, graphics, UI, chores and DLC using a Three Houses decompilation and Claude; the artifact is unverified. **[Other AI-assisted work · Needs verification]**
 - [Pokemon Yellow: a Claude idea for browser-playable Surfing Pikachu](cases/en/pokemon-yellow-surfing-pikachu-browser-idea.md) — Two posts ask for Claude/Astra investigation of Pokemon Yellow to make Surfing Pikachu playable in a browser; no implementation is reported. **[Other AI-assisted work · Needs verification]**
@@ -112,7 +115,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Uncharted 1–3: a reported Claude-assisted native Windows port](cases/en/uncharted-trilogy-claude-windows-report.md) — A quote post claims PS4-to-Vulkan native builds with one launcher for three games; features and performance are unverified. **[Other AI-assisted work · Needs verification]**
 - [Slipstream 5000: an author reports a two-day Codex decompilation](cases/en/slipstream-5000-codex-decompile.md) — The poster calls the new result remarkably faithful, contrasting it with a confused attempt taking days in March. **[Other AI-assisted work · Needs verification]**
 - [Pokémon HeartGold/SoulSilver: a secondhand multi-agent decompilation and cost report](cases/en/pokemon-hgss-multi-agent-decompile-report.md) — A circulating post claims 4.1 MB of byte-matching decompilation; a reply stresses pret's existing work, and costs are not a verified bill. **[Other AI-assisted work · Needs verification]**
-- [A Destiny community rebuild: reported Claude decompilation and in-engine assets](cases/en/d2-claude-engine-rebuild-report.md) — A Destiny rebuild report gains compatibility objections; another participant reports AI use but their project cannot be equated with the earlier implementation. **[Other AI-assisted work · Needs verification]**
+- [A Destiny community rebuild: reported Claude decompilation and in-engine assets](cases/en/d2-claude-engine-rebuild-report.md) — Destiny rebuild reports and compatibility objections gain Envy's account of a community AI-assisted Wrath port; implementation relationships and playability remain unconfirmed. **[Other AI-assisted work · Needs verification]**
 - [RINGFALL: a reported browser boss fight built from TH04 bullet-ring notes](cases/en/ringfall-th04-bullet-hell-report.md) — A post describes using REA/Ghidra notes about TH04 mathematics to build a new Canvas bullet-hell game with Opus. **[REA · Needs verification]**
 - [Source Engine: an AI decompilation idea](cases/en/source-engine-ai-decompile-idea.md) — The poster asks about decompiling Source Engine with AI, without reporting an investigation. **[Other AI-assisted work · Needs verification]**
 - [Total War: Shogun 2: an AI-decompilation idea for an owned original copy](cases/en/shogun2-ai-decompile-idea.md) — The poster owns the original Shogun 2 and considers decompiling it in response to the developer's use of AI. **[Other AI-assisted work · Needs verification]**
@@ -148,6 +151,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [A home router: a plan to inspect firmware behavior through Eleven's agent workflow](cases/en/eleven-home-router-firmware-inspection-idea.md) — Under an Eleven introduction, AI Wang proposes inspecting an old home router's firmware to understand what runs inside; no execution or findings are reported. **[REA use unconfirmed · Needs verification]**
+- [A 2014 Samsung TV: Claude investigates an encrypted remote protocol and pairs by PIN](cases/en/samsung-2014-claude-encrypted-remote.md) — tezarc says Claude Code found a non-Android Samsung TV, investigated its encrypted remote protocol and sent commands after on-screen PIN pairing; this is explicitly not firmware hacking. **[Other AI-assisted work · Needs verification]**
+- [LG TV: a REA/Claude theme with Ethiopian letters and a time/date screensaver](cases/en/lg-tv-ethiopian-theme-rea.md) — Yenu reports a custom LG TV theme and time/date screensaver using REA with Claude; model, code and low-level modification evidence are missing. **[REA · Needs verification]**
+- [His mother's smart TV: a Claude debloating attempt stalls over firmware-download cost](cases/en/lucas-mother-tv-claude-firmware-cost-blocker.md) — LucasFisura reports trying Claude-assisted reversing of a home smart TV to remove bloat, then stopping at a quoted 20k firmware-download cost; currency, model and analysis artifacts are unspecified. **[Other AI-assisted work · Needs verification]**
 - [Thermal camera: Mehdi's Claude-assisted Mac app for Windows/Android-only hardware](cases/en/mehdi-thermal-camera-claude-macos.md) — Mehdi reports no SDK, forum research on other models and live Claude device enumeration for a native macOS app; model and implementation remain unpublished. **[Other AI-assisted work · Needs verification]**
 - [A 3D home dashboard: Clinton Mills uses AI to connect hard-to-integrate products](cases/en/house-3d-ai-integration-dashboard.md) — The author reports a two-day model of two floors and the exterior plus a unified home dashboard, with reversing difficult integrations as the hard part; a reply lists ten connected services. **[Other AI-assisted work · Needs verification]**
 - [Zectrix Note4: asking Claude about community firmware for a Chinese-only device](cases/en/zectrix-note4-claude-community-firmware-idea.md) — A buyer struggling with an all-Chinese Note4 relays Claude's suggestion to start with community firmware such as TRMNL; no reversing or flashing is reported. **[Other AI-assisted work · Needs verification]**
@@ -266,6 +273,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Kindle and ZenOS: a Codex-assisted Apple Books/WeRead EPUB delivery interface](cases/en/kindle-zenos-codex-epub-sync.md) — Guo Yu reports having Codex investigate ZenOS and Kindle's original system, then design a unified library and one-click EPUB delivery; versions, code and transfer verification are absent. **[Other AI-assisted work · Needs verification]**
+- [Fuji XApp: an AI-reversing idea for more reliable camera-to-iPhone synchronization](cases/en/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux complains about XApp connection failures and slow transfers; ThinkerZhang suggests AI investigation of the official app and a faster replacement, without an implementation report. **[Other AI-assisted work · Needs verification]**
 - [Kestrel: studying MuMuPlayer Pro for a native Apple Silicon Android gaming player](cases/en/kestrel-colate-rea-mac-android-player.md) — Himansh Raj's public Swift project adds a Metal player and keymapping to Google's Android Emulator; BGMI is reportedly playable, but current public Swift CI tests fail. **[REA · In progress]**
 - [Grokbot: a SOL 6.1-assisted Harness/Host remote-computer execution rebuild](cases/en/grokbot-sol61-harness-host-reconstruction.md) — Stephen4171127 reports three days restoring the 0.72.0-pre.11 core delegation chain through opening Chrome; source cleanup and remaining host capabilities are unfinished. **[Other AI-assisted work · In progress]**
 - [OrcaCyber Nano 1.0: a 27B local security model for disassembly interpretation](cases/en/orcacyber-nano-local-re-analysis.md) — A Japanese ChatGPT summary introduces OrcaRouter's local model for interpreting disassembly and investigating vulnerabilities; no binary experiment is shown, and general benchmark scores do not measure reverse engineering. **[Other AI-assisted work · Related project]**
@@ -504,6 +513,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Satoshi's 2009 build environment: a report of agent-assisted reconstruction and byte matching](cases/en/satoshi-2009-agent-build-environment-report.md) — niels .1 says an agent recovered Satoshi's exact 2009 build environment from a binary; the original study, version, toolchain inventory and matching artifacts are missing. **[Other AI-assisted work · Needs verification]**
 - [An REA verification engine: checking claims with CFGs, symbolic paths and runtime traces](cases/en/rea-cross-tool-verification-engine-idea.md) — A proposal would cross-check REA findings against angr, radare2 and Binary Ninja before agents start rebuilding from unconfirmed claims. **[REA · Needs verification]**
 - [Wallet transaction history: a promotional report of four REA rules traded by Grok Bot](cases/en/rea-wallet-four-rule-grok-report.md) — A poster claims four rules from 312 trades, 41/44 replay agreement and four profitable trades, without a wallet, transactions or replay records. **[REA · Needs verification]**
 - [Alvosec: reversing contracts to reconstruct an attack, then finding vulnerabilities with agents](cases/en/alvosec-contract-attack-agent-reconstruction.md) — Alvosec reports reconstructing attacker behavior and identifying vulnerabilities with AI agents; external testing and patch assistance remain next steps. **[Other AI-assisted work · In progress]**

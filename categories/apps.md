@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](../cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
+- [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](../cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](../cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
 - [Grokbot：SOL 6.1 辅助恢复 Harness 与 Host 的远程电脑执行链](../cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告三天恢复0.72.0-pre.11核心链路，主Agent委派电脑子Agent并打开Chrome；代码整理与宿主能力仍待完成。 **[其他 AI 逆向 · 进行中]**
 - [OrcaCyber Nano 1.0：本地解读反汇编的27B安全模型介绍](../cases/orcacyber-nano-local-re-analysis.md) — 日语ChatGPT摘要介绍OrcaRouter的本地安全模型，用于反汇编解释与漏洞分析；没有具体二进制实验，通用数学代码分数不等于逆向能力。 **[其他 AI 逆向 · 相关项目]**

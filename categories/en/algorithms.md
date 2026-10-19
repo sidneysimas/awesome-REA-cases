@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
+- [Satoshi's 2009 build environment: a report of agent-assisted reconstruction and byte matching](../../cases/en/satoshi-2009-agent-build-environment-report.md) — niels .1 says an agent recovered Satoshi's exact 2009 build environment from a binary; the original study, version, toolchain inventory and matching artifacts are missing. **[Other AI-assisted work · Needs verification]**
 - [An REA verification engine: checking claims with CFGs, symbolic paths and runtime traces](../../cases/en/rea-cross-tool-verification-engine-idea.md) — A proposal would cross-check REA findings against angr, radare2 and Binary Ninja before agents start rebuilding from unconfirmed claims. **[REA · Needs verification]**
 - [Wallet transaction history: a promotional report of four REA rules traded by Grok Bot](../../cases/en/rea-wallet-four-rule-grok-report.md) — A poster claims four rules from 312 trades, 41/44 replay agreement and four profitable trades, without a wallet, transactions or replay records. **[REA · Needs verification]**
 - [Alvosec: reversing contracts to reconstruct an attack, then finding vulnerabilities with agents](../../cases/en/alvosec-contract-attack-agent-reconstruction.md) — Alvosec reports reconstructing attacker behavior and identifying vulnerabilities with AI agents; external testing and patch assistance remain next steps. **[Other AI-assisted work · In progress]**

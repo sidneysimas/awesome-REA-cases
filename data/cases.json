@@ -1,5 +1,162 @@
 [
   {
+    "id": "kindle-zenos-codex-epub-sync",
+    "title": "Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。",
+    "description": "10月19日11:37（北京时间），郭宇（@turingou）报告让Codex使用逆向工具，研究其Kindle现在使用的ZenOS以及Kindle本身的操作系统。随后Codex设计一个界面，展示其Apple Books与微信读书中的书；作者称点击即可由电脑将EPUB投递到Kindle。目标是整理并同步个人书库，不是重做整台阅读器。\n\n补取原帖确认作者与文字，但没有设备型号、ZenOS版本、工具名称、协议、源码、导出流程或传输记录。这里沿用作者对ZenOS的称呼，不认证它与Kindle原系统的关系。展示书目不等于所有书籍均可导出，不能推断DRM解密、受保护内容转换、云账号接入方式或双向阅读进度同步。REA使用未确认，一键同步保持作者自述，未独立连接设备。",
+    "sources": [{"label": "郭宇的Codex系统研究与EPUB投递自述", "url": "https://x.com/i/status/2112025399039611135"}],
+    "snapshot_date": "2026-10-19", "metadata": ["11:37候选快照27赞、2789浏览、1转发；补取时数值已变化，不混作固定热度。"],
+    "en": {
+      "title": "Kindle and ZenOS: a Codex-assisted Apple Books/WeRead EPUB delivery interface",
+      "summary": "Guo Yu reports having Codex investigate ZenOS and Kindle's original system, then design a unified library and one-click EPUB delivery; versions, code and transfer verification are absent.",
+      "description": "At 11:37 Beijing time on October 19, Guo Yu (@turingou) reports asking Codex to use reverse-engineering tools to investigate the ZenOS currently on his Kindle and Kindle's own operating system. Codex then designed an interface displaying his Apple Books and WeRead libraries. He says one click lets the computer deliver EPUBs to the Kindle. The goal is organizing and synchronizing a personal library, not rebuilding the reader itself.\n\nRetrieving the original confirmed attribution and wording, but supplied no device model, ZenOS version, tool name, protocol, source, export workflow or transfer record. ZenOS retains the author's naming without certifying its relationship to the original Kindle system. Displaying book listings does not establish that every book can be exported; DRM decryption, protected-content conversion, cloud-account access methods and two-way reading-progress synchronization are not inferred. REA use is unconfirmed, and one-click synchronization remains an author report without an independent device connection.",
+      "metadata": ["11:37 candidate snapshot: 27 likes, 2,789 views and 1 repost; counts changed by the supplementary lookup and are not treated as fixed popularity."],
+      "source_labels": ["Guo Yu's account of Codex system investigation and EPUB delivery"]
+    }
+  },
+  {
+    "id": "eleven-home-router-firmware-inspection-idea",
+    "title": "家中旧路由器：用 Eleven 的 Agent 工作流查看固件在运行什么的计划",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "AI Wang在Eleven介绍下提出先分析自家旧路由器固件；目标是理解内部运行内容，尚未报告执行或发现。",
+    "description": "10月19日11:14（北京时间），AI Wang（@loveAIwang）在Eleven工具介绍下回复，已经点星，准备拿家中旧路由器的固件试试，看看里面究竟运行什么。补读10月18日16:02的父帖，确认上下文是Agent-first逆向工具Eleven，而不是一般刷机工具；父帖作为较早背景来源，不算本轮新候选。\n\n这是一项具体的自有设备固件理解计划，并非已成功提取、反编译或修改固件。没有厂商、型号、固件版本、所选Agent或输出，不能推断使用Claude、REA后端、发现漏洞、去广告或安装OpenWrt。父帖列出的工具能力也不等于作者已经使用或验证这些能力。尚无分析结果，本合集未运行固件。",
+    "sources": [{"label": "候选：AI Wang计划研究自家旧路由器固件", "url": "https://x.com/i/status/2112019529882841492"}, {"label": "补充10月18日父帖：Eleven的Agent逆向上下文", "url": "https://x.com/i/status/2111729603777823188"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "A home router: a plan to inspect firmware behavior through Eleven's agent workflow",
+      "summary": "Under an Eleven introduction, AI Wang proposes inspecting an old home router's firmware to understand what runs inside; no execution or findings are reported.",
+      "description": "At 11:14 Beijing time on October 19, AI Wang (@loveAIwang) replies to an introduction to Eleven that they have starred it and intend to try their old home router's firmware to see what is actually running inside. Reading the October 18, 16:02 parent identifies the context as the agent-first reverse-engineering tool Eleven, not a generic flashing utility. The parent is earlier supplementary background, not a new candidate in this window.\n\nThis is a concrete plan to understand firmware on a personally owned device, not successful firmware extraction, decompilation or modification. No manufacturer, model, firmware version, chosen agent or output is supplied. Claude, a REA backend, vulnerability discovery, ad removal and OpenWrt installation are not inferred. The parent's list of tool capabilities does not establish that the respondent used or verified them. No analysis result is available, and this collection did not run the firmware.",
+      "metadata": [], "source_labels": ["Candidate: AI Wang plans to inspect an old home router's firmware", "Supplementary October 18 parent: Eleven's agent-reversing context"]
+    }
+  },
+  {
+    "id": "mauro-dos-sgdk-megadrive-ai-port",
+    "title": "Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。",
+    "description": "10月19日10:03（北京时间），Mauro Xavier（@MXRetroDev）回应把其项目说成一次提示词生成 Rust 移植的玩笑，明确否认使用 Rust 和 REA。他取原 DOS 软盘版游戏，请 AI 尽量解释并转换代码为 C，使用面向 Mega Drive 开发的 SGDK 框架，再让 AI 转换与集成素材。目标是在不加增强芯片的原装 Mega Drive 上运行原游戏，而不是现代机器上的模拟版。\n\n同串较早06:42的原作者帖报告已从头到尾通关、一次也未崩溃，但图形与性能仍待改善。该帖以截图让读者猜游戏，本轮可读文字未给游戏名；不从截图猜定作品，也不因此丢弃已有的具体工程说明。较早帖作为背景来源，不算本窗口新候选。\n\n作者说明64 KB RAM和64 KB VRAM使直接移植遇到大量问题，需要自己调整。AI协助写 Python 工具，将若干多边形实体在指定位置预渲染，再写汇编做预渲染精灵的软件缩放。游戏有超过190个相机视角，未来还要人工改善Mega Drive色彩与抖动效果。作者强调完全交给AI不会得到相同结果；这些是AI承担大量工作但人工适配仍重要的自述，不是无人值守成功。\n\n没有取得源码、ROM版本、构建记录、帧率测量或独立通关测试；不推断使用Claude或任何具体模型。通关与无崩溃只归于作者，未运行游戏或目标代码。",
+    "sources": [
+      {"label": "候选：Mauro澄清SGDK/C、AI与人工分工", "url": "https://x.com/i/status/2112001737896673737"},
+      {"label": "补充06:42原帖：原装Mega Drive与通关自述", "url": "https://x.com/i/status/2111951070188765668"}
+    ],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "Mauro's Mega Drive port: AI converts a DOS game to C, with manual memory and graphics adaptation",
+      "summary": "Mauro Xavier clarifies that AI helped convert an original DOS floppy game to SGDK/C and write asset tools, without Rust or REA; he reports a crash-free playthrough, with optimization still requiring manual work.",
+      "description": "At 10:03 Beijing time on October 19, Mauro Xavier (@MXRetroDev) answers a joke describing his project as a one-prompt Rust port, explicitly denying using Rust or REA. He took the original DOS floppy-disk version, asked AI to reinterpret and convert as much code as possible to C using SGDK, a Mega Drive development framework, then requested asset conversion and integration. The goal is running the game on a stock Mega Drive without enhancement chips, not emulating it on a modern machine.\n\nHis earlier 06:42 post in the same conversation reports a complete start-to-finish playthrough without a single crash, while graphics and performance still need work. That post asks readers to identify the game from screenshots; the readable text obtained this round does not name it. No title is guessed from images, but the concrete engineering account is retained. The earlier post is supplementary background, not a new candidate in this window.\n\nThe author says 64 KB of RAM and 64 KB of VRAM caused numerous problems requiring manual adjustments. AI helped write Python tools to pre-render selected polygonal entities at specified positions, then assembly routines for software zooming of those sprites. With over 190 camera views, manual work on Mega Drive colors and dithering remains. He stresses that handing all adaptation to AI would not yield the same result: AI did much of the work, but this is not an unattended-success claim.\n\nNo source, ROM version, build record, frame-rate measurements or independent playthrough was obtained. Claude or any particular model is not inferred. Completion and crash-free play are attributed only to the author; neither the game nor target code was run here.",
+      "metadata": [], "source_labels": ["Candidate: Mauro clarifies SGDK/C and the division of AI and manual work", "Supplementary 06:42 original: stock Mega Drive and playthrough report"]
+    }
+  },
+  {
+    "id": "sims3-mac64-claude-main-thread",
+    "title": "The Sims 3 Mac 64位版：Claude 辅助逆向与主线程优化的帧率自述",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "Feede称Claude辅助研究并优化主线程后最高150 FPS，重载约60–70 FPS；没有基线、配置与可复跑补丁。",
+    "description": "10月19日11:24（北京时间），Feede（@ifeedemax）报告用Claude逆向The Sims 3的64位Mac版本并优化主线程，当前最高达150 FPS，较重负载时降到约60–70 FPS。用途是改善既有Mac版本的运行性能，不是从其他平台移植整个游戏。\n\n补读原帖与串确认作者及图片附件，未见作者解释瓶颈究竟是模拟逻辑还是渲染；回复中的提问不能代替答案。没有硬件配置、场景、优化前帧率、测量方法、源码或可复跑补丁，因此不能计算提速倍数、声称普遍150 FPS或认定修改正确。数字按作者自述保留，REA未确认，未独立运行或测量。",
+    "sources": [{"label": "Feede的Claude逆向主线程与帧率报告", "url": "https://x.com/i/status/2112022015322321383"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "The Sims 3 64-bit Mac: reported frame rates after Claude-assisted main-thread optimization",
+      "summary": "Feede reports up to 150 FPS and about 60–70 FPS under heavier load after Claude-assisted reversing and main-thread optimization; baseline, configuration and a reproducible patch are missing.",
+      "description": "At 11:24 Beijing time on October 19, Feede (@ifeedemax) reports using Claude for reverse engineering and main-thread optimization of The Sims 3's 64-bit Mac version, currently reaching up to 150 FPS and falling to around 60–70 FPS under heavier load. The purpose is improving an existing Mac version's runtime performance, not porting the entire game from another platform.\n\nReading the original and conversation confirmed the author and an image attachment, but no author explanation of whether the bottleneck is simulation logic or rendering was found; a respondent's question is not an answer. Hardware, scene, pre-optimization frame rate, measurement method, source and a reproducible patch are absent. A speedup multiplier, general 150 FPS claim or correctness conclusion cannot be derived. Figures remain author reports; REA use is unconfirmed, and no independent execution or measurement was performed.",
+      "metadata": [], "source_labels": ["Feede's report of Claude-assisted main-thread reversing and frame rates"]
+    }
+  },
+  {
+    "id": "samsung-2014-claude-encrypted-remote",
+    "title": "2014 年 Samsung TV：Claude 研究加密遥控协议，经 PIN 配对控制旧电视",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "tezarc称Claude Code找到非Android三星电视，研究加密遥控并经屏幕PIN配对发送命令；明确不是固件破解。",
+    "description": "10月19日11:13（北京时间），tezarc（@tezzarc）报告把一台12年旧、2014年的非Android三星电视交给Claude Opus 5.5与Claude Code控制。其列出的实际步骤是发现局域网电视、弄清加密遥控协议、使用电视屏幕上的PIN配对，然后发送真实遥控命令。目标是通过自然语言替代手持遥控器，让旧设备继续使用。\n\n作者明确说没有固件破解。补取原帖确认作者和视频附件存在，但本合集未观看视频或实测命令；doing ANYTHING不扩写成任意应用、刷机或所有电视兼容。未取得准确型号、协议实现、代码、配对日志与响应对照，也未确认REA。不与Aswin DG另一台三星电视网页遥控器合并，两个作者的操作不能互作独立复现。",
+    "sources": [{"label": "tezarc的2014三星电视Claude遥控自述", "url": "https://x.com/i/status/2112019186222256604"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "A 2014 Samsung TV: Claude investigates an encrypted remote protocol and pairs by PIN",
+      "summary": "tezarc says Claude Code found a non-Android Samsung TV, investigated its encrypted remote protocol and sent commands after on-screen PIN pairing; this is explicitly not firmware hacking.",
+      "description": "At 11:13 Beijing time on October 19, tezarc (@tezzarc) reports giving Claude Opus 5.5 and Claude Code control of a 12-year-old non-Android Samsung TV from 2014. The stated working steps are discovering the television on the local network, figuring out its encrypted remote protocol, pairing with the PIN displayed on the TV and sending real remote commands. The purpose is using natural-language requests instead of a handheld remote to keep old hardware useful.\n\nThe author explicitly says no firmware hacks were involved. Retrieving the original confirmed attribution and a video attachment, but this collection did not watch the video or test commands. 'Doing ANYTHING' is not expanded into arbitrary-app control, flashing or compatibility with every TV. No exact model, protocol implementation, code, pairing log or response comparison was obtained, and REA use is unconfirmed. This is not merged with Aswin DG's web remote for another Samsung TV; the two authors' actions are not independent reproductions of one implementation.",
+      "metadata": [], "source_labels": ["tezarc's account of Claude remote control for a 2014 Samsung TV"]
+    }
+  },
+  {
+    "id": "fuji-xapp-ai-iphone-sync-idea",
+    "title": "Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。",
+    "description": "10月19日10:33（北京时间），ThinkerZhang（@Tinker_Zhang）向GeekPlux建议：让AI逆向官方App，再制作更稳定快速的替代App。补读10月19日01:27的父帖，确认具体目标是Fuji相机经XApp同步到iPhone；GeekPlux称十次有九次连接不成功，成功后也传得慢。该比例是用户抱怨，不是有日志的统计测试。\n\nidea的用途是改善相机照片向手机同步的体验；本轮候选是AI方法建议，较早父帖仅补背景，不冒充新抓取。没有相机型号、协议分析、模型选择、代码或传输测试，也没有报告完成逆向或做成App。REA未确认，不保证能绕过任何设备限制或实现更快连接。",
+    "sources": [
+      {"label": "候选：ThinkerZhang建议AI逆向官方App", "url": "https://x.com/i/status/2112009186901213533"},
+      {"label": "补充01:27父帖：Fuji XApp到iPhone同步痛点", "url": "https://x.com/i/status/2111871925764894971"}
+    ],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "Fuji XApp: an AI-reversing idea for more reliable camera-to-iPhone synchronization",
+      "summary": "GeekPlux complains about XApp connection failures and slow transfers; ThinkerZhang suggests AI investigation of the official app and a faster replacement, without an implementation report.",
+      "description": "At 10:33 Beijing time on October 19, ThinkerZhang (@Tinker_Zhang) suggests having AI reverse-engineer an official app and make a more reliable, faster replacement for GeekPlux. Reading the parent, posted at 01:27 on October 19, identifies the target as synchronizing a Fuji camera to an iPhone through XApp. GeekPlux says nine out of ten connection attempts fail and transfers remain slow when connected. That ratio is a user's complaint, not a logged statistical test.\n\nThe idea aims to improve camera-photo synchronization to a phone. The candidate supplies the AI-method suggestion; the earlier parent is background rather than a new retrieval in this window. No camera model, protocol analysis, model selection, code or transfer test is given, and neither completed reversing nor a working app is reported. REA use is unconfirmed; bypassing device restrictions or achieving faster connections is not guaranteed.",
+      "metadata": [], "source_labels": ["Candidate: ThinkerZhang suggests AI investigation of the official app", "Supplementary 01:27 parent: Fuji XApp-to-iPhone synchronization problems"]
+    }
+  },
+  {
+    "id": "lg-tv-ethiopian-theme-rea",
+    "title": "LG TV：用 REA 与 Claude 做埃塞俄比亚字母、时间日期屏保主题",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "Yenu报告LG电视定制主题与时间日期屏保，明确称REA配Claude；没有型号、代码或底层修改证据。",
+    "description": "10月19日11:45（北京时间），Yenu（@YenenehMekonne1）报告通过REA与Claude为LG电视制作定制主题，包含Ethiopian Letters以及时间日期屏保。具体用途是把电视变成有本地文字与时钟信息的个性化显示设备。\n\n补取原帖确认作者，包含两段视频与一张图片的附件元数据；未观看视频、运行主题或核验字体。没有型号、系统版本、源码、逆向步骤或安装方法，不能判断是电视App、启动器、主题还是固件层修改，也不认定root、破解签名或全机型兼容。保留作者的文字称谓，不另推具体语言与字符集；不同于Charles的LG G4 Codex改造自述，不强行合并。",
+    "sources": [{"label": "Yenu的LG主题、屏保与REA/Claude自述", "url": "https://x.com/i/status/2112027230809285106"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "LG TV: a REA/Claude theme with Ethiopian letters and a time/date screensaver",
+      "summary": "Yenu reports a custom LG TV theme and time/date screensaver using REA with Claude; model, code and low-level modification evidence are missing.",
+      "description": "At 11:45 Beijing time on October 19, Yenu (@YenenehMekonne1) reports using REA with Claude for an LG TV custom theme featuring 'Ethiopian Letters' and a time/date screensaver. The concrete purpose is a personalized television display with local lettering and clock information.\n\nRetrieving the original confirmed the author and attachment metadata for two videos and one image. The videos were not watched, the theme was not run and fonts were not verified. No model, system version, source, reverse-engineering steps or installation method is supplied. It is not possible to distinguish a TV app, launcher, theme or firmware modification, and rooting, signing bypass and compatibility with all models are not established. The author's lettering terminology is preserved without inferring a particular language or character set. This is separate from Charles's Codex modification report for an LG G4 and is not forcibly merged.",
+      "metadata": [], "source_labels": ["Yenu's LG theme, screensaver and REA/Claude account"]
+    }
+  },
+  {
+    "id": "dwarf-fortress-ai-native-mac-plan",
+    "title": "Dwarf Fortress：AI 反编译并重编译为原生 Mac 版的进行中自述",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "TheAnonLebowski称正在用AI研究Dwarf Fortress以原生运行于Mac；未给版本、模型或构建验证。",
+    "description": "10月19日11:55（北京时间），TheAnonLebowski（@anonnewsfeed1）在回复中说自己正在用AI反编译Dwarf Fortress，再重编译以在Mac上原生运行。游戏与目标平台明确，作为进行中的具体适配项目保留，不要求已经成功。\n\n补取原帖确认作者及图片附件，但没有游戏版本、CPU架构、模型、工具、源码、构建日志或运行测试。currently using不改写成已完成原生移植，也不判断现有官方或社区Mac版本能否满足其需求。REA使用未确认，图片元数据不是可玩性验证，本合集未运行目标。",
+    "sources": [{"label": "TheAnonLebowski的Dwarf Fortress原生Mac计划", "url": "https://x.com/i/status/2112029935716245511"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "Dwarf Fortress: an ongoing AI decompilation and native Mac recompilation account",
+      "summary": "TheAnonLebowski says they are using AI to investigate Dwarf Fortress for native Mac execution; version, model and build verification are absent.",
+      "description": "At 11:55 Beijing time on October 19, TheAnonLebowski (@anonnewsfeed1) says in a reply that they are currently using AI to decompile Dwarf Fortress and recompile it to run natively on Mac. The game and destination platform are explicit, so this is retained as an ongoing concrete adaptation project without requiring prior success.\n\nRetrieving the original confirmed the author and an image attachment, but no game version, CPU architecture, model, tools, source, build logs or runtime tests are supplied. 'Currently using' is not rewritten as a completed native port, nor is it determined whether existing official or community Mac versions meet the author's needs. REA use is unconfirmed, attachment metadata is not playability verification and the target was not run here.",
+      "metadata": [], "source_labels": ["TheAnonLebowski's native Mac plan for Dwarf Fortress"]
+    }
+  },
+  {
+    "id": "satoshi-2009-agent-build-environment-report",
+    "title": "Satoshi 2009 构建环境：Agent 从二进制恢复工具链并字节匹配的转述",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "niels .1称Agent从Satoshi的2009二进制恢复精确构建环境；没有原研究、版本、工具链清单或匹配产物。",
+    "description": "10月19日11:54（北京时间），niels .1（@TSC）转述一名Agent从二进制恢复Satoshi在2009年的精确构建环境，并把字节匹配视为自己聊天App也希望具备的证明。目标是追溯历史软件如何构建，而非挖矿、恢复私钥或破解比特币。\n\n补读原帖串仍只有此段转述，没有引用研究的可读内容、原作者、二进制具体版本、工具链与编译参数清单、哈希或可复跑记录。这里将其收为具体历史构建恢复的未验证线索，不确认字节匹配真的完成，也不为自己的聊天App另立完成案例。REA及模型未确认，本合集未重编译或复算。",
+    "sources": [{"label": "niels .1关于Agent恢复2009构建环境的转述", "url": "https://x.com/i/status/2112029526771601899"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "Satoshi's 2009 build environment: a report of agent-assisted reconstruction and byte matching",
+      "summary": "niels .1 says an agent recovered Satoshi's exact 2009 build environment from a binary; the original study, version, toolchain inventory and matching artifacts are missing.",
+      "description": "At 11:54 Beijing time on October 19, niels .1 (@TSC) relays that an agent reverse-engineered Satoshi's exact 2009 build environment from a binary and calls byte matching the kind of proof they would want for their own chat app. The target is historical software-build reconstruction, not mining, private-key recovery or breaking Bitcoin.\n\nReading the original conversation still yielded only this account, not readable quoted research, an original author, a specific binary version, toolchain and compiler-flag inventory, hashes or a reproducible record. This is retained as an unverified lead for a concrete historical build-recovery task, without confirming that byte matching was achieved. The proposed application to the reader's own chat app is not a separate completed case. REA and model use are unconfirmed; this collection did not rebuild or recompute the result.",
+      "metadata": [], "source_labels": ["niels .1's report of an agent recovering the 2009 build environment"]
+    }
+  },
+  {
+    "id": "lucas-mother-tv-claude-firmware-cost-blocker",
+    "title": "母亲的智能电视：Claude 去臃肿软件尝试因固件下载费用搁置",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "LucasFisura称尝试用Claude逆向家中Smart TV去臃肿软件，但看到固件下载需20k后停止；币种、型号与分析产物未给。",
+    "description": "10月19日08:05（北京时间），LucasFisura（@Lucas_Fisura）用西班牙语自述，看到他人改电视后尝试用Claude逆向母亲的Smart TV，想去除臃肿软件；因要付20k下载固件再修改而失去动力。目标与受阻原因已具体，作为搁置的个人尝试收录，不因缺型号要求其证明成功。\n\n补读原帖串没有更多设备信息。20k仅保留原说法，不猜币种、折算美元或当作厂商官方报价，也不证明固件只可付费取得。没有固件、逆向日志、修改或刷写结果，未确认REA；这不是去广告或改固件成功报告。",
+    "sources": [{"label": "LucasFisura的Claude电视研究与固件费用受阻自述", "url": "https://x.com/i/status/2111971938319151472"}],
+    "snapshot_date": "2026-10-19", "metadata": [],
+    "en": {
+      "title": "His mother's smart TV: a Claude debloating attempt stalls over firmware-download cost",
+      "summary": "LucasFisura reports trying Claude-assisted reversing of a home smart TV to remove bloat, then stopping at a quoted 20k firmware-download cost; currency, model and analysis artifacts are unspecified.",
+      "description": "At 08:05 Beijing time on October 19, LucasFisura (@Lucas_Fisura) says in Spanish that, after seeing other TV modifications, he tried using Claude to reverse-engineer his mother's smart TV to remove bloated software. Having to pay '20k' to download firmware before modifying it ended his motivation. The goal and blocker are concrete enough to retain as a stalled personal attempt; a missing model does not impose a success requirement.\n\nReading the original conversation supplied no further device information. '20k' preserves the original wording without guessing currency, converting it to dollars or treating it as an official manufacturer quote. It does not establish that firmware is available only for payment. No firmware, reversing logs, modification or flashing outcome was obtained, and REA use is unconfirmed. This is not a successful ad-removal or firmware-modification report.",
+      "metadata": [], "source_labels": ["LucasFisura's account of Claude TV investigation blocked by firmware cost"]
+    }
+  },
+  {
     "id": "kestrel-colate-rea-mac-android-player",
     "title": "Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器",
     "category": "apps", "rea": "REA", "status": "in-progress",
@@ -9649,17 +9806,17 @@
     "category": "games",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "Destiny重建的二手报告新增兼容性质疑；另一项目参与者自述也用AI，但不能证明两者为同一实现。",
-    "description": "此前一条为社区项目辩护的回复称，使用Claude反编译Steam上可下载的d2代码，并在引擎中重做素材。补读10月15日01:26（北京时间）的Bungie / Destiny根帖与WoTM raid讨论，只用于确认背景。该回复同时说使用Claude但“0 generative ai”，似在区分反编译辅助与生成素材，不能写成未使用AI或法律结论。10月16日14:38 @isinternets 的新回复称己方项目也使用AI，已花数月逆向，并质疑他人24小时完成的说法。补读其14:34父串，确认争论对象是Destiny在Godot重建，质疑涉及bubble authority协议、任务主机、Havok 2012碰撞与Umbra 3，认为可能只是启动器或引擎混合。这些是参与者的技术质疑，不是本合集验证了“不可能”；其自述的己方项目也不能直接等同于此前被辩护项目。尚无可核对的项目身份、代码或运行测试，因此保留同目标争议线索，不确认完整移植、可玩性或24小时成果。REA未确认。",
-    "sources": [{"label": "较早读者关于 Claude 反编译与引擎素材重建的回复", "url": "https://x.com/i/status/2110818698109899108"}, {"label": "10月15日 Destiny / Bungie 根帖（背景）", "url": "https://x.com/i/status/2110422033662124277"}, {"label": "10月16日参与者自述数月AI研究并提出质疑", "url": "https://x.com/i/status/2110983618155929648"}, {"label": "14:34父帖：Godot、协议及物理引擎兼容性质疑", "url": "https://x.com/i/status/2110982629214327033"}],
-    "snapshot_date": "2026-10-16",
-    "metadata": ["较早10月16日候选快照：0赞、16浏览；补查材料保留原始日期，不将回复升级为项目作者确认。", "14:38新候选快照：3赞、68浏览；参与者身份、两个项目关系与技术质疑均未独立验证。"],
+    "summary": "Destiny重建转述与兼容性质疑，新增Envy关于社区用AI迁移Wrath的说法；未确认各实现关系或可玩性。",
+    "description": "此前一条为社区项目辩护的回复称，使用Claude反编译Steam上可下载的d2代码，并在引擎中重做素材。补读10月15日01:26（北京时间）的Bungie / Destiny根帖与WoTM raid讨论，只用于确认背景。该回复同时说使用Claude但“0 generative ai”，似在区分反编译辅助与生成素材，不能写成未使用AI或法律结论。10月16日14:38 @isinternets 的新回复称己方项目也使用AI，已花数月逆向，并质疑他人24小时完成的说法。补读其14:34父串，确认争论对象是Destiny在Godot重建，质疑涉及bubble authority协议、任务主机、Havok 2012碰撞与Umbra 3，认为可能只是启动器或引擎混合。这些是参与者的技术质疑，不是本合集验证了“不可能”；其自述的己方项目也不能直接等同于此前被辩护项目。\n\n10月19日09:14（北京时间），Envy（@WeLoveYouEnvy）在D1地图移入D2的讨论中说，开发者正在用AI证明内容迁移可行，并转述另一名社区开发者已用AI辅助逆向迁移Wrath。补读05:22根帖与08:48回复确认地图背景；两条较早帖仅用于解释本候选，不算本窗口新帖子。Envy没有给该开发者身份、项目链接、源码或测试，所谓迁移完成只是转述；其关于Bungie多年来未移植的评价也不是技术验证。不能把这条新转述与此前Claude/Godot项目认定为同一实现，或当作其独立复现。\n\n尚无可核对的项目身份、代码或运行测试，因此保留同目标争议线索，不确认完整移植、可玩性或24小时成果。REA未确认。",
+    "sources": [{"label": "较早读者关于 Claude 反编译与引擎素材重建的回复", "url": "https://x.com/i/status/2110818698109899108"}, {"label": "10月15日 Destiny / Bungie 根帖（背景）", "url": "https://x.com/i/status/2110422033662124277"}, {"label": "10月16日参与者自述数月AI研究并提出质疑", "url": "https://x.com/i/status/2110983618155929648"}, {"label": "14:34父帖：Godot、协议及物理引擎兼容性质疑", "url": "https://x.com/i/status/2110982629214327033"}, {"label": "10月19日Envy转述社区AI逆向迁移Wrath", "url": "https://x.com/i/status/2111989219090419833"}, {"label": "补充05:22根帖：地图展示背景", "url": "https://x.com/i/status/2111930892960584069"}, {"label": "补充08:48回复：Cosmodrome在D2的范围讨论", "url": "https://x.com/i/status/2111982909280186521"}],
+    "snapshot_date": "2026-10-19",
+    "metadata": ["较早10月16日候选快照：0赞、16浏览；补查材料保留原始日期，不将回复升级为项目作者确认。", "14:38新候选快照：3赞、68浏览；参与者身份、两个项目关系与技术质疑均未独立验证。", "10月19日09:14候选快照：2赞、90浏览、0转发；新材料只支持Envy作此转述，不验证Wrath项目成果。"],
     "en": {
       "title": "A Destiny community rebuild: reported Claude decompilation and in-engine assets",
-      "summary": "A Destiny rebuild report gains compatibility objections; another participant reports AI use but their project cannot be equated with the earlier implementation.",
-      "description": "An earlier reply defending a community project says Claude decompiled d2 code downloadable on Steam and assets were recreated in-engine. The October 15, 01:26 Beijing-time Bungie/Destiny root post and WoTM raid discussion were read only to identify the background. The reply's simultaneous claims of Claude use and '0 generative ai' apparently distinguish decompilation assistance from generated assets, not absence of AI or a legal conclusion. At 14:38 on October 16, @isinternets says their own project also used AI and involved months of reverse engineering, questioning someone else's claim of completion in 24 hours. Reading their 14:34 parent thread identifies a dispute over rebuilding Destiny in Godot: objections concern the bubble-authority protocol, mission hosting, Havok 2012 collision and Umbra 3, suggesting a launcher or engine meshing instead. These are a participant's technical objections, not this collection establishing impossibility. Their own project cannot simply be equated with the one previously defended. No checkable project identity, code or runtime tests were obtained, so the entry retains a controversy around the same target without confirming a complete port, playability or a 24-hour achievement. REA use is unconfirmed.",
-      "metadata": ["Earlier October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains its original date and the reply is not project-author confirmation.", "New 14:38 candidate snapshot: 3 likes, 68 views; participant identity, the relationship between the projects and technical objections are not independently verified."],
-      "source_labels": ["Earlier reader reply on Claude decompilation and in-engine assets", "October 15 Destiny/Bungie root post as background", "October 16 participant reports months of AI-assisted work and raises objections", "14:34 parent post questioning Godot, protocol and physics-engine compatibility"]
+      "summary": "Destiny rebuild reports and compatibility objections gain Envy's account of a community AI-assisted Wrath port; implementation relationships and playability remain unconfirmed.",
+      "description": "An earlier reply defending a community project says Claude decompiled d2 code downloadable on Steam and assets were recreated in-engine. The October 15, 01:26 Beijing-time Bungie/Destiny root post and WoTM raid discussion were read only to identify the background. The reply's simultaneous claims of Claude use and '0 generative ai' apparently distinguish decompilation assistance from generated assets, not absence of AI or a legal conclusion. At 14:38 on October 16, @isinternets says their own project also used AI and involved months of reverse engineering, questioning someone else's claim of completion in 24 hours. Reading their 14:34 parent thread identifies a dispute over rebuilding Destiny in Godot: objections concern the bubble-authority protocol, mission hosting, Havok 2012 collision and Umbra 3, suggesting a launcher or engine meshing instead. These are a participant's technical objections, not this collection establishing impossibility. Their own project cannot simply be equated with the one previously defended.\n\nAt 09:14 Beijing time on October 19, Envy (@WeLoveYouEnvy), discussing D1 maps moved to D2, says developers are using AI to demonstrate that content migration is possible and relays that another community developer used AI-assisted reverse engineering to port Wrath. Reading the 05:22 root and 08:48 reply confirms the map context; those earlier posts explain the candidate and are not new posts in this window. Envy supplies no developer identity, project link, source or tests. Completion is a secondhand account, and their criticism that Bungie has not ported it over the years is not technical verification. The new account cannot be equated with the earlier Claude/Godot implementation or treated as its independent reproduction.\n\nNo checkable project identity, code or runtime tests were obtained, so the entry retains a controversy around the same target without confirming a complete port, playability or a 24-hour achievement. REA use is unconfirmed.",
+      "metadata": ["Earlier October 16 candidate snapshot: 0 likes, 16 views; supplementary material retains its original date and the reply is not project-author confirmation.", "New 14:38 candidate snapshot: 3 likes, 68 views; participant identity, the relationship between the projects and technical objections are not independently verified.", "October 19, 09:14 candidate snapshot: 2 likes, 90 views and 0 reposts; the new material supports Envy making this report, not verification of the Wrath project's results."],
+      "source_labels": ["Earlier reader reply on Claude decompilation and in-engine assets", "October 15 Destiny/Bungie root post as background", "October 16 participant reports months of AI-assisted work and raises objections", "14:34 parent post questioning Godot, protocol and physics-engine compatibility", "October 19: Envy relays community AI-assisted reversing and a Wrath port", "Supplementary 05:22 root: map-display context", "Supplementary 08:48 reply: the extent of Cosmodrome in D2"]
     }
   },
   {

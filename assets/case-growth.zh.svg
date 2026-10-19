@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="286" viewBox="0 0 880 286" role="img" aria-labelledby="title desc">
-<title id="title">累计案例: 513 · 2026-10-19</title>
-<desc id="desc">2026-10-09: 0; 2026-10-10: 0; 2026-10-11: 0; 2026-10-12: 81; 2026-10-13: 128; 2026-10-14: 145; 2026-10-15: 203; 2026-10-16: 297; 2026-10-17: 375; 2026-10-18: 457; 2026-10-19: 513</desc>
+<title id="title">累计案例: 523 · 2026-10-19</title>
+<desc id="desc">2026-10-09: 0; 2026-10-10: 0; 2026-10-11: 0; 2026-10-12: 81; 2026-10-13: 128; 2026-10-14: 145; 2026-10-15: 203; 2026-10-16: 297; 2026-10-17: 375; 2026-10-18: 457; 2026-10-19: 523</desc>
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10b981" stop-opacity=".18"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></linearGradient></defs>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Zen Hei","Segoe UI","Noto Sans CJK SC",sans-serif;fill:#64748b;font-size:12px}.bg{fill:#fff}.heading{fill:#0f172a;font-size:17px;font-weight:600}.grid{stroke:#e2e8f0;stroke-dasharray:3 5}.value{fill:#059669;font-size:13px;font-weight:600}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}text{fill:#8b949e}.heading{fill:#e6edf3}.grid{stroke:#30363d}.value{fill:#34d399}}</style>
 <rect class="bg" width="880" height="286" rx="12"/>
@@ -11,8 +11,8 @@
 <path class="grid" d="M 54 167.3 H 812"/><text x="42" y="171.3" text-anchor="end">200</text>
 <path class="grid" d="M 54 124.7 H 812"/><text x="42" y="128.7" text-anchor="end">400</text>
 <path class="grid" d="M 54 82.0 H 812"/><text x="42" y="86.0" text-anchor="end">600</text>
-<path d="M 54 210 L 54.0 210.0 L 129.8 210.0 L 205.6 210.0 L 281.4 192.7 L 357.2 182.7 L 433.0 179.1 L 508.8 166.7 L 584.6 146.6 L 660.4 130.0 L 736.2 112.5 L 812.0 100.6 L 812.0 210 Z" fill="url(#area)"/>
-<polyline points="54.0,210.0 129.8,210.0 205.6,210.0 281.4,192.7 357.2,182.7 433.0,179.1 508.8,166.7 584.6,146.6 660.4,130.0 736.2,112.5 812.0,100.6" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 54 210 L 54.0 210.0 L 129.8 210.0 L 205.6 210.0 L 281.4 192.7 L 357.2 182.7 L 433.0 179.1 L 508.8 166.7 L 584.6 146.6 L 660.4 130.0 L 736.2 112.5 L 812.0 98.4 L 812.0 210 Z" fill="url(#area)"/>
+<polyline points="54.0,210.0 129.8,210.0 205.6,210.0 281.4,192.7 357.2,182.7 433.0,179.1 508.8,166.7 584.6,146.6 660.4,130.0 736.2,112.5 812.0,98.4" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="54.0" cy="210.0" r="4" fill="#10b981"/>
 <text class="value" x="54.0" y="198.0" text-anchor="middle">0</text>
 <text x="54.0" y="234" text-anchor="middle">10-09</text>
@@ -28,8 +28,8 @@
 <circle cx="660.4" cy="130.0" r="4" fill="#10b981"/>
 <text class="value" x="660.4" y="118.0" text-anchor="middle">375</text>
 <text x="660.4" y="234" text-anchor="middle">10-17</text>
-<circle cx="812.0" cy="100.6" r="4" fill="#10b981"/>
-<text class="value" x="812.0" y="88.6" text-anchor="middle">513</text>
+<circle cx="812.0" cy="98.4" r="4" fill="#10b981"/>
+<text class="value" x="812.0" y="86.4" text-anchor="middle">523</text>
 <text x="812.0" y="234" text-anchor="middle">10-19</text>
 <text x="28" y="266" style="font-size:11px">10-09–10-11：收录前零基线 · 最后一天为截至当前 · 北京时间</text>
 </svg>
