@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Roblox游戏重建：Claude与REA恢复翻转、加速垫及连击机制的宣传自述](../cases/roblox-rea-flips-boost-combo-rebuild.md) — Monreal称第二天已在Roblox Studio有可玩版，列翻转、加速垫、连击倍数与能量条；游戏名和对照测试未给。 **[REA · 待验证]**
 - [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](../cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
 - [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](../cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
 - [Block Blaster：读者称 AI 逆向发现随机机制服务广告收益](../cases/block-blaster-ai-randomness-reader-report.md) — 读者指控Block Blaster用长局后终结的机制提高广告收益，未给原始代码与分析，不能据此认定欺诈。 **[未确认使用 REA · 待验证]**

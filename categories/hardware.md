@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](../cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
+- [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](../cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
+- [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](../cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**
+- [Samsung Smart TV：向三模型询问定制固件，收到风险回答](../cases/samsung-tv-three-model-firmware-question.md) — 用户称Grok、Gemini、Claude均警告其三星电视改固件会变砖，最多可能加App；这是模型回答转述，不是实测结论。 **[其他 AI 逆向 · 待验证]**
+- [HUE Bridge：Claude固件排障回答被安全限制撤回的用户自述](../cases/hue-bridge-claude-firmware-refusal.md) — 用户因HUE桥固件问题求助Claude，称先生成半页排障再删除；无原日志，不推断具体限制原因或修复成功。 **[其他 AI 逆向 · 待验证]**
 - [LG UltraFine：Codex 修补 Screen Manager 更新器的内存错误](../cases/lg-ultrafine-codex-updater-patch.md) — Hirbod公开Codex辅助的单构建补丁与验证说明，报告UltraFine更新从20%崩溃到100%及CRC通过；仅一套设备。 **[其他 AI 逆向]**
 - [极米 Z7X：Codex 研究 UDP 与蓝牙开机，做 Mac 菜单栏遥控器](../cases/codex-udp-mac-remote-report.md) — AI FOMO报告极米Z7X经UDP日常遥控、iBeacon待机开机；原生前台助手据称已点亮投影，静默发送仍优化。 **[其他 AI 逆向 · 进行中]**
 - [Sony KDL-55W955：向 Claude 询问旧电视改固件，收到签名受阻回答](../cases/linux-tv-claude-firmware-refusal.md) — mecetnoca想恢复旧Sony电视可用性，称Claude以Linux与Sony签名说明阻碍；没有实际固件分析或刷写。 **[其他 AI 逆向 · 待验证]**

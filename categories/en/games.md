@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [A Roblox rebuild: promotional claims of Claude/REA flips, boost pads and combos](../../cases/en/roblox-rea-flips-boost-combo-rebuild.md) — Monreal reports a playable Roblox Studio version on day two, listing flips, boost pads, a combo multiplier and power meter; no original game name or comparative tests are supplied. **[REA · Needs verification]**
 - [Fire Emblem Three Houses: a claim of Claude-assisted bosses and UI on a decompilation](../../cases/en/fire-emblem-three-houses-claude-gameplay.md) — A poster claims new bosses, graphics, UI, chores and DLC using a Three Houses decompilation and Claude; the artifact is unverified. **[Other AI-assisted work · Needs verification]**
 - [Pokemon Yellow: a Claude idea for browser-playable Surfing Pikachu](../../cases/en/pokemon-yellow-surfing-pikachu-browser-idea.md) — Two posts ask for Claude/Astra investigation of Pokemon Yellow to make Surfing Pikachu playable in a browser; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Block Blaster: a reader claims AI reversing exposed ad-driven randomness](../../cases/en/block-blaster-ai-randomness-reader-report.md) — A reader alleges Block Blaster prolongs runs then ends them to maximize ad revenue, without original code or analysis; fraud is not established. **[REA use unconfirmed · Needs verification]**

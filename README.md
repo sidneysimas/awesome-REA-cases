@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 501 cases & projects
+# 513 cases & projects
 
-**Latest case update / maintenance:** October 19, 2026, 04:13 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 19, 2026, 08:07 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 8. **[NJFE: an ear camera on your PC](cases/en/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude-assisted USB bridging turns a cheap Wi-Fi camera into an inspection scope, **building on prior otoscope protocol work**. One device tested by the project; camera Wi-Fi remains open. `Public implementation`
 9. **[Gears of War 3](cases/en/gears3-ai-graphics-recompile.md)** · `2026-10-17` — AI-assisted Linux graphics work through **mechanical PowerPC-to-C++ translation, not recovered original source**. The reported 4K WIP still drops frames in combat. `In progress`
-10. **[A gzip predicate inside Claude's Bun build](cases/en/claude-bun-gzip-gemini-rea-test.md)** · `2026-10-18` — After unpacking, REA supplies evidence for a Gemini rewrite; the author reports **69,121 passing tests**. One function, no public test harness here—not whole-client decompilation or independent reproduction. `Self-test`
+10. **[Kestrel: Android games on Apple Silicon](cases/en/kestrel-colate-rea-mac-android-player.md)** · `2026-10-19` — REA-assisted MuMu research informs a **public Metal player and keymapping layer over Google's emulator**. BGMI reportedly runs; the experiment ledger preserves rejected optimizations. One host, no general speedup claim; current public Swift CI tests fail. `Early preview`
 
 ## Classic cases
 
@@ -48,9 +48,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **116** |
-| [Hardware & interoperability](categories/en/hardware.md) | **110** |
-| [Applications & clients](categories/en/apps.md) | **229** |
+| [Games & preservation](categories/en/games.md) | **117** |
+| [Hardware & interoperability](categories/en/hardware.md) | **115** |
+| [Applications & clients](categories/en/apps.md) | **235** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **46** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**501 entries**, organized by use case, without a Top-N or popularity threshold.
+**513 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (116)
-- [Hardware and interoperability](categories/en/hardware.md) (110)
-- [Applications and clients](categories/en/apps.md) (229)
+- [Games and preservation](categories/en/games.md) (117)
+- [Hardware and interoperability](categories/en/hardware.md) (115)
+- [Applications and clients](categories/en/apps.md) (235)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (46)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [A Roblox rebuild: promotional claims of Claude/REA flips, boost pads and combos](cases/en/roblox-rea-flips-boost-combo-rebuild.md) — Monreal reports a playable Roblox Studio version on day two, listing flips, boost pads, a combo multiplier and power meter; no original game name or comparative tests are supplied. **[REA · Needs verification]**
 - [Fire Emblem Three Houses: a claim of Claude-assisted bosses and UI on a decompilation](cases/en/fire-emblem-three-houses-claude-gameplay.md) — A poster claims new bosses, graphics, UI, chores and DLC using a Three Houses decompilation and Claude; the artifact is unverified. **[Other AI-assisted work · Needs verification]**
 - [Pokemon Yellow: a Claude idea for browser-playable Surfing Pikachu](cases/en/pokemon-yellow-surfing-pikachu-browser-idea.md) — Two posts ask for Claude/Astra investigation of Pokemon Yellow to make Surfing Pikachu playable in a browser; no implementation is reported. **[Other AI-assisted work · Needs verification]**
 - [Block Blaster: a reader claims AI reversing exposed ad-driven randomness](cases/en/block-blaster-ai-randomness-reader-report.md) — A reader alleges Block Blaster prolongs runs then ends them to maximize ad revenue, without original code or analysis; fraud is not established. **[REA use unconfirmed · Needs verification]**
@@ -147,6 +148,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Thermal camera: Mehdi's Claude-assisted Mac app for Windows/Android-only hardware](cases/en/mehdi-thermal-camera-claude-macos.md) — Mehdi reports no SDK, forum research on other models and live Claude device enumeration for a native macOS app; model and implementation remain unpublished. **[Other AI-assisted work · Needs verification]**
+- [A 3D home dashboard: Clinton Mills uses AI to connect hard-to-integrate products](cases/en/house-3d-ai-integration-dashboard.md) — The author reports a two-day model of two floors and the exterior plus a unified home dashboard, with reversing difficult integrations as the hard part; a reply lists ten connected services. **[Other AI-assisted work · Needs verification]**
+- [Zectrix Note4: asking Claude about community firmware for a Chinese-only device](cases/en/zectrix-note4-claude-community-firmware-idea.md) — A buyer struggling with an all-Chinese Note4 relays Claude's suggestion to start with community firmware such as TRMNL; no reversing or flashing is reported. **[Other AI-assisted work · Needs verification]**
+- [Samsung Smart TV: three-model custom-firmware questions met with risk warnings](cases/en/samsung-tv-three-model-firmware-question.md) — A user says Grok, Gemini and Claude all warned that modifying their Samsung TVs could brick them, with only possible app additions; these are relayed answers, not tests. **[Other AI-assisted work · Needs verification]**
+- [HUE Bridge: a user's report of Claude retracting firmware troubleshooting](cases/en/hue-bridge-claude-firmware-refusal.md) — A user says Claude generated half a page of HUE bridge firmware troubleshooting and then deleted it for safeguards; no original logs establish the reason or a successful repair. **[Other AI-assisted work · Needs verification]**
 - [LG UltraFine: a Codex-assisted memory fix for the Screen Manager updater](cases/en/lg-ultrafine-codex-updater-patch.md) — Hirbod publishes a build-specific patch and checks, reporting an UltraFine update from a 20% crash to 100% with CRC passing; one setup only. **[Other AI-assisted work]**
 - [XGIMI Z7X: a Codex-assisted Mac remote using UDP and Bluetooth wake](cases/en/codex-udp-mac-remote-report.md) — AI FOMO reports UDP control and iBeacon wake on a Z7X; a native foreground helper reportedly powers it on, while silent sending remains unfinished. **[Other AI-assisted work · In progress]**
 - [Sony KDL-55W955: a Claude firmware question met with a signing-blocker answer](cases/en/linux-tv-claude-firmware-refusal.md) — mecetnoca wants an old Sony TV usable again and reports Claude citing Linux and Sony signing, without actual firmware analysis or flashing. **[Other AI-assisted work · Needs verification]**
@@ -260,6 +266,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Kestrel: studying MuMuPlayer Pro for a native Apple Silicon Android gaming player](cases/en/kestrel-colate-rea-mac-android-player.md) — Himansh Raj's public Swift project adds a Metal player and keymapping to Google's Android Emulator; BGMI is reportedly playable, but current public Swift CI tests fail. **[REA · In progress]**
+- [Grokbot: a SOL 6.1-assisted Harness/Host remote-computer execution rebuild](cases/en/grokbot-sol61-harness-host-reconstruction.md) — Stephen4171127 reports three days restoring the 0.72.0-pre.11 core delegation chain through opening Chrome; source cleanup and remaining host capabilities are unfinished. **[Other AI-assisted work · In progress]**
+- [OrcaCyber Nano 1.0: a 27B local security model for disassembly interpretation](cases/en/orcacyber-nano-local-re-analysis.md) — A Japanese ChatGPT summary introduces OrcaRouter's local model for interpreting disassembly and investigating vulnerabilities; no binary experiment is shown, and general benchmark scores do not measure reverse engineering. **[Other AI-assisted work · Related project]**
+- [Supermarket shopping: a local reversed MCP with Claude after Grokbot was blocked](cases/en/supermarket-local-mcp-claude-report.md) — AD reports running a reverse-engineered MCP on a laptop with Claude after a supermarket blocked Grokbot; the implementation and retailer are unpublished, and AI's role in reversing is unknown. **[Other AI-assisted work · Needs verification]**
+- [A local Twitter API: a reader describes an AI-written TypeScript backend reimplementation](cases/en/twitter-local-typescript-ai-api-reimplementation.md) — Felicodes describes xitter as a local AI-written Twitter API that redirects user/tweet requests to the computer; no repository or protocol-equivalence tests were obtained. **[Other AI-assisted work · Needs verification]**
+- [An orca agent fleet: infinati reports rebuilding it with local Ollama models](cases/en/orca-agent-fleet-ollama-rebuild-report.md) — The author says a Grok automation found orca and that a REA-motivated rebuild uses Ollama to remove subscription dependence and enable customization; the implementation is unverified. **[REA · Needs verification]**
 - [Codex: a reader's idea to investigate it with Claude Opus](cases/en/codex-opus-reverse-reader-idea.md) — A reader proposes reversing Codex with Claude Opus, without identifying CLI versus desktop, features or research results. **[Other AI-assisted work · Needs verification]**
 - [GNOME Calculator: a reader's account of LowLevelTV's REA/Claude rebuild](cases/en/gnome-calculator-rea-lowlevel-report.md) — Brian retells an approximately 28-minute working GNOME Calculator rebuild by LowLevelTV; original video tests and behavioral comparisons were not obtained. **[REA · Needs verification]**
 - [Axo and REA: turning software-behavior evidence into a linked living wiki](cases/en/axo-rea-evidence-wiki-idea.md) — A proposed workflow has REA read software and Axo store behavior-level evidence notes, cross-links and contradictions; no target app or wiki is supplied. **[REA · Needs verification]**

@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **501 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **513 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（116）
-- [硬件与设备互通](categories/hardware.md)（110）
-- [应用与客户端](categories/apps.md)（229）
+- [游戏与游戏保存](categories/games.md)（117）
+- [硬件与设备互通](categories/hardware.md)（115）
+- [应用与客户端](categories/apps.md)（235）
 - [算法与功能重建](categories/algorithms.md)（46）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Roblox游戏重建：Claude与REA恢复翻转、加速垫及连击机制的宣传自述](cases/roblox-rea-flips-boost-combo-rebuild.md) — Monreal称第二天已在Roblox Studio有可玩版，列翻转、加速垫、连击倍数与能量条；游戏名和对照测试未给。 **[REA · 待验证]**
 - [Fire Emblem Three Houses：在反编译成果上用 Claude 改 Boss 与 UI 的自述](cases/fire-emblem-three-houses-claude-gameplay.md) — 作者称利用Three Houses反编译成果与Claude改Boss、图形、UI、杂务及DLC；未验证产物。 **[其他 AI 逆向 · 待验证]**
 - [Pokemon Yellow：把冲浪皮卡丘做成浏览器游戏的 Claude idea](cases/pokemon-yellow-surfing-pikachu-browser-idea.md) — 两篇帖子提出用Claude/Astra研究Pokemon Yellow，让Surfing Pikachu可在浏览器游玩；没有实施。 **[其他 AI 逆向 · 待验证]**
 - [Block Blaster：读者称 AI 逆向发现随机机制服务广告收益](cases/block-blaster-ai-randomness-reader-report.md) — 读者指控Block Blaster用长局后终结的机制提高广告收益，未给原始代码与分析，不能据此认定欺诈。 **[未确认使用 REA · 待验证]**
@@ -145,6 +146,11 @@
 
 ### 硬件与设备互通
 
+- [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
+- [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
+- [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**
+- [Samsung Smart TV：向三模型询问定制固件，收到风险回答](cases/samsung-tv-three-model-firmware-question.md) — 用户称Grok、Gemini、Claude均警告其三星电视改固件会变砖，最多可能加App；这是模型回答转述，不是实测结论。 **[其他 AI 逆向 · 待验证]**
+- [HUE Bridge：Claude固件排障回答被安全限制撤回的用户自述](cases/hue-bridge-claude-firmware-refusal.md) — 用户因HUE桥固件问题求助Claude，称先生成半页排障再删除；无原日志，不推断具体限制原因或修复成功。 **[其他 AI 逆向 · 待验证]**
 - [LG UltraFine：Codex 修补 Screen Manager 更新器的内存错误](cases/lg-ultrafine-codex-updater-patch.md) — Hirbod公开Codex辅助的单构建补丁与验证说明，报告UltraFine更新从20%崩溃到100%及CRC通过；仅一套设备。 **[其他 AI 逆向]**
 - [极米 Z7X：Codex 研究 UDP 与蓝牙开机，做 Mac 菜单栏遥控器](cases/codex-udp-mac-remote-report.md) — AI FOMO报告极米Z7X经UDP日常遥控、iBeacon待机开机；原生前台助手据称已点亮投影，静默发送仍优化。 **[其他 AI 逆向 · 进行中]**
 - [Sony KDL-55W955：向 Claude 询问旧电视改固件，收到签名受阻回答](cases/linux-tv-claude-firmware-refusal.md) — mecetnoca想恢复旧Sony电视可用性，称Claude以Linux与Sony签名说明阻碍；没有实际固件分析或刷写。 **[其他 AI 逆向 · 待验证]**
@@ -258,6 +264,12 @@
 
 ### 应用与客户端
 
+- [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
+- [Grokbot：SOL 6.1 辅助恢复 Harness 与 Host 的远程电脑执行链](cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告三天恢复0.72.0-pre.11核心链路，主Agent委派电脑子Agent并打开Chrome；代码整理与宿主能力仍待完成。 **[其他 AI 逆向 · 进行中]**
+- [OrcaCyber Nano 1.0：本地解读反汇编的27B安全模型介绍](cases/orcacyber-nano-local-re-analysis.md) — 日语ChatGPT摘要介绍OrcaRouter的本地安全模型，用于反汇编解释与漏洞分析；没有具体二进制实验，通用数学代码分数不等于逆向能力。 **[其他 AI 逆向 · 相关项目]**
+- [超市购物：Grokbot被挡后，用笔记本上的逆向MCP配Claude](cases/supermarket-local-mcp-claude-report.md) — AD称超市阻止Grokbot后，改在笔记本运行其逆向MCP与Claude购物；实现和超市名称未公开，逆向时是否用了AI未知。 **[其他 AI 逆向 · 待验证]**
+- [Twitter本地API：读者称用AI与TypeScript重实现网页后端](cases/twitter-local-typescript-ai-api-reimplementation.md) — Felicodes将xitter解释为AI写的本地Twitter API重实现，把用户与帖子请求导向本机；尚无仓库或协议等价验证。 **[其他 AI 逆向 · 待验证]**
+- [orca Agent群：infinati报告重建并改接本地Ollama模型](cases/orca-agent-fleet-ollama-rebuild-report.md) — 作者称Grok自动化发现orca后，用REA思路重建订阅型Agent群并接Ollama，以减少依赖和便于定制；没有公开实现验证。 **[REA · 待验证]**
 - [Codex：用 Claude Opus 研究另一编码工具的读者 idea](cases/codex-opus-reverse-reader-idea.md) — 读者提出用Claude Opus逆向Codex，未指定CLI、桌面版、功能或实际研究结果。 **[其他 AI 逆向 · 待验证]**
 - [GNOME Calculator：LowLevelTV 用 REA 与 Claude 重建的读者转述](cases/gnome-calculator-rea-lowlevel-report.md) — Brian转述LowLevelTV约28分钟重建可用GNOME Calculator，未取得原视频测试与行为对照。 **[REA · 待验证]**
 - [Axo 与 REA：把软件行为证据变成持续关联的 wiki](cases/axo-rea-evidence-wiki-idea.md) — 作者设想用REA读取软件，再由Axo按行为存证据笔记、交叉链接与标记冲突；未给实际软件样本或wiki。 **[REA · 待验证]**
