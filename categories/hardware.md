@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [CMF Watch Pro 3：让 AI 研究手表并做 App 与表盘商店](../cases/cmf-watch-pro3-ai-app-store.md) — TechJeeper称过夜让AI研究CMF Watch Pro 3并做应用与表盘商店，未取得协议、仓库或手表实测。 **[其他 AI 逆向 · 进行中]**
+- [Android CarPlay AI box：把四个 Claude 终端显示到停车后的车机屏幕](../cases/android-carplay-box-claude-terminal-idea.md) — 提示词通过Android盒子、ADB及本地网页显示笔记本Agent，不是攻破iPhone CarPlay或修改车辆固件。 **[其他 AI 逆向 · 相关项目]**
+- [旧 iPad：由电视和音箱改造引出的 Claude 研究愿望](../cases/old-ipad-claude-research-idea.md) — 读者问为何还没人用Claude研究旧iPad；目标设备类别明确，未指定功能、型号或可行路径。 **[其他 AI 逆向 · 待验证]**
 - [显卡驱动开源替代：请求 AI 辅助逆向的读者 idea](../cases/gpu-driver-ai-opensource-idea.md) — 读者询问能否让AI研究显卡驱动并开源；没有指定厂商、设备或实现，Adobe逆向类比未获证实。 **[其他 AI 逆向 · 待验证]**
 - [2009 年车载收音导航：Claude 固件排障后拒绝打包测试的自述](../cases/car-2009-radionavigator-claude-refusal.md) — luizfilipelv为自己的旧车导航修bug，称上传固件后Claude找到问题，但拒绝组装待测文件；未有修复验证。 **[其他 AI 逆向 · 待验证]**
 - [Dell 显示器：Claude 研究控制后制作 macOS 画中画／画外画菜单栏 App](../cases/dell-display-claude-macos-pip-pbp.md) — codeandrewford称新macOS缺Dell显示管理器，Claude辅助研究后用菜单栏控制PiP/PbP；无型号或协议日志。 **[其他 AI 逆向 · 待验证]**
@@ -11,7 +14,7 @@
 - [2014 年 Samsung TV：Claude 研究加密遥控协议，经 PIN 配对控制旧电视](../cases/samsung-2014-claude-encrypted-remote.md) — tezarc称Claude Code找到非Android三星电视，研究加密遥控并经屏幕PIN配对发送命令；明确不是固件破解。 **[其他 AI 逆向 · 待验证]**
 - [LG TV：用 REA 与 Claude 做埃塞俄比亚字母、时间日期屏保主题](../cases/lg-tv-ethiopian-theme-rea.md) — Yenu报告LG电视定制主题与时间日期屏保，明确称REA配Claude；没有型号、代码或底层修改证据。 **[REA · 待验证]**
 - [母亲的智能电视：Claude 去臃肿软件尝试因固件下载费用搁置](../cases/lucas-mother-tv-claude-firmware-cost-blocker.md) — LucasFisura称尝试用Claude逆向家中Smart TV去臃肿软件，但看到固件下载需20k后停止；币种、型号与分析产物未给。 **[其他 AI 逆向 · 待验证]**
-- [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](../cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
+- [热像仪：Mehdi 的 Claude 辅助 Mac App 与 Seek XR 扩展建议](../cases/mehdi-thermal-camera-claude-macos.md) — Mehdi借助论坛资料与Claude现场枚举做Mac端；读者进一步建议研究Seek Thermal XR的Android APK，尚未执行或确认兼容。 **[其他 AI 逆向 · 待验证]**
 - [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](../cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
 - [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](../cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**
 - [Samsung Smart TV：向三模型询问定制固件，收到风险回答](../cases/samsung-tv-three-model-firmware-question.md) — 用户称Grok、Gemini、Claude均警告其三星电视改固件会变砖，最多可能加App；这是模型回答转述，不是实测结论。 **[其他 AI 逆向 · 待验证]**
@@ -98,7 +101,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](../cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](../cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](../cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理新增Codex／GPT6.1 SOL high教程与固件逆向说法的质疑；ADB禁包不是固件重写，也不证明全部去追踪。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](../cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理与固件研究分开记录；新增撤销ADB调试授权的建议及旧窗口本地API自述，不证明语音控制、完全去追踪或固件重写。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](../cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](../cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](../cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**

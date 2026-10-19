@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
+- [pycdc-rapid: a Hermes user claims an agent added Python 3.16 decompilation](../../cases/en/hermes-pycdc-rapid-python316-claim.md) — A user connects Ghidra and pycdc-rapid to Hermes and claims an agent extended the latter from 3.15 to 3.16; no patch or sample is available. **[Other AI-assisted work · Needs verification]**
 - [Ghidra MCP and Claude Desktop: a reported crackme demo yielding 123456](../../cases/en/ghidra-mcp-claude-crackme-123456.md) — ISOfunds relays a toy EXE demo in which Claude uses Ghidra to read a check and return a password; no sample, analysis log or independent rerun is available. **[Other AI-assisted work · Needs verification]**
 - [Inferring a trading strategy from live trade records: FMZ Quant's AI experiment question](../../cases/en/ai-live-trades-strategy-inference-test.md) — A video title asks whether AI can infer the author's strategy from live trade records; the question is identifiable, but inputs, method and results were not obtained. **[REA use unconfirmed · Needs verification]**
 - [Kaggle code embeddings: GNN imitation of an undisclosed generator for Gemma 4 post-training](../../cases/en/kaggle-code-graph-embedding-gnn-imitation.md) — Vaibhav reports matching 127 call graphs and imitating 368k vectors with a small GNN; ranking agreement is 0.84 within a repo but only 0.08–0.24 on unseen repos, with a 60-configuration sweep ongoing. **[Other AI-assisted work · In progress]**

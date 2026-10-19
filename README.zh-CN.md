@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 544 个案例与项目
+# 554 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 19 日 20:14 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 20 日 00:12 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -33,7 +33,7 @@
 7. **[Open Scrantic：Johnny Castaway 屏保回归](cases/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA 与 Claude Code 辅助恢复 Windows 3.1 屏保引擎，以 Rust 支持三平台。**有公开代码与项目 CI 成功记录**；原资产需自备，仍有已知版本限制与刻意行为差异。`进行中`
 8. **[NJFE：把耳镜接到电脑](cases/njfe-claude-ear-camera-usb.md)** · `2026-10-10` — Claude 辅助 USB 桥接，让廉价 Wi-Fi 相机成为检查镜，**复用前人 otoscope 协议研究**；项目只测一台设备，相机 Wi-Fi 仍开放。`公开实现`
 9. **[sm64-gba：先对齐运动逻辑，不是完整游戏](cases/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude 将**人类完成的 n64decomp 代码**适配到 GBA，以逐帧 oracle 对照运动与碰撞，**公开项目 CI 成功**。仅有限的四关演示，不是完整游戏；尚未实机测试。`进行中`
-10. **[Kestrel：在 Apple Silicon 玩 Android 游戏](cases/kestrel-colate-rea-mac-android-player.md)** · `2026-10-19` — REA 辅助研究 MuMu，在 Google 模拟器上做**公开 Metal 播放器与键鼠映射层**。作者报告 BGMI 可玩，实验账本也保留失败的优化。仅单台主机、不宣称普遍提速；当前公开 Swift CI 测试失败。`早期预览`
+10. **[sayn：做自己的 Android 小工具](cases/sayn-rea-native-app-factory.md)** · `2026-10-19` — **公开 REA 到功能规格的流程**，衔接 Expo 应用工厂与 ADB 安装。APK 分析可选，失败会退回商店资料；已读源码，未测试构建。不是五分钟克隆任意付费 App 的证明。`进行中`
 
 ## 经典案例
 
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **127** |
-| [硬件与设备互通](categories/hardware.md) | **124** |
-| [应用与客户端](categories/apps.md) | **243** |
-| [算法与功能重建](categories/algorithms.md) | **50** |
+| [游戏与游戏保存](categories/games.md) | **128** |
+| [硬件与设备互通](categories/hardware.md) | **127** |
+| [应用与客户端](categories/apps.md) | **248** |
+| [算法与功能重建](categories/algorithms.md) | **51** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

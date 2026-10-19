@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **544 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **554 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（127）
-- [硬件与设备互通](categories/hardware.md)（124）
-- [应用与客户端](categories/apps.md)（243）
-- [算法与功能重建](categories/algorithms.md)（50）
+- [游戏与游戏保存](categories/games.md)（128）
+- [硬件与设备互通](categories/hardware.md)（127）
+- [应用与客户端](categories/apps.md)（248）
+- [算法与功能重建](categories/algorithms.md)（51）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
 - [GTA 5 × Spider-Man × Hulk：REA／Opus 提取机制再做 Godot 混合作品的宣传](cases/gta-spiderman-hulk-godot-mashup.md) — Deni称两小时把摆荡、踩踏与街道组合进同一城市，提供扫描到规格的流程，未给原游戏版本、代码或验收日志。 **[REA · 待验证]**
@@ -66,7 +67,7 @@
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
 - [JS 游戏广告行为：Claude 读混淆逻辑的调查自述](cases/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia 称让 Claude 阅读游戏混淆 JavaScript；父串在讨论广告与故意失败的指控，尚无运行验证。 **[其他 AI 逆向 · 分析测试]**
 - [CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea](cases/cm0102-fm26-rea-data-migration-idea.md) — 读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。 **[REA · 待验证]**
-- [Universal Modder：用 AI 给现有游戏做 Mod](cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏内容 Mod。 **[其他 AI 逆向]**
+- [Universal Modder：用 AI 给现有游戏做 Mod](cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏Mod；另附Fortnite混合规则宣传，未确认同作者或同实现。 **[其他 AI 逆向]**
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**
 - [《现代战争 2》：用多 Agent 重建游戏代码](cases/mw2-decompilation.md) — 多 Agent 反编译游戏，以原二进制核对恢复函数。 **[其他 AI 逆向]**
 - [Urban Terror：把桌面多人射击游戏移植到浏览器](cases/urban-terror-web.md) — 定位引擎与字节码布局差异，将游戏移植到浏览器。 **[其他 AI 逆向]**
@@ -96,7 +97,7 @@
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 - [rea-engine: Rebuild Windows TicTacToe from its binary](cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**
 - [《星之卡比》：REA 逆向进行中的作者报告](cases/kirby-rea-in-progress.md) — 作者称星之卡比逆向到一半，未公布具体版本或产物。 **[REA · 进行中]**
-- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](cases/links-awakening-claude-pc-port-report.md) — 补查LASRecomp公开项目，确认Switch版本与Claude Code自述，保留beta与崩溃边界。 **[其他 AI 逆向 · 待验证]**
+- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](cases/links-awakening-claude-pc-port-report.md) — LASRecomp公开说明确认Switch v1.0.0与Claude Code参与；10月19日综述另述超宽屏、randomizer与地牢黑块，均未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [《博德之门3》：探索 Agent 增强 Mod 的 idea](cases/bg3-agent-modding-idea.md) — 发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。 **[未确认使用 REA · 待验证]**
 - [《大富翁4》：REA 分析后用 Flutter 重写到 iPhone](cases/richman4-flutter-iphone.md) — 作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。 **[REA · 待验证]**
 - [IsaacRecomp：把初代 Flash《以撒》带到原生平台](cases/isaacrecomp-flash-cpp-report.md) — 项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。 **[其他 AI 逆向 · 进行中]**
@@ -156,6 +157,9 @@
 
 ### 硬件与设备互通
 
+- [CMF Watch Pro 3：让 AI 研究手表并做 App 与表盘商店](cases/cmf-watch-pro3-ai-app-store.md) — TechJeeper称过夜让AI研究CMF Watch Pro 3并做应用与表盘商店，未取得协议、仓库或手表实测。 **[其他 AI 逆向 · 进行中]**
+- [Android CarPlay AI box：把四个 Claude 终端显示到停车后的车机屏幕](cases/android-carplay-box-claude-terminal-idea.md) — 提示词通过Android盒子、ADB及本地网页显示笔记本Agent，不是攻破iPhone CarPlay或修改车辆固件。 **[其他 AI 逆向 · 相关项目]**
+- [旧 iPad：由电视和音箱改造引出的 Claude 研究愿望](cases/old-ipad-claude-research-idea.md) — 读者问为何还没人用Claude研究旧iPad；目标设备类别明确，未指定功能、型号或可行路径。 **[其他 AI 逆向 · 待验证]**
 - [显卡驱动开源替代：请求 AI 辅助逆向的读者 idea](cases/gpu-driver-ai-opensource-idea.md) — 读者询问能否让AI研究显卡驱动并开源；没有指定厂商、设备或实现，Adobe逆向类比未获证实。 **[其他 AI 逆向 · 待验证]**
 - [2009 年车载收音导航：Claude 固件排障后拒绝打包测试的自述](cases/car-2009-radionavigator-claude-refusal.md) — luizfilipelv为自己的旧车导航修bug，称上传固件后Claude找到问题，但拒绝组装待测文件；未有修复验证。 **[其他 AI 逆向 · 待验证]**
 - [Dell 显示器：Claude 研究控制后制作 macOS 画中画／画外画菜单栏 App](cases/dell-display-claude-macos-pip-pbp.md) — codeandrewford称新macOS缺Dell显示管理器，Claude辅助研究后用菜单栏控制PiP/PbP；无型号或协议日志。 **[其他 AI 逆向 · 待验证]**
@@ -165,7 +169,7 @@
 - [2014 年 Samsung TV：Claude 研究加密遥控协议，经 PIN 配对控制旧电视](cases/samsung-2014-claude-encrypted-remote.md) — tezarc称Claude Code找到非Android三星电视，研究加密遥控并经屏幕PIN配对发送命令；明确不是固件破解。 **[其他 AI 逆向 · 待验证]**
 - [LG TV：用 REA 与 Claude 做埃塞俄比亚字母、时间日期屏保主题](cases/lg-tv-ethiopian-theme-rea.md) — Yenu报告LG电视定制主题与时间日期屏保，明确称REA配Claude；没有型号、代码或底层修改证据。 **[REA · 待验证]**
 - [母亲的智能电视：Claude 去臃肿软件尝试因固件下载费用搁置](cases/lucas-mother-tv-claude-firmware-cost-blocker.md) — LucasFisura称尝试用Claude逆向家中Smart TV去臃肿软件，但看到固件下载需20k后停止；币种、型号与分析产物未给。 **[其他 AI 逆向 · 待验证]**
-- [热像仪：Mehdi 用 Claude 为只支持 Windows/Android 的设备做 Mac App](cases/mehdi-thermal-camera-claude-macos.md) — Mehdi称没有SDK，参考其他型号论坛逆向资料并让Claude现场枚举热像仪，做原生macOS端；未公开型号与实现。 **[其他 AI 逆向 · 待验证]**
+- [热像仪：Mehdi 的 Claude 辅助 Mac App 与 Seek XR 扩展建议](cases/mehdi-thermal-camera-claude-macos.md) — Mehdi借助论坛资料与Claude现场枚举做Mac端；读者进一步建议研究Seek Thermal XR的Android APK，尚未执行或确认兼容。 **[其他 AI 逆向 · 待验证]**
 - [住宅3D仪表盘：Clinton Mills 用 AI 接入家居系统并研究难连的产品](cases/house-3d-ai-integration-dashboard.md) — 作者报告两天建成双层住宅与室外3D模型及统一家居面板，集成难点是逆向不易连接的产品；同串列十种已连接服务。 **[其他 AI 逆向 · 待验证]**
 - [Zectrix Note4：为中文设备询问 Claude，考虑社区固件](cases/zectrix-note4-claude-community-firmware-idea.md) — 购买者因Note4全中文而求助，转述Claude建议从TRMNL一类社区固件起步；尚无逆向分析或刷写。 **[其他 AI 逆向 · 待验证]**
 - [Samsung Smart TV：向三模型询问定制固件，收到风险回答](cases/samsung-tv-three-model-firmware-question.md) — 用户称Grok、Gemini、Claude均警告其三星电视改固件会变砖，最多可能加App；这是模型回答转述，不是实测结论。 **[其他 AI 逆向 · 待验证]**
@@ -252,7 +256,7 @@
 - [Whirlpool 洗烘机：用 REA 调查随机 F13 的计划](cases/whirlpool-f13-rea-investigation-idea.md) — 用户因随机错误与售后答复不足，计划研究设备；并未证明计划报废。 **[REA · 待验证]**
 - [Apple Watch Ultra 2：AI 逆向后连接 Android 的待验证转述](cases/apple-watch-ultra2-android-ai-report.md) — Edenwoodfilm 称开源工具能让 Ultra 2 配对 Android，当前 Android 路线需要 root。 **[其他 AI 逆向 · 待验证]**
 - [Plustek 8200i / ThinkPad MIPI：用 Windows 参考行为改善 Linux 驱动](cases/schaller-opticfilm-thinkpad-linux.md) — Schaller 用 Claude 与已知良好的设备参考，研究底片扫描仪 USB 及笔记本相机配置；公开测量与剩余缺陷。 **[其他 AI 逆向 · 进行中]**
-- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理新增Codex／GPT6.1 SOL high教程与固件逆向说法的质疑；ADB禁包不是固件重写，也不证明全部去追踪。 **[其他 AI 逆向 · 待验证]**
+- [电视广告与隐私：固件 idea、搁置研究与 ADB 清理方案](cases/tv-firmware-ai-ad-removal-idea.md) — Android电视清理与固件研究分开记录；新增撤销ADB调试授权的建议及旧窗口本地API自述，不证明语音控制、完全去追踪或固件重写。 **[其他 AI 逆向 · 待验证]**
 - [电路板功能重建：把 REA 思路用于硬件的 idea](cases/rea-circuit-board-functional-rebuild-idea.md) — 作者提议做类似 REA 的程序，分析电路板功能后重新实现；尚无指定板卡或原型。 **[未确认使用 REA · 待验证]**
 - [Samsung 空调：Claude 部分协助的局域网控制研究](cases/samsung-ac-local-claude-report.md) — 作者称逆向自己的 Samsung 空调实现本地控制；2022年后全型号支持未核验。 **[其他 AI 逆向 · 待验证]**
 - [Creality SpacePiX4：用 Gemini Argon 改善固件的计划](cases/creality-spacepix4-gemini-firmware-idea.md) — 作者想用 Gemini Argon 为自己的具名设备做更好的固件，尚未说明研究或实现。 **[其他 AI 逆向 · 待验证]**
@@ -283,6 +287,11 @@
 
 ### 应用与客户端
 
+- [sayn：从 Play Store 功能与 APK 规格生成自己的 Android App](cases/sayn-rea-native-app-factory.md) — 作者将REA接入本地App工厂；公开代码可见可选APK分析、功能规格及Expo构建路径，不是已验证的任意付费App克隆。 **[REA · 进行中]**
+- [Palmier Pro：视频制作中逆向修 Bug 与交互补丁的自述](cases/palmier-pro-ai-video-workflow-patches.md) — 李不凯称在Opus视频制作流程中研究Palmier Pro并打补丁，改善交互；没有补丁与版本可复核。 **[其他 AI 逆向 · 待验证]**
+- [Devvy 云控制台：用开源工具重建自己付费云功能的自述](cases/devvy-selfhosted-cloud-console-rebuild.md) — 作者称用AI重建所需云功能与harness，迁到每月6美元服务器，明确没有反编译。 **[其他 AI 逆向 · 相关项目]**
+- [抖音热榜视频：拆解热点作品后交给 GPT Dots 改作的获客 idea](cases/douyin-trending-video-gpt-dots-idea.md) — 作者拟拆解热门AI视频，再交给GPT生成自己的版本；此前半月自动发布流程不等于新方案已验证。 **[其他 AI 逆向 · 待验证]**
+- [校园跑 App：让 Agent 研究软件的读者建议](cases/campus-running-app-agent-idea.md) — 回复者建议用Agent逆向校园跑软件；没有指名App、具体技术方案或执行结果。 **[其他 AI 逆向 · 待验证]**
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
 - [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**
@@ -529,6 +538,7 @@
 
 ### 算法与功能重建
 
+- [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**
 - [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**
 - [实盘记录到交易策略：FMZ Quant 提出的 AI 逆向实验问题](cases/ai-live-trades-strategy-inference-test.md) — 视频标题询问AI能否靠作者实盘记录猜出策略；只确认具体实验问题，未取得输入、方法或结果。 **[未确认使用 REA · 待验证]**
 - [Kaggle 代码向量：为 Gemma 4 后训练用 GNN 仿制未公开的 embedding 生成过程](cases/kaggle-code-graph-embedding-gnn-imitation.md) — Vaibhav报告匹配127调用图，再用小GNN仿制368k向量；仓内排名一致度0.84，未见仓仅0.08–0.24，仍在60配置搜索。 **[其他 AI 逆向 · 进行中]**

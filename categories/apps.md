@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [sayn：从 Play Store 功能与 APK 规格生成自己的 Android App](../cases/sayn-rea-native-app-factory.md) — 作者将REA接入本地App工厂；公开代码可见可选APK分析、功能规格及Expo构建路径，不是已验证的任意付费App克隆。 **[REA · 进行中]**
+- [Palmier Pro：视频制作中逆向修 Bug 与交互补丁的自述](../cases/palmier-pro-ai-video-workflow-patches.md) — 李不凯称在Opus视频制作流程中研究Palmier Pro并打补丁，改善交互；没有补丁与版本可复核。 **[其他 AI 逆向 · 待验证]**
+- [Devvy 云控制台：用开源工具重建自己付费云功能的自述](../cases/devvy-selfhosted-cloud-console-rebuild.md) — 作者称用AI重建所需云功能与harness，迁到每月6美元服务器，明确没有反编译。 **[其他 AI 逆向 · 相关项目]**
+- [抖音热榜视频：拆解热点作品后交给 GPT Dots 改作的获客 idea](../cases/douyin-trending-video-gpt-dots-idea.md) — 作者拟拆解热门AI视频，再交给GPT生成自己的版本；此前半月自动发布流程不等于新方案已验证。 **[其他 AI 逆向 · 待验证]**
+- [校园跑 App：让 Agent 研究软件的读者建议](../cases/campus-running-app-agent-idea.md) — 回复者建议用Agent逆向校园跑软件；没有指名App、具体技术方案或执行结果。 **[其他 AI 逆向 · 待验证]**
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](../cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](../cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
 - [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](../cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**

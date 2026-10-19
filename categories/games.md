@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](../cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](../cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](../cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
 - [GTA 5 × Spider-Man × Hulk：REA／Opus 提取机制再做 Godot 混合作品的宣传](../cases/gta-spiderman-hulk-godot-mashup.md) — Deni称两小时把摆荡、踩踏与街道组合进同一城市，提供扫描到规格的流程，未给原游戏版本、代码或验收日志。 **[REA · 待验证]**
@@ -42,7 +43,7 @@
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](../cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
 - [JS 游戏广告行为：Claude 读混淆逻辑的调查自述](../cases/claude-js-game-ad-behavior-inspection.md) — AnechoicMedia 称让 Claude 阅读游戏混淆 JavaScript；父串在讨论广告与故意失败的指控，尚无运行验证。 **[其他 AI 逆向 · 分析测试]**
 - [CM 01-02 到 FM26：用 REA 研究足球经理数据迁移的 idea](../cases/cm0102-fm26-rea-data-migration-idea.md) — 读者已导出 CM 01-02 数据，询问 REA 能否帮助导入 FM26；未有格式研究或转换器。 **[REA · 待验证]**
-- [Universal Modder：用 AI 给现有游戏做 Mod](../cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏内容 Mod。 **[其他 AI 逆向]**
+- [Universal Modder：用 AI 给现有游戏做 Mod](../cases/universal-modder.md) — 分析游戏代码与文件格式，制作跨游戏Mod；另附Fortnite混合规则宣传，未确认同作者或同实现。 **[其他 AI 逆向]**
 - [Firefighter：把老 DOS 游戏恢复成可维护的 Rust 代码](../cases/firefighter-rust.md) — 从旧 DOS 二进制恢复 Pascal，再转写为 Rust。 **[其他 AI 逆向]**
 - [《现代战争 2》：用多 Agent 重建游戏代码](../cases/mw2-decompilation.md) — 多 Agent 反编译游戏，以原二进制核对恢复函数。 **[其他 AI 逆向]**
 - [Urban Terror：把桌面多人射击游戏移植到浏览器](../cases/urban-terror-web.md) — 定位引擎与字节码布局差异，将游戏移植到浏览器。 **[其他 AI 逆向]**
@@ -72,7 +73,7 @@
 - [Friday Night Funkin’：基于反编译成果制作 Claude 辅助的新玩法](../cases/friday-night-funkin-claude-gameplay.md) — 作者称基于近期反编译成果，用 Claude 制作含新输入、画面与界面的玩法版本。 **[未确认使用 REA · 待验证]**
 - [rea-engine: Rebuild Windows TicTacToe from its binary](../cases/rea-engine-tictactoe.md) — The author reports building rea-engine atop original REA, adding a tooling layer, and reconstructing a Windows TicTacToe game from its binary; all 19,683 board states reportedly match byte for byte. **[REA]**
 - [《星之卡比》：REA 逆向进行中的作者报告](../cases/kirby-rea-in-progress.md) — 作者称星之卡比逆向到一半，未公布具体版本或产物。 **[REA · 进行中]**
-- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](../cases/links-awakening-claude-pc-port-report.md) — 补查LASRecomp公开项目，确认Switch版本与Claude Code自述，保留beta与崩溃边界。 **[其他 AI 逆向 · 待验证]**
+- [《织梦岛》：Claude Code 参与 PC 移植的待验证转述](../cases/links-awakening-claude-pc-port-report.md) — LASRecomp公开说明确认Switch v1.0.0与Claude Code参与；10月19日综述另述超宽屏、randomizer与地牢黑块，均未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [《博德之门3》：探索 Agent 增强 Mod 的 idea](../cases/bg3-agent-modding-idea.md) — 发帖者提出把 BG3 作为 Agent 增强目标，询问是否受反编译难度限制。 **[未确认使用 REA · 待验证]**
 - [《大富翁4》：REA 分析后用 Flutter 重写到 iPhone](../cases/richman4-flutter-iphone.md) — 作者称一天分析、一天 Claude 重写，并在 iPhone 编译运行。 **[REA · 待验证]**
 - [IsaacRecomp：把初代 Flash《以撒》带到原生平台](../cases/isaacrecomp-flash-cpp-report.md) — 项目明确承认 AI 辅助，将 Flash 逻辑转为 C++，原作资源由用户提供。 **[其他 AI 逆向 · 进行中]**
