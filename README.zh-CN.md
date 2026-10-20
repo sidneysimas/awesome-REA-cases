@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 579 个案例与项目
+# 589 个案例与项目
 
-**最近案例更新／维护：**2026 年 10 月 20 日 04:15 · 北京时间（UTC+8）；数量统计截至此次更新。
+**最近案例更新／维护：**2026 年 10 月 20 日 08:09 · 北京时间（UTC+8）；数量统计截至此次更新。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -29,7 +29,7 @@
 3. **[LG UltraFine：修更新器，而不是破解固件](cases/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex 辅助诊断，公开**精确构建限定的内存补丁**；作者报告 scaler 更新达 **100%、CRC 通过**。注明前人错误报告；仅一套 Apple Silicon 配置，本合集未独立刷机。`作者实测补丁`
 4. **[Brother：扫描直接进 NAS](cases/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — 以 **Claude/REA 辅助的公开 Go 服务替代电脑按键应用，支持 SMB、FTP、S3 与本地保存**，复用前人协议研究。仍需服务器；项目只报告测试 MFC-L2800DW 固件1.32。`公开实现`
 5. **[LeanREA：直接 CLI 与 MCP 对照](cases/leanrea-cli-skill-benchmark.md)** · `2026-10-17` — 追踪 Notion 功能、原生锁与 Go 依赖；公开 **36 次对照**报告更快更省，但得分是 **74/75 对 75/75**，不是相同准确率。单模型、单机器，未独立重跑。`分析测试`
-6. **[Frontkick 与 Rikugan 对照](cases/synacktiv-frontkick-rikugan-crebench.md)** · `2026-10-13` — 从 AES / ChaCha20 二进制恢复算法与密钥。Synacktiv 公开逐次结果，但**可用库提示不对等，构成混杂因素**，不能证明 CodeAct 胜过工具调用。只测两题，未独立重跑。`分析测试`
+6. **[MagicSwipe：iPad 上的 Magic Mouse 手势](cases/magic-mouse-ipad-opus-virtual-hid.md)** · `2026-10-20` — Opus 辅助研究，把**私有触摸回调接到虚拟 HID 快捷键**，补足通用控制操作。代码公开，仅项目报告设备测试；需高权限驱动，替代为快捷键而非原生连续手势。`进行中`
 7. **[Open Scrantic：Johnny Castaway 屏保回归](cases/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA 与 Claude Code 辅助恢复 Windows 3.1 屏保引擎，以 Rust 支持三平台。**有公开代码与项目 CI 成功记录**；原资产需自备，仍有已知版本限制与刻意行为差异。`进行中`
 8. **[WayShare：从 Mac 连接 Hyprland](cases/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA 辅助研究 Apple Remote Desktop，产出**公开 Rust 实现及成功项目 CI**。60fps 仍为作者说法，未独立测量；Standard 屏幕与剪贴板未加密。`进行中`
 9. **[sm64-gba：先对齐运动逻辑，不是完整游戏](cases/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude 将**人类完成的 n64decomp 代码**适配到 GBA，以逐帧 oracle 对照运动与碰撞，**公开项目 CI 成功**。仅有限的四关演示，不是完整游戏；尚未实机测试。`进行中`
@@ -48,9 +48,9 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **130** |
-| [硬件与设备互通](categories/hardware.md) | **132** |
-| [应用与客户端](categories/apps.md) | **265** |
+| [游戏与游戏保存](categories/games.md) | **132** |
+| [硬件与设备互通](categories/hardware.md) | **136** |
+| [应用与客户端](categories/apps.md) | **269** |
 | [算法与功能重建](categories/algorithms.md) | **52** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)

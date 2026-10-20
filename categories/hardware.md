@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [MagicSwipe：Opus 研究 Magic Mouse，让 iPad 通用控制支持手势](../cases/magic-mouse-ipad-opus-virtual-hid.md) — saikumar公开MagicSwipe，以私有触摸接口和Karabiner虚拟HID把双指手势转成iPad快捷键；仅项目报告实机测试。 **[其他 AI 逆向 · 进行中]**
+- [Fuji 相机：逆向 App 后让 Claude 上传胶片模拟设置](../cases/fuji-claude-film-settings-upload.md) — max称研究Fuji应用后自动选择并上传胶片设置、筛选拍摄照片，另称已开源；仓库与实机结果尚未核实。 **[其他 AI 逆向 · 待验证]**
+- [复古模拟器主机：Claude 改 ROM 列表，再接 AWS 游戏库的自述](../cases/retro-console-claude-rom-library-aws.md) — 葡语作者称购买模拟器主机后让Claude改善固件，10分钟做出更好的ROM列表，再把游戏放到AWS；未证实流式运行。 **[其他 AI 逆向 · 待验证]**
+- [Hermes Ears：逆向 60 美元录音器，作为 Plaud 软件替代的计划](../cases/hermes-ears-recorder-plaud-alternative.md) — Josh重启Hermes Ears项目，称研究手机背贴录音器以供Hermes获取会议及语音笔记；未提供代码或端到端记录。 **[未确认使用 REA · 进行中]**
 - [ESP32 自定义固件：Codex 用户称替代 Sonos 与 Amazon Echo](../cases/esp32-codex-sonos-echo-replacement.md) — 用户称与Codex制作ESP32固件替代家中音箱；未说明协议研究或功能等价。 **[其他 AI 逆向 · 相关项目]**
 - [LG 空调：让 bot 研究完全本地控制，去掉初始 App 登录依赖](../cases/lg-ac-local-no-app-login-report.md) — 用户已有Home Assistant集成，仍让bot研究LG空调以脱离首次App登录；无协议或实测记录。 **[其他 AI 逆向 · 待验证]**
 - [2006 Lexus 导航屏总线：Agent 用户称产出接线、BOM 与外壳 STL](../cases/lexus-2006-nav-bus-agent-report.md) — Grok bot回复者称研究旧Lexus导航屏总线；未提供总线协议或车内验证。 **[其他 AI 逆向 · 进行中]**

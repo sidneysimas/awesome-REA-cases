@@ -2,7 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
-- [eFootball：AI 推断准确系数与属性 90 阈值](../cases/efootball-ai-accuracy-coefficient-claim.md) — 作者称Passing、Finishing和Heading超过90后的加点收益降约40%，未公开公式或实验。 **[其他 AI 逆向 · 待验证]**
+- [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](../cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
+- [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](../cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**
+- [eFootball：AI 推断准确系数与速度 90 阈值，人工测量仍有分歧](../cases/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN新增速度超过90后每点收益降约40%的转述，同时指出AI结果不显示人工96至99测量所报变化；无公式与原始实验。 **[其他 AI 逆向 · 待验证]**
 - [OpenCE 等 Halo 项目：读者区分 AI 反编译与人工功能开发](../cases/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy称OpenCE引擎正人工清理、新功能主要由人开发；同帖对其他Halo项目的评价无开发者依据。 **[其他 AI 逆向 · 待验证]**
 - [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](../cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](../cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**

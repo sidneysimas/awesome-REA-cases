@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Signal Desktop：REA 与 Codex 五个行为问题对照源码的自测](../cases/signal-desktop-rea-five-question-test.md) — Aakash Gupta称五题都答对、每题3至7分钟，但一次REA完整性错误超时后由Codex直接读包完成；远程配置仍限制结论。 **[REA · 分析测试]**
+- [Android API Extraction Skill：从界面调用链追到 HTTP 接口](../cases/android-api-extraction-claude-skill.md) — SimoneAvogadro的Claude Code Skill组织反编译、调用链与API提取；有公开文档，未运行APK或核验名称恢复率。 **[其他 AI 逆向 · 相关项目]**
+- [dummy 桌面 Agent：接入 REA，以 Discord 测试大 JSON 证据处理](../cases/dummy-rea-discord-integration.md) — subhraneel称将REA接入自建桌面Agent dummy，Discord研究按预期运行；大JSON落盘后由LLM压缩，未给具体恢复功能。 **[REA · 进行中]**
+- [Kimi Slide / PPTD：Rust 编译器二开，让 Agent 离线编辑与导出幻灯片](../cases/kimi-pptd-rust-offline-agent-skill.md) — shiquda称对比7个Skill后改造公开Rust PPTD编译器，补离线导出与PPTX转PPTD；尚未检查仓库或往返保真度。 **[其他 AI 逆向 · 待验证]**
 - [Rosetta：读者提及 AI 时代的兼容层逆向项目](../cases/rosetta-ai-reverse-engineering-reader-report.md) — 读者将Rosetta逆向与AI推动兼容层联系起来；仅有第三方简短提及，未确认实现、AI角色或兼容性。 **[未确认使用 REA · 待验证]**
 - [Bitcoin 2009：Opus 辅助恢复构建环境，而不是恢复源码](../cases/bitcoin-2009-opus-build-environment.md) — t4t5公开历史构建环境重建，报告EXE及RAR逐字节一致；目标是0.1.1时代二进制，DLL未重建。 **[其他 AI 逆向 · 分析测试]**
 - [WayShare：macOS 自带屏幕共享连接 Hyprland，研究 Apple 高性能模式](../cases/wayshare-apple-remote-desktop-linux.md) — Wes Grimes称Grok bot跨机器协调REA、Claude与Codex；有公开项目与成功CI，Standard屏幕及剪贴板未加密。 **[REA · 进行中]**

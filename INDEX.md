@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **579 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **589 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（130）
-- [硬件与设备互通](categories/hardware.md)（132）
-- [应用与客户端](categories/apps.md)（265）
+- [游戏与游戏保存](categories/games.md)（132）
+- [硬件与设备互通](categories/hardware.md)（136）
+- [应用与客户端](categories/apps.md)（269）
 - [算法与功能重建](categories/algorithms.md)（52）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,7 +26,9 @@
 
 ### 游戏与游戏保存
 
-- [eFootball：AI 推断准确系数与属性 90 阈值](cases/efootball-ai-accuracy-coefficient-claim.md) — 作者称Passing、Finishing和Heading超过90后的加点收益降约40%，未公开公式或实验。 **[其他 AI 逆向 · 待验证]**
+- [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
+- [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**
+- [eFootball：AI 推断准确系数与速度 90 阈值，人工测量仍有分歧](cases/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN新增速度超过90后每点收益降约40%的转述，同时指出AI结果不显示人工96至99测量所报变化；无公式与原始实验。 **[其他 AI 逆向 · 待验证]**
 - [OpenCE 等 Halo 项目：读者区分 AI 反编译与人工功能开发](cases/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy称OpenCE引擎正人工清理、新功能主要由人开发；同帖对其他Halo项目的评价无开发者依据。 **[其他 AI 逆向 · 待验证]**
 - [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
@@ -159,6 +161,10 @@
 
 ### 硬件与设备互通
 
+- [MagicSwipe：Opus 研究 Magic Mouse，让 iPad 通用控制支持手势](cases/magic-mouse-ipad-opus-virtual-hid.md) — saikumar公开MagicSwipe，以私有触摸接口和Karabiner虚拟HID把双指手势转成iPad快捷键；仅项目报告实机测试。 **[其他 AI 逆向 · 进行中]**
+- [Fuji 相机：逆向 App 后让 Claude 上传胶片模拟设置](cases/fuji-claude-film-settings-upload.md) — max称研究Fuji应用后自动选择并上传胶片设置、筛选拍摄照片，另称已开源；仓库与实机结果尚未核实。 **[其他 AI 逆向 · 待验证]**
+- [复古模拟器主机：Claude 改 ROM 列表，再接 AWS 游戏库的自述](cases/retro-console-claude-rom-library-aws.md) — 葡语作者称购买模拟器主机后让Claude改善固件，10分钟做出更好的ROM列表，再把游戏放到AWS；未证实流式运行。 **[其他 AI 逆向 · 待验证]**
+- [Hermes Ears：逆向 60 美元录音器，作为 Plaud 软件替代的计划](cases/hermes-ears-recorder-plaud-alternative.md) — Josh重启Hermes Ears项目，称研究手机背贴录音器以供Hermes获取会议及语音笔记；未提供代码或端到端记录。 **[未确认使用 REA · 进行中]**
 - [ESP32 自定义固件：Codex 用户称替代 Sonos 与 Amazon Echo](cases/esp32-codex-sonos-echo-replacement.md) — 用户称与Codex制作ESP32固件替代家中音箱；未说明协议研究或功能等价。 **[其他 AI 逆向 · 相关项目]**
 - [LG 空调：让 bot 研究完全本地控制，去掉初始 App 登录依赖](cases/lg-ac-local-no-app-login-report.md) — 用户已有Home Assistant集成，仍让bot研究LG空调以脱离首次App登录；无协议或实测记录。 **[其他 AI 逆向 · 待验证]**
 - [2006 Lexus 导航屏总线：Agent 用户称产出接线、BOM 与外壳 STL](cases/lexus-2006-nav-bus-agent-report.md) — Grok bot回复者称研究旧Lexus导航屏总线；未提供总线协议或车内验证。 **[其他 AI 逆向 · 进行中]**
@@ -294,6 +300,10 @@
 
 ### 应用与客户端
 
+- [Signal Desktop：REA 与 Codex 五个行为问题对照源码的自测](cases/signal-desktop-rea-five-question-test.md) — Aakash Gupta称五题都答对、每题3至7分钟，但一次REA完整性错误超时后由Codex直接读包完成；远程配置仍限制结论。 **[REA · 分析测试]**
+- [Android API Extraction Skill：从界面调用链追到 HTTP 接口](cases/android-api-extraction-claude-skill.md) — SimoneAvogadro的Claude Code Skill组织反编译、调用链与API提取；有公开文档，未运行APK或核验名称恢复率。 **[其他 AI 逆向 · 相关项目]**
+- [dummy 桌面 Agent：接入 REA，以 Discord 测试大 JSON 证据处理](cases/dummy-rea-discord-integration.md) — subhraneel称将REA接入自建桌面Agent dummy，Discord研究按预期运行；大JSON落盘后由LLM压缩，未给具体恢复功能。 **[REA · 进行中]**
+- [Kimi Slide / PPTD：Rust 编译器二开，让 Agent 离线编辑与导出幻灯片](cases/kimi-pptd-rust-offline-agent-skill.md) — shiquda称对比7个Skill后改造公开Rust PPTD编译器，补离线导出与PPTX转PPTD；尚未检查仓库或往返保真度。 **[其他 AI 逆向 · 待验证]**
 - [Rosetta：读者提及 AI 时代的兼容层逆向项目](cases/rosetta-ai-reverse-engineering-reader-report.md) — 读者将Rosetta逆向与AI推动兼容层联系起来；仅有第三方简短提及，未确认实现、AI角色或兼容性。 **[未确认使用 REA · 待验证]**
 - [Bitcoin 2009：Opus 辅助恢复构建环境，而不是恢复源码](cases/bitcoin-2009-opus-build-environment.md) — t4t5公开历史构建环境重建，报告EXE及RAR逐字节一致；目标是0.1.1时代二进制，DLL未重建。 **[其他 AI 逆向 · 分析测试]**
 - [WayShare：macOS 自带屏幕共享连接 Hyprland，研究 Apple 高性能模式](cases/wayshare-apple-remote-desktop-linux.md) — Wes Grimes称Grok bot跨机器协调REA、Claude与Codex；有公开项目与成功CI，Standard屏幕及剪贴板未加密。 **[REA · 进行中]**
@@ -583,7 +593,7 @@
 - [REA 分析链路：测试二进制内提示注入的 idea](cases/rea-binary-injection-test-idea.md) — 计划测试目标文件中的文字能否污染 AI 逆向结论。 **[未确认使用 REA · 待验证]**
 - [CapCut 动态字幕：从模板 DSL 重建渲染器的 idea](cases/capcut-subtitle-renderer-idea.md) — 研究字幕模板、Shader 与 SDF 渲染，再以图片 diff 验证。 **[未确认使用 REA · 待验证]**
 - [16 个笔记文件：有无 REA 的解码对照实验转述](cases/sixteen-note-files-decoder-report.md) — 长文转述对16个笔记文件的限时解码比较，两条语言版本合并。 **[REA · 待验证]**
-- [CPU kernels：Claude Code 编排 Astra 做汇编层优化](cases/rea-cpu-kernel-optimization.md) — 作者称正在由 Claude Code 管理 Astra，借 REA 研究 CPU 内核优化。 **[REA · 进行中]**
+- [CPU kernels：REA 汇编优化研究与多模型复查流程](cases/rea-cpu-kernel-optimization.md) — 原作者用Claude Code管理Astra研究计算内核；新增读者提出先反编译、对照指令集并征询多模型的流程，10%不是实测。 **[REA · 进行中]**
 - [禁止逆向的许可：一次 Codex 与 Claude 行为对照](cases/agent-reverse-license-test.md) — 作者测试 Agent 是否尊重禁止逆向条款，报告两组工具表现不同。 **[其他 AI 逆向 · 分析测试]**
 - [旧二进制：Agent 读反编译输出时编造 API 的失败报告](cases/legacy-binary-agent-api-hallucination.md) — 作者回忆一次旧程序分析，Agent 自信引用实际不存在的接口。 **[其他 AI 逆向 · 分析测试]**
 - [人类与 Agent：两项静态逆向任务及上下文扩展性研究](cases/humans-machines-sre-study.md) — 论文比较九个模型与人类理解二进制的表现，并分析4000个程序的上下文饱和。 **[其他 AI 逆向 · 分析测试]**

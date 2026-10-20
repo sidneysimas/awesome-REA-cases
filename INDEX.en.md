@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**579 entries**, organized by use case, without a Top-N or popularity threshold.
+**589 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (130)
-- [Hardware and interoperability](categories/en/hardware.md) (132)
-- [Applications and clients](categories/en/apps.md) (265)
+- [Games and preservation](categories/en/games.md) (132)
+- [Hardware and interoperability](categories/en/hardware.md) (136)
+- [Applications and clients](categories/en/apps.md) (269)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (52)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,7 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
-- [eFootball: an AI-inferred accuracy coefficient and a threshold of 90](cases/en/efootball-ai-accuracy-coefficient-claim.md) — An author claims Passing, Finishing and Heading gain about 40% less per point above 90, without publishing a formula or experiment. **[Other AI-assisted work · Needs verification]**
+- [Flappy Bird: an ongoing Claude Fable 5.1 investigation account](cases/en/flappy-bird-claude-fable-research.md) — A poster says Claude Fable 5.1 is reverse-engineering Flappy Bird, without a version, recovered mechanics or playable artifact. **[Other AI-assisted work · In progress]**
+- [Harvest Moon: Back to Nature: a REA-assisted PS1-to-PC model-comparison account](cases/en/harvest-moon-btn-rea-model-port-comparison.md) — A poster claims Opus 5.5 Max completed a native PC version in five hours while GPT 6.1 Sol Max used four weekly quotas and made 7,004 files without working output; no code or comparison logs are provided. **[REA · Needs verification]**
+- [eFootball: AI-inferred accuracy and speed thresholds of 90, with a manual-measurement disagreement](cases/en/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN adds a report of roughly 40% lower per-point speed gains above 90, while noting AI results do not show a manually measured 96–99 effect; formulas and raw experiments are absent. **[Other AI-assisted work · Needs verification]**
 - [OpenCE and Halo projects: a reader separates AI decompilation from human feature work](cases/en/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy says OpenCE's engine is undergoing human cleanup and features are mostly human-written; broader Halo-project judgments lack developer evidence. **[Other AI-assisted work · Needs verification]**
 - [Heartfall: an allegedly AI-decompiled guide site disclaimed by the game account](cases/en/heartfall-ai-decompiled-guide-dispute.md) — The Heartfall account calls a purported AI-decompiled guide unofficial and recommends community guides; the site and its generation method remain unverified. **[Other AI-assisted work · Needs verification]**
 - [enRAGE for Red Dead Redemption 2: a reader's AI/Nemesis recompilation speculation](cases/en/nemesis-red-dead-ai-recompiler-speculation.md) — The parent identifies RDR2's enRAGE mod; a respondent speculates that AI decompiled Nemesis and recompiled it for Red Dead, without developer confirmation. **[Other AI-assisted work · Needs verification]**
@@ -161,6 +163,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [MagicSwipe: Opus-assisted Magic Mouse gestures for iPad Universal Control](cases/en/magic-mouse-ipad-opus-virtual-hid.md) — saikumar publishes MagicSwipe, translating two-finger gestures into iPad shortcuts through private touch interfaces and Karabiner virtual HID; device testing is project-reported only. **[Other AI-assisted work · In progress]**
+- [Fuji cameras: Claude-selected film settings uploaded after app reversing](cases/en/fuji-claude-film-settings-upload.md) — max reports investigating the Fuji app to select and upload film settings and pick photos, and claims an open-source release; repository and device results remain unverified. **[Other AI-assisted work · Needs verification]**
+- [Retro emulator console: Claude-assisted ROM browser and AWS library account](cases/en/retro-console-claude-rom-library-aws.md) — A Portuguese-speaking poster says Claude improved console firmware with a better ROM browser in ten minutes, then games were put on AWS; streaming execution is not established. **[Other AI-assisted work · Needs verification]**
+- [Hermes Ears: a reversed $60 recorder for a Plaud-software alternative](cases/en/hermes-ears-recorder-plaud-alternative.md) — Josh revives Hermes Ears, reporting investigation of a phone-back recorder for meetings and voice notes consumed by Hermes, without code or end-to-end logs. **[REA use unconfirmed · In progress]**
 - [Custom ESP32 firmware: a Codex user's reported Sonos and Amazon Echo replacement](cases/en/esp32-codex-sonos-echo-replacement.md) — A user reports building ESP32 firmware with Codex to replace home speakers; protocol research and functional equivalence are unspecified. **[Other AI-assisted work · Related project]**
 - [LG air conditioner: bot-assisted research toward fully local control without initial app login](cases/en/lg-ac-local-no-app-login-report.md) — A user with a working Home Assistant integration investigates removing even the initial LG app login; no protocol or test record is supplied. **[Other AI-assisted work · Needs verification]**
 - [2006 Lexus navigation-screen bus: an agent user's wiring, BOM and enclosure STL account](cases/en/lexus-2006-nav-bus-agent-report.md) — A Grok bot respondent reports investigating an old Lexus screen bus without a protocol or in-car validation record. **[Other AI-assisted work · In progress]**
@@ -296,6 +302,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Signal Desktop: a five-question REA/Codex source-comparison self-test](cases/en/signal-desktop-rea-five-question-test.md) — Aakash Gupta reports five correct answers in 3–7 minutes each, but Codex directly read app files after one REA integrity error and timeout; remote configuration limits conclusions. **[REA · Analysis test]**
+- [Android API Extraction Skill: trace UI call flows to HTTP endpoints](cases/en/android-api-extraction-claude-skill.md) — SimoneAvogadro's Claude Code skill organizes decompilation, call-flow tracing and API extraction. Public documentation exists; no APK or name-recovery rate was tested here. **[Other AI-assisted work · Related project]**
+- [dummy desktop agent: integrating REA and testing large-JSON evidence handling on Discord](cases/en/dummy-rea-discord-integration.md) — subhraneel reports integrating REA into the self-built dummy desktop agent and investigating Discord as expected, saving large JSON files before LLM compaction; recovered features are unspecified. **[REA · In progress]**
+- [Kimi Slide / PPTD: a modified Rust compiler for offline agent slide editing and export](cases/en/kimi-pptd-rust-offline-agent-skill.md) — shiquda reports comparing seven skills and extending a public Rust PPTD compiler for offline export and PPTX-to-PPTD conversion; repository and round-trip fidelity were not checked. **[Other AI-assisted work · Needs verification]**
 - [Rosetta: a reader mentions compatibility-layer reversing in the AI era](cases/en/rosetta-ai-reverse-engineering-reader-report.md) — A reader links Rosetta reversing to AI-driven compatibility work. The brief third-party mention does not establish an implementation, AI's role or compatibility. **[REA use unconfirmed · Needs verification]**
 - [Bitcoin 2009: Opus-assisted build-environment archaeology, not source recovery](cases/en/bitcoin-2009-opus-build-environment.md) — t4t5 publishes a historical build reconstruction reporting identical EXE and RAR bytes; the target is a 0.1.1-era binary and the DLLs are not rebuilt. **[Other AI-assisted work · Analysis test]**
 - [WayShare: macOS Screen Sharing into Hyprland via Apple's High Performance mode](cases/en/wayshare-apple-remote-desktop-linux.md) — Wes Grimes reports Grok bot coordinating REA, Claude and Codex across machines. Public code and successful CI exist; Standard screens and clipboard are unencrypted. **[REA · In progress]**
@@ -585,7 +595,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [REA analysis: a binary prompt-injection test idea](cases/en/rea-binary-injection-test-idea.md) — An embedded-instruction idea followed by an author's static analyzer test on a toy Electron app: some markers reach reports, but model obedience and protective effectiveness were not tested. **[REA use unconfirmed · Needs verification]**
 - [CapCut subtitles: a template-driven renderer idea](cases/en/capcut-subtitle-renderer-idea.md) — Proposes reconstructing a subtitle renderer from its template DSL and comparing rendered images. **[REA use unconfirmed · Needs verification]**
 - [Sixteen note files: a reported REA/no-REA decoder comparison](cases/en/sixteen-note-files-decoder-report.md) — A bilingual secondary report describes two timed decoding attempts; app identity, samples and claims were not independently checked. **[REA · Needs verification]**
-- [CPU kernels: Claude Code orchestrates Astra with REA](cases/en/rea-cpu-kernel-optimization.md) — A poster reports ongoing assembly-level CPU-kernel optimization using Claude Code to manage Astra through REA; no algorithm, correctness evidence or speedup is reported. **[REA · In progress]**
+- [CPU kernels: REA assembly-optimization research and a multi-model review workflow](cases/en/rea-cpu-kernel-optimization.md) — The original poster has Claude Code manage Astra on compute kernels; a reader adds a decompile/instruction-set/multi-model workflow, not a measured 10% speedup. **[REA · In progress]**
 - [A license-compliance comparison during reverse engineering](cases/en/agent-reverse-license-test.md) — A poster reports different Codex/Luna and Claude/Sonnet behavior under a no-reverse-engineering license; no replayable protocol establishes a general model-level conclusion. **[Other AI-assisted work · Analysis test]**
 - [A legacy binary: an agent invents nonexistent APIs](cases/en/legacy-binary-agent-api-hallucination.md) — A poster recalls an agent hallucinating APIs while reading decompiler output; the unnamed experiment did not establish that REA was used or fixed the problem. **[Other AI-assisted work · Analysis test]**
 - [Humans versus agents in software reverse engineering](cases/en/humans-machines-sre-study.md) — A nine-model, two-task IDA study reports human-competitive understanding for stronger agents and studies context saturation over 4,000 binaries; findings are paper-reported, not rerun here. **[Other AI-assisted work · Analysis test]**

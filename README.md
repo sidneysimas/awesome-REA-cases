@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 579 cases & projects
+# 589 cases & projects
 
-**Latest case update / maintenance:** October 20, 2026, 04:15 · Beijing time (UTC+8). Counts as of this update.
+**Latest case update / maintenance:** October 20, 2026, 08:09 · Beijing time (UTC+8). Counts as of this update.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -29,7 +29,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 3. **[LG UltraFine: repair the updater, not the firmware](cases/en/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex-assisted diagnosis and a **public, exact-build memory patch**; the author reports a scaler update reaching **100% with CRC passing**. Credits an earlier bug report; one Apple Silicon setup, not independently flashed here. `Author-tested patch`
 4. **[Brother: scan straight to your NAS](cases/en/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — Replace the PC button app with a **public Claude/REA-assisted Go service for SMB, FTP, S3 and local storage**, building on prior protocol work. A server is still required; only MFC-L2800DW firmware 1.32 is project-tested. `Public implementation`
 5. **[LeanREA: direct CLI vs MCP](cases/en/leanrea-cli-skill-benchmark.md)** · `2026-10-17` — Trace Notion features, inspect a native lock and identify Go dependencies. The public **36-run comparison** reports lower time and cost, but scores are **74/75 vs 75/75**, not identical accuracy. One model and machine; not independently rerun. `Analysis test`
-6. **[Frontkick vs Rikugan](cases/en/synacktiv-frontkick-rikugan-crebench.md)** · `2026-10-13` — Recover algorithms and keys from AES/ChaCha20 binaries. Synacktiv publishes per-run results, but **unequal library prompts confound the comparison**—not proof that CodeAct beats tool calling. Two tasks only; not independently rerun. `Analysis test`
+6. **[MagicSwipe: Magic Mouse gestures on iPad](cases/en/magic-mouse-ipad-opus-virtual-hid.md)** · `2026-10-20` — Opus-assisted research connects **private touch callbacks to virtual-HID shortcuts** for Universal Control. Public code; project-reported device testing only. Requires a privileged driver and substitutes shortcuts, not native continuous gestures. `In progress`
 7. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 8. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
 9. **[sm64-gba: physics before the whole game](cases/en/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude adapts **human-made n64decomp code** for GBA, with frame-by-frame movement/collision oracles and **successful public project CI**. A limited four-level demo, not a complete game; real hardware untested. `In progress`
@@ -48,9 +48,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **130** |
-| [Hardware & interoperability](categories/en/hardware.md) | **132** |
-| [Applications & clients](categories/en/apps.md) | **265** |
+| [Games & preservation](categories/en/games.md) | **132** |
+| [Hardware & interoperability](categories/en/hardware.md) | **136** |
+| [Applications & clients](categories/en/apps.md) | **269** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **52** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
