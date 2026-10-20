@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **611 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **627 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（134）
-- [硬件与设备互通](categories/hardware.md)（145）
-- [应用与客户端](categories/apps.md)（279）
-- [算法与功能重建](categories/algorithms.md)（53）
+- [游戏与游戏保存](categories/games.md)（139）
+- [硬件与设备互通](categories/hardware.md)（149）
+- [应用与客户端](categories/apps.md)（285）
+- [算法与功能重建](categories/algorithms.md)（54）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,11 @@
 
 ### 游戏与游戏保存
 
+- [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
+- [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
+- [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
+- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](cases/sfc-ai-english-translation-idea.md) — 作者针对只能日本二手购买的旧SFC游戏提出AI英译重建方案，未命名作品，也没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [地图与任务 PoC：AI 辅助识别偏移与二进制挂钩，作者承认方法不实用](cases/nitroid-ai-binary-hook-map-poc.md) — 作者明确用AI辅助逆向、找offset和binary hooks，逐个构建部件；地图任务制作仍只是不可实用的PoC。 **[其他 AI 逆向 · 进行中]**
 - [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
@@ -163,6 +168,10 @@
 
 ### 硬件与设备互通
 
+- [Dell 键鼠：研究接收器协议，在 Omarchy 显示电量](cases/dell-receiver-ai-linux-battery-widget.md) — Mike Harrison 称与 ChatGPT 研究 Dell 接收器协议，再由 Claude Code 制作 Linux 电量小组件；未公开协议与测试。 **[其他 AI 逆向 · 待验证]**
+- [Samsung TV：Codex 清理与关闭观看追踪，作者补测重启持久性](cases/samsung-tv-codex-debloat.md) — Cutter 报告临时 root 配合 Codex 清理电视，禁用应用、ACR 和广告进程在完整重启后保留；未单独测试拔电。 **[其他 AI 逆向 · 待验证]**
+- [Skyworth 电视棒：Codex 将 Vidbox 网页包装改成遥控器界面的自述](cases/skyworth-vidbox-codex-tv-interface.md) — 候选回复追问 ADB；父帖作者称 Codex 为20美元 Android 电视棒重做 Vidbox 遥控界面并添加语音助手，具体协议未知。 **[其他 AI 逆向 · 待验证]**
+- [R51MT02：Claude 比较固件构建，作者报告刷入 Lite 与隐藏系统应用](cases/r51mt02-claude-firmware-comparison.md) — Waqy 报告 Claude 协助比较下载，依次刷入 ATV344 Lite、ATV903 Lite 并运行 Magisk 29；未给校验日志。 **[其他 AI 逆向 · 待验证]**
 - [xbox-boot-re：从单张 BIOS 恢复初代 Xbox 开机动画](cases/xbox-boot-re-claude-reconstruction.md) — 人类指导Opus研究BIOS，产出C核心与WebGPU查看器；公开对照记录与成功CI，但不是完整Xbox模拟器，声音合成有近似。 **[其他 AI 逆向 · 进行中]**
 - [LG 显示器更新：Claude 衍生补丁未完成，最终靠 Windows 重试](cases/lg-monitor-ai-patches-windows-retry-report.md) — Steven Sinofsky报告Mac更新器与多个Claude衍生补丁未完成，Windows首次44%失败、重启重试后成功；未指明补丁身份。 **[其他 AI 逆向 · 分析测试]**
 - [家居语音互通：给 Claude 研究自有设备固件的建议](cases/home-voice-firmware-integration-idea.md) — Whittington建议用Claude Fable研究设备更新以扩展语音功能；父帖明确Hue、Sonos、Apple生态隔阂，没有已破解机型或刷机结果。 **[其他 AI 逆向 · 待验证]**
@@ -311,6 +320,12 @@
 
 ### 应用与客户端
 
+- [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
+- [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
+- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
+- [COBOL ATM 账本：REA 与多 Agent 重建的明确模拟方案](cases/cobol-atm-rea-simulated-rebuild.md) — 作者以146文件ATM账本设想REA提规格、12个Sonnet分工及行为回放，明确全部模拟；120/120和成本不是运行结果。 **[REA · 待验证]**
+- [付费插件：在模块内放置诱导 AI 拒绝逆向的合规文本](cases/commercial-plugin-anti-ai-analysis-text.md) — 候选引用插件模块中的拒答诱导，将WASM、加密与版权包装成对AI的指令；未证实防护效果或加密实现。 **[其他 AI 逆向 · 分析测试]**
+- [.NET / libxsql：供 AI Agent 研究程序集的工具推荐](cases/libxsql-dotnet-ai-re-tool-report.md) — Binary Wizards 推荐基于libxsql、受IDASQL与GhidraSQL启发的.NET逆向工具，仓库名称与运行效果仍未确认。 **[其他 AI 逆向 · 相关项目]**
 - [KEEP：REA 辅助重建课程、训练与记录流程的自述](cases/keep-rea-workout-app-rebuild.md) — Anita称用REA在10分钟内重建KEEP课程筛选、训练计时、周计划和记录导出，未提供源码或对照测试。 **[REA · 待验证]**
 - [11 标签逆向提示词：引擎检查、证据分层与负例验收](cases/claude-rea-eleven-tag-evidence-prompt.md) — Myttle为Claude Code与REA提出具授权范围的调查模板，要求标注观察/推断/未知并验证检查器能拒绝负例；未报告实测。 **[REA · 相关项目]**
 - [逆向工具索引：让 Agent 先搜索已有实现，避免重复研究](cases/alexgaoth-reverse-tools-agent-index.md) — alexgaoth称索引12000多个逆向产生的开源工具，并提供Agent搜索skill；补查解决用途，但未核验规模、仓库或搜索质量。 **[未确认使用 REA · 相关项目]**
@@ -412,7 +427,7 @@
 - [Notion：追清复制文字和图片的内部链路](cases/notion-clipboard.md) — 追踪桌面客户端复制文字和图片的实现路径。 **[REA]**
 - [Flutter App：从安装包识别运行时和编译结构](cases/flutter-aot.md) — 识别 Flutter APK 的运行时、构建与 AOT 结构。 **[REA]**
 - [网站重建订单：作者自述的交付报告](cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
-- [TradingView：传播较多的复刻流程帖](cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
+- [TradingView：复刻流程与免费 Premium 下载风险的证据边界](cases/tradingview-workflow.md) — REA 流程未证明恢复付费指标；新增下载风险提醒也未证明流传仓库就是木马或获官方认可。 **[REA · 待验证]**
 - [WHOOP：分析健康追踪设备的 Android App](cases/whoop-apk.md) — APK 分析线索新增 Zhoop / NOOP 替代客户端的二手报告，尚未独立验证。 **[未确认使用 REA · 待验证]**
 - [ArtCraft：不要把从零开发写成逆向 Adobe](cases/artcraft-boundary.md) — 创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。 **[其他 AI 逆向 · 相关项目]**
 - [Obsidian：真实桌面包的大规模分析测试](cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**
@@ -593,6 +608,7 @@
 
 ### 算法与功能重建
 
+- [Maxwell：不改源码、运行时优化机器码的项目转述](cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
 - [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**

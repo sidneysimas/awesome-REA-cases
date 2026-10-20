@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](../cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
+- [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](../cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
+- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](../cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
+- [COBOL ATM 账本：REA 与多 Agent 重建的明确模拟方案](../cases/cobol-atm-rea-simulated-rebuild.md) — 作者以146文件ATM账本设想REA提规格、12个Sonnet分工及行为回放，明确全部模拟；120/120和成本不是运行结果。 **[REA · 待验证]**
+- [付费插件：在模块内放置诱导 AI 拒绝逆向的合规文本](../cases/commercial-plugin-anti-ai-analysis-text.md) — 候选引用插件模块中的拒答诱导，将WASM、加密与版权包装成对AI的指令；未证实防护效果或加密实现。 **[其他 AI 逆向 · 分析测试]**
+- [.NET / libxsql：供 AI Agent 研究程序集的工具推荐](../cases/libxsql-dotnet-ai-re-tool-report.md) — Binary Wizards 推荐基于libxsql、受IDASQL与GhidraSQL启发的.NET逆向工具，仓库名称与运行效果仍未确认。 **[其他 AI 逆向 · 相关项目]**
 - [KEEP：REA 辅助重建课程、训练与记录流程的自述](../cases/keep-rea-workout-app-rebuild.md) — Anita称用REA在10分钟内重建KEEP课程筛选、训练计时、周计划和记录导出，未提供源码或对照测试。 **[REA · 待验证]**
 - [11 标签逆向提示词：引擎检查、证据分层与负例验收](../cases/claude-rea-eleven-tag-evidence-prompt.md) — Myttle为Claude Code与REA提出具授权范围的调查模板，要求标注观察/推断/未知并验证检查器能拒绝负例；未报告实测。 **[REA · 相关项目]**
 - [逆向工具索引：让 Agent 先搜索已有实现，避免重复研究](../cases/alexgaoth-reverse-tools-agent-index.md) — alexgaoth称索引12000多个逆向产生的开源工具，并提供Agent搜索skill；补查解决用途，但未核验规模、仓库或搜索质量。 **[未确认使用 REA · 相关项目]**
@@ -103,7 +109,7 @@
 - [Notion：追清复制文字和图片的内部链路](../cases/notion-clipboard.md) — 追踪桌面客户端复制文字和图片的实现路径。 **[REA]**
 - [Flutter App：从安装包识别运行时和编译结构](../cases/flutter-aot.md) — 识别 Flutter APK 的运行时、构建与 AOT 结构。 **[REA]**
 - [网站重建订单：作者自述的交付报告](../cases/website-rebuild-report.md) — 作者称以 REA 辅助网站重建，缺少具体项目与验证。 **[REA · 待验证]**
-- [TradingView：传播较多的复刻流程帖](../cases/tradingview-workflow.md) — 有 REA 复刻流程，但没有证明恢复付费指标。 **[REA · 待验证]**
+- [TradingView：复刻流程与免费 Premium 下载风险的证据边界](../cases/tradingview-workflow.md) — REA 流程未证明恢复付费指标；新增下载风险提醒也未证明流传仓库就是木马或获官方认可。 **[REA · 待验证]**
 - [WHOOP：分析健康追踪设备的 Android App](../cases/whoop-apk.md) — APK 分析线索新增 Zhoop / NOOP 替代客户端的二手报告，尚未独立验证。 **[未确认使用 REA · 待验证]**
 - [ArtCraft：不要把从零开发写成逆向 Adobe](../cases/artcraft-boundary.md) — 创作软件与 Office 风格工具的从零重建，不等于已完整逆向 Adobe 或 Office。 **[其他 AI 逆向 · 相关项目]**
 - [Obsidian：真实桌面包的大规模分析测试](../cases/obsidian-asar.md) — 用户确认原 ASAR 包可完成分析，但没有具体功能重建。 **[REA · 分析测试]**

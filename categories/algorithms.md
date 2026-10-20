@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Maxwell：不改源码、运行时优化机器码的项目转述](../cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
 - [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](../cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](../cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](../cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**

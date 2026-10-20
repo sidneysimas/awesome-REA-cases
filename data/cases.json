@@ -1,5 +1,245 @@
 [
   {
+    "id": "dell-receiver-ai-linux-battery-widget",
+    "title": "Dell 键鼠：研究接收器协议，在 Omarchy 显示电量",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Mike Harrison 称与 ChatGPT 研究 Dell 接收器协议，再由 Claude Code 制作 Linux 电量小组件；未公开协议与测试。",
+    "description": "10月20日17:34（北京时间），Mike Harrison（mikejharrison）报告，Dell 外设配套软件不支持 Linux，导致自己在 Omarchy 桌面看不到键盘和鼠标电量。他与 ChatGPT 研究接收器的通信协议，再让 Claude Code Agent 构建显示电量的小组件，目的是补齐原厂软件缺席时的桌面互通。\n\n补查原帖确认作者身份与上述分工，帖子附有图片，但未提供键鼠及接收器型号、协议字段、源码或可重放测试。本合集没有读取设备或测量电量准确率，不能把小组件自述升级为适配全部 Dell 外设，也不能断言使用 REA。",
+    "sources": [{"label":"Mike Harrison：ChatGPT 研究接收器、Claude Code 构建电量组件","url":"https://x.com/i/status/2112477595400822999"}],
+    "snapshot_date":"2026-10-20", "metadata":["原帖发布于2026年10月20日17:34（北京时间）；键鼠和接收器型号未披露。"],
+    "en": {
+      "title":"Dell keyboard and mouse: receiver-protocol research for an Omarchy battery widget",
+      "summary":"Mike Harrison reports researching Dell's receiver protocol with ChatGPT and having Claude Code build a Linux battery widget; protocol details and tests are not public in the post.",
+      "description":"At 17:34 Beijing time on October 20, Mike Harrison (mikejharrison) reports that Dell's peripheral software does not support Linux, leaving him unable to see his keyboard and mouse battery levels in Omarchy. He says he and ChatGPT reverse-engineered the receiver protocol, then his Claude Code agent built the widget. The goal is desktop interoperability where the vendor's companion software is absent.\n\nReading the original post confirmed the author and this division of work. It includes an image but no keyboard, mouse or receiver model, protocol fields, source code or replayable tests. This collection did not query a device or measure battery accuracy. The widget report does not establish support for all Dell peripherals, and REA use is not stated.",
+      "metadata":["Original post: October 20, 2026, 17:34 Beijing time; keyboard, mouse and receiver models are undisclosed."], "source_labels":["Mike Harrison: ChatGPT receiver research and a Claude Code battery widget"]
+    }
+  },
+  {
+    "id":"samsung-tv-codex-debloat",
+    "title":"Samsung TV：Codex 清理与关闭观看追踪，作者补测重启持久性",
+    "category":"hardware", "rea":"other-ai", "status":"unverified",
+    "summary":"Cutter 报告临时 root 配合 Codex 清理电视，禁用应用、ACR 和广告进程在完整重启后保留；未单独测试拔电。",
+    "description":"10月20日18:35（北京时间）的候选回复中，Cutter（cutterjn）解释 Samsung 电视修改的持久性。补读同日17:33的父帖，他称电视变得缓慢且多故障，前一天借助 Codex 和临时 root 清理负担、关闭观看追踪，可用 RAM 约增加23%，使用体验改善。该父帖仅作候选的上下文补证，不另作新候选。\n\n候选给出比主帖更具体的限制：部分卸载应用被 Samsung 恢复，因此改为禁用；作者报告完整重启后，应用禁用标志仍在、ACR 观看识别服务保持禁用、广告守护进程保持停止，不必继续连接电脑或重跑 Codex。他未单独验证从墙上拔电，固件更新或恢复出厂可能撤销修改。\n\n没有电视型号、固件版本、命令或测量日志，23%不是本合集复测。临时 root 的获取方法与 Codex 的具体分析过程未公开，不能推广为任意 Samsung 电视的通用安全方案，也不能混同此前 Tizen 自制主页或加密遥控协议项目。",
+    "sources":[{"label":"候选：Cutter 的完整重启测试与未拔电限制","url":"https://x.com/i/status/2112492836104867859"},{"label":"同日父帖补证：Codex、临时 root 与约23%可用RAM增幅自述","url":"https://x.com/i/status/2112477185369907280"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Samsung TV: Codex-assisted debloating and author-reported reboot persistence",
+      "summary":"Cutter reports temporary-root cleanup with Codex; disabled apps, ACR and the advertising daemon remain disabled after full restarts, but unplugging was not separately tested.",
+      "description":"In the candidate reply at 18:35 Beijing time on October 20, Cutter (cutterjn) explains the persistence of modifications to a Samsung TV. A supplementary reading of the parent post from 17:33 that day supplies context: the TV had become slow and buggy, and the author says Codex and temporary root access were used the previous day to trim it down and disable viewing tracking. Available RAM reportedly increased by about 23%, improving usability. The parent is context for the candidate, not another newly selected candidate.\n\nThe candidate adds more specific limits than the parent. Samsung restored some initially uninstalled apps, so the author switched to disabling them. After full restarts, the author reports that app-disable flags persisted, ACR viewing recognition stayed disabled and the advertising daemon stayed stopped, without a connected computer or another Codex run. Unplugging from the wall was not separately tested. Firmware updates or a factory reset could undo the changes.\n\nNo TV model, firmware version, commands or measurement logs are supplied; the 23% figure was not remeasured here. The method of obtaining temporary root and Codex's detailed analysis are not public in these posts. This is not a general safe procedure for every Samsung TV and is distinct from the earlier Tizen custom-launcher and encrypted-remote projects.",
+      "metadata":[], "source_labels":["Candidate: Cutter's full-restart test and unplugging limitation","Same-day supplementary parent: Codex, temporary root and the reported approximately 23% available-RAM increase"]
+    }
+  },
+  {
+    "id":"wispr-flow-local-ai-rebuild-report",
+    "title":"Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述",
+    "category":"apps", "rea":"other-ai", "status":"unverified",
+    "summary":"Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。",
+    "description":"10月20日16:52（北京时间），Vraj（vraj_ai）称逆向 Wispr Flow，并用 DeepSeek V4.1 Flash 与 Opus 5.5 构建本地替代品，目的是替代其所称每月15美元的订阅。报告的基本交互是按住快捷键讲话，把文字输入任意应用；另列出去填充词、补标点、把散乱表达整理为列表、处理口头自我纠正，以及选中文本后口述改写的 Command Mode。\n\n作者还声称支持按应用区分 Slack 和邮件风格、从纠正中学习的个人词典、其他语言的 Whisper 回退、完全离线、macOS/Windows/Linux 与 MIT 许可。原帖补查只确认这些文字及附视频，没有展开的代码地址、模型部署说明、平台测试或与原版的功能对照。本合集未观看完整视频或执行应用，不确认“全部功能免费”、离线隐私与许可承诺，也未确认使用 REA；不能与已有 Typeless 替代品合并。",
+    "sources":[{"label":"Vraj：Wispr Flow 本地替代品功能与模型归因自述","url":"https://x.com/i/status/2112467102200111279"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Wispr Flow: a reported local dictation rebuild with DeepSeek and Opus",
+      "summary":"Vraj claims hotkey dictation, text rewriting and per-app styles, with offline operation, three platforms and MIT licensing; code and parity tests remain unverified.",
+      "description":"At 16:52 Beijing time on October 20, Vraj (vraj_ai) says he reverse-engineered Wispr Flow and built a local alternative with DeepSeek V4.1 Flash and Opus 5.5, aiming to replace a subscription he describes as $15 per month. The reported core interaction is holding a hotkey, speaking and typing the result into any application. Listed cleanup features remove filler words, add punctuation, turn rambling into lists and handle spoken corrections. Command Mode reportedly rewrites selected text from spoken instructions.\n\nThe author also claims per-app styles for Slack versus email, a personal dictionary learning from corrections, Whisper fallback for other languages, fully offline operation, macOS/Windows/Linux support and an MIT license. Reading the original post confirmed only these statements and an attached video, not an expanded code address, model-deployment instructions, platform tests or feature comparisons with the original. This collection did not watch the complete video or run an application. It does not verify the all-features-free claim, offline privacy or license, and REA use is not established. This target is distinct from the existing Typeless alternative.",
+      "metadata":[], "source_labels":["Vraj's feature claims and model attribution for a local Wispr Flow alternative"]
+    }
+  },
+  {
+    "id":"yildiz-recorder-rea-withdrawal-rebuild",
+    "title":"录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发",
+    "category":"apps", "rea":"REA", "status":"in-progress",
+    "summary":"Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。",
+    "description":"10月20日18:08（北京时间），Yıldız Dikme（YildizDikme）报告，已把此前用 REA 开发的应用 GitHub 仓库和 YouTube 视频设为私有。作者称研究许可证后，改用 Claude 与 Electron 从零写录屏及编辑应用，这一次不使用 REA，计划完成测试后免费分享，也用于自己的剪辑；其比较对象价格约100美元。\n\n这是具体项目方向和发布计划的变化，不是许可证违法已被证实，也不是宣布新应用已经公开或功能等价。帖中未命名旧参考产品与仓库，不把它合并到另一作者的 Screen Studio 复刻；原帖补查确认作者身份但没有补出公开代码。本合集未测试新版本，旧 REA 分析的范围也未知，按进行中转向记录。",
+    "sources":[{"label":"Yıldız Dikme：旧REA仓库视频转私有及从零重写计划","url":"https://x.com/i/status/2112486190423150790"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Screen recorder/editor: withdrawing a REA version and rebuilding with Claude and Electron",
+      "summary":"Yıldız Dikme says the earlier REA repository and video were made private after license research; a new version without REA is intended for free release after testing.",
+      "description":"At 18:08 Beijing time on October 20, Yıldız Dikme (YildizDikme) reports making the GitHub repository and YouTube video for an earlier REA-developed application private. After researching licenses, the author says a screen-recording and editing application was rebuilt from scratch with Claude and Electron, without REA this time. The plan is to share it free after testing and use it for the author's own edits; comparable products are described as costing about $100.\n\nThis records a concrete change in project direction and release plans, not proven license infringement or an announcement that the new application is already public or functionally equivalent. The old reference product and repository are not named. It is not merged with another author's Screen Studio reconstruction. Reading the original post confirmed the author's identity but supplied no public code. This collection has not tested the new version, and the extent of the earlier REA analysis remains unknown; the transition is in progress.",
+      "metadata":[], "source_labels":["Yıldız Dikme: earlier REA repository/video made private and a from-scratch rewrite planned"]
+    }
+  },
+  {
+    "id":"skyworth-vidbox-codex-tv-interface",
+    "title":"Skyworth 电视棒：Codex 将 Vidbox 网页包装改成遥控器界面的自述",
+    "category":"hardware", "rea":"other-ai", "status":"unverified",
+    "summary":"候选回复追问 ADB；父帖作者称 Codex 为20美元 Android 电视棒重做 Vidbox 遥控界面并添加语音助手，具体协议未知。",
+    "description":"10月20日19:38（北京时间）的候选回复询问 begottensun：廉价电视棒的遥控输入逆向是否只用 ADB。补读同日19:36父帖，作者 K（begottensun）称让 Codex 在20美元 Skyworth Android 电视棒上添加 Vidbox，最初得到网页包装，随后要求研究并改成适合遥控器输入的电视界面；再要求使用 Live API 做类似 Jarvis 的语音助手，声称一次完成，只要求 API key，并让用户打开开发者模式。\n\n19:42作者回复说自己不知道具体用了什么，只记得工具要求把 Mac 与设备配对并给出界面。因而候选中的 ADB 仍是提问而不是已确认实现，语音助手是同一改造中的后续功能，不代表逆向获得 API。父帖与后续回复是候选上下文补证，不替代原候选；没有源码、设备精确型号、协议记录或测试，本合集未访问任何凭据、未运行设备程序，REA未明示。",
+    "sources":[{"label":"候选：询问电视棒遥控输入是否使用ADB","url":"https://x.com/i/status/2112508707653439720"},{"label":"同日父帖补证：Skyworth、Vidbox与Codex改造自述","url":"https://x.com/i/status/2112508342178402602"},{"label":"同日后续：作者不知道实现，只确认Mac配对","url":"https://x.com/i/status/2112509640131178739"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Skyworth TV dongle: a reported Codex rebuild of Vidbox for remote input",
+      "summary":"The candidate asks whether ADB was used; its parent claims Codex rebuilt Vidbox's remote-friendly interface on a $20 Android dongle and added a voice assistant, with the protocol unconfirmed.",
+      "description":"The candidate reply at 19:38 Beijing time on October 20 asks begottensun whether reversing remote input on a cheap TV dongle used plain ADB. A supplementary reading of the 19:36 parent identifies K (begottensun), who says Codex added Vidbox to a $20 Skyworth Android TV dongle. It first produced a web wrapper; the author then requested research and a proper TV interface for remote input. A subsequent request for a Jarvis-like voice assistant using the Live API reportedly worked in one attempt, asking only for an API key and for the user to enable developer mode.\n\nAt 19:42, the author replies that the implementation is unknown to them: they only recall being asked to pair the Mac with the device and receiving an interface. ADB is therefore still a question in the candidate, not a confirmed implementation. The voice assistant is a follow-on feature of the same modification, not evidence that an API was reverse-engineered. The parent and later reply provide context without replacing the original candidate. No source, exact device model, protocol record or tests are supplied. This collection accessed no credentials and ran no device programs; REA use is not explicit.",
+      "metadata":[], "source_labels":["Candidate: asking whether ADB handled TV-dongle remote input","Same-day supplementary parent: Skyworth, Vidbox and the Codex modification report","Same-day follow-up: implementation unknown to the author, Mac pairing confirmed"]
+    }
+  },
+  {
+    "id":"r51mt02-claude-firmware-comparison",
+    "title":"R51MT02：Claude 比较固件构建，作者报告刷入 Lite 与隐藏系统应用",
+    "category":"hardware", "rea":"other-ai", "status":"unverified",
+    "summary":"Waqy 报告 Claude 协助比较下载，依次刷入 ATV344 Lite、ATV903 Lite 并运行 Magisk 29；未给校验日志。",
+    "description":"10月20日19:55（北京时间），Waqy（waqyyy）称继续研究 R51MT02 固件，Claude 帮忙比较不同构建并核对下载。作者报告依次刷入 ATV344 Lite 与 ATV903 Lite，运行 Magisk 29，再装一个定制模块隐藏另外11个系统应用，具体用途是调整设备固件与系统应用负担。\n\n原帖补查确认这些版本和作者，但没有说明核对下载所用的哈希或签名、精确硬件型号、模块代码、刷机日志及回退验证。不能将“verify the downloads”解释为本合集验证了包安全，也不能把11个应用隐藏写成删除或性能提升。REA未明示，Claude的角色仅限作者所说的构建比较与下载核对，未证明它自动反编译或刷机。",
+    "sources":[{"label":"Waqy：R51MT02构建比较及刷机结果自述","url":"https://x.com/i/status/2112513138100961574"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"R51MT02: Claude-assisted firmware comparisons and a reported Lite/Magisk modification",
+      "summary":"Waqy reports Claude-assisted build/download comparisons, sequential ATV344 Lite and ATV903 Lite flashes and Magisk 29; verification logs are not supplied.",
+      "description":"At 19:55 Beijing time on October 20, Waqy (waqyyy) says further investigation of R51MT02 firmware involved Claude comparing builds and verifying downloads. The author reports flashing ATV344 Lite followed by ATV903 Lite, getting Magisk 29 running and installing a custom module to hide another 11 system apps. The concrete purpose is modifying device firmware and the system-app footprint.\n\nReading the original post confirmed the versions and author, but not download hashes or signatures, an exact hardware model, module code, flashing logs or rollback validation. The phrase verify the downloads does not mean this collection verified package safety. Hiding 11 apps does not establish removal or a performance gain. REA use is not stated. Claude's role is limited to the reported build comparisons and download checks, not demonstrated autonomous decompilation or flashing.",
+      "metadata":[], "source_labels":["Waqy's R51MT02 build-comparison and flashing report"]
+    }
+  },
+  {
+    "id":"control-center-touchpad-gpt-analysis",
+    "title":"控制中心触摸板开关：GPT 逆向推理未满足作者预期",
+    "category":"apps", "rea":"other-ai", "status":"analysis-test",
+    "summary":"唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。",
+    "description":"10月20日18:52（北京时间），唐僧（7id）继续报告对一个控制中心软件的逆向研究：想让 GPT 根据已有上下文猜测触摸板启用和禁用的逻辑，认为即便识别为 toggle 也可以，但称中英文尝试都未得到满意的推理。原帖附图，补查确认作者与原文。\n\n这是对具体功能的负面分析体验，不是 GPT 已被证明无法逆向触摸板。帖子没有给控制中心厂商、二进制、完整输入输出、正确开关逻辑或可复跑对照；不猜它属于某一笔记本品牌，也不将作者的情绪评价改写成量化失败率。REA未明示，本合集未读取图片中的代码或运行测试。",
+    "sources":[{"label":"唐僧：GPT分析触摸板启停逻辑的负面体验","url":"https://x.com/i/status/2112497068799635922"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Control-center touchpad toggle: GPT analysis did not meet the author's expectations",
+      "summary":"7id reports unsatisfactory GPT reasoning in Chinese and English about a control center's touchpad enable/disable logic; product identity and the correct logic are unspecified.",
+      "description":"At 18:52 Beijing time on October 20, 唐僧 (7id) continues a reverse-engineering investigation of a control-center application. The author wanted GPT to infer the touchpad enable/disable logic from existing context and says even identifying a toggle would have helped, but found the reasoning unsatisfactory in both Chinese and English. The original includes an image; supplementary retrieval confirmed the author and text.\n\nThis is a negative experience on a specific feature, not proof that GPT cannot reverse-engineer touchpad controls. The post supplies no control-center vendor, binary, complete inputs and outputs, correct toggle logic or replayable comparison. No laptop brand is inferred, and an emotional assessment is not converted into a measured failure rate. REA is not explicit. This collection did not read code from the image or run tests.",
+      "metadata":[], "source_labels":["7id's negative experience with GPT analysis of touchpad enable/disable logic"]
+    }
+  },
+  {
+    "id":"doubleai-maxwell-runtime-optimization",
+    "title":"Maxwell：不改源码、运行时优化机器码的项目转述",
+    "category":"algorithms", "rea":"other-ai", "status":"related-project",
+    "summary":"Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。",
+    "description":"10月20日16:27（北京时间），Han（Hh_Boulevard）介绍 doubleAI 的 Maxwell，称其被称为 Code Execution Model：源码保持不变，在程序运行时修改底层机器码，目标是让已有数据处理及推理程序更快，并声称每一步都有形式化等价证明。帖子把它与生成新源码的编程助手区分开，是与AI辅助二进制理解及改写相邻的项目，而非REA案例。\n\n该帖转述厂商声称数据管道加速超过38倍、推理kernel超过4.5倍，并明确说Ctech报道这些数字未独立验证。作者说产品前一天发布，但本合集未核对厂商发布日期、原报道、样本或证明检查器；日期和倍率不作为已核验研发事实。没有执行优化代码或证明，亦不能把不改源码等同于任何程序都行为不变。",
+    "sources":[{"label":"Han：Maxwell运行时机器码优化与未独立验证的倍率转述","url":"https://x.com/i/status/2112460704980828270"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Maxwell: a report of runtime machine-code optimization without changing source",
+      "summary":"Han introduces doubleAI's Code Execution Model and relays runtime-binary rewriting and formal-equivalence claims; the 38x and 4.5x figures are not independently verified.",
+      "description":"At 16:27 Beijing time on October 20, Han (Hh_Boulevard) introduces doubleAI's Maxwell as a Code Execution Model: leave source unchanged while modifying underlying machine code during execution to accelerate existing data-processing and inference programs, reportedly with a formal-equivalence proof at every step. The post contrasts this with assistants generating new source. It is a project adjacent to AI-assisted binary understanding and rewriting, not a REA case.\n\nThe post relays vendor claims of over 38x acceleration for data pipelines and over 4.5x for inference kernels, explicitly noting that Ctech describes the numbers as not independently verified. The author says it launched the previous day, but this collection did not check the vendor release date, original reporting, samples or proof checker. Neither dates nor multipliers are treated as verified development facts. No optimization code or proof was executed, and leaving source unchanged does not establish behavior preservation for arbitrary programs.",
+      "metadata":[], "source_labels":["Han's Maxwell runtime-optimization report and unverified speedup figures"]
+    }
+  },
+  {
+    "id":"openmsx-codex-ghidra-rom-plan",
+    "title":"openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划",
+    "category":"games", "rea":"other-ai", "status":"in-progress",
+    "summary":"阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。",
+    "description":"10月20日16:37（北京时间），一条阿语候选请求逆向协助，称目的为教育，希望先让所引 ROM 在 openMSX 中无故障运行，当前只需 BIOS 和操作步骤，后面的工作交给自己、Codex 与 Ghidra。openMSX 是这里的模拟运行环境；具体目标是建立可观察的运行基线，再继续分析，而非只泛称AI可以反编译。\n\n候选没有可识别的游戏名、ROM版本或分析发现，不能说已成功运行、翻译或移植。本合集没有获取 BIOS、ROM 或执行目标，也不因作者称教育目的就替其确认授权。REA未明示，Codex/Ghidra目前属于计划中的工具。",
+    "sources":[{"label":"阿语原帖：请求openMSX BIOS步骤并计划Codex/Ghidra研究","url":"https://x.com/i/status/2112463328840667562"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"openMSX: establish a running ROM baseline before Codex/Ghidra research",
+      "summary":"An Arabic-language author requests BIOS/setup help and plans to continue with Codex and Ghidra after running a ROM in openMSX; no game identity or completed result is given.",
+      "description":"At 16:37 Beijing time on October 20, an Arabic-language candidate requests reverse-engineering help for an educational purpose. The author wants the cited ROM to run without problems in openMSX and currently needs only the BIOS and setup steps, leaving subsequent work to themselves, Codex and Ghidra. openMSX is the proposed emulation environment. The concrete goal is an observable running baseline before further analysis, not merely a generic claim that AI can decompile things.\n\nThe candidate supplies no identifiable game name, ROM version or analysis findings. Successful execution, translation or porting is not established. This collection obtained no BIOS or ROM and executed no target; an educational label does not independently establish authorization. REA is not explicit, and Codex/Ghidra are planned tools at this stage.",
+      "metadata":[], "source_labels":["Arabic original: openMSX BIOS/setup request and planned Codex/Ghidra research"]
+    }
+  },
+  {
+    "id":"cobol-atm-rea-simulated-rebuild",
+    "title":"COBOL ATM 账本：REA 与多 Agent 重建的明确模拟方案",
+    "category":"apps", "rea":"REA", "status":"unverified",
+    "summary":"作者以146文件ATM账本设想REA提规格、12个Sonnet分工及行为回放，明确全部模拟；120/120和成本不是运行结果。",
+    "description":"10月20日17:44（北京时间），作者借一个流传的旧系统重写演示，描述将同样方法模拟用于 COBOL ATM 账本：REA 把146个旧文件整理为一个规格，Opus 5.5只规划一次，12个Sonnet 5.5 Agent各重建一个模块，再回放新旧行为。目标是讨论较便宜模型分工能否降低旧账本迁移成本。\n\n帖子给出120/120行为匹配、单独Opus 4.85美元对swarm 0.97美元，同时明确写“all simulated”。这些数字是作者模拟叙事，不是实跑账本、真实账单或独立实验。开头24万美元任务变7分钟0.88美元及REA星数也是引述背景，不作为项目成果；没有原文件、规格、代码或回放日志，本合集不验证这些数量，也不把它列作成功金融系统迁移。",
+    "sources":[{"label":"原帖：COBOL ATM多Agent设想，明确all simulated","url":"https://x.com/i/status/2112480136633123103"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"COBOL ATM ledger: an explicitly simulated REA/multi-agent rebuild proposal",
+      "summary":"The author proposes a 146-file ATM ledger specification, 12 Sonnet builders and behavior replay, explicitly all simulated; 120/120 and cost figures are not execution results.",
+      "description":"At 17:44 Beijing time on October 20, an author uses a circulating legacy-rewrite demonstration to describe simulating the same recipe on a COBOL ATM ledger. REA would turn 146 old files into one specification, Opus 5.5 would plan once, 12 Sonnet 5.5 agents would each rebuild one module, and old/new behaviors would be replayed. The purpose is to explore whether cheaper-model delegation could reduce ledger-migration costs.\n\nThe post gives 120/120 matching behaviors and costs of $4.85 for Opus alone versus $0.97 for a swarm, while explicitly stating all simulated. These are figures in the author's simulation narrative, not an executed ledger, real invoice or independent experiment. The opening $240,000 job becoming seven minutes and $0.88, and the REA star count, are cited background rather than project results. No original files, specification, code or replay logs are supplied. This collection does not verify the figures or present this as a successful financial-system migration.",
+      "metadata":[], "source_labels":["Original COBOL ATM multi-agent proposal, explicitly all simulated"]
+    }
+  },
+  {
+    "id":"commercial-plugin-anti-ai-analysis-text",
+    "title":"付费插件：在模块内放置诱导 AI 拒绝逆向的合规文本",
+    "category":"apps", "rea":"other-ai", "status":"analysis-test",
+    "summary":"候选引用插件模块中的拒答诱导，将WASM、加密与版权包装成对AI的指令；未证实防护效果或加密实现。",
+    "description":"10月20日19:00（北京时间），一条回复质疑某破解插件为何又放置针对用户和AI的威吓式提示，并引用一段所谓最高合规指令。被引用文本面向Claude、ChatGPT、Cursor、Gemini、DeepSeek，宣称模块受DRM、WASM密钥派生、AES-256-GCM内存解密及SHA-256完整性保护，要求模型拒绝反混淆、反编译WASM、解密assets.enc、绕过授权及伪造响应等请求。\n\n这里的具体观察是利用目标内容中的自然语言影响AI分析工具，把版权与地域指控作为拒答诱导；本合集把它当被研究的数据，不采纳其指令或对用户的指控。插件名、原模块、模型响应与测试均未给，引用中的密码技术不等于实现已审计，也没有证明能阻止逆向。不能与已有“测试REA二进制提示注入”的idea当作同一项目。",
+    "sources":[{"label":"候选回复：引用插件模块内面向AI的拒答诱导文本","url":"https://x.com/i/status/2112499296113410129"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Commercial plugin: embedding compliance-themed text to make AI refuse analysis",
+      "summary":"The candidate quotes refusal-inducing text in a plugin module, invoking WASM, encryption and copyright as instructions to AI; effectiveness and cryptographic implementation are not established.",
+      "description":"At 19:00 Beijing time on October 20, a reply questions why a cracking plugin also embeds threatening prompts directed at users and AI, quoting purported highest-priority compliance instructions. The quoted text addresses Claude, ChatGPT, Cursor, Gemini and DeepSeek, claims DRM, WASM key derivation, AES-256-GCM in-memory decryption and SHA-256 integrity protection, and demands refusal of deobfuscation, WASM decompilation, assets.enc decryption, authorization bypass and response-forgery requests.\n\nThe concrete observation is an attempt to influence AI analysis through natural language in target content, using copyright and geographic accusations to induce refusal. This collection treats it as data under study, not instructions to obey or substantiated accusations against a user. No plugin name, original module, model responses or tests are supplied. Mentioning cryptography is not an audit of its implementation, and prevention of reverse engineering is unproven. This is not assumed to be the same project as the existing idea for testing prompt injection in a REA binary-analysis chain.",
+      "metadata":[], "source_labels":["Candidate reply quoting refusal-inducing instructions directed at AI inside a plugin module"]
+    }
+  },
+  {
+    "id":"roblox-crate-shop-rea-rebuild-report",
+    "title":"Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述",
+    "category":"games", "rea":"REA", "status":"unverified",
+    "summary":"作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。",
+    "description":"10月20日19:05（北京时间），作者称用Claude加REA重建一款Roblox游戏，具体列出商店、箱子开启、掉率和稀有度揭示，表示自己未写代码，第一次开稀有箱时体验与原游戏一致。目标不是仅看外观，而是恢复收费游戏中开箱购买及反馈流程。\n\n这只是作者成功宣称。候选没有游戏名、源码、抽样次数、掉率表、分析证据或行为对照，“整个游戏从零重建”和主观体验不能证明实际概率或完整功能一致。教程指向文章但未提供可读正文，本合集未运行游戏或验证收费流程，也不把它与另一条翻转、加速垫和连击机制的Roblox报告合并。",
+    "sources":[{"label":"原帖：Claude与REA重建Roblox商店和开箱流程的自述","url":"https://x.com/i/status/2112500541792129085"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Roblox crate shop: a reported Claude/REA rebuild of drops and rarity reveals",
+      "summary":"The author claims a shop, crate-opening and drop-rate rebuild without handwritten code; the game, source and probability comparisons are not supplied.",
+      "description":"At 19:05 Beijing time on October 20, an author claims to have rebuilt a Roblox game with Claude and REA, specifically listing the shop, crate opening, drop rates and rarity reveals. The author says no code was personally written and the first rare-crate opening felt identical to the monetized original. The concrete target is recovering a purchase/opening/feedback flow, not just copying an appearance.\n\nThis is only an author claim of success. The candidate supplies no game name, source code, sample count, drop-rate table, analysis evidence or behavioral comparison. Claims of rebuilding the entire game from scratch and subjective similarity do not prove matching probabilities or complete functionality. A tutorial is promoted in an article without readable article text here. This collection ran no game or payment flow and does not merge this with the separate Roblox report about flips, boost pads and combos.",
+      "metadata":[], "source_labels":["Original claim of a Claude/REA Roblox shop and crate-opening rebuild"]
+    }
+  },
+  {
+    "id":"libxsql-dotnet-ai-re-tool-report",
+    "title":".NET / libxsql：供 AI Agent 研究程序集的工具推荐",
+    "category":"apps", "rea":"other-ai", "status":"related-project",
+    "summary":"Binary Wizards 推荐基于libxsql、受IDASQL与GhidraSQL启发的.NET逆向工具，仓库名称与运行效果仍未确认。",
+    "description":"10月20日10:11（北京时间）的往期待补审候选中，Binary Wizards 推荐一个用于AI/vibe逆向.NET应用的项目，称基于libxsql，并受Rakan AlDuwaysan的IDASQL和GhidraSQL启发，建议把该工具交给AI Agent使用。具体用途是让Agent借助已有分析数据处理.NET程序集，而不是让读者直接依赖模型猜代码。\n\n本轮补查原帖和讨论串后，仍只有短链oAI3HfwB8i，没有展开的仓库名称、查询示例、样本或测试。可保守收录这个用途明确的工具推荐，但“顺畅逆向”只是推荐者评价，不能确认SQL接口细节、支持范围或REA集成。它是10月20日08:00–12:00原窗口的补审，不是16:00–20:00新发布；未来识别项目后应并入对应既有ID，而非重复新增。",
+    "sources":[{"label":"10月20日往期候选：Binary Wizards的.NET/libxsql工具推荐","url":"https://x.com/i/status/2112366146532024408"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":".NET/libxsql: a tool recommendation for AI-agent assembly research",
+      "summary":"Binary Wizards recommends a .NET reverse-engineering project built on libxsql and inspired by IDASQL/GhidraSQL; its repository identity and execution results remain unconfirmed.",
+      "description":"In an older deferred candidate posted at 10:11 Beijing time on October 20, Binary Wizards recommends a project for AI/vibe reverse engineering of .NET applications, reportedly built on libxsql and inspired by Rakan AlDuwaysan's IDASQL and GhidraSQL. The recommendation is to give the tool to an AI agent. Its concrete purpose is helping agents process .NET assemblies through existing analysis information rather than relying solely on model guesses about code.\n\nRetrieving the original post and thread this round still yielded only the shortened oAI3HfwB8i link, not an expanded repository name, query example, sample or test. The specific purpose supports cautious inclusion as a tool recommendation, but smooth reversing is the recommender's assessment, not established SQL-interface details, support coverage or REA integration. This is a reassessment from the original October 20 08:00–12:00 window, not a new 16:00–20:00 publication. If identified later, it should be merged into the corresponding existing ID rather than added again.",
+      "metadata":[], "source_labels":["Older October 20 candidate: Binary Wizards' .NET/libxsql tool recommendation"]
+    }
+  },
+  {
+    "id":"rea-local-game-windows-linux-port-request",
+    "title":"本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标",
+    "category":"games", "rea":"REA", "status":"in-progress",
+    "summary":"葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。",
+    "description":"10月20日10:26（北京时间）的往期待补审回复中，一位葡语作者描述自己的请求方式：先让Agent查看REA skill，再指出某个文件夹中的游戏，希望使用该skill制作Windows和Linux原生移植，并支持键盘与gamepad。它解决的是从已有本地游戏到桌面原生输入与运行环境的具体需求。\n\n作者把这一方式与模型拒答体验联系起来，但没有提供游戏名、引擎、实际提示记录、构建代码或运行结果。仅能确认其描述了这个请求，不认为变换措辞保证绕过安全限制，也不声称移植已完成。此条来自10月20日08:00–12:00原窗口补审，不冒充本轮新抓取或某个已命名游戏的更新。",
+    "sources":[{"label":"往期葡语候选：REA本地游戏Windows/Linux与输入支持请求","url":"https://x.com/i/status/2112369944507658256"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Local-game native port: a REA request targeting Windows, Linux, keyboard and gamepad",
+      "summary":"A Portuguese-language author describes checking the REA skill before requesting a native Windows/Linux port of a local game; game identity and completion tests are absent.",
+      "description":"In an older deferred reply at 10:26 Beijing time on October 20, a Portuguese-language author describes first asking an agent to inspect the REA skill, then pointing to a game in a local folder and requesting a native Windows and Linux port with keyboard and gamepad support. The specific need is moving an existing local game to desktop-native execution and input environments.\n\nThe author relates this wording to model-refusal experiences but supplies no game name, engine, actual prompt trace, build code or running result. Only the described request is established; changing wording is not endorsed as a guaranteed safety bypass, and a completed port is not claimed. This is reassessment from the original October 20 08:00–12:00 window, not new material from this round or an update to an identified game.",
+      "metadata":[], "source_labels":["Older Portuguese candidate: a REA local-game Windows/Linux and input-support request"]
+    }
+  },
+  {
+    "id":"sfc-ai-english-translation-idea",
+    "title":"SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea",
+    "category":"games", "rea":"other-ai", "status":"unverified",
+    "summary":"作者针对只能日本二手购买的旧SFC游戏提出AI英译重建方案，未命名作品，也没有实施结果。",
+    "description":"10月20日04:29（北京时间）的往期待补审回复，作者针对20多年前的SFC游戏只能在日本二手渠道寻找的困境，提出买下游戏，再让AI反编译、翻译成英语并重编译。这里的具体目标是旧主机作品的语言可达性，而非新造玩法或单纯要求无广告版。\n\n候选与此前读到的父帖都未给游戏名、版本、AI模型或文本提取实现，也没有开始翻译或成功重编译的证据。按作者建议的未验证idea收录，不将其“abandonware”说法当作法律状态，也不意味着购买一份游戏即获发布翻译或重建代码的授权。此条属于10月20日04:00–08:00窗口补审，REA未明示。",
+    "sources":[{"label":"往期回复：购买旧SFC游戏后AI反编译英译的建议","url":"https://x.com/i/status/2112280029187244100"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Older SFC game: an idea to buy, AI-decompile, translate into English and recompile",
+      "summary":"An author proposes AI-assisted English reconstruction of an old SFC game available secondhand in Japan; the title and implementation results are unspecified.",
+      "description":"An older deferred reply at 04:29 Beijing time on October 20 discusses a more-than-20-year-old SFC game that must be sought secondhand in Japan. The author proposes buying it, having AI decompile it, translating it into English and recompiling it. The concrete purpose is language accessibility for an old console title, not new gameplay or simply removing advertisements.\n\nNeither the candidate nor the previously read parent supplies a game name, version, AI model or text-extraction implementation, and there is no evidence of translation starting or successful recompilation. This is the author's unverified idea. Their abandonware characterization is not treated as a legal status, nor does buying a copy establish permission to publish a translation or reconstructed code. This is reassessment from the October 20 04:00–08:00 window; REA is not explicit.",
+      "metadata":[], "source_labels":["Older reply proposing purchase, AI decompilation and English translation of an SFC game"]
+    }
+  },
+  {
+    "id":"nitroid-ai-binary-hook-map-poc",
+    "title":"地图与任务 PoC：AI 辅助识别偏移与二进制挂钩，作者承认方法不实用",
+    "category":"games", "rea":"other-ai", "status":"in-progress",
+    "summary":"作者明确用AI辅助逆向、找offset和binary hooks，逐个构建部件；地图任务制作仍只是不可实用的PoC。",
+    "description":"10月20日06:11（北京时间）的往期待补审回复，作者解释并非通常意义上把整个项目交给AI生成，而是用AI辅助逆向、识别offset和binary hooking，各部件以较细粒度逐一构建。具体涉及制作地图和任务，是对现有游戏二进制与内容构建流程的研究。\n\n作者同时明确说目前只是proof of concept，实际制作地图/任务的方法不实用。此前讨论上下文将其关联到Nitroid，但仍未确认游戏身份；本条不补猜游戏、引擎、工具或效率数据，也不把PoC写成可用Mod编辑器。AI角色和局限已足够具体，可从defer改为进行中报告；来自10月20日04:00–08:00原窗口补审，未独立运行或确认REA。",
+    "sources":[{"label":"往期作者回复：AI偏移与binary hooks角色，以及地图任务PoC限制","url":"https://x.com/i/status/2112305683047629180"}],
+    "snapshot_date":"2026-10-20", "metadata":[],
+    "en": {
+      "title":"Map/mission PoC: AI-assisted offsets and binary hooks, with an impractical content workflow",
+      "summary":"The author explicitly uses AI for reversing, offset identification and binary hooks while building components individually; map/mission creation remains an impractical PoC.",
+      "description":"In an older deferred reply at 06:11 Beijing time on October 20, the author explains that this is not AI building the entire project in the usual sense. AI assists reverse engineering, offset identification and binary hooking, while individual components are constructed granularly. Map and mission creation is specifically involved, making this research into an existing game's binary and content-building workflow.\n\nThe author explicitly calls it a proof of concept and says the actual map/mission creation method is impractical. Previously retrieved discussion associated it with Nitroid but did not establish the game's identity. This entry does not guess a game, engine, tool or efficiency figure and does not present the PoC as a usable mod editor. The AI role and limits are concrete enough to change the earlier defer to an in-progress report. It is reassessment from the original October 20 04:00–08:00 window, not independently executed and without confirmed REA use.",
+      "metadata":[], "source_labels":["Older author reply: AI offsets/binary hooks and limitations of the map/mission PoC"]
+    }
+  },
+  {
     "id": "xbox-boot-re-claude-reconstruction",
     "title": "xbox-boot-re：从单张 BIOS 恢复初代 Xbox 开机动画",
     "category": "hardware", "rea": "other-ai", "status": "in-progress",
@@ -3470,11 +3710,11 @@
   },
   {
     "id": "tradingview-workflow",
-    "title": "TradingView：传播较多的复刻流程帖",
+    "title": "TradingView：复刻流程与免费 Premium 下载风险的证据边界",
     "category": "apps",
     "rea": "REA",
-    "summary": "有 REA 复刻流程，但没有证明恢复付费指标。",
-    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，因此按待验证的功能重建报告收录。10月15日16:00–20:00窗口另一帖声称重建个人量化终端，具体列出从公开界面观察切换品种、周期、指标、画线和布局，再用 Opus 5.5 写规格、重建蜡烛图、RSI、MACD、布林带、观察列表及计入费用、滑点和回撤的回测引擎。这些是更具体的目标与作者成功宣称，不是可重放的测试证据；候选未提供代码或对照结果，不能把标准技术指标列表当作恢复付费指标的证明，更不采纳获利保证。",
+    "summary": "REA 流程未证明恢复付费指标；新增下载风险提醒也未证明流传仓库就是木马或获官方认可。",
+    "description": "TradingView 是金融图表平台。RohOnChain 的帖子介绍使用 REA 的复刻流程，传播较多；现有材料没有证明成功获取或重建付费指标，也没有足够的完成结果，因此按待验证的功能重建报告收录。10月15日16:00–20:00窗口另一帖声称重建个人量化终端，具体列出从公开界面观察切换品种、周期、指标、画线和布局，再用 Opus 5.5 写规格、重建蜡烛图、RSI、MACD、布林带、观察列表及计入费用、滑点和回撤的回测引擎。这些是更具体的目标与作者成功宣称，不是可重放的测试证据；候选未提供代码或对照结果，不能把标准技术指标列表当作恢复付费指标的证明，更不采纳获利保证。\n\n10月20日19:51（北京时间），另一候选提醒读者警惕宣称五万星、MIT、免费TradingView Premium，却要求先安装桌面程序才能进入私有仓库的传播帖，以及所附r/TradingView“官方认可”截图。提醒者援引Hexastrike今年4月关于同类免费Premium诱饵的报告，转述Windows的Vidar、macOS的AMOS投放方式，同时明确说旧报告没有直接分析当前GitHub仓库，自己无法证明它就是木马。四月报告是该作者引用的历史材料，本合集未独立读取原报告、确认下载包、星数、仓库身份或官方声明，也未认定它与前两条作者的重建项目是同一产物。补充该提醒是为了限定相似宣传的可信程度，不给任何链接背书，也不把未审计程序定性为已证实恶意软件。",
     "sources": [
       {
         "label": "原始记录",
@@ -3483,18 +3723,23 @@
       {
         "label": "10月15日量化终端目标与流程宣称",
         "url": "https://x.com/i/status/2110692386854555977"
+      },
+      {
+        "label": "10月20日下载风险提醒：明确未证明当前仓库就是木马",
+        "url": "https://x.com/i/status/2112512082902229368"
       }
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-20",
     "metadata": [],
     "en": {
-      "title": "TradingView: reconstruction workflow claim",
-      "summary": "A popular workflow post does not establish recovery of paid indicators.",
-      "description": "TradingView is a financial-charting platform. RohOnChain's widely circulated post describes a reconstruction workflow using REA. The available material does not establish successful access to or recovery of paid indicators, nor provide sufficient completed results, so it is included as a feature-reconstruction report needing verification. A separate post in the October 15, 16:00–20:00 window claims a personal quantitative terminal was rebuilt. It specifically describes observing symbol, timeframe, indicator, drawing and layout changes through the public interface, then using Opus 5.5 to write specifications and rebuild candlesticks, RSI, MACD, Bollinger Bands, watchlists and a backtesting engine accounting for fees, slippage and drawdown. These are more concrete targets and author claims of success, not replayable test evidence. The candidate supplies no code or comparison results. A list of standard technical indicators does not prove recovery of paid indicators, and profit guarantees are not accepted.",
+      "title": "TradingView: evidence limits of reconstruction workflows and free-Premium download warnings",
+      "summary": "REA workflows do not establish recovery of paid indicators; a new download warning also does not prove the circulating repository is malware or officially endorsed.",
+      "description": "TradingView is a financial-charting platform. RohOnChain's widely circulated post describes a reconstruction workflow using REA. The available material does not establish successful access to or recovery of paid indicators, nor provide sufficient completed results, so it is included as a feature-reconstruction report needing verification. A separate post in the October 15, 16:00–20:00 window claims a personal quantitative terminal was rebuilt. It specifically describes observing symbol, timeframe, indicator, drawing and layout changes through the public interface, then using Opus 5.5 to write specifications and rebuild candlesticks, RSI, MACD, Bollinger Bands, watchlists and a backtesting engine accounting for fees, slippage and drawdown. These are more concrete targets and author claims of success, not replayable test evidence. The candidate supplies no code or comparison results. A list of standard technical indicators does not prove recovery of paid indicators, and profit guarantees are not accepted.\n\nAt 19:51 Beijing time on October 20, another candidate warns about circulating posts claiming 50,000 stars, MIT licensing and free TradingView Premium while requiring a desktop installation before accessing a private repository, plus an attached r/TradingView screenshot of purported official approval. The warning cites an April Hexastrike report on similar free-Premium lures, relaying Windows Vidar and macOS AMOS delivery methods, while explicitly stating that the old report did not directly analyze the current GitHub repository and the writer cannot prove it is malware. The April report is historical material cited by that writer; this collection did not independently read it, inspect downloads, confirm star counts, repository identity or an official statement, or establish that this is the same artifact as either earlier author's rebuild. This warning limits the credibility of similar promotion. It endorses no download and does not label an unaudited program as proven malware.",
       "metadata": [],
       "source_labels": [
         "Original record",
-        "October 15: quantitative-terminal target and workflow claims"
+        "October 15: quantitative-terminal target and workflow claims",
+        "October 20 download warning: explicitly no proof that the current repository is malware"
       ]
     },
     "status": "unverified"

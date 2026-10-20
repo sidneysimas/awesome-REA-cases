@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](../cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
+- [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](../cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
+- [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](../cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
+- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](../cases/sfc-ai-english-translation-idea.md) — 作者针对只能日本二手购买的旧SFC游戏提出AI英译重建方案，未命名作品，也没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [地图与任务 PoC：AI 辅助识别偏移与二进制挂钩，作者承认方法不实用](../cases/nitroid-ai-binary-hook-map-poc.md) — 作者明确用AI辅助逆向、找offset和binary hooks，逐个构建部件；地图任务制作仍只是不可实用的PoC。 **[其他 AI 逆向 · 进行中]**
 - [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](../cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](../cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](../cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**

@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
+- [Maxwell: a report of runtime machine-code optimization without changing source](../../cases/en/doubleai-maxwell-runtime-optimization.md) — Han introduces doubleAI's Code Execution Model and relays runtime-binary rewriting and formal-equivalence claims; the 38x and 4.5x figures are not independently verified. **[Other AI-assisted work · Related project]**
 - [BigSky and Ursa Major: an Opus account of firmware emulation followed by C++ reconstruction](../../cases/en/audio-effects-opus-emulator-cpp-report.md) — HN user valdiorn reports executing audio firmware in an emulator before generating and comparing C++; original attribution found, but no public firmware, library or comparison logs. **[Other AI-assisted work · Needs verification]**
 - [IDA agent self-test: ten nullsubs individually renamed and restored](../../cases/en/ida-agent-nullsub-rename-test.md) — mornpeak clarifies that no batch rename API exists: an agent loops over single calls, reportedly renaming and restoring 10/10 symbols. **[Other AI-assisted work · Analysis test]**
 - [pycdc-rapid: a Hermes user claims an agent added Python 3.16 decompilation](../../cases/en/hermes-pycdc-rapid-python316-claim.md) — A user connects Ghidra and pycdc-rapid to Hermes and claims an agent extended the latter from 3.15 to 3.16; no patch or sample is available. **[Other AI-assisted work · Needs verification]**

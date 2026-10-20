@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**611 entries**, organized by use case, without a Top-N or popularity threshold.
+**627 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (134)
-- [Hardware and interoperability](categories/en/hardware.md) (145)
-- [Applications and clients](categories/en/apps.md) (279)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (53)
+- [Games and preservation](categories/en/games.md) (139)
+- [Hardware and interoperability](categories/en/hardware.md) (149)
+- [Applications and clients](categories/en/apps.md) (285)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (54)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [openMSX: establish a running ROM baseline before Codex/Ghidra research](cases/en/openmsx-codex-ghidra-rom-plan.md) — An Arabic-language author requests BIOS/setup help and plans to continue with Codex and Ghidra after running a ROM in openMSX; no game identity or completed result is given. **[Other AI-assisted work · In progress]**
+- [Roblox crate shop: a reported Claude/REA rebuild of drops and rarity reveals](cases/en/roblox-crate-shop-rea-rebuild-report.md) — The author claims a shop, crate-opening and drop-rate rebuild without handwritten code; the game, source and probability comparisons are not supplied. **[REA · Needs verification]**
+- [Local-game native port: a REA request targeting Windows, Linux, keyboard and gamepad](cases/en/rea-local-game-windows-linux-port-request.md) — A Portuguese-language author describes checking the REA skill before requesting a native Windows/Linux port of a local game; game identity and completion tests are absent. **[REA · In progress]**
+- [Older SFC game: an idea to buy, AI-decompile, translate into English and recompile](cases/en/sfc-ai-english-translation-idea.md) — An author proposes AI-assisted English reconstruction of an old SFC game available secondhand in Japan; the title and implementation results are unspecified. **[Other AI-assisted work · Needs verification]**
+- [Map/mission PoC: AI-assisted offsets and binary hooks, with an impractical content workflow](cases/en/nitroid-ai-binary-hook-map-poc.md) — The author explicitly uses AI for reversing, offset identification and binary hooks while building components individually; map/mission creation remains an impractical PoC. **[Other AI-assisted work · In progress]**
 - [re3 / GTA III: an Opus-built NPC agent layer on an existing reverse-engineered game](cases/en/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez reports Jev decisions, GPT-4.1-mini dialogue and a local HTTP bridge for re3, extending existing reverse-engineered code rather than attributing its original decompilation to AI. **[Other AI-assisted work · Needs verification]**
 - [Snowboard Kids: Codex records IDO compiler patterns for N64 byte matching](cases/en/snowboard-kids-ido-codex-decompilation.md) — waynerad quotes an 84-day decompilation article explaining how Codex and a human study IDO 5.3 and share matching lessons; no complete matching report was obtained. **[Other AI-assisted work · Needs verification]**
 - [Flappy Bird: an ongoing Claude Fable 5.1 investigation account](cases/en/flappy-bird-claude-fable-research.md) — A poster says Claude Fable 5.1 is reverse-engineering Flappy Bird, without a version, recovered mechanics or playable artifact. **[Other AI-assisted work · In progress]**
@@ -165,6 +170,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Dell keyboard and mouse: receiver-protocol research for an Omarchy battery widget](cases/en/dell-receiver-ai-linux-battery-widget.md) — Mike Harrison reports researching Dell's receiver protocol with ChatGPT and having Claude Code build a Linux battery widget; protocol details and tests are not public in the post. **[Other AI-assisted work · Needs verification]**
+- [Samsung TV: Codex-assisted debloating and author-reported reboot persistence](cases/en/samsung-tv-codex-debloat.md) — Cutter reports temporary-root cleanup with Codex; disabled apps, ACR and the advertising daemon remain disabled after full restarts, but unplugging was not separately tested. **[Other AI-assisted work · Needs verification]**
+- [Skyworth TV dongle: a reported Codex rebuild of Vidbox for remote input](cases/en/skyworth-vidbox-codex-tv-interface.md) — The candidate asks whether ADB was used; its parent claims Codex rebuilt Vidbox's remote-friendly interface on a $20 Android dongle and added a voice assistant, with the protocol unconfirmed. **[Other AI-assisted work · Needs verification]**
+- [R51MT02: Claude-assisted firmware comparisons and a reported Lite/Magisk modification](cases/en/r51mt02-claude-firmware-comparison.md) — Waqy reports Claude-assisted build/download comparisons, sequential ATV344 Lite and ATV903 Lite flashes and Magisk 29; verification logs are not supplied. **[Other AI-assisted work · Needs verification]**
 - [xbox-boot-re: reconstructing the original Xbox boot animation from one BIOS](cases/en/xbox-boot-re-claude-reconstruction.md) — Human-directed Opus research yields a C core and WebGPU viewer, with public comparison records and successful CI; not a full Xbox emulator, and voice synthesis is approximate. **[Other AI-assisted work · In progress]**
 - [LG monitor updating: Claude-derived patches did not complete; Windows retry succeeded](cases/en/lg-monitor-ai-patches-windows-retry-report.md) — Steven Sinofsky reports failed Mac updating and several Claude-derived patches, then a Windows failure at 44% followed by success after rebooting; patch identities are unspecified. **[Other AI-assisted work · Analysis test]**
 - [Home voice interoperability: a proposal to investigate owned-device firmware with Claude](cases/en/home-voice-firmware-integration-idea.md) — Whittington suggests Claude Fable research into firmware updates to extend voice functions; the parent identifies Hue, Sonos and Apple integration barriers, not a cracked model or successful flash. **[Other AI-assisted work · Needs verification]**
@@ -313,6 +322,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Wispr Flow: a reported local dictation rebuild with DeepSeek and Opus](cases/en/wispr-flow-local-ai-rebuild-report.md) — Vraj claims hotkey dictation, text rewriting and per-app styles, with offline operation, three platforms and MIT licensing; code and parity tests remain unverified. **[Other AI-assisted work · Needs verification]**
+- [Screen recorder/editor: withdrawing a REA version and rebuilding with Claude and Electron](cases/en/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme says the earlier REA repository and video were made private after license research; a new version without REA is intended for free release after testing. **[REA · In progress]**
+- [Control-center touchpad toggle: GPT analysis did not meet the author's expectations](cases/en/control-center-touchpad-gpt-analysis.md) — 7id reports unsatisfactory GPT reasoning in Chinese and English about a control center's touchpad enable/disable logic; product identity and the correct logic are unspecified. **[Other AI-assisted work · Analysis test]**
+- [COBOL ATM ledger: an explicitly simulated REA/multi-agent rebuild proposal](cases/en/cobol-atm-rea-simulated-rebuild.md) — The author proposes a 146-file ATM ledger specification, 12 Sonnet builders and behavior replay, explicitly all simulated; 120/120 and cost figures are not execution results. **[REA · Needs verification]**
+- [Commercial plugin: embedding compliance-themed text to make AI refuse analysis](cases/en/commercial-plugin-anti-ai-analysis-text.md) — The candidate quotes refusal-inducing text in a plugin module, invoking WASM, encryption and copyright as instructions to AI; effectiveness and cryptographic implementation are not established. **[Other AI-assisted work · Analysis test]**
+- [.NET/libxsql: a tool recommendation for AI-agent assembly research](cases/en/libxsql-dotnet-ai-re-tool-report.md) — Binary Wizards recommends a .NET reverse-engineering project built on libxsql and inspired by IDASQL/GhidraSQL; its repository identity and execution results remain unconfirmed. **[Other AI-assisted work · Related project]**
 - [KEEP: a reported REA-assisted rebuild of workouts, courses and activity records](cases/en/keep-rea-workout-app-rebuild.md) — Anita reports rebuilding KEEP course filters, workout timing, weekly plans and record exports with REA in ten minutes, without source or comparison tests. **[REA · Needs verification]**
 - [An eleven-tag REA prompt: engine checks, evidence levels and negative-control tests](cases/en/claude-rea-eleven-tag-evidence-prompt.md) — Myttle proposes a scoped Claude Code/REA investigation template requiring observed/inferred/unknown labels and a test the checker must reject; no execution is reported. **[REA · Related project]**
 - [A reverse-engineered-tool index: let agents search existing implementations first](cases/en/alexgaoth-reverse-tools-agent-index.md) — alexgaoth reports indexing over 12,000 open-source tools derived from reverse engineering and an agent search skill; purpose recovered, but scale, repository and search quality remain unchecked. **[REA use unconfirmed · Related project]**
@@ -414,7 +429,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Notion: clipboard paths](cases/en/notion-clipboard.md) — Trace static copy-text and copy-image paths across Electron processes. **[REA]**
 - [Flutter: build identity and AOT structure](cases/en/flutter-aot.md) — Identify runtime/build clues in real APKs, not complete Dart source. **[REA]**
 - [Website rebuild: delivery report](cases/en/website-rebuild-report.md) — A reported REA-assisted job without detailed target or acceptance evidence. **[REA · Needs verification]**
-- [TradingView: reconstruction workflow claim](cases/en/tradingview-workflow.md) — A popular workflow post does not establish recovery of paid indicators. **[REA · Needs verification]**
+- [TradingView: evidence limits of reconstruction workflows and free-Premium download warnings](cases/en/tradingview-workflow.md) — REA workflows do not establish recovery of paid indicators; a new download warning also does not prove the circulating repository is malware or officially endorsed. **[REA · Needs verification]**
 - [WHOOP Android app investigation](cases/en/whoop-apk.md) — An APK lead now accompanied by a secondary Zhoop/NOOP client report; local iPhone use and Claude Code protocol work are attributed, not independently verified. **[REA use unconfirmed · Needs verification]**
 - [ArtCraft: not proven Adobe or Office reverse engineering](cases/en/artcraft-boundary.md) — Early creative and Office-style rebuilds, now including PhotoCraft PSD round-trip evidence and MCP control; not proof of Adobe or Office decompilation. **[Other AI-assisted work · Related project]**
 - [Obsidian ASAR: large-package analysis](cases/en/obsidian-asar.md) — The user confirms analysis completed, without a demonstrated feature rebuild. **[REA · Analysis test]**
@@ -595,6 +610,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Maxwell: a report of runtime machine-code optimization without changing source](cases/en/doubleai-maxwell-runtime-optimization.md) — Han introduces doubleAI's Code Execution Model and relays runtime-binary rewriting and formal-equivalence claims; the 38x and 4.5x figures are not independently verified. **[Other AI-assisted work · Related project]**
 - [BigSky and Ursa Major: an Opus account of firmware emulation followed by C++ reconstruction](cases/en/audio-effects-opus-emulator-cpp-report.md) — HN user valdiorn reports executing audio firmware in an emulator before generating and comparing C++; original attribution found, but no public firmware, library or comparison logs. **[Other AI-assisted work · Needs verification]**
 - [IDA agent self-test: ten nullsubs individually renamed and restored](cases/en/ida-agent-nullsub-rename-test.md) — mornpeak clarifies that no batch rename API exists: an agent loops over single calls, reportedly renaming and restoring 10/10 symbols. **[Other AI-assisted work · Analysis test]**
 - [pycdc-rapid: a Hermes user claims an agent added Python 3.16 decompilation](cases/en/hermes-pycdc-rapid-python316-claim.md) — A user connects Ghidra and pycdc-rapid to Hermes and claims an agent extended the latter from 3.15 to 3.16; no patch or sample is available. **[Other AI-assisted work · Needs verification]**

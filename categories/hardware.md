@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Dell 键鼠：研究接收器协议，在 Omarchy 显示电量](../cases/dell-receiver-ai-linux-battery-widget.md) — Mike Harrison 称与 ChatGPT 研究 Dell 接收器协议，再由 Claude Code 制作 Linux 电量小组件；未公开协议与测试。 **[其他 AI 逆向 · 待验证]**
+- [Samsung TV：Codex 清理与关闭观看追踪，作者补测重启持久性](../cases/samsung-tv-codex-debloat.md) — Cutter 报告临时 root 配合 Codex 清理电视，禁用应用、ACR 和广告进程在完整重启后保留；未单独测试拔电。 **[其他 AI 逆向 · 待验证]**
+- [Skyworth 电视棒：Codex 将 Vidbox 网页包装改成遥控器界面的自述](../cases/skyworth-vidbox-codex-tv-interface.md) — 候选回复追问 ADB；父帖作者称 Codex 为20美元 Android 电视棒重做 Vidbox 遥控界面并添加语音助手，具体协议未知。 **[其他 AI 逆向 · 待验证]**
+- [R51MT02：Claude 比较固件构建，作者报告刷入 Lite 与隐藏系统应用](../cases/r51mt02-claude-firmware-comparison.md) — Waqy 报告 Claude 协助比较下载，依次刷入 ATV344 Lite、ATV903 Lite 并运行 Magisk 29；未给校验日志。 **[其他 AI 逆向 · 待验证]**
 - [xbox-boot-re：从单张 BIOS 恢复初代 Xbox 开机动画](../cases/xbox-boot-re-claude-reconstruction.md) — 人类指导Opus研究BIOS，产出C核心与WebGPU查看器；公开对照记录与成功CI，但不是完整Xbox模拟器，声音合成有近似。 **[其他 AI 逆向 · 进行中]**
 - [LG 显示器更新：Claude 衍生补丁未完成，最终靠 Windows 重试](../cases/lg-monitor-ai-patches-windows-retry-report.md) — Steven Sinofsky报告Mac更新器与多个Claude衍生补丁未完成，Windows首次44%失败、重启重试后成功；未指明补丁身份。 **[其他 AI 逆向 · 分析测试]**
 - [家居语音互通：给 Claude 研究自有设备固件的建议](../cases/home-voice-firmware-integration-idea.md) — Whittington建议用Claude Fable研究设备更新以扩展语音功能；父帖明确Hue、Sonos、Apple生态隔阂，没有已破解机型或刷机结果。 **[其他 AI 逆向 · 待验证]**
