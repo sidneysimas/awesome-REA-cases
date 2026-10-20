@@ -9,10 +9,12 @@ Rehan Sheikh 把修改游戏的过程做成了 Universal Modder。Mod 是在原�
 
 原项目热度快照（2026-10-12）：14,340赞、382.2万浏览、896转发。
 原项目发帖9月30日，原来源非REA；新增10月19日宣传快照10赞、367浏览、0转发，不是同一传播统计。
+10月20日15:00候选介绍rehan-remade/universal-modder：称11个技能、um CLI与fal MCP覆盖侦察、素材、测试和发布，20+引擎playbook由um scan辨认版本、原生或.NET、反作弊与加载器；只有game-worker接触运行中游戏，orchestrator规划核验、offline-worker做离线研究，发布检查阻止打包游戏文件、反编译代码与密钥。以上是第三方介绍，未读完仓库或执行检查，不保证所有引擎实测或秘密不会泄漏；8344星为其快照，候选本身0赞、17浏览。
 
 ## 来源
 
 - [看 X 热门帖](https://x.com/rehan_shei/status/2105161487509852622)
 - [10月19日Fortnite混合规则宣传，未确认同项目](https://x.com/i/status/2112163474553884870)
+- [10月20日15:00：Universal Modder工作流第三方介绍](https://x.com/i/status/2112438757505015891)
 
 [English](en/universal-modder.md) | [返回目录](../README.zh-CN.md)

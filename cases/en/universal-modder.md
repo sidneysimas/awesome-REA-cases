@@ -9,10 +9,12 @@ At 20:46 Beijing time on October 19, a separate circulating post claims Opus 5.5
 
 Original project's engagement snapshot (2026-10-12): 14,340 likes, 3,822,000 views and 896 reposts.
 Original project posted September 30 and its original source is not REA. The separate October 19 promotion has 10 likes, 367 views and 0 reposts; these are not the same circulation statistics.
+The October 20, 15:00 candidate names rehan-remade/universal-modder, claiming 11 skills, um CLI and fal MCP span reconnaissance, assets, testing and publication. It describes over 20 engine playbooks and um scan identifying versions, native versus .NET, anti-cheat and loaders; only game-worker touches a running game, while the orchestrator plans/checks and offline-worker researches offline. Publication checks reportedly block game files, decompiled code and keys. This is a third-party introduction, not a full repository review or executed checks; neither testing of every engine nor absence of secret leakage is guaranteed. Its 8,344-star figure is a third-party snapshot; the candidate itself has 0 likes and 17 views.
 
 ## Sources
 
 - [Popular X post](https://x.com/rehan_shei/status/2105161487509852622)
 - [October 19 Fortnite-rule mashup promotion, not confirmed as the same project](https://x.com/i/status/2112163474553884870)
+- [October 20, 15:00: third-party Universal Modder workflow introduction](https://x.com/i/status/2112438757505015891)
 
 [中文](../universal-modder.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

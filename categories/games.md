@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](../cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](../cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](../cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
 - [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](../cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**

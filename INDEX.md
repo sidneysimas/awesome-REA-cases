@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **602 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **611 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（133）
-- [硬件与设备互通](categories/hardware.md)（141）
-- [应用与客户端](categories/apps.md)（276）
-- [算法与功能重建](categories/algorithms.md)（52）
+- [游戏与游戏保存](categories/games.md)（134）
+- [硬件与设备互通](categories/hardware.md)（145）
+- [应用与客户端](categories/apps.md)（279）
+- [算法与功能重建](categories/algorithms.md)（53）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
 - [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**
@@ -162,6 +163,10 @@
 
 ### 硬件与设备互通
 
+- [xbox-boot-re：从单张 BIOS 恢复初代 Xbox 开机动画](cases/xbox-boot-re-claude-reconstruction.md) — 人类指导Opus研究BIOS，产出C核心与WebGPU查看器；公开对照记录与成功CI，但不是完整Xbox模拟器，声音合成有近似。 **[其他 AI 逆向 · 进行中]**
+- [LG 显示器更新：Claude 衍生补丁未完成，最终靠 Windows 重试](cases/lg-monitor-ai-patches-windows-retry-report.md) — Steven Sinofsky报告Mac更新器与多个Claude衍生补丁未完成，Windows首次44%失败、重启重试后成功；未指明补丁身份。 **[其他 AI 逆向 · 分析测试]**
+- [家居语音互通：给 Claude 研究自有设备固件的建议](cases/home-voice-firmware-integration-idea.md) — Whittington建议用Claude Fable研究设备更新以扩展语音功能；父帖明确Hue、Sonos、Apple生态隔阂，没有已破解机型或刷机结果。 **[其他 AI 逆向 · 待验证]**
+- [CAN 仪表诊断：用 Claude 分析抓包，复现原扫描仪测试的转述](cases/claude-can-cluster-diagnostic-report.md) — 本轮CAN消息映射评论的父帖指出Yuri抓取汽车CAN日志交给Claude，复现仪表诊断；未给车型、原视频或消息表。 **[其他 AI 逆向 · 待验证]**
 - [Cricut 刻字机：用 AI 研究导入尺寸失真的修复 idea](cases/cricut-ai-import-scaling-fix-idea.md) — Pipe42uk建议AI逆向解决刻字机UI问题；父帖明确Cricut导入会乱缩放、需每次添加尺寸基准，尚无修复。 **[其他 AI 逆向 · 待验证]**
 - [Roku OS 电视：REA 映射网络路由，再发送控制请求的自述](cases/roku-tv-rea-network-route-control.md) — greco_dev称Roku电视控制已可用，同时明确这不是真正反编译：定位局域网IP，用REA映射路由后发请求。 **[REA · 待验证]**
 - [自有扫地机器人：让 Claude Code 检查远程窥视证据的调查提示词](cases/robot-vacuum-claude-privacy-audit-prompt.md) — tezzarc给出从照片识别型号、核对摄像头权限与账户分享、查异常访问的具体流程；不是发现机器人被入侵的报告。 **[其他 AI 逆向 · 待验证]**
@@ -306,6 +311,9 @@
 
 ### 应用与客户端
 
+- [KEEP：REA 辅助重建课程、训练与记录流程的自述](cases/keep-rea-workout-app-rebuild.md) — Anita称用REA在10分钟内重建KEEP课程筛选、训练计时、周计划和记录导出，未提供源码或对照测试。 **[REA · 待验证]**
+- [11 标签逆向提示词：引擎检查、证据分层与负例验收](cases/claude-rea-eleven-tag-evidence-prompt.md) — Myttle为Claude Code与REA提出具授权范围的调查模板，要求标注观察/推断/未知并验证检查器能拒绝负例；未报告实测。 **[REA · 相关项目]**
+- [逆向工具索引：让 Agent 先搜索已有实现，避免重复研究](cases/alexgaoth-reverse-tools-agent-index.md) — alexgaoth称索引12000多个逆向产生的开源工具，并提供Agent搜索skill；补查解决用途，但未核验规模、仓库或搜索质量。 **[未确认使用 REA · 相关项目]**
 - [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
 - [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
 - [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
@@ -488,7 +496,7 @@
 - [REA + archify：把分析材料整理成可交互架构图](cases/rea-archify-diagrams.md) — 作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。 **[REA · 相关项目]**
 - [macOS 备忘录：REA 辅助重建三栏 SwiftUI 应用的转述](cases/apple-notes-rea-swiftui-rebuild.md) — 第三方描述调查原生备忘录后重建笔记、文件夹、搜索与删除恢复交互。 **[REA · 待验证]**
 - [Nuke / Houdini / Gurobi：让 AI 配合 Ghidra 研究替代品的 idea](cases/industrial-tools-ai-ghidra-rebuild-idea.md) — 建议研究高价创作、求解和工业软件，制作低价替代；无实际分析结果。 **[其他 AI 逆向 · 进行中]**
-- [reverse-skill：给编程 Agent 的多目标逆向路线](cases/reverse-skill-agent-workflows.md) — 帖子介绍把 APK、前端代码与固件的分析路径整理为 Skill。 **[未确认使用 REA · 相关项目]**
+- [reverse-skill：给编程 Agent 的多目标逆向路线](cases/reverse-skill-agent-workflows.md) — 公开仓库提供规则路由、授权范围、工具索引和离线样本流程；178条为路由基准规模，不是成功逆向178个目标。 **[未确认使用 REA · 相关项目]**
 - [自己的预约漏斗：调查前端后重建共享日历](cases/booking-funnel-rea-calendar.md) — 作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。 **[REA · 待验证]**
 - [Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea](cases/lotus-smartsuite-linux-revival-idea.md) — 希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。 **[其他 AI 逆向 · 进行中]**
 - [REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试](cases/rea-local-qwen-commercial-analysis-tests.md) — 作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。 **[REA · 分析测试]**
@@ -585,6 +593,7 @@
 
 ### 算法与功能重建
 
+- [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**
 - [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**

@@ -8,6 +8,7 @@ On October 16, @TheOneMrMatt confirmed Opus accelerated byte-matching decompilat
 
 Earlier statement candidate snapshot: 0 likes, 14 views; supplementary originals range from July to October 16 and are not presented as new achievements.
 October 16 candidate snapshot for the 12:26 statement: 1 like, 147 views; months versus hypothetical manual years is author-reported.
+Separate review of the author's October 20, 08:36 reply: Claude Code's Fable and Opus reportedly recovered four Saturn executables as readable C with some SH2 assembly, claimed 100% byte-matched, and the native PC port builds on that code. Low CPU/memory requirements remain an expectation without hardware measurements or new matching outputs. Not independently rerun here; candidate snapshot: 0 likes, 86 views.
 
 ## Sources
 
@@ -17,5 +18,6 @@ October 16 candidate snapshot for the 12:26 statement: 1 like, 147 views; months
 - [October 16 06:04 PC-port update as supplementary background](https://x.com/i/status/2110854238989582709)
 - [July 16 SH2 and emulator investigation approach](https://x.com/i/status/2077571522248732787)
 - [October 16 12:26: author clarifies native port and months of AI-assisted decompilation](https://x.com/i/status/2110950579254264278)
+- [Separately reviewed October 20, 08:36 reply: four executables, Fable and Opus](https://x.com/i/status/2112342047525118198)
 
 [中文](../sonic-3d-blast-saturn-opus-port.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/games.md)

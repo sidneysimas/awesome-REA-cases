@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](../cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](../cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**
 - [pycdc-rapid：Hermes 用户称 Agent 私改支持 Python 3.16 反编译](../cases/hermes-pycdc-rapid-python316-claim.md) — 用户把Ghidra及pycdc-rapid接给Hermes，并称Agent把后者从3.15支持扩到3.16；无补丁或样本。 **[其他 AI 逆向 · 待验证]**
 - [Ghidra MCP 与 Claude Desktop：从 crackme 校验中找出 123456 的视频转述](../cases/ghidra-mcp-claude-crackme-123456.md) — ISOfunds转述一个玩具EXE演示：Claude经Ghidra读取校验并返回口令；没有样本、分析日志或独立重跑。 **[其他 AI 逆向 · 待验证]**

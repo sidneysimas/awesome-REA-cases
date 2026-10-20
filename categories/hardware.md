@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [xbox-boot-re：从单张 BIOS 恢复初代 Xbox 开机动画](../cases/xbox-boot-re-claude-reconstruction.md) — 人类指导Opus研究BIOS，产出C核心与WebGPU查看器；公开对照记录与成功CI，但不是完整Xbox模拟器，声音合成有近似。 **[其他 AI 逆向 · 进行中]**
+- [LG 显示器更新：Claude 衍生补丁未完成，最终靠 Windows 重试](../cases/lg-monitor-ai-patches-windows-retry-report.md) — Steven Sinofsky报告Mac更新器与多个Claude衍生补丁未完成，Windows首次44%失败、重启重试后成功；未指明补丁身份。 **[其他 AI 逆向 · 分析测试]**
+- [家居语音互通：给 Claude 研究自有设备固件的建议](../cases/home-voice-firmware-integration-idea.md) — Whittington建议用Claude Fable研究设备更新以扩展语音功能；父帖明确Hue、Sonos、Apple生态隔阂，没有已破解机型或刷机结果。 **[其他 AI 逆向 · 待验证]**
+- [CAN 仪表诊断：用 Claude 分析抓包，复现原扫描仪测试的转述](../cases/claude-can-cluster-diagnostic-report.md) — 本轮CAN消息映射评论的父帖指出Yuri抓取汽车CAN日志交给Claude，复现仪表诊断；未给车型、原视频或消息表。 **[其他 AI 逆向 · 待验证]**
 - [Cricut 刻字机：用 AI 研究导入尺寸失真的修复 idea](../cases/cricut-ai-import-scaling-fix-idea.md) — Pipe42uk建议AI逆向解决刻字机UI问题；父帖明确Cricut导入会乱缩放、需每次添加尺寸基准，尚无修复。 **[其他 AI 逆向 · 待验证]**
 - [Roku OS 电视：REA 映射网络路由，再发送控制请求的自述](../cases/roku-tv-rea-network-route-control.md) — greco_dev称Roku电视控制已可用，同时明确这不是真正反编译：定位局域网IP，用REA映射路由后发请求。 **[REA · 待验证]**
 - [自有扫地机器人：让 Claude Code 检查远程窥视证据的调查提示词](../cases/robot-vacuum-claude-privacy-audit-prompt.md) — tezzarc给出从照片识别型号、核对摄像头权限与账户分享、查异常访问的具体流程；不是发现机器人被入侵的报告。 **[其他 AI 逆向 · 待验证]**

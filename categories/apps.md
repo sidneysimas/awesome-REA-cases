@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [KEEP：REA 辅助重建课程、训练与记录流程的自述](../cases/keep-rea-workout-app-rebuild.md) — Anita称用REA在10分钟内重建KEEP课程筛选、训练计时、周计划和记录导出，未提供源码或对照测试。 **[REA · 待验证]**
+- [11 标签逆向提示词：引擎检查、证据分层与负例验收](../cases/claude-rea-eleven-tag-evidence-prompt.md) — Myttle为Claude Code与REA提出具授权范围的调查模板，要求标注观察/推断/未知并验证检查器能拒绝负例；未报告实测。 **[REA · 相关项目]**
+- [逆向工具索引：让 Agent 先搜索已有实现，避免重复研究](../cases/alexgaoth-reverse-tools-agent-index.md) — alexgaoth称索引12000多个逆向产生的开源工具，并提供Agent搜索skill；补查解决用途，但未核验规模、仓库或搜索质量。 **[未确认使用 REA · 相关项目]**
 - [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](../cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
 - [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](../cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
 - [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](../cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
@@ -184,7 +187,7 @@
 - [REA + archify：把分析材料整理成可交互架构图](../cases/rea-archify-diagrams.md) — 作者报告将逆向结果交给架构图 Skill，生成独立 HTML 图示。 **[REA · 相关项目]**
 - [macOS 备忘录：REA 辅助重建三栏 SwiftUI 应用的转述](../cases/apple-notes-rea-swiftui-rebuild.md) — 第三方描述调查原生备忘录后重建笔记、文件夹、搜索与删除恢复交互。 **[REA · 待验证]**
 - [Nuke / Houdini / Gurobi：让 AI 配合 Ghidra 研究替代品的 idea](../cases/industrial-tools-ai-ghidra-rebuild-idea.md) — 建议研究高价创作、求解和工业软件，制作低价替代；无实际分析结果。 **[其他 AI 逆向 · 进行中]**
-- [reverse-skill：给编程 Agent 的多目标逆向路线](../cases/reverse-skill-agent-workflows.md) — 帖子介绍把 APK、前端代码与固件的分析路径整理为 Skill。 **[未确认使用 REA · 相关项目]**
+- [reverse-skill：给编程 Agent 的多目标逆向路线](../cases/reverse-skill-agent-workflows.md) — 公开仓库提供规则路由、授权范围、工具索引和离线样本流程；178条为路由基准规模，不是成功逆向178个目标。 **[未确认使用 REA · 相关项目]**
 - [自己的预约漏斗：调查前端后重建共享日历](../cases/booking-funnel-rea-calendar.md) — 作者报告 Claude + REA 从公开前端识别预约规则与 API，做出个人日历。 **[REA · 待验证]**
 - [Lotus SmartSuite：用 AI 重建现代 Linux 版本的 idea](../cases/lotus-smartsuite-linux-revival-idea.md) — 希望将停更办公套件而非热门在售软件作为 AI 逆向保存目标。 **[其他 AI 逆向 · 进行中]**
 - [REA + 本地 Qwen / pi：商业软件与接口的多目标分析测试](../cases/rea-local-qwen-commercial-analysis-tests.md) — 作者自述测试 Aspose、CData、Hopper demo 和接口算法，未提供样本或验证记录。 **[REA · 分析测试]**

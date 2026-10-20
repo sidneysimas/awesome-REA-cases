@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [re3 / GTA III: an Opus-built NPC agent layer on an existing reverse-engineered game](../../cases/en/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez reports Jev decisions, GPT-4.1-mini dialogue and a local HTTP bridge for re3, extending existing reverse-engineered code rather than attributing its original decompilation to AI. **[Other AI-assisted work · Needs verification]**
 - [Snowboard Kids: Codex records IDO compiler patterns for N64 byte matching](../../cases/en/snowboard-kids-ido-codex-decompilation.md) — waynerad quotes an 84-day decompilation article explaining how Codex and a human study IDO 5.3 and share matching lessons; no complete matching report was obtained. **[Other AI-assisted work · Needs verification]**
 - [Flappy Bird: an ongoing Claude Fable 5.1 investigation account](../../cases/en/flappy-bird-claude-fable-research.md) — A poster says Claude Fable 5.1 is reverse-engineering Flappy Bird, without a version, recovered mechanics or playable artifact. **[Other AI-assisted work · In progress]**
 - [Harvest Moon: Back to Nature: a REA-assisted PS1-to-PC model-comparison account](../../cases/en/harvest-moon-btn-rea-model-port-comparison.md) — A poster claims Opus 5.5 Max completed a native PC version in five hours while GPT 6.1 Sol Max used four weekly quotas and made 7,004 files without working output; no code or comparison logs are provided. **[REA · Needs verification]**
