@@ -1,5 +1,200 @@
 [
   {
+    "id": "snowboard-kids-ido-codex-decompilation",
+    "title": "Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。",
+    "description": "10月20日11:00（北京时间），@waynerad 引用题为“Decompiling a Nintendo 64 game in 84 days”的文章，目标为N64游戏Snowboard Kids。引文区分它使用的SGI专有IDO 5.3与续作Snowboard Kids 2使用的GCC 2.7.2；IDO原环境依赖旧SGI软硬件，社区此前已对部分工具链逆向，并把IDO 5.3/7.1静态重编译到现代机器。这些是社区前置工作，不是Codex从零完成。\n\n引文作者说自己与LLM通常先读懂函数，再写功能近似的C，最后用permuter尝试小改动以获得机器码匹配。但IDO多轮优化会让细微C改动引起寄存器分配变化；底层结构写错时，排列搜索不能保证匹配。为共享重复出现的编译器规律，作者让Codex把观察记录到DECOMPILATION_LEARNINGS.md，供后续Agent使用。\n\n这是有具体工具链难点与经验共享方式的二手研究转引，不是本合集独立复现。84天是所引文章标题，不等于全部为Agent工时；帖子未附完整函数匹配输出，本合集也未读取短链后的全文或运行游戏，不能据此宣布项目全量字节匹配、完整移植或确认REA参与。",
+    "sources": [{"label": "waynerad转引：Snowboard Kids、IDO与Codex经验文件", "url": "https://x.com/i/status/2112378313171951813"}],
+    "snapshot_date": "2026-10-20", "metadata": ["10月20日候选快照：0赞、27浏览、0转发；为转引帖传播快照，不是原文热度或项目验证。"],
+    "en": {
+      "title": "Snowboard Kids: Codex records IDO compiler patterns for N64 byte matching",
+      "summary": "waynerad quotes an 84-day decompilation article explaining how Codex and a human study IDO 5.3 and share matching lessons; no complete matching report was obtained.",
+      "description": "At 11:00 Beijing time on October 20, @waynerad quotes an article titled 'Decompiling a Nintendo 64 game in 84 days', concerning Snowboard Kids. The excerpts distinguish its proprietary SGI IDO 5.3 compiler from GCC 2.7.2 used for Snowboard Kids 2. IDO's original environment depended on obsolete SGI hardware and software; the community had already reverse-engineered parts of the toolchain and statically recompiled IDO 5.3/7.1 for modern machines. These are prior community contributions, not work done from scratch by Codex.\n\nThe quoted author says both they and LLMs generally understand a function, write C approximating its purpose, then try small changes with a permuter to match machine code. IDO's multiple optimization passes can turn tiny C changes into different register allocations; permutation cannot guarantee a match when the underlying structure is wrong. To share recurring compiler quirks, the author prompted Codex to record observations in DECOMPILATION_LEARNINGS.md for subsequent agents.\n\nThis is a secondary research account with concrete toolchain difficulties and a lesson-sharing mechanism, not an independent reproduction by this collection. The 84 days come from the article title, not measured agent labor. The post supplies no complete function-matching output. This collection did not read the article behind the short link or run the game, and cannot establish full byte matching, a complete port or REA involvement.",
+      "metadata": ["October 20 candidate snapshot: 0 likes, 27 views, 0 reposts; engagement for the quotation post, not the original article or project validation."], "source_labels": ["waynerad's excerpts on Snowboard Kids, IDO and Codex's learning file"]
+    }
+  },
+  {
+    "id": "cricut-ai-import-scaling-fix-idea",
+    "title": "Cricut 刻字机：用 AI 研究导入尺寸失真的修复 idea",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Pipe42uk建议AI逆向解决刻字机UI问题；父帖明确Cricut导入会乱缩放、需每次添加尺寸基准，尚无修复。",
+    "description": "10月20日04:47（北京时间），@Pipe42uk 问@dcednz，AI逆向固件能否解决所述UI缺陷。补读同日04:41与04:44的父帖，dcednz说自己有一台给母亲买但未使用的Cricut刻字机：机械部分很好，控制软件却没有保留尺寸的导入，导入内容会被随机缩放。为手工恢复尺寸，他必须在每个设计加入fiducial尺寸基准，切割时也得把基准一起切出。更早上下文讨论用模板漂白T恤图案。\n\n这些父帖是往期窗口的补充背景，不是本轮新抓取案例。可明确的目标是避免每个设计都附带并切出尺寸基准；AI研究和固件修复只是Pipe42uk的提问，尚未报告反编译、补丁、测试或型号。问题可能位于控制软件而非固件，来源并未定位根因；不把建议写成已成功修改设备。",
+    "sources": [{"label": "Pipe42uk的AI逆向修复建议（往期补审）", "url": "https://x.com/i/status/2112284627377537435"}, {"label": "dcednz：Cricut控制软件与尺寸导入问题", "url": "https://x.com/i/status/2112283126328357225"}, {"label": "dcednz：乱缩放与每次切割尺寸基准的负担", "url": "https://x.com/i/status/2112283675530575972"}, {"label": "更早背景：为漂白T恤制作模板", "url": "https://x.com/i/status/2112282628825227398"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "Cricut cutter: an AI-reversing idea to fix import scaling",
+      "summary": "Pipe42uk suggests AI reversing for a cutter UI defect; parent posts identify Cricut import rescaling and the need to cut a size fiducial with every design. No fix is reported.",
+      "description": "At 04:47 Beijing time on October 20, @Pipe42uk asks @dcednz whether AI-reversed firmware could fix a UI defect. Supplementary parent posts from 04:41 and 04:44 identify a Cricut cutter bought for dcednz's mother but left unused. dcednz describes excellent mechanics but control software without dimension-preserving import: imported content is randomly rescaled. Restoring size manually requires a fiducial in every design, which also has to be cut each time. Earlier context discusses stencils for bleaching patterns onto T-shirts.\n\nThese parents supply background for a prior-window candidate, not a newly collected current-window case. The concrete goal is to avoid adding and cutting a size reference for every design. AI investigation and a firmware fix remain Pipe42uk's question; no decompilation, patch, test or exact model is reported. The defect could be in control software rather than firmware; the source does not locate its cause. This is not a successfully modified device.",
+      "metadata": [], "source_labels": ["Pipe42uk's AI-reversing repair suggestion, reviewed from a prior window", "dcednz on Cricut control software and dimensional import", "dcednz on rescaling and cutting a fiducial every time", "Earlier context: stencils for bleached T-shirts"]
+    }
+  },
+  {
+    "id": "roku-tv-rea-network-route-control",
+    "title": "Roku OS 电视：REA 映射网络路由，再发送控制请求的自述",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "greco_dev称Roku电视控制已可用，同时明确这不是真正反编译：定位局域网IP，用REA映射路由后发请求。",
+    "description": "10月20日11:01（北京时间），@greco_dev 说也完成了Roku OS电视的控制，称“100%可用”。作者随即澄清，对技术读者而言这不算真正的逆向：他只是找到电视在局域网的IP，向其路由发送请求，并用REA仓库帮助映射路由。它展示的是设备接口发现到控制的实际用途，而不是从固件恢复源码。\n\n帖子没有列出电视型号、Roku版本、具体端点、控制功能清单或可检查的测试输出。100%是作者对自己设置的描述，不是全型号兼容率；不能从关联链接推断已去广告、刷固件或制作独立客户端。本合集未连接电视或发送请求，保留为作者自述的互通案例。",
+    "sources": [{"label": "greco_dev：Roku控制与路由映射方法的澄清", "url": "https://x.com/i/status/2112378584363110486"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "Roku OS TV: REA-assisted network-route discovery and control",
+      "summary": "greco_dev reports working Roku TV control, explicitly distinguishing it from decompilation: find the local IP, map routes with REA and send requests.",
+      "description": "At 11:01 Beijing time on October 20, @greco_dev says Roku OS TV control is also finished and '100% functional'. The author immediately clarifies that, for technical readers, this is not really reverse engineering: they find the TV's local-network IP, send requests to its routes, and use the REA repository to help map those routes. The concrete use is device-interface discovery leading to control, not source recovery from firmware.\n\nThe post supplies no TV model, Roku version, endpoint list, inventory of working controls or inspectable test output. The 100% statement describes the author's setup, not compatibility across models. Linked material is not used to infer ad removal, firmware flashing or a standalone client. This collection did not connect to a TV or send requests; this remains an author-reported interoperability account.",
+      "metadata": [], "source_labels": ["greco_dev's clarification of Roku control through route mapping"]
+    }
+  },
+  {
+    "id": "ida-assist-rc15-idb-mirror",
+    "title": "IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库",
+    "category": "apps", "rea": "other-ai", "status": "related-project",
+    "summary": "in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。",
+    "description": "10月20日11:13（北京时间），@in19h 介绍IDA Assist rc15的新功能idb_mirror：以SQLite sidecar实时镜像IDA数据库，绕开IDA主线程处理读取。IDA是二进制分析工具，这项设计针对Agent查询交叉引用、字符串和类型时的阻塞问题，而不是一个已完成的目标程序重建。\n\n帖子称只读工具响应小于20毫秒，提供LLM直接访问的idb_query和Python snapshot API，并支持4倍工具并行。这些是发布者报告的能力与性能，没有给本帖对应的测量方法、负载、硬件或对照输出。没有源码和运行验证可据此确认镜像一致性、写操作安全或所有任务都快4倍；本合集未运行IDA或目标样本。",
+    "sources": [{"label": "in19h：IDA Assist rc15数据库镜像与查询介绍", "url": "https://x.com/i/status/2112381687292182586"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "IDA Assist rc15: a SQLite mirror for LLM access to IDA analysis data",
+      "summary": "in19h introduces idb_mirror and idb_query to serve read-only tools and LLM queries without queuing on IDA's main thread; latency and parallelism are not independently tested.",
+      "description": "At 11:13 Beijing time on October 20, @in19h introduces idb_mirror in IDA Assist rc15: a SQLite sidecar that mirrors IDA's database in real time and bypasses its main thread for reads. IDA is a binary-analysis tool. The design addresses blocking when agents query cross-references, strings and types, rather than documenting reconstruction of a specific target program.\n\nThe post claims read-only tool responses below 20 milliseconds, direct LLM access through idb_query, a Python snapshot API and 4x tool parallelism. These are publisher-reported features and performance; the post provides no measurement method, workload, hardware or comparative output. Without source inspection or execution, this does not establish mirror consistency, write-operation safety or fourfold speedups for every task. This collection did not run IDA or target samples.",
+      "metadata": [], "source_labels": ["in19h's introduction to IDA Assist rc15 database mirroring and queries"]
+    }
+  },
+  {
+    "id": "robot-vacuum-claude-privacy-audit-prompt",
+    "title": "自有扫地机器人：让 Claude Code 检查远程窥视证据的调查提示词",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "tezzarc给出从照片识别型号、核对摄像头权限与账户分享、查异常访问的具体流程；不是发现机器人被入侵的报告。",
+    "description": "10月20日09:21（北京时间），@tezzarc 发布完整提示词，让Claude Code调查用户自有扫地机器人是否可能被远程观看或监听。先从照片或About页面识别厂商、型号、固件、系统和摄像头/麦克风等硬件，再查询公开漏洞与厂商通告，核对视频、音频、地图、照片、遥测和云录制实际支持范围，并引导检查App的分享用户、会话、远程查看历史及警报。\n\n若在本地运行，提示词要求测试前取得许可，只调查自己的网络设备；异常登录、未知分享和不明远控才是调查线索，普通云连接不能当作窥视证据。它明确禁止root、利用漏洞、绕过认证或访问他人设备；若厂商不提供日志，要报告无法确定。\n\n这是具体的隐私调查idea与可复用提示词，不是某型号已被攻破或已安全的结论。来源没有实际型号、抓包、访问日志或执行报告，也未说明REA参与。本合集未扫描网络、检查账户或连接设备。",
+    "sources": [{"label": "tezzarc：机器人隐私调查完整提示词与限制", "url": "https://x.com/i/status/2112353511417532645"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "An owned robot vacuum: a Claude Code prompt for investigating remote-viewing evidence",
+      "summary": "tezzarc provides a concrete workflow to identify a device from photos, check camera access and shared accounts, and look for suspicious access; no robot compromise is reported.",
+      "description": "At 09:21 Beijing time on October 20, @tezzarc publishes a full prompt asking Claude Code to investigate whether a user's own robot vacuum could be watched or listened through remotely. It starts with a photo or About screen to identify manufacturer, model, firmware, OS and camera/microphone hardware; researches public vulnerabilities and manufacturer advisories; checks actual support for video, audio, maps, photos, telemetry and cloud recordings; and guides inspection of the app's shared users, sessions, remote-viewing history and alerts.\n\nFor local execution it requires permission before testing and limits investigation to owned network devices. Unexpected logins, unknown sharing and unexplained remote commands are investigation leads; ordinary cloud connections are not evidence of spying. It explicitly excludes rooting, exploitation, authentication bypass and access to other people's devices. Missing manufacturer logs must produce an inconclusive result.\n\nThis is a concrete privacy-investigation idea and reusable prompt, not a finding that any model is compromised or secure. No actual model, packet capture, access log or execution report is supplied, and REA use is not stated. This collection did not scan networks, inspect accounts or connect to devices.",
+      "metadata": [], "source_labels": ["tezzarc's full robot privacy-investigation prompt and boundaries"]
+    }
+  },
+  {
+    "id": "wechat-channels-workbuddy-rea-download",
+    "title": "微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。",
+    "description": "10月20日09:46（北京时间），@aehyok 报告用WorkBuddy、REA和DeepSeek-V4.1-Flash-1017完成微信视频号视频下载。目标明确为取得视频号视频，而不是重建整个微信；来源给出了工具组合，但没有说明是分析客户端、网页请求、媒体地址还是其他路径。\n\n作者同时称海外版可免费用到10月31日、每天约一亿token额度，并提醒不当使用可能违规或封号。这些是当日用户对服务条款与额度的描述，未核实为长期承诺或本次实际消耗。帖子没有脚本、源码、接口样本或下载结果可供本合集验证，不推断其绕过保护或取得受限内容，也不构成使用授权。本合集未登录微信、下载视频或执行目标代码。",
+    "sources": [{"label": "aehyok：视频号下载与WorkBuddy/REA/DeepSeek工具组合", "url": "https://x.com/i/status/2112359843264950745"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "WeChat Channels: an author-reported download workflow with WorkBuddy, REA and DeepSeek",
+      "summary": "aehyok reports downloading WeChat Channels videos with WorkBuddy, REA and DeepSeek-V4.1-Flash-1017, without interfaces, code or inspectable output.",
+      "description": "At 09:46 Beijing time on October 20, @aehyok reports completing WeChat Channels video downloading using WorkBuddy, REA and DeepSeek-V4.1-Flash-1017. The target is obtaining Channels videos, not rebuilding all of WeChat. The tool combination is explicit, but the post does not say whether it analyzed a client, web requests, media URLs or another path.\n\nThe author also says the overseas version is free until October 31 with roughly 100 million tokens daily, and warns of possible policy violations or account bans from improper use. These are that day's user descriptions of service terms and quotas, not verified long-term commitments or measured consumption for this task. No script, source, interface sample or download output is available for this collection to check. Protection bypass or access to restricted content is not inferred, and the report grants no usage rights. This collection did not log into WeChat, download videos or execute target code.",
+      "metadata": [], "source_labels": ["aehyok on Channels downloading with WorkBuddy, REA and DeepSeek"]
+    }
+  },
+  {
+    "id": "claude-code-harness-live-session",
+    "title": "Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。",
+    "description": "10月20日09:04（北京时间），@pvergadia 预告“明天”举办免费直播，通过逆向Claude Code Harness讲解如何为自己的AI Agent构建harness。这里harness指承载模型、工具调用与任务执行的编排层，具体用途是学习既有Agent产品的运行组织方式，而非恢复某个业务App。\n\n来源只有活动预告与报名短链，没有课程录像、代码、分析记录、所用模型或REA步骤。保留为有具名目标和教学用途的相关项目，不把次日计划写成已举办，也不据此断言已完整恢复Claude Code内部实现。未访问报名页或提交个人资料。",
+    "sources": [{"label": "pvergadia：Claude Code Harness逆向直播预告", "url": "https://x.com/i/status/2112349301141823843"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "Claude Code Harness: pvergadia announces a live session on agent orchestration",
+      "summary": "pvergadia announces a next-day session reverse-engineering Claude Code Harness to teach building agent harnesses; neither a completed course nor recovered code is established.",
+      "description": "At 09:04 Beijing time on October 20, @pvergadia announces a free live session for 'tomorrow', reverse-engineering Claude Code Harness to explain building harnesses for one's own AI agents. A harness is the orchestration layer hosting the model, tool calls and task execution. The concrete purpose is to learn how an existing agent product organizes execution, not to recover a business application.\n\nThe source is only an announcement and registration short link, with no recording, code, analysis log, model attribution or REA steps. It is retained as a related project with a named target and educational purpose. A next-day plan is not reported as a completed event or full recovery of Claude Code internals. No registration page was accessed or personal data submitted.",
+      "metadata": [], "source_labels": ["pvergadia's announcement of a Claude Code Harness reverse-engineering session"]
+    }
+  },
+  {
+    "id": "colateral-agentic-workspace-reverse-marketplace",
+    "title": "CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "CoLateral账号宣传把逆向放进一体化Agent工作区，再把构建发布到市场；没有给实际目标或验证记录。",
+    "description": "10月20日10:38（北京时间），@colateralai 介绍CoLateral为All-in-One Agentic Workspace，宣传可在工作区内“reverse engineer anything”，随后将自己的构建发布到marketplace供他人分享。具体方向是把研究与后续构建、分发放进同一工作区。\n\n这是具名项目的产品设计介绍，不是已逆向任意软件的能力证明。帖子没有说明分析引擎、是否接入morluto/rea、支持文件格式、权限隔离、实际目标或成功运行的构建。本合集未进入工作区、上传软件或向市场发布内容，rea保持unknown。",
+    "sources": [{"label": "CoLateral账号：逆向工作区与构建市场介绍", "url": "https://x.com/i/status/2112372882156265760"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "CoLateral: a promoted agent workspace for reversing and sharing builds",
+      "summary": "CoLateral's account promotes reverse engineering inside an all-in-one agent workspace, followed by sharing builds in its marketplace; no target or validation record is supplied.",
+      "description": "At 10:38 Beijing time on October 20, @colateralai presents CoLateral as an All-in-One Agentic Workspace, advertising that users can 'reverse engineer anything' inside it and then post their builds in a marketplace to share with others. The concrete product direction is to combine investigation, subsequent construction and distribution in one workspace.\n\nThis is a named project's product-design introduction, not proof of arbitrary software-reversing capability. The post does not identify analysis engines, integration with morluto/rea, supported formats, permission isolation, a target or a successfully running build. This collection did not enter the workspace, upload software or publish to the marketplace; rea remains unknown.",
+      "metadata": [], "source_labels": ["CoLateral's account introducing its reversing workspace and build marketplace"]
+    }
+  },
+  {
+    "id": "deepseek-harness-claude-code-risk-inspection",
+    "title": "Claude Code 风控：用户将拒答后的研究交给 DeepSeek Harness",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "wquguru把研究Claude Code风控列为DeepSeek Harness用途；95%/5%是个人工具使用比例，不是绕过或研究成功率。",
+    "description": "10月20日10:44（北京时间），@wquguru 介绍个人工作分配：Claude Code约占95%，DeepSeek Harness约占5%。对Claude Code认为有风险或不愿处理的事，作者转用DeepSeek Harness，具体列出逆向分析、配置代理与拆Claude Code自身风控，并认为1017版本在一些场景更顺手。\n\n可记录的具体目标是研究Claude Code的风控行为，背景是原工具拒绝后的替代模型选择。来源没有给规则、样本、补丁或对照结果，不能将工具偏好写成已绕过风控、恢复安全策略或实现代理；也没有确认REA参与。95%/5%只是作者自报使用比例，不是任务成功率，本合集未做绕过测试。",
+    "sources": [{"label": "wquguru：DeepSeek Harness与Claude Code风控研究的用途自述", "url": "https://x.com/i/status/2112374333184311413"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "Claude Code risk controls: a user routes refused research to DeepSeek Harness",
+      "summary": "wquguru lists investigating Claude Code's risk controls among DeepSeek Harness uses; 95%/5% describes personal tool usage, not bypass or research success rates.",
+      "description": "At 10:44 Beijing time on October 20, @wquguru describes a personal workload split of about 95% Claude Code and 5% DeepSeek Harness. For tasks Claude Code considers risky or refuses, the author switches to DeepSeek Harness, explicitly listing reverse analysis, proxy configuration and investigating Claude Code's own risk controls. They consider the 1017 version more convenient in some situations.\n\nThe concrete target is Claude Code's risk-control behavior, motivated by selecting another model after a refusal. No recovered rules, sample, patch or comparison result is supplied. Tool preference is not reported as a successful bypass, recovered safety policy or implemented proxy; REA involvement is also unconfirmed. The 95%/5% figures are self-reported usage shares, not task success rates. This collection performed no bypass tests.",
+      "metadata": [], "source_labels": ["wquguru's account of using DeepSeek Harness to investigate Claude Code risk controls"]
+    }
+  },
+  {
+    "id": "philippine-banana-codex-rea-website",
+    "title": "菲律宾香蕉网站：Codex 用 REA 研究多个参考站的自述",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "aFuJiyosn称让Codex用REA研究不同网站，再改成菲律宾产香蕉主题站；未给参考站或可访问成品。",
+    "description": "10月20日10:46（北京时间），@aFuJiyosn 用日语说，正在让Codex使用REA，借鉴不同网站并改造成菲律宾产香蕉的网站。具体用途是为一个明确的产品主题搭网站，不是宣称复制所有站点功能。\n\n帖子明确给出Codex与REA，但没有列参考URL、页面、调用接口、视觉对照、仓库或已上线站点。按进行中作者自述记录，不能补造电商支付、库存或客户交付，也不将借鉴设计视为获得原站代码、商标或素材的使用权。本合集未访问或运行成品。",
+    "sources": [{"label": "aFuJiyosn：Codex/REA研究参考站并改为香蕉主题", "url": "https://x.com/i/status/2112374830507213236"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "A Philippine banana website: Codex and REA study reference sites",
+      "summary": "aFuJiyosn reports using Codex and REA to study multiple websites and turn them into a Philippine-grown banana site; neither references nor an accessible build are provided.",
+      "description": "At 10:46 Beijing time on October 20, @aFuJiyosn says in Japanese that they are having Codex use REA to borrow from various websites and turn the results into a site about Philippine-grown bananas. The concrete use is a website for a specific product theme, not a claim to reproduce every reference site's functionality.\n\nCodex and REA are explicit, but reference URLs, pages, interfaces, visual comparisons, a repository and a deployed site are absent. This is recorded as an in-progress author account. Payments, inventory or client delivery are not invented, and design imitation does not confer rights to source code, trademarks or assets. This collection did not access or run a finished site.",
+      "metadata": [], "source_labels": ["aFuJiyosn on studying reference sites with Codex/REA for a banana-themed website"]
+    }
+  },
+  {
+    "id": "malware-unpacking-claude-daybreak-refusal",
+    "title": "恶意软件解包：Claude 内存转储模块请求被拒与降级不稳定的报告",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "shotgunner101报告为恶意软件解包制作模块时遭Claude降级与拒绝，旧模型版本又有崩溃；不是已完成的解包工具。",
+    "description": "10月20日11:14（北京时间），@shotgunner101 回顾几周前的一项请求：让Opus 5.5写模块，在手工映射到远程进程后转储活动应用内存，以减少恶意软件察觉解包研究的机会。作者称会被降到Opus 4.8后拒绝，改用4.6才可继续，但代码有崩溃与稳定性问题。这是具体逆向研究用途的受阻经历，未提供模块、样本或运行日志。\n\n作者还说Claude对修公开PoC以测试自家公司安全栈、个人威胁行为者OSINT与新漏洞研究更严格，并认为Daybreak也逐渐拒绝CTF、逆向与对手模拟，提到CVP/TAC和企业身份验证门槛。这些是个人观察，不是平台政策的独立核查，也不能证明模型普遍降级或企业验证后必获准。没有命名恶意软件、成功解包结果或REA步骤，本合集未运行样本或生成转储模块。",
+    "sources": [{"label": "shotgunner101：恶意软件解包研究、模型拒绝与旧版本稳定性", "url": "https://x.com/i/status/2112381821153329312"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "Malware unpacking: reported Claude refusals and unstable older-model output",
+      "summary": "shotgunner101 reports downgrades and refusals when requesting a memory-dump module for malware unpacking, followed by crashes with an older model; no completed unpacker is established.",
+      "description": "At 11:14 Beijing time on October 20, @shotgunner101 recalls a request from a few weeks earlier: have Opus 5.5 write a module to dump active-application memory after manual mapping into a remote process, aiming to make malware-unpacking research less detectable by the malware. The author says the request is downgraded to Opus 4.8 and refused, while switching to 4.6 allows progress but produces crashes and stability problems. This is a blocked experience with a concrete reverse-engineering purpose, without a module, sample or execution log.\n\nThe author also describes stricter Claude responses to repairing public PoCs for testing their company's security stack, individual threat-actor OSINT and new-vulnerability research. They say Daybreak increasingly refuses CTF, reversing and adversary-emulation tasks too, mentioning CVP/TAC and corporate identity checks. These are personal observations, not independently checked platform policies or proof of universal downgrading or guaranteed approval after corporate verification. No malware name, successful unpacking output or REA steps are supplied. This collection did not run samples or produce a dumping module.",
+      "metadata": [], "source_labels": ["shotgunner101 on unpacking research, model refusals and older-version instability"]
+    }
+  },
+  {
+    "id": "mvave-fm1-ai-firmware-reader-report",
+    "title": "M-VAVE FM-1：AI 固件玩法与价格变化的读者转述",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "riverleaf88称FM-1合成器因AI辅助固件玩法走热，价格由一百多到三百多；未给具体固件或效果测试。",
+    "description": "10月20日11:40（北京时间），@riverleaf88 提到M-VAVE FM-1玩具合成器，称原先一百多即可买到，AI加持后出现多种固件玩法，价格已到三百多。该设备是具体的音乐硬件研究目标，可作为AI改造旧有产品玩法的读者线索。\n\n帖子没有列固件名称、仓库、模型、功能差异或音频对照，不能据此恢复具体合成算法、确认自定义固件可刷入或宣称音质提升。价格没有明确币种、交易渠道或时间序列，只保留作者的市场观察，不把它写成核实成交价、收益或固件兼容性证据。未确认使用REA，本合集未下载或刷写固件。",
+    "sources": [{"label": "riverleaf88：M-VAVE FM-1的AI固件潮流与价格观察", "url": "https://x.com/i/status/2112388430210728357"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "M-VAVE FM-1: a reader account of AI firmware experimentation and prices",
+      "summary": "riverleaf88 attributes FM-1 interest and a rise from the low hundreds to over three hundred to AI-assisted firmware experimentation, without a firmware release or performance test.",
+      "description": "At 11:40 Beijing time on October 20, @riverleaf88 mentions the M-VAVE FM-1 toy synthesizer, saying it previously cost a little over one hundred and now exceeds three hundred as AI-assisted firmware experiments proliferate. The device is a specific music-hardware research target, providing a reader lead on AI modifications to an existing product.\n\nThe post names no firmware, repository, model, feature difference or audio comparison. Recovery of synthesis algorithms, flashable custom firmware and improved sound quality are not established. The price claim has no explicit currency, sales channel or time series and remains the author's market observation, not verified transaction prices, profit or firmware-compatibility evidence. REA use is unconfirmed; this collection did not download or flash firmware.",
+      "metadata": [], "source_labels": ["riverleaf88's observations on FM-1 AI firmware experimentation and prices"]
+    }
+  },
+  {
+    "id": "webos-rea-apk-sideload-claim",
+    "title": "webOS 电视侧载 APK：平台表述仍待核实的 REA 改造自述",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "Devcop101称用REA给webOS侧载APK并移除预装软件；APK与平台组合可疑，没有型号或日志佐证。",
+    "description": "10月20日11:50（北京时间），@Devcop101 称用REA给webOS电视侧载APK、移除所有出厂臃肿软件，电视终于变快。明确的用途是减少预装软件并添加应用，但来源把Android APK格式与webOS混用，技术表述尚待确认，不能写成通用可执行教程或据此推断电视实际系统。\n\n帖子没有型号、系统版本、软件包、指令、运行日志、前后测量或可检查的代码；“所有”软件与“变快”都是作者说法，不代表已核实安全卸载或性能收益。也不能据此确认固件逆向、root或Android兼容层。本合集未侧载、删除电视软件或测试设备，按有具体目标但存在平台矛盾的未验证自述保留。",
+    "sources": [{"label": "Devcop101：webOS、APK与去预装软件的原始表述", "url": "https://x.com/i/status/2112390862676148495"}],
+    "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {
+      "title": "APKs on webOS TV: an REA modification claim with unresolved platform wording",
+      "summary": "Devcop101 claims to sideload APKs and remove factory software on webOS with REA; the platform/format combination is questionable and unsupported by a model or log.",
+      "description": "At 11:50 Beijing time on October 20, @Devcop101 says they used REA to sideload APKs onto a webOS TV and remove all factory bloatware, making the TV fast. The concrete goal is reducing preinstalled software and adding apps, but the source mixes Android's APK format with webOS. This technical wording remains unresolved and is not presented as a general working procedure or grounds to infer the TV's actual OS.\n\nNo model, OS version, package, commands, execution log, before/after measurement or inspectable code is provided. 'All' software and improved speed are author claims, not established safe removal or performance gains. Firmware reversing, rooting and an Android compatibility layer are not established either. This collection did not sideload, remove TV software or test devices. The account is retained as an unverified claim with a concrete goal and an explicit platform inconsistency.",
+      "metadata": [], "source_labels": ["Devcop101's original wording on webOS, APKs and factory-software removal"]
+    }
+  },
+  {
     "id": "magic-mouse-ipad-opus-virtual-hid",
     "title": "MagicSwipe：Opus 研究 Magic Mouse，让 iPad 通用控制支持手势",
     "category": "hardware", "rea": "other-ai", "status": "in-progress",
@@ -704,10 +899,10 @@
     "id": "termix-rea-escrow-analysis-service",
     "title": "TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传",
     "category": "apps", "rea": "unknown", "status": "related-project",
-    "summary": "第三方称TermiX的REA接受合约、文件和URL，按报告验收结算，10美元起；未取得真实订单或分析报告。",
-    "description": "10月19日14:15（北京时间），@Coin_MonkeyKing 介绍TermiX上线名为REA的Agent服务：输入未开源EVM合约地址，可返回函数接口、权限方法、selector、参数类型与部署字节码证据，也宣传支持URL、JS/Electron、Windows二进制及.NET文件。每项发现据称附证据ID与文件SHA-256，便于定位所分析的具体文件。\n\n15:03另一候选补充可协商报价、资金托管在BNB Chain、用户接受报告后结算。10美元起与一天交付均为第三方营销说法，不是已核账单、实际速度或质量对照。多篇转发谈‘代替数周人工’或‘发现密码’，没有样本、订单、合约实现、完整报告或验证记录，不能据此声称已发现漏洞或保证资金安全。\n\n这是有明确输入、交付和结算设计的相关项目，不是某个目标已完成逆向的案例。服务叫REA不证明使用morluto/rea官方后端、获其认可或具有同等功能，因此rea标记unknown。本合集未提交文件、付费、连接钱包或测试链上托管；宣传热度不能替代交付证据。",
-    "sources": [{"label": "候选：TermiX REA输入、证据与托管宣传", "url": "https://x.com/i/status/2112065153181323543"}, {"label": "15:03候选：可协商报价及报告验收结算", "url": "https://x.com/i/status/2112077195812475013"}], "snapshot_date": "2026-10-19", "metadata": [],
-    "en": {"title": "TermiX REA: promoted contract/binary analysis with evidence hashes and BNB escrow", "summary": "Third parties describe a TermiX REA service accepting contracts, files and URLs, with report-acceptance settlement from $10; no actual order or analysis report was obtained.", "description": "At 14:15 Beijing time on October 19, @Coin_MonkeyKing introduces an agent service named REA on TermiX. For an unpublished EVM contract address, it is said to return interfaces, permission-related methods, selectors, parameter types and deployment-bytecode evidence. URL, JS/Electron, Windows binary and .NET analysis are also advertised. Findings reportedly carry evidence IDs and file SHA-256 hashes to identify the exact analyzed file.\n\nAnother candidate at 15:03 adds negotiable pricing, BNB Chain escrow and settlement after the user accepts the report. Pricing from $10 and delivery within a day are third-party marketing claims, not verified invoices, measured speed or quality comparisons. Reposts claim to replace weeks of manual work or find passwords, but supply no sample, order, escrow implementation, complete report or validation record. Vulnerability discovery and fund safety cannot be established from these claims.\n\nThis is a related project with defined inputs, deliverables and settlement design, not completed reversing of a specific target. The REA name does not establish use of morluto/rea's official backend, endorsement or equivalent functionality, so rea is marked unknown. No file submission, payment, wallet connection or on-chain escrow test was performed. Marketing attention is not delivery evidence.", "metadata": [], "source_labels": ["Candidate: TermiX REA inputs, evidence and escrow promotion", "15:03 candidate: negotiable pricing and report-acceptance settlement"]}
+    "summary": "TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。",
+    "description": "10月19日14:15（北京时间），@Coin_MonkeyKing 介绍TermiX上线名为REA的Agent服务：输入未开源EVM合约地址，可返回函数接口、权限方法、selector、参数类型与部署字节码证据，也宣传支持URL、JS/Electron、Windows二进制及.NET文件。每项发现据称附证据ID与文件SHA-256，便于定位所分析的具体文件。15:03另一来源补充可协商报价、BNB Chain托管和用户接受报告后结算；10美元起与一天交付是宣传条件，不是已核账单或实际速度。\n\n10月20日10:06，@liaoblove520 称对照官方PancakeSwap Router演示与公开源码，核对了24个函数编号，无多无少；画面可见的几行参数类型也吻合。他还称自行拉取链上字节码计算SHA-256，与报告中2f446ab1开头、4e88结尾的指纹一致。这比泛泛转发更具体，但仍是该评论者报告的检查，不是本合集复算。来源没有合约地址、链与版本、24项清单、完整哈希、脚本或完整报告；截断指纹不能当成完整校验值，不能验证全部参数、状态可变性、语义或跨合约可靠性。\n\n保留为有具体交付设计与新增读者对照报告的相关项目，不据此称安全审计通过、发现漏洞或保证托管资金安全。服务名REA不证明接入morluto/rea官方后端、获认可或具有同等功能，rea仍为unknown。本合集未提交文件、付费、连接钱包或测试链上托管，也未取得真实订单与完整分析报告。",
+    "sources": [{"label": "TermiX REA输入、证据与托管宣传", "url": "https://x.com/i/status/2112065153181323543"}, {"label": "15:03来源：可协商报价及报告验收结算", "url": "https://x.com/i/status/2112077195812475013"}, {"label": "10月20日liaoblove520：PancakeSwap Router 24函数与哈希核对自述", "url": "https://x.com/i/status/2112364878539473162"}], "snapshot_date": "2026-10-20", "metadata": [],
+    "en": {"title": "TermiX REA: promoted contract/binary analysis with evidence hashes and BNB escrow", "summary": "TermiX promotes evidence-linked analysis jobs; liaoblove520 adds a reported check of 24 PancakeSwap Router functions and a bytecode hash, without an address or complete report for recomputation.", "description": "At 14:15 Beijing time on October 19, @Coin_MonkeyKing introduces an agent service named REA on TermiX. For an unpublished EVM contract address, it is said to return interfaces, permission-related methods, selectors, parameter types and deployed-bytecode evidence. URL, JS/Electron, Windows binary and .NET analysis are also advertised. Findings reportedly carry evidence IDs and file SHA-256 hashes. A 15:03 source adds negotiable pricing, BNB Chain escrow and settlement after user acceptance. Pricing from $10 and delivery within a day are advertised terms, not verified invoices or measured speed.\n\nAt 10:06 on October 20, @liaoblove520 says they compared an official PancakeSwap Router demonstration with public source and matched all 24 function identifiers, with neither extras nor omissions; the few parameter-type rows visible in the footage also matched. They additionally report fetching on-chain bytecode and computing a SHA-256 matching a report fingerprint beginning 2f446ab1 and ending 4e88. This is more concrete than a general repost but remains the commenter's reported check, not recomputation by this collection. The source supplies no contract address, chain/version, 24-item list, full hash, script or complete report. An abbreviated fingerprint is not a complete checksum. Full parameter recovery, state mutability, semantics and reliability across contracts remain unestablished.\n\nThis remains a related project with a defined delivery design and a new reader-reported comparison, not a passed security audit, vulnerability discovery or guarantee of escrow safety. The REA name does not prove integration with morluto/rea's official backend, endorsement or equivalent capabilities; rea remains unknown. This collection submitted no files, made no payments, connected no wallet and tested no on-chain escrow, and obtained neither an actual order nor a complete analysis report.", "metadata": [], "source_labels": ["TermiX REA inputs, evidence and escrow promotion", "15:03 source on negotiable pricing and report-acceptance settlement", "October 20: liaoblove520's reported PancakeSwap Router 24-function and hash comparison"]}
   },
   {
     "id": "deltarune-roblox-luau-ai-recomp-controversy",

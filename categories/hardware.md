@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Cricut 刻字机：用 AI 研究导入尺寸失真的修复 idea](../cases/cricut-ai-import-scaling-fix-idea.md) — Pipe42uk建议AI逆向解决刻字机UI问题；父帖明确Cricut导入会乱缩放、需每次添加尺寸基准，尚无修复。 **[其他 AI 逆向 · 待验证]**
+- [Roku OS 电视：REA 映射网络路由，再发送控制请求的自述](../cases/roku-tv-rea-network-route-control.md) — greco_dev称Roku电视控制已可用，同时明确这不是真正反编译：定位局域网IP，用REA映射路由后发请求。 **[REA · 待验证]**
+- [自有扫地机器人：让 Claude Code 检查远程窥视证据的调查提示词](../cases/robot-vacuum-claude-privacy-audit-prompt.md) — tezzarc给出从照片识别型号、核对摄像头权限与账户分享、查异常访问的具体流程；不是发现机器人被入侵的报告。 **[其他 AI 逆向 · 待验证]**
+- [M-VAVE FM-1：AI 固件玩法与价格变化的读者转述](../cases/mvave-fm1-ai-firmware-reader-report.md) — riverleaf88称FM-1合成器因AI辅助固件玩法走热，价格由一百多到三百多；未给具体固件或效果测试。 **[其他 AI 逆向 · 待验证]**
+- [webOS 电视侧载 APK：平台表述仍待核实的 REA 改造自述](../cases/webos-rea-apk-sideload-claim.md) — Devcop101称用REA给webOS侧载APK并移除预装软件；APK与平台组合可疑，没有型号或日志佐证。 **[REA · 待验证]**
 - [MagicSwipe：Opus 研究 Magic Mouse，让 iPad 通用控制支持手势](../cases/magic-mouse-ipad-opus-virtual-hid.md) — saikumar公开MagicSwipe，以私有触摸接口和Karabiner虚拟HID把双指手势转成iPad快捷键；仅项目报告实机测试。 **[其他 AI 逆向 · 进行中]**
 - [Fuji 相机：逆向 App 后让 Claude 上传胶片模拟设置](../cases/fuji-claude-film-settings-upload.md) — max称研究Fuji应用后自动选择并上传胶片设置、筛选拍摄照片，另称已开源；仓库与实机结果尚未核实。 **[其他 AI 逆向 · 待验证]**
 - [复古模拟器主机：Claude 改 ROM 列表，再接 AWS 游戏库的自述](../cases/retro-console-claude-rom-library-aws.md) — 葡语作者称购买模拟器主机后让Claude改善固件，10分钟做出更好的ROM列表，再把游戏放到AWS；未证实流式运行。 **[其他 AI 逆向 · 待验证]**

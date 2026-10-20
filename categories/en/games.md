@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [Snowboard Kids: Codex records IDO compiler patterns for N64 byte matching](../../cases/en/snowboard-kids-ido-codex-decompilation.md) — waynerad quotes an 84-day decompilation article explaining how Codex and a human study IDO 5.3 and share matching lessons; no complete matching report was obtained. **[Other AI-assisted work · Needs verification]**
 - [Flappy Bird: an ongoing Claude Fable 5.1 investigation account](../../cases/en/flappy-bird-claude-fable-research.md) — A poster says Claude Fable 5.1 is reverse-engineering Flappy Bird, without a version, recovered mechanics or playable artifact. **[Other AI-assisted work · In progress]**
 - [Harvest Moon: Back to Nature: a REA-assisted PS1-to-PC model-comparison account](../../cases/en/harvest-moon-btn-rea-model-port-comparison.md) — A poster claims Opus 5.5 Max completed a native PC version in five hours while GPT 6.1 Sol Max used four weekly quotas and made 7,004 files without working output; no code or comparison logs are provided. **[REA · Needs verification]**
 - [eFootball: AI-inferred accuracy and speed thresholds of 90, with a manual-measurement disagreement](../../cases/en/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN adds a report of roughly 40% lower per-point speed gains above 90, while noting AI results do not show a manually measured 96–99 effect; formulas and raw experiments are absent. **[Other AI-assisted work · Needs verification]**

@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**589 entries**, organized by use case, without a Top-N or popularity threshold.
+**602 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (132)
-- [Hardware and interoperability](categories/en/hardware.md) (136)
-- [Applications and clients](categories/en/apps.md) (269)
+- [Games and preservation](categories/en/games.md) (133)
+- [Hardware and interoperability](categories/en/hardware.md) (141)
+- [Applications and clients](categories/en/apps.md) (276)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (52)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Snowboard Kids: Codex records IDO compiler patterns for N64 byte matching](cases/en/snowboard-kids-ido-codex-decompilation.md) — waynerad quotes an 84-day decompilation article explaining how Codex and a human study IDO 5.3 and share matching lessons; no complete matching report was obtained. **[Other AI-assisted work · Needs verification]**
 - [Flappy Bird: an ongoing Claude Fable 5.1 investigation account](cases/en/flappy-bird-claude-fable-research.md) — A poster says Claude Fable 5.1 is reverse-engineering Flappy Bird, without a version, recovered mechanics or playable artifact. **[Other AI-assisted work · In progress]**
 - [Harvest Moon: Back to Nature: a REA-assisted PS1-to-PC model-comparison account](cases/en/harvest-moon-btn-rea-model-port-comparison.md) — A poster claims Opus 5.5 Max completed a native PC version in five hours while GPT 6.1 Sol Max used four weekly quotas and made 7,004 files without working output; no code or comparison logs are provided. **[REA · Needs verification]**
 - [eFootball: AI-inferred accuracy and speed thresholds of 90, with a manual-measurement disagreement](cases/en/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN adds a report of roughly 40% lower per-point speed gains above 90, while noting AI results do not show a manually measured 96–99 effect; formulas and raw experiments are absent. **[Other AI-assisted work · Needs verification]**
@@ -163,6 +164,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Cricut cutter: an AI-reversing idea to fix import scaling](cases/en/cricut-ai-import-scaling-fix-idea.md) — Pipe42uk suggests AI reversing for a cutter UI defect; parent posts identify Cricut import rescaling and the need to cut a size fiducial with every design. No fix is reported. **[Other AI-assisted work · Needs verification]**
+- [Roku OS TV: REA-assisted network-route discovery and control](cases/en/roku-tv-rea-network-route-control.md) — greco_dev reports working Roku TV control, explicitly distinguishing it from decompilation: find the local IP, map routes with REA and send requests. **[REA · Needs verification]**
+- [An owned robot vacuum: a Claude Code prompt for investigating remote-viewing evidence](cases/en/robot-vacuum-claude-privacy-audit-prompt.md) — tezzarc provides a concrete workflow to identify a device from photos, check camera access and shared accounts, and look for suspicious access; no robot compromise is reported. **[Other AI-assisted work · Needs verification]**
+- [M-VAVE FM-1: a reader account of AI firmware experimentation and prices](cases/en/mvave-fm1-ai-firmware-reader-report.md) — riverleaf88 attributes FM-1 interest and a rise from the low hundreds to over three hundred to AI-assisted firmware experimentation, without a firmware release or performance test. **[Other AI-assisted work · Needs verification]**
+- [APKs on webOS TV: an REA modification claim with unresolved platform wording](cases/en/webos-rea-apk-sideload-claim.md) — Devcop101 claims to sideload APKs and remove factory software on webOS with REA; the platform/format combination is questionable and unsupported by a model or log. **[REA · Needs verification]**
 - [MagicSwipe: Opus-assisted Magic Mouse gestures for iPad Universal Control](cases/en/magic-mouse-ipad-opus-virtual-hid.md) — saikumar publishes MagicSwipe, translating two-finger gestures into iPad shortcuts through private touch interfaces and Karabiner virtual HID; device testing is project-reported only. **[Other AI-assisted work · In progress]**
 - [Fuji cameras: Claude-selected film settings uploaded after app reversing](cases/en/fuji-claude-film-settings-upload.md) — max reports investigating the Fuji app to select and upload film settings and pick photos, and claims an open-source release; repository and device results remain unverified. **[Other AI-assisted work · Needs verification]**
 - [Retro emulator console: Claude-assisted ROM browser and AWS library account](cases/en/retro-console-claude-rom-library-aws.md) — A Portuguese-speaking poster says Claude improved console firmware with a better ROM browser in ten minutes, then games were put on AWS; streaming execution is not established. **[Other AI-assisted work · Needs verification]**
@@ -302,6 +308,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [IDA Assist rc15: a SQLite mirror for LLM access to IDA analysis data](cases/en/ida-assist-rc15-idb-mirror.md) — in19h introduces idb_mirror and idb_query to serve read-only tools and LLM queries without queuing on IDA's main thread; latency and parallelism are not independently tested. **[Other AI-assisted work · Related project]**
+- [WeChat Channels: an author-reported download workflow with WorkBuddy, REA and DeepSeek](cases/en/wechat-channels-workbuddy-rea-download.md) — aehyok reports downloading WeChat Channels videos with WorkBuddy, REA and DeepSeek-V4.1-Flash-1017, without interfaces, code or inspectable output. **[REA · Needs verification]**
+- [Claude Code Harness: pvergadia announces a live session on agent orchestration](cases/en/claude-code-harness-live-session.md) — pvergadia announces a next-day session reverse-engineering Claude Code Harness to teach building agent harnesses; neither a completed course nor recovered code is established. **[REA use unconfirmed · Related project]**
+- [CoLateral: a promoted agent workspace for reversing and sharing builds](cases/en/colateral-agentic-workspace-reverse-marketplace.md) — CoLateral's account promotes reverse engineering inside an all-in-one agent workspace, followed by sharing builds in its marketplace; no target or validation record is supplied. **[REA use unconfirmed · Related project]**
+- [Claude Code risk controls: a user routes refused research to DeepSeek Harness](cases/en/deepseek-harness-claude-code-risk-inspection.md) — wquguru lists investigating Claude Code's risk controls among DeepSeek Harness uses; 95%/5% describes personal tool usage, not bypass or research success rates. **[Other AI-assisted work · Needs verification]**
+- [A Philippine banana website: Codex and REA study reference sites](cases/en/philippine-banana-codex-rea-website.md) — aFuJiyosn reports using Codex and REA to study multiple websites and turn them into a Philippine-grown banana site; neither references nor an accessible build are provided. **[REA · In progress]**
+- [Malware unpacking: reported Claude refusals and unstable older-model output](cases/en/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101 reports downgrades and refusals when requesting a memory-dump module for malware unpacking, followed by crashes with an older model; no completed unpacker is established. **[Other AI-assisted work · Needs verification]**
 - [Signal Desktop: a five-question REA/Codex source-comparison self-test](cases/en/signal-desktop-rea-five-question-test.md) — Aakash Gupta reports five correct answers in 3–7 minutes each, but Codex directly read app files after one REA integrity error and timeout; remote configuration limits conclusions. **[REA · Analysis test]**
 - [Android API Extraction Skill: trace UI call flows to HTTP endpoints](cases/en/android-api-extraction-claude-skill.md) — SimoneAvogadro's Claude Code skill organizes decompilation, call-flow tracing and API extraction. Public documentation exists; no APK or name-recovery rate was tested here. **[Other AI-assisted work · Related project]**
 - [dummy desktop agent: integrating REA and testing large-JSON evidence handling on Discord](cases/en/dummy-rea-discord-integration.md) — subhraneel reports integrating REA into the self-built dummy desktop agent and investigating Discord as expected, saving large JSON files before LLM compaction; recovered features are unspecified. **[REA · In progress]**
@@ -333,7 +346,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [HyperFrames editor: reconstructing Xiaolin-style motion and narrative templates for a Thailand video](cases/en/hyperframes-xiaolin-video-template.md) — Miao Yang describes extracting editing, motion and audio templates for a new 9:34 video; this is a promoted AI visual-workflow reconstruction, not software decompilation. **[Other AI-assisted work · Needs verification]**
 - [Blackbox/opnblckbox: claims and criticism of an agent-swarm source-reconstruction service](cases/en/blackbox-opnblckbox-source-service-claim.md) — Parent-thread research identifies Blackbox's paid-software/binary-to-source promotion; Larpcheck Bot says no delivery exists, but neither supplies inspectable job records. **[REA use unconfirmed · Needs verification]**
 - [A reverse-engineered synthesizer: an AI-assisted raylib/raygui GUI account](cases/en/synthesizer-ai-raylib-raygui-interface.md) — povverpoint reports using AI to build a GUI for a synthesizer they reverse-engineered; the interface role is explicit, but AI-led synthesis-algorithm recovery is not established. **[Other AI-assisted work · Needs verification]**
-- [TermiX REA: promoted contract/binary analysis with evidence hashes and BNB escrow](cases/en/termix-rea-escrow-analysis-service.md) — Third parties describe a TermiX REA service accepting contracts, files and URLs, with report-acceptance settlement from $10; no actual order or analysis report was obtained. **[REA use unconfirmed · Related project]**
+- [TermiX REA: promoted contract/binary analysis with evidence hashes and BNB escrow](cases/en/termix-rea-escrow-analysis-service.md) — TermiX promotes evidence-linked analysis jobs; liaoblove520 adds a reported check of 24 PancakeSwap Router functions and a bytecode hash, without an address or complete report for recomputation. **[REA use unconfirmed · Related project]**
 - [Kindle and ZenOS: a Codex-assisted Apple Books/WeRead EPUB delivery interface](cases/en/kindle-zenos-codex-epub-sync.md) — Guo Yu reports having Codex investigate ZenOS and Kindle's original system, then design a unified library and one-click EPUB delivery; versions, code and transfer verification are absent. **[Other AI-assisted work · Needs verification]**
 - [Fuji XApp: an AI-reversing idea for more reliable camera-to-iPhone synchronization](cases/en/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux complains about XApp connection failures and slow transfers; ThinkerZhang suggests AI investigation of the official app and a faster replacement, without an implementation report. **[Other AI-assisted work · Needs verification]**
 - [Kestrel: studying MuMuPlayer Pro for a native Apple Silicon Android gaming player](cases/en/kestrel-colate-rea-mac-android-player.md) — Himansh Raj's public Swift project adds a Metal player and keymapping to Google's Android Emulator; BGMI is reportedly playable, but current public Swift CI tests fail. **[REA · In progress]**

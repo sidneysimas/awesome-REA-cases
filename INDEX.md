@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **589 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **602 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（132）
-- [硬件与设备互通](categories/hardware.md)（136）
-- [应用与客户端](categories/apps.md)（269）
+- [游戏与游戏保存](categories/games.md)（133）
+- [硬件与设备互通](categories/hardware.md)（141）
+- [应用与客户端](categories/apps.md)（276）
 - [算法与功能重建](categories/algorithms.md)（52）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
 - [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**
 - [eFootball：AI 推断准确系数与速度 90 阈值，人工测量仍有分歧](cases/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN新增速度超过90后每点收益降约40%的转述，同时指出AI结果不显示人工96至99测量所报变化；无公式与原始实验。 **[其他 AI 逆向 · 待验证]**
@@ -161,6 +162,11 @@
 
 ### 硬件与设备互通
 
+- [Cricut 刻字机：用 AI 研究导入尺寸失真的修复 idea](cases/cricut-ai-import-scaling-fix-idea.md) — Pipe42uk建议AI逆向解决刻字机UI问题；父帖明确Cricut导入会乱缩放、需每次添加尺寸基准，尚无修复。 **[其他 AI 逆向 · 待验证]**
+- [Roku OS 电视：REA 映射网络路由，再发送控制请求的自述](cases/roku-tv-rea-network-route-control.md) — greco_dev称Roku电视控制已可用，同时明确这不是真正反编译：定位局域网IP，用REA映射路由后发请求。 **[REA · 待验证]**
+- [自有扫地机器人：让 Claude Code 检查远程窥视证据的调查提示词](cases/robot-vacuum-claude-privacy-audit-prompt.md) — tezzarc给出从照片识别型号、核对摄像头权限与账户分享、查异常访问的具体流程；不是发现机器人被入侵的报告。 **[其他 AI 逆向 · 待验证]**
+- [M-VAVE FM-1：AI 固件玩法与价格变化的读者转述](cases/mvave-fm1-ai-firmware-reader-report.md) — riverleaf88称FM-1合成器因AI辅助固件玩法走热，价格由一百多到三百多；未给具体固件或效果测试。 **[其他 AI 逆向 · 待验证]**
+- [webOS 电视侧载 APK：平台表述仍待核实的 REA 改造自述](cases/webos-rea-apk-sideload-claim.md) — Devcop101称用REA给webOS侧载APK并移除预装软件；APK与平台组合可疑，没有型号或日志佐证。 **[REA · 待验证]**
 - [MagicSwipe：Opus 研究 Magic Mouse，让 iPad 通用控制支持手势](cases/magic-mouse-ipad-opus-virtual-hid.md) — saikumar公开MagicSwipe，以私有触摸接口和Karabiner虚拟HID把双指手势转成iPad快捷键；仅项目报告实机测试。 **[其他 AI 逆向 · 进行中]**
 - [Fuji 相机：逆向 App 后让 Claude 上传胶片模拟设置](cases/fuji-claude-film-settings-upload.md) — max称研究Fuji应用后自动选择并上传胶片设置、筛选拍摄照片，另称已开源；仓库与实机结果尚未核实。 **[其他 AI 逆向 · 待验证]**
 - [复古模拟器主机：Claude 改 ROM 列表，再接 AWS 游戏库的自述](cases/retro-console-claude-rom-library-aws.md) — 葡语作者称购买模拟器主机后让Claude改善固件，10分钟做出更好的ROM列表，再把游戏放到AWS；未证实流式运行。 **[其他 AI 逆向 · 待验证]**
@@ -300,6 +306,13 @@
 
 ### 应用与客户端
 
+- [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
+- [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
+- [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
+- [CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍](cases/colateral-agentic-workspace-reverse-marketplace.md) — CoLateral账号宣传把逆向放进一体化Agent工作区，再把构建发布到市场；没有给实际目标或验证记录。 **[未确认使用 REA · 相关项目]**
+- [Claude Code 风控：用户将拒答后的研究交给 DeepSeek Harness](cases/deepseek-harness-claude-code-risk-inspection.md) — wquguru把研究Claude Code风控列为DeepSeek Harness用途；95%/5%是个人工具使用比例，不是绕过或研究成功率。 **[其他 AI 逆向 · 待验证]**
+- [菲律宾香蕉网站：Codex 用 REA 研究多个参考站的自述](cases/philippine-banana-codex-rea-website.md) — aFuJiyosn称让Codex用REA研究不同网站，再改成菲律宾产香蕉主题站；未给参考站或可访问成品。 **[REA · 进行中]**
+- [恶意软件解包：Claude 内存转储模块请求被拒与降级不稳定的报告](cases/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101报告为恶意软件解包制作模块时遭Claude降级与拒绝，旧模型版本又有崩溃；不是已完成的解包工具。 **[其他 AI 逆向 · 待验证]**
 - [Signal Desktop：REA 与 Codex 五个行为问题对照源码的自测](cases/signal-desktop-rea-five-question-test.md) — Aakash Gupta称五题都答对、每题3至7分钟，但一次REA完整性错误超时后由Codex直接读包完成；远程配置仍限制结论。 **[REA · 分析测试]**
 - [Android API Extraction Skill：从界面调用链追到 HTTP 接口](cases/android-api-extraction-claude-skill.md) — SimoneAvogadro的Claude Code Skill组织反编译、调用链与API提取；有公开文档，未运行APK或核验名称恢复率。 **[其他 AI 逆向 · 相关项目]**
 - [dummy 桌面 Agent：接入 REA，以 Discord 测试大 JSON 证据处理](cases/dummy-rea-discord-integration.md) — subhraneel称将REA接入自建桌面Agent dummy，Discord研究按预期运行；大JSON落盘后由LLM压缩，未给具体恢复功能。 **[REA · 进行中]**
@@ -331,7 +344,7 @@
 - [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**
 - [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
-- [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](cases/termix-rea-escrow-analysis-service.md) — 第三方称TermiX的REA接受合约、文件和URL，按报告验收结算，10美元起；未取得真实订单或分析报告。 **[未确认使用 REA · 相关项目]**
+- [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](cases/termix-rea-escrow-analysis-service.md) — TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。 **[未确认使用 REA · 相关项目]**
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
 - [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
