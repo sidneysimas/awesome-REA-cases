@@ -2,13 +2,19 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](../cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
+- [vLLM Rust API：Claude／Codex 辅助修复静默忽略参数的兼容差异](../cases/vllm-rust-api-parity-agent-fixes.md) — 帖子报告 vLLM Rust 服务重实现中未支持字段被静默丢弃，AI 共同署名的修复改为明确拒绝，并对齐 Python 错误格式。 **[其他 AI 逆向 · 待验证]**
+- [Hopper：用 REA 研究反汇编器本身的进行中项目](../cases/hopper-rea-self-analysis-project.md) — 发帖者称正用 REA 逆向 Hopper 反汇编器；目标明确，但没有指定功能、操作或成果。 **[REA · 进行中]**
+- [HeyClicky 核心重建：Claude Code 制作私人 Mac 屏幕指导 Agent 的自述](../cases/heyclicky-claude-personal-screen-agent.md) — 作者称用 Claude Code 约30分钟研究并重建 HeyClicky 核心屏幕指导功能，作为私人学习工具，不会发布。 **[其他 AI 逆向 · 待验证]**
+- [微软补丁差分：从 Bindiff／IDA 转向 LLM 定位问题的作者报告](../cases/microsoft-patch-diff-llm-report.md) — 作者称过去用 Bindiff、IDA 需数小时至数天，改用 LLM 比较近期微软补丁后几分钟找出问题；未给补丁或漏洞编号。 **[其他 AI 逆向 · 分析测试]**
+- [Packet Tracer：让 Claude 反编译并加入 Halo 大战的读者 idea](../cases/packet-tracer-halo-claude-idea.md) — 读者向 Claude 提出反编译 Packet Tracer、添加 Halo 大战模式的跨用途建议；没有实现或分析结果。 **[其他 AI 逆向 · 待验证]**
 - [OpenPrice：用 Monid 与 DataForSEO 反查豆包推荐线索](../cases/openprice-monid-referral-analysis.md) — 发帖者用 Monid 检查 OpenPrice 的外链、场景教程与目录收录，试图理解豆包为何推荐它；不是对豆包内部排序的逆向证明。 **[其他 AI 逆向 · 分析测试]**
 - [视频号下载站：让 Opus 研究下载实现并考虑增加 AI 功能](../cases/channels-downloader-opus-research.md) — 原站开始要求登录后，作者让 Opus 研究其视频号下载方式，考虑文字提取与风格功能；没有报告研究结论或可运行替代品。 **[其他 AI 逆向 · 进行中]**
 - [MIT 上下文工程课程：从广告生成53美元替代课的营销自述](../cases/mit-context-course-ai-reconstruction-claim.md) — 作者称用手机ChatGPT、GPT-6 Astra与REA，一小时重建5300美元课程并售53美元；没有证据表明读取原课程或知识等价。 **[REA · 待验证]**
 - [.NET 桌面端：GPT 辅助检查中发现硬编码 SQL 连接字符串的自述](../cases/dotnet-desktop-gpt-connection-string-review.md) — 发帖者称帮朋友分析.NET桌面程序，GPT准备工具链后十几分钟看到实现与SQL连接字符串；未公开样本或验证日志。 **[其他 AI 逆向 · 待验证]**
 - [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](../cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
 - [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](../cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
-- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](../cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
+- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](../cases/control-center-touchpad-gpt-analysis.md) — 唐僧称 GPT 未满意推断触摸板启停；后续明确 C# GUI、驱动与 AML 分析，以及相同请求和 Win+Ctrl+F24 的推理考点，未给通过结果。 **[其他 AI 逆向 · 分析测试]**
 - [COBOL ATM 账本：REA 与多 Agent 重建的明确模拟方案](../cases/cobol-atm-rea-simulated-rebuild.md) — 作者以146文件ATM账本设想REA提规格、12个Sonnet分工及行为回放，明确全部模拟；120/120和成本不是运行结果。 **[REA · 待验证]**
 - [付费插件：在模块内放置诱导 AI 拒绝逆向的合规文本](../cases/commercial-plugin-anti-ai-analysis-text.md) — 候选引用插件模块中的拒答诱导，将WASM、加密与版权包装成对AI的指令；未证实防护效果或加密实现。 **[其他 AI 逆向 · 分析测试]**
 - [.NET / libxsql：供 AI Agent 研究程序集的工具推荐](../cases/libxsql-dotnet-ai-re-tool-report.md) — Binary Wizards 推荐基于libxsql、受IDASQL与GhidraSQL启发的.NET逆向工具，仓库名称与运行效果仍未确认。 **[其他 AI 逆向 · 相关项目]**

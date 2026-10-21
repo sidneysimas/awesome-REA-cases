@@ -2,12 +2,17 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Oblivion 浏览器引擎：REA 笔记到 TypeScript／Three.js 的自述](../cases/oblivion-rea-threejs-browser-engine.md) — 作者称让 Claude 反编译《上古卷轴IV》并记笔记，再据此写浏览器引擎；需用户自有游戏资产，完整性未验证。 **[REA · 待验证]**
+- [青鬼：REA／KaniVolcano 分析后用自制引擎重现的作者介绍](../cases/ao-oni-rea-kanivolcano-recreation.md) — Otinpan 分享 AI Agent 分析《青鬼》并在自制引擎重现的文章；目前依据标题与作者帖子，未取得实现或测试。 **[REA · 待验证]**
+- [Oblivion Remastered Performance Fix：Claude 辅助引擎补丁与开发者基准转述](../cases/oblivion-remastered-claude-performance-fix.md) — 帖子转述约40项引擎补丁，称 Claude 参与逆向、编写与基准；4K 开帧生成测试从72到102 FPS，未独立核定。 **[其他 AI 逆向 · 待验证]**
+- [Helldivers：AI 反编译、跨服务 Mod 与银河战争服务器的移植 idea](../cases/helldivers-ai-mod-port-idea.md) — 读者认为可用 AI 反编译 Helldivers、用 Mod 移到其他服务，但明确银河战争服务器仍是问题；没有实际移植。 **[其他 AI 逆向 · 待验证]**
+- [Xbox Labs：探索游戏反编译、重编译与 AI 开发的团队转述](../cases/xbox-labs-ai-decompilation-report.md) — 帖子称微软成立 Xbox Labs 内部团队探索游戏反编译、重编译和 AI 辅助开发；未取得备忘录或具体游戏成果。 **[其他 AI 逆向 · 待验证]**
 - [Unreal 99：用 LLM 研究二进制并修改 AI 逻辑的请求](../cases/unreal99-llm-ai-logic-idea.md) — 读者询问能否合法用 LLM 反编译其所称 Unreal 99，以修改 AI 等基础行为；没有实施或完成报告。 **[其他 AI 逆向 · 待验证]**
 - [初代文明 DOS 474.05：AI 辅助 C 重建与四字节差异的转述](../cases/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan 转述用三家模型与旧微软编译链重建 CIV.EXE，仍差4字节；未取得仓库和diff，不称哈希完全相同。 **[其他 AI 逆向 · 待验证]**
 - [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](../cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](../cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
 - [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](../cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
-- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](../cases/sfc-ai-english-translation-idea.md) — 作者针对只能日本二手购买的旧SFC游戏提出AI英译重建方案，未命名作品，也没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](../cases/sfc-ai-english-translation-idea.md) — Cenewulf 继续提出购买日文 ROM 后 AI 英译的 idea，并强调更愿支持官方美国版；同串列出期待作品，但未指定哪款实际翻译。 **[其他 AI 逆向 · 待验证]**
 - [地图与任务 PoC：AI 辅助识别偏移与二进制挂钩，作者承认方法不实用](../cases/nitroid-ai-binary-hook-map-poc.md) — 作者明确用AI辅助逆向、找offset和binary hooks，逐个构建部件；地图任务制作仍只是不可实用的PoC。 **[其他 AI 逆向 · 进行中]**
 - [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](../cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](../cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**

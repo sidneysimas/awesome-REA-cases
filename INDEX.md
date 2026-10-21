@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **643 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **659 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（141）
-- [硬件与设备互通](categories/hardware.md)（158）
-- [应用与客户端](categories/apps.md)（289）
-- [算法与功能重建](categories/algorithms.md)（55）
+- [游戏与游戏保存](categories/games.md)（146）
+- [硬件与设备互通](categories/hardware.md)（162）
+- [应用与客户端](categories/apps.md)（295）
+- [算法与功能重建](categories/algorithms.md)（56）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,12 +26,17 @@
 
 ### 游戏与游戏保存
 
+- [Oblivion 浏览器引擎：REA 笔记到 TypeScript／Three.js 的自述](cases/oblivion-rea-threejs-browser-engine.md) — 作者称让 Claude 反编译《上古卷轴IV》并记笔记，再据此写浏览器引擎；需用户自有游戏资产，完整性未验证。 **[REA · 待验证]**
+- [青鬼：REA／KaniVolcano 分析后用自制引擎重现的作者介绍](cases/ao-oni-rea-kanivolcano-recreation.md) — Otinpan 分享 AI Agent 分析《青鬼》并在自制引擎重现的文章；目前依据标题与作者帖子，未取得实现或测试。 **[REA · 待验证]**
+- [Oblivion Remastered Performance Fix：Claude 辅助引擎补丁与开发者基准转述](cases/oblivion-remastered-claude-performance-fix.md) — 帖子转述约40项引擎补丁，称 Claude 参与逆向、编写与基准；4K 开帧生成测试从72到102 FPS，未独立核定。 **[其他 AI 逆向 · 待验证]**
+- [Helldivers：AI 反编译、跨服务 Mod 与银河战争服务器的移植 idea](cases/helldivers-ai-mod-port-idea.md) — 读者认为可用 AI 反编译 Helldivers、用 Mod 移到其他服务，但明确银河战争服务器仍是问题；没有实际移植。 **[其他 AI 逆向 · 待验证]**
+- [Xbox Labs：探索游戏反编译、重编译与 AI 开发的团队转述](cases/xbox-labs-ai-decompilation-report.md) — 帖子称微软成立 Xbox Labs 内部团队探索游戏反编译、重编译和 AI 辅助开发；未取得备忘录或具体游戏成果。 **[其他 AI 逆向 · 待验证]**
 - [Unreal 99：用 LLM 研究二进制并修改 AI 逻辑的请求](cases/unreal99-llm-ai-logic-idea.md) — 读者询问能否合法用 LLM 反编译其所称 Unreal 99，以修改 AI 等基础行为；没有实施或完成报告。 **[其他 AI 逆向 · 待验证]**
 - [初代文明 DOS 474.05：AI 辅助 C 重建与四字节差异的转述](cases/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan 转述用三家模型与旧微软编译链重建 CIV.EXE，仍差4字节；未取得仓库和diff，不称哈希完全相同。 **[其他 AI 逆向 · 待验证]**
 - [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
 - [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
-- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](cases/sfc-ai-english-translation-idea.md) — 作者针对只能日本二手购买的旧SFC游戏提出AI英译重建方案，未命名作品，也没有实施结果。 **[其他 AI 逆向 · 待验证]**
+- [SFC 旧游戏：购买后用 AI 反编译、英译并重编译的 idea](cases/sfc-ai-english-translation-idea.md) — Cenewulf 继续提出购买日文 ROM 后 AI 英译的 idea，并强调更愿支持官方美国版；同串列出期待作品，但未指定哪款实际翻译。 **[其他 AI 逆向 · 待验证]**
 - [地图与任务 PoC：AI 辅助识别偏移与二进制挂钩，作者承认方法不实用](cases/nitroid-ai-binary-hook-map-poc.md) — 作者明确用AI辅助逆向、找offset和binary hooks，逐个构建部件；地图任务制作仍只是不可实用的PoC。 **[其他 AI 逆向 · 进行中]**
 - [re3 / GTA III：用 Opus 给既有逆向游戏增加 NPC Agent 层](cases/re3-gta3-jev-npc-agent-layer.md) — Vlad Rez称Opus为re3增加Jev决策、GPT-4.1-mini对话与本地HTTP桥；这是对既有逆向实现的扩展，不是AI完成原反编译。 **[其他 AI 逆向 · 待验证]**
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
@@ -170,6 +175,10 @@
 
 ### 硬件与设备互通
 
+- [Samsung Q60D：Codex 整理 Couchroot 主页适配与恢复流程](cases/q60d-codex-couchroot-home.md) — zonaantiwoke_ 称在 Q60D 保留 Tizen、以 Couchroot 为基础适配自定义主页，并让 Codex 整理教程；本地版本未公开。 **[其他 AI 逆向 · 待验证]**
+- [Kindle 胶片相框：Claude Code 的 USB、照片与 FBInk 工作流](cases/kindle-claude-film-photo-frame-workflow.md) — 作者分享据自己会话整理的 Kindle 胶片扫描相框提示词，覆盖机型识别、现有越狱方法和低功耗显示；不是已核验实现。 **[其他 AI 逆向 · 待验证]**
+- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](cases/claude-router-wifi-diagnosis-workflow.md) — 作者声称五分钟解决自家 Wi-Fi 慢，并给出 API／后台 JS 调查提示词；未提供路由器型号、测速或实际改动。 **[其他 AI 逆向 · 待验证]**
+- [Spotify Car Thing：用 REA 备份、映射固件与比较社区替代的假设流程](cases/car-thing-rea-revival-workflow-idea.md) — 作者回顾已停服的 Car Thing，设想若当时有 Opus／REA 如何研究并复用；明确社区项目早已存在，不是 AI 复活设备的实测。 **[REA · 待验证]**
 - [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
 - [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**
 - [Dell／Phaser 6000：Claude 辅助恢复 Arch 打印与诊断旧驱动](cases/dell-phaser6000-claude-linux-printing.md) — Xiao Tan 转述医生用 Claude Code 复用旧驱动、诊断空白页和重复份数，再解析 USB 碳粉状态；64位重写尚是计划。 **[其他 AI 逆向 · 待验证]**
@@ -331,13 +340,19 @@
 
 ### 应用与客户端
 
+- [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
+- [vLLM Rust API：Claude／Codex 辅助修复静默忽略参数的兼容差异](cases/vllm-rust-api-parity-agent-fixes.md) — 帖子报告 vLLM Rust 服务重实现中未支持字段被静默丢弃，AI 共同署名的修复改为明确拒绝，并对齐 Python 错误格式。 **[其他 AI 逆向 · 待验证]**
+- [Hopper：用 REA 研究反汇编器本身的进行中项目](cases/hopper-rea-self-analysis-project.md) — 发帖者称正用 REA 逆向 Hopper 反汇编器；目标明确，但没有指定功能、操作或成果。 **[REA · 进行中]**
+- [HeyClicky 核心重建：Claude Code 制作私人 Mac 屏幕指导 Agent 的自述](cases/heyclicky-claude-personal-screen-agent.md) — 作者称用 Claude Code 约30分钟研究并重建 HeyClicky 核心屏幕指导功能，作为私人学习工具，不会发布。 **[其他 AI 逆向 · 待验证]**
+- [微软补丁差分：从 Bindiff／IDA 转向 LLM 定位问题的作者报告](cases/microsoft-patch-diff-llm-report.md) — 作者称过去用 Bindiff、IDA 需数小时至数天，改用 LLM 比较近期微软补丁后几分钟找出问题；未给补丁或漏洞编号。 **[其他 AI 逆向 · 分析测试]**
+- [Packet Tracer：让 Claude 反编译并加入 Halo 大战的读者 idea](cases/packet-tracer-halo-claude-idea.md) — 读者向 Claude 提出反编译 Packet Tracer、添加 Halo 大战模式的跨用途建议；没有实现或分析结果。 **[其他 AI 逆向 · 待验证]**
 - [OpenPrice：用 Monid 与 DataForSEO 反查豆包推荐线索](cases/openprice-monid-referral-analysis.md) — 发帖者用 Monid 检查 OpenPrice 的外链、场景教程与目录收录，试图理解豆包为何推荐它；不是对豆包内部排序的逆向证明。 **[其他 AI 逆向 · 分析测试]**
 - [视频号下载站：让 Opus 研究下载实现并考虑增加 AI 功能](cases/channels-downloader-opus-research.md) — 原站开始要求登录后，作者让 Opus 研究其视频号下载方式，考虑文字提取与风格功能；没有报告研究结论或可运行替代品。 **[其他 AI 逆向 · 进行中]**
 - [MIT 上下文工程课程：从广告生成53美元替代课的营销自述](cases/mit-context-course-ai-reconstruction-claim.md) — 作者称用手机ChatGPT、GPT-6 Astra与REA，一小时重建5300美元课程并售53美元；没有证据表明读取原课程或知识等价。 **[REA · 待验证]**
 - [.NET 桌面端：GPT 辅助检查中发现硬编码 SQL 连接字符串的自述](cases/dotnet-desktop-gpt-connection-string-review.md) — 发帖者称帮朋友分析.NET桌面程序，GPT准备工具链后十几分钟看到实现与SQL连接字符串；未公开样本或验证日志。 **[其他 AI 逆向 · 待验证]**
 - [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
 - [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
-- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
+- [控制中心触摸板开关：GPT 逆向推理未满足作者预期](cases/control-center-touchpad-gpt-analysis.md) — 唐僧称 GPT 未满意推断触摸板启停；后续明确 C# GUI、驱动与 AML 分析，以及相同请求和 Win+Ctrl+F24 的推理考点，未给通过结果。 **[其他 AI 逆向 · 分析测试]**
 - [COBOL ATM 账本：REA 与多 Agent 重建的明确模拟方案](cases/cobol-atm-rea-simulated-rebuild.md) — 作者以146文件ATM账本设想REA提规格、12个Sonnet分工及行为回放，明确全部模拟；120/120和成本不是运行结果。 **[REA · 待验证]**
 - [付费插件：在模块内放置诱导 AI 拒绝逆向的合规文本](cases/commercial-plugin-anti-ai-analysis-text.md) — 候选引用插件模块中的拒答诱导，将WASM、加密与版权包装成对AI的指令；未证实防护效果或加密实现。 **[其他 AI 逆向 · 分析测试]**
 - [.NET / libxsql：供 AI Agent 研究程序集的工具推荐](cases/libxsql-dotnet-ai-re-tool-report.md) — Binary Wizards 推荐基于libxsql、受IDASQL与GhidraSQL启发的.NET逆向工具，仓库名称与运行效果仍未确认。 **[其他 AI 逆向 · 相关项目]**
@@ -623,6 +638,7 @@
 
 ### 算法与功能重建
 
+- [NMR／LC-MS 原始文件：Claude 解析格式与纯度估计的未核实转述](cases/claude-nmr-lcms-format-purity-report.md) — lifcc 转述 Claude Opus 5 从未说明格式的仪器原始数据计算纯度，称19分钟得到96.4%，实验室为96.33%；未取得原报告或数据。 **[其他 AI 逆向 · 待验证]**
 - [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
 - [Maxwell：不改源码、运行时优化机器码的项目转述](cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
 - [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
