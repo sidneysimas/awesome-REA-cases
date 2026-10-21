@@ -2,6 +2,15 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](../cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
+- [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](../cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**
+- [Dell／Phaser 6000：Claude 辅助恢复 Arch 打印与诊断旧驱动](../cases/dell-phaser6000-claude-linux-printing.md) — Xiao Tan 转述医生用 Claude Code 复用旧驱动、诊断空白页和重复份数，再解析 USB 碳粉状态；64位重写尚是计划。 **[其他 AI 逆向 · 待验证]**
+- [老开关面板：Codex 与 Blender MCP 按断裂原件重建替换件](../cases/legacy-switch-panel-codex-blender-replacement.md) — Roger 找不到古早开关面板配件，称让 Codex 按损坏原件逆向建模，再由朋友3D打印；尺寸、安装与安全未验证。 **[其他 AI 逆向 · 待验证]**
+- [Meta 眼镜推杆教练：HCI／jadx 研究与 AR 方案的未核实宣称](../cases/meta-rayban-golf-coach-claim.md) — 0xCodez 称20分钟做出镜片内高尔夫辅助，后附详细四Agent提示词；缺代码、设备型号核定与实测，不能把方案当结果。 **[其他 AI 逆向 · 待验证]**
+- [汽车去遥测：用 REA 清理冗余软件的读者设想](../cases/car-rea-telemetry-removal-idea.md) — 读者询问是否能逆向汽车以去掉冗余软件与遥测、获得更多本地控制；未指定车型或实施。 **[REA · 待验证]**
+- [WD／SanDisk SSD：Claude 未找到 42077100 的 fluf 固件文件](../cases/sandisk-42077100-claude-firmware-search.md) — 同一回复者称 Claude 连所需 SSD 固件都没找到，后明确为42077100的fluf文件；这是材料获取受阻，不是反编译能力测试。 **[其他 AI 逆向 · 分析测试]**
+- [DJI Mic Mini 2：用 APK、REA 与 Claude 制作 macOS 设置客户端](../cases/dji-mic-mini2-rea-macos-settings.md) — aarohan 因缺Mac应用而无法调节部分麦克风设置，报告让REA与Claude按APK制作Mac客户端并可用；未公开源码或协议。 **[REA · 待验证]**
+- [蓝牙玩具：REA 分析 App 与 HCI 日志，映射控制电平的自述](../cases/ble-toy-rea-hci-control-report.md) — 作者称用REA研究情趣玩具App、经ADB抓HCI并映射电平，DS已经能控制设备；没有型号、命令表或可重放测试。 **[REA · 待验证]**
 - [Dell 键鼠：研究接收器协议，在 Omarchy 显示电量](../cases/dell-receiver-ai-linux-battery-widget.md) — Mike Harrison 称与 ChatGPT 研究 Dell 接收器协议，再由 Claude Code 制作 Linux 电量小组件；未公开协议与测试。 **[其他 AI 逆向 · 待验证]**
 - [Samsung TV：Codex 清理与关闭观看追踪，作者补测重启持久性](../cases/samsung-tv-codex-debloat.md) — Cutter 报告临时 root 配合 Codex 清理电视，禁用应用、ACR 和广告进程在完整重启后保留；未单独测试拔电。 **[其他 AI 逆向 · 待验证]**
 - [Skyworth 电视棒：Codex 将 Vidbox 网页包装改成遥控器界面的自述](../cases/skyworth-vidbox-codex-tv-interface.md) — 候选回复追问 ADB；父帖作者称 Codex 为20美元 Android 电视棒重做 Vidbox 遥控界面并添加语音助手，具体协议未知。 **[其他 AI 逆向 · 待验证]**

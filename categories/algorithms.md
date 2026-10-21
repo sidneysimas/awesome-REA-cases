@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](../cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
 - [Maxwell：不改源码、运行时优化机器码的项目转述](../cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
 - [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](../cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](../cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**

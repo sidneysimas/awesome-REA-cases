@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **627 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **643 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（139）
-- [硬件与设备互通](categories/hardware.md)（149）
-- [应用与客户端](categories/apps.md)（285）
-- [算法与功能重建](categories/algorithms.md)（54）
+- [游戏与游戏保存](categories/games.md)（141）
+- [硬件与设备互通](categories/hardware.md)（158）
+- [应用与客户端](categories/apps.md)（289）
+- [算法与功能重建](categories/algorithms.md)（55）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [Unreal 99：用 LLM 研究二进制并修改 AI 逻辑的请求](cases/unreal99-llm-ai-logic-idea.md) — 读者询问能否合法用 LLM 反编译其所称 Unreal 99，以修改 AI 等基础行为；没有实施或完成报告。 **[其他 AI 逆向 · 待验证]**
+- [初代文明 DOS 474.05：AI 辅助 C 重建与四字节差异的转述](cases/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan 转述用三家模型与旧微软编译链重建 CIV.EXE，仍差4字节；未取得仓库和diff，不称哈希完全相同。 **[其他 AI 逆向 · 待验证]**
 - [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
 - [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
@@ -168,6 +170,15 @@
 
 ### 硬件与设备互通
 
+- [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
+- [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**
+- [Dell／Phaser 6000：Claude 辅助恢复 Arch 打印与诊断旧驱动](cases/dell-phaser6000-claude-linux-printing.md) — Xiao Tan 转述医生用 Claude Code 复用旧驱动、诊断空白页和重复份数，再解析 USB 碳粉状态；64位重写尚是计划。 **[其他 AI 逆向 · 待验证]**
+- [老开关面板：Codex 与 Blender MCP 按断裂原件重建替换件](cases/legacy-switch-panel-codex-blender-replacement.md) — Roger 找不到古早开关面板配件，称让 Codex 按损坏原件逆向建模，再由朋友3D打印；尺寸、安装与安全未验证。 **[其他 AI 逆向 · 待验证]**
+- [Meta 眼镜推杆教练：HCI／jadx 研究与 AR 方案的未核实宣称](cases/meta-rayban-golf-coach-claim.md) — 0xCodez 称20分钟做出镜片内高尔夫辅助，后附详细四Agent提示词；缺代码、设备型号核定与实测，不能把方案当结果。 **[其他 AI 逆向 · 待验证]**
+- [汽车去遥测：用 REA 清理冗余软件的读者设想](cases/car-rea-telemetry-removal-idea.md) — 读者询问是否能逆向汽车以去掉冗余软件与遥测、获得更多本地控制；未指定车型或实施。 **[REA · 待验证]**
+- [WD／SanDisk SSD：Claude 未找到 42077100 的 fluf 固件文件](cases/sandisk-42077100-claude-firmware-search.md) — 同一回复者称 Claude 连所需 SSD 固件都没找到，后明确为42077100的fluf文件；这是材料获取受阻，不是反编译能力测试。 **[其他 AI 逆向 · 分析测试]**
+- [DJI Mic Mini 2：用 APK、REA 与 Claude 制作 macOS 设置客户端](cases/dji-mic-mini2-rea-macos-settings.md) — aarohan 因缺Mac应用而无法调节部分麦克风设置，报告让REA与Claude按APK制作Mac客户端并可用；未公开源码或协议。 **[REA · 待验证]**
+- [蓝牙玩具：REA 分析 App 与 HCI 日志，映射控制电平的自述](cases/ble-toy-rea-hci-control-report.md) — 作者称用REA研究情趣玩具App、经ADB抓HCI并映射电平，DS已经能控制设备；没有型号、命令表或可重放测试。 **[REA · 待验证]**
 - [Dell 键鼠：研究接收器协议，在 Omarchy 显示电量](cases/dell-receiver-ai-linux-battery-widget.md) — Mike Harrison 称与 ChatGPT 研究 Dell 接收器协议，再由 Claude Code 制作 Linux 电量小组件；未公开协议与测试。 **[其他 AI 逆向 · 待验证]**
 - [Samsung TV：Codex 清理与关闭观看追踪，作者补测重启持久性](cases/samsung-tv-codex-debloat.md) — Cutter 报告临时 root 配合 Codex 清理电视，禁用应用、ACR 和广告进程在完整重启后保留；未单独测试拔电。 **[其他 AI 逆向 · 待验证]**
 - [Skyworth 电视棒：Codex 将 Vidbox 网页包装改成遥控器界面的自述](cases/skyworth-vidbox-codex-tv-interface.md) — 候选回复追问 ADB；父帖作者称 Codex 为20美元 Android 电视棒重做 Vidbox 遥控界面并添加语音助手，具体协议未知。 **[其他 AI 逆向 · 待验证]**
@@ -320,6 +331,10 @@
 
 ### 应用与客户端
 
+- [OpenPrice：用 Monid 与 DataForSEO 反查豆包推荐线索](cases/openprice-monid-referral-analysis.md) — 发帖者用 Monid 检查 OpenPrice 的外链、场景教程与目录收录，试图理解豆包为何推荐它；不是对豆包内部排序的逆向证明。 **[其他 AI 逆向 · 分析测试]**
+- [视频号下载站：让 Opus 研究下载实现并考虑增加 AI 功能](cases/channels-downloader-opus-research.md) — 原站开始要求登录后，作者让 Opus 研究其视频号下载方式，考虑文字提取与风格功能；没有报告研究结论或可运行替代品。 **[其他 AI 逆向 · 进行中]**
+- [MIT 上下文工程课程：从广告生成53美元替代课的营销自述](cases/mit-context-course-ai-reconstruction-claim.md) — 作者称用手机ChatGPT、GPT-6 Astra与REA，一小时重建5300美元课程并售53美元；没有证据表明读取原课程或知识等价。 **[REA · 待验证]**
+- [.NET 桌面端：GPT 辅助检查中发现硬编码 SQL 连接字符串的自述](cases/dotnet-desktop-gpt-connection-string-review.md) — 发帖者称帮朋友分析.NET桌面程序，GPT准备工具链后十几分钟看到实现与SQL连接字符串；未公开样本或验证日志。 **[其他 AI 逆向 · 待验证]**
 - [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
 - [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
 - [控制中心触摸板开关：GPT 逆向推理未满足作者预期](cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
@@ -608,6 +623,7 @@
 
 ### 算法与功能重建
 
+- [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
 - [Maxwell：不改源码、运行时优化机器码的项目转述](cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
 - [BigSky 与 Ursa Major：先模拟固件，再转 C++ 的 Opus 自述](cases/audio-effects-opus-emulator-cpp-report.md) — HN用户valdiorn报告Opus先执行音效固件再生成C++并对照；找到原始归因，但没有公开固件、库或比较日志。 **[其他 AI 逆向 · 待验证]**
 - [IDA Agent 自测：10 个 nullsub 逐条改名并还原](cases/ida-agent-nullsub-rename-test.md) — mornpeak澄清没有批量rename接口，Agent循环单条调用，报告10/10改名及还原。 **[其他 AI 逆向 · 分析测试]**

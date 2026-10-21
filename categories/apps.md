@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [OpenPrice：用 Monid 与 DataForSEO 反查豆包推荐线索](../cases/openprice-monid-referral-analysis.md) — 发帖者用 Monid 检查 OpenPrice 的外链、场景教程与目录收录，试图理解豆包为何推荐它；不是对豆包内部排序的逆向证明。 **[其他 AI 逆向 · 分析测试]**
+- [视频号下载站：让 Opus 研究下载实现并考虑增加 AI 功能](../cases/channels-downloader-opus-research.md) — 原站开始要求登录后，作者让 Opus 研究其视频号下载方式，考虑文字提取与风格功能；没有报告研究结论或可运行替代品。 **[其他 AI 逆向 · 进行中]**
+- [MIT 上下文工程课程：从广告生成53美元替代课的营销自述](../cases/mit-context-course-ai-reconstruction-claim.md) — 作者称用手机ChatGPT、GPT-6 Astra与REA，一小时重建5300美元课程并售53美元；没有证据表明读取原课程或知识等价。 **[REA · 待验证]**
+- [.NET 桌面端：GPT 辅助检查中发现硬编码 SQL 连接字符串的自述](../cases/dotnet-desktop-gpt-connection-string-review.md) — 发帖者称帮朋友分析.NET桌面程序，GPT准备工具链后十几分钟看到实现与SQL连接字符串；未公开样本或验证日志。 **[其他 AI 逆向 · 待验证]**
 - [Wispr Flow：DeepSeek 与 Opus 重建本地听写流程的自述](../cases/wispr-flow-local-ai-rebuild-report.md) — Vraj 称重建按键听写、文本改写与按应用风格，宣称离线三平台和 MIT；无可核验代码或等价测试。 **[其他 AI 逆向 · 待验证]**
 - [录屏编辑器：作者撤下 REA 版本，改用 Claude 与 Electron 从零开发](../cases/yildiz-recorder-rea-withdrawal-rebuild.md) — Yıldız Dikme 称研究许可证后将原 REA 项目与视频转私有，新版不用 REA，待测试后免费分享。 **[REA · 进行中]**
 - [控制中心触摸板开关：GPT 逆向推理未满足作者预期](../cases/control-center-touchpad-gpt-analysis.md) — 唐僧让 GPT 判断控制中心触摸板启停逻辑，称中英文都未获得满意分析；正确逻辑与产品身份未给。 **[其他 AI 逆向 · 分析测试]**
