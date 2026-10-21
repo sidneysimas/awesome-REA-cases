@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **659 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **669 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（146）
-- [硬件与设备互通](categories/hardware.md)（162）
-- [应用与客户端](categories/apps.md)（295）
-- [算法与功能重建](categories/algorithms.md)（56）
+- [游戏与游戏保存](categories/games.md)（150）
+- [硬件与设备互通](categories/hardware.md)（165）
+- [应用与客户端](categories/apps.md)（297）
+- [算法与功能重建](categories/algorithms.md)（57）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,10 @@
 
 ### 游戏与游戏保存
 
+- [PES 2021／Football Life：Claude 与 REA 辅助重建跨平台大师联赛存档编辑器](cases/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias 发布 Rust 存档编辑器，复用既有解密与字段研究；有公开源码与安全保存设计，最新项目 CI 失败，未独立编辑存档。 **[REA · 进行中]**
+- [Match Day：AI 反编译后生成 Spectrum Next 的去色彩冲突 NEX 补丁](cases/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt 称将 ZX Spectrum 的 Match Day 经 AI 反编译做成 Next 可运行补丁；没有源码、版本或实机对照。 **[其他 AI 逆向 · 待验证]**
+- [旧 Humble Android 游戏：Codex 反编译与重编译以适配64位手机的自述](cases/humble-android32-codex-64bit-report.md) — technosophist 称十年前购买的32位 Android 游戏无法在新手机运行，交给 Codex 后恢复使用；未给具体游戏、ABI或产物。 **[其他 AI 逆向 · 待验证]**
+- [两份 NES ROM：用 AI 逆向来学习汇编的个人实验自述](cases/nes-two-rom-ai-assembly-learning.md) — EnoughOfAllThat 把逆向两份 NES ROM 学汇编列为三个月 AI 用途之一；没有游戏名、模型或反汇编笔记。 **[其他 AI 逆向 · 待验证]**
 - [Oblivion 浏览器引擎：REA 笔记到 TypeScript／Three.js 的自述](cases/oblivion-rea-threejs-browser-engine.md) — 作者称让 Claude 反编译《上古卷轴IV》并记笔记，再据此写浏览器引擎；需用户自有游戏资产，完整性未验证。 **[REA · 待验证]**
 - [青鬼：REA／KaniVolcano 分析后用自制引擎重现的作者介绍](cases/ao-oni-rea-kanivolcano-recreation.md) — Otinpan 分享 AI Agent 分析《青鬼》并在自制引擎重现的文章；目前依据标题与作者帖子，未取得实现或测试。 **[REA · 待验证]**
 - [Oblivion Remastered Performance Fix：Claude 辅助引擎补丁与开发者基准转述](cases/oblivion-remastered-claude-performance-fix.md) — 帖子转述约40项引擎补丁，称 Claude 参与逆向、编写与基准；4K 开帧生成测试从72到102 FPS，未独立核定。 **[其他 AI 逆向 · 待验证]**
@@ -175,9 +179,12 @@
 
 ### 硬件与设备互通
 
+- [MSI 显示器：让 Codex 制作原生 macOS 固件加载器的进行中计划](cases/msi-monitor-codex-macos-loader.md) — ihouman 换下 LG C4 后为新 MSI 显示器找 Mac 更新路径，称正让 Codex 写 loader，计划公开 GitHub；尚无刷写结果。 **[其他 AI 逆向 · 进行中]**
+- [雷鸟电视：AI 辅助第三方桌面安装尝试停在固件限制的报告](cases/ffalcon-ai-launcher-install-blocker.md) — 作者称已开通ADB但第三方桌面装不上，AI归因于雷鸟固件禁止；没有错误日志，不能认定不可绕过。 **[其他 AI 逆向 · 待验证]**
+- [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**
 - [Samsung Q60D：Codex 整理 Couchroot 主页适配与恢复流程](cases/q60d-codex-couchroot-home.md) — zonaantiwoke_ 称在 Q60D 保留 Tizen、以 Couchroot 为基础适配自定义主页，并让 Codex 整理教程；本地版本未公开。 **[其他 AI 逆向 · 待验证]**
 - [Kindle 胶片相框：Claude Code 的 USB、照片与 FBInk 工作流](cases/kindle-claude-film-photo-frame-workflow.md) — 作者分享据自己会话整理的 Kindle 胶片扫描相框提示词，覆盖机型识别、现有越狱方法和低功耗显示；不是已核验实现。 **[其他 AI 逆向 · 待验证]**
-- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](cases/claude-router-wifi-diagnosis-workflow.md) — 作者声称五分钟解决自家 Wi-Fi 慢，并给出 API／后台 JS 调查提示词；未提供路由器型号、测速或实际改动。 **[其他 AI 逆向 · 待验证]**
+- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](cases/claude-router-wifi-diagnosis-workflow.md) — codila 补充目标是 ISP 定制固件的 Huawei 路由器，称用官方 REA skills 分析后台登录、设备／Wi-Fi／重启端点并写聊天控制器；五分钟修复仍无测速佐证。 **[REA · 待验证]**
 - [Spotify Car Thing：用 REA 备份、映射固件与比较社区替代的假设流程](cases/car-thing-rea-revival-workflow-idea.md) — 作者回顾已停服的 Car Thing，设想若当时有 Opus／REA 如何研究并复用；明确社区项目早已存在，不是 AI 复活设备的实测。 **[REA · 待验证]**
 - [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
 - [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**
@@ -340,6 +347,8 @@
 
 ### 应用与客户端
 
+- [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
+- [ShareX 三功能替代：Claude Code 与 REA 制作截图及录屏工具的自述](cases/sharex-rea-three-feature-recorder.md) — Nico 只取 ShareX 的全屏、区域截图与录屏，称周末完成 GPU 录屏器、115项测试与安装器；144fps是未核实上限。 **[REA · 待验证]**
 - [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
 - [vLLM Rust API：Claude／Codex 辅助修复静默忽略参数的兼容差异](cases/vllm-rust-api-parity-agent-fixes.md) — 帖子报告 vLLM Rust 服务重实现中未支持字段被静默丢弃，AI 共同署名的修复改为明确拒绝，并对齐 Python 错误格式。 **[其他 AI 逆向 · 待验证]**
 - [Hopper：用 REA 研究反汇编器本身的进行中项目](cases/hopper-rea-self-analysis-project.md) — 发帖者称正用 REA 逆向 Hopper 反汇编器；目标明确，但没有指定功能、操作或成果。 **[REA · 进行中]**
@@ -638,6 +647,7 @@
 
 ### 算法与功能重建
 
+- [REA 四任务对照：OBS 噪声门、Android 地下城与支付提示词的单次实验](cases/rea-four-task-single-run-ab-report.md) — varunPbhardwaj 报告三项有无 REA 都20/20，支付两提示词结果不同；只称单次案例研究，13%—17%省时省费未经独立测量。 **[REA · 分析测试]**
 - [NMR／LC-MS 原始文件：Claude 解析格式与纯度估计的未核实转述](cases/claude-nmr-lcms-format-purity-report.md) — lifcc 转述 Claude Opus 5 从未说明格式的仪器原始数据计算纯度，称19分钟得到96.4%，实验室为96.33%；未取得原报告或数据。 **[其他 AI 逆向 · 待验证]**
 - [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
 - [Maxwell：不改源码、运行时优化机器码的项目转述](cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**

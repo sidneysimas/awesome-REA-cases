@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [PES 2021／Football Life：Claude 与 REA 辅助重建跨平台大师联赛存档编辑器](../cases/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias 发布 Rust 存档编辑器，复用既有解密与字段研究；有公开源码与安全保存设计，最新项目 CI 失败，未独立编辑存档。 **[REA · 进行中]**
+- [Match Day：AI 反编译后生成 Spectrum Next 的去色彩冲突 NEX 补丁](../cases/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt 称将 ZX Spectrum 的 Match Day 经 AI 反编译做成 Next 可运行补丁；没有源码、版本或实机对照。 **[其他 AI 逆向 · 待验证]**
+- [旧 Humble Android 游戏：Codex 反编译与重编译以适配64位手机的自述](../cases/humble-android32-codex-64bit-report.md) — technosophist 称十年前购买的32位 Android 游戏无法在新手机运行，交给 Codex 后恢复使用；未给具体游戏、ABI或产物。 **[其他 AI 逆向 · 待验证]**
+- [两份 NES ROM：用 AI 逆向来学习汇编的个人实验自述](../cases/nes-two-rom-ai-assembly-learning.md) — EnoughOfAllThat 把逆向两份 NES ROM 学汇编列为三个月 AI 用途之一；没有游戏名、模型或反汇编笔记。 **[其他 AI 逆向 · 待验证]**
 - [Oblivion 浏览器引擎：REA 笔记到 TypeScript／Three.js 的自述](../cases/oblivion-rea-threejs-browser-engine.md) — 作者称让 Claude 反编译《上古卷轴IV》并记笔记，再据此写浏览器引擎；需用户自有游戏资产，完整性未验证。 **[REA · 待验证]**
 - [青鬼：REA／KaniVolcano 分析后用自制引擎重现的作者介绍](../cases/ao-oni-rea-kanivolcano-recreation.md) — Otinpan 分享 AI Agent 分析《青鬼》并在自制引擎重现的文章；目前依据标题与作者帖子，未取得实现或测试。 **[REA · 待验证]**
 - [Oblivion Remastered Performance Fix：Claude 辅助引擎补丁与开发者基准转述](../cases/oblivion-remastered-claude-performance-fix.md) — 帖子转述约40项引擎补丁，称 Claude 参与逆向、编写与基准；4K 开帧生成测试从72到102 FPS，未独立核定。 **[其他 AI 逆向 · 待验证]**

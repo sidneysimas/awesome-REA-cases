@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**659 entries**, organized by use case, without a Top-N or popularity threshold.
+**669 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (146)
-- [Hardware and interoperability](categories/en/hardware.md) (162)
-- [Applications and clients](categories/en/apps.md) (295)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (56)
+- [Games and preservation](categories/en/games.md) (150)
+- [Hardware and interoperability](categories/en/hardware.md) (165)
+- [Applications and clients](categories/en/apps.md) (297)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (57)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [PES 2021 / Football Life: a Claude/REA-assisted cross-platform Master League save editor](cases/en/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias publishes a Rust save editor reusing prior encryption and field research; public code and safe-save design are available, but current project CI failed and no saves were edited here. **[REA · In progress]**
+- [Match Day: an AI-decompiled NEX patch for Spectrum Next without colour clash](cases/en/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt reports using AI decompilation to patch ZX Spectrum's Match Day for Spectrum Next; source, version and device comparisons were not obtained. **[Other AI-assisted work · Needs verification]**
+- [Old Humble Android games: a reported Codex decompile/recompile for a 64-bit phone](cases/en/humble-android32-codex-64bit-report.md) — technosophist says decade-old purchased 32-bit Android games stopped running on a newer phone and worked after Codex assistance; game names, ABI and artifacts are unspecified. **[Other AI-assisted work · Needs verification]**
+- [Two NES ROMs: a personal report of learning assembly through AI-assisted reversing](cases/en/nes-two-rom-ai-assembly-learning.md) — EnoughOfAllThat lists reversing two NES ROMs to learn assembly among three months of AI uses; game names, model and disassembly notes are absent. **[Other AI-assisted work · Needs verification]**
 - [Oblivion browser engine: reported REA notes to TypeScript and Three.js](cases/en/oblivion-rea-threejs-browser-engine.md) — An author says Claude decompiled Oblivion with REA, took notes and built a browser engine requiring owner-provided assets; completeness is unverified. **[REA · Needs verification]**
 - [Ao Oni: an author's REA/KaniVolcano analysis and custom-engine recreation report](cases/en/ao-oni-rea-kanivolcano-recreation.md) — Otinpan shares an article about AI-agent analysis of Ao Oni and recreation in a custom engine; only the title and original post were obtained, not implementation or tests. **[REA · Needs verification]**
 - [Oblivion Remastered Performance Fix: reported Claude-assisted engine patches and developer benchmarks](cases/en/oblivion-remastered-claude-performance-fix.md) — A post recounts about 40 engine patches with Claude assisting reverse engineering, implementation and benchmarking; a 4K frame-generation test rose from 72 to 102 FPS, not independently established. **[Other AI-assisted work · Needs verification]**
@@ -177,9 +181,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [MSI monitor: a work-in-progress Codex native macOS firmware loader](cases/en/msi-monitor-codex-macos-loader.md) — After replacing an LG C4, ihouman says Codex is writing a native Mac firmware loader for an MSI monitor, with GitHub publication planned; no flashing outcome is shown. **[Other AI-assisted work · In progress]**
+- [FFALCON TV: an AI-assisted third-party launcher attempt reportedly blocked by firmware](cases/en/ffalcon-ai-launcher-install-blocker.md) — An author reports enabling ADB but failing to install a replacement launcher, with AI blaming FFALCON firmware; no error log establishes the cause or an unbypassable restriction. **[Other AI-assisted work · Needs verification]**
+- [LG webOS: Heitor's REA launcher study and GitHub-guided Apple TV-style interface](cases/en/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli describes studying TV software for launcher modification points, then supplying a reference repository and fixing errors; this is not a successful Android-on-webOS port. **[REA · Needs verification]**
 - [Samsung Q60D: a Codex-written account of Couchroot home-screen adaptation](cases/en/q60d-codex-couchroot-home.md) — zonaantiwoke_ reports retaining Tizen and adapting Couchroot for a Q60D home screen, with Codex writing a tutorial; the local adaptation is not public. **[Other AI-assisted work · Needs verification]**
 - [Kindle film-photo frame: a Claude Code workflow for USB, images and FBInk](cases/en/kindle-claude-film-photo-frame-workflow.md) — An author shares a session-derived prompt for turning a Kindle into a film-scan frame, using model detection, existing jailbreaks and low-power display behavior; implementation is unverified. **[Other AI-assisted work · Needs verification]**
-- [Home router: a Claude workflow for admin-API investigation and Wi-Fi diagnosis](cases/en/claude-router-wifi-diagnosis-workflow.md) — An author claims a five-minute Wi-Fi fix and supplies an API/admin-JavaScript investigation prompt; no router model, speed measurements or applied changes are shown. **[Other AI-assisted work · Needs verification]**
+- [Home router: a Claude workflow for admin-API investigation and Wi-Fi diagnosis](cases/en/claude-router-wifi-diagnosis-workflow.md) — codila identifies an ISP-customized Huawei router and reports using official REA skills to trace admin login and device/Wi-Fi/reboot endpoints before building a chat controller; the five-minute fix still lacks measurements. **[REA · Needs verification]**
 - [Spotify Car Thing: a hypothetical REA backup, firmware-mapping and community-revival workflow](cases/en/car-thing-rea-revival-workflow-idea.md) — An author uses discontinued Car Thing as a hypothetical Opus/REA investigation, explicitly acknowledging existing community projects rather than reporting an AI-assisted device revival. **[REA · Needs verification]**
 - [Lenovo printing APK: a reported Codex analysis packaged as a printing skill](cases/en/lenovo-print-apk-codex-skill.md) — The poster says Codex extracted a Lenovo printing APK, investigated printer calls and packaged a skill; models, protocol details and tests are absent. **[Other AI-assisted work · Needs verification]**
 - [Nothing Phone 3a: a reported Claude Code-assisted iOS 16 bring-up](cases/en/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan reports drivers, XNU patches and crash-log analysis based on ios-sweet to reach an iOS interface; wireless, calls, cameras and GPU support remain absent. **[Other AI-assisted work · Needs verification]**
@@ -342,6 +349,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [sourcepin: studying stagewise with REA to map page elements before calling a model](cases/en/sourcepin-stagewise-rea-file-line.md) — Aayush Swami studies stagewise with REA and source reading, then builds element-to-file:line mapping; public small-sample tests report fewer tool calls, not faster total turns or exact mapping on arbitrary frameworks. **[REA · In progress]**
+- [A three-feature ShareX alternative: reported Claude Code/REA screenshot and recording work](cases/en/sharex-rea-three-feature-recorder.md) — Nico selects full-screen capture, region capture and recording from ShareX, claiming a weekend GPU recorder, 115 tests and installer; the 144 fps ceiling is unverified. **[REA · Needs verification]**
 - [Codex checks REA with three known-answer Electron, ARM64 and browser fixtures](cases/en/codex-rea-three-fixture-smoke-test.md) — An author reports IPC recovery, decompilation of value * 7 + 11 and button-state readback on tiny Codex-made fixtures; this is a wiring smoke test, not a complex-target benchmark. **[REA · Analysis test]**
 - [vLLM Rust API: reported Claude/Codex fixes for silently ignored request fields](cases/en/vllm-rust-api-parity-agent-fixes.md) — A post reports that unsupported fields in vLLM's Rust reimplementation were silently discarded, with AI-coauthored fixes adding explicit rejection and Python-compatible errors. **[Other AI-assisted work · Needs verification]**
 - [Hopper: an ongoing REA investigation of the disassembler itself](cases/en/hopper-rea-self-analysis-project.md) — A poster says they are currently reverse-engineering Hopper with REA; the target is explicit but features, operations and results are unspecified. **[REA · In progress]**
@@ -640,6 +649,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Four REA comparisons: single-run OBS noise-gate, Android dungeon and payment-prompt experiments](cases/en/rea-four-task-single-run-ab-report.md) — varunPbhardwaj reports 20/20 both with and without REA in three tasks and different payment results under two prompts; explicitly a single-run case study, with unverified 13–17% time/cost savings. **[REA · Analysis test]**
 - [Raw NMR/LC-MS files: an unverified report of Claude format parsing and purity estimation](cases/en/claude-nmr-lcms-format-purity-report.md) — lifcc recounts Opus 5 parsing unspecified raw instrument formats and obtaining 96.4% purity in 19 minutes versus a lab's 96.33%; the primary report and data were not obtained. **[Other AI-assisted work · Needs verification]**
 - [GhidraMCP: identifying Adler-32 in a stripped binary through constant fingerprints](cases/en/ghidramcp-adler32-constant-identification.md) — A post describes decompiling 170 functions, screening ten candidates using checksum and gzip constants, then using the 5552 block size to support an Adler-32 identification; the binary is unavailable. **[Other AI-assisted work · Analysis test]**
 - [Maxwell: a report of runtime machine-code optimization without changing source](cases/en/doubleai-maxwell-runtime-optimization.md) — Han introduces doubleAI's Code Execution Model and relays runtime-binary rewriting and formal-equivalence claims; the 38x and 4.5x figures are not independently verified. **[Other AI-assisted work · Related project]**

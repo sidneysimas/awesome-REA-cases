@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 659 cases & projects
+# 669 cases & projects
 
-**Latest case update:** October 21, 2026, 20:17 · **Last maintained:** October 21, 2026, 20:17 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 21, 2026, 20:34 · **Last maintained:** October 21, 2026, 20:34 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading**, from device interoperability to game preservation. These picks favor public implementations and inspectable comparisons over newer, unverified rebuild claims. Dates are source or author-update dates, not collection dates.
+**10 worth reading**, from device interoperability and game preservation to precise AI edits. Public implementations and inspectable comparisons take priority over unsupported rebuild claims. Dates are source or author-update dates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[xbox-boot-re: the original green blob, reconstructed](cases/en/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — Human-directed Opus turns one BIOS into a **C core and WebGPU viewer**, with documented xemu comparisons and successful project CI. One modified BIOS, approximate audio synthesis; not a full console emulator or independently rerun here. `In progress`
 8. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 9. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
-10. **[sm64-gba: physics before the whole game](cases/en/sm64-gba-claude-bitexact-port.md)** · `2026-10-19` — Claude adapts **human-made n64decomp code** for GBA, with frame-by-frame movement/collision oracles and **successful public project CI**. A limited four-level demo, not a complete game; real hardware untested. `In progress`
+10. **[sourcepin: click an element, find its source](cases/en/sourcepin-stagewise-rea-file-line.md)** · `2026-10-21` — REA-assisted study of open-source stagewise leads to **file:line mapping before the model call**. Public five-request tests report fewer tool calls, **not faster total turns**; exact mapping is limited to a tested Next.js/React 19 dev setup. Not independently rerun. `In progress`
 
 ## Classic cases
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **146** |
-| [Hardware & interoperability](categories/en/hardware.md) | **162** |
-| [Applications & clients](categories/en/apps.md) | **295** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **56** |
+| [Games & preservation](categories/en/games.md) | **150** |
+| [Hardware & interoperability](categories/en/hardware.md) | **165** |
+| [Applications & clients](categories/en/apps.md) | **297** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **57** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

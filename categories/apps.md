@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](../cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
+- [ShareX 三功能替代：Claude Code 与 REA 制作截图及录屏工具的自述](../cases/sharex-rea-three-feature-recorder.md) — Nico 只取 ShareX 的全屏、区域截图与录屏，称周末完成 GPU 录屏器、115项测试与安装器；144fps是未核实上限。 **[REA · 待验证]**
 - [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](../cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
 - [vLLM Rust API：Claude／Codex 辅助修复静默忽略参数的兼容差异](../cases/vllm-rust-api-parity-agent-fixes.md) — 帖子报告 vLLM Rust 服务重实现中未支持字段被静默丢弃，AI 共同署名的修复改为明确拒绝，并对齐 Python 错误格式。 **[其他 AI 逆向 · 待验证]**
 - [Hopper：用 REA 研究反汇编器本身的进行中项目](../cases/hopper-rea-self-analysis-project.md) — 发帖者称正用 REA 逆向 Hopper 反汇编器；目标明确，但没有指定功能、操作或成果。 **[REA · 进行中]**

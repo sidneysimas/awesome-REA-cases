@@ -2,9 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [MSI 显示器：让 Codex 制作原生 macOS 固件加载器的进行中计划](../cases/msi-monitor-codex-macos-loader.md) — ihouman 换下 LG C4 后为新 MSI 显示器找 Mac 更新路径，称正让 Codex 写 loader，计划公开 GitHub；尚无刷写结果。 **[其他 AI 逆向 · 进行中]**
+- [雷鸟电视：AI 辅助第三方桌面安装尝试停在固件限制的报告](../cases/ffalcon-ai-launcher-install-blocker.md) — 作者称已开通ADB但第三方桌面装不上，AI归因于雷鸟固件禁止；没有错误日志，不能认定不可绕过。 **[其他 AI 逆向 · 待验证]**
+- [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](../cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**
 - [Samsung Q60D：Codex 整理 Couchroot 主页适配与恢复流程](../cases/q60d-codex-couchroot-home.md) — zonaantiwoke_ 称在 Q60D 保留 Tizen、以 Couchroot 为基础适配自定义主页，并让 Codex 整理教程；本地版本未公开。 **[其他 AI 逆向 · 待验证]**
 - [Kindle 胶片相框：Claude Code 的 USB、照片与 FBInk 工作流](../cases/kindle-claude-film-photo-frame-workflow.md) — 作者分享据自己会话整理的 Kindle 胶片扫描相框提示词，覆盖机型识别、现有越狱方法和低功耗显示；不是已核验实现。 **[其他 AI 逆向 · 待验证]**
-- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](../cases/claude-router-wifi-diagnosis-workflow.md) — 作者声称五分钟解决自家 Wi-Fi 慢，并给出 API／后台 JS 调查提示词；未提供路由器型号、测速或实际改动。 **[其他 AI 逆向 · 待验证]**
+- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](../cases/claude-router-wifi-diagnosis-workflow.md) — codila 补充目标是 ISP 定制固件的 Huawei 路由器，称用官方 REA skills 分析后台登录、设备／Wi-Fi／重启端点并写聊天控制器；五分钟修复仍无测速佐证。 **[REA · 待验证]**
 - [Spotify Car Thing：用 REA 备份、映射固件与比较社区替代的假设流程](../cases/car-thing-rea-revival-workflow-idea.md) — 作者回顾已停服的 Car Thing，设想若当时有 Opus／REA 如何研究并复用；明确社区项目早已存在，不是 AI 复活设备的实测。 **[REA · 待验证]**
 - [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](../cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
 - [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](../cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**

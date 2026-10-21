@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [REA 四任务对照：OBS 噪声门、Android 地下城与支付提示词的单次实验](../cases/rea-four-task-single-run-ab-report.md) — varunPbhardwaj 报告三项有无 REA 都20/20，支付两提示词结果不同；只称单次案例研究，13%—17%省时省费未经独立测量。 **[REA · 分析测试]**
 - [NMR／LC-MS 原始文件：Claude 解析格式与纯度估计的未核实转述](../cases/claude-nmr-lcms-format-purity-report.md) — lifcc 转述 Claude Opus 5 从未说明格式的仪器原始数据计算纯度，称19分钟得到96.4%，实验室为96.33%；未取得原报告或数据。 **[其他 AI 逆向 · 待验证]**
 - [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](../cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
 - [Maxwell：不改源码、运行时优化机器码的项目转述](../cases/doubleai-maxwell-runtime-optimization.md) — Han 介绍 doubleAI 的 Code Execution Model，转述运行时改二进制与形式等价承诺；38倍和4.5倍均未独立核验。 **[其他 AI 逆向 · 相关项目]**
