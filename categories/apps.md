@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述](../cases/layerfs-unity-agent-workspaces.md) — 两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。 **[未确认使用 REA · 相关项目]**
+- [Superhuman 自用版：用 Claude API 额度替代另一份订阅的自述](../cases/superhuman-claude-personal-rebuild.md) — pano称逆向Superhuman做个人版本，运行在自己的月度Claude API额度上；没有具体功能、代码或兼容测试。 **[其他 AI 逆向 · 待验证]**
+- [Codex computer-use MCP：逆向后切换自有连接器的自述](../cases/codex-computer-use-mcp-general-replacement.md) — Romy称研究OpenAI Codex的computer-use MCP后，已从原连接器切换到自己的general-computer-use；未说明AI分析角色。 **[未确认使用 REA · 进行中]**
 - [CatEye RP：REA 与 Codex 重实现 Axure RP，因配额暂缓](../cases/cateye-rp-rea-axure-reimplementation.md) — George JW 报告正在重建交互原型工具 Axure RP；运行近两天仍在构建，Codex 配额接近耗尽后暂停。 **[REA · 进行中]**
 - [DGX Spark 上的六 Agent ELF 分析：用 nonce 与原始字节约束结论](../cases/dgx-spark-six-agents-elf-evidence-gate.md) — Nikolaos Chrysaidos 报告本地 Qwen 配合 REA 分工分析 ELF，并由 Agent 外的 hub 验证工具产物；结果统计口径仍有疑问。 **[REA · 分析测试]**
 - [Claude Code CLI：逆向后制作 Rust drop-in 替代的愿望](../cases/claude-code-cli-rust-dropin-idea.md) — 读者提出以 Rust 重实现 Claude Code 命令行的可替换版本；没有宣布开工或实现。 **[未确认使用 REA · 待验证]**
@@ -75,7 +78,7 @@
 - [校园跑 App：让 Agent 研究软件的读者建议](../cases/campus-running-app-agent-idea.md) — 回复者建议用Agent逆向校园跑软件；没有指名App、具体技术方案或执行结果。 **[其他 AI 逆向 · 待验证]**
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](../cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](../cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
-- [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](../cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**
+- [HyperFrames editor：从小Lin说到12期Vox模板，生成不同主题的视频](../cases/hyperframes-xiaolin-video-template.md) — Miao Yang报告从小Lin说及12期Vox节目提取制作模板，生成9分34秒泰国经济及9分钟公共厕所主题视频；未验证逐帧一致性或授权。 **[其他 AI 逆向 · 待验证]**
 - [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](../cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](../cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
 - [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](../cases/termix-rea-escrow-analysis-service.md) — TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。 **[未确认使用 REA · 相关项目]**

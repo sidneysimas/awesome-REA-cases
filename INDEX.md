@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **706 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **718 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（156）
-- [硬件与设备互通](categories/hardware.md)（176）
-- [应用与客户端](categories/apps.md)（314）
+- [游戏与游戏保存](categories/games.md)（161）
+- [硬件与设备互通](categories/hardware.md)（180）
+- [应用与客户端](categories/apps.md)（317）
 - [算法与功能重建](categories/algorithms.md)（60）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,11 @@
 
 ### 游戏与游戏保存
 
+- [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
+- [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**
+- [Neverball 到 KaniVolcanoEngine：REA 先提规格，LLM 再用 Rust 引擎重建](cases/neverball-rea-kanivolcanoengine.md) — Otinpan报告从Neverball可执行文件恢复游戏逻辑与关卡结构规格，再让LLM用自己的Rust引擎实现；未给行为对等测试。 **[REA · 待验证]**
+- [王者荣耀：逆向后让 AI 编写本人对局控制接口的想法](cases/honor-of-kings-ai-control-interface-idea.md) — 回复者提出研究王者荣耀并让AI写实时控制接口；没有开工、实现或获授权的证据。 **[未确认使用 REA · 待验证]**
+- [BaK 研究中的 DOS 模拟器：让 Agent 调试，C 源级符号支持尚未完成](cases/bak-dos-emulator-ai-debug-symbols.md) — Cesar Canassa称在BaK反编译时写了可由AI驱动的DOS模拟器，正在加入Borland调试符号，以便Agent单步查看C而非汇编。 **[未确认使用 REA · 进行中]**
 - [从 Quake 到 Source 2：用 AI 逐步研究游戏引擎的读者 idea](cases/quake-source2-ai-decompilation-idea.md) — 读者提出从Quake一路反编译到Source 2的研究设想，未给具体游戏版本、恢复目标或实施成果。 **[其他 AI 逆向 · 相关项目]**
 - [VF4 Final Tuned：请求 AI 反编译 Naomi 2 街机版本](cases/vf4-final-tuned-naomi2-ai-idea.md) — 读者明确点名Virtua Fighter 4 Final Tuned与Naomi 2，提出AI反编译请求；没有项目启动或PC移植成果。 **[其他 AI 逆向 · 相关项目]**
 - [DecompPipeline：用受限 Haiku 与行为 oracle 重建 Dreamcast 函数](cases/decomppipeline-haiku-behavioral-oracle.md) — 公开框架把Ghidra模拟行为与C候选逐函数对照，并以输入戳记拒用过期harness；测试向量通过不等于原编译器机器码相同或整款游戏完成。 **[其他 AI 逆向 · 进行中]**
@@ -59,7 +64,7 @@
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
 - [GTA 5 × Spider-Man × Hulk：REA／Opus 提取机制再做 Godot 混合作品的宣传](cases/gta-spiderman-hulk-godot-mashup.md) — Deni称两小时把摆荡、踩踏与街道组合进同一城市，提供扫描到规格的流程，未给原游戏版本、代码或验收日志。 **[REA · 待验证]**
 - [sm64-gba：Claude 适配既有人类反编译成果，用逐帧 oracle 保持 GBA 运动逻辑](cases/sm64-gba-claude-bitexact-port.md) — 基于 n64decomp 的运动与碰撞代码，Claude Opus 5.5 辅助 GBA 适配和测试；有公开项目 CI 成功记录，非完整游戏或实机验证。 **[其他 AI 逆向 · 进行中]**
-- [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究游戏状态同步；README列Deus Ex等项目，不保证任何游戏自动成功。 **[REA · 相关项目]**
+- [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究同步；新转述细化Deus Ex的HXFix与Beta客户端测试，不是从零做完整合作模式。 **[REA · 相关项目]**
 - [魔界村：REA／AI 解析后重做浏览器版，加入落雷与巨大 Boss 的视频自述](cases/ghosts-goblins-rea-browser-lightning-boss.md) — J_un_Suzuki的视频标题给出魔界村解析、浏览器重现和新机制改造；未取得视频内步骤或可玩产物。 **[REA · 待验证]**
 - [Deltarune 到 Roblox／Luau：社区质疑 AI 重编译与原作精度的线索](cases/deltarune-roblox-luau-ai-recomp-controversy.md) — 补读父帖确认所指是Deltarune引擎的Roblox重建；评论者指其AI生成，但无开发者说明或源码验证。 **[其他 AI 逆向 · 待验证]**
 - [Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制](cases/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。 **[其他 AI 逆向 · 进行中]**
@@ -185,6 +190,10 @@
 
 ### 硬件与设备互通
 
+- [Mac 一键控制相机与摄影灯：Claude 辅助的小应用](cases/mac-camera-studio-light-claude-button.md) — Roman Meerson 报告借助 Claude 与少量逆向，在 Mac 上用一个按钮控制相机和摄影灯，不需 Stream Deck。 **[其他 AI 逆向 · 待验证]**
+- [家庭 Wi-Fi 的64个 Claude Agent：验证器否决9个摄像头猜测的自述](cases/claude-wifi-swarm-verifier-false-cameras.md) — Vexo称扫描41台设备后，验证器因没有视频包否决9项隐藏摄像头判断；没有公开捕获或日志供核对。 **[未确认使用 REA · 待验证]**
+- [Motorola Smart Connect 到 Linux：REA 辅助通知、手机窗口和副屏的自述](cases/motorola-smart-connect-rea-linux.md) — Rudra Patel报告研究Motorola Smart Connect后实现Linux互通，称支持通知回复、窗口化手机应用及副屏，无需root。 **[REA · 待验证]**
+- [Wii U 播放 DVD／蓝光电影：受 AI 反编译进展启发的愿望](cases/wiiu-ai-dvd-bluray-playback-idea.md) — Johann希望借AI反编译带来的兼容性进展，让Wii U播放DVD和蓝光电影；尚无研究路线或硬件可行性证据。 **[未确认使用 REA · 待验证]**
 - [Eufy 直连：让 Claude 研究 Home Assistant 插件，避免额外后端](cases/eufy-claude-homeassistant-direct-integration.md) — 作者在应用中加 Eufy／Roborock 支持后，不满 Claude 搭出 Home Assistant 后端，改要求研究 Eufy 插件以直接集成。 **[其他 AI 逆向 · 进行中]**
 - [旧手机做家庭 Wi-Fi 监控：Opus 与 REA 的14设备扫描自述](cases/old-phone-opus-rea-home-network-monitor.md) — 作者称让闲置手机每小时复查家庭网络，首轮发现14台设备、其中两台不认识；未公开实现或检测准确性证据。 **[REA · 待验证]**
 - [大众车机与仪表：REA／Claude 研究适配器和主题通道的自述](cases/volkswagen-rea-adapter-dashboard-report.md) — 发布者称研究无线 Android Auto 适配器后，把手机内容送到大众中控与仪表；主题通道突破、耗时与跨品牌适用均未核实。 **[REA · 待验证]**
@@ -364,6 +373,9 @@
 
 ### 应用与客户端
 
+- [LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述](cases/layerfs-unity-agent-workspaces.md) — 两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。 **[未确认使用 REA · 相关项目]**
+- [Superhuman 自用版：用 Claude API 额度替代另一份订阅的自述](cases/superhuman-claude-personal-rebuild.md) — pano称逆向Superhuman做个人版本，运行在自己的月度Claude API额度上；没有具体功能、代码或兼容测试。 **[其他 AI 逆向 · 待验证]**
+- [Codex computer-use MCP：逆向后切换自有连接器的自述](cases/codex-computer-use-mcp-general-replacement.md) — Romy称研究OpenAI Codex的computer-use MCP后，已从原连接器切换到自己的general-computer-use；未说明AI分析角色。 **[未确认使用 REA · 进行中]**
 - [CatEye RP：REA 与 Codex 重实现 Axure RP，因配额暂缓](cases/cateye-rp-rea-axure-reimplementation.md) — George JW 报告正在重建交互原型工具 Axure RP；运行近两天仍在构建，Codex 配额接近耗尽后暂停。 **[REA · 进行中]**
 - [DGX Spark 上的六 Agent ELF 分析：用 nonce 与原始字节约束结论](cases/dgx-spark-six-agents-elf-evidence-gate.md) — Nikolaos Chrysaidos 报告本地 Qwen 配合 REA 分工分析 ELF，并由 Agent 外的 hub 验证工具产物；结果统计口径仍有疑问。 **[REA · 分析测试]**
 - [Claude Code CLI：逆向后制作 Rust drop-in 替代的愿望](cases/claude-code-cli-rust-dropin-idea.md) — 读者提出以 Rust 重实现 Claude Code 命令行的可替换版本；没有宣布开工或实现。 **[未确认使用 REA · 待验证]**
@@ -437,7 +449,7 @@
 - [校园跑 App：让 Agent 研究软件的读者建议](cases/campus-running-app-agent-idea.md) — 回复者建议用Agent逆向校园跑软件；没有指名App、具体技术方案或执行结果。 **[其他 AI 逆向 · 待验证]**
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
-- [HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。 **[其他 AI 逆向 · 待验证]**
+- [HyperFrames editor：从小Lin说到12期Vox模板，生成不同主题的视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang报告从小Lin说及12期Vox节目提取制作模板，生成9分34秒泰国经济及9分钟公共厕所主题视频；未验证逐帧一致性或授权。 **[其他 AI 逆向 · 待验证]**
 - [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
 - [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](cases/termix-rea-escrow-analysis-service.md) — TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。 **[未确认使用 REA · 相关项目]**

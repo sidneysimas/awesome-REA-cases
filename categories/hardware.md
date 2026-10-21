@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Mac 一键控制相机与摄影灯：Claude 辅助的小应用](../cases/mac-camera-studio-light-claude-button.md) — Roman Meerson 报告借助 Claude 与少量逆向，在 Mac 上用一个按钮控制相机和摄影灯，不需 Stream Deck。 **[其他 AI 逆向 · 待验证]**
+- [家庭 Wi-Fi 的64个 Claude Agent：验证器否决9个摄像头猜测的自述](../cases/claude-wifi-swarm-verifier-false-cameras.md) — Vexo称扫描41台设备后，验证器因没有视频包否决9项隐藏摄像头判断；没有公开捕获或日志供核对。 **[未确认使用 REA · 待验证]**
+- [Motorola Smart Connect 到 Linux：REA 辅助通知、手机窗口和副屏的自述](../cases/motorola-smart-connect-rea-linux.md) — Rudra Patel报告研究Motorola Smart Connect后实现Linux互通，称支持通知回复、窗口化手机应用及副屏，无需root。 **[REA · 待验证]**
+- [Wii U 播放 DVD／蓝光电影：受 AI 反编译进展启发的愿望](../cases/wiiu-ai-dvd-bluray-playback-idea.md) — Johann希望借AI反编译带来的兼容性进展，让Wii U播放DVD和蓝光电影；尚无研究路线或硬件可行性证据。 **[未确认使用 REA · 待验证]**
 - [Eufy 直连：让 Claude 研究 Home Assistant 插件，避免额外后端](../cases/eufy-claude-homeassistant-direct-integration.md) — 作者在应用中加 Eufy／Roborock 支持后，不满 Claude 搭出 Home Assistant 后端，改要求研究 Eufy 插件以直接集成。 **[其他 AI 逆向 · 进行中]**
 - [旧手机做家庭 Wi-Fi 监控：Opus 与 REA 的14设备扫描自述](../cases/old-phone-opus-rea-home-network-monitor.md) — 作者称让闲置手机每小时复查家庭网络，首轮发现14台设备、其中两台不认识；未公开实现或检测准确性证据。 **[REA · 待验证]**
 - [大众车机与仪表：REA／Claude 研究适配器和主题通道的自述](../cases/volkswagen-rea-adapter-dashboard-report.md) — 发布者称研究无线 Android Auto 适配器后，把手机内容送到大众中控与仪表；主题通道突破、耗时与跨品牌适用均未核实。 **[REA · 待验证]**

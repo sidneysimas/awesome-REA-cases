@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](../cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
+- [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](../cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**
+- [Neverball 到 KaniVolcanoEngine：REA 先提规格，LLM 再用 Rust 引擎重建](../cases/neverball-rea-kanivolcanoengine.md) — Otinpan报告从Neverball可执行文件恢复游戏逻辑与关卡结构规格，再让LLM用自己的Rust引擎实现；未给行为对等测试。 **[REA · 待验证]**
+- [王者荣耀：逆向后让 AI 编写本人对局控制接口的想法](../cases/honor-of-kings-ai-control-interface-idea.md) — 回复者提出研究王者荣耀并让AI写实时控制接口；没有开工、实现或获授权的证据。 **[未确认使用 REA · 待验证]**
+- [BaK 研究中的 DOS 模拟器：让 Agent 调试，C 源级符号支持尚未完成](../cases/bak-dos-emulator-ai-debug-symbols.md) — Cesar Canassa称在BaK反编译时写了可由AI驱动的DOS模拟器，正在加入Borland调试符号，以便Agent单步查看C而非汇编。 **[未确认使用 REA · 进行中]**
 - [从 Quake 到 Source 2：用 AI 逐步研究游戏引擎的读者 idea](../cases/quake-source2-ai-decompilation-idea.md) — 读者提出从Quake一路反编译到Source 2的研究设想，未给具体游戏版本、恢复目标或实施成果。 **[其他 AI 逆向 · 相关项目]**
 - [VF4 Final Tuned：请求 AI 反编译 Naomi 2 街机版本](../cases/vf4-final-tuned-naomi2-ai-idea.md) — 读者明确点名Virtua Fighter 4 Final Tuned与Naomi 2，提出AI反编译请求；没有项目启动或PC移植成果。 **[其他 AI 逆向 · 相关项目]**
 - [DecompPipeline：用受限 Haiku 与行为 oracle 重建 Dreamcast 函数](../cases/decomppipeline-haiku-behavioral-oracle.md) — 公开框架把Ghidra模拟行为与C候选逐函数对照，并以输入戳记拒用过期harness；测试向量通过不等于原编译器机器码相同或整款游戏完成。 **[其他 AI 逆向 · 进行中]**
@@ -35,7 +40,7 @@
 - [Final Fantasy XIV：在反编译成果上用 Claude 改 Boss、画面与 UI 的说法](../cases/ffxiv-claude-gameplay-report.md) — Yuyu称利用近期FFXIV反编译成果制作新玩法，未给代码、版本或可玩产物；不确认整款MMO已被反编译。 **[其他 AI 逆向 · 待验证]**
 - [GTA 5 × Spider-Man × Hulk：REA／Opus 提取机制再做 Godot 混合作品的宣传](../cases/gta-spiderman-hulk-godot-mashup.md) — Deni称两小时把摆荡、踩踏与街道组合进同一城市，提供扫描到规格的流程，未给原游戏版本、代码或验收日志。 **[REA · 待验证]**
 - [sm64-gba：Claude 适配既有人类反编译成果，用逐帧 oracle 保持 GBA 运动逻辑](../cases/sm64-gba-claude-bitexact-port.md) — 基于 n64decomp 的运动与碰撞代码，Claude Opus 5.5 辅助 GBA 适配和测试；有公开项目 CI 成功记录，非完整游戏或实机验证。 **[其他 AI 逆向 · 进行中]**
-- [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](../cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究游戏状态同步；README列Deus Ex等项目，不保证任何游戏自动成功。 **[REA · 相关项目]**
+- [Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程](../cases/coop-anything-agent-multiplayer-workflow.md) — 公开MCP与playbook先找已有Mod，再修复或研究同步；新转述细化Deus Ex的HXFix与Beta客户端测试，不是从零做完整合作模式。 **[REA · 相关项目]**
 - [魔界村：REA／AI 解析后重做浏览器版，加入落雷与巨大 Boss 的视频自述](../cases/ghosts-goblins-rea-browser-lightning-boss.md) — J_un_Suzuki的视频标题给出魔界村解析、浏览器重现和新机制改造；未取得视频内步骤或可玩产物。 **[REA · 待验证]**
 - [Deltarune 到 Roblox／Luau：社区质疑 AI 重编译与原作精度的线索](../cases/deltarune-roblox-luau-ai-recomp-controversy.md) — 补读父帖确认所指是Deltarune引擎的Roblox重建；评论者指其AI生成，但无开发者说明或源码验证。 **[其他 AI 逆向 · 待验证]**
 - [Mauro 的 Mega Drive 移植：AI 将 DOS 游戏转为 C，人工处理内存与画面限制](../cases/mauro-dos-sgdk-megadrive-ai-port.md) — Mauro Xavier 澄清用 AI 将原 DOS 软盘游戏转为 SGDK/C 与素材工具，不用 Rust 或 REA；报告通关无崩溃，优化仍需人工。 **[其他 AI 逆向 · 进行中]**

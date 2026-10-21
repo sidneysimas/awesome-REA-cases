@@ -1,5 +1,189 @@
 [
   {
+    "id": "ra3-corona-deepseek-trainer-llm",
+    "title": "红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。",
+    "description": "2026年10月21日20:12（北京时间），探姬（@ProbiusOfficial）描述用 dsv4.1f 研究《红色警戒3》与日冕 Mod。起因是自己长期使用2009年由 Cheat Engine（CE）生成的31项修改器，经常在游玩时崩溃，想把遭遇战的协议技能带进原版战役。作者说黑盒实验从v0到v26仍未实现空投随机单位；后来结合解包内容，才发现战役缺少对应技能释放资源，部分单位和折跃逻辑存在，但缺美术资源，部分特殊hash对象也不在。不能将最终修改器完成等同于这个最初目标成功。\n\n作者随后让模型分析旧CE修改器并重写逻辑，称模型会把已被修改的目标汇编当成无效改动，擅自另改，需要每改一两处就人工打断。WorkBuddy又将猜测和不稳定黑盒记录写进记忆，模型对涉及随机函数的测试也常只跑一次。作者把迭代1017后问题约50%归于旧黑盒记录、40%归于不遵守测试流程；这是个人诊断，不是审计统计。清理猜测和不稳定记录后才有所改善。作者称运行态解包时恢复了Mod部分核心结构及调用游戏函数的方法，最终重写修改器并把LLM接入游戏内部函数以干预战局。\n\n主要突破据称发生在干净Windows机器上，只用Python；此前曾用IDA无MCP导出部分内容，在主机上展示组件，也试过REA，但不能把成果归为REA独立完成。没有公开源码、补丁、随机测试日志或稳定性对照；更安全、更强大及完成接入均为作者自述，未独立运行，也不涉及线上反作弊绕过。",
+    "sources": [{"label": "探姬：红警3／日冕、旧CE修改器与LLM接入的完整自述", "url": "https://x.com/i/status/2112879611084427419"}],
+    "snapshot_date": "2026-10-21",
+    "metadata": ["来源更新：2026-10-21T20:12:09+08:00；候选快照22赞、2158浏览、2转发；热度不是验证。"],
+    "en": {
+      "title": "Red Alert 3 and Corona: DeepSeek-assisted trainer rewrite and LLM game control",
+      "summary": "ProbiusOfficial reports rebuilding a 2009 CE trainer and connecting an LLM to Red Alert 3/Corona; the original campaign airdrop goal failed and extensive human correction was needed.",
+      "description": "At 20:12 Beijing time on October 21, 2026, 探姬 (@ProbiusOfficial) describes using dsv4.1f to study Red Alert 3 and its Corona mod. A frequently crashing 31-option trainer generated with Cheat Engine (CE) in 2009 prompted an attempt to bring skirmish protocol abilities into the original campaign. Black-box experiments from v0 through v26 reportedly failed to summon random units by airdrop. Only after examining unpacked material did the author identify missing campaign ability-release resources. Some unit and warp logic existed but lacked art assets, while some special hash objects were absent. Finishing a trainer is not success on this initial objective.\n\nThe author then asked the model to analyze and rewrite the old CE trainer. It reportedly mistook already-modified target assembly for invalid edits and improvised changes, requiring human interruption every one or two modifications. WorkBuddy stored guesses and unstable black-box observations in memory, while the model often tested even random-function behavior only once. After iteration 1017, the author attributed roughly 50% of problems to old black-box records and 40% to failure to follow testing instructions: a personal diagnosis, not audited statistics. Removing speculative and unstable records reportedly improved matters. Runtime unpacking is said to have revealed some core mod structures and ways to call game functions. The author reports completing the trainer rewrite and connecting an LLM to internal functions to influence battles.\n\nThe main breakthroughs reportedly happened on a clean Windows machine using only Python. Earlier work included IDA exports without MCP, showing components on the main machine and trying REA; the result cannot be credited as an independent REA accomplishment. No public source, patch, random-test logs or stability comparison is supplied. Safer, more powerful and completed integration remain author claims, not independently run here, and no online anti-cheat bypass is described.",
+      "metadata": ["Source update: 2026-10-21T20:12:09+08:00; candidate snapshot: 22 likes, 2,158 views, 2 reposts; engagement is not verification."],
+      "source_labels": ["ProbiusOfficial's full account of Red Alert 3/Corona, the old CE trainer and LLM integration"]
+    }
+  },
+  {
+    "id": "mac-camera-studio-light-claude-button",
+    "title": "Mac 一键控制相机与摄影灯：Claude 辅助的小应用",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Roman Meerson 报告借助 Claude 与少量逆向，在 Mac 上用一个按钮控制相机和摄影灯，不需 Stream Deck。",
+    "description": "2026年10月21日21:15（北京时间），Roman Meerson（@Homich1991）说受到 wesbos 及近期电视改造启发，用 Claude 做了一个小应用，让 Mac 上一个按钮控制相机与摄影灯，不需要 Stream Deck 这类外部快捷控制设备。他明确提到其中有少量逆向工作，因此这是具体设备控制用途，不把启发他的电视项目算成他的成果。\n\n帖子没有说明相机和灯的品牌、通信方式、逆向对象是厂商应用还是设备接口，也未给仓库或受控测试。补查原帖确认作者，并可见图片附件，但本合集未据图片推定功能细节或实际操控设备。只保留作者报告的按钮与控制用途，不推断通用兼容、开源或使用REA。",
+    "sources": [{"label": "Roman Meerson：Claude、少量逆向与Mac相机／灯光按钮", "url": "https://x.com/i/status/2112895513066361011"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "One Mac button for a camera and studio light, built with Claude",
+      "summary": "Roman Meerson reports a Claude-assisted app with some reverse engineering to control a camera and studio light from a Mac without a Stream Deck.",
+      "description": "At 21:15 Beijing time on October 21, 2026, Roman Meerson (@Homich1991) says wesbos and recent TV modifications inspired a small Claude-built app: one button on a Mac controls a camera and studio light without an external shortcut device such as Stream Deck. The post explicitly mentions some reverse engineering, providing a concrete device-control use. The TV projects that inspired it are not this author's achievements.\n\nNo camera or light brands, communication method, identification of vendor-app versus device-interface analysis, repository or controlled tests are supplied. Reading the original post confirmed authorship and an attached picture, but no functional details were inferred from the image and no devices were controlled here. Only the reported button and control purpose are retained; general compatibility, open-source availability and REA use are not inferred.",
+      "metadata": [], "source_labels": ["Roman Meerson on Claude, some reverse engineering and a Mac camera/light button"]
+    }
+  },
+  {
+    "id": "layerfs-unity-agent-workspaces",
+    "title": "LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述",
+    "category": "apps", "rea": "unknown", "status": "related-project",
+    "summary": "两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。",
+    "description": "2026年10月21日21:26，Chasen（@chasen_liao）介绍 LayerFS v1.0.0，称其为AI Agent文件系统：每次Bash调用有独立工作区，同文件冲突拒绝，fork不复制全部文件，并可回到历史步骤。帖子转述某位使用者把Unity游戏逆向文件从400G缩为33G；22:39另一帖补充材料来自8天工程。两者没有给游戏名、原始存储测量或该使用者日志，不能当作两次独立实验。\n\n后一帖还转述作者做Rust数据库引擎任务，30个分支有2.5TB快照、实际占4.66GB，main单分支原本8.23GB。前帖另称10份拷贝占0.31份空间、挂载0.05秒。全部是不同口径的来源数字，不混合成压缩率，也不等于逆向速度或准确率提升。去重、不复制分支等是来源解释；尤其后一帖说明其机制解释来自Grok，不能升级为源码核验。MIT、开源、回滚与冲突保证均为宣传，未取得仓库实现或运行测试。本案只记录用于多Agent逆向工作区的相关工具，没有确认REA参与，也没有执行下载代码。",
+    "sources": [{"label": "Chasen：LayerFS工作区及Unity400G到33G转述", "url": "https://x.com/i/status/2112898320997781948"}, {"label": "22:39补充：8天Unity材料与数据库分支存储数字", "url": "https://x.com/i/status/2112916736693490097"}],
+    "snapshot_date": "2026-10-21", "metadata": ["首帖候选快照32赞、3720浏览、2转发；后一帖7赞、471浏览、1转发；均非性能验证。"],
+    "en": {
+      "title": "LayerFS: reported storage savings for multi-agent Unity reverse-engineering workspaces",
+      "summary": "Two posts describe isolated workspaces and deduplicated snapshots, repeating a 400G-to-33G claim for eight days of Unity artifacts; this is infrastructure, not a game-recovery score.",
+      "description": "At 21:26 Beijing time on October 21, 2026, Chasen (@chasen_liao) introduces LayerFS v1.0.0 as an AI-agent filesystem: separate workspaces for Bash calls, rejection of same-file conflicts, forks without full file copies and access to previous steps. The post repeats another user's claim that Unity game reverse-engineering artifacts shrank from 400G to 33G. A 22:39 post adds that the material came from eight days of work. Neither provides the game, original storage measurements or that user's logs; these are not two independent experiments.\n\nThe later post also relays the author's Rust database-engine task: 30 branches representing 2.5TB of snapshots reportedly occupied 4.66GB, versus 8.23GB for main alone. The earlier post separately claims ten copies occupying 0.31 copies' space and a 0.05-second mount. These source figures have different denominators and are not combined into a compression rate or an improvement in reversing speed or accuracy. Deduplication and copy-free branches are the sources' explanations; the later author explicitly learned its mechanism from Grok, not source-code inspection. MIT licensing, open-source availability, rollback and conflict guarantees remain promotional claims without an inspected implementation or executed tests here. This is a related tool for multi-agent reversing workspaces, with REA involvement unconfirmed and no downloaded code executed.",
+      "metadata": ["First candidate snapshot: 32 likes, 3,720 views, 2 reposts; later post: 7 likes, 471 views, 1 repost; neither is performance verification."],
+      "source_labels": ["Chasen on LayerFS workspaces and the Unity 400G-to-33G claim", "22:39 follow-up: eight days of Unity artifacts and database-branch storage figures"]
+    }
+  },
+  {
+    "id": "claude-wifi-swarm-verifier-false-cameras",
+    "title": "家庭 Wi-Fi 的64个 Claude Agent：验证器否决9个摄像头猜测的自述",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "Vexo称扫描41台设备后，验证器因没有视频包否决9项隐藏摄像头判断；没有公开捕获或日志供核对。",
+    "description": "2026年10月21日21:35（北京时间），Vexo（@Vexo200）描述让64个Claude Code Agent检查家庭Wi-Fi，用中间验证器拒绝没有抓包支持的发现。他称覆盖41台设备，11分钟追踪1206连接；电视一天联系广告追踪2940次并被关停，19美元插座每90秒访问海外服务器，打印机仍运行2019年固件且9100端口对全网开放。这里的全网没有外部探测位置，不能解释为公网暴露。\n\n标题所谓发现9个隐藏摄像头在正文被作者自己否定：烟感、婴儿监视器和音箱等猜测拿不出一包视频，9项都在verify.log里被否决，不是销毁了9台摄像头。没有视频包也不证明设备绝不含摄像头。作者还声称某酒店烟感故事被Community Notes纠正；本合集未查到对应注释，不能据此替其他候选作真假定论。\n\n没有公开捕获、verify.log、代码或设备型号，密码留在钥匙串也只是作者说法；数字与纠错结果均未独立复核。只保留为网络分析中约束AI误报的未验证实验，不是住宿安全检测保证或通用扫描教程，未确认REA参与。",
+    "sources": [{"label": "Vexo：64个Agent及验证器否决摄像头猜测", "url": "https://x.com/i/status/2112900542779249014"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "64 Claude agents on home Wi-Fi: a verifier reportedly rejects nine camera guesses",
+      "summary": "Vexo describes inspecting 41 devices and rejecting nine hidden-camera guesses for lack of video packets, without publishing captures or logs.",
+      "description": "At 21:35 Beijing time on October 21, 2026, Vexo (@Vexo200) describes 64 Claude Code agents inspecting home Wi-Fi, with a central verifier rejecting findings unsupported by captures. The author reports 41 devices and 1,206 connections traced in 11 minutes; a TV contacting ad trackers 2,940 times in a day before being disabled; a $19 plug contacting an overseas server every 90 seconds; and a printer on 2019 firmware with port 9100 open to the whole network. Without an external vantage point, the latter does not establish public-internet exposure.\n\nThe headline's nine hidden cameras are explicitly rejected in the body: guesses involving a smoke detector, baby monitor and speaker could not produce a video packet and all nine were reportedly discarded in verify.log. This is not destruction of nine cameras. Absence of a captured video packet also does not prove a device contains no camera. The author additionally claims Community Notes corrected a hotel smoke-detector story, but the corresponding note was not checked here and cannot establish whether other candidates are true or false.\n\nNo captures, verify.log, code or device models are public in the supplied evidence; keeping the password in a keychain is also an author claim. Neither the figures nor the corrections were independently checked. This is an unverified experiment in constraining AI false positives during network analysis, not an accommodation-safety guarantee or general scanning tutorial. REA involvement is unconfirmed.",
+      "metadata": [], "source_labels": ["Vexo on 64 agents and a verifier rejecting camera guesses"]
+    }
+  },
+  {
+    "id": "superhuman-claude-personal-rebuild",
+    "title": "Superhuman 自用版：用 Claude API 额度替代另一份订阅的自述",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "pano称逆向Superhuman做个人版本，运行在自己的月度Claude API额度上；没有具体功能、代码或兼容测试。",
+    "description": "2026年10月21日22:10（北京时间），pano（@Panootw）在日常记录中说自己逆向Superhuman并做了自己的版本，使用月度Claude API额度而非再付另一份订阅。明确的目标是个人替代应用与模型调用开销的整合，不是已经证明没有任何持续费用。\n\n原帖未列Superhuman版本、逆向方法、模型参与分析的步骤、具体重建功能、仓库或对照测试；不能补写邮件协议、收件箱同步或完整功能对等。补查原帖确认作者，视频附件未被当作独立复现。只保留作者自述的自用版本和付费动机，未确认REA，未使用账户或运行软件。",
+    "sources": [{"label": "pano：Superhuman个人重建及Claude API额度", "url": "https://x.com/i/status/2112909368920551513"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "A personal Superhuman rebuild using Claude API credits instead of another subscription",
+      "summary": "pano reports a personal Superhuman version running on monthly Claude API credits, without a feature list, code or compatibility tests.",
+      "description": "At 22:10 Beijing time on October 21, 2026, pano (@Panootw) says in a daily journal that they reverse-engineered Superhuman and built a personal version running on their monthly Claude API credits rather than another subscription. The concrete goal is a personal replacement integrated with existing model-call spending, not demonstrated elimination of all recurring costs.\n\nThe post gives no Superhuman version, reversing method, steps showing the model's analytical role, reconstructed feature list, repository or comparison tests. Mail protocols, inbox synchronization and full feature parity are not inferred. Reading the original post confirmed authorship; its video attachment is not independent reproduction. Only the reported personal version and payment motivation are retained. REA is unconfirmed, and no account was used or software run here.",
+      "metadata": [], "source_labels": ["pano on a personal Superhuman rebuild and Claude API credits"]
+    }
+  },
+  {
+    "id": "motorola-smart-connect-rea-linux",
+    "title": "Motorola Smart Connect 到 Linux：REA 辅助通知、手机窗口和副屏的自述",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "Rudra Patel报告研究Motorola Smart Connect后实现Linux互通，称支持通知回复、窗口化手机应用及副屏，无需root。",
+    "description": "2026年10月21日22:32（北京时间），Rudra Patel（@RudraPatel06）说看到REA热度后，把它用于Motorola Smart Connect。这是连接手机与电脑的软件；作者称原来只连Windows，现在自己的实现能在Linux显示并回复通知、把手机应用放进Linux窗口，并提供第二屏幕，仍用原装App且无root。目标是补Linux互通，不是另做一款安卓系统。\n\n补查原帖确认作者与这些功能表述。没有取得短链中的实现、手机型号、App版本、协议文档或复测；公开GitHub关键词检索未找到可确认仓库，不能因此断定没有仓库。视频附件存在但未在此完整检查；没有声称成功编译、低延迟或广泛机型兼容。所有功能与免root条件仍为作者报告，本合集未连接手机或运行代码。",
+    "sources": [{"label": "Rudra Patel：REA研究Smart Connect与Linux互通", "url": "https://x.com/i/status/2112914939711258948"}],
+    "snapshot_date": "2026-10-21", "metadata": ["来源更新：2026-10-21T22:32:32+08:00；候选快照1赞、37浏览；无独立设备测试。"],
+    "en": {
+      "title": "Motorola Smart Connect on Linux: a REA-assisted interoperability report",
+      "summary": "Rudra Patel reports notification replies, windowed phone apps and a second screen on Linux after studying Smart Connect with REA, using the stock app without root.",
+      "description": "At 22:32 Beijing time on October 21, 2026, Rudra Patel (@RudraPatel06) says REA's popularity prompted an investigation of Motorola Smart Connect, software connecting phones to computers. Describing its existing PC connection as Windows-only, the author reports Linux notification display and replies, phone apps in Linux windows and a second screen, while retaining the stock app without root. The aim is Linux interoperability, not a replacement Android operating system.\n\nThe original post confirmed authorship and these feature statements. The short-linked implementation, phone models, app version, protocol documentation and repeat tests were not obtained. A public GitHub keyword search found no confirmed repository, which does not establish that none exists. A video attachment exists but was not fully examined here. Successful compilation, low latency and broad model compatibility are not claimed. Features and the no-root condition remain the author's report; no phone was connected or code executed by this collection.",
+      "metadata": ["Source update: 2026-10-21T22:32:32+08:00; candidate snapshot: 1 like, 37 views; no independent device test."],
+      "source_labels": ["Rudra Patel on REA research of Smart Connect and Linux interoperability"]
+    }
+  },
+  {
+    "id": "socom2-legacy-ai-browser-engine",
+    "title": "SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。",
+    "description": "2026年10月21日22:44（北京时间），Benny（@imbennyhim）说明SOCOM II Legacy和Zero Ops是不同体验：后者是新游戏，Legacy则通过自己的浏览器引擎带回原地图与资产。他把近期AI工具进步列为小团队能承担这类逆向工作的原因，同时强调仍有大量研究、编码与测试，并没有宣称一句话全自动完成。\n\n补查原帖确认作者及项目表述，没有取得引擎源码、原游戏版本、资产转换方法、运行性能或联机验证。不能把与Zero Ops相近的时间线说成合作或同一项目，也不确认版权授权、完整游戏重建或公测发布。保留为开发者报告的进行中AI辅助游戏研究，未明示REA，未下载或执行原游戏及资产。",
+    "sources": [{"label": "Benny：SOCOM II Legacy与Zero Ops区别及AI角色", "url": "https://x.com/i/status/2112918017566736639"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "SOCOM II Legacy: an AI-assisted browser-engine project for original maps and assets",
+      "summary": "Benny says a custom browser engine brings back SOCOM II maps and assets, explicitly crediting substantial human research, coding and testing alongside AI.",
+      "description": "At 22:44 Beijing time on October 21, 2026, Benny (@imbennyhim) distinguishes SOCOM II Legacy from Zero Ops: the latter is a new game, whereas Legacy brings back original maps and assets through a custom browser engine. The developer credits recent AI tools with making this reverse-engineering work more achievable for a small team, while emphasizing extensive research, coding and testing rather than a one-prompt automatic result.\n\nReading the original post confirmed authorship and the project statement. Engine source, the original game version, asset-conversion methods, runtime performance and multiplayer validation were not obtained. Similar timelines do not establish collaboration with Zero Ops or a shared project. Copyright authorization, complete game reconstruction and a public beta release are not confirmed. This remains an ongoing developer-reported AI-assisted game-research project. REA is not stated, and neither the game nor its assets were downloaded or executed here.",
+      "metadata": [], "source_labels": ["Benny on SOCOM II Legacy, its distinction from Zero Ops and AI's role"]
+    }
+  },
+  {
+    "id": "neverball-rea-kanivolcanoengine",
+    "title": "Neverball 到 KaniVolcanoEngine：REA 先提规格，LLM 再用 Rust 引擎重建",
+    "category": "games", "rea": "REA", "status": "unverified",
+    "summary": "Otinpan报告从Neverball可执行文件恢复游戏逻辑与关卡结构规格，再让LLM用自己的Rust引擎实现；未给行为对等测试。",
+    "description": "2026年10月21日22:47（北京时间），Otinpan（@otinpan512）介绍KaniVolcanoEngine与REA结合的实验：先用REA研究Neverball可执行文件，生成覆盖游戏逻辑及关卡结构的规格，再让LLM基于该规格，在自己的Rust游戏引擎KaniVolcanoEngine里重建游戏。这里报告的是可执行文件到规格再到另一引擎的路径，不是只看截图仿界面。\n\n补查原帖确认作者及两段视频附件，但本合集未完整检查演示，也没有取得目标版本、规格、重建源码、随机或物理行为对照、关卡覆盖率及构建记录。公开GitHub项目名检索未找到可确认仓库，不能推断它未公开。作者所称重建不能扩展为全部关卡、完全相同物理或原始源码恢复，LLM具体型号也未说明。未运行目标或引擎。",
+    "sources": [{"label": "Otinpan：Neverball可执行文件、REA规格与Rust引擎重建", "url": "https://x.com/i/status/2112918638345039936"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "Neverball in KaniVolcanoEngine: REA extracts a specification, an LLM rebuilds in Rust",
+      "summary": "Otinpan reports extracting game-logic and level-structure specifications from Neverball's executable, then implementing them in a custom Rust engine without published equivalence tests.",
+      "description": "At 22:47 Beijing time on October 21, 2026, Otinpan (@otinpan512) describes combining REA with KaniVolcanoEngine. REA first investigates Neverball's executable and generates a specification covering game logic and level structure. An LLM then uses that specification to recreate the game in the author's custom Rust game engine, KaniVolcanoEngine. The reported route is executable to specification to another engine, not merely copying a screenshot's interface.\n\nReading the original post confirmed authorship and two attached videos, but the demonstrations were not fully examined here. No target version, specification, reconstruction source, random or physics-behavior comparisons, level-coverage figures or build record was obtained. A public GitHub project-name search found no confirmed repository, which does not establish that it is unpublished. Recreated does not establish every level, identical physics or recovery of original source. The LLM model is unspecified. Neither target nor engine was run here.",
+      "metadata": [], "source_labels": ["Otinpan on Neverball's executable, a REA specification and a Rust-engine rebuild"]
+    }
+  },
+  {
+    "id": "codex-computer-use-mcp-general-replacement",
+    "title": "Codex computer-use MCP：逆向后切换自有连接器的自述",
+    "category": "apps", "rea": "unknown", "status": "in-progress",
+    "summary": "Romy称研究OpenAI Codex的computer-use MCP后，已从原连接器切换到自己的general-computer-use；未说明AI分析角色。",
+    "description": "2026年10月21日23:00（北京时间），Romy（@0xBunny）报告逆向OpenAI Codex的computer-use MCP连接器后，切换到了自己的general-computer-use。MCP是Agent连接工具的接口；本案目标是替换电脑操作连接器，而不是重建Codex模型。\n\n原帖没有协议字段、工具清单、版本、代码、平台或操作测试，也没说明由哪种AI辅助逆向或是否使用REA。保留为围绕AI工具接口的相关进行中项目与作者报告的切换，不把它写成已证实完整兼容、跨平台或规避安全机制。补查原帖确认作者，没有访问电脑控制服务或执行连接器。",
+    "sources": [{"label": "Romy：Codex computer-use MCP逆向及连接器切换", "url": "https://x.com/i/status/2112921989568434592"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "Codex computer-use MCP: a reported switch to a custom connector after reverse engineering",
+      "summary": "Romy reports replacing Codex's computer-use MCP connector with general-computer-use, without specifying AI's analytical role.",
+      "description": "At 23:00 Beijing time on October 21, 2026, Romy (@0xBunny) reports reverse-engineering OpenAI Codex's computer-use MCP connector and switching to a custom general-computer-use. MCP connects agents to tools; the target is a replacement computer-operation connector, not reconstruction of the Codex model.\n\nThe post supplies no protocol fields, tool list, version, source, platform or operation tests, and does not identify an AI assisting the investigation or REA use. This is retained as a related ongoing project around AI-tool interfaces and an author-reported switch, not proven full compatibility, cross-platform operation or circumvention of safety controls. The original post confirmed authorship. No computer-control service was accessed or connector executed here.",
+      "metadata": [], "source_labels": ["Romy on reverse-engineering Codex computer-use MCP and switching connectors"]
+    }
+  },
+  {
+    "id": "honor-of-kings-ai-control-interface-idea",
+    "title": "王者荣耀：逆向后让 AI 编写本人对局控制接口的想法",
+    "category": "games", "rea": "unknown", "status": "unverified",
+    "summary": "回复者提出研究王者荣耀并让AI写实时控制接口；没有开工、实现或获授权的证据。",
+    "description": "2026年10月21日23:04（北京时间），一位回复者提出，直接逆向《王者荣耀》，再让AI写几个控制接口，对自己账号的对局进行实时控制。目标游戏、AI编码角色和控制用途具体，因此保留为idea而非已实现项目。\n\n帖子没有模型、协议发现、代码、演示或测试，更未证明获得游戏运营方授权。本人账号不等于有权自动化线上对战；本条不提供作弊、反作弊规避或接入步骤，也不推断已有可用接口。未明示REA，没有执行或连接游戏。",
+    "sources": [{"label": "读者：王者荣耀逆向与AI控制接口建议", "url": "https://x.com/i/status/2112922910809817275"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "Honor of Kings: an idea for AI-written real-time control interfaces after reverse engineering",
+      "summary": "A reply proposes studying Honor of Kings and having AI write controls for the author's matches, without evidence of work, implementation or authorization.",
+      "description": "At 23:04 Beijing time on October 21, 2026, a reader proposes reverse-engineering Honor of Kings, then having AI write control interfaces for real-time operation of matches on their own account. The game, AI coding role and intended control are specific, so this is retained as an idea rather than an implemented project.\n\nNo model, protocol findings, code, demonstration or tests are supplied, nor evidence of authorization from the operator. Owning an account does not authorize automation in online matches. This entry provides no cheating, anti-cheat-evasion or connection steps and does not infer an existing usable interface. REA is not stated; the game was neither run nor connected to here.",
+      "metadata": [], "source_labels": ["Reader's suggestion of Honor of Kings reverse engineering and AI control interfaces"]
+    }
+  },
+  {
+    "id": "bak-dos-emulator-ai-debug-symbols",
+    "title": "BaK 研究中的 DOS 模拟器：让 Agent 调试，C 源级符号支持尚未完成",
+    "category": "games", "rea": "unknown", "status": "in-progress",
+    "summary": "Cesar Canassa称在BaK反编译时写了可由AI驱动的DOS模拟器，正在加入Borland调试符号，以便Agent单步查看C而非汇编。",
+    "description": "2026年10月21日21:02（北京时间），Cesar Canassa（@ccanassa）给出自己在BaK反编译期间编写的DOS模拟器，称可完全由AI驱动。他正在加入Borland调试符号支持，让Agent能按C代码而不是汇编单步调试，并明确这部分还没完成。目标是改善老DOS程序研究的调试反馈，不是宣布整个BaK源码恢复或可由AI独立通关。\n\n补查原帖确认作者与未完成状态，但未取得短链项目、模拟准确性、指令支持、调试API或测试。BaK沿用作者代号，不凭缩写补全游戏身份；AI驱动与C源级调试是不同成熟度的功能，后者不能写成可用。未确认REA，也未运行模拟器或目标。",
+    "sources": [{"label": "Cesar Canassa：BaK研究中的DOS模拟器与未完成Borland符号支持", "url": "https://x.com/i/status/2112892159276032014"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "A DOS emulator from BaK research: AI-driven debugging, with C-level symbols unfinished",
+      "summary": "Cesar Canassa reports an AI-drivable DOS emulator and unfinished Borland-symbol support intended to let agents step through C rather than assembly.",
+      "description": "At 21:02 Beijing time on October 21, 2026, Cesar Canassa (@ccanassa) presents a DOS emulator written during BaK decompilation and says it can be fully AI-driven. He is adding Borland debug-symbol support so agents can step through C rather than assembly, explicitly stating that this part is unfinished. The goal is better debugging feedback for old DOS-program research, not complete BaK source recovery or an agent independently finishing the game.\n\nThe original post confirmed authorship and the unfinished state, but the short-linked project, emulation accuracy, instruction coverage, debugging API and tests were not obtained. BaK remains the author's abbreviation rather than an inferred game identity. AI-driven operation and C-level debugging have different reported maturity; the latter is not described as available. REA is unconfirmed, and neither emulator nor target was run here.",
+      "metadata": [], "source_labels": ["Cesar Canassa on a DOS emulator from BaK research and unfinished Borland-symbol support"]
+    }
+  },
+  {
+    "id": "wiiu-ai-dvd-bluray-playback-idea",
+    "title": "Wii U 播放 DVD／蓝光电影：受 AI 反编译进展启发的愿望",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "Johann希望借AI反编译带来的兼容性进展，让Wii U播放DVD和蓝光电影；尚无研究路线或硬件可行性证据。",
+    "description": "2026年10月21日21:04（北京时间），Johann（@JohannJaegerson）看到AI游戏反编译、向后兼容和游戏移植讨论后，提出自己的具体愿望：在Wii U上播放DVD或蓝光电影。保留为设备功能想法，不能把同帖提到的其他游戏移植当成这一功能的实现。\n\n作者没有宣布开工、指定模型或REA，也没有驱动分析、光驱能力、解码实现、授权或运行演示。AI可能分析软件并不证明设备硬件能读相应光盘；本合集没有验证该目标可行，不提供版权保护绕过方法，也没有运行目标代码。",
+    "sources": [{"label": "Johann：受AI反编译启发的Wii U电影播放愿望", "url": "https://x.com/i/status/2112892814279467091"}],
+    "snapshot_date": "2026-10-21", "metadata": [],
+    "en": {
+      "title": "DVD/Blu-ray movies on Wii U: a wish inspired by AI decompilation progress",
+      "summary": "Johann hopes AI-enabled compatibility work could bring DVD and Blu-ray movie playback to Wii U, without a research plan or hardware-feasibility evidence.",
+      "description": "At 21:04 Beijing time on October 21, 2026, Johann (@JohannJaegerson), discussing AI game decompilation, backward compatibility and ports, expresses a concrete wish: playing DVD or Blu-ray movies on Wii U. This is retained as a device-feature idea; other game ports mentioned in the post are not implementations of this feature.\n\nThe author does not announce work, identify a model or REA, or provide driver analysis, optical-drive capabilities, decoding code, authorization or a runtime demonstration. AI's ability to analyze software does not establish that the hardware can read the relevant discs. Feasibility was not verified here, no copyright-protection bypass instructions are provided and no target code was run.",
+      "metadata": [], "source_labels": ["Johann's Wii U movie-playback wish inspired by AI decompilation"]
+    }
+  },
+  {
     "id":"cateye-rp-rea-axure-reimplementation", "title":"CatEye RP：REA 与 Codex 重实现 Axure RP，因配额暂缓",
     "category":"apps", "rea":"REA", "status":"in-progress",
     "summary":"George JW 报告正在重建交互原型工具 Axure RP；运行近两天仍在构建，Codex 配额接近耗尽后暂停。",
@@ -1831,17 +2015,17 @@
   },
   {
     "id": "hyperframes-xiaolin-video-template",
-    "title": "HyperFrames editor：拆解小Lin说动效与叙事模板，再生成泰国经济视频",
+    "title": "HyperFrames editor：从小Lin说到12期Vox模板，生成不同主题的视频",
     "category": "apps", "rea": "other-ai", "status": "unverified",
-    "summary": "Miao Yang称把剪辑、动效与声音拆成模板，生成9分34秒新题目；这是AI视觉工作流重建宣传，不是软件反编译。",
+    "summary": "Miao Yang报告从小Lin说及12期Vox节目提取制作模板，生成9分34秒泰国经济及9分钟公共厕所主题视频；未验证逐帧一致性或授权。",
     "description": "10月19日18:03（北京时间），@WaterrrMiao（Miao Yang）介绍HyperFrames editor：先研究小Lin说视频的文案、画面编排、逐帧动效、音效和背景音乐时机，再把这些拆成可复用模板。帖子以Opus 5.5后的code-to-video为背景，称使用HeyGen数字人与声音克隆，将模板用于小Lin没讲过的‘一口气了解泰国经济’，时长9分34秒。目标是从可观察作品恢复制作流程，再生成不同主题，而非反编译HyperFrames软件。\n\n作者称动效可逐帧1:1重建、模板可持续制作系列；本合集没有原片对齐数据、模板源码、渲染记录或观看完整演示，不能验证一比一、制作成本或无限泛化。未确认具体由哪个模型完成各步骤或使用REA。帖子明确画面主持人与声音均为AI生成、不是小Lin本人，仅技术演示；这不代表获得本人认可或授权。",
-    "sources": [{"label": "Miao Yang介绍HyperFrames模板与9分34秒泰国经济演示", "url": "https://x.com/i/status/2112122511509065797"}],
-    "snapshot_date": "2026-10-19", "metadata": [],
+    "sources": [{"label": "Miao Yang介绍HyperFrames模板与9分34秒泰国经济演示", "url": "https://x.com/i/status/2112122511509065797"}, {"label": "10月21日补充：12期Vox模板与9分钟公共厕所主题演示", "url": "https://x.com/i/status/2112936327964750249"}],
+    "snapshot_date": "2026-10-21", "metadata": ["10月21日23:57（北京时间）作者补充：从12期Vox节目提取写作、剪辑与动效模板，生成Vox未做过的9分钟‘Why America has so few public bathrooms’。作者称以每秒12幅绘制、同一大画板上的镜头移动、纸张颗粒及套印偏差等恢复风格，真实影像不调色；另称逐帧1:1动效、寻找授权素材并在画面署名、将音效和音乐变化对齐旁白，全流程运行于HyperFrames Studio、只用HeyGen这一个API，未用任何Vox原画面。这些是作者对流程、素材权利及成品的宣称，未取得模板、授权记录或完整片对照，不能认证。旁白为AI声音，仅技术演示，与Vox无制作或隶属关系；不代表Vox认可或授权。候选快照0赞、4浏览、0转发，不与旧帖热度混算。"],
     "en": {
-      "title": "HyperFrames editor: reconstructing Xiaolin-style motion and narrative templates for a Thailand video",
-      "summary": "Miao Yang describes extracting editing, motion and audio templates for a new 9:34 video; this is a promoted AI visual-workflow reconstruction, not software decompilation.",
+      "title": "HyperFrames editor: from Xiaolin to 12 Vox episodes, extracting templates for new topics",
+      "summary": "Miao Yang reports templates from Xiaolin and 12 Vox episodes for a 9:34 Thailand-economy video and a nine-minute public-bathrooms video; frame-level fidelity and rights remain unverified.",
       "description": "At 18:03 Beijing time on October 19, @WaterrrMiao (Miao Yang) introduces HyperFrames editor as studying Xiaolin's scripts, visual sequencing, frame-level motion, sound effects and background-music timing, then extracting reusable templates. Framed around code-to-video after Opus 5.5, the post says HeyGen avatars and voice cloning apply the template to a new topic Xiaolin had not covered: an introduction to Thailand's economy lasting 9 minutes 34 seconds. The target is recovering a production workflow from observable work and generating different topics, not decompiling HyperFrames software.\n\nThe author claims frame-by-frame 1:1 motion reconstruction and repeatable series production. No original-to-generated alignment data, template source, rendering record or full-video viewing was obtained here. One-to-one fidelity, production costs and unlimited generalization are not verified. The specific model handling each step and REA use are unconfirmed. The post explicitly says the presenter image and voice are AI-generated, not Xiaolin herself, and only a technical demonstration. This establishes neither her endorsement nor permission.",
-      "metadata": [], "source_labels": ["Miao Yang introduces HyperFrames templates and a 9:34 Thailand-economy demonstration"]
+      "metadata": ["At 23:57 Beijing time on October 21, the author adds a template extracted from 12 Vox episodes for writing, editing and motion, generating the nine-minute 'Why America has so few public bathrooms,' an episode Vox never made. The author describes 12 drawings per second, camera travel across one large board, paper grain and off-register ink, with ungraded live footage. Further claims include frame-by-frame 1:1 motion, finding licensed footage and crediting it on screen, narration-aligned sound effects and music changes, an entirely HyperFrames Studio workflow using only the HeyGen API, and no original Vox frames. These are claims about workflow, footage rights and output: no templates, license records or full-video comparison were obtained to verify them. Narration is AI-generated; this is a technical demo not made by or affiliated with Vox and establishes neither endorsement nor permission. Candidate snapshot: 0 likes, 4 views, 0 reposts, not combined with older-post engagement."], "source_labels": ["Miao Yang introduces HyperFrames templates and a 9:34 Thailand-economy demonstration", "October 21 follow-up: 12-episode Vox template and nine-minute public-bathrooms demonstration"]
     }
   },
   {
@@ -1916,15 +2100,15 @@
     "id": "coop-anything-agent-multiplayer-workflow",
     "title": "Co-op Anything：给 Agent 的单机游戏联机改造与旧 Mod 修复流程",
     "category": "games", "rea": "REA", "status": "related-project",
-    "summary": "公开MCP与playbook先找已有Mod，再修复或研究游戏状态同步；README列Deus Ex等项目，不保证任何游戏自动成功。",
+    "summary": "公开MCP与playbook先找已有Mod，再修复或研究同步；新转述细化Deus Ex的HXFix与Beta客户端测试，不是从零做完整合作模式。",
     "description": "10月19日12:10（北京时间），@Bing_Bryan_BRN 介绍Co-op Anything：让Claude Code/Codex研究引擎、写同步、用Bot驱动游戏客户端测试，再打包Steam中继联机。补查cranebeaker/coop-anything公开README确认它是MCP服务器与工程playbook，MCP负责从安装目录识别引擎、查230多个联机Mod目录并读取流程；二进制分析可搭配REA。它不是本身就能完成所有逆向的单一模型。\n\n两条路线分别是审计并修复已有停更Mod，或从零研究游戏状态、挂钩、玩家敌人与世界同步、切关和存档。README列Deus Ex的HX Mod修复包、Dungeon Keeper/KeeperFX、Fallout: New Vegas和Ocarina of Time等项目链接，并区分未测试、玩家报告、自动客户端测试与通关等级。这些是项目文档中的实例与质量标记，不在此分别新增未经审查的候选案例。\n\n项目计划使用真实客户端Bot测试、Steam relay及免端口转发分发，要求参与者各自持有游戏，不触碰反作弊与他人在线服务。每个游戏的适配、稳定性与发布程度仍不同；README的‘任何游戏都可行’不视为已验证兼容保证。没有安装依赖、运行MCP、开游戏或核验双端同步，本条是公开工作流相关项目而非无人值守联机成功证明。仓库为本轮补充背景，不冒充候选帖子。",
-    "sources": [{"label": "候选：Co-op Anything联机改造介绍", "url": "https://x.com/i/status/2112033640419045529"}, {"label": "公开项目：MCP、两条路线与质量等级", "url": "https://github.com/cranebeaker/coop-anything"}],
-    "snapshot_date": "2026-10-19", "metadata": [],
+    "sources": [{"label": "候选：Co-op Anything联机改造介绍", "url": "https://x.com/i/status/2112033640419045529"}, {"label": "公开项目：MCP、两条路线与质量等级", "url": "https://github.com/cranebeaker/coop-anything"}, {"label": "10月21日转述：HXFix、Beta与其他游戏阶段", "url": "https://x.com/i/status/2112911054606917774"}, {"label": "补充项目文档：Deus Ex HXFix与Steam中继", "url": "https://github.com/cranebeaker/deus-ex-coop"}],
+    "snapshot_date": "2026-10-21", "metadata": ["10月21日22:17（北京时间）候选转述：Deus Ex依赖Sebastian Kaufel（Hanfling）的HX 0.9.89.4（最后版本称为2019年6月），用独立HXFix包修切图崩溃、结局对话及门禁笔记丢失，不修改或重新分发HX；称有40余真实客户端测试，仍为Beta。10月22日补读公开README，确认独立包、Steam中继及真实客户端测试的项目说明，但未核对候选时点的测试数量或运行测试。文档仍列结尾字幕占位及对话警告，不把能合作玩战役等同于无已知缺陷。", "同一候选将Dungeon Keeper归于KeeperFX、STALKER归于Shadow of COOP补丁、Ocarina of Time归于Ship of Harkinian及联机分支，并把Fallout New Vegas列为约35%的开发者预览；这些为10月21日转述口径，未逐项目验证或另建案例。需要自有合法游戏／ROM，Steam Spacewar AppID 480只是中继测试通路，不是商业发布认证。所称499星明确是10月19日上午旧快照，不充当当前热度；本候选1赞、125浏览、0转发。"],
     "en": {
       "title": "Co-op Anything: agent playbooks for adding multiplayer and reviving old co-op mods",
-      "summary": "Public MCP tools and playbooks find existing mods before repair or state-synchronization work; the README lists Deus Ex and other projects, not guaranteed automatic success for every game.",
+      "summary": "Public MCP tools and playbooks find existing mods before repair or synchronization work; a new report details Deus Ex's HXFix and Beta client tests, not a full co-op mode built from scratch.",
       "description": "At 12:10 Beijing time on October 19, @Bing_Bryan_BRN introduces Co-op Anything as a workflow for Claude Code/Codex to investigate engines, write synchronization, test with bots driving game clients and package Steam-relay multiplayer. The public cranebeaker/coop-anything README confirms an MCP server and engineering playbooks. MCP tools identify engines from installation folders, search a directory of over 230 co-op mods and read the workflow; REA can provide binary analysis. This is not one model that independently performs all reversing.\n\nIts two paths are auditing and repairing existing abandoned mods, or researching state, hooks, player/enemy/world synchronization, level transitions and saves from scratch. The README links a Deus Ex HX mod fix package, Dungeon Keeper/KeeperFX, Fallout: New Vegas and Ocarina of Time projects, distinguishing untested, player-report, automated-client-test and verified-playthrough quality levels. These are documented examples and labels, not separately added, unreviewed candidate cases.\n\nThe project describes real-client bot tests, Steam relay and distribution without port forwarding. Each participant must own the game; anti-cheat and other people's online services are out of scope. Adaptation, stability and release maturity vary by game. The README's claim that any game is possible is not a verified compatibility guarantee. No dependencies were installed, MCP server run, game launched or two-client synchronization tested here. This is a public workflow project, not proof of unattended multiplayer success. The repository is supplementary background, not a candidate post.",
-      "metadata": [], "source_labels": ["Candidate: introduction to Co-op Anything multiplayer adaptation", "Public project: MCP, two workflow paths and QA levels"]
+      "metadata": ["The October 21 candidate at 22:17 Beijing time says Deus Ex builds on Sebastian Kaufel's (Hanfling's) HX 0.9.89.4, reportedly last released in June 2019. A separate HXFix package addresses map-change crashes, ending conversations and lost door-code notes without modifying or redistributing HX. It reports over 40 real-client tests and Beta status. Public README material read on October 22 confirms the project's separate-package, Steam-relay and real-client-testing descriptions, but neither the historical test count nor test execution was verified. The documentation still lists stub ending credits and conversation warnings; campaign co-op does not mean no known defects.", "The same candidate attributes Dungeon Keeper work to KeeperFX, STALKER work to patches for Shadow of COOP, and Ocarina of Time work to Ship of Harkinian and its multiplayer fork, while calling Fallout New Vegas an approximately 35%-complete developer preview. These are the October 21 secondary report's figures, not individually verified or separately added cases. Legally owned games/ROMs are required. Steam's Spacewar AppID 480 supplies a test relay path, not certification for commercial release. The reported 499 stars explicitly date to the morning of October 19, not current engagement; this candidate has 1 like, 125 views and 0 reposts."], "source_labels": ["Candidate: introduction to Co-op Anything multiplayer adaptation", "Public project: MCP, two workflow paths and QA levels", "October 21 secondary report: HXFix, Beta and other game stages", "Supplementary project documentation: Deus Ex HXFix and Steam relay"]
     }
   },
   {
