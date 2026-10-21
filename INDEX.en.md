@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**685 entries**, organized by use case, without a Top-N or popularity threshold.
+**693 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (153)
-- [Hardware and interoperability](categories/en/hardware.md) (171)
-- [Applications and clients](categories/en/apps.md) (303)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (58)
+- [Games and preservation](categories/en/games.md) (156)
+- [Hardware and interoperability](categories/en/hardware.md) (172)
+- [Applications and clients](categories/en/apps.md) (306)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (59)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [From Quake to Source 2: a reader's staged AI engine-research idea](cases/en/quake-source2-ai-decompilation-idea.md) — A reader proposes AI decompilation from Quake through Source games to Source 2, without versions, defined recovery goals or implementation results. **[Other AI-assisted work · Related project]**
+- [VF4 Final Tuned: a request for AI decompilation of the Naomi 2 arcade version](cases/en/vf4-final-tuned-naomi2-ai-idea.md) — A reader names Virtua Fighter 4 Final Tuned on Naomi 2 as an AI-decompilation target, without an initiated project or PC-port result. **[Other AI-assisted work · Related project]**
+- [DecompPipeline: constrained Haiku and a behavioral oracle for Dreamcast functions](cases/en/decomppipeline-haiku-behavioral-oracle.md) — A public framework compares Ghidra-emulated behavior with C candidates per function and rejects stale harnesses by input stamps; passing vectors is not original-compiler machine-code identity or a completed game. **[Other AI-assisted work · In progress]**
 - [A cleanroom WoW WotLK client for Azerothcore and LLM player agents](cases/en/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands reports rebuilding the Wrath of the Lich King client for an open AI-player environment; headless instances, WASM views and verifier hooks are planned, not evidence that AI performed the decompilation. **[REA use unconfirmed · In progress]**
 - [Ski or Die snowball mode: a reported REA DOS-game study and Rust/SDL2 rebuild](cases/en/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang describes Tuomo Tuunanen recovering movement, snowball trajectories, hits and scoring; audio is unfinished and no side-by-side original-game comparison is reported. **[REA · In progress]**
 - [PSBBN: Claude/REA research toward SMB and unofficial PS2-adapter support](cases/en/psbbn-claude-rea-smb-adapter-idea.md) — An author proposes broader access to the PlayStation 2 broadband-navigation environment and reports Claude reading several PSBBN files; model-assessed feasibility is not tested hardware compatibility. **[REA · In progress]**
@@ -41,7 +44,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Helldivers: an AI decompilation/mod-port idea with an unresolved galactic-war server](cases/en/helldivers-ai-mod-port-idea.md) — A reader proposes AI decompilation and cross-service mods for Helldivers, while explicitly leaving its galactic-war server as a problem; no actual port is reported. **[Other AI-assisted work · Needs verification]**
 - [Xbox Labs: a report of a team exploring decompilation, recompilation and AI development](cases/en/xbox-labs-ai-decompilation-report.md) — A post says Microsoft formed Xbox Labs to explore game decompilation, recompilation and AI-assisted development; the memo and game results were not obtained. **[Other AI-assisted work · Needs verification]**
 - [Unreal 99: a request to investigate its binary with an LLM and alter AI logic](cases/en/unreal99-llm-ai-logic-idea.md) — A reader asks whether LLM decompilation of what they call Unreal 99 could legally enable changes to AI and other core behavior; no implementation is reported. **[Other AI-assisted work · Needs verification]**
-- [Civilization DOS 474.05: an account of AI-assisted C reconstruction with four differing bytes](cases/en/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan recounts a CIV.EXE rebuild using three model providers and an old Microsoft toolchain, with four bytes still different; no repository or diff verifies an identical hash. **[Other AI-assisted work · Needs verification]**
+- [Civilization civd: AI-assisted reconstruction with project hash checks after a four-byte startup correction](cases/en/civilization-dos47405-ai-reconstruction-report.md) — Steve Melia publishes a C/assembly reconstruction and technical book for DOS 474.05; pinned code and successful CI support the post-correction project checks, not recovered original source or independent compilation here. **[Other AI-assisted work · In progress]**
 - [openMSX: establish a running ROM baseline before Codex/Ghidra research](cases/en/openmsx-codex-ghidra-rom-plan.md) — An Arabic-language author requests BIOS/setup help and plans to continue with Codex and Ghidra after running a ROM in openMSX; no game identity or completed result is given. **[Other AI-assisted work · In progress]**
 - [Roblox crate shop: a reported Claude/REA rebuild of drops and rarity reveals](cases/en/roblox-crate-shop-rea-rebuild-report.md) — The author claims a shop, crate-opening and drop-rate rebuild without handwritten code; the game, source and probability comparisons are not supplied. **[REA · Needs verification]**
 - [Local-game native port: a REA request targeting Windows, Linux, keyboard and gamepad](cases/en/rea-local-game-windows-linux-port-request.md) — A Portuguese-language author describes checking the REA skill before requesting a native Windows/Linux port of a local game; game identity and completion tests are absent. **[REA · In progress]**
@@ -184,6 +187,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Google TV restoration failure: a boot loop after Claude's BAT operation](cases/en/google-tv-claude-bat-restore-bootloop.md) — Paul reports a boot loop and Google TV crashes during Claude-assisted BAT restoration after interface/performance changes, saying hardware repair and reflashing are needed; script and model are undisclosed. **[Other AI-assisted work · Needs verification]**
 - [MouseFix: REA and Claude study a 2004 debounce utility and add middle-button and drag-safe modes](cases/en/mousefix-rea-claude-middle-button.md) — Felipe Mikeias publishes a single-executable Windows replacement and original-binary analysis, with five-button selection and configurable timing; exact-commit project CI succeeds, but mice were not independently tested. **[REA · In progress]**
 - [Kindle firmware on old phones: a concrete REA research and open-source idea](cases/en/kindle-firmware-old-phone-rea-idea.md) — A post proposes studying Kindle firmware for an open implementation on old phones, distinct from Android on Kindle; no port or feasibility evidence is supplied. **[REA · Related project]**
 - [Miaomiao printer: Claude Code APK analysis for web and AirPrint printing](cases/en/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 reports finding a printing protocol in the official Android APK and replacing the official app; model, protocol and implementation remain unverified. **[Other AI-assisted work · Needs verification]**
@@ -358,6 +362,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [A Chinese laser-software EXE: Dan Nunn's ongoing Codex-assisted Pascal recovery](cases/en/chinese-laser-exe-codex-pascal.md) — The author reports 12 days of work toward recovering a laser executable as Pascal, without claiming completion or verified device compatibility or machining. **[Other AI-assisted work · In progress]**
+- [GrapheneOS NFC payments: a reader's AI-decompilation idea](cases/en/grapheneos-ai-nfc-payments-idea.md) — A reader hopes AI decompilation could enable the NFC payments they want on GrapheneOS; no protocol, payment provider or feasibility test is supplied. **[Other AI-assisted work · Related project]**
+- [dot investigates Muse: assigning REA reversing to a desktop agent](cases/en/dot-rea-muse-analysis.md) — Fengshou reports assigning dot to analyze Muse with REA; this establishes task initiation, not published findings or a rebuild. **[REA · In progress]**
 - [Drupal enterprise search: a proposed AI black-box-to-blueprint session](cases/en/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya submits a DrupalCon Orlando 2027 session proposal on AI-assisted enterprise-search reversing; acceptance and a completed search-system rebuild are not established. **[Other AI-assisted work · Related project]**
 - [ReaShield v1.1.0: a five-level source-recovery challenge for rea-agents@6.7.0](cases/en/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy invites Claude Code, Cursor and Codex to five challenge levels with a $100 full-source recovery reward; no scores or successful attempts were obtained. **[REA · Related project]**
 - [Claude Code and a closed inference engine: a positive user report of reversing](cases/en/claude-code-closed-inference-engine-re-report.md) — Zeng Jiajun says the tool under discussion analyzed Claude Code and a closed inference engine; no specific findings, rebuild or validation output is shown. **[REA use unconfirmed · Analysis test]**
@@ -664,6 +671,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Slice vault investigation: Sonnet locates external-return accounting in decompiled bytecode](cases/en/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse reports free Sonnet 5.5 locating a vulnerable function in under two minutes and confirms Claude's bytecode-decompilation role; the approximately $41,000 loss and exploitability were not independently checked on chain. **[Other AI-assisted work · Analysis test]**
 - [A proprietary-format Rust CLI: eight Claude subagents saturate a 200-file workload](cases/en/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne reduces Claude concurrency from eight to three while developing a proprietary-format extractor with files containing hundreds of thousands of lines; 200 files are workload size, not 200 passed validations. **[Other AI-assisted work · In progress]**
 - [Four REA comparisons: single-run OBS noise-gate, Android dungeon and payment-prompt experiments](cases/en/rea-four-task-single-run-ab-report.md) — varunPbhardwaj reports 20/20 both with and without REA in three tasks and different payment results under two prompts; explicitly a single-run case study, with unverified 13–17% time/cost savings. **[REA · Analysis test]**
 - [Raw NMR/LC-MS files: an unverified report of Claude format parsing and purity estimation](cases/en/claude-nmr-lcms-format-purity-report.md) — lifcc recounts Opus 5 parsing unspecified raw instrument formats and obtaining 96.4% purity in 19 minutes versus a lab's 96.33%; the primary report and data were not obtained. **[Other AI-assisted work · Needs verification]**

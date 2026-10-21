@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [中国激光软件 EXE：Dan Nunn 用 Codex 持续恢复 Pascal 逻辑](../cases/chinese-laser-exe-codex-pascal.md) — 作者报告已研究12天，目标是将激光软件可执行文件恢复为Pascal；未报告完成，也未给设备兼容或加工验证。 **[其他 AI 逆向 · 进行中]**
+- [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](../cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**
+- [dot 分析 Muse：把 REA 逆向任务交给桌面 Agent](../cases/dot-rea-muse-analysis.md) — 丰收称已给dot安排使用REA分析Muse；这是任务启动自述，没有公开具体发现或重建结果。 **[REA · 进行中]**
 - [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](../cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
 - [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](../cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
 - [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](../cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**

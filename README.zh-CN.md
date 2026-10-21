@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 685 个案例与项目
+# 693 个案例与项目
 
-**最近案例更新：**2026 年 10 月 22 日 00:10 · **最近维护：**2026 年 10 月 22 日 00:10 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 22 日 00:26 · **最近维护：**2026 年 10 月 22 日 00:26 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -31,7 +31,7 @@
 5. **[LeanREA：直接 CLI 与 MCP 对照](cases/leanrea-cli-skill-benchmark.md)** · `2026-10-17` — 追踪 Notion 功能、原生锁与 Go 依赖；公开 **36 次对照**报告更快更省，但得分是 **74/75 对 75/75**，不是相同准确率。单模型、单机器，未独立重跑。`分析测试`
 6. **[MagicSwipe：iPad 上的 Magic Mouse 手势](cases/magic-mouse-ipad-opus-virtual-hid.md)** · `2026-10-20` — Opus 辅助研究，把**私有触摸回调接到虚拟 HID 快捷键**，补足通用控制操作。代码公开，仅项目报告设备测试；需高权限驱动，替代为快捷键而非原生连续手势。`进行中`
 7. **[xbox-boot-re：重建初代 Xbox 的绿色开机动画](cases/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — 人类指导 Opus，从单张 BIOS 恢复为 **C 核心与 WebGPU 查看器**，有 xemu 对照文档和成功项目 CI。仅一版修改 BIOS，声音合成有近似；不是完整主机模拟器，本合集未重跑。`进行中`
-8. **[Open Scrantic：Johnny Castaway 屏保回归](cases/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA 与 Claude Code 辅助恢复 Windows 3.1 屏保引擎，以 Rust 支持三平台。**有公开代码与项目 CI 成功记录**；原资产需自备，仍有已知版本限制与刻意行为差异。`进行中`
+8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
 9. **[WayShare：从 Mac 连接 Hyprland](cases/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA 辅助研究 Apple Remote Desktop，产出**公开 Rust 实现及成功项目 CI**。60fps 仍为作者说法，未独立测量；Standard 屏幕与剪贴板未加密。`进行中`
 10. **[MouseFix：让磨损鼠标继续可用](cases/mousefix-rea-claude-middle-button.md)** · `2026-10-21` — REA 与 Claude 辅助研究2004年工具，做出**公开的五键去抖替代版，对应提交项目 CI 成功**。拖拽保护有释放延迟，软件不能修复物理微动；本合集未独立测鼠标。`进行中`
 
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **153** |
-| [硬件与设备互通](categories/hardware.md) | **171** |
-| [应用与客户端](categories/apps.md) | **303** |
-| [算法与功能重建](categories/algorithms.md) | **58** |
+| [游戏与游戏保存](categories/games.md) | **156** |
+| [硬件与设备互通](categories/hardware.md) | **172** |
+| [应用与客户端](categories/apps.md) | **306** |
+| [算法与功能重建](categories/algorithms.md) | **59** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

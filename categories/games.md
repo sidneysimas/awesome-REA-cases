@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [从 Quake 到 Source 2：用 AI 逐步研究游戏引擎的读者 idea](../cases/quake-source2-ai-decompilation-idea.md) — 读者提出从Quake一路反编译到Source 2的研究设想，未给具体游戏版本、恢复目标或实施成果。 **[其他 AI 逆向 · 相关项目]**
+- [VF4 Final Tuned：请求 AI 反编译 Naomi 2 街机版本](../cases/vf4-final-tuned-naomi2-ai-idea.md) — 读者明确点名Virtua Fighter 4 Final Tuned与Naomi 2，提出AI反编译请求；没有项目启动或PC移植成果。 **[其他 AI 逆向 · 相关项目]**
+- [DecompPipeline：用受限 Haiku 与行为 oracle 重建 Dreamcast 函数](../cases/decomppipeline-haiku-behavioral-oracle.md) — 公开框架把Ghidra模拟行为与C候选逐函数对照，并以输入戳记拒用过期harness；测试向量通过不等于原编译器机器码相同或整款游戏完成。 **[其他 AI 逆向 · 进行中]**
 - [WoW WotLK 客户端：为 Azerothcore 与 LLM 玩家代理做 cleanroom 重实现](../cases/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands 自述重建巫妖王之怒客户端，服务开放可改的AI玩家环境；轻量无头、WASM视角与验证钩子仍是计划，不证明AI完成反编译。 **[未确认使用 REA · 进行中]**
 - [Ski or Die 雪球大战：REA 研究 DOS 游戏后用 Rust／SDL2 重建的转述](../cases/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang 转述 Tuomo Tuunanen 恢复移动、雪球轨迹、命中与计分；音效未完，尚无原版并排运行对照。 **[REA · 进行中]**
 - [PSBBN：用 Claude／REA 研究 SMB 与非官方 PS2 适配器运行路径](../cases/psbbn-claude-rea-smb-adapter-idea.md) — 作者提议扩展PlayStation 2宽带导航环境的运行方式，称Claude读过多个PSBBN文件；模型认为可行不等于硬件兼容已验证。 **[REA · 进行中]**
@@ -15,7 +18,7 @@
 - [Helldivers：AI 反编译、跨服务 Mod 与银河战争服务器的移植 idea](../cases/helldivers-ai-mod-port-idea.md) — 读者认为可用 AI 反编译 Helldivers、用 Mod 移到其他服务，但明确银河战争服务器仍是问题；没有实际移植。 **[其他 AI 逆向 · 待验证]**
 - [Xbox Labs：探索游戏反编译、重编译与 AI 开发的团队转述](../cases/xbox-labs-ai-decompilation-report.md) — 帖子称微软成立 Xbox Labs 内部团队探索游戏反编译、重编译和 AI 辅助开发；未取得备忘录或具体游戏成果。 **[其他 AI 逆向 · 待验证]**
 - [Unreal 99：用 LLM 研究二进制并修改 AI 逻辑的请求](../cases/unreal99-llm-ai-logic-idea.md) — 读者询问能否合法用 LLM 反编译其所称 Unreal 99，以修改 AI 等基础行为；没有实施或完成报告。 **[其他 AI 逆向 · 待验证]**
-- [初代文明 DOS 474.05：AI 辅助 C 重建与四字节差异的转述](../cases/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan 转述用三家模型与旧微软编译链重建 CIV.EXE，仍差4字节；未取得仓库和diff，不称哈希完全相同。 **[其他 AI 逆向 · 待验证]**
+- [初代文明 civd：AI 辅助重建，四字节启动修正后通过项目哈希验证](../cases/civilization-dos47405-ai-reconstruction-report.md) — Steve Melia公开DOS 474.05的C／汇编重建与技术书；固定提交及成功CI确认四字节修正后的项目校验，非原始源码恢复或本合集独立编译。 **[其他 AI 逆向 · 进行中]**
 - [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](../cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](../cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
 - [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](../cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**

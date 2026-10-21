@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../hardware.md)
 
+- [Google TV restoration failure: a boot loop after Claude's BAT operation](../../cases/en/google-tv-claude-bat-restore-bootloop.md) — Paul reports a boot loop and Google TV crashes during Claude-assisted BAT restoration after interface/performance changes, saying hardware repair and reflashing are needed; script and model are undisclosed. **[Other AI-assisted work · Needs verification]**
 - [MouseFix: REA and Claude study a 2004 debounce utility and add middle-button and drag-safe modes](../../cases/en/mousefix-rea-claude-middle-button.md) — Felipe Mikeias publishes a single-executable Windows replacement and original-binary analysis, with five-button selection and configurable timing; exact-commit project CI succeeds, but mice were not independently tested. **[REA · In progress]**
 - [Kindle firmware on old phones: a concrete REA research and open-source idea](../../cases/en/kindle-firmware-old-phone-rea-idea.md) — A post proposes studying Kindle firmware for an open implementation on old phones, distinct from Android on Kindle; no port or feasibility evidence is supplied. **[REA · Related project]**
 - [Miaomiao printer: Claude Code APK analysis for web and AirPrint printing](../../cases/en/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 reports finding a printing protocol in the official Android APK and replacing the official app; model, protocol and implementation remain unverified. **[Other AI-assisted work · Needs verification]**

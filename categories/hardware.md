@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Google TV 恢复失败：Claude 的 BAT 操作后出现启动循环](../cases/google-tv-claude-bat-restore-bootloop.md) — Paul报告电视界面与性能改造后，Claude用BAT恢复时引发循环启动和Google TV崩溃，称需要硬件维修刷固件；脚本与机型未公开。 **[其他 AI 逆向 · 待验证]**
 - [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](../cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
 - [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](../cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**
 - [喵喵机：Claude Code 分析 Android APK 后用网页与 AirPrint 打印](../cases/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 称读取官方APK找到打印协议，摆脱官方App；型号、协议与实现尚未公开核验。 **[其他 AI 逆向 · 待验证]**

@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **685 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **693 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（153）
-- [硬件与设备互通](categories/hardware.md)（171）
-- [应用与客户端](categories/apps.md)（303）
-- [算法与功能重建](categories/algorithms.md)（58）
+- [游戏与游戏保存](categories/games.md)（156）
+- [硬件与设备互通](categories/hardware.md)（172）
+- [应用与客户端](categories/apps.md)（306）
+- [算法与功能重建](categories/algorithms.md)（59）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [从 Quake 到 Source 2：用 AI 逐步研究游戏引擎的读者 idea](cases/quake-source2-ai-decompilation-idea.md) — 读者提出从Quake一路反编译到Source 2的研究设想，未给具体游戏版本、恢复目标或实施成果。 **[其他 AI 逆向 · 相关项目]**
+- [VF4 Final Tuned：请求 AI 反编译 Naomi 2 街机版本](cases/vf4-final-tuned-naomi2-ai-idea.md) — 读者明确点名Virtua Fighter 4 Final Tuned与Naomi 2，提出AI反编译请求；没有项目启动或PC移植成果。 **[其他 AI 逆向 · 相关项目]**
+- [DecompPipeline：用受限 Haiku 与行为 oracle 重建 Dreamcast 函数](cases/decomppipeline-haiku-behavioral-oracle.md) — 公开框架把Ghidra模拟行为与C候选逐函数对照，并以输入戳记拒用过期harness；测试向量通过不等于原编译器机器码相同或整款游戏完成。 **[其他 AI 逆向 · 进行中]**
 - [WoW WotLK 客户端：为 Azerothcore 与 LLM 玩家代理做 cleanroom 重实现](cases/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands 自述重建巫妖王之怒客户端，服务开放可改的AI玩家环境；轻量无头、WASM视角与验证钩子仍是计划，不证明AI完成反编译。 **[未确认使用 REA · 进行中]**
 - [Ski or Die 雪球大战：REA 研究 DOS 游戏后用 Rust／SDL2 重建的转述](cases/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang 转述 Tuomo Tuunanen 恢复移动、雪球轨迹、命中与计分；音效未完，尚无原版并排运行对照。 **[REA · 进行中]**
 - [PSBBN：用 Claude／REA 研究 SMB 与非官方 PS2 适配器运行路径](cases/psbbn-claude-rea-smb-adapter-idea.md) — 作者提议扩展PlayStation 2宽带导航环境的运行方式，称Claude读过多个PSBBN文件；模型认为可行不等于硬件兼容已验证。 **[REA · 进行中]**
@@ -39,7 +42,7 @@
 - [Helldivers：AI 反编译、跨服务 Mod 与银河战争服务器的移植 idea](cases/helldivers-ai-mod-port-idea.md) — 读者认为可用 AI 反编译 Helldivers、用 Mod 移到其他服务，但明确银河战争服务器仍是问题；没有实际移植。 **[其他 AI 逆向 · 待验证]**
 - [Xbox Labs：探索游戏反编译、重编译与 AI 开发的团队转述](cases/xbox-labs-ai-decompilation-report.md) — 帖子称微软成立 Xbox Labs 内部团队探索游戏反编译、重编译和 AI 辅助开发；未取得备忘录或具体游戏成果。 **[其他 AI 逆向 · 待验证]**
 - [Unreal 99：用 LLM 研究二进制并修改 AI 逻辑的请求](cases/unreal99-llm-ai-logic-idea.md) — 读者询问能否合法用 LLM 反编译其所称 Unreal 99，以修改 AI 等基础行为；没有实施或完成报告。 **[其他 AI 逆向 · 待验证]**
-- [初代文明 DOS 474.05：AI 辅助 C 重建与四字节差异的转述](cases/civilization-dos47405-ai-reconstruction-report.md) — Xiao Tan 转述用三家模型与旧微软编译链重建 CIV.EXE，仍差4字节；未取得仓库和diff，不称哈希完全相同。 **[其他 AI 逆向 · 待验证]**
+- [初代文明 civd：AI 辅助重建，四字节启动修正后通过项目哈希验证](cases/civilization-dos47405-ai-reconstruction-report.md) — Steve Melia公开DOS 474.05的C／汇编重建与技术书；固定提交及成功CI确认四字节修正后的项目校验，非原始源码恢复或本合集独立编译。 **[其他 AI 逆向 · 进行中]**
 - [openMSX：先跑通 ROM，再用 Codex 与 Ghidra 继续研究的计划](cases/openmsx-codex-ghidra-rom-plan.md) — 阿语作者请求 BIOS 与运行步骤，计划在 openMSX 跑通 ROM 后自行结合 Codex、Ghidra 研究；无游戏名或完成结果。 **[其他 AI 逆向 · 进行中]**
 - [Roblox 开箱商店：Claude 与 REA 重建掉率和稀有度揭示的自述](cases/roblox-crate-shop-rea-rebuild-report.md) — 作者称未手写代码重建商店、开箱和掉率体验；未命名游戏或给出代码与概率对照。 **[REA · 待验证]**
 - [本地游戏原生移植：REA 请求中明确 Windows、Linux 与键盘手柄目标](cases/rea-local-game-windows-linux-port-request.md) — 葡语作者描述先让Agent检查REA skill，再请求把本地游戏做成Windows/Linux原生版；未给游戏名或完成验证。 **[REA · 进行中]**
@@ -182,6 +185,7 @@
 
 ### 硬件与设备互通
 
+- [Google TV 恢复失败：Claude 的 BAT 操作后出现启动循环](cases/google-tv-claude-bat-restore-bootloop.md) — Paul报告电视界面与性能改造后，Claude用BAT恢复时引发循环启动和Google TV崩溃，称需要硬件维修刷固件；脚本与机型未公开。 **[其他 AI 逆向 · 待验证]**
 - [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
 - [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**
 - [喵喵机：Claude Code 分析 Android APK 后用网页与 AirPrint 打印](cases/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 称读取官方APK找到打印协议，摆脱官方App；型号、协议与实现尚未公开核验。 **[其他 AI 逆向 · 待验证]**
@@ -356,6 +360,9 @@
 
 ### 应用与客户端
 
+- [中国激光软件 EXE：Dan Nunn 用 Codex 持续恢复 Pascal 逻辑](cases/chinese-laser-exe-codex-pascal.md) — 作者报告已研究12天，目标是将激光软件可执行文件恢复为Pascal；未报告完成，也未给设备兼容或加工验证。 **[其他 AI 逆向 · 进行中]**
+- [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**
+- [dot 分析 Muse：把 REA 逆向任务交给桌面 Agent](cases/dot-rea-muse-analysis.md) — 丰收称已给dot安排使用REA分析Muse；这是任务启动自述，没有公开具体发现或重建结果。 **[REA · 进行中]**
 - [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
 - [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
 - [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
@@ -662,6 +669,7 @@
 
 ### 算法与功能重建
 
+- [Slice 金库调查：Sonnet 从反编译字节码定位外部返回值记账问题](cases/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse称免费Sonnet 5.5不到两分钟定位漏洞函数，并确认用Claude处理字节码；约4.1万美元损失与可利用性未在此独立链上核验。 **[其他 AI 逆向 · 分析测试]**
 - [专有格式 Rust CLI：Claude 八个子 Agent 对照200份文件导致资源饱和](cases/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne 开发专有格式提取器时将Claude并发从8降至3，部分文件含数十万行；200文件是工作负载，不是通过200例验证。 **[其他 AI 逆向 · 进行中]**
 - [REA 四任务对照：OBS 噪声门、Android 地下城与支付提示词的单次实验](cases/rea-four-task-single-run-ab-report.md) — varunPbhardwaj 报告三项有无 REA 都20/20，支付两提示词结果不同；只称单次案例研究，13%—17%省时省费未经独立测量。 **[REA · 分析测试]**
 - [NMR／LC-MS 原始文件：Claude 解析格式与纯度估计的未核实转述](cases/claude-nmr-lcms-format-purity-report.md) — lifcc 转述 Claude Opus 5 从未说明格式的仪器原始数据计算纯度，称19分钟得到96.4%，实验室为96.33%；未取得原报告或数据。 **[其他 AI 逆向 · 待验证]**
