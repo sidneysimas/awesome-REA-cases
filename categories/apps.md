@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](../cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
+- [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](../cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
+- [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](../cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
+- [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](../cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh 称为macOS/Linux带来自选模型的编程桌面，明确不用REA而走top-down路线；所有功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
+- [国内平台 Skill：Opus 辅助研究东方财富、天天基金及个人本地数据的自述](../cases/opus-cn-platform-skills-local-data-report.md) — JinmingYang 回顾个人平台接入Skill与登录态监测，称曾用多个Opus版本；没有公开代码，不把自述先后与消息规模当验证。 **[其他 AI 逆向 · 待验证]**
+- [Claude 客户端遥测：REA 与 DeepSeek 分析 Mac／Android 的代理规则报告](../cases/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru 报告Sift与Sentry／Datadog线索并整理代理规则；未提供精确构建或调用证据，iOS仅为猜测，设备ID持久性未验证。 **[REA · 分析测试]**
 - [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](../cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
 - [ShareX 三功能替代：Claude Code 与 REA 制作截图及录屏工具的自述](../cases/sharex-rea-three-feature-recorder.md) — Nico 只取 ShareX 的全屏、区域截图与录屏，称周末完成 GPU 录屏器、115项测试与安装器；144fps是未核实上限。 **[REA · 待验证]**
 - [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](../cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**

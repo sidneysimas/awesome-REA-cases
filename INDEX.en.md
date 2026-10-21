@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**669 entries**, organized by use case, without a Top-N or popularity threshold.
+**685 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (150)
-- [Hardware and interoperability](categories/en/hardware.md) (165)
-- [Applications and clients](categories/en/apps.md) (297)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (57)
+- [Games and preservation](categories/en/games.md) (153)
+- [Hardware and interoperability](categories/en/hardware.md) (171)
+- [Applications and clients](categories/en/apps.md) (303)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (58)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [A cleanroom WoW WotLK client for Azerothcore and LLM player agents](cases/en/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands reports rebuilding the Wrath of the Lich King client for an open AI-player environment; headless instances, WASM views and verifier hooks are planned, not evidence that AI performed the decompilation. **[REA use unconfirmed · In progress]**
+- [Ski or Die snowball mode: a reported REA DOS-game study and Rust/SDL2 rebuild](cases/en/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang describes Tuomo Tuunanen recovering movement, snowball trajectories, hits and scoring; audio is unfinished and no side-by-side original-game comparison is reported. **[REA · In progress]**
+- [PSBBN: Claude/REA research toward SMB and unofficial PS2-adapter support](cases/en/psbbn-claude-rea-smb-adapter-idea.md) — An author proposes broader access to the PlayStation 2 broadband-navigation environment and reports Claude reading several PSBBN files; model-assessed feasibility is not tested hardware compatibility. **[REA · In progress]**
 - [PES 2021 / Football Life: a Claude/REA-assisted cross-platform Master League save editor](cases/en/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias publishes a Rust save editor reusing prior encryption and field research; public code and safe-save design are available, but current project CI failed and no saves were edited here. **[REA · In progress]**
 - [Match Day: an AI-decompiled NEX patch for Spectrum Next without colour clash](cases/en/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt reports using AI decompilation to patch ZX Spectrum's Match Day for Spectrum Next; source, version and device comparisons were not obtained. **[Other AI-assisted work · Needs verification]**
 - [Old Humble Android games: a reported Codex decompile/recompile for a 64-bit phone](cases/en/humble-android32-codex-64bit-report.md) — technosophist says decade-old purchased 32-bit Android games stopped running on a newer phone and worked after Codex assistance; game names, ABI and artifacts are unspecified. **[Other AI-assisted work · Needs verification]**
@@ -181,6 +184,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [MouseFix: REA and Claude study a 2004 debounce utility and add middle-button and drag-safe modes](cases/en/mousefix-rea-claude-middle-button.md) — Felipe Mikeias publishes a single-executable Windows replacement and original-binary analysis, with five-button selection and configurable timing; exact-commit project CI succeeds, but mice were not independently tested. **[REA · In progress]**
+- [Kindle firmware on old phones: a concrete REA research and open-source idea](cases/en/kindle-firmware-old-phone-rea-idea.md) — A post proposes studying Kindle firmware for an open implementation on old phones, distinct from Android on Kindle; no port or feasibility evidence is supplied. **[REA · Related project]**
+- [Miaomiao printer: Claude Code APK analysis for web and AirPrint printing](cases/en/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 reports finding a printing protocol in the official Android APK and replacing the official app; model, protocol and implementation remain unverified. **[Other AI-assisted work · Needs verification]**
+- [Potter fire-alarm configuration: human fpcf recovery with AI-assisted browser checks, audio and ZIP handling](cases/en/potter-fpcf-js-config-ai-assistance.md) — joe reports a JS parser for IPA/AFC/PFC configuration conflicts and under two seconds for 80 files in nested ZIPs; AI struggled with format recovery and mainly implemented human observations. **[Other AI-assisted work · In progress]**
+- [ZTE F50: a reported Codex/REA root and mihomo installation](cases/en/zte-f50-codex-rea-mihomo.md) — Penn reports rooting a newly purchased Android mobile-network device and running mihomo, while disclosing no existing-Wi-Fi relay; exploit, firmware and flashing validation are absent. **[REA · Needs verification]**
+- [Scopes and power supplies: a Claude-built instrument MCP and firmware-research idea](cases/en/lab-scope-psu-claude-mcp-firmware-idea.md) — Responding to stacksmashing's handmade scope/PSU MCP, wireheaded proposes Claude connecting instruments, building MCP and possibly patching firmware; no actual patch is shown. **[Other AI-assisted work · Related project]**
 - [MSI monitor: a work-in-progress Codex native macOS firmware loader](cases/en/msi-monitor-codex-macos-loader.md) — After replacing an LG C4, ihouman says Codex is writing a native Mac firmware loader for an MSI monitor, with GitHub publication planned; no flashing outcome is shown. **[Other AI-assisted work · In progress]**
 - [FFALCON TV: an AI-assisted third-party launcher attempt reportedly blocked by firmware](cases/en/ffalcon-ai-launcher-install-blocker.md) — An author reports enabling ADB but failing to install a replacement launcher, with AI blaming FFALCON firmware; no error log establishes the cause or an unbypassable restriction. **[Other AI-assisted work · Needs verification]**
 - [LG webOS: Heitor's REA launcher study and GitHub-guided Apple TV-style interface](cases/en/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli describes studying TV software for launcher modification points, then supplying a reference repository and fixing errors; this is not a successful Android-on-webOS port. **[REA · Needs verification]**
@@ -349,6 +358,12 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Drupal enterprise search: a proposed AI black-box-to-blueprint session](cases/en/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya submits a DrupalCon Orlando 2027 session proposal on AI-assisted enterprise-search reversing; acceptance and a completed search-system rebuild are not established. **[Other AI-assisted work · Related project]**
+- [ReaShield v1.1.0: a five-level source-recovery challenge for rea-agents@6.7.0](cases/en/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy invites Claude Code, Cursor and Codex to five challenge levels with a $100 full-source recovery reward; no scores or successful attempts were obtained. **[REA · Related project]**
+- [Claude Code and a closed inference engine: a positive user report of reversing](cases/en/claude-code-closed-inference-engine-re-report.md) — Zeng Jiajun says the tool under discussion analyzed Claude Code and a closed inference engine; no specific findings, rebuild or validation output is shown. **[REA use unconfirmed · Analysis test]**
+- [Harness Studio: a reported top-down open-source Claude Code Desktop reimplementation](cases/en/harness-studio-claude-desktop-reimplementation.md) — Vignesh describes a macOS/Linux coding desktop with user-selected models, explicitly using a top-down approach rather than REA; complete feature equivalence is unverified. **[Other AI-assisted work · In progress]**
+- [Chinese-platform skills: reported Opus research on East Money, Tiantian Fund and personal local data](cases/en/opus-cn-platform-skills-local-data-report.md) — JinmingYang recalls personal platform-access skills and session monitoring using several claimed Opus versions; there is no public code, and chronology or message scale is not validation. **[Other AI-assisted work · Needs verification]**
+- [Claude-client telemetry: a REA/DeepSeek report on Mac and Android proxy rules](cases/en/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru reports Sift and Sentry/Datadog clues while compiling proxy rules; exact builds and call evidence are missing, iOS is speculation and device-ID persistence is unverified. **[REA · Analysis test]**
 - [sourcepin: studying stagewise with REA to map page elements before calling a model](cases/en/sourcepin-stagewise-rea-file-line.md) — Aayush Swami studies stagewise with REA and source reading, then builds element-to-file:line mapping; public small-sample tests report fewer tool calls, not faster total turns or exact mapping on arbitrary frameworks. **[REA · In progress]**
 - [A three-feature ShareX alternative: reported Claude Code/REA screenshot and recording work](cases/en/sharex-rea-three-feature-recorder.md) — Nico selects full-screen capture, region capture and recording from ShareX, claiming a weekend GPU recorder, 115 tests and installer; the 144 fps ceiling is unverified. **[REA · Needs verification]**
 - [Codex checks REA with three known-answer Electron, ARM64 and browser fixtures](cases/en/codex-rea-three-fixture-smoke-test.md) — An author reports IPC recovery, decompilation of value * 7 + 11 and button-state readback on tiny Codex-made fixtures; this is a wiring smoke test, not a complex-target benchmark. **[REA · Analysis test]**
@@ -649,6 +664,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [A proprietary-format Rust CLI: eight Claude subagents saturate a 200-file workload](cases/en/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne reduces Claude concurrency from eight to three while developing a proprietary-format extractor with files containing hundreds of thousands of lines; 200 files are workload size, not 200 passed validations. **[Other AI-assisted work · In progress]**
 - [Four REA comparisons: single-run OBS noise-gate, Android dungeon and payment-prompt experiments](cases/en/rea-four-task-single-run-ab-report.md) — varunPbhardwaj reports 20/20 both with and without REA in three tasks and different payment results under two prompts; explicitly a single-run case study, with unverified 13–17% time/cost savings. **[REA · Analysis test]**
 - [Raw NMR/LC-MS files: an unverified report of Claude format parsing and purity estimation](cases/en/claude-nmr-lcms-format-purity-report.md) — lifcc recounts Opus 5 parsing unspecified raw instrument formats and obtaining 96.4% purity in 19 minutes versus a lab's 96.33%; the primary report and data were not obtained. **[Other AI-assisted work · Needs verification]**
 - [GhidraMCP: identifying Adler-32 in a stripped binary through constant fingerprints](cases/en/ghidramcp-adler32-constant-identification.md) — A post describes decompiling 170 functions, screening ten candidates using checksum and gzip constants, then using the 5552 block size to support an Adler-32 identification; the binary is unavailable. **[Other AI-assisted work · Analysis test]**

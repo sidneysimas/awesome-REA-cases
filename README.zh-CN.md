@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 669 个案例与项目
+# 685 个案例与项目
 
-**最近案例更新：**2026 年 10 月 21 日 20:34 · **最近维护：**2026 年 10 月 21 日 20:34 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 22 日 00:10 · **最近维护：**2026 年 10 月 22 日 00:10 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -33,7 +33,7 @@
 7. **[xbox-boot-re：重建初代 Xbox 的绿色开机动画](cases/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — 人类指导 Opus，从单张 BIOS 恢复为 **C 核心与 WebGPU 查看器**，有 xemu 对照文档和成功项目 CI。仅一版修改 BIOS，声音合成有近似；不是完整主机模拟器，本合集未重跑。`进行中`
 8. **[Open Scrantic：Johnny Castaway 屏保回归](cases/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA 与 Claude Code 辅助恢复 Windows 3.1 屏保引擎，以 Rust 支持三平台。**有公开代码与项目 CI 成功记录**；原资产需自备，仍有已知版本限制与刻意行为差异。`进行中`
 9. **[WayShare：从 Mac 连接 Hyprland](cases/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA 辅助研究 Apple Remote Desktop，产出**公开 Rust 实现及成功项目 CI**。60fps 仍为作者说法，未独立测量；Standard 屏幕与剪贴板未加密。`进行中`
-10. **[sourcepin：点网页元素，先找到源码](cases/sourcepin-stagewise-rea-file-line.md)** · `2026-10-21` — 用 REA 研究开源 stagewise 后，做出**模型调用前的 file:line 定位**。公开五请求对照报告减少工具调用，**整轮并未更快**；精确定位限于已测的 Next.js／React 19 开发配置，未独立重跑。`进行中`
+10. **[MouseFix：让磨损鼠标继续可用](cases/mousefix-rea-claude-middle-button.md)** · `2026-10-21` — REA 与 Claude 辅助研究2004年工具，做出**公开的五键去抖替代版，对应提交项目 CI 成功**。拖拽保护有释放延迟，软件不能修复物理微动；本合集未独立测鼠标。`进行中`
 
 ## 经典案例
 
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **150** |
-| [硬件与设备互通](categories/hardware.md) | **165** |
-| [应用与客户端](categories/apps.md) | **297** |
-| [算法与功能重建](categories/algorithms.md) | **57** |
+| [游戏与游戏保存](categories/games.md) | **153** |
+| [硬件与设备互通](categories/hardware.md) | **171** |
+| [应用与客户端](categories/apps.md) | **303** |
+| [算法与功能重建](categories/algorithms.md) | **58** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

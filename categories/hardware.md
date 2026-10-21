@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](../cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
+- [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](../cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**
+- [喵喵机：Claude Code 分析 Android APK 后用网页与 AirPrint 打印](../cases/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 称读取官方APK找到打印协议，摆脱官方App；型号、协议与实现尚未公开核验。 **[其他 AI 逆向 · 待验证]**
+- [Potter 消防报警配置：人工恢复 fpcf，AI 辅助浏览器检查与音频／ZIP处理](../cases/potter-fpcf-js-config-ai-assistance.md) — joe 自述用JS解析IPA/AFC/PFC配置并查常见配置矛盾，80份嵌套ZIP文件不到2秒；明确AI不擅长格式恢复，主要实现人工观察。 **[其他 AI 逆向 · 进行中]**
+- [中兴 F50：Codex 与 REA 辅助 root 并安装 mihomo 的设备自述](../cases/zte-f50-codex-rea-mihomo.md) — Penn 称为新购Android随身设备取得root后运行mihomo，同时披露不能中继已有Wi-Fi；未给漏洞、固件或刷机验证。 **[REA · 待验证]**
+- [示波器与电源：让 Claude 制作仪器 MCP 并按需研究固件的 idea](../cases/lab-scope-psu-claude-mcp-firmware-idea.md) — wireheaded 针对stacksmashing自建示波器／电源MCP的背景，提议由Claude连接仪器、构建MCP甚至修固件；没有实际补丁。 **[其他 AI 逆向 · 相关项目]**
 - [MSI 显示器：让 Codex 制作原生 macOS 固件加载器的进行中计划](../cases/msi-monitor-codex-macos-loader.md) — ihouman 换下 LG C4 后为新 MSI 显示器找 Mac 更新路径，称正让 Codex 写 loader，计划公开 GitHub；尚无刷写结果。 **[其他 AI 逆向 · 进行中]**
 - [雷鸟电视：AI 辅助第三方桌面安装尝试停在固件限制的报告](../cases/ffalcon-ai-launcher-install-blocker.md) — 作者称已开通ADB但第三方桌面装不上，AI归因于雷鸟固件禁止；没有错误日志，不能认定不可绕过。 **[其他 AI 逆向 · 待验证]**
 - [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](../cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**

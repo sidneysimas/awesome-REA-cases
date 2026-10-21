@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [WoW WotLK 客户端：为 Azerothcore 与 LLM 玩家代理做 cleanroom 重实现](../cases/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands 自述重建巫妖王之怒客户端，服务开放可改的AI玩家环境；轻量无头、WASM视角与验证钩子仍是计划，不证明AI完成反编译。 **[未确认使用 REA · 进行中]**
+- [Ski or Die 雪球大战：REA 研究 DOS 游戏后用 Rust／SDL2 重建的转述](../cases/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang 转述 Tuomo Tuunanen 恢复移动、雪球轨迹、命中与计分；音效未完，尚无原版并排运行对照。 **[REA · 进行中]**
+- [PSBBN：用 Claude／REA 研究 SMB 与非官方 PS2 适配器运行路径](../cases/psbbn-claude-rea-smb-adapter-idea.md) — 作者提议扩展PlayStation 2宽带导航环境的运行方式，称Claude读过多个PSBBN文件；模型认为可行不等于硬件兼容已验证。 **[REA · 进行中]**
 - [PES 2021／Football Life：Claude 与 REA 辅助重建跨平台大师联赛存档编辑器](../cases/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias 发布 Rust 存档编辑器，复用既有解密与字段研究；有公开源码与安全保存设计，最新项目 CI 失败，未独立编辑存档。 **[REA · 进行中]**
 - [Match Day：AI 反编译后生成 Spectrum Next 的去色彩冲突 NEX 补丁](../cases/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt 称将 ZX Spectrum 的 Match Day 经 AI 反编译做成 Next 可运行补丁；没有源码、版本或实机对照。 **[其他 AI 逆向 · 待验证]**
 - [旧 Humble Android 游戏：Codex 反编译与重编译以适配64位手机的自述](../cases/humble-android32-codex-64bit-report.md) — technosophist 称十年前购买的32位 Android 游戏无法在新手机运行，交给 Codex 后恢复使用；未给具体游戏、ABI或产物。 **[其他 AI 逆向 · 待验证]**

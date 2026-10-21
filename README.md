@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 669 cases & projects
+# 685 cases & projects
 
-**Latest case update:** October 21, 2026, 20:34 · **Last maintained:** October 21, 2026, 20:34 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 22, 2026, 00:10 · **Last maintained:** October 22, 2026, 00:10 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[xbox-boot-re: the original green blob, reconstructed](cases/en/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — Human-directed Opus turns one BIOS into a **C core and WebGPU viewer**, with documented xemu comparisons and successful project CI. One modified BIOS, approximate audio synthesis; not a full console emulator or independently rerun here. `In progress`
 8. **[Open Scrantic: Johnny Castaway returns](cases/en/johnny-castaway-rust-rea.md)** · `2026-10-17` — REA and Claude Code help recover a Windows 3.1 screensaver engine in Rust for three platforms. **Public code and successful project CI**; original assets required, known-build limits and deliberate behavior differences remain. `In progress`
 9. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
-10. **[sourcepin: click an element, find its source](cases/en/sourcepin-stagewise-rea-file-line.md)** · `2026-10-21` — REA-assisted study of open-source stagewise leads to **file:line mapping before the model call**. Public five-request tests report fewer tool calls, **not faster total turns**; exact mapping is limited to a tested Next.js/React 19 dev setup. Not independently rerun. `In progress`
+10. **[MouseFix: keep a worn mouse usable](cases/en/mousefix-rea-claude-middle-button.md)** · `2026-10-21` — REA and Claude help study a 2004 utility and build a **public five-button debounce replacement with successful exact-commit CI**. Drag-safe mode adds release latency; software cannot repair the switch. No independent mouse testing here. `In progress`
 
 ## Classic cases
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **150** |
-| [Hardware & interoperability](categories/en/hardware.md) | **165** |
-| [Applications & clients](categories/en/apps.md) | **297** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **57** |
+| [Games & preservation](categories/en/games.md) | **153** |
+| [Hardware & interoperability](categories/en/hardware.md) | **171** |
+| [Applications & clients](categories/en/apps.md) | **303** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **58** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

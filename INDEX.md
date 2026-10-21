@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **669 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **685 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（150）
-- [硬件与设备互通](categories/hardware.md)（165）
-- [应用与客户端](categories/apps.md)（297）
-- [算法与功能重建](categories/algorithms.md)（57）
+- [游戏与游戏保存](categories/games.md)（153）
+- [硬件与设备互通](categories/hardware.md)（171）
+- [应用与客户端](categories/apps.md)（303）
+- [算法与功能重建](categories/algorithms.md)（58）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [WoW WotLK 客户端：为 Azerothcore 与 LLM 玩家代理做 cleanroom 重实现](cases/wotlk-cleanroom-client-llm-playerbots.md) — Shannon Sands 自述重建巫妖王之怒客户端，服务开放可改的AI玩家环境；轻量无头、WASM视角与验证钩子仍是计划，不证明AI完成反编译。 **[未确认使用 REA · 进行中]**
+- [Ski or Die 雪球大战：REA 研究 DOS 游戏后用 Rust／SDL2 重建的转述](cases/ski-or-die-snowball-rea-rust-report.md) — Brian Jhang 转述 Tuomo Tuunanen 恢复移动、雪球轨迹、命中与计分；音效未完，尚无原版并排运行对照。 **[REA · 进行中]**
+- [PSBBN：用 Claude／REA 研究 SMB 与非官方 PS2 适配器运行路径](cases/psbbn-claude-rea-smb-adapter-idea.md) — 作者提议扩展PlayStation 2宽带导航环境的运行方式，称Claude读过多个PSBBN文件；模型认为可行不等于硬件兼容已验证。 **[REA · 进行中]**
 - [PES 2021／Football Life：Claude 与 REA 辅助重建跨平台大师联赛存档编辑器](cases/pes2021-football-life-claude-rea-editor.md) — Felipe Mikeias 发布 Rust 存档编辑器，复用既有解密与字段研究；有公开源码与安全保存设计，最新项目 CI 失败，未独立编辑存档。 **[REA · 进行中]**
 - [Match Day：AI 反编译后生成 Spectrum Next 的去色彩冲突 NEX 补丁](cases/match-day-spectrum-next-ai-patch.md) — Dean Woodyatt 称将 ZX Spectrum 的 Match Day 经 AI 反编译做成 Next 可运行补丁；没有源码、版本或实机对照。 **[其他 AI 逆向 · 待验证]**
 - [旧 Humble Android 游戏：Codex 反编译与重编译以适配64位手机的自述](cases/humble-android32-codex-64bit-report.md) — technosophist 称十年前购买的32位 Android 游戏无法在新手机运行，交给 Codex 后恢复使用；未给具体游戏、ABI或产物。 **[其他 AI 逆向 · 待验证]**
@@ -179,6 +182,12 @@
 
 ### 硬件与设备互通
 
+- [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
+- [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**
+- [喵喵机：Claude Code 分析 Android APK 后用网页与 AirPrint 打印](cases/miaomiao-printer-claude-web-airprint.md) — bloatfire9567 称读取官方APK找到打印协议，摆脱官方App；型号、协议与实现尚未公开核验。 **[其他 AI 逆向 · 待验证]**
+- [Potter 消防报警配置：人工恢复 fpcf，AI 辅助浏览器检查与音频／ZIP处理](cases/potter-fpcf-js-config-ai-assistance.md) — joe 自述用JS解析IPA/AFC/PFC配置并查常见配置矛盾，80份嵌套ZIP文件不到2秒；明确AI不擅长格式恢复，主要实现人工观察。 **[其他 AI 逆向 · 进行中]**
+- [中兴 F50：Codex 与 REA 辅助 root 并安装 mihomo 的设备自述](cases/zte-f50-codex-rea-mihomo.md) — Penn 称为新购Android随身设备取得root后运行mihomo，同时披露不能中继已有Wi-Fi；未给漏洞、固件或刷机验证。 **[REA · 待验证]**
+- [示波器与电源：让 Claude 制作仪器 MCP 并按需研究固件的 idea](cases/lab-scope-psu-claude-mcp-firmware-idea.md) — wireheaded 针对stacksmashing自建示波器／电源MCP的背景，提议由Claude连接仪器、构建MCP甚至修固件；没有实际补丁。 **[其他 AI 逆向 · 相关项目]**
 - [MSI 显示器：让 Codex 制作原生 macOS 固件加载器的进行中计划](cases/msi-monitor-codex-macos-loader.md) — ihouman 换下 LG C4 后为新 MSI 显示器找 Mac 更新路径，称正让 Codex 写 loader，计划公开 GitHub；尚无刷写结果。 **[其他 AI 逆向 · 进行中]**
 - [雷鸟电视：AI 辅助第三方桌面安装尝试停在固件限制的报告](cases/ffalcon-ai-launcher-install-blocker.md) — 作者称已开通ADB但第三方桌面装不上，AI归因于雷鸟固件禁止；没有错误日志，不能认定不可绕过。 **[其他 AI 逆向 · 待验证]**
 - [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**
@@ -347,6 +356,12 @@
 
 ### 应用与客户端
 
+- [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
+- [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
+- [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
+- [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh 称为macOS/Linux带来自选模型的编程桌面，明确不用REA而走top-down路线；所有功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
+- [国内平台 Skill：Opus 辅助研究东方财富、天天基金及个人本地数据的自述](cases/opus-cn-platform-skills-local-data-report.md) — JinmingYang 回顾个人平台接入Skill与登录态监测，称曾用多个Opus版本；没有公开代码，不把自述先后与消息规模当验证。 **[其他 AI 逆向 · 待验证]**
+- [Claude 客户端遥测：REA 与 DeepSeek 分析 Mac／Android 的代理规则报告](cases/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru 报告Sift与Sentry／Datadog线索并整理代理规则；未提供精确构建或调用证据，iOS仅为猜测，设备ID持久性未验证。 **[REA · 分析测试]**
 - [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
 - [ShareX 三功能替代：Claude Code 与 REA 制作截图及录屏工具的自述](cases/sharex-rea-three-feature-recorder.md) — Nico 只取 ShareX 的全屏、区域截图与录屏，称周末完成 GPU 录屏器、115项测试与安装器；144fps是未核实上限。 **[REA · 待验证]**
 - [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
@@ -647,6 +662,7 @@
 
 ### 算法与功能重建
 
+- [专有格式 Rust CLI：Claude 八个子 Agent 对照200份文件导致资源饱和](cases/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne 开发专有格式提取器时将Claude并发从8降至3，部分文件含数十万行；200文件是工作负载，不是通过200例验证。 **[其他 AI 逆向 · 进行中]**
 - [REA 四任务对照：OBS 噪声门、Android 地下城与支付提示词的单次实验](cases/rea-four-task-single-run-ab-report.md) — varunPbhardwaj 报告三项有无 REA 都20/20，支付两提示词结果不同；只称单次案例研究，13%—17%省时省费未经独立测量。 **[REA · 分析测试]**
 - [NMR／LC-MS 原始文件：Claude 解析格式与纯度估计的未核实转述](cases/claude-nmr-lcms-format-purity-report.md) — lifcc 转述 Claude Opus 5 从未说明格式的仪器原始数据计算纯度，称19分钟得到96.4%，实验室为96.33%；未取得原报告或数据。 **[其他 AI 逆向 · 待验证]**
 - [GhidraMCP：用常量指纹从剥符号程序识别 Adler-32](cases/ghidramcp-adler32-constant-identification.md) — 帖子描述批量反编译170函数，以模数、CRC多项式和gzip魔数筛出10候选，再用5552分块常量支持Adler-32判断；未给原二进制。 **[其他 AI 逆向 · 分析测试]**
