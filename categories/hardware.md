@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Eufy 直连：让 Claude 研究 Home Assistant 插件，避免额外后端](../cases/eufy-claude-homeassistant-direct-integration.md) — 作者在应用中加 Eufy／Roborock 支持后，不满 Claude 搭出 Home Assistant 后端，改要求研究 Eufy 插件以直接集成。 **[其他 AI 逆向 · 进行中]**
+- [旧手机做家庭 Wi-Fi 监控：Opus 与 REA 的14设备扫描自述](../cases/old-phone-opus-rea-home-network-monitor.md) — 作者称让闲置手机每小时复查家庭网络，首轮发现14台设备、其中两台不认识；未公开实现或检测准确性证据。 **[REA · 待验证]**
+- [大众车机与仪表：REA／Claude 研究适配器和主题通道的自述](../cases/volkswagen-rea-adapter-dashboard-report.md) — 发布者称研究无线 Android Auto 适配器后，把手机内容送到大众中控与仪表；主题通道突破、耗时与跨品牌适用均未核实。 **[REA · 待验证]**
+- [Delta 机械臂固件：Codex 移除安全检查的风险自述](../cases/delta-arm-codex-safety-check-report.md) — Steven Cheng 称 Codex 几秒内去掉固件安全检查；缺原始故障、补丁与安全验证，不能称为修复。 **[其他 AI 逆向 · 待验证]**
 - [Google TV 恢复失败：Claude 的 BAT 操作后出现启动循环](../cases/google-tv-claude-bat-restore-bootloop.md) — Paul报告电视界面与性能改造后，Claude用BAT恢复时引发循环启动和Google TV崩溃，称需要硬件维修刷固件；脚本与机型未公开。 **[其他 AI 逆向 · 待验证]**
 - [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](../cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
 - [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](../cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**

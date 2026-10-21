@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **693 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **706 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（156）
-- [硬件与设备互通](categories/hardware.md)（172）
-- [应用与客户端](categories/apps.md)（306）
-- [算法与功能重建](categories/algorithms.md)（59）
+- [硬件与设备互通](categories/hardware.md)（176）
+- [应用与客户端](categories/apps.md)（314）
+- [算法与功能重建](categories/algorithms.md)（60）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -185,6 +185,10 @@
 
 ### 硬件与设备互通
 
+- [Eufy 直连：让 Claude 研究 Home Assistant 插件，避免额外后端](cases/eufy-claude-homeassistant-direct-integration.md) — 作者在应用中加 Eufy／Roborock 支持后，不满 Claude 搭出 Home Assistant 后端，改要求研究 Eufy 插件以直接集成。 **[其他 AI 逆向 · 进行中]**
+- [旧手机做家庭 Wi-Fi 监控：Opus 与 REA 的14设备扫描自述](cases/old-phone-opus-rea-home-network-monitor.md) — 作者称让闲置手机每小时复查家庭网络，首轮发现14台设备、其中两台不认识；未公开实现或检测准确性证据。 **[REA · 待验证]**
+- [大众车机与仪表：REA／Claude 研究适配器和主题通道的自述](cases/volkswagen-rea-adapter-dashboard-report.md) — 发布者称研究无线 Android Auto 适配器后，把手机内容送到大众中控与仪表；主题通道突破、耗时与跨品牌适用均未核实。 **[REA · 待验证]**
+- [Delta 机械臂固件：Codex 移除安全检查的风险自述](cases/delta-arm-codex-safety-check-report.md) — Steven Cheng 称 Codex 几秒内去掉固件安全检查；缺原始故障、补丁与安全验证，不能称为修复。 **[其他 AI 逆向 · 待验证]**
 - [Google TV 恢复失败：Claude 的 BAT 操作后出现启动循环](cases/google-tv-claude-bat-restore-bootloop.md) — Paul报告电视界面与性能改造后，Claude用BAT恢复时引发循环启动和Google TV崩溃，称需要硬件维修刷固件；脚本与机型未公开。 **[其他 AI 逆向 · 待验证]**
 - [MouseFix：REA 与 Claude 研究2004年鼠标去抖工具，补上中键与拖拽模式](cases/mousefix-rea-claude-middle-button.md) — Felipe Mikeias 公开单文件 Windows 替代工具和原版分析，支持五键与可调间隔；对应提交项目CI成功，未独立测鼠标。 **[REA · 进行中]**
 - [Kindle 固件到旧手机：用 REA 研究并开源的具体愿望](cases/kindle-firmware-old-phone-rea-idea.md) — 候选提出把Kindle固件研究为能在旧手机运行的开放实现；不同于Kindle上装Android，尚无移植或可行性证据。 **[REA · 相关项目]**
@@ -360,6 +364,14 @@
 
 ### 应用与客户端
 
+- [CatEye RP：REA 与 Codex 重实现 Axure RP，因配额暂缓](cases/cateye-rp-rea-axure-reimplementation.md) — George JW 报告正在重建交互原型工具 Axure RP；运行近两天仍在构建，Codex 配额接近耗尽后暂停。 **[REA · 进行中]**
+- [DGX Spark 上的六 Agent ELF 分析：用 nonce 与原始字节约束结论](cases/dgx-spark-six-agents-elf-evidence-gate.md) — Nikolaos Chrysaidos 报告本地 Qwen 配合 REA 分工分析 ELF，并由 Agent 外的 hub 验证工具产物；结果统计口径仍有疑问。 **[REA · 分析测试]**
+- [Claude Code CLI：逆向后制作 Rust drop-in 替代的愿望](cases/claude-code-cli-rust-dropin-idea.md) — 读者提出以 Rust 重实现 Claude Code 命令行的可替换版本；没有宣布开工或实现。 **[未确认使用 REA · 待验证]**
+- [1992年 Windows 3.1 赞美诗软件：Ghidra 与 REA 的反编译自述](cases/windows31-1992-hymnal-ghidra-rea.md) — Glauber Lima 报告用 Ghidra 配合 REA 成功反编译老赞美诗程序，未给恢复内容或运行验证。 **[REA · 待验证]**
+- [剪映 AI 调用封装：余温用 REA 研究后暂缓公开](cases/jianying-gkxspace-rea-ai-control.md) — 余温称已将剪映大量功能封装为 AI 可调用操作，准备脱敏发布后又改为自用；未公开代码或功能清单核验。 **[REA · 进行中]**
+- [Windows 任务管理器：五分钟、两美元 AI 重建的待验证转述](cases/windows-task-manager-ai-five-minute-report.md) — Onchana01 转述任务管理器被快速逆向；没有原作者、代码或行为测试，保留明确目标而不采纳完成断言。 **[未确认使用 REA · 待验证]**
+- [Antigravity 隐藏模式：language_server.exe 与扩展 Skill 的转述](cases/antigravity-hidden-agent-modes-report.md) — 发布者称在 jetski/language_server.exe 找到四个多 Agent 模式，并建议装扩展 Skill；未给二进制证据或执行验证。 **[未确认使用 REA · 相关项目]**
+- [Awesome Reverse-Engineered：让 Agent 先查已有互通实现，再决定是否逆向](cases/awesome-reverse-engineered-agent-index.md) — 具备搜索站与 Agent Skill 的开源互通项目目录，帮助按目标、许可与维护状况选已有工具；条目存在不代表逆向结果正确。 **[未确认使用 REA · 相关项目]**
 - [中国激光软件 EXE：Dan Nunn 用 Codex 持续恢复 Pascal 逻辑](cases/chinese-laser-exe-codex-pascal.md) — 作者报告已研究12天，目标是将激光软件可执行文件恢复为Pascal；未报告完成，也未给设备兼容或加工验证。 **[其他 AI 逆向 · 进行中]**
 - [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**
 - [dot 分析 Muse：把 REA 逆向任务交给桌面 Agent](cases/dot-rea-muse-analysis.md) — 丰收称已给dot安排使用REA分析Muse；这是任务启动自述，没有公开具体发现或重建结果。 **[REA · 进行中]**
@@ -669,6 +681,7 @@
 
 ### 算法与功能重建
 
+- [合约买入前检查台：Claude／Ghidra 分析卖出路径并纠正代理误报的自述](cases/claude-ghidra-contract-rug-check-desk.md) — 发布者报告用字节码红旗检查阻止买入，并称纠正一次 OpenZeppelin 代理误报；没有链地址、代码或日志可复核。 **[其他 AI 逆向 · 待验证]**
 - [Slice 金库调查：Sonnet 从反编译字节码定位外部返回值记账问题](cases/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse称免费Sonnet 5.5不到两分钟定位漏洞函数，并确认用Claude处理字节码；约4.1万美元损失与可利用性未在此独立链上核验。 **[其他 AI 逆向 · 分析测试]**
 - [专有格式 Rust CLI：Claude 八个子 Agent 对照200份文件导致资源饱和](cases/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne 开发专有格式提取器时将Claude并发从8降至3，部分文件含数十万行；200文件是工作负载，不是通过200例验证。 **[其他 AI 逆向 · 进行中]**
 - [REA 四任务对照：OBS 噪声门、Android 地下城与支付提示词的单次实验](cases/rea-four-task-single-run-ab-report.md) — varunPbhardwaj 报告三项有无 REA 都20/20，支付两提示词结果不同；只称单次案例研究，13%—17%省时省费未经独立测量。 **[REA · 分析测试]**

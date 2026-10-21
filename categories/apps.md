@@ -2,6 +2,14 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [CatEye RP：REA 与 Codex 重实现 Axure RP，因配额暂缓](../cases/cateye-rp-rea-axure-reimplementation.md) — George JW 报告正在重建交互原型工具 Axure RP；运行近两天仍在构建，Codex 配额接近耗尽后暂停。 **[REA · 进行中]**
+- [DGX Spark 上的六 Agent ELF 分析：用 nonce 与原始字节约束结论](../cases/dgx-spark-six-agents-elf-evidence-gate.md) — Nikolaos Chrysaidos 报告本地 Qwen 配合 REA 分工分析 ELF，并由 Agent 外的 hub 验证工具产物；结果统计口径仍有疑问。 **[REA · 分析测试]**
+- [Claude Code CLI：逆向后制作 Rust drop-in 替代的愿望](../cases/claude-code-cli-rust-dropin-idea.md) — 读者提出以 Rust 重实现 Claude Code 命令行的可替换版本；没有宣布开工或实现。 **[未确认使用 REA · 待验证]**
+- [1992年 Windows 3.1 赞美诗软件：Ghidra 与 REA 的反编译自述](../cases/windows31-1992-hymnal-ghidra-rea.md) — Glauber Lima 报告用 Ghidra 配合 REA 成功反编译老赞美诗程序，未给恢复内容或运行验证。 **[REA · 待验证]**
+- [剪映 AI 调用封装：余温用 REA 研究后暂缓公开](../cases/jianying-gkxspace-rea-ai-control.md) — 余温称已将剪映大量功能封装为 AI 可调用操作，准备脱敏发布后又改为自用；未公开代码或功能清单核验。 **[REA · 进行中]**
+- [Windows 任务管理器：五分钟、两美元 AI 重建的待验证转述](../cases/windows-task-manager-ai-five-minute-report.md) — Onchana01 转述任务管理器被快速逆向；没有原作者、代码或行为测试，保留明确目标而不采纳完成断言。 **[未确认使用 REA · 待验证]**
+- [Antigravity 隐藏模式：language_server.exe 与扩展 Skill 的转述](../cases/antigravity-hidden-agent-modes-report.md) — 发布者称在 jetski/language_server.exe 找到四个多 Agent 模式，并建议装扩展 Skill；未给二进制证据或执行验证。 **[未确认使用 REA · 相关项目]**
+- [Awesome Reverse-Engineered：让 Agent 先查已有互通实现，再决定是否逆向](../cases/awesome-reverse-engineered-agent-index.md) — 具备搜索站与 Agent Skill 的开源互通项目目录，帮助按目标、许可与维护状况选已有工具；条目存在不代表逆向结果正确。 **[未确认使用 REA · 相关项目]**
 - [中国激光软件 EXE：Dan Nunn 用 Codex 持续恢复 Pascal 逻辑](../cases/chinese-laser-exe-codex-pascal.md) — 作者报告已研究12天，目标是将激光软件可执行文件恢复为Pascal；未报告完成，也未给设备兼容或加工验证。 **[其他 AI 逆向 · 进行中]**
 - [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](../cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**
 - [dot 分析 Muse：把 REA 逆向任务交给桌面 Agent](../cases/dot-rea-muse-analysis.md) — 丰收称已给dot安排使用REA分析Muse；这是任务启动自述，没有公开具体发现或重建结果。 **[REA · 进行中]**

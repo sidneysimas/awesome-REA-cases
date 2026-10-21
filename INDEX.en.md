@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**693 entries**, organized by use case, without a Top-N or popularity threshold.
+**706 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (156)
-- [Hardware and interoperability](categories/en/hardware.md) (172)
-- [Applications and clients](categories/en/apps.md) (306)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (59)
+- [Hardware and interoperability](categories/en/hardware.md) (176)
+- [Applications and clients](categories/en/apps.md) (314)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (60)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -187,6 +187,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Direct Eufy integration: asking Claude to study a Home Assistant plugin](cases/en/eufy-claude-homeassistant-direct-integration.md) — After Claude added a Home Assistant backend for Eufy/Roborock support, the author asked it to study the Eufy plugin and integrate directly. **[Other AI-assisted work · In progress]**
+- [An old phone as a home Wi-Fi monitor: a 14-device Opus/REA report](cases/en/old-phone-opus-rea-home-network-monitor.md) — The publisher describes hourly home-network checks from an idle phone, finding 14 devices including two unfamiliar ones, without code or accuracy evidence. **[REA · Needs verification]**
+- [Volkswagen displays: a REA/Claude adapter and theme-channel report](cases/en/volkswagen-rea-adapter-dashboard-report.md) — A publisher claims phone content on a VW center screen and cluster after adapter research; the theme-channel claim, time and cross-brand reach remain unverified. **[REA · Needs verification]**
+- [Delta-arm firmware: a risk report about Codex removing a safety check](cases/en/delta-arm-codex-safety-check-report.md) — Steven Cheng says Codex removed a firmware safety check in seconds, without the original fault, patch or safety validation needed to call it a fix. **[Other AI-assisted work · Needs verification]**
 - [Google TV restoration failure: a boot loop after Claude's BAT operation](cases/en/google-tv-claude-bat-restore-bootloop.md) — Paul reports a boot loop and Google TV crashes during Claude-assisted BAT restoration after interface/performance changes, saying hardware repair and reflashing are needed; script and model are undisclosed. **[Other AI-assisted work · Needs verification]**
 - [MouseFix: REA and Claude study a 2004 debounce utility and add middle-button and drag-safe modes](cases/en/mousefix-rea-claude-middle-button.md) — Felipe Mikeias publishes a single-executable Windows replacement and original-binary analysis, with five-button selection and configurable timing; exact-commit project CI succeeds, but mice were not independently tested. **[REA · In progress]**
 - [Kindle firmware on old phones: a concrete REA research and open-source idea](cases/en/kindle-firmware-old-phone-rea-idea.md) — A post proposes studying Kindle firmware for an open implementation on old phones, distinct from Android on Kindle; no port or feasibility evidence is supplied. **[REA · Related project]**
@@ -362,6 +366,14 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [CatEye RP: a REA/Codex Axure RP reimplementation paused for quota](cases/en/cateye-rp-rea-axure-reimplementation.md) — George JW reports nearly two days of work on an Axure RP replacement, still building when Codex usage approached the quota. **[REA · In progress]**
+- [Six ELF-analysis agents on DGX Spark: nonce-gated findings and byte checks](cases/en/dgx-spark-six-agents-elf-evidence-gate.md) — Nikolaos Chrysaidos reports local Qwen/REA analysis with an external evidence-checking hub; the reported finding counts do not form a clear partition. **[REA · Analysis test]**
+- [Claude Code CLI: a reader's idea for a reverse-engineered Rust drop-in](cases/en/claude-code-cli-rust-dropin-idea.md) — A reader proposes a Rust replacement for Claude Code's command-line implementation, without reporting work or compatibility results. **[REA use unconfirmed · Needs verification]**
+- [A 1992 Windows 3.1 hymnal: a Ghidra/REA decompilation report](cases/en/windows31-1992-hymnal-ghidra-rea.md) — Glauber Lima reports success decompiling an old hymnal application with Ghidra and REA, without publishing recovered material or runtime verification. **[REA · Needs verification]**
+- [A Jianying AI-callable wrapper: gkxspace pauses publication after REA research](cases/en/jianying-gkxspace-rea-ai-control.md) — The author says many Jianying functions are AI-callable but keeps the planned sanitized release private; no code or feature-coverage verification is supplied. **[REA · In progress]**
+- [Windows Task Manager: an unverified five-minute, two-dollar AI rebuild claim](cases/en/windows-task-manager-ai-five-minute-report.md) — Onchana01 names Task Manager as a rapid reversing example but provides no original author, artifact or behavioral tests. **[REA use unconfirmed · Needs verification]**
+- [Antigravity hidden modes: a language_server.exe and extension-skill report](cases/en/antigravity-hidden-agent-modes-report.md) — A publisher names four multi-agent modes in jetski/language_server.exe and suggests extension skills, without binary evidence or execution verification. **[REA use unconfirmed · Related project]**
+- [Awesome Reverse-Engineered: let an agent find existing interoperability work first](cases/en/awesome-reverse-engineered-agent-index.md) — A public search site and agent skill help choose existing implementations by target, license and maintenance; listing a project does not validate its reversing results. **[REA use unconfirmed · Related project]**
 - [A Chinese laser-software EXE: Dan Nunn's ongoing Codex-assisted Pascal recovery](cases/en/chinese-laser-exe-codex-pascal.md) — The author reports 12 days of work toward recovering a laser executable as Pascal, without claiming completion or verified device compatibility or machining. **[Other AI-assisted work · In progress]**
 - [GrapheneOS NFC payments: a reader's AI-decompilation idea](cases/en/grapheneos-ai-nfc-payments-idea.md) — A reader hopes AI decompilation could enable the NFC payments they want on GrapheneOS; no protocol, payment provider or feasibility test is supplied. **[Other AI-assisted work · Related project]**
 - [dot investigates Muse: assigning REA reversing to a desktop agent](cases/en/dot-rea-muse-analysis.md) — Fengshou reports assigning dot to analyze Muse with REA; this establishes task initiation, not published findings or a rebuild. **[REA · In progress]**
@@ -671,6 +683,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [A pre-buy contract check desk: Claude/Ghidra sell-path analysis and a corrected proxy flag](cases/en/claude-ghidra-contract-rug-check-desk.md) — A publisher describes bytecode-based buy gating and one corrected OpenZeppelin proxy false positive, without contract addresses, code or inspectable logs. **[Other AI-assisted work · Needs verification]**
 - [Slice vault investigation: Sonnet locates external-return accounting in decompiled bytecode](cases/en/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse reports free Sonnet 5.5 locating a vulnerable function in under two minutes and confirms Claude's bytecode-decompilation role; the approximately $41,000 loss and exploitability were not independently checked on chain. **[Other AI-assisted work · Analysis test]**
 - [A proprietary-format Rust CLI: eight Claude subagents saturate a 200-file workload](cases/en/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne reduces Claude concurrency from eight to three while developing a proprietary-format extractor with files containing hundreds of thousands of lines; 200 files are workload size, not 200 passed validations. **[Other AI-assisted work · In progress]**
 - [Four REA comparisons: single-run OBS noise-gate, Android dungeon and payment-prompt experiments](cases/en/rea-four-task-single-run-ab-report.md) — varunPbhardwaj reports 20/20 both with and without REA in three tasks and different payment results under two prompts; explicitly a single-run case study, with unverified 13–17% time/cost savings. **[REA · Analysis test]**
