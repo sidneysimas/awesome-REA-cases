@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **718 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **725 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（161）
-- [硬件与设备互通](categories/hardware.md)（180）
-- [应用与客户端](categories/apps.md)（317）
-- [算法与功能重建](categories/algorithms.md)（60）
+- [游戏与游戏保存](categories/games.md)（162）
+- [硬件与设备互通](categories/hardware.md)（183）
+- [应用与客户端](categories/apps.md)（319）
+- [算法与功能重建](categories/algorithms.md)（61）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [《质量效应》：用 AI 反编译后制作第四作的读者愿望](cases/mass-effect-ai-decompile-sequel-idea.md) — Freld建议让AI反编译Mass Effect并制作Mass Effect4，只是指定游戏系列的续作愿望，没有实施或产物。 **[其他 AI 逆向 · 待验证]**
 - [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
 - [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**
 - [Neverball 到 KaniVolcanoEngine：REA 先提规格，LLM 再用 Rust 引擎重建](cases/neverball-rea-kanivolcanoengine.md) — Otinpan报告从Neverball可执行文件恢复游戏逻辑与关卡结构规格，再让LLM用自己的Rust引擎实现；未给行为对等测试。 **[REA · 待验证]**
@@ -190,6 +191,9 @@
 
 ### 硬件与设备互通
 
+- [机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件](cases/scriptjohn-keyboard-rea-webhid.md) — João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。 **[REA · 待验证]**
+- [Samsung 电视显示六个 Claude Agent：Opus 研究本地遥控，ChatGPT 语音开墙](cases/samsung-opus-chatgpt-agent-wall.md) — Codez报告以Samsung本地遥控API打开笔记本上的Agent网页；电视是显示端，不是运行六个Agent，也没有证明通用Tizen漏洞。 **[其他 AI 逆向 · 待验证]**
+- [录像机改16口可管理PoE交换机：Michał 的 REA／Claude Code 改造计划](cases/michalgajeno-recorder-managed-poe-switch.md) — Michał说正在研究一台录像机，想把它改成16口可管理PoE交换机；没有报告完成或给出设备型号。 **[REA · 进行中]**
 - [Mac 一键控制相机与摄影灯：Claude 辅助的小应用](cases/mac-camera-studio-light-claude-button.md) — Roman Meerson 报告借助 Claude 与少量逆向，在 Mac 上用一个按钮控制相机和摄影灯，不需 Stream Deck。 **[其他 AI 逆向 · 待验证]**
 - [家庭 Wi-Fi 的64个 Claude Agent：验证器否决9个摄像头猜测的自述](cases/claude-wifi-swarm-verifier-false-cameras.md) — Vexo称扫描41台设备后，验证器因没有视频包否决9项隐藏摄像头判断；没有公开捕获或日志供核对。 **[未确认使用 REA · 待验证]**
 - [Motorola Smart Connect 到 Linux：REA 辅助通知、手机窗口和副屏的自述](cases/motorola-smart-connect-rea-linux.md) — Rudra Patel报告研究Motorola Smart Connect后实现Linux互通，称支持通知回复、窗口化手机应用及副屏，无需root。 **[REA · 待验证]**
@@ -373,6 +377,8 @@
 
 ### 应用与客户端
 
+- [Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅](cases/xero-claude-codex-personal-rebuild.md) — Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。 **[其他 AI 逆向 · 待验证]**
+- [REA 加 Jev：按发现的风险分数决定是否重新取证的工作流 idea](cases/jev-rea-finding-risk-loop-idea.md) — Jey提出把REA发现交给Jev评分，超过0.5则重查；98条通用Agent轨迹指标没有证明它在逆向中可可靠纠错。 **[REA · 待验证]**
 - [LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述](cases/layerfs-unity-agent-workspaces.md) — 两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。 **[未确认使用 REA · 相关项目]**
 - [Superhuman 自用版：用 Claude API 额度替代另一份订阅的自述](cases/superhuman-claude-personal-rebuild.md) — pano称逆向Superhuman做个人版本，运行在自己的月度Claude API额度上；没有具体功能、代码或兼容测试。 **[其他 AI 逆向 · 待验证]**
 - [Codex computer-use MCP：逆向后切换自有连接器的自述](cases/codex-computer-use-mcp-general-replacement.md) — Romy称研究OpenAI Codex的computer-use MCP后，已从原连接器切换到自己的general-computer-use；未说明AI分析角色。 **[未确认使用 REA · 进行中]**
@@ -693,6 +699,7 @@
 
 ### 算法与功能重建
 
+- [LLM4Decompile：从汇编或 Ghidra 伪代码恢复 C 函数的专用模型](cases/llm4decompile-assembly-c-models.md) — 公开研究将 Linux x86_64 函数反汇编转为 C，或细化 Ghidra 伪代码；不同模型与路线的可执行率不能混成通用恢复率。 **[其他 AI 逆向 · 分析测试]**
 - [合约买入前检查台：Claude／Ghidra 分析卖出路径并纠正代理误报的自述](cases/claude-ghidra-contract-rug-check-desk.md) — 发布者报告用字节码红旗检查阻止买入，并称纠正一次 OpenZeppelin 代理误报；没有链地址、代码或日志可复核。 **[其他 AI 逆向 · 待验证]**
 - [Slice 金库调查：Sonnet 从反编译字节码定位外部返回值记账问题](cases/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse称免费Sonnet 5.5不到两分钟定位漏洞函数，并确认用Claude处理字节码；约4.1万美元损失与可利用性未在此独立链上核验。 **[其他 AI 逆向 · 分析测试]**
 - [专有格式 Rust CLI：Claude 八个子 Agent 对照200份文件导致资源饱和](cases/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne 开发专有格式提取器时将Claude并发从8降至3，部分文件含数十万行；200文件是工作负载，不是通过200例验证。 **[其他 AI 逆向 · 进行中]**

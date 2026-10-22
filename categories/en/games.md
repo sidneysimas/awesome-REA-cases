@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../games.md)
 
+- [Mass Effect: a reader's idea to decompile it with AI and build a fourth game](../../cases/en/mass-effect-ai-decompile-sequel-idea.md) — Freld suggests AI decompilation of Mass Effect followed by a Mass Effect 4; this is a named-series sequel wish, without implementation or artifacts. **[Other AI-assisted work · Needs verification]**
 - [Red Alert 3 and Corona: DeepSeek-assisted trainer rewrite and LLM game control](../../cases/en/ra3-corona-deepseek-trainer-llm.md) — ProbiusOfficial reports rebuilding a 2009 CE trainer and connecting an LLM to Red Alert 3/Corona; the original campaign airdrop goal failed and extensive human correction was needed. **[Other AI-assisted work · Needs verification]**
 - [SOCOM II Legacy: an AI-assisted browser-engine project for original maps and assets](../../cases/en/socom2-legacy-ai-browser-engine.md) — Benny says a custom browser engine brings back SOCOM II maps and assets, explicitly crediting substantial human research, coding and testing alongside AI. **[Other AI-assisted work · In progress]**
 - [Neverball in KaniVolcanoEngine: REA extracts a specification, an LLM rebuilds in Rust](../../cases/en/neverball-rea-kanivolcanoengine.md) — Otinpan reports extracting game-logic and level-structure specifications from Neverball's executable, then implementing them in a custom Rust engine without published equivalence tests. **[REA · Needs verification]**

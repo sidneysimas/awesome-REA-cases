@@ -1,5 +1,117 @@
 [
   {
+    "id": "mass-effect-ai-decompile-sequel-idea",
+    "title": "《质量效应》：用 AI 反编译后制作第四作的读者愿望",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "Freld建议让AI反编译Mass Effect并制作Mass Effect4，只是指定游戏系列的续作愿望，没有实施或产物。",
+    "description": "2026年10月22日02:40（北京时间），Freld（@freld）回复他人，建议有人用AI反编译《质量效应》（Mass Effect），再制作Mass Effect4。目标是从既有游戏研究出发制作续作；这是读者提出的具体游戏愿望，不是项目招募或作者已开始开发的报告。\n\n原帖没有说明研究系列哪一作、版本或平台，没有模型、REA、引擎、恢复哪些机制、代码、资产方案或测试。不能据此声称反编译已完成、存在可玩第四作或得到权利人授权，也不能把愿望当发行消息。本合集只保留作者明确说出的目标与AI方向，未下载游戏或执行目标代码。",
+    "sources": [{"label": "Freld：AI反编译Mass Effect后制作第四作的愿望", "url": "https://x.com/i/status/2112977329618301075"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T02:40:27+08:00；这是读者愿望，不是正在开发或发行的声明。"],
+    "en": {
+      "title": "Mass Effect: a reader's idea to decompile it with AI and build a fourth game",
+      "summary": "Freld suggests AI decompilation of Mass Effect followed by a Mass Effect 4; this is a named-series sequel wish, without implementation or artifacts.",
+      "description": "At 02:40 Beijing time on October 22, 2026, Freld (@freld) replies that someone should decompile Mass Effect with AI and build Mass Effect 4. The goal is a sequel based on studying an existing game. This is a reader's concrete game wish, not a recruitment notice or a report that the author has started development.\n\nThe post specifies no title within the series, version, platform, model, REA use, engine, mechanics to recover, code, asset plan or tests. It does not establish completed decompilation, a playable fourth game or rights-holder permission, and is not release news. This entry retains only the explicitly proposed target and AI direction. No game was downloaded or target code executed here.",
+      "metadata": ["Source update: 2026-10-22T02:40:27+08:00; a reader's wish, not an announcement of active development or release."], "source_labels": ["Freld's wish to decompile Mass Effect with AI and build a fourth game"]
+    }
+  },
+  {
+    "id": "xero-claude-codex-personal-rebuild",
+    "title": "Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。",
+    "description": "2026年10月22日02:55（北京时间），Peter Wilcock（@PeteWilcock）说自己借助Claude和Codex逆向Xero做自用版本，并取消了多年订阅。他将动机归于持续涨价与对小企业性价比的不满；这是指定产品、面向自用替代和订阅选择的报告，不是已经证明同等功能或总成本为零。\n\n作者没有列出复刻功能、目标版本、分析路径、两种模型的分工、数据迁移、仓库、截图或测试。不能补写税务申报、银行同步、发票或账务完整性，不推断财务合规、商业可用或可供其他企业替代。取消订阅也只是作者说法，没有账户操作或独立验证。未确认REA参与，未访问其账户、财务数据或运行应用；以未验证自述保留。",
+    "sources": [{"label": "Peter Wilcock：Claude／Codex逆向Xero自用与取消订阅自述", "url": "https://x.com/i/status/2112981141808406589"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T02:55:36+08:00；取消订阅与重建均为作者报告，未提供功能对照。"],
+    "en": {
+      "title": "A personal Xero replacement: Peter Wilcock reports Claude/Codex reverse engineering and cancellation",
+      "summary": "Peter says he reverse-engineered Xero for personal use and cancelled a longstanding subscription because of price increases and poor small-business value; no features, code or comparisons are public.",
+      "description": "At 02:55 Beijing time on October 22, 2026, Peter Wilcock (@PeteWilcock) says he used Claude and Codex to reverse-engineer Xero for himself and cancelled a subscription held for years. He attributes the decision to repeated price increases and poor value for small businesses. This is a report about a named product, a personal replacement and a subscription decision, not demonstrated feature parity or zero total cost.\n\nThe author lists no rebuilt features, target version, analytical path, division of work between the models, data migration, repository, screenshots or tests. Tax filing, bank synchronization, invoicing and accounting integrity are not inferred, nor are financial compliance, commercial readiness or suitability for other businesses. Cancellation itself remains an author claim, with no account operation or independent verification here. REA involvement is unconfirmed. No account or financial data was accessed and no app was run; the account is retained as unverified.",
+      "metadata": ["Source update: 2026-10-22T02:55:36+08:00; cancellation and rebuilding are author-reported, without a feature comparison."], "source_labels": ["Peter Wilcock's report of personal Claude/Codex-assisted Xero reverse engineering and subscription cancellation"]
+    }
+  },
+  {
+    "id": "llm4decompile-assembly-c-models",
+    "title": "LLM4Decompile：从汇编或 Ghidra 伪代码恢复 C 函数的专用模型",
+    "category": "algorithms", "rea": "other-ai", "status": "analysis-test",
+    "summary": "公开研究将 Linux x86_64 函数反汇编转为 C，或细化 Ghidra 伪代码；不同模型与路线的可执行率不能混成通用恢复率。",
+    "description": "2026年10月22日00:26（北京时间），@isofunds 介绍 LLM4Decompile，提出先恢复旧 C/C++、再让另一模型改写以便维护的用途。这是本轮候选；为核对宣传而补读的项目 README 是早期研究材料，不是本窗口新发布。项目署名 Hanzhuo Tan、Qi Luo、Jing Li 与 Yuqun Zhang，论文标为2024年；固定阅读版本为提交85b364bf093eb2ee4f3687cfe38a203fca89f23e，其提交日期为2026年2月12日。\n\nREADME说明支持Linux x86_64、GCC O0至O3，将二进制先用Objdump转成汇编，再生成C。LLM4Decompile-End直接从汇编生成函数，LLM4Decompile-Ref则细化Ghidra已生成的伪代码，不能把两种输入条件视作同一实验。公开评估以重新执行并通过预设测试为指标，列HumanEval-Decompile的164个标准库C函数与ExeBench的2621个真实项目函数。模型表分别报1.3B-v1.5为27.3%、1.3B-v2为46.0%、9B-v2为64.9%；2024年9月23日更新另给9B值0.6494。这些是项目报告，不是任意整套应用可恢复比例，也不是小型1.3B模型达到约三分之二。\n\n原帖把进展说成2023年至2024年提升，并将其连到REA研究谱系；当前文档不足证明这种因果。银行与保险系统迁移、StarCoder后续改写只是该帖提出的应用方向，没有具体部署或迁移测试。单GPU16GB、模型文件小于3GB等资源宣传未单独验证。不执行模型或目标代码，不声称独立复现；开源模型与函数级评估是已读的具体产物，而不是已证明自动改造遗留主机系统。",
+    "sources": [
+      {"label": "isofunds：LLM4Decompile与旧代码维护用途的介绍", "url": "https://x.com/i/status/2112943735394758689"},
+      {"label": "LLM4Decompile固定版本README：模型路线、指标与历史更新", "url": "https://github.com/albertan017/LLM4Decompile/blob/85b364bf093eb2ee4f3687cfe38a203fca89f23e/README.md"},
+      {"label": "固定版本提交日期与元数据（2026年2月12日）", "url": "https://github.com/albertan017/LLM4Decompile/commit/85b364bf093eb2ee4f3687cfe38a203fca89f23e"}
+    ],
+    "snapshot_date": "2026-10-22", "metadata": ["候选来源更新：2026-10-22T00:26:57+08:00；历史项目文档用于核对，不作为窗口内新研究。"],
+    "en": {
+      "title": "LLM4Decompile: specialized models recovering C functions from assembly or Ghidra output",
+      "summary": "The public research generates C from Linux x86_64 assembly or refines Ghidra pseudocode; rates from different models and input conditions are not a universal recovery score.",
+      "description": "At 00:26 Beijing time on October 22, 2026, @isofunds introduces LLM4Decompile and proposes recovering legacy C/C++ before another model rewrites it for maintenance. This post is the window candidate; the project README consulted to check the promotion is older research material, not a release within this window. The project credits Hanzhuo Tan, Qi Luo, Jing Li and Yuqun Zhang and cites a 2024 paper. The inspected revision is 85b364bf093eb2ee4f3687cfe38a203fca89f23e, committed on February 12, 2026.\n\nThe README describes Linux x86_64 and GCC O0 through O3, first disassembling binaries with Objdump and then generating C. LLM4Decompile-End generates functions from assembly, whereas LLM4Decompile-Ref refines pseudocode already produced by Ghidra. These input conditions are not the same experiment. Evaluation defines re-executability as execution that passes predefined tests and lists HumanEval-Decompile's 164 standard-library C functions and ExeBench's 2,621 real-project functions. The model table reports 27.3% for 1.3B-v1.5, 46.0% for 1.3B-v2 and 64.9% for 9B-v2; the September 23, 2024 update separately gives the 9B value as 0.6494. These are project-reported figures, not the fraction of an arbitrary complete application recovered, nor evidence that the small 1.3B model reaches roughly two-thirds.\n\nThe post dates the improvement to 2023–2024 and connects it to REA's research lineage; the inspected documentation does not establish that causal story. Bank and insurance-system migration and subsequent StarCoder rewriting are proposed applications, without a specific deployment or migration test. Claims about a single 16GB GPU and a model file below 3GB were not separately verified. Neither models nor target code were executed here, and no independent reproduction is claimed. Open models and function-level evaluations are the inspected artifacts, not demonstrated automatic modernization of legacy mainframes.",
+      "metadata": ["Candidate source update: 2026-10-22T00:26:57+08:00; older project documentation was used for checking, not treated as new research within the window."],
+      "source_labels": ["isofunds introduces LLM4Decompile and legacy-code maintenance uses", "Pinned LLM4Decompile README: model routes, metrics and historical updates", "Pinned revision date and metadata, February 12, 2026"]
+    }
+  },
+  {
+    "id": "scriptjohn-keyboard-rea-webhid",
+    "title": "机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。",
+    "description": "2026年10月22日01:23（北京时间），João（@ScriptJohn_）回复AkitaOnRails，称自己的机械键盘只有一款体验很差的中国Windows软件，因此做了逆向，以WebHID API将其移到网页，并增加一些功能。他明确列出REA、Claude和Ghidra，构成从厂商配置工具到浏览器设备控制的具体替代用途。\n\n原帖没有给键盘品牌型号、厂商工具版本、HID报告结构、增加了哪些功能、仓库或设备测试记录。不能推定支持所有机械键盘、跨浏览器兼容或已开源，也不能把它与已有GAMEKB-K17或Linux键盘工具记录合并。结果只归为作者自述，未运行网页或连接硬件，无法判断每个工具的具体分工。",
+    "sources": [{"label": "João：REA、Claude、Ghidra与机械键盘WebHID移植", "url": "https://x.com/i/status/2112957995776659478"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T01:23:37+08:00；WebHID 移植为作者自述，键盘型号与新增功能未公开。"],
+    "en": {
+      "title": "Mechanical-keyboard configuration through WebHID: João's REA, Claude and Ghidra replacement",
+      "summary": "João reports replacing a poor Windows-only keyboard utility with browser-based WebHID and extra features, without identifying the model, source or compatibility tests.",
+      "description": "At 01:23 Beijing time on October 22, 2026, João (@ScriptJohn_) replies to AkitaOnRails that his mechanical keyboard had only a poor Chinese Windows utility, prompting reverse engineering and a move to the web through the WebHID API, with additional features. He explicitly names REA, Claude and Ghidra, providing a concrete replacement use: browser-based device control instead of the vendor configuration utility.\n\nThe post supplies no keyboard brand or model, utility version, HID report structures, description of the added features, repository or device-test records. Support for all mechanical keyboards, cross-browser compatibility and open-source availability are not inferred. The report is not merged with the existing GAMEKB-K17 or Linux keyboard-utility cases. Results remain author-reported: no web app was run or hardware connected here, and each tool's exact role is unknown.",
+      "metadata": ["Source update: 2026-10-22T01:23:37+08:00; the WebHID port is author-reported, with the keyboard model and added features undisclosed."], "source_labels": ["João on REA, Claude, Ghidra and a mechanical-keyboard WebHID port"]
+    }
+  },
+  {
+    "id": "jev-rea-finding-risk-loop-idea",
+    "title": "REA 加 Jev：按发现的风险分数决定是否重新取证的工作流 idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "Jey提出把REA发现交给Jev评分，超过0.5则重查；98条通用Agent轨迹指标没有证明它在逆向中可可靠纠错。",
+    "description": "2026年10月22日01:25（北京时间），Jey（@0xJeyx）提出把REA对闭源应用的每条发现连同证据与限制交给Jev，由它返回发现出错的可能性；分数超过0.5则回到REA再找证据，其余进入重建。这是以额外取证减少错误结论进入实现的具体idea，不是对某个已命名应用完成的实验。\n\n帖子称Jev在98条真实Agent轨迹、其中61条已知失败上，以默认0.50阈值识别54条失败，精确率71%，并声称分数已校准，0.8意味着同分轨迹约八成失败；价格为每100次检查0.019美元。没有给数据集、失败标注、校准曲线、公共代码或REA专用测试，不把这些自报指标升级为逆向发现的正确率或证明分数低于0.5即可安全使用。71%精确率意味着被标记项中仍有误报，不是所有未标记项可靠。\n\n本合集只记录作者提出的风险评分与重查闭环，未调用Jev、未付费、未复测校准，不能替代逐条核对程序地址、原始字节和行为证据。",
+    "sources": [{"label": "Jey：REA发现到Jev评分再回查的提案与自报指标", "url": "https://x.com/i/status/2112958430033990012"}],
+    "snapshot_date": "2026-10-22", "metadata": ["2026-10-22 候选快照：24赞、333浏览、2转发；来源更新2026-10-22T01:25:21+08:00。热度不是评分器有效性的验证。"],
+    "en": {
+      "title": "REA plus Jev: an idea for sending high-risk findings back for more evidence",
+      "summary": "Jey proposes scoring REA findings with Jev and rechecking those above 0.5; metrics on 98 general agent traces do not establish reliable reverse-engineering correction.",
+      "description": "At 01:25 Beijing time on October 22, 2026, Jey (@0xJeyx) proposes sending every REA finding about a closed application, together with evidence and limitations, to Jev for a probability of being wrong. A score above 0.5 sends the finding back to REA for more evidence; the rest proceeds into the rebuild. This is a concrete idea for reducing implementation errors through additional investigation, not a completed experiment on a named application.\n\nThe post claims that on 98 real agent traces, including 61 known failures, Jev caught 54 failures at the default 0.50 threshold with 71% precision. It also claims calibrated scores, interpreting 0.8 as roughly eight out of ten equally scored traces failing, and a price of $0.019 per 100 checks. No dataset, failure annotations, calibration curve, public code or REA-specific test is provided. These self-reported metrics are not correctness rates for reverse-engineering findings or proof that a score below 0.5 makes a finding safe to use. A 71% precision means flagged items still contain false alarms, not that all unflagged items are reliable.\n\nThis entry records the proposed risk-scoring and re-investigation loop only. Jev was not called or paid for, and calibration was not retested here. It cannot replace checking addresses, raw bytes and behavioral evidence for individual findings.",
+      "metadata": ["October 22, 2026 candidate snapshot: 24 likes, 333 views, 2 reposts; source update: 2026-10-22T01:25:21+08:00. Engagement does not validate the scorer."],
+      "source_labels": ["Jey's REA-to-Jev scoring and re-investigation proposal, with self-reported metrics"]
+    }
+  },
+  {
+    "id": "samsung-opus-chatgpt-agent-wall",
+    "title": "Samsung 电视显示六个 Claude Agent：Opus 研究本地遥控，ChatGPT 语音开墙",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Codez报告以Samsung本地遥控API打开笔记本上的Agent网页；电视是显示端，不是运行六个Agent，也没有证明通用Tizen漏洞。",
+    "description": "2026年10月22日01:25（北京时间），Codez（@0xCodez）报告让Opus 5.5研究自己的Samsung电视如何接受局域网命令，再用ChatGPT语音打开六个Claude Code窗口的显示墙。笔记本运行tmux中的六个Agent，并以网页供电视浏览器显示；电视和笔记本同Wi-Fi，首次连接由用户在电视上Allow。作者称所示设备运行Smart Hub，并声称适用于多数Tizen电视，但没有给型号、固件或兼容矩阵，不把它当作普遍支持。\n\n同串完整提示词说明要研究WebSocket8002本地遥控接口，以samsungtvws打开URL，用tmux的3×2布局与ttyd端口7681提供带口令的局域网页。提示词要求不root、不刷固件、不侧载，只改笔记本端，先保存状态与撤销方法。语音触发拟用只有open_claude_wall一个无参数工具的MCP，经受令牌保护的Cloudflare Tunnel接到ChatGPT自定义连接器；如果套餐或语音模式不能调用则退回笔记本本地唤醒词。这些是提示词中的实现要求，不能据此证明连接器、口令、撤销或安全隔离已被实际验证。\n\n作者称找到loophole，但正文使用既有本地遥控库和需用户配对的API，没有漏洞编号、未知协议捕获或绕过认证证据；不将其升级为Tizen漏洞或AI在电视本机运行。没有公开仓库、运行日志或语音连接器测试，视频附件的存在不等于本合集独立复现。归因是Opus/Claude与ChatGPT；虽然末尾推广逆向文章，不能据此确认实际调用REA。",
+    "sources": [{"label": "Codez：Samsung电视、笔记本六Agent与语音控制报告", "url": "https://x.com/i/status/2112958529988669742"}, {"label": "作者同串完整提示词：接口、网页与连接器的要求和回退", "url": "https://x.com/i/status/2112958534363021398"}],
+    "snapshot_date": "2026-10-22", "metadata": ["主帖候选快照78赞、6086浏览、1转发；来源更新2026-10-22T01:25:45+08:00。"],
+    "en": {
+      "title": "Six Claude agents on a Samsung TV: Opus-assisted local control and a ChatGPT voice trigger",
+      "summary": "Codez reports opening a laptop-hosted agent wall through Samsung's local remote API; the TV displays it rather than running the agents, and no general Tizen vulnerability is established.",
+      "description": "At 01:25 Beijing time on October 22, 2026, Codez (@0xCodez) reports using Opus 5.5 to investigate how his Samsung TV accepts local-network commands, then opening a wall of six Claude Code windows with ChatGPT voice. The laptop runs the six agents in tmux and serves a page for the TV browser; both devices share Wi-Fi, and the user presses Allow on the TV for initial pairing. The author says the demonstrated device runs Smart Hub and claims support for most Tizen TVs, but supplies no model, firmware or compatibility matrix. Broad support is not established.\n\nThe full prompt in the same thread calls for investigating the local WebSocket interface on port 8002, using samsungtvws to open a URL and a 3×2 tmux layout served by ttyd on port 7681 as a password-protected local page. It requires no rooting, firmware flashing or sideloading, laptop-side changes only, and saved state and undo instructions. The proposed voice trigger is an MCP server exposing only the argument-free open_claude_wall tool, connected to ChatGPT's custom connector through a token-protected Cloudflare Tunnel. If the plan or voice mode cannot call connectors, it falls back to a local laptop wake phrase. These are implementation requirements in the prompt, not proof that the connector, passwords, rollback or isolation were tested.\n\nAlthough the author calls the entry point a loophole, the account uses an existing local-control library and an API requiring user pairing. It offers no vulnerability identifier, unknown-protocol captures or authentication-bypass evidence. This is not established as a Tizen vulnerability or AI running on the TV itself. No public repository, runtime logs or voice-connector tests are supplied, and an attached video is not independent reproduction by this collection. Attribution is to Opus/Claude and ChatGPT; a closing promotion of a reverse-engineering article does not confirm actual REA use.",
+      "metadata": ["Main candidate snapshot: 78 likes, 6,086 views, 1 repost; source update: 2026-10-22T01:25:45+08:00."],
+      "source_labels": ["Codez's report of a Samsung TV, six laptop-hosted agents and voice control", "Author's full thread prompt: interface, web page, connector requirements and fallback"]
+    }
+  },
+  {
+    "id": "michalgajeno-recorder-managed-poe-switch",
+    "title": "录像机改16口可管理PoE交换机：Michał 的 REA／Claude Code 改造计划",
+    "category": "hardware", "rea": "REA", "status": "in-progress",
+    "summary": "Michał说正在研究一台录像机，想把它改成16口可管理PoE交换机；没有报告完成或给出设备型号。",
+    "description": "2026年10月22日01:41（北京时间），Michał Wróblewski（@MichalGajeno）在讨论REA与Claude Code能力时，说自己正在研究一台录像机，希望改造成完全可管理的16口PoE交换机，并担心token额度是否够用。PoE用于通过网线为设备供电；目标是重新利用现有录像硬件的联网能力，而不是重建录像应用。\n\n作者未说明品牌型号、芯片、端口的实际配置、固件、接口、代码或已完成的功能；不能断定16口均存在、交换管理已实现或电源能力符合特定标准。REA／Claude Code来自作者该帖上下文，具体调用与修改仍未展示。附图未被用于猜测型号，未执行固件或访问设备。帖子还宣传Gran Turismo 7可在PC运行，但没有作品或方法，不将该句记为他完成游戏移植的证据。本案仅为具体进行中目标，没有成功与安全保证。",
+    "sources": [{"label": "Michał：录像机到16口可管理PoE交换机的进行中自述", "url": "https://x.com/i/status/2112962458050576467"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T01:41:21+08:00；目标仍在研究，没有完成或供电测试报告。"],
+    "en": {
+      "title": "A recorder into a managed 16-port PoE switch: Michał's REA/Claude Code project",
+      "summary": "Michał says he is investigating a recorder to turn it into a managed 16-port PoE switch, without reporting completion or identifying the device model.",
+      "description": "At 01:41 Beijing time on October 22, 2026, Michał Wróblewski (@MichalGajeno), discussing REA and Claude Code, says he is working on a recorder that he wants to turn into a fully managed 16-port PoE switch and hopes his token budget lasts. PoE supplies power through Ethernet cabling. The goal is repurposing the recorder hardware's networking capability, not rebuilding its recording application.\n\nThe post identifies no brand, model, chipset, actual port configuration, firmware, interface, code or completed features. It does not establish that all 16 ports exist, management is implemented or power delivery complies with any particular standard. REA/Claude Code attribution comes from the post's context; actual calls and modifications are not shown. Its photograph was not used to guess a model, and no firmware was executed or device accessed here. The post also promotes Gran Turismo 7 running on PC without an artifact or method; that sentence is not evidence that the author completed a game port. This entry records a concrete in-progress goal, not success or a safety guarantee.",
+      "metadata": ["Source update: 2026-10-22T01:41:21+08:00; still under investigation, with no completion or power-delivery test report."], "source_labels": ["Michał's in-progress report of a recorder-to-managed-16-port-PoE-switch project"]
+    }
+  },
+  {
     "id": "ra3-corona-deepseek-trainer-llm",
     "title": "红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局",
     "category": "games", "rea": "other-ai", "status": "unverified",

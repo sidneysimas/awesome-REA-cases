@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅](../cases/xero-claude-codex-personal-rebuild.md) — Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。 **[其他 AI 逆向 · 待验证]**
+- [REA 加 Jev：按发现的风险分数决定是否重新取证的工作流 idea](../cases/jev-rea-finding-risk-loop-idea.md) — Jey提出把REA发现交给Jev评分，超过0.5则重查；98条通用Agent轨迹指标没有证明它在逆向中可可靠纠错。 **[REA · 待验证]**
 - [LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述](../cases/layerfs-unity-agent-workspaces.md) — 两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。 **[未确认使用 REA · 相关项目]**
 - [Superhuman 自用版：用 Claude API 额度替代另一份订阅的自述](../cases/superhuman-claude-personal-rebuild.md) — pano称逆向Superhuman做个人版本，运行在自己的月度Claude API额度上；没有具体功能、代码或兼容测试。 **[其他 AI 逆向 · 待验证]**
 - [Codex computer-use MCP：逆向后切换自有连接器的自述](../cases/codex-computer-use-mcp-general-replacement.md) — Romy称研究OpenAI Codex的computer-use MCP后，已从原连接器切换到自己的general-computer-use；未说明AI分析角色。 **[未确认使用 REA · 进行中]**

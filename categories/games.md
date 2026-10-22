@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [《质量效应》：用 AI 反编译后制作第四作的读者愿望](../cases/mass-effect-ai-decompile-sequel-idea.md) — Freld建议让AI反编译Mass Effect并制作Mass Effect4，只是指定游戏系列的续作愿望，没有实施或产物。 **[其他 AI 逆向 · 待验证]**
 - [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](../cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
 - [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](../cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**
 - [Neverball 到 KaniVolcanoEngine：REA 先提规格，LLM 再用 Rust 引擎重建](../cases/neverball-rea-kanivolcanoengine.md) — Otinpan报告从Neverball可执行文件恢复游戏逻辑与关卡结构规格，再让LLM用自己的Rust引擎实现；未给行为对等测试。 **[REA · 待验证]**

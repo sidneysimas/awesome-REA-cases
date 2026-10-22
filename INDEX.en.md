@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**718 entries**, organized by use case, without a Top-N or popularity threshold.
+**725 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (161)
-- [Hardware and interoperability](categories/en/hardware.md) (180)
-- [Applications and clients](categories/en/apps.md) (317)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (60)
+- [Games and preservation](categories/en/games.md) (162)
+- [Hardware and interoperability](categories/en/hardware.md) (183)
+- [Applications and clients](categories/en/apps.md) (319)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (61)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Mass Effect: a reader's idea to decompile it with AI and build a fourth game](cases/en/mass-effect-ai-decompile-sequel-idea.md) — Freld suggests AI decompilation of Mass Effect followed by a Mass Effect 4; this is a named-series sequel wish, without implementation or artifacts. **[Other AI-assisted work · Needs verification]**
 - [Red Alert 3 and Corona: DeepSeek-assisted trainer rewrite and LLM game control](cases/en/ra3-corona-deepseek-trainer-llm.md) — ProbiusOfficial reports rebuilding a 2009 CE trainer and connecting an LLM to Red Alert 3/Corona; the original campaign airdrop goal failed and extensive human correction was needed. **[Other AI-assisted work · Needs verification]**
 - [SOCOM II Legacy: an AI-assisted browser-engine project for original maps and assets](cases/en/socom2-legacy-ai-browser-engine.md) — Benny says a custom browser engine brings back SOCOM II maps and assets, explicitly crediting substantial human research, coding and testing alongside AI. **[Other AI-assisted work · In progress]**
 - [Neverball in KaniVolcanoEngine: REA extracts a specification, an LLM rebuilds in Rust](cases/en/neverball-rea-kanivolcanoengine.md) — Otinpan reports extracting game-logic and level-structure specifications from Neverball's executable, then implementing them in a custom Rust engine without published equivalence tests. **[REA · Needs verification]**
@@ -192,6 +193,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Mechanical-keyboard configuration through WebHID: João's REA, Claude and Ghidra replacement](cases/en/scriptjohn-keyboard-rea-webhid.md) — João reports replacing a poor Windows-only keyboard utility with browser-based WebHID and extra features, without identifying the model, source or compatibility tests. **[REA · Needs verification]**
+- [Six Claude agents on a Samsung TV: Opus-assisted local control and a ChatGPT voice trigger](cases/en/samsung-opus-chatgpt-agent-wall.md) — Codez reports opening a laptop-hosted agent wall through Samsung's local remote API; the TV displays it rather than running the agents, and no general Tizen vulnerability is established. **[Other AI-assisted work · Needs verification]**
+- [A recorder into a managed 16-port PoE switch: Michał's REA/Claude Code project](cases/en/michalgajeno-recorder-managed-poe-switch.md) — Michał says he is investigating a recorder to turn it into a managed 16-port PoE switch, without reporting completion or identifying the device model. **[REA · In progress]**
 - [One Mac button for a camera and studio light, built with Claude](cases/en/mac-camera-studio-light-claude-button.md) — Roman Meerson reports a Claude-assisted app with some reverse engineering to control a camera and studio light from a Mac without a Stream Deck. **[Other AI-assisted work · Needs verification]**
 - [64 Claude agents on home Wi-Fi: a verifier reportedly rejects nine camera guesses](cases/en/claude-wifi-swarm-verifier-false-cameras.md) — Vexo describes inspecting 41 devices and rejecting nine hidden-camera guesses for lack of video packets, without publishing captures or logs. **[REA use unconfirmed · Needs verification]**
 - [Motorola Smart Connect on Linux: a REA-assisted interoperability report](cases/en/motorola-smart-connect-rea-linux.md) — Rudra Patel reports notification replies, windowed phone apps and a second screen on Linux after studying Smart Connect with REA, using the stock app without root. **[REA · Needs verification]**
@@ -375,6 +379,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [A personal Xero replacement: Peter Wilcock reports Claude/Codex reverse engineering and cancellation](cases/en/xero-claude-codex-personal-rebuild.md) — Peter says he reverse-engineered Xero for personal use and cancelled a longstanding subscription because of price increases and poor small-business value; no features, code or comparisons are public. **[Other AI-assisted work · Needs verification]**
+- [REA plus Jev: an idea for sending high-risk findings back for more evidence](cases/en/jev-rea-finding-risk-loop-idea.md) — Jey proposes scoring REA findings with Jev and rechecking those above 0.5; metrics on 98 general agent traces do not establish reliable reverse-engineering correction. **[REA · Needs verification]**
 - [LayerFS: reported storage savings for multi-agent Unity reverse-engineering workspaces](cases/en/layerfs-unity-agent-workspaces.md) — Two posts describe isolated workspaces and deduplicated snapshots, repeating a 400G-to-33G claim for eight days of Unity artifacts; this is infrastructure, not a game-recovery score. **[REA use unconfirmed · Related project]**
 - [A personal Superhuman rebuild using Claude API credits instead of another subscription](cases/en/superhuman-claude-personal-rebuild.md) — pano reports a personal Superhuman version running on monthly Claude API credits, without a feature list, code or compatibility tests. **[Other AI-assisted work · Needs verification]**
 - [Codex computer-use MCP: a reported switch to a custom connector after reverse engineering](cases/en/codex-computer-use-mcp-general-replacement.md) — Romy reports replacing Codex's computer-use MCP connector with general-computer-use, without specifying AI's analytical role. **[REA use unconfirmed · In progress]**
@@ -695,6 +701,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [LLM4Decompile: specialized models recovering C functions from assembly or Ghidra output](cases/en/llm4decompile-assembly-c-models.md) — The public research generates C from Linux x86_64 assembly or refines Ghidra pseudocode; rates from different models and input conditions are not a universal recovery score. **[Other AI-assisted work · Analysis test]**
 - [A pre-buy contract check desk: Claude/Ghidra sell-path analysis and a corrected proxy flag](cases/en/claude-ghidra-contract-rug-check-desk.md) — A publisher describes bytecode-based buy gating and one corrected OpenZeppelin proxy false positive, without contract addresses, code or inspectable logs. **[Other AI-assisted work · Needs verification]**
 - [Slice vault investigation: Sonnet locates external-return accounting in decompiled bytecode](cases/en/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse reports free Sonnet 5.5 locating a vulnerable function in under two minutes and confirms Claude's bytecode-decompilation role; the approximately $41,000 loss and exploitability were not independently checked on chain. **[Other AI-assisted work · Analysis test]**
 - [A proprietary-format Rust CLI: eight Claude subagents saturate a 200-file workload](cases/en/claude-rust-proprietary-format-cli-concurrency.md) — Dwayne reduces Claude concurrency from eight to three while developing a proprietary-format extractor with files containing hundreds of thousands of lines; 200 files are workload size, not 200 passed validations. **[Other AI-assisted work · In progress]**

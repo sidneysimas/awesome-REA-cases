@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件](../cases/scriptjohn-keyboard-rea-webhid.md) — João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。 **[REA · 待验证]**
+- [Samsung 电视显示六个 Claude Agent：Opus 研究本地遥控，ChatGPT 语音开墙](../cases/samsung-opus-chatgpt-agent-wall.md) — Codez报告以Samsung本地遥控API打开笔记本上的Agent网页；电视是显示端，不是运行六个Agent，也没有证明通用Tizen漏洞。 **[其他 AI 逆向 · 待验证]**
+- [录像机改16口可管理PoE交换机：Michał 的 REA／Claude Code 改造计划](../cases/michalgajeno-recorder-managed-poe-switch.md) — Michał说正在研究一台录像机，想把它改成16口可管理PoE交换机；没有报告完成或给出设备型号。 **[REA · 进行中]**
 - [Mac 一键控制相机与摄影灯：Claude 辅助的小应用](../cases/mac-camera-studio-light-claude-button.md) — Roman Meerson 报告借助 Claude 与少量逆向，在 Mac 上用一个按钮控制相机和摄影灯，不需 Stream Deck。 **[其他 AI 逆向 · 待验证]**
 - [家庭 Wi-Fi 的64个 Claude Agent：验证器否决9个摄像头猜测的自述](../cases/claude-wifi-swarm-verifier-false-cameras.md) — Vexo称扫描41台设备后，验证器因没有视频包否决9项隐藏摄像头判断；没有公开捕获或日志供核对。 **[未确认使用 REA · 待验证]**
 - [Motorola Smart Connect 到 Linux：REA 辅助通知、手机窗口和副屏的自述](../cases/motorola-smart-connect-rea-linux.md) — Rudra Patel报告研究Motorola Smart Connect后实现Linux互通，称支持通知回复、窗口化手机应用及副屏，无需root。 **[REA · 待验证]**
