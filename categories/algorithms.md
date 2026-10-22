@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [CUDA：让 Agent 群尝试反编译的读者挑战](../cases/cuda-agent-swarm-decompile-idea.md) — loveofdoing提议让Agent群反编译CUDA，没有指定组件、版本或兼容目标，也没有实施报告。 **[其他 AI 逆向 · 待验证]**
 - [LLM4Decompile：从汇编或 Ghidra 伪代码恢复 C 函数的专用模型](../cases/llm4decompile-assembly-c-models.md) — 公开研究将 Linux x86_64 函数反汇编转为 C，或细化 Ghidra 伪代码；不同模型与路线的可执行率不能混成通用恢复率。 **[其他 AI 逆向 · 分析测试]**
 - [合约买入前检查台：Claude／Ghidra 分析卖出路径并纠正代理误报的自述](../cases/claude-ghidra-contract-rug-check-desk.md) — 发布者报告用字节码红旗检查阻止买入，并称纠正一次 OpenZeppelin 代理误报；没有链地址、代码或日志可复核。 **[其他 AI 逆向 · 待验证]**
 - [Slice 金库调查：Sonnet 从反编译字节码定位外部返回值记账问题](../cases/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse称免费Sonnet 5.5不到两分钟定位漏洞函数，并确认用Claude处理字节码；约4.1万美元损失与可利用性未在此独立链上核验。 **[其他 AI 逆向 · 分析测试]**

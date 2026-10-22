@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **729 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **739 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（162）
-- [硬件与设备互通](categories/hardware.md)（185）
-- [应用与客户端](categories/apps.md)（321）
-- [算法与功能重建](categories/algorithms.md)（61）
+- [游戏与游戏保存](categories/games.md)（165）
+- [硬件与设备互通](categories/hardware.md)（188）
+- [应用与客户端](categories/apps.md)（324）
+- [算法与功能重建](categories/algorithms.md)（62）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**
+- [Anthem：REA 研究客户端、移入 Unreal 的建议与缺失掉落表边界](cases/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies建议用REA反编译Anthem并把资产带入Unreal，后续称自己的反编译找不到服务器下发的掉落表；不证明完整游戏或后端已恢复。 **[REA · 进行中]**
+- [Reflex：用 AI 反编译研究旧代码、再制作续作的愿望](cases/reflex-ai-decompile-sequel-idea.md) — swaguley询问Rainbow Studios能否用AI反编译Reflex，为Reflex 2找回实现依据；没有开发或代码恢复结果。 **[其他 AI 逆向 · 待验证]**
 - [《质量效应》：用 AI 反编译后制作第四作的读者愿望](cases/mass-effect-ai-decompile-sequel-idea.md) — Freld建议让AI反编译Mass Effect并制作Mass Effect4，只是指定游戏系列的续作愿望，没有实施或产物。 **[其他 AI 逆向 · 待验证]**
 - [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
 - [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**
@@ -191,6 +194,9 @@
 
 ### 硬件与设备互通
 
+- [PS5 内核研究：kuzi 用 Opus 5.5 做深度推理与反编译，额度耗尽后仍在进行](cases/kuzi-ps5-opus-kernel-research.md) — kuzi称Opus 5.5支持14.00内核漏洞探测；父串确认PS5及14.00、14.10研究背景，但14.20用户态执行不等于内核突破。 **[其他 AI 逆向 · 进行中]**
+- [键盘灯光自然语言控制：chuplung 称 REA 与 Opus 用 Python 替代大型应用](cases/chuplung-rea-opus-keyboard-lights.md) — chuplung称REA与Opus 5.5把512MB键盘灯光应用替换为15行Python，聊天即可设置暖暗模式；型号、代码与计时未核。 **[REA · 待验证]**
+- [Comcast 盒子强制更新：Grok 修复与 Claude 采 HAR 后停止的自述](cases/comcast-box-grok-claude-update-report.md) — Tom Whitbread称Grok登录后解决Comcast盒子的问题，Claude做HAR研究后因规则停止；没有型号、修改方法或持续有效证据。 **[其他 AI 逆向 · 待验证]**
 - [Jake 的 Samsung 电视清理：Codex 自述与 U8000F 证据边界评论](cases/jake-samsung-u8000f-codex-cleanup-report.md) — Jake称Codex帮助清理电视；补审评论将目标指为2025 U8000F，并指出三倍提速、截图和音频外传未由仓库证据建立。 **[其他 AI 逆向 · 待验证]**
 - [STM32 裸机固件：用 REA 辅助 Ghidra 追踪 LED 与寄存器的工作流 idea](cases/stm32-rea-ghidra-led-workflow-idea.md) — 9flx以STM32教学视频说明可让REA辅助陌生固件调查；时间轴涵盖Ghidra、SVD寄存器映射与LED逻辑，没有证明AI已完成挑战或节省10万美元。 **[REA · 待验证]**
 - [机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件](cases/scriptjohn-keyboard-rea-webhid.md) — João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。 **[REA · 待验证]**
@@ -379,6 +385,9 @@
 
 ### 应用与客户端
 
+- [PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂](cases/php-patch-ai-exploration-limits.md) — Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。 **[其他 AI 逆向 · 进行中]**
+- [REA × OpenGateway：把二进制拆为32个问题并行回答的工作流宣传](cases/rea-opengateway-32-inquiry-workflow.md) — HOPE介绍REA与OpenGateway以高TPS模型并行回答32个二进制研究问题，未给目标样本、答案质量或端到端基准。 **[REA · 相关项目]**
+- [AWS SDK 地区目录：八路 Agent、先规格后重建的板式工作流 idea](cases/aws-sdk-region-catalog-agent-board-idea.md) — 帖子以AWS SDK地区目录为目标，设计REA取证、规格隔离与八路重建，再用50输入比较；128/128和0.12秒没有运行证据。 **[REA · 待验证]**
 - [escrowhold 合约：Alvosec 用 AI Agent 调查无抵押托管记账与转出路径](cases/escrowhold-ai-user2nego-attack-analysis.md) — Alvosec称逆向escrowhold后用AI调查攻击，认为user2nego记录未见抵押的大额代币，再由fillescrow转给调用方；尚无本合集链上复核。 **[其他 AI 逆向 · 待验证]**
 - [REA 的207个MCP工具：Fabio Makita报告Kimi-code加载受阻](cases/rea-kimi-code-207-tool-loading-report.md) — Fabio称Claude Code、Codex与OpenCode/GLM可用，但Kimi-code因207工具加载失败；回复提出Claude延迟加载差异，均未在此复测。 **[REA · 分析测试]**
 - [Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅](cases/xero-claude-codex-personal-rebuild.md) — Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。 **[其他 AI 逆向 · 待验证]**
@@ -427,7 +436,7 @@
 - [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
 - [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
 - [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
-- [CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍](cases/colateral-agentic-workspace-reverse-marketplace.md) — CoLateral账号宣传把逆向放进一体化Agent工作区，再把构建发布到市场；没有给实际目标或验证记录。 **[未确认使用 REA · 相关项目]**
+- [CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述](cases/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering称在CoLateral ADE中以REA和Opus 5.5重建Revit等结构工程工具，目标是Agent设计、分析与制图；未证明工程等价或安全。 **[REA · 待验证]**
 - [Claude Code 风控：用户将拒答后的研究交给 DeepSeek Harness](cases/deepseek-harness-claude-code-risk-inspection.md) — wquguru把研究Claude Code风控列为DeepSeek Harness用途；95%/5%是个人工具使用比例，不是绕过或研究成功率。 **[其他 AI 逆向 · 待验证]**
 - [菲律宾香蕉网站：Codex 用 REA 研究多个参考站的自述](cases/philippine-banana-codex-rea-website.md) — aFuJiyosn称让Codex用REA研究不同网站，再改成菲律宾产香蕉主题站；未给参考站或可访问成品。 **[REA · 进行中]**
 - [恶意软件解包：Claude 内存转储模块请求被拒与降级不稳定的报告](cases/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101报告为恶意软件解包制作模块时遭Claude降级与拒绝，旧模型版本又有崩溃；不是已完成的解包工具。 **[其他 AI 逆向 · 待验证]**
@@ -703,6 +712,7 @@
 
 ### 算法与功能重建
 
+- [CUDA：让 Agent 群尝试反编译的读者挑战](cases/cuda-agent-swarm-decompile-idea.md) — loveofdoing提议让Agent群反编译CUDA，没有指定组件、版本或兼容目标，也没有实施报告。 **[其他 AI 逆向 · 待验证]**
 - [LLM4Decompile：从汇编或 Ghidra 伪代码恢复 C 函数的专用模型](cases/llm4decompile-assembly-c-models.md) — 公开研究将 Linux x86_64 函数反汇编转为 C，或细化 Ghidra 伪代码；不同模型与路线的可执行率不能混成通用恢复率。 **[其他 AI 逆向 · 分析测试]**
 - [合约买入前检查台：Claude／Ghidra 分析卖出路径并纠正代理误报的自述](cases/claude-ghidra-contract-rug-check-desk.md) — 发布者报告用字节码红旗检查阻止买入，并称纠正一次 OpenZeppelin 代理误报；没有链地址、代码或日志可复核。 **[其他 AI 逆向 · 待验证]**
 - [Slice 金库调查：Sonnet 从反编译字节码定位外部返回值记账问题](cases/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse称免费Sonnet 5.5不到两分钟定位漏洞函数，并确认用Claude处理字节码；约4.1万美元损失与可利用性未在此独立链上核验。 **[其他 AI 逆向 · 分析测试]**

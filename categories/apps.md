@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂](../cases/php-patch-ai-exploration-limits.md) — Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。 **[其他 AI 逆向 · 进行中]**
+- [REA × OpenGateway：把二进制拆为32个问题并行回答的工作流宣传](../cases/rea-opengateway-32-inquiry-workflow.md) — HOPE介绍REA与OpenGateway以高TPS模型并行回答32个二进制研究问题，未给目标样本、答案质量或端到端基准。 **[REA · 相关项目]**
+- [AWS SDK 地区目录：八路 Agent、先规格后重建的板式工作流 idea](../cases/aws-sdk-region-catalog-agent-board-idea.md) — 帖子以AWS SDK地区目录为目标，设计REA取证、规格隔离与八路重建，再用50输入比较；128/128和0.12秒没有运行证据。 **[REA · 待验证]**
 - [escrowhold 合约：Alvosec 用 AI Agent 调查无抵押托管记账与转出路径](../cases/escrowhold-ai-user2nego-attack-analysis.md) — Alvosec称逆向escrowhold后用AI调查攻击，认为user2nego记录未见抵押的大额代币，再由fillescrow转给调用方；尚无本合集链上复核。 **[其他 AI 逆向 · 待验证]**
 - [REA 的207个MCP工具：Fabio Makita报告Kimi-code加载受阻](../cases/rea-kimi-code-207-tool-loading-report.md) — Fabio称Claude Code、Codex与OpenCode/GLM可用，但Kimi-code因207工具加载失败；回复提出Claude延迟加载差异，均未在此复测。 **[REA · 分析测试]**
 - [Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅](../cases/xero-claude-codex-personal-rebuild.md) — Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。 **[其他 AI 逆向 · 待验证]**
@@ -50,7 +53,7 @@
 - [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](../cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
 - [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](../cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
 - [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](../cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
-- [CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍](../cases/colateral-agentic-workspace-reverse-marketplace.md) — CoLateral账号宣传把逆向放进一体化Agent工作区，再把构建发布到市场；没有给实际目标或验证记录。 **[未确认使用 REA · 相关项目]**
+- [CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述](../cases/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering称在CoLateral ADE中以REA和Opus 5.5重建Revit等结构工程工具，目标是Agent设计、分析与制图；未证明工程等价或安全。 **[REA · 待验证]**
 - [Claude Code 风控：用户将拒答后的研究交给 DeepSeek Harness](../cases/deepseek-harness-claude-code-risk-inspection.md) — wquguru把研究Claude Code风控列为DeepSeek Harness用途；95%/5%是个人工具使用比例，不是绕过或研究成功率。 **[其他 AI 逆向 · 待验证]**
 - [菲律宾香蕉网站：Codex 用 REA 研究多个参考站的自述](../cases/philippine-banana-codex-rea-website.md) — aFuJiyosn称让Codex用REA研究不同网站，再改成菲律宾产香蕉主题站；未给参考站或可访问成品。 **[REA · 进行中]**
 - [恶意软件解包：Claude 内存转储模块请求被拒与降级不稳定的报告](../cases/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101报告为恶意软件解包制作模块时遭Claude降级与拒绝，旧模型版本又有崩溃；不是已完成的解包工具。 **[其他 AI 逆向 · 待验证]**

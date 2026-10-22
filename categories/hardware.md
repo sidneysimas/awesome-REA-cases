@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [PS5 内核研究：kuzi 用 Opus 5.5 做深度推理与反编译，额度耗尽后仍在进行](../cases/kuzi-ps5-opus-kernel-research.md) — kuzi称Opus 5.5支持14.00内核漏洞探测；父串确认PS5及14.00、14.10研究背景，但14.20用户态执行不等于内核突破。 **[其他 AI 逆向 · 进行中]**
+- [键盘灯光自然语言控制：chuplung 称 REA 与 Opus 用 Python 替代大型应用](../cases/chuplung-rea-opus-keyboard-lights.md) — chuplung称REA与Opus 5.5把512MB键盘灯光应用替换为15行Python，聊天即可设置暖暗模式；型号、代码与计时未核。 **[REA · 待验证]**
+- [Comcast 盒子强制更新：Grok 修复与 Claude 采 HAR 后停止的自述](../cases/comcast-box-grok-claude-update-report.md) — Tom Whitbread称Grok登录后解决Comcast盒子的问题，Claude做HAR研究后因规则停止；没有型号、修改方法或持续有效证据。 **[其他 AI 逆向 · 待验证]**
 - [Jake 的 Samsung 电视清理：Codex 自述与 U8000F 证据边界评论](../cases/jake-samsung-u8000f-codex-cleanup-report.md) — Jake称Codex帮助清理电视；补审评论将目标指为2025 U8000F，并指出三倍提速、截图和音频外传未由仓库证据建立。 **[其他 AI 逆向 · 待验证]**
 - [STM32 裸机固件：用 REA 辅助 Ghidra 追踪 LED 与寄存器的工作流 idea](../cases/stm32-rea-ghidra-led-workflow-idea.md) — 9flx以STM32教学视频说明可让REA辅助陌生固件调查；时间轴涵盖Ghidra、SVD寄存器映射与LED逻辑，没有证明AI已完成挑战或节省10万美元。 **[REA · 待验证]**
 - [机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件](../cases/scriptjohn-keyboard-rea-webhid.md) — João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。 **[REA · 待验证]**

@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](../cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**
+- [Anthem：REA 研究客户端、移入 Unreal 的建议与缺失掉落表边界](../cases/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies建议用REA反编译Anthem并把资产带入Unreal，后续称自己的反编译找不到服务器下发的掉落表；不证明完整游戏或后端已恢复。 **[REA · 进行中]**
+- [Reflex：用 AI 反编译研究旧代码、再制作续作的愿望](../cases/reflex-ai-decompile-sequel-idea.md) — swaguley询问Rainbow Studios能否用AI反编译Reflex，为Reflex 2找回实现依据；没有开发或代码恢复结果。 **[其他 AI 逆向 · 待验证]**
 - [《质量效应》：用 AI 反编译后制作第四作的读者愿望](../cases/mass-effect-ai-decompile-sequel-idea.md) — Freld建议让AI反编译Mass Effect并制作Mass Effect4，只是指定游戏系列的续作愿望，没有实施或产物。 **[其他 AI 逆向 · 待验证]**
 - [红警3与日冕：DeepSeek 重写旧修改器，并把 LLM 接入战局](../cases/ra3-corona-deepseek-trainer-llm.md) — 探姬报告研究红警3及日冕 Mod，重写2009年CE修改器并接入LLM；战役空投技能未实现，过程依赖大量人工纠偏。 **[其他 AI 逆向 · 待验证]**
 - [SOCOM II Legacy：AI 辅助研究原地图与资产的浏览器引擎项目](../cases/socom2-legacy-ai-browser-engine.md) — Benny称自制浏览器引擎带回SOCOM II原地图与资产，明确AI辅助仍依赖大量人工研究、编码和测试。 **[其他 AI 逆向 · 进行中]**

@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../algorithms.md)
 
+- [CUDA: a reader's challenge to try decompilation with an agent swarm](../../cases/en/cuda-agent-swarm-decompile-idea.md) — loveofdoing proposes having an agent swarm decompile CUDA, without identifying a component, version, compatibility goal or attempted implementation. **[Other AI-assisted work · Needs verification]**
 - [LLM4Decompile: specialized models recovering C functions from assembly or Ghidra output](../../cases/en/llm4decompile-assembly-c-models.md) — The public research generates C from Linux x86_64 assembly or refines Ghidra pseudocode; rates from different models and input conditions are not a universal recovery score. **[Other AI-assisted work · Analysis test]**
 - [A pre-buy contract check desk: Claude/Ghidra sell-path analysis and a corrected proxy flag](../../cases/en/claude-ghidra-contract-rug-check-desk.md) — A publisher describes bytecode-based buy gating and one corrected OpenZeppelin proxy false positive, without contract addresses, code or inspectable logs. **[Other AI-assisted work · Needs verification]**
 - [Slice vault investigation: Sonnet locates external-return accounting in decompiled bytecode](../../cases/en/slice-vault-sonnet-decompiled-bytecode.md) — coffiasse reports free Sonnet 5.5 locating a vulnerable function in under two minutes and confirms Claude's bytecode-decompilation role; the approximately $41,000 loss and exploitability were not independently checked on chain. **[Other AI-assisted work · Analysis test]**

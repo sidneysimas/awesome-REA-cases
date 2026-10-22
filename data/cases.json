@@ -1,5 +1,165 @@
 [
   {
+    "id": "kuzi-ps5-opus-kernel-research",
+    "title": "PS5 内核研究：kuzi 用 Opus 5.5 做深度推理与反编译，额度耗尽后仍在进行",
+    "category": "hardware", "rea": "other-ai", "status": "in-progress",
+    "summary": "kuzi称Opus 5.5支持14.00内核漏洞探测；父串确认PS5及14.00、14.10研究背景，但14.20用户态执行不等于内核突破。",
+    "description": "2026年10月22日09:20（北京时间），kuzi（@kuzibelit）说自己正在探测14.00内核漏洞，筹资目标主要是支付Claude Opus 5.5深度代码推理和反编译额度；他已用尽AI tokens，认为补充额度可加快研究。没有报告新的内核突破。\n\n本次补查其直接父帖与会话根以确认设备，而非凭版本号猜测：同作者10月22日00:48说继续研究14.00与14.10内核原语、映射执行流水线；00:41的会话根明确PS5，声称在14.20用户态入口运行Remote Lua Loader载荷与FTP服务。两条为补充背景，不是本轮08:00至12:00的新候选，也未独立验证。\n\n用户态载荷执行和内核权限突破是不同层级，不能把14.20根帖当作14.00内核研究成功证明。来源没有漏洞编号、反编译结果、利用代码、模型调用日志或独立复现。REA未被确认，筹资也不是成功验证；本合集未捐款、执行载荷或接触设备。",
+    "sources": [{"label": "本轮候选：kuzi说明Opus推理、反编译与额度限制", "url": "https://x.com/i/status/2113077905790042171"}, {"label": "补充直接父帖：14.00与14.10内核原语研究", "url": "https://x.com/i/status/2112949198756712503"}, {"label": "补充会话根：PS5 14.20用户态执行自述", "url": "https://x.com/i/status/2112947351916818459"}],
+    "snapshot_date": "2026-10-22", "metadata": ["候选更新：2026-10-22T09:20:06+08:00；补充来源原始日期分别为同日00:48:40、00:41:20，北京时间。"],
+    "en": {
+      "title": "PS5 kernel research: kuzi uses Opus 5.5 for reasoning and decompilation, with work ongoing after token exhaustion",
+      "summary": "kuzi reports Opus-assisted 14.00 kernel investigation; parents establish a PS5 and 14.00/14.10 context, but claimed 14.20 userland execution does not establish a kernel breakthrough.",
+      "description": "At 09:20 Beijing time on October 22, 2026, kuzi (@kuzibelit) says he is probing 14.00 kernel vulnerabilities and mainly seeks funding for Claude Opus 5.5 deep code reasoning and decompilation. He has exhausted his AI tokens and believes more capacity would accelerate research. No new kernel breakthrough is reported.\n\nSupplementary reads of the direct parent and conversation root identify the device instead of guessing from version numbers. At 00:48 on October 22, the same author says he is still probing 14.00 and 14.10 kernel primitives and mapping execution pipelines. The 00:41 root explicitly names PS5 and claims a Remote Lua Loader payload and FTP service running through a 14.20 userland entry point. Both are supporting context, not new candidates from the 08:00-12:00 window, and are not independently verified.\n\nUserland payload execution and kernel privilege compromise are different levels. The 14.20 root is not proof of successful 14.00 kernel research. No vulnerability identifier, decompilation output, exploit code, model-call logs or independent reproduction is supplied. REA use is unconfirmed and fundraising is not validation. This collection made no donation, ran no payloads and accessed no devices.",
+      "metadata": ["Candidate update: 2026-10-22T09:20:06+08:00; supplementary sources originally posted at 00:48:40 and 00:41:20 that day, Beijing time."],
+      "source_labels": ["Current candidate: kuzi on Opus reasoning, decompilation and token limits", "Supplementary direct parent on 14.00/14.10 kernel primitives", "Supplementary conversation root claiming PS5 14.20 userland execution"]
+    }
+  },
+  {
+    "id": "shrek2-ai-decompile-upscale-ideas",
+    "title": "《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。",
+    "description": "2026年10月22日04:25（北京时间），Devin（@BoodMk6）回复Pirat_Nation，建议首日用Claude反编译他认为优化不佳的游戏。本次读取直接父帖确认话题是Shrek 2 Remastered：父帖04:03讨论其16GB内存等配置要求，并以2004年原作为对照。这使目标可识别，但配置新闻与读者评价不是实际性能测试。\n\n07:32的另一待补审候选中，@VideoGameGun 回复VGTimes，建议用AI反编译原作，再放大或提升画面。直接父帖发布于10月21日02:11，讨论同一Shrek 2重制话题。两条想法方向不同：前者指向重制版的首日研究，后者指向旧版的视觉改善，不能混写为一个已完成移植。\n\n两条候选均来自往期04:00至08:00窗口；父帖只是本次补充上下文。没有任何候选给出版本平台、反编译代码、AI运行记录、修改或对照测试，REA未被明确提及。不能称优化已修复、原始源码已找回或重制已获授权，也不背书新闻中的配置和售价。",
+    "sources": [{"label": "待补审：Devin建议Claude首日反编译", "url": "https://x.com/i/status/2113003820196474937"}, {"label": "补充父帖：Pirat_Nation的Shrek 2 Remastered配置话题", "url": "https://x.com/i/status/2112998104345477383"}, {"label": "待补审：VideoGameGun建议反编译原作后提升画面", "url": "https://x.com/i/status/2113050862268579883"}, {"label": "补充父帖：VGTimes的Shrek 2 Remaster话题", "url": "https://x.com/i/status/2112607760101630142"}],
+    "snapshot_date": "2026-10-22", "metadata": ["候选更新：2026-10-22T04:25:43+08:00、07:32:38；父帖分别原发于同日04:03及2026-10-21 02:11:55，北京时间。"],
+    "en": {
+      "title": "Shrek 2: two AI wishes to investigate remaster performance or decompile and upscale the original",
+      "summary": "Two deferred replies suggest day-one Claude decompilation of the remaster and AI decompilation/upscaling of the original; parents identify Shrek 2 but establish no implementation.",
+      "description": "At 04:25 Beijing time on October 22, 2026, Devin (@BoodMk6) replies to Pirat_Nation suggesting day-one Claude decompilation of a game he considers unoptimized. A supplementary direct-parent read identifies Shrek 2 Remastered: the 04:03 parent discusses requirements including 16 GB RAM and contrasts them with the 2004 original. This identifies the target, but requirements news and a reader's opinion are not measured performance results.\n\nIn another deferred candidate at 07:32, @VideoGameGun replies to VGTimes suggesting AI decompilation of the original and upscaling or improving its visuals. Its direct parent, posted at 02:11 on October 21, discusses the same Shrek 2 remaster topic. These are different wishes: investigating the remaster on release versus visually improving the older game. They are not one completed port.\n\nBoth candidates come from the earlier 04:00-08:00 window; parents are supplementary context read during this review. Neither supplies a version/platform, decompiled code, AI execution logs, modifications or comparison tests. REA use is unconfirmed. Neither establishes repaired optimization, recovered original source or authorized remastering, and hardware requirements and prices in the news are not endorsed here.",
+      "metadata": ["Candidate updates: 2026-10-22T04:25:43+08:00 and 07:32:38; parents originally posted at 04:03 that day and 2026-10-21 02:11:55, Beijing time."],
+      "source_labels": ["Deferred candidate: Devin's day-one Claude decompilation idea", "Supplementary parent: Pirat_Nation on Shrek 2 Remastered requirements", "Deferred candidate: VideoGameGun's original-game decompilation/upscaling idea", "Supplementary parent: VGTimes on Shrek 2 Remaster"]
+    }
+  },
+  {
+    "id": "anthem-rea-unreal-client-loot-boundary",
+    "title": "Anthem：REA 研究客户端、移入 Unreal 的建议与缺失掉落表边界",
+    "category": "games", "rea": "REA", "status": "in-progress",
+    "summary": "Reddit Lies建议用REA反编译Anthem并把资产带入Unreal，后续称自己的反编译找不到服务器下发的掉落表；不证明完整游戏或后端已恢复。",
+    "description": "2026年10月22日05:57（北京时间）的往期待补审候选中，Reddit Lies（@reddit_lies）建议用AI与reverse-engineer-anything反编译游戏，再把资产带入Unreal Engine。本次读取直接父帖：@HLC_actual在04:58向BioWare询问Anthem源码与权利价格，因此可以确认目标是Anthem，而不是凭BioWare账号猜某个系列。\n\n同作者06:00的补充回复称，他自己的反编译唯独找不到loot tables，因为这些掉落表由服务器下发。06:44的另一个候选则在这一回复链中建议把AI指向exe并使用REA。可记录的是客户端研究与迁移方向，以及作者明确遇到的服务器数据边界。补充06:00回复用于解释候选，不另作本轮新候选。\n\n没有公开源码、目标版本、反编译清单、模型日志、掉落表捕获、可玩重建或Unreal运行测试。本合集未独立检验所谓仅缺掉落表，也不能推断其他资产全部恢复、服务器逻辑可从客户端得到或在线游戏已复活。讨论源码权利不等于获授权，技术建议也不授予复制和分发资产的权利。两条候选原窗口为04:00至08:00。",
+    "sources": [{"label": "待补审：Reddit Lies的REA反编译与Unreal迁移建议", "url": "https://x.com/i/status/2113026810459910234"}, {"label": "补充直接父帖：HLC_actual询问Anthem源码与权利", "url": "https://x.com/i/status/2113012076277059784"}, {"label": "补充作者回复：反编译缺服务器下发loot tables", "url": "https://x.com/i/status/2113027710763078090"}, {"label": "待补审：同回复链中以REA研究exe的建议", "url": "https://x.com/i/status/2113038846828892394"}],
+    "snapshot_date": "2026-10-22", "metadata": ["候选更新：2026-10-22T05:57:04+08:00、06:44:54；补充父帖原发04:58:31，作者掉落表回复原发06:00:39，北京时间。"],
+    "en": {
+      "title": "Anthem: a REA client-investigation/Unreal idea with a missing server-delivered loot-table boundary",
+      "summary": "Reddit Lies suggests REA decompilation of Anthem and moving assets into Unreal, then says his own decompilation lacks server-delivered loot tables; complete game/backend recovery is unestablished.",
+      "description": "In a deferred candidate posted at 05:57 Beijing time on October 22, 2026, Reddit Lies (@reddit_lies) suggests using AI with reverse-engineer-anything to decompile a game and bring its assets into Unreal Engine. A supplementary direct-parent read finds @HLC_actual asking BioWare at 04:58 about the price of Anthem's source code and rights, identifying Anthem rather than guessing a series from BioWare's account.\n\nIn a supplementary 06:00 reply, the same author says the only assets his decompilation could not find were loot tables streamed from the servers. Another candidate at 06:44, in that reply chain, suggests pointing AI at the executable and asking it to use REA. The recordable direction is client investigation and migration, together with the author's stated server-data boundary. The supplementary 06:00 reply explains the candidates and is not treated as a new current-window candidate.\n\nNo public code, target version, decompilation inventory, model logs, loot-table capture, playable reconstruction or Unreal runtime test is supplied. This collection did not independently check the claim that only loot tables were missing, and does not infer that every other asset was recovered, server logic is obtainable from the client or the online game was revived. Discussing source rights does not confer permission, nor does technical advice authorize asset copying/distribution. Both candidates originally belong to the 04:00-08:00 window.",
+      "metadata": ["Candidate updates: 2026-10-22T05:57:04+08:00 and 06:44:54; supplementary parent originally at 04:58:31 and author's loot-table reply at 06:00:39, Beijing time."],
+      "source_labels": ["Deferred candidate: Reddit Lies' REA decompilation/Unreal suggestion", "Supplementary direct parent: HLC_actual asks about Anthem source and rights", "Supplementary author reply on missing server-delivered loot tables", "Deferred candidate: REA executable-investigation suggestion in the same reply chain"]
+    }
+  },
+  {
+    "id": "reflex-ai-decompile-sequel-idea",
+    "title": "Reflex：用 AI 反编译研究旧代码、再制作续作的愿望",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "swaguley询问Rainbow Studios能否用AI反编译Reflex，为Reflex 2找回实现依据；没有开发或代码恢复结果。",
+    "description": "2026年10月22日08:10（北京时间），@swaguley 向kellenbrauer询问：既然Reflex的原始代码据称遗失，Rainbow Studios是否可以借助AI反编译，重新了解实现，并制作Reflex 2。这里的目标是研究旧游戏以支持续作，而不是已在进行的重建项目。\n\n代码遗失是提问者给出的背景，本合集未从开发商独立确认。帖子没有游戏版本、平台、模型、恢复机制、代码或测试，也未确认使用REA。反编译可产生实现的解释或重建，不等于找回逐字相同的原始源码。不能据此称续作获批、存在可玩版本或获得资产使用授权。",
+    "sources": [{"label": "swaguley：AI反编译Reflex支持续作的提问", "url": "https://x.com/i/status/2113060395053470048"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T08:10:31+08:00；读者愿望，非开发公告。"],
+    "en": {
+      "title": "Reflex: a wish to study lost code through AI decompilation and make a sequel",
+      "summary": "swaguley asks whether Rainbow Studios could decompile Reflex with AI to inform a Reflex 2; no development or code-recovery result is reported.",
+      "description": "At 08:10 Beijing time on October 22, 2026, @swaguley asks kellenbrauer whether Rainbow Studios could use AI decompilation to understand Reflex's implementation and make Reflex 2, given the questioner's claim that its original code was lost. The target is studying an old game to support a sequel, not a reconstruction project reported to be underway.\n\nLost source code is background supplied by the questioner, not independently confirmed with the developer here. No game version, platform, model, recovered mechanics, code or tests are supplied, and REA use is unconfirmed. Decompilation can produce an interpretation or reconstruction of an implementation, not necessarily the identical original source. The post establishes neither sequel approval, a playable build nor permission to use assets.",
+      "metadata": ["Source update: 2026-10-22T08:10:31+08:00; a reader's wish, not a development announcement."],
+      "source_labels": ["swaguley's question about AI decompilation of Reflex to support a sequel"]
+    }
+  },
+  {
+    "id": "chuplung-rea-opus-keyboard-lights",
+    "title": "键盘灯光自然语言控制：chuplung 称 REA 与 Opus 用 Python 替代大型应用",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "chuplung称REA与Opus 5.5把512MB键盘灯光应用替换为15行Python，聊天即可设置暖暗模式；型号、代码与计时未核。",
+    "description": "2026年10月22日08:18（北京时间），chuplung（@choopyplug1）称使用REA与Opus 5.5，把一个512MB的键盘灯光控制应用替换成15行Python。具体用途是让AI Agent接收自然语言，例如晚间暖色低亮度，再改变键盘灯光；帖子称整张桌面变成琥珀色，并附视频。\n\n512MB、15行和约30秒都是作者报告的数字，不是本合集测量，也未明确30秒对应研究、实现还是单次操作。已读取原帖文字及视频附件信息，但没有独立观看并验证灯光行为。帖子未给键盘品牌型号、协议、脚本、权限要求或兼容范围，无法确定是否覆盖原应用的其他设置；也不能断言不再需要驱动、其他设备均可用，或已经控制所有桌面设备。未将它并入其他具名键盘协议项目。",
+    "sources": [{"label": "chuplung：REA、Opus与Python控制键盘灯光的自述", "url": "https://x.com/i/status/2113062502850240731"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T08:18:54+08:00；候选快照12赞、619浏览、1转发，仅为传播快照。"],
+    "en": {
+      "title": "Natural-language keyboard lighting: chuplung reports replacing a large app with REA, Opus and Python",
+      "summary": "chuplung says REA and Opus 5.5 replace a 512 MB keyboard-lighting app with 15 Python lines and a chat-driven warm, dim mode; hardware, code and timing are unverified.",
+      "description": "At 08:18 Beijing time on October 22, 2026, chuplung (@choopyplug1) says REA and Opus 5.5 replaced a 512 MB keyboard-lighting application with 15 lines of Python. The concrete use is an AI agent accepting a natural-language request such as a warm, dim evening mode and changing keyboard lighting. The post says the whole desk turns amber and includes a video.\n\nThe 512 MB, 15 lines and approximately 30 seconds are the author's figures, not measurements by this collection. It is unclear whether 30 seconds means research, implementation or a single operation. Original text and video-attachment information were read, but the lighting behavior was not independently watched and verified. No keyboard make/model, protocol, script, permission requirements or compatibility range are supplied. Coverage of other settings in the original app is unknown. This does not establish that drivers are unnecessary, that other devices work or that all desk devices are controlled. It is not merged with other named keyboard-protocol projects.",
+      "metadata": ["Source update: 2026-10-22T08:18:54+08:00; candidate snapshot: 12 likes, 619 views, 1 repost, indicating circulation only."],
+      "source_labels": ["chuplung's account of REA, Opus and Python keyboard-lighting control"]
+    }
+  },
+  {
+    "id": "php-patch-ai-exploration-limits",
+    "title": "PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。",
+    "description": "2026年10月22日09:05（北京时间），Vitor Falcão（@busf4ctor，busfactor）报告正在ctbbpodcast的Discord直播逆向PHP严重漏洞的补丁，目标是构建概念验证（PoC）。他限定AI只做基础代码探索，类比增强的CTRL+F，而不是把核心漏洞推理全部交给模型。\n\n作者称研究使自己学到大量PHP和内存利用知识；之后问AI基础漏洞问题，发现回答过度复杂、不善于简单解释。他认为若一开始依赖AI，可能更慢才达到同样理解，但这是个人反事实判断，不是受控速度比较。他也没有说使用AI一定学不到同样多。\n\n帖子未给CVE编号、补丁版本、模型、代码、PoC或利用验证。本条不把其他候选的PHP2Shell编号、网站下线或攻击传闻填入这个项目，也不称漏洞由AI发现或已成功利用。只记录人类主导补丁研究中AI的有限角色与作者报告的解释局限；本合集未进入私有Discord或执行利用代码。",
+    "sources": [{"label": "Vitor Falcão：PHP补丁逆向及AI探索与解释局限", "url": "https://x.com/i/status/2113074271282983162"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T09:05:39+08:00；PoC是研究目标，不是已完成交付。"],
+    "en": {
+      "title": "PHP patch reversing: busfactor limits AI to code exploration and finds its explanations overcomplicated",
+      "summary": "Vitor Falcão limits AI to code exploration while reversing critical PHP patches toward a PoC; he finds basic AI explanations overcomplicated and reports no completed PoC.",
+      "description": "At 09:05 Beijing time on October 22, 2026, Vitor Falcão (@busf4ctor, busfactor) reports live reverse engineering of patches for critical PHP vulnerabilities in ctbbpodcast's Discord, aiming to build a proof of concept (PoC). He restricts AI to basic code exploration, comparing it to a glorified CTRL+F, rather than delegating the core vulnerability reasoning to a model.\n\nHe says the work taught him a great deal about PHP and memory exploitation. When he later asked AI basic questions about the vulnerability, he found the responses overcomplicated and poor at simple explanation. His view that relying on AI initially might have slowed his understanding is a personal counterfactual, not a controlled speed comparison. He does not say he necessarily would have learned less with AI.\n\nThe post supplies no CVE identifier, patch version, model, code, PoC or exploitation validation. This entry does not import PHP2Shell identifiers, website outages or attack rumors from other candidates, and does not claim AI discovered or successfully exploited the vulnerability. It records AI's limited role and the author's reported explanatory limitations in human-led patch research. This collection did not enter a private Discord or execute exploit code.",
+      "metadata": ["Source update: 2026-10-22T09:05:39+08:00; the PoC is a research goal, not a completed deliverable."],
+      "source_labels": ["Vitor Falcão on PHP patch reversing and AI exploration/explanation limits"]
+    }
+  },
+  {
+    "id": "comcast-box-grok-claude-update-report",
+    "title": "Comcast 盒子强制更新：Grok 修复与 Claude 采 HAR 后停止的自述",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Tom Whitbread称Grok登录后解决Comcast盒子的问题，Claude做HAR研究后因规则停止；没有型号、修改方法或持续有效证据。",
+    "description": "2026年10月22日10:40（北京时间），Tom Whitbread（@tomw87_）在回复中抱怨Comcast盒子持续被强制更新固件。他称Grok登录后修好了问题，而Claude开始研究、处理HAR等材料，随后表示不符合Anthropic规则，停止继续。HAR是记录HTTP请求与响应的归档格式；帖子只提及该活动，没有公开捕获。\n\n背景是用户想解决设备被强制更新后的控制问题，不是作者发布了通用固件破解。原帖未给盒子型号、固件、Grok到底修了什么、更新是否被禁用、Claude发现或修改了什么、代码或测试。成功部分只归因于作者的简短说法，拒绝部分也不代表所有版本Claude都无法研究同类设备。REA未被明确提及，不能把登录操作升级为完成协议逆向或获得root。本合集未登录设备、获取HAR或操作固件。",
+    "sources": [{"label": "Tom Whitbread：Comcast盒子、Grok修复与Claude停止", "url": "https://x.com/i/status/2113098060591174018"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T10:40:11+08:00；设备型号与修复机制未知。"],
+    "en": {
+      "title": "Forced Comcast box updates: a report of a Grok fix and Claude stopping after HAR research",
+      "summary": "Tom Whitbread says Grok logged in and fixed a Comcast-box problem while Claude worked on HARs then stopped on policy grounds; model, method and durability are unverified.",
+      "description": "At 10:40 Beijing time on October 22, 2026, Tom Whitbread (@tomw87_) complains in a reply that his Comcast box keeps receiving forced firmware updates. He says Grok logged in and fixed the problem, whereas Claude started investigating, working on HARs and similar material, then said it should stop because of Anthropic's guidelines. HAR is an archive format for HTTP requests and responses; the post mentions this activity but publishes no capture.\n\nThe background is a user trying to resolve control problems associated with forced updates, not a released generic firmware exploit. No box model, firmware, precise Grok fix, confirmation that updates were disabled, Claude finding or modification, code or tests are supplied. The successful part remains the author's brief claim, and the refusal does not establish that every Claude version cannot investigate similar devices. REA is not explicitly mentioned. Logging in is not upgraded to completed protocol reversing or root access. This collection did not log into a device, obtain HARs or operate firmware.",
+      "metadata": ["Source update: 2026-10-22T10:40:11+08:00; device model and repair mechanism are unknown."],
+      "source_labels": ["Tom Whitbread on a Comcast box, Grok's reported fix and Claude stopping"]
+    }
+  },
+  {
+    "id": "rea-opengateway-32-inquiry-workflow",
+    "title": "REA × OpenGateway：把二进制拆为32个问题并行回答的工作流宣传",
+    "category": "apps", "rea": "REA", "status": "related-project",
+    "summary": "HOPE介绍REA与OpenGateway以高TPS模型并行回答32个二进制研究问题，未给目标样本、答案质量或端到端基准。",
+    "description": "2026年10月22日11:36（北京时间），HOPE（@rlaope）宣传REA与OpenGateway组合：由REA把一个二进制分成32项调查问题，再让高TPS的UltraFast模型并行回答。帖子列出DeepSeek V4.1 Flash UltraFast和GLM-5.3 Flash UltraFast，并附视频。具体设计是拆分调查后并行求解，目标是缩短逆向等待时间。\n\n这是明确分工与数量的工作流介绍，不是已验证的32倍加速。帖子没有二进制身份、问题列表、模型调用记录、正确率、成本或串行对照，也未给连接实现。视频附件存在不证明每项分析正确。文中截至10月31日、周末及空闲时段最高优惠90%的说法只是原帖商业条件，本合集未核实价格、可用性或官方合作。没有运行工具或模型测试。",
+    "sources": [{"label": "HOPE：REA与OpenGateway的32问题并行调查介绍", "url": "https://x.com/i/status/2113112234746658997"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T11:36:31+08:00；32为宣传的问题数，不是验证速度倍率。"],
+    "en": {
+      "title": "REA × OpenGateway: a promoted workflow answering 32 binary-investigation inquiries in parallel",
+      "summary": "HOPE describes REA and OpenGateway using high-TPS models to answer 32 binary-investigation inquiries in parallel, without a target sample, answer-quality results or end-to-end benchmark.",
+      "description": "At 11:36 Beijing time on October 22, 2026, HOPE (@rlaope) promotes a REA/OpenGateway combination: REA breaks a binary into 32 investigation inquiries and high-TPS UltraFast models answer them in parallel. The post names DeepSeek V4.1 Flash UltraFast and GLM-5.3 Flash UltraFast and includes a video. The concrete design splits investigation into parallel tasks to reduce waiting time.\n\nThis is a workflow introduction with a defined division of work and count, not a demonstrated 32-fold speedup. It supplies no binary identity, inquiry list, model-call logs, accuracy, cost, serial comparison or integration implementation. A video attachment does not validate each finding. The post's offer of up to 90% off during weekends or idle hours until October 31 is an advertised commercial condition; prices, availability and official partnership were not verified here. No tools or model benchmarks were run.",
+      "metadata": ["Source update: 2026-10-22T11:36:31+08:00; 32 is the advertised inquiry count, not a verified speedup factor."],
+      "source_labels": ["HOPE introducing 32 parallel REA/OpenGateway investigation inquiries"]
+    }
+  },
+  {
+    "id": "cuda-agent-swarm-decompile-idea",
+    "title": "CUDA：让 Agent 群尝试反编译的读者挑战",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "loveofdoing提议让Agent群反编译CUDA，没有指定组件、版本或兼容目标，也没有实施报告。",
+    "description": "2026年10月22日11:52（北京时间），@loveofdoing 询问是否有人愿意让Agent群反编译CUDA。CUDA是NVIDIA的GPU编程技术栈，提问把它列为多Agent逆向目标，但没有指明驱动、运行时、编译器还是某个库。\n\n这是具名技术栈的研究挑战或愿望，不是正在开发的CUDA替代实现。来源没有模型、REA、输入文件、分工、可恢复函数、代码或测试，也没有承诺支持其他GPU或TPU。不能据此声称整个CUDA已经反编译、已有兼容层或性能成果。",
+    "sources": [{"label": "loveofdoing：Agent群反编译CUDA的挑战", "url": "https://x.com/i/status/2113116284447600986"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T11:52:36+08:00；idea，未报告实施。"],
+    "en": {
+      "title": "CUDA: a reader's challenge to try decompilation with an agent swarm",
+      "summary": "loveofdoing proposes having an agent swarm decompile CUDA, without identifying a component, version, compatibility goal or attempted implementation.",
+      "description": "At 11:52 Beijing time on October 22, 2026, @loveofdoing asks whether anyone is brave enough to have an agent swarm decompile CUDA. CUDA is NVIDIA's GPU-programming technology stack. The question names it as a multi-agent reversing target but does not specify a driver, runtime, compiler or particular library.\n\nThis is a research challenge or wish involving a named technology stack, not a CUDA replacement reported to be under development. The source provides no model, REA use, input files, division of work, recovered functions, code or tests, and promises no support for other GPUs or TPUs. It does not establish complete CUDA decompilation, a compatibility layer or performance results.",
+      "metadata": ["Source update: 2026-10-22T11:52:36+08:00; an idea without a reported implementation attempt."],
+      "source_labels": ["loveofdoing's challenge to decompile CUDA with an agent swarm"]
+    }
+  },
+  {
+    "id": "aws-sdk-region-catalog-agent-board-idea",
+    "title": "AWS SDK 地区目录：八路 Agent、先规格后重建的板式工作流 idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "帖子以AWS SDK地区目录为目标，设计REA取证、规格隔离与八路重建，再用50输入比较；128/128和0.12秒没有运行证据。",
+    "description": "2026年10月22日02:38（北京时间）的往期待补审帖子，提出从二进制重建AWS SDK地区目录的八路工作流。AWS SDK是访问亚马逊云服务的开发工具包；这里的目标仅是地区目录，原帖特别强调目录条目不等于已发出网络调用。\n\n它设计先让REA提供本地反汇编调查，把规格主张标为观察、推断或未知，并附文件地址；无规格不写代码，各路独立重建，再把原版与重建版送入对照。帖子提出50个输入，含30正常、10边界、10畸形，并建议检查匹配率、未知标签及按难度分配推理力度。\n\n开头声称验证128/128、耗时0.12秒，还借用另一Touhou重建的697函数696匹配数字。没有目标二进制、仓库、问题规格、日志或验证器供检查，不能将这些数字当作实际执行结果，Touhou也不是AWS目标的验证。本条改为收录具体工作流idea，不继续因缺成功证明而暂缓，也不称AWS服务后端已被恢复。本次是往期窗口00:00至04:00的补审，不是08:00至12:00新抓取。",
+    "sources": [{"label": "AWS SDK地区目录的八路调查、规格与验证板式设计", "url": "https://x.com/i/status/2112976762455896078"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T02:38:12+08:00；原窗口2026-10-22 00:00至04:00，北京时间；设计而非已核实执行。"],
+    "en": {
+      "title": "AWS SDK region catalog: an eight-agent, specification-first reconstruction-board idea",
+      "summary": "A post targets an AWS SDK region catalog with REA evidence, isolated specifications, eight-way reconstruction and 50 comparison inputs; 128/128 and 0.12 seconds lack execution evidence.",
+      "description": "A deferred candidate posted at 02:38 Beijing time on October 22, 2026 proposes an eight-way workflow to reconstruct an AWS SDK region catalog from a binary. AWS SDKs are development toolkits for accessing Amazon cloud services. This target is only a region catalog: the post explicitly warns that a catalog entry is not a network call.\n\nThe design first uses REA for local disassembly investigation, labels specification claims as observed, inferred or unknown with file/address references, allows no code before a specification, and assigns independent reconstruction tasks before comparing original and rebuilt versions. It proposes 50 inputs: 30 normal, 10 edge and 10 malformed, and suggests reviewing match rates and unknown tags and allocating reasoning effort by difficulty.\n\nThe opening claims verification of 128/128 in 0.12 seconds and borrows another Touhou reconstruction's 697 functions with 696 matches. No target binary, repository, specification, logs or verifier is available to inspect. These numbers are not treated as executed results, and Touhou does not validate the AWS target. This is now included as a concrete workflow idea rather than deferred for lacking proof of success. It does not establish recovery of an AWS service backend. This is a re-review from the older 00:00-04:00 window, not a new 08:00-12:00 collection result.",
+      "metadata": ["Source update: 2026-10-22T02:38:12+08:00; original window: October 22, 2026, 00:00-04:00 Beijing time; a design, not verified execution."],
+      "source_labels": ["Eight-way investigation, specification and verification board for an AWS SDK region catalog"]
+    }
+  },
+  {
     "id": "mass-effect-ai-decompile-sequel-idea",
     "title": "《质量效应》：用 AI 反编译后制作第四作的读者愿望",
     "category": "games", "rea": "other-ai", "status": "unverified",
@@ -1552,17 +1712,18 @@
   },
   {
     "id": "colateral-agentic-workspace-reverse-marketplace",
-    "title": "CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍",
-    "category": "apps", "rea": "unknown", "status": "related-project",
-    "summary": "CoLateral账号宣传把逆向放进一体化Agent工作区，再把构建发布到市场；没有给实际目标或验证记录。",
-    "description": "10月20日10:38（北京时间），@colateralai 介绍CoLateral为All-in-One Agentic Workspace，宣传可在工作区内“reverse engineer anything”，随后将自己的构建发布到marketplace供他人分享。具体方向是把研究与后续构建、分发放进同一工作区。\n\n这是具名项目的产品设计介绍，不是已逆向任意软件的能力证明。帖子没有说明分析引擎、是否接入morluto/rea、支持文件格式、权限隔离、实际目标或成功运行的构建。本合集未进入工作区、上传软件或向市场发布内容，rea保持unknown。",
-    "sources": [{"label": "CoLateral账号：逆向工作区与构建市场介绍", "url": "https://x.com/i/status/2112372882156265760"}],
-    "snapshot_date": "2026-10-20", "metadata": [],
+    "title": "CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "Nic Vandewetering称在CoLateral ADE中以REA和Opus 5.5重建Revit等结构工程工具，目标是Agent设计、分析与制图；未证明工程等价或安全。",
+    "description": "10月20日10:38（北京时间），@colateralai 介绍CoLateral为All-in-One Agentic Workspace，宣传可在工作区内研究软件，再把构建发布到marketplace分享。原介绍没有给实际目标或验证记录。\n\n2026年10月22日10:22，Nic Vandewetering（@nvandewetering）补充具体自述：称Claude Opus 5.5构建了完整Revit克隆，并在自己的CoLateral ADE内制作结构工程套件，供Agent自动化设计、分析和制图。他列出的目标包括Revit、ETABS、SAP 2000、SAFE、S-Concrete与BlueBeam，并明确说使用Reverse Engineer Anything仓库。Revit用于建筑信息建模，所列工具还涵盖结构分析、混凝土设计及图纸审阅；这是作者希望整合的用途背景，不证明恢复了各产品全部模块。\n\n作者称仅用一个Claude Max账号获得超过一万美元的价值，帖子附视频。这是主观价值比较，不是经核账单、订阅节省或软件功能等价测试。已读原帖文字与附件信息，没有独立验证视频、代码或运行结果。来源未给版本、模型调用日志、恢复功能清单、数值分析基准、荷载规范校验、图纸兼容性或真实项目验收。不能据此认定这些重建可用于安全关键的工程设计、替代商业认证或已获原软件授权。\n\n本次将REA从未知改为作者明确使用，将原泛化产品介绍更新为具名目标的待验证重建自述，保留既有记录与来源。本合集未进入工作区、上传软件、运行结构计算或发布市场内容。",
+    "sources": [{"label": "CoLateral账号：逆向工作区与构建市场介绍", "url": "https://x.com/i/status/2112372882156265760"}, {"label": "Nic Vandewetering：REA与Opus重建Revit及结构工程套件自述", "url": "https://x.com/i/status/2113093595280392265"}],
+    "snapshot_date": "2026-10-22", "metadata": ["新增作者来源更新：2026-10-22T10:22:27+08:00；候选快照7赞、405浏览、0转发，不代表工程验证。"],
     "en": {
-      "title": "CoLateral: a promoted agent workspace for reversing and sharing builds",
-      "summary": "CoLateral's account promotes reverse engineering inside an all-in-one agent workspace, followed by sharing builds in its marketplace; no target or validation record is supplied.",
-      "description": "At 10:38 Beijing time on October 20, @colateralai presents CoLateral as an All-in-One Agentic Workspace, advertising that users can 'reverse engineer anything' inside it and then post their builds in a marketplace to share with others. The concrete product direction is to combine investigation, subsequent construction and distribution in one workspace.\n\nThis is a named project's product-design introduction, not proof of arbitrary software-reversing capability. The post does not identify analysis engines, integration with morluto/rea, supported formats, permission isolation, a target or a successfully running build. This collection did not enter the workspace, upload software or publish to the marketplace; rea remains unknown.",
-      "metadata": [], "source_labels": ["CoLateral's account introducing its reversing workspace and build marketplace"]
+      "title": "CoLateral: Nic reports reconstructing a structural-engineering suite with REA and Opus",
+      "summary": "Nic Vandewetering reports using REA and Opus 5.5 inside CoLateral ADE to reconstruct Revit and other tools for agent-driven design, analysis and drafting; engineering equivalence and safety are unverified.",
+      "description": "At 10:38 Beijing time on October 20, @colateralai presents CoLateral as an All-in-One Agentic Workspace for investigating software and sharing builds in a marketplace. That introduction supplies no target or validation record.\n\nAt 10:22 on October 22, 2026, Nic Vandewetering (@nvandewetering) adds a concrete personal report: he says Claude Opus 5.5 built an entire Revit clone and that he created a structural-engineering suite inside his CoLateral ADE for agents to automate design, analysis and drafting. His targets include Revit, ETABS, SAP 2000, SAFE, S-Concrete and BlueBeam, and he explicitly credits the Reverse Engineer Anything repository. Revit supports building information modeling; the listed tools also cover structural analysis, concrete design and drawing review. These are the intended use backgrounds, not evidence that every product module was recovered.\n\nHe claims more than $10,000 of value using one Claude Max account, and the post includes a video. This is a subjective value comparison, not verified invoices, subscription savings or software-equivalence testing. Original text and attachment information were read, but neither video behavior, code nor runtime results were independently verified. Sources provide no versions, model-call logs, recovered-feature inventory, numerical-analysis benchmarks, load/code checks, drawing-compatibility tests or real-project acceptance. These claims do not establish suitability for safety-critical engineering design, replacement of commercial certification or permission from the original software owners.\n\nREA changes from unknown to explicitly author-reported use, and the earlier generic product introduction becomes a named-target reconstruction report needing verification, retaining the existing record and source. This collection did not enter the workspace, upload software, run structural calculations or publish marketplace content.",
+      "metadata": ["New author source update: 2026-10-22T10:22:27+08:00; candidate snapshot: 7 likes, 405 views, 0 reposts, not engineering validation."],
+      "source_labels": ["CoLateral's account introducing its reversing workspace and build marketplace", "Nic Vandewetering's account of REA/Opus reconstruction of Revit and a structural-engineering suite"]
     }
   },
   {

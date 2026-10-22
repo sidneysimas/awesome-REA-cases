@@ -1,15 +1,22 @@
-# CoLateral：在 Agent 工作区研究软件，再分享构建的项目介绍
+# CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述
 
-分类：应用与客户端 · 未确认使用 REA
-记录日期：2026-10-20
-阶段：相关项目
+分类：应用与客户端 · REA
+记录日期：2026-10-22
+阶段：待验证
 
-10月20日10:38（北京时间），@colateralai 介绍CoLateral为All-in-One Agentic Workspace，宣传可在工作区内“reverse engineer anything”，随后将自己的构建发布到marketplace供他人分享。具体方向是把研究与后续构建、分发放进同一工作区。
+10月20日10:38（北京时间），@colateralai 介绍CoLateral为All-in-One Agentic Workspace，宣传可在工作区内研究软件，再把构建发布到marketplace分享。原介绍没有给实际目标或验证记录。
 
-这是具名项目的产品设计介绍，不是已逆向任意软件的能力证明。帖子没有说明分析引擎、是否接入morluto/rea、支持文件格式、权限隔离、实际目标或成功运行的构建。本合集未进入工作区、上传软件或向市场发布内容，rea保持unknown。
+2026年10月22日10:22，Nic Vandewetering（@nvandewetering）补充具体自述：称Claude Opus 5.5构建了完整Revit克隆，并在自己的CoLateral ADE内制作结构工程套件，供Agent自动化设计、分析和制图。他列出的目标包括Revit、ETABS、SAP 2000、SAFE、S-Concrete与BlueBeam，并明确说使用Reverse Engineer Anything仓库。Revit用于建筑信息建模，所列工具还涵盖结构分析、混凝土设计及图纸审阅；这是作者希望整合的用途背景，不证明恢复了各产品全部模块。
+
+作者称仅用一个Claude Max账号获得超过一万美元的价值，帖子附视频。这是主观价值比较，不是经核账单、订阅节省或软件功能等价测试。已读原帖文字与附件信息，没有独立验证视频、代码或运行结果。来源未给版本、模型调用日志、恢复功能清单、数值分析基准、荷载规范校验、图纸兼容性或真实项目验收。不能据此认定这些重建可用于安全关键的工程设计、替代商业认证或已获原软件授权。
+
+本次将REA从未知改为作者明确使用，将原泛化产品介绍更新为具名目标的待验证重建自述，保留既有记录与来源。本合集未进入工作区、上传软件、运行结构计算或发布市场内容。
+
+新增作者来源更新：2026-10-22T10:22:27+08:00；候选快照7赞、405浏览、0转发，不代表工程验证。
 
 ## 来源
 
 - [CoLateral账号：逆向工作区与构建市场介绍](https://x.com/i/status/2112372882156265760)
+- [Nic Vandewetering：REA与Opus重建Revit及结构工程套件自述](https://x.com/i/status/2113093595280392265)
 
 [English](en/colateral-agentic-workspace-reverse-marketplace.md) | [返回目录](../README.zh-CN.md)
