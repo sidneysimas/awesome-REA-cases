@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Reversy：Tom Mann的网页逆向证据与重建规格工作区](../cases/reversy-firstmate-website-evidence-workspace.md) — Tom Mann介绍黑客松项目Reversy，用工作区检查网页证据、形成重建规格，并称借FirstMate继续改进；没有给出特定网站重建精度。 **[其他 AI 逆向 · 进行中]**
 - [Grok APP REPLICATOR：先研究单个功能、写规格再重建的机器人项目](../cases/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele介绍Grok Bot按授权目标静态研究、证据分级、写SPEC.md与对照测试；Apple Notes仅为范围示例，未给通过测试的具体应用。 **[REA · 相关项目]**
 - [Windows内嵌JavaScript恶意样本：REA与Codex静态分析的二手报告](../cases/rea-codex-windows-js-malware-static-report.md) — 吉川孝志介绍REA与Codex在隔离Docker中分析Windows样本、提取JS及代码引用；部分解码用独立Python实现交叉检查，原文章与样本未独立验证。 **[REA · 分析测试]**
 - [PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂](../cases/php-patch-ai-exploration-limits.md) — Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。 **[其他 AI 逆向 · 进行中]**

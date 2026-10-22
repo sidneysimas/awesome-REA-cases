@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**745 entries**, organized by use case, without a Top-N or popularity threshold.
+**752 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (166)
-- [Hardware and interoperability](categories/en/hardware.md) (190)
-- [Applications and clients](categories/en/apps.md) (326)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (63)
+- [Games and preservation](categories/en/games.md) (167)
+- [Hardware and interoperability](categories/en/hardware.md) (194)
+- [Applications and clients](categories/en/apps.md) (327)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (64)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Vice City in the browser: a report of an AI-assisted port built on the existing reVC reverse-engineered engine](cases/en/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta describes oalanicolas's browser port of the 2002 game on reVC/wasm-revc, attributing integration/testing to Codex, UI to Claude and optimization to Gemini; performance and token totals remain secondary reports. **[Other AI-assisted work · Needs verification]**
 - [A Link Between Worlds: LLM function reconstruction with separate hack counts and checker exemptions](cases/en/albw-llm-function-matching-decomp.md) — albw-decomp-ai publishes per-function C/C++ reconstruction of the USA 3DS game, reporting 16,544 matches including 882 hacks; relocation and external-branch exemptions prevent treating this as whole-game binary equivalence. **[Other AI-assisted work · In progress]**
 - [Shrek 2: two AI wishes to investigate remaster performance or decompile and upscale the original](cases/en/shrek2-ai-decompile-upscale-ideas.md) — Two deferred replies suggest day-one Claude decompilation of the remaster and AI decompilation/upscaling of the original; parents identify Shrek 2 but establish no implementation. **[Other AI-assisted work · Needs verification]**
 - [Anthem: a REA client-investigation/Unreal idea with a missing server-delivered loot-table boundary](cases/en/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies suggests REA decompilation of Anthem and moving assets into Unreal, then says his own decompilation lacks server-delivered loot tables; complete game/backend recovery is unestablished. **[REA · In progress]**
@@ -197,6 +198,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Ride Relay: OpenCode and DeepSeek relay Google Maps turns to a Pulsar NS200 instrument cluster](cases/en/ride-relay-pulsar-ns200-google-maps.md) — Manovikram K reports investigating the Bajaj app and building an Android bridge from Google Maps direction/distance notifications to Bluetooth packets, working on his bike without root or a modified official APK. **[Other AI-assisted work · Needs verification]**
+- [ScanRuler: CNC Kitchen's AI/MCP reconstruction of a GoPro clamp from a 3D scan](cases/en/scanruler-gopro-clamp-ai-mcp.md) — Stefan explains that ScanRuler runs in a local browser while a user-selected AI agent orchestrates reverse engineering through MCP; the thread root presents a scanned GoPro clamp, with dimensional accuracy unverified. **[Other AI-assisted work · In progress]**
+- [ns2jb: Codex-assisted Switch 2 research, with the author correcting the one-prompt autonomous-jailbreak story](cases/en/ns2jb-codex-switch2-human-directed-research.md) — Sammy Hajhamid reports a software jailbreak for Switch 2 firmware 23.0.1 and Codex-assisted investigation, clarifying that it took substantial human effort over roughly two weeks; the automatic WebKit goal failed and the game mod, not the jailbreak, took a day. **[Other AI-assisted work · In progress]**
+- [Engineering-unit microphone path: Carlos Gong reports Codex firmware/driver debugging restored recording within an hour](cases/en/codex-engineering-unit-microphone-path-repair.md) — Carlos Gong reports Codex repaired an engineering unit's microphone capture path with repeated human recording feedback; low noise is a subjective report and an added optimization algorithm is only speculation. **[Other AI-assisted work · Needs verification]**
 - [Noir M1: reported REA/Opus investigation of a Windows app to add Mac gestures](cases/en/noir-m1-rea-opus-mac-gestures.md) — ARES reports using REA and Opus 5.5 to study Noir M1's Windows-only companion app and add working Mac gestures; hardware type, protocol and compatibility remain unverified. **[REA · Needs verification]**
 - [Thermal label printer: kiter reports Claude-assisted BLE investigation for third-party labels without the original app](cases/en/kiter-claude-ble-label-printer.md) — kiter says Claude reverse-engineered BLE to print directly and use third-party labels; the parent only establishes a low-cost thermal-printer context, not a model or inspectable driver. **[Other AI-assisted work · Needs verification]**
 - [PS5 kernel research: kuzi uses Opus 5.5 for reasoning and decompilation, with work ongoing after token exhaustion](cases/en/kuzi-ps5-opus-kernel-research.md) — kuzi reports Opus-assisted 14.00 kernel investigation; parents establish a PS5 and 14.00/14.10 context, but claimed 14.20 userland execution does not establish a kernel breakthrough. **[Other AI-assisted work · In progress]**
@@ -390,6 +395,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Reversy: Tom Mann's workspace for website evidence and rebuild specifications](cases/en/reversy-firstmate-website-evidence-workspace.md) — Tom Mann presents hackathon project Reversy for inspecting website evidence and shaping rebuild specifications, with ongoing FirstMate-assisted work; no accuracy result for a particular rebuilt site is supplied. **[Other AI-assisted work · In progress]**
 - [Grok APP REPLICATOR: investigate one feature, write a specification, then rebuild](cases/en/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele introduces a Grok Bot workflow for authorized static investigation, evidence labels, SPEC.md and comparison tests; Apple Notes is only a scope example, not an identified passing implementation. **[REA · Related project]**
 - [Windows malware with embedded JavaScript: a secondary report of REA/Codex static analysis](cases/en/rea-codex-windows-js-malware-static-report.md) — Takashi Yoshikawa describes REA/Codex inspection of a Windows sample and extracted JS in isolated Docker, with code references and partial decoding cross-checks in Python; the original article and sample were not independently verified. **[REA · Analysis test]**
 - [PHP patch reversing: busfactor limits AI to code exploration and finds its explanations overcomplicated](cases/en/php-patch-ai-exploration-limits.md) — Vitor Falcão limits AI to code exploration while reversing critical PHP patches toward a PoC; he finds basic AI explanations overcomplicated and reports no completed PoC. **[Other AI-assisted work · In progress]**
@@ -719,6 +725,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Social-media virality prediction: Alin A's abandoned idea to investigate recommendation algorithms with REA](cases/en/social-media-viral-probability-rea-abandoned-idea.md) — Alin A proposes investigating recommendation algorithms, extracting a virality-probability model and automating publishing for follower growth, but explicitly abandons the idea; no platform, dataset or prediction result is given. **[REA · Needs verification]**
 - [Xiaomi exercise calorie accumulation: a report of DeepSeek investigation into repeat counting on refresh](cases/en/xiaomi-motion-deepseek-calorie-refresh-report.md) — LanzhiAI relays a DeepSeek-assisted Xiaomi exercise-algorithm report: repeated refreshes in one minute allegedly turn 40 steps from 1.6 to 8.28 calories; follow-ups still await captures and full reproduction. **[Other AI-assisted work · Needs verification]**
 - [CUDA: a reader's challenge to try decompilation with an agent swarm](cases/en/cuda-agent-swarm-decompile-idea.md) — loveofdoing proposes having an agent swarm decompile CUDA, without identifying a component, version, compatibility goal or attempted implementation. **[Other AI-assisted work · Needs verification]**
 - [LLM4Decompile: specialized models recovering C functions from assembly or Ghidra output](cases/en/llm4decompile-assembly-c-models.md) — The public research generates C from Linux x86_64 assembly or refines Ghidra pseudocode; rates from different models and input conditions are not a universal recovery score. **[Other AI-assisted work · Analysis test]**

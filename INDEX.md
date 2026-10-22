@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **745 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **752 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（166）
-- [硬件与设备互通](categories/hardware.md)（190）
-- [应用与客户端](categories/apps.md)（326）
-- [算法与功能重建](categories/algorithms.md)（63）
+- [游戏与游戏保存](categories/games.md)（167）
+- [硬件与设备互通](categories/hardware.md)（194）
+- [应用与客户端](categories/apps.md)（327）
+- [算法与功能重建](categories/algorithms.md)（64）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Vice City浏览器版：基于reVC既有逆向引擎的AI辅助移植转述](cases/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta介绍oalanicolas基于reVC/wasm-revc把2002年Vice City移到浏览器，归因Codex集成测试、Claude界面及Gemini优化；性能与token数尚属转述。 **[其他 AI 逆向 · 待验证]**
 - [塞尔达传说：众神的三角力量2：LLM逐函数重建，单列hack与匹配检查豁免](cases/albw-llm-function-matching-decomp.md) — albw-decomp-ai公开3DS美版逐函数C/C++重建，项目报16,544项匹配、其中882项依赖hack；检查器有重定位和外部跳转豁免，不是完整游戏二进制等价证明。 **[其他 AI 逆向 · 进行中]**
 - [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**
 - [Anthem：REA 研究客户端、移入 Unreal 的建议与缺失掉落表边界](cases/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies建议用REA反编译Anthem并把资产带入Unreal，后续称自己的反编译找不到服务器下发的掉落表；不证明完整游戏或后端已恢复。 **[REA · 进行中]**
@@ -195,6 +196,10 @@
 
 ### 硬件与设备互通
 
+- [Ride Relay：OpenCode与DeepSeek把Google Maps转向提示送到Pulsar NS200仪表](cases/ride-relay-pulsar-ns200-google-maps.md) — Manovikram K称研究Bajaj应用后做出Android桥接，从Google Maps通知提取方向与距离并转为蓝牙包，报告实车可用，不需root或改官方APK。 **[其他 AI 逆向 · 待验证]**
+- [ScanRuler：CNC Kitchen用AI与MCP从GoPro夹具扫描重建几何](cases/scanruler-gopro-clamp-ai-mcp.md) — Stefan说明ScanRuler在本地浏览器运行，逆向由用户选择的AI Agent经MCP编排；同串根帖展示从3D扫描重建GoPro夹具，尺寸精度未核。 **[其他 AI 逆向 · 进行中]**
+- [ns2jb：Codex辅助Switch 2研究，作者更正“一句话全自动越狱”](cases/ns2jb-codex-switch2-human-directed-research.md) — Sammy Hajhamid公开报告Switch 2固件23.0.1的软件越狱与Codex辅助分析；明确研究花约两周大量人工投入，自动WebKit目标失败，马车Mod才是一天完成。 **[其他 AI 逆向 · 进行中]**
+- [工程机麦克风链路：Carlos Gong称Codex调固件驱动后一小时内可录音](cases/codex-engineering-unit-microphone-path-repair.md) — Carlos Gong称Codex在工程机上修复麦克风收音链路，自己提供多次录音反馈；低底噪为主观报告，新增优化算法只是猜测。 **[其他 AI 逆向 · 待验证]**
 - [Noir M1：REA与Opus研究Windows应用，在Mac增加手势的自述](cases/noir-m1-rea-opus-mac-gestures.md) — ARES称用REA与Opus 5.5研究Noir M1仅有Windows版的配套应用，在Mac增加手势并报告可用；硬件类型、协议与兼容范围未核。 **[REA · 待验证]**
 - [热敏标签打印机：kiter称Claude研究BLE后可不用原App与品牌标签](cases/kiter-claude-ble-label-printer.md) — kiter称Claude逆向BLE协议后可直接打印并使用第三方标签；父帖只确认低价热敏打印机背景，未提供型号或可复核驱动。 **[其他 AI 逆向 · 待验证]**
 - [PS5 内核研究：kuzi 用 Opus 5.5 做深度推理与反编译，额度耗尽后仍在进行](cases/kuzi-ps5-opus-kernel-research.md) — kuzi称Opus 5.5支持14.00内核漏洞探测；父串确认PS5及14.00、14.10研究背景，但14.20用户态执行不等于内核突破。 **[其他 AI 逆向 · 进行中]**
@@ -388,6 +393,7 @@
 
 ### 应用与客户端
 
+- [Reversy：Tom Mann的网页逆向证据与重建规格工作区](cases/reversy-firstmate-website-evidence-workspace.md) — Tom Mann介绍黑客松项目Reversy，用工作区检查网页证据、形成重建规格，并称借FirstMate继续改进；没有给出特定网站重建精度。 **[其他 AI 逆向 · 进行中]**
 - [Grok APP REPLICATOR：先研究单个功能、写规格再重建的机器人项目](cases/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele介绍Grok Bot按授权目标静态研究、证据分级、写SPEC.md与对照测试；Apple Notes仅为范围示例，未给通过测试的具体应用。 **[REA · 相关项目]**
 - [Windows内嵌JavaScript恶意样本：REA与Codex静态分析的二手报告](cases/rea-codex-windows-js-malware-static-report.md) — 吉川孝志介绍REA与Codex在隔离Docker中分析Windows样本、提取JS及代码引用；部分解码用独立Python实现交叉检查，原文章与样本未独立验证。 **[REA · 分析测试]**
 - [PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂](cases/php-patch-ai-exploration-limits.md) — Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。 **[其他 AI 逆向 · 进行中]**
@@ -717,6 +723,7 @@
 
 ### 算法与功能重建
 
+- [社交媒体爆款概率：Alin A提出REA研究推荐算法后放弃的想法](cases/social-media-viral-probability-rea-abandoned-idea.md) — Alin A设想研究推荐算法、提取爆款概率模型并循环出稿涨粉，但明确作罢；没有指定平台、数据或预测结果。 **[REA · 待验证]**
 - [小米运动热量累加：DeepSeek逆向后发现刷新重复计入的转述](cases/xiaomi-motion-deepseek-calorie-refresh-report.md) — 澜知AI转述DeepSeek研究小米运动算法，称同一分钟刷新会使40步热量从1.6变8.28卡；后续承认等待抓包与完整复现。 **[其他 AI 逆向 · 待验证]**
 - [CUDA：让 Agent 群尝试反编译的读者挑战](cases/cuda-agent-swarm-decompile-idea.md) — loveofdoing提议让Agent群反编译CUDA，没有指定组件、版本或兼容目标，也没有实施报告。 **[其他 AI 逆向 · 待验证]**
 - [LLM4Decompile：从汇编或 Ghidra 伪代码恢复 C 函数的专用模型](cases/llm4decompile-assembly-c-models.md) — 公开研究将 Linux x86_64 函数反汇编转为 C，或细化 Ghidra 伪代码；不同模型与路线的可执行率不能混成通用恢复率。 **[其他 AI 逆向 · 分析测试]**
