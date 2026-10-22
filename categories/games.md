@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [ROM到Zig／SDL：icpolicy称Codex重建游戏后加上像素法线光照](../cases/icpolicy-codex-rom-zig-sdl-pixel-lighting.md) — icpolicy称以ROM为参考让Codex反编译到Zig／SDL，再用Rust像素法线库增加光照；游戏未命名，作者明确不能分发。 **[其他 AI 逆向 · 待验证]**
+- [Stefan 3D AI：REA提取平台游戏跑跳参数，交Claude Code制作新游戏](../cases/stefan-platformer-rea-run-jump-targets.md) — Stefan称用Opus 5.5与REA从一款未命名的3D平台游戏提取跑跳数值，作为Claude Code制作自己游戏的目标；未给参数、原游戏名或逐帧对照。 **[REA · 待验证]**
 - [Vice City浏览器版：基于reVC既有逆向引擎的AI辅助移植转述](../cases/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta介绍oalanicolas基于reVC/wasm-revc把2002年Vice City移到浏览器，归因Codex集成测试、Claude界面及Gemini优化；性能与token数尚属转述。 **[其他 AI 逆向 · 待验证]**
 - [塞尔达传说：众神的三角力量2：LLM逐函数重建，单列hack与匹配检查豁免](../cases/albw-llm-function-matching-decomp.md) — albw-decomp-ai公开3DS美版逐函数C/C++重建，项目报16,544项匹配、其中882项依赖hack；检查器有重定位和外部跳转豁免，不是完整游戏二进制等价证明。 **[其他 AI 逆向 · 进行中]**
 - [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](../cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**

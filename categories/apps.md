@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [NuGet闭源包评测：Aaron Stannard测试Agent会否主动选ILSpy反编译](../cases/aaron-stannard-nuget-ilspy-agent-evals.md) — Aaron正在添加第四个评测，用NuGet可获取但源码私有的包，且提示词不暗示反编译；已有观察是Anthropic模型先搜索GitHub，ILSpy是第四偏好，结果未独立验证。 **[其他 AI 逆向 · 进行中]**
+- [发票按钮重建：Robo报告REA与Opus分层分析，并指出绿灯测试漏掉税序错误](../cases/robo-rea-opus-invoice-button-tax-order-report.md) — Robo描述只重建年费468美元应用的发票按钮：REA映射函数、Opus按难度读取、写规格再测试；称首版50项全过仍有折扣与税的顺序错误，产品和日志未公开在已读材料中。 **[REA · 待验证]**
+- [Sony与DJI相机：Pedro称Claude制作精简iOS客户端，可下载a6400 RAW](../cases/pedro-sony-dji-claude-minimal-ios-clients.md) — Pedro Araújo不满意Sony与DJI Osmo Action官方应用，称Claude通过逆向或查找相关开源仓库制作简化iOS替代品，并报告a6400可下载RAW。 **[其他 AI 逆向 · 待验证]**
 - [Reversy：Tom Mann的网页逆向证据与重建规格工作区](../cases/reversy-firstmate-website-evidence-workspace.md) — Tom Mann介绍黑客松项目Reversy，用工作区检查网页证据、形成重建规格，并称借FirstMate继续改进；没有给出特定网站重建精度。 **[其他 AI 逆向 · 进行中]**
 - [Grok APP REPLICATOR：先研究单个功能、写规格再重建的机器人项目](../cases/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele介绍Grok Bot按授权目标静态研究、证据分级、写SPEC.md与对照测试；Apple Notes仅为范围示例，未给通过测试的具体应用。 **[REA · 相关项目]**
 - [Windows内嵌JavaScript恶意样本：REA与Codex静态分析的二手报告](../cases/rea-codex-windows-js-malware-static-report.md) — 吉川孝志介绍REA与Codex在隔离Docker中分析Windows样本、提取JS及代码引用；部分解码用独立Python实现交叉检查，原文章与样本未独立验证。 **[REA · 分析测试]**

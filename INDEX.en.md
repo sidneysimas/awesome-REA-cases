@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**752 entries**, organized by use case, without a Top-N or popularity threshold.
+**761 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (167)
-- [Hardware and interoperability](categories/en/hardware.md) (194)
-- [Applications and clients](categories/en/apps.md) (327)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (64)
+- [Games and preservation](categories/en/games.md) (169)
+- [Hardware and interoperability](categories/en/hardware.md) (197)
+- [Applications and clients](categories/en/apps.md) (330)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (65)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [ROM to Zig/SDL: icpolicy reports a Codex reconstruction with pixel-normal lighting](cases/en/icpolicy-codex-rom-zig-sdl-pixel-lighting.md) — icpolicy says Codex used a ROM as reference to decompile a game into Zig/SDL, followed by lighting with a Rust pixel-normal library; the game is unnamed and the author says it cannot be redistributed. **[Other AI-assisted work · Needs verification]**
+- [Stefan 3D AI: REA extracts platformer running and jumping values for a Claude Code game](cases/en/stefan-platformer-rea-run-jump-targets.md) — Stefan reports using Opus 5.5 and REA to extract movement values from an unnamed 3D platformer as targets for his own Claude Code game; no values, original title or frame-by-frame comparison are supplied. **[REA · Needs verification]**
 - [Vice City in the browser: a report of an AI-assisted port built on the existing reVC reverse-engineered engine](cases/en/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta describes oalanicolas's browser port of the 2002 game on reVC/wasm-revc, attributing integration/testing to Codex, UI to Claude and optimization to Gemini; performance and token totals remain secondary reports. **[Other AI-assisted work · Needs verification]**
 - [A Link Between Worlds: LLM function reconstruction with separate hack counts and checker exemptions](cases/en/albw-llm-function-matching-decomp.md) — albw-decomp-ai publishes per-function C/C++ reconstruction of the USA 3DS game, reporting 16,544 matches including 882 hacks; relocation and external-branch exemptions prevent treating this as whole-game binary equivalence. **[Other AI-assisted work · In progress]**
 - [Shrek 2: two AI wishes to investigate remaster performance or decompile and upscale the original](cases/en/shrek2-ai-decompile-upscale-ideas.md) — Two deferred replies suggest day-one Claude decompilation of the remaster and AI decompilation/upscaling of the original; parents identify Shrek 2 but establish no implementation. **[Other AI-assisted work · Needs verification]**
@@ -198,6 +200,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [GE refrigerator RFID water filters: an idea to ask AI why third-party replacements do not work](cases/en/ge-fridge-rfid-water-filter-ai-investigation-idea.md) — Tentontommy proposes AI investigation of GE refrigerator filter compatibility after a parent post blames RFID for blocking off-brand filters and reports not changing them for three years. This is a suggestion, not analysis or a solution. **[REA use unconfirmed · Needs verification]**
+- [Samsung TV voice remote: Codez reports connecting Opus-investigated LAN APIs to Grok Bot](cases/en/codez-samsung-opus-grokbot-netflix-remote.md) — Codez says Opus 5.5 investigated Samsung TV control interfaces and built a three-tool plugin to open Netflix, move and select, with Grok Bot handling speech; no model or compatibility tests are supplied. **[Other AI-assisted work · Needs verification]**
+- [Building-doorbell live view: Mattia investigates firmware with REA/Ghidra and replaces the indoor monitor with a Pi](cases/en/mattia-doorbell-rea-ghidra-rust-live-view.md) — Mattia Righetti reports recovering UDP/XML call behavior from ARM firmware, receiving video on a Raspberry Pi, and serving browser live view through Rust and FFmpeg; the brand, source code and test logs were not obtained. **[REA · Needs verification]**
 - [Ride Relay: OpenCode and DeepSeek relay Google Maps turns to a Pulsar NS200 instrument cluster](cases/en/ride-relay-pulsar-ns200-google-maps.md) — Manovikram K reports investigating the Bajaj app and building an Android bridge from Google Maps direction/distance notifications to Bluetooth packets, working on his bike without root or a modified official APK. **[Other AI-assisted work · Needs verification]**
 - [ScanRuler: CNC Kitchen's AI/MCP reconstruction of a GoPro clamp from a 3D scan](cases/en/scanruler-gopro-clamp-ai-mcp.md) — Stefan explains that ScanRuler runs in a local browser while a user-selected AI agent orchestrates reverse engineering through MCP; the thread root presents a scanned GoPro clamp, with dimensional accuracy unverified. **[Other AI-assisted work · In progress]**
 - [ns2jb: Codex-assisted Switch 2 research, with the author correcting the one-prompt autonomous-jailbreak story](cases/en/ns2jb-codex-switch2-human-directed-research.md) — Sammy Hajhamid reports a software jailbreak for Switch 2 firmware 23.0.1 and Codex-assisted investigation, clarifying that it took substantial human effort over roughly two weeks; the automatic WebKit goal failed and the game mod, not the jailbreak, took a day. **[Other AI-assisted work · In progress]**
@@ -395,6 +400,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Private-source NuGet eval: Aaron Stannard tests whether agents choose ILSpy without prompting](cases/en/aaron-stannard-nuget-ilspy-agent-evals.md) — Aaron is adding a fourth evaluation using a NuGet-available private-source package without suggesting decompilation; he reports earlier Anthropic models preferring GitHub search, with ILSpy fourth, not independently validated. **[Other AI-assisted work · In progress]**
+- [Invoice-button reconstruction: Robo reports tiered REA/Opus analysis and a tax-order bug missed by green tests](cases/en/robo-rea-opus-invoice-button-tax-order-report.md) — Robo describes rebuilding just an invoice button from a reportedly $468/year app: REA maps functions, Opus reads selected functions by difficulty, then writes a specification and tests. A claimed 50/50 first pass still had a discount/tax-order error; the product and logs are not identified in the retrieved material. **[REA · Needs verification]**
+- [Sony and DJI cameras: Pedro reports minimal Claude-built iOS clients and a6400 RAW downloads](cases/en/pedro-sony-dji-claude-minimal-ios-clients.md) — Unhappy with the Sony and DJI Osmo Action official apps, Pedro Araújo says Claude reverse engineered them or found relevant open-source repositories to build minimal iOS replacements, reporting RAW downloads from his a6400. **[Other AI-assisted work · Needs verification]**
 - [Reversy: Tom Mann's workspace for website evidence and rebuild specifications](cases/en/reversy-firstmate-website-evidence-workspace.md) — Tom Mann presents hackathon project Reversy for inspecting website evidence and shaping rebuild specifications, with ongoing FirstMate-assisted work; no accuracy result for a particular rebuilt site is supplied. **[Other AI-assisted work · In progress]**
 - [Grok APP REPLICATOR: investigate one feature, write a specification, then rebuild](cases/en/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele introduces a Grok Bot workflow for authorized static investigation, evidence labels, SPEC.md and comparison tests; Apple Notes is only a scope example, not an identified passing implementation. **[REA · Related project]**
 - [Windows malware with embedded JavaScript: a secondary report of REA/Codex static analysis](cases/en/rea-codex-windows-js-malware-static-report.md) — Takashi Yoshikawa describes REA/Codex inspection of a Windows sample and extracted JS in isolated Docker, with code references and partial decoding cross-checks in Python; the original article and sample were not independently verified. **[REA · Analysis test]**
@@ -725,6 +733,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Prime-broker positioning screenshots: a reported use of AI to recover time series and assess data value](cases/en/prime-broker-positioning-screenshot-ai-timeseries.md) — The poster says AI can turn prime-broker positioning screenshots into underlying time series to distinguish useful data from Goldman Sachs marketing; no sample, model or reconstruction error is supplied. **[Other AI-assisted work · Needs verification]**
 - [Social-media virality prediction: Alin A's abandoned idea to investigate recommendation algorithms with REA](cases/en/social-media-viral-probability-rea-abandoned-idea.md) — Alin A proposes investigating recommendation algorithms, extracting a virality-probability model and automating publishing for follower growth, but explicitly abandons the idea; no platform, dataset or prediction result is given. **[REA · Needs verification]**
 - [Xiaomi exercise calorie accumulation: a report of DeepSeek investigation into repeat counting on refresh](cases/en/xiaomi-motion-deepseek-calorie-refresh-report.md) — LanzhiAI relays a DeepSeek-assisted Xiaomi exercise-algorithm report: repeated refreshes in one minute allegedly turn 40 steps from 1.6 to 8.28 calories; follow-ups still await captures and full reproduction. **[Other AI-assisted work · Needs verification]**
 - [CUDA: a reader's challenge to try decompilation with an agent swarm](cases/en/cuda-agent-swarm-decompile-idea.md) — loveofdoing proposes having an agent swarm decompile CUDA, without identifying a component, version, compatibility goal or attempted implementation. **[Other AI-assisted work · Needs verification]**

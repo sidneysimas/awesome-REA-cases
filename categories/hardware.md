@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [GE冰箱RFID滤芯：建议交给AI研究非原厂滤芯不工作的具体想法](../cases/ge-fridge-rfid-water-filter-ai-investigation-idea.md) — Tentontommy建议用AI研究GE冰箱滤芯兼容问题；父帖作者称RFID让非原厂滤芯无法使用，三年没换滤芯。只有建议，没有实际分析或解决结果。 **[未确认使用 REA · 待验证]**
+- [Samsung电视语音遥控：Codez称Opus研究局域网API后接入Grok Bot](../cases/codez-samsung-opus-grokbot-netflix-remote.md) — Codez称Opus 5.5研究Samsung电视控制接口，制作打开Netflix、移动和选择三工具插件，由Grok Bot处理语音；未给型号或兼容测试。 **[其他 AI 逆向 · 待验证]**
+- [楼宇门铃实时画面：Mattia用REA与Ghidra研究固件，以树莓派替代室内屏](../cases/mattia-doorbell-rea-ghidra-rust-live-view.md) — Mattia Righetti报告从门口机ARM固件恢复UDP/XML通话机制，以树莓派接收视频，再由Rust服务与FFmpeg向浏览器提供实时画面；品牌、源码和测试日志未取得。 **[REA · 待验证]**
 - [Ride Relay：OpenCode与DeepSeek把Google Maps转向提示送到Pulsar NS200仪表](../cases/ride-relay-pulsar-ns200-google-maps.md) — Manovikram K称研究Bajaj应用后做出Android桥接，从Google Maps通知提取方向与距离并转为蓝牙包，报告实车可用，不需root或改官方APK。 **[其他 AI 逆向 · 待验证]**
 - [ScanRuler：CNC Kitchen用AI与MCP从GoPro夹具扫描重建几何](../cases/scanruler-gopro-clamp-ai-mcp.md) — Stefan说明ScanRuler在本地浏览器运行，逆向由用户选择的AI Agent经MCP编排；同串根帖展示从3D扫描重建GoPro夹具，尺寸精度未核。 **[其他 AI 逆向 · 进行中]**
 - [ns2jb：Codex辅助Switch 2研究，作者更正“一句话全自动越狱”](../cases/ns2jb-codex-switch2-human-directed-research.md) — Sammy Hajhamid公开报告Switch 2固件23.0.1的软件越狱与Codex辅助分析；明确研究花约两周大量人工投入，自动WebKit目标失败，马车Mod才是一天完成。 **[其他 AI 逆向 · 进行中]**

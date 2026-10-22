@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **752 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **761 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（167）
-- [硬件与设备互通](categories/hardware.md)（194）
-- [应用与客户端](categories/apps.md)（327）
-- [算法与功能重建](categories/algorithms.md)（64）
+- [游戏与游戏保存](categories/games.md)（169）
+- [硬件与设备互通](categories/hardware.md)（197）
+- [应用与客户端](categories/apps.md)（330）
+- [算法与功能重建](categories/algorithms.md)（65）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [ROM到Zig／SDL：icpolicy称Codex重建游戏后加上像素法线光照](cases/icpolicy-codex-rom-zig-sdl-pixel-lighting.md) — icpolicy称以ROM为参考让Codex反编译到Zig／SDL，再用Rust像素法线库增加光照；游戏未命名，作者明确不能分发。 **[其他 AI 逆向 · 待验证]**
+- [Stefan 3D AI：REA提取平台游戏跑跳参数，交Claude Code制作新游戏](cases/stefan-platformer-rea-run-jump-targets.md) — Stefan称用Opus 5.5与REA从一款未命名的3D平台游戏提取跑跳数值，作为Claude Code制作自己游戏的目标；未给参数、原游戏名或逐帧对照。 **[REA · 待验证]**
 - [Vice City浏览器版：基于reVC既有逆向引擎的AI辅助移植转述](cases/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta介绍oalanicolas基于reVC/wasm-revc把2002年Vice City移到浏览器，归因Codex集成测试、Claude界面及Gemini优化；性能与token数尚属转述。 **[其他 AI 逆向 · 待验证]**
 - [塞尔达传说：众神的三角力量2：LLM逐函数重建，单列hack与匹配检查豁免](cases/albw-llm-function-matching-decomp.md) — albw-decomp-ai公开3DS美版逐函数C/C++重建，项目报16,544项匹配、其中882项依赖hack；检查器有重定位和外部跳转豁免，不是完整游戏二进制等价证明。 **[其他 AI 逆向 · 进行中]**
 - [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**
@@ -196,6 +198,9 @@
 
 ### 硬件与设备互通
 
+- [GE冰箱RFID滤芯：建议交给AI研究非原厂滤芯不工作的具体想法](cases/ge-fridge-rfid-water-filter-ai-investigation-idea.md) — Tentontommy建议用AI研究GE冰箱滤芯兼容问题；父帖作者称RFID让非原厂滤芯无法使用，三年没换滤芯。只有建议，没有实际分析或解决结果。 **[未确认使用 REA · 待验证]**
+- [Samsung电视语音遥控：Codez称Opus研究局域网API后接入Grok Bot](cases/codez-samsung-opus-grokbot-netflix-remote.md) — Codez称Opus 5.5研究Samsung电视控制接口，制作打开Netflix、移动和选择三工具插件，由Grok Bot处理语音；未给型号或兼容测试。 **[其他 AI 逆向 · 待验证]**
+- [楼宇门铃实时画面：Mattia用REA与Ghidra研究固件，以树莓派替代室内屏](cases/mattia-doorbell-rea-ghidra-rust-live-view.md) — Mattia Righetti报告从门口机ARM固件恢复UDP/XML通话机制，以树莓派接收视频，再由Rust服务与FFmpeg向浏览器提供实时画面；品牌、源码和测试日志未取得。 **[REA · 待验证]**
 - [Ride Relay：OpenCode与DeepSeek把Google Maps转向提示送到Pulsar NS200仪表](cases/ride-relay-pulsar-ns200-google-maps.md) — Manovikram K称研究Bajaj应用后做出Android桥接，从Google Maps通知提取方向与距离并转为蓝牙包，报告实车可用，不需root或改官方APK。 **[其他 AI 逆向 · 待验证]**
 - [ScanRuler：CNC Kitchen用AI与MCP从GoPro夹具扫描重建几何](cases/scanruler-gopro-clamp-ai-mcp.md) — Stefan说明ScanRuler在本地浏览器运行，逆向由用户选择的AI Agent经MCP编排；同串根帖展示从3D扫描重建GoPro夹具，尺寸精度未核。 **[其他 AI 逆向 · 进行中]**
 - [ns2jb：Codex辅助Switch 2研究，作者更正“一句话全自动越狱”](cases/ns2jb-codex-switch2-human-directed-research.md) — Sammy Hajhamid公开报告Switch 2固件23.0.1的软件越狱与Codex辅助分析；明确研究花约两周大量人工投入，自动WebKit目标失败，马车Mod才是一天完成。 **[其他 AI 逆向 · 进行中]**
@@ -393,6 +398,9 @@
 
 ### 应用与客户端
 
+- [NuGet闭源包评测：Aaron Stannard测试Agent会否主动选ILSpy反编译](cases/aaron-stannard-nuget-ilspy-agent-evals.md) — Aaron正在添加第四个评测，用NuGet可获取但源码私有的包，且提示词不暗示反编译；已有观察是Anthropic模型先搜索GitHub，ILSpy是第四偏好，结果未独立验证。 **[其他 AI 逆向 · 进行中]**
+- [发票按钮重建：Robo报告REA与Opus分层分析，并指出绿灯测试漏掉税序错误](cases/robo-rea-opus-invoice-button-tax-order-report.md) — Robo描述只重建年费468美元应用的发票按钮：REA映射函数、Opus按难度读取、写规格再测试；称首版50项全过仍有折扣与税的顺序错误，产品和日志未公开在已读材料中。 **[REA · 待验证]**
+- [Sony与DJI相机：Pedro称Claude制作精简iOS客户端，可下载a6400 RAW](cases/pedro-sony-dji-claude-minimal-ios-clients.md) — Pedro Araújo不满意Sony与DJI Osmo Action官方应用，称Claude通过逆向或查找相关开源仓库制作简化iOS替代品，并报告a6400可下载RAW。 **[其他 AI 逆向 · 待验证]**
 - [Reversy：Tom Mann的网页逆向证据与重建规格工作区](cases/reversy-firstmate-website-evidence-workspace.md) — Tom Mann介绍黑客松项目Reversy，用工作区检查网页证据、形成重建规格，并称借FirstMate继续改进；没有给出特定网站重建精度。 **[其他 AI 逆向 · 进行中]**
 - [Grok APP REPLICATOR：先研究单个功能、写规格再重建的机器人项目](cases/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele介绍Grok Bot按授权目标静态研究、证据分级、写SPEC.md与对照测试；Apple Notes仅为范围示例，未给通过测试的具体应用。 **[REA · 相关项目]**
 - [Windows内嵌JavaScript恶意样本：REA与Codex静态分析的二手报告](cases/rea-codex-windows-js-malware-static-report.md) — 吉川孝志介绍REA与Codex在隔离Docker中分析Windows样本、提取JS及代码引用；部分解码用独立Python实现交叉检查，原文章与样本未独立验证。 **[REA · 分析测试]**
@@ -723,6 +731,7 @@
 
 ### 算法与功能重建
 
+- [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**
 - [社交媒体爆款概率：Alin A提出REA研究推荐算法后放弃的想法](cases/social-media-viral-probability-rea-abandoned-idea.md) — Alin A设想研究推荐算法、提取爆款概率模型并循环出稿涨粉，但明确作罢；没有指定平台、数据或预测结果。 **[REA · 待验证]**
 - [小米运动热量累加：DeepSeek逆向后发现刷新重复计入的转述](cases/xiaomi-motion-deepseek-calorie-refresh-report.md) — 澜知AI转述DeepSeek研究小米运动算法，称同一分钟刷新会使40步热量从1.6变8.28卡；后续承认等待抓包与完整复现。 **[其他 AI 逆向 · 待验证]**
 - [CUDA：让 Agent 群尝试反编译的读者挑战](cases/cuda-agent-swarm-decompile-idea.md) — loveofdoing提议让Agent群反编译CUDA，没有指定组件、版本或兼容目标，也没有实施报告。 **[其他 AI 逆向 · 待验证]**
