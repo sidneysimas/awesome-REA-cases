@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Grok APP REPLICATOR：先研究单个功能、写规格再重建的机器人项目](../cases/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele介绍Grok Bot按授权目标静态研究、证据分级、写SPEC.md与对照测试；Apple Notes仅为范围示例，未给通过测试的具体应用。 **[REA · 相关项目]**
+- [Windows内嵌JavaScript恶意样本：REA与Codex静态分析的二手报告](../cases/rea-codex-windows-js-malware-static-report.md) — 吉川孝志介绍REA与Codex在隔离Docker中分析Windows样本、提取JS及代码引用；部分解码用独立Python实现交叉检查，原文章与样本未独立验证。 **[REA · 分析测试]**
 - [PHP 补丁逆向：busfactor 将 AI 限于代码探索，并报告解释过度复杂](../cases/php-patch-ai-exploration-limits.md) — Vitor Falcão在PHP严重漏洞补丁逆向中把AI限制为代码探索，目标是制作PoC；他称AI基础解释过度复杂，未给PoC完成结果。 **[其他 AI 逆向 · 进行中]**
 - [REA × OpenGateway：把二进制拆为32个问题并行回答的工作流宣传](../cases/rea-opengateway-32-inquiry-workflow.md) — HOPE介绍REA与OpenGateway以高TPS模型并行回答32个二进制研究问题，未给目标样本、答案质量或端到端基准。 **[REA · 相关项目]**
 - [AWS SDK 地区目录：八路 Agent、先规格后重建的板式工作流 idea](../cases/aws-sdk-region-catalog-agent-board-idea.md) — 帖子以AWS SDK地区目录为目标，设计REA取证、规格隔离与八路重建，再用50输入比较；128/128和0.12秒没有运行证据。 **[REA · 待验证]**
@@ -28,7 +30,7 @@
 - [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](../cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
 - [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](../cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh 称为macOS/Linux带来自选模型的编程桌面，明确不用REA而走top-down路线；所有功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
 - [国内平台 Skill：Opus 辅助研究东方财富、天天基金及个人本地数据的自述](../cases/opus-cn-platform-skills-local-data-report.md) — JinmingYang 回顾个人平台接入Skill与登录态监测，称曾用多个Opus版本；没有公开代码，不把自述先后与消息规模当验证。 **[其他 AI 逆向 · 待验证]**
-- [Claude 客户端遥测：REA 与 DeepSeek 分析 Mac／Android 的代理规则报告](../cases/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru 报告Sift与Sentry／Datadog线索并整理代理规则；未提供精确构建或调用证据，iOS仅为猜测，设备ID持久性未验证。 **[REA · 分析测试]**
+- [Claude 客户端遥测：Mac／Android分析与Linux的REA／DeepSeek跟进](../cases/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru报告Mac／Android遥测线索；molang新增Linux的REA与DeepSeek研究及GPT差异总结。都缺精确构建和流量验证，不构成隐私或防封号保证。 **[REA · 分析测试]**
 - [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](../cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
 - [ShareX 三功能替代：Claude Code 与 REA 制作截图及录屏工具的自述](../cases/sharex-rea-three-feature-recorder.md) — Nico 只取 ShareX 的全屏、区域截图与录屏，称周末完成 GPU 录屏器、115项测试与安装器；144fps是未核实上限。 **[REA · 待验证]**
 - [Codex 验收 REA：Electron、ARM64 公式与网页按钮三个已知答案样本](../cases/codex-rea-three-fixture-smoke-test.md) — 作者称 Codex 自建三种微型样本，验证 IPC、value * 7 + 11 反编译和点击后页面状态；只证明接线自测，不代表复杂目标能力。 **[REA · 分析测试]**
@@ -53,7 +55,7 @@
 - [IDA Assist rc15：用 SQLite 镜像给 LLM 查询 IDA 分析数据库](../cases/ida-assist-rc15-idb-mirror.md) — in19h介绍idb_mirror与idb_query，让只读工具和LLM不必排队占用IDA主线程；延迟与并行性能尚未独立测试。 **[其他 AI 逆向 · 相关项目]**
 - [微信视频号：WorkBuddy、REA 与 DeepSeek 辅助下载的作者自述](../cases/wechat-channels-workbuddy-rea-download.md) — aehyok称WorkBuddy+REA+DeepSeek-V4.1-Flash-1017搞定视频号视频下载；没有提供接口、代码或可复核输出。 **[REA · 待验证]**
 - [Claude Code Harness：pvergadia 预告逆向 Agent 编排的直播课](../cases/claude-code-harness-live-session.md) — pvergadia预告次日直播拆解Claude Code Harness，用于讲解自建AI Agent编排；不是课程已完成或代码恢复报告。 **[未确认使用 REA · 相关项目]**
-- [CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述](../cases/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering称在CoLateral ADE中以REA和Opus 5.5重建Revit等结构工程工具，目标是Agent设计、分析与制图；未证明工程等价或安全。 **[REA · 待验证]**
+- [CoLateral：Nic 用 REA 与 Opus 重建结构工程套件的自述](../cases/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering称用REA与Opus 5.5重建结构工程工具，新增框架／楼板分析等范围与一周变一下午的自述；未证明数值等价或工程安全。 **[REA · 待验证]**
 - [Claude Code 风控：用户将拒答后的研究交给 DeepSeek Harness](../cases/deepseek-harness-claude-code-risk-inspection.md) — wquguru把研究Claude Code风控列为DeepSeek Harness用途；95%/5%是个人工具使用比例，不是绕过或研究成功率。 **[其他 AI 逆向 · 待验证]**
 - [菲律宾香蕉网站：Codex 用 REA 研究多个参考站的自述](../cases/philippine-banana-codex-rea-website.md) — aFuJiyosn称让Codex用REA研究不同网站，再改成菲律宾产香蕉主题站；未给参考站或可访问成品。 **[REA · 进行中]**
 - [恶意软件解包：Claude 内存转储模块请求被拒与降级不稳定的报告](../cases/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101报告为恶意软件解包制作模块时遭Claude降级与拒绝，旧模型版本又有崩溃；不是已完成的解包工具。 **[其他 AI 逆向 · 待验证]**

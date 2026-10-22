@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [塞尔达传说：众神的三角力量2：LLM逐函数重建，单列hack与匹配检查豁免](../cases/albw-llm-function-matching-decomp.md) — albw-decomp-ai公开3DS美版逐函数C/C++重建，项目报16,544项匹配、其中882项依赖hack；检查器有重定位和外部跳转豁免，不是完整游戏二进制等价证明。 **[其他 AI 逆向 · 进行中]**
 - [《怪物史莱克2》：研究重制版性能与反编译原作放大画面的两种 AI 愿望](../cases/shrek2-ai-decompile-upscale-ideas.md) — 两条补审回复分别建议Claude首日反编译重制版，以及AI反编译原作并提升画面；父帖确认Shrek 2，但没有实施成果。 **[其他 AI 逆向 · 待验证]**
 - [Anthem：REA 研究客户端、移入 Unreal 的建议与缺失掉落表边界](../cases/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies建议用REA反编译Anthem并把资产带入Unreal，后续称自己的反编译找不到服务器下发的掉落表；不证明完整游戏或后端已恢复。 **[REA · 进行中]**
 - [Reflex：用 AI 反编译研究旧代码、再制作续作的愿望](../cases/reflex-ai-decompile-sequel-idea.md) — swaguley询问Rainbow Studios能否用AI反编译Reflex，为Reflex 2找回实现依据；没有开发或代码恢复结果。 **[其他 AI 逆向 · 待验证]**

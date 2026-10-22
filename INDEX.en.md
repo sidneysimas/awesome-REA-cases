@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**739 entries**, organized by use case, without a Top-N or popularity threshold.
+**745 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (165)
-- [Hardware and interoperability](categories/en/hardware.md) (188)
-- [Applications and clients](categories/en/apps.md) (324)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (62)
+- [Games and preservation](categories/en/games.md) (166)
+- [Hardware and interoperability](categories/en/hardware.md) (190)
+- [Applications and clients](categories/en/apps.md) (326)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (63)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [A Link Between Worlds: LLM function reconstruction with separate hack counts and checker exemptions](cases/en/albw-llm-function-matching-decomp.md) — albw-decomp-ai publishes per-function C/C++ reconstruction of the USA 3DS game, reporting 16,544 matches including 882 hacks; relocation and external-branch exemptions prevent treating this as whole-game binary equivalence. **[Other AI-assisted work · In progress]**
 - [Shrek 2: two AI wishes to investigate remaster performance or decompile and upscale the original](cases/en/shrek2-ai-decompile-upscale-ideas.md) — Two deferred replies suggest day-one Claude decompilation of the remaster and AI decompilation/upscaling of the original; parents identify Shrek 2 but establish no implementation. **[Other AI-assisted work · Needs verification]**
 - [Anthem: a REA client-investigation/Unreal idea with a missing server-delivered loot-table boundary](cases/en/anthem-rea-unreal-client-loot-boundary.md) — Reddit Lies suggests REA decompilation of Anthem and moving assets into Unreal, then says his own decompilation lacks server-delivered loot tables; complete game/backend recovery is unestablished. **[REA · In progress]**
 - [Reflex: a wish to study lost code through AI decompilation and make a sequel](cases/en/reflex-ai-decompile-sequel-idea.md) — swaguley asks whether Rainbow Studios could decompile Reflex with AI to inform a Reflex 2; no development or code-recovery result is reported. **[Other AI-assisted work · Needs verification]**
@@ -196,6 +197,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Noir M1: reported REA/Opus investigation of a Windows app to add Mac gestures](cases/en/noir-m1-rea-opus-mac-gestures.md) — ARES reports using REA and Opus 5.5 to study Noir M1's Windows-only companion app and add working Mac gestures; hardware type, protocol and compatibility remain unverified. **[REA · Needs verification]**
+- [Thermal label printer: kiter reports Claude-assisted BLE investigation for third-party labels without the original app](cases/en/kiter-claude-ble-label-printer.md) — kiter says Claude reverse-engineered BLE to print directly and use third-party labels; the parent only establishes a low-cost thermal-printer context, not a model or inspectable driver. **[Other AI-assisted work · Needs verification]**
 - [PS5 kernel research: kuzi uses Opus 5.5 for reasoning and decompilation, with work ongoing after token exhaustion](cases/en/kuzi-ps5-opus-kernel-research.md) — kuzi reports Opus-assisted 14.00 kernel investigation; parents establish a PS5 and 14.00/14.10 context, but claimed 14.20 userland execution does not establish a kernel breakthrough. **[Other AI-assisted work · In progress]**
 - [Natural-language keyboard lighting: chuplung reports replacing a large app with REA, Opus and Python](cases/en/chuplung-rea-opus-keyboard-lights.md) — chuplung says REA and Opus 5.5 replace a 512 MB keyboard-lighting app with 15 Python lines and a chat-driven warm, dim mode; hardware, code and timing are unverified. **[REA · Needs verification]**
 - [Forced Comcast box updates: a report of a Grok fix and Claude stopping after HAR research](cases/en/comcast-box-grok-claude-update-report.md) — Tom Whitbread says Grok logged in and fixed a Comcast-box problem while Claude worked on HARs then stopped on policy grounds; model, method and durability are unverified. **[Other AI-assisted work · Needs verification]**
@@ -387,6 +390,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Grok APP REPLICATOR: investigate one feature, write a specification, then rebuild](cases/en/grok-app-replicator-feature-spec-workflow.md) — Brian Roemmele introduces a Grok Bot workflow for authorized static investigation, evidence labels, SPEC.md and comparison tests; Apple Notes is only a scope example, not an identified passing implementation. **[REA · Related project]**
+- [Windows malware with embedded JavaScript: a secondary report of REA/Codex static analysis](cases/en/rea-codex-windows-js-malware-static-report.md) — Takashi Yoshikawa describes REA/Codex inspection of a Windows sample and extracted JS in isolated Docker, with code references and partial decoding cross-checks in Python; the original article and sample were not independently verified. **[REA · Analysis test]**
 - [PHP patch reversing: busfactor limits AI to code exploration and finds its explanations overcomplicated](cases/en/php-patch-ai-exploration-limits.md) — Vitor Falcão limits AI to code exploration while reversing critical PHP patches toward a PoC; he finds basic AI explanations overcomplicated and reports no completed PoC. **[Other AI-assisted work · In progress]**
 - [REA × OpenGateway: a promoted workflow answering 32 binary-investigation inquiries in parallel](cases/en/rea-opengateway-32-inquiry-workflow.md) — HOPE describes REA and OpenGateway using high-TPS models to answer 32 binary-investigation inquiries in parallel, without a target sample, answer-quality results or end-to-end benchmark. **[REA · Related project]**
 - [AWS SDK region catalog: an eight-agent, specification-first reconstruction-board idea](cases/en/aws-sdk-region-catalog-agent-board-idea.md) — A post targets an AWS SDK region catalog with REA evidence, isolated specifications, eight-way reconstruction and 50 comparison inputs; 128/128 and 0.12 seconds lack execution evidence. **[REA · Needs verification]**
@@ -413,7 +418,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Claude Code and a closed inference engine: a positive user report of reversing](cases/en/claude-code-closed-inference-engine-re-report.md) — Zeng Jiajun says the tool under discussion analyzed Claude Code and a closed inference engine; no specific findings, rebuild or validation output is shown. **[REA use unconfirmed · Analysis test]**
 - [Harness Studio: a reported top-down open-source Claude Code Desktop reimplementation](cases/en/harness-studio-claude-desktop-reimplementation.md) — Vignesh describes a macOS/Linux coding desktop with user-selected models, explicitly using a top-down approach rather than REA; complete feature equivalence is unverified. **[Other AI-assisted work · In progress]**
 - [Chinese-platform skills: reported Opus research on East Money, Tiantian Fund and personal local data](cases/en/opus-cn-platform-skills-local-data-report.md) — JinmingYang recalls personal platform-access skills and session monitoring using several claimed Opus versions; there is no public code, and chronology or message scale is not validation. **[Other AI-assisted work · Needs verification]**
-- [Claude-client telemetry: a REA/DeepSeek report on Mac and Android proxy rules](cases/en/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru reports Sift and Sentry/Datadog clues while compiling proxy rules; exact builds and call evidence are missing, iOS is speculation and device-ID persistence is unverified. **[REA · Analysis test]**
+- [Claude-client telemetry: Mac/Android investigation and a Linux REA/DeepSeek follow-up](cases/en/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru reports Mac/Android telemetry clues; molang adds Linux investigation with REA/DeepSeek and a GPT difference summary. Exact builds and traffic validation remain absent, with no privacy or account-protection guarantee. **[REA · Analysis test]**
 - [sourcepin: studying stagewise with REA to map page elements before calling a model](cases/en/sourcepin-stagewise-rea-file-line.md) — Aayush Swami studies stagewise with REA and source reading, then builds element-to-file:line mapping; public small-sample tests report fewer tool calls, not faster total turns or exact mapping on arbitrary frameworks. **[REA · In progress]**
 - [A three-feature ShareX alternative: reported Claude Code/REA screenshot and recording work](cases/en/sharex-rea-three-feature-recorder.md) — Nico selects full-screen capture, region capture and recording from ShareX, claiming a weekend GPU recorder, 115 tests and installer; the 144 fps ceiling is unverified. **[REA · Needs verification]**
 - [Codex checks REA with three known-answer Electron, ARM64 and browser fixtures](cases/en/codex-rea-three-fixture-smoke-test.md) — An author reports IPC recovery, decompilation of value * 7 + 11 and button-state readback on tiny Codex-made fixtures; this is a wiring smoke test, not a complex-target benchmark. **[REA · Analysis test]**
@@ -438,7 +443,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [IDA Assist rc15: a SQLite mirror for LLM access to IDA analysis data](cases/en/ida-assist-rc15-idb-mirror.md) — in19h introduces idb_mirror and idb_query to serve read-only tools and LLM queries without queuing on IDA's main thread; latency and parallelism are not independently tested. **[Other AI-assisted work · Related project]**
 - [WeChat Channels: an author-reported download workflow with WorkBuddy, REA and DeepSeek](cases/en/wechat-channels-workbuddy-rea-download.md) — aehyok reports downloading WeChat Channels videos with WorkBuddy, REA and DeepSeek-V4.1-Flash-1017, without interfaces, code or inspectable output. **[REA · Needs verification]**
 - [Claude Code Harness: pvergadia announces a live session on agent orchestration](cases/en/claude-code-harness-live-session.md) — pvergadia announces a next-day session reverse-engineering Claude Code Harness to teach building agent harnesses; neither a completed course nor recovered code is established. **[REA use unconfirmed · Related project]**
-- [CoLateral: Nic reports reconstructing a structural-engineering suite with REA and Opus](cases/en/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering reports using REA and Opus 5.5 inside CoLateral ADE to reconstruct Revit and other tools for agent-driven design, analysis and drafting; engineering equivalence and safety are unverified. **[REA · Needs verification]**
+- [CoLateral: Nic reports reconstructing a structural-engineering suite with REA and Opus](cases/en/colateral-agentic-workspace-reverse-marketplace.md) — Nic Vandewetering reports REA/Opus reconstruction of structural-engineering tools, adding frame/slab-analysis scope and a week-to-afternoon claim; numerical equivalence and engineering safety remain unverified. **[REA · Needs verification]**
 - [Claude Code risk controls: a user routes refused research to DeepSeek Harness](cases/en/deepseek-harness-claude-code-risk-inspection.md) — wquguru lists investigating Claude Code's risk controls among DeepSeek Harness uses; 95%/5% describes personal tool usage, not bypass or research success rates. **[Other AI-assisted work · Needs verification]**
 - [A Philippine banana website: Codex and REA study reference sites](cases/en/philippine-banana-codex-rea-website.md) — aFuJiyosn reports using Codex and REA to study multiple websites and turn them into a Philippine-grown banana site; neither references nor an accessible build are provided. **[REA · In progress]**
 - [Malware unpacking: reported Claude refusals and unstable older-model output](cases/en/malware-unpacking-claude-daybreak-refusal.md) — shotgunner101 reports downgrades and refusals when requesting a memory-dump module for malware unpacking, followed by crashes with an older model; no completed unpacker is established. **[Other AI-assisted work · Needs verification]**
@@ -714,6 +719,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Xiaomi exercise calorie accumulation: a report of DeepSeek investigation into repeat counting on refresh](cases/en/xiaomi-motion-deepseek-calorie-refresh-report.md) — LanzhiAI relays a DeepSeek-assisted Xiaomi exercise-algorithm report: repeated refreshes in one minute allegedly turn 40 steps from 1.6 to 8.28 calories; follow-ups still await captures and full reproduction. **[Other AI-assisted work · Needs verification]**
 - [CUDA: a reader's challenge to try decompilation with an agent swarm](cases/en/cuda-agent-swarm-decompile-idea.md) — loveofdoing proposes having an agent swarm decompile CUDA, without identifying a component, version, compatibility goal or attempted implementation. **[Other AI-assisted work · Needs verification]**
 - [LLM4Decompile: specialized models recovering C functions from assembly or Ghidra output](cases/en/llm4decompile-assembly-c-models.md) — The public research generates C from Linux x86_64 assembly or refines Ghidra pseudocode; rates from different models and input conditions are not a universal recovery score. **[Other AI-assisted work · Analysis test]**
 - [A pre-buy contract check desk: Claude/Ghidra sell-path analysis and a corrected proxy flag](cases/en/claude-ghidra-contract-rug-check-desk.md) — A publisher describes bytecode-based buy gating and one corrected OpenZeppelin proxy false positive, without contract addresses, code or inspectable logs. **[Other AI-assisted work · Needs verification]**

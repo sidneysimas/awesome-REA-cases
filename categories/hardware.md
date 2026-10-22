@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Noir M1：REA与Opus研究Windows应用，在Mac增加手势的自述](../cases/noir-m1-rea-opus-mac-gestures.md) — ARES称用REA与Opus 5.5研究Noir M1仅有Windows版的配套应用，在Mac增加手势并报告可用；硬件类型、协议与兼容范围未核。 **[REA · 待验证]**
+- [热敏标签打印机：kiter称Claude研究BLE后可不用原App与品牌标签](../cases/kiter-claude-ble-label-printer.md) — kiter称Claude逆向BLE协议后可直接打印并使用第三方标签；父帖只确认低价热敏打印机背景，未提供型号或可复核驱动。 **[其他 AI 逆向 · 待验证]**
 - [PS5 内核研究：kuzi 用 Opus 5.5 做深度推理与反编译，额度耗尽后仍在进行](../cases/kuzi-ps5-opus-kernel-research.md) — kuzi称Opus 5.5支持14.00内核漏洞探测；父串确认PS5及14.00、14.10研究背景，但14.20用户态执行不等于内核突破。 **[其他 AI 逆向 · 进行中]**
 - [键盘灯光自然语言控制：chuplung 称 REA 与 Opus 用 Python 替代大型应用](../cases/chuplung-rea-opus-keyboard-lights.md) — chuplung称REA与Opus 5.5把512MB键盘灯光应用替换为15行Python，聊天即可设置暖暗模式；型号、代码与计时未核。 **[REA · 待验证]**
 - [Comcast 盒子强制更新：Grok 修复与 Claude 采 HAR 后停止的自述](../cases/comcast-box-grok-claude-update-report.md) — Tom Whitbread称Grok登录后解决Comcast盒子的问题，Claude做HAR研究后因规则停止；没有型号、修改方法或持续有效证据。 **[其他 AI 逆向 · 待验证]**
