@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [escrowhold 合约：Alvosec 用 AI Agent 调查无抵押托管记账与转出路径](../cases/escrowhold-ai-user2nego-attack-analysis.md) — Alvosec称逆向escrowhold后用AI调查攻击，认为user2nego记录未见抵押的大额代币，再由fillescrow转给调用方；尚无本合集链上复核。 **[其他 AI 逆向 · 待验证]**
+- [REA 的207个MCP工具：Fabio Makita报告Kimi-code加载受阻](../cases/rea-kimi-code-207-tool-loading-report.md) — Fabio称Claude Code、Codex与OpenCode/GLM可用，但Kimi-code因207工具加载失败；回复提出Claude延迟加载差异，均未在此复测。 **[REA · 分析测试]**
 - [Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅](../cases/xero-claude-codex-personal-rebuild.md) — Peter称为自用逆向Xero并取消多年订阅，动机是涨价与小企业使用价值；没有公开功能、代码或对照结果。 **[其他 AI 逆向 · 待验证]**
 - [REA 加 Jev：按发现的风险分数决定是否重新取证的工作流 idea](../cases/jev-rea-finding-risk-loop-idea.md) — Jey提出把REA发现交给Jev评分，超过0.5则重查；98条通用Agent轨迹指标没有证明它在逆向中可可靠纠错。 **[REA · 待验证]**
 - [LayerFS：为 Unity 逆向材料节省多 Agent 工作区存储的转述](../cases/layerfs-unity-agent-workspaces.md) — 两帖介绍独立工作区与去重快照，转述8天Unity逆向材料400G到33G；它是研究基础设施，不是游戏恢复率。 **[未确认使用 REA · 相关项目]**
@@ -203,7 +205,7 @@
 - [GTM 工具：用 REA 构建线索与邮件营销工作流](../cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
 - [茶叶出海网站：REA 辅助的本地重建报告](../cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
 - [iTerm：借助 REA 规格实现阿拉伯语文本绘制](../cases/arabic-terminal-rendering.md) — 作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。 **[REA · 待验证]**
-- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 多帖描述用 REA 与 Claude 观察 Bloomberg 风格工作流，再接独立数据源；新增功能代码、面板联动与回测自述仍未验证。 **[REA · 待验证]**
+- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 多帖描述用REA与Claude研究Bloomberg风格工作流并接独立数据；10月22日另有接入Kronos概率预测的具体提案，均未证明等价或交易优势。 **[REA · 待验证]**
 - [闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件](../cases/closed-agent-pi-plugin.md) — 作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。 **[REA · 待验证]**
 - [ChatGPT App：用 REA 分析并为聊天窗口添加渐变背景](../cases/chatgpt-app-gradient-background.md) — 作者称用 ChatGPT 与 REA 分析 Electron 应用，并为右侧聊天窗口注入渐变背景。 **[REA · 待验证]**
 - [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](../cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**

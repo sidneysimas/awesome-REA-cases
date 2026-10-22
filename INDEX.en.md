@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**725 entries**, organized by use case, without a Top-N or popularity threshold.
+**729 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (162)
-- [Hardware and interoperability](categories/en/hardware.md) (183)
-- [Applications and clients](categories/en/apps.md) (319)
+- [Hardware and interoperability](categories/en/hardware.md) (185)
+- [Applications and clients](categories/en/apps.md) (321)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (61)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -193,6 +193,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Jake's Samsung TV cleanup: a Codex report and a critique of the U8000F evidence](cases/en/jake-samsung-u8000f-codex-cleanup-report.md) — Jake reports Codex-assisted TV cleanup; a deferred-review comment identifies a 2025 U8000F and says the repository does not establish a threefold speedup or screenshot and audio exfiltration. **[Other AI-assisted work · Needs verification]**
+- [Bare-metal STM32 firmware: an idea for REA-assisted Ghidra tracing of LEDs and registers](cases/en/stm32-rea-ghidra-led-workflow-idea.md) — 9flx uses an STM32 tutorial video to propose REA-assisted firmware investigation, covering Ghidra, SVD register mapping and LED logic without demonstrating AI completion or $100,000 savings. **[REA · Needs verification]**
 - [Mechanical-keyboard configuration through WebHID: João's REA, Claude and Ghidra replacement](cases/en/scriptjohn-keyboard-rea-webhid.md) — João reports replacing a poor Windows-only keyboard utility with browser-based WebHID and extra features, without identifying the model, source or compatibility tests. **[REA · Needs verification]**
 - [Six Claude agents on a Samsung TV: Opus-assisted local control and a ChatGPT voice trigger](cases/en/samsung-opus-chatgpt-agent-wall.md) — Codez reports opening a laptop-hosted agent wall through Samsung's local remote API; the TV displays it rather than running the agents, and no general Tizen vulnerability is established. **[Other AI-assisted work · Needs verification]**
 - [A recorder into a managed 16-port PoE switch: Michał's REA/Claude Code project](cases/en/michalgajeno-recorder-managed-poe-switch.md) — Michał says he is investigating a recorder to turn it into a managed 16-port PoE switch, without reporting completion or identifying the device model. **[REA · In progress]**
@@ -379,6 +381,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [escrowhold: Alvosec reports AI-assisted investigation of unbacked escrow accounting and transfers](cases/en/escrowhold-ai-user2nego-attack-analysis.md) — Alvosec reports reverse-engineering escrowhold and using AI agents to investigate user2nego recording apparently uncollateralized token amounts before fillescrow transfers them to the caller; no on-chain reproduction here. **[Other AI-assisted work · Needs verification]**
+- [REA's 207 MCP tools: Fabio Makita reports a Kimi-code loading failure](cases/en/rea-kimi-code-207-tool-loading-report.md) — Fabio reports Claude Code, Codex and OpenCode/GLM working while Kimi-code fails loading 207 REA tools; a reply suggests Claude's deferred loading as a difference, without reproduction here. **[REA · Analysis test]**
 - [A personal Xero replacement: Peter Wilcock reports Claude/Codex reverse engineering and cancellation](cases/en/xero-claude-codex-personal-rebuild.md) — Peter says he reverse-engineered Xero for personal use and cancelled a longstanding subscription because of price increases and poor small-business value; no features, code or comparisons are public. **[Other AI-assisted work · Needs verification]**
 - [REA plus Jev: an idea for sending high-risk findings back for more evidence](cases/en/jev-rea-finding-risk-loop-idea.md) — Jey proposes scoring REA findings with Jev and rechecking those above 0.5; metrics on 98 general agent traces do not establish reliable reverse-engineering correction. **[REA · Needs verification]**
 - [LayerFS: reported storage savings for multi-agent Unity reverse-engineering workspaces](cases/en/layerfs-unity-agent-workspaces.md) — Two posts describe isolated workspaces and deduplicated snapshots, repeating a 400G-to-33G claim for eight days of Unity artifacts; this is infrastructure, not a game-recovery score. **[REA use unconfirmed · Related project]**
@@ -580,7 +584,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [GTM tool: a reported REA-assisted lead and email workflow](cases/en/rea-gtm-tool.md) — The author says REA was used to build a GTM tool for lead generation, management and email campaigns; implementation and operation are unverified. **[REA · Needs verification]**
 - [Tea-export website: reported REA-assisted rebuild](cases/en/tea-site-rea-rebuild-report.md) — The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified. **[REA · Needs verification]**
 - [iTerm: Arabic text rendering informed by REA](cases/en/arabic-terminal-rendering.md) — The poster says REA was used to analyze iTerm, then specifications guided a separate implementation tested on their device; the result is unverified. **[REA · Needs verification]**
-- [Bloomberg-style research terminal: a reported REA/Claude build](cases/en/bloomberg-style-research-terminal.md) — Posts describe observing Bloomberg-style workflows with REA and Claude before connecting independent data; new claims about function codes, linked panels and backtesting remain unverified. **[REA · Needs verification]**
+- [Bloomberg-style research terminal: a reported REA/Claude build](cases/en/bloomberg-style-research-terminal.md) — Posts describe REA/Claude study of Bloomberg-style workflows with independent data; an October 22 proposal adds Kronos probabilistic forecasts, without demonstrating equivalence or a trading advantage. **[REA · Needs verification]**
 - [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/en/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
 - [ChatGPT app: a reported REA-assisted gradient-background modification](cases/en/chatgpt-app-gradient-background.md) — The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified. **[REA · Needs verification]**
 - [Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study](cases/en/ledger-reborn-accounting-app.md) — A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews. **[REA · Related project]**

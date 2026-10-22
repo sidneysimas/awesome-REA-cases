@@ -15,6 +15,70 @@
     }
   },
   {
+    "id": "jake-samsung-u8000f-codex-cleanup-report",
+    "title": "Jake 的 Samsung 电视清理：Codex 自述与 U8000F 证据边界评论",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Jake称Codex帮助清理电视；补审评论将目标指为2025 U8000F，并指出三倍提速、截图和音频外传未由仓库证据建立。",
+    "description": "2026年10月22日03:47（北京时间）的待补审候选中，Kaya AI Coding Terminal（@jacksunny18）逐项比较电视清理宣传与其声称读到的仓库。此次补读父串确认被回复者是Jake Stevens（@stake_jevens）：10月21日18:21，他称用Codex移除了Samsung电视的负担，Claude拒绝root，并把关闭截图式识别、HDMI识别和Bixby功能描述成三倍提速。父帖为候选上下文补证，不是本窗口新抓取。\n\n评论将仓库设备指为2025 U8000F，称文档记录约900 MiB对此前约497 MiB可用内存，但运行时间与工作负载不同，不是受控延迟基准；Netflix输入延迟改善尚未确认。评论还引用文档说明：没有解密流量审计，未证明任意截图、持续房间录音或摄像头外传，其他设备的2024年ACR研究也不能直接证明这台电视的行为。上述型号、数值与文档内容均归因于评论者的阅读，不能冒充本合集已读原仓库或测过电视。\n\n评论者还称对比了chris-ritsen/samsung-tv-root指定提交的五个被引入模块，四个字节相同，一个仅增加了精确错误条件下的运行时路径处理；认为来源记录准确，并指出应先检查型号、固件与运行时兼容性，而非从开发模式直接开始。评论明确没有运行工具、没有Samsung电视、没有看速度截图。它对宣传的纠偏有阅读价值，但不是独立硬件复现。\n\n本次原帖与父串补查确认人物和回复关系，没有取得该清理仓库URL或执行代码。项目结果仍为未验证自述，不将三倍提速或监控指控写成事实，也不与Cutter的无型号Samsung清理记录合并。REA未被明确确认。",
+    "sources": [{"label": "待补审候选：Kaya逐项比较U8000F仓库与宣传的评论", "url": "https://x.com/i/status/2112994238782914876"}, {"label": "补充父帖：Jake Stevens称用Codex清理Samsung电视", "url": "https://x.com/i/status/2112851884901794284"}],
+    "snapshot_date": "2026-10-22", "metadata": ["候选原窗口：2026-10-22 00:00至04:00；评论更新03:47:38；父帖原始日期2026-10-21 18:21:58，均为北京时间。"],
+    "en": {
+      "title": "Jake's Samsung TV cleanup: a Codex report and a critique of the U8000F evidence",
+      "summary": "Jake reports Codex-assisted TV cleanup; a deferred-review comment identifies a 2025 U8000F and says the repository does not establish a threefold speedup or screenshot and audio exfiltration.",
+      "description": "In a deferred candidate posted at 03:47 Beijing time on October 22, 2026, Kaya AI Coding Terminal (@jacksunny18) compares TV-cleanup publicity with a repository the commenter says they read. A supplementary parent-thread read confirms the recipient is Jake Stevens (@stake_jevens): at 18:21 on October 21 he said Codex helped remove Samsung TV bloat, that Claude refused to root it, and described disabling screenshot-style recognition, HDMI recognition and Bixby features as making the TV three times faster. The parent is supporting context, not a newly collected candidate from this window.\n\nThe commenter identifies the repository's device as a 2025 U8000F and says its documentation records about 900 MiB available versus about 497 MiB previously, under different uptime and workload conditions rather than a controlled latency benchmark. Improvement in Netflix input lag was not confirmed. The comment also quotes documentation saying there was no decrypted traffic audit or demonstration of arbitrary screenshots, continuous room-audio recording or camera exfiltration. A 2024 ACR study on other devices cannot directly establish this TV's behavior. The model, figures and document contents are attributed to the commenter's reading, not represented as this collection having inspected the original repository or tested the TV.\n\nThe commenter further reports comparing five vendored modules against a specified chris-ritsen/samsung-tv-root revision: four were byte-identical and one only added runtime-path handling for an exact error condition. They consider the provenance accurate and recommend checking model, firmware and runtime compatibility before proceeding, rather than starting directly with developer mode. They explicitly did not run the tools, own a Samsung TV or inspect the speed screenshot. The corrective comparison is useful reading, not independent hardware reproduction.\n\nThe original-post and parent-thread reads establish people and the reply relationship. The cleanup repository URL was not obtained and no code was executed. Results remain unverified author reports: a threefold speedup and surveillance allegations are not stated as facts. This is not merged with Cutter's model-unspecified Samsung cleanup case. REA use is not explicitly confirmed.",
+      "metadata": ["Original candidate window: October 22, 2026, 00:00-04:00; comment update: 03:47:38; parent originally posted October 21, 2026, 18:21:58, all Beijing time."],
+      "source_labels": ["Deferred candidate: Kaya's comparison of U8000F repository evidence and publicity", "Supplementary parent: Jake Stevens reports Codex-assisted Samsung TV cleanup"]
+    }
+  },
+  {
+    "id": "stm32-rea-ghidra-led-workflow-idea",
+    "title": "STM32 裸机固件：用 REA 辅助 Ghidra 追踪 LED 与寄存器的工作流 idea",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "9flx以STM32教学视频说明可让REA辅助陌生固件调查；时间轴涵盖Ghidra、SVD寄存器映射与LED逻辑，没有证明AI已完成挑战或节省10万美元。",
+    "description": "2026年10月22日04:36（北京时间），9flx（@flx5522）以STM32微控制器裸机固件的视频为背景，提出给AI Agent接上Ghidra，让REA帮助调查不熟悉的固件，而不是猜测代码行为。具体目标是从原始字节、指令与硬件地址理解程序，追出LED闪烁逻辑，再分析第二个固件挑战。\n\n帖子给出视频时间轴：00:00介绍裸机固件，03:30载入Ghidra，05:30用SVD-Loader识别硬件寄存器，07:00找LED代码，08:00进入第二挑战，12:00跟踪求解逻辑。它将这些步骤称为REA可以帮助的工作流，没有给出Agent调用记录、模型输出、具体STM32型号、固件文件或挑战答案。因此保留为具体研究idea，不把视频中的手工分析自动归给AI，也不声称挑战已由REA解决。\n\n开头可能为机器人公司节省10万美元的说法没有工时、账单或对照支持，不作为实际成本结果。补查原帖只用于确认作者与正文；未执行固件、安装工具或独立复现视频。",
+    "sources": [{"label": "9flx：STM32、Ghidra与REA辅助固件调查提案及视频时间轴", "url": "https://x.com/i/status/2113006504848593241"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T04:36:23+08:00；工作流idea，不是AI完成固件挑战的验证。"],
+    "en": {
+      "title": "Bare-metal STM32 firmware: an idea for REA-assisted Ghidra tracing of LEDs and registers",
+      "summary": "9flx uses an STM32 tutorial video to propose REA-assisted firmware investigation, covering Ghidra, SVD register mapping and LED logic without demonstrating AI completion or $100,000 savings.",
+      "description": "At 04:36 Beijing time on October 22, 2026, 9flx (@flx5522) uses a video about bare-metal STM32 microcontroller firmware to propose giving an AI agent Ghidra access through REA to investigate unfamiliar firmware rather than guess its behavior. The concrete goal is understanding a program from raw bytes, instructions and hardware addresses, tracing the LED-blinking logic and then investigating a second firmware challenge.\n\nThe post gives this video timeline: 00:00 introduces bare-metal firmware; 03:30 loads it into Ghidra; 05:30 identifies hardware registers with SVD-Loader; 07:00 finds LED code; 08:00 starts a second challenge; and 12:00 traces the solving logic. It describes these as steps REA could help with, without agent-call records, model output, an exact STM32 model, firmware files or challenge answers. This is retained as a concrete research idea, not evidence that the video's manual analysis was performed by AI or that REA solved the challenges.\n\nThe opening suggestion of $100,000 in savings for robotics companies has no supporting hours, bills or comparison and is not an actual cost result. A supplementary read of the original post confirmed authorship and text only. No firmware was executed, tools installed or video independently reproduced.",
+      "metadata": ["Source update: 2026-10-22T04:36:23+08:00; a workflow idea, not verified AI completion of a firmware challenge."],
+      "source_labels": ["9flx's STM32, Ghidra and REA-assisted firmware investigation proposal and video timeline"]
+    }
+  },
+  {
+    "id": "escrowhold-ai-user2nego-attack-analysis",
+    "title": "escrowhold 合约：Alvosec 用 AI Agent 调查无抵押托管记账与转出路径",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "Alvosec称逆向escrowhold后用AI调查攻击，认为user2nego记录未见抵押的大额代币，再由fillescrow转给调用方；尚无本合集链上复核。",
+    "description": "2026年10月22日05:15（北京时间），Alvosec（@alvosec）说自己逆向escrowhold合约，并让AI Agent调查近期攻击。其报告的具体问题是user2nego路径把大额代币数量记入托管，却看不到相应抵押支持，然后通过fillescrow转给调用方；作者称交易与这一关键缺陷相符。目标是解释攻击资金路径，而不是提出另一个泛用合约扫描器。\n\n原帖有图片与引用链接，但已取得的文字没有链名、合约地址、交易哈希、模型名称、Agent分工、反编译代码或完整复现。保留作者的without apparent collateral限定，不把未见抵押直接升级为已独立确认的可利用漏洞，也不补写损失金额、受害者身份或资金归属。REA未被明确提及。\n\n本次补查原帖确认作者和正文，未访问账户、发交易、调用目标合约或执行下载代码。该条是作者的事后分析报告，不是本合集验证攻击链或对特定平台的安全定论。",
+    "sources": [{"label": "Alvosec：escrowhold逆向与AI辅助攻击调查自述", "url": "https://x.com/i/status/2113016447983337622"}],
+    "snapshot_date": "2026-10-22", "metadata": ["来源更新：2026-10-22T05:15:53+08:00；候选快照13赞、362浏览、4转发，不代表漏洞已核实。"],
+    "en": {
+      "title": "escrowhold: Alvosec reports AI-assisted investigation of unbacked escrow accounting and transfers",
+      "summary": "Alvosec reports reverse-engineering escrowhold and using AI agents to investigate user2nego recording apparently uncollateralized token amounts before fillescrow transfers them to the caller; no on-chain reproduction here.",
+      "description": "At 05:15 Beijing time on October 22, 2026, Alvosec (@alvosec) says he reverse-engineered the escrowhold contract and used AI agents to investigate a recent attack. The specific reported issue is that user2nego recorded massive token amounts in escrow without apparent collateral backing, after which fillescrow transferred them to the caller. The author says the transaction matches this critical flaw. The goal is explaining an attack's fund-transfer path, rather than proposing another generic contract scanner.\n\nThe original post includes an image and a quoted link, but the available text gives no chain, contract address, transaction hash, model, division of agent work, decompiled code or complete reproduction. The author's qualification, without apparent collateral, is preserved: an absence of visible backing is not upgraded to an independently confirmed exploitable vulnerability. Loss amounts, victim identities and ownership of funds are not inferred. REA is not explicitly named.\n\nA supplementary read confirmed the original post's authorship and text. No accounts were accessed, transactions sent, target contracts called or downloaded code executed. This is the author's retrospective analysis report, not this collection's validation of an attack chain or a security verdict on a particular platform.",
+      "metadata": ["Source update: 2026-10-22T05:15:53+08:00; candidate snapshot: 13 likes, 362 views, 4 reposts, not vulnerability validation."],
+      "source_labels": ["Alvosec's escrowhold reverse-engineering and AI-assisted attack investigation report"]
+    }
+  },
+  {
+    "id": "rea-kimi-code-207-tool-loading-report",
+    "title": "REA 的207个MCP工具：Fabio Makita报告Kimi-code加载受阻",
+    "category": "apps", "rea": "REA", "status": "analysis-test",
+    "summary": "Fabio称Claude Code、Codex与OpenCode/GLM可用，但Kimi-code因207工具加载失败；回复提出Claude延迟加载差异，均未在此复测。",
+    "description": "2026年10月22日06:32（北京时间），Fabio Makita（@AkitaOnRails）报告REA接入不同客户端的差异：Claude Code、Codex、OpenCode/GLM正常，只有Kimi-code因REA MCP要加载207个工具而阻塞。他说自己因此在Kimi配置中禁用REA。这是具体工具接入受阻的经验报告，不是研究某个闭源应用已经成功的声明。\n\n07:23的候选回复补充说Claude Code默认使用tool search，开始只载入工具名、需要时再取定义，并建议用/context看REA占用。该回复可解释为何客户端表现可能不同，但没有在本合集复测；不能据此断言Kimi存在固定207工具上限，或所有版本的其他客户端均兼容。\n\n原帖没有客户端版本、REA版本、错误全文、受控最小复现或修复提交。补查原帖确认Fabio身份与措辞，不把配置禁用当作修复底层问题。未更改任何本地或用户全局配置，也未安装目标依赖。",
+    "sources": [{"label": "Fabio Makita：REA的207工具与Kimi-code加载失败报告", "url": "https://x.com/i/status/2113035756797038878"}, {"label": "候选回复：Claude Code tool search延迟加载与/context观察建议", "url": "https://x.com/i/status/2113048507447906540"}],
+    "snapshot_date": "2026-10-22", "metadata": ["主帖来源更新：2026-10-22T06:32:37+08:00；回复更新07:23:17；候选主帖99赞、4206浏览、2转发。"],
+    "en": {
+      "title": "REA's 207 MCP tools: Fabio Makita reports a Kimi-code loading failure",
+      "summary": "Fabio reports Claude Code, Codex and OpenCode/GLM working while Kimi-code fails loading 207 REA tools; a reply suggests Claude's deferred loading as a difference, without reproduction here.",
+      "description": "At 06:32 Beijing time on October 22, 2026, Fabio Makita (@AkitaOnRails) reports different outcomes connecting REA to clients: Claude Code, Codex and OpenCode/GLM work, while Kimi-code blocks when the REA MCP server tries to load 207 tools. He says he disabled REA in the Kimi configuration as a result. This is a concrete tool-integration failure report, not a claim of successful analysis of a particular closed application.\n\nA candidate reply at 07:23 says Claude Code enables tool search by default, initially loading tool names and fetching definitions when required, and suggests /context to inspect REA's context use. This may help explain differing client behavior, but was not retested by this collection. It does not establish a fixed 207-tool limit in Kimi or compatibility across every version of the other clients.\n\nThe original post supplies no client or REA versions, complete error text, controlled minimal reproduction or fixing commit. A supplementary read confirmed Fabio's identity and wording. Disabling the integration is not treated as a fix to the underlying problem. No local or global user configuration was changed and no target dependencies were installed.",
+      "metadata": ["Main source update: 2026-10-22T06:32:37+08:00; reply update: 07:23:17; main candidate snapshot: 99 likes, 4,206 views, 2 reposts."],
+      "source_labels": ["Fabio Makita's report of REA's 207 tools and Kimi-code loading failure", "Candidate reply on Claude Code's deferred tool search and inspecting /context"]
+    }
+  },
+  {
     "id": "xero-claude-codex-personal-rebuild",
     "title": "Xero 自用替代：Peter Wilcock 称用 Claude 与 Codex 逆向后取消订阅",
     "category": "apps", "rea": "other-ai", "status": "unverified",
@@ -8646,8 +8710,8 @@
     "category": "apps",
     "status": "unverified",
     "rea": "REA",
-    "summary": "多帖描述用 REA 与 Claude 观察 Bloomberg 风格工作流，再接独立数据源；新增功能代码、面板联动与回测自述仍未验证。",
-    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。\n\n10月16日另一宣传帖声称18岁用户用REA与Opus在一晚重建年费32,000美元终端的告警子集：输入股票与币种、连接Telegram，每个工作日8:00查持仓异动与原因，附来源和时间发送，称一个问题约读23个来源。这一新用途证据按同目标补充，并非确认与原作者同一个实现。宣传帖虽说追踪真实App、写规格、零复制，却又从未具名市场App选模型开始，缺原作者、源码、网络证据与测试；无法确认逆向与普通AI市场助手的分界。年龄、年费、工时、来源数均仅为该帖主张，不证明取得专有数据或交易优势。\n\n10月17日06:26，@sopersone 称一个周末从外部研究功能代码串联、Launchpad面板通信、股票到基本面与期权链切换，再用REA与Opus规格接自有报价、新闻、经济日历、收益率曲线、财务与期权数据；还称加入跨资产筛选语言与含费用、滑点、回撤的回测并逐功能对照。约30,000美元年费、工时与测试均为该作者说法，未确认与前帖同一实现，未取得代码或对照记录，不确认Bloomberg等价。",
+    "summary": "多帖描述用REA与Claude研究Bloomberg风格工作流并接独立数据；10月22日另有接入Kronos概率预测的具体提案，均未证明等价或交易优势。",
+    "description": "发帖者第一人称报告使用 REA MCP 与 Claude Opus 5.5 构建 Bloomberg 风格的金融研究工作站。帖子列出的流程包括观察公开可见的金融仪表板、图表与工作流，设计报价、观察列表、财务报表、新闻、图表和组合分析等功能，接入免费市场数据 API，并制作回测与分析功能。作者明确说没有解锁 Bloomberg 专有数据，而是使用独立数据来源。现有证据是作者的完成自述及其构建指南，没有提供工作站代码、可访问成品或测试记录；故保留为待验证报告，不据此断言已完成全部列举功能或与 Bloomberg 等价。REA 使用是帖子直接自述，本合集未独立复测。\n\n10月16日另一宣传帖声称18岁用户用REA与Opus在一晚重建年费32,000美元终端的告警子集：输入股票与币种、连接Telegram，每个工作日8:00查持仓异动与原因，附来源和时间发送，称一个问题约读23个来源。这一新用途证据按同目标补充，并非确认与原作者同一个实现。宣传帖虽说追踪真实App、写规格、零复制，却又从未具名市场App选模型开始，缺原作者、源码、网络证据与测试；无法确认逆向与普通AI市场助手的分界。年龄、年费、工时、来源数均仅为该帖主张，不证明取得专有数据或交易优势。\n\n10月17日06:26，@sopersone 称一个周末从外部研究功能代码串联、Launchpad面板通信、股票到基本面与期权链切换，再用REA与Opus规格接自有报价、新闻、经济日历、收益率曲线、财务与期权数据；还称加入跨资产筛选语言与含费用、滑点、回撤的回测并逐功能对照。约30,000美元年费、工时与测试均为该作者说法，未确认与前帖同一实现，未取得代码或对照记录，不确认Bloomberg等价。\n\n10月22日07:12（北京时间）的候选另提出REA、Claude Code与Kronos组合：先映射专业终端的报价、图表、筛选与新闻界面，再接公共市场API，加载其所称24.7M参数的Kronos-small，以512根历史K线预测后24根，采样100条价格路径显示分布，并要求在使用真金白银前计入真实费用回测。这是增加概率预测层的具体idea，不是确认与旧帖相同实现。帖子没有终端代码、模型评估或回测结果；模型大小和输入输出设置只归于该帖，未核查Kronos仓库或执行预测。免费、Bloomberg式界面与预测曲线均不意味着得到专有数据、收益保证或完整终端等价。",
     "sources": [
       {
         "label": "作者关于 REA 辅助研究终端的原帖（第一手自述）",
@@ -8660,31 +8724,38 @@
       {
         "label": "10月17日功能代码、面板联动与自有数据源的构建自述",
         "url": "https://x.com/i/status/2111222172698218781"
+      },
+      {
+        "label": "10月22日REA与Kronos概率预测终端提案（未确认同一实现）",
+        "url": "https://x.com/i/status/2113045887119184222"
       }
     ],
-    "snapshot_date": "2026-10-16",
+    "snapshot_date": "2026-10-22",
     "metadata": [
       "发帖时间：2026-10-14T02:58:43+08:00",
       "作者自述使用 REA MCP 与 Claude Opus 5.5；本合集未独立运行或核验功能。",
       "作者称使用免费、独立市场数据，未解锁 Bloomberg 专有数据。",
       "新增来源10月16日候选快照：8赞、32浏览；18岁、32,000美元年费、一晚与约23来源未核验。",
-      "10月17日新增外部工作流研究与回测自述，无可复核代码或对照记录；既有热度快照保留原日期。"
+      "10月17日新增外部工作流研究与回测自述，无可复核代码或对照记录；既有热度快照保留原日期。",
+      "10月22日来源更新07:12:52（北京时间）；Kronos提案候选快照5赞、245浏览、1转发，无预测或交易实测。"
     ],
     "en": {
       "title": "Bloomberg-style research terminal: a reported REA/Claude build",
-      "summary": "Posts describe observing Bloomberg-style workflows with REA and Claude before connecting independent data; new claims about function codes, linked panels and backtesting remain unverified.",
-      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.\n\nA separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.\n\nAt 06:26 on October 17, @sopersone reports a weekend spent externally studying function-code chaining, Launchpad panel communication and ticker-to-fundamentals/options navigation, then using REA/Opus specifications with owned feeds for quotes, news, economic calendars, yield curves, financials and options. They also claim cross-asset screening, backtesting with fees, slippage and drawdowns, and function-by-function comparisons. The roughly $30,000 annual fee, labor and testing are their claims. This is not confirmed as an earlier poster's implementation; no code or comparison records were obtained, and Bloomberg equivalence is unconfirmed.",
+      "summary": "Posts describe REA/Claude study of Bloomberg-style workflows with independent data; an October 22 proposal adds Kronos probabilistic forecasts, without demonstrating equivalence or a trading advantage.",
+      "description": "The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.\n\nA separate October 16 promotional post says an 18-year-old used REA and Opus to rebuild the alerts subset of a $32,000-per-year terminal in one evening: enter stocks and coins, connect Telegram, and receive weekday 8:00 reports of portfolio movements and reasons with sources and timestamps, allegedly reading around 23 sources for one question. This adds a use on the same target, not confirmation that it is the original author's implementation. Although the promotion claims tracing the real app, writing a specification and copying no code, it also starts with choosing a model in an unnamed market app. No original author, code, network evidence or tests are supplied, so actual reverse engineering cannot be distinguished from a generic AI market assistant. Age, annual fee, labor and source count remain solely that post's claims, not evidence of proprietary-data access or a trading advantage.\n\nAt 06:26 on October 17, @sopersone reports a weekend spent externally studying function-code chaining, Launchpad panel communication and ticker-to-fundamentals/options navigation, then using REA/Opus specifications with owned feeds for quotes, news, economic calendars, yield curves, financials and options. They also claim cross-asset screening, backtesting with fees, slippage and drawdowns, and function-by-function comparisons. The roughly $30,000 annual fee, labor and testing are their claims. This is not confirmed as an earlier poster's implementation; no code or comparison records were obtained, and Bloomberg equivalence is unconfirmed.\n\nA candidate posted at 07:12 Beijing time on October 22 proposes combining REA, Claude Code and Kronos: first map a professional terminal's quotes, charts, screeners and news interface, then connect public market APIs and load what the post calls the 24.7M-parameter Kronos-small. It proposes predicting the next 24 candles from 512 historical candles, sampling 100 price paths to display a distribution, and backtesting with realistic fees before using real capital. This is a concrete idea for a probabilistic-forecast layer, not confirmation of the same implementation as earlier posts. No terminal code, model evaluation or backtest results are provided. The model size and input/output settings are attributed solely to this post; the Kronos repository was not checked and predictions were not run. Free access, a Bloomberg-style interface and forecast curves do not imply proprietary-data access, guaranteed returns or full terminal equivalence.",
       "metadata": [
         "Posted: 2026-10-14T02:58:43+08:00",
         "Author reports using REA MCP and Claude Opus 5.5; this collection did not independently run or verify features.",
         "Author says free, independent market data was used, without unlocking Bloomberg's proprietary data.",
         "New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified.",
-        "October 17 adds claims of external workflow investigation and backtesting, without inspectable code or comparison records; existing engagement snapshots retain their original dates."
+        "October 17 adds claims of external workflow investigation and backtesting, without inspectable code or comparison records; existing engagement snapshots retain their original dates.",
+        "October 22 source update: 07:12:52 Beijing time; Kronos proposal candidate snapshot: 5 likes, 245 views, 1 repost; no measured forecasting or trading results."
       ],
       "source_labels": [
         "Author's original post on an REA-assisted research terminal (firsthand report)",
         "October 16 promotional alerts report, not confirmed as the same implementation",
-        "October 17 build account of function codes, linked panels and owned data feeds"
+        "October 17 build account of function codes, linked panels and owned data feeds",
+        "October 22 REA/Kronos probabilistic research-terminal proposal, not confirmed as the same implementation"
       ]
     }
   },

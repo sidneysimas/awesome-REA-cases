@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Jake 的 Samsung 电视清理：Codex 自述与 U8000F 证据边界评论](../cases/jake-samsung-u8000f-codex-cleanup-report.md) — Jake称Codex帮助清理电视；补审评论将目标指为2025 U8000F，并指出三倍提速、截图和音频外传未由仓库证据建立。 **[其他 AI 逆向 · 待验证]**
+- [STM32 裸机固件：用 REA 辅助 Ghidra 追踪 LED 与寄存器的工作流 idea](../cases/stm32-rea-ghidra-led-workflow-idea.md) — 9flx以STM32教学视频说明可让REA辅助陌生固件调查；时间轴涵盖Ghidra、SVD寄存器映射与LED逻辑，没有证明AI已完成挑战或节省10万美元。 **[REA · 待验证]**
 - [机械键盘配置到 WebHID：João 用 REA、Claude 与 Ghidra 替代 Windows 软件](../cases/scriptjohn-keyboard-rea-webhid.md) — João称研究机械键盘仅Windows的配置软件，改用浏览器WebHID并增加功能；未给型号、源码或兼容测试。 **[REA · 待验证]**
 - [Samsung 电视显示六个 Claude Agent：Opus 研究本地遥控，ChatGPT 语音开墙](../cases/samsung-opus-chatgpt-agent-wall.md) — Codez报告以Samsung本地遥控API打开笔记本上的Agent网页；电视是显示端，不是运行六个Agent，也没有证明通用Tizen漏洞。 **[其他 AI 逆向 · 待验证]**
 - [录像机改16口可管理PoE交换机：Michał 的 REA／Claude Code 改造计划](../cases/michalgajeno-recorder-managed-poe-switch.md) — Michał说正在研究一台录像机，想把它改成16口可管理PoE交换机；没有报告完成或给出设备型号。 **[REA · 进行中]**
