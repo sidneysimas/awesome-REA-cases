@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](../cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**
+- [H3C NX30 Pro：AI审读既有配置工具、移植Python并协助刷机的自述](../cases/h3c-nx30-pro-ai-openwrt-config-tool-report.md) — 作者称AI沿ArtiSheng和茶栗的既有研究，阅读工具、把Rust工具移植为Python并改配置，最终在V100R010设备看到OpenWrt 25.12.6界面；未提供原始日志或独立验证。 **[其他 AI 逆向 · 待验证]**
 - [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](../cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
 - [小米手环健康数据：AI研究直连自有应用或Notion的导出idea](../cases/xiaomi-band-ai-direct-health-export-idea.md) — 读者请求Bot创建任务，希望通过AI逆向让手环健康数据不经厂商平台直接进入自有应用或Notion；尚未决定接收端，无实现。 **[未确认使用 REA · 待验证]**
 - [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](../cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**

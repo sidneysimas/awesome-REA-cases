@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](../cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](../cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**
 - [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](../cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**
 - [社交媒体爆款概率：Alin A提出REA研究推荐算法后放弃的想法](../cases/social-media-viral-probability-rea-abandoned-idea.md) — Alin A设想研究推荐算法、提取爆款概率模型并循环出稿涨粉，但明确作罢；没有指定平台、数据或预测结果。 **[REA · 待验证]**

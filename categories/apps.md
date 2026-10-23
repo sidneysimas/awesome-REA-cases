@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [ARTEX：Seongsu Park报告攻击活动使用AI辅助研究Android应用漏洞](../cases/artex-ai-android-vulnerability-campaign-report.md) — 研究者Seongsu Park称ARTEX活动除韩国银行外还面向多个国家与行业，包含逆向Android应用寻找漏洞；这是防御性调查报告，不是本合集验证的利用或复现。 **[其他 AI 逆向 · 待验证]**
+- [Amp Android客户端：Ben Kraus用REA为Trifold准备应用](../cases/ben-kraus-amp-android-trifold-rea.md) — Ben Kraus称正在用REA制作Amp的Android应用，以支持自己的Trifold；尚无实现、功能对照或测试结果。 **[REA · 进行中]**
 - [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](../cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**
 - [World Monitor与REA：六Agent纸上交易终端的构建idea](../cases/world-monitor-rea-paper-trading-terminal-idea.md) — 帖子建议用REA研究专业终端的图表等功能，接World Monitor事件数据与六个Agent，最终只向Alpaca模拟账户下单；无实现、预测评估或收益证据。 **[REA · 待验证]**
 - [Picnic与open banking：用REA研究应用以替代聚合服务的读者idea](../cases/picnic-open-banking-rea-replacement-idea.md) — 葡语回复设想在open banking下一阶段研究对方应用及其他应用，使Picnic服务不再必要；未给接口、规格或实现。 **[REA · 待验证]**
@@ -11,7 +13,7 @@
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](../cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](../cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
 - [搜索框重建：mai报告四个Claude Code Agent的观察、规格、隔离实现与对照测试](../cases/mai-rea-four-agent-search-bar-rebuild.md) — mai称四个Agent以REA工作流在4分52秒重建一个搜索框，18项对照从64%到100%；目标应用、测试和代码未公开核实，24项观察仍有3项未知。 **[REA · 待验证]**
-- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](../cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，éric建议REA研究，Rishi Shah呼吁Codex Agent帮助社区延续浏览器；目前只是保存idea，没有已开始重建、源码或安全维护能力的证据。 **[REA · 待验证]**
+- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](../cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。 **[REA · 待验证]**
 - [链上聚类图：Capslock报告REA与Claude用公开数据重建单HTML可视化](../cases/capslock-rea-public-chain-cluster-map.md) — Capslock称跳过付费接口，以公开链上数据重做月费499美元工具的聚类图，约14秒；同作者提示词限定为持有人及转账数据和单HTML，不证明整个收费产品已被替代。 **[REA · 待验证]**
 - [Telegram交易机器人：cypher pepe报告Claude Code静态检查发现剪贴板外发](../cases/cypher-pepe-claude-sniper-bot-static-report.md) — 作者称未运行匿名sniper bot，而用Claude Code反编译检查网络、文件与沙箱分支，70秒报告提示钱包路径上报及每30分钟剪贴板外发；未提供样本或报告，不能确认恶意行为与源码差异。 **[其他 AI 逆向 · 待验证]**
 - [春秋的Android MCP框架：用Grok Bot研究微信，准备让Agent操作手机应用](../cases/chunqiu-android-mcp-grok-wechat-research.md) — 春秋自称搭建Android MCP框架，让Grok Bot分析手机应用，当前展示微信，计划将订餐、酒店、机票及比价交给AI；未公开框架或可核测试，不把所有App内存透明视为已实现。 **[其他 AI 逆向 · 进行中]**

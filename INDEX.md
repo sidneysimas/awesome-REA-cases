@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **785 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **790 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（172）
-- [硬件与设备互通](categories/hardware.md)（204）
-- [应用与客户端](categories/apps.md)（343）
-- [算法与功能重建](categories/algorithms.md)（66）
+- [硬件与设备互通](categories/hardware.md)（206）
+- [应用与客户端](categories/apps.md)（345）
+- [算法与功能重建](categories/algorithms.md)（67）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -201,6 +201,8 @@
 
 ### 硬件与设备互通
 
+- [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**
+- [H3C NX30 Pro：AI审读既有配置工具、移植Python并协助刷机的自述](cases/h3c-nx30-pro-ai-openwrt-config-tool-report.md) — 作者称AI沿ArtiSheng和茶栗的既有研究，阅读工具、把Rust工具移植为Python并改配置，最终在V100R010设备看到OpenWrt 25.12.6界面；未提供原始日志或独立验证。 **[其他 AI 逆向 · 待验证]**
 - [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
 - [小米手环健康数据：AI研究直连自有应用或Notion的导出idea](cases/xiaomi-band-ai-direct-health-export-idea.md) — 读者请求Bot创建任务，希望通过AI逆向让手环健康数据不经厂商平台直接进入自有应用或Notion；尚未决定接收端，无实现。 **[未确认使用 REA · 待验证]**
 - [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**
@@ -408,6 +410,8 @@
 
 ### 应用与客户端
 
+- [ARTEX：Seongsu Park报告攻击活动使用AI辅助研究Android应用漏洞](cases/artex-ai-android-vulnerability-campaign-report.md) — 研究者Seongsu Park称ARTEX活动除韩国银行外还面向多个国家与行业，包含逆向Android应用寻找漏洞；这是防御性调查报告，不是本合集验证的利用或复现。 **[其他 AI 逆向 · 待验证]**
+- [Amp Android客户端：Ben Kraus用REA为Trifold准备应用](cases/ben-kraus-amp-android-trifold-rea.md) — Ben Kraus称正在用REA制作Amp的Android应用，以支持自己的Trifold；尚无实现、功能对照或测试结果。 **[REA · 进行中]**
 - [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**
 - [World Monitor与REA：六Agent纸上交易终端的构建idea](cases/world-monitor-rea-paper-trading-terminal-idea.md) — 帖子建议用REA研究专业终端的图表等功能，接World Monitor事件数据与六个Agent，最终只向Alpaca模拟账户下单；无实现、预测评估或收益证据。 **[REA · 待验证]**
 - [Picnic与open banking：用REA研究应用以替代聚合服务的读者idea](cases/picnic-open-banking-rea-replacement-idea.md) — 葡语回复设想在open banking下一阶段研究对方应用及其他应用，使Picnic服务不再必要；未给接口、规格或实现。 **[REA · 待验证]**
@@ -417,7 +421,7 @@
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
 - [搜索框重建：mai报告四个Claude Code Agent的观察、规格、隔离实现与对照测试](cases/mai-rea-four-agent-search-bar-rebuild.md) — mai称四个Agent以REA工作流在4分52秒重建一个搜索框，18项对照从64%到100%；目标应用、测试和代码未公开核实，24项观察仍有3项未知。 **[REA · 待验证]**
-- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，éric建议REA研究，Rishi Shah呼吁Codex Agent帮助社区延续浏览器；目前只是保存idea，没有已开始重建、源码或安全维护能力的证据。 **[REA · 待验证]**
+- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。 **[REA · 待验证]**
 - [链上聚类图：Capslock报告REA与Claude用公开数据重建单HTML可视化](cases/capslock-rea-public-chain-cluster-map.md) — Capslock称跳过付费接口，以公开链上数据重做月费499美元工具的聚类图，约14秒；同作者提示词限定为持有人及转账数据和单HTML，不证明整个收费产品已被替代。 **[REA · 待验证]**
 - [Telegram交易机器人：cypher pepe报告Claude Code静态检查发现剪贴板外发](cases/cypher-pepe-claude-sniper-bot-static-report.md) — 作者称未运行匿名sniper bot，而用Claude Code反编译检查网络、文件与沙箱分支，70秒报告提示钱包路径上报及每30分钟剪贴板外发；未提供样本或报告，不能确认恶意行为与源码差异。 **[其他 AI 逆向 · 待验证]**
 - [春秋的Android MCP框架：用Grok Bot研究微信，准备让Agent操作手机应用](cases/chunqiu-android-mcp-grok-wechat-research.md) — 春秋自称搭建Android MCP框架，让Grok Bot分析手机应用，当前展示微信，计划将订餐、酒店、机票及比价交给AI；未公开框架或可核测试，不把所有App内存透明视为已实现。 **[其他 AI 逆向 · 进行中]**
@@ -754,6 +758,7 @@
 
 ### 算法与功能重建
 
+- [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**
 - [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**
 - [社交媒体爆款概率：Alin A提出REA研究推荐算法后放弃的想法](cases/social-media-viral-probability-rea-abandoned-idea.md) — Alin A设想研究推荐算法、提取爆款概率模型并循环出稿涨粉，但明确作罢；没有指定平台、数据或预测结果。 **[REA · 待验证]**
