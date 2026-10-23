@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](../cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**
+- [Switch 2到PS5：AI辅助静态重编译原生移植的条件式设想](../cases/switch2-ps5-ai-static-recompilation-idea.md) — 作者设想取得Switch 2游戏dump后，AI辅助逆向与静态重编译可能带来PS5原生移植；尚无具名游戏、工具链或运行结果。 **[其他 AI 逆向 · 待验证]**
 - [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](../cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**
 - [Star Wars Empire at War：Hayden报告Ghidra、REA与ChatGPT Astra辅助反编译](../cases/hayden-empire-at-war-rea-astra-decompilation.md) — Hayden称正在反编译《星球大战：帝国战争》的C++与Lua，使用Ghidra、REA及ChatGPT Astra Ultra，进度接近完成；未提供代码、匹配率或可玩验证。 **[REA · 进行中]**
 - [Icewind Dale 2增强版：读者希望用REA辅助研究的保存idea](../cases/icewind-dale2-rea-enhanced-edition-idea.md) — meaw.k询问REA等AI逆向工具是否能帮助《冰风谷2》推出增强版，并提及Beamdog；只是愿望，没有团队回应、分析或重制成果。 **[REA · 待验证]**

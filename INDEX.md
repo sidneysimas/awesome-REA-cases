@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **790 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **797 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（172）
+- [游戏与游戏保存](categories/games.md)（174）
 - [硬件与设备互通](categories/hardware.md)（206）
-- [应用与客户端](categories/apps.md)（345）
-- [算法与功能重建](categories/algorithms.md)（67）
+- [应用与客户端](categories/apps.md)（349）
+- [算法与功能重建](categories/algorithms.md)（68）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**
+- [Switch 2到PS5：AI辅助静态重编译原生移植的条件式设想](cases/switch2-ps5-ai-static-recompilation-idea.md) — 作者设想取得Switch 2游戏dump后，AI辅助逆向与静态重编译可能带来PS5原生移植；尚无具名游戏、工具链或运行结果。 **[其他 AI 逆向 · 待验证]**
 - [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**
 - [Star Wars Empire at War：Hayden报告Ghidra、REA与ChatGPT Astra辅助反编译](cases/hayden-empire-at-war-rea-astra-decompilation.md) — Hayden称正在反编译《星球大战：帝国战争》的C++与Lua，使用Ghidra、REA及ChatGPT Astra Ultra，进度接近完成；未提供代码、匹配率或可玩验证。 **[REA · 进行中]**
 - [Icewind Dale 2增强版：读者希望用REA辅助研究的保存idea](cases/icewind-dale2-rea-enhanced-edition-idea.md) — meaw.k询问REA等AI逆向工具是否能帮助《冰风谷2》推出增强版，并提及Beamdog；只是愿望，没有团队回应、分析或重制成果。 **[REA · 待验证]**
@@ -410,6 +412,10 @@
 
 ### 应用与客户端
 
+- [MyGate：Aditya用应用截图指导Agent重建配送放行流程](cases/mygate-agent-screenshot-workflow-rebuild.md) — Aditya Anand称研究MyGate应用、给Agent截图解释工作流，再构建不用拿手机即可接受Amazon、Blinkit与Zomato配送的版本；仍在修细节，未独立验证。 **[其他 AI 逆向 · 进行中]**
+- [Marshall的Web CTF：以奖励挑战“人能解、Agent不能解”的逆向防护说法](cases/web-ctf-human-agent-reverse-challenge.md) — Marshall称自制Web CTF不能由Agent逆向求解，并设解题100美元、提权200美元奖励；目前只有挑战宣告，没有对照测试或防护机制证据。 **[其他 AI 逆向 · 待验证]**
+- [log工具适配：用REA与Playwright观察内部API，准备接入Codex和Claude](cases/rea-playwright-log-tool-platform-adapters.md) — 作者称重做log工具为Codex插件和Claude connector，并用REA与Playwright观察内部API；计划下周测试后推main，不确认能避免封号。 **[REA · 进行中]**
+- [Winny：用REA反编译、再用AI重实现的预测性idea](cases/winny-rea-ai-reimplementation-idea.md) — 日语发帖者预测会有人用REA反编译Winny并以AI重实现；只有具名目标和方法方向，没有实施或验证结果。 **[REA · 待验证]**
 - [ARTEX：Seongsu Park报告攻击活动使用AI辅助研究Android应用漏洞](cases/artex-ai-android-vulnerability-campaign-report.md) — 研究者Seongsu Park称ARTEX活动除韩国银行外还面向多个国家与行业，包含逆向Android应用寻找漏洞；这是防御性调查报告，不是本合集验证的利用或复现。 **[其他 AI 逆向 · 待验证]**
 - [Amp Android客户端：Ben Kraus用REA为Trifold准备应用](cases/ben-kraus-amp-android-trifold-rea.md) — Ben Kraus称正在用REA制作Amp的Android应用，以支持自己的Trifold；尚无实现、功能对照或测试结果。 **[REA · 进行中]**
 - [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**
@@ -758,6 +764,7 @@
 
 ### 算法与功能重建
 
+- [CREBench：432个密码二进制任务，从算法识别到flag恢复](cases/crebench-432-crypto-re-benchmark-report.md) — CREBench用48种算法、3种密钥模式与3种难度组织432题，评测LLM识别算法、提取密钥、重实现封装与恢复flag；已读官方仓库说明，未重跑分数。 **[其他 AI 逆向 · 分析测试]**
 - [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**
 - [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**

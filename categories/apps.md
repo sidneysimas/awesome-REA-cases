@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [MyGate：Aditya用应用截图指导Agent重建配送放行流程](../cases/mygate-agent-screenshot-workflow-rebuild.md) — Aditya Anand称研究MyGate应用、给Agent截图解释工作流，再构建不用拿手机即可接受Amazon、Blinkit与Zomato配送的版本；仍在修细节，未独立验证。 **[其他 AI 逆向 · 进行中]**
+- [Marshall的Web CTF：以奖励挑战“人能解、Agent不能解”的逆向防护说法](../cases/web-ctf-human-agent-reverse-challenge.md) — Marshall称自制Web CTF不能由Agent逆向求解，并设解题100美元、提权200美元奖励；目前只有挑战宣告，没有对照测试或防护机制证据。 **[其他 AI 逆向 · 待验证]**
+- [log工具适配：用REA与Playwright观察内部API，准备接入Codex和Claude](../cases/rea-playwright-log-tool-platform-adapters.md) — 作者称重做log工具为Codex插件和Claude connector，并用REA与Playwright观察内部API；计划下周测试后推main，不确认能避免封号。 **[REA · 进行中]**
+- [Winny：用REA反编译、再用AI重实现的预测性idea](../cases/winny-rea-ai-reimplementation-idea.md) — 日语发帖者预测会有人用REA反编译Winny并以AI重实现；只有具名目标和方法方向，没有实施或验证结果。 **[REA · 待验证]**
 - [ARTEX：Seongsu Park报告攻击活动使用AI辅助研究Android应用漏洞](../cases/artex-ai-android-vulnerability-campaign-report.md) — 研究者Seongsu Park称ARTEX活动除韩国银行外还面向多个国家与行业，包含逆向Android应用寻找漏洞；这是防御性调查报告，不是本合集验证的利用或复现。 **[其他 AI 逆向 · 待验证]**
 - [Amp Android客户端：Ben Kraus用REA为Trifold准备应用](../cases/ben-kraus-amp-android-trifold-rea.md) — Ben Kraus称正在用REA制作Amp的Android应用，以支持自己的Trifold；尚无实现、功能对照或测试结果。 **[REA · 进行中]**
 - [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](../cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**

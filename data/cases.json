@@ -1,5 +1,117 @@
 [
   {
+    "id": "chessmaster9000-codex-king-wasm",
+    "title": "Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。",
+    "description": "2026年10月23日14:33:16（北京时间）的候选是SenG（@senguttuvang）五帖作者串的第四帖。补读同日14:32:16至14:33:25的完整串后确认，目标是Chessmaster 9000这款国际象棋软件。作者回忆大学时喜欢其中的3D棋盘、棋子与教学语音，后来转用Mac多年未玩；受Dhaiwat Pandya的Cricket 07浏览器移植启发，希望再次在浏览器玩到旧作。补充父串用于识别目标和动机，不另算候选。\n\n作者说Codex协助逆向二进制，把The King国际象棋引擎的x86代码译成C，再编译成WebAssembly；界面由TypeScript与Three.js重建，并使用恢复出的原棋盘、棋子。作者提供试玩与仓库短链，并称仓库仅提供重建工具源码，要求用户自备游戏介质，注明Ubisoft及其他权利人版权，非官方关联项目。REA未提及。\n\n本次只读取原帖和作者串，没有解析试玩或仓库短链、运行游戏、编译源码或比较引擎输出；不确认棋力、走法一致性、教学课程或语音已恢复，也不把作者的原引擎运行说法升级为逐字节匹配证明。按有具体技术路线和试玩宣告的进行中保存项目收录，资产权利仍归原权利人。",
+    "sources": [{"label": "候选：SenG说明Codex、x86转C/Wasm及Three.js界面", "url": "https://x.com/i/status/2113519104418308202"}, {"label": "补充作者父帖：Chessmaster 9000浏览器项目与动机，2026-10-23", "url": "https://x.com/i/status/2113518853649289638"}, {"label": "补充作者串末帖：仅重建工具源码、需自备介质与版权说明", "url": "https://x.com/i/status/2113519140854272001"}],
+    "snapshot_date": "2026-10-23", "metadata": ["候选2026-10-23 14:33:16；作者串14:32:16至14:33:25，北京时间。", "只读作者串；未运行试玩、编译或独立比较引擎行为。"],
+    "en": {
+      "title": "Chessmaster 9000: SenG uses Codex to reconstruct The King from x86 into browser Wasm",
+      "summary": "SenG reports Codex-assisted binary research, translating The King's x86 logic into C and WebAssembly and rebuilding the board interface with TypeScript and Three.js. Engine equivalence was not independently tested.",
+      "description": "The candidate posted at 14:33:16 Beijing time on October 23, 2026 is the fourth post in a five-post author thread by SenG (@senguttuvang). Reading the full thread, dated 14:32:16-14:33:25 that day, identifies the target as the chess program Chessmaster 9000. He remembers its 3D boards, pieces and teaching voices from college, followed by years away after moving to the Mac. Inspired by Dhaiwat Pandya's Cricket 07 browser port, he wanted to play it again in a browser. The supplementary parent thread identifies the target and motivation; it is not an additional candidate.\n\nHe says Codex helped reverse-engineer the binaries, translating the x86 code of The King chess engine into C and compiling it to WebAssembly. TypeScript and Three.js reconstruct the interface using recovered original boards and pieces. He supplies play and repository short links, describes the repository as source-only reconstruction tools, requires users to supply their own game media and credits Ubisoft and other rights holders. It is an unofficial, unaffiliated project. REA is not mentioned.\n\nThis review read only the original post and author thread. It did not resolve the play/repository short links, run the game, compile source or compare engine outputs. Playing strength, move equivalence, restored courses and restored voice instruction are not established. The author's statement that the original engine runs is not upgraded to byte-matching proof. This is an in-progress preservation project with a concrete technical route and an announced playable version; asset rights remain with their owners.",
+      "metadata": ["Candidate: October 23, 2026, 14:33:16; author thread 14:32:16-14:33:25, Beijing time.", "Author thread read only; no demo execution, compilation or independent engine-behavior comparison."],
+      "source_labels": ["Candidate: SenG on Codex, x86-to-C/Wasm and the Three.js interface", "Supplementary author parent: Chessmaster 9000 browser project and motivation, October 23, 2026", "Supplementary final author post: source-only reconstruction tools, own media and copyright"]
+    }
+  },
+  {
+    "id": "crebench-432-crypto-re-benchmark-report",
+    "title": "CREBench：432个密码二进制任务，从算法识别到flag恢复",
+    "category": "algorithms", "rea": "other-ai", "status": "analysis-test",
+    "summary": "CREBench用48种算法、3种密钥模式与3种难度组织432题，评测LLM识别算法、提取密钥、重实现封装与恢复flag；已读官方仓库说明，未重跑分数。",
+    "description": "2026年10月23日13:38:54（北京时间）的候选介绍CREBench密码逆向基准，称GPT-5.4得64.04、比人类专家低28分。本次通过公开仓库检索找到wangyu-ovo/CREBench并阅读README，确认其自称为COLM 2026论文《CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering》的官方代码仓库。作者列为Baicheng Chen、Yu Wang、Ziheng Zhou、Xiangru Liu、Juanru Li、Yilei Chen与Tianxing He。REA未提及。\n\n目标不是破解现代密码原语，而是评测模型对含密码逻辑的已编译程序能恢复多少信息。四级任务分别是算法识别、密钥或IV提取、封装层代码重实现、flag恢复。README给出48种算法、hardcode_plain/fragmented_build/weak_prng_seeded三种密钥模式与O0/O3/constxor三种难度，共432题；提供单次与pass@k评测、并行与恢复运行、逐题分数、对话和指标产物的说明。文档提及Ghidra与Docker沙盒，以及Codex和多个模型的接入。\n\n所读仓库最新提交为9fc4016538a0bab8c230732a9f788a61ed43addf，提交时间2026年8月20日13:01:15 UTC；这是旧公开材料的补充核对，不采纳候选的“5小时前发布”为仓库首发日期。64.04和28分差距只在候选中出现，未从论文表格或评测产物复核，因此仅保留为该帖转述，不作本合集基准测量。本次未下载题目二进制、安装依赖或运行评测；README列有评测流程不等于结果已独立复现。",
+    "sources": [{"label": "候选：CREBench规模、四级任务与模型成绩转述", "url": "https://x.com/i/status/2113505421021323523"}, {"label": "补充一手：CREBench官方仓库README，固定于2026-08-20提交", "url": "https://github.com/wangyu-ovo/CREBench/blob/9fc4016538a0bab8c230732a9f788a61ed43addf/README.md"}],
+    "snapshot_date": "2026-10-23", "metadata": ["候选2026-10-23 13:38:54，北京时间；补充仓库提交日期2026-08-20 13:01:15 UTC，不将检索日当首发日。", "432题和四级定义由README确认；64.04及低28分仅为候选转述，未重跑。"],
+    "en": {
+      "title": "CREBench: 432 cryptographic binary tasks, from algorithm identification to flag recovery",
+      "summary": "CREBench combines 48 algorithms, three key modes and three difficulties into 432 challenges for LLM algorithm identification, key extraction, wrapper reimplementation and flag recovery. The official README was read; scores were not rerun.",
+      "description": "A candidate posted at 13:38:54 Beijing time on October 23, 2026 introduces CREBench, saying GPT-5.4 scored 64.04, 28 points behind human experts. Public repository search located wangyu-ovo/CREBench. Its README identifies it as the official code repository for the COLM 2026 paper CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering, crediting Baicheng Chen, Yu Wang, Ziheng Zhou, Xiangru Liu, Juanru Li, Yilei Chen and Tianxing He. REA is not mentioned.\n\nThe goal is not breaking modern cryptographic primitives but evaluating what models can recover from compiled programs containing cryptographic logic. Four levels cover algorithm identification, key or IV extraction, wrapper-level code reimplementation and flag recovery. The README specifies 48 algorithms; hardcode_plain, fragmented_build and weak_prng_seeded key modes; and O0, O3 and constxor difficulties, totaling 432 challenges. It documents single-run and pass@k evaluation, parallel and resumable runs, and per-challenge scores, conversations and metrics. Ghidra, a Docker sandbox, Codex and multiple model integrations are documented.\n\nThe inspected repository's latest commit was 9fc4016538a0bab8c230732a9f788a61ed43addf, dated August 20, 2026, 13:01:15 UTC. This is supplementary inspection of older public material; the candidate's claim of a release five hours earlier is not treated as the repository's original release date. The 64.04 score and 28-point gap appeared only in the candidate, not verified against paper tables or evaluation artifacts, and remain attributed secondary claims rather than measurements by this collection. No challenge binary was downloaded, no dependencies installed and no evaluation run. Documented evaluation procedures do not establish independent reproduction.",
+      "metadata": ["Candidate: October 23, 2026, 13:38:54 Beijing time; supplementary repository commit August 20, 2026, 13:01:15 UTC. Retrieval is not the original publication date.", "The README confirms 432 tasks and four levels; 64.04 and the 28-point gap are candidate claims only, not rerun."],
+      "source_labels": ["Candidate: CREBench scale, four levels and reported model scores", "Supplementary first-party CREBench README pinned to the August 20, 2026 commit"]
+    }
+  },
+  {
+    "id": "mygate-agent-screenshot-workflow-rebuild",
+    "title": "MyGate：Aditya用应用截图指导Agent重建配送放行流程",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "Aditya Anand称研究MyGate应用、给Agent截图解释工作流，再构建不用拿手机即可接受Amazon、Blinkit与Zomato配送的版本；仍在修细节，未独立验证。",
+    "description": "2026年10月23日14:16:14（北京时间）的候选来自Aditya Anand（@aditya12anand），回复别人如何完成MyGate重建的问题。他说先逆向MyGate应用本身，再给Agent应用截图帮助理解工作流，最后让Agent构建。未说明使用REA、具体模型或反编译工具，不把截图输入本身等同于二进制分析。\n\n补读作者父串，父帖原始日期为2026年10月23日01:19:39，北京时间，早于本轮12:00至16:00窗口。它用于解释实际用途：作者想不用拿起手机就接受Amazon包裹、Blinkit配送与Zomato外卖，并称正在处理一些边角问题，目前效果比预期好。父帖不是本轮新候选。\n\n这是具名应用的行为观察与Agent辅助重建自述；来源没有说明如何与门禁或后台交互、用户确认方式、认证、隐私处理或功能覆盖。没有代码、协议、日志或独立运行对照可供本次验证，不推断自动开门、绕过身份验证或完整替代官方服务。作者提供的演示短链未进一步读取；按进行中记录，不把配送放行说法当作独立测试成功。",
+    "sources": [{"label": "候选：Aditya说明MyGate研究、截图与Agent构建", "url": "https://x.com/i/status/2113514818850423062"}, {"label": "补充较早作者父帖：配送接受用途与仍在修细节，2026-10-23 01:19:39", "url": "https://x.com/i/status/2113319384722878947"}],
+    "snapshot_date": "2026-10-23", "metadata": ["候选2026-10-23 14:16:14；补充父帖同日01:19:39，北京时间。", "作者报告可接受配送；未核对后台、认证或设备动作。"],
+    "en": {
+      "title": "MyGate: Aditya guides an agent with app screenshots to rebuild delivery approvals",
+      "summary": "Aditya Anand says he studied MyGate, supplied screenshots to explain its workflow and had an agent build a version for accepting Amazon, Blinkit and Zomato deliveries without picking up his phone. Rough edges remain; not independently verified.",
+      "description": "The candidate at 14:16:14 Beijing time on October 23, 2026 is Aditya Anand (@aditya12anand) answering how he rebuilt MyGate. He says he first reverse-engineered the application, then fed his agent screenshots to clarify the workflow and had it build the result. He names neither REA, a model nor a decompiler. Screenshot input is not itself treated as evidence of binary analysis.\n\nThe supplementary parent thread dates the earlier announcement to October 23, 2026, 01:19:39 Beijing time, before the current 12:00-16:00 window. It clarifies the use: accepting Amazon packages, Blinkit deliveries and Zomato food orders without picking up his phone. He says he is sorting out rough edges and that it works better than expected. The parent is not counted as a new candidate in this window.\n\nThis is an attributed report of behavior observation and agent-assisted reconstruction of a named app. It does not explain gate/backend integration, user confirmation, authentication, privacy handling or feature coverage. No code, protocol, logs or independent runtime comparison were available for this review. Automatic door opening, authentication bypass and full replacement of the official service are not inferred. The linked demonstration short URL was not read further. The record remains in progress; reported delivery approvals are not independently tested successes.",
+      "metadata": ["Candidate: October 23, 2026, 14:16:14; supplementary parent that day at 01:19:39, Beijing time.", "Delivery acceptance is author-reported; backend, authentication and device actions were not checked."],
+      "source_labels": ["Candidate: Aditya on MyGate research, screenshots and agent construction", "Supplementary earlier author parent: delivery use and remaining rough edges, October 23, 2026, 01:19:39"]
+    }
+  },
+  {
+    "id": "web-ctf-human-agent-reverse-challenge",
+    "title": "Marshall的Web CTF：以奖励挑战“人能解、Agent不能解”的逆向防护说法",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "Marshall称自制Web CTF不能由Agent逆向求解，并设解题100美元、提权200美元奖励；目前只有挑战宣告，没有对照测试或防护机制证据。",
+    "description": "2026年10月23日13:43:21（北京时间），Marshall（@MarshallsFolly）发布自制CTF网页应用，回应关于AI网络安全和逆向攻击的讨论。他声称有动力的人能坐下来解出，但Agent无法通过逆向解决，并提出通过X money支付解题100美元、在机器提权200美元的奖励。补读原帖确认作者和原文；奖励只是作者承诺，不确认已支付。\n\n具体研究问题是人类与Agent对同一网页挑战的可解性差异，而不是已证明任何程序都能防AI逆向。帖子没有解释题目机制、部署隔离、允许范围、使用模型、测试次数、人类完成记录或Agent失败日志，REA也未提及。本次未打开挑战短链、访问机器、尝试提权或运行任何目标，只把公开挑战与作者主张记录为unverified，不提供攻击步骤，也不保证其安全或不可解。",
+    "sources": [{"label": "Marshall原帖：自制Web CTF与100/200美元挑战奖励", "url": "https://x.com/i/status/2113506541202800795"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源2026-10-23 13:43:21，北京时间；100/200美元为作者承诺，非核实支付。"],
+    "en": {
+      "title": "Marshall's Web CTF: a bounty challenges the claim that humans can solve it but agents cannot",
+      "summary": "Marshall announces a Web CTF he says agents cannot reverse-engineer and solve, offering $100 for solving it and $200 for privilege escalation. No comparative tests or defensive mechanism are supplied.",
+      "description": "At 13:43:21 Beijing time on October 23, 2026, Marshall (@MarshallsFolly) announces a homemade CTF web application in response to concern about AI cybersecurity and reverse-engineering attacks. He claims a motivated human can solve it but an agent cannot reverse-engineer and solve it, offering $100 through X money for a solution and $200 for privilege escalation on the box. Rereading the original confirmed authorship and wording. These are promised rewards, not confirmed payments.\n\nThe concrete research question is the difference between human and agent solvability on one web challenge, not a demonstrated universal defense against AI reverse engineering. The post does not describe puzzle mechanics, deployment isolation, permitted scope, models, trial counts, human completions or agent failure logs. REA is not mentioned. This review did not open the challenge short link, access the machine, attempt privilege escalation or run a target. The public challenge and author claim are recorded as unverified, without attack instructions or guarantees of safety or unsolvability.",
+      "metadata": ["Source: October 23, 2026, 13:43:21 Beijing time; $100/$200 are author promises, not verified payments."],
+      "source_labels": ["Marshall's original Web CTF announcement and $100/$200 bounties"]
+    }
+  },
+  {
+    "id": "rea-playwright-log-tool-platform-adapters",
+    "title": "log工具适配：用REA与Playwright观察内部API，准备接入Codex和Claude",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "作者称重做log工具为Codex插件和Claude connector，并用REA与Playwright观察内部API；计划下周测试后推main，不确认能避免封号。",
+    "description": "这条2026年10月23日09:37:13（北京时间）的往期待补审候选，不是本轮12:00至16:00的新帖。重新阅读后，它虽未给仓库名，但已有足够具体的项目用途：作者把自己的log工具重做成原生Codex插件、Claude connector，并称支持Claude Duet，准备让同一工具进入多个Agent工作流。\n\n作者说使用REA与Playwright监看内部API，目的是避免各平台的自动活动信号；还说会在下周测试，然后推到main。该时间表说明兼容与可靠性尚在进行中，不是完成发布或真实账号安全验证。“基本不会烧账号”只是作者推断，本合集不采纳为保证。\n\n未给log数据的具体内容、平台版本、仓库、接口、模型、测试日志或产物；不推断已经支持所有平台，不提供规避检测的方法或访问账号。本条按有明确适配目标和研究工具的进行中项目收录，不因缺少营销项目名继续无限等待；API可见性也不代表有授权自动调用。",
+    "sources": [{"label": "往期候选：log工具、REA/Playwright与下周测试计划", "url": "https://x.com/i/status/2113444602808250641"}],
+    "snapshot_date": "2026-10-23", "metadata": ["原始发布日期2026-10-23 09:37:13，北京时间；补审往期08:00至12:00窗口。", "下周测试与推main为计划；避免账号封禁说法未验证。"],
+    "en": {
+      "title": "Log-tool adapters: observing internal APIs with REA and Playwright for Codex and Claude",
+      "summary": "The author reports rebuilding a log tool as a Codex plugin and Claude connector using REA/Playwright observations of internal APIs. Testing and a push to main are planned for the following week; avoiding account bans is not established.",
+      "description": "This older deferred candidate was published at 09:37:13 Beijing time on October 23, 2026, not in the current 12:00-16:00 window. Rereading it shows a sufficiently concrete use despite the missing repository name: the author says their log tool has been revamped as a native Codex plugin and a Claude connector and works with Claude Duet, aiming to bring one tool into multiple agent workflows.\n\nThey say REA and Playwright were used to monitor internal APIs to avoid each platform's automated-activity signals. They plan to test the following week and then push to main. That schedule indicates work in progress, not a completed release or validated account-safety result. The assertion that an account will essentially not be burned is the author's inference, not a guarantee accepted by this collection.\n\nThe log contents, platform versions, repository, interfaces, model, test logs and artifacts are not supplied. Universal platform support is not inferred; no detection-evasion method or account access is provided. This records an in-progress project with explicit adapter targets and research tools rather than deferring indefinitely for a marketing name. Observability of an API does not establish permission to automate it.",
+      "metadata": ["Originally posted October 23, 2026, 09:37:13 Beijing time; re-review from the earlier 08:00-12:00 window.", "Testing the following week and pushing to main are plans; avoidance of account bans is unverified."],
+      "source_labels": ["Older candidate: log tool, REA/Playwright and next-week testing plan"]
+    }
+  },
+  {
+    "id": "winny-rea-ai-reimplementation-idea",
+    "title": "Winny：用REA反编译、再用AI重实现的预测性idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "日语发帖者预测会有人用REA反编译Winny并以AI重实现；只有具名目标和方法方向，没有实施或验证结果。",
+    "description": "2026年10月23日14:35:06（北京时间）的日语候选提出一项预测：可能出现用REA反编译Winny、再由AI重实现的人。Winny是文件共享软件；本条记录的具体目标是该软件的替代实现，而不是笼统的“所有软件都能克隆”。\n\n原文是对未来参与者的预测，不是作者说自己已经开始，也没有说明要恢复的协议、搜索、传输或界面功能。它没有模型、仓库、可执行产物、工时或测试，不能推断已经存在新网络、兼容客户端或安全改进。按具名目标的未实施idea收录为unverified，不提供下载或受版权保护内容，也不把REA能力宣传当成实现可行性证明。",
+    "sources": [{"label": "候选：REA反编译Winny与AI重实现的日语预测", "url": "https://x.com/i/status/2113519565330370904"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源2026-10-23 14:35:06，北京时间；预测性idea，非进行中或完成宣告。"],
+    "en": {
+      "title": "Winny: a speculative idea for REA decompilation and AI reimplementation",
+      "summary": "A Japanese-language post predicts someone will decompile Winny with REA and reimplement it using AI. It names a target and broad method but reports no implementation or validation.",
+      "description": "A Japanese-language candidate at 14:35:06 Beijing time on October 23, 2026 predicts that someone may use REA to decompile Winny and AI to reimplement it. Winny is file-sharing software; the concrete target is an alternative implementation of that program, not a generic claim that all software can be cloned.\n\nThe post predicts future participants rather than claiming the author has started. It does not specify protocol, search, transfer or interface features to recover. No model, repository, executable, work time or tests are supplied, so a new network, compatible client or security improvement cannot be inferred. This named-target, unimplemented idea is recorded as unverified. No downloads or copyrighted content are provided, and general REA capability claims do not prove feasibility.",
+      "metadata": ["Source: October 23, 2026, 14:35:06 Beijing time; a prediction, not an in-progress or completed implementation announcement."],
+      "source_labels": ["Candidate: Japanese prediction of REA decompilation and AI reimplementation of Winny"]
+    }
+  },
+  {
+    "id": "switch2-ps5-ai-static-recompilation-idea",
+    "title": "Switch 2到PS5：AI辅助静态重编译原生移植的条件式设想",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "作者设想取得Switch 2游戏dump后，AI辅助逆向与静态重编译可能带来PS5原生移植；尚无具名游戏、工具链或运行结果。",
+    "description": "2026年10月23日14:58:04（北京时间）的候选明确提出跨主机用途：将Switch 2游戏通过AI辅助逆向和静态重编译移到PS5，目标是不依赖整机模拟的原生运行。作者认为已有AI项目展示了可能性，且PS5有足够硬件能力，但这些都是作者对可行性的判断，REA和具体模型未提及。\n\n帖子把取得Switch 2游戏dump作为将来条件，没有给具名游戏、dump、仓库、重编译器、图形和系统API映射或测试结果。不能据此说已有可玩的PS5移植，也不推断硬件算力能解决架构、服务、图形、输入和权利问题。按具有明确源平台、目的平台及技术方向的未实施idea收录；本合集未获取游戏介质、绕过保护或运行目标，复现仍需合法取得的输入和相应授权。",
+    "sources": [{"label": "候选：Switch 2游戏到PS5原生移植的AI静态重编译设想", "url": "https://x.com/i/status/2113525345974710433"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源2026-10-23 14:58:04，北京时间；取得dump是未来条件，不是已有移植结果。"],
+    "en": {
+      "title": "Switch 2 to PS5: a conditional idea for AI-assisted static recompilation and native ports",
+      "summary": "The author suggests Switch 2 game dumps could enable AI-assisted reverse engineering and static recompilation into native PS5 ports. No named game, toolchain or running result is supplied.",
+      "description": "A candidate at 14:58:04 Beijing time on October 23, 2026 proposes a specific cross-console use: moving Switch 2 games to PS5 using AI-assisted reverse engineering and static recompilation, aiming for native execution rather than whole-console emulation. The author thinks existing AI projects show potential and that PS5 has sufficient hardware power. These remain feasibility judgments by the author; neither REA nor a model is named.\n\nThe post makes the future emergence of Switch 2 game dumps a condition. It supplies no named game, dump, repository, recompiler, graphics/system API mapping or tests. It does not establish a playable PS5 port, nor does hardware power resolve architecture, services, graphics, input or rights issues. This is an unimplemented idea with an explicit source platform, destination and technical direction. No game media was obtained, protection bypassed or target run here. Reproduction would still require legally obtained inputs and relevant permission.",
+      "metadata": ["Source: October 23, 2026, 14:58:04 Beijing time; obtaining dumps is a future condition, not an existing port result."],
+      "source_labels": ["Candidate: AI-assisted static-recompilation idea for native Switch 2 game ports on PS5"]
+    }
+  },
+  {
     "id": "anthropic-theorem-claude-binary-formal-verification",
     "title": "Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明",
     "category": "algorithms", "rea": "other-ai", "status": "analysis-test",

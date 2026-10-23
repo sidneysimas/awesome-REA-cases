@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**790 entries**, organized by use case, without a Top-N or popularity threshold.
+**797 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (172)
+- [Games and preservation](categories/en/games.md) (174)
 - [Hardware and interoperability](categories/en/hardware.md) (206)
-- [Applications and clients](categories/en/apps.md) (345)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (67)
+- [Applications and clients](categories/en/apps.md) (349)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (68)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Chessmaster 9000: SenG uses Codex to reconstruct The King from x86 into browser Wasm](cases/en/chessmaster9000-codex-king-wasm.md) — SenG reports Codex-assisted binary research, translating The King's x86 logic into C and WebAssembly and rebuilding the board interface with TypeScript and Three.js. Engine equivalence was not independently tested. **[Other AI-assisted work · In progress]**
+- [Switch 2 to PS5: a conditional idea for AI-assisted static recompilation and native ports](cases/en/switch2-ps5-ai-static-recompilation-idea.md) — The author suggests Switch 2 game dumps could enable AI-assisted reverse engineering and static recompilation into native PS5 ports. No named game, toolchain or running result is supplied. **[Other AI-assisted work · Needs verification]**
 - [Project Midas: a Claude-assisted GoldenEye PC port built on existing N64 decompilation](cases/en/project-midas-claude-goldeneye-pc-port.md) — Graslu00 describes two AI-assisted programmers and player testing. The public README acknowledges Claude and an existing N64 decompilation as the basis for a Windows/Linux port, not AI recovering the original game from scratch. **[Other AI-assisted work · In progress]**
 - [Star Wars Empire at War: Hayden reports Ghidra, REA and ChatGPT Astra-assisted decompilation](cases/en/hayden-empire-at-war-rea-astra-decompilation.md) — Hayden says he is nearly done decompiling the C++ and Lua parts of Star Wars Empire at War using Ghidra, REA and ChatGPT Astra on Ultra. No code, matching percentage or playability validation is supplied. **[REA · In progress]**
 - [An Icewind Dale 2 enhanced edition: a reader's REA-assisted preservation idea](cases/en/icewind-dale2-rea-enhanced-edition-idea.md) — meaw.k asks whether AI reverse-engineering tools such as REA could enable an enhanced edition of Icewind Dale 2 and mentions Beamdog. This is a wish, with no team response, analysis or remake result. **[REA · Needs verification]**
@@ -412,6 +414,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [MyGate: Aditya guides an agent with app screenshots to rebuild delivery approvals](cases/en/mygate-agent-screenshot-workflow-rebuild.md) — Aditya Anand says he studied MyGate, supplied screenshots to explain its workflow and had an agent build a version for accepting Amazon, Blinkit and Zomato deliveries without picking up his phone. Rough edges remain; not independently verified. **[Other AI-assisted work · In progress]**
+- [Marshall's Web CTF: a bounty challenges the claim that humans can solve it but agents cannot](cases/en/web-ctf-human-agent-reverse-challenge.md) — Marshall announces a Web CTF he says agents cannot reverse-engineer and solve, offering $100 for solving it and $200 for privilege escalation. No comparative tests or defensive mechanism are supplied. **[Other AI-assisted work · Needs verification]**
+- [Log-tool adapters: observing internal APIs with REA and Playwright for Codex and Claude](cases/en/rea-playwright-log-tool-platform-adapters.md) — The author reports rebuilding a log tool as a Codex plugin and Claude connector using REA/Playwright observations of internal APIs. Testing and a push to main are planned for the following week; avoiding account bans is not established. **[REA · In progress]**
+- [Winny: a speculative idea for REA decompilation and AI reimplementation](cases/en/winny-rea-ai-reimplementation-idea.md) — A Japanese-language post predicts someone will decompile Winny with REA and reimplement it using AI. It names a target and broad method but reports no implementation or validation. **[REA · Needs verification]**
 - [ARTEX: Seongsu Park reports AI-assisted Android vulnerability research in an attack campaign](cases/en/artex-ai-android-vulnerability-campaign-report.md) — Researcher Seongsu Park says the ARTEX campaign extends beyond South Korean banks to multiple countries and industries and includes reversing Android apps for vulnerabilities. This is a defensive investigation report, not an exploit or reproduction verified by this collection. **[Other AI-assisted work · Needs verification]**
 - [An Amp Android client: Ben Kraus uses REA for his Trifold](cases/en/ben-kraus-amp-android-trifold-rea.md) — Ben Kraus says he is using REA to build an Amp Android app for his Trifold. No implementation, feature comparison or test results are supplied. **[REA · In progress]**
 - [Slack's macOS Do Not Disturb state: a secondary REA report on native components and remote-web limits](cases/en/slack-macos-dnd-rea-secondary-report.md) — An REA introduction recounts Connor Turland's October 20 Slack notification investigation: a native DND-state component, caching and timeouts, with some behavior in remotely served web code rather than the local package. It is not a full Slack rebuild. **[REA · Needs verification]**
@@ -760,6 +766,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [CREBench: 432 cryptographic binary tasks, from algorithm identification to flag recovery](cases/en/crebench-432-crypto-re-benchmark-report.md) — CREBench combines 48 algorithms, three key modes and three difficulties into 432 challenges for LLM algorithm identification, key extraction, wrapper reimplementation and flag recovery. The official README was read; scores were not rerun. **[Other AI-assisted work · Analysis test]**
 - [Claude and Theorem: turning OSS-Fuzz binaries into Rocq no-crash proofs](cases/en/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic and Theorem report Claude-written RISC-V machine-code proofs for 239 entry points across 123 libraries, checked by Rocq. These apply to a specific single-threaded static Linux model and inputs below 64MB, not bug-free entire libraries. **[Other AI-assisted work · Analysis test]**
 - [MalwareBench: a cross-platform benchmark from obfuscated malware to behavioral reports and extractors](cases/en/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis introduces an end-to-end defensive reversing benchmark, reporting GPT-6.1 Sol in the lead at just 4.42%. Its Conti example still fails to decrypt a later payload: partial analysis is not completion. **[Other AI-assisted work · Needs verification]**
 - [Prime-broker positioning screenshots: a reported use of AI to recover time series and assess data value](cases/en/prime-broker-positioning-screenshot-ai-timeseries.md) — The poster says AI can turn prime-broker positioning screenshots into underlying time series to distinguish useful data from Goldman Sachs marketing; no sample, model or reconstruction error is supplied. **[Other AI-assisted work · Needs verification]**

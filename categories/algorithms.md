@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [CREBench：432个密码二进制任务，从算法识别到flag恢复](../cases/crebench-432-crypto-re-benchmark-report.md) — CREBench用48种算法、3种密钥模式与3种难度组织432题，评测LLM识别算法、提取密钥、重实现封装与恢复flag；已读官方仓库说明，未重跑分数。 **[其他 AI 逆向 · 分析测试]**
 - [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](../cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](../cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**
 - [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](../cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**
