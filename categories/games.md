@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](../cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**
+- [Star Wars Empire at War：Hayden报告Ghidra、REA与ChatGPT Astra辅助反编译](../cases/hayden-empire-at-war-rea-astra-decompilation.md) — Hayden称正在反编译《星球大战：帝国战争》的C++与Lua，使用Ghidra、REA及ChatGPT Astra Ultra，进度接近完成；未提供代码、匹配率或可玩验证。 **[REA · 进行中]**
+- [Icewind Dale 2增强版：读者希望用REA辅助研究的保存idea](../cases/icewind-dale2-rea-enhanced-edition-idea.md) — meaw.k询问REA等AI逆向工具是否能帮助《冰风谷2》推出增强版，并提及Beamdog；只是愿望，没有团队回应、分析或重制成果。 **[REA · 待验证]**
 - [ROM到Zig／SDL：icpolicy称Codex重建游戏后加上像素法线光照](../cases/icpolicy-codex-rom-zig-sdl-pixel-lighting.md) — icpolicy称以ROM为参考让Codex反编译到Zig／SDL，再用Rust像素法线库增加光照；游戏未命名，作者明确不能分发。 **[其他 AI 逆向 · 待验证]**
 - [Stefan 3D AI：REA提取平台游戏跑跳参数，交Claude Code制作新游戏](../cases/stefan-platformer-rea-run-jump-targets.md) — Stefan称用Opus 5.5与REA从一款未命名的3D平台游戏提取跑跳数值，作为Claude Code制作自己游戏的目标；未给参数、原游戏名或逐帧对照。 **[REA · 待验证]**
 - [Vice City浏览器版：基于reVC既有逆向引擎的AI辅助移植转述](../cases/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta介绍oalanicolas基于reVC/wasm-revc把2002年Vice City移到浏览器，归因Codex集成测试、Claude界面及Gemini优化；性能与token数尚属转述。 **[其他 AI 逆向 · 待验证]**

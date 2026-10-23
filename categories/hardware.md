@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](../cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**
+- [自有家庭设备控制：codila的Claude发现流程与REA应用分析回退提示词](../cases/claude-home-device-discovery-rea-fallback-prompt.md) — codila提供先识别自有网络设备、再逐设备确认修改的完整提示词；官方API或库不通时可用REA读Web面板JS及厂商App。包含备份、回读和撤销，未附设备或性能实测。 **[REA · 待验证]**
+- [Windows键盘工具到Linux：Habib报告REA与DeepSeek Flash约2.3美元的尝试](../cases/habib-rea-deepseek-keyboard-linux.md) — Habib称用REA与DeepSeek Flash重设计仅Windows的键盘应用以在Linux使用，花费约2.3美元；未给键盘型号、恢复功能或可核代码，不与其他键盘项目猜测合并。 **[REA · 待验证]**
+- [Orion浏览器实验室：REA、Ghidra与Claude解释ECU函数并绑定证据哈希](../cases/orion-browser-rea-ecu-evidence-lab.md) — Orion展示四设备浏览器实验室，以ECU的read_rpm函数串起二进制、Ghidra反编译、Claude解释与证据哈希；未取得具体车型、固件或验证日志，哈希不证明语义正确。 **[REA · 待验证]**
+- [忘记路由器密码：karol称Codex研究固件后约40分钟重置管理员密码](../cases/karol-codex-router-admin-password-reset.md) — karol称自己忘记路由器管理密码，让Codex逆向固件并找出可重置密码的漏洞；约40分钟为作者自述，设备与方法未公开在已读帖子中。 **[其他 AI 逆向 · 待验证]**
 - [GE冰箱RFID滤芯：建议交给AI研究非原厂滤芯不工作的具体想法](../cases/ge-fridge-rfid-water-filter-ai-investigation-idea.md) — Tentontommy建议用AI研究GE冰箱滤芯兼容问题；父帖作者称RFID让非原厂滤芯无法使用，三年没换滤芯。只有建议，没有实际分析或解决结果。 **[未确认使用 REA · 待验证]**
 - [Samsung电视语音遥控：Codez称Opus研究局域网API后接入Grok Bot](../cases/codez-samsung-opus-grokbot-netflix-remote.md) — Codez称Opus 5.5研究Samsung电视控制接口，制作打开Netflix、移动和选择三工具插件，由Grok Bot处理语音；未给型号或兼容测试。 **[其他 AI 逆向 · 待验证]**
 - [楼宇门铃实时画面：Mattia用REA与Ghidra研究固件，以树莓派替代室内屏](../cases/mattia-doorbell-rea-ghidra-rust-live-view.md) — Mattia Righetti报告从门口机ARM固件恢复UDP/XML通话机制，以树莓派接收视频，再由Rust服务与FFmpeg向浏览器提供实时画面；品牌、源码和测试日志未取得。 **[REA · 待验证]**

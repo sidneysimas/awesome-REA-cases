@@ -1,0 +1,21 @@
+# Preserving Arc: readers propose REA and Codex-assisted community reconstruction after its sunset announcement
+
+Category: Applications and clients · REA
+Record date: 2026-10-23
+Stage: Needs verification
+
+At 01:59:12 Beijing time on October 23, 2026, éric salinas (@ericsalinas) replies to Arc's official announcement, suggesting that declining to open source the browser invites reverse engineering and calling for the REA busters. At 02:02:49, Rishi Shah (@rishhishah) similarly calls for Arc to be open sourced or for reverse-engineering Codex agents to assemble so the community can keep it alive. These proposals concern one preservation target, not multiple projects already underway.
+
+A supplementary read of éric's parent thread identifies the context: at 00:08:24 that day Arc officially announced a December 22, 2026 sunset, saying engineering and security teams would focus on Dia. It describes migration of passwords, bookmarks, extensions, history and Spaces-related organization. The official post only establishes the product and announced date; it is not another candidate, and vendor claims that Dia is safer, faster or more stable are not treated as independent comparisons.
+
+The candidates supply no recovered-feature list, repository, analysis logs, organized team, permissions or AI research already performed. Community requests do not establish recoverable complete source, sustainable security updates or participation by unrelated teams such as Beamdog. REA and Codex are routes suggested by different readers, not an integrated stack already used. This remains an unverified idea, not a claim that Arc has been open sourced, rebuilt with AI or already shut down. This collection handled no browser data or accounts and executed no target code.
+
+Candidates originally posted 2026-10-23T01:59:12+08:00 and 02:02:49; official background post at 00:08:24. December 22, 2026 is the future sunset date in the announcement, not an event already completed.
+
+## Sources
+
+- [éric's proposal to investigate Arc with REA](https://x.com/i/status/2113329339286884541)
+- [Rishi Shah's call to open source Arc or assemble Codex agents](https://x.com/i/status/2113330246296780832)
+- [Supplementary context: Arc's official sunset announcement](https://x.com/i/status/2113301454597640570)
+
+[中文](../arc-browser-ai-community-preservation-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

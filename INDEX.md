@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **761 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **777 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（169）
-- [硬件与设备互通](categories/hardware.md)（197）
-- [应用与客户端](categories/apps.md)（330）
+- [游戏与游戏保存](categories/games.md)（172）
+- [硬件与设备互通](categories/hardware.md)（202）
+- [应用与客户端](categories/apps.md)（338）
 - [算法与功能重建](categories/algorithms.md)（65）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**
+- [Star Wars Empire at War：Hayden报告Ghidra、REA与ChatGPT Astra辅助反编译](cases/hayden-empire-at-war-rea-astra-decompilation.md) — Hayden称正在反编译《星球大战：帝国战争》的C++与Lua，使用Ghidra、REA及ChatGPT Astra Ultra，进度接近完成；未提供代码、匹配率或可玩验证。 **[REA · 进行中]**
+- [Icewind Dale 2增强版：读者希望用REA辅助研究的保存idea](cases/icewind-dale2-rea-enhanced-edition-idea.md) — meaw.k询问REA等AI逆向工具是否能帮助《冰风谷2》推出增强版，并提及Beamdog；只是愿望，没有团队回应、分析或重制成果。 **[REA · 待验证]**
 - [ROM到Zig／SDL：icpolicy称Codex重建游戏后加上像素法线光照](cases/icpolicy-codex-rom-zig-sdl-pixel-lighting.md) — icpolicy称以ROM为参考让Codex反编译到Zig／SDL，再用Rust像素法线库增加光照；游戏未命名，作者明确不能分发。 **[其他 AI 逆向 · 待验证]**
 - [Stefan 3D AI：REA提取平台游戏跑跳参数，交Claude Code制作新游戏](cases/stefan-platformer-rea-run-jump-targets.md) — Stefan称用Opus 5.5与REA从一款未命名的3D平台游戏提取跑跳数值，作为Claude Code制作自己游戏的目标；未给参数、原游戏名或逐帧对照。 **[REA · 待验证]**
 - [Vice City浏览器版：基于reVC既有逆向引擎的AI辅助移植转述](cases/vice-city-wasm-revc-ai-browser-port-report.md) — Shivansh Gupta介绍oalanicolas基于reVC/wasm-revc把2002年Vice City移到浏览器，归因Codex集成测试、Claude界面及Gemini优化；性能与token数尚属转述。 **[其他 AI 逆向 · 待验证]**
@@ -198,6 +201,11 @@
 
 ### 硬件与设备互通
 
+- [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**
+- [自有家庭设备控制：codila的Claude发现流程与REA应用分析回退提示词](cases/claude-home-device-discovery-rea-fallback-prompt.md) — codila提供先识别自有网络设备、再逐设备确认修改的完整提示词；官方API或库不通时可用REA读Web面板JS及厂商App。包含备份、回读和撤销，未附设备或性能实测。 **[REA · 待验证]**
+- [Windows键盘工具到Linux：Habib报告REA与DeepSeek Flash约2.3美元的尝试](cases/habib-rea-deepseek-keyboard-linux.md) — Habib称用REA与DeepSeek Flash重设计仅Windows的键盘应用以在Linux使用，花费约2.3美元；未给键盘型号、恢复功能或可核代码，不与其他键盘项目猜测合并。 **[REA · 待验证]**
+- [Orion浏览器实验室：REA、Ghidra与Claude解释ECU函数并绑定证据哈希](cases/orion-browser-rea-ecu-evidence-lab.md) — Orion展示四设备浏览器实验室，以ECU的read_rpm函数串起二进制、Ghidra反编译、Claude解释与证据哈希；未取得具体车型、固件或验证日志，哈希不证明语义正确。 **[REA · 待验证]**
+- [忘记路由器密码：karol称Codex研究固件后约40分钟重置管理员密码](cases/karol-codex-router-admin-password-reset.md) — karol称自己忘记路由器管理密码，让Codex逆向固件并找出可重置密码的漏洞；约40分钟为作者自述，设备与方法未公开在已读帖子中。 **[其他 AI 逆向 · 待验证]**
 - [GE冰箱RFID滤芯：建议交给AI研究非原厂滤芯不工作的具体想法](cases/ge-fridge-rfid-water-filter-ai-investigation-idea.md) — Tentontommy建议用AI研究GE冰箱滤芯兼容问题；父帖作者称RFID让非原厂滤芯无法使用，三年没换滤芯。只有建议，没有实际分析或解决结果。 **[未确认使用 REA · 待验证]**
 - [Samsung电视语音遥控：Codez称Opus研究局域网API后接入Grok Bot](cases/codez-samsung-opus-grokbot-netflix-remote.md) — Codez称Opus 5.5研究Samsung电视控制接口，制作打开Netflix、移动和选择三工具插件，由Grok Bot处理语音；未给型号或兼容测试。 **[其他 AI 逆向 · 待验证]**
 - [楼宇门铃实时画面：Mattia用REA与Ghidra研究固件，以树莓派替代室内屏](cases/mattia-doorbell-rea-ghidra-rust-live-view.md) — Mattia Righetti报告从门口机ARM固件恢复UDP/XML通话机制，以树莓派接收视频，再由Rust服务与FFmpeg向浏览器提供实时画面；品牌、源码和测试日志未取得。 **[REA · 待验证]**
@@ -398,6 +406,14 @@
 
 ### 应用与客户端
 
+- [Replica skill：从公开页面与自有账号观察应用，再按规格重建的11技能项目](cases/replica-skill-clean-room-ux-workflow.md) — Jake Schincariol的公开Claude技能包串起界面观察、架构、实现、测试与发布；recon明确不读JS包、不反编译二进制、不复制私有API，属于行为与UX重建工作流，未验证任意App克隆能力。 **[其他 AI 逆向 · 相关项目]**
+- [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
+- [REAP：JoasASantos的REA单功能调查提示词集](cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
+- [搜索框重建：mai报告四个Claude Code Agent的观察、规格、隔离实现与对照测试](cases/mai-rea-four-agent-search-bar-rebuild.md) — mai称四个Agent以REA工作流在4分52秒重建一个搜索框，18项对照从64%到100%；目标应用、测试和代码未公开核实，24项观察仍有3项未知。 **[REA · 待验证]**
+- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，éric建议REA研究，Rishi Shah呼吁Codex Agent帮助社区延续浏览器；目前只是保存idea，没有已开始重建、源码或安全维护能力的证据。 **[REA · 待验证]**
+- [链上聚类图：Capslock报告REA与Claude用公开数据重建单HTML可视化](cases/capslock-rea-public-chain-cluster-map.md) — Capslock称跳过付费接口，以公开链上数据重做月费499美元工具的聚类图，约14秒；同作者提示词限定为持有人及转账数据和单HTML，不证明整个收费产品已被替代。 **[REA · 待验证]**
+- [Telegram交易机器人：cypher pepe报告Claude Code静态检查发现剪贴板外发](cases/cypher-pepe-claude-sniper-bot-static-report.md) — 作者称未运行匿名sniper bot，而用Claude Code反编译检查网络、文件与沙箱分支，70秒报告提示钱包路径上报及每30分钟剪贴板外发；未提供样本或报告，不能确认恶意行为与源码差异。 **[其他 AI 逆向 · 待验证]**
+- [春秋的Android MCP框架：用Grok Bot研究微信，准备让Agent操作手机应用](cases/chunqiu-android-mcp-grok-wechat-research.md) — 春秋自称搭建Android MCP框架，让Grok Bot分析手机应用，当前展示微信，计划将订餐、酒店、机票及比价交给AI；未公开框架或可核测试，不把所有App内存透明视为已实现。 **[其他 AI 逆向 · 进行中]**
 - [NuGet闭源包评测：Aaron Stannard测试Agent会否主动选ILSpy反编译](cases/aaron-stannard-nuget-ilspy-agent-evals.md) — Aaron正在添加第四个评测，用NuGet可获取但源码私有的包，且提示词不暗示反编译；已有观察是Anthropic模型先搜索GitHub，ILSpy是第四偏好，结果未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [发票按钮重建：Robo报告REA与Opus分层分析，并指出绿灯测试漏掉税序错误](cases/robo-rea-opus-invoice-button-tax-order-report.md) — Robo描述只重建年费468美元应用的发票按钮：REA映射函数、Opus按难度读取、写规格再测试；称首版50项全过仍有折扣与税的顺序错误，产品和日志未公开在已读材料中。 **[REA · 待验证]**
 - [Sony与DJI相机：Pedro称Claude制作精简iOS客户端，可下载a6400 RAW](cases/pedro-sony-dji-claude-minimal-ios-clients.md) — Pedro Araújo不满意Sony与DJI Osmo Action官方应用，称Claude通过逆向或查找相关开源仓库制作简化iOS替代品，并报告a6400可下载RAW。 **[其他 AI 逆向 · 待验证]**
@@ -428,7 +444,7 @@
 - [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
 - [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
 - [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
-- [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh 称为macOS/Linux带来自选模型的编程桌面，明确不用REA而走top-down路线；所有功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
+- [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh称以DeepSeek harness为基础，为macOS/Linux制作可选Claude、OpenAI、Gemini或本地模型的桌面；沿用top-down而非REA路线，完整功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
 - [国内平台 Skill：Opus 辅助研究东方财富、天天基金及个人本地数据的自述](cases/opus-cn-platform-skills-local-data-report.md) — JinmingYang 回顾个人平台接入Skill与登录态监测，称曾用多个Opus版本；没有公开代码，不把自述先后与消息规模当验证。 **[其他 AI 逆向 · 待验证]**
 - [Claude 客户端遥测：Mac／Android分析与Linux的REA／DeepSeek跟进](cases/claude-clients-rea-deepseek-telemetry-report.md) — WquGuru报告Mac／Android遥测线索；molang新增Linux的REA与DeepSeek研究及GPT差异总结。都缺精确构建和流量验证，不构成隐私或防封号保证。 **[REA · 分析测试]**
 - [sourcepin：用 REA 研究 stagewise，把网页元素先定位到源码再交给模型](cases/sourcepin-stagewise-rea-file-line.md) — Aayush Swami 用 REA 与源码研究 stagewise 后做元素到 file:line 的工具；公开小样本报告更少工具调用，不支持整轮更快或任意框架精确定位。 **[REA · 进行中]**
