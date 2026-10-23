@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](../cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
+- [小米手环健康数据：AI研究直连自有应用或Notion的导出idea](../cases/xiaomi-band-ai-direct-health-export-idea.md) — 读者请求Bot创建任务，希望通过AI逆向让手环健康数据不经厂商平台直接进入自有应用或Notion；尚未决定接收端，无实现。 **[未确认使用 REA · 待验证]**
 - [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](../cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**
 - [自有家庭设备控制：codila的Claude发现流程与REA应用分析回退提示词](../cases/claude-home-device-discovery-rea-fallback-prompt.md) — codila提供先识别自有网络设备、再逐设备确认修改的完整提示词；官方API或库不通时可用REA读Web面板JS及厂商App。包含备份、回读和撤销，未附设备或性能实测。 **[REA · 待验证]**
 - [Windows键盘工具到Linux：Habib报告REA与DeepSeek Flash约2.3美元的尝试](../cases/habib-rea-deepseek-keyboard-linux.md) — Habib称用REA与DeepSeek Flash重设计仅Windows的键盘应用以在Linux使用，花费约2.3美元；未给键盘型号、恢复功能或可核代码，不与其他键盘项目猜测合并。 **[REA · 待验证]**
@@ -189,7 +191,7 @@
 - [Linux 鼠标驱动：一周 AI 项目中的逆向自述](../cases/linux-mouse-driver-ai-week-report.md) — 作者称最近一周借助 AI 逆向 Linux 鼠标驱动，未给设备型号、协议或实现。 **[其他 AI 逆向 · 待验证]**
 - [Roadster 视频：Claude 辅助的 three.js 视觉拆解实验](../cases/roadster-video-claude-threejs-analysis.md) — 两位作者分别报告20秒three.js拆解动画与50帧HUD规格分析；视频读数不能确认车辆内部结构或飞行原理。 **[其他 AI 逆向 · 分析测试]**
 - [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](../cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
-- [Google Home：不换硬件的旧音箱复用受阻报告](../cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
+- [Google Home Mini第一代：不换硬件复用旧音箱，Codex仍受阻](../cases/google-home-openai-bootloader-revival.md) — TJ Kennedy补充目标是Gen1 Google Home Mini，报告Codex仍因网络安全理由停止；询问Grok不等于已成功解锁或运行开源IoT固件。 **[其他 AI 逆向 · 进行中]**
 - [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](../cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**
 - [全屋 3D 模型：REA 设备研究到 Mac 菜单栏控制的转述](../cases/home-3d-menubar-rea-report.md) — Michael Guo 转述点击房屋模型控制真灯与空调，并接给 ChatGPT / Claude；未识别原开发者。 **[REA · 待验证]**
 - [AMABOO Frameo 相框：Claude Code 参考已有项目改作 Home HQ 屏幕](../cases/amaboo-frameo-claude-homehq.md) — 转述 j3lte 用 Claude Code 配置可逆的相框 kiosk，不刷机；记录禁用原应用后的重启陷阱。 **[其他 AI 逆向 · 待验证]**

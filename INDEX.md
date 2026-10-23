@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **777 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **785 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（172）
-- [硬件与设备互通](categories/hardware.md)（202）
-- [应用与客户端](categories/apps.md)（338）
-- [算法与功能重建](categories/algorithms.md)（65）
+- [硬件与设备互通](categories/hardware.md)（204）
+- [应用与客户端](categories/apps.md)（343）
+- [算法与功能重建](categories/algorithms.md)（66）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -68,7 +68,7 @@
 - [Snowboard Kids：Codex 记录 IDO 编译器规律，辅助 N64 字节匹配](cases/snowboard-kids-ido-codex-decompilation.md) — waynerad转引84天反编译文章，说明Codex与人工如何理解IDO 5.3并共享匹配经验；未取得完整匹配报告。 **[其他 AI 逆向 · 待验证]**
 - [Flappy Bird：让 Claude Fable 5.1 研究游戏的进行中自述](cases/flappy-bird-claude-fable-research.md) — 作者称正在让Claude Fable 5.1逆向Flappy Bird；未给版本、机制发现或可玩产物。 **[其他 AI 逆向 · 进行中]**
 - [Harvest Moon: Back to Nature：REA 辅助 PS1 到 PC 的模型对照自述](cases/harvest-moon-btn-rea-model-port-comparison.md) — 作者称同提示词下Opus 5.5 Max五小时完成原生PC版，GPT 6.1 Sol Max耗四个周额度、7004文件仍不可用；无代码或对照日志。 **[REA · 待验证]**
-- [eFootball：AI 推断准确系数与速度 90 阈值，人工测量仍有分歧](cases/efootball-ai-accuracy-coefficient-claim.md) — S0LOMUN新增速度超过90后每点收益降约40%的转述，同时指出AI结果不显示人工96至99测量所报变化；无公式与原始实验。 **[其他 AI 逆向 · 待验证]**
+- [eFootball：准确、速度阈值与Physical Contact线性机制的AI研究转述](cases/efootball-ai-accuracy-coefficient-claim.md) — 新增归于wyzzzzzzz的Physical Contact无80/85/90/95阈值、线性影响与多场景比较自述；既有速度阈值仍与人工测量有分歧，均缺公式与原始实验。 **[其他 AI 逆向 · 待验证]**
 - [OpenCE 等 Halo 项目：读者区分 AI 反编译与人工功能开发](cases/halo-opence-ai-cleanup-reader-report.md) — m1ghtyboy称OpenCE引擎正人工清理、新功能主要由人开发；同帖对其他Halo项目的评价无开发者依据。 **[其他 AI 逆向 · 待验证]**
 - [Heartfall：被游戏账号划清官方关系的 AI 反编译攻略站](cases/heartfall-ai-decompiled-guide-dispute.md) — Heartfall账号提到一个自称由AI反编译生成的攻略网站，声明非官方并建议社区攻略；未验证站点及其生成方式。 **[其他 AI 逆向 · 待验证]**
 - [enRAGE／Red Dead Redemption 2：读者猜测 AI 移入 Nemesis 系统](cases/nemesis-red-dead-ai-recompiler-speculation.md) — 父串明确是RDR2的enRAGE Mod；回复者猜测用AI反编译Nemesis再编译到Red Dead引擎，没有开发者证实。 **[其他 AI 逆向 · 待验证]**
@@ -201,6 +201,8 @@
 
 ### 硬件与设备互通
 
+- [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
+- [小米手环健康数据：AI研究直连自有应用或Notion的导出idea](cases/xiaomi-band-ai-direct-health-export-idea.md) — 读者请求Bot创建任务，希望通过AI逆向让手环健康数据不经厂商平台直接进入自有应用或Notion；尚未决定接收端，无实现。 **[未确认使用 REA · 待验证]**
 - [Samsung电视隐私检查：kairos让Claude从包声明与语音设置区分观察和推断](cases/kairos-samsung-tv-claude-privacy-evidence-prompt.md) — kairos提供只读提示词，以电视截图、XML或包列表检查alwaysonvoice等条目并核对Bixby设置；明确包名不能证明录音或上传，是分析idea而不是隐私泄露实测。 **[其他 AI 逆向 · 待验证]**
 - [自有家庭设备控制：codila的Claude发现流程与REA应用分析回退提示词](cases/claude-home-device-discovery-rea-fallback-prompt.md) — codila提供先识别自有网络设备、再逐设备确认修改的完整提示词；官方API或库不通时可用REA读Web面板JS及厂商App。包含备份、回读和撤销，未附设备或性能实测。 **[REA · 待验证]**
 - [Windows键盘工具到Linux：Habib报告REA与DeepSeek Flash约2.3美元的尝试](cases/habib-rea-deepseek-keyboard-linux.md) — Habib称用REA与DeepSeek Flash重设计仅Windows的键盘应用以在Linux使用，花费约2.3美元；未给键盘型号、恢复功能或可核代码，不与其他键盘项目猜测合并。 **[REA · 待验证]**
@@ -388,7 +390,7 @@
 - [Linux 鼠标驱动：一周 AI 项目中的逆向自述](cases/linux-mouse-driver-ai-week-report.md) — 作者称最近一周借助 AI 逆向 Linux 鼠标驱动，未给设备型号、协议或实现。 **[其他 AI 逆向 · 待验证]**
 - [Roadster 视频：Claude 辅助的 three.js 视觉拆解实验](cases/roadster-video-claude-threejs-analysis.md) — 两位作者分别报告20秒three.js拆解动画与50帧HUD规格分析；视频读数不能确认车辆内部结构或飞行原理。 **[其他 AI 逆向 · 分析测试]**
 - [电子墨水词汇设备：用 LLM 研究自定义固件的 idea](cases/epaper-vocabulary-llm-firmware-idea.md) — 讨论者想改变闭源词汇设备的翻译方向，并问 LLM 能否帮助启动自定义固件；没有实施。 **[其他 AI 逆向 · 待验证]**
-- [Google Home：不换硬件的旧音箱复用受阻报告](cases/google-home-openai-bootloader-revival.md) — 作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。 **[其他 AI 逆向 · 进行中]**
+- [Google Home Mini第一代：不换硬件复用旧音箱，Codex仍受阻](cases/google-home-openai-bootloader-revival.md) — TJ Kennedy补充目标是Gen1 Google Home Mini，报告Codex仍因网络安全理由停止；询问Grok不等于已成功解锁或运行开源IoT固件。 **[其他 AI 逆向 · 进行中]**
 - [XP 扫描仪到 Windows 11：AI 与双虚拟机对照的 idea](cases/xp-scanner-win11-ai-two-vm-idea.md) — 为只有 XP 驱动的扫描仪，建议 AI 在旧系统观察、在 Windows 11 测试，并考虑 REA；尚无实现。 **[其他 AI 逆向 · 待验证]**
 - [全屋 3D 模型：REA 设备研究到 Mac 菜单栏控制的转述](cases/home-3d-menubar-rea-report.md) — Michael Guo 转述点击房屋模型控制真灯与空调，并接给 ChatGPT / Claude；未识别原开发者。 **[REA · 待验证]**
 - [AMABOO Frameo 相框：Claude Code 参考已有项目改作 Home HQ 屏幕](cases/amaboo-frameo-claude-homehq.md) — 转述 j3lte 用 Claude Code 配置可逆的相框 kiosk，不刷机；记录禁用原应用后的重启陷阱。 **[其他 AI 逆向 · 待验证]**
@@ -406,6 +408,11 @@
 
 ### 应用与客户端
 
+- [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**
+- [World Monitor与REA：六Agent纸上交易终端的构建idea](cases/world-monitor-rea-paper-trading-terminal-idea.md) — 帖子建议用REA研究专业终端的图表等功能，接World Monitor事件数据与六个Agent，最终只向Alpaca模拟账户下单；无实现、预测评估或收益证据。 **[REA · 待验证]**
+- [Picnic与open banking：用REA研究应用以替代聚合服务的读者idea](cases/picnic-open-banking-rea-replacement-idea.md) — 葡语回复设想在open banking下一阶段研究对方应用及其他应用，使Picnic服务不再必要；未给接口、规格或实现。 **[REA · 待验证]**
+- [亲友电视影视客户端：Codex连接、反编译与制作App的自述](cases/codex-tv-film-live-client-author-report.md) — 发帖者称Codex连接自家与亲友电视、反编译后制作影视和直播App；未给电视型号、原App、代码或内容授权，不确认“全网免费”能力。 **[其他 AI 逆向 · 待验证]**
+- [Corvus：用C# MCP把二进制查询接给AI Agent的项目推荐](cases/corvus-csharp-binary-analysis-mcp-report.md) — BIGBULLapp推荐Corvus，称其提供PE、ELF、Mach-O分析、反编译、交叉引用与补丁，减少聊天与反汇编器来回切换；未确认原仓库或测试。 **[其他 AI 逆向 · 待验证]**
 - [Replica skill：从公开页面与自有账号观察应用，再按规格重建的11技能项目](cases/replica-skill-clean-room-ux-workflow.md) — Jake Schincariol的公开Claude技能包串起界面观察、架构、实现、测试与发布；recon明确不读JS包、不反编译二进制、不复制私有API，属于行为与UX重建工作流，未验证任意App克隆能力。 **[其他 AI 逆向 · 相关项目]**
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
@@ -595,7 +602,7 @@
 - [CleanMyMac：研究核心功能并做原生 Mac 应用雏形](cases/cleanmymac-rebuild-report.md) — 第三方报告宝玉用 REA 分析清理工具，再重建部分功能。 **[REA · 待验证]**
 - [Nexalytics：用自己的应用检验 REA 行为重建](cases/nexalytics-rebuild.md) — 研究前后端通信与操作流程，结合 Playwright 重建应用。 **[REA · 待验证]**
 - [MetaTrader：为研究交易信号进行逆向的转述](cases/metatrader-signals-report.md) — 评论称有人研究 MetaTrader 以获取信号，缺少具体实现证据。 **[未确认使用 REA · 待验证]**
-- [业务软件：从既有程序或网页重建的进行中尝试](cases/business-software-rebuild.md) — 作者称正在用 Agent 逆向工作流克隆一款业务软件。 **[未确认使用 REA · 进行中]**
+- [业务软件：从既有程序或网页重建的进行中尝试](cases/business-software-rebuild.md) — Supersocks从进行中重建更新到多个业务工具100%可用的自述；没有公开产品、模块或验收，不把游戏测试算作业务软件验证。 **[未确认使用 REA · 进行中]**
 - [CapCut 转场：研究视频编辑模块并自行重构的线索](cases/capcut-transition-research.md) — 第三方讨论以 CapCut 转场为研究对象，用于理解编辑器设计。 **[未确认使用 REA · 待验证]**
 - [Android App：用 Claude Code 识别根检测与证书固定](cases/android-protection-inspection.md) — AMA 转述一次 JADX、Burp Suite MCP 与 Claude Code 的移动应用分析。 **[其他 AI 逆向 · 待验证]**
 - [代理客户端：恢复 Clash 所需的订阅导出](cases/proxy-clash-subscription-bridge.md) — Codex 分析客户端二进制，作者自建服务衔接订阅接口。 **[其他 AI 逆向 · 待验证]**
@@ -747,6 +754,7 @@
 
 ### 算法与功能重建
 
+- [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**
 - [主经纪商仓位截图：用AI恢复时间序列来判断数据价值的自述](cases/prime-broker-positioning-screenshot-ai-timeseries.md) — 作者称可用AI把主经纪商仓位截图还原为底层时间序列，以区别有用数据与高盛营销材料；没有提供样本、模型或恢复误差。 **[其他 AI 逆向 · 待验证]**
 - [社交媒体爆款概率：Alin A提出REA研究推荐算法后放弃的想法](cases/social-media-viral-probability-rea-abandoned-idea.md) — Alin A设想研究推荐算法、提取爆款概率模型并循环出稿涨粉，但明确作罢；没有指定平台、数据或预测结果。 **[REA · 待验证]**
 - [小米运动热量累加：DeepSeek逆向后发现刷新重复计入的转述](cases/xiaomi-motion-deepseek-calorie-refresh-report.md) — 澜知AI转述DeepSeek研究小米运动算法，称同一分钟刷新会使40步热量从1.6变8.28卡；后续承认等待抓包与完整复现。 **[其他 AI 逆向 · 待验证]**

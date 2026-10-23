@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述](../cases/slack-macos-dnd-rea-secondary-report.md) — REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。 **[REA · 待验证]**
+- [World Monitor与REA：六Agent纸上交易终端的构建idea](../cases/world-monitor-rea-paper-trading-terminal-idea.md) — 帖子建议用REA研究专业终端的图表等功能，接World Monitor事件数据与六个Agent，最终只向Alpaca模拟账户下单；无实现、预测评估或收益证据。 **[REA · 待验证]**
+- [Picnic与open banking：用REA研究应用以替代聚合服务的读者idea](../cases/picnic-open-banking-rea-replacement-idea.md) — 葡语回复设想在open banking下一阶段研究对方应用及其他应用，使Picnic服务不再必要；未给接口、规格或实现。 **[REA · 待验证]**
+- [亲友电视影视客户端：Codex连接、反编译与制作App的自述](../cases/codex-tv-film-live-client-author-report.md) — 发帖者称Codex连接自家与亲友电视、反编译后制作影视和直播App；未给电视型号、原App、代码或内容授权，不确认“全网免费”能力。 **[其他 AI 逆向 · 待验证]**
+- [Corvus：用C# MCP把二进制查询接给AI Agent的项目推荐](../cases/corvus-csharp-binary-analysis-mcp-report.md) — BIGBULLapp推荐Corvus，称其提供PE、ELF、Mach-O分析、反编译、交叉引用与补丁，减少聊天与反汇编器来回切换；未确认原仓库或测试。 **[其他 AI 逆向 · 待验证]**
 - [Replica skill：从公开页面与自有账号观察应用，再按规格重建的11技能项目](../cases/replica-skill-clean-room-ux-workflow.md) — Jake Schincariol的公开Claude技能包串起界面观察、架构、实现、测试与发布；recon明确不读JS包、不反编译二进制、不复制私有API，属于行为与UX重建工作流，未验证任意App克隆能力。 **[其他 AI 逆向 · 相关项目]**
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](../cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](../cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
@@ -191,7 +196,7 @@
 - [CleanMyMac：研究核心功能并做原生 Mac 应用雏形](../cases/cleanmymac-rebuild-report.md) — 第三方报告宝玉用 REA 分析清理工具，再重建部分功能。 **[REA · 待验证]**
 - [Nexalytics：用自己的应用检验 REA 行为重建](../cases/nexalytics-rebuild.md) — 研究前后端通信与操作流程，结合 Playwright 重建应用。 **[REA · 待验证]**
 - [MetaTrader：为研究交易信号进行逆向的转述](../cases/metatrader-signals-report.md) — 评论称有人研究 MetaTrader 以获取信号，缺少具体实现证据。 **[未确认使用 REA · 待验证]**
-- [业务软件：从既有程序或网页重建的进行中尝试](../cases/business-software-rebuild.md) — 作者称正在用 Agent 逆向工作流克隆一款业务软件。 **[未确认使用 REA · 进行中]**
+- [业务软件：从既有程序或网页重建的进行中尝试](../cases/business-software-rebuild.md) — Supersocks从进行中重建更新到多个业务工具100%可用的自述；没有公开产品、模块或验收，不把游戏测试算作业务软件验证。 **[未确认使用 REA · 进行中]**
 - [CapCut 转场：研究视频编辑模块并自行重构的线索](../cases/capcut-transition-research.md) — 第三方讨论以 CapCut 转场为研究对象，用于理解编辑器设计。 **[未确认使用 REA · 待验证]**
 - [Android App：用 Claude Code 识别根检测与证书固定](../cases/android-protection-inspection.md) — AMA 转述一次 JADX、Burp Suite MCP 与 Claude Code 的移动应用分析。 **[其他 AI 逆向 · 待验证]**
 - [代理客户端：恢复 Clash 所需的订阅导出](../cases/proxy-clash-subscription-bridge.md) — Codex 分析客户端二进制，作者自建服务衔接订阅接口。 **[其他 AI 逆向 · 待验证]**

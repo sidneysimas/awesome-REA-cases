@@ -1,5 +1,130 @@
 [
   {
+    "id": "slack-macos-dnd-rea-secondary-report",
+    "title": "Slack的macOS勿扰状态：REA研究本地原生组件与远程Web边界的转述",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "REA入门长文转述Connor Turland于10月20日研究Slack通知：追踪原生勿扰状态组件、缓存与超时，但部分行为在远程Web代码，非重建完整Slack。",
+    "description": "2026年10月23日04:00:38（北京时间）的REA长文包含一个具体实验转述：称开发者Connor Turland在10月20日检查已安装的Slack，研究桌面端如何与macOS通知设置交互，而非要求克隆整个产品。10月20日是文章所述实验日期，不是本轮新帖发布日期。\n\n据该长文，调查识别出检查操作系统Do Not Disturb（勿扰）状态的原生组件关系，并发现缓存、超时及组件通信的细节。其明确限制是一些相关行为位于远程下发的Web代码，不在本地桌面包；检查本地材料无法因此揭示Slack的全部服务端实现。具体用途是解释通知行为与本地/远程职责边界，不是重建聊天系统。\n\n本次材料没有Connor的原文链接、Slack版本、符号名、缓存或超时数值、日志、源码对照或可复跑步骤；补充关键词检索未找到原始实验。因此仅按具名研究者和目标明确的二手报告收录，保留unverified，不把文章所称独立实验写成本合集独立验证，也不推断确定的通知规则。长文其余通用教程及REA自包规模说明不算这个Slack实验的结果。",
+    "sources": [{"label": "10月23日REA长文：转述Connor Turland的Slack通知实验", "url": "https://x.com/i/status/2113359897827938505"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源发布2026-10-23 04:00:38，北京时间；所述实验日期2026-10-20，尚未取得一手原文。"],
+    "en": {
+      "title": "Slack's macOS Do Not Disturb state: a secondary REA report on native components and remote-web limits",
+      "summary": "An REA introduction recounts Connor Turland's October 20 Slack notification investigation: a native DND-state component, caching and timeouts, with some behavior in remotely served web code rather than the local package. It is not a full Slack rebuild.",
+      "description": "An REA article posted at 04:00:38 Beijing time on October 23, 2026 includes a concrete experiment report: it says developer Connor Turland inspected an installed Slack copy on October 20 to investigate desktop interaction with macOS notification settings, not clone the entire product. October 20 is the experiment date stated by the article, not the current candidate's publication date.\n\nAccording to the article, the investigation identified relationships involving a native component checking the operating system's Do Not Disturb state, plus caching, timeout and inter-component communication details. Its explicit limit is that some relevant behavior lives in remotely served web code, not the local desktop package. Inspecting local artifacts therefore does not reveal all of Slack's server implementation. The concrete purpose is explaining notification behavior and local/remote responsibilities, not rebuilding a chat system.\n\nThe supplied material provides no original Connor article link, Slack version, symbol names, cache/timeout values, logs, source comparison or reproducible steps. Supplementary keyword searching did not locate the original experiment. This is therefore an unverified secondary report with a named researcher and identifiable target. The article's description of an independent experiment is not this collection's independent verification, and exact notification rules are not inferred. The rest of the article's general tutorial and REA self-package figures are not results of this Slack investigation.",
+      "metadata": ["Source published October 23, 2026, 04:00:38 Beijing time; reported experiment dated October 20, 2026, with no first-party original obtained."],
+      "source_labels": ["October 23 REA article recounting Connor Turland's Slack notification experiment"]
+    }
+  },
+  {
+    "id": "malwarebench-cross-platform-ai-re-benchmark",
+    "title": "MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。",
+    "description": "2026年10月23日07:56:04（北京时间），General Analysis（@gen_analysis）介绍MalwareBench，目标是衡量模型能否处理事件响应中的完整恶意软件逆向，而非仅回答短片段问题。补读作者同一分钟发布的原串：给模型混淆后的恶意二进制，要求交付行为分析和可复用的制品提取器；作者称采用真实可运行恶意软件、专家或MITRE ATT&CK记载的混淆，以及攻击者—防御者课程生成的变体。REA未提及。\n\n作者报告GPT-6.1 Sol领先但得分只有4.42%，典型运行需数小时、数亿token；另称流水线使用300多种专有变换原语，生成变体在VirusTotal各扫描器上零检出。这些均为项目主张，不表示公开样本总体或现实恶意软件的成功率，零检出也未独立验证。\n\n同串给出Conti Windows勒索软件例子，目标行为包括文件加密、改名和勒索信。一轮GPT-6 Astra实验据称利用11个Windows DLL的指纹派生解密材料、验证加密资源页HMAC-SHA256，并从三份XOR分片恢复配置；但未能解密后续W!12ENV载荷，调查未完成。此为作者报告的部分进展，不是本合集重现或提供解密工具。\n\n本次只读取公开原帖与作者串；未获取论文正文、数据集、评分协议、逐次运行日志，也未下载或执行恶意样本。因此按unverified基准介绍收录，不确认首次、跨平台覆盖质量或排行榜可复算。补充串与候选同日同一分钟，非额外候选。",
+    "sources": [{"label": "General Analysis：MalwareBench发布与4.42%主张", "url": "https://x.com/i/status/2113419147837399404"}, {"label": "作者串：行为报告与可复用制品提取器任务", "url": "https://x.com/i/status/2113419149632532677"}, {"label": "作者串：真实任务、长流程及变体设计", "url": "https://x.com/i/status/2113419151104774375"}, {"label": "作者串：300多种专有变换原语", "url": "https://x.com/i/status/2113419152849617076"}, {"label": "作者串：Conti部分分析及未解开的W!12ENV", "url": "https://x.com/i/status/2113419154418282563"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源更新：2026-10-23 07:56，北京时间。", "分数、token消耗、变换数量与零检出为项目报告，未独立重跑；未执行目标代码。"],
+    "en": {
+      "title": "MalwareBench: a cross-platform benchmark from obfuscated malware to behavioral reports and extractors",
+      "summary": "General Analysis introduces an end-to-end defensive reversing benchmark, reporting GPT-6.1 Sol in the lead at just 4.42%. Its Conti example still fails to decrypt a later payload: partial analysis is not completion.",
+      "description": "At 07:56:04 Beijing time on October 23, 2026, General Analysis (@gen_analysis) introduces MalwareBench to measure complete incident-response malware reversing rather than short-snippet answers. Supplementary reading of the author's thread, published in the same minute, describes giving a model an obfuscated malicious binary and requiring behavioral analysis plus a reusable artifact extractor. The team claims real functional malware, obfuscation contributed by experts or documented in MITRE ATT&CK, and variants generated through an attacker-defender curriculum. REA is not mentioned.\n\nThe team reports GPT-6.1 Sol leading at only 4.42%, with typical runs taking hours and hundreds of millions of tokens. It also claims over 300 proprietary transformation primitives and variants with zero detections across VirusTotal scanners. These are project claims, not established success rates over public samples or malware in general; zero detections are not independently checked.\n\nThe thread illustrates a Conti Windows ransomware task involving encryption, renaming and ransom notes. In one reported run GPT-6 Astra used fingerprints of eleven Windows DLLs to derive decryption material, verified HMAC-SHA256 tags on encrypted resource pages and recovered configuration from three XOR shares. It could not decrypt the later W!12ENV payload, leaving the investigation incomplete. This is author-reported partial progress, not a reproduction or decryption tool supplied by this collection.\n\nOnly public posts and the author thread were read. The full paper, dataset, scoring protocol and per-run logs were not obtained, and no malware was downloaded or executed. This is an unverified benchmark introduction, without confirming priority, cross-platform coverage quality or a reproducible leaderboard. Supplementary thread posts were published on the same date and minute as the candidate and are not additional candidates.",
+      "metadata": ["Source update: October 23, 2026, 07:56 Beijing time.", "Scores, token consumption, transformation count and zero detections are project reports, not independently rerun; no target code executed."],
+      "source_labels": ["General Analysis: MalwareBench launch and 4.42% claim", "Author thread: behavioral analysis and reusable artifact-extractor task", "Author thread: realism, long workflows and variant design", "Author thread: over 300 proprietary transformation primitives", "Author thread: partial Conti analysis and unresolved W!12ENV"]
+    }
+  },
+  {
+    "id": "air-fryer-rea-opus-confirmed-voice-workflow",
+    "title": "空气炸锅语音控制：vartekxx的REA取证与人工确认工作流",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。",
+    "description": "2026年10月23日04:35:41（北京时间），@vartekxx称用REA研究自有空气炸锅的软件与控制逻辑，由Opus 5.5映射命令、状态和安全限制，构建温度、计时、启动与停止的小连接器，再接Claude语音模式。作者以口头设置190摄氏度、30分钟为结果示例，声称不用按键或原App即可启动。\n\n04:40:15的配套完整提示词不是现成实现：设备品牌、型号、固件、连接方式及目标路径均待用户填写。它先要求只读取证，区分本地与云端，记录观察、推断和未知；依次考虑官方本地API、Matter/HomeKit/MQTT等标准、官方App合法使用的本地接口与厂商支持的自动化。不能证实安全控制就停止，不假设任何设备都能联网。\n\n连接器要求默认dry-run、精确设备白名单、厂商温度/时间限制、即时人工确认、紧急停止及每次状态回读；禁止绕过配对、安全锁和热限制，禁止刷固件或无人在场物理测试。语音层先复述温度、时长与设备，仅明确同意授权单次启动。它最后明确只从计划开始，不立即执行物理命令。\n\n没有具体型号、协议追踪、源码、测试记录或状态截图，无法确认实际连接器和语音控制已工作，更不能把190摄氏度示例当作任意设备的安全参数。收录为带完成自述的待验证互通工作流，提示词的安全要求不等于实现已强制执行。本合集补读原作者串，未操作设备或运行目标。",
+    "sources": [{"label": "作者原帖：REA与Opus空气炸锅语音控制自述", "url": "https://x.com/i/status/2113368716297511327"}, {"label": "作者完整提示词：先证实接口、回读状态与逐次确认", "url": "https://x.com/i/status/2113369868028256299"}],
+    "snapshot_date": "2026-10-23", "metadata": ["作者更新：2026-10-23 04:40:15，北京时间。", "设备型号、源码和实测缺失；190摄氏度/30分钟仅为示例，安全门是提示词要求。"],
+    "en": {
+      "title": "Air-fryer voice control: vartekxx's REA evidence and human-confirmation workflow",
+      "summary": "The author claims REA and Opus 5.5 start a 190-degree-Celsius, 30-minute cycle by voice. The full prompt first requires proving a local control path and confirming each action; no model, connector or measured test is supplied.",
+      "description": "At 04:35:41 Beijing time on October 23, 2026, @vartekxx reports using REA to inspect an owned air fryer's software and control logic, having Opus 5.5 map commands, states and safety limits, building a small temperature/timer/start/stop connector, and connecting it to Claude voice mode. The author gives a spoken 190-degree-Celsius, 30-minute request as the result, claiming operation without buttons or the vendor app.\n\nThe complete companion prompt at 04:40:15 is not an implementation: brand, model, firmware, connection and target path remain placeholders. It requires read-only evidence collection, local-versus-cloud distinction and recorded observations, inferences and unknowns. It considers an official local API, standards such as Matter/HomeKit/MQTT, a local interface legitimately used by the vendor app, then manufacturer-supported automation. If safe control cannot be proven, it must stop rather than assume connectivity.\n\nConnector requirements include default dry-run, an exact device allowlist, manufacturer temperature/time limits, immediate human approval, emergency stop and state readback after each action. Bypassing pairing, safety locks or thermal limits, flashing firmware and unattended physical testing are forbidden. The voice layer reads back device, temperature and duration; only explicit approval authorizes one start. The prompt ends by requesting a plan, not an immediate physical command.\n\nNo exact model, protocol trace, source, tests or state screenshots are supplied, so a functioning connector and voice control remain unconfirmed. The 190-degree example is not a safe setting for arbitrary devices. This records an unverified interoperability workflow with an author completion claim; prompt safety requirements do not establish enforced safeguards. This collection read the author's thread but operated no device or target code.",
+      "metadata": ["Author update: October 23, 2026, 04:40:15 Beijing time.", "Device model, source and measured tests absent; 190 degrees Celsius/30 minutes is only an example and safety gates are prompt requirements."],
+      "source_labels": ["Original author report: REA/Opus air-fryer voice control", "Full author prompt: proven interfaces, state readback and per-action confirmation"]
+    }
+  },
+  {
+    "id": "world-monitor-rea-paper-trading-terminal-idea",
+    "title": "World Monitor与REA：六Agent纸上交易终端的构建idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "帖子建议用REA研究专业终端的图表等功能，接World Monitor事件数据与六个Agent，最终只向Alpaca模拟账户下单；无实现、预测评估或收益证据。",
+    "description": "2026年10月23日05:40:31（北京时间）的帖子提出把World Monitor与REA组合：用Claude Code/Opus 5.5研究自己喜欢的专业交易终端，重建图表、指标、观察列表和实时新闻栏，接入World Monitor的地缘事件、基础设施与新闻数据。目标是从事件到交易假说的个人工作台，不是取得付费终端的专有数据。\n\n构想列六个Agent：Event Scanner标记管线、油轮或OPEC等高影响事件，Stock Mapper关联股票/行业暴露，Sentiment与Prediction Check参考X及Polymarket，Risk Manager控制仓位与止损，Execution把多空请求送到Alpaca PAPER账户并显示TP1/TP2/TP3。作者要求先模拟数周、记录每次判断。\n\n没有命名被研究终端、给出分析材料、代码、测试、预测或模拟交易记录；30,000美元年费与仓库星数只是宣传，未核验。按具体构建idea而非已经运行的系统收录，不保证API覆盖、事件预测或盈利。与已有Bloomberg风格工作站同属研究终端题材，但本帖未确认目标或同一实现；不凭相似价格合并。",
+    "sources": [{"label": "World Monitor加REA与六Agent模拟交易的构建建议", "url": "https://x.com/i/status/2113385032148787272"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源日期：2026-10-23 05:40:31，北京时间；未取得运行结果。"],
+    "en": {
+      "title": "World Monitor and REA: an idea for a six-agent paper-trading terminal",
+      "summary": "A post proposes studying terminal features with REA, adding World Monitor events and six agents, and sending orders only to an Alpaca paper account. No implementation, prediction evaluation or returns are demonstrated.",
+      "description": "A post at 05:40:31 Beijing time on October 23, 2026 proposes combining World Monitor with REA: use Claude Code/Opus 5.5 to study a preferred professional trading terminal, rebuild charts, indicators, watchlists and live news, and connect World Monitor's geopolitical events, infrastructure and news. The goal is a personal workspace from events to trading hypotheses, not access to a paid terminal's proprietary data.\n\nIt lists six agents: Event Scanner flags high-impact pipeline, tanker or OPEC events; Stock Mapper links stock/sector exposures; Sentiment and Prediction Check consult X and Polymarket; Risk Manager handles sizing and stops; Execution sends long/short requests to an Alpaca PAPER account with TP1/TP2/TP3 shown. The author asks for weeks of paper testing and logging every call.\n\nThe investigated terminal is unnamed, with no analysis artifacts, code, tests, predictions or simulated-trade logs. The $30,000 annual fee and repository star counts are unverified promotion. This is a concrete build idea, not a system shown to be running, and guarantees neither API coverage, predictions nor profits. It shares a research-terminal theme with the existing Bloomberg-style workstation but does not identify that target or implementation; similar pricing is not sufficient to merge them.",
+      "metadata": ["Source date: October 23, 2026, 05:40:31 Beijing time; no execution results obtained."],
+      "source_labels": ["Build proposal combining World Monitor, REA and six paper-trading agents"]
+    }
+  },
+  {
+    "id": "picnic-open-banking-rea-replacement-idea",
+    "title": "Picnic与open banking：用REA研究应用以替代聚合服务的读者idea",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "葡语回复设想在open banking下一阶段研究对方应用及其他应用，使Picnic服务不再必要；未给接口、规格或实现。",
+    "description": "2026年10月23日07:17:03（北京时间），回复@joaoavf与@joaopedro的葡语帖子建议，在open banking下一阶段可以对对方的App及其他App用REA研究，称这样@usePicnicBR就不必存在。可辨识目标是银行应用互通或聚合服务的替代愿望，并非完成自述。\n\n帖子没有具体银行、版本、接口、分析过程或测试，未说明Picnic的完整业务，也未证明REA能替代认证、银行后台、监管或商业服务。按涉及明确服务名称的具体idea记录，不把评论的竞争判断当验证结论；不访问账户或金融数据。",
+    "sources": [{"label": "葡语回复：open banking、REA与Picnic替代愿望", "url": "https://x.com/i/status/2113409325376901553"}],
+    "snapshot_date": "2026-10-23", "metadata": [],
+    "en": {
+      "title": "Picnic and open banking: a reader's REA app-investigation replacement idea",
+      "summary": "A Portuguese reply proposes studying apps in a future open-banking phase so Picnic would no longer be necessary; no interface, specification or implementation is supplied.",
+      "description": "At 07:17:03 Beijing time on October 23, 2026, a Portuguese reply to @joaoavf and @joaopedro suggests using REA on the other participant's app and other apps in the next phase of open banking, claiming @usePicnicBR would then be unnecessary. The identifiable goal is replacing a banking-app interoperability or aggregation service, not a completion report.\n\nNo bank, version, interface, investigation or tests are identified. The post neither explains Picnic's full business nor demonstrates replacement of authentication, bank backends, regulatory obligations or commercial services. This records a concrete idea naming a service, not a validated competitive conclusion. No account or financial data was accessed.",
+      "metadata": [], "source_labels": ["Portuguese reply: open banking, REA and a Picnic replacement idea"]
+    }
+  },
+  {
+    "id": "codex-tv-film-live-client-author-report",
+    "title": "亲友电视影视客户端：Codex连接、反编译与制作App的自述",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "发帖者称Codex连接自家与亲友电视、反编译后制作影视和直播App；未给电视型号、原App、代码或内容授权，不确认“全网免费”能力。",
+    "description": "2026年10月23日07:47:15（北京时间），发帖者称近期给自家、父母与朋友家的电视安装看剧App，过程是Codex自己连电视、反编译，再制作App。作者声称可免费看各类电影、电视剧与电视直播，目标是为亲友提供电视观看客户端。REA未提及。\n\n没有电视品牌、系统、固件、被研究应用、数据来源、功能对照、源码或测试记录；只能记录作者报告的AI参与与客户端用途，不确认全网可用、内容合法免费、访问授权或实际播放成功。本合集不提供获取受限内容的方法或链接，也未连接设备。\n\n同帖还说把coding agent装入M5Stack语音机器人，并猜测未来自定义手机系统；那是其他开发与设想，不能当作电视逆向的验证结果。",
+    "sources": [{"label": "作者自述：Codex反编译后制作亲友电视影视App", "url": "https://x.com/i/status/2113416925728633097"}],
+    "snapshot_date": "2026-10-23", "metadata": [],
+    "en": {
+      "title": "A TV film/live client for family and friends: a Codex connection and decompilation report",
+      "summary": "A poster says Codex connected to TVs and decompiled software before making a film/live-TV app. Models, original apps, code and content rights are absent; universal free access is not established.",
+      "description": "At 07:47:15 Beijing time on October 23, 2026, a poster says they installed a viewing app on their own, their parents' and friends' TVs: Codex connected to the TV, decompiled software and made the app. They claim free films, series and live TV, with a client for family and friends as the concrete purpose. REA is not mentioned.\n\nNo TV brand, OS, firmware, investigated application, data source, feature comparison, source code or test record is supplied. This records only the author's AI-involvement and client-purpose report, without establishing universal availability, legally free content, access authorization or successful playback. This collection supplies no method or link for obtaining restricted content and connected to no device.\n\nThe same post separately discusses installing coding agents in M5Stack voice robots and speculates about customized phone operating systems. Those are other development activities and ideas, not evidence validating TV reverse engineering.",
+      "metadata": [], "source_labels": ["Author report: Codex decompilation and a TV viewing app for family and friends"]
+    }
+  },
+  {
+    "id": "xiaomi-band-ai-direct-health-export-idea",
+    "title": "小米手环健康数据：AI研究直连自有应用或Notion的导出idea",
+    "category": "hardware", "rea": "unknown", "status": "unverified",
+    "summary": "读者请求Bot创建任务，希望通过AI逆向让手环健康数据不经厂商平台直接进入自有应用或Notion；尚未决定接收端，无实现。",
+    "description": "2026年10月23日07:58:23（北京时间），一位读者向@bot提出具体愿望：受AI逆向软件讨论启发，希望小米手环各类健康数据更加开放，不走厂商平台，直接进入自己的手机应用或Notion，并请求创建任务。作者明确还没想好接收端。\n\n没有手环型号、协议、加密/配对研究、数据字段、代码或导出结果，模型与REA也未指定。此为自有健康数据互通idea，不是已经创建外部任务、获得数据或迫使产品开源的证明；本合集不代发Bot消息、不读取个人健康数据。与既有小米运动健康数据库/云导出项目用途有别，本帖要求直接设备路径，不推断两者使用相同协议。",
+    "sources": [{"label": "读者请求：小米手环健康数据直入自有应用或Notion", "url": "https://x.com/i/status/2113419727683113233"}],
+    "snapshot_date": "2026-10-23", "metadata": [],
+    "en": {
+      "title": "Xiaomi Band health data: an AI idea for direct export to an owned app or Notion",
+      "summary": "A reader asks a bot to create a task to investigate direct health-data access without the vendor platform. The receiving app is undecided and no implementation is reported.",
+      "description": "At 07:58:23 Beijing time on October 23, 2026, a reader asks @bot for a concrete task: inspired by AI software-reversing discussions, make Xiaomi Band health data more open, sending it directly to an owned phone app or Notion rather than through the vendor platform. The author explicitly has not decided on the receiving application.\n\nNo band model, protocol, encryption/pairing investigation, data fields, code or export result is supplied, and neither model nor REA is specified. This is an owned-health-data interoperability idea, not proof of a created external task, acquired data or forced open sourcing. This collection sent no bot message and accessed no personal health data. Unlike the existing Xiaomi health database/cloud-export project, this proposal requests a direct device path; a shared protocol is not inferred.",
+      "metadata": [], "source_labels": ["Reader request: Xiaomi Band data directly into an owned app or Notion"]
+    }
+  },
+  {
+    "id": "corvus-csharp-binary-analysis-mcp-report",
+    "title": "Corvus：用C# MCP把二进制查询接给AI Agent的项目推荐",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "BIGBULLapp推荐Corvus，称其提供PE、ELF、Mach-O分析、反编译、交叉引用与补丁，减少聊天与反汇编器来回切换；未确认原仓库或测试。",
+    "description": "2026年10月23日03:36:23（北京时间），@BIGBULLapp推荐名为Corvus的C# MCP服务器：让AI Agent直接查询PE、ELF和Mach-O二进制、反编译、交叉引用及补丁，称IDA和Ghidra是可选而非必需。本次补读原帖与公开串确认发布账号，但不能据此认定其为Corvus开发者；该帖早于本轮04:00起点，是往期来源。\n\n明确问题是Agent能读代码却无法直接打开二进制，用户要手工切换反汇编器或粘贴十六进制；项目意图是把查询、证据和补丁交接留在同一工作流。尚无命名样本、输出、成功分析或补丁测试。8星、零fork、零issue、10月22日最后推送等仅为推荐帖宣传快照，未独立核验。\n\n公开串只提供短链，原仓库身份未确认；不将同名项目视为该工具。此为用途具体但尚未验证的项目推荐，未确认REA关联、安装、运行或依赖可用性。",
+    "sources": [{"label": "往期BIGBULLapp推荐：Corvus C#二进制MCP", "url": "https://x.com/i/status/2113353795241693518"}],
+    "snapshot_date": "2026-10-23", "metadata": ["来源日期：2026-10-23 03:36:23，北京时间；往期补审。", "原仓库和数字快照未核验，仅按推荐归因；未安装运行。"],
+    "en": {
+      "title": "Corvus: a reported C# MCP project connecting AI agents to binary queries",
+      "summary": "BIGBULLapp recommends Corvus for PE/ELF/Mach-O analysis, decompilation, cross-references and patching, reducing chat/disassembler switching. The original repository and tests remain unconfirmed.",
+      "description": "At 03:36:23 Beijing time on October 23, 2026, @BIGBULLapp recommends a C# MCP server called Corvus for direct AI-agent PE, ELF and Mach-O queries, decompilation, cross-references and patching, claiming IDA and Ghidra are optional rather than mandatory. Supplementary reading of the original and its public thread confirms the posting account, not necessarily Corvus's developer. This is an older source preceding the current window's 04:00 start.\n\nThe concrete problem is an agent able to read code but unable to open a binary, forcing a user to switch disassemblers or paste hex. The project aims to keep queries, evidence and patch handoffs in one workflow. No named sample, output, successful analysis or patch test is provided. Eight stars, zero forks/issues and an October 22 last push are only the recommendation's unverified promotional snapshot.\n\nThe public thread supplies only a shortened link and the original repository identity remains unconfirmed; same-name projects are not substituted. This is a concrete but unverified project recommendation. REA association, installation, execution and dependency availability are not established.",
+      "metadata": ["Source date: October 23, 2026, 03:36:23 Beijing time; re-reviewed from an older window.", "Original repository and numerical snapshot unverified; attributed recommendation only, without installation or execution."],
+      "source_labels": ["Older BIGBULLapp recommendation: Corvus C# binary-analysis MCP"]
+    }
+  },
+  {
     "id": "replica-skill-clean-room-ux-workflow",
     "title": "Replica skill：从公开页面与自有账号观察应用，再按规格重建的11技能项目",
     "category": "apps", "rea": "other-ai", "status": "related-project",
@@ -2574,12 +2699,17 @@
   },
   {
     "id": "efootball-ai-accuracy-coefficient-claim",
-    "title": "eFootball：AI 推断准确系数与速度 90 阈值，人工测量仍有分歧",
+    "title": "eFootball：准确、速度阈值与Physical Contact线性机制的AI研究转述",
     "category": "games", "rea": "other-ai", "status": "unverified",
-    "summary": "S0LOMUN新增速度超过90后每点收益降约40%的转述，同时指出AI结果不显示人工96至99测量所报变化；无公式与原始实验。",
-    "description": "10月20日01:05（北京时间），S0LOMUN称用AI逆向eFootball传球射门的Accuracy Coefficient公式，以指导球员训练加点；报告60到90每点提升较大，超过90收益率下降约40%，Passing、Finishing、Heading均适用，并称90是开发者意定的阈值。\n\n单独补审03:34回复并补读原串，确认目标确为eFootball，不再因只出现人名而待补证：S0LOMUN把技能和属性研究归于Amadeusz与Wyzzz，自己接收更新。该条是较早窗口的归因背景。06:38新帖称wyzzzzzzz的AI逆向也发现Speed阈值90、90后收益约降40%，但Amadeusz八月在96至99间测到的收益递减没有出现在AI反编译结果中。这不是两种方法已一致，更不表示90以上没有提升。\n\n没有公式本体、游戏版本、二进制记录、采样次数、原始命中或速度数据及对照实验，开发者意图也无一方证据。模型与REA均未明确，保留为机制研究转述，不是官方训练规则或独立验证。原01:05候选64赞、2779浏览、1转发；06:38候选14赞、803浏览、0转发，均为10月20日传播快照。",
-    "sources": [{"label": "eFootball准确系数与90阈值的AI研究自述", "url": "https://x.com/i/status/2112228666604507568"}, {"label": "补审03:34回复：研究者归因，原串确认目标", "url": "https://x.com/i/status/2112266077069861012"}, {"label": "06:38新帖：速度90阈值及与人工测量的分歧", "url": "https://x.com/i/status/2112312535898808801"}], "snapshot_date": "2026-10-20", "metadata": [],
-    "en": {"title": "eFootball: AI-inferred accuracy and speed thresholds of 90, with a manual-measurement disagreement", "summary": "S0LOMUN adds a report of roughly 40% lower per-point speed gains above 90, while noting AI results do not show a manually measured 96–99 effect; formulas and raw experiments are absent.", "description": "At 01:05 Beijing time on October 20, S0LOMUN claims AI reverse-engineered eFootball's Accuracy Coefficient for passing and shooting to guide training. They report large per-point gains from 60 to 90, approximately 40% lower returns above 90, and applicability to Passing, Finishing and Heading, interpreting 90 as the developers' intended threshold.\n\nSeparate review of the 03:34 reply and its conversation confirms eFootball as the target, resolving the earlier ambiguity caused by names alone. S0LOMUN attributes skill/stat research to Amadeusz and Wyzzz and says they receive updates. This is attribution context from the older window. A new 06:38 post says wyzzzzzzz's AI reversing also finds a Speed threshold of 90 and roughly 40% lower returns above it, but the diminishing returns Amadeusz measured between 96 and 99 in August do not appear in the AI decompilation results. The methods are not thereby shown to agree, nor does this mean there is no improvement above 90.\n\nNo formula, game version, binary records, sample count, raw accuracy/speed data or controlled experiment is supplied. Developer intent lacks first-party evidence. Neither model nor REA is identified. This remains a mechanism-research retelling, not an official training rule or independent verification. The original 01:05 candidate has 64 likes, 2,779 views and 1 repost; the 06:38 candidate has 14 likes, 803 views and 0 reposts, all October 20 circulation snapshots.", "metadata": [], "source_labels": ["AI-research account of eFootball's accuracy coefficient and threshold of 90", "Older 03:34 reply: researcher attribution, target confirmed by its conversation", "New 06:38 post: Speed threshold of 90 and disagreement with manual measurements"]}
+    "summary": "新增归于wyzzzzzzz的Physical Contact无80/85/90/95阈值、线性影响与多场景比较自述；既有速度阈值仍与人工测量有分歧，均缺公式与原始实验。",
+    "description": "10月20日01:05（北京时间），S0LOMUN称用AI逆向eFootball传球射门的Accuracy Coefficient公式，以指导球员训练加点；报告60到90每点提升较大，超过90收益率下降约40%，Passing、Finishing、Heading均适用，并称90是开发者意定的阈值。\n\n同日03:34回复与原串确认目标及研究者归因：S0LOMUN把技能和属性研究归于Amadeusz与Wyzzz，自己接收更新。06:38帖子称wyzzzzzzz的AI逆向也发现Speed阈值90、90后收益约降40%，但Amadeusz八月在96至99间测到的收益递减没有出现在AI反编译结果中。这不是两种方法已一致，更不表示90以上没有提升。\n\n10月23日05:39:35的新帖转述wyzzzzzzz用AI研究Physical Contact，称该属性没有80、85、90或95阈值而是完全线性；转身护球只看自己，背身贴防比较双方Physical Contact，并行带球比较双方Physical Contact加Balance；受压传球/射门减少球速与精度惩罚，空中争抢比较Physical Contact、Heading、Jumping，加身高与Aerial Superiority技能。此为该属性和场景的新增转述，不推翻旧Speed或Accuracy研究，也不证明所有情境共享公式。\n\n没有公式本体、游戏版本、二进制记录、采样次数、原始命中或速度/身体对抗数据及对照实验，开发者意图也无一方证据。模型与REA均未明确，保留为机制研究转述，不是官方训练规则或独立验证。原01:05候选64赞、2779浏览、1转发；06:38候选14赞、803浏览、0转发，均保留为10月20日传播快照，不刷新到10月23日。",
+    "sources": [{"label": "eFootball准确系数与90阈值的AI研究自述", "url": "https://x.com/i/status/2112228666604507568"}, {"label": "03:34回复：研究者归因，原串确认目标", "url": "https://x.com/i/status/2112266077069861012"}, {"label": "06:38帖子：速度90阈值及与人工测量的分歧", "url": "https://x.com/i/status/2112312535898808801"}, {"label": "10月23日：Physical Contact线性与场景差异的转述", "url": "https://x.com/i/status/2113384800681947364"}], "snapshot_date": "2026-10-23", "metadata": [],
+    "en": {
+      "title": "eFootball: AI reports of accuracy/speed thresholds and linear Physical Contact mechanics",
+      "summary": "A new report attributed to wyzzzzzzz claims no Physical Contact thresholds at 80/85/90/95, linear effects and scenario-specific comparisons. Earlier speed claims still disagree with manual measurements; formulas and raw experiments are absent.",
+      "description": "At 01:05 Beijing time on October 20, S0LOMUN claims AI reverse-engineered eFootball's Accuracy Coefficient for passing and shooting to guide training. They report large per-point gains from 60 to 90, approximately 40% lower returns above 90, and applicability to Passing, Finishing and Heading, interpreting 90 as the developers' intended threshold.\n\nThe same day's 03:34 reply and its conversation confirm eFootball and researcher attribution: S0LOMUN credits Amadeusz and Wyzzz for skill/stat research and says they receive updates. A 06:38 post says wyzzzzzzz's AI reversing also finds a Speed threshold of 90 and roughly 40% lower returns above it, but the diminishing returns Amadeusz measured between 96 and 99 in August do not appear in the AI decompilation results. The methods are not thereby shown to agree, nor does this mean there is no improvement above 90.\n\nA new October 23 post at 05:39:35 attributes AI research of Physical Contact to wyzzzzzzz, claiming no thresholds at 80, 85, 90 or 95 and completely linear scaling. Turning while shielding allegedly uses one's own stat; close back-to-opponent shielding compares both players' Physical Contact; side-by-side dribbling compares Physical Contact plus Balance. Under-pressure passing/shooting reduces ball-speed and accuracy penalties; aerial duels compare Physical Contact, Heading and Jumping, with height and Aerial Superiority bonuses. This adds a report about another attribute and scenarios, neither overturning earlier Speed/Accuracy claims nor proving one formula covers every situation.\n\nNo formula, game version, binary records, sample count, raw accuracy/speed/contact data or controlled experiment is supplied. Developer intent lacks first-party evidence. Neither model nor REA is identified. This remains a mechanism-research retelling, not an official training rule or independent verification. The original 01:05 candidate has 64 likes, 2,779 views and 1 repost; the 06:38 candidate has 14 likes, 803 views and 0 reposts. These remain October 20 circulation snapshots, not refreshed to October 23.",
+      "metadata": [], "source_labels": ["AI-research account of eFootball's accuracy coefficient and threshold of 90", "03:34 reply: researcher attribution, target confirmed by its conversation", "06:38 post: Speed threshold of 90 and disagreement with manual measurements", "October 23 retelling: linear Physical Contact and scenario differences"]
+    }
   },
   {
     "id": "esp32-codex-sonos-echo-replacement",
@@ -7134,29 +7264,31 @@
     "category": "apps",
     "status": "in-progress",
     "rea": "unknown",
-    "summary": "作者称正在用 Agent 逆向工作流克隆一款业务软件。",
-    "description": "Supersocks 在讨论 REA 与模型工具链时，称自己正在用这种方式克隆一款业务软件，即从二进制或网页研究行为后做独立实现。明确目标是重建已有业务工具，但没有公开产品名、业务领域、具体模块或代码，也没有确认实际使用 REA。按进行中的第一手尝试记录，不把它写成已完成交付。",
+    "summary": "Supersocks从进行中重建更新到多个业务工具100%可用的自述；没有公开产品、模块或验收，不把游戏测试算作业务软件验证。",
+    "description": "10月12日，Supersocks（@iamsupersocks）在讨论REA与模型工具链时，称正在用这种方式克隆一款业务软件，即从二进制或网页研究行为后做独立实现。明确目标是重建已有业务工具，但没有公开产品名、业务领域、具体模块或代码，也未确认实际使用REA。\n\n10月23日03:27:37（北京时间）的作者周记新增进展：在Opus 5.5、Vikunja、Hermes Kanban与Grok等工作流背景下，称逆向了多个业务软件，100%可用，为销售、产品和研发团队节省大量时间。补读原帖确认账号仍为iamsupersocks，因此保留既有ID追加来源；未据此推断全部工具由Opus或REA独自完成。没有业务软件验收、测量工时或交付记录，100%仅为作者评价，状态继续in-progress。\n\n同帖的约1850次提交、13个仓库和30个项目是整体工作快照；AoE-like游戏第16个TestFlight构建、每对100场及Expert 400场bot对战属于另一个自创游戏，不能用来验证业务软件重建。其他视频、手写与获客项目也不混作逆向成果。本合集未取得或执行这些工具。",
     "sources": [
       {
-        "label": "本周期作者进行中报告",
+        "label": "10月12日作者进行中报告",
         "url": "https://x.com/iamsupersocks/status/2109553690595979371"
-      }
+      },
+      {"label": "10月23日作者周记：多个业务软件可用的自述", "url": "https://x.com/i/status/2113351590103175459"}
     ],
-    "snapshot_date": "2026-10-12",
+    "snapshot_date": "2026-10-23",
     "metadata": [
       "发帖：2026-10-12T15:56:08+08:00（北京时间）",
       "热度快照（2026-10-12）：2 赞｜88 浏览｜0 转发"
     ],
     "en": {
-      "title": "Business software: an ongoing agent-assisted rebuild",
-      "summary": "The author reports cloning an unnamed professional application using an investigation/rebuild workflow; no delivery or exact REA use is established.",
-      "description": "In a discussion of REA and model toolchains, Supersocks says they are using this approach to clone a business application: studying behavior from binaries or webpages and making an independent implementation. The target is explicitly an existing business tool, but its product name, business domain, specific modules and code are undisclosed, and actual REA use is unconfirmed. This records a firsthand attempt in progress rather than completed delivery.",
+      "title": "Business software: Supersocks updates an agent-assisted rebuild report",
+      "summary": "Supersocks moves from an ongoing rebuild to claiming multiple tools are 100% functional. Products, modules and acceptance records remain absent; separate game tests do not validate the business tools.",
+      "description": "On October 12, Supersocks (@iamsupersocks) says in a discussion of REA and model toolchains that they are cloning a business application by studying binaries or webpages and creating an independent implementation. The target is an existing business tool, but its product name, domain, modules and code are undisclosed, and actual REA use is unconfirmed.\n\nThe author's weekly update at 03:27:37 Beijing time on October 23 adds a claim of reverse-engineering multiple business applications that are 100% functional, saving substantial time for sales, product and R&D teams amid workflows involving Opus 5.5, Vikunja, Hermes Kanban and Grok. Supplementary retrieval confirms the same iamsupersocks account, so the existing ID is retained with an added source. This does not establish that Opus or REA alone produced every tool. With no business-software acceptance records, measured labor or delivery evidence, 100% remains the author's assessment and status stays in progress.\n\nAbout 1,850 commits, thirteen repositories and thirty projects describe overall activity. The sixteenth TestFlight build, 100 bot games per pair and 400 for Expert concern a separate original AoE-like game and cannot validate the business-software reconstruction. Video, handwriting and prospecting projects are likewise not counted as reversing results. This collection obtained or executed none of these tools.",
       "metadata": [
         "Posted: 2026-10-12T15:56:08+08:00 (Beijing time)",
         "Engagement snapshot (2026-10-12): 2 likes | 88 views | 0 reposts"
       ],
       "source_labels": [
-        "Author's work-in-progress report from this review"
+        "October 12 author work-in-progress report",
+        "October 23 author update claiming multiple functional business tools"
       ]
     }
   },
@@ -14811,21 +14943,21 @@
   },
   {
     "id": "google-home-openai-bootloader-revival",
-    "title": "Google Home：不换硬件的旧音箱复用受阻报告",
+    "title": "Google Home Mini第一代：不换硬件复用旧音箱，Codex仍受阻",
     "category": "hardware",
     "rea": "other-ai",
     "status": "in-progress",
-    "summary": "作者想研究旧音箱、刷开源智能家居软件，报告卡在锁定启动链与 OpenAI 护栏。",
-    "description": "10月17日06:01（北京时间），@TheTJKennedy 说希望让闲置旧设备在 AI 时代重新有用，但目前遇到锁定 bootloader 与 OpenAI 网络安全护栏。补读00:21父帖才确认目标：本周末尝试逆向 Google Home 音箱，希望给旧 Google/Amazon 音箱刷开源软件来控制 IoT，不再依赖订阅。04:06同串有人建议 Onju Voice 换用 ESP32-S3 板，但作者明确不想改硬件，因为违背复用原设备的目标。\n\n这不是换板方案的成功案例，也没有表明已解锁、启动自定义固件或控制家庭设备。具体 Google Home 代际、分析步骤、模型和拒绝记录都未提供；OpenAI 参与与受阻只按作者描述，未确认 REA。00:21父帖早于本轮04:00窗口，仅作识别目标的背景；06:01进展回复是本轮候选。",
-    "sources": [{"label": "作者在本窗口报告锁定启动链与OpenAI护栏", "url": "https://x.com/i/status/2111215951857246251"}, {"label": "窗口外父帖：逆向Google Home并复用旧音箱的计划", "url": "https://x.com/i/status/2111130295692849212"}, {"label": "同串换板建议，作者未采用", "url": "https://x.com/i/status/2111187043779068036"}],
-    "snapshot_date": "2026-10-17",
+    "summary": "TJ Kennedy补充目标是Gen1 Google Home Mini，报告Codex仍因网络安全理由停止；询问Grok不等于已成功解锁或运行开源IoT固件。",
+    "description": "10月17日06:01（北京时间），@TheTJKennedy说希望让闲置旧设备在AI时代重新有用，但遇到锁定bootloader与OpenAI网络安全护栏。00:21父帖说明计划逆向Google Home音箱，给旧Google/Amazon音箱刷开源软件控制IoT，不再依赖订阅；04:06同串有人建议Onju Voice换ESP32-S3板，但作者明确不想改硬件，因为违背复用原设备的目标。这些均为10月17日背景。\n\n10月23日05:42:48，TJ Kennedy向Michael Gannotti回复，明确正在尝试root第一代Google Home Mini，Codex持续因网络安全理由停止，询问Grok是否更有机会或设备固件是否难以改造。本次补读串确认同一作者，保留既有ID而不另建同目标案例。父帖的Echo Dot第二代改造属于Michael的另一项目，不是Mini已经成功；后续建议换模型也不作为成功证据。\n\n没有解锁、启动自定义固件或控制家居的报告，具体分析步骤、模型版本和拒绝记录仍缺失。代际与Codex身份已由新帖补全，REA未确认。按作者报告的受阻进行中研究记录，本合集未操作音箱，也未运行目标。",
+    "sources": [{"label": "10月17日：作者报告锁定启动链与OpenAI护栏", "url": "https://x.com/i/status/2111215951857246251"}, {"label": "10月17日父帖：逆向Google Home与旧音箱复用计划", "url": "https://x.com/i/status/2111130295692849212"}, {"label": "同串换板建议，作者未采用", "url": "https://x.com/i/status/2111187043779068036"}, {"label": "10月23日：Gen1 Google Home Mini与Codex拒答的作者补充", "url": "https://x.com/i/status/2113385609045696516"}],
+    "snapshot_date": "2026-10-23",
     "metadata": ["不换板复用目标；启动锁定与护栏为作者报告，尚无自定义固件运行。"],
     "en": {
-      "title": "Google Home: a blocked attempt to revive an old speaker without replacing hardware",
-      "summary": "The author wants open smart-home software on an old speaker but reports a locked bootloader and OpenAI safeguards.",
-      "description": "At 06:01 Beijing time on October 17, @TheTJKennedy says they want idle old hardware to become useful in the AI age but currently face a locked bootloader and OpenAI cybersecurity safeguards. Reading the 00:21 parent identifies the target: trying to reverse-engineer a Google Home speaker over the weekend, with open software on old Google/Amazon speakers to control IoT without subscriptions. At 04:06 another participant suggests an Onju Voice ESP32-S3 replacement board, but the author explicitly rejects hardware changes because they defeat the goal of reusing the original device.\n\nThis is not a successful board-replacement project and does not establish an unlock, booting custom firmware or working home control. The Google Home generation, analysis steps, model and refusal records are absent. OpenAI involvement and blockers remain the author's account; REA use is unconfirmed. The 00:21 parent predates this window's 04:00 start and supplies target-identification background only; the 06:01 progress reply is the in-window candidate.",
+      "title": "First-generation Google Home Mini: original-hardware revival still blocked with Codex",
+      "summary": "TJ Kennedy identifies a Gen1 Google Home Mini and says Codex still stops for cybersecurity reasons. Asking about Grok does not establish an unlock or working open IoT firmware.",
+      "description": "At 06:01 Beijing time on October 17, @TheTJKennedy says they want idle old hardware to be useful in the AI age but face a locked bootloader and OpenAI cybersecurity safeguards. The 00:21 parent describes investigating Google Home and putting open software on old Google/Amazon speakers to control IoT without subscriptions. At 04:06 another participant suggests an Onju Voice ESP32-S3 replacement board, but the author rejects hardware changes as contrary to reusing the original device. These are October 17 background posts.\n\nAt 05:42:48 on October 23, TJ Kennedy replies to Michael Gannotti, explicitly identifying a root attempt on a first-generation Google Home Mini. They say Codex repeatedly stops for cybersecurity reasons and ask whether Grok would fare better or the hardware/firmware is difficult to modify. Supplementary reading confirms the same author, so the existing ID is retained rather than opening another case for the same target. The parent's second-generation Echo Dot modification is Michael's separate project, not success on the Mini; later model-switch advice is likewise not success evidence.\n\nNo unlock, custom firmware boot or home-device control is reported, and analysis steps, model version and refusal records remain absent. The new post supplies the generation and Codex identity; REA is unconfirmed. This remains an author-reported blocked investigation in progress. This collection operated no speaker or target code.",
       "metadata": ["Goal is reuse without replacing the board; boot locking and safeguards are author reports, with no running custom firmware."],
-      "source_labels": ["In-window author report of boot locking and OpenAI safeguards", "Out-of-window parent: Google Home investigation and old-speaker reuse plan", "Conversation suggestion of board replacement, not adopted by the author"]
+      "source_labels": ["October 17 author report of boot locking and OpenAI safeguards", "October 17 parent: Google Home investigation and old-speaker reuse plan", "Conversation suggestion of board replacement, not adopted by the author", "October 23 author update: Gen1 Google Home Mini and Codex refusals"]
     }
   },
   {
