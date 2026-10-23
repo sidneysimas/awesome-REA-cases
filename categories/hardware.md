@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](../cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**
+- [Tesla CarPlay盒：Claude、Codex与REA将JPEG路径改为HEVC的报告](../cases/tesla-carplay-box-rea-hevc-patch.md) — vibelatte报告AI分析并修补CarPlay盒固件，从30fps压缩JPEG改成手机原生HEVC，约60fps、2ms解码；未独立测量或安装补丁。 **[REA · 待验证]**
+- [iPad体重秤互通：nRF Connect采集、Claude解码并接入自有应用](../cases/ipad-fitness-scale-claude-ble-report.md) — menrva33称在iPad上用nRF Connect采集体重秤蓝牙通信，经Claude解码后接入自有应用；未给型号或实现，不能据此声称Safari支持原生Web Bluetooth。 **[其他 AI 逆向 · 待验证]**
+- [牙科影像板扫描客户端：REA辅助Rust重写的诊所报告](../cases/dental-plate-scanner-rea-rust-client.md) — KutahyAli称用Opus、REA和DeepSeek在4小时内重写诊所牙科扫描客户端，影像显示从70–75秒降至30秒、RAM从2.5GB降至40MB；未核验影像正确性或临床安全。 **[REA · 待验证]**
+- [旧HVAC控制板与Windows 3.1驱动：预算受限的AI恢复栈idea](../cases/legacy-hvac-ai-recovery-stack-idea.md) — 作者设想用三张5060 Ti和约100美元前沿模型预算，让Agent识别旧HVAC系统、理解电路并规划PCB和失去支持的驱动恢复；没有已修复设备。 **[未确认使用 REA · 待验证]**
 - [P106矿卡：nvprof拒绝支持后，作者提出REA与自制profiler方向](../cases/p106-nvprof-rea-profiler-idea.md) — 作者在P106矿卡机器上遇到nvprof不支持Crypto Mining Processors的提示，准备改用CUDA events自制profiler，并提出用REA研究；未报告已修复兼容性。 **[REA · 待验证]**
 - [Tesla增程请求：Claude Code拒绝改固件，转向日常耗电设置](../cases/tesla-claude-range-firmware-refusal.md) — 作者请求Claude Code从Tesla多挤100公里续航，被拒绝修改固件后得到哨兵模式、过热保护和胎压建议；没有实际增程或逆向完成证据。 **[其他 AI 逆向 · 待验证]**
 - [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](../cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**

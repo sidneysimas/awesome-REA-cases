@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](../cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
+- [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](../cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**
+- [Sonic到GTA V：REA与Opus搬运动作常数的作者报告](../cases/sonic-gta5-rea-movement-report.md) — 作者称从1991年Mega Drive Sonic ROM提取动作常数并改写GTA V玩家移动；正文说六个数却只列五项，未提供可重放Mod或测试结果。 **[REA · 待验证]**
 - [OpenAntiGrav：以Pulse为参照，用Rust重建WipEout多作共享引擎](../cases/openantigrav-wipeout-rust-reimplementation.md) — Aman介绍AI辅助的OpenAntiGrav；公开文档将原可执行文件作为行为规格，以证据与置信度约束Rust重实现。Pulse最完整，但未宣称整场逐tick一致，其他作品与平台支持不同。 **[其他 AI 逆向 · 进行中]**
 - [HeartGold/SoulSilver单屏fork：Claude改界面，明确归功pret既有反编译](../cases/pokeheartgold-singlescreen-claude-fork.md) — ClickingMaster的fork披露几乎全部改动由人类指导和试玩的Claude Code编写，将双屏界面搬到单屏供ssrecomp使用；正常配置双ROM逐字节构建是项目声明，不代表单屏修改仍等于原ROM。 **[其他 AI 逆向 · 进行中]**
 - [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](../cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**

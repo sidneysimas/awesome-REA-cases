@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Radian Browser：在Orbe基础上用Claude与REA研究Arc手势和界面](../cases/radian-browser-arc-rea-rebuild.md) — Abdullah Sultan发布macOS浏览器beta，称Claude通过REA和Hopper分析Arc手势；项目README明确大部分功能来自Orbe，不是AI从零重建整款浏览器。 **[REA · 进行中]**
+- [伪装svchost.exe的SSH工具：REA辅助本机静态排查idea](../cases/svchost-rea-static-triage-idea.md) — 作者以SSH程序冒充svchost.exe的报道提出防御性工作流：Claude整理文件来源、签名、父进程与连接，REA静态检查网络代码；明确演示不是本机泄露证据。 **[REA · 待验证]**
+- [OshoosiClaw：把自动二进制分析与YARA-X合成接入EDR的项目](../cases/oshoosiclaw-ai-edr-project.md) — 候选介绍Rust/Linux/Windows端点防御项目，包含Magika及YARA-X辅助的自动逆向模块并招募测试者；内核隔离与性能宣传未独立验证，其REA模块不能直接等同morluto/rea。 **[未确认使用 REA · 相关项目]**
 - [MyGate：Aditya用应用截图指导Agent重建配送放行流程](../cases/mygate-agent-screenshot-workflow-rebuild.md) — Aditya Anand称研究MyGate应用、给Agent截图解释工作流，再构建不用拿手机即可接受Amazon、Blinkit与Zomato配送的版本；仍在修细节，未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [Marshall的Web CTF：以奖励挑战“人能解、Agent不能解”的逆向防护说法](../cases/web-ctf-human-agent-reverse-challenge.md) — Marshall称自制Web CTF不能由Agent逆向求解，并设解题100美元、提权200美元奖励；目前只有挑战宣告，没有对照测试或防护机制证据。 **[其他 AI 逆向 · 待验证]**
 - [log工具适配：用REA与Playwright观察内部API，准备接入Codex和Claude](../cases/rea-playwright-log-tool-platform-adapters.md) — 作者称重做log工具为Codex插件和Claude connector，并用REA与Playwright观察内部API；计划下周测试后推main，不确认能避免封号。 **[REA · 进行中]**

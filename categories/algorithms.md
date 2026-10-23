@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](../cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
+- [NT内核启动区：用AI研究驱动签名路径的未实现想法](../cases/nt-kernel-ai-driver-signature-idea.md) — 一条回复提出用AI逆向NT内核启动部分并伪装签名驱动；只记录具名研究目标，不提供绕过步骤，也没有实现或验证证据。 **[其他 AI 逆向 · 待验证]**
 - [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](../cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**
 - [PHP与LiteLLM：让Claude对比安全补丁、画路径并反问的学习idea](../cases/php-litellm-claude-patch-learning-idea.md) — 作者建议让Claude Code/Opus对比PHP修补前后版本、只看两项安全修复并给图中每个节点标文件行号，再以问答检验理解；LiteLLM是另一拟用目标，尚无执行结果。 **[其他 AI 逆向 · 待验证]**
 - [record.c二进制实验：用竞争解释与原程序测试约束Claude逆向](../cases/claude-record-binary-evidence-lab-idea.md) — 作者提出以自编record.c为已知答案的实验目标，分模型做函数映射、竞争规格和原二进制测试，以valid_record的16/32边界示例说明不能只信模型解释；未独立运行。 **[其他 AI 逆向 · 待验证]**

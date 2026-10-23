@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **804 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **817 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（176）
-- [硬件与设备互通](categories/hardware.md)（208）
-- [应用与客户端](categories/apps.md)（349）
-- [算法与功能重建](categories/algorithms.md)（71）
+- [游戏与游戏保存](categories/games.md)（179）
+- [硬件与设备互通](categories/hardware.md)（213）
+- [应用与客户端](categories/apps.md)（352）
+- [算法与功能重建](categories/algorithms.md)（73）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
+- [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**
+- [Sonic到GTA V：REA与Opus搬运动作常数的作者报告](cases/sonic-gta5-rea-movement-report.md) — 作者称从1991年Mega Drive Sonic ROM提取动作常数并改写GTA V玩家移动；正文说六个数却只列五项，未提供可重放Mod或测试结果。 **[REA · 待验证]**
 - [OpenAntiGrav：以Pulse为参照，用Rust重建WipEout多作共享引擎](cases/openantigrav-wipeout-rust-reimplementation.md) — Aman介绍AI辅助的OpenAntiGrav；公开文档将原可执行文件作为行为规格，以证据与置信度约束Rust重实现。Pulse最完整，但未宣称整场逐tick一致，其他作品与平台支持不同。 **[其他 AI 逆向 · 进行中]**
 - [HeartGold/SoulSilver单屏fork：Claude改界面，明确归功pret既有反编译](cases/pokeheartgold-singlescreen-claude-fork.md) — ClickingMaster的fork披露几乎全部改动由人类指导和试玩的Claude Code编写，将双屏界面搬到单屏供ssrecomp使用；正常配置双ROM逐字节构建是项目声明，不代表单屏修改仍等于原ROM。 **[其他 AI 逆向 · 进行中]**
 - [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**
@@ -205,6 +208,11 @@
 
 ### 硬件与设备互通
 
+- [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**
+- [Tesla CarPlay盒：Claude、Codex与REA将JPEG路径改为HEVC的报告](cases/tesla-carplay-box-rea-hevc-patch.md) — vibelatte报告AI分析并修补CarPlay盒固件，从30fps压缩JPEG改成手机原生HEVC，约60fps、2ms解码；未独立测量或安装补丁。 **[REA · 待验证]**
+- [iPad体重秤互通：nRF Connect采集、Claude解码并接入自有应用](cases/ipad-fitness-scale-claude-ble-report.md) — menrva33称在iPad上用nRF Connect采集体重秤蓝牙通信，经Claude解码后接入自有应用；未给型号或实现，不能据此声称Safari支持原生Web Bluetooth。 **[其他 AI 逆向 · 待验证]**
+- [牙科影像板扫描客户端：REA辅助Rust重写的诊所报告](cases/dental-plate-scanner-rea-rust-client.md) — KutahyAli称用Opus、REA和DeepSeek在4小时内重写诊所牙科扫描客户端，影像显示从70–75秒降至30秒、RAM从2.5GB降至40MB；未核验影像正确性或临床安全。 **[REA · 待验证]**
+- [旧HVAC控制板与Windows 3.1驱动：预算受限的AI恢复栈idea](cases/legacy-hvac-ai-recovery-stack-idea.md) — 作者设想用三张5060 Ti和约100美元前沿模型预算，让Agent识别旧HVAC系统、理解电路并规划PCB和失去支持的驱动恢复；没有已修复设备。 **[未确认使用 REA · 待验证]**
 - [P106矿卡：nvprof拒绝支持后，作者提出REA与自制profiler方向](cases/p106-nvprof-rea-profiler-idea.md) — 作者在P106矿卡机器上遇到nvprof不支持Crypto Mining Processors的提示，准备改用CUDA events自制profiler，并提出用REA研究；未报告已修复兼容性。 **[REA · 待验证]**
 - [Tesla增程请求：Claude Code拒绝改固件，转向日常耗电设置](cases/tesla-claude-range-firmware-refusal.md) — 作者请求Claude Code从Tesla多挤100公里续航，被拒绝修改固件后得到哨兵模式、过热保护和胎压建议；没有实际增程或逆向完成证据。 **[其他 AI 逆向 · 待验证]**
 - [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**
@@ -416,6 +424,9 @@
 
 ### 应用与客户端
 
+- [Radian Browser：在Orbe基础上用Claude与REA研究Arc手势和界面](cases/radian-browser-arc-rea-rebuild.md) — Abdullah Sultan发布macOS浏览器beta，称Claude通过REA和Hopper分析Arc手势；项目README明确大部分功能来自Orbe，不是AI从零重建整款浏览器。 **[REA · 进行中]**
+- [伪装svchost.exe的SSH工具：REA辅助本机静态排查idea](cases/svchost-rea-static-triage-idea.md) — 作者以SSH程序冒充svchost.exe的报道提出防御性工作流：Claude整理文件来源、签名、父进程与连接，REA静态检查网络代码；明确演示不是本机泄露证据。 **[REA · 待验证]**
+- [OshoosiClaw：把自动二进制分析与YARA-X合成接入EDR的项目](cases/oshoosiclaw-ai-edr-project.md) — 候选介绍Rust/Linux/Windows端点防御项目，包含Magika及YARA-X辅助的自动逆向模块并招募测试者；内核隔离与性能宣传未独立验证，其REA模块不能直接等同morluto/rea。 **[未确认使用 REA · 相关项目]**
 - [MyGate：Aditya用应用截图指导Agent重建配送放行流程](cases/mygate-agent-screenshot-workflow-rebuild.md) — Aditya Anand称研究MyGate应用、给Agent截图解释工作流，再构建不用拿手机即可接受Amazon、Blinkit与Zomato配送的版本；仍在修细节，未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [Marshall的Web CTF：以奖励挑战“人能解、Agent不能解”的逆向防护说法](cases/web-ctf-human-agent-reverse-challenge.md) — Marshall称自制Web CTF不能由Agent逆向求解，并设解题100美元、提权200美元奖励；目前只有挑战宣告，没有对照测试或防护机制证据。 **[其他 AI 逆向 · 待验证]**
 - [log工具适配：用REA与Playwright观察内部API，准备接入Codex和Claude](cases/rea-playwright-log-tool-platform-adapters.md) — 作者称重做log工具为Codex插件和Claude connector，并用REA与Playwright观察内部API；计划下周测试后推main，不确认能避免封号。 **[REA · 进行中]**
@@ -768,6 +779,8 @@
 
 ### 算法与功能重建
 
+- [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
+- [NT内核启动区：用AI研究驱动签名路径的未实现想法](cases/nt-kernel-ai-driver-signature-idea.md) — 一条回复提出用AI逆向NT内核启动部分并伪装签名驱动；只记录具名研究目标，不提供绕过步骤，也没有实现或验证证据。 **[其他 AI 逆向 · 待验证]**
 - [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**
 - [PHP与LiteLLM：让Claude对比安全补丁、画路径并反问的学习idea](cases/php-litellm-claude-patch-learning-idea.md) — 作者建议让Claude Code/Opus对比PHP修补前后版本、只看两项安全修复并给图中每个节点标文件行号，再以问答检验理解；LiteLLM是另一拟用目标，尚无执行结果。 **[其他 AI 逆向 · 待验证]**
 - [record.c二进制实验：用竞争解释与原程序测试约束Claude逆向](cases/claude-record-binary-evidence-lab-idea.md) — 作者提出以自编record.c为已知答案的实验目标，分模型做函数映射、竞争规格和原二进制测试，以valid_record的16/32边界示例说明不能只信模型解释；未独立运行。 **[其他 AI 逆向 · 待验证]**

@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 804 cases & projects
+# 817 cases & projects
 
-**Latest case update:** October 23, 2026, 20:11 · **Last maintained:** October 23, 2026, 20:11 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 24, 2026, 00:16 · **Last maintained:** October 24, 2026, 00:16 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **176** |
-| [Hardware & interoperability](categories/en/hardware.md) | **208** |
-| [Applications & clients](categories/en/apps.md) | **349** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **71** |
+| [Games & preservation](categories/en/games.md) | **179** |
+| [Hardware & interoperability](categories/en/hardware.md) | **213** |
+| [Applications & clients](categories/en/apps.md) | **352** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **73** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 
