@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **797 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **804 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（174）
-- [硬件与设备互通](categories/hardware.md)（206）
+- [游戏与游戏保存](categories/games.md)（176）
+- [硬件与设备互通](categories/hardware.md)（208）
 - [应用与客户端](categories/apps.md)（349）
-- [算法与功能重建](categories/algorithms.md)（68）
+- [算法与功能重建](categories/algorithms.md)（71）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [OpenAntiGrav：以Pulse为参照，用Rust重建WipEout多作共享引擎](cases/openantigrav-wipeout-rust-reimplementation.md) — Aman介绍AI辅助的OpenAntiGrav；公开文档将原可执行文件作为行为规格，以证据与置信度约束Rust重实现。Pulse最完整，但未宣称整场逐tick一致，其他作品与平台支持不同。 **[其他 AI 逆向 · 进行中]**
+- [HeartGold/SoulSilver单屏fork：Claude改界面，明确归功pret既有反编译](cases/pokeheartgold-singlescreen-claude-fork.md) — ClickingMaster的fork披露几乎全部改动由人类指导和试玩的Claude Code编写，将双屏界面搬到单屏供ssrecomp使用；正常配置双ROM逐字节构建是项目声明，不代表单屏修改仍等于原ROM。 **[其他 AI 逆向 · 进行中]**
 - [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**
 - [Switch 2到PS5：AI辅助静态重编译原生移植的条件式设想](cases/switch2-ps5-ai-static-recompilation-idea.md) — 作者设想取得Switch 2游戏dump后，AI辅助逆向与静态重编译可能带来PS5原生移植；尚无具名游戏、工具链或运行结果。 **[其他 AI 逆向 · 待验证]**
 - [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**
@@ -203,6 +205,8 @@
 
 ### 硬件与设备互通
 
+- [P106矿卡：nvprof拒绝支持后，作者提出REA与自制profiler方向](cases/p106-nvprof-rea-profiler-idea.md) — 作者在P106矿卡机器上遇到nvprof不支持Crypto Mining Processors的提示，准备改用CUDA events自制profiler，并提出用REA研究；未报告已修复兼容性。 **[REA · 待验证]**
+- [Tesla增程请求：Claude Code拒绝改固件，转向日常耗电设置](cases/tesla-claude-range-firmware-refusal.md) — 作者请求Claude Code从Tesla多挤100公里续航，被拒绝修改固件后得到哨兵模式、过热保护和胎压建议；没有实际增程或逆向完成证据。 **[其他 AI 逆向 · 待验证]**
 - [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**
 - [H3C NX30 Pro：AI审读既有配置工具、移植Python并协助刷机的自述](cases/h3c-nx30-pro-ai-openwrt-config-tool-report.md) — 作者称AI沿ArtiSheng和茶栗的既有研究，阅读工具、把Rust工具移植为Python并改配置，最终在V100R010设备看到OpenWrt 25.12.6界面；未提供原始日志或独立验证。 **[其他 AI 逆向 · 待验证]**
 - [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
@@ -764,6 +768,9 @@
 
 ### 算法与功能重建
 
+- [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**
+- [PHP与LiteLLM：让Claude对比安全补丁、画路径并反问的学习idea](cases/php-litellm-claude-patch-learning-idea.md) — 作者建议让Claude Code/Opus对比PHP修补前后版本、只看两项安全修复并给图中每个节点标文件行号，再以问答检验理解；LiteLLM是另一拟用目标，尚无执行结果。 **[其他 AI 逆向 · 待验证]**
+- [record.c二进制实验：用竞争解释与原程序测试约束Claude逆向](cases/claude-record-binary-evidence-lab-idea.md) — 作者提出以自编record.c为已知答案的实验目标，分模型做函数映射、竞争规格和原二进制测试，以valid_record的16/32边界示例说明不能只信模型解释；未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [CREBench：432个密码二进制任务，从算法识别到flag恢复](cases/crebench-432-crypto-re-benchmark-report.md) — CREBench用48种算法、3种密钥模式与3种难度组织432题，评测LLM识别算法、提取密钥、重实现封装与恢复flag；已读官方仓库说明，未重跑分数。 **[其他 AI 逆向 · 分析测试]**
 - [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**

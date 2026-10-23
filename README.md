@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 797 cases & projects
+# 804 cases & projects
 
-**Latest case update:** October 23, 2026, 16:10 · **Last maintained:** October 23, 2026, 16:10 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 23, 2026, 20:11 · **Last maintained:** October 23, 2026, 20:11 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[xbox-boot-re: the original green blob, reconstructed](cases/en/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — Human-directed Opus turns one BIOS into a **C core and WebGPU viewer**, with documented xemu comparisons and successful project CI. One modified BIOS, approximate audio synthesis; not a full console emulator or independently rerun here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
-10. **[ns2jb: what Codex actually did on Switch 2](cases/en/ns2jb-codex-switch2-human-directed-research.md)** · `2026-10-18` — The author's report credits AI-assisted investigation but corrects the viral shortcut: **roughly two weeks of substantial human effort**, not one magic prompt. The one-day task was a Mario Kart World mod; the automated WebKit goal failed. Tethered, firmware 23.0.1; not independently reproduced. `Research report`
+10. **[SoulSilver on one screen](cases/en/pokeheartgold-singlescreen-claude-fork.md)** · `2026-10-22` — A Claude Code-assisted fork moves **battle, bag and party UI onto one screen** for ssrecomp, explicitly crediting pret's existing decompilation. Reported byte-exactness applies to normal ROM builds, **not the deliberately modified single-screen version**; not independently built here. `In progress`
 
 ## Classic cases
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **174** |
-| [Hardware & interoperability](categories/en/hardware.md) | **206** |
+| [Games & preservation](categories/en/games.md) | **176** |
+| [Hardware & interoperability](categories/en/hardware.md) | **208** |
 | [Applications & clients](categories/en/apps.md) | **349** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **68** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **71** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

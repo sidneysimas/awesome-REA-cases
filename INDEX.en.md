@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**797 entries**, organized by use case, without a Top-N or popularity threshold.
+**804 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (174)
-- [Hardware and interoperability](categories/en/hardware.md) (206)
+- [Games and preservation](categories/en/games.md) (176)
+- [Hardware and interoperability](categories/en/hardware.md) (208)
 - [Applications and clients](categories/en/apps.md) (349)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (68)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (71)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [OpenAntiGrav: a Rust shared-engine reconstruction of WipEout, with Pulse as the reference](cases/en/openantigrav-wipeout-rust-reimplementation.md) — Aman introduces AI-assisted OpenAntiGrav. Public project documents treat original executables as behavioral specifications and constrain Rust reconstruction with evidence and confidence scores. Pulse is most complete, without full-race tick parity; other games and platforms vary. **[Other AI-assisted work · In progress]**
+- [HeartGold/SoulSilver single-screen fork: Claude changes the UI, crediting pret's existing decompilation](cases/en/pokeheartgold-singlescreen-claude-fork.md) — ClickingMaster discloses that nearly all fork changes were written by human-directed, play-tested Claude Code, adapting dual-screen UI for ssrecomp. Reported byte-exact normal builds of both ROMs do not mean the modified single-screen version equals the original ROM. **[Other AI-assisted work · In progress]**
 - [Chessmaster 9000: SenG uses Codex to reconstruct The King from x86 into browser Wasm](cases/en/chessmaster9000-codex-king-wasm.md) — SenG reports Codex-assisted binary research, translating The King's x86 logic into C and WebAssembly and rebuilding the board interface with TypeScript and Three.js. Engine equivalence was not independently tested. **[Other AI-assisted work · In progress]**
 - [Switch 2 to PS5: a conditional idea for AI-assisted static recompilation and native ports](cases/en/switch2-ps5-ai-static-recompilation-idea.md) — The author suggests Switch 2 game dumps could enable AI-assisted reverse engineering and static recompilation into native PS5 ports. No named game, toolchain or running result is supplied. **[Other AI-assisted work · Needs verification]**
 - [Project Midas: a Claude-assisted GoldenEye PC port built on existing N64 decompilation](cases/en/project-midas-claude-goldeneye-pc-port.md) — Graslu00 describes two AI-assisted programmers and player testing. The public README acknowledges Claude and an existing N64 decompilation as the basis for a Windows/Linux port, not AI recovering the original game from scratch. **[Other AI-assisted work · In progress]**
@@ -205,6 +207,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [P106 mining GPU: an REA and homemade-profiler idea after nvprof refuses support](cases/en/p106-nvprof-rea-profiler-idea.md) — A P106 owner reports nvprof's Crypto Mining Processors rejection, proposes a homemade profiler using CUDA events and asks about REA research. No compatibility fix is reported. **[REA · Needs verification]**
+- [Tesla range request: Claude Code refuses firmware changes and turns to everyday settings](cases/en/tesla-claude-range-firmware-refusal.md) — The author asks Claude Code for 100 km more Tesla range, reports a firmware-modification refusal and receives Sentry Mode, overheat-protection and tire-pressure suggestions. No measured gain or completed reverse engineering is shown. **[Other AI-assisted work · Needs verification]**
 - [Deeper Sony TV cleanup: MC reports Codex and Claude Code refusing root research](cases/en/sony-tv-codex-claude-root-refusal-report.md) — MC says he cleaned up a Sony TV but Codex/Claude Code security restrictions blocked bootloader/root investigation for deeper cleanup. New AOSP or open-source Linux firmware remains a wish. **[Other AI-assisted work · Needs verification]**
 - [H3C NX30 Pro: an author reports AI-assisted inspection, Python tool adaptation and OpenWrt flashing](cases/en/h3c-nx30-pro-ai-openwrt-config-tool-report.md) — Following existing ArtiSheng and chariri work, the author says AI read tools, ported Rust to Python and modified configuration, ultimately showing OpenWrt 25.12.6 on a V100R010 device. Original logs and independent verification are absent. **[Other AI-assisted work · Needs verification]**
 - [Air-fryer voice control: vartekxx's REA evidence and human-confirmation workflow](cases/en/air-fryer-rea-opus-confirmed-voice-workflow.md) — The author claims REA and Opus 5.5 start a 190-degree-Celsius, 30-minute cycle by voice. The full prompt first requires proving a local control path and confirming each action; no model, connector or measured test is supplied. **[REA · Needs verification]**
@@ -766,6 +770,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Caleb Gross: using an LLM to prioritize decompiled firmware functions for review](cases/en/caleb-gross-llm-firmware-function-ranking.md) — Black Hat describes Caleb Gross ranking symbol-free firmware functions by likely bugs, reporting more than twice the precision of directly asking a model. Experimental details and independent reproduction are unavailable. **[Other AI-assisted work · Analysis test]**
+- [PHP and LiteLLM: a Claude patch-diff, cited-diagram and quiz learning idea](cases/en/php-litellm-claude-patch-learning-idea.md) — The author proposes comparing PHP before and after two security fixes with Claude Code/Opus, citing every diagram node by file and line, then checking understanding with questions. LiteLLM is another proposed target; no execution results are supplied. **[Other AI-assisted work · Needs verification]**
+- [A record.c binary lab: constrain Claude reversing with competing explanations and original-program tests](cases/en/claude-record-binary-evidence-lab-idea.md) — The author proposes a known-answer record.c lab, splitting function mapping, competing specifications and original-binary tests across models. A valid_record 16/32 boundary illustrates why model explanations need testing; the lab was not independently run. **[Other AI-assisted work · Needs verification]**
 - [CREBench: 432 cryptographic binary tasks, from algorithm identification to flag recovery](cases/en/crebench-432-crypto-re-benchmark-report.md) — CREBench combines 48 algorithms, three key modes and three difficulties into 432 challenges for LLM algorithm identification, key extraction, wrapper reimplementation and flag recovery. The official README was read; scores were not rerun. **[Other AI-assisted work · Analysis test]**
 - [Claude and Theorem: turning OSS-Fuzz binaries into Rocq no-crash proofs](cases/en/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic and Theorem report Claude-written RISC-V machine-code proofs for 239 entry points across 123 libraries, checked by Rocq. These apply to a specific single-threaded static Linux model and inputs below 64MB, not bug-free entire libraries. **[Other AI-assisted work · Analysis test]**
 - [MalwareBench: a cross-platform benchmark from obfuscated malware to behavioral reports and extractors](cases/en/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis introduces an end-to-end defensive reversing benchmark, reporting GPT-6.1 Sol in the lead at just 4.42%. Its Conti example still fails to decrypt a later payload: partial analysis is not completion. **[Other AI-assisted work · Needs verification]**

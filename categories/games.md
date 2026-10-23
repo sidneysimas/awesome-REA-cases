@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [OpenAntiGrav：以Pulse为参照，用Rust重建WipEout多作共享引擎](../cases/openantigrav-wipeout-rust-reimplementation.md) — Aman介绍AI辅助的OpenAntiGrav；公开文档将原可执行文件作为行为规格，以证据与置信度约束Rust重实现。Pulse最完整，但未宣称整场逐tick一致，其他作品与平台支持不同。 **[其他 AI 逆向 · 进行中]**
+- [HeartGold/SoulSilver单屏fork：Claude改界面，明确归功pret既有反编译](../cases/pokeheartgold-singlescreen-claude-fork.md) — ClickingMaster的fork披露几乎全部改动由人类指导和试玩的Claude Code编写，将双屏界面搬到单屏供ssrecomp使用；正常配置双ROM逐字节构建是项目声明，不代表单屏修改仍等于原ROM。 **[其他 AI 逆向 · 进行中]**
 - [Chessmaster 9000：SenG用Codex把The King引擎从x86重建为浏览器Wasm](../cases/chessmaster9000-codex-king-wasm.md) — SenG报告Codex辅助研究Chessmaster 9000二进制，将The King的x86逻辑译为C再编译到Wasm，以TypeScript和Three.js重建棋盘界面；未独立测试引擎等价性。 **[其他 AI 逆向 · 进行中]**
 - [Switch 2到PS5：AI辅助静态重编译原生移植的条件式设想](../cases/switch2-ps5-ai-static-recompilation-idea.md) — 作者设想取得Switch 2游戏dump后，AI辅助逆向与静态重编译可能带来PS5原生移植；尚无具名游戏、工具链或运行结果。 **[其他 AI 逆向 · 待验证]**
 - [Project Midas：在GoldenEye既有N64反编译上使用Claude辅助制作PC移植](../cases/project-midas-claude-goldeneye-pc-port.md) — Graslu00解释Project Midas由两位程序员AI辅助并有玩家测试；公开README承认Claude参与，基于前人反编译面向Windows/Linux移植，不是AI从零恢复原游戏。 **[其他 AI 逆向 · 进行中]**

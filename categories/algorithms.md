@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](../cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**
+- [PHP与LiteLLM：让Claude对比安全补丁、画路径并反问的学习idea](../cases/php-litellm-claude-patch-learning-idea.md) — 作者建议让Claude Code/Opus对比PHP修补前后版本、只看两项安全修复并给图中每个节点标文件行号，再以问答检验理解；LiteLLM是另一拟用目标，尚无执行结果。 **[其他 AI 逆向 · 待验证]**
+- [record.c二进制实验：用竞争解释与原程序测试约束Claude逆向](../cases/claude-record-binary-evidence-lab-idea.md) — 作者提出以自编record.c为已知答案的实验目标，分模型做函数映射、竞争规格和原二进制测试，以valid_record的16/32边界示例说明不能只信模型解释；未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [CREBench：432个密码二进制任务，从算法识别到flag恢复](../cases/crebench-432-crypto-re-benchmark-report.md) — CREBench用48种算法、3种密钥模式与3种难度组织432题，评测LLM识别算法、提取密钥、重实现封装与恢复flag；已读官方仓库说明，未重跑分数。 **[其他 AI 逆向 · 分析测试]**
 - [Claude与Theorem：把OSS-Fuzz二进制测试转成Rocq无崩溃证明](../cases/anthropic-theorem-claude-binary-formal-verification.md) — Anthropic与Theorem报告Claude为123库的239个入口编写RISC-V机器码级证明，由Rocq核验；限特定单线程静态Linux模型与小于64MB输入，并不代表整个库无bug。 **[其他 AI 逆向 · 分析测试]**
 - [MalwareBench：从混淆恶意二进制到行为报告与提取器的跨平台基准](../cases/malwarebench-cross-platform-ai-re-benchmark.md) — General Analysis公布端到端防御性逆向基准，报告GPT-6.1 Sol领先但仅4.42%；同串Conti实验仍未解开后续载荷，不能将部分分析当完成。 **[其他 AI 逆向 · 待验证]**

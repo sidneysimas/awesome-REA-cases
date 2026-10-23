@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [P106矿卡：nvprof拒绝支持后，作者提出REA与自制profiler方向](../cases/p106-nvprof-rea-profiler-idea.md) — 作者在P106矿卡机器上遇到nvprof不支持Crypto Mining Processors的提示，准备改用CUDA events自制profiler，并提出用REA研究；未报告已修复兼容性。 **[REA · 待验证]**
+- [Tesla增程请求：Claude Code拒绝改固件，转向日常耗电设置](../cases/tesla-claude-range-firmware-refusal.md) — 作者请求Claude Code从Tesla多挤100公里续航，被拒绝修改固件后得到哨兵模式、过热保护和胎压建议；没有实际增程或逆向完成证据。 **[其他 AI 逆向 · 待验证]**
 - [Sony电视深度清理：MC报告Codex与Claude Code的root研究遭拒](../cases/sony-tv-codex-claude-root-refusal-report.md) — MC称已整理Sony电视，但想用Codex与Claude Code研究bootloader或root以进一步清理时被安全限制阻止；新AOSP或开源Linux固件只是愿望。 **[其他 AI 逆向 · 待验证]**
 - [H3C NX30 Pro：AI审读既有配置工具、移植Python并协助刷机的自述](../cases/h3c-nx30-pro-ai-openwrt-config-tool-report.md) — 作者称AI沿ArtiSheng和茶栗的既有研究，阅读工具、把Rust工具移植为Python并改配置，最终在V100R010设备看到OpenWrt 25.12.6界面；未提供原始日志或独立验证。 **[其他 AI 逆向 · 待验证]**
 - [空气炸锅语音控制：vartekxx的REA取证与人工确认工作流](../cases/air-fryer-rea-opus-confirmed-voice-workflow.md) — 作者称Opus 5.5与REA让一句话启动190摄氏度、30分钟；完整提示词实际先要求证明本地控制路径并逐次确认，未提供型号、连接器或实测。 **[REA · 待验证]**
