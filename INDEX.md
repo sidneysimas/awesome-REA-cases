@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **817 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **827 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（179）
-- [硬件与设备互通](categories/hardware.md)（213）
-- [应用与客户端](categories/apps.md)（352）
-- [算法与功能重建](categories/algorithms.md)（73）
+- [游戏与游戏保存](categories/games.md)（180）
+- [硬件与设备互通](categories/hardware.md)（217）
+- [应用与客户端](categories/apps.md)（356）
+- [算法与功能重建](categories/algorithms.md)（74）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Knight Online：让Claude研究Apple Silicon原生离线版的计划](cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
 - [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**
 - [Sonic到GTA V：REA与Opus搬运动作常数的作者报告](cases/sonic-gta5-rea-movement-report.md) — 作者称从1991年Mega Drive Sonic ROM提取动作常数并改写GTA V玩家移动；正文说六个数却只列五项，未提供可重放Mod或测试结果。 **[REA · 待验证]**
@@ -208,6 +209,10 @@
 
 ### 硬件与设备互通
 
+- [NVIDIA显卡驱动：让AI尝试反编译的读者提案](cases/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_提出让AI尝试反编译NVIDIA显卡驱动；目标具体，但没有指定驱动版本、操作系统、恢复功能或实现。 **[其他 AI 逆向 · 待验证]**
+- [LG OLED：Damos用Claude Code重做原生QML主页与系统行为](cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
+- [芯片逆向工具自动化：长期手工研究者让AI Agent辅助构建](cases/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo称手工做芯片逆向多年，因时间不足转而用AI Agent构建自动化工具；这是进行中的工具项目，不是已恢复某款芯片。 **[其他 AI 逆向 · 进行中]**
+- [iPhone Duo代码模型：Opus逐部件重建与约束检查的作者报告](cases/iphone-duo-opus-parametric-model-report.md) — @andreysuperior称用Opus构建141部件的可折叠手机代码模型，逐项检查间隙与线缆弯曲；未提供真实尺寸来源或产物，不是已验证的iPhone硬件数字孪生。 **[其他 AI 逆向 · 待验证]**
 - [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**
 - [Tesla CarPlay盒：Claude、Codex与REA将JPEG路径改为HEVC的报告](cases/tesla-carplay-box-rea-hevc-patch.md) — vibelatte报告AI分析并修补CarPlay盒固件，从30fps压缩JPEG改成手机原生HEVC，约60fps、2ms解码；未独立测量或安装补丁。 **[REA · 待验证]**
 - [iPad体重秤互通：nRF Connect采集、Claude解码并接入自有应用](cases/ipad-fitness-scale-claude-ble-report.md) — menrva33称在iPad上用nRF Connect采集体重秤蓝牙通信，经Claude解码后接入自有应用；未给型号或实现，不能据此声称Safari支持原生Web Bluetooth。 **[其他 AI 逆向 · 待验证]**
@@ -424,6 +429,10 @@
 
 ### 应用与客户端
 
+- [Jira、Confluence与Azure DevOps：读者点名的REA研究方向](cases/jira-confluence-azure-devops-rea-idea.md) — 一条回复向morluto提议研究三款企业协作软件；对象明确，未指定功能、实现或验收，不是三款产品已经被替代。 **[REA · 待验证]**
+- [Android手机只读审计：Claude结合adb与jadx排查可疑APK的提示词](cases/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar给出自有或授权Android手机的防御审计提示词，从安装来源、权限和活动记录筛选APK，再用jadx查上传代码；是工作流idea，不是已证实的间谍软件检测器。 **[其他 AI 逆向 · 待验证]**
+- [mcp-gamehacking：为AI客户端组织游戏逆向资料与研究工作流](cases/mcp-gamehacking-research-knowledge-server.md) — 候选介绍可接Claude、Cursor的MCP逆向知识库；公开1llu50ry仓库提供资料检索、项目阅读及Agent说明工具，但4100+规模与研究成效未逐项核验。 **[其他 AI 逆向 · 相关项目]**
+- [App导出与游戏存档reader：Claude Code与REA格式恢复服务自述](cases/rea-app-export-game-save-reader-report.md) — @w1nklerr称用Claude Code与REA映射无法打开的二进制导出或存档，再制作reader库交付；没有具名格式和代码，500美元及150至300美元单价仅为自述。 **[REA · 待验证]**
 - [Radian Browser：在Orbe基础上用Claude与REA研究Arc手势和界面](cases/radian-browser-arc-rea-rebuild.md) — Abdullah Sultan发布macOS浏览器beta，称Claude通过REA和Hopper分析Arc手势；项目README明确大部分功能来自Orbe，不是AI从零重建整款浏览器。 **[REA · 进行中]**
 - [伪装svchost.exe的SSH工具：REA辅助本机静态排查idea](cases/svchost-rea-static-triage-idea.md) — 作者以SSH程序冒充svchost.exe的报道提出防御性工作流：Claude整理文件来源、签名、父进程与连接，REA静态检查网络代码；明确演示不是本机泄露证据。 **[REA · 待验证]**
 - [OshoosiClaw：把自动二进制分析与YARA-X合成接入EDR的项目](cases/oshoosiclaw-ai-edr-project.md) — 候选介绍Rust/Linux/Windows端点防御项目，包含Magika及YARA-X辅助的自动逆向模块并招募测试者；内核隔离与性能宣传未独立验证，其REA模块不能直接等同morluto/rea。 **[未确认使用 REA · 相关项目]**
@@ -658,7 +667,7 @@
 - [GTM 工具：用 REA 构建线索与邮件营销工作流](cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
 - [茶叶出海网站：REA 辅助的本地重建报告](cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
 - [iTerm：借助 REA 规格实现阿拉伯语文本绘制](cases/arabic-terminal-rendering.md) — 作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。 **[REA · 待验证]**
-- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](cases/bloomberg-style-research-terminal.md) — 多帖描述用REA与Claude研究Bloomberg风格工作流并接独立数据；10月22日另有接入Kronos概率预测的具体提案，均未证明等价或交易优势。 **[REA · 待验证]**
+- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](cases/bloomberg-style-research-terminal.md) — 多帖描述REA与Claude研究Bloomberg风格工作流、接独立数据；10月24日提案在Kronos预测层外增加TradingAgents研究与风险决策，仍无终端产物或回测结果。 **[REA · 待验证]**
 - [闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件](cases/closed-agent-pi-plugin.md) — 作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。 **[REA · 待验证]**
 - [ChatGPT App：用 REA 分析并为聊天窗口添加渐变背景](cases/chatgpt-app-gradient-background.md) — 作者称用 ChatGPT 与 REA 分析 Electron 应用，并为右侧聊天窗口注入渐变背景。 **[REA · 待验证]**
 - [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**
@@ -779,6 +788,7 @@
 
 ### 算法与功能重建
 
+- [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**
 - [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
 - [NT内核启动区：用AI研究驱动签名路径的未实现想法](cases/nt-kernel-ai-driver-signature-idea.md) — 一条回复提出用AI逆向NT内核启动部分并伪装签名驱动；只记录具名研究目标，不提供绕过步骤，也没有实现或验证证据。 **[其他 AI 逆向 · 待验证]**
 - [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**

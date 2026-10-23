@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](../cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**
 - [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](../cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
 - [NT内核启动区：用AI研究驱动签名路径的未实现想法](../cases/nt-kernel-ai-driver-signature-idea.md) — 一条回复提出用AI逆向NT内核启动部分并伪装签名驱动；只记录具名研究目标，不提供绕过步骤，也没有实现或验证证据。 **[其他 AI 逆向 · 待验证]**
 - [Caleb Gross：让LLM优先排列值得审查的固件反编译函数](../cases/caleb-gross-llm-firmware-function-ranking.md) — Black Hat官方介绍Caleb Gross用LLM按潜在漏洞概率排列无符号固件函数，称精确率超过直接询问模型的两倍；未取得实验细节或独立复现。 **[其他 AI 逆向 · 分析测试]**

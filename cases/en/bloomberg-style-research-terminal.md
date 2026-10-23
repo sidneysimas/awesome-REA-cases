@@ -1,7 +1,7 @@
 # Bloomberg-style research terminal: a reported REA/Claude build
 
 Category: Applications and clients · REA
-Record date: 2026-10-22
+Record date: 2026-10-24
 Stage: Needs verification
 
 The poster reports firsthand building a Bloomberg-style financial-research workstation with REA MCP and Claude Opus 5.5. The described workflow observes publicly visible financial dashboards, charts and workflows; designs quotes, watchlists, financial statements, news, charting and portfolio analysis; connects free market-data APIs; and builds backtesting and analysis features. The author explicitly says Bloomberg's proprietary data was not unlocked and independent data sources were used. The evidence is the author's completion claim and build guide, without workstation code, an accessible product or test records. It remains unverified, without assuming all listed features are complete or equivalent to Bloomberg. REA use is directly reported in the post; this collection did not independently retest.
@@ -12,12 +12,15 @@ At 06:26 on October 17, @sopersone reports a weekend spent externally studying f
 
 A candidate posted at 07:12 Beijing time on October 22 proposes combining REA, Claude Code and Kronos: first map a professional terminal's quotes, charts, screeners and news interface, then connect public market APIs and load what the post calls the 24.7M-parameter Kronos-small. It proposes predicting the next 24 candles from 512 historical candles, sampling 100 price paths to display a distribution, and backtesting with realistic fees before using real capital. This is a concrete idea for a probabilistic-forecast layer, not confirmation of the same implementation as earlier posts. No terminal code, model evaluation or backtest results are provided. The model size and input/output settings are attributed solely to this post; the Kronos repository was not checked and predictions were not run. Free access, a Bloomberg-style interface and forecast curves do not imply proprietary-data access, guaranteed returns or full terminal equivalence.
 
+At 01:48:40 Beijing time on October 24, 2026, another proposal adds TradingAgents to this terminal target: four AI analysts cover fundamentals, news, sentiment and technicals, followed by bull/bear debate, a risk team and portfolio manager evaluating BUY/SELL/HOLD. REA investigates a professional terminal's interface and workflows, Kronos supplies probabilistic forecasts, and TradingAgents adds a research and decision-organization layer. The post repeats the 24.7M-parameter, 512-input-candle, 24-forecast-candle and 100-path settings, requiring backtesting with actual transaction costs before risking funds. It still provides no terminal implementation, backtest, forecast-quality or earnings record; model/agent counts and free-operation conditions were not verified. This is not confirmed as the same code as earlier posts.
+
 Posted: 2026-10-14T02:58:43+08:00
 Author reports using REA MCP and Claude Opus 5.5; this collection did not independently run or verify features.
 Author says free, independent market data was used, without unlocking Bloomberg's proprietary data.
 New-source October 16 candidate snapshot: 8 likes, 32 views; age 18, $32,000 annual fee, one evening and around 23 sources are unverified.
 October 17 adds claims of external workflow investigation and backtesting, without inspectable code or comparison records; existing engagement snapshots retain their original dates.
 October 22 source update: 07:12:52 Beijing time; Kronos proposal candidate snapshot: 5 likes, 245 views, 1 repost; no measured forecasting or trading results.
+October 24 source update: 01:48:40 Beijing time; candidate snapshot: 40 likes, 2,055 views and 7 reposts. The TradingAgents combination remains a proposal, without terminal code or backtest results.
 
 ## Sources
 
@@ -25,5 +28,6 @@ October 22 source update: 07:12:52 Beijing time; Kronos proposal candidate snaps
 - [October 16 promotional alerts report, not confirmed as the same implementation](https://x.com/i/status/2110880082289922361)
 - [October 17 build account of function codes, linked panels and owned data feeds](https://x.com/i/status/2111222172698218781)
 - [October 22 REA/Kronos probabilistic research-terminal proposal, not confirmed as the same implementation](https://x.com/i/status/2113045887119184222)
+- [October 24 REA/Kronos/TradingAgents terminal proposal, not confirmed as the same implementation](https://x.com/i/status/2113689074196263406)
 
 [中文](../bloomberg-style-research-terminal.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

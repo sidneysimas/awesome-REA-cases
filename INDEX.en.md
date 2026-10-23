@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**817 entries**, organized by use case, without a Top-N or popularity threshold.
+**827 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (179)
-- [Hardware and interoperability](categories/en/hardware.md) (213)
-- [Applications and clients](categories/en/apps.md) (352)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (73)
+- [Games and preservation](categories/en/games.md) (180)
+- [Hardware and interoperability](categories/en/hardware.md) (217)
+- [Applications and clients](categories/en/apps.md) (356)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (74)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Knight Online: a plan for Claude to investigate a native offline Apple Silicon version](cases/en/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre plans to have Claude fork a GitHub Knight Online repository for a native offline Apple Silicon version. The post asks whether it can be done; no port is demonstrated. **[Other AI-assisted work · Needs verification]**
 - [Zoetermeer city game: author reports AI decompilation and a Wasm port](cases/en/zoetermeer-simcity-ai-wasm.md) — Bouke reports AI-decompiling the SimCity-like game commissioned by Zoetermeer in the early 2000s and porting it to playable browser Wasm. Execution and original-game parity were not independently checked. **[Other AI-assisted work · Needs verification]**
 - [nico's nextbots: second AI-assisted decompilation update with human event fixes](cases/en/nico-nextbots-ai-assisted-decompilation.md) — The author shows a second decompilation update for the Roblox game nico's nextbots, explicitly crediting AI assistance rather than autonomy. RemoteEvent fixes are human work and sound effects remain placeholders; full recovery is not established. **[Other AI-assisted work · In progress]**
 - [Sonic to GTA V: an author report of moving movement constants with REA and Opus](cases/en/sonic-gta5-rea-movement-report.md) — The author claims to extract movement constants from a 1991 Mega Drive Sonic ROM and modify GTA V player movement. The post says six numbers but lists five, with no reproducible mod or test results. **[REA · Needs verification]**
@@ -210,6 +211,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [NVIDIA video drivers: a reader's proposal to try AI decompilation](cases/en/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_ proposes using AI to decompile NVIDIA video drivers. The target is specific, but no driver version, operating system, recovered feature or implementation is given. **[Other AI-assisted work · Needs verification]**
+- [LG OLED: Damos uses Claude Code for a native QML home and system changes](cases/en/lg-oled-damos-claude-qml-home.md) — Damos reports building a QML home on rooted webOS with Claude Code, remapping HOME, disabling preloading and blocking ad domains. About 80 MB reclaimed and a 350 ms launch are author-reported figures. **[Other AI-assisted work · Needs verification]**
+- [Automating chip reverse engineering: a longtime manual researcher builds tools with AI agents](cases/en/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo reports years of manual chip reverse engineering and is now using AI agents to build automation tools because of limited time. This is an in-progress tool project, not recovery of a particular chip. **[Other AI-assisted work · In progress]**
+- [An iPhone Duo code model: reported part-by-part Opus reconstruction and constraint checks](cases/en/iphone-duo-opus-parametric-model-report.md) — @andreysuperior reports a 141-part folding-phone code model built with Opus and checked for clearance and cable bending. No real dimensions or artifacts are supplied; it is not a validated iPhone hardware digital twin. **[Other AI-assisted work · Needs verification]**
 - [NGRAVE ZERO: announcing a Claude Mythos review of wallet firmware and apps](cases/en/ngrave-zero-claude-mythos-security-review.md) — NGRAVE announces acceptance into Anthropic's Cyber Verification Program and use of Claude Mythos to review ZERO firmware, apps and infrastructure. No public vulnerability or fix is reported. **[Other AI-assisted work · In progress]**
 - [Tesla CarPlay box: a reported JPEG-to-HEVC firmware patch using Claude, Codex and REA](cases/en/tesla-carplay-box-rea-hevc-patch.md) — vibelatte reports AI-assisted firmware analysis and patching from 30 fps compressed JPEG to native phone HEVC at about 60 fps and 2 ms decode. No patch installation or independent measurement here. **[REA · Needs verification]**
 - [iPad scale interoperability: nRF Connect capture and Claude decoding for a personal app](cases/en/ipad-fitness-scale-claude-ble-report.md) — menrva33 reports capturing scale Bluetooth traffic with nRF Connect on an iPad and decoding it with Claude for a personal app. No model or implementation is supplied; this does not establish native Safari Web Bluetooth support. **[Other AI-assisted work · Needs verification]**
@@ -426,6 +431,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Jira, Confluence and Azure DevOps: reader-nominated targets for REA research](cases/en/jira-confluence-azure-devops-rea-idea.md) — A reply to morluto proposes investigating three enterprise collaboration tools. The targets are named, but no feature, implementation or acceptance result is specified; this is not evidence the products have been replaced. **[REA · Needs verification]**
+- [Read-only Android auditing: a Claude prompt combining adb and jadx for suspicious APKs](cases/en/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar supplies a defensive prompt for an owned or authorized Android phone: triage install provenance, permissions and activity, then inspect upload code with jadx. It is a workflow idea, not a validated spyware detector. **[Other AI-assisted work · Needs verification]**
+- [mcp-gamehacking: organizing game reverse-engineering material for AI clients](cases/en/mcp-gamehacking-research-knowledge-server.md) — The candidate introduces an MCP research knowledge base for Claude and Cursor. The public 1llu50ry repository documents search, project reading and agent-briefing tools; its 4,100-plus scale and research effectiveness were not individually verified. **[Other AI-assisted work · Related project]**
+- [Readers for app exports and game saves: a reported Claude Code/REA format-recovery service](cases/en/rea-app-export-game-save-reader-report.md) — @w1nklerr reports using Claude Code and REA to map unreadable binary exports or saves and deliver reader libraries. No named format or code is supplied; $500 and $150-$300 pricing are self-reported. **[REA · Needs verification]**
 - [Radian Browser: studying Arc gestures and UI with Claude and REA on top of Orbe](cases/en/radian-browser-arc-rea-rebuild.md) — Abdullah Sultan releases a macOS browser beta and says Claude analyzed Arc gestures using REA and Hopper. The README credits Orbe for most features; this is not an AI reconstruction of an entire browser from scratch. **[REA · In progress]**
 - [An SSH tool disguised as svchost.exe: a REA static-triage idea for one's own PC](cases/en/svchost-rea-static-triage-idea.md) — The author proposes defensive triage: Claude organizes provenance, signatures, parents and connections; REA statically inspects network code. The demonstration is explicitly not evidence of a location leak. **[REA · Needs verification]**
 - [OshoosiClaw: an EDR project integrating automated binary analysis and YARA-X synthesis](cases/en/oshoosiclaw-ai-edr-project.md) — The candidate describes a Rust Linux/Windows endpoint-defense project using Magika and YARA-X for automated reverse engineering and recruiting testers. Kernel isolation and performance are unverified; its REA module does not establish use of morluto/rea. **[REA use unconfirmed · Related project]**
@@ -660,7 +669,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [GTM tool: a reported REA-assisted lead and email workflow](cases/en/rea-gtm-tool.md) — The author says REA was used to build a GTM tool for lead generation, management and email campaigns; implementation and operation are unverified. **[REA · Needs verification]**
 - [Tea-export website: reported REA-assisted rebuild](cases/en/tea-site-rea-rebuild-report.md) — The author reports using Codex and REA to investigate a reference website and deploy a local rebuild in about 40 minutes; the target and functional parity are unverified. **[REA · Needs verification]**
 - [iTerm: Arabic text rendering informed by REA](cases/en/arabic-terminal-rendering.md) — The poster says REA was used to analyze iTerm, then specifications guided a separate implementation tested on their device; the result is unverified. **[REA · Needs verification]**
-- [Bloomberg-style research terminal: a reported REA/Claude build](cases/en/bloomberg-style-research-terminal.md) — Posts describe REA/Claude study of Bloomberg-style workflows with independent data; an October 22 proposal adds Kronos probabilistic forecasts, without demonstrating equivalence or a trading advantage. **[REA · Needs verification]**
+- [Bloomberg-style research terminal: a reported REA/Claude build](cases/en/bloomberg-style-research-terminal.md) — Posts describe REA/Claude study of Bloomberg-style workflows with independent data. An October 24 proposal adds TradingAgents research and risk decisions to Kronos forecasts, still without a terminal artifact or backtest results. **[REA · Needs verification]**
 - [Closed-source coding agent: reverse-engineered collaboration logic and a pi plugin](cases/en/closed-agent-pi-plugin.md) — The poster says they used REA to study an unnamed agent's multi-model collaboration logic and developed a pi plugin; target and implementation are unverified. **[REA · Needs verification]**
 - [ChatGPT app: a reported REA-assisted gradient-background modification](cases/en/chatgpt-app-gradient-background.md) — The poster says ChatGPT and REA were used to add a gradient to the Electron app's right chat pane; implementation and result are not independently verified. **[REA · Needs verification]**
 - [Ledger Reborn: An Independent Accounting App Informed by QuickBooks Study](cases/en/ledger-reborn-accounting-app.md) — A third-party quote post says a developer studied QuickBooks with REA + Ghidra for inventory costs, budgets and reconciliation, then released Windows and Mac previews. **[REA · Related project]**
@@ -781,6 +790,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Fun2Spec: recovering C++ postconditions with LLMs, with a reported Spec-Agent extension](cases/en/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue describes Fun2Spec's code-to-contract recovery and a fuzzing-enabled Spec-Agent extension. Public Fun2Spec documentation confirms LLM-generated C++ postconditions and BDE/BlazingMQ case studies; no independent execution here. **[Other AI-assisted work · Related project]**
 - [Clavius reconstructs PubChem molecular complexity: a reported 98.4% on 4,000 tests](cases/en/clavius-pubchem-complexity-reconstruction.md) — 1F916 says one Clavius AI agent reconstructed PubChem's molecular-complexity calculation in Python, reproducing 98.4% of 4,000 test results. The invitation to PubChem, RDKit and chemists is a call for independent checking, not its completion. **[Other AI-assisted work · Analysis test]**
 - [NT kernel boot: an unimplemented AI idea targeting driver-signature paths](cases/en/nt-kernel-ai-driver-signature-idea.md) — A reply proposes AI analysis of NT kernel startup to masquerade a driver as signed. This records a named research target, not bypass instructions or evidence of an implementation. **[Other AI-assisted work · Needs verification]**
 - [Caleb Gross: using an LLM to prioritize decompiled firmware functions for review](cases/en/caleb-gross-llm-firmware-function-ranking.md) — Black Hat describes Caleb Gross ranking symbol-free firmware functions by likely bugs, reporting more than twice the precision of directly asking a model. Experimental details and independent reproduction are unavailable. **[Other AI-assisted work · Analysis test]**

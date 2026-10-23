@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="286" viewBox="0 0 880 286" role="img" aria-labelledby="title desc">
-<title id="title">Case accumulation: 817 · 2026-10-24</title>
-<desc id="desc">2026-10-09: 0; 2026-10-10: 0; 2026-10-11: 0; 2026-10-12: 81; 2026-10-13: 128; 2026-10-14: 145; 2026-10-15: 203; 2026-10-16: 297; 2026-10-17: 375; 2026-10-18: 457; 2026-10-19: 544; 2026-10-20: 627; 2026-10-21: 669; 2026-10-22: 752; 2026-10-23: 804; 2026-10-24: 817</desc>
+<title id="title">Case accumulation: 827 · 2026-10-24</title>
+<desc id="desc">2026-10-09: 0; 2026-10-10: 0; 2026-10-11: 0; 2026-10-12: 81; 2026-10-13: 128; 2026-10-14: 145; 2026-10-15: 203; 2026-10-16: 297; 2026-10-17: 375; 2026-10-18: 457; 2026-10-19: 544; 2026-10-20: 627; 2026-10-21: 669; 2026-10-22: 752; 2026-10-23: 804; 2026-10-24: 827</desc>
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10b981" stop-opacity=".18"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></linearGradient></defs>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Zen Hei","Segoe UI","Noto Sans CJK SC",sans-serif;fill:#64748b;font-size:12px}.bg{fill:#fff}.heading{fill:#0f172a;font-size:17px;font-weight:600}.grid{stroke:#e2e8f0;stroke-dasharray:3 5}.value{fill:#059669;font-size:13px;font-weight:600}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}text{fill:#8b949e}.heading{fill:#e6edf3}.grid{stroke:#30363d}.value{fill:#34d399}}</style>
 <rect class="bg" width="880" height="286" rx="12"/>
@@ -11,8 +11,8 @@
 <path class="grid" d="M 54 167.3 H 812"/><text x="42" y="171.3" text-anchor="end">300</text>
 <path class="grid" d="M 54 124.7 H 812"/><text x="42" y="128.7" text-anchor="end">600</text>
 <path class="grid" d="M 54 82.0 H 812"/><text x="42" y="86.0" text-anchor="end">900</text>
-<path d="M 54 210 L 54.0 210.0 L 104.5 210.0 L 155.1 210.0 L 205.6 198.5 L 256.1 191.8 L 306.7 189.4 L 357.2 181.1 L 407.7 167.8 L 458.3 156.7 L 508.8 145.0 L 559.3 132.6 L 609.9 120.8 L 660.4 114.9 L 710.9 103.0 L 761.5 95.7 L 812.0 93.8 L 812.0 210 Z" fill="url(#area)"/>
-<polyline points="54.0,210.0 104.5,210.0 155.1,210.0 205.6,198.5 256.1,191.8 306.7,189.4 357.2,181.1 407.7,167.8 458.3,156.7 508.8,145.0 559.3,132.6 609.9,120.8 660.4,114.9 710.9,103.0 761.5,95.7 812.0,93.8" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 54 210 L 54.0 210.0 L 104.5 210.0 L 155.1 210.0 L 205.6 198.5 L 256.1 191.8 L 306.7 189.4 L 357.2 181.1 L 407.7 167.8 L 458.3 156.7 L 508.8 145.0 L 559.3 132.6 L 609.9 120.8 L 660.4 114.9 L 710.9 103.0 L 761.5 95.7 L 812.0 92.4 L 812.0 210 Z" fill="url(#area)"/>
+<polyline points="54.0,210.0 104.5,210.0 155.1,210.0 205.6,198.5 256.1,191.8 306.7,189.4 357.2,181.1 407.7,167.8 458.3,156.7 508.8,145.0 559.3,132.6 609.9,120.8 660.4,114.9 710.9,103.0 761.5,95.7 812.0,92.4" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="54.0" cy="210.0" r="4" fill="#10b981"/>
 <text class="value" x="54.0" y="198.0" text-anchor="middle">0</text>
 <text x="54.0" y="234" text-anchor="middle">10-09</text>
@@ -37,8 +37,8 @@
 <circle cx="761.5" cy="95.7" r="4" fill="#10b981"/>
 <text class="value" x="761.5" y="83.7" text-anchor="middle">804</text>
 <text x="761.5" y="234" text-anchor="middle">10-23</text>
-<circle cx="812.0" cy="93.8" r="4" fill="#10b981"/>
-<text class="value" x="812.0" y="81.8" text-anchor="middle">817</text>
+<circle cx="812.0" cy="92.4" r="4" fill="#10b981"/>
+<text class="value" x="812.0" y="80.4" text-anchor="middle">827</text>
 <text x="812.0" y="234" text-anchor="middle">10-24</text>
 <text x="28" y="266" style="font-size:11px">10-09–10-11: pre-collection baseline · Latest day is partial · UTC+8</text>
 </svg>

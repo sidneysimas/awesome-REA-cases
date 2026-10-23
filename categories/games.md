@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Knight Online：让Claude研究Apple Silicon原生离线版的计划](../cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](../cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
 - [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](../cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**
 - [Sonic到GTA V：REA与Opus搬运动作常数的作者报告](../cases/sonic-gta5-rea-movement-report.md) — 作者称从1991年Mega Drive Sonic ROM提取动作常数并改写GTA V玩家移动；正文说六个数却只列五项，未提供可重放Mod或测试结果。 **[REA · 待验证]**

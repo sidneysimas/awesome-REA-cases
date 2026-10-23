@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Jira、Confluence与Azure DevOps：读者点名的REA研究方向](../cases/jira-confluence-azure-devops-rea-idea.md) — 一条回复向morluto提议研究三款企业协作软件；对象明确，未指定功能、实现或验收，不是三款产品已经被替代。 **[REA · 待验证]**
+- [Android手机只读审计：Claude结合adb与jadx排查可疑APK的提示词](../cases/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar给出自有或授权Android手机的防御审计提示词，从安装来源、权限和活动记录筛选APK，再用jadx查上传代码；是工作流idea，不是已证实的间谍软件检测器。 **[其他 AI 逆向 · 待验证]**
+- [mcp-gamehacking：为AI客户端组织游戏逆向资料与研究工作流](../cases/mcp-gamehacking-research-knowledge-server.md) — 候选介绍可接Claude、Cursor的MCP逆向知识库；公开1llu50ry仓库提供资料检索、项目阅读及Agent说明工具，但4100+规模与研究成效未逐项核验。 **[其他 AI 逆向 · 相关项目]**
+- [App导出与游戏存档reader：Claude Code与REA格式恢复服务自述](../cases/rea-app-export-game-save-reader-report.md) — @w1nklerr称用Claude Code与REA映射无法打开的二进制导出或存档，再制作reader库交付；没有具名格式和代码，500美元及150至300美元单价仅为自述。 **[REA · 待验证]**
 - [Radian Browser：在Orbe基础上用Claude与REA研究Arc手势和界面](../cases/radian-browser-arc-rea-rebuild.md) — Abdullah Sultan发布macOS浏览器beta，称Claude通过REA和Hopper分析Arc手势；项目README明确大部分功能来自Orbe，不是AI从零重建整款浏览器。 **[REA · 进行中]**
 - [伪装svchost.exe的SSH工具：REA辅助本机静态排查idea](../cases/svchost-rea-static-triage-idea.md) — 作者以SSH程序冒充svchost.exe的报道提出防御性工作流：Claude整理文件来源、签名、父进程与连接，REA静态检查网络代码；明确演示不是本机泄露证据。 **[REA · 待验证]**
 - [OshoosiClaw：把自动二进制分析与YARA-X合成接入EDR的项目](../cases/oshoosiclaw-ai-edr-project.md) — 候选介绍Rust/Linux/Windows端点防御项目，包含Magika及YARA-X辅助的自动逆向模块并招募测试者；内核隔离与性能宣传未独立验证，其REA模块不能直接等同morluto/rea。 **[未确认使用 REA · 相关项目]**
@@ -236,7 +240,7 @@
 - [GTM 工具：用 REA 构建线索与邮件营销工作流](../cases/rea-gtm-tool.md) — 作者称用 REA 构建获客工具，涵盖线索管理与邮件活动；未提供实现或测试细节。 **[REA · 待验证]**
 - [茶叶出海网站：REA 辅助的本地重建报告](../cases/tea-site-rea-rebuild-report.md) — 作者称用 Codex + REA 逆向参考网站，并在约 40 分钟内本地部署重建版。 **[REA · 待验证]**
 - [iTerm：借助 REA 规格实现阿拉伯语文本绘制](../cases/arabic-terminal-rendering.md) — 作者自述用 REA 分析 iTerm，再按规格制作并在设备上测试阿拉伯语绘制支持；实现与测试尚无独立核验。 **[REA · 待验证]**
-- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 多帖描述用REA与Claude研究Bloomberg风格工作流并接独立数据；10月22日另有接入Kronos概率预测的具体提案，均未证明等价或交易优势。 **[REA · 待验证]**
+- [Bloomberg 风格研究终端：用 REA 与 Claude 构建独立数据工作站](../cases/bloomberg-style-research-terminal.md) — 多帖描述REA与Claude研究Bloomberg风格工作流、接独立数据；10月24日提案在Kronos预测层外增加TradingAgents研究与风险决策，仍无终端产物或回测结果。 **[REA · 待验证]**
 - [闭源 Coding Agent：逆向多模型协同逻辑并制作 pi 插件](../cases/closed-agent-pi-plugin.md) — 作者自述用 REA 研究闭源 Coding Agent 的多模型协同逻辑，并据此开发 pi 插件；目标与实现尚未公开核验。 **[REA · 待验证]**
 - [ChatGPT App：用 REA 分析并为聊天窗口添加渐变背景](../cases/chatgpt-app-gradient-background.md) — 作者称用 ChatGPT 与 REA 分析 Electron 应用，并为右侧聊天窗口注入渐变背景。 **[REA · 待验证]**
 - [Ledger Reborn：研究 QuickBooks 后制作独立记账应用](../cases/ledger-reborn-accounting-app.md) — 第三方 quote 帖称开发者以 REA + Ghidra 研究 QuickBooks 的库存成本、预算与对账，并发布 Windows / Mac 预览版。 **[REA · 相关项目]**

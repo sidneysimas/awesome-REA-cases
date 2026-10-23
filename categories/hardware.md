@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [NVIDIA显卡驱动：让AI尝试反编译的读者提案](../cases/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_提出让AI尝试反编译NVIDIA显卡驱动；目标具体，但没有指定驱动版本、操作系统、恢复功能或实现。 **[其他 AI 逆向 · 待验证]**
+- [LG OLED：Damos用Claude Code重做原生QML主页与系统行为](../cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
+- [芯片逆向工具自动化：长期手工研究者让AI Agent辅助构建](../cases/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo称手工做芯片逆向多年，因时间不足转而用AI Agent构建自动化工具；这是进行中的工具项目，不是已恢复某款芯片。 **[其他 AI 逆向 · 进行中]**
+- [iPhone Duo代码模型：Opus逐部件重建与约束检查的作者报告](../cases/iphone-duo-opus-parametric-model-report.md) — @andreysuperior称用Opus构建141部件的可折叠手机代码模型，逐项检查间隙与线缆弯曲；未提供真实尺寸来源或产物，不是已验证的iPhone硬件数字孪生。 **[其他 AI 逆向 · 待验证]**
 - [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](../cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**
 - [Tesla CarPlay盒：Claude、Codex与REA将JPEG路径改为HEVC的报告](../cases/tesla-carplay-box-rea-hevc-patch.md) — vibelatte报告AI分析并修补CarPlay盒固件，从30fps压缩JPEG改成手机原生HEVC，约60fps、2ms解码；未独立测量或安装补丁。 **[REA · 待验证]**
 - [iPad体重秤互通：nRF Connect采集、Claude解码并接入自有应用](../cases/ipad-fitness-scale-claude-ble-report.md) — menrva33称在iPad上用nRF Connect采集体重秤蓝牙通信，经Claude解码后接入自有应用；未给型号或实现，不能据此声称Safari支持原生Web Bluetooth。 **[其他 AI 逆向 · 待验证]**
