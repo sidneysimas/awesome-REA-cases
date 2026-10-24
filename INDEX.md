@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **827 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **836 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（180）
-- [硬件与设备互通](categories/hardware.md)（217）
-- [应用与客户端](categories/apps.md)（356）
-- [算法与功能重建](categories/algorithms.md)（74）
+- [游戏与游戏保存](categories/games.md)（181）
+- [硬件与设备互通](categories/hardware.md)（220）
+- [应用与客户端](categories/apps.md)（360）
+- [算法与功能重建](categories/algorithms.md)（75）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Metal Gear Online 2：多年人工逆向、Metal Gear Arcade基础与部分AI辅助的PC移植转述](cases/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok称SaveMGO的MGO2 PC移植建立在多年人工研究与Metal Gear Arcade基础上，仅部分AI辅助；父帖介绍beta和少量bug，未取得开发者分工记录。 **[其他 AI 逆向 · 待验证]**
 - [Knight Online：让Claude研究Apple Silicon原生离线版的计划](cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
 - [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**
@@ -209,6 +210,9 @@
 
 ### 硬件与设备互通
 
+- [Yeelight Station：REA研究Windows安装器，Swift重做Mac灯光客户端](cases/yeelight-station-rea-swift-mac.md) — Anuhas D.称因Yeelight Station只有Windows应用，用REA研究安装器后制作原生Swift Mac版，提供菜单栏、屏幕同步与音乐同步；未独立验证设备响应或签名。 **[REA · 待验证]**
+- [电水壶互通：REA与Opus的只读优先、现场确认控制提示词](cases/kettle-rea-evidence-first-control-idea.md) — vartekx给出研究自有电水壶接口并制作最小连接器的完整提示词，要求保留防干烧、人在现场逐次确认和状态回读；没有型号或实测，不把卧床烧水宣传当安全验证。 **[REA · 待验证]**
+- [廉价示波器固件：Claude辅助逆向并重写Rust的作者自述](cases/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais称前一天让Claude研究一台廉价示波器的固件并用Rust重写，认为更好用；没有型号、具体改善功能或测试，不当作已验证固件替代。 **[其他 AI 逆向 · 待验证]**
 - [NVIDIA显卡驱动：让AI尝试反编译的读者提案](cases/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_提出让AI尝试反编译NVIDIA显卡驱动；目标具体，但没有指定驱动版本、操作系统、恢复功能或实现。 **[其他 AI 逆向 · 待验证]**
 - [LG OLED：Damos用Claude Code重做原生QML主页与系统行为](cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
 - [芯片逆向工具自动化：长期手工研究者让AI Agent辅助构建](cases/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo称手工做芯片逆向多年，因时间不足转而用AI Agent构建自动化工具；这是进行中的工具项目，不是已恢复某款芯片。 **[其他 AI 逆向 · 进行中]**
@@ -429,6 +433,10 @@
 
 ### 应用与客户端
 
+- [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
+- [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**
+- [NODECODE：面向安全研究与逆向的自修改Agent项目发布](cases/nodecode-self-modifying-security-agent.md) — v1se发布NODECODE，称其为长期迭代安全与逆向任务调整工具和上下文，可接Telegram、Discord、Slack；MIT与性能改进为发布者宣传，未取得源码或实际研究案例。 **[其他 AI 逆向 · 相关项目]**
+- [GhydraMCP：为AI连接Ghidra反编译、交叉引用与注释的工具介绍](cases/ghydramcp-ghidra-ai-bridge.md) — danalec介绍名为GhydraMCP的MCP/CLI桥，列出反编译、函数映射、xrefs、注释及多实例；保留原拼写，未将其擅自等同其他GhidraMCP项目。 **[其他 AI 逆向 · 相关项目]**
 - [Jira、Confluence与Azure DevOps：读者点名的REA研究方向](cases/jira-confluence-azure-devops-rea-idea.md) — 一条回复向morluto提议研究三款企业协作软件；对象明确，未指定功能、实现或验收，不是三款产品已经被替代。 **[REA · 待验证]**
 - [Android手机只读审计：Claude结合adb与jadx排查可疑APK的提示词](cases/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar给出自有或授权Android手机的防御审计提示词，从安装来源、权限和活动记录筛选APK，再用jadx查上传代码；是工作流idea，不是已证实的间谍软件检测器。 **[其他 AI 逆向 · 待验证]**
 - [mcp-gamehacking：为AI客户端组织游戏逆向资料与研究工作流](cases/mcp-gamehacking-research-knowledge-server.md) — 候选介绍可接Claude、Cursor的MCP逆向知识库；公开1llu50ry仓库提供资料检索、项目阅读及Agent说明工具，但4100+规模与研究成效未逐项核验。 **[其他 AI 逆向 · 相关项目]**
@@ -788,6 +796,7 @@
 
 ### 算法与功能重建
 
+- [胶片色偏重建：照片编辑器作者请求Claude帮助时受阻](cases/film-stock-color-shifts-claude-refusal.md) — Lukáš Hozda称希望为照片编辑器研究某款胶片的色彩偏移，却遭Claude异常拒绝；具体重建需求成立，没有恢复曲线或成功结果，不据此认定Anthropic全面封禁逆向。 **[其他 AI 逆向 · 待验证]**
 - [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**
 - [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
 - [NT内核启动区：用AI研究驱动签名路径的未实现想法](cases/nt-kernel-ai-driver-signature-idea.md) — 一条回复提出用AI逆向NT内核启动部分并伪装签名驱动；只记录具名研究目标，不提供绕过步骤，也没有实现或验证证据。 **[其他 AI 逆向 · 待验证]**

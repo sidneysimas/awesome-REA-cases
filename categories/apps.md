@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](../cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
+- [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](../cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**
+- [NODECODE：面向安全研究与逆向的自修改Agent项目发布](../cases/nodecode-self-modifying-security-agent.md) — v1se发布NODECODE，称其为长期迭代安全与逆向任务调整工具和上下文，可接Telegram、Discord、Slack；MIT与性能改进为发布者宣传，未取得源码或实际研究案例。 **[其他 AI 逆向 · 相关项目]**
+- [GhydraMCP：为AI连接Ghidra反编译、交叉引用与注释的工具介绍](../cases/ghydramcp-ghidra-ai-bridge.md) — danalec介绍名为GhydraMCP的MCP/CLI桥，列出反编译、函数映射、xrefs、注释及多实例；保留原拼写，未将其擅自等同其他GhidraMCP项目。 **[其他 AI 逆向 · 相关项目]**
 - [Jira、Confluence与Azure DevOps：读者点名的REA研究方向](../cases/jira-confluence-azure-devops-rea-idea.md) — 一条回复向morluto提议研究三款企业协作软件；对象明确，未指定功能、实现或验收，不是三款产品已经被替代。 **[REA · 待验证]**
 - [Android手机只读审计：Claude结合adb与jadx排查可疑APK的提示词](../cases/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar给出自有或授权Android手机的防御审计提示词，从安装来源、权限和活动记录筛选APK，再用jadx查上传代码；是工作流idea，不是已证实的间谍软件检测器。 **[其他 AI 逆向 · 待验证]**
 - [mcp-gamehacking：为AI客户端组织游戏逆向资料与研究工作流](../cases/mcp-gamehacking-research-knowledge-server.md) — 候选介绍可接Claude、Cursor的MCP逆向知识库；公开1llu50ry仓库提供资料检索、项目阅读及Agent说明工具，但4100+规模与研究成效未逐项核验。 **[其他 AI 逆向 · 相关项目]**

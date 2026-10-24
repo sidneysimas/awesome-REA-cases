@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Metal Gear Online 2：多年人工逆向、Metal Gear Arcade基础与部分AI辅助的PC移植转述](../cases/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok称SaveMGO的MGO2 PC移植建立在多年人工研究与Metal Gear Arcade基础上，仅部分AI辅助；父帖介绍beta和少量bug，未取得开发者分工记录。 **[其他 AI 逆向 · 待验证]**
 - [Knight Online：让Claude研究Apple Silicon原生离线版的计划](../cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](../cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
 - [nico's nextbots：AI辅助反编译的第二次进展与人工事件修复](../cases/nico-nextbots-ai-assisted-decompilation.md) — 作者展示Roblox游戏nico's nextbots反编译的第二次进展，明确AI只用于辅助，RemoteEvent问题由人修复，音效仍是占位；不代表完整游戏恢复。 **[其他 AI 逆向 · 进行中]**

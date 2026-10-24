@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**827 entries**, organized by use case, without a Top-N or popularity threshold.
+**836 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (180)
-- [Hardware and interoperability](categories/en/hardware.md) (217)
-- [Applications and clients](categories/en/apps.md) (356)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (74)
+- [Games and preservation](categories/en/games.md) (181)
+- [Hardware and interoperability](categories/en/hardware.md) (220)
+- [Applications and clients](categories/en/apps.md) (360)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (75)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Metal Gear Online 2: a PC-port account crediting years of manual reversing, Metal Gear Arcade and partial AI help](cases/en/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok says SaveMGO's MGO2 PC port builds on years of human research and Metal Gear Arcade, with some AI assistance. A parent recommends the beta with remaining bugs; developer task-allocation records were not obtained. **[Other AI-assisted work · Needs verification]**
 - [Knight Online: a plan for Claude to investigate a native offline Apple Silicon version](cases/en/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre plans to have Claude fork a GitHub Knight Online repository for a native offline Apple Silicon version. The post asks whether it can be done; no port is demonstrated. **[Other AI-assisted work · Needs verification]**
 - [Zoetermeer city game: author reports AI decompilation and a Wasm port](cases/en/zoetermeer-simcity-ai-wasm.md) — Bouke reports AI-decompiling the SimCity-like game commissioned by Zoetermeer in the early 2000s and porting it to playable browser Wasm. Execution and original-game parity were not independently checked. **[Other AI-assisted work · Needs verification]**
 - [nico's nextbots: second AI-assisted decompilation update with human event fixes](cases/en/nico-nextbots-ai-assisted-decompilation.md) — The author shows a second decompilation update for the Roblox game nico's nextbots, explicitly crediting AI assistance rather than autonomy. RemoteEvent fixes are human work and sound effects remain placeholders; full recovery is not established. **[Other AI-assisted work · In progress]**
@@ -211,6 +212,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Yeelight Station: investigating the Windows installer with REA for a Swift Mac client](cases/en/yeelight-station-rea-swift-mac.md) — Anuhas D. says Yeelight Station's Windows-only application prompted REA investigation of its installer and a native Swift Mac rebuild with menu-bar control, screen sync and music sync. Device responses and signing were not independently verified. **[REA · Needs verification]**
+- [Electric-kettle interoperability: a read-only-first REA/Opus prompt with on-site confirmation](cases/en/kettle-rea-evidence-first-control-idea.md) — vartekx supplies a full prompt for investigating an owned kettle and building a minimal connector, retaining boil-dry protection, physical presence, per-action confirmation and state readback. No model or tests are given; control-from-bed publicity is not safety validation. **[REA · Needs verification]**
+- [A cheap oscilloscope's firmware: an author's report of Claude investigation and a Rust rewrite](cases/en/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais says Claude investigated a cheap oscilloscope's firmware and rewrote it in Rust the previous day, calling it better. No model, specific improvement or tests establish a validated firmware replacement. **[Other AI-assisted work · Needs verification]**
 - [NVIDIA video drivers: a reader's proposal to try AI decompilation](cases/en/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_ proposes using AI to decompile NVIDIA video drivers. The target is specific, but no driver version, operating system, recovered feature or implementation is given. **[Other AI-assisted work · Needs verification]**
 - [LG OLED: Damos uses Claude Code for a native QML home and system changes](cases/en/lg-oled-damos-claude-qml-home.md) — Damos reports building a QML home on rooted webOS with Claude Code, remapping HOME, disabling preloading and blocking ad domains. About 80 MB reclaimed and a 350 ms launch are author-reported figures. **[Other AI-assisted work · Needs verification]**
 - [Automating chip reverse engineering: a longtime manual researcher builds tools with AI agents](cases/en/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo reports years of manual chip reverse engineering and is now using AI agents to build automation tools because of limited time. This is an in-progress tool project, not recovery of a particular chip. **[Other AI-assisted work · In progress]**
@@ -431,6 +435,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [FSCapture scrolling screenshots: Lucky J uses Codex and REA to investigate stitching around video](cases/en/fscapture-codex-rea-scroll-stitching.md) — Lucky J reports repeated or missing sections in a homebuilt scrolling-capture tool, then has Codex install REA and inspect FSCapture as a reference. After two days of human tuning, video and Word captures reportedly work; open sourcing remains a plan. **[REA · In progress]**
+- [Red Star OS: a retelling of REA analysis of file censorship and watermarks in an isolated VM](cases/en/red-star-os-rea-censorship-watermark-report.md) — COCOA University summarizes REA research into the 2013 Red Star OS in a VM, describing censorship, self-protection and disk-serial watermarks. Seven to thirty minutes and about 32 MB are secondhand claims without original analysis artifacts. **[REA · Needs verification]**
+- [NODECODE: launching a self-modifying agent for security and reverse-engineering research](cases/en/nodecode-self-modifying-security-agent.md) — v1se introduces NODECODE for long iterative security and reverse-engineering tasks, reportedly modifying tools and context and supporting Telegram, Discord and Slack. MIT licensing and efficiency gains remain launch claims without inspected code or a concrete investigation. **[Other AI-assisted work · Related project]**
+- [GhydraMCP: an introduction to an AI bridge for Ghidra decompilation, xrefs and annotations](cases/en/ghydramcp-ghidra-ai-bridge.md) — danalec introduces GhydraMCP as an MCP/CLI bridge for decompilation, function mapping, xrefs, annotations and multiple instances. The source spelling is preserved rather than conflated with other GhidraMCP projects. **[Other AI-assisted work · Related project]**
 - [Jira, Confluence and Azure DevOps: reader-nominated targets for REA research](cases/en/jira-confluence-azure-devops-rea-idea.md) — A reply to morluto proposes investigating three enterprise collaboration tools. The targets are named, but no feature, implementation or acceptance result is specified; this is not evidence the products have been replaced. **[REA · Needs verification]**
 - [Read-only Android auditing: a Claude prompt combining adb and jadx for suspicious APKs](cases/en/android-adb-jadx-claude-readonly-audit-idea.md) — Raytar supplies a defensive prompt for an owned or authorized Android phone: triage install provenance, permissions and activity, then inspect upload code with jadx. It is a workflow idea, not a validated spyware detector. **[Other AI-assisted work · Needs verification]**
 - [mcp-gamehacking: organizing game reverse-engineering material for AI clients](cases/en/mcp-gamehacking-research-knowledge-server.md) — The candidate introduces an MCP research knowledge base for Claude and Cursor. The public 1llu50ry repository documents search, project reading and agent-briefing tools; its 4,100-plus scale and research effectiveness were not individually verified. **[Other AI-assisted work · Related project]**
@@ -790,6 +798,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Recovering film-stock color shifts: a photo-editor author's Claude request is blocked](cases/en/film-stock-color-shifts-claude-refusal.md) — Lukas Hozda reports asking Claude to investigate a film stock's color shifts for his photo editor and encountering a refusal-like failure. The reconstruction purpose is concrete, but no recovered curve or successful result is supplied, nor proof of a blanket Anthropic ban. **[Other AI-assisted work · Needs verification]**
 - [Fun2Spec: recovering C++ postconditions with LLMs, with a reported Spec-Agent extension](cases/en/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue describes Fun2Spec's code-to-contract recovery and a fuzzing-enabled Spec-Agent extension. Public Fun2Spec documentation confirms LLM-generated C++ postconditions and BDE/BlazingMQ case studies; no independent execution here. **[Other AI-assisted work · Related project]**
 - [Clavius reconstructs PubChem molecular complexity: a reported 98.4% on 4,000 tests](cases/en/clavius-pubchem-complexity-reconstruction.md) — 1F916 says one Clavius AI agent reconstructed PubChem's molecular-complexity calculation in Python, reproducing 98.4% of 4,000 test results. The invitation to PubChem, RDKit and chemists is a call for independent checking, not its completion. **[Other AI-assisted work · Analysis test]**
 - [NT kernel boot: an unimplemented AI idea targeting driver-signature paths](cases/en/nt-kernel-ai-driver-signature-idea.md) — A reply proposes AI analysis of NT kernel startup to masquerade a driver as signed. This records a named research target, not bypass instructions or evidence of an implementation. **[Other AI-assisted work · Needs verification]**
