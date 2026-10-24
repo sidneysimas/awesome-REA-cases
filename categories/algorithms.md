@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](../cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**
 - [胶片色偏重建：照片编辑器作者请求Claude帮助时受阻](../cases/film-stock-color-shifts-claude-refusal.md) — Lukáš Hozda称希望为照片编辑器研究某款胶片的色彩偏移，却遭Claude异常拒绝；具体重建需求成立，没有恢复曲线或成功结果，不据此认定Anthropic全面封禁逆向。 **[其他 AI 逆向 · 待验证]**
 - [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](../cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**
 - [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](../cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**

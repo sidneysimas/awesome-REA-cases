@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [The Simpsons: Tapped Out：向社区提出用Claude Code或Codex研究PC移植](../cases/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa在Teamtsto活动公告下询问能否用Claude Code或Codex辅助逆向，让游戏登陆PC；这是具体移植愿望，不是已实施工程。 **[其他 AI 逆向 · 待验证]**
+- [Habbo Wired教学：an4log用REA与Claude研究浏览器交互示例](../cases/habbo-wired-club-rea-interactive-examples.md) — an4log称在Habbo上运行REA与Claude，准备为Wired Club制作可在浏览器操作的系统示例，灵感来自WiredSnippets；已发预览，正式教学内容仍是计划。 **[REA · 进行中]**
+- [Tekken Tag Tournament 2：Shihab的AI辅助PC移植与稳定维护](../cases/tekken-tag2-shihab-ai-pc-port.md) — Shihab说明自己用AI探索逆向与所需功能的边界，将Tekken Tag Tournament 2移植到PC；v0.1.7列出回滚联网与社区服务器，后续以稳定维护为主，不与BlueSpark混为一项工程。 **[其他 AI 逆向 · 进行中]**
 - [Metal Gear Online 2：多年人工逆向、Metal Gear Arcade基础与部分AI辅助的PC移植转述](../cases/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok称SaveMGO的MGO2 PC移植建立在多年人工研究与Metal Gear Arcade基础上，仅部分AI辅助；父帖介绍beta和少量bug，未取得开发者分工记录。 **[其他 AI 逆向 · 待验证]**
 - [Knight Online：让Claude研究Apple Silicon原生离线版的计划](../cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](../cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**

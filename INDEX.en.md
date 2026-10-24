@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**836 entries**, organized by use case, without a Top-N or popularity threshold.
+**842 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (181)
-- [Hardware and interoperability](categories/en/hardware.md) (220)
+- [Games and preservation](categories/en/games.md) (184)
+- [Hardware and interoperability](categories/en/hardware.md) (222)
 - [Applications and clients](categories/en/apps.md) (360)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (75)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (76)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [The Simpsons: Tapped Out: a community request to explore a PC port with Claude Code or Codex](cases/en/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa asks under a Teamtsto event announcement whether Claude Code or Codex could help reverse-engineer a PC release. This is a specific porting wish, not an implementation. **[Other AI-assisted work · Needs verification]**
+- [Habbo Wired education: an4log explores interactive browser examples with REA and Claude](cases/en/habbo-wired-club-rea-interactive-examples.md) — an4log reports running REA and Claude on Habbo to make browser-interactive system examples for Wired Club, inspired by WiredSnippets. A preview is posted, while the teaching content remains forthcoming. **[REA · In progress]**
+- [Tekken Tag Tournament 2: Shihab's AI-assisted PC port moves toward stability maintenance](cases/en/tekken-tag2-shihab-ai-pc-port.md) — Shihab describes exploring AI-assisted reverse engineering and desired features in a Tekken Tag Tournament 2 PC port. The v0.1.7 announcement lists rollback networking and community servers; future work focuses on stability. This is distinct from BlueSpark. **[Other AI-assisted work · In progress]**
 - [Metal Gear Online 2: a PC-port account crediting years of manual reversing, Metal Gear Arcade and partial AI help](cases/en/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok says SaveMGO's MGO2 PC port builds on years of human research and Metal Gear Arcade, with some AI assistance. A parent recommends the beta with remaining bugs; developer task-allocation records were not obtained. **[Other AI-assisted work · Needs verification]**
 - [Knight Online: a plan for Claude to investigate a native offline Apple Silicon version](cases/en/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre plans to have Claude fork a GitHub Knight Online repository for a native offline Apple Silicon version. The post asks whether it can be done; no port is demonstrated. **[Other AI-assisted work · Needs verification]**
 - [Zoetermeer city game: author reports AI decompilation and a Wasm port](cases/en/zoetermeer-simcity-ai-wasm.md) — Bouke reports AI-decompiling the SimCity-like game commissioned by Zoetermeer in the early 2000s and porting it to playable browser Wasm. Execution and original-game parity were not independently checked. **[Other AI-assisted work · Needs verification]**
@@ -212,6 +215,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [RP3A0 Pico board: an agent's KiCad 10 port follows a manual Altium reconstruction](cases/en/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG credits Jonathan Clark with manually reverse-engineering the RP3A0 Pico in Altium, then reports an approximately 30-minute agent-assisted KiCad 10 port with zero DRC errors. AI handled migration, not the original hardware reverse engineering. **[Other AI-assisted work · Needs verification]**
+- [Radar-detector GUI: Carter reports custom KA-band and startup animations with Opus 5.5](cases/en/radar-detector-opus-gui-animations.md) — While updating his radar detector, Carter says Claude investigated its GUI and Opus 5.5 produced custom KA-band and startup animations within 30 minutes. No model, code or device tests are supplied; detection-performance changes are not inferred. **[Other AI-assisted work · Needs verification]**
 - [Yeelight Station: investigating the Windows installer with REA for a Swift Mac client](cases/en/yeelight-station-rea-swift-mac.md) — Anuhas D. says Yeelight Station's Windows-only application prompted REA investigation of its installer and a native Swift Mac rebuild with menu-bar control, screen sync and music sync. Device responses and signing were not independently verified. **[REA · Needs verification]**
 - [Electric-kettle interoperability: a read-only-first REA/Opus prompt with on-site confirmation](cases/en/kettle-rea-evidence-first-control-idea.md) — vartekx supplies a full prompt for investigating an owned kettle and building a minimal connector, retaining boil-dry protection, physical presence, per-action confirmation and state readback. No model or tests are given; control-from-bed publicity is not safety validation. **[REA · Needs verification]**
 - [A cheap oscilloscope's firmware: an author's report of Claude investigation and a Rust rewrite](cases/en/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais says Claude investigated a cheap oscilloscope's firmware and rewrote it in Rust the previous day, calling it better. No model, specific improvement or tests establish a validated firmware replacement. **[Other AI-assisted work · Needs verification]**
@@ -798,6 +803,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Auditing Grok behavior: KonradGB uses Gemini to interpret political and ethical answers](cases/en/grok-gemini-konrad-behavior-audit.md) — KonradGB reports testing Grok on X with Gemini and interpreting a tendency to shift ethical debates toward numbers and institutional mechanics. Without raw conversations, this is an unverified black-box interpretation, not recovered runtime parameters or secret filters. **[Other AI-assisted work · Needs verification]**
 - [Recovering film-stock color shifts: a photo-editor author's Claude request is blocked](cases/en/film-stock-color-shifts-claude-refusal.md) — Lukas Hozda reports asking Claude to investigate a film stock's color shifts for his photo editor and encountering a refusal-like failure. The reconstruction purpose is concrete, but no recovered curve or successful result is supplied, nor proof of a blanket Anthropic ban. **[Other AI-assisted work · Needs verification]**
 - [Fun2Spec: recovering C++ postconditions with LLMs, with a reported Spec-Agent extension](cases/en/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue describes Fun2Spec's code-to-contract recovery and a fuzzing-enabled Spec-Agent extension. Public Fun2Spec documentation confirms LLM-generated C++ postconditions and BDE/BlazingMQ case studies; no independent execution here. **[Other AI-assisted work · Related project]**
 - [Clavius reconstructs PubChem molecular complexity: a reported 98.4% on 4,000 tests](cases/en/clavius-pubchem-complexity-reconstruction.md) — 1F916 says one Clavius AI agent reconstructed PubChem's molecular-complexity calculation in Python, reproducing 98.4% of 4,000 test results. The invitation to PubChem, RDKit and chemists is a call for independent checking, not its completion. **[Other AI-assisted work · Analysis test]**

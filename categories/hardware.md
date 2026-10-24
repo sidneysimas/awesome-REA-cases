@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [RP3A0 Pico板卡：人工Altium逆向之后，Agent迁移到KiCad 10](../cases/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG称Jonathan Clark先人工在Altium恢复RP3A0 Pico板卡，自己的Agent再约30分钟移到KiCad 10并得到零DRC错误；AI负责迁移，不是原始硬件逆向。 **[其他 AI 逆向 · 待验证]**
+- [雷达探测器GUI：Carter用Opus 5.5定制KA频段与启动动画](../cases/radar-detector-opus-gui-animations.md) — Carter称在升级自有雷达探测器固件时，让Claude研究GUI，约30分钟获得定制KA频段与启动动画；没有型号、源码或设备测试，不推断检测性能改变。 **[其他 AI 逆向 · 待验证]**
 - [Yeelight Station：REA研究Windows安装器，Swift重做Mac灯光客户端](../cases/yeelight-station-rea-swift-mac.md) — Anuhas D.称因Yeelight Station只有Windows应用，用REA研究安装器后制作原生Swift Mac版，提供菜单栏、屏幕同步与音乐同步；未独立验证设备响应或签名。 **[REA · 待验证]**
 - [电水壶互通：REA与Opus的只读优先、现场确认控制提示词](../cases/kettle-rea-evidence-first-control-idea.md) — vartekx给出研究自有电水壶接口并制作最小连接器的完整提示词，要求保留防干烧、人在现场逐次确认和状态回读；没有型号或实测，不把卧床烧水宣传当安全验证。 **[REA · 待验证]**
 - [廉价示波器固件：Claude辅助逆向并重写Rust的作者自述](../cases/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais称前一天让Claude研究一台廉价示波器的固件并用Rust重写，认为更好用；没有型号、具体改善功能或测试，不当作已验证固件替代。 **[其他 AI 逆向 · 待验证]**

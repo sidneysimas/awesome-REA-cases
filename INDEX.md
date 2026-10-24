@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **836 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **842 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（181）
-- [硬件与设备互通](categories/hardware.md)（220）
+- [游戏与游戏保存](categories/games.md)（184）
+- [硬件与设备互通](categories/hardware.md)（222）
 - [应用与客户端](categories/apps.md)（360）
-- [算法与功能重建](categories/algorithms.md)（75）
+- [算法与功能重建](categories/algorithms.md)（76）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [The Simpsons: Tapped Out：向社区提出用Claude Code或Codex研究PC移植](cases/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa在Teamtsto活动公告下询问能否用Claude Code或Codex辅助逆向，让游戏登陆PC；这是具体移植愿望，不是已实施工程。 **[其他 AI 逆向 · 待验证]**
+- [Habbo Wired教学：an4log用REA与Claude研究浏览器交互示例](cases/habbo-wired-club-rea-interactive-examples.md) — an4log称在Habbo上运行REA与Claude，准备为Wired Club制作可在浏览器操作的系统示例，灵感来自WiredSnippets；已发预览，正式教学内容仍是计划。 **[REA · 进行中]**
+- [Tekken Tag Tournament 2：Shihab的AI辅助PC移植与稳定维护](cases/tekken-tag2-shihab-ai-pc-port.md) — Shihab说明自己用AI探索逆向与所需功能的边界，将Tekken Tag Tournament 2移植到PC；v0.1.7列出回滚联网与社区服务器，后续以稳定维护为主，不与BlueSpark混为一项工程。 **[其他 AI 逆向 · 进行中]**
 - [Metal Gear Online 2：多年人工逆向、Metal Gear Arcade基础与部分AI辅助的PC移植转述](cases/metal-gear-online-2-arcade-ai-pc-port-report.md) — The Angry Ewok称SaveMGO的MGO2 PC移植建立在多年人工研究与Metal Gear Arcade基础上，仅部分AI辅助；父帖介绍beta和少量bug，未取得开发者分工记录。 **[其他 AI 逆向 · 待验证]**
 - [Knight Online：让Claude研究Apple Silicon原生离线版的计划](cases/knight-online-claude-apple-silicon-offline-idea.md) — @MostlyEmre计划让Claude fork一个GitHub上的Knight Online仓库，做Apple Silicon原生离线版；原帖仍在问能否做到，尚无移植结果。 **[其他 AI 逆向 · 待验证]**
 - [Zoetermeer城市游戏：作者报告AI反编译后移植Wasm](cases/zoetermeer-simcity-ai-wasm.md) — Bouke称将荷兰Zoetermeer早年委托的SimCity类城市游戏用AI反编译，并移植为可在网页游玩的Wasm版本；未独立运行或核验原作一致性。 **[其他 AI 逆向 · 待验证]**
@@ -210,6 +213,8 @@
 
 ### 硬件与设备互通
 
+- [RP3A0 Pico板卡：人工Altium逆向之后，Agent迁移到KiCad 10](cases/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG称Jonathan Clark先人工在Altium恢复RP3A0 Pico板卡，自己的Agent再约30分钟移到KiCad 10并得到零DRC错误；AI负责迁移，不是原始硬件逆向。 **[其他 AI 逆向 · 待验证]**
+- [雷达探测器GUI：Carter用Opus 5.5定制KA频段与启动动画](cases/radar-detector-opus-gui-animations.md) — Carter称在升级自有雷达探测器固件时，让Claude研究GUI，约30分钟获得定制KA频段与启动动画；没有型号、源码或设备测试，不推断检测性能改变。 **[其他 AI 逆向 · 待验证]**
 - [Yeelight Station：REA研究Windows安装器，Swift重做Mac灯光客户端](cases/yeelight-station-rea-swift-mac.md) — Anuhas D.称因Yeelight Station只有Windows应用，用REA研究安装器后制作原生Swift Mac版，提供菜单栏、屏幕同步与音乐同步；未独立验证设备响应或签名。 **[REA · 待验证]**
 - [电水壶互通：REA与Opus的只读优先、现场确认控制提示词](cases/kettle-rea-evidence-first-control-idea.md) — vartekx给出研究自有电水壶接口并制作最小连接器的完整提示词，要求保留防干烧、人在现场逐次确认和状态回读；没有型号或实测，不把卧床烧水宣传当安全验证。 **[REA · 待验证]**
 - [廉价示波器固件：Claude辅助逆向并重写Rust的作者自述](cases/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais称前一天让Claude研究一台廉价示波器的固件并用Rust重写，认为更好用；没有型号、具体改善功能或测试，不当作已验证固件替代。 **[其他 AI 逆向 · 待验证]**
@@ -796,6 +801,7 @@
 
 ### 算法与功能重建
 
+- [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**
 - [胶片色偏重建：照片编辑器作者请求Claude帮助时受阻](cases/film-stock-color-shifts-claude-refusal.md) — Lukáš Hozda称希望为照片编辑器研究某款胶片的色彩偏移，却遭Claude异常拒绝；具体重建需求成立，没有恢复曲线或成功结果，不据此认定Anthropic全面封禁逆向。 **[其他 AI 逆向 · 待验证]**
 - [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**
 - [Clavius重建PubChem分子复杂度：4000样本98.4%的自报结果](cases/clavius-pubchem-complexity-reconstruction.md) — 1F916称Clavius中的一个AI Agent用Python重建PubChem分子复杂度计算，4000项测试复现98.4%；作者邀请PubChem、RDKit与化学研究者复核，不是独立复现结果。 **[其他 AI 逆向 · 分析测试]**
