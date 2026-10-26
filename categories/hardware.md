@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价](../cases/codex-kindle-ai-spending-dashboard-report.md) — 社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。 **[其他 AI 逆向 · 待验证]**
+- [Ricoh GR无线取景器：Codex协作的StickS3固件与分代协议](../cases/ricoh-gr-codex-sticks3-wireless-viewfinder-report.md) — 社区转述GR无线预览与快门；补读sky18Dragon公开固件确认Codex协作归因、StickS3、Wi-Fi图像与分代快门路径。热靴是安装配件，不是已证明的图像链路；未实机运行。 **[其他 AI 逆向 · 待验证]**
+- [裸眼3D屏：Megabits用AI研究官方程序，报告绕开官方App渲染](../cases/megabits-autostereoscopic-display-ai-rendering.md) — Megabits称AI辅助逆向此前购买的裸眼3D屏程序后，已不需官方App渲染；下一步是Blender模型预览插件，设备型号与代码尚未提供。 **[其他 AI 逆向 · 待验证]**
 - [GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究](../cases/gpu-unlock-ada-ai-research-report.md) — HKEPC将JustAResearch的Ada算力研究归因为AI逆向；公开Linux项目复用上游载荷，在驱动绑定前修改speed-select状态。约两倍指令吞吐不等于推理应用翻倍或全系列通用。 **[其他 AI 逆向 · 待验证]**
 - [Android modem文件：Dan Holzrichter比较GLM/DeepSeek与Claude/Muse的反编译协助](../cases/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter报告为朋友研究Android手机modem文件，Claude与Muse拒绝，而GLM与DeepSeek愿意协助；无文件/设备型号或恢复产物，不能据此断言基带已破解。 **[其他 AI 逆向 · 待验证]**
 - [小米大师82电视：WorkBuddy借CleanYourTV清包、读UI树并修屏保配置](../cases/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — 朱无忌报告让WorkBuddy经ADB研究和清理自有小米电视：备份115包、禁用25包，截屏受阻后改读UI树，编译替代桌面并修屏保指向；不是root或固件重写。 **[其他 AI 逆向 · 待验证]**

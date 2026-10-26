@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**908 entries**, organized by use case, without a Top-N or popularity threshold.
+**914 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (201)
-- [Hardware and interoperability](categories/en/hardware.md) (242)
-- [Applications and clients](categories/en/apps.md) (385)
+- [Hardware and interoperability](categories/en/hardware.md) (245)
+- [Applications and clients](categories/en/apps.md) (388)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (80)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -232,6 +232,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [kindle-ai-usage: Codex-assisted Kindle jailbreaking for an API-equivalent usage display](cases/en/codex-kindle-ai-spending-dashboard-report.md) — Community reports describe an old Kindle usage screen. Kuberwastaken's public project supports the Codex-jailbreak attribution, Node service and six-hour refresh. Values estimate API-equivalent list prices, not subscription bills; no independent deployment. **[Other AI-assisted work · Needs verification]**
+- [Ricoh GR wireless viewfinder: Codex-assisted StickS3 firmware with generation-specific protocols](cases/en/ricoh-gr-codex-sticks3-wireless-viewfinder-report.md) — Community reports describe GR wireless preview and shutter control. sky18Dragon's public firmware supports the Codex attribution, StickS3 hardware, Wi-Fi imaging and generation-specific shutter paths. The hot shoe is a mounting accessory, not a demonstrated image link; no device was run here. **[Other AI-assisted work · Needs verification]**
+- [Autostereoscopic display: Megabits reports AI-assisted rendering without the official app](cases/en/megabits-autostereoscopic-display-ai-rendering.md) — Megabits says AI-assisted investigation of a previously purchased glasses-free 3D display's software removed the need for its official rendering app. A Blender preview plugin is next; the device model and code are not supplied. **[Other AI-assisted work · Needs verification]**
 - [GPU-Unlock-Ada: an AI reverse-engineering report and public Ada tensor-throughput research](cases/en/gpu-unlock-ada-ai-research-report.md) — HKEPC attributes JustAResearch's Ada investigation to AI-assisted reverse engineering. The public Linux project reuses upstream payload work to change speed-select state before driver binding. Roughly 2× instruction throughput is not 2× inference or universal support. **[Other AI-assisted work · Needs verification]**
 - [Android modem file: Dan Holzrichter compares GLM/DeepSeek assistance with Claude/Muse refusals](cases/en/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter reports studying an Android phone modem file for a friend: Claude and Muse refused while GLM and DeepSeek assisted. No file/device identity or recovered artifact is available, so this does not establish a baseband compromise. **[Other AI-assisted work · Needs verification]**
 - [Xiaomi Master 82 TV: WorkBuddy uses CleanYourTV, a UI tree and a screensaver configuration fix](cases/en/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — Wujizhuzhu reports WorkBuddy studying and cleaning his Xiaomi TV over ADB: backing up 115 packages, disabling 25, using a UI tree when screenshots failed, compiling a replacement launcher and fixing a screensaver target. Not root or a firmware rewrite. **[Other AI-assisted work · Needs verification]**
@@ -477,6 +480,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Footprint trade chart: RetroChainer reports an REA terminal reconstruction with four ccxt feeds](cases/en/retrochainer-rea-ccxt-footprint-terminal-report.md) — RetroChainer presents an REA/Claude Code workflow to study a desktop footprint chart and connect a terminal rebuild to Binance, OKX, Bybit and Coinbase through ccxt. The 18,402 trades, 256 lines and 12 tests are poster claims without code or an identified original app. **[REA · Needs verification]**
+- [Electron notes sample: Claude Code and REA statically trace an export button to a CSV file](cases/en/hamza-rea-notes-electron-export-trace.md) — Hamza Khalid demonstrates following Export notes through an IPC handler to Downloads/notes.csv. Public sample code supports that static path; this is neither a commercial closed-source clone nor a runtime verification. **[REA · Analysis test]**
+- [1Password's public design: Rising Impact proposes AI-assisted observation, specification and testing](cases/en/rising-impact-1password-ai-cleanroom-spec-idea.md) — Rising Impact uses 1Password whitepapers and public features to propose AI document research, own-account workflow recording and specification drafting. This is a teaching idea, not an implementation, password break or REA tool test. **[Other AI-assisted work · Needs verification]**
 - [index0 mobile version: Master Daniels reports that agent reconstruction still needs human architecture and repairs](cases/en/master-daniels-index0-mobile-reconstruction.md) — Master Daniels tried reverse-engineering index0 into a mobile version. His follow-up says humans still choose architecture, rewrite broken code and stop loops; no complete usable port is reported. **[Other AI-assisted work · In progress]**
 - [Microsoft Skill Recorder: reconstruct reusable agent skills from recordings and activity events](cases/en/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser introduces Microsoft's Skill Recorder, using Copilot to recover task intent and ordered steps from a work session and create SKILL.md or an Automation. Analysis uploads recording data; it is not wholly offline. **[Other AI-assisted work · Related project]**
 - [daos.fun: wei relays Shaw's AI-assisted Anchor reconstruction and matching-binary claim](cases/en/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei relays Shaw rebuilding a closed daos.fun program in Anchor with AI, claiming a 1,120,784-byte binary with the same SHA-256 and six audit findings. Original code, hashes and vulnerabilities were not independently verified. **[Other AI-assisted work · Needs verification]**
@@ -702,7 +708,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Apple Notes migration to Grape](cases/en/apple-notes-migration.md) — Use Claude Code to investigate Notes data and demonstrate importing folders, notes and images. **[Other AI-assisted work]**
 - [Poker table organizer](cases/en/poker-table-organizer.md) — A first-hand report of rebuilding table organization with REA, Ghidra and Codex; the app and tests are not public. **[REA · Needs verification]**
 - [Codex computer-use interoperability research](cases/en/codex-cua-harness-research.md) — An ongoing REA-assisted investigation of browser and computer-use features for another model in an independent agent harness. **[REA · In progress]**
-- [Pump.fun reconstruction report](cases/en/pumpfun-reconstruction-report.md) — A third-party report of parallel-agent investigation, with launch-curve and Raydium migration development as context; full reconstruction is not established. **[REA · Needs verification]**
+- [Pump.fun: parallel-agent investigation of a token-launch platform](cases/en/pumpfun-reconstruction-report.md) — Retains 8Bit and clawddevs' parallel-research reports. On October 25, FeiXiaoHao separately recounted Shaw's approximately 90%-complete AI-assisted contract reconstruction; a same-night forecast is not completion or proof of a deployable replacement. **[REA · Needs verification]**
 - [Remote-desktop client privacy monitoring idea](cases/en/remote-client-privacy-monitor-idea.md) — An idea to use AI-assisted inspection of local clients and build a data-collection monitor; no implementation or misconduct is established. **[REA use unconfirmed · Needs verification]**
 - [Gaoding-inspired cover workbench](cases/en/gaoding-cover-workbench.md) — A Codex/Fabric.js cover tool is reported; using REA to inspect Gaoding UI and logic is still described as a plan. **[REA · In progress]**
 - [Axure: an AI-era rebuild idea](cases/en/axure-ai-rebuild-idea.md) — A proposal to study Axure and build a new prototyping tool; no implementation or AI-assisted investigation is established. **[REA use unconfirmed · Needs verification]**

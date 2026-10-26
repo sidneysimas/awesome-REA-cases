@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **908 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **914 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（201）
-- [硬件与设备互通](categories/hardware.md)（242）
-- [应用与客户端](categories/apps.md)（385）
+- [硬件与设备互通](categories/hardware.md)（245）
+- [应用与客户端](categories/apps.md)（388）
 - [算法与功能重建](categories/algorithms.md)（80）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -230,6 +230,9 @@
 
 ### 硬件与设备互通
 
+- [kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价](cases/codex-kindle-ai-spending-dashboard-report.md) — 社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。 **[其他 AI 逆向 · 待验证]**
+- [Ricoh GR无线取景器：Codex协作的StickS3固件与分代协议](cases/ricoh-gr-codex-sticks3-wireless-viewfinder-report.md) — 社区转述GR无线预览与快门；补读sky18Dragon公开固件确认Codex协作归因、StickS3、Wi-Fi图像与分代快门路径。热靴是安装配件，不是已证明的图像链路；未实机运行。 **[其他 AI 逆向 · 待验证]**
+- [裸眼3D屏：Megabits用AI研究官方程序，报告绕开官方App渲染](cases/megabits-autostereoscopic-display-ai-rendering.md) — Megabits称AI辅助逆向此前购买的裸眼3D屏程序后，已不需官方App渲染；下一步是Blender模型预览插件，设备型号与代码尚未提供。 **[其他 AI 逆向 · 待验证]**
 - [GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究](cases/gpu-unlock-ada-ai-research-report.md) — HKEPC将JustAResearch的Ada算力研究归因为AI逆向；公开Linux项目复用上游载荷，在驱动绑定前修改speed-select状态。约两倍指令吞吐不等于推理应用翻倍或全系列通用。 **[其他 AI 逆向 · 待验证]**
 - [Android modem文件：Dan Holzrichter比较GLM/DeepSeek与Claude/Muse的反编译协助](cases/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter报告为朋友研究Android手机modem文件，Claude与Muse拒绝，而GLM与DeepSeek愿意协助；无文件/设备型号或恢复产物，不能据此断言基带已破解。 **[其他 AI 逆向 · 待验证]**
 - [小米大师82电视：WorkBuddy借CleanYourTV清包、读UI树并修屏保配置](cases/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — 朱无忌报告让WorkBuddy经ADB研究和清理自有小米电视：备份115包、禁用25包，截屏受阻后改读UI树，编译替代桌面并修屏保指向；不是root或固件重写。 **[其他 AI 逆向 · 待验证]**
@@ -475,6 +478,9 @@
 
 ### 应用与客户端
 
+- [Footprint成交图：RetroChainer转述REA重建终端图表并接ccxt四交易所](cases/retrochainer-rea-ccxt-footprint-terminal-report.md) — RetroChainer展示REA/Claude Code研究桌面footprint图表、再以ccxt接Binance、OKX、Bybit和Coinbase的工作流；18,402笔成交、256行及12项测试是发帖者说法，无代码或原应用身份。 **[REA · 待验证]**
+- [Electron笔记样例：Claude Code与REA静态追踪导出按钮到CSV文件](cases/hamza-rea-notes-electron-export-trace.md) — Hamza Khalid以REA教学样例演示从Export notes按钮追到IPC处理器与Downloads/notes.csv；公开源码支持这条静态路径，不是闭源商业App克隆或运行验证。 **[REA · 分析测试]**
+- [1Password公开设计：Rising Impact提出AI辅助观察、规格与验证流程](cases/rising-impact-1password-ai-cleanroom-spec-idea.md) — Rising Impact用1Password白皮书与公开功能举例，让AI研究文档、记录自有账号流程并草拟规格；这是教学提案，不是实现、密码破解或REA工具实测。 **[其他 AI 逆向 · 待验证]**
 - [index0移动版：Master Daniels报告Agent重建仍需人工架构与修错](cases/master-daniels-index0-mobile-reconstruction.md) — Master Daniels尝试逆向index0做移动版本；补查作者串明确人仍要做架构决定、重写坏代码并终止循环，未报告完整可用移植。 **[其他 AI 逆向 · 进行中]**
 - [Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能](cases/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。 **[其他 AI 逆向 · 相关项目]**
 - [daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制](cases/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。 **[其他 AI 逆向 · 待验证]**
@@ -700,7 +706,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。 **[REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 保留8Bit与clawddevs的并行研究报告；10月25日非小号另转述Shaw以AI重建Pump合约约90%，预计当晚完成不等于已完成，也不证明可部署替代。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**

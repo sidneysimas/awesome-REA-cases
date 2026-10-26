@@ -1,5 +1,120 @@
 [
   {
+    "id": "codex-kindle-ai-spending-dashboard-report",
+    "title": "kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。",
+    "description": "2026年10月21日至22日，三份You can just build things硬件社区介绍转述：开发者用Codex越狱十年旧Kindle，把墨水屏变为AI用量看板，经Node.js服务取图，每六小时刷新后休眠，显示月累计、月底预测和来源拆分。用途是复用旧电子书的常显与低功耗特性，而不是恢复Kindle源码。\n\n10月26日补查找到与转述特征吻合的Kuberwastaken/kindle-ai-usage，静态阅读固定提交19d9dd8的README（提交日期8月28日，早于候选窗口）。项目引用@kuberwastaken本人称用Codex越狱十年旧Kindle，文档给出原KT3路线、FBInk、RTC唤醒、Wi-Fi取图和休眠流程。它明确显示API-equivalent list price，即按API标价折算的用量估计，不是订阅实付价格；因此不能照搬转述中的“AI订阅花费”当账单事实。文档列出Codex、Claude Code、OpenCode、Gemini CLI的本地采集器，以及Cursor、Claude API、Copilot和Gemini账本等导入方式；只发送每日汇总，并提醒避免镜像历史和多来源重复计数。这些是项目文档描述，未访问任何真实日志、账单或账号。\n\n公开仓库包含Node服务和agent skill，要求先确认确切Kindle型号/固件并查现行越狱兼容指南，不假定原KT3路线适用所有机器；六小时采集后五分钟唤醒，取图失败保留旧画面。主机需在刷新时在线；普通Kindle不能直接加入Tailnet，需要可达私有局域网或显式网关。未安装依赖、运行测试或越狱设备，预测准确性、电池续航和跨型号成功率均未独立验证。补读的旧提交用于核对身份与纠正计费语义，不冒充当前候选窗口中的新发布。",
+    "sources": [{"label":"硬件社区介绍，2026-10-21","url":"https://x.com/i/status/2112892660251795697"},{"label":"看板流程转述，2026-10-22","url":"https://x.com/i/status/2113242014242287678"},{"label":"另一份社区项目清单，2026-10-21","url":"https://x.com/i/status/2112738503222349881"},{"label":"8月28日固定提交README，10月26日静态补读","url":"https://github.com/Kuberwastaken/kindle-ai-usage/blob/19d9dd82167c961cc7c93bcafd0225859ddc6390/README.md"},{"label":"10月24日补证：明确作者为kuberwastaken","url":"https://x.com/i/status/2113965002994733345"}],
+    "snapshot_date": "2026-10-24",
+    "metadata": ["社区转述与公开项目文档交叉核对；10月24日20:05的候选明确@kuberwastaken，补足作者身份，其中rekindle天气屏是另一用途，不合并。原KT3路线不可泛化为所有Kindle，未独立部署。", "费用是API等价标价估算，不是订阅账单；源码与skill已定位，但测试、电池续航和实际账单未核验。"],
+    "en": {
+      "title": "kindle-ai-usage: Codex-assisted Kindle jailbreaking for an API-equivalent usage display",
+      "summary": "Community reports describe an old Kindle usage screen. Kuberwastaken's public project supports the Codex-jailbreak attribution, Node service and six-hour refresh. Values estimate API-equivalent list prices, not subscription bills; no independent deployment.",
+      "description": "Three October 21–22, 2026 introductions to the You can just build things hardware community describe using Codex to jailbreak a ten-year-old Kindle into an AI usage display. It reportedly fetches an image from a Node.js service every six hours, shows month-to-date totals, month-end forecasts and source breakdowns, then sleeps. The goal is to reuse an e-reader's persistent, low-power display, not recover Kindle source code.\n\nSupplementary lookup on October 26 found Kuberwastaken/kindle-ai-usage with matching characteristics. Static reading examined README at commit 19d9dd8, dated August 28, before the candidate window. It quotes @kuberwastaken saying Codex helped jailbreak a ten-year-old Kindle and documents the original KT3 route, FBInk, RTC wake alarms, Wi-Fi image fetches and suspend. Crucially, it reports API-equivalent list price, an estimate valued at API list prices, not paid subscription fees. The readers' description of AI-subscription spending must not be treated as billing evidence. The README lists local collectors for Codex, Claude Code, OpenCode and Gemini CLI, plus importers for Cursor, Claude API, Copilot, Gemini ledgers and other sources. It describes sending daily aggregates only and warns against counting mirrored histories or multiple sources twice. These are project-documentation statements; no actual sessions, bills or accounts were accessed.\n\nThe public repository includes a Node service and an agent skill that first require the exact Kindle model/firmware and current jailbreak-compatibility guidance, rather than assuming the original KT3 route works everywhere. Its six-hour collection schedule wakes the Kindle five minutes later; failed image fetches preserve the previous frame. A host must be awake at refresh time. A stock Kindle cannot join a Tailnet directly and needs a reachable private LAN or explicit gateway. No dependencies were installed, tests run or devices jailbroken here; forecast accuracy, battery life and cross-model success remain independently unverified. The older commit was read to establish identity and correct pricing semantics, not presented as a new release in the current candidate window.",
+      "metadata": ["Community accounts cross-checked against public project documentation; an October 24 candidate at 20:05 explicitly names @kuberwastaken, establishing the author identity, while its rekindle weather screen is a separate use, not merged here. The original KT3 route cannot be generalized to all Kindles, and no independent deployment was performed.", "Values estimate API-equivalent list prices, not subscription bills; source and skill were located, but tests, battery life and actual bills were not verified."],
+      "source_labels": ["Hardware-community introduction, October 21, 2026", "Reported dashboard workflow, October 22, 2026", "Another community-project list, October 21, 2026", "README at an August 28 commit, statically read on October 26", "October 24 corroboration explicitly identifying kuberwastaken"]
+    }
+  },
+  {
+    "id": "ricoh-gr-codex-sticks3-wireless-viewfinder-report",
+    "title": "Ricoh GR无线取景器：Codex协作的StickS3固件与分代协议",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "社区转述GR无线预览与快门；补读sky18Dragon公开固件确认Codex协作归因、StickS3、Wi-Fi图像与分代快门路径。热靴是安装配件，不是已证明的图像链路；未实机运行。",
+    "description": "2026年10月21日至22日，社区帖子介绍Codex辅助的Ricoh GR无线取景器与快门遥控：M5Stack StickS3装在热靴上，横持取景、竖持蓝牙快门，可用M5Burner烧录；一帖称作者把真机串口日志交给Codex排查重连。用途是独立小屏预览与相机遥控，与Ricoh GXR色彩recipe移植idea不同。关于“逆向热靴接口”的转述不能直接当作视频经热靴传输的证据。\n\n10月26日补查找到特征吻合的sky18Dragon/RICOH-GR-Live-View-Shooting，静态阅读10月19日固定提交8c4fc0f的README。项目注明作者与Codex协作开发，M5Burner作者名为TinkerZhang，仓库提供热靴安装结构件。文档说明图像经Wi-Fi的HTTP MJPEG LiveView传输；GR III/IV用BLE配对、WLAN控制及快门，而没有蓝牙的GR II需手动开启Wi-Fi，走官方GR Remote HTTP接口。因此它不是重写整个相机固件，也不能把安装热靴当作图像总线。\n\n该提交文档称GR IIIx、GR IV、GR IV HDF和GR II已实机验证，GR III仍需完整独立回归，GR III HDF/IIIx HDF为缺独立实机证据的实验支持。项目报告Native测试93/93通过、StickS3构建成功、RAM 66,444/327,680字节（20.3%）、Flash 1,455,789/3,342,336字节（43.6%）；这里只核对文档，未重跑测试、编译、烧录或连接相机。自动测试不替代逐型号/固件实机回归。保留unverified状态，区分社区串口调试转述、项目测试自报与本合集静态阅读；旧提交为补充来源，不冒充候选窗口的新发布。",
+    "sources": [{"label":"Ricoh GR接口研究转述，2026-10-21","url":"https://x.com/i/status/2112892660251795697"},{"label":"StickS3与烧录方式转述，2026-10-22","url":"https://x.com/i/status/2113242014242287678"},{"label":"Wi-Fi/蓝牙与串口调试流程转述，2026-10-21","url":"https://x.com/i/status/2112738503222349881"},{"label":"10月19日固定提交README：Codex归因、传输路径与测试范围，10月26日补读","url":"https://github.com/sky18Dragon/RICOH-GR-Live-View-Shooting/blob/8c4fc0f768b8a14369b9b2a426d90177d7405efb/README.md"}],
+    "snapshot_date": "2026-10-22",
+    "metadata": ["已定位公开项目及Codex协作声明；只静态阅读，逐机型支持和93/93测试均为项目报告。", "GR II无BLE，使用官方HTTP接口；GR III/IV另有BLE控制路径，热靴安装不等于图像传输。"],
+    "en": {
+      "title": "Ricoh GR wireless viewfinder: Codex-assisted StickS3 firmware with generation-specific protocols",
+      "summary": "Community reports describe GR wireless preview and shutter control. sky18Dragon's public firmware supports the Codex attribution, StickS3 hardware, Wi-Fi imaging and generation-specific shutter paths. The hot shoe is a mounting accessory, not a demonstrated image link; no device was run here.",
+      "description": "October 21–22, 2026 community posts describe a Codex-assisted Ricoh GR wireless viewfinder and shutter remote: a hot-shoe-mounted M5Stack StickS3, landscape preview, portrait Bluetooth shutter and M5Burner installation. One post says the developer gave real-device serial logs to Codex to diagnose reconnection. The purpose is a separate small-screen preview and camera remote, distinct from the Ricoh GXR color-recipe port idea. A reader's description of hot-shoe interface reversing does not establish that video travels through that interface.\n\nSupplementary lookup on October 26 found sky18Dragon/RICOH-GR-Live-View-Shooting with matching characteristics and statically examined README at October 19 commit 8c4fc0f. The project credits collaboration between the author and Codex, identifies its M5Burner author as TinkerZhang, and supplies hot-shoe mounting parts. The documentation describes images traveling over Wi-Fi through HTTP MJPEG LiveView. GR III/IV use BLE for pairing, WLAN control and shutter release; the Bluetooth-free GR II requires manually enabled Wi-Fi and uses the official GR Remote HTTP interface. This is not a complete camera-firmware rewrite, and hot-shoe mounting must not be described as an image bus.\n\nThat commit's documentation reports real-camera validation for GR IIIx, GR IV, GR IV HDF and GR II. GR III still needs complete independent regression, while GR III HDF/IIIx HDF support is experimental without separate real-device evidence. It reports 93/93 Native tests passing, a successful StickS3 build, RAM usage of 66,444/327,680 bytes (20.3%) and Flash usage of 1,455,789/3,342,336 bytes (43.6%). Only the documentation was checked here; no tests, build, flashing or camera connection were performed. Automated tests do not replace regression on each model and firmware. The entry remains unverified, distinguishing community serial-debugging accounts, project-reported tests and this collection's static reading. The older commit is supplementary evidence, not a new release in the candidate window.",
+      "metadata": ["Public project and Codex collaboration statement located; static reading only, with per-model support and 93/93 tests attributed to the project.", "GR II has no BLE and uses official HTTP interfaces; GR III/IV have a separate BLE control path. Hot-shoe mounting is not image transport."],
+      "source_labels": ["Reported Ricoh GR interface research, October 21, 2026", "Reported StickS3 and flashing method, October 22, 2026", "Reported Wi-Fi/Bluetooth and serial-log debugging workflow, October 21, 2026", "README at an October 19 commit: Codex attribution, transport and test scope; read on October 26"]
+    }
+  },
+  {
+    "id": "retrochainer-rea-ccxt-footprint-terminal-report",
+    "title": "Footprint成交图：RetroChainer转述REA重建终端图表并接ccxt四交易所",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "RetroChainer展示REA/Claude Code研究桌面footprint图表、再以ccxt接Binance、OKX、Bybit和Coinbase的工作流；18,402笔成交、256行及12项测试是发帖者说法，无代码或原应用身份。",
+    "description": "2026年10月25日02:46:55（北京时间），RetroChainer（@RetroChainer）发quote帖介绍REA与ccxt组合：让Claude Code研究桌面交易应用的footprint图表，再在终端重建并接入四家交易所行情。Footprint在这里指按价位组织成交信息的图表，不是数字隐私足迹。用途是理解一个图表功能并实现自己的终端显示，而不是声称恢复完整交易终端。\n\n帖子称REA读取18,402笔成交、以256行重建、12项测试全过，由ccxt同时提供Binance、OKX、Bybit和Coinbase数据；开头还宣称一句话、60秒及0美元。它没有给原桌面App名称、重建源码、测试内容、测试日志或计费记录，这些数值只作为作者转述保留，不能认定性能、功能等价或实际成本已验证。补查原帖确认账号与一段附视频，但未运行代码或核对视频中的回放。\n\n帖子提到买Coinbase/卖Bybit的11.3基点价差；这不是成交或扣除费用、滑点后的收益证据。本条仅收录AI辅助图表研究与重建报告，不验证交易建议、套利能力或宣传中的收益暗示，不访问交易密钥或执行交易。它来自往期00至04点候选补审，不冒充当前16至20点窗口新抓取。",
+    "sources": [{"label": "RetroChainer的REA/ccxt图表重建报告，2026-10-25往期补审", "url": "https://x.com/i/status/2114066123545059598"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["发帖者转述与附视频，原桌面App、代码、12项测试及60秒/0美元未核实。", "11.3基点只是所述价差，不是实际收益或交易验证；未独立运行。"],
+    "en": {
+      "title": "Footprint trade chart: RetroChainer reports an REA terminal reconstruction with four ccxt feeds",
+      "summary": "RetroChainer presents an REA/Claude Code workflow to study a desktop footprint chart and connect a terminal rebuild to Binance, OKX, Bybit and Coinbase through ccxt. The 18,402 trades, 256 lines and 12 tests are poster claims without code or an identified original app.",
+      "description": "At 02:46:55 Beijing time on October 25, 2026, RetroChainer (@RetroChainer) published a quote post describing REA plus ccxt: have Claude Code study a desktop trading application's footprint chart, reconstruct it in a terminal, and connect four exchange feeds. Footprint here means a chart organizing trade information by price level, not a digital-privacy footprint. The goal is to understand and rebuild one chart feature, not recover a complete trading terminal.\n\nThe post says REA read 18,402 trades, rebuilt the chart in 256 lines and passed all 12 tests, with ccxt feeding Binance, OKX, Bybit and Coinbase simultaneously. Its opening also claims one sentence, 60 seconds and $0. It supplies no original desktop-app name, reconstruction source, test definitions, logs or billing record. These numbers are retained only as the poster's account, not verified performance, behavioral equivalence or actual cost. Supplementary lookup confirmed the account and an attached video, but no code was run and the video's replay was not checked.\n\nA Coinbase-buy/Bybit-sell spread of 11.3 basis points is mentioned, not evidence of execution or returns after fees and slippage. This entry covers the AI-assisted chart-investigation and reconstruction report only, not trading advice, arbitrage capability or implied profits. No exchange keys were accessed and no trades were executed. The candidate is a deferred item from the earlier 00:00–04:00 window, not newly collected material from the current 16:00–20:00 window.",
+      "metadata": ["Poster account and attached video; original desktop app, code, 12 tests and 60-second/$0 claims remain unverified.", "11.3 basis points is only the reported spread, not actual profit or trade verification; no independent execution."],
+      "source_labels": ["RetroChainer's REA/ccxt chart-reconstruction report, October 25, 2026, reviewed from an earlier window"]
+    }
+  },
+  {
+    "id": "hamza-rea-notes-electron-export-trace",
+    "title": "Electron笔记样例：Claude Code与REA静态追踪导出按钮到CSV文件",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "Hamza Khalid以REA教学样例演示从Export notes按钮追到IPC处理器与Downloads/notes.csv；公开源码支持这条静态路径，不是闭源商业App克隆或运行验证。",
+    "description": "2026年10月25日17:53:08（北京时间），Hamza Khalid（@humzaakhalid）发布Claude Code与REA入门演示：先用受控笔记样例而非自己的未知App，问点击Export notes后数据去了哪里。作者报告从按钮追到notes:export消息，再到main.js第8至12行，最终在Downloads目录写notes.csv。目的在于用文件与行号检查Agent的判断，而不是只接受自然语言解释。\n\n10月26日补查REA公开仓库的website/public/examples/notes-electron目录。静态阅读renderer.js可见#export点击调用window.notes.exportCsv；preload.js经contextBridge暴露该方法，内部调用ipcRenderer.invoke(\"notes:export\")；main.js第8至12行注册同名处理器，拼出app.getPath(\"downloads\")与notes.csv，并用toCsv(notes)和writeFileSync写入。公开样例支持作者描述的按钮、IPC与文件去向，但本合集未运行Electron、安装REA或重跑Claude会话。补查为窗口外的当前源码，不能证明原帖当时对应同一提交。\n\n作者建议先预测输出再运行对照，不过帖子没有提供实际对照日志；其所称不运行是静态研究阶段，不代表验证不需要运行。此例源码可读，不涉及反编译或汇编，也不证明可以恢复任何闭源App。安装指南、提示词以及Notion、Aegis APK和DX-Ball目录仅为学习入口，不当作本帖新的独立项目成果。",
+    "sources": [
+      {"label": "Hamza Khalid的REA导出追踪演示，2026-10-25", "url": "https://x.com/i/status/2114294177181925865"},
+      {"label": "REA Electron样例main.js，10月26日静态补读", "url": "https://github.com/morluto/rea/blob/main/website/public/examples/notes-electron/main.js"},
+      {"label": "REA Electron样例renderer.js，10月26日静态补读", "url": "https://github.com/morluto/rea/blob/main/website/public/examples/notes-electron/renderer.js"},
+      {"label": "REA Electron样例preload.js，10月26日静态补读", "url": "https://github.com/morluto/rea/blob/main/website/public/examples/notes-electron/preload.js"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["教学样例的源码路径经静态阅读支持，Agent会话和实际写文件未独立复现。", "main分支来源可变；10月26日补查不冒充窗口内提交或运行结果。"],
+    "en": {
+      "title": "Electron notes sample: Claude Code and REA statically trace an export button to a CSV file",
+      "summary": "Hamza Khalid demonstrates following Export notes through an IPC handler to Downloads/notes.csv. Public sample code supports that static path; this is neither a commercial closed-source clone nor a runtime verification.",
+      "description": "At 17:53:08 Beijing time on October 25, 2026, Hamza Khalid (@humzaakhalid) published an introductory Claude Code/REA demonstration: start with a controlled notes sample rather than an unknown personal app, and ask where data goes after clicking Export notes. He reports tracing the button to the notes:export message, then main.js lines 8–12 and finally notes.csv in Downloads. The purpose is to check agent conclusions against files and line numbers instead of trusting prose alone.\n\nSupplementary reading on October 26 examined website/public/examples/notes-electron in REA's public repository. Static inspection of renderer.js shows a #export click invoking window.notes.exportCsv. preload.js exposes that method through contextBridge and calls ipcRenderer.invoke(\"notes:export\"). main.js lines 8–12 register the matching handler, join app.getPath(\"downloads\") with notes.csv, and write toCsv(notes) using writeFileSync. The public sample supports the described button-to-IPC-to-file path, but this collection did not run Electron, install REA or reproduce the Claude session. This is current code read outside the candidate window, not proof that the original post used the same commit.\n\nThe author recommends predicting an output and then running a comparison, but supplies no comparison log. His no-execution framing concerns static investigation, not a claim that verification never requires execution. This example has readable source and needs neither decompilation nor assembly; it does not demonstrate recovery of arbitrary closed-source apps. Installation guides, prompts and the Notion, Aegis APK and DX-Ball investigation index are learning links, not additional independent project results in this post.",
+      "metadata": ["Static source inspection supports the tutorial path; neither the agent session nor actual file writing was independently reproduced.", "The main-branch sources are mutable; October 26 supplementary reading is not an in-window commit or runtime result."],
+      "source_labels": ["Hamza Khalid's REA export-tracing demonstration, October 25, 2026", "REA Electron sample main.js, static supplementary reading on October 26", "REA Electron sample renderer.js, static supplementary reading on October 26", "REA Electron sample preload.js, static supplementary reading on October 26"]
+    }
+  },
+  {
+    "id": "megabits-autostereoscopic-display-ai-rendering",
+    "title": "裸眼3D屏：Megabits用AI研究官方程序，报告绕开官方App渲染",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Megabits称AI辅助逆向此前购买的裸眼3D屏程序后，已不需官方App渲染；下一步是Blender模型预览插件，设备型号与代码尚未提供。",
+    "description": "2026年10月25日19:51:15（北京时间），Megabits（@Megabits_mzq）说，自己此前买了一块裸眼3D屏，用AI逆向其程序后，成功实现不依赖官方App渲染。裸眼3D屏在此仅是作者给出的设备类别，来源没有品牌、型号、协议或图像交织方式，不能据配图猜成某家产品。目标是摆脱官方渲染应用的依赖，而不是声称重写整套显示驱动。\n\n作者计划接下来制作更好的Blender插件来预览模型，这是未来方向，不是已交付插件。补查原帖确认作者身份和一张附图，但未取得代码、模型名称、REA使用证据、校准数据或可核对的测试。本条按作者报告保留为待验证设备互通实验；没有运行目标程序或独立测量立体显示效果。",
+    "sources": [{"label": "Megabits的裸眼3D屏AI逆向与Blender插件计划，2026-10-25", "url": "https://x.com/i/status/2114323901866266647"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["作者自述官方App之外的渲染已实现；品牌/型号、模型、代码与实际立体效果未核实。", "Blender插件仍是计划，未确认使用REA。"],
+    "en": {
+      "title": "Autostereoscopic display: Megabits reports AI-assisted rendering without the official app",
+      "summary": "Megabits says AI-assisted investigation of a previously purchased glasses-free 3D display's software removed the need for its official rendering app. A Blender preview plugin is next; the device model and code are not supplied.",
+      "description": "At 19:51:15 Beijing time on October 25, 2026, Megabits (@Megabits_mzq) said AI-assisted reverse engineering of the software for a previously purchased autostereoscopic display had enabled rendering without its official app. A glasses-free 3D display is only the device category supplied by the author: no brand, model, protocol or image-interlacing method is identified, and the attached image is not used to guess a vendor. The goal is to remove dependence on the official renderer, not a claimed rewrite of the whole display driver.\n\nThe author plans a better Blender plugin for model previews next; that is future work, not a delivered plugin. Supplementary lookup confirmed the author's identity and one attached image, but yielded no code, model name, evidence of REA use, calibration data or checkable tests. This remains an unverified author-reported interoperability experiment. The target program was not run and the stereoscopic output was not independently measured.",
+      "metadata": ["The author reports rendering outside the official app; brand/model, AI model, code and actual stereoscopic output remain unverified.", "The Blender plugin is still planned, and REA use is unconfirmed."],
+      "source_labels": ["Megabits on AI-assisted display research and a planned Blender plugin, October 25, 2026"]
+    }
+  },
+  {
+    "id": "rising-impact-1password-ai-cleanroom-spec-idea",
+    "title": "1Password公开设计：Rising Impact提出AI辅助观察、规格与验证流程",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Rising Impact用1Password白皮书与公开功能举例，让AI研究文档、记录自有账号流程并草拟规格；这是教学提案，不是实现、密码破解或REA工具实测。",
+    "description": "2026年10月25日18:11:56（北京时间），Rising Impact（@KrEarthMilkyway）发表韩语设计研究提案，以1Password密码管理器为具体目标，主张观察产品行为和公开文档，再用自己的语言写出需求、架构与数据流，而不是获取原代码。其六步是记录注册/登录/保存/自动填充流程、查白皮书和官方文档、抽取需求、提出组件与时序假设、用自己的账号做公开功能黑盒测试、编写隔离的重建规格。\n\n作者为AI分配文档搜索与带来源摘要、浏览器记录流程、需求列表与mermaid图草稿三个角色，并要求无依据内容标未确认。作为讨论素材，帖子描述账号密码加Secret Key的2SKD、PBKDF2-HMAC-SHA256的65万轮与HKDF结果XOR得到AUK、不同salt的SRP认证秘密、AES-256-GCM保险库数据、RSA-OAEP私钥保护，以及Watchtower、Travel Mode和Passkeys。以上是作者的设计概述，本合集没有核对其所有密码学细节、迭代参数或对功能实现位置的断言，不把它们当独立验证的1Password规格。\n\n提案还要求先看服务条款、规格作者与实现者分离，不绕过保护、提取秘密或复制代码/UI/商标。本条记录的是具体的AI辅助设计恢复idea，没有已完成规格、代码、测试或安全评估；也没有证据表明实际运行了morluto/rea工具。公开设计阅读不等于破解密码管理器，也不意味着所述隔离方式已获得法律认可。",
+    "sources": [{"label": "Rising Impact的1Password公开设计研究提案，2026-10-25", "url": "https://x.com/i/status/2114298908964729320"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["具体教学idea，未提供运行或实现；REA在帖中是方法概念，未确认使用同名工具。", "密码学细节为发帖者概述，非本合集验证的产品规格或法律结论。"],
+    "en": {
+      "title": "1Password's public design: Rising Impact proposes AI-assisted observation, specification and testing",
+      "summary": "Rising Impact uses 1Password whitepapers and public features to propose AI document research, own-account workflow recording and specification drafting. This is a teaching idea, not an implementation, password break or REA tool test.",
+      "description": "At 18:11:56 Beijing time on October 25, 2026, Rising Impact (@KrEarthMilkyway) published a Korean design-research proposal targeting the 1Password password manager. It advocates observing product behavior and public documentation, then expressing requirements, architecture and data flow in one's own words rather than obtaining original code. Its six steps are recording signup/login/save/autofill journeys; consulting whitepapers and official documentation; extracting requirements; hypothesizing components and sequences; black-box testing public features through one's own account; and drafting an isolated reconstruction specification.\n\nThe proposed AI roles are document search and sourced summaries, browser-based workflow recording, and requirements/mermaid-diagram drafting, with unsupported claims explicitly marked unconfirmed. As discussion material, the post describes password-plus-Secret-Key 2SKD, 650,000 rounds of PBKDF2-HMAC-SHA256 XORed with an HKDF result to obtain the AUK, differently salted SRP authentication secrets, AES-256-GCM vault data, RSA-OAEP private-key protection, and Watchtower, Travel Mode and Passkeys. These are the poster's design summaries. This collection did not check every cryptographic detail, iteration parameter or assertion about where a feature runs, and does not present them as independently validated 1Password specifications.\n\nThe proposal also calls for checking service terms, separating specification authors from implementers, and avoiding protection bypass, secret extraction or copying code, UI or trademarks. This entry records a specific AI-assisted design-recovery idea: no completed specification, implementation, test or security assessment is supplied, and there is no evidence of actually running morluto/rea. Reading public design is not breaking the password manager and does not establish legal approval of the proposed isolation method.",
+      "metadata": ["A specific teaching idea without execution or implementation; REA is used as a method concept, with use of the namesake tool unconfirmed.", "Cryptographic details are the poster's summary, not a product specification or legal conclusion verified by this collection."],
+      "source_labels": ["Rising Impact's proposal for studying 1Password's public design, October 25, 2026"]
+    }
+  },
+  {
     "id": "gpu-unlock-ada-ai-research-report",
     "title": "GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究",
     "category": "hardware",
@@ -8084,8 +8199,8 @@
     "category": "apps",
     "status": "unverified",
     "rea": "REA",
-    "summary": "第三方报告 Codex 与另一 Agent 并行研究 Pump.fun。",
-    "description": "Pump.fun 是 Solana 上的代币发行平台。8Bit 报告 clawddevs 在 Muse 中并行使用 Codex 与另一 Agent 逆向研究该平台。所回复的开发帖称正在测试发行曲线完成后向 Raydium 流动性池迁移、销毁 LP 代币与交换功能。现有证据是第三方逆向报告及相关开发背景，未公开逆向步骤，也不能证明完整复刻 Pump.fun；REA 使用未确认。 10 月 13 日窗口内，8Bit（0rdlibrary）进一步称已从 REA 仓库 fork 项目，并自主运行约 24 小时公开研究 Pump.fun；同窗口另帖提到 clawddevs 与 Muse 正研究该目标。新信息补足先前未确认的 REA 使用报告，但没有分析产物、完整重建或结果验证，仍为待验证研究报告，不代表已恢复服务器或合约源代码。 2026 年 10 月 13 日 04–08 点窗口，clawddevs 本人称过去 24 小时以 ultra high 设置研究 Pump.fun，并经历 3 次 Codex 额度重置。这是该作者正在研究的第一手报告，未展示代码或行为对照，不把自信表述解释为成功。这位作者没有明确使用 REA；前窗 8Bit 的 REA fork 报告属于另一作者，不据此认定两人使用同一实现。\n\n\n\n本批 quote 帖另转述称，Pump.fun 的真实 depth-two 测试已通过，REA 追踪了两条创建路径，并修复且测试了开盘结算的舍入短缺；同一引述明确说源码/构建验证仍在进行、生产就绪尚未证明。这是捕获作者未知的转述材料，不视为 Pump.fun 项目作者本人确认，也不是本合集独立复测。",
+    "summary": "保留8Bit与clawddevs的并行研究报告；10月25日非小号另转述Shaw以AI重建Pump合约约90%，预计当晚完成不等于已完成，也不证明可部署替代。",
+    "description": "Pump.fun是Solana上的代币发行平台。8Bit报告clawddevs在Muse中并行使用Codex与另一Agent研究该平台；所回复开发帖称在测试发行曲线完成后向Raydium流动性池迁移、销毁LP代币与交换。早期报告没有公开逆向步骤或完整复刻证据，REA使用当时未确认。\n\n10月13日窗口中，8Bit（0rdlibrary）称从REA仓库fork项目后自主研究Pump.fun约24小时；另帖也提clawddevs与Muse。10月13日04至08点窗口，clawddevs本人称过去24小时以ultra high设置研究Pump.fun，经历3次Codex额度重置。这是进行中自述，没有代码或行为对照；clawddevs未明确使用REA，8Bit的fork报告属于另一作者，不据此认定同一实现或已恢复服务器/合约源码。\n\n此前收录的一条作者未知quote另称真实depth-two测试通过，REA追踪两条创建路径，并修复且测试开盘结算舍入短缺；同一引述说源码/构建验证仍在进行、生产就绪未证明。这不是Pump.fun原开发者确认或本合集复测。\n\n2026年10月25日18:04:28（北京时间），非小号（@feixiaohaocom）另转述Shaw Walters（@shawmakesmagic）称完成Pump智能合约逆向约90%，预计当晚完成并公开GitHub仓库。帖子用PumpFun标签和2024年上线的一键发币/发行曲线背景识别目标，并将工作描述为AI辅助逆向；10月26日补查原帖确认发帖账号。这是另一作者对同一平台的研究，不认定与8Bit/clawddevs同一代码库。未取得可审的Shaw模型日志、仓库身份或构建结果，90%是转述进度，不是字节匹配率，预计完成也不是已完成。报道中的协议收入与商业评论不作为技术证据；没有运行目标或验证生产可用性。",
     "sources": [
       {
         "label": "本周期公开来源",
@@ -8106,33 +8221,40 @@
       {
         "label": "本批 X 帖（quote/转述；作者身份未确认，非原开发者确认）",
         "url": "https://x.com/i/status/2110080570612941090"
+      },
+      {
+        "label": "非小号转述Shaw的Pump合约90%进度，2026-10-25",
+        "url": "https://x.com/i/status/2114297028620763266"
       }
     ],
-    "snapshot_date": "2026-10-13",
+    "snapshot_date": "2026-10-25",
     "metadata": [
       "发帖：2026-10-12T10:01:06+08:00（北京时间）",
       "热度快照（2026-10-12）：1 赞｜44 浏览｜0 转发",
       "补充发帖：2026-10-13T05:43:27+08:00（北京时间）",
       "补充证据：xreach 确认发帖账户 clawddevs；作者自述，非独立验证。",
-      "本批新增证据：quote/转述称真实 depth-two 测试通过、创建路径已追踪、开盘结算舍入短缺已修复并测试；生产就绪仍未证明，作者身份未确认。"
+      "本批新增证据：quote/转述称真实 depth-two 测试通过、创建路径已追踪、开盘结算舍入短缺已修复并测试；生产就绪仍未证明，作者身份未确认。",
+      "10月25日补充为非小号转述的Shaw/Pump合约研究，非同一代码库确认；90%不是字节匹配率，未取得仓库或运行验证。"
     ],
     "en": {
-      "title": "Pump.fun reconstruction report",
-      "summary": "A third-party report of parallel-agent investigation, with launch-curve and Raydium migration development as context; full reconstruction is not established.",
-      "description": "Pump.fun is a token-launch platform on Solana. 8Bit reports that clawddevs used Codex and another agent in parallel within Muse to reverse-engineer the platform. The development post being replied to says testing was underway on migration to a Raydium liquidity pool after the launch curve completes, LP-token burning and swaps. The existing evidence is a third-party reverse-engineering report and related development context, with no reverse-engineering steps disclosed or proof of a complete Pump.fun replica; REA use was unconfirmed. In the October 13 window, 8Bit (0rdlibrary) further says a project was forked from the REA repository and ran autonomously for about 24 hours publicly researching Pump.fun; another post in the same window mentions clawddevs and Muse researching it. This adds the previously missing report of REA use, but no analysis artifacts, full reconstruction or result validation. It remains an unverified research report, not proof of recovered server or contract source code. In the October 13, 2026, 04:00–08:00 window, clawddevs personally says they had researched Pump.fun for the past 24 hours with the ultra high setting and experienced three Codex quota resets. This is a firsthand report of ongoing research, without code or behavioral comparisons; confidence is not interpreted as success. This author does not explicitly mention REA. The earlier REA-fork report by 8Bit is from a different author and does not establish that both used the same implementation.\n\nA quote post in this batch additionally recounts passing real depth-two tests, REA tracing two creation paths, and a rounding shortfall in opening settlement being fixed and tested. The same quotation explicitly says source/build verification remains underway and production readiness is unproven. The captured account's author is unknown; it is neither confirmation from the Pump.fun project author nor an independent retest by this collection.",
+      "title": "Pump.fun: parallel-agent investigation of a token-launch platform",
+      "summary": "Retains 8Bit and clawddevs' parallel-research reports. On October 25, FeiXiaoHao separately recounted Shaw's approximately 90%-complete AI-assisted contract reconstruction; a same-night forecast is not completion or proof of a deployable replacement.",
+      "description": "Pump.fun is a token-launch platform on Solana. 8Bit reports clawddevs using Codex and another agent in parallel within Muse. The development post being replied to describes testing migration to a Raydium liquidity pool after the launch curve completes, LP-token burning and swaps. The early report disclosed no reversing steps or proof of full reconstruction, and REA use was initially unconfirmed.\n\nIn the October 13 window, 8Bit (0rdlibrary) said a project forked from the REA repository had autonomously researched Pump.fun for about 24 hours; another post mentioned clawddevs and Muse. In the October 13 04:00–08:00 window, clawddevs personally reported 24 hours of work at the ultra high setting and three Codex quota resets. This is an ongoing-work report without code or behavioral comparisons. clawddevs did not explicitly mention REA; 8Bit's fork report is by a different author and does not establish one shared implementation or recovered server/contract source.\n\nAn earlier captured quote from an unidentified author additionally claimed that real depth-two tests passed, REA traced two creation paths, and an opening-settlement rounding shortfall was fixed and tested. The same quotation said source/build verification was ongoing and production readiness unproven. This is neither confirmation from Pump.fun's original developers nor a retest by this collection.\n\nAt 18:04:28 Beijing time on October 25, 2026, FeiXiaoHao (@feixiaohaocom) separately recounted Shaw Walters (@shawmakesmagic) claiming approximately 90% completion of Pump contract reversing, expecting completion that night and announcing a GitHub repository. The post identifies the target through its PumpFun tag and January 2024 token-launch/bonding-curve background, framing the work as AI-assisted reverse engineering. Supplementary lookup on October 26 confirmed the posting account. This is another author's research on the same platform, not confirmation of a shared codebase with 8Bit/clawddevs. No inspectable Shaw model log, repository identity or build result was obtained. The 90% figure is reported progress, not a byte-match rate; expected completion is not completed work. Protocol revenue and commercial commentary are not technical evidence. The target was not run and production usability was not verified.",
       "metadata": [
         "Posted: 2026-10-12T10:01:06+08:00 (Beijing time)",
         "Engagement snapshot (2026-10-12): 1 like | 44 views | 0 reposts",
         "Follow-up posted: 2026-10-13T05:43:27+08:00 (Beijing time)",
         "Additional evidence: xreach confirmed the posting account as clawddevs; author report, not independent verification.",
-        "New evidence in this batch: a quote/secondhand account claims real depth-two tests passed, creation paths were traced, and an opening-settlement rounding shortfall was fixed and tested; production readiness remains unproven and author identity is unconfirmed."
+        "New evidence in this batch: a quote/secondhand account claims real depth-two tests passed, creation paths were traced, and an opening-settlement rounding shortfall was fixed and tested; production readiness remains unproven and author identity is unconfirmed.",
+        "October 25 adds FeiXiaoHao's secondhand Shaw/Pump contract report, not a confirmed shared codebase; 90% is not a byte-match rate, and no repository or runtime validation was obtained."
       ],
       "source_labels": [
         "Public source from this review",
         "Development post being replied to (background)",
         "This window: REA fork and autonomous-run report",
         "This window: developer's own work-in-progress report",
-        "X post from this batch (quote/secondhand; author identity unconfirmed, not original-developer confirmation)"
+        "X post from this batch (quote/secondhand; author identity unconfirmed, not original-developer confirmation)",
+        "FeiXiaoHao recounts Shaw's 90%-complete Pump contract research, October 25, 2026"
       ]
     }
   },
