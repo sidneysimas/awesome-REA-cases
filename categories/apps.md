@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [REA中的Rust Ghidra移植：Nicolas Krassas分享Java对照早期基准标题](../cases/rea-ghidra-rust-port-early-benchmarks.md) — Nicolas Krassas分享REA中进行中的Ghidra Rust移植与Java对照基准标题；未取得基准配置、数值或完整文章，不推断提速比例或功能对等。 **[REA · 相关项目]**
+- [OpenRea想法：用REA研究Claude Code，再以reaCode重做](../cases/openrea-claude-code-reacode-idea.md) — 一条回复提出用REA逆向Claude Code、发布名为OpenRea且使用reaCode的替代品；尚无具体功能规格、实现或测试。 **[REA · 待验证]**
+- [Amiga narrator：TypeScript重写并把自由软件语音回移AROS的自述](../cases/bitplane-ai-amiga-narrator-aros.md) — bitplane称在AI辅助AMOS工作中重写Amiga narrator，再把自由软件语音回移到AROS，报告可在真实Amiga运行；未取得设备或语音测试记录。 **[其他 AI 逆向 · 待验证]**
+- [旧磁盘镜像：bitplane用客体VM读取历史系统，并保存重建工具链](../cases/bitplane-ai-obscure-disk-vm-mount.md) — bitplane报告AI辅助制作在客体VM挂载旧镜像的工具，为历史研究读取失传系统数据；称可在Linux构建多种系统、保存源码和输出，未独立重建。 **[其他 AI 逆向 · 待验证]**
+- [Windows HLP：bitplane报告AI辅助解析器、转换器、库与TUI](../cases/bitplane-ai-windows-hlp-reader.md) — bitplane报告AI辅助读取与转换Windows HLP；公开winhlp文档明确依托helpdeco源码，称验证约6500文件，本合集未运行。 **[其他 AI 逆向 · 待验证]**
 - [自有客户端暴露面：用REA区分可见逻辑与服务端资产，并逐版本比较的审计idea](../cases/rea-own-client-exposure-assessment-idea.md) — 一篇创始人视角提案给出REA与Claude Code提示词，检查发布客户端的逻辑、API交互和嵌入配置，并把版本间变化纳入周期性审计；没有实际应用或测试结果。 **[REA · 待验证]**
 - [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](../cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
 - [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](../cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**

@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 851 cases & projects
+# 863 cases & projects
 
-**Latest case update:** October 24, 2026, 16:08 · **Last maintained:** October 24, 2026, 16:08 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 26, 2026, 16:56 · **Last maintained:** October 26, 2026, 16:56 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,9 +22,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading**: practical interoperability, game preservation, and reconstruction with inspectable evidence. Public implementations and explicit limits anchor these picks; the full index also includes author-reported experiments, blocked investigations and concrete ideas. Dates below are source or author-update dates, not collection dates.
+**10 worth reading**: practical interoperability, game preservation, and reconstruction with inspectable evidence. Public implementations and explicit limits anchor these picks; the full index also includes legacy-format tools, author-reported experiments and concrete ideas. Dates below are source or author-update dates, not collection dates.
 
-1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
+1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
 3. **[LG UltraFine: repair the updater, not the firmware](cases/en/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex-assisted diagnosis and a **public, exact-build memory patch**; the author reports a scaler update reaching **100% with CRC passing**. Credits an earlier bug report; one Apple Silicon setup, not independently flashed here. `Author-tested patch`
 4. **[Brother: scan straight to your NAS](cases/en/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — Replace the PC button app with a **public Claude/REA-assisted Go service for SMB, FTP, S3 and local storage**, building on prior protocol work. A server is still required; only MFC-L2800DW firmware 1.32 is project-tested. `Public implementation`
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **189** |
-| [Hardware & interoperability](categories/en/hardware.md) | **225** |
-| [Applications & clients](categories/en/apps.md) | **361** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **76** |
+| [Games & preservation](categories/en/games.md) | **190** |
+| [Hardware & interoperability](categories/en/hardware.md) | **229** |
+| [Applications & clients](categories/en/apps.md) | **366** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **78** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

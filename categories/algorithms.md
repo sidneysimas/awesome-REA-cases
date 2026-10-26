@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](../cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**
+- [Amiga .info与旧图像格式：bitplane报告给Pillow等补充读取支持](../cases/bitplane-ai-legacy-image-format-plugins.md) — bitplane称AI辅助给Pillow、MediaInfo和ImageMagick加入Amiga .info支持，并制作多个旧格式插件；上游合并状态未核验。 **[其他 AI 逆向 · 待验证]**
 - [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](../cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**
 - [胶片色偏重建：照片编辑器作者请求Claude帮助时受阻](../cases/film-stock-color-shifts-claude-refusal.md) — Lukáš Hozda称希望为照片编辑器研究某款胶片的色彩偏移，却遭Claude异常拒绝；具体重建需求成立，没有恢复曲线或成功结果，不据此认定Anthropic全面封禁逆向。 **[其他 AI 逆向 · 待验证]**
 - [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](../cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**

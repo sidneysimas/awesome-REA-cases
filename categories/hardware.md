@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](../cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
+- [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](../cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
+- [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](../cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**
+- [智能灯泡变红报bug：Ashish把逆向协议接到Claude/Codex的MCP服务器](../cases/ashish-smart-bulb-mcp-bug-light.md) — AshishKingdom报告逆向自有智能灯泡协议并接入MCP，Claude或Codex发现代码bug时把灯变红；AI参与控制，但未说明AI是否辅助恢复协议。 **[未确认使用 REA · 相关项目]**
 - [初代Sony α7：参考Sony-PMCA-RE，提出AI辅助定制固件的想法](../cases/sony-alpha7-pmca-ai-firmware-idea.md) — twitHitoshi看到既有Sony-PMCA-RE研究后，提出用AI制作有趣固件；尚未报告实际AI分析或刷写，不把既有相机工具归功于AI。 **[其他 AI 逆向 · 待验证]**
 - [小米电视launcher：Leo称用Workbuddy逆向后不再看开机前广告](../cases/xiaomi-tv-workbuddy-launcher-report.md) — Leo · Building w/ AI报告用Workbuddy逆向小米电视原文称launch的组件，声称不再在看电视前看到小米广告；没有型号、代码或测试，不推断root或固件替换。 **[其他 AI 逆向 · 待验证]**
 - [LG webOS：ammertos在电视清理讨论下报告Codex约30分钟root](../cases/lg-webos-ammertos-codex-root-report.md) — AIDog（ammertos）回答LG适配问题，称Codex在同网发现电视并root固件，约30分钟；没有型号、固件或具体清理成果，不沿用父帖小米25包的结果。 **[其他 AI 逆向 · 待验证]**
@@ -11,7 +15,7 @@
 - [电水壶互通：REA与Opus的只读优先、现场确认控制提示词](../cases/kettle-rea-evidence-first-control-idea.md) — vartekx给出研究自有电水壶接口并制作最小连接器的完整提示词，要求保留防干烧、人在现场逐次确认和状态回读；没有型号或实测，不把卧床烧水宣传当安全验证。 **[REA · 待验证]**
 - [廉价示波器固件：Claude辅助逆向并重写Rust的作者自述](../cases/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais称前一天让Claude研究一台廉价示波器的固件并用Rust重写，认为更好用；没有型号、具体改善功能或测试，不当作已验证固件替代。 **[其他 AI 逆向 · 待验证]**
 - [NVIDIA显卡驱动：让AI尝试反编译的读者提案](../cases/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_提出让AI尝试反编译NVIDIA显卡驱动；目标具体，但没有指定驱动版本、操作系统、恢复功能或实现。 **[其他 AI 逆向 · 待验证]**
-- [LG OLED：Damos用Claude Code重做原生QML主页与系统行为](../cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
+- [LG C1 OLED：Damos用Claude Code重做原生QML主页与系统行为](../cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
 - [芯片逆向工具自动化：长期手工研究者让AI Agent辅助构建](../cases/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo称手工做芯片逆向多年，因时间不足转而用AI Agent构建自动化工具；这是进行中的工具项目，不是已恢复某款芯片。 **[其他 AI 逆向 · 进行中]**
 - [iPhone Duo代码模型：Opus逐部件重建与约束检查的作者报告](../cases/iphone-duo-opus-parametric-model-report.md) — @andreysuperior称用Opus构建141部件的可折叠手机代码模型，逐项检查间隙与线缆弯曲；未提供真实尺寸来源或产物，不是已验证的iPhone硬件数字孪生。 **[其他 AI 逆向 · 待验证]**
 - [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](../cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**

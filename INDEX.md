@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **851 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **863 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（189）
-- [硬件与设备互通](categories/hardware.md)（225）
-- [应用与客户端](categories/apps.md)（361）
-- [算法与功能重建](categories/algorithms.md)（76）
+- [游戏与游戏保存](categories/games.md)（190）
+- [硬件与设备互通](categories/hardware.md)（229）
+- [应用与客户端](categories/apps.md)（366）
+- [算法与功能重建](categories/algorithms.md)（78）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [AMOS Pro：bitplane报告AI辅助模拟器、在线IDE与游戏库](cases/bitplane-ai-amos-pro-emulator.md) — bitplane报告AI辅助AMOS Pro网页重实现、在线IDE与游戏库；公开amos-ts文档明确复用已公开AMOS源码，其他兼容行为经逆向，非周期精确模拟。 **[其他 AI 逆向 · 待验证]**
 - [Way of the Samurai：LLM配合真实地址字节校验，382项历史匹配中约266项当前可复现](cases/way-of-samurai-ps2-ai-matching.md) — dnb4ever的PS2反编译项目用LLM与编译oracle逐函数重建；README称382项已提交匹配，但当前统一编译器约266项可复现，其余待重验，PC图形实现未完成。 **[其他 AI 逆向 · 进行中]**
 - [Precursor：Claude辅助把OpenGOAL的Jak三部曲带到Android ARM64](cases/precursor-opengoal-claude-android-arm64.md) — thebardockgames明确归功OpenGOAL既有反编译，Claude辅助ARM64后端、Android运行时和launcher；项目报告三作在手机启动，但无一端到端验证，Jak 3首段过场后白屏。 **[其他 AI 逆向 · 进行中]**
 - [gagarin：用REA与编译oracle重建尤里的复仇，不把函数匹配写成引擎已运行](cases/gagarin-yuri-revenge-rea-reconstruction.md) — r-melvin/gagarin从gamemd.exe v1.001恢复结构化C++；项目截至10月23日报告10204函数匹配、51.6%函数与18.2%函数字节覆盖，但链接探针不可运行，也不主张全映像一致。 **[REA · 进行中]**
@@ -218,6 +219,10 @@
 
 ### 硬件与设备互通
 
+- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
+- [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
+- [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**
+- [智能灯泡变红报bug：Ashish把逆向协议接到Claude/Codex的MCP服务器](cases/ashish-smart-bulb-mcp-bug-light.md) — AshishKingdom报告逆向自有智能灯泡协议并接入MCP，Claude或Codex发现代码bug时把灯变红；AI参与控制，但未说明AI是否辅助恢复协议。 **[未确认使用 REA · 相关项目]**
 - [初代Sony α7：参考Sony-PMCA-RE，提出AI辅助定制固件的想法](cases/sony-alpha7-pmca-ai-firmware-idea.md) — twitHitoshi看到既有Sony-PMCA-RE研究后，提出用AI制作有趣固件；尚未报告实际AI分析或刷写，不把既有相机工具归功于AI。 **[其他 AI 逆向 · 待验证]**
 - [小米电视launcher：Leo称用Workbuddy逆向后不再看开机前广告](cases/xiaomi-tv-workbuddy-launcher-report.md) — Leo · Building w/ AI报告用Workbuddy逆向小米电视原文称launch的组件，声称不再在看电视前看到小米广告；没有型号、代码或测试，不推断root或固件替换。 **[其他 AI 逆向 · 待验证]**
 - [LG webOS：ammertos在电视清理讨论下报告Codex约30分钟root](cases/lg-webos-ammertos-codex-root-report.md) — AIDog（ammertos）回答LG适配问题，称Codex在同网发现电视并root固件，约30分钟；没有型号、固件或具体清理成果，不沿用父帖小米25包的结果。 **[其他 AI 逆向 · 待验证]**
@@ -227,7 +232,7 @@
 - [电水壶互通：REA与Opus的只读优先、现场确认控制提示词](cases/kettle-rea-evidence-first-control-idea.md) — vartekx给出研究自有电水壶接口并制作最小连接器的完整提示词，要求保留防干烧、人在现场逐次确认和状态回读；没有型号或实测，不把卧床烧水宣传当安全验证。 **[REA · 待验证]**
 - [廉价示波器固件：Claude辅助逆向并重写Rust的作者自述](cases/oscilloscope-claude-rust-firmware-report.md) — @asdhuqiwuhdais称前一天让Claude研究一台廉价示波器的固件并用Rust重写，认为更好用；没有型号、具体改善功能或测试，不当作已验证固件替代。 **[其他 AI 逆向 · 待验证]**
 - [NVIDIA显卡驱动：让AI尝试反编译的读者提案](cases/nvidia-video-driver-ai-decompilation-idea.md) — @_fluk3_提出让AI尝试反编译NVIDIA显卡驱动；目标具体，但没有指定驱动版本、操作系统、恢复功能或实现。 **[其他 AI 逆向 · 待验证]**
-- [LG OLED：Damos用Claude Code重做原生QML主页与系统行为](cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
+- [LG C1 OLED：Damos用Claude Code重做原生QML主页与系统行为](cases/lg-oled-damos-claude-qml-home.md) — Damos称在已root的webOS上用Claude Code制作QML主页，重映射HOME、关闭预加载并屏蔽广告域名；约80MB回收与350ms打开均为作者自报。 **[其他 AI 逆向 · 待验证]**
 - [芯片逆向工具自动化：长期手工研究者让AI Agent辅助构建](cases/ai-agents-chip-reverse-engineering-tools-project.md) — @RCAVictorCo称手工做芯片逆向多年，因时间不足转而用AI Agent构建自动化工具；这是进行中的工具项目，不是已恢复某款芯片。 **[其他 AI 逆向 · 进行中]**
 - [iPhone Duo代码模型：Opus逐部件重建与约束检查的作者报告](cases/iphone-duo-opus-parametric-model-report.md) — @andreysuperior称用Opus构建141部件的可折叠手机代码模型，逐项检查间隙与线缆弯曲；未提供真实尺寸来源或产物，不是已验证的iPhone硬件数字孪生。 **[其他 AI 逆向 · 待验证]**
 - [NGRAVE ZERO：宣布用Claude Mythos审查钱包固件与应用](cases/ngrave-zero-claude-mythos-security-review.md) — NGRAVE宣布进入Anthropic Cyber Verification Program，计划用Claude Mythos检查ZERO固件、应用与基础设施；尚无公开漏洞或修复结果。 **[其他 AI 逆向 · 进行中]**
@@ -446,6 +451,11 @@
 
 ### 应用与客户端
 
+- [REA中的Rust Ghidra移植：Nicolas Krassas分享Java对照早期基准标题](cases/rea-ghidra-rust-port-early-benchmarks.md) — Nicolas Krassas分享REA中进行中的Ghidra Rust移植与Java对照基准标题；未取得基准配置、数值或完整文章，不推断提速比例或功能对等。 **[REA · 相关项目]**
+- [OpenRea想法：用REA研究Claude Code，再以reaCode重做](cases/openrea-claude-code-reacode-idea.md) — 一条回复提出用REA逆向Claude Code、发布名为OpenRea且使用reaCode的替代品；尚无具体功能规格、实现或测试。 **[REA · 待验证]**
+- [Amiga narrator：TypeScript重写并把自由软件语音回移AROS的自述](cases/bitplane-ai-amiga-narrator-aros.md) — bitplane称在AI辅助AMOS工作中重写Amiga narrator，再把自由软件语音回移到AROS，报告可在真实Amiga运行；未取得设备或语音测试记录。 **[其他 AI 逆向 · 待验证]**
+- [旧磁盘镜像：bitplane用客体VM读取历史系统，并保存重建工具链](cases/bitplane-ai-obscure-disk-vm-mount.md) — bitplane报告AI辅助制作在客体VM挂载旧镜像的工具，为历史研究读取失传系统数据；称可在Linux构建多种系统、保存源码和输出，未独立重建。 **[其他 AI 逆向 · 待验证]**
+- [Windows HLP：bitplane报告AI辅助解析器、转换器、库与TUI](cases/bitplane-ai-windows-hlp-reader.md) — bitplane报告AI辅助读取与转换Windows HLP；公开winhlp文档明确依托helpdeco源码，称验证约6500文件，本合集未运行。 **[其他 AI 逆向 · 待验证]**
 - [自有客户端暴露面：用REA区分可见逻辑与服务端资产，并逐版本比较的审计idea](cases/rea-own-client-exposure-assessment-idea.md) — 一篇创始人视角提案给出REA与Claude Code提示词，检查发布客户端的逻辑、API交互和嵌入配置，并把版本间变化纳入周期性审计；没有实际应用或测试结果。 **[REA · 待验证]**
 - [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
 - [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**
@@ -810,6 +820,8 @@
 
 ### 算法与功能重建
 
+- [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**
+- [Amiga .info与旧图像格式：bitplane报告给Pillow等补充读取支持](cases/bitplane-ai-legacy-image-format-plugins.md) — bitplane称AI辅助给Pillow、MediaInfo和ImageMagick加入Amiga .info支持，并制作多个旧格式插件；上游合并状态未核验。 **[其他 AI 逆向 · 待验证]**
 - [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**
 - [胶片色偏重建：照片编辑器作者请求Claude帮助时受阻](cases/film-stock-color-shifts-claude-refusal.md) — Lukáš Hozda称希望为照片编辑器研究某款胶片的色彩偏移，却遭Claude异常拒绝；具体重建需求成立，没有恢复曲线或成功结果，不据此认定Anthropic全面封禁逆向。 **[其他 AI 逆向 · 待验证]**
 - [Fun2Spec：用LLM从C++函数恢复后置条件，延伸到Spec-Agent](cases/fun2spec-llm-code-contract-recovery.md) — Julien Vanegue介绍从代码反推契约的Fun2Spec及带fuzzing的Spec-Agent；公开Fun2Spec文档确认LLM生成C++后置条件并报告BDE与BlazingMQ案例，未独立运行。 **[其他 AI 逆向 · 相关项目]**

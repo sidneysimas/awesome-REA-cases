@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 851 个案例与项目
+# 863 个案例与项目
 
-**最近案例更新：**2026 年 10 月 24 日 16:08 · **最近维护：**2026 年 10 月 24 日 16:08 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 26 日 16:56 · **最近维护：**2026 年 10 月 26 日 16:56 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -22,9 +22,9 @@
 
 ## 近期精选
 
-**10 个值得读的案例**：实用的设备互通、游戏保存，以及有可查证据的功能重建。以公开实现和明确限制为推荐依据；完整目录也保留作者自报实验、受阻研究与具体想法。下列日期为来源或作者更新日期，不是收录日期。
+**10 个值得读的案例**：实用的设备互通、游戏保存，以及有可查证据的功能重建。以公开实现和明确限制为推荐依据；完整目录也保留旧格式工具、作者自报实验与具体想法。下列日期为来源或作者更新日期，不是收录日期。
 
-1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-16` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
+1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
 2. **[NIST 曲线种子从哪来](cases/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic 报告 Claude 追到 **lrand48 与时间戳**，公开代码，也保留未解问题。**不是破解 ECDSA**，本合集未独立复算。`研究报告`
 3. **[LG UltraFine：修更新器，而不是破解固件](cases/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex 辅助诊断，公开**精确构建限定的内存补丁**；作者报告 scaler 更新达 **100%、CRC 通过**。注明前人错误报告；仅一套 Apple Silicon 配置，本合集未独立刷机。`作者实测补丁`
 4. **[Brother：扫描直接进 NAS](cases/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — 以 **Claude/REA 辅助的公开 Go 服务替代电脑按键应用，支持 SMB、FTP、S3 与本地保存**，复用前人协议研究。仍需服务器；项目只报告测试 MFC-L2800DW 固件1.32。`公开实现`
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **189** |
-| [硬件与设备互通](categories/hardware.md) | **225** |
-| [应用与客户端](categories/apps.md) | **361** |
-| [算法与功能重建](categories/algorithms.md) | **76** |
+| [游戏与游戏保存](categories/games.md) | **190** |
+| [硬件与设备互通](categories/hardware.md) | **229** |
+| [应用与客户端](categories/apps.md) | **366** |
+| [算法与功能重建](categories/algorithms.md) | **78** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
