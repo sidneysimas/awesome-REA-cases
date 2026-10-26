@@ -1,5 +1,252 @@
 [
   {
+    "id": "0xprobabillity-rayban-meta-ai-chess-report",
+    "title": "Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。",
+    "description": "2026年10月26日16:37与19:24（北京时间）的候选转述有人逆向Ray-Ban Meta眼镜，用AI读取棋盘并提示最佳着法；首帖明确署名@0xProbabillity。补查作者公开时间线，找到2026年10月24日18:42的原帖，0xProbability称逆向自己的Ray-Ban Metas，令所谓3000+Elo的AI读棋盘，在AR中显示最佳着法，附视频。原帖是窗口外补充归因来源，不当本轮新实验。\n\n目标是把眼镜接成AI棋局助手，区别于基线将Hey Meta转发给Claude的Android替代应用，不因硬件品牌相同就合并。AI明确用于棋盘识别与着法输出；是否辅助通信逆向、具体模型、棋力引擎、硬件代际和协议均未说明。后一个转述还提到语音提示，原帖可读正文只明确AR，因此不确认语音实现。\n\n没有取得源码、棋盘识别准确率、延迟、胜率或设备实测；视频内容未核验。3000+Elo、两万小时与零秒是作者宣传，不是本项目竞技测量，更不代表使用者获得相应等级分。保守作为AI设备互通报告收录，状态unverified；不提供比赛作弊指导、不操作眼镜或执行代码，REA未知。",
+    "sources": [{"label": "本轮转述并署名0xProbability的眼镜棋局助手，2026-10-26", "url": "https://x.com/i/status/2114637548530356316"}, {"label": "窗口外补充：0xProbability原帖称逆向眼镜并提供AR着法，2026-10-24", "url": "https://x.com/i/status/2114065085278679526"}, {"label": "本轮另一转述含AR与语音主张，2026-10-26", "url": "https://x.com/i/status/2114679466291233152"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["10月24日原帖用于核对作者与目标，不当本轮新抓取实验。", "AI用于读棋盘与着法输出；AI是否参与逆向、AR实现、语音及3000+Elo均未独立验证。"],
+    "en": {
+      "title": "Ray-Ban Meta chess assistant: 0xProbability reports reversed glasses with AI board reading and move display",
+      "summary": "Two current-window posts describe a Ray-Ban Meta chess assistant. Supplementary lookup found 0xProbability's October 24 original claiming reversed glasses, AI board reading and best moves in AR. Code, glasses generation and hardware tests were not obtained; 3000+ Elo and zero latency are unverified.",
+      "description": "Candidates at 16:37 and 19:24 Beijing time on October 26, 2026 describe reverse-engineered Ray-Ban Meta glasses using AI to read a chessboard and suggest moves. The first credits @0xProbabillity. Supplementary reading of the author's public timeline found an original at 18:42 on October 24: 0xProbability says he reversed his Ray-Ban Metas so a supposedly 3000+ Elo AI reads the board and displays the best move in AR, with a video. That original is out-of-window attribution evidence, not a new current-window experiment.\n\nThe target is glasses connected as an AI chess assistant, distinct from the baseline Android app forwarding Hey Meta requests to Claude; a shared hardware brand is not grounds to merge them. AI is explicitly used for board reading and move output. AI assistance in communication reversing, the model, chess engine, glasses generation and protocol are unspecified. The later retelling also mentions spoken guidance, whereas readable original text explicitly mentions only AR, so voice functionality is not confirmed.\n\nSource, board-recognition accuracy, latency, win rates and hardware tests were not obtained; video contents were not verified. 3000+ Elo, 20,000 hours and zero seconds are promotional claims, not competitive measurements of this project or evidence that its wearer has that rating. It is conservatively included as an unverified AI-device interoperability report. No competitive cheating instructions are provided, glasses operated or code executed here; REA is unknown.",
+      "metadata": ["The October 24 original establishes attribution and target, not a newly collected current-window experiment.", "AI is used for board reading and move output; AI-assisted reversing, AR implementation, voice and 3000+ Elo are not independently verified."],
+      "source_labels": ["Current-window retelling crediting 0xProbability's glasses chess assistant, October 26, 2026", "Out-of-window supplement: 0xProbability's original report of reversed glasses and AR moves, October 24, 2026", "Another current-window retelling with AR and voice claims, October 26, 2026"]
+    }
+  },
+  {
+    "id": "zack0x01-rea-harmless-ransomware-simulation-test",
+    "title": "无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验",
+    "category": "apps",
+    "rea": "REA",
+    "status": "analysis-test",
+    "summary": "zack0x01称为测试REA分析勒索软件的能力，使用无害模拟做了实验并链接视频。可读正文没有说明模拟器、分析步骤或发现，不确认真实勒索样本分析或解密成功。",
+    "description": "2026年10月26日19:53（北京时间），zack0x01（@zack0x01_）提出把REA用于勒索软件会发生什么，并称已用无害模拟测试该工具，附完整实验视频短链。补查原帖确认作者与措辞。这里的目标是作者明确限定的无害模拟，不是真实受害系统或已识别勒索软件家族。\n\n按具体REA分析实验收录，状态analysis-test；该标签不表示独立通过。可读正文没有模拟程序名称、模型、运行环境、反编译步骤、检测输出、恢复结果或测试日志，视频未读取。不把“展示AI改变分析速度”当速度数据，也不声称发现漏洞、恢复密钥或成功解密。未下载或执行模拟器、样本及任何视频中的代码。",
+    "sources": [{"label": "zack0x01介绍REA无害勒索模拟实验，2026-10-26", "url": "https://x.com/i/status/2114686873050476677"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["无害模拟实验自述；视频、模拟器、步骤与结果未核验，不是真实勒索软件复现。"],
+    "en": {
+      "title": "Harmless ransomware simulation: zack0x01 reports a REA malware-analysis experiment",
+      "summary": "zack0x01 says he tested REA's ransomware-analysis capabilities with a harmless simulation and links a video. Readable text provides no simulator, analysis steps or findings; real-ransomware analysis and successful decryption are not established.",
+      "description": "At 19:53 Beijing time on October 26, 2026, zack0x01 (@zack0x01_) asked what happens when REA is pointed at ransomware, said he had tested it using a harmless simulation, and linked a full-experiment video through a short URL. Supplementary reading confirmed the author and wording. The target is explicitly a harmless simulation, not a real victim system or identified ransomware family.\n\nThis concrete REA analysis experiment is included as analysis-test; the label does not imply independent success. Readable text gives no simulator, model, environment, decompilation steps, detection output, recovery result or test logs, and the video was not read. A claim that it shows AI changing analysis speed is not timing data. Vulnerability discovery, key recovery and successful decryption are not claimed here. No simulator, sample or code from the video was downloaded or executed.",
+      "metadata": ["Author-reported harmless-simulation experiment; video, simulator, steps and outcomes remain unverified, not a real-ransomware reproduction."],
+      "source_labels": ["zack0x01 introduces a REA harmless-ransomware-simulation experiment, October 26, 2026"]
+    }
+  },
+  {
+    "id": "yjcdon-pixiv-apk-codex-modification-report",
+    "title": "pixiv APK：梦醒无路走称Codex逆向后去广告并可用会员功能",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "@yjcdon称用Codex逆向pixiv APK，移除广告并可使用会员功能；未给APK版本、修改位置或测试，不能确认服务端权限、合法授权或完整会员访问。",
+    "description": "2026年10月26日19:29（北京时间），梦醒无路走（@yjcdon）称“Codex逆向一波pixiv的apk”，去掉广告且会员功能也能用，附一个短链。补查原帖确认作者与原措辞。目标是pixiv Android客户端，AI分工是作者所称的APK逆向；没有给出版本、包名、分析工具、修改位置、账号订阅情况或成功功能清单。\n\n保守记录作者报告，不将客户端显示变化升级为突破服务端授权，也不确认完整会员访问、分发许可或REA参与。短链内容未读取，没有下载或传播修改APK、执行补丁或访问他人账号。没有构建、功能对照及运行日志，状态为unverified。",
+    "sources": [{"label": "@yjcdon报告Codex逆向pixiv APK与修改效果，2026-10-26", "url": "https://x.com/i/status/2114680767372779952"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["会员功能是作者自述；服务端权限、版本、具体功能与授权未核验，未下载修改APK。"],
+    "en": {
+      "title": "pixiv APK: @yjcdon reports Codex-assisted reversing, ad removal and membership features",
+      "summary": "@yjcdon says Codex reverse engineered a pixiv APK, removed ads and enabled membership features. No APK revision, modification sites or tests were supplied; server-side entitlement, authorization and full membership access are not established.",
+      "description": "At 19:29 Beijing time on October 26, 2026, @yjcdon said Codex reverse engineered a pixiv APK, removing ads and making membership features usable, with a shortened link. Supplementary reading confirmed the author and wording. The target is pixiv's Android client and the stated AI role is APK reverse engineering. No version, package name, analysis tools, modification sites, subscription status or list of working features is given.\n\nThis conservatively records the author's report. Client-side display changes are not upgraded to a server-authorization bypass, nor are full membership access, distribution permission or REA use confirmed. The short link was not read; no modified APK was downloaded or distributed, no patch executed and no other person's account accessed. Build records, feature comparisons and runtime logs were not obtained; status is unverified.",
+      "metadata": ["Membership features are author-reported; server entitlements, revision, specific functionality and authorization remain unverified. No modified APK was downloaded."],
+      "source_labels": ["@yjcdon reports Codex-assisted pixiv APK reversing and modifications, October 26, 2026"]
+    }
+  },
+  {
+    "id": "ionis-h-codex-ghidra-flutter-object-pool-analysis",
+    "title": "Flutter二进制：hiroyuki称Codex接Ghidra后自行抽对象池定位地址",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "hiroyuki报告Codex接Ghidra后，在简略指令下编写对象池提取脚本，从地址定位继续分析Flutter二进制。未给应用、Flutter版本或脚本，不确认跨版本通用性。",
+    "description": "2026年10月26日19:52（北京时间），hiroyuki（@ionis_h）报告Codex连接Ghidra后，即使只有简略指令也能读取Flutter二进制。他原以为不同版本反序列化细节的差异会让地址定位很困难，但称Codex自行编写对象池提取脚本，定位地址后继续分析。补查原帖确认作者及完整措辞。\n\n这是针对Flutter编译产物结构的具体AI辅助分析报告，区别于基线flutter-aot的REA PR记录，不因同属Flutter就归并。可读正文没有应用名、Flutter或Dart版本、架构、脚本、对象池内容、定位准确性测试或恢复功能，不能声称跨版本稳定、完整反编译或恢复源码。REA未提及，未运行脚本或目标二进制；状态analysis-test描述实验性质，不表示独立验证。",
+    "sources": [{"label": "hiroyuki报告Codex/Ghidra提取Flutter对象池并定位地址，2026-10-26", "url": "https://x.com/i/status/2114686560323125596"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["应用、版本、架构与脚本未公开于可读正文；地址定位及继续分析仅为作者报告。"],
+    "en": {
+      "title": "Flutter binary: hiroyuki reports Codex/Ghidra object-pool extraction and address location",
+      "summary": "hiroyuki says Codex connected to Ghidra wrote an object-pool extraction script from brief instructions, locating addresses and continuing Flutter binary analysis. The app, Flutter revision and script are unspecified; cross-version generality is not established.",
+      "description": "At 19:52 Beijing time on October 26, 2026, hiroyuki (@ionis_h) reported that Codex connected to Ghidra could read a Flutter binary even with brief instructions. He had expected version-specific deserialization differences to make address identification difficult, but says Codex wrote its own object-pool extraction script, located addresses and continued analysis. Supplementary reading confirmed the author and full wording.\n\nThis is a concrete AI-assisted analysis report about Flutter compiled structures, distinct from the baseline flutter-aot REA pull-request record; sharing Flutter as a platform is not grounds to merge them. Readable text gives no application, Flutter/Dart revision, architecture, script, extracted contents, address-accuracy tests or recovered functionality. Stable cross-version behavior, complete decompilation and source recovery are not established. REA is not mentioned and neither a script nor a target binary was run here. Analysis-test describes the experiment, not independent verification.",
+      "metadata": ["App, revision, architecture and script are not provided in readable text; address identification and continued analysis are author reports."],
+      "source_labels": ["hiroyuki reports Codex/Ghidra extraction of a Flutter object pool and address identification, October 26, 2026"]
+    }
+  },
+  {
+    "id": "0xprobabillity-blackberry-q10-ssh-claude-code",
+    "title": "BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code",
+    "category": "hardware",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。",
+    "description": "2026年10月26日19:59（北京时间），0xProbability（@0xProbabillity）称Minimal Phone 2起价600美元，而二手BlackBerry Q10只需60美元；自己逆向后获得实体键盘、SSH和口袋中的Claude Code，并附视频。补查原帖确认作者及视频存在，没有读取或验证视频内容。\n\n作为旧硬件接入AI编码工具的具体互通报告收录。价格均为作者对比，不是当前市场核价或完整改装成本；实体键盘原本就是设备硬件，不归因于AI创造。正文没有说明操作系统、固件、终端实现、SSH服务端、Claude Code运行位置、AI是否参与逆向或REA使用。不能把SSH终端接入说成在旧手机本地运行Claude模型。\n\n未取得源码、修改记录、演示验证或独立测试，状态为unverified。候选2026年10月26日快照为1016赞、48033浏览、47转发，热度不是实现证明。未连接或修改设备。",
+    "sources": [{"label": "0xProbability报告BlackBerry Q10的SSH与Claude Code互通，2026-10-26", "url": "https://x.com/i/status/2114688329681899681"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["600美元与60美元为作者价格对比；运行位置与AI逆向角色未证。", "候选快照：1016赞、48033浏览、47转发，2026-10-26。"],
+    "en": {
+      "title": "BlackBerry Q10: 0xProbability reports SSH and pocket Claude Code after reversing an old phone",
+      "summary": "0xProbability compares a $60 used BlackBerry Q10 with a Minimal Phone 2 starting at $600 and reports a physical keyboard, SSH and pocket Claude Code after reverse engineering. Implementation and execution location are unspecified; local Claude inference and AI-assisted reversing are not established.",
+      "description": "At 19:59 Beijing time on October 26, 2026, 0xProbability (@0xProbabillity) compared a Minimal Phone 2 starting at $600 with a $60 used BlackBerry Q10, saying reverse engineering delivered a physical keyboard, SSH and Claude Code in his pocket. The original includes a video. Supplementary reading confirmed the author and video's presence, not its contents or behavior.\n\nThis is included as a concrete interoperability report connecting old hardware to an AI coding tool. Prices are the author's comparison, not a current market check or full modification cost. The physical keyboard was existing hardware, not something AI created. The text does not identify the OS, firmware, terminal implementation, SSH server, Claude Code execution location, AI's role in reverse engineering or REA use. SSH terminal access must not be described as running Claude models locally on the old phone.\n\nSource, modification records, verified demonstrations and independent tests were not obtained; status is unverified. The October 26, 2026 candidate snapshot has 1,016 likes, 48,033 views and 47 reposts, which describe reach rather than implementation proof. No device was connected to or modified here.",
+      "metadata": ["$600 and $60 are the author's price comparison; execution location and AI reversing role remain unproven.", "Candidate snapshot: 1,016 likes, 48,033 views and 47 reposts, October 26, 2026."],
+      "source_labels": ["0xProbability reports BlackBerry Q10 SSH and Claude Code interoperability, October 26, 2026"]
+    }
+  },
+  {
+    "id": "giblet-1997-capcom-sibling-compiler-ai-decompilation",
+    "title": "1997年编译器：Giblet称用AI反编译Capcom所用工具的近亲版本",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Giblet回应AI披露争议，称AI用于反编译一款1997年编译器，其版本与Capcom所用相近但不完全相同。游戏、编译器名称和验证记录未提供，不确认首次完成或源码匹配。",
+    "description": "2026年10月26日19:08（北京时间），Giblet（@gibletto1）在Bashy对游戏反编译AI披露的批评串中解释，自己使用AI反编译1997年的编译器，因为它是Capcom使用版本的近亲，但并非完全相同。作者区分前人对编译器进行静态重编译与自己所做的工作，并称否则无法完成；还说游戏源码接近Capcom。\n\n补查父串确认作者及讨论背景，但可读文本没有编译器名称、目标游戏、AI模型、输出仓库、执行测试或字节匹配。保守将目标限定为作者所说的编译器恢复，不另造一个已恢复游戏案例。其“此前无人做过”及“不用AI不可能”是个人主张，不验证首次性或技术必然性；近亲版本也不等于恢复Capcom确切工具链或原源码。未下载、构建或运行编译器，状态为unverified，REA使用未提及。",
+    "sources": [{"label": "Giblet说明AI反编译1997年编译器及版本差异，2026-10-26", "url": "https://x.com/i/status/2114675525725630780"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["目标年份1997为作者陈述；编译器、游戏及工具版本未识别，不确认首次性或Capcom源码等价。"],
+    "en": {
+      "title": "A 1997 compiler: Giblet reports AI decompilation of a sibling to Capcom's toolchain",
+      "summary": "Responding to AI-disclosure criticism, Giblet says AI decompiled a 1997 compiler related to, but not identical to, Capcom's version. Compiler and game names and verification records were not supplied; priority and source matching are not established.",
+      "description": "At 19:08 Beijing time on October 26, 2026, Giblet (@gibletto1) replied in Bashy's criticism thread about AI disclosures in game decompilation. He said he used AI to decompile a 1997 compiler because it is a sibling of Capcom's version, not an exact match. He distinguished prior static recompilation of compilers from his work, claimed it could not otherwise be done, and said the game source is close to Capcom.\n\nSupplementary reading of the parent thread confirmed the author and context, but readable text identifies no compiler, game, AI model, output repository, execution tests or byte matches. This record conservatively targets only the reported compiler recovery, without inventing a separate recovered-game case. Claims that nobody had done it before or that it was impossible without AI are personal assertions, not verified priority or technical necessity. A sibling version is not recovery of Capcom's exact toolchain or original source. No compiler was downloaded, built or executed here; status is unverified and REA use is not mentioned.",
+      "metadata": ["1997 is the author's target-year claim; compiler, game and tool revisions are unidentified, and priority or Capcom source equivalence is unconfirmed."],
+      "source_labels": ["Giblet explains AI decompilation of a 1997 compiler and version differences, October 26, 2026"]
+    }
+  },
+  {
+    "id": "sem-ruizu-x02-opus-ipod-interface-firmware",
+    "title": "Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。",
+    "description": "2026年10月26日17:38（北京时间），Sem（@smgdkngt）报告让Opus把廉价Ruizu X02 MP3播放器改得像iPod 3G。原界面图标网格、翻译不全，左右键滚动而上下键返回，使用不便；作者称Claude重做Chicago字体、iPod菜单、带填充进度条的Now Playing屏幕与彩色iPod风格，并改成上下滚动、左返回、右和中键选择。\n\n作者报告AI通过USB恢复模式从NAND读取整个固件，理解加密更新格式、UI资源、字体和按键映射。原厂升级器拒绝修改固件，因此AI编写ARM刷写payload；对原应用的补丁先在Unicorn模拟器测试。另用C从零编写Tetris、Flappy Bird及六岁儿童学习游戏，在21 KB RAM内运行，并用Mac模拟器运行相同代码。学习内容据称有376个词、OpenMoji图片、Andika字体，支持荷兰语和英语。作者说自己负责真机测试并反馈显示问题照片。\n\n补查原帖确认作者、完整流程与附图存在，但未识别图片内容，也未获得固件版本、源码、NAND镜像、Unicorn日志或真机演示验证。各屏幕修改、刷写和游戏效果均是作者报告，不是本合集复现；REA未提及。不下载或执行payload、不操作播放器，状态为unverified。",
+    "sources": [{"label": "Sem报告Opus改装Ruizu X02固件及游戏，2026-10-26", "url": "https://x.com/i/status/2114652825099587639"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["21 KB RAM、376词、Unicorn预检与真机测试均为作者报告；固件版本、源码与日志未取得。"],
+    "en": {
+      "title": "Ruizu X02: Sem reports Opus firmware extraction, an iPod-style interface and small games",
+      "summary": "Sem says Claude Opus read NAND through Ruizu X02 USB recovery, analyzed the encrypted update format and UI resources, rebuilt iPod-style menus and controls, and tested patches in Unicorn before flashing. Hardware behavior and 376-word bilingual games remain author reports without code or logs obtained.",
+      "description": "At 17:38 Beijing time on October 26, 2026, Sem (@smgdkngt) reported asking Opus to make a cheap Ruizu X02 MP3 player look and work like an iPod 3G. The stock interface had an icon grid, incomplete translations and confusing controls: left/right scrolled while top/bottom went back. He says Claude recreated the Chicago font, iPod menus, a Now Playing screen with a filled progress bar and a color iPod look, remapping up/down to scroll, left to back, and right/center to select.\n\nThe author reports AI reading the entire firmware from NAND through USB recovery mode and working out its encrypted update format, UI resources, fonts and key maps. Since the stock updater refused modified firmware, AI wrote an ARM flashing payload, testing patches to stock applications in a Unicorn emulator first. It also reportedly wrote Tetris, Flappy Bird and learning games for a six-year-old from scratch in C within 21 KB RAM, with a Mac simulator running the same code. Learning content reportedly includes 376 words, OpenMoji pictures and the Andika font, in Dutch and English. The author says his role was hardware testing and sending photos of display problems.\n\nSupplementary reading confirmed the author, full reported workflow and presence of images, but their contents were not identified. Firmware revision, source, NAND images, Unicorn logs and verified hardware demonstrations were not obtained. Screen changes, flashing and games are author reports, not this collection's reproduction. REA is not mentioned. No payload was downloaded or executed and no player operated here; status is unverified.",
+      "metadata": ["21 KB RAM, 376 words, Unicorn preflight and hardware testing are author reports; firmware version, source and logs were not obtained."],
+      "source_labels": ["Sem reports Opus-assisted Ruizu X02 firmware modification and games, October 26, 2026"]
+    }
+  },
+  {
+    "id": "turtlecute-obtainium-ai-reimplementation-dcl-report",
+    "title": "Obtainium替代实现：Turtlecute称因GrapheneOS的DCL顾虑从零重写应用",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Turtlecute称Obtainium新依赖需要动态代码加载，与其GrapheneOS安全偏好冲突，于是借AI从零重做应用而非fork，简化架构和UI。未取得项目名、代码或等价性测试。",
+    "description": "2026年10月26日17:35（北京时间），Turtlecute（@turtlecute33）解释自己重做Obtainium的动机。他称Obtainium近期引入需要DCL（Dynamic Code Loading，动态代码加载）的库，而GrapheneOS默认禁用DCL；与原开发者讨论后未获期望改变，因此从零做替代实现，不是fork。作者称使用现代API、更简洁UI/UX和更精简架构，并明确开发中使用了AI。\n\n补查原帖确认作者与措辞。DCL依赖、默认设置及与维护者的讨论是作者背景陈述，未独立审计；不能由此判断原应用恶意或必然不安全。正文没有说明AI模型、如何研究原功能、输出项目名、版本或是否完全消除DCL。作为具体AI辅助功能重实现报告收录，未宣称是二进制反编译或确认REA参与。未取得源码、安装包、功能对照或GrapheneOS运行记录，状态为unverified；作者猜原Obtainium也使用AI不是其维护者的证据。",
+    "sources": [{"label": "Turtlecute解释AI辅助Obtainium重实现与DCL动机，2026-10-26", "url": "https://x.com/i/status/2114652243395785023"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["从零重实现、AI参与及DCL背景均据作者陈述；项目、模型与兼容性未核验。"],
+    "en": {
+      "title": "Obtainium alternative: Turtlecute reports an AI-assisted rewrite motivated by GrapheneOS DCL concerns",
+      "summary": "Turtlecute says an Obtainium dependency needs dynamic code loading, conflicting with his GrapheneOS security preferences, so he used AI to reimplement the app from scratch rather than fork it, simplifying its architecture and UI. Project name, code and equivalence tests were not obtained.",
+      "description": "At 17:35 Beijing time on October 26, 2026, Turtlecute (@turtlecute33) explained why he reimplemented Obtainium. He says a recent dependency requires DCL (Dynamic Code Loading), which GrapheneOS disables by default. After discussions with the original developer did not produce the change he wanted, he built an alternative from scratch rather than a fork. He reports modern APIs, cleaner UI/UX and streamlined architecture, and explicitly acknowledges AI during development.\n\nSupplementary reading confirmed the author and wording. The dependency, default setting and maintainer discussion are the author's background account, not an independent audit; they do not establish that the original app is malicious or necessarily unsafe. The text does not specify AI models, how original behavior was studied, the output project's name or revision, or whether DCL was eliminated completely. This is included as a concrete AI-assisted functional reimplementation report, not binary decompilation or confirmed REA use. No source, package, feature comparisons or GrapheneOS execution records were obtained; status is unverified. The author's guess that Obtainium itself also used AI is not evidence from its maintainers.",
+      "metadata": ["From-scratch reimplementation, AI involvement and DCL background are author reports; project, models and compatibility remain unverified."],
+      "source_labels": ["Turtlecute explains AI-assisted Obtainium reimplementation and its DCL motivation, October 26, 2026"]
+    }
+  },
+  {
+    "id": "nderchris-samsung-frame65-claude-root-boundary-report",
+    "title": "Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。",
+    "description": "2026年10月26日17:26（北京时间），Christian Ander（@nderchris）在log4j三星调查串下报告，Chris-ritsen的Samsung方案在自己的2024年The Frame 65上可用，型号TQ65LS03BGUXXC、固件T-PTMDEUC-1720.7。他称在Omarchy Linux上操作相对直接，但Claude Opus与Sonnet均被护栏拦住；Claude完成了前置和后续工作，在下载仓库或执行命令前停下。作者称掌握root命令执行的证明，同时明确没有对每个系统文件和进程的无限制控制。\n\n补查原帖与父串确认身份、设备值与限制。父帖是log4j于10月25日提醒ACR关闭选项不保证关闭遥测、完整报告尚待发布的旧材料；它只用于定位回复，不证明本设备的ACR或录音行为。该记录是另一位用户的具名硬件尝试，不合并成log4j的2025电视实测，也不将既有Chris-ritsen技术的发现归功于Claude。前后工作具体内容、仓库版本和root证明日志未取得；本合集未运行方案、下载目标或独立复现，状态为unverified。",
+    "sources": [{"label": "Christian Ander报告The Frame 65型号、固件及Claude辅助边界，2026-10-26", "url": "https://x.com/i/status/2114649968396980302"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["TQ65LS03BGUXXC；T-PTMDEUC-1720.7；设备年份保留作者所称2024，不按型号擅改。", "root命令执行为作者报告，不代表无限制控制；Claude未下载或执行核心方案。"],
+    "en": {
+      "title": "Samsung The Frame 65: Christian Ander reports root commands, with Claude limited to pre/post work",
+      "summary": "Christian Ander says Chris-ritsen's method works on his 2024 The Frame 65 running T-PTMDEUC-1720.7. Claude Opus and Sonnet refused repository download and command execution, assisting only before and after. He distinguishes root command execution from unrestricted file and process control.",
+      "description": "At 17:26 Beijing time on October 26, 2026, Christian Ander (@nderchris) replied in log4j's Samsung investigation thread that Chris-ritsen's Samsung method works on his 2024 The Frame 65, model TQ65LS03BGUXXC, firmware T-PTMDEUC-1720.7. He found the process relatively straightforward on Omarchy Linux, but says safeguards blocked both Claude Opus and Sonnet. Claude handled pre- and post-work, stopping short of downloading the repository or executing commands. He reports proof of root command execution while explicitly denying unrestricted control over every system file and process.\n\nSupplementary reading of the original and parent thread confirmed identity, device values and limitations. The parent is log4j's October 25 warning that an ACR-off preference need not disable telemetry, with a full report still forthcoming. That older material only locates the reply; it does not establish ACR or audio behavior on this device. This is another user's specified hardware attempt, not log4j's 2025 TV test, and discovery of the existing Chris-ritsen technique is not attributed to Claude. Specific pre/post tasks, repository revision and root-proof logs were not obtained. This collection did not run the method, download the target or independently reproduce it; status is unverified.",
+      "metadata": ["TQ65LS03BGUXXC; T-PTMDEUC-1720.7; the author's stated device year, 2024, is preserved rather than inferred from the model.", "Root commands are author-reported, not unrestricted control; Claude did not download or execute the core method."],
+      "source_labels": ["Christian Ander reports The Frame 65 model, firmware and limits of Claude assistance, October 26, 2026"]
+    }
+  },
+  {
+    "id": "yashas-cstack-claude-code-distilled-skills-idea",
+    "title": "cstack：Yashas考虑发布从Claude Code逆向提炼的Skills",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "related-project",
+    "summary": "Yashas询问是否应发布cstack，称它把Claude Code逆向并提炼成Skills；这是具名资源的发布设想，没有仓库、提炼方法或行为对照。",
+    "description": "2026年10月26日16:59（北京时间），Yashas（@YashasGunderia）询问应发布cstack，还是用于自改进Agent循环的基础设施ybrain。他将cstack描述为“claude code reverse engineered and distilled into skills”。补查原帖确认作者与原措辞。目标是把Claude Code的行为或工作方式提炼为可复用Skills，但没有说明提炼了哪些能力、分析输入、使用的AI模型或测试结果。\n\n按具体逆向生态资源的发布设想收录为related-project，REA未知；不称已开源、等价重建Claude Code或完成验证。ybrain在本帖只是普通Agent基础设施的备选发布方向，没有独立逆向目标，不另立案例。未取得代码、文档或行为对照，也未运行任何实现。",
+    "sources": [{"label": "Yashas询问是否发布cstack及其Claude Code逆向Skills，2026-10-26", "url": "https://x.com/i/status/2114642977884926367"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["具名资源发布设想；AI分析分工、仓库、行为等价性与REA使用未证。"],
+    "en": {
+      "title": "cstack: Yashas considers releasing skills distilled from reverse-engineered Claude Code",
+      "summary": "Yashas asks whether to release cstack, described as Claude Code reverse-engineered and distilled into skills. This is a named resource's publication idea, without a repository, extraction method or behavioral comparison.",
+      "description": "At 16:59 Beijing time on October 26, 2026, Yashas (@YashasGunderia) asked whether to release cstack or ybrain, infrastructure for self-improving agentic loops. He described cstack as 'claude code reverse engineered and distilled into skills'. Supplementary reading of the original confirmed the author and wording. Its target is reusable skills distilled from Claude Code behavior or workflow, but the post does not identify the capabilities extracted, analysis inputs, AI models used or test results.\n\nThis concrete reverse-engineering ecosystem resource's publication idea is included as related-project, with REA unknown. It is not described as already open-sourced, an equivalent Claude Code reconstruction or validated. In this post ybrain is only an alternative infrastructure release, without a separate reverse-engineering target, so it does not receive another case. No code, documentation or behavioral comparisons were obtained and no implementation was run here.",
+      "metadata": ["Named resource publication idea; AI analysis roles, repository, behavioral equivalence and REA involvement are unproven."],
+      "source_labels": ["Yashas asks about releasing cstack and its Claude Code reverse-engineered skills, October 26, 2026"]
+    }
+  },
+  {
+    "id": "cognizant-seven-agent-requirements-kb-cataloging-study",
+    "title": "Cognizant企业知识层：七Agent逆向241仓库，再按服务限定业务规则检索",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "Agrawal等研究者报告从18个服务、241仓库恢复业务规则，再以产物目录与超图限定检索，避免把别的服务的同名规则当证据。100多缺陷与35回归失败为论文部署报告，检索准确率尚在评估。",
+    "description": "2026年10月26日16:30（北京时间）的候选转录了Garima Agrawal等Cognizant研究者的论文《Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves》，标注arXiv:2610.32851v1、原始日期2026年10月23日。这是本轮分享的既有研究，不把论文日期改为本轮实验日期。\n\n目标是企业应用的未文档化业务行为，而非破解二进制。作者报告自建七Agent逆向流水线，分析18个服务的241个仓库，生成带源码引用的范围定义、用户旅程、业务规则、验收条件及差异清单。14条业务流程中的一条最多涉及112份端点需求文档；offer、eligibility等词在不同服务中相似却不通用，平坦向量检索可能引用错服务的规则。\n\n其知识层按服务、领域、功能和产物类型建立目录、稀疏元数据注册表及产物级超图，先解析问题为产物ID集合，再仅对该集合做dense/BM25混合检索。LLM置信门认为证据不足时扩大到全库；运行时上下文图保留规则到仓库的引用路径，供开发者核验。作者称一周内构建、18个服务接入无须修改schema，已辅助分析100多个生产缺陷，并把35次发布回归失败归因到规则和服务。不能将“分析100多缺陷”写成全部自动修复。\n\n部署与数字均来自候选转录的论文陈述；没有获得企业仓库、缺陷单或独立运行记录。候选正文在Evidence blocked说明处结束，但此前足以辨认方法与有限结果。检索准确率仍在评估，没有可比准确率、扩库比例或消融数据，不将该设计说成已证实优于全部RAG。REA使用未提及，未执行目标。",
+    "sources": [{"label": "分享并转录Cognizant知识目录论文，2026-10-26；论文标注2026-10-23", "url": "https://x.com/i/status/2114635883261419938"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["原研究日期2026-10-23；本轮候选分享日期2026-10-26。", "241仓库、18服务、七Agent、100多缺陷与35回归失败均为论文自述；准确率评估未完成。"],
+    "en": {
+      "title": "Cognizant knowledge layer: seven-agent recovery from 241 repositories, then service-scoped rule retrieval",
+      "summary": "Agrawal and colleagues report recovering business rules from 241 repositories across 18 services, then scoping retrieval with an artifact catalog and hypergraph to avoid same-named rules from the wrong service. More than 100 defects and 35 regression failures are paper-reported deployment evidence; retrieval accuracy remains under evaluation.",
+      "description": "The candidate published at 16:30 Beijing time on October 26, 2026 transcribes Garima Agrawal and other Cognizant researchers' paper, Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves. It identifies arXiv:2610.32851v1 and an original date of October 23, 2026. This is earlier research shared in the current window, not an experiment newly dated to the share.\n\nThe target is undocumented enterprise application behavior, not binary cracking. The authors report a seven-agent reverse-engineering pipeline that processed 241 repositories across 18 services into source-referenced scope definitions, journeys, business rules, acceptance criteria and gap registers. One of 14 workflows may involve 112 endpoint requirements documents. Terms such as offer and eligibility recur across services but are not interchangeable, allowing flat vector retrieval to cite the wrong service's rule.\n\nTheir knowledge layer organizes artifacts by service, domain, feature and type in a catalog, sparse metadata registry and artifact-level hypergraph. It first resolves a question to artifact identifiers, then runs hybrid dense/BM25 search only over that set. An LLM confidence gate widens to the whole corpus if scoped evidence is insufficient. Runtime context graphs preserve rule-to-repository provenance for developer review. The authors say the layer was built in under a week, admitted 18 services without schema changes, supported analysis of more than 100 production defects and attributed 35 release regression failures to rules and services. Analyzing over 100 defects must not be rewritten as automatically fixing them all.\n\nDeployment and numbers come from the paper as transcribed in the candidate; enterprise repositories, defect tickets and independent execution records were not obtained. The candidate ends during its Evidence blocked discussion, but the earlier text identifies the method and bounded outcomes. Retrieval accuracy remains under evaluation; no comparable accuracy, widening rate or ablation data was obtained. This does not establish superiority to all RAG designs. REA use is not mentioned and no target was executed here.",
+      "metadata": ["Original research dated October 23, 2026; candidate share dated October 26, 2026.", "241 repositories, 18 services, seven agents, over 100 defects and 35 regression failures are paper reports; accuracy evaluation is unfinished."],
+      "source_labels": ["Share transcribing the Cognizant knowledge-catalog paper, October 26, 2026; paper dated October 23"]
+    }
+  },
+  {
+    "id": "greatony-codex-lilygo-daikin-remote-firmware",
+    "title": "大金空调遥控器：Tony Huang用Codex为LilyGO T-Display写替代固件",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Tony Huang嫌大金遥控器又大又重，称让Codex写固件，把LilyGO T-Display变成替代遥控器并公开代码。尚未取得仓库正文或控制测试。",
+    "description": "2026年10月26日16:22（北京时间），Tony Huang（@greatony）报告替代大金空调遥控器的个人项目。他嫌原遥控器又大又重，称让Codex编写固件，将LilyGO T-Display变成遥控器并公开代码。补查原帖确认作者与Codex分工，帖子附照片及代码短链。\n\n作为具体AI辅助设备互通项目收录；可读材料未给出大金机型、T-Display版本、通信方式、协议获取过程或控制测试。不把替代固件说成首次逆向了专有协议，也不确认REA参与。短链未展开、固件未执行、空调未操作，公开实现与控制效果仅为作者报告，状态为unverified。候选快照为291赞、17022浏览、16转发，日期为2026年10月26日，热度不证明功能。",
+    "sources": [{"label": "Tony Huang报告Codex编写大金替代遥控固件，2026-10-26", "url": "https://x.com/i/status/2114633693214249135"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["AI辅助设备互通报告；协议逆向、仓库及实机控制尚未核验。", "候选快照：291赞、17022浏览、16转发，2026-10-26。"],
+    "en": {
+      "title": "Daikin remote: Tony Huang uses Codex for replacement LilyGO T-Display firmware",
+      "summary": "Tony Huang says his Daikin remote was large and heavy, so he had Codex write firmware making a LilyGO T-Display into a replacement and published the code. Repository contents and control tests were not obtained.",
+      "description": "At 16:22 Beijing time on October 26, 2026, Tony Huang (@greatony) reported a personal Daikin A/C remote replacement. Disliking the original's size and weight, he says he had Codex write firmware turning a LilyGO T-Display into a remote and published the code. Supplementary reading of the original confirmed the author and Codex's stated role; the post includes a photo and a shortened code link.\n\nThis is included as a concrete AI-assisted device-interoperability project. Readable material gives no Daikin model, T-Display version, communication method, protocol acquisition process or control tests. Replacement firmware does not establish a newly reverse-engineered proprietary protocol, nor is REA involvement confirmed. The short link was not expanded, firmware was not executed and no A/C was operated here. Publication and control behavior remain author reports, with unverified status. The October 26, 2026 candidate snapshot has 291 likes, 17,022 views and 16 reposts; reach does not prove functionality.",
+      "metadata": ["AI-assisted interoperability report; protocol reverse engineering, repository contents and hardware control remain unverified.", "Candidate snapshot: 291 likes, 17,022 views and 16 reposts, October 26, 2026."],
+      "source_labels": ["Tony Huang reports Codex-written Daikin replacement remote firmware, October 26, 2026"]
+    }
+  },
+  {
+    "id": "onurgenes-claude-postiz-reverse-engineering-report",
+    "title": "Postiz：Onur Genes称用Claude逆向三天后公开实现",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Onur Genes称花三天及400美元Claude额度逆向Postiz，并提供代码链接。未取得仓库正文、功能对照或测试，不能确认独立重建与实现范围。",
+    "description": "2026年10月26日16:27（北京时间），Onur Genes（@onurgenes）称花三天及400美元Claude额度逆向Postiz，决定公开结果，并附代码短链。补查原帖确认作者、目标、Claude及上述数值。\n\n帖子没有说明逆向了哪些功能、如何取得参考行为、是否直接使用既有源码、输出项目名称或许可证。“for humanity”可能带有调侃，不证明独立重建；公开链接也不是已验证替代产品。三天及400美元仅为作者自述，不是完整人工、模型或部署成本，也不构成效率基准。\n\n保守收录具体AI辅助逆向报告，状态为unverified。本合集未展开短链、下载或执行目标，未取得Postiz功能对照、构建或测试记录，不确认功能完整、可部署或REA参与。",
+    "sources": [{"label": "Onur Genes称使用Claude逆向Postiz并公开代码，2026-10-26", "url": "https://x.com/i/status/2114635082707468462"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["三天及400美元Claude额度均为作者自述；仓库、功能、许可证和测试未核验。"],
+    "en": {
+      "title": "Postiz: Onur Genes reports three days of Claude-assisted reverse engineering and code publication",
+      "summary": "Onur Genes says he spent three days and $400 in Claude credits reverse engineering Postiz and links code. Repository contents, feature comparisons and tests were not obtained; independent reconstruction and implementation scope remain unverified.",
+      "description": "At 16:27 Beijing time on October 26, 2026, Onur Genes (@onurgenes) said he spent three days and $400 in Claude credits reverse engineering Postiz, decided to publish the result and supplied a shortened code link. Supplementary reading of the original confirmed the author, target, Claude and those figures.\n\nThe post does not explain which features were studied, how reference behavior was obtained, whether existing source was used directly, the output project's name or its license. 'For humanity' may be tongue-in-cheek and does not establish independent reconstruction; a publication link is not a verified replacement product. Three days and $400 are author reports, not full labor, model or deployment costs or an efficiency benchmark.\n\nThis concrete AI-assisted reverse-engineering report is conservatively included as unverified. This collection did not expand the short link, download or execute the target, or obtain Postiz feature comparisons, build records or tests. Functional completeness, deployability and REA involvement are not established.",
+      "metadata": ["Three days and $400 in Claude credits are author reports; repository contents, features, license and tests remain unverified."],
+      "source_labels": ["Onur Genes reports Claude-assisted Postiz reverse engineering and code publication, October 26, 2026"]
+    }
+  },
+  {
     "id": "meetshah-old-android-game-multimodel-repair-report",
     "title": "旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩",
     "category": "games",
@@ -18507,5 +18754,65 @@
     "snapshot_date": "2026-10-18",
     "metadata": ["原来源2026-10-17 21:50，北京时间；往期补审，非本轮新帖。", "数天、稳定60fps、无手写代码和开源均为二手宣称，无仓库或测试，不借用苹果版证据。"],
     "en": {"title": "Switch Diablo II to Android: an unverified AI-assisted native-port report", "summary": "paomiange1 relays decompilation, symbol recovery and cross-platform work within days; 60 fps and open-source claims are unverified.", "description": "An older candidate published at 21:50 Beijing time on October 17, 2026, by @paomiange1 relays that someone used AI to natively port Switch Diablo II to Android within days. It describes decompilation, symbol recovery and cross-platform restructuring of assets and logic into an Android-native program, claiming stable 60 fps, no manually written code and an open-source release. The purpose is reducing performance and heat problems of Switch emulation on Android, but the roughly 30 fps emulator comparison is the poster's account without devices or tests.\n\nThe game and destination platform are concrete enough to change this item from pending evidence to a cautious secondary report this round; demonstrated success is not required for inclusion. However, no original author, repository, game version, build record, device or frame-rate log is provided. Days, 60 fps, all-AI development and open sourcing remain unverified, not a confirmed port. The existing Switch Diablo II-to-Apple-device report targets different platforms; shared game identity does not justify merging achievements or borrowing evidence. REA use is unconfirmed. No game was downloaded or independently run. This is older-window re-review, not a newly published current-window post.", "metadata": ["Original source: October 17, 2026, 21:50 Beijing time; older-window re-review, not a new current-window post.", "Days, stable 60 fps, no hand-written code and open sourcing are secondary claims without repository or tests; Apple-platform evidence is not borrowed."], "source_labels": ["Older candidate: Switch Diablo II-to-Android report"]}
+  },
+  {
+    "id": "kh2-sora-kh1-maps-ai-decompilation-mod-report",
+    "title": "KH2 索拉与 KH1 地图：AI 反编译 Mod 的二手报告与失效招式",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Violin 称该 Mod 据说借 AI 反编译 KH2，但部分招式不工作；父串说明玩家希望在 KH1 地图体验 KH2 索拉。",
+    "description": "2026年10月26日12:59（北京时间），Violin（@ViolinSpeedruns）在与 @Azure_Kitez 的讨论中称，一个 Mod 据说用 AI 反编译《王国之心2》（KH2）。补读父串中12:55的回复，目标是把 KH2 索拉的体验带到《王国之心1》（KH1）的地图，而不是另一个 KH1 Randomizer 项目。Violin 不反对 AI 辅助反编译，但批评该 Mod 主要只做了招式集，且部分招式不工作。\n\n这是可辨用途与失败边界的二手报告，因此从往期待补证改为保守收录。原开发者、Mod 正式名称、仓库、模型、反编译产物与兼容版本仍未确认；父串并未证明 AI 贡献比例或完整移植。招式失效也是评论者的说法，不是本合集实测。没有确认 REA 使用，没有下载游戏或 Mod，也没有据此判断侵权或开发者动机。本帖属于10月26日12至16点的往期窗口，父串只作目标辨认的补充来源。",
+    "sources": [
+      {"label": "往期候选：Violin 对 AI 反编译与失效招式的评论", "url": "https://x.com/i/status/2114582556960063904"},
+      {"label": "补充父串：KH2 索拉与 KH1 地图的目标", "url": "https://x.com/i/status/2114581751989477813"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["候选2026-10-26 12:59，父串12:55，北京时间；往期补审，不是当前16至20点新帖。", "二手报告：原作者、Mod 名称、模型与代码未知；部分招式失效未独立复现。"],
+    "en": {
+      "title": "KH2 Sora on KH1 maps: a secondary AI-decompilation mod report with broken moves",
+      "summary": "Violin says the mod allegedly used AI to decompile KH2, but some moves do not work; its parent reply identifies the aim as KH2 Sora on KH1 maps.",
+      "description": "At 12:59 Beijing time on October 26, 2026, Violin (@ViolinSpeedruns) tells @Azure_Kitez that a mod allegedly used AI to decompile Kingdom Hearts II (KH2). A supplementary reading of the 12:55 parent reply identifies the goal as experiencing KH2 Sora on Kingdom Hearts I (KH1) maps, not the separate KH1 Randomizer project. Violin does not object to AI-assisted decompilation, but criticizes the mod for concentrating on the moveset, some of which does not work.\n\nThe identifiable purpose and failure boundary support changing this older pending item to a cautious secondary report. The original developer, official mod name, repository, model, decompilation artifacts and compatible versions remain unconfirmed; the parent thread does not establish the proportion of AI work or a complete port. Broken moves are also the commenter's account, not tests by this collection. REA use is unconfirmed. No game or mod was downloaded, and no conclusion about infringement or developer motivation is drawn. The candidate belongs to the October 26 noon-to-16:00 older window; the parent reply is supplementary evidence for identifying the goal.",
+      "metadata": ["Candidate: October 26, 2026, 12:59; parent reply: 12:55 Beijing time. Older-window re-review, not a new 16:00–20:00 post.", "Secondary report: original author, mod name, model and code unknown; broken moves were not independently reproduced."],
+      "source_labels": ["Older candidate: Violin on AI decompilation and broken moves", "Supplementary parent reply: KH2 Sora on KH1 maps"]
+    }
+  },
+  {
+    "id": "cert-polska-openai-mikrotik-six-flaws-report",
+    "title": "MikroTik 路由器：日刊转述波兰 CERT 用 OpenAI 模型发现六处漏洞",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "10月26日日刊以 OpenAI / NASK 合作为背景，提及 CERT 的路由器研究；没有取得型号、漏洞编号或模型分析记录。",
+    "description": "2026年10月26日08:50（北京时间）的 AI 日刊，在介绍 OpenAI 与波兰 NASK 于10月23日签订安全研究协议时，称合作建立在波兰 CERT 团队曾使用 OpenAI 模型发现 MikroTik 路由器六处漏洞的工作之上。这里的具体研究对象是路由器，AI 角色是协助发现漏洞，目的为设备安全分析；并不是把合作协议本身当成逆向成果。\n\n本轮完整读取候选正文后，将往期待补证改为未核验的二手研究报告。材料没有给出路由器型号、固件、六项漏洞编号、模型名称、源码或二进制分析路线、修补版本或复现记录，未取得原研究报告。因此六处只是日刊转述，不确认漏洞严重度、可利用性、已修复或 REA 使用，也不推断 OpenAI 模型独立完成发现。日刊另提机器狗 AI 模块漏洞，但没有说明 AI 参与分析，未把它并为本项成果。候选属于10月26日08至12点的往期窗口；10月23日是所述协议日期，而非六处漏洞的已核实发现日期。",
+    "sources": [{"label": "往期候选：AI 日刊的 NASK / CERT / MikroTik 段落", "url": "https://x.com/i/status/2114520064137547861"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["来源2026-10-26 08:50，北京时间；往期补审。协议据称签于10月23日，不等于漏洞发现日期。", "六处漏洞为二手转述；型号、固件、编号、模型与验证记录未知。"],
+    "en": {
+      "title": "MikroTik routers: a briefing relays six flaws found by Poland's CERT with OpenAI models",
+      "summary": "An October 26 briefing mentions router research in the context of OpenAI/NASK cooperation; device models, vulnerability IDs and model-analysis records were not obtained.",
+      "description": "An AI briefing published at 08:50 Beijing time on October 26, 2026, says OpenAI and Poland's NASK signed a safety-research agreement on October 23, building on Poland's CERT team using OpenAI models to find six flaws in MikroTik routers. The concrete research target is routers, the stated AI role is assisting vulnerability discovery, and the purpose is device-security analysis; the cooperation agreement itself is not treated as a reverse-engineering result.\n\nAfter reading the full candidate, this older pending item is included as an unverified secondary research report. The material provides no router model, firmware, six vulnerability IDs, model name, source-code or binary-analysis approach, patched version or reproduction record, and the original research report was not obtained. Six is therefore the briefing's reported count, not confirmation of severity, exploitability, fixes or REA use; autonomous discovery by OpenAI models is not inferred. The briefing also mentions a robot dog's AI-module vulnerability without saying AI performed its analysis, so that is not merged into this result. The candidate belongs to the October 26 08:00–12:00 older window. October 23 is the reported agreement date, not an established discovery date for the six flaws.",
+      "metadata": ["Source: October 26, 2026, 08:50 Beijing time; older-window re-review. The agreement was reportedly signed October 23, not necessarily the discovery date.", "Six flaws is a secondary count; models, firmware, IDs, AI model and verification records are unknown."],
+      "source_labels": ["Older candidate: AI briefing's NASK/CERT/MikroTik paragraph"]
+    }
+  },
+  {
+    "id": "kindle-paperwhite4-8gb-codex-jailbreak-attempt-report",
+    "title": "Kindle Paperwhite 4（8GB）：Codex 识别设备、备份书籍并尝试越狱的转述",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "二手帖描述 Mac 经 USB 连接 Kindle 后让 Codex 读版本、备份并运行脚本；AI 阅读器仍是下一步，未确认越狱完成。",
+    "description": "2026年10月25日18:01（北京时间）的帖子描述，一位用户用 Type-C 转 Micro-USB 线把旧 Kindle 接到 Mac，要求 Codex 协助越狱。转述称照片中 Agent 识别为 Paperwhite 4、8GB，读取固件版本，先备份书籍，再对挂载盘运行脚本；设备当时仍显示 USB 界面。目标是让闲置阅读器继续使用，作者所述下一步是改成 AI 阅读器。\n\n目前可记录的是设备识别、备份与脚本运行的二手报告，没有取得原作者、固件版本值、脚本、备份校验或后续启动记录。运行脚本不等于越狱成功，USB 界面也不是修改后系统已启动的证据；AI 阅读器没有报告完成。原文提醒先备份、审读命令，越狱可能损坏设备或失去支持。本合集未运行脚本或连接设备，不确认 REA 使用。该尝试不同于既有 KP3 安装 Skill，不能仅按 Kindle 品类视为同一项目。",
+    "sources": [{"label": "往期候选：Paperwhite 4 连接 Mac 后的 Codex 操作转述", "url": "https://x.com/i/status/2114296344139755762"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["来源2026-10-25 18:01，北京时间；往期补审，不是当前窗口新帖。", "型号与容量为二手报告；越狱与 AI 阅读器均未获完成验证，未执行脚本。"],
+    "en": {
+      "title": "Kindle Paperwhite 4 (8GB): a reported Codex identification, backup and jailbreak attempt",
+      "summary": "A secondary post describes Codex reading the version, backing up books and running scripts over a Mac USB connection; an AI reader is still a next step, not a confirmed jailbreak result.",
+      "description": "A post published at 18:01 Beijing time on October 25, 2026, describes someone connecting an old Kindle to a Mac with a USB-C-to-Micro-USB cable and asking Codex to help jailbreak it. The secondary account says a photo shows the agent identifying a Paperwhite 4 with 8GB, reading its firmware version, backing up books first and then running scripts against the mounted drive, while the device still displays its USB screen. The purpose is reusing an idle reader; the reported next step is making it an AI reader.\n\nWhat can currently be recorded is a secondary account of device identification, backup and script execution. The original author, firmware-version value, scripts, backup validation and subsequent boot records were not obtained. Running scripts does not establish a successful jailbreak, and a USB screen is not proof of booting a modified system; the AI reader is not reported complete. The post warns to back up and read commands first because jailbreaking may brick a device or void support. This collection ran no scripts and connected no device; REA use is unconfirmed. This attempt is distinct from the existing KP3 installation skill and cannot be treated as the same project merely because both involve Kindle devices.",
+      "metadata": ["Source: October 25, 2026, 18:01 Beijing time; older-window re-review, not a new current-window post.", "Model and capacity are secondary claims; neither jailbreak nor AI reader completion is verified. No scripts were executed."],
+      "source_labels": ["Older candidate: Codex actions after connecting a Paperwhite 4 to a Mac"]
+    }
   }
 ]

@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。 **[未确认使用 REA · 待验证]**
+- [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](../cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
+- [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](../cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
+- [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](../cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**
+- [大金空调遥控器：Tony Huang用Codex为LilyGO T-Display写替代固件](../cases/greatony-codex-lilygo-daikin-remote-firmware.md) — Tony Huang嫌大金遥控器又大又重，称让Codex写固件，把LilyGO T-Display变成替代遥控器并公开代码。尚未取得仓库正文或控制测试。 **[其他 AI 逆向 · 待验证]**
 - [扫地机APK：作者称Claude只读分析发现地图上传与远程查看](../cases/robot-vacuum-claude-apk-floorplan-upload-report.md) — 作者称用Claude Code分析自有扫地机App，发现每次清扫上传地图、Wi-Fi名称关联、四位PIN远程查看与三个追踪器；没有设备身份、代码位置或流量证据，不能确认实际上传或设备被入侵。 **[其他 AI 逆向 · 待验证]**
 - [电视固件替换：读者报告Claude和Codex均称不能改固件，仅建议上层修改](../cases/tv-firmware-claude-codex-rewrite-refusal-report.md) — 读者称两个模型都表示无法修改其电视固件，但可调整数据收集与UI、在原固件上构建；未具名电视，无对话日志或可运行改动，不确认是技术限制还是策略拒答。 **[其他 AI 逆向 · 分析测试]**
 - [自动猫砂盆：用Agent逆向并移除监控功能的读者idea](../cases/automatic-litter-box-agent-spyware-removal-idea.md) — 一条回复以调侃口吻提出让Agent逆向自动猫砂盆、移除spyware；保留为具体设备隐私idea，未报告已分析或修改任何产品。 **[其他 AI 逆向 · 待验证]**
@@ -265,3 +270,5 @@
 - [日立微蒸烤炉：Codex 经 Android App 与 REA 研究实现直接控制的自述](../cases/hitachi-oven-codex-rea-report.md) — 郭宇报告从 iPhone App 操作转向 Android 模拟器联调，称 REA 逆向后可直接控制烤炉；约不到 5 分钟为作者口径。 **[REA · 待验证]**
 - [非开源版小智盒子：AI 改固件后连接自有 VPS 与共享记忆](../cases/xiaozhi-box-ai-vps-memory.md) — luckythehusky 自述导出、逆向、修改和重刷盒子固件，为家中 Agent 增加可唤醒语音端。 **[其他 AI 逆向 · 待验证]**
 - [LG 电视流畅度：用 REA 研究改善响应的 idea](../cases/lg-tv-smoothness-rea-idea.md) — TheAvinashSingh 询问是否有人逆向 LG 电视来改善流畅度，尚无方案或结果。 **[REA · 待验证]**
+- [MikroTik 路由器：日刊转述波兰 CERT 用 OpenAI 模型发现六处漏洞](../cases/cert-polska-openai-mikrotik-six-flaws-report.md) — 10月26日日刊以 OpenAI / NASK 合作为背景，提及 CERT 的路由器研究；没有取得型号、漏洞编号或模型分析记录。 **[其他 AI 逆向 · 待验证]**
+- [Kindle Paperwhite 4（8GB）：Codex 识别设备、备份书籍并尝试越狱的转述](../cases/kindle-paperwhite4-8gb-codex-jailbreak-attempt-report.md) — 二手帖描述 Mac 经 USB 连接 Kindle 后让 Codex 读版本、备份并运行脚本；AI 阅读器仍是下一步，未确认越狱完成。 **[其他 AI 逆向 · 进行中]**

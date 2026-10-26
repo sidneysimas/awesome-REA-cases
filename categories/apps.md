@@ -2,6 +2,14 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](../cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01称为测试REA分析勒索软件的能力，使用无害模拟做了实验并链接视频。可读正文没有说明模拟器、分析步骤或发现，不确认真实勒索样本分析或解密成功。 **[REA · 分析测试]**
+- [pixiv APK：梦醒无路走称Codex逆向后去广告并可用会员功能](../cases/yjcdon-pixiv-apk-codex-modification-report.md) — @yjcdon称用Codex逆向pixiv APK，移除广告并可使用会员功能；未给APK版本、修改位置或测试，不能确认服务端权限、合法授权或完整会员访问。 **[其他 AI 逆向 · 待验证]**
+- [Flutter二进制：hiroyuki称Codex接Ghidra后自行抽对象池定位地址](../cases/ionis-h-codex-ghidra-flutter-object-pool-analysis.md) — hiroyuki报告Codex接Ghidra后，在简略指令下编写对象池提取脚本，从地址定位继续分析Flutter二进制。未给应用、Flutter版本或脚本，不确认跨版本通用性。 **[其他 AI 逆向 · 分析测试]**
+- [1997年编译器：Giblet称用AI反编译Capcom所用工具的近亲版本](../cases/giblet-1997-capcom-sibling-compiler-ai-decompilation.md) — Giblet回应AI披露争议，称AI用于反编译一款1997年编译器，其版本与Capcom所用相近但不完全相同。游戏、编译器名称和验证记录未提供，不确认首次完成或源码匹配。 **[其他 AI 逆向 · 待验证]**
+- [Obtainium替代实现：Turtlecute称因GrapheneOS的DCL顾虑从零重写应用](../cases/turtlecute-obtainium-ai-reimplementation-dcl-report.md) — Turtlecute称Obtainium新依赖需要动态代码加载，与其GrapheneOS安全偏好冲突，于是借AI从零重做应用而非fork，简化架构和UI。未取得项目名、代码或等价性测试。 **[其他 AI 逆向 · 待验证]**
+- [cstack：Yashas考虑发布从Claude Code逆向提炼的Skills](../cases/yashas-cstack-claude-code-distilled-skills-idea.md) — Yashas询问是否应发布cstack，称它把Claude Code逆向并提炼成Skills；这是具名资源的发布设想，没有仓库、提炼方法或行为对照。 **[未确认使用 REA · 相关项目]**
+- [Cognizant企业知识层：七Agent逆向241仓库，再按服务限定业务规则检索](../cases/cognizant-seven-agent-requirements-kb-cataloging-study.md) — Agrawal等研究者报告从18个服务、241仓库恢复业务规则，再以产物目录与超图限定检索，避免把别的服务的同名规则当证据。100多缺陷与35回归失败为论文部署报告，检索准确率尚在评估。 **[其他 AI 逆向 · 分析测试]**
+- [Postiz：Onur Genes称用Claude逆向三天后公开实现](../cases/onurgenes-claude-postiz-reverse-engineering-report.md) — Onur Genes称花三天及400美元Claude额度逆向Postiz，并提供代码链接。未取得仓库正文、功能对照或测试，不能确认独立重建与实现范围。 **[其他 AI 逆向 · 待验证]**
 - [未具名DLL应用：读者称DeepSeek Harness配REA与Ghidra重建项目](../cases/deepseek-v41-harness-rea-ghidra-dll-app-reconstruction-report.md) — 读者称明确要求DeepSeek-V4.1-Flash（1017）使用REA和Ghidra后，基本搭出了应用项目；DLL细节占据注意力，前端仍需Claude大量返工。 **[REA · 待验证]**
 - [停运APK：读者希望用本地模型反编译并恢复离线功能](../cases/defunct-apk-local-model-offline-functionality-request.md) — 读者询问工具能否反编译一个已停运APK、加入离线能力，称Claude护栏妨碍尝试，愿考虑本地模型；未具名App，也无运行产物。 **[其他 AI 逆向 · 待验证]**
 - [Spider-Verse风格作品集：Praveen用REA研究网页设计、动效与交互](../cases/praveen-spiderverse-portfolio-rea-rebuild.md) — Praveen S称选取Spider-Verse风格作品集，以REA研究整站体验，随后明确使用Antigravity；仍在逆向中途，没有成品、还原对照或测试。 **[REA · 进行中]**

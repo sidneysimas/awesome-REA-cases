@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **964 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **980 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（213）
-- [硬件与设备互通](categories/hardware.md)（263）
-- [应用与客户端](categories/apps.md)（405）
+- [游戏与游戏保存](categories/games.md)（214）
+- [硬件与设备互通](categories/hardware.md)（270）
+- [应用与客户端](categories/apps.md)（413）
 - [算法与功能重建](categories/algorithms.md)（83）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -239,9 +239,15 @@
 - [旧游戏存档到浏览器：用 REA 追规则与迁移进度的 idea](cases/rea-old-save-browser-migration-idea.md) — mika_systems 提议分工研究机制、重建游戏、映射存档，再验证完整的继续游戏链。 **[REA · 待验证]**
 - [inFAMOUS Second Son：AI 逆向后在 PC 游玩的待验证转述](cases/infamous-second-son-ai-pc-report.md) — 0x0SojalSec 转述 PlayStation 游戏可在 Windows 与 Linux 运行，没有取得实现与兼容性记录。 **[其他 AI 逆向 · 待验证]**
 - [Switch《暗黑破坏神2》到 Android：AI 原生移植的待验证转述](cases/diablo2-switch-android-ai-port-report.md) — paomiange1 转述数天内完成反编译、符号还原与跨平台重构，60fps 和开源说法未核实。 **[其他 AI 逆向 · 待验证]**
+- [KH2 索拉与 KH1 地图：AI 反编译 Mod 的二手报告与失效招式](cases/kh2-sora-kh1-maps-ai-decompilation-mod-report.md) — Violin 称该 Mod 据说借 AI 反编译 KH2，但部分招式不工作；父串说明玩家希望在 KH1 地图体验 KH2 索拉。 **[其他 AI 逆向 · 待验证]**
 
 ### 硬件与设备互通
 
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。 **[未确认使用 REA · 待验证]**
+- [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
+- [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
+- [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**
+- [大金空调遥控器：Tony Huang用Codex为LilyGO T-Display写替代固件](cases/greatony-codex-lilygo-daikin-remote-firmware.md) — Tony Huang嫌大金遥控器又大又重，称让Codex写固件，把LilyGO T-Display变成替代遥控器并公开代码。尚未取得仓库正文或控制测试。 **[其他 AI 逆向 · 待验证]**
 - [扫地机APK：作者称Claude只读分析发现地图上传与远程查看](cases/robot-vacuum-claude-apk-floorplan-upload-report.md) — 作者称用Claude Code分析自有扫地机App，发现每次清扫上传地图、Wi-Fi名称关联、四位PIN远程查看与三个追踪器；没有设备身份、代码位置或流量证据，不能确认实际上传或设备被入侵。 **[其他 AI 逆向 · 待验证]**
 - [电视固件替换：读者报告Claude和Codex均称不能改固件，仅建议上层修改](cases/tv-firmware-claude-codex-rewrite-refusal-report.md) — 读者称两个模型都表示无法修改其电视固件，但可调整数据收集与UI、在原固件上构建；未具名电视，无对话日志或可运行改动，不确认是技术限制还是策略拒答。 **[其他 AI 逆向 · 分析测试]**
 - [自动猫砂盆：用Agent逆向并移除监控功能的读者idea](cases/automatic-litter-box-agent-spyware-removal-idea.md) — 一条回复以调侃口吻提出让Agent逆向自动猫砂盆、移除spyware；保留为具体设备隐私idea，未报告已分析或修改任何产品。 **[其他 AI 逆向 · 待验证]**
@@ -505,9 +511,19 @@
 - [日立微蒸烤炉：Codex 经 Android App 与 REA 研究实现直接控制的自述](cases/hitachi-oven-codex-rea-report.md) — 郭宇报告从 iPhone App 操作转向 Android 模拟器联调，称 REA 逆向后可直接控制烤炉；约不到 5 分钟为作者口径。 **[REA · 待验证]**
 - [非开源版小智盒子：AI 改固件后连接自有 VPS 与共享记忆](cases/xiaozhi-box-ai-vps-memory.md) — luckythehusky 自述导出、逆向、修改和重刷盒子固件，为家中 Agent 增加可唤醒语音端。 **[其他 AI 逆向 · 待验证]**
 - [LG 电视流畅度：用 REA 研究改善响应的 idea](cases/lg-tv-smoothness-rea-idea.md) — TheAvinashSingh 询问是否有人逆向 LG 电视来改善流畅度，尚无方案或结果。 **[REA · 待验证]**
+- [MikroTik 路由器：日刊转述波兰 CERT 用 OpenAI 模型发现六处漏洞](cases/cert-polska-openai-mikrotik-six-flaws-report.md) — 10月26日日刊以 OpenAI / NASK 合作为背景，提及 CERT 的路由器研究；没有取得型号、漏洞编号或模型分析记录。 **[其他 AI 逆向 · 待验证]**
+- [Kindle Paperwhite 4（8GB）：Codex 识别设备、备份书籍并尝试越狱的转述](cases/kindle-paperwhite4-8gb-codex-jailbreak-attempt-report.md) — 二手帖描述 Mac 经 USB 连接 Kindle 后让 Codex 读版本、备份并运行脚本；AI 阅读器仍是下一步，未确认越狱完成。 **[其他 AI 逆向 · 进行中]**
 
 ### 应用与客户端
 
+- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01称为测试REA分析勒索软件的能力，使用无害模拟做了实验并链接视频。可读正文没有说明模拟器、分析步骤或发现，不确认真实勒索样本分析或解密成功。 **[REA · 分析测试]**
+- [pixiv APK：梦醒无路走称Codex逆向后去广告并可用会员功能](cases/yjcdon-pixiv-apk-codex-modification-report.md) — @yjcdon称用Codex逆向pixiv APK，移除广告并可使用会员功能；未给APK版本、修改位置或测试，不能确认服务端权限、合法授权或完整会员访问。 **[其他 AI 逆向 · 待验证]**
+- [Flutter二进制：hiroyuki称Codex接Ghidra后自行抽对象池定位地址](cases/ionis-h-codex-ghidra-flutter-object-pool-analysis.md) — hiroyuki报告Codex接Ghidra后，在简略指令下编写对象池提取脚本，从地址定位继续分析Flutter二进制。未给应用、Flutter版本或脚本，不确认跨版本通用性。 **[其他 AI 逆向 · 分析测试]**
+- [1997年编译器：Giblet称用AI反编译Capcom所用工具的近亲版本](cases/giblet-1997-capcom-sibling-compiler-ai-decompilation.md) — Giblet回应AI披露争议，称AI用于反编译一款1997年编译器，其版本与Capcom所用相近但不完全相同。游戏、编译器名称和验证记录未提供，不确认首次完成或源码匹配。 **[其他 AI 逆向 · 待验证]**
+- [Obtainium替代实现：Turtlecute称因GrapheneOS的DCL顾虑从零重写应用](cases/turtlecute-obtainium-ai-reimplementation-dcl-report.md) — Turtlecute称Obtainium新依赖需要动态代码加载，与其GrapheneOS安全偏好冲突，于是借AI从零重做应用而非fork，简化架构和UI。未取得项目名、代码或等价性测试。 **[其他 AI 逆向 · 待验证]**
+- [cstack：Yashas考虑发布从Claude Code逆向提炼的Skills](cases/yashas-cstack-claude-code-distilled-skills-idea.md) — Yashas询问是否应发布cstack，称它把Claude Code逆向并提炼成Skills；这是具名资源的发布设想，没有仓库、提炼方法或行为对照。 **[未确认使用 REA · 相关项目]**
+- [Cognizant企业知识层：七Agent逆向241仓库，再按服务限定业务规则检索](cases/cognizant-seven-agent-requirements-kb-cataloging-study.md) — Agrawal等研究者报告从18个服务、241仓库恢复业务规则，再以产物目录与超图限定检索，避免把别的服务的同名规则当证据。100多缺陷与35回归失败为论文部署报告，检索准确率尚在评估。 **[其他 AI 逆向 · 分析测试]**
+- [Postiz：Onur Genes称用Claude逆向三天后公开实现](cases/onurgenes-claude-postiz-reverse-engineering-report.md) — Onur Genes称花三天及400美元Claude额度逆向Postiz，并提供代码链接。未取得仓库正文、功能对照或测试，不能确认独立重建与实现范围。 **[其他 AI 逆向 · 待验证]**
 - [未具名DLL应用：读者称DeepSeek Harness配REA与Ghidra重建项目](cases/deepseek-v41-harness-rea-ghidra-dll-app-reconstruction-report.md) — 读者称明确要求DeepSeek-V4.1-Flash（1017）使用REA和Ghidra后，基本搭出了应用项目；DLL细节占据注意力，前端仍需Claude大量返工。 **[REA · 待验证]**
 - [停运APK：读者希望用本地模型反编译并恢复离线功能](cases/defunct-apk-local-model-offline-functionality-request.md) — 读者询问工具能否反编译一个已停运APK、加入离线能力，称Claude护栏妨碍尝试，愿考虑本地模型；未具名App，也无运行产物。 **[其他 AI 逆向 · 待验证]**
 - [Spider-Verse风格作品集：Praveen用REA研究网页设计、动效与交互](cases/praveen-spiderverse-portfolio-rea-rebuild.md) — Praveen S称选取Spider-Verse风格作品集，以REA研究整站体验，随后明确使用Antigravity；仍在逆向中途，没有成品、还原对照或测试。 **[REA · 进行中]**
