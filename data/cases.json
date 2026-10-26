@@ -1,5 +1,235 @@
 [
   {
+    "id": "gpu-unlock-ada-ai-research-report",
+    "title": "GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "HKEPC将JustAResearch的Ada算力研究归因为AI逆向；公开Linux项目复用上游载荷，在驱动绑定前修改speed-select状态。约两倍指令吞吐不等于推理应用翻倍或全系列通用。",
+    "description": "2026年10月25日12:20:50（北京时间），HKEPC报道JustAResearch借AI逆向研究GeForce RTX 40张量算力限制，称GPU-Unlock-Ada无须刷vBIOS或修改NVIDIA驱动，并列4090至4060 Ti的基准结果。本条的AI参与归因来自这篇报道；未找到可审的模型对话或明确REA使用证据，不能把记者归因升级为项目独立验证。\n\n10月26日补读JustAResearcher/gpu-unlock-ada公开README，检索时HEAD为d28c485418c3d9d034cd4bac19200bc33dd3453b，提交时间为10月26日04:21 UTC；这是窗口外补充文档，不当作10月25日原帖已含的证据。README说Linux内核模块在原版驱动启动前执行SM speed-select覆盖，经过FLR再交接给驱动。AD102载荷和debug-booter分析来自TOTORONG/AD103_win_unlocker，Linux模块与封装来自Zagitta/gpu-unlock；不把上游成果全部归给JustAResearch或AI。\n\n项目报告RTX4090的FP16→FP32累加吞吐由165.6至331.6 TF/s、BF16由165.5至330.6 TF/s。README另引一位机主的匹配测试：450W相同功耗上限下，FP16指令吞吐160.4至320.4 TF/s、BF16为159.7至320.2；真实cuBLAS GEMM的FP16中位提升12–34%，BF16两个形状提升16–20%，4096³基本不变。改装48GB 4090的量化MoE服务8K prefill为0.983倍，无收益。这些是项目和机主记录，本合集未重跑。\n\n因此不照收媒体的全系列通用与矩阵运算普遍翻倍结论。公开文档要求许多Ada PCI ID逐卡实验opt-in，部分只测一张卡，笔记本结果也不一致；INT8、dp4a和标量FP32多项保持基线。FP8还需区分指令issue rate与应用GEMM、累加模式及功耗，不能由一个指标推定所有AI负载加速。硬件兼容、长时间稳定性与安全性未独立确认；没有下载固件/Windows工具、加载模块、执行目标代码或更改本机驱动。",
+    "sources": [
+      {"label": "HKEPC的AI逆向GPU-Unlock-Ada报道，2026-10-25", "url": "https://x.com/i/status/2114210551413059771"},
+      {"label": "GPU-Unlock-Ada固定提交README，10月26日补查", "url": "https://github.com/JustAResearcher/gpu-unlock-ada/blob/d28c485418c3d9d034cd4bac19200bc33dd3453b/README.md"},
+      {"label": "GPU-Unlock-Ada项目入口与支持范围，10月26日补查", "url": "https://github.com/JustAResearcher/gpu-unlock-ada"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["AI研究归因为媒体报道，REA未确认；公开文档和机主基准不是本合集独立复现。", "2×指令吞吐不等于2×推理；复用TOTORONG载荷与Zagitta模块，逐卡实验支持不代表全Ada覆盖。"],
+    "en": {
+      "title": "GPU-Unlock-Ada: an AI reverse-engineering report and public Ada tensor-throughput research",
+      "summary": "HKEPC attributes JustAResearch's Ada investigation to AI-assisted reverse engineering. The public Linux project reuses upstream payload work to change speed-select state before driver binding. Roughly 2× instruction throughput is not 2× inference or universal support.",
+      "description": "At 12:20:50 Beijing time on October 25, 2026, HKEPC reported JustAResearch using AI-assisted reverse engineering to study GeForce RTX 40 tensor-compute restrictions. It described GPU-Unlock-Ada as requiring neither vBIOS flashing nor a modified NVIDIA driver and listed benchmarks from the 4090 through 4060 Ti. The AI attribution in this entry comes from that report: no inspectable model conversation or clear evidence of REA use was found, and journalistic attribution is not independent project validation.\n\nSupplementary reading on October 26 examined the public JustAResearcher/gpu-unlock-ada README. HEAD at lookup was d28c485418c3d9d034cd4bac19200bc33dd3453b, committed October 26 at 04:21 UTC. This is out-of-window documentation, not evidence already contained in the October 25 candidate. The README describes a Linux kernel module applying an SM speed-select override before the stock driver starts, followed by FLR and driver handoff. The AD102 payload and debug-booter analysis come from TOTORONG/AD103_win_unlocker; the Linux module and packaging derive from Zagitta/gpu-unlock. Upstream work is not attributed entirely to JustAResearch or AI.\n\nThe project reports RTX 4090 FP16-to-FP32-accumulate throughput increasing from 165.6 to 331.6 TF/s and BF16 from 165.5 to 330.6 TF/s. It also cites a matched owner run at the same 450W cap: FP16 instruction throughput of 160.4 to 320.4 TF/s and BF16 of 159.7 to 320.2. Real cuBLAS GEMM median FP16 gains were 12–34%; BF16 gained 16–20% at two shapes and was essentially unchanged at 4096³. A modified 48GB 4090 showed no benefit in an 8K-prefill quantized MoE serving workload, at 0.983×. These are project and owner records, not benchmarks rerun for this collection.\n\nThe media's universal full-series and broadly doubled matrix-performance framing is therefore not adopted. Public documentation requires per-card experimental opt-in for many Ada PCI IDs; some have only one tested board and laptop results differ. INT8, dp4a and scalar FP32 often remain near baseline. FP8 requires distinguishing instruction issue rate from application GEMM, accumulation mode and power limits, rather than inferring acceleration of every AI workload from one metric. Compatibility, extended stability and safety are not independently confirmed. No firmware or Windows tool was downloaded, module loaded, target code executed or local driver changed.",
+      "metadata": ["AI involvement is attributed by media, with REA unconfirmed; public documentation and owner benchmarks are not independent reproductions by this collection.", "2× instruction throughput is not 2× inference; reuses TOTORONG's payload and Zagitta's module, and per-card experimental support is not universal Ada coverage."],
+      "source_labels": ["HKEPC's AI reverse-engineering report on GPU-Unlock-Ada, October 25, 2026", "GPU-Unlock-Ada README at a fixed commit, supplementary reading on October 26", "GPU-Unlock-Ada project entry and support scope, supplementary reading on October 26"]
+    }
+  },
+  {
+    "id": "master-daniels-index0-mobile-reconstruction",
+    "title": "index0移动版：Master Daniels报告Agent重建仍需人工架构与修错",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Master Daniels尝试逆向index0做移动版本；补查作者串明确人仍要做架构决定、重写坏代码并终止循环，未报告完整可用移植。",
+    "description": "2026年10月22日02:32:30（北京时间），Master Daniels（@Master__Daniels）说，他为检验网上对前沿AI模型的赞美，尝试把index0逆向成移动版本，并称赞原项目。目标是换到移动端，不是声称拿到原项目源码；帖子没有说明移动平台、模型名称、REA使用或具体功能。\n\n10月26日补读同一作者串，看到10月22日02:32:32的接续说明：Agent仍需人作架构决定、重写出错代码并从无休止循环中救出。作者用这一实践反驳自动完成所有开发的叙事，没有给工时、成功率或完整可用发布。本条保留为进行中重建实验，不把图片或意向当移动版本已交付。\n\n未解析短链所指index0的完整产品身份，故只保留作者原名，不添加搜索、笔记或其他猜测用途。没有运行原程序或重建版，未核验功能对应、源码许可或移动端表现。接续帖仅用于补充原候选的人工介入与证据限制，不另算候选或新增案例。",
+    "sources": [
+      {"label": "Master Daniels的index0移动版尝试，2026-10-22", "url": "https://x.com/i/status/2112975329748717779"},
+      {"label": "同作者接续：人工架构、修错与循环问题，2026-10-22", "url": "https://x.com/i/status/2112975336388395089"}
+    ],
+    "snapshot_date": "2026-10-22",
+    "metadata": ["目标为作者所称index0的移动版本；平台/模型/完整产品身份未确认，REA未证实。", "作者明确需人工架构决策、重写错误代码和打断循环；没有完整移植完成证据。"],
+    "en": {
+      "title": "index0 mobile version: Master Daniels reports that agent reconstruction still needs human architecture and repairs",
+      "summary": "Master Daniels tried reverse-engineering index0 into a mobile version. His follow-up says humans still choose architecture, rewrite broken code and stop loops; no complete usable port is reported.",
+      "description": "At 02:32:30 Beijing time on October 22, 2026, Master Daniels (@Master__Daniels) said he had tried reverse-engineering index0 into a mobile version to test online praise for frontier AI models, while complimenting the original project. The goal is a mobile adaptation, not a claim to have recovered original source. The post does not specify a mobile platform, model, REA use or individual features.\n\nSupplementary reading of the author's thread on October 26 found his October 22 follow-up at 02:32:32: the agent still needs a person to make architectural decisions, rewrite broken code and rescue it from endless loops. He uses this experience to challenge claims of entirely autonomous development, not to report a duration, success rate or complete usable release. This is retained as an in-progress reconstruction experiment; pictures or intent are not treated as a delivered mobile version.\n\nThe linked index0 product's full identity was not resolved, so its author-given name is retained without inventing search, note-taking or other functionality. Neither original nor rebuild was run, and feature equivalence, source licensing and mobile behavior were not verified. The follow-up supplements the candidate's human-intervention and evidence limits; it is not counted as another candidate or case.",
+      "metadata": ["Target is the author's mobile adaptation of index0; platform, model and full product identity remain unconfirmed, with REA use unproven.", "The author explicitly reports human architectural decisions, broken-code rewrites and loop intervention; no evidence establishes a complete port."],
+      "source_labels": ["Master Daniels's index0 mobile-version attempt, October 22, 2026", "Same author's follow-up on architecture, repairs and loops, October 22, 2026"]
+    }
+  },
+  {
+    "id": "dholzric-android-modem-ai-decompilation-attempt",
+    "title": "Android modem文件：Dan Holzrichter比较GLM/DeepSeek与Claude/Muse的反编译协助",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Dan Holzrichter报告为朋友研究Android手机modem文件，Claude与Muse拒绝，而GLM与DeepSeek愿意协助；无文件/设备型号或恢复产物，不能据此断言基带已破解。",
+    "description": "2026年10月23日10:29:39（北京时间），Dan Holzrichter（@dholzric）报告尝试反编译Android手机的modem文件：Claude与Muse拒绝，DeepSeek与GLM愿意处理，他因而没有使用本地解除限制的模型。10月25日10:08:38对Matthew Berman的回复进一步说，这是为朋友做的文件分析，自称已让GLM与DeepSeek反编译该文件，并明确未尝试OpenAI。\n\n10月26日补查两条原帖，确认同一作者及先后关系，不将两次表述建成两个项目。本条记录实际分析尝试和受阻/换模型过程，不把愿意答复等同于正确反编译，也不采纳作者对未测试模型的拒答推测或广泛能力排名。\n\n两帖没有手机型号、modem文件格式/哈希、研究目的细节、恢复代码、校验日志或设备行为测试；不能说已解锁基带、修改无线功能或重新刷写。没有取得朋友文件、访问私有设备、运行二进制或绕过模型限制；REA使用未确认，效果仍为作者未验证自述。",
+    "sources": [
+      {"label": "Dan Holzrichter的Android modem反编译尝试，2026-10-23", "url": "https://x.com/i/status/2113457798214189504"},
+      {"label": "同作者为朋友分析文件的接续说明，2026-10-25", "url": "https://x.com/i/status/2114177281912619093"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["作者确认同一modem文件尝试；GLM/DeepSeek协助与Claude/Muse拒绝为自述，OpenAI未试。", "设备与文件身份未披露、无恢复/验证产物；不等于基带解锁或成功刷写，未获取私有文件。"],
+    "en": {
+      "title": "Android modem file: Dan Holzrichter compares GLM/DeepSeek assistance with Claude/Muse refusals",
+      "summary": "Dan Holzrichter reports studying an Android phone modem file for a friend: Claude and Muse refused while GLM and DeepSeek assisted. No file/device identity or recovered artifact is available, so this does not establish a baseband compromise.",
+      "description": "At 10:29:39 Beijing time on October 23, 2026, Dan Holzrichter (@dholzric) reported trying to decompile an Android phone modem file. Claude and Muse refused, while DeepSeek and GLM were willing to handle it, so he did not use a locally unrestricted model. In an October 25 reply to Matthew Berman at 10:08:38, he specified that the file analysis was for a friend, said he had GLM and DeepSeek decompile it, and explicitly stated that he had not tried OpenAI.\n\nSupplementary checks of both original posts on October 26 confirmed the same author and chronology; these are not treated as two independent projects. This entry records an actual analysis attempt and a blocked/switch-model workflow. Willingness to answer is not equivalent to correct decompilation, and the author's speculation about untested models or broad capability rankings is not adopted.\n\nNeither post supplies the phone model, modem file format/hash, detailed research purpose, recovered code, validation logs or device-behavior tests. No baseband unlock, radio-feature modification or successful reflashing is established. No friend's file was obtained, private device accessed, binary run or model restriction bypassed. REA use is unconfirmed, and the outcome remains an unverified author report.",
+      "metadata": ["Same author and modem-file attempt confirmed; GLM/DeepSeek assistance and Claude/Muse refusals are self-reported, and OpenAI was not tried.", "Device/file identity and recovery/validation artifacts are absent; this is not a baseband unlock or successful flash, and no private file was obtained."],
+      "source_labels": ["Dan Holzrichter's Android modem decompilation attempt, October 23, 2026", "Same author's clarification that the analysis was for a friend, October 25, 2026"]
+    }
+  },
+  {
+    "id": "wujizhuzhu-xiaomi82-workbuddy-adb-cleanup",
+    "title": "小米大师82电视：WorkBuddy借CleanYourTV清包、读UI树并修屏保配置",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "朱无忌报告让WorkBuddy经ADB研究和清理自有小米电视：备份115包、禁用25包，截屏受阻后改读UI树，编译替代桌面并修屏保指向；不是root或固件重写。",
+    "description": "2026年10月25日15:54:49（北京时间），朱无忌无忌（@Wujizhuzhu）报告改造家中小米电视大师82英寸至尊纪念版，称设备为2GB内存、Android 9，长期因界面迟缓外接Apple TV。他找到已有开源CleanYourTV项目的Agent操作说明，让WorkBuddy通过已授权的ADB调试连接电视，询问保留哪些App、投屏、语音和桌面图标后开展处理。与基线Leo的简短Workbuddy launcher自述是不同作者，不据相似品牌与工具合并。\n\n作者称先备份115个安装包和全部系统设置，再分两批禁用25包，涉及广告、统计、云控、电视管家、锁屏画报和PatchWall。报告可用内存由100多MB到近700MB，交换占用由367MB到16MB；这些是作者测量，未提供原始日志或统一前后测试条件。WorkBuddy随后获取开源桌面、编译APK、安装并设置默认桌面与屏保，发现原屏保指向未预装的Google时钟并修正配置。\n\n过程还报告ADB截屏始终0字节，改读UI树识别界面；Mac缺Java、Gradle和Android SDK，Agent安装工具链、以JVM代理参数处理Gradle的AEAD错误；自动点击与桌面守护服务冲突时，暂关无障碍服务再恢复。约一小时后装有B站第三方客户端、Aerial桌面与SmartTube。作者提及另配网络代理订阅，本合集不获取订阅、凭据或复制其配置。\n\n本条记录AI辅助理解设备现状、配置行为和替代桌面适配，不把已有ADB权限、禁用包与编译开源桌面称为发现漏洞、root、固件逆向重写或独创CleanYourTV。10月26日补读原帖确认作者和全文，未连接电视、安装依赖、测试恢复/重启持久性、查验屏保缺陷或重测内存。清洁界面与去广告范围均为作者自述，不证明应用内广告或全部遥测消失，也不保证其他型号可用。",
+    "sources": [{"label": "朱无忌的WorkBuddy/ADB小米大师82改造全文，2026-10-25", "url": "https://x.com/i/status/2114264402975445017"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["作者报告115包备份、25包禁用、约一小时；内存100多至近700MB，交换367至16MB，均未独立测量。", "复用CleanYourTV与开源桌面；ADB/UI树及配置适配不等于root或固件重建，恢复未测试。"],
+    "en": {
+      "title": "Xiaomi Master 82 TV: WorkBuddy uses CleanYourTV, a UI tree and a screensaver configuration fix",
+      "summary": "Wujizhuzhu reports WorkBuddy studying and cleaning his Xiaomi TV over ADB: backing up 115 packages, disabling 25, using a UI tree when screenshots failed, compiling a replacement launcher and fixing a screensaver target. Not root or a firmware rewrite.",
+      "description": "At 15:54:49 Beijing time on October 25, 2026, @Wujizhuzhu reported modifying his Xiaomi TV Master 82-inch Ultra commemorative edition, described as a 2GB-RAM Android 9 device whose sluggish interface had led him to use an external Apple TV. He found agent instructions in the existing open-source CleanYourTV project and had WorkBuddy connect through authorized ADB debugging, ask which apps, casting, voice features and launcher icons to retain, and proceed. This is a different author from the baseline Leo Workbuddy-launcher report and is not merged merely because brand and tool match.\n\nHe says it backed up 115 packages and all system settings, then disabled 25 packages in two batches, covering ads, statistics, cloud control, TV management, lock-screen artwork and PatchWall. Reported available RAM rose from a little over 100MB to nearly 700MB and swap use fell from 367MB to 16MB. These are author measurements without raw logs or a standardized before/after protocol. WorkBuddy then fetched an open-source launcher, compiled an APK, installed it, set the default home screen/screensaver, and reportedly fixed the original screensaver pointing to an uninstalled Google clock.\n\nThe account also describes ADB screenshots returning zero bytes, prompting UI-tree inspection; a Mac lacking Java, Gradle and Android SDK, with the agent installing the toolchain and resolving a Gradle AEAD error through JVM proxy parameters; and a conflict between automated clicks and the launcher watchdog, temporarily disabling and restoring accessibility. About an hour later the TV had a third-party Bilibili client, Aerial launcher and SmartTube. A network-proxy subscription is also mentioned; no subscription, credentials or configuration was obtained or copied here.\n\nThis records AI-assisted understanding of device state, configuration behavior and launcher adaptation. Existing ADB access, disabling packages and compiling an open-source launcher are not described as vulnerability discovery, root, a reverse-engineered firmware rewrite or invention of CleanYourTV. Supplementary reading on October 26 confirmed author and full text. No TV was connected, dependencies installed, recovery/reboot persistence tested, screensaver defect independently checked or memory remeasured. A clean interface and ad-removal scope remain author claims, not evidence of eliminated in-app ads/all telemetry or compatibility with other models.",
+      "metadata": ["Author reports 115 packages backed up, 25 disabled and about one hour; RAM a little over 100MB to nearly 700MB, swap 367MB to 16MB, none independently measured.", "Reuses CleanYourTV and an open-source launcher; ADB/UI-tree/configuration adaptation is not root or a firmware rebuild, and recovery is untested."],
+      "source_labels": ["Wujizhuzhu's full WorkBuddy/ADB Xiaomi Master 82 modification report, October 25, 2026"]
+    }
+  },
+  {
+    "id": "quof-breezysrpg95-claude-interpreter",
+    "title": "BreezySRPG95：Quof用Claude反汇编旧运行器，制作战棋游戏替代客户端",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Quof报告参考REA、用Claude Code CLI反汇编原可执行文件，重建SRPG Maker 95客户端；初期beta仅数人试用，公开仓库提供功能与兼容性说明。",
+    "description": "2026年10月25日12:56:56（北京时间），Quof（@Mr_Quof）说明，自己参考REA仓库，使用Claude Code CLI反汇编原可执行文件并编写客户端。补读同日12:56:55父帖确认项目是BreezySRPG，用来运行シミュレーションRPGツクール95（Sim RPG Maker 95）制作的战棋游戏：把替代运行器放入合法取得的游戏目录，改善旧游戏在现代电脑上的操作体验。作者只说参考REA，未证明实际连接REA MCP。\n\n同串作者介绍键盘操作、加速、跳过敌方回合、高分辨率、无边框窗口、事件中存档及敌方行动范围，并明确这是仅有几个人测试过的早期beta。10月26日补查公开Quof/BreezySRPG95仓库，固定到10月25日提交cad576ddcec2ea92ef6e3a82bb40068b096c8ba4的README，项目称不修改游戏文件，列出えるまに、ＯtoＺ、昴の騎士及闇鍋企画前后篇为已测游戏。README另说明原有1至8号存档可互通，而9至100号槽位仅替代客户端支持；事件中存档被旧程序读取时回到回合菜单。\n\n父帖和仓库仅为候选的方法说明补充目标与兼容性，不是额外候选。未下载发行程序、运行游戏或验证反汇编质量；功能和已测游戏均为作者／项目自述，不保证所有SRPG Maker 95游戏兼容，也不是恢复原始源码的证明。",
+    "sources": [
+      {"label": "Quof的Claude Code反汇编方法说明，2026-10-25", "url": "https://x.com/i/status/2114219639274340689"},
+      {"label": "同日父帖：BreezySRPG身份与用途", "url": "https://x.com/i/status/2114219633192411382"},
+      {"label": "同日作者：功能与早期beta限制", "url": "https://x.com/i/status/2114219636686516718"},
+      {"label": "补充：10月25日提交的项目README", "url": "https://github.com/Quof/BreezySRPG95/blob/cad576ddcec2ea92ef6e3a82bb40068b096c8ba4/README.md"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["早期beta，仅数人试用；未独立运行。", "参考REA不等于确认调用REA；存档互通有槽位和事件状态限制。"],
+    "en": {
+      "title": "BreezySRPG95: Quof uses Claude to disassemble an old runtime and build a replacement SRPG client",
+      "summary": "Quof reports referencing REA and using Claude Code CLI to disassemble the original executable and rebuild an SRPG Maker 95 client. This is an early beta tried by only a few people, with public feature and compatibility documentation.",
+      "description": "At 12:56:56 Beijing time on October 25, 2026, Quof (@Mr_Quof) said he referenced the REA repository and used Claude Code CLI to disassemble the original executable and code a client. Reading the 12:56:55 parent identified BreezySRPG, a replacement player for tactical games made with Sim RPG Maker 95 (シミュレーションRPGツクール95). Placing the player in a legally obtained game's directory aims to improve the experience of running old games on modern computers. Referencing REA does not establish that its MCP server was actually connected.\n\nIn the same thread, Quof lists keyboard controls, fast-forward, skipping enemy turns, high-resolution display, borderless windows, saving during events and enemy movement ranges, explicitly calling it an early beta tried by only a few people. Supplementary reading on October 26 found the public Quof/BreezySRPG95 repository. Its README, pinned to October 25 commit cad576ddcec2ea92ef6e3a82bb40068b096c8ba4, says it never modifies game files and lists えるまに, ＯtoＺ, 昴の騎士 and both parts of 闇鍋企画 as tested games. It also limits original-player save compatibility to slots 1-8: slots 9-100 are replacement-client-only, and loading a cutscene save in the original returns to the turn menu.\n\nThe parent and repository supply target identity and compatibility context for the candidate's method statement; they are not additional candidates. No release was downloaded and no game or decompilation quality was tested here. Features and tested games are author/project reports, not a guarantee of compatibility with all SRPG Maker 95 games or proof of recovered original source.",
+      "metadata": ["Early beta tried by only a few people; not independently run.", "Referencing REA does not confirm its use; save compatibility has slot and event-state limits."],
+      "source_labels": ["Quof's Claude Code disassembly method, October 25, 2026", "Same-day parent identifying BreezySRPG and its purpose", "Same-day author feature list and early-beta limitations", "Supplementary project README pinned to an October 25 commit"]
+    }
+  },
+  {
+    "id": "microsoft-skill-recorder-workflow-reconstruction",
+    "title": "Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。",
+    "description": "2026年10月25日12:25:54（北京时间），TechVerser（@realfxw）介绍Microsoft Skill Recorder，把人完成任务的一次操作记录转为可重复执行的Agent技能。这里重建的是应用操作工作流，而非反编译应用二进制；作为更广义AI辅助行为重建的相关项目收录。\n\n10月26日补读microsoft/skill-recorder公开README，固定到9月21日提交b05d59036182e897e1a60e90651e775cf5f97e8d。项目描述本地捕获屏幕、窗口切换、浏览器路径、剪贴板预览、可选录制终端和语音讲解，以GitHub Copilot CLI重建任务意图与有序步骤，供用户编辑，再生成SKILL.md或定时／触发Automation。它优先调用原生CLI/API工具而非回放固定点击坐标；将一次表单示例泛化为批处理是项目设计目标，不是本合集完成的实验。\n\n隐私边界不能省略：录制、存储、帧提取和可选Whisper转录在本机进行，但点击Analyze后会把事件时间线、提取图像、转录文本与受限终端输出发到GitHub云端处理。敏感信息检查和技能预览不等于安全保证。README以macOS为主要目标，并说明Windows 11 x64/ARM64支持。未安装程序、录屏或执行生成技能，未独立核验跨平台能力、泛化准确率及数据脱敏效果；帖子中的平台兼容说法不扩展为已验证集成。",
+    "sources": [
+      {"label": "TechVerser介绍Skill Recorder，2026-10-25", "url": "https://x.com/i/status/2114211826493714625"},
+      {"label": "补充：9月21日提交的微软项目README", "url": "https://github.com/microsoft/skill-recorder/blob/b05d59036182e897e1a60e90651e775cf5f97e8d/README.md"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["相关行为重建工具，不是二进制反编译案例；未安装或运行。", "本地录制不等于离线分析；Analyze上传数据，预览与扫描不保证安全。"],
+    "en": {
+      "title": "Microsoft Skill Recorder: reconstruct reusable agent skills from recordings and activity events",
+      "summary": "TechVerser introduces Microsoft's Skill Recorder, using Copilot to recover task intent and ordered steps from a work session and create SKILL.md or an Automation. Analysis uploads recording data; it is not wholly offline.",
+      "description": "At 12:25:54 Beijing time on October 25, 2026, TechVerser (@realfxw) introduced Microsoft Skill Recorder as a way to turn one recording of a person doing a task into repeatable agent skills. It reconstructs application workflows rather than decompiling application binaries and is included as a related project in broader AI-assisted behavior reconstruction.\n\nSupplementary reading on October 26 examined the public microsoft/skill-recorder README, pinned to September 21 commit b05d59036182e897e1a60e90651e775cf5f97e8d. The project describes locally capturing the screen, window switches, browser paths, clipboard previews, an optional recorded terminal and spoken narration, then using GitHub Copilot CLI to reconstruct intent and ordered steps for user review and editing. These become SKILL.md or a scheduled/triggered Automation. Native CLI/API tools are preferred over replaying fixed click coordinates. Generalizing one form submission into batch processing is a project design goal, not an experiment performed here.\n\nThe privacy boundary matters: recording, storage, frame extraction and optional Whisper transcription are local, but Analyze sends the event timeline, extracted images, narration text and bounded terminal-output excerpts to GitHub's cloud. Sensitive-information checks and skill previews are not security guarantees. The README calls macOS the primary target and describes Windows 11 x64/ARM64 support. No app was installed, no screen was recorded and no generated skill was executed here. Cross-platform behavior, generalization accuracy and redaction effectiveness were not independently tested, and the post's platform-compatibility claims are not upgraded to verified integrations.",
+      "metadata": ["Related behavior-reconstruction tool, not a binary-decompilation case; not installed or run.", "Local recording is not offline analysis: Analyze uploads data, and previews/scanning do not guarantee safety."],
+      "source_labels": ["TechVerser's Skill Recorder introduction, October 25, 2026", "Supplementary Microsoft project README pinned to a September 21 commit"]
+    }
+  },
+  {
+    "id": "shaw-daosfun-ai-anchor-reconstruction-report",
+    "title": "daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。",
+    "description": "2026年10月25日13:02:23（北京时间），wei（@8853wei）转述Shaw（@shawmakesmagic）10月24日对daos.fun的研究。目标是理解部署在Solana链上的闭源程序：从链上取得程序，再借助AI重建为Anchor源码。帖子称重编译后的1120784字节二进制与部署版本逐字节一致且SHA-256相同，代码和审计已放GitHub。\n\n同一转述称审计有一项critical、四项medium和一项low；critical涉及DAO与资金池缺少绑定，可误导迁移费用并破坏另一DAO的状态，并将“影响新发起、而非已bonded项目”的范围归于Shaw。这里仅概述作者报告的问题类型，不提供调用或利用步骤。私密安全赏金和Umia是文中的后续建议，不作为独立逆向项目，也不证明漏洞已被确认或修复。\n\n10月26日补查原帖确认转述作者；公开仓库检索没有定位到可核验的原重建与审计提交，因此不猜测仓库或合约地址。AI参与、字节长度、同哈希和审计等级均保留为wei转述Shaw的主张；未获取链上目标、重编译、重算哈希或测试任何资金操作。不将这条记录与未指明合约的pump.fun或OpenSolana概括自动合并，也不将源码可读等同任意合约都能安全还原。",
+    "sources": [{"label": "wei转述Shaw的daos.fun重建与审计，2026-10-25", "url": "https://x.com/i/status/2114221010853781864"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["二手转述，1120784字节、同哈希及1 critical/4 medium/1 low均未独立核验。", "原重建仓库、审计提交和链上地址未确认；未进行链上操作。"],
+    "en": {
+      "title": "daos.fun: wei relays Shaw's AI-assisted Anchor reconstruction and matching-binary claim",
+      "summary": "wei relays Shaw rebuilding a closed daos.fun program in Anchor with AI, claiming a 1,120,784-byte binary with the same SHA-256 and six audit findings. Original code, hashes and vulnerabilities were not independently verified.",
+      "description": "At 13:02:23 Beijing time on October 25, 2026, wei (@8853wei) relayed Shaw's (@shawmakesmagic) October 24 research on daos.fun. The target is a closed-source program deployed on Solana: obtain the program from the chain, then use AI to rebuild Anchor source. The post claims the recompiled 1,120,784-byte binary matches the deployed program byte for byte with the same SHA-256 and says source and an audit are on GitHub.\n\nThe same retelling lists one critical, four medium and one low finding. The critical concerns a missing DAO-to-pool binding, allegedly allowing migration fees to be redirected and another DAO's state corrupted. The claim that new launches, rather than already-bonded ones, are affected is attributed to Shaw. This entry summarizes the reported issue class without invocation or exploitation steps. Private security bounties and Umia are subsequent suggestions in the post, not separate reversing projects or evidence that findings were confirmed or fixed.\n\nSupplementary reading on October 26 confirmed the retelling's author. Public-repository searches did not locate a verifiable original reconstruction/audit commit, so no repository or contract address is guessed. AI involvement, byte count, hash identity and audit ratings remain wei's account of Shaw's claims. No on-chain target was obtained, no binary rebuilt or hash recomputed, and no funds-related operation tested here. This is not automatically merged with unspecified pump.fun or OpenSolana summaries, and readable source does not establish safe reconstruction of every contract.",
+      "metadata": ["Secondary account; the 1,120,784-byte size, matching hash and 1 critical/4 medium/1 low findings were not independently verified.", "Original reconstruction repository, audit commit and on-chain address remain unconfirmed; no on-chain operations performed."],
+      "source_labels": ["wei relaying Shaw's daos.fun reconstruction and audit, October 25, 2026"]
+    }
+  },
+  {
+    "id": "al3rez-hisense-claude-clean-interface-report",
+    "title": "旧Hisense电视：Alireza称Claude清广告并重做Apple TV式界面",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Alireza Bashiri报告用Claude研究旧Hisense电视、移除预装软件与广告并重做界面，称RAM少约70%、界面快三倍；型号、基线和系统重建范围未证实。",
+    "description": "2026年10月25日13:12:58（北京时间），Alireza Bashiri（@al3rez）称用Claude逆向自己的旧Hisense电视，移除所有预装臃肿软件和广告，把系统重做成干净的Apple TV风格界面，使开机后即可看到电影。帖子附视频媒体；10月26日补查原帖确认作者和文本，没有据此推断演示中的底层实现。\n\n作者报告约70%更少的RAM占用与三倍更快的界面，未提供型号、原系统、测试协议、前后原始测量、源码或安装记录。“重建OS”是作者的用词，不能凭外观确定替换了内核或固件，也不能确认移除了全部遥测。REA未在这条来源中明确出现，不能从其他电视新闻倒推使用REA。\n\n这是针对作者自有Hisense电视的具体改造报告，与三星、LG及未具名电视的相似叙事不自动合并。未独立测量内存、响应速度、去广告完整性或重启持久性，也不保证适用于其他Hisense型号。",
+    "sources": [{"label": "Alireza的Claude改造Hisense电视自述，2026-10-25", "url": "https://x.com/i/status/2114223671011312048"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["约70%少RAM、三倍界面速度为作者主张，无测试基线。", "型号与底层改造范围未知；未确认REA、固件替换或全部遥测移除。"],
+    "en": {
+      "title": "An old Hisense TV: Alireza reports Claude-assisted ad removal and an Apple TV-style interface",
+      "summary": "Alireza Bashiri reports using Claude to study an old Hisense TV, remove bloatware/ads and rebuild the interface, claiming about 70% less RAM and a three-times-faster UI. Model, baseline and OS-rebuild scope are unverified.",
+      "description": "At 13:12:58 Beijing time on October 25, 2026, Alireza Bashiri (@al3rez) said he reverse-engineered his old Hisense TV with Claude, removed all preinstalled bloatware and ads, and rebuilt its OS with a clean Apple TV-inspired interface so movies are available on startup. The post includes video media. Supplementary reading on October 26 confirmed the author and text without inferring an underlying implementation from the demonstration.\n\nThe author claims about 70% less RAM usage and a three-times-faster interface, without a model, original OS, test protocol, raw before/after measurements, source or installation record. 'Rebuilt its OS' is his wording: appearance alone cannot establish a replaced kernel or firmware, or removal of all telemetry. This source does not explicitly name REA, and other TV news cannot establish its use here.\n\nThis is a concrete modification report about the author's own Hisense TV, not automatically merged with similar Samsung, LG or unnamed-TV stories. Memory, responsiveness, ad-removal completeness and reboot persistence were not independently tested; compatibility with other Hisense models is not established.",
+      "metadata": ["About 70% less RAM and a three-times-faster interface are author claims without a test baseline.", "Model and low-level modification scope unknown; REA use, firmware replacement and complete telemetry removal unconfirmed."],
+      "source_labels": ["Alireza's Claude-assisted Hisense modification report, October 25, 2026"]
+    }
+  },
+  {
+    "id": "kirin-cs16-rea-dust2-mods",
+    "title": "CS 1.6：Kirin用REA与Agent改Dust2楼梯、光剑和第三人称",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Kirin Chen介绍自购CS 1.6的REA/AI Agent Mod视频，报告Dust2加楼梯、光剑对战与第三人称视角；未独立运行或核验Mod文件。",
+    "description": "2026年10月25日14:21:11（北京时间），Kirin Chen（@KirinChen1001）发布REA用法影片介绍，称用REA配合AI Agent修改两款自己购买的老游戏。本条单独记录Counter-Strike 1.6：给Dust2地图加楼梯、光剑大战和第三人称视角；另一款大富翁4另列，不把两个独立目标压成一个成果。\n\n10月26日补查原帖确认作者和文本。帖子用ClaudeCode、MCP等标签描述工作流，但没有模型版本、反编译片段、源码、具体工具调用记录或Mod安装产物。可以记录REA和Agent参与及作者所述修改，不能推断重建了整个CS引擎、绕过反作弊或支持任何服务器。未完整检验视频、下载Mod或运行游戏，三项玩法均为作者报告；也不与不同作者的CS2/Minecraft混合项目合并。",
+    "sources": [{"label": "Kirin的两款老游戏REA Mod影片介绍，2026-10-25", "url": "https://x.com/i/status/2114240841594380387"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["同帖两个独立游戏分别建档；本条为CS 1.6，不是CS2。", "作者报告的Mod功能，未核验文件或运行；不是整引擎反编译证明。"],
+    "en": {
+      "title": "CS 1.6: Kirin reports REA/agent mods for Dust2 stairs, lightsabers and third-person view",
+      "summary": "Kirin Chen introduces a video of REA/AI-agent mods to his purchased CS 1.6, reporting Dust2 stairs, lightsaber battles and third-person view. Mod files and gameplay were not independently tested.",
+      "description": "At 14:21:11 Beijing time on October 25, 2026, Kirin Chen (@KirinChen1001) introduced a video about using REA with an AI agent to modify two old games he purchased. This entry separately records Counter-Strike 1.6: stairs added to Dust2, lightsaber battles and a third-person view. Richman 4 is recorded separately rather than compressing independent targets into one result.\n\nSupplementary reading on October 26 confirmed the author and text. ClaudeCode and MCP tags describe the workflow, but the post provides no model version, decompilation excerpt, source, detailed tool-call log or installable mod artifact. REA/agent participation and reported changes can be recorded; a reconstructed whole CS engine, anti-cheat bypass or arbitrary-server compatibility cannot be inferred. The full video was not evaluated, no mod downloaded and no game run here. All three gameplay changes remain author reports, not merged with another author's CS2/Minecraft crossover.",
+      "metadata": ["The post's two independent games have separate records; this target is CS 1.6, not CS2.", "Author-reported mod features; files and gameplay untested, not evidence of whole-engine decompilation."],
+      "source_labels": ["Kirin's video introduction to REA mods for two old games, October 25, 2026"]
+    }
+  },
+  {
+    "id": "kirin-richman4-rea-small-map-mods",
+    "title": "大富翁4：Kirin用REA与Agent做超小地图和点券大战",
+    "category": "games",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Kirin Chen称为自购大富翁4制作超小地图、点券大战并可局域网联机；属于REA/Agent Mod报告，不是既有Flutter iPhone重写项目。",
+    "description": "2026年10月25日14:21:11（北京时间），Kirin Chen（@KirinChen1001）介绍用REA与AI Agent修改自己购买的老游戏。大富翁4部分报告做了超小地图和点券大战，并称还能局域网联机；同帖的CS 1.6另列为独立案例。目标是改造已有游戏玩法，而非从零生成相似桌游。\n\n10月26日补查原帖确认作者和项目区别。基线已有大富翁4的Flutter/iPhone重写，但该帖未建立与那项工作的作者、代码或成果关系，因此不并入原案例。原帖没有源码、可安装Mod、游戏版本、网络协议分析或联机测试记录；不能从“区网连线”推断新写了联网协议或兼容原版远程对战。\n\n本合集未完整核验影片、运行游戏或测试地图与联机；超小地图、点券大战及局域网能力均为作者自述，不是独立复现。",
+    "sources": [
+      {"label": "Kirin的REA改造大富翁4与CS 1.6介绍，2026-10-25", "url": "https://x.com/i/status/2114240841594380387"},
+      {"label": "同日读者复述大富翁4超小地图；不是独立测试", "url": "https://x.com/i/status/2114254296699334846"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["独立于基线Flutter/iPhone重写；同帖CS 1.6另列。", "地图、玩法和局域网联机为作者说法，未运行或查验网络协议。"],
+    "en": {
+      "title": "Richman 4: Kirin reports REA/agent mods for a tiny map and a coupon battle",
+      "summary": "Kirin Chen reports a tiny map, a coupon battle and LAN play in his purchased Richman 4. This is an REA/agent mod report, not the existing Flutter/iPhone rewrite project.",
+      "description": "At 14:21:11 Beijing time on October 25, 2026, Kirin Chen (@KirinChen1001) introduced REA/AI-agent modifications to old games he purchased. For Richman 4, he reports a very small map, a coupon battle and LAN play. CS 1.6 from the same post is a separate case. The aim is modifying existing gameplay rather than generating a superficially similar board game from scratch.\n\nSupplementary reading on October 26 confirmed the author and project distinction. The baseline includes a Flutter/iPhone rewrite of Richman 4, but this post does not establish shared authorship, code or results, so it is not merged into that record. No source, installable mod, game version, network-protocol analysis or multiplayer test log is supplied. 'LAN play' does not establish a newly implemented networking protocol or compatibility with original remote play.\n\nThe full video, game, maps and multiplayer were not independently tested here. The tiny map, coupon battle and LAN capability remain author statements, not independent reproductions.",
+      "metadata": ["Separate from the baseline Flutter/iPhone rewrite; the same post's CS 1.6 has its own record.", "Maps, gameplay and LAN support are author claims; neither game nor network protocol tested."],
+      "source_labels": ["Kirin introducing REA modifications to Richman 4 and CS 1.6, October 25, 2026", "Same-day reader repeating the tiny Richman 4 map; not an independent test"]
+    }
+  },
+  {
+    "id": "jan-videograb-rea-downie-alternative",
+    "title": "videograb：Jan以REA与多模型工作流制作Downie替代的进展",
+    "category": "apps",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "Jan M称使用REA制作自己付费产品的替代品，具名Downie替代videograb；Claude写提示并审查，Codex/Grok/Gemini执行，尚无功能或下载成功率证据。",
+    "description": "2026年10月25日14:43:18（北京时间），Jan M（@jannotjohnn）回顾使用@mvanhorn发布的工作流，称此前主要用herdr和Grok，因使用额度问题少用Claude，如今改由Claude编写提示词并审查，让Codex、Grok和Gemini充当执行者。他明确称在使用REA重建自己付费使用的项目，并具名自己的Downie替代工具videograb。Downie是视频下载应用；这条记录的具体目标是替代其使用需求，而不是将提交热图视为功能完成证据。\n\n10月26日补查原帖确认作者和文字，但没有取得videograb仓库、发行文件、支持网站列表、格式、下载测试或具体被逆向的Downie版本。多模型分工是作者描述的总体流程，不代表每个模型都实际参与过videograb的每一步。也不能从“使用REA”推断已恢复Downie内部算法、绕过付费访问或兼容所有网站。\n\n保留为进行中的具名产品重建报告，未运行任何下载程序或验证功能、成本、时间和生产率。帖中的热图不转化为量化效率结论。",
+    "sources": [{"label": "Jan介绍多模型REA工作流及videograb，2026-10-25", "url": "https://x.com/i/status/2114246405116358777"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["项目身份来自作者自述；仓库、版本与功能测试未取得。", "Claude审查与三类执行模型为总体工作流，未验证videograb逐步模型分工。"],
+    "en": {
+      "title": "videograb: Jan reports a Downie alternative in an REA/multi-model workflow",
+      "summary": "Jan M says he uses REA to recreate tools he pays for, naming videograb as his Downie alternative. Claude writes prompts and reviews while Codex/Grok/Gemini execute; functionality and download success rates remain undocumented.",
+      "description": "At 14:43:18 Beijing time on October 25, 2026, Jan M (@jannotjohnn) described using a workflow released by @mvanhorn. Previously he mainly used herdr and Grok and avoided Claude because of usage limits. He now describes Claude writing prompts and reviewing, with Codex, Grok and Gemini as workers. He explicitly says he has been using REA to recreate projects he pays for, naming his Downie alternative videograb. Downie is a video-downloading application; the concrete target is replacing that use, not treating a contribution heatmap as evidence of completed features.\n\nSupplementary reading on October 26 confirmed the author and wording, but no videograb repository, release, supported-site list, formats, download tests or specific analyzed Downie version was obtained. The multi-model roles describe his overall workflow, not proof that every model participated in every videograb step. REA use does not establish recovered Downie algorithms, bypassed paid access or compatibility with all sites.\n\nThis remains an in-progress named product-reconstruction report. No downloading application was run, and functionality, cost, elapsed time and productivity were not verified. The heatmap is not converted into a quantitative efficiency claim.",
+      "metadata": ["Project identity is an author statement; repository, version and feature tests were not obtained.", "Claude review and three worker-model families describe the overall workflow; step-by-step videograb model roles are unverified."],
+      "source_labels": ["Jan describing his multi-model REA workflow and videograb, October 25, 2026"]
+    }
+  },
+  {
     "id": "resident-evil-saturn-32x-ai-port-idea",
     "title": "Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想",
     "category": "games",

@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 897 个案例与项目
+# 908 个案例与项目
 
-**最近案例更新：**2026 年 10 月 26 日 18:48 · **最近维护：**2026 年 10 月 26 日 18:48 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 26 日 19:15 · **最近维护：**2026 年 10 月 26 日 19:15 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -32,7 +32,7 @@
 6. **[MagicSwipe：iPad 上的 Magic Mouse 手势](cases/magic-mouse-ipad-opus-virtual-hid.md)** · `2026-10-20` — Opus 辅助研究，把**私有触摸回调接到虚拟 HID 快捷键**，补足通用控制操作。代码公开，仅项目报告设备测试；需高权限驱动，替代为快捷键而非原生连续手势。`进行中`
 7. **[xbox-boot-re：重建初代 Xbox 的绿色开机动画](cases/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — 人类指导 Opus，从单张 BIOS 恢复为 **C 核心与 WebGPU 查看器**，有 xemu 对照文档和成功项目 CI。仅一版修改 BIOS，声音合成有近似；不是完整主机模拟器，本合集未重跑。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
-9. **[WayShare：从 Mac 连接 Hyprland](cases/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA 辅助研究 Apple Remote Desktop，产出**公开 Rust 实现及成功项目 CI**。60fps 仍为作者说法，未独立测量；Standard 屏幕与剪贴板未加密。`进行中`
+9. **[BreezySRPG95：用现代客户端玩旧战棋游戏](cases/quof-breezysrpg95-claude-interpreter.md)** · `2026-10-25` — Quof报告**以Claude反汇编原运行器**，加入键盘操作、加速和敌方行动范围。项目公开，仍是仅数人试用的早期beta，存档互通有限制；本合集未运行。`进行中`
 10. **[KakaSoft：“最高”保护究竟做了什么](cases/kakasoft-usb-copy-protection-ai-review.md)** · `2026-10-23`（北京时间） — Xusheng Li 报告 AI 追踪**隐藏测试文件、修改版哈希与客户端密钥派生**，在不知道用户密码时恢复自有文件。针对5.6.0.299版；属于研究者测试，**不是破解 Blowfish**，本合集未独立复现。`分析测试`
 
 ## 经典案例
@@ -48,9 +48,9 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **198** |
-| [硬件与设备互通](categories/hardware.md) | **238** |
-| [应用与客户端](categories/apps.md) | **381** |
+| [游戏与游戏保存](categories/games.md) | **201** |
+| [硬件与设备互通](categories/hardware.md) | **242** |
+| [应用与客户端](categories/apps.md) | **385** |
 | [算法与功能重建](categories/algorithms.md) | **80** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)

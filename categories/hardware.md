@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究](../cases/gpu-unlock-ada-ai-research-report.md) — HKEPC将JustAResearch的Ada算力研究归因为AI逆向；公开Linux项目复用上游载荷，在驱动绑定前修改speed-select状态。约两倍指令吞吐不等于推理应用翻倍或全系列通用。 **[其他 AI 逆向 · 待验证]**
+- [Android modem文件：Dan Holzrichter比较GLM/DeepSeek与Claude/Muse的反编译协助](../cases/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter报告为朋友研究Android手机modem文件，Claude与Muse拒绝，而GLM与DeepSeek愿意协助；无文件/设备型号或恢复产物，不能据此断言基带已破解。 **[其他 AI 逆向 · 待验证]**
+- [小米大师82电视：WorkBuddy借CleanYourTV清包、读UI树并修屏保配置](../cases/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — 朱无忌报告让WorkBuddy经ADB研究和清理自有小米电视：备份115包、禁用25包，截屏受阻后改读UI树，编译替代桌面并修屏保指向；不是root或固件重写。 **[其他 AI 逆向 · 待验证]**
+- [旧Hisense电视：Alireza称Claude清广告并重做Apple TV式界面](../cases/al3rez-hisense-claude-clean-interface-report.md) — Alireza Bashiri报告用Claude研究旧Hisense电视、移除预装软件与广告并重做界面，称RAM少约70%、界面快三倍；型号、基线和系统重建范围未证实。 **[其他 AI 逆向 · 待验证]**
 - [蓝牙音箱固件：yjcdon让AI研究关闭开机音与自动关机](../cases/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon报告正在用AI逆向自己的蓝牙音箱固件，目标是去掉开机提示音和自动关机；未给型号或完成补丁。 **[其他 AI 逆向 · 进行中]**
 - [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](../cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
 - [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](../cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**

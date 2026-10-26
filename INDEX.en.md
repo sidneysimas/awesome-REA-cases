@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**897 entries**, organized by use case, without a Top-N or popularity threshold.
+**908 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (198)
-- [Hardware and interoperability](categories/en/hardware.md) (238)
-- [Applications and clients](categories/en/apps.md) (381)
+- [Games and preservation](categories/en/games.md) (201)
+- [Hardware and interoperability](categories/en/hardware.md) (242)
+- [Applications and clients](categories/en/apps.md) (385)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (80)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [BreezySRPG95: Quof uses Claude to disassemble an old runtime and build a replacement SRPG client](cases/en/quof-breezysrpg95-claude-interpreter.md) — Quof reports referencing REA and using Claude Code CLI to disassemble the original executable and rebuild an SRPG Maker 95 client. This is an early beta tried by only a few people, with public feature and compatibility documentation. **[Other AI-assisted work · In progress]**
+- [CS 1.6: Kirin reports REA/agent mods for Dust2 stairs, lightsabers and third-person view](cases/en/kirin-cs16-rea-dust2-mods.md) — Kirin Chen introduces a video of REA/AI-agent mods to his purchased CS 1.6, reporting Dust2 stairs, lightsaber battles and third-person view. Mod files and gameplay were not independently tested. **[REA · Needs verification]**
+- [Richman 4: Kirin reports REA/agent mods for a tiny map and a coupon battle](cases/en/kirin-richman4-rea-small-map-mods.md) — Kirin Chen reports a tiny map, a coupon battle and LAN play in his purchased Richman 4. This is an REA/agent mod report, not the existing Flutter/iPhone rewrite project. **[REA · Needs verification]**
 - [Resident Evil: an AI/Ghidra-assisted Saturn-to-32X port idea](cases/en/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier proposes using AI-assisted reverse engineering and Ghidra to port the Saturn version of Resident Evil to the 32X. This is a concrete idea, with no started or completed port reported. **[Other AI-assisted work · Needs verification]**
 - [Ultima Online: a report of Claude studying game files and setting up a private server](cases/en/ultima-online-claude-private-server-report.md) — kreia relays a Reddit user's account of Claude studying Ultima Online files, creating a personal server and playing together. The primary technical account was not obtained, so a complete from-scratch server is not established. **[Other AI-assisted work · Needs verification]**
 - [Bringing RE5's inventory into RE4: a reader's AI-decompilation mod idea](cases/en/resident-evil5-inventory-re4-ai-mod-idea.md) — A reader asks whether AI decompilation could bring Resident Evil 5's inventory system into RE4. This is a specific mod wish, with no implementation, target edition or playable artifact. **[REA use unconfirmed · Needs verification]**
@@ -229,6 +232,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [GPU-Unlock-Ada: an AI reverse-engineering report and public Ada tensor-throughput research](cases/en/gpu-unlock-ada-ai-research-report.md) — HKEPC attributes JustAResearch's Ada investigation to AI-assisted reverse engineering. The public Linux project reuses upstream payload work to change speed-select state before driver binding. Roughly 2× instruction throughput is not 2× inference or universal support. **[Other AI-assisted work · Needs verification]**
+- [Android modem file: Dan Holzrichter compares GLM/DeepSeek assistance with Claude/Muse refusals](cases/en/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter reports studying an Android phone modem file for a friend: Claude and Muse refused while GLM and DeepSeek assisted. No file/device identity or recovered artifact is available, so this does not establish a baseband compromise. **[Other AI-assisted work · Needs verification]**
+- [Xiaomi Master 82 TV: WorkBuddy uses CleanYourTV, a UI tree and a screensaver configuration fix](cases/en/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — Wujizhuzhu reports WorkBuddy studying and cleaning his Xiaomi TV over ADB: backing up 115 packages, disabling 25, using a UI tree when screenshots failed, compiling a replacement launcher and fixing a screensaver target. Not root or a firmware rewrite. **[Other AI-assisted work · Needs verification]**
+- [An old Hisense TV: Alireza reports Claude-assisted ad removal and an Apple TV-style interface](cases/en/al3rez-hisense-claude-clean-interface-report.md) — Alireza Bashiri reports using Claude to study an old Hisense TV, remove bloatware/ads and rebuild the interface, claiming about 70% less RAM and a three-times-faster UI. Model, baseline and OS-rebuild scope are unverified. **[Other AI-assisted work · Needs verification]**
 - [Bluetooth speaker firmware: yjcdon asks AI to remove startup sound and automatic shutdown](cases/en/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon reports using AI to reverse-engineer a Bluetooth speaker's firmware to remove its startup sound and automatic shutdown. No model identifier or completed patch is supplied. **[Other AI-assisted work · In progress]**
 - [A rumored MacBook Pro assembly: reported Opus part modeling and geometry checks](cases/en/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior reports a 126-part articulated MacBook Pro model made with Opus 5.5 from leaks. Its 259 passing rules and zero errors are author claims, not verification of Apple's design. **[Other AI-assisted work · Needs verification]**
 - [PS5 voice control: chuplung reports Opus network research and on-screen menu operation](cases/en/chuplung-ps5-opus-network-voice-control.md) — chuplung reports Claude Opus 5.5 studying PS5 communication on the same Wi-Fi, then waking it, downloading and playing after pairing approval. This is not a jailbreak or console shell. **[Other AI-assisted work · Needs verification]**
@@ -470,6 +477,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [index0 mobile version: Master Daniels reports that agent reconstruction still needs human architecture and repairs](cases/en/master-daniels-index0-mobile-reconstruction.md) — Master Daniels tried reverse-engineering index0 into a mobile version. His follow-up says humans still choose architecture, rewrite broken code and stop loops; no complete usable port is reported. **[Other AI-assisted work · In progress]**
+- [Microsoft Skill Recorder: reconstruct reusable agent skills from recordings and activity events](cases/en/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser introduces Microsoft's Skill Recorder, using Copilot to recover task intent and ordered steps from a work session and create SKILL.md or an Automation. Analysis uploads recording data; it is not wholly offline. **[Other AI-assisted work · Related project]**
+- [daos.fun: wei relays Shaw's AI-assisted Anchor reconstruction and matching-binary claim](cases/en/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei relays Shaw rebuilding a closed daos.fun program in Anchor with AI, claiming a 1,120,784-byte binary with the same SHA-256 and six audit findings. Original code, hashes and vulnerabilities were not independently verified. **[Other AI-assisted work · Needs verification]**
+- [videograb: Jan reports a Downie alternative in an REA/multi-model workflow](cases/en/jan-videograb-rea-downie-alternative.md) — Jan M says he uses REA to recreate tools he pays for, naming videograb as his Downie alternative. Claude writes prompts and reviews while Codex/Grok/Gemini execute; functionality and download success rates remain undocumented. **[REA · In progress]**
 - [Addy's recursive self-learning REA skill: an author report of a continued-building tool](cases/en/addy-recursive-self-learning-rea-skill.md) — addy_oz reports creating a REA-inspired recursive self-learning skill that keeps building until a task is done, claiming compatibility with any agent. Repository identity and actual stopping criteria remain unverified. **[REA · Related project]**
 - [Visual Chess.com review: Tjay reports a Claude rebuild paired with local Qwen](cases/en/tjay-chesscom-local-qwen-visual-review.md) — Tjay says a Chess.com review-engine investigation, Claude and local quantized Qwen provide visual board explanations and game-history synchronization. Mac, Windows and browser availability are claimed; open sourcing remains a promise. **[Other AI-assisted work · Needs verification]**
 - [STICH FAIXI SiX: AdyLovelace's report of a REA/Ghidra Tiny Client](cases/en/ady-stich-faixi-six-tiny-client.md) — AdyLovelace says REA, AI Assist and Ghidra helped create an experimental Tiny Client for a target called STICH FAIXI SiX. No code or checkable feature set is supplied. **[REA · Needs verification]**

@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **897 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **908 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（198）
-- [硬件与设备互通](categories/hardware.md)（238）
-- [应用与客户端](categories/apps.md)（381）
+- [游戏与游戏保存](categories/games.md)（201）
+- [硬件与设备互通](categories/hardware.md)（242）
+- [应用与客户端](categories/apps.md)（385）
 - [算法与功能重建](categories/algorithms.md)（80）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [BreezySRPG95：Quof用Claude反汇编旧运行器，制作战棋游戏替代客户端](cases/quof-breezysrpg95-claude-interpreter.md) — Quof报告参考REA、用Claude Code CLI反汇编原可执行文件，重建SRPG Maker 95客户端；初期beta仅数人试用，公开仓库提供功能与兼容性说明。 **[其他 AI 逆向 · 进行中]**
+- [CS 1.6：Kirin用REA与Agent改Dust2楼梯、光剑和第三人称](cases/kirin-cs16-rea-dust2-mods.md) — Kirin Chen介绍自购CS 1.6的REA/AI Agent Mod视频，报告Dust2加楼梯、光剑对战与第三人称视角；未独立运行或核验Mod文件。 **[REA · 待验证]**
+- [大富翁4：Kirin用REA与Agent做超小地图和点券大战](cases/kirin-richman4-rea-small-map-mods.md) — Kirin Chen称为自购大富翁4制作超小地图、点券大战并可局域网联机；属于REA/Agent Mod报告，不是既有Flutter iPhone重写项目。 **[REA · 待验证]**
 - [Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想](cases/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier提出借助AI辅助逆向与Ghidra，把Resident Evil的Saturn版本移到32X；这是具体idea，没有报告开始或完成移植。 **[其他 AI 逆向 · 待验证]**
 - [Ultima Online：Claude研究游戏文件并建立私服的转述](cases/ultima-online-claude-private-server-report.md) — kreia转述一位r/ClaudeAI用户让Claude研究Ultima Online文件、建立个人服务器并一起游玩；没有取得原技术记录，不能认定从零实现整套服务器。 **[其他 AI 逆向 · 待验证]**
 - [把RE5物品栏机制移入RE4：AI反编译Mod的读者设想](cases/resident-evil5-inventory-re4-ai-mod-idea.md) — 一位读者提出借助AI反编译，将Resident Evil 5的物品栏系统带到RE4；帖子只是明确的Mod愿望，没有实现、版本或可玩产物。 **[未确认使用 REA · 待验证]**
@@ -227,6 +230,10 @@
 
 ### 硬件与设备互通
 
+- [GPU-Unlock-Ada：AI逆向报道与Ada张量吞吐解锁的公开研究](cases/gpu-unlock-ada-ai-research-report.md) — HKEPC将JustAResearch的Ada算力研究归因为AI逆向；公开Linux项目复用上游载荷，在驱动绑定前修改speed-select状态。约两倍指令吞吐不等于推理应用翻倍或全系列通用。 **[其他 AI 逆向 · 待验证]**
+- [Android modem文件：Dan Holzrichter比较GLM/DeepSeek与Claude/Muse的反编译协助](cases/dholzric-android-modem-ai-decompilation-attempt.md) — Dan Holzrichter报告为朋友研究Android手机modem文件，Claude与Muse拒绝，而GLM与DeepSeek愿意协助；无文件/设备型号或恢复产物，不能据此断言基带已破解。 **[其他 AI 逆向 · 待验证]**
+- [小米大师82电视：WorkBuddy借CleanYourTV清包、读UI树并修屏保配置](cases/wujizhuzhu-xiaomi82-workbuddy-adb-cleanup.md) — 朱无忌报告让WorkBuddy经ADB研究和清理自有小米电视：备份115包、禁用25包，截屏受阻后改读UI树，编译替代桌面并修屏保指向；不是root或固件重写。 **[其他 AI 逆向 · 待验证]**
+- [旧Hisense电视：Alireza称Claude清广告并重做Apple TV式界面](cases/al3rez-hisense-claude-clean-interface-report.md) — Alireza Bashiri报告用Claude研究旧Hisense电视、移除预装软件与广告并重做界面，称RAM少约70%、界面快三倍；型号、基线和系统重建范围未证实。 **[其他 AI 逆向 · 待验证]**
 - [蓝牙音箱固件：yjcdon让AI研究关闭开机音与自动关机](cases/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon报告正在用AI逆向自己的蓝牙音箱固件，目标是去掉开机提示音和自动关机；未给型号或完成补丁。 **[其他 AI 逆向 · 进行中]**
 - [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
 - [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**
@@ -468,6 +475,10 @@
 
 ### 应用与客户端
 
+- [index0移动版：Master Daniels报告Agent重建仍需人工架构与修错](cases/master-daniels-index0-mobile-reconstruction.md) — Master Daniels尝试逆向index0做移动版本；补查作者串明确人仍要做架构决定、重写坏代码并终止循环，未报告完整可用移植。 **[其他 AI 逆向 · 进行中]**
+- [Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能](cases/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。 **[其他 AI 逆向 · 相关项目]**
+- [daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制](cases/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [videograb：Jan以REA与多模型工作流制作Downie替代的进展](cases/jan-videograb-rea-downie-alternative.md) — Jan M称使用REA制作自己付费产品的替代品，具名Downie替代videograb；Claude写提示并审查，Codex/Grok/Gemini执行，尚无功能或下载成功率证据。 **[REA · 进行中]**
 - [Addy的递归自学习REA skill：持续构建工具的作者自述](cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**

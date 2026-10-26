@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [BreezySRPG95：Quof用Claude反汇编旧运行器，制作战棋游戏替代客户端](../cases/quof-breezysrpg95-claude-interpreter.md) — Quof报告参考REA、用Claude Code CLI反汇编原可执行文件，重建SRPG Maker 95客户端；初期beta仅数人试用，公开仓库提供功能与兼容性说明。 **[其他 AI 逆向 · 进行中]**
+- [CS 1.6：Kirin用REA与Agent改Dust2楼梯、光剑和第三人称](../cases/kirin-cs16-rea-dust2-mods.md) — Kirin Chen介绍自购CS 1.6的REA/AI Agent Mod视频，报告Dust2加楼梯、光剑对战与第三人称视角；未独立运行或核验Mod文件。 **[REA · 待验证]**
+- [大富翁4：Kirin用REA与Agent做超小地图和点券大战](../cases/kirin-richman4-rea-small-map-mods.md) — Kirin Chen称为自购大富翁4制作超小地图、点券大战并可局域网联机；属于REA/Agent Mod报告，不是既有Flutter iPhone重写项目。 **[REA · 待验证]**
 - [Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想](../cases/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier提出借助AI辅助逆向与Ghidra，把Resident Evil的Saturn版本移到32X；这是具体idea，没有报告开始或完成移植。 **[其他 AI 逆向 · 待验证]**
 - [Ultima Online：Claude研究游戏文件并建立私服的转述](../cases/ultima-online-claude-private-server-report.md) — kreia转述一位r/ClaudeAI用户让Claude研究Ultima Online文件、建立个人服务器并一起游玩；没有取得原技术记录，不能认定从零实现整套服务器。 **[其他 AI 逆向 · 待验证]**
 - [把RE5物品栏机制移入RE4：AI反编译Mod的读者设想](../cases/resident-evil5-inventory-re4-ai-mod-idea.md) — 一位读者提出借助AI反编译，将Resident Evil 5的物品栏系统带到RE4；帖子只是明确的Mod愿望，没有实现、版本或可玩产物。 **[未确认使用 REA · 待验证]**

@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [index0移动版：Master Daniels报告Agent重建仍需人工架构与修错](../cases/master-daniels-index0-mobile-reconstruction.md) — Master Daniels尝试逆向index0做移动版本；补查作者串明确人仍要做架构决定、重写坏代码并终止循环，未报告完整可用移植。 **[其他 AI 逆向 · 进行中]**
+- [Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能](../cases/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。 **[其他 AI 逆向 · 相关项目]**
+- [daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制](../cases/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。 **[其他 AI 逆向 · 待验证]**
+- [videograb：Jan以REA与多模型工作流制作Downie替代的进展](../cases/jan-videograb-rea-downie-alternative.md) — Jan M称使用REA制作自己付费产品的替代品，具名Downie替代videograb；Claude写提示并审查，Codex/Grok/Gemini执行，尚无功能或下载成功率证据。 **[REA · 进行中]**
 - [Addy的递归自学习REA skill：持续构建工具的作者自述](../cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](../cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](../cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
