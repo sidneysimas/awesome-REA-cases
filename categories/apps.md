@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区](../cases/jshookmcp-search-first-re-workspace.md) — Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。 **[其他 AI 逆向 · 相关项目]**
+- [Vortex：让AI研究并重做兼容更多Mod站点的管理器想法](../cases/vortex-all-mod-sites-ai-rebuild-idea.md) — The Floofy Poofy建议用AI反编译并重做Vortex，使其支持所有Mod网站；仅为互通需求，没有实现、站点协议或兼容性测试。 **[其他 AI 逆向 · 待验证]**
+- [Serum 2：作者声称Codex配REA分析合成器并移除许可检查](../cases/serum2-codex-rea-license-removal-report.md) — glawniyliberal报告在Codex中使用REA分析Xfer Serum 2，声称移除许可检查以制作音乐；未提供可核对的版本、分析日志或测试，不确认完整反编译或通用破解。 **[REA · 待验证]**
 - [Pocket转写改造：Eduard导入联系人名字以改善人名拼写](../cases/eduard-pocket-contact-name-transcription-rebuild.md) — Eduard Faus Gil称逆向并改进Pocket录音转写体验；作者补充具体改动是导入联系人名字，配合word boosting与LLM流程减少人名拼写错误，未开源。 **[未确认使用 REA · 待验证]**
 - [VLC样式播放器：TechSignal转述REA重建中的可用功能与缺陷](../cases/techsignal-vlc-style-rea-player-experiment.md) — TechSignal报道AI辅助流程约10至15分钟做出VLC样式播放器，MP3和快捷键可用，但视频格式、目录导航与全屏仍有缺陷；原实验产物未取得。 **[REA · 待验证]**
 - [无需越狱的IPA解密：DrWhax报告LLM、Unicorn与IDA协同研究](../cases/drwhax-ipa-decryption-llm-unicorn-ida-report.md) — Jurre van Bergen称在macOS27.0.1可无需越狱解密IPA；本轮回复明确LLM、Unicorn和IDA Pro，超过两周且需大量人工指导，不是全自动成果。 **[其他 AI 逆向 · 待验证]**

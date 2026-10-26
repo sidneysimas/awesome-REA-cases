@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**922 entries**, organized by use case, without a Top-N or popularity threshold.
+**931 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (201)
-- [Hardware and interoperability](categories/en/hardware.md) (247)
-- [Applications and clients](categories/en/apps.md) (393)
+- [Games and preservation](categories/en/games.md) (204)
+- [Hardware and interoperability](categories/en/hardware.md) (250)
+- [Applications and clients](categories/en/apps.md) (396)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (81)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Railroad Tycoon II: a Rust reimplementation assisted by REA and specialized AI agents](cases/en/rrt2-decomp-rea-rust-reimplementation.md) — yibie highlights pedryvo/rrt2-decomp. Project documentation describes REA MCP/Ghidra analysis, specifications before Rust implementation, and differential comparisons against original functions and saves. It remains pre-alpha and was not run here. **[REA · In progress]**
+- [Mario Strikers Charged: a Claude-assisted PS Vita port directed and console-tested by a human](cases/en/strikers-charged-vita-claude-port.md) — yibie highlights CBOC-Vita-Lab's Wii-to-Vita port. The project credits Claude and other assistants, human direction and console tests, building on an existing decompilation and vitaGL. Version 1.1 frame rates and latency are project reports, not independently rerun results. **[Other AI-assisted work · In progress]**
+- [The Inpatient: a reader proposes AI decompilation while away from their PSVR power supply](cases/en/inpatient-psvr-ai-decompilation-idea.md) — With the PSVR power supply left at university and no wish to buy another, Sanghaili asks whether AI decompilers could handle The Inpatient. This is a specific game-access idea, not a port or playable implementation. **[Other AI-assisted work · Needs verification]**
 - [BreezySRPG95: Quof uses Claude to disassemble an old runtime and build a replacement SRPG client](cases/en/quof-breezysrpg95-claude-interpreter.md) — Quof reports referencing REA and using Claude Code CLI to disassemble the original executable and rebuild an SRPG Maker 95 client. This is an early beta tried by only a few people, with public feature and compatibility documentation. **[Other AI-assisted work · In progress]**
 - [CS 1.6: Kirin reports REA/agent mods for Dust2 stairs, lightsabers and third-person view](cases/en/kirin-cs16-rea-dust2-mods.md) — Kirin Chen introduces a video of REA/AI-agent mods to his purchased CS 1.6, reporting Dust2 stairs, lightsaber battles and third-person view. Mod files and gameplay were not independently tested. **[REA · Needs verification]**
 - [Richman 4: Kirin reports REA/agent mods for a tiny map and a coupon battle](cases/en/kirin-richman4-rea-small-map-mods.md) — Kirin Chen reports a tiny map, a coupon battle and LAN play in his purchased Richman 4. This is an REA/agent mod report, not the existing Flutter/iPhone rewrite project. **[REA · Needs verification]**
@@ -232,6 +235,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Tesla HW3: a reader proposes investigating HW4 software adaptation with REA](cases/en/tesla-hw3-hw4-rea-software-idea.md) — GamerTex asks about an AI agent using REA on a HW3 Tesla to upgrade to current HW4 software. This is a specific cross-generation adaptation idea, without code, compatibility evidence or vehicle tests. **[REA · Needs verification]**
+- [PS5 security architecture: Devon traces FreeBSD/WebKit with Codex/ChatGPT and reports filtering and account deactivation](cases/en/devon-ps5-freebsd-webkit-codex-source-analysis.md) — Devon reports using Codex/ChatGPT to trace FreeBSD 11 and WebKit call chains, layouts and lifecycles for PS5 firmware-architecture research. Responses reportedly cited source, but repeated filtering and deactivation followed; the research repository and independent tests were not obtained. **[Other AI-assisted work · Analysis test]**
+- [Samshush: Matt Silverlock uses Codex/Astra to investigate a Samsung Frame and disable selected services](cases/en/samshush-frame-codex-astra-cleanup.md) — Matt Silverlock releases the agent-first Samshush toolkit, reporting network-based investigation of a Frame TV using Codex/Astra on Windows and disabling selected voice, advertising and telemetry services. Public documentation limits support to one Frame Pro model and firmware, not every Samsung TV. **[Other AI-assisted work · Needs verification]**
 - [Gigabyte X870 fan control: an idea to use Codex and Windows software as a Linux reference](cases/en/gigabyte-x870-codex-linux-fan-control-idea.md) — Bocchi calls Saul proposes having Codex investigate Gigabyte's Windows companion software if Linux X870 fan-control firmware is unavailable. No protocol, driver or device test is reported. **[Other AI-assisted work · In progress]**
 - [Kindle lock-screen dashboard: Cortiq reports Claude-assisted firmware identification, jailbreaking and ad removal](cases/en/cortiq-kindle-claude-lockscreen-dashboard-report.md) — Cortiq says Claude Code replaced a Kindle advertising screen with time, weather, calendar, tasks and X follower counts. No model, firmware, code or battery measurement is supplied; this is not evidence of discovering a new jailbreak vulnerability. **[Other AI-assisted work · Needs verification]**
 - [kindle-ai-usage: Codex-assisted Kindle jailbreaking for an API-equivalent usage display](cases/en/codex-kindle-ai-spending-dashboard-report.md) — Community reports describe an old Kindle usage screen. Kuberwastaken's public project supports the Codex-jailbreak attribution, Node service and six-hour refresh. Values estimate API-equivalent list prices, not subscription bills; no independent deployment. **[Other AI-assisted work · Needs verification]**
@@ -482,6 +488,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [jshook: a search-first MCP workspace that loads reverse-engineering tools for AI agents on demand](cases/en/jshookmcp-search-first-re-workspace.md) — Dan Kornas introduces jshook's search-first workspace. Public vmoranv/jshookmcp documentation describes expandable tool profiles, browser traffic, JS deobfuscation, WASM and native-analysis bridges. It was not installed or tested here. **[Other AI-assisted work · Related project]**
+- [Vortex: an idea for AI-assisted reconstruction of a manager compatible with more mod sites](cases/en/vortex-all-mod-sites-ai-rebuild-idea.md) — The Floofy Poofy suggests AI decompilation and reconstruction of Vortex to work with all mod sites. This is an interoperability request, without implementation, site protocols or compatibility tests. **[Other AI-assisted work · Needs verification]**
+- [Serum 2: an author claims Codex/REA analysis of the synthesizer and license-check removal](cases/en/serum2-codex-rea-license-removal-report.md) — glawniyliberal reports analyzing Xfer Serum 2 with REA in Codex and claims license-check removal to make music. No verifiable version, analysis logs or tests were obtained; complete decompilation or a general crack is not established. **[REA · Needs verification]**
 - [Pocket transcription modification: Eduard imports contact names to improve spelling](cases/en/eduard-pocket-contact-name-transcription-rebuild.md) — Eduard Faus Gil reports reverse-engineering and modifying Pocket's recording/transcription experience. His follow-up specifies importing contact names for a word-boosting and LLM workflow to reduce name misspellings; the implementation is not open-source. **[REA use unconfirmed · Needs verification]**
 - [VLC-style player: TechSignal reports useful features and limits of a REA reconstruction experiment](cases/en/techsignal-vlc-style-rea-player-experiment.md) — TechSignal reports an AI-assisted workflow producing a VLC-style player in roughly 10–15 minutes, with MP3 playback and shortcuts working but video-format, folder-navigation and fullscreen limitations. The original artifact was not obtained. **[REA · Needs verification]**
 - [Jailbreak-free IPA decryption: DrWhax reports collaborative LLM, Unicorn and IDA research](cases/en/drwhax-ipa-decryption-llm-unicorn-ida-report.md) — Jurre van Bergen reports IPA decryption on macOS 27.0.1 without a jailbreak. His in-window reply credits LLMs, Unicorn and IDA Pro, with over two weeks of work and substantial human steering, not full automation. **[Other AI-assisted work · Needs verification]**

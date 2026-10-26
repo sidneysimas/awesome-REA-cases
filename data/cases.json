@@ -1,5 +1,195 @@
 [
   {
+    "id": "rrt2-decomp-rea-rust-reimplementation",
+    "title": "Railroad Tycoon II：REA与专职AI Agent辅助的Rust重实现",
+    "category": "games",
+    "rea": "REA",
+    "status": "in-progress",
+    "summary": "yibie推荐pedryvo/rrt2-decomp；项目文档说明用REA MCP连接Ghidra、先记录规则再以Rust重写，并以原程序函数及存档作差分比较。仍为pre-alpha，未在本合集运行。",
+    "description": "2026年10月25日15:30（北京时间），yibie在资源目录更新中介绍Railroad Tycoon 2的Rust逆向重写，称从提交trailer发现AI参与。补查公开仓库确认目标为pedryvo/rrt2-decomp：研究1998至2001年的Railroad Tycoon II Platinum可执行文件，在保留等距视角和玩法的同时适配现代分辨率。此条来自往期待补审窗口，不作为10月26日00:00至04:00新抓取成果。\n\n补充静态阅读的README说明，项目经REA MCP调用Ghidra，由不同专职AI Agent分担工作，从字符串、导入和数据表定位子系统，先写含地址、常量及伪代码的规格，再编写Rust实现。原函数通过Unicorn运行，与Rust结果逐位比较；整局行为则让原程序在Wine中推进同一存档，与重实现逐字段比较。10月23日23:03:18 UTC的0d26aca提交有Claude Opus 5.5共同署名，内容涉及报表、图表与CSV导出；这支持存在AI协作，不量化AI代码比例。\n\n项目README自报2945个函数、616个已写规格、304个函数逐位验证，以及131个存档推进对照用例全部一致；这些是项目报告，不是本合集重跑结果，不能推成全部游戏语义或函数都已恢复。文档仍标pre-alpha，文件格式、模拟、UI和联机均有部分完成项，路线图与后续实现进度也不完全同步；Windows/macOS构建明确称作者尚未测试。因此按进行中收录，不称完整游戏重建已经验收。\n\n原帖说README不提AI，但当前补读文档已明确专职AI Agent与REA，应以实际读到的文档更正这一概括。8星、421文件和20处trailer仅为原帖快照，本合集未重新统计。项目要求合法持有原游戏数据，不随本记录分发。补充仓库材料早于本轮窗口，用于身份与方法核对；未安装依赖、下载游戏资产、执行项目代码或独立验证画面、性能及存档结果。",
+    "sources": [
+      {"label": "往期候选：yibie介绍两个独立游戏项目，2026-10-25北京时间", "url": "https://x.com/i/status/2114258253253329233"},
+      {"label": "补充项目README，固定提交0d26aca，2026-10-23 UTC", "url": "https://github.com/pedryvo/rrt2-decomp/blob/0d26aca502ec36730c6b261713f71cda890319d5/README.md"},
+      {"label": "公开报表实现提交及Claude Opus 5.5共同署名，2026-10-23 UTC", "url": "https://github.com/pedryvo/rrt2-decomp/commit/0d26aca502ec36730c6b261713f71cda890319d5"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["往期待补审收录；进行中，项目自报差分结果未独立运行，README仍有未同步的路线图。", "当前README明确REA与AI Agent；不沿用原帖README未提AI的概括，不把共同署名量化为AI代码比例。"],
+    "en": {
+      "title": "Railroad Tycoon II: a Rust reimplementation assisted by REA and specialized AI agents",
+      "summary": "yibie highlights pedryvo/rrt2-decomp. Project documentation describes REA MCP/Ghidra analysis, specifications before Rust implementation, and differential comparisons against original functions and saves. It remains pre-alpha and was not run here.",
+      "description": "At 15:30 Beijing time on October 25, 2026, yibie introduced a Rust reverse-engineering/reimplementation project for Railroad Tycoon 2 in a resource-directory update, reporting AI participation found in commit trailers. Supplementary public-repository lookup identifies pedryvo/rrt2-decomp: it studies the 1998–2001 Railroad Tycoon II Platinum executable to retain its isometric view and gameplay while supporting modern resolutions. This is a previously deferred candidate, not a newly captured result from the October 26 00:00–04:00 window.\n\nThe README read statically explains that REA MCP connects to Ghidra and specialized AI agents divide the work. Strings, imports and data tables anchor subsystem analysis; specifications record addresses, constants and pseudocode before Rust implementation. Original functions run through Unicorn for bit-exact comparisons with Rust; whole-game behavior is compared field by field by advancing the same save in the original under Wine and in the reimplementation. Commit 0d26aca, dated October 23 at 23:03:18 UTC, credits Claude Opus 5.5 as co-author on reports, charts and CSV export. This supports AI collaboration, not a measured proportion of AI-written code.\n\nThe README reports 2,945 functions, 616 specified and 304 verified bit-exact, plus agreement in all 131 save-advancement scoreboard cases. These are project-reported results, not tests rerun by this collection, and do not establish recovery of every function or all game semantics. It remains labeled pre-alpha, with partial file-format, simulation, UI and multiplayer work; roadmap labels are not fully synchronized with later implementation progress. Windows/macOS builds are explicitly untested by the author. The entry therefore remains in progress, not an accepted complete-game reconstruction.\n\nThe candidate says the README did not mention AI, but the documentation now read explicitly describes specialized AI agents and REA; that generalization is corrected rather than repeated. Eight stars, 421 files and 20 trailers are only the post's snapshot and were not recounted here. The project requires legitimately owned original game data, which this entry does not distribute. Supplementary repository material predates this run's window and is used for identity and methodology checks. No dependencies were installed, game assets downloaded, project code executed or visuals, performance and save results independently verified.",
+      "metadata": ["Previously deferred candidate; in progress, with project-reported differential results not independently rerun and a partly stale README roadmap.", "The current README explicitly names REA and AI agents, correcting the post's no-AI-in-README generalization. Co-authorship is not a measured AI-code percentage."],
+      "source_labels": ["Previously deferred candidate: yibie introduces two independent game projects, October 25, 2026 Beijing time", "Supplementary project README at fixed commit 0d26aca, October 23, 2026 UTC", "Public reports implementation commit crediting Claude Opus 5.5, October 23, 2026 UTC"]
+    }
+  },
+  {
+    "id": "strikers-charged-vita-claude-port",
+    "title": "Mario Strikers Charged：人类真机测试、Claude协作的PS Vita移植",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "yibie推荐CBOC-Vita-Lab的Wii游戏到Vita移植；项目确认Claude等AI协作、人工指导与真机测试，复用既有反编译及vitaGL。1.1的帧率和延迟为项目自报，未独立运行。",
+    "description": "2026年10月25日15:30（北京时间），yibie在同一资源更新中另介绍Mario Strikers Charged的PS Vita原生移植，并称从19处提交trailer识别AI参与。补查公开仓库CBOC-Vita-Lab/strikers-charged-vita，目标是让Wii足球游戏在Vita上运行：项目描述把游戏代码重建为Vita处理器代码、为图形芯片重写渲染器，并适配按键、触控、声音和存档，不是流式游玩或整机模拟器。这些是项目实现说明，本合集没有真机验证。\n\nREADME致谢明确由Claude及其他AI助手编码、人类指导和真机游玩测试，建立在yannicksuter/mscharged-decomp既有反编译、vitaGL与VitaSDK之上，不能把前人工作全部归为本次AI原创反编译。10月24日04:50:42 UTC的e80d886提交带Claude Opus 5.5共同署名，报告把带表情的面部蒙皮移到GPU、减少重复解码，并称回放时渲染线程每帧ARM指令少16%、游戏线程少3%；这是项目测量口径，不是本合集基准。REA使用未获确认。\n\n补读固定4fbe675提交（10月25日03:43:38 UTC）的README，1.1版自报轻场景最高60fps、通常30fps，进球回放与庆祝约20至25fps，普通操作延迟约0.1秒；不能把最高60fps当全程锁定。项目仍列已知问题、不同场景性能差别及后续工作。它要求用户自备Wii USA Rev 1游戏数据，不在本合集提供游戏、安装包或运行指导。\n\n这是往期待补审项目，补充公开提交和文档早于10月26日00:00至04:00窗口，只用于确认项目身份、AI分工与具体限制。原帖6星、4146文件和19处trailer未重数，不作为能力验证。未安装依赖、执行代码、下载游戏资产或独立测试移植的原生执行、帧率、输入与存档；状态保留进行中。当前README已明确AI协作，不沿用原帖仅凭trailer才可知道AI参与的概括。",
+    "sources": [
+      {"label": "往期候选：yibie介绍Vita移植，2026-10-25北京时间", "url": "https://x.com/i/status/2114258253253329233"},
+      {"label": "补充项目README与AI/人工分工，固定4fbe675，2026-10-25 UTC", "url": "https://github.com/CBOC-Vita-Lab/strikers-charged-vita/blob/4fbe6759ea0f255364666534551aee7fb3676549/README.md"},
+      {"label": "GPU面部蒙皮实现及Claude共同署名，2026-10-24 UTC", "url": "https://github.com/CBOC-Vita-Lab/strikers-charged-vita/commit/e80d886e2f7b262defb22f9ffb1a535e174f560a"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["进行中；基于既有mscharged-decomp、vitaGL和VitaSDK，人类指导与项目真机测试不等于本合集独立复现。", "1.1性能为项目自报且因场景而异；REA使用未知，不分发原游戏数据。"],
+    "en": {
+      "title": "Mario Strikers Charged: a Claude-assisted PS Vita port directed and console-tested by a human",
+      "summary": "yibie highlights CBOC-Vita-Lab's Wii-to-Vita port. The project credits Claude and other assistants, human direction and console tests, building on an existing decompilation and vitaGL. Version 1.1 frame rates and latency are project reports, not independently rerun results.",
+      "description": "At 15:30 Beijing time on October 25, 2026, yibie's resource update separately introduced a native PS Vita port of Mario Strikers Charged, saying AI involvement was identified through 19 commit trailers. Public-repository lookup identifies CBOC-Vita-Lab/strikers-charged-vita. Its goal is to run the Wii football game on Vita: documentation describes rebuilding game code for the Vita processor, rewriting the renderer for its graphics chip and adapting buttons, touch, audio and saves rather than streaming or full-console emulation. These are project implementation statements, not console verification by this collection.\n\nREADME credits explicitly describe coding by Claude and other AI assistants, directed and play-tested on real hardware by a human. The work builds on yannicksuter/mscharged-decomp, vitaGL and VitaSDK; prior decompilation must not all be attributed to new AI work. Commit e80d886, dated October 24 at 04:50:42 UTC, credits Claude Opus 5.5 and reports moving expressive facial skinning to the GPU and reducing repeated decoding. It reports 16% fewer ARM instructions per frame in the replay renderer thread and 3% fewer in the game thread, a project measurement rather than this collection's benchmark. REA use is unconfirmed.\n\nThe README at fixed commit 4fbe675, dated October 25 at 03:43:38 UTC, reports version 1.1 reaching up to 60 fps in light scenes, usually 30 fps, about 20–25 fps for goal replays and celebrations, and about 0.1 seconds of normal input delay. Up to 60 fps is not a locked frame rate throughout. Known issues, scene-dependent performance and further work remain documented. Users need their own Wii USA Rev 1 game data; this collection supplies no game, package or operating instructions.\n\nThis is a previously deferred project. Supplementary public commits and documentation predate the October 26 00:00–04:00 window and establish identity, AI division of labor and concrete limits. The candidate's six stars, 4,146 files and 19 trailers were not recounted and do not verify capability. No dependencies were installed, code executed, game assets downloaded or native execution, performance, input and saves independently tested. It remains in progress. The README now explicitly credits AI collaboration, so the candidate's implication that only trailers disclose AI involvement is not repeated.",
+      "metadata": ["In progress; builds on mscharged-decomp, vitaGL and VitaSDK. Human direction and project console tests are not independent reproduction by this collection.", "Version 1.1 performance is project-reported and scene-dependent. REA use is unknown; no original game data is distributed."],
+      "source_labels": ["Previously deferred candidate: yibie introduces the Vita port, October 25, 2026 Beijing time", "Supplementary README and AI/human credits at fixed commit 4fbe675, October 25, 2026 UTC", "GPU facial-skinning implementation crediting Claude, October 24, 2026 UTC"]
+    }
+  },
+  {
+    "id": "tesla-hw3-hw4-rea-software-idea",
+    "title": "Tesla HW3：读者设想用REA研究并适配HW4软件",
+    "category": "hardware",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "GamerTex问能否让AI Agent与REA研究HW3 Tesla、升级最新HW4软件；只是具名跨代适配想法，没有代码、兼容性或车辆测试。",
+    "description": "2026年10月26日02:23（北京时间），GamerTex（@GamerTex）向Grok提问，何时会有人用带REA的AI Agent研究一辆HW3 Tesla，再升级到最新HW4软件。目标是让旧一代车载硬件获得新一代软件能力，属于具体设备代际适配idea；不把提问理解成已有项目或Grok已经参与。\n\n原帖没有车辆型号、软件版本、待适配功能、接口差异、分析步骤或实现，也没有说明已经开始逆向。没有证据表明软件能弥补两代硬件差异、能直接刷入新版本或保持驾驶安全。补查原帖仅确认作者和措辞，本合集未访问车辆、固件或驾驶控制系统，未测试可行性；按未验证想法收录，不提供车辆改写或运行指导。",
+    "sources": [{"label": "GamerTex提出HW3到HW4软件适配问题，2026-10-26北京时间", "url": "https://x.com/i/status/2114422720683294847"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["未实施idea；未指定车辆、软件版本或目标功能，不能视为硬件升级或安全可行性证明。"],
+    "en": {
+      "title": "Tesla HW3: a reader proposes investigating HW4 software adaptation with REA",
+      "summary": "GamerTex asks about an AI agent using REA on a HW3 Tesla to upgrade to current HW4 software. This is a specific cross-generation adaptation idea, without code, compatibility evidence or vehicle tests.",
+      "description": "At 02:23 Beijing time on October 26, 2026, GamerTex (@GamerTex) asked Grok how long it would be before someone used an AI agent with REA on a HW3 Tesla to upgrade to the latest HW4 software. The aim is to bring newer software capabilities to an older hardware generation. It is a concrete device-generation adaptation idea, not an existing project or proof that Grok has participated.\n\nThe post supplies no vehicle model, software version, feature to adapt, interface differences, analysis steps or implementation, and does not say reversing has started. There is no evidence that software can compensate for hardware differences, that a newer build can simply be flashed or that driving safety would be preserved. Supplementary lookup only confirmed authorship and wording. This collection accessed no vehicle, firmware or driving-control system and did not test feasibility. It remains an unverified idea, without instructions to modify or operate a vehicle.",
+      "metadata": ["Unimplemented idea; no vehicle, software version or feature is specified. It is not proof of a hardware upgrade or safe feasibility."],
+      "source_labels": ["GamerTex asks about HW3-to-HW4 software adaptation, October 26, 2026 Beijing time"]
+    }
+  },
+  {
+    "id": "jshookmcp-search-first-re-workspace",
+    "title": "jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "related-project",
+    "summary": "Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。",
+    "description": "2026年10月26日01:56（北京时间），Dan Kornas（@DanKornas）介绍jshook，针对AI Agent逆向Web应用时一开始就塞入大量MCP schema、占用上下文的问题，先开放可搜索的小工具面，调查需要时再升级至workflow或full配置。作者是在介绍项目，不据此归为仓库开发者。\n\n补充查到公开仓库vmoranv/jshookmcp，其README与候选的search-first、profile-aware及AGPL-3.0描述一致。读取的固定提交abbbd40e49435c71859718c0f6ecf791a9af3e4b提交于10月25日17:12:19北京时间，早于候选窗口；用来说明项目设计，不当本轮新发布。文档描述Chromium/Camoufox的CDP驱动、WebSocket/HTTP/GraphQL与Burp桥接、JavaScript反混淆与source map重建、WASM反汇编、Frida/Ghidra/IDA等原生分析桥接，以及可热加载插件和声明式工作流。\n\nREADME把search元数据估为约3K tokens，full的735工具约109K tokens，并明确测量日期为10月10日、需随目录增长重测。这是项目自报的配置开销，不是独立模型效率基准；本记录不据此声称检出率更高、无source map时恢复成功或任意应用可逆向。没有指定真实目标的分析/重建验收记录，本合集只静态阅读介绍和文档，没有安装、接浏览器、调用目标工具或运行测试；REA不是此项目的已确认引擎。按相关AI逆向工具项目收录。",
+    "sources": [
+      {"label": "Dan Kornas介绍jshook搜索优先工作区，2026-10-26北京时间", "url": "https://x.com/i/status/2114415785720623360"},
+      {"label": "补充公开项目README，固定提交abbbd40，2026-10-25", "url": "https://github.com/vmoranv/jshookmcp/blob/abbbd40e49435c71859718c0f6ecf791a9af3e4b/README.md"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["相关工具项目，未运行；候选介绍者不等于仓库作者，REA引擎未确认。", "约3K/109K tokens及735工具是README注明10月10日测量的自报快照，不是独立效果基准。"],
+    "en": {
+      "title": "jshook: a search-first MCP workspace that loads reverse-engineering tools for AI agents on demand",
+      "summary": "Dan Kornas introduces jshook's search-first workspace. Public vmoranv/jshookmcp documentation describes expandable tool profiles, browser traffic, JS deobfuscation, WASM and native-analysis bridges. It was not installed or tested here.",
+      "description": "At 01:56 Beijing time on October 26, 2026, Dan Kornas (@DanKornas) introduced jshook as a response to large MCP schema catalogs consuming an AI agent's context before web-application investigation begins. A small searchable tool surface is exposed first, with promotion to workflow or full profiles when needed. The poster is introducing the project, not established here as its repository developer.\n\nSupplementary lookup found the public vmoranv/jshookmcp repository, whose README matches the candidate's search-first, profile-aware and AGPL-3.0 description. The fixed commit read, abbbd40e49435c71859718c0f6ecf791a9af3e4b, is dated October 25 at 17:12:19 Beijing time, before the candidate window. It explains the design rather than constituting a new release in this window. Documentation describes Chromium/Camoufox CDP control, WebSocket/HTTP/GraphQL and Burp bridges, JavaScript deobfuscation and source-map reconstruction, WASM disassembly, native-analysis bridges including Frida/Ghidra/IDA, hot-reload plugins and declarative workflows.\n\nThe README estimates search metadata at about 3K tokens and the full 735-tool profile at about 109K tokens, explicitly dating the measurement to October 10 and asking for remeasurement as the catalog grows. This is project-reported configuration overhead, not an independent model-efficiency benchmark. It does not establish better detection rates, successful recovery without source maps or universal application reversal. No named target's analysis/reconstruction acceptance record was obtained. This collection only read the introduction and documentation, without installing it, attaching a browser, invoking target tools or running tests. REA is not a confirmed engine of this project. It is included as a related AI reverse-engineering tool project.",
+      "metadata": ["Related tool project, not run here; the introducing poster is not established as the repository author, and a REA engine is unconfirmed.", "About 3K/109K tokens and 735 tools are the README's self-reported snapshot measured October 10, not an independent effectiveness benchmark."],
+      "source_labels": ["Dan Kornas introduces jshook's search-first workspace, October 26, 2026 Beijing time", "Supplementary public project README at fixed commit abbbd40, October 25, 2026"]
+    }
+  },
+  {
+    "id": "vortex-all-mod-sites-ai-rebuild-idea",
+    "title": "Vortex：让AI研究并重做兼容更多Mod站点的管理器想法",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "The Floofy Poofy建议用AI反编译并重做Vortex，使其支持所有Mod网站；仅为互通需求，没有实现、站点协议或兼容性测试。",
+    "description": "2026年10月26日02:24（北京时间），The Floofy Poofy（@TheFloofyPoofy）在给AyakaMods的回复中，建议用AI反编译并重做Vortex，让这个Mod管理器能够配合所有Mod网站工作。具体需求是扩展站点互通，而不是某个游戏的内容Mod。\n\n作者以建议语气提出这一目标，没有说已开始开发，也没有指定模型、REA、Vortex版本、目标站点、下载/登录接口或测试。所有站点是愿望范围，不是已支持列表。补查原帖确认作者和措辞；本合集没有分析Vortex或站点、运行工具或取得代码。按未验证idea收录，不确认必须反编译才能实现，也不推断站点授权、API可用性或法律结论。",
+    "sources": [{"label": "TheFloofyPoofy建议AI重做Vortex并扩展Mod站点互通，2026-10-26北京时间", "url": "https://x.com/i/status/2114422885607763991"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["未实施想法；所有站点为目标而非兼容结果，未给版本、模型或接口，REA未确认。"],
+    "en": {
+      "title": "Vortex: an idea for AI-assisted reconstruction of a manager compatible with more mod sites",
+      "summary": "The Floofy Poofy suggests AI decompilation and reconstruction of Vortex to work with all mod sites. This is an interoperability request, without implementation, site protocols or compatibility tests.",
+      "description": "At 02:24 Beijing time on October 26, 2026, The Floofy Poofy (@TheFloofyPoofy), replying to AyakaMods, proposed using AI to decompile and remake Vortex so the mod manager would work with all mod sites. The specific goal is site interoperability, not a content mod for one game.\n\nThe author makes a suggestion rather than reporting development already started. No model, REA use, Vortex version, destination site, download/login interface or test is specified. All sites describes the aspiration, not a supported list. Supplementary lookup confirmed the author and wording. This collection neither analyzed Vortex or sites nor ran tools or obtained code. The entry remains an unverified idea; it does not establish that decompilation is necessary, site authorization, API availability or any legal conclusion.",
+      "metadata": ["Unimplemented idea; all sites is an objective, not a compatibility result. No version, model or interface is supplied, and REA use is unconfirmed."],
+      "source_labels": ["TheFloofyPoofy proposes AI reconstruction of Vortex for broader mod-site interoperability, October 26, 2026 Beijing time"]
+    }
+  },
+  {
+    "id": "serum2-codex-rea-license-removal-report",
+    "title": "Serum 2：作者声称Codex配REA分析合成器并移除许可检查",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "glawniyliberal报告在Codex中使用REA分析Xfer Serum 2，声称移除许可检查以制作音乐；未提供可核对的版本、分析日志或测试，不确认完整反编译或通用破解。",
+    "description": "2026年10月26日02:41（北京时间），俄语作者фолсмемори（@glawniyliberal）称当天尝试在Codex中使用elder_plinius相关内容，要求移除Xfer Serum 2的许可限制以制作音乐。Serum 2是此帖具名的音乐合成器目标；作者声称Codex通过REA完整反编译并移除了许可检查。\n\n收录的是一个具体目标的AI辅助逆向自述，不是许可绕过已被本合集验证。补查原帖确认作者及有一张附图，但未核验图中操作，没有取得精确版本、样本、反编译覆盖率、修改差异、授权状态、启动或音频输出测试。完整反编译及许可已移除均归于作者，不扩展为全部版本、所有授权机制或原始源码恢复。\n\n本合集没有展开下载目标或补丁、执行代码、安装依赖或测试绕过，不转录提示词、补丁和操作步骤。后续本窗口转述2114440694693605419没有提供独立验证，不重复开案，也不把零编程知识的宣传当实验条件。本条不提供侵权许可或法律判断，状态保持待验证。",
+    "sources": [{"label": "glawniyliberal的Serum 2/Codex/REA许可移除自述，2026-10-26北京时间", "url": "https://x.com/i/status/2114427189647327597"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["作者自述；精确版本、完整反编译、修改与音乐输出未独立验证，未下载或执行目标。", "只记研究对象、工具和报告边界；不发布绕过方法、补丁或未授权产物。"],
+    "en": {
+      "title": "Serum 2: an author claims Codex/REA analysis of the synthesizer and license-check removal",
+      "summary": "glawniyliberal reports analyzing Xfer Serum 2 with REA in Codex and claims license-check removal to make music. No verifiable version, analysis logs or tests were obtained; complete decompilation or a general crack is not established.",
+      "description": "At 02:41 Beijing time on October 26, 2026, Russian-language author фолсмемори (@glawniyliberal) said they had tried elder_plinius-related material in Codex that day and requested removal of Xfer Serum 2's licensing restriction to make music. Serum 2 is the named music-synthesizer target. The author claims Codex completely decompiled it through REA and removed the license check.\n\nThis records an AI-assisted reversing claim tied to a specific target, not a license bypass verified by this collection. Supplementary lookup confirmed the author and one attached image, but the pictured operation was not validated. No precise version, sample, decompilation-coverage measure, modification diff, authorization status, launch test or audio-output test was obtained. Complete decompilation and license removal remain author claims and are not extended to every version, all licensing mechanisms or recovery of original source.\n\nThis collection did not follow target or patch downloads, execute code, install dependencies or test a bypass, and does not reproduce prompts, patches or procedural steps. A later retelling in this window, 2114440694693605419, provides no independent verification and is not a second case; the claim of zero coding knowledge is not treated as a controlled experimental condition. The entry grants no infringement permission or legal conclusion and remains unverified.",
+      "metadata": ["Author report; precise version, complete decompilation, modifications and music output were not independently verified. The target was not downloaded or executed.", "Records only the target, tools and evidence limits; no bypass method, patch or unauthorized artifact is published."],
+      "source_labels": ["glawniyliberal's Serum 2/Codex/REA license-removal report, October 26, 2026 Beijing time"]
+    }
+  },
+  {
+    "id": "devon-ps5-freebsd-webkit-codex-source-analysis",
+    "title": "PS5安全架构：Devon用Codex/ChatGPT追FreeBSD与WebKit源码，报告过滤和账号停用",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "analysis-test",
+    "summary": "Devon称用Codex/ChatGPT追FreeBSD 11与WebKit的调用链、布局和生命周期，研究PS5固件架构；模型给源码引用，但反复触发过滤并报告停用，未取得原研究仓库或独立测试。",
+    "description": "2026年10月26日02:49（北京时间），Devon（@Devon8zzh）说明自己的PS5固件安全架构研究：用Codex/ChatGPT阅读FreeBSD release/11.0.0内核及WebKit浏览器引擎的公开源码，要求沿实际源文件追调用链、数据结构布局、分配模式和生命周期。两个代码库是同一PS5研究的输入，而非声称完成两个独立软件重建。\n\n作者说问题指定文件、行号和提交哈希，举出sys/kern/kern_umtx.c与struct kaiocb的分配路径，模型回应附GitHub源码永久链接。这里保留作者举例，不据此断言该结构实际分配位置或引用正确。作者说没有生成工具、利用或恶意代码，也没有访问/攻击系统；这些是其对研究范围的说明，不是本合集对全部账号活动的审计。\n\n补查同串02:49:47的后续，作者称Astra已回答130余问并附完整源码引用，相关公开研究约282星，且PR45合入一份学术措辞指南；原仓库仍为未展开短链，未核对问答、PR状态、星数或研究结论。作者报告Daybreak多次过滤，并推测可能导致账号停用，同时说尊重模型可提供帮助的边界。不能把时间关联写成平台已确认封禁原因、政策违规或漏洞已被发现。\n\n此案例保留AI辅助理解与追溯既有代码架构的分析测试及负面使用反馈，不是PS5越狱、固件破解或WebKit漏洞利用报告。REA使用未知，本合集未取私有账号材料、运行目标代码或独立核对全部源码链路；状态不表示漏洞或安全结论已经验证。",
+    "sources": [
+      {"label": "候选：Devon说明FreeBSD/WebKit与PS5研究、过滤边界，2026-10-26北京时间", "url": "https://x.com/i/status/2114429136794169495"},
+      {"label": "同窗作者补充130余问、公开研究及PR45主张，2026-10-26北京时间", "url": "https://x.com/i/status/2114429228959846677"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["PS5架构为一个研究目标，FreeBSD11/WebKit为源码输入；原仓库、源码引用正确性及PR45未核验。", "130余问、282星、过滤与账号停用均为作者说法；未确认封禁因果或漏洞，REA未确认。"],
+    "en": {
+      "title": "PS5 security architecture: Devon traces FreeBSD/WebKit with Codex/ChatGPT and reports filtering and account deactivation",
+      "summary": "Devon reports using Codex/ChatGPT to trace FreeBSD 11 and WebKit call chains, layouts and lifecycles for PS5 firmware-architecture research. Responses reportedly cited source, but repeated filtering and deactivation followed; the research repository and independent tests were not obtained.",
+      "description": "At 02:49 Beijing time on October 26, 2026, Devon (@Devon8zzh) described PS5 firmware-security architecture research using Codex/ChatGPT to read public FreeBSD release/11.0.0 kernel and WebKit browser-engine source. Prompts requested call chains, data-structure layouts, allocation patterns and lifecycles traced through actual source files. The two codebases are inputs to one PS5 investigation, not two independently completed software reconstructions.\n\nThe author says prompts specified files, line numbers and commit hashes, giving sys/kern/kern_umtx.c and struct kaiocb's allocation path as an example, and responses included GitHub source permalinks. This preserves the author's example without asserting the structure's actual allocation location or correctness of citations. The author says no tools, exploits or malicious code were created and no systems accessed or attacked. These are statements about research scope, not this collection's audit of all account activity.\n\nSupplementary lookup of the same thread's 02:49:47 follow-up found claims that Astra had answered more than 130 questions with full source citations, that the public research had about 282 stars, and that PR45 had merged an academic-wording guide. The repository remains an unexpanded short link; questions, PR status, star count and research conclusions were not checked. The author reports repeated Daybreak filtering and speculates it may have contributed to account deactivation, while saying model-assistance boundaries were respected. Temporal association must not become a platform-confirmed ban reason, policy violation or discovery of a vulnerability.\n\nThis entry retains an analysis test of AI-assisted understanding and tracing of existing code architecture, together with negative usage feedback. It is not a PS5 jailbreak, firmware crack or WebKit exploit report. REA use is unknown. This collection accessed no private account material, ran no target code and did not independently validate all source chains; the status does not mean a vulnerability or security conclusion was verified.",
+      "metadata": ["PS5 architecture is one research target, with FreeBSD 11/WebKit as source inputs. The original repository, citation correctness and PR45 were not verified.", "More than 130 questions, 282 stars, filtering and account deactivation are author claims, not confirmed ban causation or vulnerabilities; REA use is unconfirmed."],
+      "source_labels": ["Candidate: Devon on FreeBSD/WebKit PS5 research and filtering boundaries, October 26, 2026 Beijing time", "Same-window author follow-up claiming 130-plus questions, public research and PR45, October 26, 2026 Beijing time"]
+    }
+  },
+  {
+    "id": "samshush-frame-codex-astra-cleanup",
+    "title": "Samshush：Matt Silverlock用Codex/Astra研究Samsung Frame并关闭选定后台服务",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Matt Silverlock发布agent优先的Samshush，称在Windows的Codex/Astra中改用网络登录研究Frame电视，关闭选定语音、广告和遥测服务；公开文档限定一款Frame Pro及固件，不是所有三星电视的通用修复。",
+    "description": "2026年10月26日01:09（北京时间），Matt Silverlock（@elithrar）在Samshush发布串中明确说，工作在Windows电脑、普通Pro订阅的Codex与Astra中完成。最初他想修接收器音量的休眠/唤醒问题，打算构建并签名自己的固件；Astra建议改走网络登录。作者感谢lucataco的LG主页改造和log4j的三星调查，但Samshush是他自己Frame电视的独立项目，不能并成log4j的成果。\n\n作者称工具关闭或清理选定的麦克风/监听、广告、遥测、存在感知和eMudhra根证书，通过启动脚本让部分改动在重启后重新应用，并关闭自动固件更新避免失效。这是研究并调整原系统服务的报告，不是成功重签或刷入定制固件。\n\n补充阅读10月26日19:35:13北京时间提交e70d2bb3800daf344b4227c452f0c630b966f446的公开README；这晚于严格候选窗口，仅用于界定当前实现。文档把支持范围限定为Frame Pro QN65LS03FWFXZA、固件1301.0，描述经Samsung SDB连接、临时root和Python工具保存原状态，禁用而非卸载App，提供恢复和可选启动钩子。它称保留HDMI-CEC、ARC/eARC、播放、网络、手动Art Mode等核心功能；部分存在感知和免手语音会损失，共享传感服务等需保留。README明确仍可能有其他遥测及麦克风输入，固件更新会重置改动或修补root路径，不证明已消除全部采集。\n\n同一文档声明用GPT-6 Astra开发，原帖没有确认REA使用。源码和文档公开不等于本合集已经验证root、重启持久性、恢复或隐私效果；没有安装依赖、执行目标代码或连接电视。按有公开项目的未验证作者报告收录，不把服务能力、作者措辞或证书过滤当作实际监听外传及证书遭滥用的证明。",
+    "sources": [
+      {"label": "候选：Matt说明Codex/Astra、Windows及网络登录建议，2026-10-26 01:09北京时间", "url": "https://x.com/i/status/2114403952468910538"},
+      {"label": "作者Samshush发布与服务清理目标，2026-10-26北京时间", "url": "https://x.com/i/status/2114403936476033220"},
+      {"label": "作者报告Frame、启动脚本与重启持久性，2026-10-26北京时间", "url": "https://x.com/i/status/2114403940301418754"},
+      {"label": "窗口后公开README，固定提交e70d2bb，2026-10-26 19:35北京时间", "url": "https://github.com/elithrar/samshush/blob/e70d2bb3800daf344b4227c452f0c630b966f446/README.md"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["作者报告；补充README晚于00:00至04:00候选窗口，未执行代码或测试电视。", "文档支持Frame Pro QN65LS03FWFXZA、1301.0；非通用三星兼容保证，REA未确认。", "禁用App及选定服务而非刷固件或证明停止全部遥测；启动钩子与固件更新各有风险。"],
+    "en": {
+      "title": "Samshush: Matt Silverlock uses Codex/Astra to investigate a Samsung Frame and disable selected services",
+      "summary": "Matt Silverlock releases the agent-first Samshush toolkit, reporting network-based investigation of a Frame TV using Codex/Astra on Windows and disabling selected voice, advertising and telemetry services. Public documentation limits support to one Frame Pro model and firmware, not every Samsung TV.",
+      "description": "At 01:09 Beijing time on October 26, 2026, Matt Silverlock (@elithrar) explicitly said in his Samshush launch thread that he did the work in Codex with Astra on a Windows computer using a regular Pro subscription. He initially wanted to fix receiver-volume suspend/wake issues and planned to build and sign his own firmware; Astra suggested network login instead. He credits lucataco's LG home-screen modifications and log4j's Samsung investigation, but Samshush is his independent Frame TV project, not log4j's result.\n\nThe author reports disabling or cleaning up selected microphone/listening, advertising, telemetry, presence-detection and eMudhra trust-root components, using startup scripts to reapply some changes after reboots, and turning off automatic firmware updates to avoid breakage. This describes investigating and adjusting the existing system's services, not successfully signing or flashing custom firmware.\n\nSupplementary reading covered the public README at commit e70d2bb3800daf344b4227c452f0c630b966f446, dated October 26 at 19:35:13 Beijing time. This is after the strict candidate window and only bounds the current implementation. Documentation limits support to the Frame Pro QN65LS03FWFXZA running firmware 1301.0, describing Samsung SDB connectivity, temporary root and Python tools that save the original state, disable rather than uninstall apps, and offer restoration and an optional startup hook. It reports preserving HDMI-CEC, ARC/eARC, playback, networking, manual Art Mode and other core functions; some presence detection and hands-free voice functionality are lost, while shared sensor services need preservation. The README explicitly leaves other telemetry and microphone inputs outside coverage. Firmware updates can reset changes or patch the root route, so this does not establish elimination of all collection.\n\nThe same document credits GPT-6 Astra development; the original post does not confirm REA use. Public source and documentation do not mean this collection verified root access, reboot persistence, restoration or privacy effects. No dependencies were installed, target code executed or television connected. This remains an unverified author report with a public project, not proof that described service capabilities, the author's wording or certificate filtering demonstrate actual audio exfiltration or certificate abuse.",
+      "metadata": ["Author report; the supplementary README postdates the 00:00–04:00 candidate window. No code or television tests were run.", "Documentation supports Frame Pro QN65LS03FWFXZA firmware 1301.0, not universal Samsung compatibility. REA use is unconfirmed.", "Disables apps and selected services, not a firmware flash or proof of ending all telemetry; startup hooks and firmware updates carry risks."],
+      "source_labels": ["Candidate: Matt on Codex/Astra, Windows and the network-login suggestion, October 26, 2026 at 01:09 Beijing time", "Author's Samshush launch and service-cleanup objectives, October 26 Beijing time", "Author reports Frame, startup scripts and reboot persistence, October 26 Beijing time", "Post-window public README at fixed commit e70d2bb, October 26, 2026 at 19:35 Beijing time"]
+    }
+  },
+  {
+    "id": "inpatient-psvr-ai-decompilation-idea",
+    "title": "The Inpatient：PSVR电源不在身边时，读者提出AI反编译游戏的idea",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Sanghaili因PSVR电源留在大学、不想再买一个，询问AI反编译工具能否处理The Inpatient；仅为具体游戏访问需求，未有移植或可玩实现。",
+    "description": "2026年10月26日00:25（北京时间），Brandon Ryan Beaumont（@Sanghaili）发帖询问，AI反编译工具能否反编译The Inpatient。作者说自己把PSVR的电源适配器留在大学，暂时不想另买一个，因此提出这一游戏访问需求。\n\n这是以具体游戏和硬件不便为背景的AI辅助反编译idea，不是开发进度或成功报告。原帖没有指定模型、工具、目标平台、非VR控制方案或源码，也未说明已经开始分析。不能据此写成PC移植、去除VR依赖或已经无需PSVR游玩。\n\n补查原帖确认作者身份及原始措辞；未取得实现、测试或演示，REA使用未知，本合集未反编译或运行游戏。按待验证想法收录，保留提问而非成果的边界。",
+    "sources": [{"label": "Sanghaili询问AI反编译The Inpatient，2026-10-26（北京时间）", "url": "https://x.com/i/status/2114392847088783744"}],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["具体idea而非实现；未指定目标平台、模型或工具，REA使用未知。", "动机为PSVR电源留在大学，不证明能去除VR依赖或替代硬件。"],
+    "en": {
+      "title": "The Inpatient: a reader proposes AI decompilation while away from their PSVR power supply",
+      "summary": "With the PSVR power supply left at university and no wish to buy another, Sanghaili asks whether AI decompilers could handle The Inpatient. This is a specific game-access idea, not a port or playable implementation.",
+      "description": "At 00:25 Beijing time on October 26, 2026, Brandon Ryan Beaumont (@Sanghaili) asked whether AI decompilers could decompile The Inpatient. The author said the PSVR power adapter had been left at university and they did not currently want to buy another, providing a concrete game-access motivation.\n\nThis is an AI-assisted decompilation idea tied to a named game and a hardware inconvenience, not a progress or success report. The post names no model, tool, destination platform, non-VR control scheme or source code, and does not say analysis has begun. It must not be presented as a PC port, removal of VR dependencies or an already playable version without PSVR.\n\nSupplementary lookup confirmed the author's identity and original wording. No implementation, tests or demonstration were obtained; REA use is unknown, and this collection neither decompiled nor ran the game. The entry remains an unverified idea, preserving the distinction between a question and an outcome.",
+      "metadata": ["A specific idea, not an implementation; no destination platform, model or tool is named, and REA use is unknown.", "The motivation is a PSVR power supply left at university; this does not establish removal of VR dependencies or replacement of hardware."],
+      "source_labels": ["Sanghaili asks about AI decompilation of The Inpatient, October 26, 2026 (Beijing time)"]
+    }
+  },
+  {
     "id": "eduard-pocket-contact-name-transcription-rebuild",
     "title": "Pocket转写改造：Eduard导入联系人名字以改善人名拼写",
     "category": "apps",

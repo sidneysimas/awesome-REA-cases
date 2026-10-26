@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **922 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **931 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（201）
-- [硬件与设备互通](categories/hardware.md)（247）
-- [应用与客户端](categories/apps.md)（393）
+- [游戏与游戏保存](categories/games.md)（204）
+- [硬件与设备互通](categories/hardware.md)（250）
+- [应用与客户端](categories/apps.md)（396）
 - [算法与功能重建](categories/algorithms.md)（81）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Railroad Tycoon II：REA与专职AI Agent辅助的Rust重实现](cases/rrt2-decomp-rea-rust-reimplementation.md) — yibie推荐pedryvo/rrt2-decomp；项目文档说明用REA MCP连接Ghidra、先记录规则再以Rust重写，并以原程序函数及存档作差分比较。仍为pre-alpha，未在本合集运行。 **[REA · 进行中]**
+- [Mario Strikers Charged：人类真机测试、Claude协作的PS Vita移植](cases/strikers-charged-vita-claude-port.md) — yibie推荐CBOC-Vita-Lab的Wii游戏到Vita移植；项目确认Claude等AI协作、人工指导与真机测试，复用既有反编译及vitaGL。1.1的帧率和延迟为项目自报，未独立运行。 **[其他 AI 逆向 · 进行中]**
+- [The Inpatient：PSVR电源不在身边时，读者提出AI反编译游戏的idea](cases/inpatient-psvr-ai-decompilation-idea.md) — Sanghaili因PSVR电源留在大学、不想再买一个，询问AI反编译工具能否处理The Inpatient；仅为具体游戏访问需求，未有移植或可玩实现。 **[其他 AI 逆向 · 待验证]**
 - [BreezySRPG95：Quof用Claude反汇编旧运行器，制作战棋游戏替代客户端](cases/quof-breezysrpg95-claude-interpreter.md) — Quof报告参考REA、用Claude Code CLI反汇编原可执行文件，重建SRPG Maker 95客户端；初期beta仅数人试用，公开仓库提供功能与兼容性说明。 **[其他 AI 逆向 · 进行中]**
 - [CS 1.6：Kirin用REA与Agent改Dust2楼梯、光剑和第三人称](cases/kirin-cs16-rea-dust2-mods.md) — Kirin Chen介绍自购CS 1.6的REA/AI Agent Mod视频，报告Dust2加楼梯、光剑对战与第三人称视角；未独立运行或核验Mod文件。 **[REA · 待验证]**
 - [大富翁4：Kirin用REA与Agent做超小地图和点券大战](cases/kirin-richman4-rea-small-map-mods.md) — Kirin Chen称为自购大富翁4制作超小地图、点券大战并可局域网联机；属于REA/Agent Mod报告，不是既有Flutter iPhone重写项目。 **[REA · 待验证]**
@@ -230,6 +233,9 @@
 
 ### 硬件与设备互通
 
+- [Tesla HW3：读者设想用REA研究并适配HW4软件](cases/tesla-hw3-hw4-rea-software-idea.md) — GamerTex问能否让AI Agent与REA研究HW3 Tesla、升级最新HW4软件；只是具名跨代适配想法，没有代码、兼容性或车辆测试。 **[REA · 待验证]**
+- [PS5安全架构：Devon用Codex/ChatGPT追FreeBSD与WebKit源码，报告过滤和账号停用](cases/devon-ps5-freebsd-webkit-codex-source-analysis.md) — Devon称用Codex/ChatGPT追FreeBSD 11与WebKit的调用链、布局和生命周期，研究PS5固件架构；模型给源码引用，但反复触发过滤并报告停用，未取得原研究仓库或独立测试。 **[其他 AI 逆向 · 分析测试]**
+- [Samshush：Matt Silverlock用Codex/Astra研究Samsung Frame并关闭选定后台服务](cases/samshush-frame-codex-astra-cleanup.md) — Matt Silverlock发布agent优先的Samshush，称在Windows的Codex/Astra中改用网络登录研究Frame电视，关闭选定语音、广告和遥测服务；公开文档限定一款Frame Pro及固件，不是所有三星电视的通用修复。 **[其他 AI 逆向 · 待验证]**
 - [技嘉X870风扇控制：让Codex参考Windows配套软件补Linux支持的idea](cases/gigabyte-x870-codex-linux-fan-control-idea.md) — Bocchi calls Saul提出，即使技嘉不提供Linux的X870风扇控制固件，也可让Codex从Windows配套软件研究；尚无协议、驱动或实测。 **[其他 AI 逆向 · 进行中]**
 - [Kindle锁屏仪表盘：Cortiq称Claude辅助识别固件、越狱与去广告](cases/cortiq-kindle-claude-lockscreen-dashboard-report.md) — Cortiq报告用Claude Code把Kindle广告锁屏换成时钟、天气、日历、待办与X粉丝数仪表盘；未给型号、固件、代码或续航测量，不归因为发现新越狱漏洞。 **[其他 AI 逆向 · 待验证]**
 - [kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价](cases/codex-kindle-ai-spending-dashboard-report.md) — 社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。 **[其他 AI 逆向 · 待验证]**
@@ -480,6 +486,9 @@
 
 ### 应用与客户端
 
+- [jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区](cases/jshookmcp-search-first-re-workspace.md) — Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。 **[其他 AI 逆向 · 相关项目]**
+- [Vortex：让AI研究并重做兼容更多Mod站点的管理器想法](cases/vortex-all-mod-sites-ai-rebuild-idea.md) — The Floofy Poofy建议用AI反编译并重做Vortex，使其支持所有Mod网站；仅为互通需求，没有实现、站点协议或兼容性测试。 **[其他 AI 逆向 · 待验证]**
+- [Serum 2：作者声称Codex配REA分析合成器并移除许可检查](cases/serum2-codex-rea-license-removal-report.md) — glawniyliberal报告在Codex中使用REA分析Xfer Serum 2，声称移除许可检查以制作音乐；未提供可核对的版本、分析日志或测试，不确认完整反编译或通用破解。 **[REA · 待验证]**
 - [Pocket转写改造：Eduard导入联系人名字以改善人名拼写](cases/eduard-pocket-contact-name-transcription-rebuild.md) — Eduard Faus Gil称逆向并改进Pocket录音转写体验；作者补充具体改动是导入联系人名字，配合word boosting与LLM流程减少人名拼写错误，未开源。 **[未确认使用 REA · 待验证]**
 - [VLC样式播放器：TechSignal转述REA重建中的可用功能与缺陷](cases/techsignal-vlc-style-rea-player-experiment.md) — TechSignal报道AI辅助流程约10至15分钟做出VLC样式播放器，MP3和快捷键可用，但视频格式、目录导航与全屏仍有缺陷；原实验产物未取得。 **[REA · 待验证]**
 - [无需越狱的IPA解密：DrWhax报告LLM、Unicorn与IDA协同研究](cases/drwhax-ipa-decryption-llm-unicorn-ida-report.md) — Jurre van Bergen称在macOS27.0.1可无需越狱解密IPA；本轮回复明确LLM、Unicorn和IDA Pro，超过两周且需大量人工指导，不是全自动成果。 **[其他 AI 逆向 · 待验证]**

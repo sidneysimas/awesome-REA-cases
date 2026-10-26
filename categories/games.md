@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Railroad Tycoon II：REA与专职AI Agent辅助的Rust重实现](../cases/rrt2-decomp-rea-rust-reimplementation.md) — yibie推荐pedryvo/rrt2-decomp；项目文档说明用REA MCP连接Ghidra、先记录规则再以Rust重写，并以原程序函数及存档作差分比较。仍为pre-alpha，未在本合集运行。 **[REA · 进行中]**
+- [Mario Strikers Charged：人类真机测试、Claude协作的PS Vita移植](../cases/strikers-charged-vita-claude-port.md) — yibie推荐CBOC-Vita-Lab的Wii游戏到Vita移植；项目确认Claude等AI协作、人工指导与真机测试，复用既有反编译及vitaGL。1.1的帧率和延迟为项目自报，未独立运行。 **[其他 AI 逆向 · 进行中]**
+- [The Inpatient：PSVR电源不在身边时，读者提出AI反编译游戏的idea](../cases/inpatient-psvr-ai-decompilation-idea.md) — Sanghaili因PSVR电源留在大学、不想再买一个，询问AI反编译工具能否处理The Inpatient；仅为具体游戏访问需求，未有移植或可玩实现。 **[其他 AI 逆向 · 待验证]**
 - [BreezySRPG95：Quof用Claude反汇编旧运行器，制作战棋游戏替代客户端](../cases/quof-breezysrpg95-claude-interpreter.md) — Quof报告参考REA、用Claude Code CLI反汇编原可执行文件，重建SRPG Maker 95客户端；初期beta仅数人试用，公开仓库提供功能与兼容性说明。 **[其他 AI 逆向 · 进行中]**
 - [CS 1.6：Kirin用REA与Agent改Dust2楼梯、光剑和第三人称](../cases/kirin-cs16-rea-dust2-mods.md) — Kirin Chen介绍自购CS 1.6的REA/AI Agent Mod视频，报告Dust2加楼梯、光剑对战与第三人称视角；未独立运行或核验Mod文件。 **[REA · 待验证]**
 - [大富翁4：Kirin用REA与Agent做超小地图和点券大战](../cases/kirin-richman4-rea-small-map-mods.md) — Kirin Chen称为自购大富翁4制作超小地图、点券大战并可局域网联机；属于REA/Agent Mod报告，不是既有Flutter iPhone重写项目。 **[REA · 待验证]**

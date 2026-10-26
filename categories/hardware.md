@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Tesla HW3：读者设想用REA研究并适配HW4软件](../cases/tesla-hw3-hw4-rea-software-idea.md) — GamerTex问能否让AI Agent与REA研究HW3 Tesla、升级最新HW4软件；只是具名跨代适配想法，没有代码、兼容性或车辆测试。 **[REA · 待验证]**
+- [PS5安全架构：Devon用Codex/ChatGPT追FreeBSD与WebKit源码，报告过滤和账号停用](../cases/devon-ps5-freebsd-webkit-codex-source-analysis.md) — Devon称用Codex/ChatGPT追FreeBSD 11与WebKit的调用链、布局和生命周期，研究PS5固件架构；模型给源码引用，但反复触发过滤并报告停用，未取得原研究仓库或独立测试。 **[其他 AI 逆向 · 分析测试]**
+- [Samshush：Matt Silverlock用Codex/Astra研究Samsung Frame并关闭选定后台服务](../cases/samshush-frame-codex-astra-cleanup.md) — Matt Silverlock发布agent优先的Samshush，称在Windows的Codex/Astra中改用网络登录研究Frame电视，关闭选定语音、广告和遥测服务；公开文档限定一款Frame Pro及固件，不是所有三星电视的通用修复。 **[其他 AI 逆向 · 待验证]**
 - [技嘉X870风扇控制：让Codex参考Windows配套软件补Linux支持的idea](../cases/gigabyte-x870-codex-linux-fan-control-idea.md) — Bocchi calls Saul提出，即使技嘉不提供Linux的X870风扇控制固件，也可让Codex从Windows配套软件研究；尚无协议、驱动或实测。 **[其他 AI 逆向 · 进行中]**
 - [Kindle锁屏仪表盘：Cortiq称Claude辅助识别固件、越狱与去广告](../cases/cortiq-kindle-claude-lockscreen-dashboard-report.md) — Cortiq报告用Claude Code把Kindle广告锁屏换成时钟、天气、日历、待办与X粉丝数仪表盘；未给型号、固件、代码或续航测量，不归因为发现新越狱漏洞。 **[其他 AI 逆向 · 待验证]**
 - [kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价](../cases/codex-kindle-ai-spending-dashboard-report.md) — 社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。 **[其他 AI 逆向 · 待验证]**
