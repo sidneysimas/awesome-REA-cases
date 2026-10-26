@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 871 cases & projects
+# 877 cases & projects
 
-**Latest case update:** October 26, 2026, 17:34 · **Last maintained:** October 26, 2026, 17:34 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 26, 2026, 17:56 · **Last maintained:** October 26, 2026, 17:56 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading**: working toward device interoperability, game preservation, and reconstruction with inspectable evidence. These picks favor public implementations and explicit limits; the full index also includes personal tools, failed experiments and concrete ideas. Dates below are source or author-update dates, not collection dates.
+**10 worth reading**: device interoperability, game preservation, and reconstruction with inspectable evidence. Public implementations and explicit limits keep these projects useful reading; the full index also includes repair experiments, debugging tools and concrete ideas. Dates below are source or author-update dates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **190** |
-| [Hardware & interoperability](categories/en/hardware.md) | **231** |
-| [Applications & clients](categories/en/apps.md) | **371** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **79** |
+| [Games & preservation](categories/en/games.md) | **192** |
+| [Hardware & interoperability](categories/en/hardware.md) | **233** |
+| [Applications & clients](categories/en/apps.md) | **372** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **80** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

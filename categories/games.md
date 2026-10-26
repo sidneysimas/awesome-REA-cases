@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [BF4：afedb正在测试REA的简短进展](../cases/afedb-bf4-rea-experiment.md) — afedb称正在BF4上测试REA；未报告恢复机制、重建版本或测试结果。 **[REA · 进行中]**
+- [Switch 2模拟器：Tulio在固件dump消息后提出Claude实现设想](../cases/tulio-switch2-claude-emulator-idea.md) — Tulio Santos转述Switch 2固件dump消息后，设想让Claude写模拟器；没有实现或固件核验。 **[其他 AI 逆向 · 待验证]**
 - [AMOS Pro：bitplane报告AI辅助模拟器、在线IDE与游戏库](../cases/bitplane-ai-amos-pro-emulator.md) — bitplane报告AI辅助AMOS Pro网页重实现、在线IDE与游戏库；公开amos-ts文档明确复用已公开AMOS源码，其他兼容行为经逆向，非周期精确模拟。 **[其他 AI 逆向 · 待验证]**
 - [Way of the Samurai：LLM配合真实地址字节校验，382项历史匹配中约266项当前可复现](../cases/way-of-samurai-ps2-ai-matching.md) — dnb4ever的PS2反编译项目用LLM与编译oracle逐函数重建；README称382项已提交匹配，但当前统一编译器约266项可复现，其余待重验，PC图形实现未完成。 **[其他 AI 逆向 · 进行中]**
 - [Precursor：Claude辅助把OpenGOAL的Jak三部曲带到Android ARM64](../cases/precursor-opengoal-claude-android-arm64.md) — thebardockgames明确归功OpenGOAL既有反编译，Claude辅助ARM64后端、Android运行时和launcher；项目报告三作在手机启动，但无一端到端验证，Jak 3首段过场后白屏。 **[其他 AI 逆向 · 进行中]**

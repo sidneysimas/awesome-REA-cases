@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**871 entries**, organized by use case, without a Top-N or popularity threshold.
+**877 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (190)
-- [Hardware and interoperability](categories/en/hardware.md) (231)
-- [Applications and clients](categories/en/apps.md) (371)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (79)
+- [Games and preservation](categories/en/games.md) (192)
+- [Hardware and interoperability](categories/en/hardware.md) (233)
+- [Applications and clients](categories/en/apps.md) (372)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (80)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [BF4: afedb's brief report of an ongoing REA experiment](cases/en/afedb-bf4-rea-experiment.md) — afedb says they are testing REA on BF4; no recovered mechanic, reconstruction or test outcome is reported. **[REA · In progress]**
+- [A Switch 2 emulator: Tulio's Claude idea after reported firmware dumping](cases/en/tulio-switch2-claude-emulator-idea.md) — Tulio Santos imagines asking Claude to build a Switch 2 emulator after firmware-dump news; no implementation or firmware verification is supplied. **[Other AI-assisted work · Needs verification]**
 - [AMOS Pro: bitplane reports an AI-assisted emulator, online IDE and games library](cases/en/bitplane-ai-amos-pro-emulator.md) — bitplane reports an AI-assisted AMOS Pro web reimplementation, online IDE and games library. The public amos-ts README credits published AMOS source and reverse engineering for other compatibility behavior, not cycle-exact emulation. **[Other AI-assisted work · Needs verification]**
 - [Way of the Samurai: an LLM and real-address byte oracle, with about 266 currently reproducible matches out of 382 historical submissions](cases/en/way-of-samurai-ps2-ai-matching.md) — dnb4ever's PS2 project pairs an LLM with a compile oracle. Its README reports 382 committed matches, but only about 266 reproduce with the unified compiler; older matches await rechecking, and PC graphics remain unfinished. **[Other AI-assisted work · In progress]**
 - [Precursor: Claude-assisted Android ARM64 porting of OpenGOAL's Jak trilogy](cases/en/precursor-opengoal-claude-android-arm64.md) — thebardockgames credits OpenGOAL's existing decompilation and uses Claude for the ARM64 backend, Android runtime and launcher. All three games reportedly boot on a phone, but none is verified end to end; Jak 3 goes white after its first cutscene. **[Other AI-assisted work · In progress]**
@@ -221,6 +223,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [A treadmill with broken buttons: ShaneX reports AI-assisted Nautilus Bluetooth research and an ESP32 phone-control bridge](cases/en/purgane-treadmill-nautilus-esp32-control.md) — ShaneX reports using OpenClaw, a Pi and a multimeter to investigate treadmill firmware, then bridging a command-capable Nautilus Bluetooth channel with an ESP32. After repeated flashing, a local phone web app reportedly controls it. **[Other AI-assisted work · Needs verification]**
+- [A steam sauna in Home Assistant: Steve reports AI-assisted research of a 915MHz LoRa remote accessory](cases/en/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski reports reversing his steam sauna for Home Assistant control. His thread identifies a 915MHz LoRa steam-generator remote accessory, not Modbus or a cloud API. **[Other AI-assisted work · Needs verification]**
 - [A Roborock under the stairs: reported Claude-assisted remote-command research to escape a narrow opening](cases/en/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan relays an overnight Claude Code project: a human observes collisions while AI writes code and reads logs. Localization drift defeats a fixed path; reversing and alternating angles reportedly succeeds in 10 exit-and-dock trials. **[Other AI-assisted work · Needs verification]**
 - [M-VAVE Cube Baby AC: Walbert reports a Linux pedal editor rebuilt with Claude and REA](cases/en/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas says his guitar pedal's editor is Windows-only, so he had Claude reverse-engineer it with REA and build a native Linux app. Source code and device-side read/write verification were not obtained. **[REA · Needs verification]**
 - [log4j's 2025 Samsung TV investigation: AI-assisted local reversing, telemetry leads and an unpublished full report](cases/en/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians relays log4j's Samsung TV investigation. First-party posts describe local reversing, agent analysis, dog/baby event counters and microphone routing, but the full report remains unpublished. This does not establish continuous raw-audio uploads or a banned Samsung corporate account. **[REA use unconfirmed · In progress]**
@@ -455,6 +459,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Courier Symphony: a plan for REA-assisted diagnosis, tests and explicit approval after phases A/B](cases/en/courier-symphony-rea-diagnostics-idea.md) — A German post proposes later fault diagnosis for Courier Symphony: stabilize existing automation first, let agents investigate failures and use REA for programs without source when needed, with tests and explicit approval before accepting fixes. **[REA · Needs verification]**
 - [A usage question makes Codex start REA: Mark Kretschmann aborts a reported tool-selection failure](cases/en/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark reports Codex choosing an installed REA skill to rebuild an app when he only asked how to use it. The original thread confirms web search was enabled and he aborted; no reversing result or verified fix is reported. **[REA · Needs verification]**
 - [img2threejs: a reported project for rebuilding reference images as animated Three.js code assets](cases/en/img2threejs-reference-image-code-assets-report.md) — A design-tool roundup describes img2threejs as giving an agent a reference image to reconstruct an animated Three.js asset in code. A repository, examples, model and visual comparison were not obtained. **[Other AI-assisted work · Needs verification]**
 - [From Apple Notes to a speaking-video tool: Maidang uses REA research to add templates, duration estimates and a teleprompter](cases/en/maidang-apple-notes-rea-teleprompter-tool.md) — Maidang mdldm reports having AI investigate Apple Notes' local note functionality, then building a personal tool with topic templates, speaking-duration estimates and a full-screen teleprompter. The author says the current video was filmed with it. **[REA · Needs verification]**
@@ -775,7 +780,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Amap anti-bot controls: a secondhand Tencent sandbox-agent incident report](cases/en/amap-tencent-agent-boundary-report.md) — A post says an agent investigated security credentials after scraping was blocked and triggered an alert; the security report and original Tencent response were not obtained. **[Other AI-assisted work · Needs verification]**
 - [LINE Desktop: an idea for an REA-informed lightweight client](cases/en/line-desktop-lite-rea-idea.md) — The author proposes reverse-engineering LINE Desktop into a lighter version, without a feature scope or implementation. **[REA · Needs verification]**
 - [JPCERT/CC: tracing APK analysis and API probing on attack servers](cases/en/jpcert-ai-apk-api-investigation-report.md) — An official investigation reports AI use and APK, jadx, Blutter and API-research traces, without identifying a model or REA. **[Other AI-assisted work · Analysis test]**
-- [crashlens: connecting REA crash triage to coding agents](cases/en/crashlens-rea-crash-triage-idea.md) — A public early prototype turns crash artifacts into evidence reports; a Hermes Skill is still proposed and the implementation was not independently tested. **[REA · Related project]**
+- [crashlens: connecting REA crash triage to coding agents](cases/en/crashlens-rea-crash-triage-idea.md) — Minglei reports Claude Code locating a native crash in one turn rather than four after REA/Ghidra decompiled the failing function and caller. The public prototype and small benchmark are not independent reproduction; deployed Hermes integration is unconfirmed. **[REA · Related project]**
 - [A 2000 stress.exe: a reported Opus/REA revival for Mac and the web](cases/en/stress-exe-2000-rea-revival-report.md) — A post says a Reddit user rebuilt stress.exe in half an hour and shipped Mac/web versions in two hours; the original implementation and comparisons were not obtained. **[REA · Needs verification]**
 - [osec_io Rust research: reported AI recovery and hash-perfect recompilation](cases/en/osec-ai-rust-hash-recompilation-report.md) — pashov recounts AI-assisted Rust recovery and critical vulnerability discoveries; targets and validation records are not supplied. **[Other AI-assisted work · Needs verification]**
 - [Website to Next.js: a reported Claude Code template with parallel DOM-based rebuilding](cases/en/claude-website-dom-nextjs-template-report.md) — A post describes agents reading assets, fonts and layout to reconstruct an interface; project identity and tests are missing. **[Other AI-assisted work · Needs verification]**
@@ -829,6 +834,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [eMudhra weak keys: reported attribution of public-data recovery to AI and mathematical scripts](cases/en/emudhra-weak-key-ai-attribution-report.md) — Earlier candidates relay the eMudhra cofounder's explanation to ET that a wrap-unwrap script error produced weak keys reversible with AI tools and mathematical scripts; actual model use and recovery records were not obtained. **[Other AI-assisted work · Needs verification]**
 - [A blind Claude test on a private stripped program: 13 functions described correctly, then the author catches the test cheating](cases/en/claude-stripped-private-program-thirteen-function-test.md) — To rule out memorized public code, an author writes a unique program and strips it, reports 13/13 correct function descriptions, then admits the test was cheating. The leakage mechanism and corrected score are not supplied. **[Other AI-assisted work · Analysis test]**
 - [A free-software RAR compressor: bitplane reports AI-assisted support from version 1.4 onward](cases/en/bitplane-ai-rar-compressor.md) — bitplane reports an AI-assisted RAR compressor. The rars README describes compression, decompression and recovery but admits slower execution, more memory and slightly worse compression than WinRAR, with more volume testing needed. Compatibility tests were not run here. **[Other AI-assisted work · Needs verification]**
 - [Amiga .info and legacy image formats: bitplane reports adding readers to Pillow and other tools](cases/en/bitplane-ai-legacy-image-format-plugins.md) — bitplane reports AI-assisted Amiga .info support for Pillow, MediaInfo and ImageMagick plus several legacy-format plugins. Upstream merge status remains unchecked. **[Other AI-assisted work · Needs verification]**

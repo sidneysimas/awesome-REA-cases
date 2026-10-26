@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **871 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **877 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（190）
-- [硬件与设备互通](categories/hardware.md)（231）
-- [应用与客户端](categories/apps.md)（371）
-- [算法与功能重建](categories/algorithms.md)（79）
+- [游戏与游戏保存](categories/games.md)（192）
+- [硬件与设备互通](categories/hardware.md)（233）
+- [应用与客户端](categories/apps.md)（372）
+- [算法与功能重建](categories/algorithms.md)（80）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [BF4：afedb正在测试REA的简短进展](cases/afedb-bf4-rea-experiment.md) — afedb称正在BF4上测试REA；未报告恢复机制、重建版本或测试结果。 **[REA · 进行中]**
+- [Switch 2模拟器：Tulio在固件dump消息后提出Claude实现设想](cases/tulio-switch2-claude-emulator-idea.md) — Tulio Santos转述Switch 2固件dump消息后，设想让Claude写模拟器；没有实现或固件核验。 **[其他 AI 逆向 · 待验证]**
 - [AMOS Pro：bitplane报告AI辅助模拟器、在线IDE与游戏库](cases/bitplane-ai-amos-pro-emulator.md) — bitplane报告AI辅助AMOS Pro网页重实现、在线IDE与游戏库；公开amos-ts文档明确复用已公开AMOS源码，其他兼容行为经逆向，非周期精确模拟。 **[其他 AI 逆向 · 待验证]**
 - [Way of the Samurai：LLM配合真实地址字节校验，382项历史匹配中约266项当前可复现](cases/way-of-samurai-ps2-ai-matching.md) — dnb4ever的PS2反编译项目用LLM与编译oracle逐函数重建；README称382项已提交匹配，但当前统一编译器约266项可复现，其余待重验，PC图形实现未完成。 **[其他 AI 逆向 · 进行中]**
 - [Precursor：Claude辅助把OpenGOAL的Jak三部曲带到Android ARM64](cases/precursor-opengoal-claude-android-arm64.md) — thebardockgames明确归功OpenGOAL既有反编译，Claude辅助ARM64后端、Android运行时和launcher；项目报告三作在手机启动，但无一端到端验证，Jak 3首段过场后白屏。 **[其他 AI 逆向 · 进行中]**
@@ -219,6 +221,8 @@
 
 ### 硬件与设备互通
 
+- [坏按键跑步机：ShaneX用AI研究Nautilus蓝牙通道，以ESP32接回手机控制](cases/purgane-treadmill-nautilus-esp32-control.md) — ShaneX报告用OpenClaw、Pi与万用表研究跑步机主芯片固件，再以ESP32桥接可下发命令的Nautilus蓝牙通道；多次刷写后称手机本地网页已能控制。 **[其他 AI 逆向 · 待验证]**
+- [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
 - [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
 - [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
@@ -453,6 +457,7 @@
 
 ### 应用与客户端
 
+- [Courier Symphony：在A/B阶段之后加入REA辅助诊断、测试与人工批准的规划](cases/courier-symphony-rea-diagnostics-idea.md) — 德语帖子为Courier Symphony提出后续错误诊断流程：先稳定现有自动化，再让Agent分析故障，必要时用REA研究无源码程序，修复须测试与明确批准。 **[REA · 待验证]**
 - [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
 - [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**
 - [苹果备忘录到口播工具：麦当用REA研究本地笔记，补上模板、时长估算与提词器](cases/maidang-apple-notes-rea-teleprompter-tool.md) — 麦当mdldm报告让AI调研Apple Notes本地笔记后制作自用工具，加入选题模板、口播时长估算和全屏提词器，并称当期视频即用该工具拍摄。 **[REA · 待验证]**
@@ -773,7 +778,7 @@
 - [高德地图反爬：腾讯云沙盒 Agent 越界事件的转述](cases/amap-tencent-agent-boundary-report.md) — 帖子称抓取受阻后的 Agent 自主研究安全凭证并触发警报；未取得安全机构报告或腾讯原回应。 **[其他 AI 逆向 · 待验证]**
 - [LINE Desktop：用 REA 研究精简客户端的 idea](cases/line-desktop-lite-rea-idea.md) — 作者提议逆向 LINE Desktop 做精简版，尚未给功能范围或实现。 **[REA · 待验证]**
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
-- [crashlens：把 REA 接入崩溃分诊与编程 Agent](cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
+- [crashlens：把 REA 接入崩溃分诊与编程 Agent](cases/crashlens-rea-crash-triage-idea.md) — Minglei报告REA/Ghidra反编译崩溃函数及调用者后，Claude Code定位原生崩溃由4轮变1轮；公开原型与小基准仍非独立复现，Hermes集成未确认落地。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
 - [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
 - [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**
@@ -827,6 +832,7 @@
 
 ### 算法与功能重建
 
+- [eMudhra弱密钥：把公开数据恢复归因于AI与数学脚本的报道](cases/emudhra-weak-key-ai-attribution-report.md) — 往期候选转述eMudhra联合创始人对ET的解释：wrap-unwrap脚本错误产生可被AI工具与数学脚本逆向的弱密钥；未取得实际模型或恢复记录。 **[其他 AI 逆向 · 待验证]**
 - [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**
 - [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**
 - [Amiga .info与旧图像格式：bitplane报告给Pillow等补充读取支持](cases/bitplane-ai-legacy-image-format-plugins.md) — bitplane称AI辅助给Pillow、MediaInfo和ImageMagick加入Amiga .info支持，并制作多个旧格式插件；上游合并状态未核验。 **[其他 AI 逆向 · 待验证]**

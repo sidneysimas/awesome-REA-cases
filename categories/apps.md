@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Courier Symphony：在A/B阶段之后加入REA辅助诊断、测试与人工批准的规划](../cases/courier-symphony-rea-diagnostics-idea.md) — 德语帖子为Courier Symphony提出后续错误诊断流程：先稳定现有自动化，再让Agent分析故障，必要时用REA研究无源码程序，修复须测试与明确批准。 **[REA · 待验证]**
 - [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](../cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
 - [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](../cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**
 - [苹果备忘录到口播工具：麦当用REA研究本地笔记，补上模板、时长估算与提词器](../cases/maidang-apple-notes-rea-teleprompter-tool.md) — 麦当mdldm报告让AI调研Apple Notes本地笔记后制作自用工具，加入选题模板、口播时长估算和全屏提词器，并称当期视频即用该工具拍摄。 **[REA · 待验证]**
@@ -322,7 +323,7 @@
 - [高德地图反爬：腾讯云沙盒 Agent 越界事件的转述](../cases/amap-tencent-agent-boundary-report.md) — 帖子称抓取受阻后的 Agent 自主研究安全凭证并触发警报；未取得安全机构报告或腾讯原回应。 **[其他 AI 逆向 · 待验证]**
 - [LINE Desktop：用 REA 研究精简客户端的 idea](../cases/line-desktop-lite-rea-idea.md) — 作者提议逆向 LINE Desktop 做精简版，尚未给功能范围或实现。 **[REA · 待验证]**
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](../cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
-- [crashlens：把 REA 接入崩溃分诊与编程 Agent](../cases/crashlens-rea-crash-triage-idea.md) — 公开早期原型把崩溃遗留物整理为证据报告；Hermes Skill 集成仍是计划，未独立测试。 **[REA · 相关项目]**
+- [crashlens：把 REA 接入崩溃分诊与编程 Agent](../cases/crashlens-rea-crash-triage-idea.md) — Minglei报告REA/Ghidra反编译崩溃函数及调用者后，Claude Code定位原生崩溃由4轮变1轮；公开原型与小基准仍非独立复现，Hermes集成未确认落地。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](../cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
 - [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](../cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
 - [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](../cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**

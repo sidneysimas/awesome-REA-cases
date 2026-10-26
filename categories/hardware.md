@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [坏按键跑步机：ShaneX用AI研究Nautilus蓝牙通道，以ESP32接回手机控制](../cases/purgane-treadmill-nautilus-esp32-control.md) — ShaneX报告用OpenClaw、Pi与万用表研究跑步机主芯片固件，再以ESP32桥接可下发命令的Nautilus蓝牙通道；多次刷写后称手机本地网页已能控制。 **[其他 AI 逆向 · 待验证]**
+- [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](../cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](../cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
 - [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](../cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
 - [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](../cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
