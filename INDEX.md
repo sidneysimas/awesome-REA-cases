@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **944 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **946 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（210）
-- [硬件与设备互通](categories/hardware.md)（253）
-- [应用与客户端](categories/apps.md)（398）
+- [硬件与设备互通](categories/hardware.md)（254）
+- [应用与客户端](categories/apps.md)（399）
 - [算法与功能重建](categories/algorithms.md)（83）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -239,6 +239,7 @@
 
 ### 硬件与设备互通
 
+- [Kindle微信读书：丁洪Liam把既有越狱、KOReader与SimpleUI串成Agent安装Skill](cases/ding-liam-kindle-weread-agent-installation-skill.md) — 丁洪Liam报告用Agent安装KOReader、社区微信读书插件与乔木SimpleUI；公开Skill明确仅一台KP3/5.16.2.1.1实测，不是AI发现新越狱或移植Android。 **[其他 AI 逆向 · 相关项目]**
 - [播放设备自定义固件：orcachillin考虑AI反编译、人工实现播放记录](cases/orcachillin-ai-decompile-play-logging-firmware-idea.md) — orcachillin在为播放设备加lfm记录时手工损坏更新模块，随后考虑用AI反编译现有固件、自己写新固件；明确不信任AI生成固件。补串补足动机但未确认设备型号或AI实验结果。 **[其他 AI 逆向 · 待验证]**
 - [旧遥控吊扇：stevegodlewski报告用AI研究既有控制方式](cases/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski称用AI逆向房屋原配遥控吊扇，避免更换智能吊扇或昂贵开关；所读串未展开仓库、品牌或协议，保留为作者自述，不确认控制效果。 **[其他 AI 逆向 · 待验证]**
 - [HackTheNorth徽章：Codex协作固件，把ESP32变成NES与Gameboy掌机](cases/hackthenorth-esp32-codex-emulator-badge.md) — Mika Vohl报告用Codex编写HackTheNorth ESP32徽章的C/C++固件并移植NES与Gameboy模拟器，在160MHz、4MB闪存限制下通过Wi-Fi从自有服务器取游戏；未独立运行。 **[其他 AI 逆向 · 待验证]**
@@ -495,6 +496,7 @@
 
 ### 应用与客户端
 
+- [Apple风格文件：Charlie Hills以Claude重用品牌视觉规则，建议REA提取其他品牌](cases/charlie-hills-apple-style-file-rea-workflow.md) — Charlie Hills报告九分钟整理Apple式网站风格文件，供Claude Code建站，并建议用REA为其他品牌制作规范；22项检查与搜索曝光仅作者自述，未取得风格文件或对照。 **[REA · 待验证]**
 - [Cloudflare security-audit：以覆盖账本与反驳Agent约束安全审计](cases/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare公开给编程Agent使用的安全审计Skill，按覆盖单元搜寻、让新Agent尝试推翻每条发现，再核对最终记录；要求操作系统沙盒，未解决项不升级确认，未运行。 **[其他 AI 逆向 · 相关项目]**
 - [Borer：为AI Agent设计的Rust逆向引擎与模拟器对照](cases/borer-rust-agent-first-re-engine.md) — prism介绍Borer自有加载、提升、模拟与反编译引擎，供AI通过MCP/CLI读取小而可分页的结果；文档描述种子状态下对照反编译C和机器码，仍为早期项目，未运行或验证普遍正确性。 **[其他 AI 逆向 · 相关项目]**
 - [jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区](cases/jshookmcp-search-first-re-workspace.md) — Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。 **[其他 AI 逆向 · 相关项目]**
@@ -733,7 +735,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — 8Bit将Pump/REA研究的衍生launchpad命名Musebook，预告当晚Solana主网上线；未取得链上部署或测试。另保留clawddevs并行研究与Shaw约90%进度的转述，不把计划当完成。 **[REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — Shaw本人明确lalalune/pumpfun-source追求字节相同，并称自己没用REA；公开文档仍为四核心程序0/4完全匹配、140/150处理器有限重建，不是90%字节完成。另保留8Bit/Musebook与clawddevs的不同作者研究。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**

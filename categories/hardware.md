@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Kindle微信读书：丁洪Liam把既有越狱、KOReader与SimpleUI串成Agent安装Skill](../cases/ding-liam-kindle-weread-agent-installation-skill.md) — 丁洪Liam报告用Agent安装KOReader、社区微信读书插件与乔木SimpleUI；公开Skill明确仅一台KP3/5.16.2.1.1实测，不是AI发现新越狱或移植Android。 **[其他 AI 逆向 · 相关项目]**
 - [播放设备自定义固件：orcachillin考虑AI反编译、人工实现播放记录](../cases/orcachillin-ai-decompile-play-logging-firmware-idea.md) — orcachillin在为播放设备加lfm记录时手工损坏更新模块，随后考虑用AI反编译现有固件、自己写新固件；明确不信任AI生成固件。补串补足动机但未确认设备型号或AI实验结果。 **[其他 AI 逆向 · 待验证]**
 - [旧遥控吊扇：stevegodlewski报告用AI研究既有控制方式](../cases/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski称用AI逆向房屋原配遥控吊扇，避免更换智能吊扇或昂贵开关；所读串未展开仓库、品牌或协议，保留为作者自述，不确认控制效果。 **[其他 AI 逆向 · 待验证]**
 - [HackTheNorth徽章：Codex协作固件，把ESP32变成NES与Gameboy掌机](../cases/hackthenorth-esp32-codex-emulator-badge.md) — Mika Vohl报告用Codex编写HackTheNorth ESP32徽章的C/C++固件并移植NES与Gameboy模拟器，在160MHz、4MB闪存限制下通过Wi-Fi从自有服务器取游戏；未独立运行。 **[其他 AI 逆向 · 待验证]**

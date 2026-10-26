@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**944 entries**, organized by use case, without a Top-N or popularity threshold.
+**946 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (210)
-- [Hardware and interoperability](categories/en/hardware.md) (253)
-- [Applications and clients](categories/en/apps.md) (398)
+- [Hardware and interoperability](categories/en/hardware.md) (254)
+- [Applications and clients](categories/en/apps.md) (399)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (83)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -241,6 +241,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Kindle WeRead: Ding Hong Liam packages existing jailbreaks, KOReader and SimpleUI into an agent installation skill](cases/en/ding-liam-kindle-weread-agent-installation-skill.md) — Ding Hong Liam reports agent-led installation of KOReader, a community WeRead plugin and Qiaomu SimpleUI. The public skill limits device testing to one KP3 on firmware 5.16.2.1.1; this is not a new AI-discovered jailbreak or an Android port. **[Other AI-assisted work · Related project]**
 - [Custom playback-device firmware: orcachillin considers AI decompilation and human-written play logging](cases/en/orcachillin-ai-decompile-play-logging-firmware-idea.md) — After manually damaging an update module while adding lfm play logging, orcachillin considers AI-assisted decompilation followed by self-written firmware, explicitly rejecting AI-generated firmware. Thread reading establishes the aim but not the model of device or an AI result. **[Other AI-assisted work · Needs verification]**
 - [Existing remote ceiling fans: stevegodlewski reports AI-assisted investigation of their controls](cases/en/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski reports using AI to reverse-engineer the remote ceiling fans supplied with a house instead of buying smart replacements or expensive switches. The thread read did not expose a repository, brand or protocol; control results remain unverified author claims. **[Other AI-assisted work · Needs verification]**
 - [HackTheNorth badge: Codex-assisted firmware turns an ESP32 into an NES and Gameboy handheld](cases/en/hackthenorth-esp32-codex-emulator-badge.md) — Mika Vohl reports using Codex for C/C++ firmware and NES/Gameboy emulator ports on a HackTheNorth ESP32 badge, fetching games from a personal server over Wi-Fi within 160 MHz and 4 MB flash constraints. It was not independently run here. **[Other AI-assisted work · Needs verification]**
@@ -497,6 +498,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Apple-style files: Charlie Hills reuses visual rules with Claude and suggests REA for other brands](cases/en/charlie-hills-apple-style-file-rea-workflow.md) — Charlie Hills reports preparing an Apple-style website file in nine minutes for Claude Code, and recommends REA for other brands. The 22 checks and search visibility are author claims; no style file or comparison was obtained. **[REA · Needs verification]**
 - [Cloudflare security-audit: coverage ledgers and adversarial agents for security review](cases/en/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare publishes a coding-agent audit skill that hunts by coverage unit, asks fresh agents to disprove each finding and rechecks final records. It requires an OS sandbox and does not promote unresolved leads to confirmed findings. Not run here. **[Other AI-assisted work · Related project]**
 - [Borer: a Rust reverse-engineering engine for AI agents with emulator comparisons](cases/en/borer-rust-agent-first-re-engine.md) — prism introduces Borer's own loading, lifting, emulation and decompilation engine, with compact paged results over MCP/CLI. Documentation describes comparing decompiled C and machine code from seeded states. It is early-stage, not run here or verified universally correct. **[Other AI-assisted work · Related project]**
 - [jshook: a search-first MCP workspace that loads reverse-engineering tools for AI agents on demand](cases/en/jshookmcp-search-first-re-workspace.md) — Dan Kornas introduces jshook's search-first workspace. Public vmoranv/jshookmcp documentation describes expandable tool profiles, browser traffic, JS deobfuscation, WASM and native-analysis bridges. It was not installed or tested here. **[Other AI-assisted work · Related project]**
@@ -735,7 +737,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 - [Apple Notes migration to Grape](cases/en/apple-notes-migration.md) — Use Claude Code to investigate Notes data and demonstrate importing folders, notes and images. **[Other AI-assisted work]**
 - [Poker table organizer](cases/en/poker-table-organizer.md) — A first-hand report of rebuilding table organization with REA, Ghidra and Codex; the app and tests are not public. **[REA · Needs verification]**
 - [Codex computer-use interoperability research](cases/en/codex-cua-harness-research.md) — An ongoing REA-assisted investigation of browser and computer-use features for another model in an independent agent harness. **[REA · In progress]**
-- [Pump.fun: parallel-agent investigation of a token-launch platform](cases/en/pumpfun-reconstruction-report.md) — 8Bit names a Pump/REA-derived launchpad Musebook and announces a same-night Solana mainnet plan, without a verified deployment or tests. Retains clawddevs' parallel research and secondhand Shaw 90%-progress reports; plans are not completion. **[REA · Needs verification]**
+- [Pump.fun: parallel-agent investigation of a token-launch platform](cases/en/pumpfun-reconstruction-report.md) — Shaw identifies lalalune/pumpfun-source and its byte-identical goal, explicitly saying he is not using REA. Public documentation still reports 0/4 whole-file core matches and bounded reconstruction of 140/150 handlers, not 90% byte completion. Retains the separate 8Bit/Musebook and clawddevs investigations. **[REA · Needs verification]**
 - [Remote-desktop client privacy monitoring idea](cases/en/remote-client-privacy-monitor-idea.md) — An idea to use AI-assisted inspection of local clients and build a data-collection monitor; no implementation or misconduct is established. **[REA use unconfirmed · Needs verification]**
 - [Gaoding-inspired cover workbench](cases/en/gaoding-cover-workbench.md) — A Codex/Fabric.js cover tool is reported; using REA to inspect Gaoding UI and logic is still described as a plan. **[REA · In progress]**
 - [Axure: an AI-era rebuild idea](cases/en/axure-ai-rebuild-idea.md) — A proposal to study Axure and build a new prototyping tool; no implementation or AI-assisted investigation is established. **[REA use unconfirmed · Needs verification]**
