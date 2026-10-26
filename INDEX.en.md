@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**842 entries**, organized by use case, without a Top-N or popularity threshold.
+**851 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (184)
-- [Hardware and interoperability](categories/en/hardware.md) (222)
-- [Applications and clients](categories/en/apps.md) (360)
+- [Games and preservation](categories/en/games.md) (189)
+- [Hardware and interoperability](categories/en/hardware.md) (225)
+- [Applications and clients](categories/en/apps.md) (361)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (76)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Way of the Samurai: an LLM and real-address byte oracle, with about 266 currently reproducible matches out of 382 historical submissions](cases/en/way-of-samurai-ps2-ai-matching.md) — dnb4ever's PS2 project pairs an LLM with a compile oracle. Its README reports 382 committed matches, but only about 266 reproduce with the unified compiler; older matches await rechecking, and PC graphics remain unfinished. **[Other AI-assisted work · In progress]**
+- [Precursor: Claude-assisted Android ARM64 porting of OpenGOAL's Jak trilogy](cases/en/precursor-opengoal-claude-android-arm64.md) — thebardockgames credits OpenGOAL's existing decompilation and uses Claude for the ARM64 backend, Android runtime and launcher. All three games reportedly boot on a phone, but none is verified end to end; Jak 3 goes white after its first cutscene. **[Other AI-assisted work · In progress]**
+- [gagarin: reconstructing Yuri's Revenge with REA and a compiler oracle, without claiming a running engine](cases/en/gagarin-yuri-revenge-rea-reconstruction.md) — r-melvin/gagarin reconstructs structured C++ from gamemd.exe v1.001. As of October 23 it reports 10,204 function matches, 51.6% of functions and 18.2% of function bytes, but its link probes do not run and whole-image identity is not claimed. **[REA · In progress]**
+- [libfpv: Claude Code-assisted Betaflight simulation inside SM64 and GTA IV for FPV practice](cases/en/libfpv-claude-game-flight-training.md) — The candidate credits Hammerill and Claude Code with libfpv, running real Betaflight in a 1 kHz simulation loop while games supply collisions and rendering. Public documentation links SM64 and GTA IV integrations, not AI decompilation of both games. **[Other AI-assisted work · Related project]**
+- [Street Fighter II: Jun Suzuki shares a REA video title describing AI-built decks and 3-on-3 battles](cases/en/street-fighter2-rea-ai-deck-3v3.md) — The shared video title explicitly targets Street Fighter II with REA and describes AI assembling a deck for 3-on-3 battles. The video, implementation and gameplay checks were not obtained; a title is not verification of a playable release. **[REA · Needs verification]**
 - [The Simpsons: Tapped Out: a community request to explore a PC port with Claude Code or Codex](cases/en/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa asks under a Teamtsto event announcement whether Claude Code or Codex could help reverse-engineer a PC release. This is a specific porting wish, not an implementation. **[Other AI-assisted work · Needs verification]**
 - [Habbo Wired education: an4log explores interactive browser examples with REA and Claude](cases/en/habbo-wired-club-rea-interactive-examples.md) — an4log reports running REA and Claude on Habbo to make browser-interactive system examples for Wired Club, inspired by WiredSnippets. A preview is posted, while the teaching content remains forthcoming. **[REA · In progress]**
 - [Tekken Tag Tournament 2: Shihab's AI-assisted PC port moves toward stability maintenance](cases/en/tekken-tag2-shihab-ai-pc-port.md) — Shihab describes exploring AI-assisted reverse engineering and desired features in a Tekken Tag Tournament 2 PC port. The v0.1.7 announcement lists rollback networking and community servers; future work focuses on stability. This is distinct from BlueSpark. **[Other AI-assisted work · In progress]**
@@ -215,6 +220,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Original Sony alpha7: an AI-assisted custom-firmware idea referring to Sony-PMCA-RE](cases/en/sony-alpha7-pmca-ai-firmware-idea.md) — After finding existing Sony-PMCA-RE research, twitHitoshi proposes using AI for interesting custom firmware. No actual AI analysis or flashing is reported; the existing camera tool is not an AI achievement. **[Other AI-assisted work · Needs verification]**
+- [Xiaomi TV launcher: Leo reports using Workbuddy to avoid pre-viewing ads](cases/en/xiaomi-tv-workbuddy-launcher-report.md) — Leo reports reverse-engineering a Xiaomi TV component called launch in the original post with Workbuddy, then no longer seeing Xiaomi ads before watching. No model, code or tests are provided; rooting and firmware replacement are not inferred. **[Other AI-assisted work · Needs verification]**
+- [LG webOS: ammertos reports about 30 minutes of Codex-assisted rooting in a TV-cleanup discussion](cases/en/lg-webos-ammertos-codex-root-report.md) — AIDog, ammertos, answers an LG-adaptation question, reporting that Codex found a TV on the same network and rooted its firmware in about 30 minutes. No model, firmware or cleanup result is supplied; the parent's Xiaomi 25-package result is not inherited. **[Other AI-assisted work · Needs verification]**
 - [RP3A0 Pico board: an agent's KiCad 10 port follows a manual Altium reconstruction](cases/en/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG credits Jonathan Clark with manually reverse-engineering the RP3A0 Pico in Altium, then reports an approximately 30-minute agent-assisted KiCad 10 port with zero DRC errors. AI handled migration, not the original hardware reverse engineering. **[Other AI-assisted work · Needs verification]**
 - [Radar-detector GUI: Carter reports custom KA-band and startup animations with Opus 5.5](cases/en/radar-detector-opus-gui-animations.md) — While updating his radar detector, Carter says Claude investigated its GUI and Opus 5.5 produced custom KA-band and startup animations within 30 minutes. No model, code or device tests are supplied; detection-performance changes are not inferred. **[Other AI-assisted work · Needs verification]**
 - [Yeelight Station: investigating the Windows installer with REA for a Swift Mac client](cases/en/yeelight-station-rea-swift-mac.md) — Anuhas D. says Yeelight Station's Windows-only application prompted REA investigation of its installer and a native Swift Mac rebuild with menu-bar control, screen sync and music sync. Device responses and signing were not independently verified. **[REA · Needs verification]**
@@ -440,6 +448,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Auditing an owned client's exposure: a REA proposal separating observable logic from server-side assets across releases](cases/en/rea-own-client-exposure-assessment-idea.md) — A founder-oriented proposal supplies a REA/Claude Code prompt for inspecting shipped client logic, API interactions and embedded configuration, then comparing releases as recurring audits. No actual app or test results are supplied. **[REA · Needs verification]**
 - [FSCapture scrolling screenshots: Lucky J uses Codex and REA to investigate stitching around video](cases/en/fscapture-codex-rea-scroll-stitching.md) — Lucky J reports repeated or missing sections in a homebuilt scrolling-capture tool, then has Codex install REA and inspect FSCapture as a reference. After two days of human tuning, video and Word captures reportedly work; open sourcing remains a plan. **[REA · In progress]**
 - [Red Star OS: a retelling of REA analysis of file censorship and watermarks in an isolated VM](cases/en/red-star-os-rea-censorship-watermark-report.md) — COCOA University summarizes REA research into the 2013 Red Star OS in a VM, describing censorship, self-protection and disk-serial watermarks. Seven to thirty minutes and about 32 MB are secondhand claims without original analysis artifacts. **[REA · Needs verification]**
 - [NODECODE: launching a self-modifying agent for security and reverse-engineering research](cases/en/nodecode-self-modifying-security-agent.md) — v1se introduces NODECODE for long iterative security and reverse-engineering tasks, reportedly modifying tools and context and supporting Telegram, Discord and Slack. MIT licensing and efficiency gains remain launch claims without inspected code or a concrete investigation. **[Other AI-assisted work · Related project]**

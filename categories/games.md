@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Way of the Samurai：LLM配合真实地址字节校验，382项历史匹配中约266项当前可复现](../cases/way-of-samurai-ps2-ai-matching.md) — dnb4ever的PS2反编译项目用LLM与编译oracle逐函数重建；README称382项已提交匹配，但当前统一编译器约266项可复现，其余待重验，PC图形实现未完成。 **[其他 AI 逆向 · 进行中]**
+- [Precursor：Claude辅助把OpenGOAL的Jak三部曲带到Android ARM64](../cases/precursor-opengoal-claude-android-arm64.md) — thebardockgames明确归功OpenGOAL既有反编译，Claude辅助ARM64后端、Android运行时和launcher；项目报告三作在手机启动，但无一端到端验证，Jak 3首段过场后白屏。 **[其他 AI 逆向 · 进行中]**
+- [gagarin：用REA与编译oracle重建尤里的复仇，不把函数匹配写成引擎已运行](../cases/gagarin-yuri-revenge-rea-reconstruction.md) — r-melvin/gagarin从gamemd.exe v1.001恢复结构化C++；项目截至10月23日报告10204函数匹配、51.6%函数与18.2%函数字节覆盖，但链接探针不可运行，也不主张全映像一致。 **[REA · 进行中]**
+- [libfpv：Claude Code辅助把Betaflight仿真接到SM64与GTA IV，练习FPV飞行](../cases/libfpv-claude-game-flight-training.md) — 候选称Hammerill用Claude Code制作libfpv，把真实Betaflight固件放进1kHz仿真循环，游戏提供场景碰撞与渲染；公开README列出SM64及GTA IV集成，但不等于AI反编译了两款游戏。 **[其他 AI 逆向 · 相关项目]**
+- [街头霸王II：Jun Suzuki分享REA改造为AI组牌3对3战斗的视频标题](../cases/street-fighter2-rea-ai-deck-3v3.md) — Jun Suzuki分享的视频明确把Street Fighter II作为REA改造目标，标题称AI组建deck参与3对3战斗；尚未取得视频内容、实现或玩法验收，不把标题当可玩版本验证。 **[REA · 待验证]**
 - [The Simpsons: Tapped Out：向社区提出用Claude Code或Codex研究PC移植](../cases/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa在Teamtsto活动公告下询问能否用Claude Code或Codex辅助逆向，让游戏登陆PC；这是具体移植愿望，不是已实施工程。 **[其他 AI 逆向 · 待验证]**
 - [Habbo Wired教学：an4log用REA与Claude研究浏览器交互示例](../cases/habbo-wired-club-rea-interactive-examples.md) — an4log称在Habbo上运行REA与Claude，准备为Wired Club制作可在浏览器操作的系统示例，灵感来自WiredSnippets；已发预览，正式教学内容仍是计划。 **[REA · 进行中]**
 - [Tekken Tag Tournament 2：Shihab的AI辅助PC移植与稳定维护](../cases/tekken-tag2-shihab-ai-pc-port.md) — Shihab说明自己用AI探索逆向与所需功能的边界，将Tekken Tag Tournament 2移植到PC；v0.1.7列出回滚联网与社区服务器，后续以稳定维护为主，不与BlueSpark混为一项工程。 **[其他 AI 逆向 · 进行中]**

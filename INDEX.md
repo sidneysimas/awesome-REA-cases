@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **842 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **851 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（184）
-- [硬件与设备互通](categories/hardware.md)（222）
-- [应用与客户端](categories/apps.md)（360）
+- [游戏与游戏保存](categories/games.md)（189）
+- [硬件与设备互通](categories/hardware.md)（225）
+- [应用与客户端](categories/apps.md)（361）
 - [算法与功能重建](categories/algorithms.md)（76）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,11 @@
 
 ### 游戏与游戏保存
 
+- [Way of the Samurai：LLM配合真实地址字节校验，382项历史匹配中约266项当前可复现](cases/way-of-samurai-ps2-ai-matching.md) — dnb4ever的PS2反编译项目用LLM与编译oracle逐函数重建；README称382项已提交匹配，但当前统一编译器约266项可复现，其余待重验，PC图形实现未完成。 **[其他 AI 逆向 · 进行中]**
+- [Precursor：Claude辅助把OpenGOAL的Jak三部曲带到Android ARM64](cases/precursor-opengoal-claude-android-arm64.md) — thebardockgames明确归功OpenGOAL既有反编译，Claude辅助ARM64后端、Android运行时和launcher；项目报告三作在手机启动，但无一端到端验证，Jak 3首段过场后白屏。 **[其他 AI 逆向 · 进行中]**
+- [gagarin：用REA与编译oracle重建尤里的复仇，不把函数匹配写成引擎已运行](cases/gagarin-yuri-revenge-rea-reconstruction.md) — r-melvin/gagarin从gamemd.exe v1.001恢复结构化C++；项目截至10月23日报告10204函数匹配、51.6%函数与18.2%函数字节覆盖，但链接探针不可运行，也不主张全映像一致。 **[REA · 进行中]**
+- [libfpv：Claude Code辅助把Betaflight仿真接到SM64与GTA IV，练习FPV飞行](cases/libfpv-claude-game-flight-training.md) — 候选称Hammerill用Claude Code制作libfpv，把真实Betaflight固件放进1kHz仿真循环，游戏提供场景碰撞与渲染；公开README列出SM64及GTA IV集成，但不等于AI反编译了两款游戏。 **[其他 AI 逆向 · 相关项目]**
+- [街头霸王II：Jun Suzuki分享REA改造为AI组牌3对3战斗的视频标题](cases/street-fighter2-rea-ai-deck-3v3.md) — Jun Suzuki分享的视频明确把Street Fighter II作为REA改造目标，标题称AI组建deck参与3对3战斗；尚未取得视频内容、实现或玩法验收，不把标题当可玩版本验证。 **[REA · 待验证]**
 - [The Simpsons: Tapped Out：向社区提出用Claude Code或Codex研究PC移植](cases/simpsons-tapped-out-ai-pc-port-idea.md) — Dailson Barbosa在Teamtsto活动公告下询问能否用Claude Code或Codex辅助逆向，让游戏登陆PC；这是具体移植愿望，不是已实施工程。 **[其他 AI 逆向 · 待验证]**
 - [Habbo Wired教学：an4log用REA与Claude研究浏览器交互示例](cases/habbo-wired-club-rea-interactive-examples.md) — an4log称在Habbo上运行REA与Claude，准备为Wired Club制作可在浏览器操作的系统示例，灵感来自WiredSnippets；已发预览，正式教学内容仍是计划。 **[REA · 进行中]**
 - [Tekken Tag Tournament 2：Shihab的AI辅助PC移植与稳定维护](cases/tekken-tag2-shihab-ai-pc-port.md) — Shihab说明自己用AI探索逆向与所需功能的边界，将Tekken Tag Tournament 2移植到PC；v0.1.7列出回滚联网与社区服务器，后续以稳定维护为主，不与BlueSpark混为一项工程。 **[其他 AI 逆向 · 进行中]**
@@ -213,6 +218,9 @@
 
 ### 硬件与设备互通
 
+- [初代Sony α7：参考Sony-PMCA-RE，提出AI辅助定制固件的想法](cases/sony-alpha7-pmca-ai-firmware-idea.md) — twitHitoshi看到既有Sony-PMCA-RE研究后，提出用AI制作有趣固件；尚未报告实际AI分析或刷写，不把既有相机工具归功于AI。 **[其他 AI 逆向 · 待验证]**
+- [小米电视launcher：Leo称用Workbuddy逆向后不再看开机前广告](cases/xiaomi-tv-workbuddy-launcher-report.md) — Leo · Building w/ AI报告用Workbuddy逆向小米电视原文称launch的组件，声称不再在看电视前看到小米广告；没有型号、代码或测试，不推断root或固件替换。 **[其他 AI 逆向 · 待验证]**
+- [LG webOS：ammertos在电视清理讨论下报告Codex约30分钟root](cases/lg-webos-ammertos-codex-root-report.md) — AIDog（ammertos）回答LG适配问题，称Codex在同网发现电视并root固件，约30分钟；没有型号、固件或具体清理成果，不沿用父帖小米25包的结果。 **[其他 AI 逆向 · 待验证]**
 - [RP3A0 Pico板卡：人工Altium逆向之后，Agent迁移到KiCad 10](cases/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG称Jonathan Clark先人工在Altium恢复RP3A0 Pico板卡，自己的Agent再约30分钟移到KiCad 10并得到零DRC错误；AI负责迁移，不是原始硬件逆向。 **[其他 AI 逆向 · 待验证]**
 - [雷达探测器GUI：Carter用Opus 5.5定制KA频段与启动动画](cases/radar-detector-opus-gui-animations.md) — Carter称在升级自有雷达探测器固件时，让Claude研究GUI，约30分钟获得定制KA频段与启动动画；没有型号、源码或设备测试，不推断检测性能改变。 **[其他 AI 逆向 · 待验证]**
 - [Yeelight Station：REA研究Windows安装器，Swift重做Mac灯光客户端](cases/yeelight-station-rea-swift-mac.md) — Anuhas D.称因Yeelight Station只有Windows应用，用REA研究安装器后制作原生Swift Mac版，提供菜单栏、屏幕同步与音乐同步；未独立验证设备响应或签名。 **[REA · 待验证]**
@@ -438,6 +446,7 @@
 
 ### 应用与客户端
 
+- [自有客户端暴露面：用REA区分可见逻辑与服务端资产，并逐版本比较的审计idea](cases/rea-own-client-exposure-assessment-idea.md) — 一篇创始人视角提案给出REA与Claude Code提示词，检查发布客户端的逻辑、API交互和嵌入配置，并把版本间变化纳入周期性审计；没有实际应用或测试结果。 **[REA · 待验证]**
 - [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
 - [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**
 - [NODECODE：面向安全研究与逆向的自修改Agent项目发布](cases/nodecode-self-modifying-security-agent.md) — v1se发布NODECODE，称其为长期迭代安全与逆向任务调整工具和上下文，可接Telegram、Discord、Slack；MIT与性能改进为发布者宣传，未取得源码或实际研究案例。 **[其他 AI 逆向 · 相关项目]**

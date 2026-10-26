@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 842 个案例与项目
+# 851 个案例与项目
 
-**最近案例更新：**2026 年 10 月 24 日 12:17 · **最近维护：**2026 年 10 月 24 日 12:17 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 24 日 16:08 · **最近维护：**2026 年 10 月 24 日 16:08 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -33,7 +33,7 @@
 7. **[xbox-boot-re：重建初代 Xbox 的绿色开机动画](cases/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — 人类指导 Opus，从单张 BIOS 恢复为 **C 核心与 WebGPU 查看器**，有 xemu 对照文档和成功项目 CI。仅一版修改 BIOS，声音合成有近似；不是完整主机模拟器，本合集未重跑。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
 9. **[WayShare：从 Mac 连接 Hyprland](cases/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA 辅助研究 Apple Remote Desktop，产出**公开 Rust 实现及成功项目 CI**。60fps 仍为作者说法，未独立测量；Standard 屏幕与剪贴板未加密。`进行中`
-10. **[SoulSilver：双屏界面搬到单屏](cases/pokeheartgold-singlescreen-claude-fork.md)** · `2026-10-22` — Claude Code 辅助的 fork 把**战斗、背包与队伍界面放到同一屏**，供 ssrecomp 使用，明确归功 pret 既有反编译。项目所称逐字节匹配限正常 ROM 构建，**不是刻意修改后的单屏版也与原版相同**；本合集未独立构建。`进行中`
+10. **[Precursor：在 Android 手机运行 Jak](cases/precursor-opengoal-claude-android-arm64.md)** · `2026-10-23` — Claude 辅助**ARM64 编译器与 Android 运行时移植**，明确依托 OpenGOAL 既有反编译。项目报告三作启动，但**无一端到端验证**，Jak 3 首段过场后白屏；本合集未运行。`进行中`
 
 ## 经典案例
 
@@ -48,9 +48,9 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **184** |
-| [硬件与设备互通](categories/hardware.md) | **222** |
-| [应用与客户端](categories/apps.md) | **360** |
+| [游戏与游戏保存](categories/games.md) | **189** |
+| [硬件与设备互通](categories/hardware.md) | **225** |
+| [应用与客户端](categories/apps.md) | **361** |
 | [算法与功能重建](categories/algorithms.md) | **76** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)

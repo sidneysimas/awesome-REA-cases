@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [初代Sony α7：参考Sony-PMCA-RE，提出AI辅助定制固件的想法](../cases/sony-alpha7-pmca-ai-firmware-idea.md) — twitHitoshi看到既有Sony-PMCA-RE研究后，提出用AI制作有趣固件；尚未报告实际AI分析或刷写，不把既有相机工具归功于AI。 **[其他 AI 逆向 · 待验证]**
+- [小米电视launcher：Leo称用Workbuddy逆向后不再看开机前广告](../cases/xiaomi-tv-workbuddy-launcher-report.md) — Leo · Building w/ AI报告用Workbuddy逆向小米电视原文称launch的组件，声称不再在看电视前看到小米广告；没有型号、代码或测试，不推断root或固件替换。 **[其他 AI 逆向 · 待验证]**
+- [LG webOS：ammertos在电视清理讨论下报告Codex约30分钟root](../cases/lg-webos-ammertos-codex-root-report.md) — AIDog（ammertos）回答LG适配问题，称Codex在同网发现电视并root固件，约30分钟；没有型号、固件或具体清理成果，不沿用父帖小米25包的结果。 **[其他 AI 逆向 · 待验证]**
 - [RP3A0 Pico板卡：人工Altium逆向之后，Agent迁移到KiCad 10](../cases/rp3a0-pico-altium-kicad-agent-port.md) — Aditya NG称Jonathan Clark先人工在Altium恢复RP3A0 Pico板卡，自己的Agent再约30分钟移到KiCad 10并得到零DRC错误；AI负责迁移，不是原始硬件逆向。 **[其他 AI 逆向 · 待验证]**
 - [雷达探测器GUI：Carter用Opus 5.5定制KA频段与启动动画](../cases/radar-detector-opus-gui-animations.md) — Carter称在升级自有雷达探测器固件时，让Claude研究GUI，约30分钟获得定制KA频段与启动动画；没有型号、源码或设备测试，不推断检测性能改变。 **[其他 AI 逆向 · 待验证]**
 - [Yeelight Station：REA研究Windows安装器，Swift重做Mac灯光客户端](../cases/yeelight-station-rea-swift-mac.md) — Anuhas D.称因Yeelight Station只有Windows应用，用REA研究安装器后制作原生Swift Mac版，提供菜单栏、屏幕同步与音乐同步；未独立验证设备响应或签名。 **[REA · 待验证]**

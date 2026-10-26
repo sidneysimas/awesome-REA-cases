@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [自有客户端暴露面：用REA区分可见逻辑与服务端资产，并逐版本比较的审计idea](../cases/rea-own-client-exposure-assessment-idea.md) — 一篇创始人视角提案给出REA与Claude Code提示词，检查发布客户端的逻辑、API交互和嵌入配置，并把版本间变化纳入周期性审计；没有实际应用或测试结果。 **[REA · 待验证]**
 - [FSCapture滚动截图：Lucky J用Codex与REA参考实现，处理视频页面拼接](../cases/fscapture-codex-rea-scroll-stitching.md) — Lucky J称自制截图工具遇到含视频网页的重复与断档，让Codex安装REA并拆解FSCapture作参考；两天调教后报告视频与Word截图可用，开源仍是计划。 **[REA · 进行中]**
 - [红星OS：REA在隔离虚拟机中分析文件审查与水印的转述](../cases/red-star-os-rea-censorship-watermark-report.md) — COCOA大学概述2013年版Red Star OS的REA研究：在虚拟机中查看审查、自保护和硬盘序列号水印；7至30分钟及32MB等均为二手摘要，未取得原分析工件。 **[REA · 待验证]**
 - [NODECODE：面向安全研究与逆向的自修改Agent项目发布](../cases/nodecode-self-modifying-security-agent.md) — v1se发布NODECODE，称其为长期迭代安全与逆向任务调整工具和上下文，可接Telegram、Discord、Slack；MIT与性能改进为发布者宣传，未取得源码或实际研究案例。 **[其他 AI 逆向 · 相关项目]**
