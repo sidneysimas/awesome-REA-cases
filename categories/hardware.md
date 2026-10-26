@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](../cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
+- [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](../cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
 - [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](../cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
 - [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](../cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
 - [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](../cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**

@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](../cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
+- [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](../cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**
+- [苹果备忘录到口播工具：麦当用REA研究本地笔记，补上模板、时长估算与提词器](../cases/maidang-apple-notes-rea-teleprompter-tool.md) — 麦当mdldm报告让AI调研Apple Notes本地笔记后制作自用工具，加入选题模板、口播时长估算和全屏提词器，并称当期视频即用该工具拍摄。 **[REA · 待验证]**
+- [one-exit：据REA客户端研究整理Claude多端统一出口模板，不等于还原完整风控](../cases/one-exit-claude-rea-routing-telemetry-report.md) — 候选将wquguru的one-exit归因为REA研究；公开文档确有三种代理客户端模板，把Claude及认证、支付和遥测流量归于同一出口，但不证明完整服务端封号规则或防封效果。 **[REA · 相关项目]**
+- [Vibe Vision Video：让Agent从参考视频重建Remotion模板](../cases/vibe-vision-video-reference-remotion-templates.md) — Bing Bryan介绍vvv以Remotion组件供Agent选模板、填素材和渲染自检，并提出把参考视频重建为代码模板；无具体参考片或输出对照。 **[其他 AI 逆向 · 待验证]**
 - [REA中的Rust Ghidra移植：Nicolas Krassas分享Java对照早期基准标题](../cases/rea-ghidra-rust-port-early-benchmarks.md) — Nicolas Krassas分享REA中进行中的Ghidra Rust移植与Java对照基准标题；未取得基准配置、数值或完整文章，不推断提速比例或功能对等。 **[REA · 相关项目]**
 - [OpenRea想法：用REA研究Claude Code，再以reaCode重做](../cases/openrea-claude-code-reacode-idea.md) — 一条回复提出用REA逆向Claude Code、发布名为OpenRea且使用reaCode的替代品；尚无具体功能规格、实现或测试。 **[REA · 待验证]**
 - [Amiga narrator：TypeScript重写并把自由软件语音回移AROS的自述](../cases/bitplane-ai-amiga-narrator-aros.md) — bitplane称在AI辅助AMOS工作中重写Amiga narrator，再把自由软件语音回移到AROS，报告可在真实Amiga运行；未取得设备或语音测试记录。 **[其他 AI 逆向 · 待验证]**

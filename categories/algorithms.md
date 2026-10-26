@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](../cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**
 - [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](../cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**
 - [Amiga .info与旧图像格式：bitplane报告给Pillow等补充读取支持](../cases/bitplane-ai-legacy-image-format-plugins.md) — bitplane称AI辅助给Pillow、MediaInfo和ImageMagick加入Amiga .info支持，并制作多个旧格式插件；上游合并状态未核验。 **[其他 AI 逆向 · 待验证]**
 - [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](../cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**

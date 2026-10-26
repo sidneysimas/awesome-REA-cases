@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **863 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **871 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（190）
-- [硬件与设备互通](categories/hardware.md)（229）
-- [应用与客户端](categories/apps.md)（366）
-- [算法与功能重建](categories/algorithms.md)（78）
+- [硬件与设备互通](categories/hardware.md)（231）
+- [应用与客户端](categories/apps.md)（371）
+- [算法与功能重建](categories/algorithms.md)（79）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -219,6 +219,8 @@
 
 ### 硬件与设备互通
 
+- [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
+- [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
 - [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
 - [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
 - [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**
@@ -451,6 +453,11 @@
 
 ### 应用与客户端
 
+- [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
+- [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**
+- [苹果备忘录到口播工具：麦当用REA研究本地笔记，补上模板、时长估算与提词器](cases/maidang-apple-notes-rea-teleprompter-tool.md) — 麦当mdldm报告让AI调研Apple Notes本地笔记后制作自用工具，加入选题模板、口播时长估算和全屏提词器，并称当期视频即用该工具拍摄。 **[REA · 待验证]**
+- [one-exit：据REA客户端研究整理Claude多端统一出口模板，不等于还原完整风控](cases/one-exit-claude-rea-routing-telemetry-report.md) — 候选将wquguru的one-exit归因为REA研究；公开文档确有三种代理客户端模板，把Claude及认证、支付和遥测流量归于同一出口，但不证明完整服务端封号规则或防封效果。 **[REA · 相关项目]**
+- [Vibe Vision Video：让Agent从参考视频重建Remotion模板](cases/vibe-vision-video-reference-remotion-templates.md) — Bing Bryan介绍vvv以Remotion组件供Agent选模板、填素材和渲染自检，并提出把参考视频重建为代码模板；无具体参考片或输出对照。 **[其他 AI 逆向 · 待验证]**
 - [REA中的Rust Ghidra移植：Nicolas Krassas分享Java对照早期基准标题](cases/rea-ghidra-rust-port-early-benchmarks.md) — Nicolas Krassas分享REA中进行中的Ghidra Rust移植与Java对照基准标题；未取得基准配置、数值或完整文章，不推断提速比例或功能对等。 **[REA · 相关项目]**
 - [OpenRea想法：用REA研究Claude Code，再以reaCode重做](cases/openrea-claude-code-reacode-idea.md) — 一条回复提出用REA逆向Claude Code、发布名为OpenRea且使用reaCode的替代品；尚无具体功能规格、实现或测试。 **[REA · 待验证]**
 - [Amiga narrator：TypeScript重写并把自由软件语音回移AROS的自述](cases/bitplane-ai-amiga-narrator-aros.md) — bitplane称在AI辅助AMOS工作中重写Amiga narrator，再把自由软件语音回移到AROS，报告可在真实Amiga运行；未取得设备或语音测试记录。 **[其他 AI 逆向 · 待验证]**
@@ -820,6 +827,7 @@
 
 ### 算法与功能重建
 
+- [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**
 - [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**
 - [Amiga .info与旧图像格式：bitplane报告给Pillow等补充读取支持](cases/bitplane-ai-legacy-image-format-plugins.md) — bitplane称AI辅助给Pillow、MediaInfo和ImageMagick加入Amiga .info支持，并制作多个旧格式插件；上游合并状态未核验。 **[其他 AI 逆向 · 待验证]**
 - [Grok行为审计：KonradGB用Gemini解读政治与伦理问答](cases/grok-gemini-konrad-behavior-audit.md) — KonradGB称与Gemini测试X上的Grok，归纳其把伦理争论转为数字与制度机制分析的倾向；这是未附原始问答的黑箱行为解释，不是恢复了运行参数或秘密过滤器。 **[其他 AI 逆向 · 待验证]**

@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**863 entries**, organized by use case, without a Top-N or popularity threshold.
+**871 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (190)
-- [Hardware and interoperability](categories/en/hardware.md) (229)
-- [Applications and clients](categories/en/apps.md) (366)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (78)
+- [Hardware and interoperability](categories/en/hardware.md) (231)
+- [Applications and clients](categories/en/apps.md) (371)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (79)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -221,6 +221,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [A Roborock under the stairs: reported Claude-assisted remote-command research to escape a narrow opening](cases/en/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan relays an overnight Claude Code project: a human observes collisions while AI writes code and reads logs. Localization drift defeats a fixed path; reversing and alternating angles reportedly succeeds in 10 exit-and-dock trials. **[Other AI-assisted work · Needs verification]**
+- [M-VAVE Cube Baby AC: Walbert reports a Linux pedal editor rebuilt with Claude and REA](cases/en/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas says his guitar pedal's editor is Windows-only, so he had Claude reverse-engineer it with REA and build a native Linux app. Source code and device-side read/write verification were not obtained. **[REA · Needs verification]**
 - [log4j's 2025 Samsung TV investigation: AI-assisted local reversing, telemetry leads and an unpublished full report](cases/en/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians relays log4j's Samsung TV investigation. First-party posts describe local reversing, agent analysis, dog/baby event counters and microphone routing, but the full report remains unpublished. This does not establish continuous raw-audio uploads or a banned Samsung corporate account. **[REA use unconfirmed · In progress]**
 - [An old Kindle dashboard: furkan reports Claude-assisted jailbreaking and a Raspberry server while retaining reading](cases/en/furkan-kindle-claude-raspberry-dashboard.md) — furkan reports Claude-assisted jailbreaking of an old Kindle and a dashboard backed by an always-on home Raspberry server, with a return to normal reading. Server security checks remain unfinished. **[Other AI-assisted work · Needs verification]**
 - [Nokia DCT3: bitplane reports ongoing AI-assisted reverse engineering for a MAME driver](cases/en/bitplane-ai-nokia-dct3-mame.md) — bitplane says his AI-assisted Nokia DCT3/MAME project needs several more months. Public documentation uses the 3210 as reference and separates interactive-desktop progress, native DSP checks and HLE limits, without family-wide compatibility promises. **[Other AI-assisted work · In progress]**
@@ -453,6 +455,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [A usage question makes Codex start REA: Mark Kretschmann aborts a reported tool-selection failure](cases/en/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark reports Codex choosing an installed REA skill to rebuild an app when he only asked how to use it. The original thread confirms web search was enabled and he aborted; no reversing result or verified fix is reported. **[REA · Needs verification]**
+- [img2threejs: a reported project for rebuilding reference images as animated Three.js code assets](cases/en/img2threejs-reference-image-code-assets-report.md) — A design-tool roundup describes img2threejs as giving an agent a reference image to reconstruct an animated Three.js asset in code. A repository, examples, model and visual comparison were not obtained. **[Other AI-assisted work · Needs verification]**
+- [From Apple Notes to a speaking-video tool: Maidang uses REA research to add templates, duration estimates and a teleprompter](cases/en/maidang-apple-notes-rea-teleprompter-tool.md) — Maidang mdldm reports having AI investigate Apple Notes' local note functionality, then building a personal tool with topic templates, speaking-duration estimates and a full-screen teleprompter. The author says the current video was filmed with it. **[REA · Needs verification]**
+- [one-exit: unified Claude egress templates attributed to REA client research, not a recovery of the full risk system](cases/en/one-exit-claude-rea-routing-telemetry-report.md) — Candidates attribute wquguru's one-exit to REA research. Public documentation does provide three proxy-client templates routing Claude, identity, payment and telemetry traffic through one egress, but does not prove complete server-side ban rules or protection from bans. **[REA · Related project]**
+- [Vibe Vision Video: Bing Bryan shares an agent workflow for rebuilding reference videos as Remotion templates](cases/en/vibe-vision-video-reference-remotion-templates.md) — Bing Bryan describes vvv's Remotion components for agent-selected templates, media insertion and rendering checks, and proposes rebuilding reference videos as code templates. No specific reference clip or output comparison is supplied. **[Other AI-assisted work · Needs verification]**
 - [A Rust Ghidra port in REA: Nicolas Krassas shares an early Java-comparison benchmark headline](cases/en/rea-ghidra-rust-port-early-benchmarks.md) — Nicolas Krassas shares a headline about early Java-versus-Rust benchmarks for an in-progress Ghidra port in REA. Benchmark settings, numbers and the full article were not obtained; speedups and feature parity are not inferred. **[REA · Related project]**
 - [An OpenRea idea: inspect Claude Code with REA and rebuild it using reaCode](cases/en/openrea-claude-code-reacode-idea.md) — A reply proposes reverse-engineering Claude Code with REA and releasing a replacement called OpenRea using reaCode. No feature specification, implementation or tests are supplied. **[REA · Needs verification]**
 - [Amiga narrator: a reported TypeScript rewrite and free-software voice backport to AROS](cases/en/bitplane-ai-amiga-narrator-aros.md) — Within his AI-assisted AMOS work, bitplane reports rewriting the Amiga narrator and backporting a free-software voice to AROS, running on a real Amiga. Device and speech test records were not obtained. **[Other AI-assisted work · Needs verification]**
@@ -822,6 +829,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [A blind Claude test on a private stripped program: 13 functions described correctly, then the author catches the test cheating](cases/en/claude-stripped-private-program-thirteen-function-test.md) — To rule out memorized public code, an author writes a unique program and strips it, reports 13/13 correct function descriptions, then admits the test was cheating. The leakage mechanism and corrected score are not supplied. **[Other AI-assisted work · Analysis test]**
 - [A free-software RAR compressor: bitplane reports AI-assisted support from version 1.4 onward](cases/en/bitplane-ai-rar-compressor.md) — bitplane reports an AI-assisted RAR compressor. The rars README describes compression, decompression and recovery but admits slower execution, more memory and slightly worse compression than WinRAR, with more volume testing needed. Compatibility tests were not run here. **[Other AI-assisted work · Needs verification]**
 - [Amiga .info and legacy image formats: bitplane reports adding readers to Pillow and other tools](cases/en/bitplane-ai-legacy-image-format-plugins.md) — bitplane reports AI-assisted Amiga .info support for Pillow, MediaInfo and ImageMagick plus several legacy-format plugins. Upstream merge status remains unchecked. **[Other AI-assisted work · Needs verification]**
 - [Auditing Grok behavior: KonradGB uses Gemini to interpret political and ethical answers](cases/en/grok-gemini-konrad-behavior-audit.md) — KonradGB reports testing Grok on X with Gemini and interpreting a tendency to shift ethical debates toward numbers and institutional mechanics. Without raw conversations, this is an unverified black-box interpretation, not recovered runtime parameters or secret filters. **[Other AI-assisted work · Needs verification]**
