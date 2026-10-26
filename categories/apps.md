@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Cloudflare security-audit：以覆盖账本与反驳Agent约束安全审计](../cases/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare公开给编程Agent使用的安全审计Skill，按覆盖单元搜寻、让新Agent尝试推翻每条发现，再核对最终记录；要求操作系统沙盒，未解决项不升级确认，未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Borer：为AI Agent设计的Rust逆向引擎与模拟器对照](../cases/borer-rust-agent-first-re-engine.md) — prism介绍Borer自有加载、提升、模拟与反编译引擎，供AI通过MCP/CLI读取小而可分页的结果；文档描述种子状态下对照反编译C和机器码，仍为早期项目，未运行或验证普遍正确性。 **[其他 AI 逆向 · 相关项目]**
 - [jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区](../cases/jshookmcp-search-first-re-workspace.md) — Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。 **[其他 AI 逆向 · 相关项目]**
 - [Vortex：让AI研究并重做兼容更多Mod站点的管理器想法](../cases/vortex-all-mod-sites-ai-rebuild-idea.md) — The Floofy Poofy建议用AI反编译并重做Vortex，使其支持所有Mod网站；仅为互通需求，没有实现、站点协议或兼容性测试。 **[其他 AI 逆向 · 待验证]**
 - [Serum 2：作者声称Codex配REA分析合成器并移除许可检查](../cases/serum2-codex-rea-license-removal-report.md) — glawniyliberal报告在Codex中使用REA分析Xfer Serum 2，声称移除许可检查以制作音乐；未提供可核对的版本、分析日志或测试，不确认完整反编译或通用破解。 **[REA · 待验证]**

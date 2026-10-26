@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Warzone：Vephy称Kimi 3.1 Pro配ETERNAL制作外部辅助工具](../cases/vephy-kimi-eternal-warzone-external-tool-report.md) — Vephy称Kimi 3.1 Pro经ETERNAL在24小时制作Warzone外部叠加层、ESP和雷达，瞄准辅助仅为基础；未取得源码或分析/运行记录，不确认隐蔽性、性能或效率。 **[其他 AI 逆向 · 待验证]**
+- [Ace Combat 7合作Mod：玩家称AI辅助反编译，原串补足目标](../cases/ace-combat7-coop-mod-ai-decompilation-report.md) — Art3Onyx称AC7合作Mod使用AI辅助反编译；补查父串明确为Ace Combat 7合作模式，玩家原本希望和兄弟同玩。未取得Mod源码、开发者披露或联机测试，不确认可玩及停更原因。 **[其他 AI 逆向 · 待验证]**
+- [Kid Icarus Uprising：Darkshade的C-Stick与陀螺仪补丁，读者称AI辅助逆向](../cases/kid-icarus-uprising-darkshade-ai-control-patches-report.md) — GBAtemp介绍Darkshade为Kid Icarus Uprising添加C-Stick与陀螺仪支持；候选读者澄清AI用于逆向，不应称全部vibe coded。未取得补丁源码、作者AI披露或运行验证。 **[其他 AI 逆向 · 待验证]**
+- [ProjectStonehenge：AI协作将Ace Combat 04逐函数转为PC原生C++](../cases/projectstonehenge-ace-combat04-ai-native-port.md) — Onaga00公开PS2 Ace Combat 04到Windows的原生移植，承认Anthropic模型辅助研究笔记、大部分代码与工具；渲染帧率可调而逻辑仍为59.94Hz，存档互通仍是beta，未独立运行。 **[其他 AI 逆向 · 进行中]**
+- [异度神剑决定版：TheMonadoGuy的Claude协作PC重编译转述](../cases/xenoblade-de-themonadoguy-claude-lasrecomp-report.md) — 候选转述TheMonadoGuy以LASRecomp与Vulkan把Switch异度神剑决定版移到Windows，称Claude承担大部分代码、逆向与文档；通关及高帧率为开发者报告的二手转述，未取得原仓库或独立验证。 **[其他 AI 逆向 · 待验证]**
+- [未发行ZX81游戏：WingsScotland让Claude挑战重建](../cases/wingsscotland-claude-unreleased-zx81-game.md) — WingsScotland报告让Claude研究一款未发行ZX81游戏；窗口内仍是挑战，窗口后作者回复称75分钟完成。游戏名、产物与测试未公开于所读材料，不作成功验收。 **[其他 AI 逆向 · 待验证]**
 - [Railroad Tycoon II：REA与专职AI Agent辅助的Rust重实现](../cases/rrt2-decomp-rea-rust-reimplementation.md) — yibie推荐pedryvo/rrt2-decomp；项目文档说明用REA MCP连接Ghidra、先记录规则再以Rust重写，并以原程序函数及存档作差分比较。仍为pre-alpha，未在本合集运行。 **[REA · 进行中]**
 - [Mario Strikers Charged：人类真机测试、Claude协作的PS Vita移植](../cases/strikers-charged-vita-claude-port.md) — yibie推荐CBOC-Vita-Lab的Wii游戏到Vita移植；项目确认Claude等AI协作、人工指导与真机测试，复用既有反编译及vitaGL。1.1的帧率和延迟为项目自报，未独立运行。 **[其他 AI 逆向 · 进行中]**
 - [The Inpatient：PSVR电源不在身边时，读者提出AI反编译游戏的idea](../cases/inpatient-psvr-ai-decompilation-idea.md) — Sanghaili因PSVR电源留在大学、不想再买一个，询问AI反编译工具能否处理The Inpatient；仅为具体游戏访问需求，未有移植或可玩实现。 **[其他 AI 逆向 · 待验证]**

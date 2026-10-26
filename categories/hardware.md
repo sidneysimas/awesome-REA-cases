@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [播放设备自定义固件：orcachillin考虑AI反编译、人工实现播放记录](../cases/orcachillin-ai-decompile-play-logging-firmware-idea.md) — orcachillin在为播放设备加lfm记录时手工损坏更新模块，随后考虑用AI反编译现有固件、自己写新固件；明确不信任AI生成固件。补串补足动机但未确认设备型号或AI实验结果。 **[其他 AI 逆向 · 待验证]**
+- [旧遥控吊扇：stevegodlewski报告用AI研究既有控制方式](../cases/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski称用AI逆向房屋原配遥控吊扇，避免更换智能吊扇或昂贵开关；所读串未展开仓库、品牌或协议，保留为作者自述，不确认控制效果。 **[其他 AI 逆向 · 待验证]**
+- [HackTheNorth徽章：Codex协作固件，把ESP32变成NES与Gameboy掌机](../cases/hackthenorth-esp32-codex-emulator-badge.md) — Mika Vohl报告用Codex编写HackTheNorth ESP32徽章的C/C++固件并移植NES与Gameboy模拟器，在160MHz、4MB闪存限制下通过Wi-Fi从自有服务器取游戏；未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [Tesla HW3：读者设想用REA研究并适配HW4软件](../cases/tesla-hw3-hw4-rea-software-idea.md) — GamerTex问能否让AI Agent与REA研究HW3 Tesla、升级最新HW4软件；只是具名跨代适配想法，没有代码、兼容性或车辆测试。 **[REA · 待验证]**
 - [PS5安全架构：Devon用Codex/ChatGPT追FreeBSD与WebKit源码，报告过滤和账号停用](../cases/devon-ps5-freebsd-webkit-codex-source-analysis.md) — Devon称用Codex/ChatGPT追FreeBSD 11与WebKit的调用链、布局和生命周期，研究PS5固件架构；模型给源码引用，但反复触发过滤并报告停用，未取得原研究仓库或独立测试。 **[其他 AI 逆向 · 分析测试]**
 - [Samshush：Matt Silverlock用Codex/Astra研究Samsung Frame并关闭选定后台服务](../cases/samshush-frame-codex-astra-cleanup.md) — Matt Silverlock发布agent优先的Samshush，称在Windows的Codex/Astra中改用网络登录研究Frame电视，关闭选定语音、广告和遥测服务；公开文档限定一款Frame Pro及固件，不是所有三星电视的通用修复。 **[其他 AI 逆向 · 待验证]**

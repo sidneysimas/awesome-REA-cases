@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Motion2Code：让编程Agent把参考动效视频重建为可编辑SVG与GSAP](../cases/motion2code-svg-gsap-reference-video-rebuild.md) — lovisdotio的公开Skill先抽帧、量颜色与切点，再用单一GSAP时间轴重建SVG动效并逐帧对照；项目列六个Claude Opus 5.5重建示例及比较页，未独立运行或测量相似度。 **[其他 AI 逆向 · 相关项目]**
+- [animation-reverse-engineering：Claude Code按帧拆解参考动效再实现交互](../cases/scriptscrypt-animation-reference-frame-dissection-skill.md) — scriptscrypt公开Claude Code Skill，将参考视频、Dribbble动效或录屏经抽帧、时间/缓动测量转为动画代码，并对照截图；含文字扫动与延时摄影scrubber案例，未运行或确认保真度。 **[其他 AI 逆向 · 相关项目]**
 - [PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示](../cases/grimmer-rea-qlib-pltr-dip-rule-report.md) — Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。 **[REA · 待验证]**
 - [eMudhra弱密钥：把公开数据恢复归因于AI与数学脚本的报道](../cases/emudhra-weak-key-ai-attribution-report.md) — 往期候选转述eMudhra联合创始人对ET的解释：wrap-unwrap脚本错误产生可被AI工具与数学脚本逆向的弱密钥；未取得实际模型或恢复记录。 **[其他 AI 逆向 · 待验证]**
 - [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](../cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**

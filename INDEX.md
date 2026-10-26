@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **931 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **944 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（204）
-- [硬件与设备互通](categories/hardware.md)（250）
-- [应用与客户端](categories/apps.md)（396）
-- [算法与功能重建](categories/algorithms.md)（81）
+- [游戏与游戏保存](categories/games.md)（210）
+- [硬件与设备互通](categories/hardware.md)（253）
+- [应用与客户端](categories/apps.md)（398）
+- [算法与功能重建](categories/algorithms.md)（83）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,12 @@
 
 ### 游戏与游戏保存
 
+- [Warzone：Vephy称Kimi 3.1 Pro配ETERNAL制作外部辅助工具](cases/vephy-kimi-eternal-warzone-external-tool-report.md) — Vephy称Kimi 3.1 Pro经ETERNAL在24小时制作Warzone外部叠加层、ESP和雷达，瞄准辅助仅为基础；未取得源码或分析/运行记录，不确认隐蔽性、性能或效率。 **[其他 AI 逆向 · 待验证]**
+- [Ace Combat 7合作Mod：玩家称AI辅助反编译，原串补足目标](cases/ace-combat7-coop-mod-ai-decompilation-report.md) — Art3Onyx称AC7合作Mod使用AI辅助反编译；补查父串明确为Ace Combat 7合作模式，玩家原本希望和兄弟同玩。未取得Mod源码、开发者披露或联机测试，不确认可玩及停更原因。 **[其他 AI 逆向 · 待验证]**
+- [Kid Icarus Uprising：Darkshade的C-Stick与陀螺仪补丁，读者称AI辅助逆向](cases/kid-icarus-uprising-darkshade-ai-control-patches-report.md) — GBAtemp介绍Darkshade为Kid Icarus Uprising添加C-Stick与陀螺仪支持；候选读者澄清AI用于逆向，不应称全部vibe coded。未取得补丁源码、作者AI披露或运行验证。 **[其他 AI 逆向 · 待验证]**
+- [ProjectStonehenge：AI协作将Ace Combat 04逐函数转为PC原生C++](cases/projectstonehenge-ace-combat04-ai-native-port.md) — Onaga00公开PS2 Ace Combat 04到Windows的原生移植，承认Anthropic模型辅助研究笔记、大部分代码与工具；渲染帧率可调而逻辑仍为59.94Hz，存档互通仍是beta，未独立运行。 **[其他 AI 逆向 · 进行中]**
+- [异度神剑决定版：TheMonadoGuy的Claude协作PC重编译转述](cases/xenoblade-de-themonadoguy-claude-lasrecomp-report.md) — 候选转述TheMonadoGuy以LASRecomp与Vulkan把Switch异度神剑决定版移到Windows，称Claude承担大部分代码、逆向与文档；通关及高帧率为开发者报告的二手转述，未取得原仓库或独立验证。 **[其他 AI 逆向 · 待验证]**
+- [未发行ZX81游戏：WingsScotland让Claude挑战重建](cases/wingsscotland-claude-unreleased-zx81-game.md) — WingsScotland报告让Claude研究一款未发行ZX81游戏；窗口内仍是挑战，窗口后作者回复称75分钟完成。游戏名、产物与测试未公开于所读材料，不作成功验收。 **[其他 AI 逆向 · 待验证]**
 - [Railroad Tycoon II：REA与专职AI Agent辅助的Rust重实现](cases/rrt2-decomp-rea-rust-reimplementation.md) — yibie推荐pedryvo/rrt2-decomp；项目文档说明用REA MCP连接Ghidra、先记录规则再以Rust重写，并以原程序函数及存档作差分比较。仍为pre-alpha，未在本合集运行。 **[REA · 进行中]**
 - [Mario Strikers Charged：人类真机测试、Claude协作的PS Vita移植](cases/strikers-charged-vita-claude-port.md) — yibie推荐CBOC-Vita-Lab的Wii游戏到Vita移植；项目确认Claude等AI协作、人工指导与真机测试，复用既有反编译及vitaGL。1.1的帧率和延迟为项目自报，未独立运行。 **[其他 AI 逆向 · 进行中]**
 - [The Inpatient：PSVR电源不在身边时，读者提出AI反编译游戏的idea](cases/inpatient-psvr-ai-decompilation-idea.md) — Sanghaili因PSVR电源留在大学、不想再买一个，询问AI反编译工具能否处理The Inpatient；仅为具体游戏访问需求，未有移植或可玩实现。 **[其他 AI 逆向 · 待验证]**
@@ -233,6 +239,9 @@
 
 ### 硬件与设备互通
 
+- [播放设备自定义固件：orcachillin考虑AI反编译、人工实现播放记录](cases/orcachillin-ai-decompile-play-logging-firmware-idea.md) — orcachillin在为播放设备加lfm记录时手工损坏更新模块，随后考虑用AI反编译现有固件、自己写新固件；明确不信任AI生成固件。补串补足动机但未确认设备型号或AI实验结果。 **[其他 AI 逆向 · 待验证]**
+- [旧遥控吊扇：stevegodlewski报告用AI研究既有控制方式](cases/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski称用AI逆向房屋原配遥控吊扇，避免更换智能吊扇或昂贵开关；所读串未展开仓库、品牌或协议，保留为作者自述，不确认控制效果。 **[其他 AI 逆向 · 待验证]**
+- [HackTheNorth徽章：Codex协作固件，把ESP32变成NES与Gameboy掌机](cases/hackthenorth-esp32-codex-emulator-badge.md) — Mika Vohl报告用Codex编写HackTheNorth ESP32徽章的C/C++固件并移植NES与Gameboy模拟器，在160MHz、4MB闪存限制下通过Wi-Fi从自有服务器取游戏；未独立运行。 **[其他 AI 逆向 · 待验证]**
 - [Tesla HW3：读者设想用REA研究并适配HW4软件](cases/tesla-hw3-hw4-rea-software-idea.md) — GamerTex问能否让AI Agent与REA研究HW3 Tesla、升级最新HW4软件；只是具名跨代适配想法，没有代码、兼容性或车辆测试。 **[REA · 待验证]**
 - [PS5安全架构：Devon用Codex/ChatGPT追FreeBSD与WebKit源码，报告过滤和账号停用](cases/devon-ps5-freebsd-webkit-codex-source-analysis.md) — Devon称用Codex/ChatGPT追FreeBSD 11与WebKit的调用链、布局和生命周期，研究PS5固件架构；模型给源码引用，但反复触发过滤并报告停用，未取得原研究仓库或独立测试。 **[其他 AI 逆向 · 分析测试]**
 - [Samshush：Matt Silverlock用Codex/Astra研究Samsung Frame并关闭选定后台服务](cases/samshush-frame-codex-astra-cleanup.md) — Matt Silverlock发布agent优先的Samshush，称在Windows的Codex/Astra中改用网络登录研究Frame电视，关闭选定语音、广告和遥测服务；公开文档限定一款Frame Pro及固件，不是所有三星电视的通用修复。 **[其他 AI 逆向 · 待验证]**
@@ -486,6 +495,8 @@
 
 ### 应用与客户端
 
+- [Cloudflare security-audit：以覆盖账本与反驳Agent约束安全审计](cases/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare公开给编程Agent使用的安全审计Skill，按覆盖单元搜寻、让新Agent尝试推翻每条发现，再核对最终记录；要求操作系统沙盒，未解决项不升级确认，未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Borer：为AI Agent设计的Rust逆向引擎与模拟器对照](cases/borer-rust-agent-first-re-engine.md) — prism介绍Borer自有加载、提升、模拟与反编译引擎，供AI通过MCP/CLI读取小而可分页的结果；文档描述种子状态下对照反编译C和机器码，仍为早期项目，未运行或验证普遍正确性。 **[其他 AI 逆向 · 相关项目]**
 - [jshook：给AI Agent按需搜索与加载逆向工具的MCP工作区](cases/jshookmcp-search-first-re-workspace.md) — Dan Kornas介绍jshook搜索优先工作区；vmoranv/jshookmcp公开文档描述按需扩展工具配置、浏览器流量、JS反混淆、WASM与原生分析桥接，未在本合集安装或测试。 **[其他 AI 逆向 · 相关项目]**
 - [Vortex：让AI研究并重做兼容更多Mod站点的管理器想法](cases/vortex-all-mod-sites-ai-rebuild-idea.md) — The Floofy Poofy建议用AI反编译并重做Vortex，使其支持所有Mod网站；仅为互通需求，没有实现、站点协议或兼容性测试。 **[其他 AI 逆向 · 待验证]**
 - [Serum 2：作者声称Codex配REA分析合成器并移除许可检查](cases/serum2-codex-rea-license-removal-report.md) — glawniyliberal报告在Codex中使用REA分析Xfer Serum 2，声称移除许可检查以制作音乐；未提供可核对的版本、分析日志或测试，不确认完整反编译或通用破解。 **[REA · 待验证]**
@@ -885,6 +896,8 @@
 
 ### 算法与功能重建
 
+- [Motion2Code：让编程Agent把参考动效视频重建为可编辑SVG与GSAP](cases/motion2code-svg-gsap-reference-video-rebuild.md) — lovisdotio的公开Skill先抽帧、量颜色与切点，再用单一GSAP时间轴重建SVG动效并逐帧对照；项目列六个Claude Opus 5.5重建示例及比较页，未独立运行或测量相似度。 **[其他 AI 逆向 · 相关项目]**
+- [animation-reverse-engineering：Claude Code按帧拆解参考动效再实现交互](cases/scriptscrypt-animation-reference-frame-dissection-skill.md) — scriptscrypt公开Claude Code Skill，将参考视频、Dribbble动效或录屏经抽帧、时间/缓动测量转为动画代码，并对照截图；含文字扫动与延时摄影scrubber案例，未运行或确认保真度。 **[其他 AI 逆向 · 相关项目]**
 - [PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示](cases/grimmer-rea-qlib-pltr-dip-rule-report.md) — Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。 **[REA · 待验证]**
 - [eMudhra弱密钥：把公开数据恢复归因于AI与数学脚本的报道](cases/emudhra-weak-key-ai-attribution-report.md) — 往期候选转述eMudhra联合创始人对ET的解释：wrap-unwrap脚本错误产生可被AI工具与数学脚本逆向的弱密钥；未取得实际模型或恢复记录。 **[其他 AI 逆向 · 待验证]**
 - [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**
