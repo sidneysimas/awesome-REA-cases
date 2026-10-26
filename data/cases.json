@@ -1,5 +1,126 @@
 [
   {
+    "id": "resident-evil-saturn-32x-ai-port-idea",
+    "title": "Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Mauro Xavier提出借助AI辅助逆向与Ghidra，把Resident Evil的Saturn版本移到32X；这是具体idea，没有报告开始或完成移植。",
+    "description": "2026年10月25日08:00:22（北京时间），@MXRetroDev（Mauro Xavier）在Resident Evil的32X实验讨论中提出，随着AI进步，结合逆向工程与Ghidra，或许可以把Saturn版本移到32X。动机是跨硬件移植游戏，而非生成相似画面。\n\n10月26日补读线程，从10月24日父帖确认游戏身份。同串讨论了不同实验；@last_life_left展示的3D模型和游戏VM解码被描述为手工编码、没有AI，不能归为这项AI设想的成果。窗口结束后，@last_life_left于10月25日12:06:07回复指出32X并不是“几乎一台Saturn”，即使有反编译也仍需大规模重写。父帖用于识别目标，窗口后回复用于补充可行性限制，均不是本轮新候选。\n\n没有模型选择、代码、性能预算或移植测试，也未报告项目已开始。本条仅为作者的AI辅助逆向idea，不表示Saturn版本可直接运行于32X，未独立验证可行性。",
+    "sources": [
+      {"label": "Mauro Xavier的AI辅助移植设想，2026-10-25", "url": "https://x.com/i/status/2114145005124100386"},
+      {"label": "窗口前父帖确认Resident Evil与32X实验背景，2026-10-24", "url": "https://x.com/i/status/2113988824712028263"},
+      {"label": "窗口后回复指出需要大规模重写，2026-10-25 12:06（北京时间）", "url": "https://x.com/i/status/2114206847104176261"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["仅idea；不能把同串手工编码项目归为AI成果。", "父帖和窗口后回复仅补充上下文；没有移植产物或可行性测试。"],
+    "en": {
+      "title": "Resident Evil: an AI/Ghidra-assisted Saturn-to-32X port idea",
+      "summary": "Mauro Xavier proposes using AI-assisted reverse engineering and Ghidra to port the Saturn version of Resident Evil to the 32X. This is a concrete idea, with no started or completed port reported.",
+      "description": "At 08:00:22 Beijing time on October 25, 2026, @MXRetroDev (Mauro Xavier) suggested in a discussion of Resident Evil experiments on the 32X that advancing AI, reverse engineering and Ghidra might enable a port of the Saturn version. The aim is a cross-hardware game port, not generating similar images.\n\nSupplementary thread reading on October 26 identified the game from an October 24 parent post. The thread discusses different experiments. The 3D-model and game-VM decoding work shown by @last_life_left was described as hand-coded without AI and must not be attributed to this AI proposal. After the window ended, at 12:06:07 Beijing time on October 25, @last_life_left replied that the 32X is not 'almost a Saturn' and that a decompilation would still require a massive rewrite. The parent identifies the target and the later reply supplies a feasibility limitation; neither is a new current-window candidate.\n\nNo model choice, code, performance budget or port test is provided, and the project is not reported as started. This entry is only the author's AI-assisted reverse-engineering idea. It does not establish that the Saturn version can run directly on the 32X, and feasibility was not independently verified.",
+      "metadata": ["Idea only; the thread's hand-coded project must not be credited as an AI achievement.", "The parent and post-window reply supply context only; no port artifact or feasibility test is available."],
+      "source_labels": ["Mauro Xavier's AI-assisted port proposal, October 25, 2026", "Pre-window parent identifying Resident Evil and the 32X experiment, October 24, 2026", "Post-window reply explaining the need for a massive rewrite, October 25, 2026, 12:06 Beijing time"]
+    }
+  },
+  {
+    "id": "addy-recursive-self-learning-rea-skill",
+    "title": "Addy的递归自学习REA skill：持续构建工具的作者自述",
+    "category": "apps",
+    "rea": "REA",
+    "status": "related-project",
+    "summary": "addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。",
+    "description": "2026年10月25日11:08:01（北京时间），@addy_oz在关于REA使用与本地模型的讨论下介绍自己制作的REA skill。作者称受REA启发加入“recursive self learning”，使其持续构建直到任务完成，并称可与任何Agent配合。具体方向是延续逆向后的构建任务，而非一项已验证的软件克隆或设备修复。\n\n10月26日补读原帖与线程确认作者及表述。公开来源支持记录一个有作者归属的相关工具项目，不再仅因仓库未确认而暂缓。发布链接未解析到可核验仓库，因此不猜测仓库名，也不与其他同名skill合并。没有阅读实现、运行示例、学习机制、停止判定或安全约束，不能把“自学习”解释为模型权重更新，或保证任何Agent都能完成任意任务。已构建与兼容性均为作者主张，不等于本合集验证可用，也不表示绕过了模型拒绝策略。",
+    "sources": [{"label": "addy_oz介绍递归自学习REA skill的原帖，2026-10-25", "url": "https://x.com/i/status/2114192228847661505"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["相关工具的作者自述；仓库与实现未核验，未运行。", "持续构建和任意Agent兼容性为作者主张；自学习机制与停止条件未知。"],
+    "en": {
+      "title": "Addy's recursive self-learning REA skill: an author report of a continued-building tool",
+      "summary": "addy_oz reports creating a REA-inspired recursive self-learning skill that keeps building until a task is done, claiming compatibility with any agent. Repository identity and actual stopping criteria remain unverified.",
+      "description": "At 11:08:01 Beijing time on October 25, 2026, @addy_oz introduced a self-built REA skill in a discussion of REA use and local models. The author says REA inspired the addition of 'recursive self learning' so it keeps building until the task is done, and claims it works with any agent. Its specific direction is continuing the building stage of a reverse-engineering workflow, not a verified software clone or device repair.\n\nRereading the original post and thread on October 26 confirmed the author and wording. The public source supports an attributed related-tool project; an unconfirmed repository alone is no longer treated as a reason to defer it. The publication link was not resolved to a verifiable repository, so no repository name is guessed and it is not merged with similarly named skills. No implementation, executed example, learning mechanism, stopping rule or safety constraints were inspected. 'Self learning' cannot be taken to mean model-weight updates, nor does it guarantee that every agent will finish arbitrary tasks. Building and compatibility are author claims, not usability verification by this collection, and do not establish a way around model refusal policies.",
+      "metadata": ["Author report of a related tool; repository and implementation unverified, not run.", "Continued building and any-agent compatibility are author claims; learning mechanism and stopping criteria are unknown."],
+      "source_labels": ["addy_oz's original introduction of the recursive self-learning REA skill, October 25, 2026"]
+    }
+  },
+  {
+    "id": "ultima-online-claude-private-server-report",
+    "title": "Ultima Online：Claude研究游戏文件并建立私服的转述",
+    "category": "games",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "kreia转述一位r/ClaudeAI用户让Claude研究Ultima Online文件、建立个人服务器并一起游玩；没有取得原技术记录，不能认定从零实现整套服务器。",
+    "description": "2026年10月25日08:05:33（北京时间），kreia在韩语帖中介绍一位玩家与Claude研究Ultima Online游戏文件、建立个人私服并共同游玩的故事。Ultima Online是网络角色扮演游戏；此处目标是让个人服务器承接游戏，并让Claude参与游玩，而不是只生成一段游戏介绍。作者紧接着的回复把来源指向r/ClaudeAI，列出原故事标题“I got Claude to play Ultima Online with me... after it reverse engineered the game files and made me my own private server.”。\n\n10月26日补读原帖与回复，确认转述作者及这条出处链。两条候选均在本轮窗口内；补读不是新的窗口候选。未取得Reddit原技术正文、代码、网络抓包、客户端版本或可运行服务器，因此只收录明确的二手报告。无法确认是否使用现有开源服务器、Claude究竟恢复了哪些文件格式或协议，以及是否能兼容原版全部功能；“没有文档和源码”的概括也不等于已经证明从零重建。没有下载游戏、运行服务器或独立复现。",
+    "sources": [
+      {"label": "kreia转述Ultima Online私服与Claude共同游玩，2026-10-25", "url": "https://x.com/i/status/2114146308579807357"},
+      {"label": "同作者回复列出r/ClaudeAI出处与原故事标题，2026-10-25", "url": "https://x.com/i/status/2114146330977488940"}
+    ],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["二手报告；Reddit原技术正文、代码及服务器版本未核验。", "不把私服配置或游戏文件分析升级为从零重建完整服务器；未独立复现。"],
+    "en": {
+      "title": "Ultima Online: a report of Claude studying game files and setting up a private server",
+      "summary": "kreia relays a Reddit user's account of Claude studying Ultima Online files, creating a personal server and playing together. The primary technical account was not obtained, so a complete from-scratch server is not established.",
+      "description": "At 08:05:33 Beijing time on October 25, 2026, kreia posted in Korean about a player working with Claude to analyze Ultima Online game files, create a private server and play together. Ultima Online is an online role-playing game. The stated aim is a personal server supporting the game and Claude participating in play, rather than merely generating a game description. The author's immediate reply identifies r/ClaudeAI and gives the original story title: 'I got Claude to play Ultima Online with me... after it reverse engineered the game files and made me my own private server.'\n\nSupplementary rereading on October 26 confirmed the reporting author and this source chain. Both supplied candidates fall inside the current window; rereading does not create new window candidates. The original Reddit technical text, code, packet captures, client version and runnable server were not obtained. This entry therefore preserves a specific secondhand report only. It is unknown whether an existing open-source server was used, which file formats or protocols Claude recovered, or whether all original functionality is supported. A broad claim about lacking documentation and source does not establish a full from-scratch reconstruction. No game was downloaded, server run or result independently reproduced.",
+      "metadata": ["Secondhand report; the original Reddit technical text, code and server version were not verified.", "Private-server setup or file analysis is not upgraded to complete from-scratch server reconstruction; not independently reproduced."],
+      "source_labels": ["kreia's report of an Ultima Online private server and playing with Claude, October 25, 2026", "The author's reply identifying r/ClaudeAI and the original story title, October 25, 2026"]
+    }
+  },
+  {
+    "id": "resident-evil5-inventory-re4-ai-mod-idea",
+    "title": "把RE5物品栏机制移入RE4：AI反编译Mod的读者设想",
+    "category": "games",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "一位读者提出借助AI反编译，将Resident Evil 5的物品栏系统带到RE4；帖子只是明确的Mod愿望，没有实现、版本或可玩产物。",
+    "description": "2026年10月25日09:08:31（北京时间），候选作者询问能否用AI反编译，把Resident Evil 5的物品栏系统做进RE4。背景是对AI反编译能力的讨论，具体动机是改变另一部游戏的库存交互，而非只还原源码。\n\n原帖没有展开物品栏应保留哪些操作、界面和限制，也没有指定RE4的发行版本；不推定是原版或重制版。作者没有说已经开始研究，没有点名模型、REA、代码仓库或测试。本条仅按具体AI辅助逆向Mod idea收录，不将问句改写成已完成的跨游戏移植，也不声称游戏之间可直接复用实现或资产。",
+    "sources": [{"label": "读者关于AI反编译与RE5物品栏移入RE4的提问，2026-10-25", "url": "https://x.com/i/status/2114162154857505049"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["仅idea；未指定RE4版本、模型或REA，没有代码与测试。"],
+    "en": {
+      "title": "Bringing RE5's inventory into RE4: a reader's AI-decompilation mod idea",
+      "summary": "A reader asks whether AI decompilation could bring Resident Evil 5's inventory system into RE4. This is a specific mod wish, with no implementation, target edition or playable artifact.",
+      "description": "At 09:08:31 Beijing time on October 25, 2026, the candidate author asked whether AI decompilation could put Resident Evil 5's inventory system into RE4. In a discussion of AI decompilation, the concrete aim is to change inventory interaction in another game rather than simply recover source.\n\nThe post does not specify which inventory operations, interface details or constraints should transfer, nor which RE4 edition is intended; neither the original nor the remake is assumed. The author does not report starting research and names no model, REA workflow, repository or test. This is included only as a concrete AI-assisted reverse-engineering mod idea. A question is not rewritten as a completed cross-game port, and direct reuse of implementations or assets is not asserted.",
+      "metadata": ["Idea only; RE4 edition, model and REA use are unspecified, with no code or tests."],
+      "source_labels": ["Reader asking about AI decompilation and bringing RE5's inventory into RE4, October 25, 2026"]
+    }
+  },
+  {
+    "id": "tjay-chesscom-local-qwen-visual-review",
+    "title": "Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。",
+    "description": "2026年10月25日09:12:32（北京时间），@type_tjay称Claude替代了自己的100美元Chess.com订阅：作者自述逆向其复盘引擎，并把结果接到M5 Pro Mac本地运行的Qwen 3.5 35B四位量化模型。动机是自己作为视觉学习者，不易从代数棋谱理解走法，因此给AI绘图工具，让它直接在棋盘上解释。\n\n作者同时报告能自动同步账号自创建以来的Chess.com对局，称Mac、Windows和浏览器版本已可用，并计划周末开源。帖子没有说明100美元订阅的计费周期或总开发成本，不能把它改成已核验的节省金额。没有取得回复中的产品入口、源码、复盘引擎恢复方法、同步权限或准确性测试；不能确认复用了哪些既有棋力引擎、是否等价于Chess.com专有评分，也不能确认所有历史对局或全部平台的覆盖。\n\n10月26日补读原帖确认作者、模型表述与发布承诺；附视频未作视觉核验。这里只保留作者自述，未独立运行、登录同步或验证开源已经兑现；也未确认使用REA。",
+    "sources": [{"label": "type_tjay关于Chess.com复盘、Qwen本地模型与棋盘绘图的自述，2026-10-25", "url": "https://x.com/i/status/2114163164841640230"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["Qwen 3.5 35B四位量化、M5 Pro Mac、100美元订阅为作者自述；没有订阅周期或成本验证。", "跨平台与历史同步未测试；开源为未来承诺，附视频未核验。"],
+    "en": {
+      "title": "Visual Chess.com review: Tjay reports a Claude rebuild paired with local Qwen",
+      "summary": "Tjay says a Chess.com review-engine investigation, Claude and local quantized Qwen provide visual board explanations and game-history synchronization. Mac, Windows and browser availability are claimed; open sourcing remains a promise.",
+      "description": "At 09:12:32 Beijing time on October 25, 2026, @type_tjay said Claude had replaced a $100 Chess.com subscription. The author reports reverse-engineering its review engine and pairing the result with a four-bit-quantized Qwen 3.5 35B running locally on an M5 Pro Mac. As a visual learner who finds algebraic move notation difficult to interpret, the author gave the AI drawing tools to explain moves directly over the board.\n\nThe author also reports automatic synchronization of Chess.com games back to account creation, claims Mac, Windows and browser versions are available, and promises to open source it over the weekend. The post gives neither the billing period of the $100 subscription nor total development cost; this is not a verified savings figure. The product link in replies, code, engine-recovery method, synchronization permissions and accuracy tests were not obtained. Which existing chess engines may be reused, equivalence to proprietary Chess.com scoring, and coverage of all historical games and platforms remain unconfirmed.\n\nRereading on October 26 confirmed the author, model wording and publication promise. The attached video was not visually verified. This entry preserves an author report only: it was not run, account synchronization was not attempted, and delivery of the open-source promise was not verified. REA use is also unconfirmed.",
+      "metadata": ["Four-bit Qwen 3.5 35B, an M5 Pro Mac and a $100 subscription are author reports; subscription period and costs were not verified.", "Cross-platform support and historical synchronization were not tested. Open sourcing is a future promise; the attached video was not verified."],
+      "source_labels": ["type_tjay's account of Chess.com review, local Qwen and board drawing, October 25, 2026"]
+    }
+  },
+  {
+    "id": "yjcdon-bluetooth-speaker-firmware-silence",
+    "title": "蓝牙音箱固件：yjcdon让AI研究关闭开机音与自动关机",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "yjcdon报告正在用AI逆向自己的蓝牙音箱固件，目标是去掉开机提示音和自动关机；未给型号或完成补丁。",
+    "description": "2026年10月25日10:56:23（北京时间），@yjcdon称AI正在为自己逆向蓝牙音箱固件，想消除令人困扰的开机启动音与自动关机行为。这是针对两个具体设备行为的在研修改，不是已经刷写成功或音质改善的报告。\n\n10月26日补读原帖与线程确认作者。可见回复只有旁观者的赞同和感想，不是作者提交的测试或完成声明；其中窗口外回复只用于核对有无后续结果，不作为本轮新候选。帖子没有品牌、型号、芯片、固件版本、模型、REA使用信息或代码，不能提供通用关闭方法，也不能确认修改是否保留设备安全和恢复能力。保留设备未命名这一限制，以作者、明确目的和原帖区分独立实践；未下载固件或执行设备操作。",
+    "sources": [{"label": "yjcdon正在研究蓝牙音箱开机音和自动关机的原帖，2026-10-25", "url": "https://x.com/i/status/2114189299570905183"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["进行中自述；型号、模型、固件和REA使用未知，没有完成补丁或刷写验证。"],
+    "en": {
+      "title": "Bluetooth speaker firmware: yjcdon asks AI to remove startup sound and automatic shutdown",
+      "summary": "yjcdon reports using AI to reverse-engineer a Bluetooth speaker's firmware to remove its startup sound and automatic shutdown. No model identifier or completed patch is supplied.",
+      "description": "At 10:56:23 Beijing time on October 25, 2026, @yjcdon said AI was currently reverse-engineering a Bluetooth speaker's firmware to eliminate an annoying startup sound and automatic shutdown. This is an ongoing attempt to change two concrete device behaviors, not a report of a successful flash or improved audio quality.\n\nSupplementary rereading of the post and thread on October 26 confirmed the author. Visible replies offer encouragement and reactions, not author-supplied tests or completion statements. Replies outside the window were used only to check for follow-up results, not as new current-window candidates. No brand, model, chip, firmware version, AI model, REA usage or code is given. The post cannot support a universal disabling method or establish that changes preserve device safety and recovery. The unnamed device is retained as a limitation; the author, explicit purpose and original post distinguish this individual effort. No firmware was downloaded or device operation performed.",
+      "metadata": ["Ongoing author report; speaker model, AI model, firmware and REA use are unknown, with no completed patch or flashing verification."],
+      "source_labels": ["yjcdon's original post about speaker startup sound and automatic shutdown, October 25, 2026"]
+    }
+  },
+  {
     "id": "ady-stich-faixi-six-tiny-client",
     "title": "STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述",
     "category": "apps",

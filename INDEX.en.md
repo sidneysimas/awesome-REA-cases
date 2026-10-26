@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**891 entries**, organized by use case, without a Top-N or popularity threshold.
+**897 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (195)
-- [Hardware and interoperability](categories/en/hardware.md) (237)
-- [Applications and clients](categories/en/apps.md) (379)
+- [Games and preservation](categories/en/games.md) (198)
+- [Hardware and interoperability](categories/en/hardware.md) (238)
+- [Applications and clients](categories/en/apps.md) (381)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (80)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Resident Evil: an AI/Ghidra-assisted Saturn-to-32X port idea](cases/en/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier proposes using AI-assisted reverse engineering and Ghidra to port the Saturn version of Resident Evil to the 32X. This is a concrete idea, with no started or completed port reported. **[Other AI-assisted work · Needs verification]**
+- [Ultima Online: a report of Claude studying game files and setting up a private server](cases/en/ultima-online-claude-private-server-report.md) — kreia relays a Reddit user's account of Claude studying Ultima Online files, creating a personal server and playing together. The primary technical account was not obtained, so a complete from-scratch server is not established. **[Other AI-assisted work · Needs verification]**
+- [Bringing RE5's inventory into RE4: a reader's AI-decompilation mod idea](cases/en/resident-evil5-inventory-re4-ai-mod-idea.md) — A reader asks whether AI decompilation could bring Resident Evil 5's inventory system into RE4. This is a specific mod wish, with no implementation, target edition or playable artifact. **[REA use unconfirmed · Needs verification]**
 - [Pokemon Yellow: Álvaro's unverified report of free Claude returning source and a game](cases/en/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro says free Claude returned source and a game after being asked to decompile his Pokemon Yellow copy. Output was not verified and existing public disassembly may be relevant. **[Other AI-assisted work · Needs verification]**
 - [A cod online client: a reader's wish to use AI reverse-engineering tools](cases/en/cod-online-ai-client-idea.md) — A reader asks for a cod online client using available AI reverse-engineering tools. This is a concrete idea, with no implementation or networking result. **[Other AI-assisted work · Needs verification]**
 - [Harvest Moon: Back To Nature: Dave's pi-harness decompilation and module-integration progress](cases/en/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave reports all Harvest Moon functions decompiled with a PSX pi harness and is folding them into modules. This is not 100% byte matching or a playable port. **[Other AI-assisted work · In progress]**
@@ -226,6 +229,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [Bluetooth speaker firmware: yjcdon asks AI to remove startup sound and automatic shutdown](cases/en/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon reports using AI to reverse-engineer a Bluetooth speaker's firmware to remove its startup sound and automatic shutdown. No model identifier or completed patch is supplied. **[Other AI-assisted work · In progress]**
 - [A rumored MacBook Pro assembly: reported Opus part modeling and geometry checks](cases/en/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior reports a 126-part articulated MacBook Pro model made with Opus 5.5 from leaks. Its 259 passing rules and zero errors are author claims, not verification of Apple's design. **[Other AI-assisted work · Needs verification]**
 - [PS5 voice control: chuplung reports Opus network research and on-screen menu operation](cases/en/chuplung-ps5-opus-network-voice-control.md) — chuplung reports Claude Opus 5.5 studying PS5 communication on the same Wi-Fi, then waking it, downloading and playing after pairing approval. This is not a jailbreak or console shell. **[Other AI-assisted work · Needs verification]**
 - [YutianDun encrypted USB drives: Xusheng Li's AI-assisted TTD and hidden-account investigation](cases/en/yutiandun-ai-ttd-hidden-account-review.md) — A Binary Ninja researcher reports AI-assisted tracing of SecZure's YutianDun readers and hidden accounts that unwrap the same content identifier. Tests on two drives do not verify every product. **[Other AI-assisted work · Analysis test]**
@@ -466,6 +470,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Addy's recursive self-learning REA skill: an author report of a continued-building tool](cases/en/addy-recursive-self-learning-rea-skill.md) — addy_oz reports creating a REA-inspired recursive self-learning skill that keeps building until a task is done, claiming compatibility with any agent. Repository identity and actual stopping criteria remain unverified. **[REA · Related project]**
+- [Visual Chess.com review: Tjay reports a Claude rebuild paired with local Qwen](cases/en/tjay-chesscom-local-qwen-visual-review.md) — Tjay says a Chess.com review-engine investigation, Claude and local quantized Qwen provide visual board explanations and game-history synchronization. Mac, Windows and browser availability are claimed; open sourcing remains a promise. **[Other AI-assisted work · Needs verification]**
 - [STICH FAIXI SiX: AdyLovelace's report of a REA/Ghidra Tiny Client](cases/en/ady-stich-faixi-six-tiny-client.md) — AdyLovelace says REA, AI Assist and Ghidra helped create an experimental Tiny Client for a target called STICH FAIXI SiX. No code or checkable feature set is supplied. **[REA · Needs verification]**
 - [Ablation: an LLM tool loop linking binary context and analysis modules](cases/en/ablation-tool-ai-reverse-engineering-framework.md) — The candidate names Ablation as an AI-assisted reverse-engineering framework. Ablation-Tool/ablation's README describes an LLM analyst loop, session context and multi-architecture analysis; nothing was run here. **[Other AI-assisted work · Related project]**
 - [Hermes examines REA itself: Charles's brief local-model report](cases/en/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti says Hermes is reverse-engineering the REA repository with a local LLM; no model, analysis scope or resulting changes are supplied. **[Other AI-assisted work · Needs verification]**

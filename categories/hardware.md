@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [蓝牙音箱固件：yjcdon让AI研究关闭开机音与自动关机](../cases/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon报告正在用AI逆向自己的蓝牙音箱固件，目标是去掉开机提示音和自动关机；未给型号或完成补丁。 **[其他 AI 逆向 · 进行中]**
 - [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](../cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
 - [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](../cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**
 - [御天盾加密U盘：Xusheng Li的AI辅助TTD与隐藏账号调查](../cases/yutiandun-ai-ttd-hidden-account-review.md) — Binary Ninja研究者报告AI辅助跟踪SecZure御天盾读取流程，发现隐藏账号可解出同一内容标识；两盘测试不等于所有产品验证。 **[其他 AI 逆向 · 分析测试]**

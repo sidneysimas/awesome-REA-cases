@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想](../cases/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier提出借助AI辅助逆向与Ghidra，把Resident Evil的Saturn版本移到32X；这是具体idea，没有报告开始或完成移植。 **[其他 AI 逆向 · 待验证]**
+- [Ultima Online：Claude研究游戏文件并建立私服的转述](../cases/ultima-online-claude-private-server-report.md) — kreia转述一位r/ClaudeAI用户让Claude研究Ultima Online文件、建立个人服务器并一起游玩；没有取得原技术记录，不能认定从零实现整套服务器。 **[其他 AI 逆向 · 待验证]**
+- [把RE5物品栏机制移入RE4：AI反编译Mod的读者设想](../cases/resident-evil5-inventory-re4-ai-mod-idea.md) — 一位读者提出借助AI反编译，将Resident Evil 5的物品栏系统带到RE4；帖子只是明确的Mod愿望，没有实现、版本或可玩产物。 **[未确认使用 REA · 待验证]**
 - [Pokemon Yellow：Álvaro称免费Claude返回源码与游戏的未核验实验](../cases/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro称让免费Claude反编译其Pokemon Yellow副本后收到源码和游戏；未核验输出，也不能排除既有公开反汇编的作用。 **[其他 AI 逆向 · 待验证]**
 - [cod online客户端：利用AI逆向工具保存游戏的读者愿望](../cases/cod-online-ai-client-idea.md) — 一位读者希望用现有AI逆向工具制作cod online客户端；仅为具体idea，没有实现或联网结果。 **[其他 AI 逆向 · 待验证]**
 - [Harvest Moon: Back To Nature：Dave的pi harness反编译与模块归并进展](../cases/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave称用pi harness反编译PSX游戏，Harvest Moon全部函数已反编译，正归并模块；不等同100%字节匹配或可玩移植。 **[其他 AI 逆向 · 进行中]**

@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **891 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **897 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（195）
-- [硬件与设备互通](categories/hardware.md)（237）
-- [应用与客户端](categories/apps.md)（379）
+- [游戏与游戏保存](categories/games.md)（198）
+- [硬件与设备互通](categories/hardware.md)（238）
+- [应用与客户端](categories/apps.md)（381）
 - [算法与功能重建](categories/algorithms.md)（80）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Resident Evil：AI与Ghidra辅助Saturn到32X移植的设想](cases/resident-evil-saturn-32x-ai-port-idea.md) — Mauro Xavier提出借助AI辅助逆向与Ghidra，把Resident Evil的Saturn版本移到32X；这是具体idea，没有报告开始或完成移植。 **[其他 AI 逆向 · 待验证]**
+- [Ultima Online：Claude研究游戏文件并建立私服的转述](cases/ultima-online-claude-private-server-report.md) — kreia转述一位r/ClaudeAI用户让Claude研究Ultima Online文件、建立个人服务器并一起游玩；没有取得原技术记录，不能认定从零实现整套服务器。 **[其他 AI 逆向 · 待验证]**
+- [把RE5物品栏机制移入RE4：AI反编译Mod的读者设想](cases/resident-evil5-inventory-re4-ai-mod-idea.md) — 一位读者提出借助AI反编译，将Resident Evil 5的物品栏系统带到RE4；帖子只是明确的Mod愿望，没有实现、版本或可玩产物。 **[未确认使用 REA · 待验证]**
 - [Pokemon Yellow：Álvaro称免费Claude返回源码与游戏的未核验实验](cases/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro称让免费Claude反编译其Pokemon Yellow副本后收到源码和游戏；未核验输出，也不能排除既有公开反汇编的作用。 **[其他 AI 逆向 · 待验证]**
 - [cod online客户端：利用AI逆向工具保存游戏的读者愿望](cases/cod-online-ai-client-idea.md) — 一位读者希望用现有AI逆向工具制作cod online客户端；仅为具体idea，没有实现或联网结果。 **[其他 AI 逆向 · 待验证]**
 - [Harvest Moon: Back To Nature：Dave的pi harness反编译与模块归并进展](cases/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave称用pi harness反编译PSX游戏，Harvest Moon全部函数已反编译，正归并模块；不等同100%字节匹配或可玩移植。 **[其他 AI 逆向 · 进行中]**
@@ -224,6 +227,7 @@
 
 ### 硬件与设备互通
 
+- [蓝牙音箱固件：yjcdon让AI研究关闭开机音与自动关机](cases/yjcdon-bluetooth-speaker-firmware-silence.md) — yjcdon报告正在用AI逆向自己的蓝牙音箱固件，目标是去掉开机提示音和自动关机；未给型号或完成补丁。 **[其他 AI 逆向 · 进行中]**
 - [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
 - [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**
 - [御天盾加密U盘：Xusheng Li的AI辅助TTD与隐藏账号调查](cases/yutiandun-ai-ttd-hidden-account-review.md) — Binary Ninja研究者报告AI辅助跟踪SecZure御天盾读取流程，发现隐藏账号可解出同一内容标识；两盘测试不等于所有产品验证。 **[其他 AI 逆向 · 分析测试]**
@@ -464,6 +468,8 @@
 
 ### 应用与客户端
 
+- [Addy的递归自学习REA skill：持续构建工具的作者自述](cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
+- [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
 - [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](cases/ablation-tool-ai-reverse-engineering-framework.md) — 候选点名Ablation为AI辅助逆向框架；补查Ablation-Tool/ablation的README，确认文档描述LLM分析循环、会话上下文与多架构分析，但未运行。 **[其他 AI 逆向 · 相关项目]**
 - [Hermes研究REA自身：Charles的本地模型简短报告](cases/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti称Hermes正在本地LLM上逆向REA仓库；没有模型、分析范围或改动结果。 **[其他 AI 逆向 · 待验证]**
