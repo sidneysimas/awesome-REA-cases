@@ -1,5 +1,162 @@
 [
   {
+    "id": "eduard-pocket-contact-name-transcription-rebuild",
+    "title": "Pocket转写改造：Eduard导入联系人名字以改善人名拼写",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "Eduard Faus Gil称逆向并改进Pocket录音转写体验；作者补充具体改动是导入联系人名字，配合word boosting与LLM流程减少人名拼写错误，未开源。",
+    "description": "2026年10月20日，Eduard Faus Gil（@eduardfausgil）称自己逆向了Pocket，并针对广告、麦克风质量、人名拼写和缺少agent功能等体验问题做了改造，原帖附演示视频。他把成果称为“10X better”，但没有给出十倍的测试指标。\n\n补查同日作者讨论串，他说明现有流程已经可以做word boosting再经LLM处理，但手动输入每个人名很麻烦，因此自己加入一个简单的联系人名字导入功能，使系统可获得大部分可能提及的人名。他进一步澄清是在改善人名拼写，而不是声称无需同意识别说话人。这是可具体描述的AI转写产品改造，不证明麦克风硬件被改善，也没有证据确认全部宣传功能。\n\n作者说没有开源；未取得实现、逆向方法、模型、准确率对照或独立测试。REA使用及AI是否参与逆向本身均不明，已知LLM位于转写处理流程。本合集未观看验证视频内容或运行软件，按未验证作者报告收录，保留工具归属未知，不把“10X”当成实测。本帖为往期候选补审，补查讨论串仅用于澄清其具体改动。",
+    "sources": [
+      {"label": "Eduard：Pocket逆向改造与演示帖，2026-10-20", "url": "https://x.com/i/status/2112342282343223655"},
+      {"label": "作者说明联系人名字导入、word boosting和LLM流程，2026-10-20", "url": "https://x.com/i/status/2112363828910637278"},
+      {"label": "作者澄清改善的是人名拼写，2026-10-20", "url": "https://x.com/i/status/2112367021199692182"},
+      {"label": "作者说明未开源，2026-10-20", "url": "https://x.com/i/status/2112373286214729985"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["作者自述及同日澄清；实现未开源，本合集未独立复现。", "LLM用于转写流程；REA及AI辅助逆向本身未确认，10X无量化依据。"],
+    "en": {
+      "title": "Pocket transcription modification: Eduard imports contact names to improve spelling",
+      "summary": "Eduard Faus Gil reports reverse-engineering and modifying Pocket's recording/transcription experience. His follow-up specifies importing contact names for a word-boosting and LLM workflow to reduce name misspellings; the implementation is not open-source.",
+      "description": "On October 20, 2026, Eduard Faus Gil (@eduardfausgil) said he had reverse-engineered Pocket and modified its experience in response to ads, microphone quality, name misspellings and a lack of agentic features, attaching a demonstration video. He called it '10X better' without providing a tenfold performance metric.\n\nSupplementary lookup of his same-day discussion shows that the existing workflow could already do word boosting followed by LLM processing, but entering every name manually was inconvenient. He therefore added a simple contact-name import so the system would have most names he might mention. He also clarified that he meant improving name spelling, not identifying speakers without consent. This is a concrete modification of an AI transcription product; it does not establish improved microphone hardware or confirm every advertised capability.\n\nThe author said he did not open-source it. No implementation, reverse-engineering method, model, accuracy comparison or independent test was obtained. REA use and AI's participation in the reverse engineering itself remain unknown; the LLM is explicitly part of the transcription workflow. This collection did not inspect the video to validate its contents or run the software. The entry is an unverified author report with tool attribution left unknown, not a measured 10X result. The candidate comes from an earlier window; the supplementary discussion is used only to clarify the specific modification.",
+      "metadata": ["Author report and same-day clarifications; implementation not open-source, not independently reproduced here.", "The LLM is used in transcription; REA and AI-assisted reverse engineering itself are unconfirmed, and 10X has no quantitative basis."],
+      "source_labels": ["Eduard's Pocket modification and demonstration post, October 20, 2026", "Author on contact-name import, word boosting and the LLM workflow, October 20, 2026", "Author clarifies name spelling, October 20, 2026", "Author says the work was not open-sourced, October 20, 2026"]
+    }
+  },
+  {
+    "id": "techsignal-vlc-style-rea-player-experiment",
+    "title": "VLC样式播放器：TechSignal转述REA重建中的可用功能与缺陷",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "TechSignal报道AI辅助流程约10至15分钟做出VLC样式播放器，MP3和快捷键可用，但视频格式、目录导航与全屏仍有缺陷；原实验产物未取得。",
+    "description": "2026年10月25日13:28（北京时间），TechSignal（@tchsignal）介绍REA把AI编码Agent接到Ghidra、Hopper和IDA等分析工具的流程，并转述一次VLC样式媒体播放器重建实验。用途是从现有软件研究功能，再做替代实现。报道说约10至15分钟得到一个播放器，MP3播放和键盘快捷键可用，但视频格式支持、文件夹导航、全屏播放仍有限制。\n\n这是一则二手实验报告，没有原实验作者、所用模型、VLC版本、具体被恢复函数、重建源码或测试日志。本合集补查原帖只确认TechSignal归属及附图，未运行播放器，也未独立验证工时和功能。VLC本身免费开源，此例不能证明无需源码即可复制复杂付费软件，更不等于完整克隆VLC。保留部分功能可用和三类缺陷，按待验证报告收录，不把原帖标题对商业软件的提问当成成功。本条来自此前窗口补审，不是本轮新发布的帖子。",
+    "sources": [{"label": "TechSignal：REA与VLC样式播放器实验报道，2026-10-25", "url": "https://x.com/i/status/2114227455191892439"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["二手转述；原实验作者、模型、源码与测试日志未取得。", "10至15分钟、MP3与快捷键有效未独立验证；视频格式、目录导航和全屏缺陷保留。"],
+    "en": {
+      "title": "VLC-style player: TechSignal reports useful features and limits of a REA reconstruction experiment",
+      "summary": "TechSignal reports an AI-assisted workflow producing a VLC-style player in roughly 10–15 minutes, with MP3 playback and shortcuts working but video-format, folder-navigation and fullscreen limitations. The original artifact was not obtained.",
+      "description": "At 13:28 Beijing time on October 25, 2026, TechSignal (@tchsignal) described REA connecting AI coding agents to analysis tools including Ghidra, Hopper and IDA, and relayed a VLC-style media-player reconstruction experiment. The intended use is to study existing software's functionality and build an alternative implementation. The report says a player was produced in roughly 10–15 minutes, with MP3 playback and keyboard shortcuts working, but limitations in video formats, folder navigation and fullscreen playback.\n\nThis is a secondhand experiment report without the original experimenter, model, VLC version, specific recovered functions, reconstruction source or test logs. Supplementary lookup only confirmed TechSignal's authorship and the attached image; this collection neither ran the player nor independently verified timing or functionality. VLC is itself free and open-source, so this example does not establish that complex paid applications can be reproduced without source, nor is it a complete VLC clone. Both the partially working features and all three defect categories are retained in this unverified entry; the headline's question about commercial software is not treated as a success. This item was reviewed from an earlier window, not newly posted in the current window.",
+      "metadata": ["Secondhand account; original experimenter, model, source and test logs were not obtained.", "The 10–15-minute timing, MP3 playback and shortcuts were not independently verified; video-format, folder-navigation and fullscreen defects are retained."],
+      "source_labels": ["TechSignal on REA and the VLC-style player experiment, October 25, 2026"]
+    }
+  },
+  {
+    "id": "grimmer-rea-qlib-pltr-dip-rule-report",
+    "title": "PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示",
+    "category": "algorithms",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。",
+    "description": "2026年10月25日23:02:09（北京时间），Grimmer（@0xGrimmer_）以附视频帖子介绍Claude Code中的REA与Microsoft qlib组合。所述工作流先提取一条下跌报警规则，以58行Python重写，称9项测试通过，再交给qlib对PLTR五年日线数据回测。作者给出的规则为z = (px − sma20) / σ20，z < -2时报警；这是已给公式的功能重建与回测报告，不是恢复完整交易软件。\n\n帖子开头称19秒、+535%，并提13笔交易合计2.60%费用，另说画面中有表现更好的对照。这些都归于发帖者：没有原被分析软件/文件名、源码、9项测试内容、数据起止时间、价格处理方式、完整回测表或执行日志，不能确认无前视偏差、可重复性或对照结果。35万美元量化年薪与49.7k星是宣传背景，不是本案例成本或验证。补查原帖确认作者与附视频，未独立核对视频运行或重跑回测。\n\n收录的是AI辅助规则提取、重实现与接入回测工具的具体演示转述。历史模拟回报不等于实盘收益或交易建议，9项测试也不独证策略正确或盈利能力。未获取交易密钥、连接券商、安装qlib或执行交易，状态保持待验证。",
+    "sources": [{"label": "Grimmer的REA/qlib与PLTR规则重建演示介绍，2026-10-25", "url": "https://x.com/i/status/2114371946611707954"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["原软件、重建源码、测试和回测表未取得；19秒/58行/9测试及收益数字均为发帖者说法。", "+535%与13笔交易/2.60%费用不等于实盘收益；未独立重跑或核验对照。"],
+    "en": {
+      "title": "PLTR dip-alert rule: Grimmer describes REA extraction and a qlib backtest demonstration",
+      "summary": "Grimmer describes REA extracting a dip-alert rule in Claude Code and qlib backtesting five years of PLTR daily data. Nineteen seconds, 58 lines, nine tests, +535% and fees are demonstration claims, not verified returns.",
+      "description": "At 23:02:09 Beijing time on October 25, 2026, Grimmer (@0xGrimmer_) posted an attached-video introduction to REA plus Microsoft's qlib in Claude Code. The described workflow extracts a dip-alert rule, rewrites it in 58 lines of Python, reportedly passes nine tests, and sends it to qlib for a backtest on five years of PLTR daily prices. The stated rule is z = (px − sma20) / σ20, alerting when z < -2. This is a report of reconstructing and backtesting a supplied rule, not recovering an entire trading application.\n\nThe opening claims 19 seconds and +535%, and the text mentions total fees of 2.60% across 13 trades, while saying a better-performing comparison is visible on screen. All are attributed to the poster. No original analyzed software/file name, source, nine test definitions, data dates, price-treatment details, complete results table or execution log is supplied. Absence of look-ahead bias, reproducibility and the comparator's result are unestablished. A $350,000 quant salary and 49.7k repository stars are promotional context, not this case's cost or validation. Supplementary lookup confirmed the author and video attachment without independently checking the recorded run or repeating the backtest.\n\nThis entry covers a specific account of AI-assisted rule extraction, reimplementation and connection to a backtesting tool. Historical simulated returns are neither live profits nor trading advice, and nine tests alone establish neither strategy correctness nor profitability. No trading keys were accessed, broker connected, qlib installed or trade executed. The entry remains unverified.",
+      "metadata": ["Original software, reconstruction source, tests and backtest table were not obtained; 19 seconds, 58 lines, nine tests and returns are poster claims.", "+535% and 13 trades/2.60% fees are not live returns; no independent rerun or comparator verification."],
+      "source_labels": ["Grimmer's REA/qlib PLTR rule-reconstruction demonstration introduction, October 25, 2026"]
+    }
+  },
+  {
+    "id": "gigabyte-x870-codex-linux-fan-control-idea",
+    "title": "技嘉X870风扇控制：让Codex参考Windows配套软件补Linux支持的idea",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "in-progress",
+    "summary": "Bocchi calls Saul提出，即使技嘉不提供Linux的X870风扇控制固件，也可让Codex从Windows配套软件研究；尚无协议、驱动或实测。",
+    "description": "2026年10月25日22:26:12（北京时间），Bocchi calls Saul（@nomoreAcetoplay）提出一个具体互通想法：即使技嘉不给Linux提供X870风扇控制固件，也可以让Codex从Windows配套软件中研究相关实现。X870是作者用于限定硬件系列的名称，帖子没有具体主板型号、控制芯片或Windows软件名，不能自行补成某一驱动或厂商工具。\n\n要解决的是Linux下的风扇控制支持，参考对象是厂商现有Windows软件。原文是设想，没有说已运行Codex、提取协议、写出驱动或验证风扇调速；也不证明厂商实际上没有任何Linux支持。按进行中的idea收录，REA未确认，未归因为Codex已恢复固件。补查原帖仅确认作者与文字，未下载配套软件、接触设备或更改风扇曲线。",
+    "sources": [{"label": "Bocchi calls Saul的Codex/X870 Linux风扇控制设想，2026-10-25", "url": "https://x.com/i/status/2114362897845608908"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["具体idea，尚未报告执行或结果；主板型号、芯片和Windows软件未名。", "不确认技嘉Linux支持的完整现状，未操作风扇或运行目标。"],
+    "en": {
+      "title": "Gigabyte X870 fan control: an idea to use Codex and Windows software as a Linux reference",
+      "summary": "Bocchi calls Saul proposes having Codex investigate Gigabyte's Windows companion software if Linux X870 fan-control firmware is unavailable. No protocol, driver or device test is reported.",
+      "description": "At 22:26:12 Beijing time on October 25, 2026, Bocchi calls Saul (@nomoreAcetoplay) proposed a concrete interoperability idea: even if Gigabyte does not supply Linux fan-control firmware for X870, Codex could investigate the corresponding implementation in its Windows companion software. X870 is the hardware-series identifier given by the author; no exact motherboard, controller chip or Windows program is named. A particular driver or vendor utility must not be inferred.\n\nThe intended problem is Linux fan-control support, using existing vendor Windows software as a reference. The wording is a proposal, not a report of running Codex, extracting a protocol, writing a driver or testing fan speeds. It also does not establish that the vendor actually offers no Linux support. This is included as an in-progress idea, with REA unconfirmed, not a claim that Codex recovered firmware. Supplementary lookup only confirmed author and wording; no companion software was downloaded, device accessed or fan curve changed.",
+      "metadata": ["A concrete idea without reported execution or results; motherboard, controller and Windows software are unnamed.", "Not a complete assessment of Gigabyte's Linux support; no fan operation or target execution."],
+      "source_labels": ["Bocchi calls Saul's Codex/X870 Linux fan-control proposal, October 25, 2026"]
+    }
+  },
+  {
+    "id": "drwhax-ipa-decryption-llm-unicorn-ida-report",
+    "title": "无需越狱的IPA解密：DrWhax报告LLM、Unicorn与IDA协同研究",
+    "category": "apps",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Jurre van Bergen称在macOS27.0.1可无需越狱解密IPA；本轮回复明确LLM、Unicorn和IDA Pro，超过两周且需大量人工指导，不是全自动成果。",
+    "description": "2026年10月25日21:37:10（北京时间），Jurre van Bergen（@DrWhax）在回答如何高效完成项目时，明确列出LLM、Unicorn engine、IDA Pro以及大量人工引导，称项目已持续超过两周。这条窗口内回复为AI参与和人机分工的一手证据，没有说明具体模型或使用REA。\n\n补读父串找到当天09:15:11的较早发布，早于本轮20至24点窗口。作者称在macOS27.0.1、使用新Apple ID的条件下，可以在Mac解密IPA，经过一次enrollment后也可按需在Linux或Windows使用，无需越狱，并计划支持更多系统构建。IPA是iOS应用的分发包；这里记录对应用解密机制的协同研究和作者所报工具能力，不等同恢复原始源代码、任意系统版本通用或已独立验证的安全绕过。父帖短链未展开，项目名称和仓库身份未确认。\n\n串中另一位用户谈自己的FairPlay streaming/Rust模拟器，这是不同项目，也不是本轮提供的候选，不据此扩展本条成果。更晚的感谢回复同样不能视为独立测试日志。本合集没有获取或解密IPA、执行工具、登录Apple账号或访问密钥；跨平台与无需越狱均保留为作者报告，超过两周是其自述投入，不是效率基准。",
+    "sources": [{"label": "本轮DrWhax回复：LLM、Unicorn、IDA与人工指导，2026-10-25", "url": "https://x.com/i/status/2114350559155126514"}, {"label": "窗口前父帖：macOS27.0.1与IPA解密能力自述，2026-10-25", "url": "https://x.com/i/status/2114163831681192295"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["超过两周、大量人工指导；LLM型号和REA使用未确认。", "父帖09:15早于20点窗口，仅补目标背景；工具和跨平台结果未独立运行。"],
+    "en": {
+      "title": "Jailbreak-free IPA decryption: DrWhax reports collaborative LLM, Unicorn and IDA research",
+      "summary": "Jurre van Bergen reports IPA decryption on macOS 27.0.1 without a jailbreak. His in-window reply credits LLMs, Unicorn and IDA Pro, with over two weeks of work and substantial human steering, not full automation.",
+      "description": "At 21:37:10 Beijing time on October 25, 2026, Jurre van Bergen (@DrWhax) answered a question about efficiently completing his project by naming LLMs, the Unicorn engine, IDA Pro and extensive human steering. He said it had been a project of over two weeks. This in-window reply is first-party evidence of AI participation and human involvement, without identifying a model or REA use.\n\nSupplementary reading of the parent conversation found an announcement at 09:15:11 that day, before this 20:00–24:00 window. The author says macOS 27.0.1 with a fresh Apple ID can decrypt IPAs on Mac, with Linux or Windows available after a one-time enrollment if needed. He says no jailbreak is required and more builds will be supported. IPA is an iOS application-distribution package. This entry records collaborative investigation of application-decryption mechanisms and the author's reported tool capability, not recovered original source, support for arbitrary OS builds or an independently verified security bypass. The parent post's short link was not expanded, leaving the project name and repository identity unconfirmed.\n\nAnother participant's FairPlay-streaming/Rust-emulator report concerns a separate project and is not a supplied candidate for this window; it does not expand this entry. A later thank-you reply is also not an independent test log. This collection obtained or decrypted no IPA, executed no tool, logged into no Apple account and accessed no keys. Cross-platform operation and jailbreak-free use remain author reports. Over two weeks is the author's account of effort, not an efficiency benchmark.",
+      "metadata": ["Over two weeks and extensive human steering; the LLM model and REA use are unconfirmed.", "The 09:15 parent predates the 20:00 window and only supplies target context; the tool and cross-platform results were not independently run."],
+      "source_labels": ["In-window DrWhax reply: LLMs, Unicorn, IDA and human steering, October 25, 2026", "Pre-window parent: reported macOS 27.0.1 IPA-decryption capability, October 25, 2026"]
+    }
+  },
+  {
+    "id": "cortiq-kindle-claude-lockscreen-dashboard-report",
+    "title": "Kindle锁屏仪表盘：Cortiq称Claude辅助识别固件、越狱与去广告",
+    "category": "hardware",
+    "rea": "other-ai",
+    "status": "unverified",
+    "summary": "Cortiq报告用Claude Code把Kindle广告锁屏换成时钟、天气、日历、待办与X粉丝数仪表盘；未给型号、固件、代码或续航测量，不归因为发现新越狱漏洞。",
+    "description": "2026年10月25日21:56:40（北京时间），Cortiq（@0xCortiq）称把Kindle接入MacBook，让Claude Code移除广告并把锁屏改成有用的信息屏。作者报告模型识别设备型号和固件，指导适用版本的越狱，移除special offers画面并设置自动刷新仪表盘；显示时间日期、未来五小时天气、当天日历、待办与X粉丝数。用途是复用电子书锁屏，不是重建整个Kindle系统。\n\n补查原帖确认作者和两张附图，但没有设备型号、固件版本、具体越狱工具、代码、刷新间隔或测试记录。不能把指导既有越狱写成AI发现新漏洞，也未确认REA使用。作者称电池可用数周，未提供测量，且不能从电子墨水屏保持画面的特性直接推导联网刷新系统的整体续航。帖首9300余书签指此前iPhone提示词，不是本Kindle项目的热度，不计为本案例传播快照。\n\n这是Cortiq的作者自述，不与furkan的Raspberry仪表盘或Kuberwastaken的AI用量屏合并。未运行提示词、连接Kindle、访问日历/X账号或核验去广告、越狱和刷新效果；状态保持待验证。",
+    "sources": [{"label": "Cortiq的Claude Code/Kindle锁屏改造报告，2026-10-25", "url": "https://x.com/i/status/2114355466356629943"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["型号、固件、代码、刷新频率和越狱路线未名；作者报告，未独立运行。", "数周续航无测量；9300余书签属于先前iPhone提示词，不是Kindle热度。"],
+    "en": {
+      "title": "Kindle lock-screen dashboard: Cortiq reports Claude-assisted firmware identification, jailbreaking and ad removal",
+      "summary": "Cortiq says Claude Code replaced a Kindle advertising screen with time, weather, calendar, tasks and X follower counts. No model, firmware, code or battery measurement is supplied; this is not evidence of discovering a new jailbreak vulnerability.",
+      "description": "At 21:56:40 Beijing time on October 25, 2026, Cortiq (@0xCortiq) said a Kindle was connected to a MacBook and Claude Code was asked to remove ads and make the lock screen useful. The author reports model/firmware identification, guidance through a version-appropriate jailbreak, removal of the special-offers screen and an automatically refreshing dashboard. It displays time and date, the next five hours of weather, today's calendar, tasks and an X follower count. The aim is to repurpose an e-reader lock screen, not rebuild the entire Kindle system.\n\nSupplementary lookup confirmed the author and two attached images but provided no device model, firmware version, jailbreak tool, code, refresh interval or test record. Guidance through an existing jailbreak must not be described as AI discovering a new vulnerability, and REA use is unconfirmed. The author claims weeks of battery life without measurement. An e-ink panel retaining an image does not establish the battery life of a networked refreshing system. The opening 9,300-plus bookmarks concern an earlier iPhone prompt, not this Kindle project, and are not used as its engagement snapshot.\n\nThis is Cortiq's report, not merged with furkan's Raspberry dashboard or Kuberwastaken's AI-usage screen. No prompt was run, Kindle connected, calendar/X account accessed, or ad-removal, jailbreak and refresh behavior verified. The entry remains unverified.",
+      "metadata": ["Model, firmware, code, refresh frequency and jailbreak route are unnamed; an author report without independent execution.", "Weeks of battery life are unmeasured; 9,300-plus bookmarks belong to the earlier iPhone prompt, not Kindle engagement."],
+      "source_labels": ["Cortiq's Claude Code/Kindle lock-screen modification report, October 25, 2026"]
+    }
+  },
+  {
+    "id": "lurnings-manus-rea-reconstruction-report",
+    "title": "Manus：Lurnings称用REA研究并重建AI应用",
+    "category": "apps",
+    "rea": "REA",
+    "status": "unverified",
+    "summary": "Lurnings称自己用REA逆向Manus并给出项目链接，但未说明恢复了哪些功能或提供测试；保留为作者报告，不认定应用已完整复现。",
+    "description": "2026年10月25日20:21:11（北京时间），Lurnings（@Lurnings_Kirito）称“我用rea把manus逆向了”，并给出项目地址。目标是Manus这一AI应用，作者借此讨论AI应用层的技术壁垒。帖子未说明观察的是网页、客户端还是服务接口，也没有列出恢复的功能、分析步骤、模型或实现语言；不能替作者补出浏览器自动化、任务执行或完整后端等能力。\n\n补查原帖确认作者身份、原文及一张附图。项目地址仍是SL8ySUG5Yi短链，访问受安全扫描限制，未绕过，也未取得仓库内容、测试或可核对演示。因此只收录具名目标的REA研究与重建自述，状态为待验证，不把作者“没什么技术壁垒”的评价当作功能等价、独立复现、零成本或合法性结论。未下载、安装或运行目标代码。",
+    "sources": [{"label": "Lurnings的Manus/REA研究报告，2026-10-25", "url": "https://x.com/i/status/2114331437193457960"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["作者明确称使用REA；具体AI模型、研究表面、已恢复功能与项目源码未核实。", "项目链接未展开，只有作者自述；不等同Manus完整复现。"],
+    "en": {
+      "title": "Manus: Lurnings reports an REA-assisted AI-app investigation and rebuild",
+      "summary": "Lurnings says REA was used to reverse engineer Manus and links a project, without identifying recovered features or providing tests. This is an author report, not an established complete reproduction.",
+      "description": "At 20:21:11 Beijing time on October 25, 2026, Lurnings (@Lurnings_Kirito) wrote that they had used REA to reverse engineer Manus and supplied a project address. The target is the AI application Manus; the author uses the attempt to discuss technical barriers in the AI application layer. The post does not say whether the subject was a website, client or service interface, and lists no recovered features, analysis steps, model or implementation language. Browser automation, task execution and a complete backend must not be inferred.\n\nSupplementary lookup confirmed the author's identity, text and one attached image. The project address remains the SL8ySUG5Yi short link; a safety scan prevented access, no bypass was attempted, and repository contents, tests and a checkable demonstration were not obtained. This entry therefore covers only the named-target REA investigation and reconstruction claim and remains unverified. The author's opinion that technical barriers are low is not evidence of behavioral equivalence, independent reproduction, zero cost or legal status. No target code was downloaded, installed or run.",
+      "metadata": ["The author explicitly names REA; the AI model, investigation surface, recovered features and project source remain unverified.", "The project link was not expanded; an author report only, not a complete Manus reproduction."],
+      "source_labels": ["Lurnings's Manus/REA investigation report, October 25, 2026"]
+    }
+  },
+  {
+    "id": "taresky-japan-vet-booking-web-rebuild",
+    "title": "日本宠物挂号App：taresky报告重建云端Web版自动预约",
+    "category": "apps",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "taresky以AI标签分享日本宠物挂号App逆向与Web版，目的是云端自动挂号、免去准点操作；原App名称、AI工具、接口与预约结果未提供。",
+    "description": "2026年10月25日20:22:58（北京时间），taresky（@taresky）以#AI标签发帖，称当天把日本宠物挂号App逆向并做成Web App，准备放到云端自动挂号，避免自己准点抢号。这里的目标是宠物就诊预约应用及其个人Web版，不是通用医疗平台或已确认绕过排队规则的工具。\n\n补查原帖与可见回复确认作者和一张附图，回复主要是用途评论，没有额外实现证据。原App、医院、接口、源码、所用模型及AI具体分工未名；AI标签只提供语境，不能据此断言使用REA、Claude或Codex。作者将Web版描述为已做出，自动挂号是其宣称的预期用途，帖子没有成功预约、云端运行或时延测试记录。按待验证的个人重建报告收录，不把他人“skip the queue”的回复当作实际越过预约规则的证明。没有连接预约服务、使用账号或执行预约。",
+    "sources": [{"label": "taresky的宠物挂号App逆向与Web版报告，2026-10-25", "url": "https://x.com/i/status/2114331883417088472"}],
+    "snapshot_date": "2026-10-25",
+    "metadata": ["作者自述Web版已制作；云端自动挂号及实际预约成功未核实。", "原App未名，只有AI标签，模型、AI分工与REA使用均未确认。"],
+    "en": {
+      "title": "Japanese veterinary-booking app: taresky reports a cloud-oriented web rebuild",
+      "summary": "Using an AI tag, taresky describes reverse engineering a Japanese pet-appointment app into a web version for cloud-based automatic booking. The original app, AI tools, interfaces and booking results are not supplied.",
+      "description": "At 20:22:58 Beijing time on October 25, 2026, taresky (@taresky) posted with the #AI tag that a Japanese pet-appointment app had been reverse engineered and made into a Web App that day. The intended use is cloud-based automatic booking instead of manually being present when appointments open. The target is a veterinary-booking application and a personal web version, not a general medical platform or a demonstrated way to bypass queue rules.\n\nSupplementary reading of the original post and visible replies confirmed the author and one attached image. Replies mainly discuss the use, adding no implementation evidence. The original app, clinic, interfaces, source, model and specific AI contribution are unnamed. The AI tag supplies context only; REA, Claude or Codex use cannot be asserted. The author describes the web version as built and automatic booking as its intended use, but provides no successful appointment, cloud-operation record or latency test. This is included as an unverified personal-reconstruction report. Another user's 'skip the queue' reply is not evidence of actually bypassing appointment rules. No booking service was contacted, account used or appointment made.",
+      "metadata": ["The author reports building a web version; cloud automation and actual successful bookings remain unverified.", "The original app is unnamed and only an AI tag is given; the model, AI contribution and REA use are unconfirmed."],
+      "source_labels": ["taresky's veterinary-booking app investigation and web-version report, October 25, 2026"]
+    }
+  },
+  {
     "id": "codex-kindle-ai-spending-dashboard-report",
     "title": "kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价",
     "category": "hardware", "rea": "other-ai", "status": "unverified",
@@ -3020,10 +3177,10 @@
   {
     "id":"reashield-v110-rea-agent-challenge", "title":"ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战",
     "category":"apps", "rea":"REA", "status":"related-project",
-    "summary":"Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。",
-    "description":"2026年10月21日09:26（北京时间），Jacques Gariepy 在串中邀请使用 rea-agents@6.7.0 的人，把 Agent 指向 ReaShield v1.1.0 的 AGENTS.md，检查能否突破第一级。帖子宣称挑战共五级，完整恢复源码可获100美元，点名Claude Code、Cursor与Codex。\n\n具体用途是对AI逆向能力做对抗性检验，不是已经证明防护有效或无法逆向。当前材料没有挑战代码身份的已展开链接、规则全文、提交成绩或独立测试；五级与奖励为发布者声明。补查串中的更早697／696函数宣传不属于本窗口成果，也不能充当本挑战成绩。本合集未运行挑战。",
-    "sources":[{"label":"Jacques Gariepy：ReaShield版本、五级与100美元挑战","url":"https://x.com/i/status/2112717120337285256"}], "snapshot_date":"2026-10-21", "metadata":[],
-    "en":{"title":"ReaShield v1.1.0: a five-level source-recovery challenge for rea-agents@6.7.0","summary":"Jacques Gariepy invites Claude Code, Cursor and Codex to five challenge levels with a $100 full-source recovery reward; no scores or successful attempts were obtained.","description":"At 09:26 Beijing time on October 21, 2026, Jacques Gariepy invites rea-agents@6.7.0 users to direct their agent to ReaShield v1.1.0's AGENTS.md and see whether it passes level one. The post advertises five levels and $100 for complete source recovery, naming Claude Code, Cursor and Codex.\n\nThe concrete purpose is adversarial testing of AI reversing, not demonstrated protection or proof that reversing is impossible. Available material does not provide an expanded challenge-code identity, full rules, submitted scores or independent tests. Levels and reward are publisher claims. An older 697/696-function promotional story in the supplementary thread is not a current-window result or a score on this challenge. This collection did not execute it.","metadata":[],"source_labels":["Jacques Gariepy on the ReaShield version, five levels and $100 challenge"]}
+    "summary":"Jacques Gariepy邀请Agent挑战五级源码恢复，后补充JS包、Windows二进制与最高1000分规则；100美元为悬赏，未见成绩或成功记录。",
+    "description":"2026年10月21日09:26（北京时间），Jacques Gariepy在串中邀请使用rea-agents@6.7.0的人，把Agent指向ReaShield v1.1.0的AGENTS.md，检查能否突破第一级。帖子宣称挑战共五级，完整恢复源码可获100美元，点名Claude Code、Cursor与Codex。\n\n10月25日18:47:48，作者在REA v6.8发布串下补充：目标包括JavaScript包与Windows二进制，Agent按恢复内容计分，最高1000分，完整源码恢复悬赏100美元。他写称尝试逆向该挑战，但没有给分数、使用模型、恢复片段或成功记录。本条来自此前窗口补审；原串补查确认同一作者，REA版本发布本身不作为新案例。\n\n具体用途是对AI逆向能力做对抗性检验，不是证明防护有效或无法逆向。当前材料没有挑战代码身份的已展开链接、规则全文、提交成绩或独立测试；五级、积分与奖励为发布者声明。补查串中的更早697／696函数宣传不是本窗口成果，也不能充当挑战成绩。本合集未运行挑战。",
+    "sources":[{"label":"Jacques Gariepy：ReaShield版本、五级与100美元挑战","url":"https://x.com/i/status/2112717120337285256"},{"label":"作者补充JS/Windows目标与1000分规则，2026-10-25","url":"https://x.com/i/status/2114307935882936592"}], "snapshot_date":"2026-10-25", "metadata":[],
+    "en":{"title":"ReaShield v1.1.0: a five-level source-recovery challenge for rea-agents@6.7.0","summary":"Jacques Gariepy invites agents to five source-recovery levels, later specifying JavaScript/Windows targets and up to 1,000 points. The $100 is a bounty, not a reported award; no scores or successful results were obtained.","description":"At 09:26 Beijing time on October 21, 2026, Jacques Gariepy invited rea-agents@6.7.0 users to direct their agent to ReaShield v1.1.0's AGENTS.md and see whether it passes level one. The post advertises five levels and $100 for complete source recovery, naming Claude Code, Cursor and Codex.\n\nAt 18:47:48 on October 25, the author added a reply to the REA v6.8 announcement: targets include a JavaScript package and a Windows binary, with agents scored on recovered content up to 1,000 points and a $100 full-source recovery bounty. He says he attempted to reverse the challenge, but gives no score, model, recovered fragments or successful result. This item was reviewed from an earlier window; supplementary thread lookup confirmed the same author. The REA release itself is not treated as a new case.\n\nThe concrete purpose is adversarial testing of AI reversing, not proof of effective protection or impossibility of reversing. Available material does not provide an expanded challenge-code identity, full rules, submitted scores or independent tests. Levels, points and reward are publisher claims. An older 697/696-function promotional story in the supplementary thread is not a current-window result or a score on this challenge. This collection did not execute it.","metadata":[],"source_labels":["Jacques Gariepy on the ReaShield version, five levels and $100 challenge","Author on JavaScript/Windows targets and the 1,000-point rules, October 25, 2026"]}
   },
   {
     "id":"claude-code-closed-inference-engine-re-report", "title":"Claude Code 与闭源推理引擎：用户报告逆向分析效果良好",
@@ -8199,8 +8356,8 @@
     "category": "apps",
     "status": "unverified",
     "rea": "REA",
-    "summary": "保留8Bit与clawddevs的并行研究报告；10月25日非小号另转述Shaw以AI重建Pump合约约90%，预计当晚完成不等于已完成，也不证明可部署替代。",
-    "description": "Pump.fun是Solana上的代币发行平台。8Bit报告clawddevs在Muse中并行使用Codex与另一Agent研究该平台；所回复开发帖称在测试发行曲线完成后向Raydium流动性池迁移、销毁LP代币与交换。早期报告没有公开逆向步骤或完整复刻证据，REA使用当时未确认。\n\n10月13日窗口中，8Bit（0rdlibrary）称从REA仓库fork项目后自主研究Pump.fun约24小时；另帖也提clawddevs与Muse。10月13日04至08点窗口，clawddevs本人称过去24小时以ultra high设置研究Pump.fun，经历3次Codex额度重置。这是进行中自述，没有代码或行为对照；clawddevs未明确使用REA，8Bit的fork报告属于另一作者，不据此认定同一实现或已恢复服务器/合约源码。\n\n此前收录的一条作者未知quote另称真实depth-two测试通过，REA追踪两条创建路径，并修复且测试开盘结算舍入短缺；同一引述说源码/构建验证仍在进行、生产就绪未证明。这不是Pump.fun原开发者确认或本合集复测。\n\n2026年10月25日18:04:28（北京时间），非小号（@feixiaohaocom）另转述Shaw Walters（@shawmakesmagic）称完成Pump智能合约逆向约90%，预计当晚完成并公开GitHub仓库。帖子用PumpFun标签和2024年上线的一键发币/发行曲线背景识别目标，并将工作描述为AI辅助逆向；10月26日补查原帖确认发帖账号。这是另一作者对同一平台的研究，不认定与8Bit/clawddevs同一代码库。未取得可审的Shaw模型日志、仓库身份或构建结果，90%是转述进度，不是字节匹配率，预计完成也不是已完成。报道中的协议收入与商业评论不作为技术证据；没有运行目标或验证生产可用性。",
+    "summary": "8Bit将Pump/REA研究的衍生launchpad命名Musebook，预告当晚Solana主网上线；未取得链上部署或测试。另保留clawddevs并行研究与Shaw约90%进度的转述，不把计划当完成。",
+    "description": "Pump.fun是Solana上的代币发行平台。8Bit报告clawddevs在Muse中并行使用Codex与另一Agent研究该平台；所回复开发帖称在测试发行曲线完成后向Raydium流动性池迁移、销毁LP代币与交换。早期报告没有公开逆向步骤或完整复刻证据，REA使用当时未确认。\n\n10月13日窗口中，8Bit（0rdlibrary）称从REA仓库fork项目后自主研究Pump.fun约24小时；另帖也提clawddevs与Muse。10月13日04至08点窗口，clawddevs本人称过去24小时以ultra high设置研究Pump.fun，经历3次Codex额度重置。这是进行中自述，没有代码或行为对照；clawddevs未明确使用REA，8Bit的fork报告属于另一作者，不据此认定同一实现或已恢复服务器/合约源码。\n\n此前收录的一条作者未知quote另称真实depth-two测试通过，REA追踪两条创建路径，并修复且测试开盘结算舍入短缺；同一引述说源码/构建验证仍在进行、生产就绪未证明。这不是Pump.fun原开发者确认或本合集复测。\n\n2026年10月25日18:04:28（北京时间），非小号（@feixiaohaocom）另转述Shaw Walters（@shawmakesmagic）称完成Pump智能合约逆向约90%，预计当晚完成并公开GitHub仓库。帖子用PumpFun标签和2024年上线的一键发币/发行曲线背景识别目标，并将工作描述为AI辅助逆向；10月26日补查原帖确认发帖账号。这是另一作者对同一平台的研究，不认定与8Bit/clawddevs同一代码库。未取得可审的Shaw模型日志、仓库身份或构建结果，90%是转述进度，不是字节匹配率，预计完成也不是已完成。报道中的协议收入与商业评论不作为技术证据；没有运行目标或验证生产可用性。\n\n10月25日22:53:53，8Bit本人把其衍生发币平台称为Musebook launchpad，明确称从Pump Source与REA逆向而来，预告当晚在Solana主网上线。补查确认账号0rdlibrary与原Pump研究作者一致，因此追加同一目标记录，不把新产品名另算一项，也不将其归为Shaw自己的部署。该帖补足产物名称与发布计划，但未提供可核对的程序地址、部署交易、源码、行为对照或安全审计；短链中的Pump Source身份未确认。主网上线仍是未来时，不是已完成部署、可安全发币或资金托管验证。未连接钱包或执行交易。",
     "sources": [
       {
         "label": "本周期公开来源",
@@ -8225,6 +8382,10 @@
       {
         "label": "非小号转述Shaw的Pump合约90%进度，2026-10-25",
         "url": "https://x.com/i/status/2114297028620763266"
+      },
+      {
+        "label": "8Bit命名Musebook并预告主网上线，2026-10-25 22:53:53",
+        "url": "https://x.com/i/status/2114369864265515048"
       }
     ],
     "snapshot_date": "2026-10-25",
@@ -8234,19 +8395,21 @@
       "补充发帖：2026-10-13T05:43:27+08:00（北京时间）",
       "补充证据：xreach 确认发帖账户 clawddevs；作者自述，非独立验证。",
       "本批新增证据：quote/转述称真实 depth-two 测试通过、创建路径已追踪、开盘结算舍入短缺已修复并测试；生产就绪仍未证明，作者身份未确认。",
-      "10月25日补充为非小号转述的Shaw/Pump合约研究，非同一代码库确认；90%不是字节匹配率，未取得仓库或运行验证。"
+      "10月25日补充为非小号转述的Shaw/Pump合约研究，非同一代码库确认；90%不是字节匹配率，未取得仓库或运行验证。",
+      "10月25日22:53的Musebook是8Bit同目标衍生产品报告；当晚主网上线只是计划，Pump Source身份和链上部署未核实。"
     ],
     "en": {
       "title": "Pump.fun: parallel-agent investigation of a token-launch platform",
-      "summary": "Retains 8Bit and clawddevs' parallel-research reports. On October 25, FeiXiaoHao separately recounted Shaw's approximately 90%-complete AI-assisted contract reconstruction; a same-night forecast is not completion or proof of a deployable replacement.",
-      "description": "Pump.fun is a token-launch platform on Solana. 8Bit reports clawddevs using Codex and another agent in parallel within Muse. The development post being replied to describes testing migration to a Raydium liquidity pool after the launch curve completes, LP-token burning and swaps. The early report disclosed no reversing steps or proof of full reconstruction, and REA use was initially unconfirmed.\n\nIn the October 13 window, 8Bit (0rdlibrary) said a project forked from the REA repository had autonomously researched Pump.fun for about 24 hours; another post mentioned clawddevs and Muse. In the October 13 04:00–08:00 window, clawddevs personally reported 24 hours of work at the ultra high setting and three Codex quota resets. This is an ongoing-work report without code or behavioral comparisons. clawddevs did not explicitly mention REA; 8Bit's fork report is by a different author and does not establish one shared implementation or recovered server/contract source.\n\nAn earlier captured quote from an unidentified author additionally claimed that real depth-two tests passed, REA traced two creation paths, and an opening-settlement rounding shortfall was fixed and tested. The same quotation said source/build verification was ongoing and production readiness unproven. This is neither confirmation from Pump.fun's original developers nor a retest by this collection.\n\nAt 18:04:28 Beijing time on October 25, 2026, FeiXiaoHao (@feixiaohaocom) separately recounted Shaw Walters (@shawmakesmagic) claiming approximately 90% completion of Pump contract reversing, expecting completion that night and announcing a GitHub repository. The post identifies the target through its PumpFun tag and January 2024 token-launch/bonding-curve background, framing the work as AI-assisted reverse engineering. Supplementary lookup on October 26 confirmed the posting account. This is another author's research on the same platform, not confirmation of a shared codebase with 8Bit/clawddevs. No inspectable Shaw model log, repository identity or build result was obtained. The 90% figure is reported progress, not a byte-match rate; expected completion is not completed work. Protocol revenue and commercial commentary are not technical evidence. The target was not run and production usability was not verified.",
+      "summary": "8Bit names a Pump/REA-derived launchpad Musebook and announces a same-night Solana mainnet plan, without a verified deployment or tests. Retains clawddevs' parallel research and secondhand Shaw 90%-progress reports; plans are not completion.",
+      "description": "Pump.fun is a token-launch platform on Solana. 8Bit reports clawddevs using Codex and another agent in parallel within Muse. The development post being replied to describes testing migration to a Raydium liquidity pool after the launch curve completes, LP-token burning and swaps. The early report disclosed no reversing steps or proof of full reconstruction, and REA use was initially unconfirmed.\n\nIn the October 13 window, 8Bit (0rdlibrary) said a project forked from the REA repository had autonomously researched Pump.fun for about 24 hours; another post mentioned clawddevs and Muse. In the October 13 04:00–08:00 window, clawddevs personally reported 24 hours of work at the ultra high setting and three Codex quota resets. This is an ongoing-work report without code or behavioral comparisons. clawddevs did not explicitly mention REA; 8Bit's fork report is by a different author and does not establish one shared implementation or recovered server/contract source.\n\nAn earlier captured quote from an unidentified author additionally claimed that real depth-two tests passed, REA traced two creation paths, and an opening-settlement rounding shortfall was fixed and tested. The same quotation said source/build verification was ongoing and production readiness unproven. This is neither confirmation from Pump.fun's original developers nor a retest by this collection.\n\nAt 18:04:28 Beijing time on October 25, 2026, FeiXiaoHao (@feixiaohaocom) separately recounted Shaw Walters (@shawmakesmagic) claiming approximately 90% completion of Pump contract reversing, expecting completion that night and announcing a GitHub repository. The post identifies the target through its PumpFun tag and 2024 token-launch/bonding-curve background, framing the work as AI-assisted reverse engineering. Supplementary lookup on October 26 confirmed the posting account. This is another author's research on the same platform, not confirmation of a shared codebase with 8Bit/clawddevs. No inspectable Shaw model log, repository identity or build result was obtained. The 90% figure is reported progress, not a byte-match rate; expected completion is not completed work. Protocol revenue and commercial commentary are not technical evidence. The target was not run and production usability was not verified.\n\nAt 22:53:53 Beijing time on October 25, 8Bit personally named the derived token-launch platform Musebook launchpad, explicitly described it as reverse engineered from Pump Source and REA, and announced a Solana mainnet launch for that night. Supplementary lookup confirmed 0rdlibrary as the same author as the earlier Pump investigation. It is therefore appended to that target's record rather than counted as a separate new case, and is not attributed as Shaw's own deployment. The post adds an artifact name and release plan but no checkable program address, deployment transaction, source, behavioral comparison or security audit. The identity of Pump Source behind its short link is unconfirmed. Mainnet launch remains future tense, not a completed deployment, safe token issuance or verified custody. No wallet was connected and no trade executed.",
       "metadata": [
         "Posted: 2026-10-12T10:01:06+08:00 (Beijing time)",
         "Engagement snapshot (2026-10-12): 1 like | 44 views | 0 reposts",
         "Follow-up posted: 2026-10-13T05:43:27+08:00 (Beijing time)",
         "Additional evidence: xreach confirmed the posting account as clawddevs; author report, not independent verification.",
         "New evidence in this batch: a quote/secondhand account claims real depth-two tests passed, creation paths were traced, and an opening-settlement rounding shortfall was fixed and tested; production readiness remains unproven and author identity is unconfirmed.",
-        "October 25 adds FeiXiaoHao's secondhand Shaw/Pump contract report, not a confirmed shared codebase; 90% is not a byte-match rate, and no repository or runtime validation was obtained."
+        "October 25 adds FeiXiaoHao's secondhand Shaw/Pump contract report, not a confirmed shared codebase; 90% is not a byte-match rate, and no repository or runtime validation was obtained.",
+        "The October 25, 22:53 Musebook report names 8Bit's derivative of the same target; same-night mainnet launch is only planned, and Pump Source identity and on-chain deployment are unverified."
       ],
       "source_labels": [
         "Public source from this review",
@@ -8254,7 +8417,8 @@
         "This window: REA fork and autonomous-run report",
         "This window: developer's own work-in-progress report",
         "X post from this batch (quote/secondhand; author identity unconfirmed, not original-developer confirmation)",
-        "FeiXiaoHao recounts Shaw's 90%-complete Pump contract research, October 25, 2026"
+        "FeiXiaoHao recounts Shaw's 90%-complete Pump contract research, October 25, 2026",
+        "8Bit names Musebook and announces a mainnet plan, October 25, 2026 at 22:53:53"
       ]
     }
   },

@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示](../cases/grimmer-rea-qlib-pltr-dip-rule-report.md) — Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。 **[REA · 待验证]**
 - [eMudhra弱密钥：把公开数据恢复归因于AI与数学脚本的报道](../cases/emudhra-weak-key-ai-attribution-report.md) — 往期候选转述eMudhra联合创始人对ET的解释：wrap-unwrap脚本错误产生可被AI工具与数学脚本逆向的弱密钥；未取得实际模型或恢复记录。 **[其他 AI 逆向 · 待验证]**
 - [自编剥符号程序盲测Claude：13个函数描述正确，但作者发现测试作弊](../cases/claude-stripped-private-program-thirteen-function-test.md) — 为排除Claude记住公开代码，作者自编独有程序并剥离符号，报告13/13函数描述正确，又承认测试作弊；泄漏机制和修正后成绩未给。 **[其他 AI 逆向 · 分析测试]**
 - [RAR 1.4起的压缩器：bitplane报告用AI实现自由软件替代](../cases/bitplane-ai-rar-compressor.md) — bitplane报告AI辅助RAR压缩器；rars文档说明压缩、解压与恢复，并承认比WinRAR慢、内存更多、压缩率稍差，尚需大规模测试；本合集未运行兼容性测试。 **[其他 AI 逆向 · 待验证]**

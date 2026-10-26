@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [技嘉X870风扇控制：让Codex参考Windows配套软件补Linux支持的idea](../cases/gigabyte-x870-codex-linux-fan-control-idea.md) — Bocchi calls Saul提出，即使技嘉不提供Linux的X870风扇控制固件，也可让Codex从Windows配套软件研究；尚无协议、驱动或实测。 **[其他 AI 逆向 · 进行中]**
+- [Kindle锁屏仪表盘：Cortiq称Claude辅助识别固件、越狱与去广告](../cases/cortiq-kindle-claude-lockscreen-dashboard-report.md) — Cortiq报告用Claude Code把Kindle广告锁屏换成时钟、天气、日历、待办与X粉丝数仪表盘；未给型号、固件、代码或续航测量，不归因为发现新越狱漏洞。 **[其他 AI 逆向 · 待验证]**
 - [kindle-ai-usage：Codex辅助越狱旧Kindle，显示AI用量的API等价估价](../cases/codex-kindle-ai-spending-dashboard-report.md) — 社区转述旧Kindle用量屏；补读Kuberwastaken公开项目确认Codex越狱归因、Node服务与六小时刷新。显示的是API等价标价估算，不是订阅账单，未独立部署。 **[其他 AI 逆向 · 待验证]**
 - [Ricoh GR无线取景器：Codex协作的StickS3固件与分代协议](../cases/ricoh-gr-codex-sticks3-wireless-viewfinder-report.md) — 社区转述GR无线预览与快门；补读sky18Dragon公开固件确认Codex协作归因、StickS3、Wi-Fi图像与分代快门路径。热靴是安装配件，不是已证明的图像链路；未实机运行。 **[其他 AI 逆向 · 待验证]**
 - [裸眼3D屏：Megabits用AI研究官方程序，报告绕开官方App渲染](../cases/megabits-autostereoscopic-display-ai-rendering.md) — Megabits称AI辅助逆向此前购买的裸眼3D屏程序后，已不需官方App渲染；下一步是Blender模型预览插件，设备型号与代码尚未提供。 **[其他 AI 逆向 · 待验证]**

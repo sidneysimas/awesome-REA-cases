@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Pocket转写改造：Eduard导入联系人名字以改善人名拼写](../cases/eduard-pocket-contact-name-transcription-rebuild.md) — Eduard Faus Gil称逆向并改进Pocket录音转写体验；作者补充具体改动是导入联系人名字，配合word boosting与LLM流程减少人名拼写错误，未开源。 **[未确认使用 REA · 待验证]**
+- [VLC样式播放器：TechSignal转述REA重建中的可用功能与缺陷](../cases/techsignal-vlc-style-rea-player-experiment.md) — TechSignal报道AI辅助流程约10至15分钟做出VLC样式播放器，MP3和快捷键可用，但视频格式、目录导航与全屏仍有缺陷；原实验产物未取得。 **[REA · 待验证]**
+- [无需越狱的IPA解密：DrWhax报告LLM、Unicorn与IDA协同研究](../cases/drwhax-ipa-decryption-llm-unicorn-ida-report.md) — Jurre van Bergen称在macOS27.0.1可无需越狱解密IPA；本轮回复明确LLM、Unicorn和IDA Pro，超过两周且需大量人工指导，不是全自动成果。 **[其他 AI 逆向 · 待验证]**
+- [Manus：Lurnings称用REA研究并重建AI应用](../cases/lurnings-manus-rea-reconstruction-report.md) — Lurnings称自己用REA逆向Manus并给出项目链接，但未说明恢复了哪些功能或提供测试；保留为作者报告，不认定应用已完整复现。 **[REA · 待验证]**
+- [日本宠物挂号App：taresky报告重建云端Web版自动预约](../cases/taresky-japan-vet-booking-web-rebuild.md) — taresky以AI标签分享日本宠物挂号App逆向与Web版，目的是云端自动挂号、免去准点操作；原App名称、AI工具、接口与预约结果未提供。 **[未确认使用 REA · 待验证]**
 - [Footprint成交图：RetroChainer转述REA重建终端图表并接ccxt四交易所](../cases/retrochainer-rea-ccxt-footprint-terminal-report.md) — RetroChainer展示REA/Claude Code研究桌面footprint图表、再以ccxt接Binance、OKX、Bybit和Coinbase的工作流；18,402笔成交、256行及12项测试是发帖者说法，无代码或原应用身份。 **[REA · 待验证]**
 - [Electron笔记样例：Claude Code与REA静态追踪导出按钮到CSV文件](../cases/hamza-rea-notes-electron-export-trace.md) — Hamza Khalid以REA教学样例演示从Export notes按钮追到IPC处理器与Downloads/notes.csv；公开源码支持这条静态路径，不是闭源商业App克隆或运行验证。 **[REA · 分析测试]**
 - [1Password公开设计：Rising Impact提出AI辅助观察、规格与验证流程](../cases/rising-impact-1password-ai-cleanroom-spec-idea.md) — Rising Impact用1Password白皮书与公开功能举例，让AI研究文档、记录自有账号流程并草拟规格；这是教学提案，不是实现、密码破解或REA工具实测。 **[其他 AI 逆向 · 待验证]**
@@ -88,7 +93,7 @@
 - [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](../cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**
 - [dot 分析 Muse：把 REA 逆向任务交给桌面 Agent](../cases/dot-rea-muse-analysis.md) — 丰收称已给dot安排使用REA分析Muse；这是任务启动自述，没有公开具体发现或重建结果。 **[REA · 进行中]**
 - [Drupal 企业搜索：用 AI 将黑盒变蓝图的演讲提案](../cases/drupal-enterprise-search-ai-session-proposal.md) — Eduardo Telaya 已提交 DrupalCon Orlando 2027 演讲提案，主题是 AI 逆向企业搜索；不代表入选或已完成搜索系统重建。 **[其他 AI 逆向 · 相关项目]**
-- [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](../cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy 邀请 Claude Code、Cursor 与 Codex 挑战五个级别，完整源码恢复悬赏100美元；未见分数或成功记录。 **[REA · 相关项目]**
+- [ReaShield v1.1.0：面向 rea-agents@6.7.0 的五级源码恢复挑战](../cases/reashield-v110-rea-agent-challenge.md) — Jacques Gariepy邀请Agent挑战五级源码恢复，后补充JS包、Windows二进制与最高1000分规则；100美元为悬赏，未见成绩或成功记录。 **[REA · 相关项目]**
 - [Claude Code 与闭源推理引擎：用户报告逆向分析效果良好](../cases/claude-code-closed-inference-engine-re-report.md) — 曾嘉俊称让讨论中的工具研究过Claude Code和一个闭源推理引擎；没有展示具体发现、重建或验证结果。 **[未确认使用 REA · 分析测试]**
 - [Harness Studio：自上而下重建 Claude Code Desktop 的开源项目自述](../cases/harness-studio-claude-desktop-reimplementation.md) — Vignesh称以DeepSeek harness为基础，为macOS/Linux制作可选Claude、OpenAI、Gemini或本地模型的桌面；沿用top-down而非REA路线，完整功能等价尚未验证。 **[其他 AI 逆向 · 进行中]**
 - [国内平台 Skill：Opus 辅助研究东方财富、天天基金及个人本地数据的自述](../cases/opus-cn-platform-skills-local-data-report.md) — JinmingYang 回顾个人平台接入Skill与登录态监测，称曾用多个Opus版本；没有公开代码，不把自述先后与消息规模当验证。 **[其他 AI 逆向 · 待验证]**
@@ -230,7 +235,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](../cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](../cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](../cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — 保留8Bit与clawddevs的并行研究报告；10月25日非小号另转述Shaw以AI重建Pump合约约90%，预计当晚完成不等于已完成，也不证明可部署替代。 **[REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — 8Bit将Pump/REA研究的衍生launchpad命名Musebook，预告当晚Solana主网上线；未取得链上部署或测试。另保留clawddevs并行研究与Shaw约90%进度的转述，不把计划当完成。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](../cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](../cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](../cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**
