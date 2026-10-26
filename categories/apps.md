@@ -2,6 +2,13 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](../cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
+- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](../cases/ablation-tool-ai-reverse-engineering-framework.md) — 候选点名Ablation为AI辅助逆向框架；补查Ablation-Tool/ablation的README，确认文档描述LLM分析循环、会话上下文与多架构分析，但未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Hermes研究REA自身：Charles的本地模型简短报告](../cases/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti称Hermes正在本地LLM上逆向REA仓库；没有模型、分析范围或改动结果。 **[其他 AI 逆向 · 待验证]**
+- [Crawlbot：REA负责竞品研究的多Agent产品流程转述](../cases/west-crawlbot-rea-competitor-workflow.md) — Trog转述west的Crawlbot：Grok找需求，REA研究竞品价格，Opus写产品，其他工具测试、写文案与记忆；未取得实现或验收。 **[REA · 相关项目]**
+- [Grok Bots四角色REA流程：观察、规格、隔离重建与验证的提案](../cases/grok-bots-rea-four-role-cleanroom-proposal.md) — francescofaenzi把四Agent clean-room方法移到Grok Bots共享电脑，加入Team Lead与最多约三轮反馈；未展示具体目标或权限隔离测试。 **[REA · 相关项目]**
+- [NetacFileLock：Codex七分钟静态复查文件加密的研究者报告](../cases/netacfilelock-codex-static-crypto-review.md) — Xusheng Li称Codex经Binary Ninja MCP复查已研究的NetacFileLock，发现AES固定密钥、密码日志和fast模式部分加密；七分钟不是通用基准。 **[其他 AI 逆向 · 分析测试]**
+- [KakaSoft USB Copy Protection：AI追踪自定义哈希与受保护测试文件](../cases/kakasoft-usb-copy-protection-ai-review.md) — Xusheng Li报告AI分析KakaSoft 5.6.0.299并恢复自有测试文件；最高档使用逐文件盐和IV，但内部口令可从客户端恢复。问题在密钥派生，不是破解Blowfish。 **[其他 AI 逆向 · 分析测试]**
 - [Courier Symphony：在A/B阶段之后加入REA辅助诊断、测试与人工批准的规划](../cases/courier-symphony-rea-diagnostics-idea.md) — 德语帖子为Courier Symphony提出后续错误诊断流程：先稳定现有自动化，再让Agent分析故障，必要时用REA研究无源码程序，修复须测试与明确批准。 **[REA · 待验证]**
 - [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](../cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
 - [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](../cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**

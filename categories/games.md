@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Pokemon Yellow：Álvaro称免费Claude返回源码与游戏的未核验实验](../cases/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro称让免费Claude反编译其Pokemon Yellow副本后收到源码和游戏；未核验输出，也不能排除既有公开反汇编的作用。 **[其他 AI 逆向 · 待验证]**
+- [cod online客户端：利用AI逆向工具保存游戏的读者愿望](../cases/cod-online-ai-client-idea.md) — 一位读者希望用现有AI逆向工具制作cod online客户端；仅为具体idea，没有实现或联网结果。 **[其他 AI 逆向 · 待验证]**
+- [Harvest Moon: Back To Nature：Dave的pi harness反编译与模块归并进展](../cases/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave称用pi harness反编译PSX游戏，Harvest Moon全部函数已反编译，正归并模块；不等同100%字节匹配或可玩移植。 **[其他 AI 逆向 · 进行中]**
 - [BF4：afedb正在测试REA的简短进展](../cases/afedb-bf4-rea-experiment.md) — afedb称正在BF4上测试REA；未报告恢复机制、重建版本或测试结果。 **[REA · 进行中]**
 - [Switch 2模拟器：Tulio在固件dump消息后提出Claude实现设想](../cases/tulio-switch2-claude-emulator-idea.md) — Tulio Santos转述Switch 2固件dump消息后，设想让Claude写模拟器；没有实现或固件核验。 **[其他 AI 逆向 · 待验证]**
 - [AMOS Pro：bitplane报告AI辅助模拟器、在线IDE与游戏库](../cases/bitplane-ai-amos-pro-emulator.md) — bitplane报告AI辅助AMOS Pro网页重实现、在线IDE与游戏库；公开amos-ts文档明确复用已公开AMOS源码，其他兼容行为经逆向，非周期精确模拟。 **[其他 AI 逆向 · 待验证]**

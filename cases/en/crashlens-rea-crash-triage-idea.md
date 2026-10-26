@@ -13,6 +13,7 @@ The public README was reread. Its latest modification is commit 74c3ace797019d08
 Earlier candidates: October 16, 2026 at 19:11 and 19:54. New candidates: October 25 at 00:26:57 and 02:05:09. All times Beijing time.
 Four turns versus one is an author report using pre-generated failing-function/caller evidence, not a controlled end-to-end comparison of fully autonomous MCP analysis.
 The after-window author reply at 15:10:24 on October 25 and README committed at 11:45:44 on October 26 are supplementary only. Hermes integration is unconfirmed; no prototype or benchmark was run.
+In this window at 06:59:09, the author describes an entirely static process: read core signals, fault address, registers and mappings; match the build ID; use .eh_frame boundaries for stripped functions to locate sub_120a+0x31; then decompile the function and caller with REA/Ghidra. Neither dump nor address was independently checked.
 
 ## Sources
 
@@ -24,5 +25,6 @@ The after-window author reply at 15:10:24 on October 25 and README committed at 
 - [New candidate: same author's REA debugging direction, October 25, 2026](https://x.com/i/status/2114055611562500158)
 - [After-window author clarification: a two-function report differs from driving MCP, October 25, 2026](https://x.com/i/status/2114253225247625532)
 - [After-window pinned public README, October 26, 2026](https://github.com/mingleiw/crashlens/blob/74c3ace797019d084bbf810f3f1f2ef48adf277b/README.md)
+- [New candidate: author explains build-ID checks and static .eh_frame localization, October 25 at 06:59:09](https://x.com/i/status/2114129597453545729)
 
 [中文](../crashlens-rea-crash-triage-idea.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

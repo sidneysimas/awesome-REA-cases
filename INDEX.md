@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **877 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **891 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（192）
-- [硬件与设备互通](categories/hardware.md)（233）
-- [应用与客户端](categories/apps.md)（372）
+- [游戏与游戏保存](categories/games.md)（195）
+- [硬件与设备互通](categories/hardware.md)（237）
+- [应用与客户端](categories/apps.md)（379）
 - [算法与功能重建](categories/algorithms.md)（80）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [Pokemon Yellow：Álvaro称免费Claude返回源码与游戏的未核验实验](cases/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro称让免费Claude反编译其Pokemon Yellow副本后收到源码和游戏；未核验输出，也不能排除既有公开反汇编的作用。 **[其他 AI 逆向 · 待验证]**
+- [cod online客户端：利用AI逆向工具保存游戏的读者愿望](cases/cod-online-ai-client-idea.md) — 一位读者希望用现有AI逆向工具制作cod online客户端；仅为具体idea，没有实现或联网结果。 **[其他 AI 逆向 · 待验证]**
+- [Harvest Moon: Back To Nature：Dave的pi harness反编译与模块归并进展](cases/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave称用pi harness反编译PSX游戏，Harvest Moon全部函数已反编译，正归并模块；不等同100%字节匹配或可玩移植。 **[其他 AI 逆向 · 进行中]**
 - [BF4：afedb正在测试REA的简短进展](cases/afedb-bf4-rea-experiment.md) — afedb称正在BF4上测试REA；未报告恢复机制、重建版本或测试结果。 **[REA · 进行中]**
 - [Switch 2模拟器：Tulio在固件dump消息后提出Claude实现设想](cases/tulio-switch2-claude-emulator-idea.md) — Tulio Santos转述Switch 2固件dump消息后，设想让Claude写模拟器；没有实现或固件核验。 **[其他 AI 逆向 · 待验证]**
 - [AMOS Pro：bitplane报告AI辅助模拟器、在线IDE与游戏库](cases/bitplane-ai-amos-pro-emulator.md) — bitplane报告AI辅助AMOS Pro网页重实现、在线IDE与游戏库；公开amos-ts文档明确复用已公开AMOS源码，其他兼容行为经逆向，非周期精确模拟。 **[其他 AI 逆向 · 待验证]**
@@ -221,6 +224,10 @@
 
 ### 硬件与设备互通
 
+- [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
+- [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**
+- [御天盾加密U盘：Xusheng Li的AI辅助TTD与隐藏账号调查](cases/yutiandun-ai-ttd-hidden-account-review.md) — Binary Ninja研究者报告AI辅助跟踪SecZure御天盾读取流程，发现隐藏账号可解出同一内容标识；两盘测试不等于所有产品验证。 **[其他 AI 逆向 · 分析测试]**
+- [Nexcopy Copy Secure：AI追踪查看器、配置与3DES内容密钥](cases/nexcopy-copy-secure-ai-key-review.md) — Xusheng Li报告AI研究Drive Wizard 1.0.81制备的Copy Secure盘，从查看器追到配置再到内容密钥；作者称恢复自有文件，非破解3DES。 **[其他 AI 逆向 · 分析测试]**
 - [坏按键跑步机：ShaneX用AI研究Nautilus蓝牙通道，以ESP32接回手机控制](cases/purgane-treadmill-nautilus-esp32-control.md) — ShaneX报告用OpenClaw、Pi与万用表研究跑步机主芯片固件，再以ESP32桥接可下发命令的Nautilus蓝牙通道；多次刷写后称手机本地网页已能控制。 **[其他 AI 逆向 · 待验证]**
 - [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
@@ -457,6 +464,13 @@
 
 ### 应用与客户端
 
+- [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
+- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](cases/ablation-tool-ai-reverse-engineering-framework.md) — 候选点名Ablation为AI辅助逆向框架；补查Ablation-Tool/ablation的README，确认文档描述LLM分析循环、会话上下文与多架构分析，但未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Hermes研究REA自身：Charles的本地模型简短报告](cases/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti称Hermes正在本地LLM上逆向REA仓库；没有模型、分析范围或改动结果。 **[其他 AI 逆向 · 待验证]**
+- [Crawlbot：REA负责竞品研究的多Agent产品流程转述](cases/west-crawlbot-rea-competitor-workflow.md) — Trog转述west的Crawlbot：Grok找需求，REA研究竞品价格，Opus写产品，其他工具测试、写文案与记忆；未取得实现或验收。 **[REA · 相关项目]**
+- [Grok Bots四角色REA流程：观察、规格、隔离重建与验证的提案](cases/grok-bots-rea-four-role-cleanroom-proposal.md) — francescofaenzi把四Agent clean-room方法移到Grok Bots共享电脑，加入Team Lead与最多约三轮反馈；未展示具体目标或权限隔离测试。 **[REA · 相关项目]**
+- [NetacFileLock：Codex七分钟静态复查文件加密的研究者报告](cases/netacfilelock-codex-static-crypto-review.md) — Xusheng Li称Codex经Binary Ninja MCP复查已研究的NetacFileLock，发现AES固定密钥、密码日志和fast模式部分加密；七分钟不是通用基准。 **[其他 AI 逆向 · 分析测试]**
+- [KakaSoft USB Copy Protection：AI追踪自定义哈希与受保护测试文件](cases/kakasoft-usb-copy-protection-ai-review.md) — Xusheng Li报告AI分析KakaSoft 5.6.0.299并恢复自有测试文件；最高档使用逐文件盐和IV，但内部口令可从客户端恢复。问题在密钥派生，不是破解Blowfish。 **[其他 AI 逆向 · 分析测试]**
 - [Courier Symphony：在A/B阶段之后加入REA辅助诊断、测试与人工批准的规划](cases/courier-symphony-rea-diagnostics-idea.md) — 德语帖子为Courier Symphony提出后续错误诊断流程：先稳定现有自动化，再让Agent分析故障，必要时用REA研究无源码程序，修复须测试与明确批准。 **[REA · 待验证]**
 - [只想问应用怎么用，Codex却启动REA：Mark Kretschmann中止的工具选择失败](cases/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark报告询问应用用法时Codex误用已安装REA试图重建；补读原串确认网页搜索已启用、作者中止任务，没有逆向成果或修复验证。 **[REA · 待验证]**
 - [img2threejs：从参考图生成带动画Three.js代码资产的项目介绍](cases/img2threejs-reference-image-code-assets-report.md) — 候选设计工具清单将img2threejs描述为给Agent输入参考图、重建纯代码动画Three.js资产的工具；未取得仓库、样例、模型或视觉对照。 **[其他 AI 逆向 · 待验证]**

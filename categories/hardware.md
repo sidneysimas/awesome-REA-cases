@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [传闻MacBook Pro装配模型：Opus按部件建模与几何检查的自述](../cases/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior称Opus 5.5依据泄露资料制作126部件的可动MacBook Pro模型；259规则与零错误是自述，不是苹果设计核验。 **[其他 AI 逆向 · 待验证]**
+- [PS5语音操作：chuplung称Opus研究网络控制后看屏操作菜单](../cases/chuplung-ps5-opus-network-voice-control.md) — chuplung报告Claude Opus 5.5在同Wi-Fi下研究PS5通信，配对批准后语音唤醒、下载和播放；不是越狱或主机shell。 **[其他 AI 逆向 · 待验证]**
+- [御天盾加密U盘：Xusheng Li的AI辅助TTD与隐藏账号调查](../cases/yutiandun-ai-ttd-hidden-account-review.md) — Binary Ninja研究者报告AI辅助跟踪SecZure御天盾读取流程，发现隐藏账号可解出同一内容标识；两盘测试不等于所有产品验证。 **[其他 AI 逆向 · 分析测试]**
+- [Nexcopy Copy Secure：AI追踪查看器、配置与3DES内容密钥](../cases/nexcopy-copy-secure-ai-key-review.md) — Xusheng Li报告AI研究Drive Wizard 1.0.81制备的Copy Secure盘，从查看器追到配置再到内容密钥；作者称恢复自有文件，非破解3DES。 **[其他 AI 逆向 · 分析测试]**
 - [坏按键跑步机：ShaneX用AI研究Nautilus蓝牙通道，以ESP32接回手机控制](../cases/purgane-treadmill-nautilus-esp32-control.md) — ShaneX报告用OpenClaw、Pi与万用表研究跑步机主芯片固件，再以ESP32桥接可下发命令的Nautilus蓝牙通道；多次刷写后称手机本地网页已能控制。 **[其他 AI 逆向 · 待验证]**
 - [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](../cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](../cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**

@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 877 cases & projects
+# 891 cases & projects
 
-**Latest case update:** October 26, 2026, 17:56 · **Last maintained:** October 26, 2026, 17:56 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 26, 2026, 18:26 · **Last maintained:** October 26, 2026, 18:26 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[xbox-boot-re: the original green blob, reconstructed](cases/en/xbox-boot-re-claude-reconstruction.md)** · `2026-10-16` — Human-directed Opus turns one BIOS into a **C core and WebGPU viewer**, with documented xemu comparisons and successful project CI. One modified BIOS, approximate audio synthesis; not a full console emulator or independently rerun here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[WayShare: connect your Mac to Hyprland](cases/en/wayshare-apple-remote-desktop-linux.md)** · `2026-10-20` — REA-assisted Apple Remote Desktop research yields a **public Rust implementation with successful project CI**. Claimed 60 fps is unmeasured here; Standard screens and clipboard remain unencrypted. `In progress`
-10. **[Precursor: Jak on an Android phone](cases/en/precursor-opengoal-claude-android-arm64.md)** · `2026-10-23` — Claude-assisted **ARM64 compiler and Android runtime work** builds on OpenGOAL's existing decompilation. Three games reportedly boot, but **none is verified end to end** and Jak 3 goes white after its first cutscene; not run here. `In progress`
+10. **[KakaSoft: inspect what “Highest” protection actually does](cases/en/kakasoft-usb-copy-protection-ai-review.md)** · `2026-10-23` (Beijing time) — Xusheng Li reports AI tracing **a hidden test file, a modified hash and client-side key derivation**, then recovering his own file without its user password. Version 5.6.0.299; a researcher test, **not a break of Blowfish** or an independent reproduction here. `Analysis test`
 
 ## Classic cases
 
@@ -48,9 +48,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **192** |
-| [Hardware & interoperability](categories/en/hardware.md) | **233** |
-| [Applications & clients](categories/en/apps.md) | **372** |
+| [Games & preservation](categories/en/games.md) | **195** |
+| [Hardware & interoperability](categories/en/hardware.md) | **237** |
+| [Applications & clients](categories/en/apps.md) | **379** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **80** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

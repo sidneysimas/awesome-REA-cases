@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**877 entries**, organized by use case, without a Top-N or popularity threshold.
+**891 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (192)
-- [Hardware and interoperability](categories/en/hardware.md) (233)
-- [Applications and clients](categories/en/apps.md) (372)
+- [Games and preservation](categories/en/games.md) (195)
+- [Hardware and interoperability](categories/en/hardware.md) (237)
+- [Applications and clients](categories/en/apps.md) (379)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (80)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Pokemon Yellow: Álvaro's unverified report of free Claude returning source and a game](cases/en/alvaro-pokemon-yellow-free-claude-decompilation.md) — Álvaro says free Claude returned source and a game after being asked to decompile his Pokemon Yellow copy. Output was not verified and existing public disassembly may be relevant. **[Other AI-assisted work · Needs verification]**
+- [A cod online client: a reader's wish to use AI reverse-engineering tools](cases/en/cod-online-ai-client-idea.md) — A reader asks for a cod online client using available AI reverse-engineering tools. This is a concrete idea, with no implementation or networking result. **[Other AI-assisted work · Needs verification]**
+- [Harvest Moon: Back To Nature: Dave's pi-harness decompilation and module-integration progress](cases/en/dpchamps-harvest-moon-psx-pi-decompilation.md) — Dave reports all Harvest Moon functions decompiled with a PSX pi harness and is folding them into modules. This is not 100% byte matching or a playable port. **[Other AI-assisted work · In progress]**
 - [BF4: afedb's brief report of an ongoing REA experiment](cases/en/afedb-bf4-rea-experiment.md) — afedb says they are testing REA on BF4; no recovered mechanic, reconstruction or test outcome is reported. **[REA · In progress]**
 - [A Switch 2 emulator: Tulio's Claude idea after reported firmware dumping](cases/en/tulio-switch2-claude-emulator-idea.md) — Tulio Santos imagines asking Claude to build a Switch 2 emulator after firmware-dump news; no implementation or firmware verification is supplied. **[Other AI-assisted work · Needs verification]**
 - [AMOS Pro: bitplane reports an AI-assisted emulator, online IDE and games library](cases/en/bitplane-ai-amos-pro-emulator.md) — bitplane reports an AI-assisted AMOS Pro web reimplementation, online IDE and games library. The public amos-ts README credits published AMOS source and reverse engineering for other compatibility behavior, not cycle-exact emulation. **[Other AI-assisted work · Needs verification]**
@@ -223,6 +226,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [A rumored MacBook Pro assembly: reported Opus part modeling and geometry checks](cases/en/rumored-macbook-pro-opus-geometric-reconstruction.md) — Superior reports a 126-part articulated MacBook Pro model made with Opus 5.5 from leaks. Its 259 passing rules and zero errors are author claims, not verification of Apple's design. **[Other AI-assisted work · Needs verification]**
+- [PS5 voice control: chuplung reports Opus network research and on-screen menu operation](cases/en/chuplung-ps5-opus-network-voice-control.md) — chuplung reports Claude Opus 5.5 studying PS5 communication on the same Wi-Fi, then waking it, downloading and playing after pairing approval. This is not a jailbreak or console shell. **[Other AI-assisted work · Needs verification]**
+- [YutianDun encrypted USB drives: Xusheng Li's AI-assisted TTD and hidden-account investigation](cases/en/yutiandun-ai-ttd-hidden-account-review.md) — A Binary Ninja researcher reports AI-assisted tracing of SecZure's YutianDun readers and hidden accounts that unwrap the same content identifier. Tests on two drives do not verify every product. **[Other AI-assisted work · Analysis test]**
+- [Nexcopy Copy Secure: AI traces viewers, configuration and 3DES content keying](cases/en/nexcopy-copy-secure-ai-key-review.md) — Xusheng Li reports AI studying a Copy Secure drive provisioned with Drive Wizard 1.0.81, tracing a viewer through configuration to content keys. Recovery of his own file is an author test, not a break of 3DES. **[Other AI-assisted work · Analysis test]**
 - [A treadmill with broken buttons: ShaneX reports AI-assisted Nautilus Bluetooth research and an ESP32 phone-control bridge](cases/en/purgane-treadmill-nautilus-esp32-control.md) — ShaneX reports using OpenClaw, a Pi and a multimeter to investigate treadmill firmware, then bridging a command-capable Nautilus Bluetooth channel with an ESP32. After repeated flashing, a local phone web app reportedly controls it. **[Other AI-assisted work · Needs verification]**
 - [A steam sauna in Home Assistant: Steve reports AI-assisted research of a 915MHz LoRa remote accessory](cases/en/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski reports reversing his steam sauna for Home Assistant control. His thread identifies a 915MHz LoRa steam-generator remote accessory, not Modbus or a cloud API. **[Other AI-assisted work · Needs verification]**
 - [A Roborock under the stairs: reported Claude-assisted remote-command research to escape a narrow opening](cases/en/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan relays an overnight Claude Code project: a human observes collisions while AI writes code and reads logs. Localization drift defeats a fixed path; reversing and alternating angles reportedly succeeds in 10 exit-and-dock trials. **[Other AI-assisted work · Needs verification]**
@@ -459,6 +466,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [STICH FAIXI SiX: AdyLovelace's report of a REA/Ghidra Tiny Client](cases/en/ady-stich-faixi-six-tiny-client.md) — AdyLovelace says REA, AI Assist and Ghidra helped create an experimental Tiny Client for a target called STICH FAIXI SiX. No code or checkable feature set is supplied. **[REA · Needs verification]**
+- [Ablation: an LLM tool loop linking binary context and analysis modules](cases/en/ablation-tool-ai-reverse-engineering-framework.md) — The candidate names Ablation as an AI-assisted reverse-engineering framework. Ablation-Tool/ablation's README describes an LLM analyst loop, session context and multi-architecture analysis; nothing was run here. **[Other AI-assisted work · Related project]**
+- [Hermes examines REA itself: Charles's brief local-model report](cases/en/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti says Hermes is reverse-engineering the REA repository with a local LLM; no model, analysis scope or resulting changes are supplied. **[Other AI-assisted work · Needs verification]**
+- [Crawlbot: a reported multi-agent product workflow with REA competitor research](cases/en/west-crawlbot-rea-competitor-workflow.md) — Trog describes west's Crawlbot: Grok finds demand, REA researches competitors and prices, Opus builds, and other tools test, write copy and retain memory. Implementation and acceptance evidence were not obtained. **[REA · Related project]**
+- [Four REA roles on Grok Bots: a proposal for observation, specification, isolated rebuilding and verification](cases/en/grok-bots-rea-four-role-cleanroom-proposal.md) — francescofaenzi adapts a four-agent clean-room workflow to Grok Bots' shared computer, with a team lead and roughly three feedback rounds. No specific target or enforced-isolation test is shown. **[REA · Related project]**
+- [NetacFileLock: a researcher reports a seven-minute Codex static cryptography review](cases/en/netacfilelock-codex-static-crypto-review.md) — Xusheng Li reports Codex using Binary Ninja MCP to revisit NetacFileLock, finding fixed AES keying, password logs and partial encryption in fast mode. Seven minutes is not a general benchmark. **[Other AI-assisted work · Analysis test]**
+- [KakaSoft USB Copy Protection: AI traces custom hashing and a protected test file](cases/en/kakasoft-usb-copy-protection-ai-review.md) — Xusheng Li reports AI analyzing KakaSoft 5.6.0.299 and recovering his own test file. Highest strength uses per-file salt and IV, but its internal password is recoverable from the client. The failure is key derivation, not a break of Blowfish. **[Other AI-assisted work · Analysis test]**
 - [Courier Symphony: a plan for REA-assisted diagnosis, tests and explicit approval after phases A/B](cases/en/courier-symphony-rea-diagnostics-idea.md) — A German post proposes later fault diagnosis for Courier Symphony: stabilize existing automation first, let agents investigate failures and use REA for programs without source when needed, with tests and explicit approval before accepting fixes. **[REA · Needs verification]**
 - [A usage question makes Codex start REA: Mark Kretschmann aborts a reported tool-selection failure](cases/en/mark-k-codex-rea-usage-question-tool-misrouting.md) — Mark reports Codex choosing an installed REA skill to rebuild an app when he only asked how to use it. The original thread confirms web search was enabled and he aborted; no reversing result or verified fix is reported. **[REA · Needs verification]**
 - [img2threejs: a reported project for rebuilding reference images as animated Three.js code assets](cases/en/img2threejs-reference-image-code-assets-report.md) — A design-tool roundup describes img2threejs as giving an agent a reference image to reconstruct an animated Three.js asset in code. A repository, examples, model and visual comparison were not obtained. **[Other AI-assisted work · Needs verification]**
