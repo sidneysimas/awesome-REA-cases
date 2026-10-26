@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [未具名DLL应用：读者称DeepSeek Harness配REA与Ghidra重建项目](../cases/deepseek-v41-harness-rea-ghidra-dll-app-reconstruction-report.md) — 读者称明确要求DeepSeek-V4.1-Flash（1017）使用REA和Ghidra后，基本搭出了应用项目；DLL细节占据注意力，前端仍需Claude大量返工。 **[REA · 待验证]**
+- [停运APK：读者希望用本地模型反编译并恢复离线功能](../cases/defunct-apk-local-model-offline-functionality-request.md) — 读者询问工具能否反编译一个已停运APK、加入离线能力，称Claude护栏妨碍尝试，愿考虑本地模型；未具名App，也无运行产物。 **[其他 AI 逆向 · 待验证]**
+- [Spider-Verse风格作品集：Praveen用REA研究网页设计、动效与交互](../cases/praveen-spiderverse-portfolio-rea-rebuild.md) — Praveen S称选取Spider-Verse风格作品集，以REA研究整站体验，随后明确使用Antigravity；仍在逆向中途，没有成品、还原对照或测试。 **[REA · 进行中]**
+- [研屿：DTS称以Codex重建、REA逆向制作机构研究服务工具](../cases/yanyu-codex-rea-research-service-rebuild-report.md) — DTS以机构与分析师自行服务客户为动机介绍研屿，称Codex重建、REA逆向，自有代码MIT开源；原仓库、逆向对象、功能与测试未辨认，不确认法律叙事或替代完成。 **[REA · 待验证]**
+- [REA架构教学扩展：GasMan建议以调用路径证据辅助理解旧代码](../cases/gasman-rea-hitl-architecture-audit-extension-idea.md) — GasMan提出GitHub／AI IDE扩展idea：让REA追踪有权访问的陌生仓库与旧代码调用路径、重建核心架构，由人解释证据；没有发布可用扩展或测试结果。 **[REA · 待验证]**
+- [Claude Code的map文件恢复：Steve报告Claude愿做、Codex拒绝的对照](../cases/steve-claude-code-sourcemap-recovery-model-refusal-report.md) — Steve回顾让Claude Code和Codex从Claude Code的map文件恢复源码，称前者执行、后者不做且拒读恢复仓库；无版本、恢复文件或日志，不确认源码完整性或普遍拒答规则。 **[其他 AI 逆向 · 分析测试]**
 - [Apple风格文件：Charlie Hills以Claude重用品牌视觉规则，建议REA提取其他品牌](../cases/charlie-hills-apple-style-file-rea-workflow.md) — Charlie Hills报告九分钟整理Apple式网站风格文件，供Claude Code建站，并建议用REA为其他品牌制作规范；22项检查与搜索曝光仅作者自述，未取得风格文件或对照。 **[REA · 待验证]**
 - [Cloudflare security-audit：以覆盖账本与反驳Agent约束安全审计](../cases/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare公开给编程Agent使用的安全审计Skill，按覆盖单元搜寻、让新Agent尝试推翻每条发现，再核对最终记录；要求操作系统沙盒，未解决项不升级确认，未运行。 **[其他 AI 逆向 · 相关项目]**
 - [Borer：为AI Agent设计的Rust逆向引擎与模拟器对照](../cases/borer-rust-agent-first-re-engine.md) — prism介绍Borer自有加载、提升、模拟与反编译引擎，供AI通过MCP/CLI读取小而可分页的结果；文档描述种子状态下对照反编译C和机器码，仍为早期项目，未运行或验证普遍正确性。 **[其他 AI 逆向 · 相关项目]**

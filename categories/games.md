@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](../cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**
+- [废弃项目升级UE5：InfiniteLabz计划测试AI反编译并迁移商店](../cases/infinitelabz-abandoned-project-ai-decompile-ue5-marketplace-idea.md) — InfiniteLabz计划当晚测试AI反编译，把一个废弃项目升级到Unreal Engine 5，并把商店改接供开发者上传资产与游戏的新市场；未报告已运行测试或完成迁移。 **[其他 AI 逆向 · 进行中]**
+- [FS95／FS98：Claude Code根据崩溃日志与调试截图修补旧模拟飞行EXE的转述](../cases/fs95-fs98-claude-binary-crash-patch-report.md) — 旺旺转述有人把Windows崩溃日志和x32dbg截图交给Claude Code，生成面向FS95／FS98在64位Windows崩溃的EXE补丁；备份恢复、无需DxWnd及作者未写代码均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [Warzone：Vephy称Kimi 3.1 Pro配ETERNAL制作外部辅助工具](../cases/vephy-kimi-eternal-warzone-external-tool-report.md) — Vephy称Kimi 3.1 Pro经ETERNAL在24小时制作Warzone外部叠加层、ESP和雷达，瞄准辅助仅为基础；未取得源码或分析/运行记录，不确认隐蔽性、性能或效率。 **[其他 AI 逆向 · 待验证]**
 - [Ace Combat 7合作Mod：玩家称AI辅助反编译，原串补足目标](../cases/ace-combat7-coop-mod-ai-decompilation-report.md) — Art3Onyx称AC7合作Mod使用AI辅助反编译；补查父串明确为Ace Combat 7合作模式，玩家原本希望和兄弟同玩。未取得Mod源码、开发者披露或联机测试，不确认可玩及停更原因。 **[其他 AI 逆向 · 待验证]**
 - [Kid Icarus Uprising：Darkshade的C-Stick与陀螺仪补丁，读者称AI辅助逆向](../cases/kid-icarus-uprising-darkshade-ai-control-patches-report.md) — GBAtemp介绍Darkshade为Kid Icarus Uprising添加C-Stick与陀螺仪支持；候选读者澄清AI用于逆向，不应称全部vibe coded。未取得补丁源码、作者AI披露或运行验证。 **[其他 AI 逆向 · 待验证]**

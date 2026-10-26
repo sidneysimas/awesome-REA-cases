@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **946 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **964 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（210）
-- [硬件与设备互通](categories/hardware.md)（254）
-- [应用与客户端](categories/apps.md)（399）
+- [游戏与游戏保存](categories/games.md)（213）
+- [硬件与设备互通](categories/hardware.md)（263）
+- [应用与客户端](categories/apps.md)（405）
 - [算法与功能重建](categories/algorithms.md)（83）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**
+- [废弃项目升级UE5：InfiniteLabz计划测试AI反编译并迁移商店](cases/infinitelabz-abandoned-project-ai-decompile-ue5-marketplace-idea.md) — InfiniteLabz计划当晚测试AI反编译，把一个废弃项目升级到Unreal Engine 5，并把商店改接供开发者上传资产与游戏的新市场；未报告已运行测试或完成迁移。 **[其他 AI 逆向 · 进行中]**
+- [FS95／FS98：Claude Code根据崩溃日志与调试截图修补旧模拟飞行EXE的转述](cases/fs95-fs98-claude-binary-crash-patch-report.md) — 旺旺转述有人把Windows崩溃日志和x32dbg截图交给Claude Code，生成面向FS95／FS98在64位Windows崩溃的EXE补丁；备份恢复、无需DxWnd及作者未写代码均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [Warzone：Vephy称Kimi 3.1 Pro配ETERNAL制作外部辅助工具](cases/vephy-kimi-eternal-warzone-external-tool-report.md) — Vephy称Kimi 3.1 Pro经ETERNAL在24小时制作Warzone外部叠加层、ESP和雷达，瞄准辅助仅为基础；未取得源码或分析/运行记录，不确认隐蔽性、性能或效率。 **[其他 AI 逆向 · 待验证]**
 - [Ace Combat 7合作Mod：玩家称AI辅助反编译，原串补足目标](cases/ace-combat7-coop-mod-ai-decompilation-report.md) — Art3Onyx称AC7合作Mod使用AI辅助反编译；补查父串明确为Ace Combat 7合作模式，玩家原本希望和兄弟同玩。未取得Mod源码、开发者披露或联机测试，不确认可玩及停更原因。 **[其他 AI 逆向 · 待验证]**
 - [Kid Icarus Uprising：Darkshade的C-Stick与陀螺仪补丁，读者称AI辅助逆向](cases/kid-icarus-uprising-darkshade-ai-control-patches-report.md) — GBAtemp介绍Darkshade为Kid Icarus Uprising添加C-Stick与陀螺仪支持；候选读者澄清AI用于逆向，不应称全部vibe coded。未取得补丁源码、作者AI披露或运行验证。 **[其他 AI 逆向 · 待验证]**
@@ -239,6 +242,15 @@
 
 ### 硬件与设备互通
 
+- [扫地机APK：作者称Claude只读分析发现地图上传与远程查看](cases/robot-vacuum-claude-apk-floorplan-upload-report.md) — 作者称用Claude Code分析自有扫地机App，发现每次清扫上传地图、Wi-Fi名称关联、四位PIN远程查看与三个追踪器；没有设备身份、代码位置或流量证据，不能确认实际上传或设备被入侵。 **[其他 AI 逆向 · 待验证]**
+- [电视固件替换：读者报告Claude和Codex均称不能改固件，仅建议上层修改](cases/tv-firmware-claude-codex-rewrite-refusal-report.md) — 读者称两个模型都表示无法修改其电视固件，但可调整数据收集与UI、在原固件上构建；未具名电视，无对话日志或可运行改动，不确认是技术限制还是策略拒答。 **[其他 AI 逆向 · 分析测试]**
+- [自动猫砂盆：用Agent逆向并移除监控功能的读者idea](cases/automatic-litter-box-agent-spyware-removal-idea.md) — 一条回复以调侃口吻提出让Agent逆向自动猫砂盆、移除spyware；保留为具体设备隐私idea，未报告已分析或修改任何产品。 **[其他 AI 逆向 · 待验证]**
+- [打印机维修：读者询问Quen27B本地模型能否协助硬件逆向](cases/quen27b-local-model-printer-repair-request.md) — 读者因需要修打印机，询问本地Quen27B是否能做Claude Opus被拦的硬件逆向；没有型号、故障描述或测试。模型名保留原帖拼写，不推定实际版本。 **[其他 AI 逆向 · 待验证]**
+- [Samsung电视：读者希望用Quen27B本地模型调查设备行为](cases/quen27b-samsung-tv-local-hardware-investigation-idea.md) — Will England在打印机维修之外，还想研究自己的Samsung电视，询问Quen27B能否替代被拦的Claude Opus；同串补充电视逐年变慢，希望关闭拖慢它的杂项。没有实际修改或性能测量。 **[其他 AI 逆向 · 待验证]**
+- [富士相机App：Xiao称Claude帮助定位断连并找到固件规避办法](cases/xiao-fujifilm-app-claude-disconnect-workaround.md) — Xiao称自己的富士相机App接近收尾，Claude帮助找到断连规避办法，并将根因归于相机固件；尚未确认App名称、协议分析过程、正式提交或上架。 **[其他 AI 逆向 · 待验证]**
+- [torne原厂固件：ほげ用AI／Ghidra研究后报告卡在密钥环节](cases/hogehoge61-torne-stock-firmware-ai-ghidra-investigation.md) — ほげ在torne电视调谐硬件串中介绍AI／LLM配合Ghidra分析，补充称已做静态分析与真机测试、转储RAM／ROM，却卡在一处密钥；可用coax不等于原厂固件分析成功。 **[其他 AI 逆向 · 进行中]**
+- [Tinfoil安全隔区固件：以约300行汇编替代OVMF，并纳入模型审查](cases/tinfoil-minimal-enclave-firmware-model-review-report.md) — Tinfoil称把安全隔区最先运行、接收不可信主机指令的固件，从约百万行OVMF C代码替换为约300行零依赖汇编，并把前沿模型审查与fuzzing列为安全实践；形式分析仍计划中。 **[其他 AI 逆向 · 相关项目]**
+- [A7C II Tools 3.0：AI逆向报道与QAQLeonard的单机验证边界](cases/sony-a7cii-ai-fl2-fl3-lut-firmware-report.md) — 候选称AI辅助Sony A7C II固件改装；补查QAQLeonard公开文档限定ILCE-7CM2／2.01，报告单台Windows环境下FL2／FL3、自定义外观与恢复验证。AI分工仍为转述，macOS USB未验、颜色为拟合近似，不保证恢复或刷机安全。 **[其他 AI 逆向 · 待验证]**
 - [Kindle微信读书：丁洪Liam把既有越狱、KOReader与SimpleUI串成Agent安装Skill](cases/ding-liam-kindle-weread-agent-installation-skill.md) — 丁洪Liam报告用Agent安装KOReader、社区微信读书插件与乔木SimpleUI；公开Skill明确仅一台KP3/5.16.2.1.1实测，不是AI发现新越狱或移植Android。 **[其他 AI 逆向 · 相关项目]**
 - [播放设备自定义固件：orcachillin考虑AI反编译、人工实现播放记录](cases/orcachillin-ai-decompile-play-logging-firmware-idea.md) — orcachillin在为播放设备加lfm记录时手工损坏更新模块，随后考虑用AI反编译现有固件、自己写新固件；明确不信任AI生成固件。补串补足动机但未确认设备型号或AI实验结果。 **[其他 AI 逆向 · 待验证]**
 - [旧遥控吊扇：stevegodlewski报告用AI研究既有控制方式](cases/stevegodlewski-ai-remote-ceiling-fan-report.md) — stevegodlewski称用AI逆向房屋原配遥控吊扇，避免更换智能吊扇或昂贵开关；所读串未展开仓库、品牌或协议，保留为作者自述，不确认控制效果。 **[其他 AI 逆向 · 待验证]**
@@ -496,6 +508,12 @@
 
 ### 应用与客户端
 
+- [未具名DLL应用：读者称DeepSeek Harness配REA与Ghidra重建项目](cases/deepseek-v41-harness-rea-ghidra-dll-app-reconstruction-report.md) — 读者称明确要求DeepSeek-V4.1-Flash（1017）使用REA和Ghidra后，基本搭出了应用项目；DLL细节占据注意力，前端仍需Claude大量返工。 **[REA · 待验证]**
+- [停运APK：读者希望用本地模型反编译并恢复离线功能](cases/defunct-apk-local-model-offline-functionality-request.md) — 读者询问工具能否反编译一个已停运APK、加入离线能力，称Claude护栏妨碍尝试，愿考虑本地模型；未具名App，也无运行产物。 **[其他 AI 逆向 · 待验证]**
+- [Spider-Verse风格作品集：Praveen用REA研究网页设计、动效与交互](cases/praveen-spiderverse-portfolio-rea-rebuild.md) — Praveen S称选取Spider-Verse风格作品集，以REA研究整站体验，随后明确使用Antigravity；仍在逆向中途，没有成品、还原对照或测试。 **[REA · 进行中]**
+- [研屿：DTS称以Codex重建、REA逆向制作机构研究服务工具](cases/yanyu-codex-rea-research-service-rebuild-report.md) — DTS以机构与分析师自行服务客户为动机介绍研屿，称Codex重建、REA逆向，自有代码MIT开源；原仓库、逆向对象、功能与测试未辨认，不确认法律叙事或替代完成。 **[REA · 待验证]**
+- [REA架构教学扩展：GasMan建议以调用路径证据辅助理解旧代码](cases/gasman-rea-hitl-architecture-audit-extension-idea.md) — GasMan提出GitHub／AI IDE扩展idea：让REA追踪有权访问的陌生仓库与旧代码调用路径、重建核心架构，由人解释证据；没有发布可用扩展或测试结果。 **[REA · 待验证]**
+- [Claude Code的map文件恢复：Steve报告Claude愿做、Codex拒绝的对照](cases/steve-claude-code-sourcemap-recovery-model-refusal-report.md) — Steve回顾让Claude Code和Codex从Claude Code的map文件恢复源码，称前者执行、后者不做且拒读恢复仓库；无版本、恢复文件或日志，不确认源码完整性或普遍拒答规则。 **[其他 AI 逆向 · 分析测试]**
 - [Apple风格文件：Charlie Hills以Claude重用品牌视觉规则，建议REA提取其他品牌](cases/charlie-hills-apple-style-file-rea-workflow.md) — Charlie Hills报告九分钟整理Apple式网站风格文件，供Claude Code建站，并建议用REA为其他品牌制作规范；22项检查与搜索曝光仅作者自述，未取得风格文件或对照。 **[REA · 待验证]**
 - [Cloudflare security-audit：以覆盖账本与反驳Agent约束安全审计](cases/cloudflare-security-audit-skill-verifier-workflow.md) — Cloudflare公开给编程Agent使用的安全审计Skill，按覆盖单元搜寻、让新Agent尝试推翻每条发现，再核对最终记录；要求操作系统沙盒，未解决项不升级确认，未运行。 **[其他 AI 逆向 · 相关项目]**
 - [Borer：为AI Agent设计的Rust逆向引擎与模拟器对照](cases/borer-rust-agent-first-re-engine.md) — prism介绍Borer自有加载、提升、模拟与反编译引擎，供AI通过MCP/CLI读取小而可分页的结果；文档描述种子状态下对照反编译C和机器码，仍为早期项目，未运行或验证普遍正确性。 **[其他 AI 逆向 · 相关项目]**

@@ -1,5 +1,313 @@
 [
   {
+    "id": "meetshah-old-android-game-multimodel-repair-report",
+    "title": "旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩",
+    "category": "games",
+    "rea": "unknown",
+    "status": "unverified",
+    "summary": "Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。",
+    "description": "2026年10月24日01:39（北京时间），Meet Shah（@meetshah6565）报告修复一款自己曾在Samsung S2上玩的旧Android游戏。背景是后来即使找到APK，也不能在新Android设备安装；设法安装后仍不可玩。作者称借助GitHub上的逆向工程Skill，约六小时编码、调试，使用Opus 5.5、通过open code调用的Kimi K3、Muse Spark 1.3，以及Netron 3 Ultra free，最后能够重温当年的游戏。\n\n补查原帖确认作者、模型名称和六小时自述。帖子附图，本合集未识别截图；游戏名称、Skill仓库、新设备、Android版本、APK构建、故障根因和具体修改均未公开于可读正文。原文为Netron 3 Ultra free，按原样保留，不猜为其他模型；提到逆向Skill不等于确认使用REA。\n\n这是一项具体的旧游戏兼容性维修报告，足以保守记录作者的操作与结果，不因项目尚未具名就忽略。尚无补丁、运行日志、前后对照或测试覆盖，不能声称所有关卡、音频、存档或新系统都兼容；六小时不是可推广的工时基准。本合集没有下载APK、安装Skill或运行目标游戏，恢复游玩仅为作者报告，状态为unverified。",
+    "sources": [
+      {"label": "Meet Shah报告四模型与逆向Skill修复旧Android游戏，2026-10-24", "url": "https://x.com/i/status/2113686777332637765"}
+    ],
+    "snapshot_date": "2026-10-26",
+    "metadata": ["原帖发布于10月24日，为往期补审；作者报告约六小时后可重温游戏，未取得具名游戏、补丁或运行验证。", "Netron 3 Ultra free保留原文；逆向Skill未识别，REA使用未知。"],
+    "en": {
+      "title": "An old Android game: Meet Shah reports six hours of multi-model repair to play again",
+      "summary": "Meet Shah says an old Samsung S2-era game could not install on modern Android and remained unplayable after installation workarounds. About six hours of coding and debugging with a GitHub reversing skill and four models reportedly restored play. The game and patch remain unidentified and untested here.",
+      "description": "At 01:39 Beijing time on October 24, 2026, Meet Shah (@meetshah6565) reported repairing an old Android game he had played on a Samsung S2. Finding its APK had not solved the problem: it would not install on a newer Android device, and even forcing installation left it unplayable. He says a reverse-engineering skill on GitHub and about six hours of coding and debugging with Opus 5.5, Kimi K3 through open code, Muse Spark 1.3 through open code, and Netron 3 Ultra free let him relive that gaming experience.\n\nSupplementary lookup of the original confirmed the author, model names and self-reported six hours. The post includes an image that this collection did not identify. Its readable text gives no game name, skill repository, new device, Android version, APK build, root cause or specific changes. Netron 3 Ultra free is preserved exactly as written rather than guessed to be another model. Mentioning a reversing skill does not establish REA use.\n\nThis is a concrete game-compatibility repair report whose actions and claimed outcome can be conservatively recorded despite the unidentified game. No patch, execution logs, before/after comparison or test coverage was obtained. Full level, audio, save and new-system compatibility are not established, and six hours is not a generalizable labor benchmark. No APK was downloaded, skill installed or target game run here. Restored play remains the author's report, with unverified status.",
+      "metadata": ["The original was published October 24 and reviewed as prior-window material. The author reports play after roughly six hours; no named game, patch or execution verification was obtained.", "Netron 3 Ultra free preserves the original token. The reversing skill is unidentified and REA use is unknown."],
+      "source_labels": ["Meet Shah reports repairing an old Android game with four models and a reversing skill, October 24, 2026"]
+    }
+  },
+  {
+    "id": "robot-vacuum-claude-apk-floorplan-upload-report",
+    "title": "扫地机APK：作者称Claude只读分析发现地图上传与远程查看",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "作者称用Claude Code分析自有扫地机App，发现每次清扫上传地图、Wi-Fi名称关联、四位PIN远程查看与三个追踪器；没有设备身份、代码位置或流量证据，不能确认实际上传或设备被入侵。",
+    "description": "2026年10月26日06:23（北京时间），作者报告将自有扫地机的Android App交给Claude Code，只读分析一个晚上。作者称发现每次清扫上传平面图、地图与Wi-Fi名称关联、四位PIN保护的远程摄像头模式，以及停靠时仍活动的三个追踪器。帖中提示词要求反编译APK，列出服务器、地图／图像／音频／Wi-Fi上传、SDK与权限，并为每项发现指出文件，最后建议先改五项设置。\n\n这是作者声称实际做过分析的报告，与基线tezzarc的调查提示词并无可确认的同作者联系。帖子没有品牌、型号、APK版本、实际文件位置、输出或流量记录；静态代码可能性不等于运行时确有上传，Wi-Fi名称也不能单独证明准确地址。普通共享Wi-Fi不证明扫地机能读取其他设备。文中Roomba／Ecovacs历史事件与Valetudo建议不构成对本设备的验证，也不确认所有Roborock／Dreame兼容。未下载APK、连接设备或独立重现；REA未提及。",
+    "sources": [{"label": "作者报告Claude Code只读分析扫地机APK，2026-10-26", "url": "https://x.com/i/status/2114482986464764129"}],
+    "snapshot_date": "2026-10-26", "metadata": ["未具名设备的作者报告；未取得代码位置、网络流量或独立复现。"],
+    "en": {
+      "title": "A robot-vacuum APK: an author reports Claude finding map uploads and remote viewing",
+      "summary": "The author says a read-only Claude Code review found per-clean floor-plan uploads, Wi-Fi-name association, four-digit-PIN remote viewing and three trackers. No device identity, code locations or traffic evidence establishes actual uploads or compromise.",
+      "description": "At 06:23 Beijing time on October 26, 2026, an author reported spending an evening on read-only Claude Code analysis of their robot vacuum's Android app. Claimed findings include floor-plan uploads after every clean, association with a Wi-Fi name, a remote-camera mode behind a four-digit PIN, and three trackers active while docked. The supplied prompt asks for APK decompilation, a server inventory, map/image/audio/Wi-Fi uploads, tracker SDKs and permissions, with a file for every finding and five settings to change first.\n\nThis is an author-claimed executed analysis, with no confirmed author connection to the baseline tezzarc investigation prompt. The post supplies no brand, model, APK version, actual file locations, output or traffic records. Static code possibilities do not establish runtime uploads; a Wi-Fi name alone does not prove an exact address, nor does sharing Wi-Fi prove access to other devices. Historical Roomba/Ecovacs incidents and Valetudo recommendations do not verify this device or establish support for every Roborock/Dreame model. No APK was downloaded, device connected or result independently reproduced. REA is not mentioned.",
+      "metadata": ["An author report about an unnamed device; no code locations, network traffic or independent reproduction were obtained."],
+      "source_labels": ["Author reports read-only Claude Code analysis of a robot-vacuum APK, October 26, 2026"]
+    }
+  },
+  {
+    "id": "deepseek-v41-harness-rea-ghidra-dll-app-reconstruction-report",
+    "title": "未具名DLL应用：读者称DeepSeek Harness配REA与Ghidra重建项目",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "读者称明确要求DeepSeek-V4.1-Flash（1017）使用REA和Ghidra后，基本搭出了应用项目；DLL细节占据注意力，前端仍需Claude大量返工。",
+    "description": "2026年10月26日01:52（北京时间），一条葡语回复介绍以DeepSeek Harness运行DeepSeek-V4.1-Flash（1017），强调提示词明确要求REA配Ghidra后差别很大，称模型基本为自己搭出了整个应用项目。作者认为自己过度要求详细解释DLL，可能导致前端较弱，后来用Claude按自己希望的方式做前端花了最多功夫。\n\n应用未具名，没有DLL版本、源码、UI对照或运行日志，不能确认功能完整、还原正确或全部项目由AI独立完成。保留工具组合与前端返工这一局限，不将它合并进另一作者的Claude Code风控研究，也不从“entire project”推断测试通过。",
+    "sources": [{"label": "葡语读者报告DeepSeek Harness、REA与Ghidra重建应用及前端返工，2026-10-26", "url": "https://x.com/i/status/2114414827884196002"}],
+    "snapshot_date": "2026-10-26", "metadata": ["未具名应用；项目生成和前端困难均为作者报告，没有行为验证。"],
+    "en": {
+      "title": "An unnamed DLL application: a reader reports reconstruction with DeepSeek Harness, REA and Ghidra",
+      "summary": "A reader says explicitly asking DeepSeek-V4.1-Flash (1017) to use REA and Ghidra largely produced an application project. Attention to DLL details left a frontend requiring substantial Claude rework.",
+      "description": "At 01:52 Beijing time on October 26, 2026, a Portuguese reply describes running DeepSeek-V4.1-Flash (1017) through DeepSeek Harness. Explicitly requesting REA with Ghidra reportedly made a large difference, with the model essentially assembling an entire application project. The author thinks their emphasis on detailed DLL explanations may have hurt the frontend, which subsequently required the most work in Claude to achieve the desired design.\n\nThe application is unnamed; no DLL version, source, UI comparison or execution logs are supplied. Functional completeness, reconstruction correctness and entirely autonomous generation are not established. This retains the tool combination and frontend rework limitation, without merging it into another author's Claude Code risk-control investigation or interpreting entire project as passing tests.",
+      "metadata": ["Unnamed application; project generation and frontend difficulties are author-reported without behavioral verification."],
+      "source_labels": ["Portuguese reader reports DeepSeek Harness/REA/Ghidra reconstruction and frontend rework, October 26, 2026"]
+    }
+  },
+  {
+    "id": "defunct-apk-local-model-offline-functionality-request",
+    "title": "停运APK：读者希望用本地模型反编译并恢复离线功能",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "读者询问工具能否反编译一个已停运APK、加入离线能力，称Claude护栏妨碍尝试，愿考虑本地模型；未具名App，也无运行产物。",
+    "description": "2026年10月26日02:10（北京时间），一条回复提出对已停运Android APK反编译或加入离线功能，称Claude有较多护栏，若能推进目标，愿考虑本地模型。具体用途是停服后的应用继续使用，而不是笼统让AI复制任何软件。\n\n帖子没有App名、版本、必须依赖的服务、拒答日志、本地模型或实现。按未验证请求保留，不确认能从客户端推回原服务、不保证可离线，也不把考虑本地模型写成已经使用或成功。REA未明确提及。",
+    "sources": [{"label": "读者询问停运APK反编译与离线功能，2026-10-26", "url": "https://x.com/i/status/2114419339596083554"}],
+    "snapshot_date": "2026-10-26", "metadata": ["具体保存请求，无App身份、代码或离线验证。"],
+    "en": {
+      "title": "A defunct APK: a reader requests local-model decompilation and offline functionality",
+      "summary": "A reader asks whether a tool can decompile a defunct APK or add offline use, citing Claude guardrails and willingness to consider a local model. The app is unnamed and no working artifact is supplied.",
+      "description": "At 02:10 Beijing time on October 26, 2026, a reply asks about decompiling a defunct Android APK or adding offline functionality. The reader says Claude has too many guardrails and would consider a local model if it could advance the goal. The specific purpose is continuing to use an app after shutdown, rather than a generic request to copy arbitrary software.\n\nNo app name, version, required services, refusal logs, local model or implementation is given. This is retained as an unverified request, without assuming a client reveals its original backend, guaranteeing offline use, or treating consideration of a local model as actual use or success. REA is not explicitly mentioned.",
+      "metadata": ["A specific preservation request, without app identity, code or offline verification."],
+      "source_labels": ["Reader asks about decompiling a defunct APK and adding offline functionality, October 26, 2026"]
+    }
+  },
+  {
+    "id": "tv-firmware-claude-codex-rewrite-refusal-report",
+    "title": "电视固件替换：读者报告Claude和Codex均称不能改固件，仅建议上层修改",
+    "category": "hardware", "rea": "other-ai", "status": "analysis-test",
+    "summary": "读者称两个模型都表示无法修改其电视固件，但可调整数据收集与UI、在原固件上构建；未具名电视，无对话日志或可运行改动，不确认是技术限制还是策略拒答。",
+    "description": "2026年10月25日20:03（北京时间），读者回复电视逆向讨论，称自己的Claude和Codex都说无法更改电视固件，但可以编辑数据收集、UI，并在原固件之上构建想要的东西。作者不确定这是OpenAI／Anthropic的限制，还是网上成功说法不实。\n\n按一次具体尝试的负结果与替代建议保留：没有电视品牌、型号、固件版本、提示词、拒答原文、模型版本或实现。模型表示可做上层修改，不等于确实做成；不能据此断言所有电视固件不可更改、确认厂商政策，或判其他作者报告造假。REA未提及，未独立复现。",
+    "sources": [{"label": "读者报告Claude／Codex电视固件替换受阻，2026-10-25", "url": "https://x.com/i/status/2114326928488308999"}],
+    "snapshot_date": "2026-10-26", "metadata": ["候选原帖为10月25日往期补审；负结果为作者自述，原因未明，无实际修改验证。"],
+    "en": {
+      "title": "Replacing TV firmware: a reader says Claude and Codex both declined firmware changes and suggested an upper layer",
+      "summary": "The reader says both models indicated they could not change TV firmware but could modify data collection and the UI or build above the existing firmware. No TV identity, conversation logs or runnable changes distinguish a technical limit from a policy refusal.",
+      "description": "At 20:03 Beijing time on October 25, 2026, a reader replying to a TV reverse-engineering discussion said their Claude and Codex both stated that changing the TV firmware was not possible, while suggesting data-collection/UI changes and building desired functionality on top of existing firmware. The author was unsure whether this reflected OpenAI/Anthropic restrictions or inaccurate online success claims.\n\nThis records one attempted task's negative outcome and suggested alternative. No TV brand, model, firmware version, prompts, verbatim refusal, model versions or implementation is supplied. A model saying an upper-layer change is possible does not establish it was implemented. The report does not prove all TV firmware is unmodifiable, establish a vendor-wide policy or show that other authors fabricated results. REA is not mentioned and no independent reproduction was done.",
+      "metadata": ["The candidate was published October 25 and is a prior-window review. The negative result is self-reported, its cause unresolved and no actual modification verified."],
+      "source_labels": ["Reader reports Claude/Codex blocking TV firmware replacement, October 25, 2026"]
+    }
+  },
+  {
+    "id": "automatic-litter-box-agent-spyware-removal-idea",
+    "title": "自动猫砂盆：用Agent逆向并移除监控功能的读者idea",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "一条回复以调侃口吻提出让Agent逆向自动猫砂盆、移除spyware；保留为具体设备隐私idea，未报告已分析或修改任何产品。",
+    "description": "2026年10月26日11:03（北京时间），一条回复说，如果Agent还没有逆向自己的自动猫砂盆并移除spyware，就落后了。它以调侃形式给出具体方向：对自动清理设备做逆向，去除作者认为属于监控的软件功能。\n\n按未验证idea保留，而非实际完成报告。没有品牌、型号、固件、通信记录、AI工具名称或产物；spyware是帖子的称呼，不是本合集对某产品的认定。不能确认作者拥有该设备、已经开展研究或成功移除了数据收集，REA亦未明确提及。",
+    "sources": [{"label": "读者提出Agent逆向自动猫砂盆去监控idea，2026-10-26", "url": "https://x.com/i/status/2114553485391794675"}],
+    "snapshot_date": "2026-10-26", "metadata": ["调侃式具体idea，无目标型号、分析或修改验证。"],
+    "en": {
+      "title": "An automatic litter box: a reader's idea to use an agent to remove surveillance features",
+      "summary": "A joking reply proposes agent-assisted reverse engineering of an automatic litter box to remove spyware. It is retained as a device-privacy idea, not a report of analyzing or modifying a product.",
+      "description": "At 11:03 Beijing time on October 26, 2026, a reply joked that anyone whose agent had not reverse-engineered their automatic litter-box scooper to remove spyware was behind. It proposes a concrete direction: reverse-engineer an automatic cleaning device to remove software features the commenter regards as surveillance.\n\nThis is retained as an unverified idea, not a completed-work report. No brand, model, firmware, communication records, AI tool name or artifact is provided. Spyware is the post's characterization, not this collection's finding about a product. Device ownership, actual research and successful removal of data collection are not established, and REA is not explicitly named.",
+      "metadata": ["A joking but concrete idea; no target model, analysis or modification verification."],
+      "source_labels": ["Reader proposes agent-assisted litter-box reverse engineering to remove surveillance, October 26, 2026"]
+    }
+  },
+  {
+    "id": "quen27b-local-model-printer-repair-request",
+    "title": "打印机维修：读者询问Quen27B本地模型能否协助硬件逆向",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "读者因需要修打印机，询问本地Quen27B是否能做Claude Opus被拦的硬件逆向；没有型号、故障描述或测试。模型名保留原帖拼写，不推定实际版本。",
+    "description": "2026年10月26日04:47（北京时间），读者称需要修理打印机，询问本地“Quen27B”模型能否完成目前Claude Opus拦截的硬件逆向。这是选择本地模型协助设备维修的具体请求，不是已经使用该模型修好设备。\n\n原帖没有打印机品牌、型号、故障、固件、分析步骤或输出；没有证据将它等同于基线HP第三方墨水idea或Canon Pro-1000固件模拟。Quen27B按原文保留，不自动改成其他模型名或确认参数、版本。Claude拦截同样是作者的概述，无对话日志，不能当作所有硬件维修请求的通用规则。REA未提及，无独立测试。",
+    "sources": [{"label": "读者询问Quen27B本地模型的打印机维修逆向能力，2026-10-26", "url": "https://x.com/i/status/2114458887671656815"}],
+    "snapshot_date": "2026-10-26", "metadata": ["具体维修请求；Quen27B为原文拼写，没有设备或模型验证。"],
+    "en": {
+      "title": "Printer repair: a reader asks whether a local Quen27B model can assist hardware reverse engineering",
+      "summary": "A reader needing to repair a printer asks whether local Quen27B can do hardware reverse engineering reportedly blocked by Claude Opus. No model of printer, fault description or test is supplied. The model token is preserved as written, not resolved to a version.",
+      "description": "At 04:47 Beijing time on October 26, 2026, a reader said they needed to fix a printer and asked whether a local model called Quen27B could perform hardware reverse engineering reportedly blocked by Claude Opus. This is a specific request to use a local model for device repair, not a report that the model has repaired the device.\n\nThe post gives no printer brand, model, fault, firmware, analysis procedure or output. Nothing establishes identity with the baseline HP third-party-ink idea or Canon Pro-1000 firmware emulation. Quen27B is preserved verbatim, not silently corrected to another model or used to infer parameters or version. The Claude block is also an author summary without conversation logs, not a universal rule for hardware-repair requests. REA is not mentioned and no independent testing was done.",
+      "metadata": ["A specific repair request; Quen27B is the original spelling, with neither device nor model testing."],
+      "source_labels": ["Reader asks about Quen27B local-model assistance for printer repair reverse engineering, October 26, 2026"]
+    }
+  },
+  {
+    "id": "quen27b-samsung-tv-local-hardware-investigation-idea",
+    "title": "Samsung电视：读者希望用Quen27B本地模型调查设备行为",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Will England在打印机维修之外，还想研究自己的Samsung电视，询问Quen27B能否替代被拦的Claude Opus；同串补充电视逐年变慢，希望关闭拖慢它的杂项。没有实际修改或性能测量。",
+    "description": "2026年10月26日04:47（北京时间），Will England（@wingland）询问本地Quen27B硬件逆向能力时，除修理打印机外，还表示想看看自己的Samsung电视在做什么。补查同作者同日回复，明确动机是电视这些年变慢，希望关闭一些拖慢设备的杂项。原候选与补充回复共同说明这一设备维护idea，未报告已经分析、关闭服务或改善性能。\n\n作为不同设备目标单独保留，避免把电视调查与打印机维修混成一个成果。没有电视型号、固件、App、网络抓包或明确调查发现，也未说明已经运行Quen27B。保留原模型名拼写，不确认其版本；不能把该请求并入log4j等其他作者的Samsung研究，或推断这台电视存在监视、已获得root、已经移除广告。作者关于Claude Opus拦截的概述未经日志核验，REA未提及，状态为未验证idea。补充回复是往期同串上下文，不当作本轮新候选。",
+    "sources": [
+      {"label": "Will England询问本地模型调查Samsung电视的idea，2026-10-26", "url": "https://x.com/i/status/2114458887671656815"},
+      {"label": "补充同作者回复：电视变慢，希望关闭拖慢设备的杂项，2026-10-26", "url": "https://x.com/i/status/2114482050182836553"}
+    ],
+    "snapshot_date": "2026-10-26", "metadata": ["同帖第二个独立设备目标；没有型号、调查发现或运行记录。"],
+    "en": {
+      "title": "A Samsung TV: a reader wants to investigate device behavior with a local Quen27B model",
+      "summary": "Alongside printer repair, Will England asks whether Quen27B can replace hardware reverse engineering reportedly blocked by Claude Opus for his Samsung TV. A reply clarifies that it has slowed over the years and he wants to disable some clutter. No modification or performance measurement is reported.",
+      "description": "At 04:47 Beijing time on October 26, 2026, Will England (@wingland), asking about local Quen27B hardware reverse engineering, said that in addition to fixing a printer he wanted to inspect his Samsung TV. Supplementary lookup of his same-day reply clarifies the motivation: it has slowed down over the years, and he wants to turn off some of the junk slowing it down. The original candidate and reply establish a device-maintenance idea, not executed analysis, disabled services or improved performance.\n\nThe TV is retained as a separate device target rather than conflating investigation and printer repair into one outcome. No TV model, firmware, app, network capture or concrete finding is supplied, nor any statement that Quen27B has actually been run. The model token is preserved as written without confirming a version. This request is not merged into Samsung research by log4j or other authors, nor does it establish surveillance, root access or ad removal on this TV. The author's summary of Claude Opus blocking work lacks supporting conversation logs. REA is not mentioned, and the entry remains an unverified idea. The supplementary reply is prior-window thread context, not a newly collected current-window candidate.",
+      "metadata": ["A second independent device target in the same post; no model of TV, investigation finding or execution record."],
+      "source_labels": ["Will England's idea to investigate a Samsung TV with a local model, October 26, 2026", "Supplementary reply by the same author: the TV has slowed down and he wants to disable clutter, October 26, 2026"]
+    }
+  },
+  {
+    "id": "infinitelabz-abandoned-project-ai-decompile-ue5-marketplace-idea",
+    "title": "废弃项目升级UE5：InfiniteLabz计划测试AI反编译并迁移商店",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "InfiniteLabz计划当晚测试AI反编译，把一个废弃项目升级到Unreal Engine 5，并把商店改接供开发者上传资产与游戏的新市场；未报告已运行测试或完成迁移。",
+    "description": "2026年10月26日10:11（北京时间），InfiniteLabz（@AverageG4merYT）说准备当晚在一个废弃项目上测试AI反编译。目标包括将项目升级至Unreal Engine 5，并把原商店重定向到新的开发者市场，让开发者上传资产和游戏。它是有明确后续用途的保存／维护计划，不是AI已经完成移植的报告。\n\n补查原帖确认作者与计划措辞；附图未作识别，项目名称、旧引擎版本、源代码可得性、商店后端和授权状态仍不明。帖子没有披露AI模型、REA使用、反编译输出、引擎适配步骤、可运行版本或测试结果。保留进行中计划，不推断服务器代码可以从客户端恢复，也不把准备测试写成测试通过。未下载项目、运行反编译器或访问原商店。",
+    "sources": [{"label": "InfiniteLabz的AI反编译、UE5与新市场计划，2026-10-26", "url": "https://x.com/i/status/2114540286214844601"}],
+    "snapshot_date": "2026-10-26", "metadata": ["作者计划当晚测试；项目未具名，没有反编译产物或迁移验证。"],
+    "en": {
+      "title": "Upgrading an abandoned project to UE5: InfiniteLabz plans AI decompilation and a marketplace migration",
+      "summary": "InfiniteLabz plans to test AI decompilation that evening, upgrade an abandoned project to Unreal Engine 5 and redirect its store to a new marketplace for developer assets and games. No completed test or migration is reported.",
+      "description": "At 10:11 Beijing time on October 26, 2026, InfiniteLabz (@AverageG4merYT) said he intended to test AI decompilation on an abandoned project that evening. His goals are to upgrade the project to Unreal Engine 5 and redirect its store to a new marketplace where developers can upload assets and games. This is a preservation/maintenance plan with a specific intended use, not a report of an AI-completed port.\n\nSupplementary original-post lookup confirmed the author and prospective wording. Attached images were not identified; the project's name, previous engine version, source availability, store backend and authorization remain unknown. The post discloses no AI model, REA use, decompilation output, engine-adaptation procedure, runnable build or test result. It is retained as an in-progress plan, without assuming server code can be recovered from a client or treating a planned test as a pass. No project was downloaded, decompiler run or original store accessed.",
+      "metadata": ["The author plans to test that evening; the project is unnamed and no decompilation artifact or migration verification was obtained."],
+      "source_labels": ["InfiniteLabz's AI-decompilation, UE5 and new-marketplace plan, October 26, 2026"]
+    }
+  },
+  {
+    "id": "xiao-fujifilm-app-claude-disconnect-workaround",
+    "title": "富士相机App：Xiao称Claude帮助定位断连并找到固件规避办法",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Xiao称自己的富士相机App接近收尾，Claude帮助找到断连规避办法，并将根因归于相机固件；尚未确认App名称、协议分析过程、正式提交或上架。",
+    "description": "2026年10月26日11:11（北京时间），Xiao（@im_xiaoxiao）报告自己的富士相机App进入收尾阶段，称已经定位并解决断连问题。他将根本原因归于富士固件，并说Claude帮助找到了规避办法，计划当天整理后提交App Store。这提供了一个AI辅助设备兼容性排障的具体结果自述，而非一般替换官方App的愿望。\n\n补查原帖确认作者与措辞；附图未作分析，未取得App名称、仓库、相机型号、固件版本、协议捕获、错误日志或修改前后对照。不能由“固件有问题”推断已反编译或刷写相机，也不把计划提交当作已经审核通过或上架。REA未提及，Claude型号及具体诊断贡献未披露。\n\n现有Fuji XApp稳定同步idea及上传胶片模拟设置案例并未提供可确认的同作者／同项目联系，故不擅自合并。本条按独立的未验证兼容性维修报告保留；断连已解决与根因判断均归于作者，未独立连接设备或运行App测试。",
+    "sources": [{"label": "Xiao报告Claude辅助富士相机App断连修复，2026-10-26", "url": "https://x.com/i/status/2114555406320312632"}],
+    "snapshot_date": "2026-10-26", "metadata": ["作者自述解决断连并准备提交App Store；未取得协议、日志或测试对照，未确认固件根因或已上架。"],
+    "en": {
+      "title": "A Fujifilm camera app: Xiao reports Claude helping identify disconnects and a firmware workaround",
+      "summary": "Xiao says his Fujifilm camera app is nearly finished and Claude helped find a disconnect workaround, attributing the cause to camera firmware. The app name, protocol-analysis process, store submission and release remain unconfirmed.",
+      "description": "At 11:11 Beijing time on October 26, 2026, Xiao (@im_xiaoxiao) reported that his Fujifilm camera app was nearing completion and said he had identified and resolved its disconnect problem. He attributed the root cause to Fujifilm firmware and said Claude helped find a workaround, with App Store submission planned after tidying up that day. This is a specific self-reported outcome of AI-assisted device-compatibility debugging rather than a general wish to replace an official app.\n\nSupplementary original-post lookup confirmed the author and wording. The attached image was not analyzed; the app name, repository, camera model, firmware version, protocol captures, error logs and before/after comparison were not obtained. A claim of faulty firmware does not establish camera decompilation or flashing, and planned submission does not mean approval or release. REA is not mentioned, and the Claude model and precise diagnostic contribution are undisclosed.\n\nExisting Fuji XApp stable-sync ideas and film-simulation upload cases provide no confirmed author/project connection, so they are not silently merged. This is retained as a separate unverified compatibility-repair report. Both the claimed resolution and root-cause attribution remain the author's statements; no device was connected or app tested independently.",
+      "metadata": ["The author reports resolving disconnects and preparing an App Store submission. No protocol records, logs or comparative tests establish the firmware root cause or a released app."],
+      "source_labels": ["Xiao reports Claude-assisted disconnect repairs for a Fujifilm camera app, October 26, 2026"]
+    }
+  },
+  {
+    "id": "hogehoge61-torne-stock-firmware-ai-ghidra-investigation",
+    "title": "torne原厂固件：ほげ用AI／Ghidra研究后报告卡在密钥环节",
+    "category": "hardware", "rea": "other-ai", "status": "in-progress",
+    "summary": "ほげ在torne电视调谐硬件串中介绍AI／LLM配合Ghidra分析，补充称已做静态分析与真机测试、转储RAM／ROM，却卡在一处密钥；可用coax不等于原厂固件分析成功。",
+    "description": "2026年10月26日11:33（北京时间），ほげ（@hogehoge61）在回复串中建议对PS3相关安装介质及硬件ROM中的固件使用AI／LLM和Ghidra分析。补查同作者串确认对象是torne电视调谐硬件：11:17的父帖称曾以静态分析和真机测试研究原厂固件上传及整体行为，接近终点时受阻；11:20回复称已转储RAM、ROM与隐藏ROM，密钥问题大部分解明，但认为剩余一处可能需要USB捕获。\n\n11:38同串补充说，仅想在PC上使用torne可以选已有的coax实现，不需要原厂固件；自己却在使用所不必需的原厂固件分析上花了不少token。作者将已有自定义固件／裸模式路线与自己的原厂固件研究区分，不能把coax的可用性算作本次AI分析的成功，也不能确认所有转储和密钥判断正确。父帖与后续帖作为同日补充上下文，不替换原候选。\n\n本条保留具体对象、AI／Ghidra分工及未完成的负结果，没有取得模型、分析代码、捕获记录、转储或可复现测试。REA未提及，不提供密钥提取或绕过流程，未访问固件、密钥或运行目标代码。",
+    "sources": [
+      {"label": "原候选：ほげ建议AI／LLM配合Ghidra研究，2026-10-26 11:33北京时间", "url": "https://x.com/i/status/2114561138545570222"},
+      {"label": "补充父帖：torne原厂固件研究受阻，2026-10-26 11:17北京时间", "url": "https://x.com/i/status/2114556917335150758"},
+      {"label": "补充同串：RAM／ROM转储与密钥瓶颈，2026-10-26 11:20北京时间", "url": "https://x.com/i/status/2114557690563489820"},
+      {"label": "补充同串：区分coax可用路线与原厂固件研究，2026-10-26 11:38北京时间", "url": "https://x.com/i/status/2114562264644874304"}
+    ],
+    "snapshot_date": "2026-10-26", "metadata": ["作者报告静态分析、真机测试与密钥瓶颈，未独立复现；coax是另一路线，不代表本次原厂固件研究完成。"],
+    "en": {
+      "title": "torne stock firmware: Hogehoge reports an AI/Ghidra investigation blocked at a key-handling step",
+      "summary": "Hogehoge describes AI/LLM-assisted Ghidra analysis of torne TV-tuner hardware. The surrounding thread reports static analysis, hardware tests and RAM/ROM dumps but a remaining key obstacle. A usable coax implementation does not establish success of this stock-firmware investigation.",
+      "description": "At 11:33 Beijing time on October 26, 2026, Hogehoge (@hogehoge61) suggested using AI/LLMs with Ghidra to analyze firmware associated with PS3 installation media and hardware ROM. Supplementary lookup of the author's thread identified torne TV-tuner hardware as the target. An 11:17 parent post reports static analysis and hardware testing of stock-firmware uploads and overall behavior, reaching an impasse near the end. An 11:20 reply says RAM, ROM and hidden ROM had been dumped and much of the key handling understood, but the author thought one remaining step might require USB capture.\n\nAn 11:38 follow-up says users who only want torne on a PC can use the existing coax implementation without stock firmware; the author had spent substantial tokens analyzing stock firmware that was unnecessary for that practical use. The thread distinguishes an existing custom-firmware/bare-mode route from the author's stock-firmware investigation. Usability of coax is not counted as success of this AI analysis, and the dump and key-handling claims are not independently established. Parent and follow-up posts are supplementary same-day context, not replacements for the sealed candidate.\n\nThis records a concrete target, AI/Ghidra workflow and incomplete negative result. No model, analysis code, capture records, dumps or reproducible tests were obtained. REA is not mentioned. No key-extraction or circumvention procedure is provided, and no firmware or keys were accessed or target code run.",
+      "metadata": ["Static analysis, hardware tests and the key obstacle are author-reported, not independently reproduced. Coax is a separate route and does not establish completion of this stock-firmware investigation."],
+      "source_labels": ["Original candidate: Hogehoge suggests AI/LLMs with Ghidra, October 26, 2026 at 11:33 Beijing time", "Supplementary parent post: the torne stock-firmware investigation stalls, October 26, 2026 at 11:17 Beijing time", "Supplementary reply: RAM/ROM dumps and a key-handling obstacle, October 26, 2026 at 11:20 Beijing time", "Supplementary follow-up distinguishes coax from stock-firmware research, October 26, 2026 at 11:38 Beijing time"]
+    }
+  },
+  {
+    "id": "tinfoil-minimal-enclave-firmware-model-review-report",
+    "title": "Tinfoil安全隔区固件：以约300行汇编替代OVMF，并纳入模型审查",
+    "category": "hardware", "rea": "other-ai", "status": "related-project",
+    "summary": "Tinfoil称把安全隔区最先运行、接收不可信主机指令的固件，从约百万行OVMF C代码替换为约300行零依赖汇编，并把前沿模型审查与fuzzing列为安全实践；形式分析仍计划中。",
+    "description": "2026年10月26日09:46（北京时间），Tinfoil（@TinfoilAI）介绍其安全隔区固件精简方向。固件是隔区内最先运行、接收不可信主机指令的代码；作者称以约300行开源汇编、零依赖替代约100万行广泛使用的OVMF C代码，以缩小需审查的攻击面。\n\n作者把前沿模型审查、fuzzing及即将开展的形式分析列为安全实践，但没有披露具体模型、提示词、AI发现的漏洞或模型是否生成了替代固件。此处按AI辅助审查相关项目收录，不宣称AI反编译OVMF、自动重写完成或等价实现了OVMF全部功能。约100万行与约300行是作者的范围描述，不是本合集计算的对等功能比较。\n\n补查原帖确认账号与文字，没有取得仓库、构建、审查日志或安全证明。形式分析明确仍在未来，不写成已形式验证；“复杂软件一定能找到漏洞”是作者观点，不是验证定理。未运行固件或fuzzing，REA未提及。",
+    "sources": [{"label": "Tinfoil的隔区固件精简与模型审查报告，2026-10-26", "url": "https://x.com/i/status/2114534205158003097"}],
+    "snapshot_date": "2026-10-26", "metadata": ["AI审查相关项目；代码量、开源及零依赖为作者陈述，未核验功能等价，形式分析尚计划中。"],
+    "en": {
+      "title": "Tinfoil enclave firmware: roughly 300 assembly lines replacing OVMF, with frontier-model review",
+      "summary": "Tinfoil reports replacing roughly one million lines of OVMF C with about 300 dependency-free assembly lines for the first firmware running in its enclaves and receiving untrusted-host instructions. Frontier-model review and fuzzing are named security practices; formal analysis remains planned.",
+      "description": "At 09:46 Beijing time on October 26, 2026, Tinfoil (@TinfoilAI) described its effort to minimize secure-enclave firmware. This is the first code running inside the enclave and takes instructions from an untrusted host. The author says roughly 300 lines of open-source assembly with zero dependencies replace approximately one million lines of widely used OVMF C, reducing the attack surface to review.\n\nThe post lists frontier-model review, fuzzing and forthcoming formal analysis among its security practices but discloses no model, prompts, AI-discovered flaw or indication that a model generated the replacement firmware. This is retained as a related AI-assisted review project, not a claim of AI decompiling OVMF, completing an automated rewrite or matching every OVMF feature. The approximate million/300-line figures are the author's scope descriptions, not a functionally equivalent comparison measured by this collection.\n\nSupplementary original-post lookup confirmed the account and text. No repository, build, review logs or security proof was obtained. Formal analysis is explicitly prospective, not a completed verification; the assertion that complex software inevitably contains model-discoverable vulnerabilities is an opinion rather than a proven theorem. No firmware or fuzzer was run, and REA is not mentioned.",
+      "metadata": ["Related AI-review project. Code size, open-source availability and zero dependencies are author statements; functional equivalence was not checked and formal analysis remains planned."],
+      "source_labels": ["Tinfoil's enclave-firmware minimization and model-review report, October 26, 2026"]
+    }
+  },
+  {
+    "id": "praveen-spiderverse-portfolio-rea-rebuild",
+    "title": "Spider-Verse风格作品集：Praveen用REA研究网页设计、动效与交互",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "Praveen S称选取Spider-Verse风格作品集，以REA研究整站体验，随后明确使用Antigravity；仍在逆向中途，没有成品、还原对照或测试。",
+    "description": "2026年10月26日15:10（北京时间），Praveen S（@Praveens649）报告选取互联网上一个Spider-Verse风格的作品集，尝试用REA MCP及AI重建完整网页体验，明确说目前只进行到逆向阶段的一半。15:20的另一候选进一步说明工具组合为Antigravity + REA，目标涵盖设计、动画及交互，并担心后续调试困难。\n\n补查两条原帖确认相同作者和连续的研究中途描述，故作为同一实验追加来源，不因十分钟后的帖子另建项目。两帖均附图片，本合集未分析截图；未辨认参考作品集URL、原作者、框架、AI模型、重建源码或上线页面。不能从Spider-Verse风格推定具体网站身份，也不把“halfway”换成50%已验证完成。\n\n按进行中的具体视觉／交互重建实验保留，尚无可用成品、逐项行为对照、性能测量或用户测试，不确认复制成功或授权情况。未访问受限内容、执行网页脚本或运行目标项目。",
+    "sources": [
+      {"label": "Praveen介绍Spider-Verse风格作品集的REA研究，2026-10-26 15:10北京时间", "url": "https://x.com/i/status/2114615570373189946"},
+      {"label": "Praveen补充Antigravity与设计／动效／交互目标，2026-10-26 15:20北京时间", "url": "https://x.com/i/status/2114618104907198774"}
+    ],
+    "snapshot_date": "2026-10-26", "metadata": ["作者自述仍在逆向阶段；未取得参考网站身份、重建代码、成品或行为对照。"],
+    "en": {
+      "title": "A Spider-Verse-inspired portfolio: Praveen uses REA to study a site's design, animations and interactions",
+      "summary": "Praveen S reports studying a Spider-Verse-inspired portfolio with REA to rebuild its full experience, later specifying Antigravity. Reverse engineering is still underway; no finished site, fidelity comparison or tests were obtained.",
+      "description": "At 15:10 Beijing time on October 26, 2026, Praveen S (@Praveens649) reported choosing a Spider-Verse-inspired portfolio on the internet and attempting to rebuild its entire experience with REA MCP and AI. He explicitly said he was only halfway through the reverse-engineering phase. Another candidate at 15:20 specified Antigravity plus REA and a target encompassing design, animations and interactions, while expressing uncertainty about the debugging ahead.\n\nSupplementary lookup of both originals confirmed the same author and continuous mid-research descriptions, so they are recorded as one experiment with additional evidence rather than separate projects ten minutes apart. Both posts attach images, but this collection did not analyze the screenshots. The reference portfolio's URL, creator, framework, AI model, reconstruction source and deployed result remain unidentified. The Spider-Verse style is not used to guess a specific site's identity, and halfway is not converted into a verified 50% completion figure.\n\nThis is retained as an in-progress visual/interactive reconstruction experiment. No usable result, itemized behavior comparison, performance measurement or user test was obtained, and successful copying or authorization is not established. No restricted material was accessed, webpage scripts executed or target project run.",
+      "metadata": ["The author says reverse engineering is still underway; the reference site's identity, reconstruction code, finished result and behavioral comparison were not obtained."],
+      "source_labels": ["Praveen introduces REA research on a Spider-Verse-inspired portfolio, October 26, 2026 at 15:10 Beijing time", "Praveen adds Antigravity and the design/animation/interaction goals, October 26, 2026 at 15:20 Beijing time"]
+    }
+  },
+  {
+    "id": "sony-a7cii-ai-fl2-fl3-lut-firmware-report",
+    "title": "A7C II Tools 3.0：AI逆向报道与QAQLeonard的单机验证边界",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "候选称AI辅助Sony A7C II固件改装；补查QAQLeonard公开文档限定ILCE-7CM2／2.01，报告单台Windows环境下FL2／FL3、自定义外观与恢复验证。AI分工仍为转述，macOS USB未验、颜色为拟合近似，不保证恢复或刷机安全。",
+    "description": "2026年10月26日15:09（北京时间）候选称开发者借AI研究Sony A7C II固件，解锁FL2／FL3并导入自定义LUT，以便不换机也使用新的影像风格。15:41候选进一步指名QAQLeonard、A7C II Tools 3.0与固件2.01，并提示副厂电池识别、开机和保修风险。两帖为同一具名相机工具方向，不因功能分别建案例；AI参与仍归于二手报道，未取得原作者对模型、逆向步骤或AI贡献范围的披露，REA未明确提及。\n\n补查准确工具名与作者，找到QAQLeonard/a7c2-fl23-research。静态阅读README对应ef7db116e13e37be91e9af20360dc9bba8d64a9b，提交于10月25日19:23:19北京时间，作为早于候选的补充项目文档。README明确仅支持A7C II（ILCE-7CM2）固件2.01，拒绝其他型号；3.0首次提供正式GUI，修改相机固件中的程序与设置。文档称支持FL2／FL3、自定义Creative Looks、DCP／CUBE离线转为.a7look，带15对DCP／A7Look（11富士、4理光）及可选Lightroom RAW配置插件；RAW插件不改RAW数据。不是相机直接运行任意Log LUT，CUBE须为Sony ST／sRGB输入，S-Log3不能直接使用，内置色彩是拟合近似，不保证与原DCP完全一致。\n\n项目验证表称FL2／FL3、六外观安装及恢复已在作者的一台Windows＋A7C II上写入、回读并重启核验，自定义外观预览／照片及临时声音试听在同机测试。持久自定义快门声只有离线与打包自测，长期真机测试仍进行中；Vertical Display含菜单框正在重写、真机验收待做，macOS虽能打包但真实USB尚未验证。不能把这些功能一概称为已完成或全平台支持，本合集未独立运行测试或看样片。\n\nREADME引用A7CR／A7R V前人移植、Sony-PMCA-RE等研究，不是从零独立发现所有协议；原项目代码当前为PolyForm Noncommercial 1.0.0，第三方及旧版本另有许可，不泛称MIT开源。文档明确写入成功与回读一致不等于开机安全，可能无法开机、循环重启、丢数据，影响更新、保修与维修，恢复也无保证。副厂电池影响仅候选提及，本合集未验证。基线初代Sony α7 idea为不同机型，保留独立ID；未下载固件、安装依赖、连接相机或刷写，按unverified保留AI归因与独立复现边界。",
+    "sources": [
+      {"label": "候选转述A7C II的AI固件研究、FL2／FL3与LUT，2026-10-26", "url": "https://x.com/i/status/2114615282480423016"},
+      {"label": "候选补充QAQLeonard、3.0、2.01固件与风险，2026-10-26", "url": "https://x.com/i/status/2114623475587698902"},
+      {"label": "补充项目README：ef7db116固定提交，2026-10-25 19:23:19北京时间", "url": "https://github.com/QAQLeonard/a7c2-fl23-research/blob/ef7db116e13e37be91e9af20360dc9bba8d64a9b/README.md"}
+    ],
+    "snapshot_date": "2026-10-26", "metadata": ["AI逆向归因来自候选转述，未确认模型或AI贡献范围；原项目仅单台Windows＋A7C II／2.01报告验证，未独立刷机。", "macOS USB未验证，持久快门声长期测试进行中，竖屏菜单重写待验收；色彩为拟合近似，回读不保证启动或恢复。"],
+    "en": {
+      "title": "A7C II Tools 3.0: AI reversing reports and the limits of QAQLeonard's single-camera verification",
+      "summary": "Candidates describe AI-assisted Sony A7C II modifications. QAQLeonard's public documentation limits support to ILCE-7CM2/2.01 and reports FL2/FL3, custom looks and restoration checks on one Windows setup. AI roles remain secondhand; macOS USB is untested, colors are fitted approximations, and recovery/flashing safety is not guaranteed.",
+      "description": "A candidate published at 15:09 Beijing time on October 26, 2026 says developers used AI to study Sony A7C II firmware and enable FL2/FL3 and custom LUTs, seeking newer image looks without replacing the camera. A 15:41 candidate identifies QAQLeonard, A7C II Tools 3.0 and firmware 2.01, warning about third-party battery recognition, boot and warranty risks. Both concern one camera-tool effort, not separate cases for each feature. AI participation remains attributed to secondhand reports: no original developer disclosure of the model, reversing steps or scope of AI contributions was obtained, and REA is not explicitly named.\n\nSearching the precise tool name and author identified QAQLeonard/a7c2-fl23-research. Static README reading corresponds to commit ef7db116e13e37be91e9af20360dc9bba8d64a9b, dated October 25 at 19:23:19 Beijing time, used as supplementary project documentation predating the candidates. It supports only the A7C II (ILCE-7CM2) on firmware 2.01 and refuses other models. Version 3.0 introduces a proper GUI and modifies programs and settings in the camera firmware. The README describes FL2/FL3, custom Creative Looks, offline DCP/CUBE conversion to .a7look, 15 paired DCP/A7Look profiles (11 Fujifilm and 4 Ricoh) and an optional Lightroom RAW-profile plugin that does not alter RAW data. This is not arbitrary Log LUT execution in the camera: CUBE input must be Sony ST/sRGB, S-Log3 cannot be used directly, and built-in colors are fitted approximations, not guaranteed exact matches to the source DCPs.\n\nThe project verification table reports writing, readback and post-restart checks for FL2/FL3, six-look installation and restoration on the author's single Windows/A7C II setup; custom-look previews/photos and temporary sound audition were tested on the same camera. Persistent custom shutter sound has offline and packaged self-tests only, with long-term camera testing ongoing. Vertical Display including menu frames is being rewritten with camera acceptance pending; macOS packages build but real USB operation is unverified. These features are not collectively described as complete or supported on every platform, and this collection has not independently run tests or examined sample photos.\n\nThe README credits prior A7CR/A7R V ports, Sony-PMCA-RE and other research rather than independently discovering every protocol. Current original project code uses PolyForm Noncommercial 1.0.0; third-party material and older versions have separate terms, so this is not broadly called MIT open source. The documentation explicitly says successful writes and identical readback do not establish boot safety. Boot failure, reboot loops, data loss and effects on updates, warranty and repairs remain possible, with no guaranteed recovery. Third-party battery effects are mentioned only by the candidate and are unverified here. The baseline original Sony alpha7 idea is a different model and retains its own ID. No firmware was downloaded, dependencies installed, camera connected or flashing performed. This remains unverified with clear AI-attribution and independent-reproduction limits.",
+      "metadata": ["AI reversing attribution comes from candidate reports; the model and contribution scope remain unconfirmed. The project reports verification on one Windows/A7C II/2.01 setup only; no independent flashing was done.", "macOS USB is unverified, long-term persistent shutter-sound tests are ongoing and portrait-menu rewriting awaits acceptance. Colors are fitted approximations; readback does not guarantee boot or recovery."],
+      "source_labels": ["Candidate report of AI firmware research, FL2/FL3 and LUTs on the A7C II, October 26, 2026", "Candidate adds QAQLeonard, version 3.0, firmware 2.01 and risks, October 26, 2026", "Supplementary project README at pinned commit ef7db116, October 25, 2026 at 19:23:19 Beijing time"]
+    }
+  },
+  {
+    "id": "yanyu-codex-rea-research-service-rebuild-report",
+    "title": "研屿：DTS称以Codex重建、REA逆向制作机构研究服务工具",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "DTS以机构与分析师自行服务客户为动机介绍研屿，称Codex重建、REA逆向，自有代码MIT开源；原仓库、逆向对象、功能与测试未辨认，不确认法律叙事或替代完成。",
+    "description": "2026年10月26日14:40（北京时间），DTS（@donttalkshit075）介绍名为研屿的项目，希望机构与开发者自己制作工具、直接服务研究客户，而不是让第三方平台传播受限的机构与分析师研究成果。帖子将制作方式概括为“Codex重建 + REA逆向”，并称自有代码以MIT开源。\n\n候选以讯兔／Alpha派传播受限路演的报道和诉讼结果作为动机，但本合集没有查阅判决、独立核验指控或确认研屿逆向的对象就是Alpha派。不能把这段背景写成已确认的侵权结论，也不能由MIT自述推定代码来源或法律安全。\n\n补查原帖确认账号、项目名与工具分工；帖子中的长文和仓库仍为未展开短链，公开仓库名称搜索没有识别出对应研屿项目。尚无功能清单、具体逆向对象、代码、部署或测试记录，不能声称重建某项路演、转录、检索或客户服务功能已经完成。按具体具名项目的未验证报告收录，不访问受限研究内容，不下载或运行目标代码。",
+    "sources": [{"label": "DTS介绍研屿、Codex重建与REA逆向，2026-10-26", "url": "https://x.com/i/status/2114608164251591124"}],
+    "snapshot_date": "2026-10-26", "metadata": ["项目名及AI工具分工来自作者自述；未识别原仓库、具体逆向对象、功能或测试，MIT与诉讼背景未独立核验。"],
+    "en": {
+      "title": "Yanyu: DTS reports using Codex reconstruction and REA reverse engineering for institutional research-service tools",
+      "summary": "DTS introduces Yanyu as a way for institutions and analysts to serve clients directly, citing Codex reconstruction, REA reverse engineering and MIT-licensed original code. The repository, reversing target, features and tests remain unidentified; legal claims and a completed replacement are not established.",
+      "description": "At 14:40 Beijing time on October 26, 2026, DTS (@donttalkshit075) introduced a project named Yanyu (研屿), intended to let institutions and developers build their own tools and directly serve research clients rather than have third-party platforms distribute restricted institutional and analyst research. The post summarizes its approach as Codex reconstruction plus REA reverse engineering and says the project's own code is open-sourced under MIT.\n\nThe candidate cites reporting and a lawsuit concerning Xuntu/Alpha Pai distributing restricted roadshow material as motivation. This collection has not read the judgment, independently verified those allegations or established that Alpha Pai is the actual target Yanyu reverse-engineered. That background is not treated as a confirmed infringement finding here, and the author's MIT claim does not establish code provenance or legal safety.\n\nSupplementary original-post lookup confirmed the account, project name and stated tool roles. Its long-form article and repository links remain unexpanded short URLs, and a public repository-name search did not identify the corresponding Yanyu project. No feature inventory, specific reversing target, source code, deployment or test record was obtained. No roadshow, transcription, search or client-service feature is claimed to have been completed. This is retained as an unverified report of a specific named project; no restricted research material was accessed and no target code was downloaded or run.",
+      "metadata": ["The project name and AI tool roles are author-reported. The repository, specific reversing target, features and tests remain unidentified; the MIT claim and litigation background were not independently checked."],
+      "source_labels": ["DTS introduces Yanyu, Codex reconstruction and REA reverse engineering, October 26, 2026"]
+    }
+  },
+  {
+    "id": "gasman-rea-hitl-architecture-audit-extension-idea",
+    "title": "REA架构教学扩展：GasMan建议以调用路径证据辅助理解旧代码",
+    "category": "apps", "rea": "REA", "status": "unverified",
+    "summary": "GasMan提出GitHub／AI IDE扩展idea：让REA追踪有权访问的陌生仓库与旧代码调用路径、重建核心架构，由人解释证据；没有发布可用扩展或测试结果。",
+    "description": "2026年10月26日12:20（北京时间），GasMan（@Gaston_Pay_Up）提出把REA当作教师而不是功能复制器：面对有权访问的陌生仓库或旧代码，让Agent从具体证据追踪调用路径、重建核心架构，帮助使用者形成长期可用的理解，而不是只生成宽泛摘要或大量代码改动。\n\n作者希望出现围绕这套human-in-the-loop（人在回路中）架构审计流程的原生GitHub／AI IDE扩展；Agent负责给出证据，人负责判断架构含义。这是具体交互产品idea，不是已经实现的插件，也不是对某个具名仓库的成功逆向报告。补查原帖确认账号与正文，附图替代文本为Github REA plug-in，但本合集未分析图片，不能据此确认界面或实现。未取得仓库、调用路径示例、用户测试或学习效果测量，也未安装或运行任何扩展。",
+    "sources": [{"label": "GasMan的REA架构教学与HITL扩展idea，2026-10-26", "url": "https://x.com/i/status/2114572950024098234"}],
+    "snapshot_date": "2026-10-26", "metadata": ["具体idea；未发布可用扩展，未验证架构恢复或学习效果。"],
+    "en": {
+      "title": "An REA architecture-teaching extension: GasMan proposes call-path evidence for understanding legacy code",
+      "summary": "GasMan proposes a GitHub/AI IDE extension in which REA traces authorized unfamiliar repositories and legacy call paths to reconstruct architecture, with humans interpreting the evidence. No usable extension or test results were published in the post.",
+      "description": "At 12:20 Beijing time on October 26, 2026, GasMan (@Gaston_Pay_Up) proposed using REA as a teacher rather than a feature copier. For unfamiliar repositories or legacy code that a user is authorized to access, the agent would trace call paths and reconstruct core architecture from concrete evidence, helping users build enduring understanding rather than producing broad summaries or large code changes.\n\nThe author wants a native GitHub/AI IDE extension centered on this human-in-the-loop architectural audit: the agent supplies evidence and a human decides what the architecture means. This is a specific interaction/product idea, not an implemented plugin or a successful reverse-engineering report for a named repository. Supplementary original-post lookup confirmed the account and wording. An attached image has the alt text Github REA plug-in, but this collection did not analyze the image and cannot infer an interface or implementation from it. No repository, example call-path reconstruction, user test or measurement of learning outcomes was obtained; no extension was installed or run.",
+      "metadata": ["Specific idea; no usable extension was released and neither architectural reconstruction nor learning outcomes were verified."],
+      "source_labels": ["GasMan's REA architecture-teaching and HITL extension idea, October 26, 2026"]
+    }
+  },
+  {
+    "id": "fs95-fs98-claude-binary-crash-patch-report",
+    "title": "FS95／FS98：Claude Code根据崩溃日志与调试截图修补旧模拟飞行EXE的转述",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "旺旺转述有人把Windows崩溃日志和x32dbg截图交给Claude Code，生成面向FS95／FS98在64位Windows崩溃的EXE补丁；备份恢复、无需DxWnd及作者未写代码均未独立核验。",
+    "description": "2026年10月26日12:36（北京时间），旺旺（@TiagerBao）介绍一项旧游戏兼容性修补：目标是《微软模拟飞行》FS95与FS98在64位Windows上的崩溃，声称原作者只提供Windows崩溃日志和x32dbg调试截图，由Claude Code生成直接修改EXE的补丁。帖子同时称支持备份和恢复，不需要兼容性工具DxWnd，且作者一行代码未写。\n\n以上均为转述，不是本合集取得的原开发者披露或运行结果。候选的项目入口仅为未展开短链；公开仓库名称搜索未找到对应项目，尚未辨认原作者、仓库、补丁版本、具体Windows版本、崩溃根因与目标二进制构建。两个游戏版本在帖子中属于同一兼容性补丁方向，不能据此确认所有发行版均适用。\n\n按未验证的具体二进制维修报告收录，保留日志和调试截图这一AI输入分工，不补写补丁地址、修改字节、成功率或完整可玩结论。补查原帖只确认转述账号及文字，没有下载游戏、补丁或运行目标代码，备份恢复亦未验证。REA未提及。",
+    "sources": [{"label": "旺旺转述Claude Code修补FS95／FS98，2026-10-26", "url": "https://x.com/i/status/2114576974257803445"}],
+    "snapshot_date": "2026-10-26", "metadata": ["二手报告；未辨认原项目、构建与崩溃根因，未独立验证补丁或备份恢复。"],
+    "en": {
+      "title": "FS95/FS98: a report of Claude Code patching old Flight Simulator executables from crash logs and debugger screenshots",
+      "summary": "TiagerBao relays a claim that Windows crash logs and x32dbg screenshots enabled Claude Code to generate an EXE patch for FS95/FS98 crashes on 64-bit Windows. Backup/restore, no need for DxWnd and no manually written code remain unverified.",
+      "description": "At 12:36 Beijing time on October 26, 2026, TiagerBao (@TiagerBao, display name 旺旺) described a compatibility repair for old games: Microsoft Flight Simulator FS95 and FS98 crashing on 64-bit Windows. The post says the original author supplied only Windows crash logs and x32dbg debugger screenshots and Claude Code generated a patch that directly modifies the executable. It also claims backup and restore support, no need for the compatibility tool DxWnd and no code manually written by the author.\n\nThese are secondhand claims, not an original developer disclosure or an execution result obtained by this collection. The candidate's project link remains an unexpanded short URL, and a public repository-name search found no matching project. The original author, repository, patch version, exact Windows version, crash cause and target executable builds have not been identified. The post presents the two game versions as one compatibility-patch effort; it does not establish compatibility with every release.\n\nThis is retained as an unverified, specific binary-repair report. The AI inputs of logs and debugger screenshots are preserved without inventing patch addresses, byte changes, success rates or full playability. Supplementary original-post lookup only confirmed the relaying account and wording. No game or patch was downloaded and no target code was run; backup/restore was not tested either. REA is not mentioned.",
+      "metadata": ["Secondhand report; original project, builds and crash cause remain unidentified. Neither the patch nor backup/restore was independently tested."],
+      "source_labels": ["TiagerBao's report of Claude Code patching FS95/FS98, October 26, 2026"]
+    }
+  },
+  {
+    "id": "steve-claude-code-sourcemap-recovery-model-refusal-report",
+    "title": "Claude Code的map文件恢复：Steve报告Claude愿做、Codex拒绝的对照",
+    "category": "apps", "rea": "other-ai", "status": "analysis-test",
+    "summary": "Steve回顾让Claude Code和Codex从Claude Code的map文件恢复源码，称前者执行、后者不做且拒读恢复仓库；无版本、恢复文件或日志，不确认源码完整性或普遍拒答规则。",
+    "description": "2026年10月26日12:48（北京时间），Steve（@Steve6553）在讨论模型拒绝逆向的回复中回顾今年3月的一次实验：他说Claude Code源码曾泄漏，自己分别让Claude Code与Codex根据map文件恢复源码，Claude Code愿意执行，Codex不愿做，且在恢复后仍拒绝读取该仓库。目标是Claude Code自身的源码映射恢复，而不是电视固件或漏洞利用。\n\n这是一项具名目标、带负结果的作者报告。3月为作者回忆中的事件时间，10月26日才是本候选发布日期；未补写具体泄漏日期、模型与软件版本、source map内容、恢复比例或代码正确性。作者说Claude Code会做，不等于本合集确认完整原始源码已经恢复。Codex拒答亦是这次交互的自述，不可推广为所有Codex版本的固定规则或能力不足。\n\n补查原帖确认作者账号和措辞，但没有取得非敏感操作日志、恢复清单或行为比较。未访问、下载或分发泄漏源码及映射文件，未运行恢复工具；按analysis-test保留这一具体分析尝试和模型行为边界。REA未提及。",
+    "sources": [{"label": "Steve回顾Claude Code map文件恢复与Codex拒答，2026-10-26", "url": "https://x.com/i/status/2114579995700146526"}],
+    "snapshot_date": "2026-10-26", "metadata": ["3月实验为10月26日回忆自述；无模型版本、恢复比例或操作日志，不独证源码完整性。"],
+    "en": {
+      "title": "Claude Code map-file recovery: Steve reports Claude accepting and Codex refusing the same task",
+      "summary": "Steve recalls asking Claude Code and Codex to recover Claude Code source from map files, saying the former proceeded while the latter refused both recovery and reading the resulting repository. No versions, recovered files or logs establish completeness or a general refusal rule.",
+      "description": "At 12:48 Beijing time on October 26, 2026, Steve (@Steve6553) replied to a discussion about models refusing reverse engineering with a recollection of an experiment from March that year. He says Claude Code source had leaked, and he separately asked Claude Code and Codex to recover source from map files. According to him, Claude Code would do the task, while Codex would not and later even refused to read the recovered repository. The target is source-mapping recovery for Claude Code itself, not TV firmware or exploitation.\n\nThis is an author report involving a named target and a negative result. March is the recalled event period; October 26 is the candidate's publication date. No exact leak date, model or software version, source-map contents, recovery percentage or code correctness is inferred. Saying Claude Code would do the task does not independently establish recovery of complete original source. The Codex refusal is also self-reported behavior in this interaction, not a fixed rule for all versions or proof of incapacity.\n\nSupplementary original-post lookup confirmed the author account and wording, but no non-sensitive operation logs, recovery inventory or behavioral comparison was obtained. No leaked source or map files were accessed, downloaded or distributed, and no recovery tool was run. This is retained as an analysis test recording the specific attempt and model-behavior limits. REA is not mentioned.",
+      "metadata": ["The March experiment is recalled in an October 26 post; no model versions, recovery percentage or logs independently establish source completeness."],
+      "source_labels": ["Steve recalls Claude Code map-file recovery and Codex refusals, October 26, 2026"]
+    }
+  },
+  {
     "id": "vephy-kimi-eternal-warzone-external-tool-report",
     "title": "Warzone：Vephy称Kimi 3.1 Pro配ETERNAL制作外部辅助工具",
     "category": "games", "rea": "other-ai", "status": "unverified",
