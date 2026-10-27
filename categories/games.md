@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Wind Waker失败实验：Nix称Grok／Claude／Codex未做出可靠跳过demo补丁](../cases/nixpupcake-wind-waker-ai-decompilation-patch-failure.md) — Nix报告向Grok、Claude、Codex提供Wind Waker仓库及镜像，尝试续做反编译与修改事件；称跳过过场后游戏仍坏、Opus整场只给建议无可用补丁。没有提交、日志或基准，80%不能当AI新增匹配率。 **[其他 AI 逆向 · 分析测试]**
+- [Days PC移植：Violin称AI主要协助反编译，资产仍有人制作](../cases/violin-days-pc-port-ai-decompilation-report.md) — ViolinSpeedruns在游戏AI争论中称Days PC移植主要用AI辅助反编译，游戏资产等仍由人制作；未给完整游戏名、开发者、仓库或匹配率，不当成全AI生成或已发布成品。 **[其他 AI 逆向 · 进行中]**
 - [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](../cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**
 - [GameCube反编译：Douglas报告Opus与GPT协作补编译器，过度验证拖慢后续项目](../cases/douglas-gamecube-compiler-agent-decompilation.md) — Douglas称Opus 5.5与GPT-6 Astra协作重建缺失编译器版本，并继续移植和浸泡测试；后续GPT照搬流程却加上每函数数小时验证，说明不只是模型拒绝问题。 **[其他 AI 逆向 · 进行中]**
 - [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](../cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**

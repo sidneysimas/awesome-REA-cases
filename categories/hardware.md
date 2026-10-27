@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](../cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助识别截图中的Creality SpacePiX4固件数据，正在比较最新零售版与自己的beta版以映射十六进制偏移；目标是未来调整或新增功能，尚未报告改版刷写成功。 **[其他 AI 逆向 · 进行中]**
+- [Qweexee的Samsung电视：Opus研究局域网遥控，Grok Bot调用Netflix三工具](../cases/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee称Opus 5.5研究Samsung电视的局域网遥控入口，包装打开Netflix、移动与选择三个工具供Grok Bot语音调用；无具体机型、源码或跨品牌测试，不确认所谓漏洞或普遍兼容。 **[其他 AI 逆向 · 待验证]**
+- [RuView公开固件：make claude称用Claude两晚改出不同用途的ESP32版本](../cases/make-claude-ruview-esp32-firmware-adaptation.md) — make claude称在RuView公开ESP32固件上用Claude修改两晚，改后用途不同于原设想；未披露改动、代码或测量，不确认隔墙人体骨架、心率或法律合规宣传。 **[其他 AI 逆向 · 待验证]**
+- [vartekxx的无人机跟踪方案：REA追相机与飞控，Opus组织手机端控制](../cases/vartekxx-rea-opus-drone-tracking-proposal.md) — vartekxx称以REA与Opus 5.5把自有无人机改作区域安防，列出相机／遥测追踪、手机视觉、传感器与模拟测试步骤；无型号、代码或飞行记录，不确认自主跟踪已实现。 **[REA · 待验证]**
 - [UniXNU的Sony BRAVIA平板移植：白先生转述AI无人值守编写大部分UEFI适配](../cases/neuronxwhite-unixnu-sony-bravia-uefi-ai-port-report.md) — 白先生介绍UniXNU在非苹果ARM64设备引导苹果系统，并称Sony BRAVIA平板移植的大部分UEFI适配由AI无人值守编写；未取得原作者、具体机型或AI工作记录，不把其他设备GPU进展归功这项AI移植。 **[其他 AI 逆向 · 进行中]**
 - [RazeDen的旅宿检查方案：Claude Code网络盘点，REA按需检查入住App](../cases/razeden-claude-rea-airbnb-readonly-audit-proposal.md) — RazeDen以房间19个联网设备为背景，提出Claude Code辅助网络与蓝牙检查、MVT手机检查、REA分析入住App权限与追踪器的七步只读方案；完整case file未发布，不确认发现隐藏摄像头。 **[REA · 待验证]**
 - [Kinov Hacks的键盘固件：数天以DeepSeek／opencode重写，难点再交Codex或Claude](../cases/kinovhacks-deepseek-opencode-keyboard-firmware.md) — Kinov Hacks称数天内以DeepSeek／opencode重写键盘固件，难点再用Codex或Claude；较早回复称DeepSeek将一个固件bug误怪硬件，最终Codex找到问题。未给型号、补丁或设备验收。 **[其他 AI 逆向 · 待验证]**

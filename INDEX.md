@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1012 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1023 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（216）
-- [硬件与设备互通](categories/hardware.md)（285）
-- [应用与客户端](categories/apps.md)（425）
+- [游戏与游戏保存](categories/games.md)（218）
+- [硬件与设备互通](categories/hardware.md)（289）
+- [应用与客户端](categories/apps.md)（430）
 - [算法与功能重建](categories/algorithms.md)（86）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [Wind Waker失败实验：Nix称Grok／Claude／Codex未做出可靠跳过demo补丁](cases/nixpupcake-wind-waker-ai-decompilation-patch-failure.md) — Nix报告向Grok、Claude、Codex提供Wind Waker仓库及镜像，尝试续做反编译与修改事件；称跳过过场后游戏仍坏、Opus整场只给建议无可用补丁。没有提交、日志或基准，80%不能当AI新增匹配率。 **[其他 AI 逆向 · 分析测试]**
+- [Days PC移植：Violin称AI主要协助反编译，资产仍有人制作](cases/violin-days-pc-port-ai-decompilation-report.md) — ViolinSpeedruns在游戏AI争论中称Days PC移植主要用AI辅助反编译，游戏资产等仍由人制作；未给完整游戏名、开发者、仓库或匹配率，不当成全AI生成或已发布成品。 **[其他 AI 逆向 · 进行中]**
 - [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**
 - [GameCube反编译：Douglas报告Opus与GPT协作补编译器，过度验证拖慢后续项目](cases/douglas-gamecube-compiler-agent-decompilation.md) — Douglas称Opus 5.5与GPT-6 Astra协作重建缺失编译器版本，并继续移植和浸泡测试；后续GPT照搬流程却加上每函数数小时验证，说明不只是模型拒绝问题。 **[其他 AI 逆向 · 进行中]**
 - [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**
@@ -245,6 +247,10 @@
 
 ### 硬件与设备互通
 
+- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助识别截图中的Creality SpacePiX4固件数据，正在比较最新零售版与自己的beta版以映射十六进制偏移；目标是未来调整或新增功能，尚未报告改版刷写成功。 **[其他 AI 逆向 · 进行中]**
+- [Qweexee的Samsung电视：Opus研究局域网遥控，Grok Bot调用Netflix三工具](cases/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee称Opus 5.5研究Samsung电视的局域网遥控入口，包装打开Netflix、移动与选择三个工具供Grok Bot语音调用；无具体机型、源码或跨品牌测试，不确认所谓漏洞或普遍兼容。 **[其他 AI 逆向 · 待验证]**
+- [RuView公开固件：make claude称用Claude两晚改出不同用途的ESP32版本](cases/make-claude-ruview-esp32-firmware-adaptation.md) — make claude称在RuView公开ESP32固件上用Claude修改两晚，改后用途不同于原设想；未披露改动、代码或测量，不确认隔墙人体骨架、心率或法律合规宣传。 **[其他 AI 逆向 · 待验证]**
+- [vartekxx的无人机跟踪方案：REA追相机与飞控，Opus组织手机端控制](cases/vartekxx-rea-opus-drone-tracking-proposal.md) — vartekxx称以REA与Opus 5.5把自有无人机改作区域安防，列出相机／遥测追踪、手机视觉、传感器与模拟测试步骤；无型号、代码或飞行记录，不确认自主跟踪已实现。 **[REA · 待验证]**
 - [UniXNU的Sony BRAVIA平板移植：白先生转述AI无人值守编写大部分UEFI适配](cases/neuronxwhite-unixnu-sony-bravia-uefi-ai-port-report.md) — 白先生介绍UniXNU在非苹果ARM64设备引导苹果系统，并称Sony BRAVIA平板移植的大部分UEFI适配由AI无人值守编写；未取得原作者、具体机型或AI工作记录，不把其他设备GPU进展归功这项AI移植。 **[其他 AI 逆向 · 进行中]**
 - [RazeDen的旅宿检查方案：Claude Code网络盘点，REA按需检查入住App](cases/razeden-claude-rea-airbnb-readonly-audit-proposal.md) — RazeDen以房间19个联网设备为背景，提出Claude Code辅助网络与蓝牙检查、MVT手机检查、REA分析入住App权限与追踪器的七步只读方案；完整case file未发布，不确认发现隐藏摄像头。 **[REA · 待验证]**
 - [Kinov Hacks的键盘固件：数天以DeepSeek／opencode重写，难点再交Codex或Claude](cases/kinovhacks-deepseek-opencode-keyboard-firmware.md) — Kinov Hacks称数天内以DeepSeek／opencode重写键盘固件，难点再用Codex或Claude；较早回复称DeepSeek将一个固件bug误怪硬件，最终Codex找到问题。未给型号、补丁或设备验收。 **[其他 AI 逆向 · 待验证]**
@@ -533,6 +539,11 @@
 
 ### 应用与客户端
 
+- [Hello Mary的可执行文件调查：AI读程序，人继续做GUI、读报告和改harness](cases/hellomary-ai-executable-investigation-human-harness.md) — Hello Mary称正在让AI调查一个未具名可执行文件，自己仍负责GUI、阅读分析报告与后续harness调整；是具体进行中分工报告，不是已自动重建完整应用。 **[其他 AI 逆向 · 进行中]**
+- [ReAgent：用Ghidra证据与Reverser／Checker闭环重建C／C++，Gate不是等价证明](cases/reagent-ghidra-reverser-checker-gated-reconstruction.md) — TechVerser介绍ReAgent双角色AI逆向工具；Dryxio/reagent固定README确认Ghidra证据、候选叠加层、构建测试及parity策略，并明确这些是保守检查，不证明语义或二进制等价。 **[其他 AI 逆向 · 相关项目]**
+- [Adrian Alvarez的Loom替代品：Claude Code与REA制作录屏和链接分享流程](cases/ingalvarezsol-loom-claude-rea-screen-sharing-rebuild.md) — Adrian Alvarez称在酒吧语音要求Jarvis克隆Loom，用Claude Code和REA制作，回家时已可录屏和分享链接；只明确两项基础用途，未提供源码、部署或完整功能对照。 **[REA · 待验证]**
+- [SRE-Bench：Artificial Analysis介绍Pasta Lab的AI逆向评测与联盟合作](cases/pasta-lab-sre-bench-cyber-index-alliance.md) — Artificial Analysis官方称Pasta Lab开发了评估AI逆向能力的SRE-Bench，并加入Cyber Index Alliance；是具名评测项目与合作公告，不是新模型逆向得分或真实样本成功报告。 **[其他 AI 逆向 · 相关项目]**
+- [Jupiter质押：ramezrko称与AI逆向合约指令后追回被盗钱包的锁仓JUP](cases/ramezrko-jupiter-contract-instruction-ai-investigation.md) — ramezrko称与AI研究Jupiter质押合约指令、ToggleMaxLock与原子批处理，重设解锁时间并将全部JUP移至新钱包；同串有程序地址，但无交易签名或代码，不独立确认资金追回。 **[其他 AI 逆向 · 待验证]**
 - [IDA 9.5：Hex-Rays发布含MCP／Assist与调用图递归反编译的版本](cases/hexrays-ida95-official-mcp-assist-release.md) — Hex-Rays官方发布帖介绍IDA 9.5的MCP／Assist AI逆向入口、调用图递归反编译及三种新反编译器；是工具发布，不是特定样本上的AI成功率验证。 **[其他 AI 逆向 · 相关项目]**
 - [Jianying Headless：鲸鱼知识库转述逸尘逆向剪映供AI无界面剪辑](cases/gengdaj-jianying-headless-ai-editing-secondary-report.md) — 鲸鱼知识库将Jianying Headless归于逸尘（gengdaJ），称逆向剪映后让AI无需打开界面即可剪辑导出；未取得原仓库、实现或导出测试，不与余温封装及ReaCut合并。 **[未确认使用 REA · 待验证]**
 - [Hiren Sheth的REA资料站：按应用、APK与游戏整理案例及可复制提示词](cases/hiren-sheth-rea-cases-prompts-directory.md) — Hiren Sheth介绍自建REA／AI Agent案例与提示词资料站，覆盖macOS应用、APK和游戏，并邀请项目提交；仅确认作者介绍，站点入口与目录内容尚未核验。 **[REA · 相关项目]**

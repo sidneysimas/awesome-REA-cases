@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Hello Mary的可执行文件调查：AI读程序，人继续做GUI、读报告和改harness](../cases/hellomary-ai-executable-investigation-human-harness.md) — Hello Mary称正在让AI调查一个未具名可执行文件，自己仍负责GUI、阅读分析报告与后续harness调整；是具体进行中分工报告，不是已自动重建完整应用。 **[其他 AI 逆向 · 进行中]**
+- [ReAgent：用Ghidra证据与Reverser／Checker闭环重建C／C++，Gate不是等价证明](../cases/reagent-ghidra-reverser-checker-gated-reconstruction.md) — TechVerser介绍ReAgent双角色AI逆向工具；Dryxio/reagent固定README确认Ghidra证据、候选叠加层、构建测试及parity策略，并明确这些是保守检查，不证明语义或二进制等价。 **[其他 AI 逆向 · 相关项目]**
+- [Adrian Alvarez的Loom替代品：Claude Code与REA制作录屏和链接分享流程](../cases/ingalvarezsol-loom-claude-rea-screen-sharing-rebuild.md) — Adrian Alvarez称在酒吧语音要求Jarvis克隆Loom，用Claude Code和REA制作，回家时已可录屏和分享链接；只明确两项基础用途，未提供源码、部署或完整功能对照。 **[REA · 待验证]**
+- [SRE-Bench：Artificial Analysis介绍Pasta Lab的AI逆向评测与联盟合作](../cases/pasta-lab-sre-bench-cyber-index-alliance.md) — Artificial Analysis官方称Pasta Lab开发了评估AI逆向能力的SRE-Bench，并加入Cyber Index Alliance；是具名评测项目与合作公告，不是新模型逆向得分或真实样本成功报告。 **[其他 AI 逆向 · 相关项目]**
+- [Jupiter质押：ramezrko称与AI逆向合约指令后追回被盗钱包的锁仓JUP](../cases/ramezrko-jupiter-contract-instruction-ai-investigation.md) — ramezrko称与AI研究Jupiter质押合约指令、ToggleMaxLock与原子批处理，重设解锁时间并将全部JUP移至新钱包；同串有程序地址，但无交易签名或代码，不独立确认资金追回。 **[其他 AI 逆向 · 待验证]**
 - [IDA 9.5：Hex-Rays发布含MCP／Assist与调用图递归反编译的版本](../cases/hexrays-ida95-official-mcp-assist-release.md) — Hex-Rays官方发布帖介绍IDA 9.5的MCP／Assist AI逆向入口、调用图递归反编译及三种新反编译器；是工具发布，不是特定样本上的AI成功率验证。 **[其他 AI 逆向 · 相关项目]**
 - [Jianying Headless：鲸鱼知识库转述逸尘逆向剪映供AI无界面剪辑](../cases/gengdaj-jianying-headless-ai-editing-secondary-report.md) — 鲸鱼知识库将Jianying Headless归于逸尘（gengdaJ），称逆向剪映后让AI无需打开界面即可剪辑导出；未取得原仓库、实现或导出测试，不与余温封装及ReaCut合并。 **[未确认使用 REA · 待验证]**
 - [Hiren Sheth的REA资料站：按应用、APK与游戏整理案例及可复制提示词](../cases/hiren-sheth-rea-cases-prompts-directory.md) — Hiren Sheth介绍自建REA／AI Agent案例与提示词资料站，覆盖macOS应用、APK和游戏，并邀请项目提交；仅确认作者介绍，站点入口与目录内容尚未核验。 **[REA · 相关项目]**
