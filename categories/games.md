@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Rainbow Six Mobile：读者提出用REA研究的简短idea](../cases/rainbow-six-mobile-rea-reader-idea.md) — 读者回复Rainbow6Mobile说REA可用于逆向；只有具名对象和工具建议，没有实施或明确改造目标。 **[REA · 待验证]**
+- [Mewgenics：读者夸张自称Agent37分钟逆向，未提供实现](../cases/mewgenics-37-minute-agent-reversing-claim.md) — 回复TylerGlaiel的帖子自称37分钟逆向Mewgenics并提Agent；语气可能是玩笑，不能作为完成证据。 **[未确认使用 REA · 待验证]**
 - [Jeuner的MW2重写：为Apple Silicon转Rust，称四小时可在全部地图移动](../cases/jeuner-mw2-apple-silicon-rust-rebuild.md) — Jeuner称MW2不再能在Apple Silicon运行，计划Rust重写；四小时后报告可在所有地图移动，Claude周额度耗尽后拟周末继续。 **[REA · 进行中]**
 - [Cricket 26：读者提出让Claude检查Ghidra中的eboot.bin](../cases/cricket26-claude-ghidra-inspection-idea.md) — VoxlePop询问Claude能否从Ghidra输出调查Cricket 26在线检查和资源加密；仅idea，没有分析或成功结果。 **[其他 AI 逆向 · 待验证]**
 - [宝可梦集换式卡牌手游：ozmafromhell提出REA研究后做LAN或自建服务器](../cases/pokemon-tcgp-rea-lan-server-idea.md) — ozmafromhell向PokemonTCGPinfo建议用REA研究游戏，像早期Dota一样通过LAN或Hamachi式服务器游玩；仅是保存玩法idea。 **[REA · 待验证]**

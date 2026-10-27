@@ -2,10 +2,15 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Build Hours耳机实验：参与者尝试逆向固件，实现双设备连接](../cases/openai-student-build-hours-earphone-multipoint.md) — OpenAI Student Collective活动回顾称有人尝试改耳机固件，使其同时连接两台设备；未报告成功。 **[未确认使用 REA · 进行中]**
+- [RuuviTag温湿度传感器：作者称Claude一小时加HomeKit固件支持](../cases/ruuvitag-claude-homekit-firmware-report.md) — 作者为闲置RuuviTag接Apple Home，请Claude改固件，在Raspberry Pi一小时后称首次即成功；无代码或配对记录。 **[其他 AI 逆向 · 待验证]**
+- [Karlos的Kindle：Claude与REA研究原厂代码，称UI与性能改善](../cases/karlos-kindle-rea-ui-performance-report.md) — Karlos称把REA仓库交给Claude研究Amazon原厂代码，解决KOReader、键盘和自动灯问题并有两倍速度；缺少计时与补丁。 **[REA · 待验证]**
+- [Viofo行车记录仪：David Rose用DeepSeek/Ghidra排除USB实时视频方案](../cases/david-rose-viofo-deepseek-ghidra-camera-research.md) — David Rose为车载视觉尝试复用Viofo，经DeepSeek/Ghidra分析称USB webcam故障且缓冲每两秒更新；最后选独立双相机。 **[其他 AI 逆向 · 分析测试]**
+- [Razer Core Chroma X：Jason Ni让Claude读BadLLP日志，退TB2后称缓解掉线](../cases/jason-ni-razer-chroma-jhl6540-claude-diagnosis.md) — 作者报告TB3下约200 BadLLP/秒、负载时逾3万/分钟至掉线，Claude怀疑JHL6540固件或芯片；不是已定位根因。 **[其他 AI 逆向 · 待验证]**
 - [Damir Akaza的三星Tizen隐私审计自述：44项说明与同意状态逻辑](../cases/damir-akaza-samsung-tizen-privacy-audit-report.md) — Damir Akaza称root三星电视后让AI分析Tizen，整理44篇追踪说明并检查识别服务；无原始报告、型号和网络证据。 **[其他 AI 逆向 · 待验证]**
 - [Google Home本地接口：marfinxx称Claude审计Eureka并改本地控制](../cases/google-home-claude-eureka-audit-report.md) — marfinxx称Claude Opus5.5读取8008端口与Eureka接口，检查网络标识和超声感应，并将控制延迟从1500ms降到18ms；缺少日志和测量。 **[其他 AI 逆向 · 待验证]**
 - [十年旧Android平板：Alan Macdonald称CoPilot清理一小时后几乎可用](../cases/copilot-ten-year-android-tablet-cleanup.md) — Alan Macdonald在旧智能设备逆向讨论下，报告用CoPilot约一小时清理十年旧平板，结果是几乎可用而非完全修复。 **[其他 AI 逆向 · 待验证]**
-- [Xbox 360接Series X|S手柄：Kreia Notes转述Claude内核研究与原生驱动](../cases/xbox360-series-controller-claude-driver-report.md) — Kreia Notes引r/ClaudeAI称Claude Code研究Xbox 360内核并写驱动支持Series X|S控制器；未取得驱动源码或设备测试。 **[其他 AI 逆向 · 待验证]**
+- [Xbox 360接Series X|S手柄：Claude/xone驱动转述，四手柄与浮点检查仍待核验](../cases/xbox360-series-controller-claude-driver-report.md) — Kreia Notes与Xiao Tan转述Claude研究Xbox 360 USB内核、移植Linux xone以接新无线接收器，称支持四手柄；源码、原作者与真机测试未取得。 **[其他 AI 逆向 · 待验证]**
 - [30美元ESP32触屏手表：Synthetic Beef称Codex读固件并重写蓝牙控制系统](../cases/syntheticbeef-esp32-watch-codex-bluetooth-firmware.md) — Synthetic Beef称Codex分析ESP32手表现有固件与文档，找到截图方法并以自有系统替换默认系统，控制某个未具名蓝牙设备；尚无代码或硬件验证记录。 **[其他 AI 逆向 · 待验证]**
 - [Albin的三星电视镜像：开发者模式下用GLM、REA与Ghidra继续反编译](../cases/albinberlin-samsung-tv-glm-rea-ghidra.md) — Albin补充自己使用电视开发者模式、OMP/GLM 5.3 FLash、REA与Ghidra；上游本人称已下载Samsung电视镜像并开始反编译，没有公开分析结果。 **[REA · 进行中]**
 - [Muon's BRAVIA电视：下载固件交给LLM找漏洞的求助idea](../cases/muon-bravia-tv-llm-firmware-investigation-idea.md) — Muon想研究自己的BRAVIA电视，询问是否应下载固件并让LLM查找漏洞；尚无已开始分析或成功改机的证据。 **[其他 AI 逆向 · 待验证]**

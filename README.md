@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1069 cases & projects
+# 1087 cases & projects
 
-**Latest case update:** October 28, 2026, 00:13 · **Last maintained:** October 28, 2026, 00:13 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 28, 2026, 04:11 · **Last maintained:** October 28, 2026, 04:11 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation and hidden behavior. Public implementations and bounded tests lead these picks; the full index also includes small learning experiments, black-box rebuild benchmarks and reader ideas, clearly separated from demonstrated results. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, game preservation and restoring useful apps. Public implementations and bounded tests lead these picks; the full index also keeps learning experiments and ideas distinct from demonstrated results. Dates are source or author-update dates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -32,7 +32,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 6. **[QuixiDesk: choose the model, keep a desktop workspace](cases/en/quixiai-quixidesk-rea-claude-desktop-recreation.md)** · `2026-10-27` — Eric Hartford reports **REA-based reconstruction of Claude Desktop** for local and cloud models. A public Rust workspace and later same-day documentation are available; macOS 14+, **feature parity and tool permissions not independently tested**. Not Claude's model weights. `In progress`
 7. **[Ace Combat 04: from PS2 functions to native C++](cases/en/projectstonehenge-ace-combat04-ai-native-port.md)** · `2026-10-25` — ProjectStonehenge documents **Anthropic-assisted research and code**, using Ghidra/MCP and PCSX2 references. Configurable rendering up to a **360 FPS cap**, not a measured frame rate; game logic stays at 59.94 Hz. Windows, one disc revision, beta save interchange; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
-9. **[GoonFi V2: turn a closed Solana program into auditable Rust](cases/en/osec-ai-rust-hash-recompilation-report.md)** · `2026-10-15` — OtterSec publishes an **Opus/Astra-assisted reconstruction and archival comparison script**, reporting **$6.1M at risk**, not lost. The target is an old deployment, reportedly fixed October 6; whole-binary identity and the financial finding were not independently reproduced here. `Research report`
+9. **[PicasaPy: keep a local photo workflow alive](cases/en/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28` (Beijing time) — Virág Attila's **Ghidra/Claude/Codex-assisted Python/Qt rewrite** has public research specifications and successful exact-commit CI. Shared **.picasa.ini** files are not conflict-safe synchronization; project documents separate static coverage from click tests. Full parity not established; not run here. `In progress`
 10. **[BEST hood: restore the controls the cache hid](cases/en/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27` (Beijing time) — Steve Godlewski and Claude Code trace Bluetooth traffic to correct a **40-entry cache hiding part of 54 characteristics**, bringing four fan speeds and four light levels to Home Assistant. Public logs preserve the mistaken diagnosis; an upstream fix is merged. Builds on prior work, **one HBN65366SS tested by the author**, not independently run here. `In progress`
 
 ## Classic cases
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **227** |
-| [Hardware & interoperability](categories/en/hardware.md) | **304** |
-| [Applications & clients](categories/en/apps.md) | **447** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **91** |
+| [Games & preservation](categories/en/games.md) | **229** |
+| [Hardware & interoperability](categories/en/hardware.md) | **309** |
+| [Applications & clients](categories/en/apps.md) | **453** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **96** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

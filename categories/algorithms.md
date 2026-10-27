@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [ReGen：从广告画面推断可重做提示词的Chrome扩展介绍](../cases/regen-ad-prompt-reconstruction-report.md) — 候选介绍ReGen为广告重建提示词；补查Amy Hua原帖确认Chrome扩展定位，但未证明恢复原始提示词或生成一致。 **[其他 AI 逆向 · 待验证]**
+- [Vitruvius别墅体素重建：作者称AI从蓝图与图片恢复建筑](../cases/voxel-vitruvius-villa-ai-blueprint-reconstruction.md) — 作者在自研C引擎中报告模拟Vitruvius按蓝图与图片重建别墅，称接近一比一；不是Minecraft源码恢复。 **[其他 AI 逆向 · 待验证]**
+- [本机安全工具对照：作者称4模型360次零拒绝，固件检查正确性未明](../cases/four-model-local-security-refusal-cost-test.md) — 作者在自有机器用4模型跑6类安全任务，称360次零拒绝、花1.48美元；包括路由器固件检查，但无任务成功率。 **[其他 AI 逆向 · 分析测试]**
+- [digital-human-koubo：从25个创作者视频归纳口播包装组件](../cases/digital-human-koubo-video-packaging-reconstruction.md) — 项目汇总称digital-human-koubo把照片与一句话变成AI口播视频，含从25视频重建的48包装组件与5剪辑风格。 **[其他 AI 逆向 · 待验证]**
+- [未具名二进制重建：Opus工具栈推广帖称42个oracle全通过](../cases/opus-mcp-unnamed-binary-42-oracle-test.md) — 作者以214函数、18请求/2主机与42对照介绍Opus5.5跨逆向工具工作流；目标与原始证据未给，不能认定全面等价。 **[其他 AI 逆向 · 分析测试]**
 - [Elastic混淆测试转述：Opus4.6在20程序上成功40%，多层混淆为零](../cases/elastic-opus46-twenty-obfuscated-programs-report.md) — Mickey转述Elastic Security Labs的20程序实验，称Opus4.6成功40%、多层混淆0%，失败平均4.83美元；原研究和判定标准未核对。 **[其他 AI 逆向 · 分析测试]**
 - [ProgramBench转述：Opus5.5 xhigh完成18.5%的二进制黑盒重建任务](../cases/programbench-opus55-cleanroom-rebuild-report.md) — euk ela称ProgramBench有200项仅凭二进制和文档重建任务，禁源码、联网与反编译；Opus5.5 xhigh完成18.5%，未核验原评测。 **[其他 AI 逆向 · 分析测试]**
 - [打码二维码重建：陈有数称AI数分钟恢复并成功扫码，未提供样本](../cases/chenyoushu-ai-redacted-qr-reconstruction-report.md) — 陈有数报告被打码二维码让AI几分钟恢复并扫码成功，借此提醒不要依赖模糊或半透明遮挡；没有模型、图片、原始载荷或对照记录。 **[其他 AI 逆向 · 待验证]**

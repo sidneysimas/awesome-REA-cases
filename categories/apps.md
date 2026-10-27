@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [习惯追踪Today页：REA与Appllama辅助SwiftUI重建的三组耗时自述](../cases/rea-appllama-habit-tracker-swiftui-comparison.md) — 推广帖称Opus5.5单独、加REA、再加Appllama分别用34.7、19.6、11.0秒重建Today页，未提供重复试验或完整对照。 **[REA · 分析测试]**
+- [Claude Code记忆：Dhravya Shah团队称完成逆向并发布讲解](../cases/dhravya-claude-code-memory-research.md) — Dhravya Shah称团队逆向Claude Code记忆，机制很简单但有注意事项；可见帖未展开这些机制。 **[未确认使用 REA · 待验证]**
+- [仿AirDrop的Mac/Windows传输：Opus写Electron应用，非Apple协议兼容证明](../cases/opus-electron-airdrop-like-local-transfer.md) — 作者称一个下午用Opus5.5制作本地文件传输，报告UDP发现、接受/拒绝与Mac启动修复；方法更像重建体验而非逆向AirDrop协议。 **[其他 AI 逆向 · 待验证]**
+- [8Bit的Solana合约研究：自研反编译技术配合REA](../cases/8bit-rea-solana-decompiler-research.md) — 8Bit称从两年前不会GitHub走到用自研反编译技术与REA研究Solana协议；未命名合约或给恢复规格。 **[REA · 进行中]**
+- [自有Web App到Agent训练场：REA与Opus从一次录制恢复工具和奖励检查的idea](../cases/rea-opus-webapp-recording-agent-gym-idea.md) — 推广帖提出用REA/Opus5.5把自有Web App一次会话录制转成工具、本地状态与奖励检查；无可运行环境。 **[REA · 待验证]**
+- [PicasaPy：Virág Attila以Ghidra、Claude与Codex重建Picasa3.9照片管理器](../cases/picasapy-ghidra-claude-codex-photo-manager.md) — Virág Attila发布Python/Qt重写Picasa，公开二进制研究规格与成功CI；项目自己区分静态菜单覆盖、点击测试和仍未证明的效果等价。 **[其他 AI 逆向 · 进行中]**
 - [ego lite Windows版：旺仔卷卷让AI解释反编译结果](../cases/ego-lite-windows-ai-decompilation-study.md) — 旺仔卷卷称Windows版ego lite发布后就反编译，让AI讲解以学习逆向与反代机制；没有修改或替代品结果。 **[其他 AI 逆向 · 待验证]**
 - [Rikyu几何Logo工具：Go7hic称逆向自用，生成仍不稳定](../cases/go7hic-rikyu-private-reconstruction-report.md) — Go7hic称逆向Rikyu自用，有时一次满意、有时反复调整也无效；AI是产品背景，未确认用于逆向。 **[未确认使用 REA · 待验证]**
 - [Replica ASI：在REA fork上研究可继承记忆与失败的逆向Agent谱系](../cases/replica-asi-rea-agent-lineage.md) — Solana项目汇总称Replica ASI fork REA，子Agent继承记忆、代码、测试和失败，正在构建首个实际谱系；没有仓库或运行记录。 **[REA · 进行中]**

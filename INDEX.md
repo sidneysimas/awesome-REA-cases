@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1069 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1087 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（227）
-- [硬件与设备互通](categories/hardware.md)（304）
-- [应用与客户端](categories/apps.md)（447）
-- [算法与功能重建](categories/algorithms.md)（91）
+- [游戏与游戏保存](categories/games.md)（229）
+- [硬件与设备互通](categories/hardware.md)（309）
+- [应用与客户端](categories/apps.md)（453）
+- [算法与功能重建](categories/algorithms.md)（96）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [Rainbow Six Mobile：读者提出用REA研究的简短idea](cases/rainbow-six-mobile-rea-reader-idea.md) — 读者回复Rainbow6Mobile说REA可用于逆向；只有具名对象和工具建议，没有实施或明确改造目标。 **[REA · 待验证]**
+- [Mewgenics：读者夸张自称Agent37分钟逆向，未提供实现](cases/mewgenics-37-minute-agent-reversing-claim.md) — 回复TylerGlaiel的帖子自称37分钟逆向Mewgenics并提Agent；语气可能是玩笑，不能作为完成证据。 **[未确认使用 REA · 待验证]**
 - [Jeuner的MW2重写：为Apple Silicon转Rust，称四小时可在全部地图移动](cases/jeuner-mw2-apple-silicon-rust-rebuild.md) — Jeuner称MW2不再能在Apple Silicon运行，计划Rust重写；四小时后报告可在所有地图移动，Claude周额度耗尽后拟周末继续。 **[REA · 进行中]**
 - [Cricket 26：读者提出让Claude检查Ghidra中的eboot.bin](cases/cricket26-claude-ghidra-inspection-idea.md) — VoxlePop询问Claude能否从Ghidra输出调查Cricket 26在线检查和资源加密；仅idea，没有分析或成功结果。 **[其他 AI 逆向 · 待验证]**
 - [宝可梦集换式卡牌手游：ozmafromhell提出REA研究后做LAN或自建服务器](cases/pokemon-tcgp-rea-lan-server-idea.md) — ozmafromhell向PokemonTCGPinfo建议用REA研究游戏，像早期Dota一样通过LAN或Hamachi式服务器游玩；仅是保存玩法idea。 **[REA · 待验证]**
@@ -256,10 +258,15 @@
 
 ### 硬件与设备互通
 
+- [Build Hours耳机实验：参与者尝试逆向固件，实现双设备连接](cases/openai-student-build-hours-earphone-multipoint.md) — OpenAI Student Collective活动回顾称有人尝试改耳机固件，使其同时连接两台设备；未报告成功。 **[未确认使用 REA · 进行中]**
+- [RuuviTag温湿度传感器：作者称Claude一小时加HomeKit固件支持](cases/ruuvitag-claude-homekit-firmware-report.md) — 作者为闲置RuuviTag接Apple Home，请Claude改固件，在Raspberry Pi一小时后称首次即成功；无代码或配对记录。 **[其他 AI 逆向 · 待验证]**
+- [Karlos的Kindle：Claude与REA研究原厂代码，称UI与性能改善](cases/karlos-kindle-rea-ui-performance-report.md) — Karlos称把REA仓库交给Claude研究Amazon原厂代码，解决KOReader、键盘和自动灯问题并有两倍速度；缺少计时与补丁。 **[REA · 待验证]**
+- [Viofo行车记录仪：David Rose用DeepSeek/Ghidra排除USB实时视频方案](cases/david-rose-viofo-deepseek-ghidra-camera-research.md) — David Rose为车载视觉尝试复用Viofo，经DeepSeek/Ghidra分析称USB webcam故障且缓冲每两秒更新；最后选独立双相机。 **[其他 AI 逆向 · 分析测试]**
+- [Razer Core Chroma X：Jason Ni让Claude读BadLLP日志，退TB2后称缓解掉线](cases/jason-ni-razer-chroma-jhl6540-claude-diagnosis.md) — 作者报告TB3下约200 BadLLP/秒、负载时逾3万/分钟至掉线，Claude怀疑JHL6540固件或芯片；不是已定位根因。 **[其他 AI 逆向 · 待验证]**
 - [Damir Akaza的三星Tizen隐私审计自述：44项说明与同意状态逻辑](cases/damir-akaza-samsung-tizen-privacy-audit-report.md) — Damir Akaza称root三星电视后让AI分析Tizen，整理44篇追踪说明并检查识别服务；无原始报告、型号和网络证据。 **[其他 AI 逆向 · 待验证]**
 - [Google Home本地接口：marfinxx称Claude审计Eureka并改本地控制](cases/google-home-claude-eureka-audit-report.md) — marfinxx称Claude Opus5.5读取8008端口与Eureka接口，检查网络标识和超声感应，并将控制延迟从1500ms降到18ms；缺少日志和测量。 **[其他 AI 逆向 · 待验证]**
 - [十年旧Android平板：Alan Macdonald称CoPilot清理一小时后几乎可用](cases/copilot-ten-year-android-tablet-cleanup.md) — Alan Macdonald在旧智能设备逆向讨论下，报告用CoPilot约一小时清理十年旧平板，结果是几乎可用而非完全修复。 **[其他 AI 逆向 · 待验证]**
-- [Xbox 360接Series X|S手柄：Kreia Notes转述Claude内核研究与原生驱动](cases/xbox360-series-controller-claude-driver-report.md) — Kreia Notes引r/ClaudeAI称Claude Code研究Xbox 360内核并写驱动支持Series X|S控制器；未取得驱动源码或设备测试。 **[其他 AI 逆向 · 待验证]**
+- [Xbox 360接Series X|S手柄：Claude/xone驱动转述，四手柄与浮点检查仍待核验](cases/xbox360-series-controller-claude-driver-report.md) — Kreia Notes与Xiao Tan转述Claude研究Xbox 360 USB内核、移植Linux xone以接新无线接收器，称支持四手柄；源码、原作者与真机测试未取得。 **[其他 AI 逆向 · 待验证]**
 - [30美元ESP32触屏手表：Synthetic Beef称Codex读固件并重写蓝牙控制系统](cases/syntheticbeef-esp32-watch-codex-bluetooth-firmware.md) — Synthetic Beef称Codex分析ESP32手表现有固件与文档，找到截图方法并以自有系统替换默认系统，控制某个未具名蓝牙设备；尚无代码或硬件验证记录。 **[其他 AI 逆向 · 待验证]**
 - [Albin的三星电视镜像：开发者模式下用GLM、REA与Ghidra继续反编译](cases/albinberlin-samsung-tv-glm-rea-ghidra.md) — Albin补充自己使用电视开发者模式、OMP/GLM 5.3 FLash、REA与Ghidra；上游本人称已下载Samsung电视镜像并开始反编译，没有公开分析结果。 **[REA · 进行中]**
 - [Muon's BRAVIA电视：下载固件交给LLM找漏洞的求助idea](cases/muon-bravia-tv-llm-firmware-investigation-idea.md) — Muon想研究自己的BRAVIA电视，询问是否应下载固件并让LLM查找漏洞；尚无已开始分析或成功改机的证据。 **[其他 AI 逆向 · 待验证]**
@@ -563,6 +570,12 @@
 
 ### 应用与客户端
 
+- [习惯追踪Today页：REA与Appllama辅助SwiftUI重建的三组耗时自述](cases/rea-appllama-habit-tracker-swiftui-comparison.md) — 推广帖称Opus5.5单独、加REA、再加Appllama分别用34.7、19.6、11.0秒重建Today页，未提供重复试验或完整对照。 **[REA · 分析测试]**
+- [Claude Code记忆：Dhravya Shah团队称完成逆向并发布讲解](cases/dhravya-claude-code-memory-research.md) — Dhravya Shah称团队逆向Claude Code记忆，机制很简单但有注意事项；可见帖未展开这些机制。 **[未确认使用 REA · 待验证]**
+- [仿AirDrop的Mac/Windows传输：Opus写Electron应用，非Apple协议兼容证明](cases/opus-electron-airdrop-like-local-transfer.md) — 作者称一个下午用Opus5.5制作本地文件传输，报告UDP发现、接受/拒绝与Mac启动修复；方法更像重建体验而非逆向AirDrop协议。 **[其他 AI 逆向 · 待验证]**
+- [8Bit的Solana合约研究：自研反编译技术配合REA](cases/8bit-rea-solana-decompiler-research.md) — 8Bit称从两年前不会GitHub走到用自研反编译技术与REA研究Solana协议；未命名合约或给恢复规格。 **[REA · 进行中]**
+- [自有Web App到Agent训练场：REA与Opus从一次录制恢复工具和奖励检查的idea](cases/rea-opus-webapp-recording-agent-gym-idea.md) — 推广帖提出用REA/Opus5.5把自有Web App一次会话录制转成工具、本地状态与奖励检查；无可运行环境。 **[REA · 待验证]**
+- [PicasaPy：Virág Attila以Ghidra、Claude与Codex重建Picasa3.9照片管理器](cases/picasapy-ghidra-claude-codex-photo-manager.md) — Virág Attila发布Python/Qt重写Picasa，公开二进制研究规格与成功CI；项目自己区分静态菜单覆盖、点击测试和仍未证明的效果等价。 **[其他 AI 逆向 · 进行中]**
 - [ego lite Windows版：旺仔卷卷让AI解释反编译结果](cases/ego-lite-windows-ai-decompilation-study.md) — 旺仔卷卷称Windows版ego lite发布后就反编译，让AI讲解以学习逆向与反代机制；没有修改或替代品结果。 **[其他 AI 逆向 · 待验证]**
 - [Rikyu几何Logo工具：Go7hic称逆向自用，生成仍不稳定](cases/go7hic-rikyu-private-reconstruction-report.md) — Go7hic称逆向Rikyu自用，有时一次满意、有时反复调整也无效；AI是产品背景，未确认用于逆向。 **[未确认使用 REA · 待验证]**
 - [Replica ASI：在REA fork上研究可继承记忆与失败的逆向Agent谱系](cases/replica-asi-rea-agent-lineage.md) — Solana项目汇总称Replica ASI fork REA，子Agent继承记忆、代码、测试和失败，正在构建首个实际谱系；没有仓库或运行记录。 **[REA · 进行中]**
@@ -1013,6 +1026,11 @@
 
 ### 算法与功能重建
 
+- [ReGen：从广告画面推断可重做提示词的Chrome扩展介绍](cases/regen-ad-prompt-reconstruction-report.md) — 候选介绍ReGen为广告重建提示词；补查Amy Hua原帖确认Chrome扩展定位，但未证明恢复原始提示词或生成一致。 **[其他 AI 逆向 · 待验证]**
+- [Vitruvius别墅体素重建：作者称AI从蓝图与图片恢复建筑](cases/voxel-vitruvius-villa-ai-blueprint-reconstruction.md) — 作者在自研C引擎中报告模拟Vitruvius按蓝图与图片重建别墅，称接近一比一；不是Minecraft源码恢复。 **[其他 AI 逆向 · 待验证]**
+- [本机安全工具对照：作者称4模型360次零拒绝，固件检查正确性未明](cases/four-model-local-security-refusal-cost-test.md) — 作者在自有机器用4模型跑6类安全任务，称360次零拒绝、花1.48美元；包括路由器固件检查，但无任务成功率。 **[其他 AI 逆向 · 分析测试]**
+- [digital-human-koubo：从25个创作者视频归纳口播包装组件](cases/digital-human-koubo-video-packaging-reconstruction.md) — 项目汇总称digital-human-koubo把照片与一句话变成AI口播视频，含从25视频重建的48包装组件与5剪辑风格。 **[其他 AI 逆向 · 待验证]**
+- [未具名二进制重建：Opus工具栈推广帖称42个oracle全通过](cases/opus-mcp-unnamed-binary-42-oracle-test.md) — 作者以214函数、18请求/2主机与42对照介绍Opus5.5跨逆向工具工作流；目标与原始证据未给，不能认定全面等价。 **[其他 AI 逆向 · 分析测试]**
 - [Elastic混淆测试转述：Opus4.6在20程序上成功40%，多层混淆为零](cases/elastic-opus46-twenty-obfuscated-programs-report.md) — Mickey转述Elastic Security Labs的20程序实验，称Opus4.6成功40%、多层混淆0%，失败平均4.83美元；原研究和判定标准未核对。 **[其他 AI 逆向 · 分析测试]**
 - [ProgramBench转述：Opus5.5 xhigh完成18.5%的二进制黑盒重建任务](cases/programbench-opus55-cleanroom-rebuild-report.md) — euk ela称ProgramBench有200项仅凭二进制和文档重建任务，禁源码、联网与反编译；Opus5.5 xhigh完成18.5%，未核验原评测。 **[其他 AI 逆向 · 分析测试]**
 - [打码二维码重建：陈有数称AI数分钟恢复并成功扫码，未提供样本](cases/chenyoushu-ai-redacted-qr-reconstruction-report.md) — 陈有数报告被打码二维码让AI几分钟恢复并扫码成功，借此提醒不要依赖模糊或半透明遮挡；没有模型、图片、原始载荷或对照记录。 **[其他 AI 逆向 · 待验证]**
