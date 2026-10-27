@@ -1,7 +1,7 @@
 # Pump.fun: parallel-agent investigation of a token-launch platform
 
 Category: Applications and clients · REA
-Record date: 2026-10-26
+Record date: 2026-10-27
 Stage: Needs verification
 
 Pump.fun is a token-launch platform on Solana. 8Bit reports clawddevs using Codex and another agent in parallel within Muse. The development post being replied to describes testing migration to a Raydium liquidity pool after the launch curve completes, LP-token burning and swaps. Early reports disclose no reversing steps or proof of full reconstruction, and REA use was initially unconfirmed.
@@ -23,6 +23,7 @@ The October 25 Shaw 90% figure is FeiXiaoHao's secondhand account, not a byte-ma
 The October 25, 22:53 Musebook report names 8Bit's derivative of the same target; same-night mainnet launch is only planned, and Pump Source identity and on-chain deployment are unverified.
 Shaw explicitly says he is not using REA. New candidate snapshot on October 26, 2026: 105 likes, 4,354 views and 9 reposts; evening lookup growth is not substituted.
 Documentation at the post-window 22:06:29 pinned commit still reports 0/4 whole-file core matches. The 140/150 figure is bounded handler coverage, comparison counts overlap, and security/deployment were not independently tested.
+At 22:36:58 Beijing time on October 27, 8Bit (@0rdlibrary) says that when REA went viral two weeks earlier, he had AI also search X for problems and develop a solution called fair launch, linking Musebook. Lookup confirms the same author. October 28 static reading of launch.musebook.trade identifies a Launchpad page describing Solana assets and paired tokens, user review and wallet signing; the fairlaunch subpath returns 503. This checks the product entry only, without connecting a wallet or certifying deployment, transactions, safety or a relationship to Shaw's code. Candidate snapshot: 4 likes, 242 views, 4 reposts.
 
 ## Sources
 
@@ -36,5 +37,7 @@ Documentation at the post-window 22:06:29 pinned commit still reports 0/4 whole-
 - [Candidate: Shaw identifies pumpfun-source, its byte-identical goal and non-use of REA, October 26, 2026 at 11:31 Beijing time](https://x.com/i/status/2114560456891445597)
 - [Same-window secondhand explanation: distinct 140/150 and 0/4 measurements](https://x.com/i/status/2114537509862740203)
 - [Post-window supplementary README at pinned commit f359ab9, October 26, 2026 at 22:06:29 Beijing time](https://github.com/lalalune/pumpfun-source/blob/f359ab9b7de3c9bbac05ba3c5157af20d5580dc9/README.md)
+- [8Bit adds a REA/social-research-to-Fair Launch workflow, October 27, 2026](https://x.com/i/status/2115090382015066319)
+- [Supplementary: public Musebook Launch entry, statically read October 28](https://launch.musebook.trade/)
 
 [中文](../pumpfun-reconstruction-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)

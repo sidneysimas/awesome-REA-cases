@@ -1,7 +1,7 @@
 # Pump.fun：并行 Agent 研究发币平台机制
 
 分类：应用与客户端 · REA
-记录日期：2026-10-26
+记录日期：2026-10-27
 阶段：待验证
 
 Pump.fun是Solana上的代币发行平台。8Bit报告clawddevs在Muse中并行使用Codex与另一Agent研究该平台；所回复开发帖称在测试发行曲线完成后向Raydium流动性池迁移、销毁LP代币与交换。早期报告没有公开逆向步骤或完整复刻证据，REA使用当时未确认。
@@ -23,6 +23,7 @@ Pump.fun是Solana上的代币发行平台。8Bit报告clawddevs在Muse中并行�
 10月25日22:53的Musebook是8Bit同目标衍生产品报告；当晚主网上线只是计划，Pump Source身份和链上部署未核实。
 Shaw明确本人没用REA；新候选快照2026-10-26：105赞、4354浏览、9转发，不以晚间补查热度替换。
 窗口后22:06:29固定提交文档仍为核心程序0/4全文件匹配；140/150为有限处理器范围，比较计数重叠，未重跑或确认安全与部署。
+10月27日22:36:58，8Bit（@0rdlibrary）称两周前REA走红时让AI同时检索X寻找问题，生成名为fair launch的方案，链接Musebook。补查确认同作者，10月28日静态读取launch.musebook.trade的Launchpad页面，公开描述为创建Solana资产和成对代币、用户审核及钱包签名；fairlaunch子路径返回503。只核对产品入口，不连接钱包或认证部署、交易、安全及与Shaw代码的关系。候选快照4赞、242浏览、4转发。
 
 ## 来源
 
@@ -36,5 +37,7 @@ Shaw明确本人没用REA；新候选快照2026-10-26：105赞、4354浏览、9�
 - [候选：Shaw明确pumpfun-source、字节相同目标与未用REA，2026-10-26 11:31北京时间](https://x.com/i/status/2114560456891445597)
 - [同窗口二手说明：140/150与0/4的不同口径](https://x.com/i/status/2114537509862740203)
 - [窗口后补充README：f359ab9固定提交，2026-10-26 22:06:29北京时间](https://github.com/lalalune/pumpfun-source/blob/f359ab9b7de3c9bbac05ba3c5157af20d5580dc9/README.md)
+- [8Bit补充REA与社交检索到Fair Launch的流程，2026-10-27](https://x.com/i/status/2115090382015066319)
+- [补充：Musebook Launch公开入口，10月28日静态读取](https://launch.musebook.trade/)
 
 [English](en/pumpfun-reconstruction-report.md) | [返回目录](../README.zh-CN.md)

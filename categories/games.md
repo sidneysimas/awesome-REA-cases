@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Jeuner的MW2重写：为Apple Silicon转Rust，称四小时可在全部地图移动](../cases/jeuner-mw2-apple-silicon-rust-rebuild.md) — Jeuner称MW2不再能在Apple Silicon运行，计划Rust重写；四小时后报告可在所有地图移动，Claude周额度耗尽后拟周末继续。 **[REA · 进行中]**
+- [Cricket 26：读者提出让Claude检查Ghidra中的eboot.bin](../cases/cricket26-claude-ghidra-inspection-idea.md) — VoxlePop询问Claude能否从Ghidra输出调查Cricket 26在线检查和资源加密；仅idea，没有分析或成功结果。 **[其他 AI 逆向 · 待验证]**
+- [宝可梦集换式卡牌手游：ozmafromhell提出REA研究后做LAN或自建服务器](../cases/pokemon-tcgp-rea-lan-server-idea.md) — ozmafromhell向PokemonTCGPinfo建议用REA研究游戏，像早期Dota一样通过LAN或Hamachi式服务器游玩；仅是保存玩法idea。 **[REA · 待验证]**
 - [旧版同步音律喵赛克：笨蛋夜星报告修补armeabi，使aarch64平台可玩](../cases/applenekomoe-musynx-armeabi-aarch64-patch-report.md) — 笨蛋夜星在建议用AI解决兼容性时，称已逆向修补旧版同步音律喵赛克的armeabi部分，使其可在aarch64平台玩；未披露工具、机制或补丁。 **[其他 AI 逆向 · 待验证]**
 - [Candy Crush重建展示：Ayo称自己逆向，AI归因来自后续读者评论](../cases/ayo-candy-crush-recreation-ai-attribution-report.md) — Freemind把Ayo O的Candy Crush逆向展示归功AI；补查Ayo原帖只称自己逆向了游戏，未点名AI、工具或重建方式，按待验证传播报告分层归因。 **[未确认使用 REA · 待验证]**
 - [RecompLauncher：面向Windows、Linux、macOS的原生游戏移植目录报道](../cases/recomplauncher-native-game-port-catalog-report.md) — 一则报道介绍RecompLauncher汇集主机游戏的桌面原生移植，称AI加速逆向是移植数量增长的部分原因；未证明启动器本身用了AI或每个移植都源自AI。 **[未确认使用 REA · 相关项目]**

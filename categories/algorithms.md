@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Elastic混淆测试转述：Opus4.6在20程序上成功40%，多层混淆为零](../cases/elastic-opus46-twenty-obfuscated-programs-report.md) — Mickey转述Elastic Security Labs的20程序实验，称Opus4.6成功40%、多层混淆0%，失败平均4.83美元；原研究和判定标准未核对。 **[其他 AI 逆向 · 分析测试]**
+- [ProgramBench转述：Opus5.5 xhigh完成18.5%的二进制黑盒重建任务](../cases/programbench-opus55-cleanroom-rebuild-report.md) — euk ela称ProgramBench有200项仅凭二进制和文档重建任务，禁源码、联网与反编译；Opus5.5 xhigh完成18.5%，未核验原评测。 **[其他 AI 逆向 · 分析测试]**
 - [打码二维码重建：陈有数称AI数分钟恢复并成功扫码，未提供样本](../cases/chenyoushu-ai-redacted-qr-reconstruction-report.md) — 陈有数报告被打码二维码让AI几分钟恢复并扫码成功，借此提醒不要依赖模糊或半透明遮挡；没有模型、图片、原始载荷或对照记录。 **[其他 AI 逆向 · 待验证]**
 - [Apple Watch配速变化：moni想用AI调查更新后的运动算法](../cases/seazon000-apple-watch-pace-algorithm-ai-idea.md) — moni称Apple Watch更新后同速配速由约7分／公里变为6分，想让AI逆向检查运动算法并求入门方法；未提供机型、版本或受控测量，属于具体idea。 **[未确认使用 REA · 待验证]**
 - [体素火山动画：Ruter Fu用GPT反推提示词，再让本地qwen-next重建](../cases/ruterfu-qwen-next-volcano-animation-prompt-rebuild.md) — Ruter Fu称原动画未给提示词，于是让GPT反推规格，再用本地qwen-next制作HTML／Three.js火山场景，评价效果尚可；是行为与画面重建，不是恢复原源码。 **[其他 AI 逆向 · 待验证]**
