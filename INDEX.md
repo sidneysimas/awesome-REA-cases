@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1023 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1032 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（218）
-- [硬件与设备互通](categories/hardware.md)（289）
-- [应用与客户端](categories/apps.md)（430）
-- [算法与功能重建](categories/algorithms.md)（86）
+- [硬件与设备互通](categories/hardware.md)（293）
+- [应用与客户端](categories/apps.md)（433）
+- [算法与功能重建](categories/algorithms.md)（88）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -247,6 +247,10 @@
 
 ### 硬件与设备互通
 
+- [ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证](cases/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。 **[其他 AI 逆向 · 进行中]**
+- [Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测](cases/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。 **[REA · 进行中]**
+- [2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动](cases/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。 **[其他 AI 逆向 · 进行中]**
+- [iOS刷新率开关：QG_accelerator提出用REA研究与解锁的想法](cases/ios-rea-hidden-refresh-rate-switch-idea.md) — QG_accelerator希望借REA调查并解锁其所称iOS隐藏刷新率开关；没有机型、版本、开关证据或实际操作，仅是具体目标的提案。 **[REA · 待验证]**
 - [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助识别截图中的Creality SpacePiX4固件数据，正在比较最新零售版与自己的beta版以映射十六进制偏移；目标是未来调整或新增功能，尚未报告改版刷写成功。 **[其他 AI 逆向 · 进行中]**
 - [Qweexee的Samsung电视：Opus研究局域网遥控，Grok Bot调用Netflix三工具](cases/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee称Opus 5.5研究Samsung电视的局域网遥控入口，包装打开Netflix、移动与选择三个工具供Grok Bot语音调用；无具体机型、源码或跨品牌测试，不确认所谓漏洞或普遍兼容。 **[其他 AI 逆向 · 待验证]**
 - [RuView公开固件：make claude称用Claude两晚改出不同用途的ESP32版本](cases/make-claude-ruview-esp32-firmware-adaptation.md) — make claude称在RuView公开ESP32固件上用Claude修改两晚，改后用途不同于原设想；未披露改动、代码或测量，不确认隔墙人体骨架、心率或法律合规宣传。 **[其他 AI 逆向 · 待验证]**
@@ -539,6 +543,9 @@
 
 ### 应用与客户端
 
+- [QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端](cases/quixiai-quixidesk-rea-claude-desktop-recreation.md) — Eric Hartford称用REA逆向Claude Desktop，公开QuixiDesk原生Rust替代客户端，支持本地与云模型；固定README及Cargo清单可读，但完整功能等价和安全边界未经独立测试。 **[REA · 进行中]**
+- [Malvex：用REA／MCP组织恶意软件分析，要求模型猜测回到静态或运行证据](cases/malvex-ai-malware-analysis-evidence-workflow.md) — 日文介绍Malvex六阶段Agent分析框架；公开README描述REA及其他MCP后端、证据门和异构系统动态分析限制。文档功能及数量口径不一，未运行样本，不能将框架规则视为可靠性证明。 **[REA · 相关项目]**
+- [米修斯的微信本地数据库：称Grokbot解密后每日整理工作待办与花销](cases/grokbot-wechat-local-database-tasks-spending-report.md) — 米修斯称让Grokbot解密自己电脑的微信数据库，并每日汇总工作聊天待办和支出；无版本、工具、代码或准确率，保留为作者自述，不等于破解微信全部协议。 **[其他 AI 逆向 · 待验证]**
 - [Hello Mary的可执行文件调查：AI读程序，人继续做GUI、读报告和改harness](cases/hellomary-ai-executable-investigation-human-harness.md) — Hello Mary称正在让AI调查一个未具名可执行文件，自己仍负责GUI、阅读分析报告与后续harness调整；是具体进行中分工报告，不是已自动重建完整应用。 **[其他 AI 逆向 · 进行中]**
 - [ReAgent：用Ghidra证据与Reverser／Checker闭环重建C／C++，Gate不是等价证明](cases/reagent-ghidra-reverser-checker-gated-reconstruction.md) — TechVerser介绍ReAgent双角色AI逆向工具；Dryxio/reagent固定README确认Ghidra证据、候选叠加层、构建测试及parity策略，并明确这些是保守检查，不证明语义或二进制等价。 **[其他 AI 逆向 · 相关项目]**
 - [Adrian Alvarez的Loom替代品：Claude Code与REA制作录屏和链接分享流程](cases/ingalvarezsol-loom-claude-rea-screen-sharing-rebuild.md) — Adrian Alvarez称在酒吧语音要求Jarvis克隆Loom，用Claude Code和REA制作，回家时已可录屏和分享链接；只明确两项基础用途，未提供源码、部署或完整功能对照。 **[REA · 待验证]**
@@ -972,6 +979,8 @@
 
 ### 算法与功能重建
 
+- [Apple Watch配速变化：moni想用AI调查更新后的运动算法](cases/seazon000-apple-watch-pace-algorithm-ai-idea.md) — moni称Apple Watch更新后同速配速由约7分／公里变为6分，想让AI逆向检查运动算法并求入门方法；未提供机型、版本或受控测量，属于具体idea。 **[未确认使用 REA · 待验证]**
+- [体素火山动画：Ruter Fu用GPT反推提示词，再让本地qwen-next重建](cases/ruterfu-qwen-next-volcano-animation-prompt-rebuild.md) — Ruter Fu称原动画未给提示词，于是让GPT反推规格，再用本地qwen-next制作HTML／Three.js火山场景，评价效果尚可；是行为与画面重建，不是恢复原源码。 **[其他 AI 逆向 · 待验证]**
 - [tsrs：AI辅助TypeScript编译器Rust移植的转述与公开兼容性边界](cases/tsrs-typescript7-rust-ai-port-report.md) — 候选将tsrs称为Cloudflare发布的AI生成TypeScript Rust重实现，报最高8倍与内存降70%；补查定位oxc-project/tsrs，README署名Max Schwenk并明确100%一致性仍是目标，未独立重跑性能或AI过程。 **[其他 AI 逆向 · 进行中]**
 - [chardet 7：Claude辅助重写编码检测库，兼容API与许可争议需分开看](cases/chardet7-claude-encoding-detector-rewrite-license-dispute.md) — Srimugunthan以chardet讨论AI clean-room；项目README确认Dan Blanchard用Claude重写，并称保留API。原帖写MIT，固定提交实际标0BSD；相似度、性能与法律独立性不能互相替代。 **[其他 AI 逆向 · 分析测试]**
 - [Pollock风格生成画：Valentin Chernik称AI辅助重做约600绘图实体的算法](cases/saaatchu-pollock-parametric-drawing-ai-rebuild.md) — Valentin Chernik看到算法生成的Pollock风格图后，称当天用AI做出相似方案：约600个非AI绘图实体绘制细线、丝带和飞溅；未提供代码、原参考或视觉对照验收。 **[其他 AI 逆向 · 待验证]**

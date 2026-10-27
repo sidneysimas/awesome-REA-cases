@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端](../cases/quixiai-quixidesk-rea-claude-desktop-recreation.md) — Eric Hartford称用REA逆向Claude Desktop，公开QuixiDesk原生Rust替代客户端，支持本地与云模型；固定README及Cargo清单可读，但完整功能等价和安全边界未经独立测试。 **[REA · 进行中]**
+- [Malvex：用REA／MCP组织恶意软件分析，要求模型猜测回到静态或运行证据](../cases/malvex-ai-malware-analysis-evidence-workflow.md) — 日文介绍Malvex六阶段Agent分析框架；公开README描述REA及其他MCP后端、证据门和异构系统动态分析限制。文档功能及数量口径不一，未运行样本，不能将框架规则视为可靠性证明。 **[REA · 相关项目]**
+- [米修斯的微信本地数据库：称Grokbot解密后每日整理工作待办与花销](../cases/grokbot-wechat-local-database-tasks-spending-report.md) — 米修斯称让Grokbot解密自己电脑的微信数据库，并每日汇总工作聊天待办和支出；无版本、工具、代码或准确率，保留为作者自述，不等于破解微信全部协议。 **[其他 AI 逆向 · 待验证]**
 - [Hello Mary的可执行文件调查：AI读程序，人继续做GUI、读报告和改harness](../cases/hellomary-ai-executable-investigation-human-harness.md) — Hello Mary称正在让AI调查一个未具名可执行文件，自己仍负责GUI、阅读分析报告与后续harness调整；是具体进行中分工报告，不是已自动重建完整应用。 **[其他 AI 逆向 · 进行中]**
 - [ReAgent：用Ghidra证据与Reverser／Checker闭环重建C／C++，Gate不是等价证明](../cases/reagent-ghidra-reverser-checker-gated-reconstruction.md) — TechVerser介绍ReAgent双角色AI逆向工具；Dryxio/reagent固定README确认Ghidra证据、候选叠加层、构建测试及parity策略，并明确这些是保守检查，不证明语义或二进制等价。 **[其他 AI 逆向 · 相关项目]**
 - [Adrian Alvarez的Loom替代品：Claude Code与REA制作录屏和链接分享流程](../cases/ingalvarezsol-loom-claude-rea-screen-sharing-rebuild.md) — Adrian Alvarez称在酒吧语音要求Jarvis克隆Loom，用Claude Code和REA制作，回家时已可录屏和分享链接；只明确两项基础用途，未提供源码、部署或完整功能对照。 **[REA · 待验证]**

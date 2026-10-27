@@ -1,5 +1,168 @@
 [
   {
+    "id": "quixiai-quixidesk-rea-claude-desktop-recreation",
+    "title": "QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端",
+    "category": "apps", "rea": "REA", "status": "in-progress",
+    "summary": "Eric Hartford称用REA逆向Claude Desktop，公开QuixiDesk原生Rust替代客户端，支持本地与云模型；固定README及Cargo清单可读，但完整功能等价和安全边界未经独立测试。",
+    "description": "2026年10月27日09:08（北京时间），Eric Hartford（@QuixiAI）称用morluto的REA逆向Claude Desktop，做出可使用本地或云模型的开源替代品。同日10:50作者明确项目名为QuixiDesk，与T3 Code无关。它也不同于本合集此前收录的Open Claude UI界面细节研究，不能合并成同一作者或实现。\n\n补充阅读QuixiAI/QuixiDesk固定72c9d8836f69cdc7d02372b84b1cf7054bdf2658提交的README及Cargo.toml；该提交时间为10月27日13:34:46北京时间，晚于本候选窗口，仅用于发布后的项目背景核查，不冒充窗口内已实现的功能快照。项目称用REA映射1400多个IPC通道及macOS原生helper协议，以tao／wry和WKWebView替代Electron／Node.js，重建Rust工作空间。README宣称17种模型provider、11种界面语言、内置浏览器／电脑操作与统一任务聊天视图；Cargo清单确认存在Rust工作空间成员声明，不证明这些功能都已实现。\n\n目标是保留桌面交互并解除单一模型供应商限制，而不是复制Claude模型权重。文档要求macOS14或更高、cargo1.80或更高及Xcode命令行工具，不能据此宣称Linux或Windows已可用。README的full feature parity、零配置和安全文件访问均是项目主张；本合集没有编译、运行、逐通道检查或进行权限审计。作者串有人质疑开源链接和工具权限配置，作者请后者提交issue；这些意见不构成已确认漏洞，也不能当功能等价证明。按in-progress收录公开重建项目。",
+    "sources": [
+      {"label": "Eric Hartford自述REA逆向Claude Desktop，2026-10-27", "url": "https://x.com/i/status/2114886957603991752"},
+      {"label": "作者澄清QuixiDesk名称及与T3 Code无关，2026-10-27", "url": "https://x.com/i/status/2114912658306814150"},
+      {"label": "补充：窗口后13:34提交的QuixiDesk README", "url": "https://github.com/QuixiAI/QuixiDesk/blob/72c9d8836f69cdc7d02372b84b1cf7054bdf2658/README.md"},
+      {"label": "补充：同提交Rust工作空间清单", "url": "https://github.com/QuixiAI/QuixiDesk/blob/72c9d8836f69cdc7d02372b84b1cf7054bdf2658/Cargo.toml"}
+    ],
+    "snapshot_date": "2026-10-27",
+    "metadata": ["候选首帖快照122赞、4022浏览、13转发；不以补查后的热度替换。", "1400多个通道、17种provider与11种语言为项目声明；只读文档和清单，未独立验证兼容、权限或性能。"],
+    "en": {
+      "title": "QuixiDesk: Eric Hartford uses REA to investigate Claude Desktop and rebuild a model-switchable Rust client",
+      "summary": "Eric Hartford reports REA-based reverse engineering of Claude Desktop and publishes QuixiDesk, a native Rust alternative for local and cloud models. A pinned README and Cargo manifest are available; full feature parity and security boundaries were not independently tested.",
+      "description": "At 09:08 Beijing time on October 27, 2026, Eric Hartford (@QuixiAI) says he reverse-engineered Claude Desktop with morluto's REA to create an open-source alternative supporting local and cloud models. At 10:50 that day he identifies it as QuixiDesk, unrelated to T3 Code. It is also distinct from the previously collected Open Claude UI interface research and must not be merged into the same author or implementation.\n\nSupplementary reading covers the README and Cargo.toml at QuixiAI/QuixiDesk commit 72c9d8836f69cdc7d02372b84b1cf7054bdf2658. Its timestamp is 13:34:46 Beijing time on October 27, after this candidate window; it is later project background, not a claim about features already implemented inside the window. The project credits REA with mapping over 1,400 IPC channels and native macOS helper protocols, replacing Electron/Node.js with tao/wry and WKWebView in a reconstructed Rust workspace. Its README claims 17 model providers, 11 UI languages, built-in browser/computer use and a unified task/chat view. Cargo member declarations confirm a Rust workspace manifest exists, not that every feature is implemented.\n\nThe goal is preserving desktop interaction while removing dependence on one model provider, not copying Claude's model weights. Documentation requires macOS 14 or later, cargo 1.80 or later and Xcode Command Line Tools; it does not establish working Linux or Windows support. Full feature parity, zero configuration and safe filesystem access remain project claims. This collection did not build, run, audit permissions or inspect every channel. Replies question source links and tool permission configuration; the author asks the latter commenter to file an issue. These comments establish neither a confirmed vulnerability nor feature equivalence. Included as an in-progress public reconstruction project.",
+      "metadata": ["Original candidate snapshot: 122 likes, 4,022 views, 13 reposts; later lookup engagement is not substituted.", "Over 1,400 channels, 17 providers and 11 languages are project claims. Only documentation and the manifest were read; compatibility, permissions and performance were not independently verified."],
+      "source_labels": ["Eric Hartford's REA/Claude Desktop reconstruction report, October 27, 2026", "Author identifies QuixiDesk and distinguishes it from T3 Code, October 27, 2026", "Supplement: QuixiDesk README at the post-window 13:34 commit", "Supplement: Rust workspace manifest at the same commit"]
+    }
+  },
+  {
+    "id": "ngxson-esp32-usb-airprint-airscan-driver-adaptation",
+    "title": "ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证",
+    "category": "hardware", "rea": "other-ai", "status": "in-progress",
+    "summary": "ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。",
+    "description": "2026年10月27日09:02（北京时间），@ngxson回复USB打印机无线化项目的驱动问题：ESP32自己转换作业且内置驱动，电脑不需Canon驱动；他说有AI帮助适配驱动很容易，闭源驱动也可通过逆向研究。补查原串确认上游是作者10月27日00:20北京时间介绍的ESP32-S3转AirPrint项目，而非本合集另一条Canon Pro-1000固件模拟。\n\n补充阅读ngxson/esp32-usb-to-airprint的7398e0d245e66c7189f4fa109c4c59d57047dad0提交README，提交时间为10月27日04:49:51北京时间，早于该候选。方案将USB打印机接到ESP32-S3，由板子加入Wi-Fi，提供AirPrint／Mopria打印、AirScan及浏览器扫描整理页面；文档把Canon MG2550S标绿为真机验证，其余多系列标黄，仅预计兼容。驱动在components/printers中，Canon PIXMA相近流可复用；协议明确沿用Gutenprint及SANE pixma，不能把全部底层研究归给AI。\n\n这是以AI辅助驱动适配为背景的实际设备互通项目；作者没有说具体哪段驱动由哪个模型写成，也未提供本帖对应的闭源驱动反编译产物。‘任意USB打印机’及‘适配很容易’不当作通用兼容保证。项目要求贡献者真实持有设备并做真机测试，不只跑模拟。按in-progress收录；本合集仅阅读文档，未安装固件、测试打印扫描或核验硬件，REA未提及。",
+    "sources": [
+      {"label": "作者回复：板上转换及AI驱动适配，2026-10-27", "url": "https://x.com/i/status/2114885495910027538"},
+      {"label": "补充原串：ESP32-S3 USB转AirPrint项目介绍，2026-10-27", "url": "https://x.com/i/status/2114753974372839775"},
+      {"label": "补充：04:49提交README，支持矩阵与协议归属", "url": "https://github.com/ngxson/esp32-usb-to-airprint/blob/7398e0d245e66c7189f4fa109c4c59d57047dad0/README.md"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照0赞、160浏览、0转发。", "MG2550S真机验证为项目标记，本合集未测试；其他机型预计兼容，不把AI可能逆向闭源驱动说成已完成。"],
+    "en": {
+      "title": "ESP32-S3 printer bridge: ngxson discusses AI-assisted driver adaptation; MG2550S is marked hardware-tested",
+      "summary": "ngxson provides AirPrint/AirScan for USB printers with on-board ESP32-S3 conversion and discusses AI-assisted driver adaptation. Documentation credits Gutenprint/SANE and marks only Canon MG2550S as hardware-tested, not arbitrary closed-source printers as reverse-engineered.",
+      "description": "At 09:02 Beijing time on October 27, 2026, @ngxson answers a driver question about making USB printers wireless: the ESP32 converts jobs and embeds the driver, so computers need no Canon driver. He says AI makes driver adaptation easy and closed-source drivers can also be investigated through reverse engineering. Original-thread lookup identifies the upstream project as his ESP32-S3 AirPrint announcement at 00:20 Beijing time on October 27, distinct from this collection's Canon Pro-1000 firmware-emulation case.\n\nSupplementary reading covers the README at ngxson/esp32-usb-to-airprint commit 7398e0d245e66c7189f4fa109c4c59d57047dad0, timestamped 04:49:51 Beijing time on October 27, before the candidate. A USB printer connects to an ESP32-S3 that joins Wi-Fi, offering AirPrint/Mopria printing, AirScan and browser-based scanning/page organization. The document marks Canon MG2550S green for real-hardware validation; other series are yellow, expected rather than tested. Drivers live in components/printers, with reuse for similar Canon PIXMA streams. Protocols explicitly follow Gutenprint and SANE's pixma backend; all foundational research must not be attributed to AI.\n\nThis is an actual interoperability project with an author discussion of AI-assisted driver adaptation. No specific model, AI-written driver section or corresponding closed-source decompilation artifact is identified. Any USB printer and easy adaptation are not accepted as universal compatibility guarantees. Contributors must own and test real hardware, not only emulators. Included as in progress. This collection read documentation only, without installing firmware, testing printing/scanning or checking hardware. REA is not mentioned.",
+      "metadata": ["Candidate snapshot: 0 likes, 160 views, 0 reposts.", "MG2550S hardware validation is the project's label, not a test by this collection. Other models are expected to work; possible AI reversing of closed-source drivers is not presented as completed work."],
+      "source_labels": ["Author on on-board conversion and AI driver adaptation, October 27, 2026", "Supplementary original thread: ESP32-S3 USB-to-AirPrint announcement, October 27, 2026", "Supplement: README at the 04:49 commit, compatibility matrix and protocol credits"]
+    }
+  },
+  {
+    "id": "malvex-ai-malware-analysis-evidence-workflow",
+    "title": "Malvex：用REA／MCP组织恶意软件分析，要求模型猜测回到静态或运行证据",
+    "category": "apps", "rea": "REA", "status": "related-project",
+    "summary": "日文介绍Malvex六阶段Agent分析框架；公开README描述REA及其他MCP后端、证据门和异构系统动态分析限制。文档功能及数量口径不一，未运行样本，不能将框架规则视为可靠性证明。",
+    "description": "2026年10月27日09:11（北京时间），候选日文长帖介绍Malvex：把二进制、内存转储、文档或抓包交给Agent，经工具分析后整理IoC、MITRE ATT&CK映射、规则与攻击链。它是恶意软件逆向编排相关项目，不是已经证实攻破某个目标的案例。\n\n补充阅读JoasASantos/Malvex固定75d86748c185aea0171b38682ab6a2bf15a5240c提交README；提交日期为10月16日12:20:55北京时间，早于窗口，用于核对项目说明，不充当本轮发布。文档列Claude Code、Codex及本地模型等运行方式，分triage、static、dynamic、network、intelligence、validate六阶段，并明确集成REA，缺失时可直调其他后端。商业工具主要检测，不自动安装。模型答案不算证据，函数名、家族和ATT&CK映射应先当假设，再关联偏移、反汇编、调试轨迹或网络工件。跨主机系统的动态分析应输出所需平台的执行计划，不得伪造运行结果；dry-run只打印计划不调LLM。\n\n文档强调本地分析，但选用云模型或VirusTotal等服务仍可能外联，不能理解成所有配置都离线；默认Claude命令跳过权限确认，安装器也会安装工具和MCP，不应当作无副作用查看器。README同时出现126／200+后端以及8／30 MCP工具等不同数量口径，本合集不将这些数字确认为实测覆盖。未安装、执行Malvex、运行样本、核查全部代码或测试证据门，独立复现和检测效果仍未知；按related-project收录设计与公开材料。",
+    "sources": [
+      {"label": "候选：Malvex日文介绍与限制，2026-10-27", "url": "https://x.com/i/status/2114887562544529465"},
+      {"label": "补充：10月16日固定提交README，六阶段、REA与证据模型", "url": "https://github.com/JoasASantos/Malvex/blob/75d86748c185aea0171b38682ab6a2bf15a5240c/README.md"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照4赞、588浏览、2转发。", "证据门、跨平台限制与工具矩阵均为项目文档说明，不是独立验证；MIT为README声明。"],
+    "en": {
+      "title": "Malvex: orchestrating malware analysis through REA/MCP and tying model hypotheses to static or runtime evidence",
+      "summary": "A Japanese post introduces Malvex's six-stage agent workflow. Its public README describes REA/MCP backends, evidence gates and cross-host dynamic-analysis limits. Inconsistent documented counts and no executed samples mean workflow rules are not proof of reliability.",
+      "description": "At 09:11 Beijing time on October 27, 2026, a Japanese candidate post introduces Malvex: agents analyze binaries, memory dumps, documents or captures with tools and organize IOCs, MITRE ATT&CK mappings, rules and attack chains. This is a malware reverse-engineering orchestration project, not a demonstrated compromise of a particular target.\n\nSupplementary reading covers JoasASantos/Malvex README at commit 75d86748c185aea0171b38682ab6a2bf15a5240c, timestamped October 16 at 12:20:55 Beijing time, before the window. It checks project descriptions, not a new release in this window. Documentation lists Claude Code, Codex and local-model runtimes, with six stages: triage, static, dynamic, network, intelligence and validate. It explicitly integrates REA and can fall back to direct backends. Commercial tools are generally detected, not automatically installed. Model answers are not evidence: proposed function names, family attribution and ATT&CK mappings remain hypotheses until linked to offsets, disassembly, debugger traces or network artifacts. Cross-host dynamic work must emit a plan for the required platform, never invented execution results. Dry-run prints a plan without invoking an LLM.\n\nLocal-first analysis does not make every configuration offline: cloud models or services such as VirusTotal can communicate externally. The default Claude command skips permission prompts, and setup installs tools and MCP servers; this is not a side-effect-free viewer. The README variously mentions 126/200+ backends and 8/30 MCP tools, so those counts are not accepted as measured coverage. This collection did not install or execute Malvex, run samples, audit all code or test the evidence gate. Independent reproduction and detection quality remain unknown. Included as a related project for its design and public material.",
+      "metadata": ["Candidate snapshot: 4 likes, 588 views, 2 reposts.", "Evidence gates, cross-platform limits and the tool matrix are project documentation, not independent validation; MIT is stated in the README."],
+      "source_labels": ["Candidate: Japanese Malvex introduction and limitations, October 27, 2026", "Supplement: pinned October 16 README, six stages, REA and evidence model"]
+    }
+  },
+  {
+    "id": "conra22a-rea-armv7m-hardware-first-tests",
+    "title": "Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测",
+    "category": "hardware", "rea": "REA", "status": "in-progress",
+    "summary": "Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。",
+    "description": "2026年10月27日08:57（北京时间），@Conra22a报告正在适配REA仓库，安排初步测试，以便研究控制硬件的ARMv7-M处理器。补查同作者原串，上游06:44北京时间说准备把眼前硬件与Opus5.5、REA v6.8.0组合；候选则称已经跨过让Claude不拒绝的第一道门槛，接下来是适配与测试。\n\n用途是让编程Agent与逆向工具面向嵌入式控制处理器协作，而不是已经刷写新的完整系统。ARMv7-M是作者指定的处理器架构，材料没有可读设备型号、芯片料号、固件哈希、调试接口、具体反编译输出或测试日志；不从上游附图推断品牌与产品功能。\n\n按in-progress收录实际准备工作。没有证据表明已读出固件、找到漏洞、改变设备行为或完成真机验证。未执行目标代码、安装工具或操作设备；作者说模型没有拒绝也不等于研究已获独立安全与合法性验证。",
+    "sources": [
+      {"label": "候选：适配REA及ARMv7-M初测进度，2026-10-27", "url": "https://x.com/i/status/2114884031615500354"},
+      {"label": "补充原串：同作者Opus5.5与REA6.8.0计划，2026-10-27", "url": "https://x.com/i/status/2114850685954957637"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照2赞、832浏览、0转发；没有公开可运行工件。"],
+    "en": {
+      "title": "Conra22a's ARMv7-M hardware investigation: adapting REA and planning initial Opus-assisted tests",
+      "summary": "Conra22a is adapting REA and planning initial tests on an ARMv7-M processor controlling hardware. An earlier post names Opus 5.5 and REA 6.8.0; no device name, firmware or runtime results are public.",
+      "description": "At 08:57 Beijing time on October 27, 2026, @Conra22a reports adapting the REA repository and planning initial tests to investigate the ARMv7-M processor controlling hardware. Supplementary lookup finds an earlier post by the same author at 06:44 Beijing time proposing the hardware plus Opus 5.5 and REA v6.8.0. The candidate says the first hurdle of avoiding Claude refusal has been cleared; adaptation and testing come next.\n\nThe use is connecting coding agents and reversing tools to an embedded control processor, not an already flashed replacement operating system. ARMv7-M is the architecture specified by the author. No readable device model, chip part number, firmware hash, debug interface, concrete decompilation or test log is provided. Brand and product function are not inferred from the earlier photo.\n\nIncluded as actual in-progress preparation. There is no evidence of extracted firmware, a discovered vulnerability, changed hardware behavior or completed hardware validation. No target code was executed, tools installed or device operated here. A model not refusing is not independent safety or legal validation.",
+      "metadata": ["Candidate snapshot: 2 likes, 832 views, 0 reposts; no public runnable artifact."],
+      "source_labels": ["Candidate: REA adaptation and initial ARMv7-M tests, October 27, 2026", "Supplementary original thread: author's Opus 5.5/REA 6.8.0 plan, October 27, 2026"]
+    }
+  },
+  {
+    "id": "devsec-ai-2017-shield-omarchy-driver-port-report",
+    "title": "2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动",
+    "category": "hardware", "rea": "other-ai", "status": "in-progress",
+    "summary": "Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。",
+    "description": "2026年10月27日10:12（北京时间），@nixfred发布Sunday Builders Club第7期长篇纪要，节目自述录于10月25日。全文先称Omarchy TV Beta已在NVIDIA Shield启动，后在Martin（@devsec_ai）段落说明对象是2017 NVIDIA Shield、Tegra X1，正在为声音、GPU加速与温控写驱动。目标是让旧电视盒运行Omarchy Linux环境，不是普通遥控或清理广告。\n\n纪要写48小时以及每天16至18小时的投入，并说Agent做了大量工作，但硬件仍要人反复接插。这是主持人转述的工作量与人机分工，不将48小时换算为精确纯AI工时，也不认定三个驱动均已通过测试。其下一步Surface Pro4触屏与插拔模式切换还是计划，不当作已完成的另一案例。\n\n本帖没有仓库、驱动补丁、内核版本、启动日志、温度测量或性能测试，也没有指定用于Shield的模型或REA。按in-progress收录有具体设备与移植工作的转述，未独立启动或测试。长文另称Joe逆向Tobii眼动仪，但该段没有明确AI参与，不能借全文Agent语境将其升格为AI逆向成果。",
+    "sources": [{"label": "候选：第7期完整纪要中的Shield／Martin段落，2026-10-27；节目称录于10-25", "url": "https://x.com/i/status/2114902962833162605"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照10赞、571浏览、0转发。", "启动及驱动进度为节目纪要转述；没有独立兼容性、散热或安全验证。"],
+    "en": {
+      "title": "Omarchy on a 2017 NVIDIA Shield: a show recap credits Martin and agents with audio, GPU and thermal driver work",
+      "summary": "Sunday Builders Club's recap says Martin is porting Omarchy to a 2017 Tegra X1 Shield, with agents contributing audio, GPU-acceleration and thermal drivers while a human handles hardware. Boot progress is secondhand; no test artifacts or REA attribution are supplied.",
+      "description": "At 10:12 Beijing time on October 27, 2026, @nixfred publishes a long recap of Sunday Builders Club episode 7, described as recorded on October 25. It first says Omarchy TV Beta boots on NVIDIA Shield, then identifies Martin's (@devsec_ai) target as a 2017 NVIDIA Shield with Tegra X1 and describes driver work for sound, GPU acceleration and thermal management. The goal is running an Omarchy Linux environment on an old TV box, not ordinary remote control or ad cleanup.\n\nThe recap mentions 48 hours and 16-to-18-hour days, saying agents did much of the work but a person still had to plug and unplug hardware. These are the host's secondhand effort and role descriptions. The 48 hours are not converted into exact AI-only labor, and none of the three drivers is assumed to have passed testing. Surface Pro 4 touchscreen support and dock/undock mode switching are next steps, not a second completed case.\n\nNo repository, driver patch, kernel version, boot log, temperature measurements or performance tests are given, nor a Shield-specific model or REA attribution. Included as an in-progress secondary account with a concrete device and porting work, without independent boot or hardware testing. The recap also says Joe reversed a Tobii eye tracker, but that passage does not explicitly establish AI involvement; the broader agent context does not turn it into an AI reverse-engineering result.",
+      "metadata": ["Candidate snapshot: 10 likes, 571 views, 0 reposts.", "Boot and driver progress are secondhand show-recap claims, without independent compatibility, thermal or safety validation."],
+      "source_labels": ["Candidate: full episode 7 recap, Shield/Martin passages, October 27, 2026; show reportedly recorded October 25"]
+    }
+  },
+  {
+    "id": "seazon000-apple-watch-pace-algorithm-ai-idea",
+    "title": "Apple Watch配速变化：moni想用AI调查更新后的运动算法",
+    "category": "algorithms", "rea": "unknown", "status": "unverified",
+    "summary": "moni称Apple Watch更新后同速配速由约7分／公里变为6分，想让AI逆向检查运动算法并求入门方法；未提供机型、版本或受控测量，属于具体idea。",
+    "description": "2026年10月27日09:47（北京时间），moni（@seazon000）称Apple Watch更新后运动计算与以前差别很大：自觉同样速度，原先一公里约7分钟，现在显示约6分钟，想尝试AI逆向但不知道如何入手。09:49向@dotey再次求助，明确想让AI看看运动算法。补查首帖确认作者署名；两个候选描述同一目标，不重复开案例。\n\n问题是理解设备更新是否改变了运动指标计算，不是已经证实Apple修改算法或设备存在误差。帖子没有Watch机型、watchOS版本、运动类型、路线、GPS条件、校准数据、日志、固件样本、模型或逆向步骤。同速及每公里差异均是用户观察，不是受控对比，本合集不计算误差比例或填补原因。\n\n按unverified收录具体调查idea，尚未报告开始反编译或恢复算法。后续读者建议REA，不等于作者已采用REA；本合集未读取健康数据、运行代码或测试手表。",
+    "sources": [
+      {"label": "moni的Apple Watch配速变化与AI逆向想法，2026-10-27", "url": "https://x.com/i/status/2114896642080157983"},
+      {"label": "同作者向dotey求助检查运动算法，2026-10-27", "url": "https://x.com/i/status/2114897122684477511"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["首帖候选快照0赞、11浏览、0转发；求助回复0赞、63浏览、0转发。", "研究想法未实施；7分到6分为用户主观配速观察，不是测得的算法回归。"],
+    "en": {
+      "title": "Apple Watch pace changes: moni proposes AI investigation of the post-update exercise algorithm",
+      "summary": "moni reports an apparent change from about seven to six minutes per kilometer at the same perceived speed after an Apple Watch update and asks how to investigate with AI. With no model, version or controlled measurements, this is a concrete research idea.",
+      "description": "At 09:47 Beijing time on October 27, 2026, moni (@seazon000) says Apple Watch exercise calculations changed substantially after an update: at the same perceived speed, a kilometer previously took about seven minutes but now shows about six. The user wants to try AI reversing but does not know how to start. At 09:49 a request to @dotey explicitly asks to have AI examine the exercise algorithm. Original-post lookup confirms attribution. Both candidates concern one target, not separate cases.\n\nThe question is whether an update changed exercise-metric calculation, not a demonstrated algorithm change or device error. No Watch model, watchOS version, activity type, route, GPS conditions, calibration data, logs, firmware sample, model or reversing steps are supplied. Equal speed and the per-kilometer difference are user observations, not a controlled comparison; this collection does not calculate an error percentage or invent a cause.\n\nIncluded as an unverified, concrete investigation idea, with no reported decompilation or recovered algorithm. A later reader recommending REA does not establish author adoption. No health data was read, code executed or watch tested here.",
+      "metadata": ["First candidate snapshot: 0 likes, 11 views, 0 reposts; follow-up request: 0 likes, 63 views, 0 reposts.", "Research idea not yet implemented. Seven to six minutes is a subjective pace observation, not a measured algorithm regression."],
+      "source_labels": ["moni's Apple Watch pace observation and AI investigation idea, October 27, 2026", "Same author's request to dotey about the exercise algorithm, October 27, 2026"]
+    }
+  },
+  {
+    "id": "ios-rea-hidden-refresh-rate-switch-idea",
+    "title": "iOS刷新率开关：QG_accelerator提出用REA研究与解锁的想法",
+    "category": "hardware", "rea": "REA", "status": "unverified",
+    "summary": "QG_accelerator希望借REA调查并解锁其所称iOS隐藏刷新率开关；没有机型、版本、开关证据或实际操作，仅是具体目标的提案。",
+    "description": "2026年10月27日09:17（北京时间），QG_accelerator（@asdonqual）在讨论其他AI硬件逆向案例时，问能否把iOS也交给REA，解锁其所称隐藏的刷新率开关。补查原帖确认作者和文字。目标是改变设备显示刷新行为，不是已经破解iOS或获得高刷新率。\n\n帖子未给iPhone／iPad型号、iOS版本、刷新率测量、配置项位置、二进制、仓库或实验，也没有证明该隐藏开关实际存在或由软件即可解除限制。安卓电视、Sony相机和PS5只是作者提到的背景，不据此新增多个案例。\n\n按unverified保留具体研究idea；REA是作者建议工具，不是已运行的证据。本合集未越狱、修改配置或操作任何设备，不把系统稳定性、性能或可解锁性写成既成结果。",
+    "sources": [{"label": "QG_accelerator的iOS／REA刷新率研究提案，2026-10-27", "url": "https://x.com/i/status/2114889069247529249"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、545浏览、0转发；隐藏开关的存在与可解锁性均未验证。"],
+    "en": {
+      "title": "An iOS refresh-rate switch: QG_accelerator proposes investigating and unlocking it with REA",
+      "summary": "QG_accelerator proposes REA investigation of a purported hidden iOS refresh-rate switch. With no device, version, switch evidence or actual operations, this remains a concrete idea.",
+      "description": "At 09:17 Beijing time on October 27, 2026, QG_accelerator (@asdonqual), discussing other AI hardware-reversing stories, asks whether iOS could be investigated with REA to unlock what the author calls a hidden refresh-rate switch. Original-post lookup confirms attribution and text. The goal is changing display refresh behavior, not an already jailbroken system or achieved high refresh rate.\n\nNo iPhone/iPad model, iOS version, refresh measurements, configuration location, binary, repository or experiment is provided. The post does not establish that such a switch exists or that software alone could remove the limitation. Android TVs, Sony cameras and PS5 are background references, not additional cases created from this post.\n\nIncluded as an unverified concrete research idea. REA is a proposed tool, not evidence of execution. This collection did not jailbreak, modify settings or operate a device; system stability, performance and unlockability are not presented as results.",
+      "metadata": ["Candidate snapshot: 1 like, 545 views, 0 reposts. Neither the hidden switch nor its unlockability is verified."],
+      "source_labels": ["QG_accelerator's iOS/REA refresh-rate research proposal, October 27, 2026"]
+    }
+  },
+  {
+    "id": "ruterfu-qwen-next-volcano-animation-prompt-rebuild",
+    "title": "体素火山动画：Ruter Fu用GPT反推提示词，再让本地qwen-next重建",
+    "category": "algorithms", "rea": "other-ai", "status": "unverified",
+    "summary": "Ruter Fu称原动画未给提示词，于是让GPT反推规格，再用本地qwen-next制作HTML／Three.js火山场景，评价效果尚可；是行为与画面重建，不是恢复原源码。",
+    "description": "2026年10月27日09:19（北京时间），Ruter Fu（@ruterfu）称自己用本地qwen-next做火山动画，效果‘马马虎虎’；原作者没给提示词，他让GPT逆向了一份，正文完整列出HTML、CSS、JavaScript与Three.js的单文件实现要求。补查原帖确认署名，附件列表有视频，但本合集未独立观看或运行。\n\n具体目标是由参考动画反推可执行视觉规格：悬浮体素岛、火山口、村落、烟粒和熔岩的蓄势／喷发／回落循环，以及旋转、缩放、暂停、重置和强度调节。提示词要求真实三维、重复方块用InstancedMesh、限制并复用粒子、按时间差更新运动。这些是拟重建行为的要求，不是已检查实现中确实采用的结构或性能结果。\n\n按unverified收录具体AI辅助功能重建实验。没有公开HTML代码、测试、帧率或参考一致性测量，不能将GPT反推提示词等同于反编译原程序、恢复原始算法或完整还原。作者只给本地模型名称与主观评价，REA未提及；本合集未运行代码或安装依赖。",
+    "sources": [{"label": "Ruter Fu的GPT反推火山提示词与本地qwen-next实验，2026-10-27", "url": "https://x.com/i/status/2114889579681747243"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、305浏览、0转发。", "提示词全文已读；画面行为推定与实现要求不等于验证过的原算法。"],
+    "en": {
+      "title": "Voxel volcano animation: Ruter Fu infers a prompt with GPT and rebuilds it using local qwen-next",
+      "summary": "Ruter Fu says GPT inferred specifications from an animation whose author supplied no prompt, then local qwen-next generated an HTML/Three.js volcano with so-so results. This is visual/behavioral reconstruction, not recovered original source.",
+      "description": "At 09:19 Beijing time on October 27, 2026, Ruter Fu (@ruterfu) says a local qwen-next model made a volcano animation with so-so results. The original author provided no prompt, so GPT was used to reverse-infer one. The post supplies full requirements for a single-file HTML, CSS, JavaScript and Three.js implementation. Original-post lookup confirms attribution and lists a video attachment, which this collection did not independently watch or execute.\n\nThe target is inferring executable visual specifications from a reference animation: a floating voxel island, crater, village, smoke and lava in a buildup/eruption/cooling loop, with rotation, zoom, pause, reset and intensity controls. The prompt requires actual 3D, InstancedMesh for repeated blocks, bounded/reused particles and time-delta motion. These are requested reconstruction behaviors, not inspected implementation structures or measured performance results.\n\nIncluded as an unverified, concrete AI-assisted feature-reconstruction experiment. No public HTML, tests, frame rate or reference-fidelity measurements are supplied. Inferred prompting is not decompilation, recovery of the original algorithm or a complete restoration. Only the local-model name and subjective evaluation are given; REA is not mentioned. No code was run or dependencies installed here.",
+      "metadata": ["Candidate snapshot: 1 like, 305 views, 0 reposts.", "Full prompt read; inferred visual behavior and implementation requirements are not a validated original algorithm."],
+      "source_labels": ["Ruter Fu's GPT-inferred volcano prompt and local qwen-next experiment, October 27, 2026"]
+    }
+  },
+  {
+    "id": "grokbot-wechat-local-database-tasks-spending-report",
+    "title": "米修斯的微信本地数据库：称Grokbot解密后每日整理工作待办与花销",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "米修斯称让Grokbot解密自己电脑的微信数据库，并每日汇总工作聊天待办和支出；无版本、工具、代码或准确率，保留为作者自述，不等于破解微信全部协议。",
+    "description": "2026年10月27日09:52（北京时间），米修斯（@a_lllyx65194）称让Grokbot解密自己电脑上的微信数据库，并让它每天汇总工作聊天待办及一天花销。补查原帖确认作者及文字，媒体列表有两张图片；本合集未读取图片中的私人聊天或从中提取数据。目标是把个人本地数据接到日常摘要流程，而非攻击其他用户账号。\n\n作者还称把解密方案交给GPT和Claude时被以不合规为由拒绝，但没有给出这些会话的可核对完整记录；不能据此认定两平台统一政策或某模型普遍更能逆向。帖子没说明微信版本、系统、数据库格式、密钥取得方式、模型版本、代码仓库、每日作业实现及摘要准确率。成功解密与自动整理仅为作者报告，也不证明已恢复微信加密协议或全部客户端功能。\n\n按unverified收录具体本地数据互通用途。正文关于无限制逆向及伪装真人投诉等推广性说法不作为能力或合规结论。本合集未访问聊天库、凭据或账号，没有运行任何解密方法，REA未提及。",
+    "sources": [{"label": "米修斯的Grokbot微信数据库与每日摘要自述，2026-10-27", "url": "https://x.com/i/status/2114898028700283364"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照2赞、206浏览、0转发。", "仅作者自述；未查看私人内容、核验解密步骤或测试待办／支出准确率。"],
+    "en": {
+      "title": "Mixiusi's local WeChat database: reported Grokbot decryption for daily work tasks and spending summaries",
+      "summary": "Mixiusi says Grokbot decrypted the WeChat database on the author's own computer and produces daily work-chat tasks and spending summaries. No version, tools, code or accuracy measurements are supplied; this is not evidence of recovering every WeChat protocol.",
+      "description": "At 09:52 Beijing time on October 27, 2026, 米修斯 (Mixiusi, @a_lllyx65194) says Grokbot decrypted the WeChat database on the author's own computer and was tasked with daily summaries of work-chat to-dos and spending. Original-post lookup confirms attribution and text and lists two images. This collection did not read private conversations in the images or extract their data. The target is connecting personal local data to routine summaries, not attacking another user's account.\n\nThe author also says GPT and Claude refused the decryption proposal as noncompliant, but supplies no independently inspectable complete conversations. This does not establish either platform's general policy or one model's universal superiority at reversing. No WeChat version, operating system, database format, key-acquisition method, model version, repository, daily-job implementation or summary accuracy is specified. Successful decryption and automation remain author reports, not proof of recovering WeChat's encryption protocol or all client features.\n\nIncluded as an unverified, concrete local-data interoperability use. Promotional claims about unrestricted reversing or pretending to be a human complainant are not capability or compliance findings. This collection accessed no chat database, credentials or account and ran no decryption procedure. REA is not mentioned.",
+      "metadata": ["Candidate snapshot: 2 likes, 206 views, 0 reposts.", "Author report only. No private content inspected, decryption procedure verified or task/spending accuracy tested."],
+      "source_labels": ["Mixiusi's Grokbot/WeChat database and daily-summary report, October 27, 2026"]
+    }
+  },
+  {
     "id": "gunfuzled-creality-spacepix4-gemini-firmware-offsets",
     "title": "Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移",
     "category": "hardware", "rea": "other-ai", "status": "in-progress",

@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Apple Watch配速变化：moni想用AI调查更新后的运动算法](../cases/seazon000-apple-watch-pace-algorithm-ai-idea.md) — moni称Apple Watch更新后同速配速由约7分／公里变为6分，想让AI逆向检查运动算法并求入门方法；未提供机型、版本或受控测量，属于具体idea。 **[未确认使用 REA · 待验证]**
+- [体素火山动画：Ruter Fu用GPT反推提示词，再让本地qwen-next重建](../cases/ruterfu-qwen-next-volcano-animation-prompt-rebuild.md) — Ruter Fu称原动画未给提示词，于是让GPT反推规格，再用本地qwen-next制作HTML／Three.js火山场景，评价效果尚可；是行为与画面重建，不是恢复原源码。 **[其他 AI 逆向 · 待验证]**
 - [tsrs：AI辅助TypeScript编译器Rust移植的转述与公开兼容性边界](../cases/tsrs-typescript7-rust-ai-port-report.md) — 候选将tsrs称为Cloudflare发布的AI生成TypeScript Rust重实现，报最高8倍与内存降70%；补查定位oxc-project/tsrs，README署名Max Schwenk并明确100%一致性仍是目标，未独立重跑性能或AI过程。 **[其他 AI 逆向 · 进行中]**
 - [chardet 7：Claude辅助重写编码检测库，兼容API与许可争议需分开看](../cases/chardet7-claude-encoding-detector-rewrite-license-dispute.md) — Srimugunthan以chardet讨论AI clean-room；项目README确认Dan Blanchard用Claude重写，并称保留API。原帖写MIT，固定提交实际标0BSD；相似度、性能与法律独立性不能互相替代。 **[其他 AI 逆向 · 分析测试]**
 - [Pollock风格生成画：Valentin Chernik称AI辅助重做约600绘图实体的算法](../cases/saaatchu-pollock-parametric-drawing-ai-rebuild.md) — Valentin Chernik看到算法生成的Pollock风格图后，称当天用AI做出相似方案：约600个非AI绘图实体绘制细线、丝带和飞溅；未提供代码、原参考或视觉对照验收。 **[其他 AI 逆向 · 待验证]**

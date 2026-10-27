@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**1023 entries**, organized by use case, without a Top-N or popularity threshold.
+**1032 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
 - [Games and preservation](categories/en/games.md) (218)
-- [Hardware and interoperability](categories/en/hardware.md) (289)
-- [Applications and clients](categories/en/apps.md) (430)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (86)
+- [Hardware and interoperability](categories/en/hardware.md) (293)
+- [Applications and clients](categories/en/apps.md) (433)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (88)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -249,6 +249,10 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [ESP32-S3 printer bridge: ngxson discusses AI-assisted driver adaptation; MG2550S is marked hardware-tested](cases/en/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson provides AirPrint/AirScan for USB printers with on-board ESP32-S3 conversion and discusses AI-assisted driver adaptation. Documentation credits Gutenprint/SANE and marks only Canon MG2550S as hardware-tested, not arbitrary closed-source printers as reverse-engineered. **[Other AI-assisted work · In progress]**
+- [Conra22a's ARMv7-M hardware investigation: adapting REA and planning initial Opus-assisted tests](cases/en/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a is adapting REA and planning initial tests on an ARMv7-M processor controlling hardware. An earlier post names Opus 5.5 and REA 6.8.0; no device name, firmware or runtime results are public. **[REA · In progress]**
+- [Omarchy on a 2017 NVIDIA Shield: a show recap credits Martin and agents with audio, GPU and thermal driver work](cases/en/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club's recap says Martin is porting Omarchy to a 2017 Tegra X1 Shield, with agents contributing audio, GPU-acceleration and thermal drivers while a human handles hardware. Boot progress is secondhand; no test artifacts or REA attribution are supplied. **[Other AI-assisted work · In progress]**
+- [An iOS refresh-rate switch: QG_accelerator proposes investigating and unlocking it with REA](cases/en/ios-rea-hidden-refresh-rate-switch-idea.md) — QG_accelerator proposes REA investigation of a purported hidden iOS refresh-rate switch. With no device, version, switch evidence or actual operations, this remains a concrete idea. **[REA · Needs verification]**
 - [Creality SpacePiX4: Confuzled uses Gemini to interpret firmware data and compare retail/beta offsets](cases/en/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled says Gemini helped identify Creality SpacePiX4 firmware data in screenshots and is comparing the latest retail image with personal beta firmware to map hex offsets for future feature changes. No successful modified-firmware flash is reported. **[Other AI-assisted work · In progress]**
 - [Qweexee's Samsung TV: Opus investigates LAN remote control and Grok Bot invokes three Netflix tools](cases/en/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee says Opus 5.5 investigated Samsung LAN control and wrapped open-Netflix, move and select as Grok Bot voice tools. No model, code or cross-brand tests confirm a vulnerability or broad compatibility. **[Other AI-assisted work · Needs verification]**
 - [RuView public firmware: make claude reports a two-evening Claude-assisted ESP32 adaptation](cases/en/make-claude-ruview-esp32-firmware-adaptation.md) — make claude says two evenings with Claude adapted RuView's public ESP32 firmware for a different use. Changes, code and measurements are absent; through-wall skeleton, heart-rate and legal-compliance claims are not confirmed. **[Other AI-assisted work · Needs verification]**
@@ -541,6 +545,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [QuixiDesk: Eric Hartford uses REA to investigate Claude Desktop and rebuild a model-switchable Rust client](cases/en/quixiai-quixidesk-rea-claude-desktop-recreation.md) — Eric Hartford reports REA-based reverse engineering of Claude Desktop and publishes QuixiDesk, a native Rust alternative for local and cloud models. A pinned README and Cargo manifest are available; full feature parity and security boundaries were not independently tested. **[REA · In progress]**
+- [Malvex: orchestrating malware analysis through REA/MCP and tying model hypotheses to static or runtime evidence](cases/en/malvex-ai-malware-analysis-evidence-workflow.md) — A Japanese post introduces Malvex's six-stage agent workflow. Its public README describes REA/MCP backends, evidence gates and cross-host dynamic-analysis limits. Inconsistent documented counts and no executed samples mean workflow rules are not proof of reliability. **[REA · Related project]**
+- [Mixiusi's local WeChat database: reported Grokbot decryption for daily work tasks and spending summaries](cases/en/grokbot-wechat-local-database-tasks-spending-report.md) — Mixiusi says Grokbot decrypted the WeChat database on the author's own computer and produces daily work-chat tasks and spending summaries. No version, tools, code or accuracy measurements are supplied; this is not evidence of recovering every WeChat protocol. **[Other AI-assisted work · Needs verification]**
 - [Hello Mary's executable investigation: AI examines the program while a human builds the GUI and revises the harness](cases/en/hellomary-ai-executable-investigation-human-harness.md) — Hello Mary says AI is investigating an unnamed executable while the author retains GUI work, report reading and subsequent harness revisions. This is concrete ongoing work allocation, not an automatically reconstructed complete app. **[Other AI-assisted work · In progress]**
 - [ReAgent: Ghidra evidence and a reverser/checker loop reconstruct C/C++; gates are not equivalence proofs](cases/en/reagent-ghidra-reverser-checker-gated-reconstruction.md) — TechVerser introduces ReAgent's two-role AI reversing workflow. A pinned Dryxio/reagent README confirms Ghidra evidence, candidate overlays, build/test gates and parity policies, explicitly limiting these to conservative checks rather than semantic or binary equivalence proofs. **[Other AI-assisted work · Related project]**
 - [Adrian Alvarez's Loom alternative: Claude Code and REA rebuild screen recording and link sharing](cases/en/ingalvarezsol-loom-claude-rea-screen-sharing-rebuild.md) — Adrian Alvarez says he dictated a Loom-clone request to Jarvis from a bar and used Claude Code/REA; screen recording and link sharing worked by his return home. Only those two uses are explicit, without source, deployment or complete feature comparisons. **[REA · Needs verification]**
@@ -974,6 +981,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Apple Watch pace changes: moni proposes AI investigation of the post-update exercise algorithm](cases/en/seazon000-apple-watch-pace-algorithm-ai-idea.md) — moni reports an apparent change from about seven to six minutes per kilometer at the same perceived speed after an Apple Watch update and asks how to investigate with AI. With no model, version or controlled measurements, this is a concrete research idea. **[REA use unconfirmed · Needs verification]**
+- [Voxel volcano animation: Ruter Fu infers a prompt with GPT and rebuilds it using local qwen-next](cases/en/ruterfu-qwen-next-volcano-animation-prompt-rebuild.md) — Ruter Fu says GPT inferred specifications from an animation whose author supplied no prompt, then local qwen-next generated an HTML/Three.js volcano with so-so results. This is visual/behavioral reconstruction, not recovered original source. **[Other AI-assisted work · Needs verification]**
 - [tsrs: an AI-assisted TypeScript-to-Rust port report and public compatibility limits](cases/en/tsrs-typescript7-rust-ai-port-report.md) — A candidate calls tsrs a Cloudflare-released AI-generated TypeScript Rust rewrite, reporting up to 8x speed and 70% less memory. Lookup identifies oxc-project/tsrs, whose README credits Max Schwenk and retains 100% conformance as a goal. Performance and AI work were not independently rerun. **[Other AI-assisted work · In progress]**
 - [chardet 7: a Claude-assisted encoding-detector rewrite, API compatibility and a separate licensing dispute](cases/en/chardet7-claude-encoding-detector-rewrite-license-dispute.md) — Srimugunthan uses chardet to discuss AI clean-room claims. The project README confirms Dan Blanchard's Claude rewrite and retained API. The post says MIT, but the pinned commit labels it 0BSD; similarity, performance and legal independence are distinct questions. **[Other AI-assisted work · Analysis test]**
 - [Pollock-style generative art: Valentin Chernik reports an AI-assisted rebuild with about 600 drawing entities](cases/en/saaatchu-pollock-parametric-drawing-ai-rebuild.md) — After seeing algorithmic Pollock-style art, Valentin Chernik says he used AI to make a similar system that day, with about 600 non-AI drawing entities producing threads, ribbons and splashes. Code, the original reference and visual acceptance tests are absent. **[Other AI-assisted work · Needs verification]**
