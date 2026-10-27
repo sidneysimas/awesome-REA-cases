@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **995 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1012 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（216）
-- [硬件与设备互通](categories/hardware.md)（275）
-- [应用与客户端](categories/apps.md)（421）
-- [算法与功能重建](categories/algorithms.md)（83）
+- [硬件与设备互通](categories/hardware.md)（285）
+- [应用与客户端](categories/apps.md)（425）
+- [算法与功能重建](categories/algorithms.md)（86）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -245,6 +245,16 @@
 
 ### 硬件与设备互通
 
+- [UniXNU的Sony BRAVIA平板移植：白先生转述AI无人值守编写大部分UEFI适配](cases/neuronxwhite-unixnu-sony-bravia-uefi-ai-port-report.md) — 白先生介绍UniXNU在非苹果ARM64设备引导苹果系统，并称Sony BRAVIA平板移植的大部分UEFI适配由AI无人值守编写；未取得原作者、具体机型或AI工作记录，不把其他设备GPU进展归功这项AI移植。 **[其他 AI 逆向 · 进行中]**
+- [RazeDen的旅宿检查方案：Claude Code网络盘点，REA按需检查入住App](cases/razeden-claude-rea-airbnb-readonly-audit-proposal.md) — RazeDen以房间19个联网设备为背景，提出Claude Code辅助网络与蓝牙检查、MVT手机检查、REA分析入住App权限与追踪器的七步只读方案；完整case file未发布，不确认发现隐藏摄像头。 **[REA · 待验证]**
+- [Kinov Hacks的键盘固件：数天以DeepSeek／opencode重写，难点再交Codex或Claude](cases/kinovhacks-deepseek-opencode-keyboard-firmware.md) — Kinov Hacks称数天内以DeepSeek／opencode重写键盘固件，难点再用Codex或Claude；较早回复称DeepSeek将一个固件bug误怪硬件，最终Codex找到问题。未给型号、补丁或设备验收。 **[其他 AI 逆向 · 待验证]**
+- [长虹电视换桌面失败：明子206转述AI生成激活包也未能打开ADB](cases/mingzi206-changhong-tv-adb-launcher-failed-report.md) — 明子206转述一天改造长虹电视的负结果：工厂模式找不到ADB，开发者页为空，AI写安装包激活也失败，最后建议外接盒子；未取得原实验与机型，不确认厂商移除ADB。 **[其他 AI 逆向 · 分析测试]**
+- [卡兹克的四台会议室电视：二手简报称Codex经ADB清理广告并重做桌面屏保](cases/kazike-codex-four-meeting-room-tv-adb-report.md) — AI HOT简报转述数字生命卡兹克以四台会议室电视为目标，用Codex连接ADB、清理开机广告、重做简洁桌面与粒子屏保，再部署到其余三台；未取得原教程与设备验证。 **[其他 AI 逆向 · 待验证]**
+- [Brother刺绣机：汉卿转述Kath Korevec用ChatGPT制作直连程序替代订阅流程](cases/kath-korevec-brother-chatgpt-embroidery-report.md) — 汉卿回复中的12美元硬件订阅经父串识别为Kath Korevec的Brother刺绣机；Valar称她用ChatGPT写直连程序并制作AI图案布贴，未取得原作者记录、协议或代码。 **[其他 AI 逆向 · 待验证]**
+- [BEST HBN65366SS抽油烟机：Claude协作抓包纠正GATT缓存误判，接入Home Assistant](cases/godlewski-best-hbn65366ss-claude-ble-homeassistant.md) — Steve Godlewski与Claude Code复用前人BLE唤醒/配对方案，发现ESP-IDF默认只缓存40个GATT特征而设备有54个，扩至100后恢复灯光档位与延时关闭；公开配置、纠错日志及已合并上游PR，限一台设备作者实测。 **[其他 AI 逆向 · 进行中]**
+- [FNIRSI DST-210：zeromem称Claude协作的串口测试器与原厂固件并存](cases/zeromem-fnirsi-dst210-claude-rs232-tester.md) — zeromem报告RS232/TTL测试器移植到FNIRSI DST-210，启动按RUN进入，自动识别9600至115200波特率并经USB输出；明确部分代码由Claude协助，未给逆向步骤和独立测试。 **[其他 AI 逆向 · 待验证]**
+- [L3+旧矿机：StunGod称周末用GPT／Codex制作自有固件](cases/stungod-l3-plus-gpt-codex-firmware-report.md) — StunGod在Mujina讨论下报告用GPT／Codex为自己的L3+旧矿机制作固件；没有提供代码、刷写结果或算力测量，不与父串Mujina合并。 **[其他 AI 逆向 · 待验证]**
+- [DJI Mavic安防无人机：Codez提出REA／Opus与官方SDK的手机端跟踪方案](cases/codez-dji-mavic-rea-opus-security-drone-proposal.md) — Codez称用REA与Opus 5.5将Mavic改为家庭安防无人机，并列出官方SDK、手机视觉与Home Assistant流程；未给机型、源码或飞行记录，不能确认跨平台兼容或自主飞行成功。 **[REA · 待验证]**
 - [Mujina矿机固件：Aadhi确认Claude参与开发，补充Canaan调频背景](cases/aadhi-mujina-claude-mining-firmware-report.md) — Aadhi在Mujina开源矿机固件讨论中确认Claude协助开发；后续称已有简单自动调频器，并解释Canaan芯片的四PLL机制。未披露AI具体逆向步骤或性能验收。 **[其他 AI 逆向 · 待验证]**
 - [Kindle原厂固件：丁洪Liam建议用REA研究内置KOReader式PDF重排的可能性](cases/ding-liam-kindle-native-firmware-koreader-features-idea.md) — 青鸞嫌KOReader启动慢，希望原厂固件直接加入PDF重排与更多格式；丁洪Liam建议试REA。父串明确目标，区别于现有插件安装Skill，尚无固件修改。 **[REA · 待验证]**
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
@@ -289,7 +299,7 @@
 - [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
 - [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
-- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
+- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](cases/log4j-samsung-tizen-ai-privacy-investigation.md) — log4j的三星电视本地逆向仍待完整报告；10月27日作者澄清漏洞并非Codex发现，也无理由认定封禁专门针对三星调查。遥测与麦克风路由仍是作者主张，未证明持续原始音频上传。 **[未确认使用 REA · 进行中]**
 - [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
 - [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**
 - [智能灯泡变红报bug：Ashish把逆向协议接到Claude/Codex的MCP服务器](cases/ashish-smart-bulb-mcp-bug-light.md) — AshishKingdom报告逆向自有智能灯泡协议并接入MCP，Claude或Codex发现代码bug时把灯变红；AI参与控制，但未说明AI是否辅助恢复协议。 **[未确认使用 REA · 相关项目]**
@@ -523,6 +533,10 @@
 
 ### 应用与客户端
 
+- [IDA 9.5：Hex-Rays发布含MCP／Assist与调用图递归反编译的版本](cases/hexrays-ida95-official-mcp-assist-release.md) — Hex-Rays官方发布帖介绍IDA 9.5的MCP／Assist AI逆向入口、调用图递归反编译及三种新反编译器；是工具发布，不是特定样本上的AI成功率验证。 **[其他 AI 逆向 · 相关项目]**
+- [Jianying Headless：鲸鱼知识库转述逸尘逆向剪映供AI无界面剪辑](cases/gengdaj-jianying-headless-ai-editing-secondary-report.md) — 鲸鱼知识库将Jianying Headless归于逸尘（gengdaJ），称逆向剪映后让AI无需打开界面即可剪辑导出；未取得原仓库、实现或导出测试，不与余温封装及ReaCut合并。 **[未确认使用 REA · 待验证]**
+- [Hiren Sheth的REA资料站：按应用、APK与游戏整理案例及可复制提示词](cases/hiren-sheth-rea-cases-prompts-directory.md) — Hiren Sheth介绍自建REA／AI Agent案例与提示词资料站，覆盖macOS应用、APK和游戏，并邀请项目提交；仅确认作者介绍，站点入口与目录内容尚未核验。 **[REA · 相关项目]**
+- [Fieldwork：Aakash Gupta称Codex按Linear公开文档规格重建任务看板](cases/aakashgupta-fieldwork-linear-public-docs-codex.md) — Aakash Gupta以一页规格让Codex重建Linear式任务看板，报告3分28秒生成含五种状态、优先级、拖放与Cmd+K的Fieldwork；只覆盖所需局部，不是完整Linear或独立验收。 **[其他 AI 逆向 · 待验证]**
 - [NIA App：MATH FOURNITY称GLM在逆向元思维指导下完成分析](cases/math-fournity-nia-glm-analysis-claim.md) — MATH FOURNITY称GLM分析了国家网络身份认证NIA App，并归因于“壮哥”的AI逆向元思维；可读正文没有步骤、发现或验收，“拿下”不能当服务入侵证明。 **[其他 AI 逆向 · 待验证]**
 - [CAIRN的A3规避：帖子转述84个恶意样本以明文干扰LLM分析](cases/talos-cairn-a3-ai-malware-analysis-evasion-report.md) — 帖子署名Talos研究员Ryan Fetterman／CAIRN，称在84个样本中追踪AI-analysis evasion：注释要求分析器忽略文件、拒绝逆向或虚构国防合同。没有提供模型测试或成功规避率。 **[其他 AI 逆向 · 待验证]**
 - [Grok Bots行为探测：Florent Quinti设想让Agent群反推完整harness](cases/florentquinti-grok-bots-behavioral-harness-idea.md) — Florent Quinti提出让Agent群系统交互并测试Grok Bots等产品，推断提示词、工具、技能、记忆和编排；是黑箱研究idea，没有报告恢复结果。 **[其他 AI 逆向 · 待验证]**
@@ -704,7 +718,7 @@
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
 - [HyperFrames editor：从小Lin说到12期Vox模板，生成不同主题的视频](cases/hyperframes-xiaolin-video-template.md) — Miao Yang报告从小Lin说及12期Vox节目提取制作模板，生成9分34秒泰国经济及9分钟公共厕所主题视频；未验证逐帧一致性或授权。 **[其他 AI 逆向 · 待验证]**
-- [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
+- [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](cases/blackbox-opnblckbox-source-service-claim.md) — 父帖将双入口匿名逆向服务识别为Blackbox；价目与删除承诺仍为二手介绍，Larpcheck Bot质疑交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
 - [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](cases/termix-rea-escrow-analysis-service.md) — TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。 **[未确认使用 REA · 相关项目]**
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
@@ -947,6 +961,9 @@
 
 ### 算法与功能重建
 
+- [tsrs：AI辅助TypeScript编译器Rust移植的转述与公开兼容性边界](cases/tsrs-typescript7-rust-ai-port-report.md) — 候选将tsrs称为Cloudflare发布的AI生成TypeScript Rust重实现，报最高8倍与内存降70%；补查定位oxc-project/tsrs，README署名Max Schwenk并明确100%一致性仍是目标，未独立重跑性能或AI过程。 **[其他 AI 逆向 · 进行中]**
+- [chardet 7：Claude辅助重写编码检测库，兼容API与许可争议需分开看](cases/chardet7-claude-encoding-detector-rewrite-license-dispute.md) — Srimugunthan以chardet讨论AI clean-room；项目README确认Dan Blanchard用Claude重写，并称保留API。原帖写MIT，固定提交实际标0BSD；相似度、性能与法律独立性不能互相替代。 **[其他 AI 逆向 · 分析测试]**
+- [Pollock风格生成画：Valentin Chernik称AI辅助重做约600绘图实体的算法](cases/saaatchu-pollock-parametric-drawing-ai-rebuild.md) — Valentin Chernik看到算法生成的Pollock风格图后，称当天用AI做出相似方案：约600个非AI绘图实体绘制细线、丝带和飞溅；未提供代码、原参考或视觉对照验收。 **[其他 AI 逆向 · 待验证]**
 - [Motion2Code：让编程Agent把参考动效视频重建为可编辑SVG与GSAP](cases/motion2code-svg-gsap-reference-video-rebuild.md) — lovisdotio的公开Skill先抽帧、量颜色与切点，再用单一GSAP时间轴重建SVG动效并逐帧对照；项目列六个Claude Opus 5.5重建示例及比较页，未独立运行或测量相似度。 **[其他 AI 逆向 · 相关项目]**
 - [animation-reverse-engineering：Claude Code按帧拆解参考动效再实现交互](cases/scriptscrypt-animation-reference-frame-dissection-skill.md) — scriptscrypt公开Claude Code Skill，将参考视频、Dribbble动效或录屏经抽帧、时间/缓动测量转为动画代码，并对照截图；含文字扫动与延时摄影scrubber案例，未运行或确认保真度。 **[其他 AI 逆向 · 相关项目]**
 - [PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示](cases/grimmer-rea-qlib-pltr-dip-rule-report.md) — Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。 **[REA · 待验证]**

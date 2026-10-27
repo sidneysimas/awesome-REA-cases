@@ -2,6 +2,16 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [UniXNU的Sony BRAVIA平板移植：白先生转述AI无人值守编写大部分UEFI适配](../cases/neuronxwhite-unixnu-sony-bravia-uefi-ai-port-report.md) — 白先生介绍UniXNU在非苹果ARM64设备引导苹果系统，并称Sony BRAVIA平板移植的大部分UEFI适配由AI无人值守编写；未取得原作者、具体机型或AI工作记录，不把其他设备GPU进展归功这项AI移植。 **[其他 AI 逆向 · 进行中]**
+- [RazeDen的旅宿检查方案：Claude Code网络盘点，REA按需检查入住App](../cases/razeden-claude-rea-airbnb-readonly-audit-proposal.md) — RazeDen以房间19个联网设备为背景，提出Claude Code辅助网络与蓝牙检查、MVT手机检查、REA分析入住App权限与追踪器的七步只读方案；完整case file未发布，不确认发现隐藏摄像头。 **[REA · 待验证]**
+- [Kinov Hacks的键盘固件：数天以DeepSeek／opencode重写，难点再交Codex或Claude](../cases/kinovhacks-deepseek-opencode-keyboard-firmware.md) — Kinov Hacks称数天内以DeepSeek／opencode重写键盘固件，难点再用Codex或Claude；较早回复称DeepSeek将一个固件bug误怪硬件，最终Codex找到问题。未给型号、补丁或设备验收。 **[其他 AI 逆向 · 待验证]**
+- [长虹电视换桌面失败：明子206转述AI生成激活包也未能打开ADB](../cases/mingzi206-changhong-tv-adb-launcher-failed-report.md) — 明子206转述一天改造长虹电视的负结果：工厂模式找不到ADB，开发者页为空，AI写安装包激活也失败，最后建议外接盒子；未取得原实验与机型，不确认厂商移除ADB。 **[其他 AI 逆向 · 分析测试]**
+- [卡兹克的四台会议室电视：二手简报称Codex经ADB清理广告并重做桌面屏保](../cases/kazike-codex-four-meeting-room-tv-adb-report.md) — AI HOT简报转述数字生命卡兹克以四台会议室电视为目标，用Codex连接ADB、清理开机广告、重做简洁桌面与粒子屏保，再部署到其余三台；未取得原教程与设备验证。 **[其他 AI 逆向 · 待验证]**
+- [Brother刺绣机：汉卿转述Kath Korevec用ChatGPT制作直连程序替代订阅流程](../cases/kath-korevec-brother-chatgpt-embroidery-report.md) — 汉卿回复中的12美元硬件订阅经父串识别为Kath Korevec的Brother刺绣机；Valar称她用ChatGPT写直连程序并制作AI图案布贴，未取得原作者记录、协议或代码。 **[其他 AI 逆向 · 待验证]**
+- [BEST HBN65366SS抽油烟机：Claude协作抓包纠正GATT缓存误判，接入Home Assistant](../cases/godlewski-best-hbn65366ss-claude-ble-homeassistant.md) — Steve Godlewski与Claude Code复用前人BLE唤醒/配对方案，发现ESP-IDF默认只缓存40个GATT特征而设备有54个，扩至100后恢复灯光档位与延时关闭；公开配置、纠错日志及已合并上游PR，限一台设备作者实测。 **[其他 AI 逆向 · 进行中]**
+- [FNIRSI DST-210：zeromem称Claude协作的串口测试器与原厂固件并存](../cases/zeromem-fnirsi-dst210-claude-rs232-tester.md) — zeromem报告RS232/TTL测试器移植到FNIRSI DST-210，启动按RUN进入，自动识别9600至115200波特率并经USB输出；明确部分代码由Claude协助，未给逆向步骤和独立测试。 **[其他 AI 逆向 · 待验证]**
+- [L3+旧矿机：StunGod称周末用GPT／Codex制作自有固件](../cases/stungod-l3-plus-gpt-codex-firmware-report.md) — StunGod在Mujina讨论下报告用GPT／Codex为自己的L3+旧矿机制作固件；没有提供代码、刷写结果或算力测量，不与父串Mujina合并。 **[其他 AI 逆向 · 待验证]**
+- [DJI Mavic安防无人机：Codez提出REA／Opus与官方SDK的手机端跟踪方案](../cases/codez-dji-mavic-rea-opus-security-drone-proposal.md) — Codez称用REA与Opus 5.5将Mavic改为家庭安防无人机，并列出官方SDK、手机视觉与Home Assistant流程；未给机型、源码或飞行记录，不能确认跨平台兼容或自主飞行成功。 **[REA · 待验证]**
 - [Mujina矿机固件：Aadhi确认Claude参与开发，补充Canaan调频背景](../cases/aadhi-mujina-claude-mining-firmware-report.md) — Aadhi在Mujina开源矿机固件讨论中确认Claude协助开发；后续称已有简单自动调频器，并解释Canaan芯片的四PLL机制。未披露AI具体逆向步骤或性能验收。 **[其他 AI 逆向 · 待验证]**
 - [Kindle原厂固件：丁洪Liam建议用REA研究内置KOReader式PDF重排的可能性](../cases/ding-liam-kindle-native-firmware-koreader-features-idea.md) — 青鸞嫌KOReader启动慢，希望原厂固件直接加入PDF重排与更多格式；丁洪Liam建议试REA。父串明确目标，区别于现有插件安装Skill，尚无固件修改。 **[REA · 待验证]**
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](../cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
@@ -46,7 +56,7 @@
 - [蒸汽桑拿接Home Assistant：Steve报告AI辅助研究915MHz LoRa遥控附件](../cases/stevegodlewski-steam-sauna-ai-home-assistant.md) — Steve Godlewski报告逆向自己的蒸汽桑拿并接入Home Assistant；原串明确使用蒸汽发生器的915MHz LoRa遥控附件，而非Modbus或云API。 **[其他 AI 逆向 · 待验证]**
 - [楼梯下的石头扫地机：Claude辅助研究遥控指令，让机器人自己钻出窄口](../cases/roborock-claude-narrow-exit-staircase-report.md) — Xiao Tan转述一晚Claude Code辅助脱困项目：人观察碰撞，AI写代码读日志；定位漂移使固定路线失败，改成倒退和左右试探，报告10次出入回充均成功。 **[其他 AI 逆向 · 待验证]**
 - [M-VAVE Cube Baby AC：Walbert用Claude与REA重建Linux踏板编辑器](../cases/mvave-cube-baby-ac-claude-rea-linux-editor.md) — Walbert Freitas不满吉他踏板编辑器仅支持Windows，报告让Claude用REA逆向后制作Linux原生应用；未取得源码或设备端读写验证。 **[REA · 待验证]**
-- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](../cases/log4j-samsung-tizen-ai-privacy-investigation.md) — Kxians转述log4j的三星电视调查；补查作者原帖确认本地逆向与Agent分析、狗叫/婴儿事件计数及麦克风路由主张，但完整报告未发布，不等同持续录音上传或三星企业账号被封。 **[未确认使用 REA · 进行中]**
+- [log4j的2025三星电视调查：AI辅助本地逆向、遥测线索与尚未公开的完整报告](../cases/log4j-samsung-tizen-ai-privacy-investigation.md) — log4j的三星电视本地逆向仍待完整报告；10月27日作者澄清漏洞并非Codex发现，也无理由认定封禁专门针对三星调查。遥测与麦克风路由仍是作者主张，未证明持续原始音频上传。 **[未确认使用 REA · 进行中]**
 - [旧Kindle仪表盘：furkan称Claude辅助越狱，Raspberry服务器供数且保留阅读](../cases/furkan-kindle-claude-raspberry-dashboard.md) — furkan报告Claude帮助旧Kindle越狱并制作仪表盘，服务运行在家中常开Raspberry上，可回默认阅读模式；服务器安全检查仍未完成。 **[其他 AI 逆向 · 待验证]**
 - [Nokia DCT3：bitplane报告AI辅助逆向旧手机，制作MAME驱动](../cases/bitplane-ai-nokia-dct3-mame.md) — bitplane报告AI辅助Nokia DCT3/MAME项目仍需数月；公开文档以3210为参考机，区分交互桌面、原生DSP与HLE边界，不承诺全系列兼容。 **[其他 AI 逆向 · 进行中]**
 - [智能灯泡变红报bug：Ashish把逆向协议接到Claude/Codex的MCP服务器](../cases/ashish-smart-bulb-mcp-bug-light.md) — AshishKingdom报告逆向自有智能灯泡协议并接入MCP，Claude或Codex发现代码bug时把灯变红；AI参与控制，但未说明AI是否辅助恢复协议。 **[未确认使用 REA · 相关项目]**

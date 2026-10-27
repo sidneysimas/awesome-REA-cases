@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 995 cases & projects
+# 1012 cases & projects
 
-**Latest case update:** October 27, 2026, 08:04 · **Last maintained:** October 27, 2026, 08:04 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 27, 2026, 13:26 · **Last maintained:** October 27, 2026, 13:26 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Ace Combat 04: from PS2 functions to native C++](cases/en/projectstonehenge-ace-combat04-ai-native-port.md)** · `2026-10-25` — ProjectStonehenge documents **Anthropic-assisted research and code**, using Ghidra/MCP and PCSX2 references. Configurable rendering up to a **360 FPS cap**, not a measured frame rate; game logic stays at 59.94 Hz. Windows, one disc revision, beta save interchange; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[BreezySRPG95: play old tactical RPGs with a modern client](cases/en/quof-breezysrpg95-claude-interpreter.md)** · `2026-10-25` — Quof reports **Claude-assisted disassembly of the original runtime**, adding keyboard controls, fast-forward and enemy ranges. Public project; early beta tried by only a few people, with save-compatibility limits. Not run here. `In progress`
-10. **[KakaSoft: inspect what “Highest” protection actually does](cases/en/kakasoft-usb-copy-protection-ai-review.md)** · `2026-10-23` (Beijing time) — Xusheng Li reports AI tracing **a hidden test file, a modified hash and client-side key derivation**, then recovering his own file without its user password. Version 5.6.0.299; a researcher test, **not a break of Blowfish** or an independent reproduction here. `Analysis test`
+10. **[BEST hood: restore the controls the cache hid](cases/en/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27` (Beijing time) — Steve Godlewski and Claude Code trace Bluetooth traffic to correct a **40-entry cache hiding part of 54 characteristics**, bringing four fan speeds and four light levels to Home Assistant. Public logs preserve the mistaken diagnosis; an upstream fix is merged. Builds on prior work, **one HBN65366SS tested by the author**, not independently run here. `In progress`
 
 ## Classic cases
 
@@ -49,9 +49,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 | Category | Entries |
 | :--- | ---: |
 | [Games & preservation](categories/en/games.md) | **216** |
-| [Hardware & interoperability](categories/en/hardware.md) | **275** |
-| [Applications & clients](categories/en/apps.md) | **421** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **83** |
+| [Hardware & interoperability](categories/en/hardware.md) | **285** |
+| [Applications & clients](categories/en/apps.md) | **425** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **86** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

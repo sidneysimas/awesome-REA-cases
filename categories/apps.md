@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [IDA 9.5：Hex-Rays发布含MCP／Assist与调用图递归反编译的版本](../cases/hexrays-ida95-official-mcp-assist-release.md) — Hex-Rays官方发布帖介绍IDA 9.5的MCP／Assist AI逆向入口、调用图递归反编译及三种新反编译器；是工具发布，不是特定样本上的AI成功率验证。 **[其他 AI 逆向 · 相关项目]**
+- [Jianying Headless：鲸鱼知识库转述逸尘逆向剪映供AI无界面剪辑](../cases/gengdaj-jianying-headless-ai-editing-secondary-report.md) — 鲸鱼知识库将Jianying Headless归于逸尘（gengdaJ），称逆向剪映后让AI无需打开界面即可剪辑导出；未取得原仓库、实现或导出测试，不与余温封装及ReaCut合并。 **[未确认使用 REA · 待验证]**
+- [Hiren Sheth的REA资料站：按应用、APK与游戏整理案例及可复制提示词](../cases/hiren-sheth-rea-cases-prompts-directory.md) — Hiren Sheth介绍自建REA／AI Agent案例与提示词资料站，覆盖macOS应用、APK和游戏，并邀请项目提交；仅确认作者介绍，站点入口与目录内容尚未核验。 **[REA · 相关项目]**
+- [Fieldwork：Aakash Gupta称Codex按Linear公开文档规格重建任务看板](../cases/aakashgupta-fieldwork-linear-public-docs-codex.md) — Aakash Gupta以一页规格让Codex重建Linear式任务看板，报告3分28秒生成含五种状态、优先级、拖放与Cmd+K的Fieldwork；只覆盖所需局部，不是完整Linear或独立验收。 **[其他 AI 逆向 · 待验证]**
 - [NIA App：MATH FOURNITY称GLM在逆向元思维指导下完成分析](../cases/math-fournity-nia-glm-analysis-claim.md) — MATH FOURNITY称GLM分析了国家网络身份认证NIA App，并归因于“壮哥”的AI逆向元思维；可读正文没有步骤、发现或验收，“拿下”不能当服务入侵证明。 **[其他 AI 逆向 · 待验证]**
 - [CAIRN的A3规避：帖子转述84个恶意样本以明文干扰LLM分析](../cases/talos-cairn-a3-ai-malware-analysis-evasion-report.md) — 帖子署名Talos研究员Ryan Fetterman／CAIRN，称在84个样本中追踪AI-analysis evasion：注释要求分析器忽略文件、拒绝逆向或虚构国防合同。没有提供模型测试或成功规避率。 **[其他 AI 逆向 · 待验证]**
 - [Grok Bots行为探测：Florent Quinti设想让Agent群反推完整harness](../cases/florentquinti-grok-bots-behavioral-harness-idea.md) — Florent Quinti提出让Agent群系统交互并测试Grok Bots等产品，推断提示词、工具、技能、记忆和编排；是黑箱研究idea，没有报告恢复结果。 **[其他 AI 逆向 · 待验证]**
@@ -183,7 +187,7 @@
 - [UFOX：把本地 APK 反编译与脚本分析接给 AI Agent 的 MCP 项目](../cases/ufox-mcp-apk-analysis.md) — orvian介绍UFOX的本地APK分析与MCP，另称AI能组合ELF、Capstone及Unicorn编写JavaScript分析脚本；未实测。 **[其他 AI 逆向 · 相关项目]**
 - [Instagram 448：Claude／REA 从 APK 字符串调查 Reels 排名线索](../cases/instagram-448-ranking-rea-strings.md) — err_cod报告从22个代码文件提取78.7万行文本并搜索排名名称；作者自己强调名称不证明信号权重，非恢复完整推荐算法。 **[REA · 分析测试]**
 - [HyperFrames editor：从小Lin说到12期Vox模板，生成不同主题的视频](../cases/hyperframes-xiaolin-video-template.md) — Miao Yang报告从小Lin说及12期Vox节目提取制作模板，生成9分34秒泰国经济及9分钟公共厕所主题视频；未验证逐帧一致性或授权。 **[其他 AI 逆向 · 待验证]**
-- [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](../cases/blackbox-opnblckbox-source-service-claim.md) — 补读父帖确认Blackbox宣传付费软件／二进制到源码；Larpcheck Bot称未见交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
+- [Blackbox／opnblckbox：Agent 群交付可运行重建源码的服务宣称与质疑](../cases/blackbox-opnblckbox-source-service-claim.md) — 父帖将双入口匿名逆向服务识别为Blackbox；价目与删除承诺仍为二手介绍，Larpcheck Bot质疑交付，双方均未提供可核任务记录。 **[未确认使用 REA · 待验证]**
 - [逆向合成器的界面：用 AI 一次生成 raylib / raygui GUI 的自述](../cases/synthesizer-ai-raylib-raygui-interface.md) — povverpoint称为自己逆向的合成器用AI制作GUI；AI在界面实现中的角色明确，不能推断其完成合成算法逆向。 **[其他 AI 逆向 · 待验证]**
 - [TermiX REA：带证据哈希与 BNB 托管结算的合约／二进制分析服务宣传](../cases/termix-rea-escrow-analysis-service.md) — TermiX宣传带证据的按单分析服务；liaoblove520新增PancakeSwap Router 24个函数与字节码哈希核对自述，但缺地址和完整报告供复算。 **[未确认使用 REA · 相关项目]**
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](../cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**

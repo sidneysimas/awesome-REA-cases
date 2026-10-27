@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [tsrs：AI辅助TypeScript编译器Rust移植的转述与公开兼容性边界](../cases/tsrs-typescript7-rust-ai-port-report.md) — 候选将tsrs称为Cloudflare发布的AI生成TypeScript Rust重实现，报最高8倍与内存降70%；补查定位oxc-project/tsrs，README署名Max Schwenk并明确100%一致性仍是目标，未独立重跑性能或AI过程。 **[其他 AI 逆向 · 进行中]**
+- [chardet 7：Claude辅助重写编码检测库，兼容API与许可争议需分开看](../cases/chardet7-claude-encoding-detector-rewrite-license-dispute.md) — Srimugunthan以chardet讨论AI clean-room；项目README确认Dan Blanchard用Claude重写，并称保留API。原帖写MIT，固定提交实际标0BSD；相似度、性能与法律独立性不能互相替代。 **[其他 AI 逆向 · 分析测试]**
+- [Pollock风格生成画：Valentin Chernik称AI辅助重做约600绘图实体的算法](../cases/saaatchu-pollock-parametric-drawing-ai-rebuild.md) — Valentin Chernik看到算法生成的Pollock风格图后，称当天用AI做出相似方案：约600个非AI绘图实体绘制细线、丝带和飞溅；未提供代码、原参考或视觉对照验收。 **[其他 AI 逆向 · 待验证]**
 - [Motion2Code：让编程Agent把参考动效视频重建为可编辑SVG与GSAP](../cases/motion2code-svg-gsap-reference-video-rebuild.md) — lovisdotio的公开Skill先抽帧、量颜色与切点，再用单一GSAP时间轴重建SVG动效并逐帧对照；项目列六个Claude Opus 5.5重建示例及比较页，未独立运行或测量相似度。 **[其他 AI 逆向 · 相关项目]**
 - [animation-reverse-engineering：Claude Code按帧拆解参考动效再实现交互](../cases/scriptscrypt-animation-reference-frame-dissection-skill.md) — scriptscrypt公开Claude Code Skill，将参考视频、Dribbble动效或录屏经抽帧、时间/缓动测量转为动画代码，并对照截图；含文字扫动与延时摄影scrubber案例，未运行或确认保真度。 **[其他 AI 逆向 · 相关项目]**
 - [PLTR下跌报警规则：Grimmer转述REA提取公式、qlib回测的演示](../cases/grimmer-rea-qlib-pltr-dip-rule-report.md) — Grimmer介绍Claude Code中REA提取下跌报警规则并用qlib做PLTR五年日线回测；19秒、58行、9测试、+535%及费用数字只是演示转述，不是收益验证。 **[REA · 待验证]**
