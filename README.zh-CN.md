@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 1032 个案例与项目
+# 1041 个案例与项目
 
-**最近案例更新：**2026 年 10 月 27 日 13:52 · **最近维护：**2026 年 10 月 27 日 13:52 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 27 日 16:20 · **最近维护：**2026 年 10 月 27 日 16:20 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -32,7 +32,7 @@
 6. **[QuixiDesk：保留桌面工作区，自选模型](cases/quixiai-quixidesk-rea-claude-desktop-recreation.md)** · `2026-10-27` — Eric Hartford报告**用REA研究并重建Claude Desktop**，接入本地与云模型。Rust工作空间及同日较晚的文档公开；限macOS14以上，**功能等价与工具权限未经独立测试**。不是复制Claude模型权重。`进行中`
 7. **[Ace Combat 04：PS2 函数到原生 C++](cases/projectstonehenge-ace-combat04-ai-native-port.md)** · `2026-10-25` — ProjectStonehenge 文档明确 **Anthropic 辅助研究与编码**，使用 Ghidra/MCP 和 PCSX2 参考。最高 **360FPS 是可选渲染上限**，不是实测帧率；游戏逻辑仍为59.94Hz。限 Windows 与一版光盘，存档互通仍是beta；本合集未运行。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
-9. **[BreezySRPG95：用现代客户端玩旧战棋游戏](cases/quof-breezysrpg95-claude-interpreter.md)** · `2026-10-25` — Quof报告**以Claude反汇编原运行器**，加入键盘操作、加速和敌方行动范围。项目公开，仍是仅数人试用的早期beta，存档互通有限制；本合集未运行。`进行中`
+9. **[GoonFi V2：把闭源Solana程序变成可审计Rust](cases/osec-ai-rust-hash-recompilation-report.md)** · `2026-10-15` — OtterSec公开**Opus／Astra辅助重建与归档对照脚本**，报告**610万美元风险**而非损失。目标是旧部署，项目称10月6日已修复；整程序一致与资金风险均未由本合集独立复现。`研究报告`
 10. **[BEST抽油烟机：找回被缓存藏住的控制项](cases/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27`（北京时间） — Steve Godlewski与Claude Code抓蓝牙流量，纠正**40项缓存漏掉54个特征中部分控制项**的误判，将四档风速与四档灯光接入Home Assistant。公开日志保留失败诊断，上游修正已合并；复用前人工作，**仅一台HBN65366SS作者实测**，本合集未运行。`进行中`
 
 ## 经典案例
@@ -48,9 +48,9 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **218** |
-| [硬件与设备互通](categories/hardware.md) | **293** |
-| [应用与客户端](categories/apps.md) | **433** |
+| [游戏与游戏保存](categories/games.md) | **221** |
+| [硬件与设备互通](categories/hardware.md) | **295** |
+| [应用与客户端](categories/apps.md) | **437** |
 | [算法与功能重建](categories/algorithms.md) | **88** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)

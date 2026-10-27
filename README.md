@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1032 cases & projects
+# 1041 cases & projects
 
-**Latest case update:** October 27, 2026, 13:52 · **Last maintained:** October 27, 2026, 13:52 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 27, 2026, 16:20 · **Last maintained:** October 27, 2026, 16:20 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -32,7 +32,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 6. **[QuixiDesk: choose the model, keep a desktop workspace](cases/en/quixiai-quixidesk-rea-claude-desktop-recreation.md)** · `2026-10-27` — Eric Hartford reports **REA-based reconstruction of Claude Desktop** for local and cloud models. A public Rust workspace and later same-day documentation are available; macOS 14+, **feature parity and tool permissions not independently tested**. Not Claude's model weights. `In progress`
 7. **[Ace Combat 04: from PS2 functions to native C++](cases/en/projectstonehenge-ace-combat04-ai-native-port.md)** · `2026-10-25` — ProjectStonehenge documents **Anthropic-assisted research and code**, using Ghidra/MCP and PCSX2 references. Configurable rendering up to a **360 FPS cap**, not a measured frame rate; game logic stays at 59.94 Hz. Windows, one disc revision, beta save interchange; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
-9. **[BreezySRPG95: play old tactical RPGs with a modern client](cases/en/quof-breezysrpg95-claude-interpreter.md)** · `2026-10-25` — Quof reports **Claude-assisted disassembly of the original runtime**, adding keyboard controls, fast-forward and enemy ranges. Public project; early beta tried by only a few people, with save-compatibility limits. Not run here. `In progress`
+9. **[GoonFi V2: turn a closed Solana program into auditable Rust](cases/en/osec-ai-rust-hash-recompilation-report.md)** · `2026-10-15` — OtterSec publishes an **Opus/Astra-assisted reconstruction and archival comparison script**, reporting **$6.1M at risk**, not lost. The target is an old deployment, reportedly fixed October 6; whole-binary identity and the financial finding were not independently reproduced here. `Research report`
 10. **[BEST hood: restore the controls the cache hid](cases/en/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27` (Beijing time) — Steve Godlewski and Claude Code trace Bluetooth traffic to correct a **40-entry cache hiding part of 54 characteristics**, bringing four fan speeds and four light levels to Home Assistant. Public logs preserve the mistaken diagnosis; an upstream fix is merged. Builds on prior work, **one HBN65366SS tested by the author**, not independently run here. `In progress`
 
 ## Classic cases
@@ -48,9 +48,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **218** |
-| [Hardware & interoperability](categories/en/hardware.md) | **293** |
-| [Applications & clients](categories/en/apps.md) | **433** |
+| [Games & preservation](categories/en/games.md) | **221** |
+| [Hardware & interoperability](categories/en/hardware.md) | **295** |
+| [Applications & clients](categories/en/apps.md) | **437** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **88** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

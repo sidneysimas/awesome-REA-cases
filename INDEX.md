@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1032 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1041 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（218）
-- [硬件与设备互通](categories/hardware.md)（293）
-- [应用与客户端](categories/apps.md)（433）
+- [游戏与游戏保存](categories/games.md)（221）
+- [硬件与设备互通](categories/hardware.md)（295）
+- [应用与客户端](categories/apps.md)（437）
 - [算法与功能重建](categories/algorithms.md)（88）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [G-Diffuser：F-Zero X既有反编译移植3DS，转述Claude协调代理与60帧成果](cases/g-diffuser-fzero-x-3ds-claude-port-report.md) — 读者追问AI分工，补查上游称G-Diffuser将F-Zero X移植新旧3DS，Claude协调147个subagent；帧率、工时、token和成本均为二手报告，未取得项目验证记录。 **[其他 AI 逆向 · 待验证]**
+- [Game Decompilation Skill for Claude：把游戏字节匹配、失败诊断与合并编成技能](cases/lemiur-game-decompilation-claude-skills.md) — yibie推荐lemiur的Claude Code技能集；固定README说明函数匹配、helper恢复、排列搜索与审核合并，但要求用户已有原编译器、目标二进制及对照工具链，不是自动破解任意游戏。 **[其他 AI 逆向 · 相关项目]**
+- [IGI-RE：AI辅助重写Project I.G.I.，以Unicorn核对行为而非要求字节相同](cases/slickdaddyy-igi-re-ai-functional-decompilation.md) — IGI-RE作者明确AI参与开发、调试和测试，报告5376函数重写、90078项差分测试及14任务对照；固定README可读，但未独立运行，功能重写不要求二进制逐字节相同。 **[其他 AI 逆向 · 进行中]**
 - [Wind Waker失败实验：Nix称Grok／Claude／Codex未做出可靠跳过demo补丁](cases/nixpupcake-wind-waker-ai-decompilation-patch-failure.md) — Nix报告向Grok、Claude、Codex提供Wind Waker仓库及镜像，尝试续做反编译与修改事件；称跳过过场后游戏仍坏、Opus整场只给建议无可用补丁。没有提交、日志或基准，80%不能当AI新增匹配率。 **[其他 AI 逆向 · 分析测试]**
 - [Days PC移植：Violin称AI主要协助反编译，资产仍有人制作](cases/violin-days-pc-port-ai-decompilation-report.md) — ViolinSpeedruns在游戏AI争论中称Days PC移植主要用AI辅助反编译，游戏资产等仍由人制作；未给完整游戏名、开发者、仓库或匹配率，不当成全AI生成或已发布成品。 **[其他 AI 逆向 · 进行中]**
 - [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**
@@ -247,6 +250,8 @@
 
 ### 硬件与设备互通
 
+- [Garzilla的Mac mini逆向工作台idea：实体零件转CAD，表征回收电机与电子器件](cases/garzilla-mac-mini-ai-parts-cad-bench-idea.md) — Garzilla提出相机、深度传感器与本地AI组成Mac mini工作台，将实体零件变成可编辑CAD，并研究回收电机及电子器件；没有建成或测量报告。 **[其他 AI 逆向 · 待验证]**
+- [KD Box Pro固件排查提案：Dan Bulmer想研究Claude生成版本为何连接后不算hash](cases/danbulmer-kd-box-pro-claude-firmware-investigation.md) — Dan Bulmer转述KD Box Pro自定义固件连上DATUM却未算hash，拟检查Claude Code生成代码与ASIC通信；坦承未能观看直播，尚在索取源码链接。 **[其他 AI 逆向 · 待验证]**
 - [ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证](cases/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。 **[其他 AI 逆向 · 进行中]**
 - [Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测](cases/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。 **[REA · 进行中]**
 - [2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动](cases/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。 **[其他 AI 逆向 · 进行中]**
@@ -543,6 +548,10 @@
 
 ### 应用与客户端
 
+- [停运旧App：leftmeonbread称Opus拆开已购APK并使用Ghidra](cases/leftmeonbread-opus-defunct-apk-ghidra.md) — leftmeonbread称让Opus分析早年购买、现已停运App的APK，模型开始使用Ghidra；没有公开App身份、分析输出或功能恢复结果。 **[其他 AI 逆向 · 进行中]**
+- [Nicholas Michael Kloster的逆向工具：以Sonnet 4.6开发，称Kimi更适合后续需求](cases/showxlate-claude-sonnet-reversing-tool.md) — @showxlate称用Claude Code Sonnet4.6构建自己的逆向工具，因此保留其贡献者署名；当前偏好Kimi，但未给工具名、代码或对照测试。 **[其他 AI 逆向 · 相关项目]**
+- [RoxSkin开发前的参考站研究：Tim Grassin让Claude Code分析HYROX赞助网站](cases/timgrassin-roxskin-hyrox-site-claude-study.md) — Tim Grassin称在开发RoxSkin前，调用逆向skill让Claude Code研究Marc Lou的HYROX赞助网站；没有公开分析报告或功能等价验证。 **[其他 AI 逆向 · 待验证]**
+- [Hugo的uu分析：逆向任务中观察Claude型号与风控提示的差异](cases/hugo-uu-claude-reversing-model-routing-report.md) — Hugo称Claude逆向其称为uu的目标时保持Opus5.5，而此前UI小工具分析遇到型号变化和提示；未说明uu的完整产品身份或分析结果。 **[其他 AI 逆向 · 进行中]**
 - [QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端](cases/quixiai-quixidesk-rea-claude-desktop-recreation.md) — Eric Hartford称用REA逆向Claude Desktop，公开QuixiDesk原生Rust替代客户端，支持本地与云模型；固定README及Cargo清单可读，但完整功能等价和安全边界未经独立测试。 **[REA · 进行中]**
 - [Malvex：用REA／MCP组织恶意软件分析，要求模型猜测回到静态或运行证据](cases/malvex-ai-malware-analysis-evidence-workflow.md) — 日文介绍Malvex六阶段Agent分析框架；公开README描述REA及其他MCP后端、证据门和异构系统动态分析限制。文档功能及数量口径不一，未运行样本，不能将框架规则视为可靠性证明。 **[REA · 相关项目]**
 - [米修斯的微信本地数据库：称Grokbot解密后每日整理工作待办与花销](cases/grokbot-wechat-local-database-tasks-spending-report.md) — 米修斯称让Grokbot解密自己电脑的微信数据库，并每日汇总工作聊天待办和支出；无版本、工具、代码或准确率，保留为作者自述，不等于破解微信全部协议。 **[其他 AI 逆向 · 待验证]**
@@ -927,7 +936,7 @@
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
 - [crashlens：把 REA 接入崩溃分诊与编程 Agent](cases/crashlens-rea-crash-triage-idea.md) — Minglei报告REA/Ghidra反编译崩溃函数及调用者后，Claude Code定位原生崩溃由4轮变1轮；公开原型与小基准仍非独立复现，Hermes集成未确认落地。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
-- [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
+- [OtterSec的GoonFi V2研究：AI恢复Rust，整程序重编译约束与已披露的记账漏洞](cases/osec-ai-rust-hash-recompilation-report.md) — OtterSec公开GoonFi V2的Rust恢复与验证脚本，称Opus5.5协调Astra、达成原部署二进制一致并发现610万美元风险；程序已于10月6日升级，未独立重跑归档链上对照。 **[其他 AI 逆向 · 待验证]**
 - [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**
 - [Black Bot / Blacksidian：REA 重建应用并选择 AI provider 的自述](cases/black-bot-blacksidian-rea-report.md) — 作者称用 REA 把 Grok Bot、Obsidian 做成自己的版本，并加入模型供应商选择。 **[REA · 待验证]**
 - [VMP 加壳样本：DeepSeek 挑战失败的自述](cases/deepseek-vmp-protected-sample-failure.md) — 发帖者称自己的 REA 讨论视频包含 DeepSeek 处理 VMP 虚拟机保护失败的实验。 **[其他 AI 逆向 · 分析测试]**

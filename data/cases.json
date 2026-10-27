@@ -1,5 +1,158 @@
 [
   {
+    "id": "leftmeonbread-opus-defunct-apk-ghidra",
+    "title": "停运旧App：leftmeonbread称Opus拆开已购APK并使用Ghidra",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "leftmeonbread称让Opus分析早年购买、现已停运App的APK，模型开始使用Ghidra；没有公开App身份、分析输出或功能恢复结果。",
+    "description": "2026年10月27日12:15（北京时间），@leftmeonbread回复log4j的模型限制讨论，称自己让Opus拆开一个很久以前买过、如今已停运的Android应用APK，稍作铺垫后模型开始使用Ghidra等工具。他明确说没有做特别深入的研究。补查原帖确认署名及全文。\n\n这是对自有旧应用的实际分析尝试，而不是已经恢复服务或完成离线替代。帖子没有应用名、版本、APK哈希、Ghidra工程、日志、模型输出或可运行成果；不推断其研究了哪个功能，也不把模型没有拒绝等同于逆向正确。按in-progress收录作者自述，未独立分析APK，未确认REA参与。与另一位读者的停运APK离线功能请求没有同目标证据，不合并作者或项目。",
+    "sources": [{"label": "leftmeonbread自述Opus分析停运应用APK，2026-10-27", "url": "https://x.com/i/status/2114933972421751163"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、61浏览、0转发；没有公开分析工件或恢复验证。"],
+    "en": {
+      "title": "A defunct purchased app: leftmeonbread says Opus unpacked its APK and used Ghidra",
+      "summary": "leftmeonbread reports asking Opus to analyze an APK of an app bought years ago and now defunct. The model reportedly used Ghidra; app identity, analysis output and restored functionality are not public.",
+      "description": "At 12:15 Beijing time on October 27, 2026, @leftmeonbread replies to log4j's discussion of model restrictions, saying they asked Opus to unpack the APK of an Android app purchased long ago but now defunct. After some initial framing, the model reportedly used Ghidra and other tools. The author explicitly says this was not a particularly deep investigation. An original-post lookup confirms attribution and the full text.\n\nThis is an actual attempt to analyze an owned old app, not a restored service or working offline replacement. No app name, version, APK hash, Ghidra project, logs, model output or runnable result is supplied. The feature being investigated is not inferred, and a model not refusing does not establish correct reversing. Included as an in-progress author report, without independent APK analysis or confirmed REA use. There is no evidence tying it to another reader's request for offline use of a defunct APK, so authors and projects are not merged.",
+      "metadata": ["Candidate snapshot: 1 like, 61 views, 0 reposts; no public analysis artifacts or restoration validation."],
+      "source_labels": ["leftmeonbread on Opus analysis of a defunct app's APK, October 27, 2026"]
+    }
+  },
+  {
+    "id": "showxlate-claude-sonnet-reversing-tool",
+    "title": "Nicholas Michael Kloster的逆向工具：以Sonnet 4.6开发，称Kimi更适合后续需求",
+    "category": "apps", "rea": "other-ai", "status": "related-project",
+    "summary": "@showxlate称用Claude Code Sonnet4.6构建自己的逆向工具，因此保留其贡献者署名；当前偏好Kimi，但未给工具名、代码或对照测试。",
+    "description": "2026年10月27日12:24（北京时间），Nicholas Michael Kloster（@showxlate）称自己的逆向工程工具由Claude Code Sonnet4.6协助构建，所以仍把它列为贡献者。他说随着需求变化，Sonnet已跟不上，认为Kimi明显更好。原帖补查确认作者及附带视频的存在，但本合集没有读取视频内容。\n\n具体项目是作者自有的逆向工具，AI角色为开发协助，而非已经验证模型能分析任意程序。帖子没有工具名、仓库、支持格式、具体二进制目标、测试集、功能差异或计时；不能把其Kimi偏好升级为能力benchmark，也不能将该工具认作REA或其分支。以related-project保留开发自述，未安装、运行或独立核验。",
+    "sources": [{"label": "Nicholas Michael Kloster自述工具开发与模型偏好，2026-10-27", "url": "https://x.com/i/status/2114936176721223980"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照2赞、451浏览、0转发；模型优劣仅是作者评价。"],
+    "en": {
+      "title": "Nicholas Michael Kloster's reversing tool: built with Sonnet 4.6, with Kimi preferred for later needs",
+      "summary": "@showxlate says Claude Code Sonnet 4.6 helped build his reverse-engineering tool and remains credited as a contributor. He now prefers Kimi, without naming the tool or publishing code or comparative tests in the post.",
+      "description": "At 12:24 Beijing time on October 27, 2026, Nicholas Michael Kloster (@showxlate) says he built his reverse-engineering tool with Claude Code Sonnet 4.6, which is why he keeps it credited as a contributor. He says Sonnet can no longer keep up with his changing requirements and considers Kimi substantially better. Original-post lookup confirms the author and the presence of an attached video; this collection did not inspect its contents.\n\nThe concrete project is the author's own reversing tool, with AI assisting development, not a validated claim that a model can analyze arbitrary programs. No tool name, repository, supported formats, target binary, test set, feature comparison or timing is supplied. His Kimi preference is not a capability benchmark, and the tool is not identified as REA or a fork. Retained as a related-project development report, without installation, execution or independent validation.",
+      "metadata": ["Candidate snapshot: 2 likes, 451 views, 0 reposts; model superiority is the author's opinion only."],
+      "source_labels": ["Nicholas Michael Kloster on tool development and model preference, October 27, 2026"]
+    }
+  },
+  {
+    "id": "timgrassin-roxskin-hyrox-site-claude-study",
+    "title": "RoxSkin开发前的参考站研究：Tim Grassin让Claude Code分析HYROX赞助网站",
+    "category": "apps", "rea": "other-ai", "status": "unverified",
+    "summary": "Tim Grassin称在开发RoxSkin前，调用逆向skill让Claude Code研究Marc Lou的HYROX赞助网站；没有公开分析报告或功能等价验证。",
+    "description": "2026年10月27日13:00（北京时间），Tim Grassin（@timgrassin）举出自己实际用过的一个小众skill：让Claude Code使用逆向工程skill，研究Marc Lou的HYROX赞助网站如何工作，再开发RoxSkin。这里的HYROX是作者所指网站的赛事背景，RoxSkin是其后续自有项目名；帖子没有给二者更完整的产品规格。原帖补查确认署名。\n\n具体用途是开发新站点前了解参考站的行为，而非已证实取得其服务器源码、训练数据或私人接口。帖子未展开skill短链、研究报告、仓库、页面对照、数据格式或用户指标，不推断使用REA，也不确认复制了哪些功能、是否上线或达到等价。按unverified收录具名参考目标和实际AI研究操作，未登录网站、运行代码或独立复现。",
+    "sources": [{"label": "Tim Grassin：Claude Code研究HYROX网站后开发RoxSkin，2026-10-27", "url": "https://x.com/i/status/2114945192667341039"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照0赞、36浏览、0转发；实际使用为作者自述，没有公开验收工件。"],
+    "en": {
+      "title": "Research before RoxSkin: Tim Grassin has Claude Code study a HYROX sponsorship site",
+      "summary": "Tim Grassin says he used a reverse-engineering skill with Claude Code to study Marc Lou's HYROX sponsorship site before building RoxSkin. No analysis report or feature-equivalence validation is supplied.",
+      "description": "At 13:00 Beijing time on October 27, 2026, Tim Grassin (@timgrassin) gives an example of a niche skill he actually used: having Claude Code use a reverse-engineering skill to study how Marc Lou's HYROX sponsorship site works before building RoxSkin. HYROX is the event context of the referenced site and RoxSkin is his subsequent project name; the post supplies no fuller product specifications. Original-post lookup confirms attribution.\n\nThe specific purpose is understanding a reference site's behavior before developing a new site, not established access to its server source, training data or private interfaces. The skill's shortened link, research report, repository, page comparison, data formats and user metrics were not obtained. REA use is not inferred, nor are copied features, deployment or equivalence established. Included as an unverified account with a named reference target and actual AI-assisted investigation, without website login, code execution or independent reproduction.",
+      "metadata": ["Candidate snapshot: 0 likes, 36 views, 0 reposts; actual use is author-reported, without public acceptance artifacts."],
+      "source_labels": ["Tim Grassin on studying a HYROX site with Claude Code before building RoxSkin, October 27, 2026"]
+    }
+  },
+  {
+    "id": "hugo-uu-claude-reversing-model-routing-report",
+    "title": "Hugo的uu分析：逆向任务中观察Claude型号与风控提示的差异",
+    "category": "apps", "rea": "other-ai", "status": "in-progress",
+    "summary": "Hugo称Claude逆向其称为uu的目标时保持Opus5.5，而此前UI小工具分析遇到型号变化和提示；未说明uu的完整产品身份或分析结果。",
+    "description": "2026年10月27日13:37（北京时间），Hugo（@hugoFF0055）称自己正在用Claude逆向“uu”，模型一直保持Opus5.5且积极继续；他对比此前某个UI相关小工具的研究，称当时跳到Opus4.8并出现多次提示。原帖补查确认作者及原文；型号保留为作者看到的标识，不校正或推断实际后端。\n\n这是一项进行中的应用分析及作者观察到的模型限制差异，不是已解释风控机制的实验。uu未给全称、版本、平台或网址，不能认定是网易UU远程、加速器或本合集已有的UU Linux客户端；也没有可读分析输出、功能重建、路由日志或对照条件。此前未具名UI软件仅作作者比较背景，不编造第二个独立项目。未确认REA，未独立运行或验证服务端路由。",
+    "sources": [{"label": "Hugo自述uu逆向与Claude提示差异，2026-10-27", "url": "https://x.com/i/status/2114954637824725031"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照0赞、17浏览、0转发；uu原称及模型标识均据作者，不推断完整产品或过滤因果。"],
+    "en": {
+      "title": "Hugo's uu investigation: observing Claude model labels and warnings during reversing",
+      "summary": "Hugo says Claude remained on Opus 5.5 while reversing a target called uu, unlike earlier UI-tool work that showed model changes and warnings. The product's full identity and analysis results are unspecified.",
+      "description": "At 13:37 Beijing time on October 27, 2026, Hugo (@hugoFF0055) says he is using Claude to reverse-engineer a target he calls uu, with the model staying on Opus 5.5 and continuing enthusiastically. He contrasts an earlier investigation of an unnamed small UI-related tool, which he says switched to Opus 4.8 and showed repeated warnings. Original-post lookup confirms attribution and wording. Model names are preserved as labels observed by the author, not corrected or treated as verified backend identities.\n\nThis is an ongoing app investigation and a report of differing model restrictions, not a controlled explanation of enforcement mechanisms. No full uu name, version, platform or URL is supplied. It cannot be identified as NetEase UU Remote, an accelerator or this collection's existing UU Linux client. No readable analysis output, rebuilt function, routing logs or matched comparison conditions are given. The unnamed UI tool remains comparison background, not an invented second independent project. REA use is unconfirmed; neither the target nor server-side routing was independently tested.",
+      "metadata": ["Candidate snapshot: 0 likes, 17 views, 0 reposts. uu and model labels are author-provided; full product identity and filtering causality are not inferred."],
+      "source_labels": ["Hugo on uu reversing and differing Claude warnings, October 27, 2026"]
+    }
+  },
+  {
+    "id": "garzilla-mac-mini-ai-parts-cad-bench-idea",
+    "title": "Garzilla的Mac mini逆向工作台idea：实体零件转CAD，表征回收电机与电子器件",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Garzilla提出相机、深度传感器与本地AI组成Mac mini工作台，将实体零件变成可编辑CAD，并研究回收电机及电子器件；没有建成或测量报告。",
+    "description": "2026年10月27日13:44（北京时间），Garzilla（@MatthewJared17）回复Mac mini相关讨论，提出想建一个由Mac mini驱动的逆向工程工作台：结合相机、深度传感器与本地AI，把实体零件转换为可编辑CAD，并辅助表征回收的电机和电子器件。原帖补查确认署名；作者用的是“I’d build”，属于具体设想而非已部署设备。\n\n目标是回收零件的几何重建和特性识别，不是从照片恢复某个商业软件源码。帖子没有零件样本、传感器型号、模型、CAD格式、重建误差、电气测试方案或实现仓库。按unverified收录硬件逆向idea，不宣称能准确恢复参数化模型、确定未知器件安全额定值或已进行通电测试；REA未提及，本合集未操作硬件。",
+    "sources": [{"label": "Garzilla的Mac mini、本地AI与CAD工作台提案，2026-10-27", "url": "https://x.com/i/status/2114956494328435130"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、26浏览、0转发；只有方案，没有建成、精度或安全验证。"],
+    "en": {
+      "title": "Garzilla's Mac mini reversing-bench idea: parts to CAD and characterization of salvaged motors and electronics",
+      "summary": "Garzilla proposes a Mac mini bench combining cameras, depth sensors and local AI to turn physical parts into editable CAD and investigate salvaged motors and electronics. No built system or measurements are reported.",
+      "description": "At 13:44 Beijing time on October 27, 2026, Garzilla (@MatthewJared17) replies to a Mac mini discussion with an idea for a reverse-engineering bench powered by one: cameras, depth sensors and local AI would turn physical parts into editable CAD and help characterize salvaged motors and electronics. Original-post lookup confirms attribution. The wording is 'I'd build', a concrete proposal rather than deployed hardware.\n\nThe targets are geometric reconstruction and characterization of salvaged parts, not recovering commercial software source from photos. No part sample, sensor model, AI model, CAD format, reconstruction error, electrical-test procedure or implementation repository is supplied. Included as an unverified hardware-reversing idea, without claiming accurate parametric recovery, safe ratings for unknown parts or any powered testing. REA is not mentioned, and this collection operated no hardware.",
+      "metadata": ["Candidate snapshot: 1 like, 26 views, 0 reposts; proposal only, without construction, accuracy or safety validation."],
+      "source_labels": ["Garzilla's Mac mini, local-AI and CAD bench proposal, October 27, 2026"]
+    }
+  },
+  {
+    "id": "danbulmer-kd-box-pro-claude-firmware-investigation",
+    "title": "KD Box Pro固件排查提案：Dan Bulmer想研究Claude生成版本为何连接后不算hash",
+    "category": "hardware", "rea": "other-ai", "status": "unverified",
+    "summary": "Dan Bulmer转述KD Box Pro自定义固件连上DATUM却未算hash，拟检查Claude Code生成代码与ASIC通信；坦承未能观看直播，尚在索取源码链接。",
+    "description": "2026年10月27日14:57（北京时间），Dan Bulmer（@danbulmer70）向@rayyork_crypto和@RedPandaMining说明想调查KD Box Pro矿机的自定义固件直播实验。他转述固件由Claude Code生成、已建立DATUM连接却未能算hash，想检查固件随后如何与ASIC芯片通信，以定位失败原因。原帖补查确认作者。\n\n作者明确说YouTube阻止其浏览工具读取视频，自己没有看过直播或字幕；他正请对方打开描述查找GitHub链接，再分析实现，并表示不改动仍工作的矿机。因此此处是具体失败调查提案及二手实验描述，不是已读代码后的诊断。没有直播URL、源码、日志、硬件修订、hashrate或故障结论，不推断协议、芯片型号或已能挖矿。按unverified收录，REA未提及，本合集未运行固件或操作设备。",
+    "sources": [{"label": "Dan Bulmer提出KD Box Pro／Claude固件调查，2026-10-27", "url": "https://x.com/i/status/2114974635557286182"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照0赞、25浏览、0转发；连接成功和未算hash均为转述，作者承认尚未观看原实验。"],
+    "en": {
+      "title": "KD Box Pro firmware inquiry: Dan Bulmer wants to investigate why a Claude-generated build connected but did not hash",
+      "summary": "Dan Bulmer relays a KD Box Pro custom-firmware experiment that connected to DATUM but did not hash, proposing to inspect Claude Code-generated code and ASIC communication. He acknowledges not viewing the stream and is requesting source links.",
+      "description": "At 14:57 Beijing time on October 27, 2026, Dan Bulmer (@danbulmer70) tells @rayyork_crypto and @RedPandaMining that he wants to investigate a KD Box Pro miner custom-firmware livestream experiment. He relays that Claude Code generated the firmware, which established a DATUM connection but failed to hash, and proposes checking how it then communicated with the ASIC chips to locate the failure. Original-post lookup confirms attribution.\n\nThe author explicitly says YouTube blocked his browsing tool and he has not watched the stream or its transcript. He asks someone to find a GitHub link in the description so he can inspect the implementation without modifying their working miner. This is a specific failure-investigation proposal and secondhand experiment account, not a code-based diagnosis. No livestream URL, source, logs, hardware revision, hashrate or root cause is supplied. Protocol details, chip model and working mining are not inferred. Included as unverified, with no REA mention, firmware execution or device operation by this collection.",
+      "metadata": ["Candidate snapshot: 0 likes, 25 views, 0 reposts; connection and failure to hash are secondhand, and the author acknowledges not viewing the original experiment."],
+      "source_labels": ["Dan Bulmer proposes investigating KD Box Pro/Claude firmware, October 27, 2026"]
+    }
+  },
+  {
+    "id": "g-diffuser-fzero-x-3ds-claude-port-report",
+    "title": "G-Diffuser：F-Zero X既有反编译移植3DS，转述Claude协调代理与60帧成果",
+    "category": "games", "rea": "other-ai", "status": "unverified",
+    "summary": "读者追问AI分工，补查上游称G-Diffuser将F-Zero X移植新旧3DS，Claude协调147个subagent；帧率、工时、token和成本均为二手报告，未取得项目验证记录。",
+    "description": "2026年10月27日15:02（北京时间），ProudCat（@ProudCat98）回复@dizha88，称一个人和一群AI将老游戏搬到3DS并达60帧，询问AI主要帮助读反编译代码还是调性能。补查被回复的Derek（@dizha88）同日05:02原帖，目标明确为G-Diffuser：将1998年F-Zero X的既有反编译版移植Nintendo 3DS，而不是证明原始反编译本身全部由AI完成。\n\n上游称v1.0.0支持新旧3DS、64DD扩展包的赛道及赛车编辑器、立体3D与原生渲染；一个长期Claude会话协调工作，第一阶段用147个subagent、31.7亿token、约4974美元API费用，24天从黑屏到新3DS原生60帧，第二阶段43天处理老3DS的64MB内存约束。这些数值全部归因于Derek的转述，不是项目作者会话、账单或本合集测量；候选的提问本身没有回答AI分工。\n\n未取得仓库、发布记录、构建日志、帧时或新旧硬件对照，不确认全程稳定60帧、编辑器完整兼容或每个代理的贡献。按unverified收录具体AI辅助移植报告，REA未提及，未下载游戏、运行移植或独立复现。",
+    "sources": [
+      {"label": "候选：ProudCat追问3DS移植中的AI分工，2026-10-27", "url": "https://x.com/i/status/2114975928732549267"},
+      {"label": "补充：窗口前05:02的Derek／G-Diffuser转述，2026-10-27北京时间", "url": "https://x.com/i/status/2114824930525430207"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照0赞、1浏览、0转发；上游补查只用于确定目标与归因，不当成本窗口新候选。", "147代理、31.7亿token、约4974美元、24天／43天及60帧都是二手数值，未独立验证。"],
+    "en": {
+      "title": "G-Diffuser: a report of porting an existing F-Zero X decompilation to 3DS with Claude-led agents and 60 FPS",
+      "summary": "A reader asks about AI's role; the upstream post identifies G-Diffuser's F-Zero X port for old and new 3DS and a Claude session coordinating 147 subagents. Performance, time, tokens and cost are secondhand, without project verification records obtained here.",
+      "description": "At 15:02 Beijing time on October 27, 2026, ProudCat (@ProudCat98) replies to @dizha88 about one person and multiple AIs bringing an old game to 3DS at 60 FPS, asking whether AI mainly read decompiled code or optimized performance. Supplementary lookup of Derek's (@dizha88) original post at 05:02 that day identifies G-Diffuser: a Nintendo 3DS port of the existing decompilation of the 1998 F-Zero X, not proof that AI performed the entire original decompilation.\n\nThe upstream account says v1.0.0 supports old and new 3DS, the 64DD expansion's track and vehicle editors, stereoscopic 3D and native rendering. A long-running Claude session reportedly coordinated development; phase one used 147 subagents, 3.17 billion tokens and about $4,974 in API costs over 24 days from a black screen to native 60 FPS on New 3DS. Phase two reportedly spent 43 days addressing the old 3DS's 64 MB memory constraint. All figures are attributed to Derek's retelling, not the project author's sessions, invoices or this collection's measurements. The candidate's question does not itself establish AI's division of work.\n\nNo repository, release record, build logs, frame-time data or hardware comparison was obtained. Stable 60 FPS throughout, complete editor compatibility and individual agent contributions are not confirmed. Included as an unverified, concrete AI-assisted porting report, without a REA mention, game downloads, execution or independent reproduction.",
+      "metadata": ["Candidate snapshot: 0 likes, 1 view, 0 reposts. Upstream lookup identifies target and attribution, not another candidate in this window.", "147 agents, 3.17 billion tokens, about $4,974, 24/43 days and 60 FPS are secondhand figures, not independently verified."],
+      "source_labels": ["Candidate: ProudCat asks about AI's role in the 3DS port, October 27, 2026", "Supplement: Derek's pre-window 05:02 G-Diffuser account, October 27 Beijing time"]
+    }
+  },
+  {
+    "id": "lemiur-game-decompilation-claude-skills",
+    "title": "Game Decompilation Skill for Claude：把游戏字节匹配、失败诊断与合并编成技能",
+    "category": "games", "rea": "other-ai", "status": "related-project",
+    "summary": "yibie推荐lemiur的Claude Code技能集；固定README说明函数匹配、helper恢复、排列搜索与审核合并，但要求用户已有原编译器、目标二进制及对照工具链，不是自动破解任意游戏。",
+    "description": "2026年10月27日15:30（北京时间），yibie的列表更新推荐Game Decompilation Skill for Claude。补读lemiur/Game-Decompilation-Skill-For-Claude在eedfe281d4fab7d8cdaf98b9f72f6a6ac4db04be提交的README，提交时间为10月26日03:28:55北京时间，早于候选窗口，用于核对项目用途，不冒充本轮发布。\n\n项目把游戏matching decompilation方法交给Claude Code：matcher重建并匹配函数，wall-identifier诊断停滞原因，helper-recovery恢复被内联的辅助逻辑，permute作有界排列搜索，decomp-code-rules检查可读性及伪匹配，orchestrator组织worktree中的并行任务和审核合并。各游戏仓库的AGENTS.md提供命令与约定，并覆盖技能默认规则。目标是可读源代码经原编译器产生相同字节，不等于已找回唯一原始源码。\n\nREADME明确不提供工具链：需要原编译器／链接器或精确等价物、合法持有的零售二进制、可分单元构建及比较的环境，另可配反汇编、diff、permuter与objdiff。原生移植是达到匹配后的另一步。文中对PS1／PS2可行、PS3／360可能需数月的判断是作者经验，不是工时保证；经典游戏名称仅为方法示例，不能说已由此skill完成。只读文档，未安装技能、启动代理或执行目标。按related-project收录，未确认REA参与。",
+    "sources": [
+      {"label": "候选：yibie列表更新中的Claude游戏技能，2026-10-27", "url": "https://x.com/i/status/2114983062060904506"},
+      {"label": "补充：10月26日固定提交README与工具链要求", "url": "https://github.com/lemiur/Game-Decompilation-Skill-For-Claude/blob/eedfe281d4fab7d8cdaf98b9f72f6a6ac4db04be/README.md"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、65浏览、0转发；116星为候选自报项目快照，未独立核实。", "技能方法与门控不是成功率证明；未运行或验证任何游戏匹配。"],
+    "en": {
+      "title": "Game Decompilation Skill for Claude: packaging byte matching, failure diagnosis and merge review as skills",
+      "summary": "yibie recommends lemiur's Claude Code skill set. A pinned README describes function matching, helper recovery, bounded permutation and reviewed merges, but requires an existing original compiler, target binary and comparison toolchain; it is not automatic cracking of arbitrary games.",
+      "description": "At 15:30 Beijing time on October 27, 2026, yibie's list update recommends Game Decompilation Skill for Claude. Supplementary reading covers lemiur/Game-Decompilation-Skill-For-Claude's README at commit eedfe281d4fab7d8cdaf98b9f72f6a6ac4db04be, timestamped October 26 at 03:28:55 Beijing time, before the candidate window. It checks project purpose, not a release in this window.\n\nThe project supplies Claude Code with game matching-decompilation methodology: matcher reconstructs and matches functions; wall-identifier diagnoses stalled matches; helper-recovery restores inlined helpers; permute performs bounded permutation searches; decomp-code-rules checks readability and fake matches; orchestrator coordinates parallel worktree tasks and reviewed merges. Each game repository supplies commands and conventions through AGENTS.md, overriding skill defaults. The aim is readable source that produces matching bytes under the original compiler, not recovery of a unique original source.\n\nThe README explicitly supplies no toolchain. Users need the original compiler/linker or exact equivalents, a legally held retail binary, a unit-level build/comparison setup, and optionally disassembly, diff, permuter and objdiff tools. Native porting is a separate step after matching. Claims that PS1/PS2 projects are manageable while PS3/360 work may take months are author experience, not schedule guarantees. Named classic games illustrate the method, not games completed by this skill. This collection read documentation only, without installing skills, spawning agents or executing targets. Included as a related project; REA use is unconfirmed.",
+      "metadata": ["Candidate snapshot: 1 like, 65 views, 0 reposts. The post's 116-star project snapshot was not independently checked.", "Skill methodology and gates do not establish success rates; no game's byte matching was run or verified here."],
+      "source_labels": ["Candidate: Claude game skills in yibie's list update, October 27, 2026", "Supplement: pinned October 26 README and toolchain requirements"]
+    }
+  },
+  {
+    "id": "slickdaddyy-igi-re-ai-functional-decompilation",
+    "title": "IGI-RE：AI辅助重写Project I.G.I.，以Unicorn核对行为而非要求字节相同",
+    "category": "games", "rea": "other-ai", "status": "in-progress",
+    "summary": "IGI-RE作者明确AI参与开发、调试和测试，报告5376函数重写、90078项差分测试及14任务对照；固定README可读，但未独立运行，功能重写不要求二进制逐字节相同。",
+    "description": "2026年10月27日15:30（北京时间），yibie推荐IGI-RE，目标是保存Innerloop Studios在2000年推出的Project I.G.I.: I'm Going In。补读slickdaddyy/IGI-RE在088950a517a18bfbb15c7dc6b28b09564f85c7d4提交的README，提交日期为10月26日16:00:39北京时间，早于本窗口。作者明确AI编码工具参与开发、调试与测试，未指明模型或REA，不能只凭列表名称归因为REA。\n\n项目将IGI.exe逐函数重写为可读C，用Ghidra定位函数，dinput.dll将原函数跳转至重写实现，以Unicorn从相同状态运行原机器码和重写版本，比较返回值、内存写入、栈清理与调用次序；浮点代码覆盖游戏所用x87舍入模式，任务级脚本再对照画面。目标是functional decompilation，不要求编译成同一字节。README报告5376／5376函数已重写并命名、425文件内90078项差分测试全通过、14个任务与原作并排检查，独立igidecomp.exe可由源码构建。这些是项目声明，不是本合集测试结果或所有输入上的形式证明。\n\n目标限定特定EU（文档也提Chinese）发行版IGI.exe及合法游戏资源，其他发行版未支持；Microsoft C运行库不反编译，而由系统msvcrt.dll替代。运行环境为Windows或Linux上的Wine，文档称开发和实测使用Wine11，并注明目标含no-CD修正。项目感谢既有IGIPatch命名、光盘检查笔记及其他工具；不把前人研究全部归给AI。未编译、安装依赖、运行游戏或重跑测试；按in-progress收录具体实现及可核查方法。",
+    "sources": [
+      {"label": "候选：yibie介绍IGI-RE，2026-10-27", "url": "https://x.com/i/status/2114983062060904506"},
+      {"label": "补充：10月26日固定提交README、AI说明与验证范围", "url": "https://github.com/slickdaddyy/IGI-RE/blob/088950a517a18bfbb15c7dc6b28b09564f85c7d4/README.md"}
+    ],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照1赞、65浏览、0转发；8星、1142文件是帖子口径，不代替功能或AI贡献验证。", "5376函数、90078项测试、425测试文件、14任务为固定README自报；没有独立重跑或全输入等价证明。"],
+    "en": {
+      "title": "IGI-RE: an AI-assisted Project I.G.I. rewrite checked with Unicorn for behavior, not byte identity",
+      "summary": "IGI-RE's author discloses AI-assisted development, debugging and testing, reporting 5,376 rewritten functions, 90,078 differential tests and 14 mission comparisons. The pinned README is available, but tests were not independently run and this functional rewrite need not produce byte-identical code.",
+      "description": "At 15:30 Beijing time on October 27, 2026, yibie recommends IGI-RE, intended to preserve Innerloop Studios' 2000 Project I.G.I.: I'm Going In. Supplementary reading covers slickdaddyy/IGI-RE's README at commit 088950a517a18bfbb15c7dc6b28b09564f85c7d4, dated October 26 at 16:00:39 Beijing time, before this window. The author explicitly discloses AI coding tools in development, debugging and testing, without naming a model or REA. A list name alone does not establish REA involvement.\n\nThe project rewrites IGI.exe function by function in readable C. Ghidra locates functions; dinput.dll redirects original functions to rewrites. Unicorn runs original machine code and rewritten versions from identical states and compares returns, memory writes, stack cleanup and call order. Floating-point code is tested under the game's x87 rounding modes, followed by scripted mission/frame comparisons. This is functional decompilation, not a requirement to compile identical bytes. The README reports 5,376/5,376 functions rewritten and named, 90,078 passing differential tests in 425 files, all 14 missions checked beside the original, and a standalone igidecomp.exe built from source. These are project claims, not tests by this collection or formal equivalence over every input.\n\nThe target is a specific EU release (also described as Chinese in the document) of IGI.exe plus legally held game assets; other releases are unsupported. The linked Microsoft C runtime is not decompiled and is replaced by system msvcrt.dll. It runs on Windows or Linux with Wine; documentation says Wine 11 is used for development/live tests and notes that the target includes a no-CD modification. Credits acknowledge existing IGIPatch names, disc-check notes and other tools, so foundational work is not all attributed to AI. No build, dependency installation, gameplay or test rerun was performed here. Included as in progress for its concrete implementation and inspectable methodology.",
+      "metadata": ["Candidate snapshot: 1 like, 65 views, 0 reposts. Eight stars and 1,142 files are the post's figures, not validation of functionality or AI contribution.", "5,376 functions, 90,078 tests, 425 test files and 14 missions are pinned-README reports, without an independent rerun or proof over all inputs."],
+      "source_labels": ["Candidate: yibie introduces IGI-RE, October 27, 2026", "Supplement: pinned October 26 README, AI disclosure and verification scope"]
+    }
+  },
+  {
     "id": "quixiai-quixidesk-rea-claude-desktop-recreation",
     "title": "QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端",
     "category": "apps", "rea": "REA", "status": "in-progress",
@@ -559,14 +712,14 @@
     "category": "hardware", "rea": "REA", "status": "unverified",
     "summary": "Codez称用REA与Opus 5.5将Mavic改为家庭安防无人机，并列出官方SDK、手机视觉与Home Assistant流程；未给机型、源码或飞行记录，不能确认跨平台兼容或自主飞行成功。",
     "description": "2026年10月27日00:55:21（北京时间），Codez（@0xCodez）称以REA和Opus 5.5逆向自己的DJI Mavic并改为家庭安防无人机。补查原帖确认署名与全文。背景是家庭警报触发后，让连接遥控器的备用手机承担视觉识别、目标跟踪与控制；作者称无需云端，也不需要目标携带GPS。\n\n正文是一套构建设想：先检查DJI Mobile SDK v5支持名单，不支持就停止、不改固件；以官方SDK写Swift或Kotlin小应用，Home Assistant发通知后人工点击Launch，手机运行YOLO，Kalman filter在遮挡时保持跟踪，再通过10Hz Virtual Stick控制。作者写到不近于8米、到地界停止并升至30米、返航落在停机坪，以及手机保存轨迹、距离和时间戳。这些是帖子方案中的参数与预期行为，不是测量结果、安全认证或可直接执行的飞行建议。\n\n没有给出Mavic具体型号、SDK与操作系统兼容矩阵、REA恢复了什么协议、代码、飞行日志、避障测试或返航验证。官方SDK开发本身不证明固件已被逆向；文中iPhone／Android双平台宣称也未核验。保留为作者宣称已做、但证据主要为步骤说明的unverified方案，不认定演示视频已证明全流程。未运行目标代码、连接设备或执行跟踪飞行。",
-    "sources": [{"label": "候选及原帖补查：Codez的Mavic／REA／Opus方案，2026-10-27北京时间", "url": "https://x.com/i/status/2114762819371680110"}],
-    "snapshot_date": "2026-10-27", "metadata": ["候选快照275赞、14530浏览、24转发；后续补查热度变化不作为窗口内传播数据。", "8米、30米和10Hz是作者所列方案参数，未验证安全性或兼容性。"],
+    "sources": [{"label": "候选及原帖补查：Codez的Mavic／REA／Opus方案，2026-10-27北京时间", "url": "https://x.com/i/status/2114762819371680110"}, {"label": "10月27日14:43 dexx质疑是否仅使用官方SDK", "url": "https://x.com/i/status/2114971107786645923"}, {"label": "补充：作者00:55完整prompt，要求官方SDK、不支持就停止", "url": "https://x.com/i/status/2114762823762952307"}],
+    "snapshot_date": "2026-10-27", "metadata": ["候选快照275赞、14530浏览、24转发；后续补查热度变化不作为窗口内传播数据。", "8米、30米和10Hz是作者所列方案参数，未验证安全性或兼容性。", "10月27日14:43候选中dexx询问是否只是DJI SDK开发，快照0赞、21浏览。补查其回复的作者完整prompt（窗口前00:55）明确只用官方SDK，机型不支持就停止，禁止改固件和解除飞行限制。这强化方法边界，不是已证实欺诈，也不证明REA恢复了闭源协议；仍未取得代码或飞行日志。"],
     "en": {
       "title": "DJI Mavic security drone: Codez proposes REA/Opus phone-side tracking with the official SDK",
       "summary": "Codez says REA and Opus 5.5 turned a Mavic into a home-security drone, outlining an official-SDK, phone-vision and Home Assistant workflow. No model, source code or flight records establish cross-platform support or successful autonomous flight.",
       "description": "At 00:55:21 Beijing time on October 27, 2026, Codez (@0xCodez) says he reverse-engineered his DJI Mavic with REA and Opus 5.5 and turned it into a home-security drone. An original-post lookup confirms attribution and full text. The context is using a spare phone connected to the remote for visual detection, tracking and control after a home alarm, allegedly without cloud services or GPS on the target.\n\nThe text outlines a build proposal: check the DJI Mobile SDK v5 support list and stop without firmware hacks if unsupported; write a small Swift or Kotlin application on the official SDK; send a Home Assistant notification followed by a human tap on Launch; run YOLO on the phone, maintain tracking through occlusion with a Kalman filter, and control through Virtual Stick at 10 Hz. It describes keeping at least 8 m away, stopping at the property boundary and climbing to 30 m, returning to a pad, and saving track, distance and timestamps on the phone. These are proposed parameters and expected behaviors, not measurements, safety certification or directly actionable flight advice.\n\nNo specific Mavic model, SDK/operating-system compatibility matrix, protocol recovered by REA, code, flight log, obstacle-avoidance test or return-to-home validation is supplied. Official-SDK development does not itself establish firmware reversing, and the claimed iPhone/Android support is unchecked. Retained as an unverified proposal presented by its author as built, but supported mainly by a step-by-step description; the accompanying video is not treated as proof of the complete workflow. No target code was run, device connected or tracking flight conducted here.",
-      "metadata": ["Candidate snapshot: 275 likes, 14,530 views, 24 reposts. Later engagement changes from supplementary lookup are not treated as in-window propagation data.", "8 m, 30 m and 10 Hz are author-proposed parameters, not verified safety or compatibility results."],
-      "source_labels": ["Candidate and original lookup: Codez's Mavic/REA/Opus proposal, October 27, 2026 Beijing time"]
+      "metadata": ["Candidate snapshot: 275 likes, 14,530 views, 24 reposts. Later engagement changes from supplementary lookup are not treated as in-window propagation data.", "8 m, 30 m and 10 Hz are author-proposed parameters, not verified safety or compatibility results.", "In the October 27, 14:43 candidate, dexx asks whether this is simply DJI SDK development; snapshot: 0 likes, 21 views. Supplementary lookup of the author's full prompt being replied to (pre-window 00:55) explicitly requires only the official SDK, stopping for unsupported models, with no firmware changes or removal of flight limits. This strengthens the methodological boundary, not a proven fraud allegation or evidence that REA recovered a closed protocol. Code and flight logs remain unavailable."],
+      "source_labels": ["Candidate and original lookup: Codez's Mavic/REA/Opus proposal, October 27, 2026 Beijing time", "dexx asks whether only the official SDK is used, October 27 at 14:43", "Supplement: author's 00:55 full prompt, official SDK only and stop if unsupported"]
     }
   },
   {
@@ -17682,21 +17835,21 @@
   },
   {
     "id": "osec-ai-rust-hash-recompilation-report",
-    "title": "osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述",
+    "title": "OtterSec的GoonFi V2研究：AI恢复Rust，整程序重编译约束与已披露的记账漏洞",
     "category": "apps",
     "rea": "other-ai",
     "status": "unverified",
-    "summary": "pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。",
-    "description": "10月16日20:08（北京时间），安全研究者 @pashov 赞扬 @osec_io 的工作，称研究者正用 AI 恢复 Rust 项目的源代码、达到 hash-perfect 重编译，随后发现 Critical 漏洞。背景是 Web3 闭源程序的安全审查；具体用途是把编译产物恢复成可审计实现，并用重编译结果约束恢复质量。原帖与补读原帖都没有命名项目、链、漏洞编号、模型或工具，也没有提供本合集取得的源码、哈希对照与漏洞验证。这里的哈希一致和严重等级均为 pashov 对研究工作的转述，不是本合集独立核验，更不能推出闭源软件已失效或任意 Rust 程序均可恢复。未确认使用 REA。",
-    "sources": [{"label": "pashov 对 osec_io Rust 研究的转述", "url": "https://x.com/i/status/2111066785890054605"}],
-    "snapshot_date": "2026-10-16",
-    "metadata": ["候选快照（10月16日）：120赞、4,339浏览、11转发；热度不是哈希或漏洞证据。"],
+    "summary": "OtterSec公开GoonFi V2的Rust恢复与验证脚本，称Opus5.5协调Astra、达成原部署二进制一致并发现610万美元风险；程序已于10月6日升级，未独立重跑归档链上对照。",
+    "description": "历史来源是2026年10月16日20:08（北京时间）pashov对@osec_io的AI恢复Rust、hash-perfect重编译与Critical漏洞研究的泛化转述，当时未具名目标。10月27日15:19本窗口候选r1cksec明确提GoonFi V2。补读OtterSec的Renato Marziano、Robert Chen署名文章Breaking open a propAMM（页面日期10月15日），以及renato-osec/goonfi-v2-decompiled固定381cc31945474ba6b5b56b32a8cad5266602d612提交的README与VERIFY.sh，提交时间10月15日22:35:39北京时间。这些是窗口前补充材料，不是本轮新发布；沿用既有研究ID和pashov来源，不推断其早期泛称只指这一个目标。\n\n目标是把Solana上闭源GoonFi V2做市程序恢复成可审计Rust。作者称Opus5.5作协调者，Astra子代理处理较小逆向任务，借助Binary Ninja、Solana分析工具、IDL与链上交易，按函数比较重编译指令，结合确定性检查与代理审核合并。只追求相似度会过拟合，因此限制不自然的编译技巧，库代码应通过依赖重现。文章明确逐函数100%匹配后，243k字节程序仍差约93k字节，需再处理函数顺序、指针表及panic路径／行号才能达到其所称hash-perfect；不能把局部零分匹配当整程序一致或唯一原始源码。\n\n公开README限定原部署slot448984043，注明程序已在2026年10月6日升级修复报告问题。VERIFY.sh注释将旧部署定为9月21日、243080字节ELF，需要归档RPC重建旧部署，再构建并用cmp比较；当前线上dump不是旧目标。README另用beyond padding描述一致范围，本文没有独立重跑或解决其口径差异。验证材料可读不等于本合集已验出相同哈希。\n\n作者报告恢复后审计发现依赖金库实时余额的记账／定价缺陷，可能危及610万美元，已负责任披露；风险金额不是实际损失，修复是项目说明，未检查当前合约或执行漏洞。原文章、公开源码与脚本补足了此前只有转述的证据，但本合集未编译、访问归档凭据、运行目标或复现资金风险。保持unverified，未确认REA，不能由此推断任意Rust程序均能恢复或闭源已普遍失效。",
+    "sources": [{"label": "历史：pashov对osec_io Rust研究的转述，2026-10-16", "url": "https://x.com/i/status/2111066785890054605"}, {"label": "本窗口：r1cksec介绍GoonFi V2的AI逆向，2026-10-27", "url": "https://x.com/i/status/2114980383414722716"}, {"label": "补充：OtterSec署名文章，页面日期2026-10-15", "url": "https://osec.io/blog/goonfi-decompilation/"}, {"label": "补充：10月15日固定README，原部署与升级边界", "url": "https://github.com/renato-osec/goonfi-v2-decompiled/blob/381cc31945474ba6b5b56b32a8cad5266602d612/README.md"}, {"label": "补充：同提交VERIFY.sh，归档重建与cmp流程，未执行", "url": "https://github.com/renato-osec/goonfi-v2-decompiled/blob/381cc31945474ba6b5b56b32a8cad5266602d612/VERIFY.sh"}],
+    "snapshot_date": "2026-10-27",
+    "metadata": ["历史10月16日快照120赞、4339浏览、11转发；本窗口候选1赞、29浏览、0转发，热度不等于验证。", "610万美元是作者报告的风险额，不是损失；原部署9月21日，README称10月6日已升级。", "逐函数100%匹配不等于整库字节相同；源码与验证脚本已读，但未编译、重建归档或核对当前链上状态。"],
     "en": {
-      "title": "osec_io Rust research: reported AI recovery and hash-perfect recompilation",
-      "summary": "pashov recounts AI-assisted Rust recovery and critical vulnerability discoveries; targets and validation records are not supplied.",
-      "description": "At 20:08 Beijing time on October 16, security researcher @pashov praised @osec_io's work, saying researchers were using AI to recover Rust project source, achieve hash-perfect recompilation and then find Critical vulnerabilities. The context is auditing closed-source Web3 programs: recovering an auditable implementation from compiled artifacts, with recompilation constraining recovery quality. Neither the candidate nor the reread original names a project, chain, vulnerability identifier, model or tool, or supplies source, hash comparisons or vulnerability validation obtained by this collection. Hash equality and severity are pashov's account of the work, not independently checked results here. They do not establish that closed-source software is obsolete or that arbitrary Rust programs can be recovered. REA use is unconfirmed.",
-      "metadata": ["Candidate snapshot (October 16): 120 likes, 4,339 views, 11 reposts; engagement is not hash or vulnerability evidence."],
-      "source_labels": ["pashov's account of osec_io's Rust research"]
+      "title": "OtterSec's GoonFi V2 research: AI-recovered Rust, whole-program recompilation constraints and a disclosed accounting bug",
+      "summary": "OtterSec publishes reconstructed GoonFi V2 Rust and verification scripts, crediting Opus 5.5/Astra and reporting original-deployment binary identity and $6.1 million at risk. The program was upgraded on October 6; archived on-chain comparison was not independently rerun.",
+      "description": "The historical source is pashov's general account at 20:08 Beijing time on October 16, 2026, of @osec_io's AI-assisted Rust recovery, hash-perfect recompilation and Critical findings, without a named target. This window's October 27, 15:19 candidate by r1cksec names GoonFi V2. Supplementary reading covers OtterSec's Breaking open a propAMM, by Renato Marziano and Robert Chen, dated October 15, plus README and VERIFY.sh at renato-osec/goonfi-v2-decompiled commit 381cc31945474ba6b5b56b32a8cad5266602d612, timestamped October 15 at 22:35:39 Beijing time. These pre-window supplements are not new releases in this window. The existing research ID and pashov source are retained, without assuming his earlier general statement referred only to this target.\n\nThe target is the closed-source GoonFi V2 Solana market-making program, recovered into auditable Rust. The authors describe Opus 5.5 coordinating Astra subagents on smaller reversing tasks, using Binary Ninja, Solana tooling, the IDL and on-chain transactions. Function-level recompiled instructions are compared, with deterministic checks and agent review controlling merges. Similarity-only optimization overfits, so unnatural compiler tricks are restricted and library code should be reproduced through dependencies. Even after 100% per-function matching, the article says about 93k bytes still differed in a 243k-byte binary; function ordering, pointer tables and panic paths/line numbers had to be addressed for the claimed hash-perfect result. Local zero-score matches are not whole-program identity or recovery of a unique original source.\n\nThe public README targets original deployment slot 448984043 and says an October 6, 2026 upgrade fixed the reported bugs. VERIFY.sh comments identify the old deployment as September 21 and a 243,080-byte ELF. Its flow requires archival RPC data to reconstruct the old deployment, then builds and compares with cmp; a current on-chain dump is not the old target. The README separately describes matching 'beyond padding'; this collection neither independently reran verification nor resolved that wording difference. Readable verification material is not a matching hash established here.\n\nThe authors report that auditing the reconstruction revealed a vault-live-balance accounting/pricing flaw potentially exposing $6.1 million, responsibly disclosed. That is reported risk, not actual loss. Remediation is a project statement; no current contract inspection or exploitation was performed. The original article, public source and scripts materially strengthen the earlier secondhand evidence, but this collection did not compile, access archival credentials, execute targets or reproduce the financial risk. Status remains unverified, REA use unconfirmed, and the result does not establish recovery of arbitrary Rust programs or universal failure of closed source.",
+      "metadata": ["Historical October 16 snapshot: 120 likes, 4,339 views, 11 reposts. Current-window candidate: 1 like, 29 views, 0 reposts; engagement is not validation.", "$6.1 million is author-reported exposure, not loss. Original deployment: September 21; README reports an October 6 upgrade.", "100% function-level matching is not whole-program byte identity. Public source and verification scripts were read, without compilation, archival reconstruction or current on-chain inspection."],
+      "source_labels": ["Historical: pashov's account of osec_io Rust research, October 16, 2026", "Current-window candidate: r1cksec on GoonFi V2 AI reversing, October 27, 2026", "Supplement: signed OtterSec article, dated October 15, 2026", "Supplement: pinned October 15 README, original deployment and upgrade scope", "Supplement: same-commit VERIFY.sh, archival reconstruction and cmp flow, not executed"]
     }
   },
   {

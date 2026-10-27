@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Garzilla的Mac mini逆向工作台idea：实体零件转CAD，表征回收电机与电子器件](../cases/garzilla-mac-mini-ai-parts-cad-bench-idea.md) — Garzilla提出相机、深度传感器与本地AI组成Mac mini工作台，将实体零件变成可编辑CAD，并研究回收电机及电子器件；没有建成或测量报告。 **[其他 AI 逆向 · 待验证]**
+- [KD Box Pro固件排查提案：Dan Bulmer想研究Claude生成版本为何连接后不算hash](../cases/danbulmer-kd-box-pro-claude-firmware-investigation.md) — Dan Bulmer转述KD Box Pro自定义固件连上DATUM却未算hash，拟检查Claude Code生成代码与ASIC通信；坦承未能观看直播，尚在索取源码链接。 **[其他 AI 逆向 · 待验证]**
 - [ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证](../cases/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。 **[其他 AI 逆向 · 进行中]**
 - [Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测](../cases/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。 **[REA · 进行中]**
 - [2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动](../cases/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。 **[其他 AI 逆向 · 进行中]**

@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [G-Diffuser：F-Zero X既有反编译移植3DS，转述Claude协调代理与60帧成果](../cases/g-diffuser-fzero-x-3ds-claude-port-report.md) — 读者追问AI分工，补查上游称G-Diffuser将F-Zero X移植新旧3DS，Claude协调147个subagent；帧率、工时、token和成本均为二手报告，未取得项目验证记录。 **[其他 AI 逆向 · 待验证]**
+- [Game Decompilation Skill for Claude：把游戏字节匹配、失败诊断与合并编成技能](../cases/lemiur-game-decompilation-claude-skills.md) — yibie推荐lemiur的Claude Code技能集；固定README说明函数匹配、helper恢复、排列搜索与审核合并，但要求用户已有原编译器、目标二进制及对照工具链，不是自动破解任意游戏。 **[其他 AI 逆向 · 相关项目]**
+- [IGI-RE：AI辅助重写Project I.G.I.，以Unicorn核对行为而非要求字节相同](../cases/slickdaddyy-igi-re-ai-functional-decompilation.md) — IGI-RE作者明确AI参与开发、调试和测试，报告5376函数重写、90078项差分测试及14任务对照；固定README可读，但未独立运行，功能重写不要求二进制逐字节相同。 **[其他 AI 逆向 · 进行中]**
 - [Wind Waker失败实验：Nix称Grok／Claude／Codex未做出可靠跳过demo补丁](../cases/nixpupcake-wind-waker-ai-decompilation-patch-failure.md) — Nix报告向Grok、Claude、Codex提供Wind Waker仓库及镜像，尝试续做反编译与修改事件；称跳过过场后游戏仍坏、Opus整场只给建议无可用补丁。没有提交、日志或基准，80%不能当AI新增匹配率。 **[其他 AI 逆向 · 分析测试]**
 - [Days PC移植：Violin称AI主要协助反编译，资产仍有人制作](../cases/violin-days-pc-port-ai-decompilation-report.md) — ViolinSpeedruns在游戏AI争论中称Days PC移植主要用AI辅助反编译，游戏资产等仍由人制作；未给完整游戏名、开发者、仓库或匹配率，不当成全AI生成或已发布成品。 **[其他 AI 逆向 · 进行中]**
 - [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](../cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**

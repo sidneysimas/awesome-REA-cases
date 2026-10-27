@@ -12,9 +12,12 @@ No specific Mavic model, SDK/operating-system compatibility matrix, protocol rec
 
 Candidate snapshot: 275 likes, 14,530 views, 24 reposts. Later engagement changes from supplementary lookup are not treated as in-window propagation data.
 8 m, 30 m and 10 Hz are author-proposed parameters, not verified safety or compatibility results.
+In the October 27, 14:43 candidate, dexx asks whether this is simply DJI SDK development; snapshot: 0 likes, 21 views. Supplementary lookup of the author's full prompt being replied to (pre-window 00:55) explicitly requires only the official SDK, stopping for unsupported models, with no firmware changes or removal of flight limits. This strengthens the methodological boundary, not a proven fraud allegation or evidence that REA recovered a closed protocol. Code and flight logs remain unavailable.
 
 ## Sources
 
 - [Candidate and original lookup: Codez's Mavic/REA/Opus proposal, October 27, 2026 Beijing time](https://x.com/i/status/2114762819371680110)
+- [dexx asks whether only the official SDK is used, October 27 at 14:43](https://x.com/i/status/2114971107786645923)
+- [Supplement: author's 00:55 full prompt, official SDK only and stop if unsupported](https://x.com/i/status/2114762823762952307)
 
 [中文](../codez-dji-mavic-rea-opus-security-drone-proposal.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [停运旧App：leftmeonbread称Opus拆开已购APK并使用Ghidra](../cases/leftmeonbread-opus-defunct-apk-ghidra.md) — leftmeonbread称让Opus分析早年购买、现已停运App的APK，模型开始使用Ghidra；没有公开App身份、分析输出或功能恢复结果。 **[其他 AI 逆向 · 进行中]**
+- [Nicholas Michael Kloster的逆向工具：以Sonnet 4.6开发，称Kimi更适合后续需求](../cases/showxlate-claude-sonnet-reversing-tool.md) — @showxlate称用Claude Code Sonnet4.6构建自己的逆向工具，因此保留其贡献者署名；当前偏好Kimi，但未给工具名、代码或对照测试。 **[其他 AI 逆向 · 相关项目]**
+- [RoxSkin开发前的参考站研究：Tim Grassin让Claude Code分析HYROX赞助网站](../cases/timgrassin-roxskin-hyrox-site-claude-study.md) — Tim Grassin称在开发RoxSkin前，调用逆向skill让Claude Code研究Marc Lou的HYROX赞助网站；没有公开分析报告或功能等价验证。 **[其他 AI 逆向 · 待验证]**
+- [Hugo的uu分析：逆向任务中观察Claude型号与风控提示的差异](../cases/hugo-uu-claude-reversing-model-routing-report.md) — Hugo称Claude逆向其称为uu的目标时保持Opus5.5，而此前UI小工具分析遇到型号变化和提示；未说明uu的完整产品身份或分析结果。 **[其他 AI 逆向 · 进行中]**
 - [QuixiDesk：Eric Hartford以REA研究Claude Desktop，重建可换模型的Rust客户端](../cases/quixiai-quixidesk-rea-claude-desktop-recreation.md) — Eric Hartford称用REA逆向Claude Desktop，公开QuixiDesk原生Rust替代客户端，支持本地与云模型；固定README及Cargo清单可读，但完整功能等价和安全边界未经独立测试。 **[REA · 进行中]**
 - [Malvex：用REA／MCP组织恶意软件分析，要求模型猜测回到静态或运行证据](../cases/malvex-ai-malware-analysis-evidence-workflow.md) — 日文介绍Malvex六阶段Agent分析框架；公开README描述REA及其他MCP后端、证据门和异构系统动态分析限制。文档功能及数量口径不一，未运行样本，不能将框架规则视为可靠性证明。 **[REA · 相关项目]**
 - [米修斯的微信本地数据库：称Grokbot解密后每日整理工作待办与花销](../cases/grokbot-wechat-local-database-tasks-spending-report.md) — 米修斯称让Grokbot解密自己电脑的微信数据库，并每日汇总工作聊天待办和支出；无版本、工具、代码或准确率，保留为作者自述，不等于破解微信全部协议。 **[其他 AI 逆向 · 待验证]**
@@ -386,7 +390,7 @@
 - [JPCERT/CC：从攻击服务器追查 APK 分析与 API 探测](../cases/jpcert-ai-apk-api-investigation-report.md) — 官方调查确认攻击者使用 AI，并发现 APK、jadx、Blutter 及 API 漏洞调查痕迹；未披露具体模型或 REA。 **[其他 AI 逆向 · 分析测试]**
 - [crashlens：把 REA 接入崩溃分诊与编程 Agent](../cases/crashlens-rea-crash-triage-idea.md) — Minglei报告REA/Ghidra反编译崩溃函数及调用者后，Claude Code定位原生崩溃由4轮变1轮；公开原型与小基准仍非独立复现，Hermes集成未确认落地。 **[REA · 相关项目]**
 - [2000年的 stress.exe：Opus + REA 重建 Mac 与网页版的转述](../cases/stress-exe-2000-rea-revival-report.md) — 帖子称 Reddit 用户半小时重建 stress.exe、两小时发布 Mac 与网页版；原始实现与对照测试未取得。 **[REA · 待验证]**
-- [osec_io 的 Rust 研究：AI 恢复代码与哈希一致重编译的转述](../cases/osec-ai-rust-hash-recompilation-report.md) — pashov 称安全研究者用 AI 恢复 Rust 项目并发现严重漏洞；未给出目标与验证记录。 **[其他 AI 逆向 · 待验证]**
+- [OtterSec的GoonFi V2研究：AI恢复Rust，整程序重编译约束与已披露的记账漏洞](../cases/osec-ai-rust-hash-recompilation-report.md) — OtterSec公开GoonFi V2的Rust恢复与验证脚本，称Opus5.5协调Astra、达成原部署二进制一致并发现610万美元风险；程序已于10月6日升级，未独立重跑归档链上对照。 **[其他 AI 逆向 · 待验证]**
 - [网页到 Next.js：Claude Code 模板读取 DOM 后并行重建的报告](../cases/claude-website-dom-nextjs-template-report.md) — 转述模板读取网页素材、字体和布局，由多个 Agent 分工重建界面；未给项目名与测试。 **[其他 AI 逆向 · 待验证]**
 - [Black Bot / Blacksidian：REA 重建应用并选择 AI provider 的自述](../cases/black-bot-blacksidian-rea-report.md) — 作者称用 REA 把 Grok Bot、Obsidian 做成自己的版本，并加入模型供应商选择。 **[REA · 待验证]**
 - [VMP 加壳样本：DeepSeek 挑战失败的自述](../cases/deepseek-vmp-protected-sample-failure.md) — 发帖者称自己的 REA 讨论视频包含 DeepSeek 处理 VMP 虚拟机保护失败的实验。 **[其他 AI 逆向 · 分析测试]**
