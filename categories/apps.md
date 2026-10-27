@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [FlagRoster战术板：Olek用REA研究场边教练交互，交给Claude Code执行10项计划](../cases/olek-flagroster-rea-play-designer-study.md) — Olek Uznański为腰旗橄榄球联赛产品FlagRoster研究战术设计应用，称REA帮助理解易用交互、形成10项Claude Code计划；没有功能交付或等价验证。 **[REA · 进行中]**
+- [精简DeepSeek Harness：白桃乌龙争虎斗报告Nim与MoonBit重建，并让AI继续优化](../cases/shuimugan-deepseek-harness-nim-moonbit-rebuild.md) — 白桃乌龙争虎斗报告同一DeepSeek Harness精简目标的Nim/MoonBit版本，称二进制5.5MB/4.6MB，移除搜索、Desktop、外部插件、权限与账号上报机制；未见代码或兼容验证。 **[其他 AI 逆向 · 进行中]**
+- [General Grammar Machine：Gilad Dayag提出工业系统重建与模型外验证框架](../cases/gilad-dayag-general-grammar-machine-reconstruction-claims.md) — Gilad Dayag介绍GUTS BNL的General Grammar Machine，声称从少量公开足迹重建工业系统、在模型外验证结果；未提供具名重建目标或可读验收记录。 **[其他 AI 逆向 · 待验证]**
+- [旧iPhone备份审计：Borya称Claude还原照片索引，REA追查cleaner的MobileSync访问](../cases/borya-iphone-backup-claude-rea-cleaner-audit.md) — Borya称Claude从三份未加密iPhone备份找到手机上已删的5207张照片、做本地OCR，REA检查五个程序并用Process Monitor观察cleaner访问；没有公开脚本或日志。 **[REA · 待验证]**
 - [停运旧App：leftmeonbread称Opus拆开已购APK并使用Ghidra](../cases/leftmeonbread-opus-defunct-apk-ghidra.md) — leftmeonbread称让Opus分析早年购买、现已停运App的APK，模型开始使用Ghidra；没有公开App身份、分析输出或功能恢复结果。 **[其他 AI 逆向 · 进行中]**
 - [Nicholas Michael Kloster的逆向工具：以Sonnet 4.6开发，称Kimi更适合后续需求](../cases/showxlate-claude-sonnet-reversing-tool.md) — @showxlate称用Claude Code Sonnet4.6构建自己的逆向工具，因此保留其贡献者署名；当前偏好Kimi，但未给工具名、代码或对照测试。 **[其他 AI 逆向 · 相关项目]**
 - [RoxSkin开发前的参考站研究：Tim Grassin让Claude Code分析HYROX赞助网站](../cases/timgrassin-roxskin-hyrox-site-claude-study.md) — Tim Grassin称在开发RoxSkin前，调用逆向skill让Claude Code研究Marc Lou的HYROX赞助网站；没有公开分析报告或功能等价验证。 **[其他 AI 逆向 · 待验证]**
@@ -61,7 +65,7 @@
 - [Addy的递归自学习REA skill：持续构建工具的作者自述](../cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](../cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](../cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
-- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](../cases/ablation-tool-ai-reverse-engineering-framework.md) — 候选点名Ablation为AI辅助逆向框架；补查Ablation-Tool/ablation的README，确认文档描述LLM分析循环、会话上下文与多架构分析，但未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](../cases/ablation-tool-ai-reverse-engineering-framework.md) — Ablation以LLM循环组织二进制分析；Dan Kornas新增语义函数搜索、跨会话假设追踪与跨目标学习介绍，10月27日固定README可追溯这些文档入口，未运行或认证效果。 **[其他 AI 逆向 · 相关项目]**
 - [Hermes研究REA自身：Charles的本地模型简短报告](../cases/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti称Hermes正在本地LLM上逆向REA仓库；没有模型、分析范围或改动结果。 **[其他 AI 逆向 · 待验证]**
 - [Crawlbot：REA负责竞品研究的多Agent产品流程转述](../cases/west-crawlbot-rea-competitor-workflow.md) — Trog转述west的Crawlbot：Grok找需求，REA研究竞品价格，Opus写产品，其他工具测试、写文案与记忆；未取得实现或验收。 **[REA · 相关项目]**
 - [Grok Bots四角色REA流程：观察、规格、隔离重建与验证的提案](../cases/grok-bots-rea-four-role-cleanroom-proposal.md) — francescofaenzi把四Agent clean-room方法移到Grok Bots共享电脑，加入Team Lead与最多约三轮反馈；未展示具体目标或权限隔离测试。 **[REA · 相关项目]**

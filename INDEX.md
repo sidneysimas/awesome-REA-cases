@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1041 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1054 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（221）
-- [硬件与设备互通](categories/hardware.md)（295）
-- [应用与客户端](categories/apps.md)（437）
-- [算法与功能重建](categories/algorithms.md)（88）
+- [游戏与游戏保存](categories/games.md)（224）
+- [硬件与设备互通](categories/hardware.md)（300）
+- [应用与客户端](categories/apps.md)（441）
+- [算法与功能重建](categories/algorithms.md)（89）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [旧版同步音律喵赛克：笨蛋夜星报告修补armeabi，使aarch64平台可玩](cases/applenekomoe-musynx-armeabi-aarch64-patch-report.md) — 笨蛋夜星在建议用AI解决兼容性时，称已逆向修补旧版同步音律喵赛克的armeabi部分，使其可在aarch64平台玩；未披露工具、机制或补丁。 **[其他 AI 逆向 · 待验证]**
+- [Candy Crush重建展示：Ayo称自己逆向，AI归因来自后续读者评论](cases/ayo-candy-crush-recreation-ai-attribution-report.md) — Freemind把Ayo O的Candy Crush逆向展示归功AI；补查Ayo原帖只称自己逆向了游戏，未点名AI、工具或重建方式，按待验证传播报告分层归因。 **[未确认使用 REA · 待验证]**
+- [RecompLauncher：面向Windows、Linux、macOS的原生游戏移植目录报道](cases/recomplauncher-native-game-port-catalog-report.md) — 一则报道介绍RecompLauncher汇集主机游戏的桌面原生移植，称AI加速逆向是移植数量增长的部分原因；未证明启动器本身用了AI或每个移植都源自AI。 **[未确认使用 REA · 相关项目]**
 - [G-Diffuser：F-Zero X既有反编译移植3DS，转述Claude协调代理与60帧成果](cases/g-diffuser-fzero-x-3ds-claude-port-report.md) — 读者追问AI分工，补查上游称G-Diffuser将F-Zero X移植新旧3DS，Claude协调147个subagent；帧率、工时、token和成本均为二手报告，未取得项目验证记录。 **[其他 AI 逆向 · 待验证]**
 - [Game Decompilation Skill for Claude：把游戏字节匹配、失败诊断与合并编成技能](cases/lemiur-game-decompilation-claude-skills.md) — yibie推荐lemiur的Claude Code技能集；固定README说明函数匹配、helper恢复、排列搜索与审核合并，但要求用户已有原编译器、目标二进制及对照工具链，不是自动破解任意游戏。 **[其他 AI 逆向 · 相关项目]**
 - [IGI-RE：AI辅助重写Project I.G.I.，以Unicorn核对行为而非要求字节相同](cases/slickdaddyy-igi-re-ai-functional-decompilation.md) — IGI-RE作者明确AI参与开发、调试和测试，报告5376函数重写、90078项差分测试及14任务对照；固定README可读，但未独立运行，功能重写不要求二进制逐字节相同。 **[其他 AI 逆向 · 进行中]**
@@ -250,13 +253,18 @@
 
 ### 硬件与设备互通
 
+- [30美元ESP32触屏手表：Synthetic Beef称Codex读固件并重写蓝牙控制系统](cases/syntheticbeef-esp32-watch-codex-bluetooth-firmware.md) — Synthetic Beef称Codex分析ESP32手表现有固件与文档，找到截图方法并以自有系统替换默认系统，控制某个未具名蓝牙设备；尚无代码或硬件验证记录。 **[其他 AI 逆向 · 待验证]**
+- [Albin的三星电视镜像：开发者模式下用GLM、REA与Ghidra继续反编译](cases/albinberlin-samsung-tv-glm-rea-ghidra.md) — Albin补充自己使用电视开发者模式、OMP/GLM 5.3 FLash、REA与Ghidra；上游本人称已下载Samsung电视镜像并开始反编译，没有公开分析结果。 **[REA · 进行中]**
+- [Muon's BRAVIA电视：下载固件交给LLM找漏洞的求助idea](cases/muon-bravia-tv-llm-firmware-investigation-idea.md) — Muon想研究自己的BRAVIA电视，询问是否应下载固件并让LLM查找漏洞；尚无已开始分析或成功改机的证据。 **[其他 AI 逆向 · 待验证]**
+- [Suyash的GPU VBIOS：称Claude协助加密相关逆向，Grok则拒答](cases/suyash-gpu-vbios-claude-analysis-report.md) — Suyash称在自己GPU的VBIOS加密相关研究中获得Claude帮助，并抱怨Grok拒答；未公开显卡型号、分析结果或解密证据。 **[其他 AI 逆向 · 进行中]**
+- [Merck Hung的iOS跨架构实验：ARM到Intel JIT，Windows11下仍慢且似乎无响应](cases/merckhung-ios-stock-firmware-x86-windows-jit.md) — Merck Hung称用ARM到Intel JIT在x86_64 Windows11运行原厂iOS固件，Claude与Codex仍在改进；本人明确说很慢、似乎无响应。 **[其他 AI 逆向 · 进行中]**
 - [Garzilla的Mac mini逆向工作台idea：实体零件转CAD，表征回收电机与电子器件](cases/garzilla-mac-mini-ai-parts-cad-bench-idea.md) — Garzilla提出相机、深度传感器与本地AI组成Mac mini工作台，将实体零件变成可编辑CAD，并研究回收电机及电子器件；没有建成或测量报告。 **[其他 AI 逆向 · 待验证]**
 - [KD Box Pro固件排查提案：Dan Bulmer想研究Claude生成版本为何连接后不算hash](cases/danbulmer-kd-box-pro-claude-firmware-investigation.md) — Dan Bulmer转述KD Box Pro自定义固件连上DATUM却未算hash，拟检查Claude Code生成代码与ASIC通信；坦承未能观看直播，尚在索取源码链接。 **[其他 AI 逆向 · 待验证]**
 - [ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证](cases/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。 **[其他 AI 逆向 · 进行中]**
 - [Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测](cases/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。 **[REA · 进行中]**
 - [2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动](cases/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。 **[其他 AI 逆向 · 进行中]**
 - [iOS刷新率开关：QG_accelerator提出用REA研究与解锁的想法](cases/ios-rea-hidden-refresh-rate-switch-idea.md) — QG_accelerator希望借REA调查并解锁其所称iOS隐藏刷新率开关；没有机型、版本、开关证据或实际操作，仅是具体目标的提案。 **[REA · 待验证]**
-- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助识别截图中的Creality SpacePiX4固件数据，正在比较最新零售版与自己的beta版以映射十六进制偏移；目标是未来调整或新增功能，尚未报告改版刷写成功。 **[其他 AI 逆向 · 进行中]**
+- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助辨读SpacePiX4固件并比较零售/beta偏移；晚间又发布交给LLM的Markdown研究交接链接。文档正文未取得，尚无成功改版刷写或独立重现。 **[其他 AI 逆向 · 进行中]**
 - [Qweexee的Samsung电视：Opus研究局域网遥控，Grok Bot调用Netflix三工具](cases/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee称Opus 5.5研究Samsung电视的局域网遥控入口，包装打开Netflix、移动与选择三个工具供Grok Bot语音调用；无具体机型、源码或跨品牌测试，不确认所谓漏洞或普遍兼容。 **[其他 AI 逆向 · 待验证]**
 - [RuView公开固件：make claude称用Claude两晚改出不同用途的ESP32版本](cases/make-claude-ruview-esp32-firmware-adaptation.md) — make claude称在RuView公开ESP32固件上用Claude修改两晚，改后用途不同于原设想；未披露改动、代码或测量，不确认隔墙人体骨架、心率或法律合规宣传。 **[其他 AI 逆向 · 待验证]**
 - [vartekxx的无人机跟踪方案：REA追相机与飞控，Opus组织手机端控制](cases/vartekxx-rea-opus-drone-tracking-proposal.md) — vartekxx称以REA与Opus 5.5把自有无人机改作区域安防，列出相机／遥测追踪、手机视觉、传感器与模拟测试步骤；无型号、代码或飞行记录，不确认自主跟踪已实现。 **[REA · 待验证]**
@@ -548,6 +556,10 @@
 
 ### 应用与客户端
 
+- [FlagRoster战术板：Olek用REA研究场边教练交互，交给Claude Code执行10项计划](cases/olek-flagroster-rea-play-designer-study.md) — Olek Uznański为腰旗橄榄球联赛产品FlagRoster研究战术设计应用，称REA帮助理解易用交互、形成10项Claude Code计划；没有功能交付或等价验证。 **[REA · 进行中]**
+- [精简DeepSeek Harness：白桃乌龙争虎斗报告Nim与MoonBit重建，并让AI继续优化](cases/shuimugan-deepseek-harness-nim-moonbit-rebuild.md) — 白桃乌龙争虎斗报告同一DeepSeek Harness精简目标的Nim/MoonBit版本，称二进制5.5MB/4.6MB，移除搜索、Desktop、外部插件、权限与账号上报机制；未见代码或兼容验证。 **[其他 AI 逆向 · 进行中]**
+- [General Grammar Machine：Gilad Dayag提出工业系统重建与模型外验证框架](cases/gilad-dayag-general-grammar-machine-reconstruction-claims.md) — Gilad Dayag介绍GUTS BNL的General Grammar Machine，声称从少量公开足迹重建工业系统、在模型外验证结果；未提供具名重建目标或可读验收记录。 **[其他 AI 逆向 · 待验证]**
+- [旧iPhone备份审计：Borya称Claude还原照片索引，REA追查cleaner的MobileSync访问](cases/borya-iphone-backup-claude-rea-cleaner-audit.md) — Borya称Claude从三份未加密iPhone备份找到手机上已删的5207张照片、做本地OCR，REA检查五个程序并用Process Monitor观察cleaner访问；没有公开脚本或日志。 **[REA · 待验证]**
 - [停运旧App：leftmeonbread称Opus拆开已购APK并使用Ghidra](cases/leftmeonbread-opus-defunct-apk-ghidra.md) — leftmeonbread称让Opus分析早年购买、现已停运App的APK，模型开始使用Ghidra；没有公开App身份、分析输出或功能恢复结果。 **[其他 AI 逆向 · 进行中]**
 - [Nicholas Michael Kloster的逆向工具：以Sonnet 4.6开发，称Kimi更适合后续需求](cases/showxlate-claude-sonnet-reversing-tool.md) — @showxlate称用Claude Code Sonnet4.6构建自己的逆向工具，因此保留其贡献者署名；当前偏好Kimi，但未给工具名、代码或对照测试。 **[其他 AI 逆向 · 相关项目]**
 - [RoxSkin开发前的参考站研究：Tim Grassin让Claude Code分析HYROX赞助网站](cases/timgrassin-roxskin-hyrox-site-claude-study.md) — Tim Grassin称在开发RoxSkin前，调用逆向skill让Claude Code研究Marc Lou的HYROX赞助网站；没有公开分析报告或功能等价验证。 **[其他 AI 逆向 · 待验证]**
@@ -607,7 +619,7 @@
 - [Addy的递归自学习REA skill：持续构建工具的作者自述](cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
-- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](cases/ablation-tool-ai-reverse-engineering-framework.md) — 候选点名Ablation为AI辅助逆向框架；补查Ablation-Tool/ablation的README，确认文档描述LLM分析循环、会话上下文与多架构分析，但未运行。 **[其他 AI 逆向 · 相关项目]**
+- [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](cases/ablation-tool-ai-reverse-engineering-framework.md) — Ablation以LLM循环组织二进制分析；Dan Kornas新增语义函数搜索、跨会话假设追踪与跨目标学习介绍，10月27日固定README可追溯这些文档入口，未运行或认证效果。 **[其他 AI 逆向 · 相关项目]**
 - [Hermes研究REA自身：Charles的本地模型简短报告](cases/hermes-local-llm-rea-self-analysis.md) — Charles Bonetti称Hermes正在本地LLM上逆向REA仓库；没有模型、分析范围或改动结果。 **[其他 AI 逆向 · 待验证]**
 - [Crawlbot：REA负责竞品研究的多Agent产品流程转述](cases/west-crawlbot-rea-competitor-workflow.md) — Trog转述west的Crawlbot：Grok找需求，REA研究竞品价格，Opus写产品，其他工具测试、写文案与记忆；未取得实现或验收。 **[REA · 相关项目]**
 - [Grok Bots四角色REA流程：观察、规格、隔离重建与验证的提案](cases/grok-bots-rea-four-role-cleanroom-proposal.md) — francescofaenzi把四Agent clean-room方法移到Grok Bots共享电脑，加入Team Lead与最多约三轮反馈；未展示具体目标或权限隔离测试。 **[REA · 相关项目]**
@@ -988,6 +1000,7 @@
 
 ### 算法与功能重建
 
+- [打码二维码重建：陈有数称AI数分钟恢复并成功扫码，未提供样本](cases/chenyoushu-ai-redacted-qr-reconstruction-report.md) — 陈有数报告被打码二维码让AI几分钟恢复并扫码成功，借此提醒不要依赖模糊或半透明遮挡；没有模型、图片、原始载荷或对照记录。 **[其他 AI 逆向 · 待验证]**
 - [Apple Watch配速变化：moni想用AI调查更新后的运动算法](cases/seazon000-apple-watch-pace-algorithm-ai-idea.md) — moni称Apple Watch更新后同速配速由约7分／公里变为6分，想让AI逆向检查运动算法并求入门方法；未提供机型、版本或受控测量，属于具体idea。 **[未确认使用 REA · 待验证]**
 - [体素火山动画：Ruter Fu用GPT反推提示词，再让本地qwen-next重建](cases/ruterfu-qwen-next-volcano-animation-prompt-rebuild.md) — Ruter Fu称原动画未给提示词，于是让GPT反推规格，再用本地qwen-next制作HTML／Three.js火山场景，评价效果尚可；是行为与画面重建，不是恢复原源码。 **[其他 AI 逆向 · 待验证]**
 - [tsrs：AI辅助TypeScript编译器Rust移植的转述与公开兼容性边界](cases/tsrs-typescript7-rust-ai-port-report.md) — 候选将tsrs称为Cloudflare发布的AI生成TypeScript Rust重实现，报最高8倍与内存降70%；补查定位oxc-project/tsrs，README署名Max Schwenk并明确100%一致性仍是目标，未独立重跑性能或AI过程。 **[其他 AI 逆向 · 进行中]**

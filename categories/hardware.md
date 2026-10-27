@@ -2,13 +2,18 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [30美元ESP32触屏手表：Synthetic Beef称Codex读固件并重写蓝牙控制系统](../cases/syntheticbeef-esp32-watch-codex-bluetooth-firmware.md) — Synthetic Beef称Codex分析ESP32手表现有固件与文档，找到截图方法并以自有系统替换默认系统，控制某个未具名蓝牙设备；尚无代码或硬件验证记录。 **[其他 AI 逆向 · 待验证]**
+- [Albin的三星电视镜像：开发者模式下用GLM、REA与Ghidra继续反编译](../cases/albinberlin-samsung-tv-glm-rea-ghidra.md) — Albin补充自己使用电视开发者模式、OMP/GLM 5.3 FLash、REA与Ghidra；上游本人称已下载Samsung电视镜像并开始反编译，没有公开分析结果。 **[REA · 进行中]**
+- [Muon's BRAVIA电视：下载固件交给LLM找漏洞的求助idea](../cases/muon-bravia-tv-llm-firmware-investigation-idea.md) — Muon想研究自己的BRAVIA电视，询问是否应下载固件并让LLM查找漏洞；尚无已开始分析或成功改机的证据。 **[其他 AI 逆向 · 待验证]**
+- [Suyash的GPU VBIOS：称Claude协助加密相关逆向，Grok则拒答](../cases/suyash-gpu-vbios-claude-analysis-report.md) — Suyash称在自己GPU的VBIOS加密相关研究中获得Claude帮助，并抱怨Grok拒答；未公开显卡型号、分析结果或解密证据。 **[其他 AI 逆向 · 进行中]**
+- [Merck Hung的iOS跨架构实验：ARM到Intel JIT，Windows11下仍慢且似乎无响应](../cases/merckhung-ios-stock-firmware-x86-windows-jit.md) — Merck Hung称用ARM到Intel JIT在x86_64 Windows11运行原厂iOS固件，Claude与Codex仍在改进；本人明确说很慢、似乎无响应。 **[其他 AI 逆向 · 进行中]**
 - [Garzilla的Mac mini逆向工作台idea：实体零件转CAD，表征回收电机与电子器件](../cases/garzilla-mac-mini-ai-parts-cad-bench-idea.md) — Garzilla提出相机、深度传感器与本地AI组成Mac mini工作台，将实体零件变成可编辑CAD，并研究回收电机及电子器件；没有建成或测量报告。 **[其他 AI 逆向 · 待验证]**
 - [KD Box Pro固件排查提案：Dan Bulmer想研究Claude生成版本为何连接后不算hash](../cases/danbulmer-kd-box-pro-claude-firmware-investigation.md) — Dan Bulmer转述KD Box Pro自定义固件连上DATUM却未算hash，拟检查Claude Code生成代码与ASIC通信；坦承未能观看直播，尚在索取源码链接。 **[其他 AI 逆向 · 待验证]**
 - [ESP32-S3旧打印机桥接：ngxson谈AI辅助驱动适配，MG2550S列为真机验证](../cases/ngxson-esp32-usb-airprint-airscan-driver-adaptation.md) — ngxson以ESP32-S3为USB打印机提供AirPrint／AirScan，称转换与驱动在板上、AI可辅助适配；公开文档复用Gutenprint与SANE，仅Canon MG2550S标真机验证，不是已逆向任意闭源打印机。 **[其他 AI 逆向 · 进行中]**
 - [Conra22a的ARMv7-M硬件研究：适配REA，规划Opus协作初测](../cases/conra22a-rea-armv7m-hardware-first-tests.md) — Conra22a称正适配REA仓库，规划针对控制硬件的ARMv7-M处理器初测；上游提Opus5.5与REA6.8.0，未公开设备名、固件或运行结果。 **[REA · 进行中]**
 - [2017 NVIDIA Shield跑Omarchy：节目转述Martin以Agent编写声音、GPU与温控驱动](../cases/devsec-ai-2017-shield-omarchy-driver-port-report.md) — Sunday Builders Club纪要称Martin为2017 Tegra X1 Shield移植Omarchy，Agent参与声音、GPU加速与温控驱动，人仍需接插硬件；已启动为转述，未给测试工件或REA归因。 **[其他 AI 逆向 · 进行中]**
 - [iOS刷新率开关：QG_accelerator提出用REA研究与解锁的想法](../cases/ios-rea-hidden-refresh-rate-switch-idea.md) — QG_accelerator希望借REA调查并解锁其所称iOS隐藏刷新率开关；没有机型、版本、开关证据或实际操作，仅是具体目标的提案。 **[REA · 待验证]**
-- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](../cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助识别截图中的Creality SpacePiX4固件数据，正在比较最新零售版与自己的beta版以映射十六进制偏移；目标是未来调整或新增功能，尚未报告改版刷写成功。 **[其他 AI 逆向 · 进行中]**
+- [Creality SpacePiX4：Confuzled用Gemini辨读固件数据，比较零售版与beta偏移](../cases/gunfuzled-creality-spacepix4-gemini-firmware-offsets.md) — Confuzled称Gemini协助辨读SpacePiX4固件并比较零售/beta偏移；晚间又发布交给LLM的Markdown研究交接链接。文档正文未取得，尚无成功改版刷写或独立重现。 **[其他 AI 逆向 · 进行中]**
 - [Qweexee的Samsung电视：Opus研究局域网遥控，Grok Bot调用Netflix三工具](../cases/qweex-samsung-opus-grokbot-netflix-remote.md) — Qweexee称Opus 5.5研究Samsung电视的局域网遥控入口，包装打开Netflix、移动与选择三个工具供Grok Bot语音调用；无具体机型、源码或跨品牌测试，不确认所谓漏洞或普遍兼容。 **[其他 AI 逆向 · 待验证]**
 - [RuView公开固件：make claude称用Claude两晚改出不同用途的ESP32版本](../cases/make-claude-ruview-esp32-firmware-adaptation.md) — make claude称在RuView公开ESP32固件上用Claude修改两晚，改后用途不同于原设想；未披露改动、代码或测量，不确认隔墙人体骨架、心率或法律合规宣传。 **[其他 AI 逆向 · 待验证]**
 - [vartekxx的无人机跟踪方案：REA追相机与飞控，Opus组织手机端控制](../cases/vartekxx-rea-opus-drone-tracking-proposal.md) — vartekxx称以REA与Opus 5.5把自有无人机改作区域安防，列出相机／遥测追踪、手机视觉、传感器与模拟测试步骤；无型号、代码或飞行记录，不确认自主跟踪已实现。 **[REA · 待验证]**

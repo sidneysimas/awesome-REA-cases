@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [旧版同步音律喵赛克：笨蛋夜星报告修补armeabi，使aarch64平台可玩](../cases/applenekomoe-musynx-armeabi-aarch64-patch-report.md) — 笨蛋夜星在建议用AI解决兼容性时，称已逆向修补旧版同步音律喵赛克的armeabi部分，使其可在aarch64平台玩；未披露工具、机制或补丁。 **[其他 AI 逆向 · 待验证]**
+- [Candy Crush重建展示：Ayo称自己逆向，AI归因来自后续读者评论](../cases/ayo-candy-crush-recreation-ai-attribution-report.md) — Freemind把Ayo O的Candy Crush逆向展示归功AI；补查Ayo原帖只称自己逆向了游戏，未点名AI、工具或重建方式，按待验证传播报告分层归因。 **[未确认使用 REA · 待验证]**
+- [RecompLauncher：面向Windows、Linux、macOS的原生游戏移植目录报道](../cases/recomplauncher-native-game-port-catalog-report.md) — 一则报道介绍RecompLauncher汇集主机游戏的桌面原生移植，称AI加速逆向是移植数量增长的部分原因；未证明启动器本身用了AI或每个移植都源自AI。 **[未确认使用 REA · 相关项目]**
 - [G-Diffuser：F-Zero X既有反编译移植3DS，转述Claude协调代理与60帧成果](../cases/g-diffuser-fzero-x-3ds-claude-port-report.md) — 读者追问AI分工，补查上游称G-Diffuser将F-Zero X移植新旧3DS，Claude协调147个subagent；帧率、工时、token和成本均为二手报告，未取得项目验证记录。 **[其他 AI 逆向 · 待验证]**
 - [Game Decompilation Skill for Claude：把游戏字节匹配、失败诊断与合并编成技能](../cases/lemiur-game-decompilation-claude-skills.md) — yibie推荐lemiur的Claude Code技能集；固定README说明函数匹配、helper恢复、排列搜索与审核合并，但要求用户已有原编译器、目标二进制及对照工具链，不是自动破解任意游戏。 **[其他 AI 逆向 · 相关项目]**
 - [IGI-RE：AI辅助重写Project I.G.I.，以Unicorn核对行为而非要求字节相同](../cases/slickdaddyy-igi-re-ai-functional-decompilation.md) — IGI-RE作者明确AI参与开发、调试和测试，报告5376函数重写、90078项差分测试及14任务对照；固定README可读，但未独立运行，功能重写不要求二进制逐字节相同。 **[其他 AI 逆向 · 进行中]**

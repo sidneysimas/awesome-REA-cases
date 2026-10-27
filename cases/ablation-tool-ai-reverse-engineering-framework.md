@@ -1,21 +1,26 @@
 # Ablation：由LLM工具循环连接二进制上下文与分析模块的框架
 
 分类：应用与客户端 · 其他 AI 逆向
-记录日期：2026-10-25
+记录日期：2026-10-27
 阶段：相关项目
 
-往期补审候选发布于2026年10月25日03:53:05（北京时间），只有Ablation是AI-assisted reverse engineering（AIARE）framework的介绍与链接。10月26日补充GitHub仓库搜索，找到自述完全相同的Ablation-Tool/ablation，并阅读README中框架与LLM Analyst Loop等相关段落；补充材料是窗口后现有文档，不能把当时全部功能倒填成25日03时已提供。
+既有来源发布于2026年10月25日03:53:05（北京时间），介绍Ablation为AI-assisted reverse engineering（AIARE）framework。此前10月26日GitHub搜索找到同样自述的Ablation-Tool/ablation，并阅读框架与LLM Analyst Loop相关README；这些较晚文档不能倒填为25日03时已经存在的全部能力。
 
-项目文档描述用二进制上下文和会话缓存保存函数、交叉引用及先前分析，再让有界LLM工具循环检索模块文档、选择分析工具、命名函数、恢复结构布局与生成漏洞假设。另列反汇编、IR/控制流/数据流、符号与污点分析、版本比较、报告导出及多架构模块，面向获授权二进制与固件研究。这里只记录框架用途和文档架构，不逐项认证实现或把其同名历史Pintool工具混为一谈。
+项目描述用二进制上下文和会话缓存保存函数、交叉引用及先前分析，让有界LLM循环检索模块文档、选择分析工具、命名函数、恢复结构布局及提出漏洞假设；另列反汇编、IR/控制流/数据流、符号与污点分析、版本比较、报告导出及多架构模块，面向获授权二进制和固件研究。不与历史同名Pintool工具混淆。
 
-未安装依赖、执行目标、验证模块数量、运行基准或核对CVE/厂商采用宣称；README中的标准徽章、Cisco PSIRT使用与真实世界结果均不能仅凭项目自述升级为独立认可。公开仓库身份可追溯，候选短链映射未直接验证；作为相关项目保留，不宣称通用反编译成功、安全认证或REA集成。
+本轮10月27日19:55:59，Dan Kornas（@DanKornas）介绍其自然语言函数搜索、保留竞争解释与置信度的假设追踪，以及把已确认发现描述/语义查询带到其他二进制的跨目标学习。补读README固定提交e42766f96238ed037f138960814c87b95e7d8ad7（文档提交时间同日18:46:41）确认对应Semantic Code Search、Vulnerability Hypothesis Tracking、Evidence Scoring & Validation及Cross-Target Learning入口：文档称用向量检索排序函数、跨会话保存调查状态、按预期信息增益安排探针并执行获准适配器、复用有效发现/查询/厂商sink模式并丢弃无效模式。这些是当前项目文档的机制描述，不等于每个模块被逐项验证，也不能认为跨目标复用已经证明新目标存在同一漏洞。
 
-原窗口00:00—04:00，属于往期补审；10月26日README只作框架身份与架构背景。
+仅静态阅读公开文档，未安装依赖、执行目标、验证模块/架构支持数量、基准、CVE或厂商采用宣称。README的标准徽章、Cisco PSIRT使用与真实世界结果仍非本合集独立认可。原候选短链映射未直接验证，当前署名补查不改变此历史限制。保留原ID与来源，以related-project收录，不宣称通用反编译成功、安全认证或REA集成。
+
+既有来源来自10月25日00:00—04:00窗口；本轮只据新候选补证，不重审历史队列。
 未运行工具或验证CVE、采用、标准符合性及支持数量；REA未明确。
+本轮候选快照0赞、374浏览、0转发；文档入口不等于独立验证的分析能力。
 
 ## 来源
 
-- [往期候选：Ablation AIARE框架介绍，2026-10-25 03:53:05](https://x.com/i/status/2114082773392929214)
-- [窗口后补充：Ablation-Tool/ablation公开README与模块链接](https://github.com/Ablation-Tool/ablation)
+- [既有来源：Ablation AIARE框架介绍，2026-10-25 03:53:05](https://x.com/i/status/2114082773392929214)
+- [此前补充：Ablation-Tool/ablation公开README与模块链接](https://github.com/Ablation-Tool/ablation)
+- [本轮：Dan Kornas介绍语义搜索、假设追踪及跨目标学习，2026-10-27](https://x.com/i/status/2115049870092354024)
+- [补充固定README：2026-10-27 18:46北京时间文档提交](https://github.com/Ablation-Tool/ablation/blob/e42766f96238ed037f138960814c87b95e7d8ad7/README.md)
 
 [English](en/ablation-tool-ai-reverse-engineering-framework.md) | [返回目录](../README.zh-CN.md)
