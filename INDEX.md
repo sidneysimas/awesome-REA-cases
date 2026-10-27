@@ -10,13 +10,13 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **980 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **995 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（214）
-- [硬件与设备互通](categories/hardware.md)（270）
-- [应用与客户端](categories/apps.md)（413）
+- [游戏与游戏保存](categories/games.md)（216）
+- [硬件与设备互通](categories/hardware.md)（275）
+- [应用与客户端](categories/apps.md)（421）
 - [算法与功能重建](categories/algorithms.md)（83）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
@@ -26,6 +26,8 @@
 
 ### 游戏与游戏保存
 
+- [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**
+- [GameCube反编译：Douglas报告Opus与GPT协作补编译器，过度验证拖慢后续项目](cases/douglas-gamecube-compiler-agent-decompilation.md) — Douglas称Opus 5.5与GPT-6 Astra协作重建缺失编译器版本，并继续移植和浸泡测试；后续GPT照搬流程却加上每函数数小时验证，说明不只是模型拒绝问题。 **[其他 AI 逆向 · 进行中]**
 - [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**
 - [废弃项目升级UE5：InfiniteLabz计划测试AI反编译并迁移商店](cases/infinitelabz-abandoned-project-ai-decompile-ue5-marketplace-idea.md) — InfiniteLabz计划当晚测试AI反编译，把一个废弃项目升级到Unreal Engine 5，并把商店改接供开发者上传资产与游戏的新市场；未报告已运行测试或完成迁移。 **[其他 AI 逆向 · 进行中]**
 - [FS95／FS98：Claude Code根据崩溃日志与调试截图修补旧模拟飞行EXE的转述](cases/fs95-fs98-claude-binary-crash-patch-report.md) — 旺旺转述有人把Windows崩溃日志和x32dbg截图交给Claude Code，生成面向FS95／FS98在64位Windows崩溃的EXE补丁；备份恢复、无需DxWnd及作者未写代码均未独立核验。 **[其他 AI 逆向 · 待验证]**
@@ -243,6 +245,11 @@
 
 ### 硬件与设备互通
 
+- [Mujina矿机固件：Aadhi确认Claude参与开发，补充Canaan调频背景](cases/aadhi-mujina-claude-mining-firmware-report.md) — Aadhi在Mujina开源矿机固件讨论中确认Claude协助开发；后续称已有简单自动调频器，并解释Canaan芯片的四PLL机制。未披露AI具体逆向步骤或性能验收。 **[其他 AI 逆向 · 待验证]**
+- [Kindle原厂固件：丁洪Liam建议用REA研究内置KOReader式PDF重排的可能性](cases/ding-liam-kindle-native-firmware-koreader-features-idea.md) — 青鸞嫌KOReader启动慢，希望原厂固件直接加入PDF重排与更多格式；丁洪Liam建议试REA。父串明确目标，区别于现有插件安装Skill，尚无固件修改。 **[REA · 待验证]**
+- [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
+- [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
+- [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
 - [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
@@ -351,7 +358,7 @@
 - [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**
 - [Samsung Q60D：Codex 整理 Couchroot 主页适配与恢复流程](cases/q60d-codex-couchroot-home.md) — zonaantiwoke_ 称在 Q60D 保留 Tizen、以 Couchroot 为基础适配自定义主页，并让 Codex 整理教程；本地版本未公开。 **[其他 AI 逆向 · 待验证]**
 - [Kindle 胶片相框：Claude Code 的 USB、照片与 FBInk 工作流](cases/kindle-claude-film-photo-frame-workflow.md) — 作者分享据自己会话整理的 Kindle 胶片扫描相框提示词，覆盖机型识别、现有越狱方法和低功耗显示；不是已核验实现。 **[其他 AI 逆向 · 待验证]**
-- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](cases/claude-router-wifi-diagnosis-workflow.md) — codila 补充目标是 ISP 定制固件的 Huawei 路由器，称用官方 REA skills 分析后台登录、设备／Wi-Fi／重启端点并写聊天控制器；五分钟修复仍无测速佐证。 **[REA · 待验证]**
+- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](cases/claude-router-wifi-diagnosis-workflow.md) — codila的Huawei ISP路由器调查增加公开Skill仓库：文档列29设备记录、TR069管理通道和2025年6月固件；可查只读／批准式流程，五分钟修复仍无测速佐证。 **[REA · 待验证]**
 - [Spotify Car Thing：用 REA 备份、映射固件与比较社区替代的假设流程](cases/car-thing-rea-revival-workflow-idea.md) — 作者回顾已停服的 Car Thing，设想若当时有 Opus／REA 如何研究并复用；明确社区项目早已存在，不是 AI 复活设备的实测。 **[REA · 待验证]**
 - [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
 - [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**
@@ -516,7 +523,15 @@
 
 ### 应用与客户端
 
-- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01称为测试REA分析勒索软件的能力，使用无害模拟做了实验并链接视频。可读正文没有说明模拟器、分析步骤或发现，不确认真实勒索样本分析或解密成功。 **[REA · 分析测试]**
+- [NIA App：MATH FOURNITY称GLM在逆向元思维指导下完成分析](cases/math-fournity-nia-glm-analysis-claim.md) — MATH FOURNITY称GLM分析了国家网络身份认证NIA App，并归因于“壮哥”的AI逆向元思维；可读正文没有步骤、发现或验收，“拿下”不能当服务入侵证明。 **[其他 AI 逆向 · 待验证]**
+- [CAIRN的A3规避：帖子转述84个恶意样本以明文干扰LLM分析](cases/talos-cairn-a3-ai-malware-analysis-evasion-report.md) — 帖子署名Talos研究员Ryan Fetterman／CAIRN，称在84个样本中追踪AI-analysis evasion：注释要求分析器忽略文件、拒绝逆向或虚构国防合同。没有提供模型测试或成功规避率。 **[其他 AI 逆向 · 待验证]**
+- [Grok Bots行为探测：Florent Quinti设想让Agent群反推完整harness](cases/florentquinti-grok-bots-behavioral-harness-idea.md) — Florent Quinti提出让Agent群系统交互并测试Grok Bots等产品，推断提示词、工具、技能、记忆和编排；是黑箱研究idea，没有报告恢复结果。 **[其他 AI 逆向 · 待验证]**
+- [比特币交互时间线：Louise Ivan用REA查看参考网站，Codex制作网页](cases/louiseivan-bitcoin-timeline-rea-reference-websites.md) — Louise Ivan明确分工：Grok Bot做研究、REA查看参考站、Three.js与GSAP做视觉、Codex做网站、Opus做预告片；父帖称作品是覆盖17年的比特币价格与事件时间线，效果未核验。 **[REA · 待验证]**
+- [自有网页重建：Nino称不带REA的Claude先完成，REA组仍在调整移动版](cases/ninodirector-claude-rea-own-website-comparison.md) — Nino让两个Claude以相同指令重建自己的网页，称裸Claude八分多钟完成并比较14个滚动位置，REA组耗尽时间时仍在修移动版；仅作者单次对照，不是通用性能基准。 **[REA · 分析测试]**
+- [IDA自举重建：Max_RM设想让IDA MCP与REA逆向IDA自身](cases/max-rm-ida-self-reconstruction-rea-idea.md) — Max_RM回复Hex-Rays，设想用IDA MCP和REA将IDA自身逆向为源码；只是具名目标idea，没有执行、代码或等价验证。 **[REA · 待验证]**
+- [Malware Bot：Shanholo把Codex、REA／Ghidra与多种恶意软件分析工具组成助手](cases/shanholo-malware-bot-codex-rea-workflow.md) — Shanholo介绍自己的Malware Bot，列出Codex、YARA、capa、REA／Ghidra、Volatility和REMnux；是具体恶意软件分析工作流，没有公开样本、工具编排或分析验收。 **[REA · 相关项目]**
+- [屏幕跟踪App：Parichay称因隐私顾虑用REA分析，再让Codex写替代品](cases/parichay-screen-tracking-rea-codex-private-rebuild.md) — Parichay买了5美元的屏幕跟踪App后担心隐私，称用REA了解内部实现，再让Codex制作更简洁私密的应用并宣布开源；仓库、隐私性质和功能等价未核验。 **[REA · 待验证]**
+- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01补充称普通DeepSeek模型在无害勒索模拟中生成加密器、锁定数据库并留下10万美元比特币赎金便条；视频另含备份恢复。是模拟与作者报告，不是分析真实勒索家族或破解加密。 **[REA · 分析测试]**
 - [pixiv APK：梦醒无路走称Codex逆向后去广告并可用会员功能](cases/yjcdon-pixiv-apk-codex-modification-report.md) — @yjcdon称用Codex逆向pixiv APK，移除广告并可使用会员功能；未给APK版本、修改位置或测试，不能确认服务端权限、合法授权或完整会员访问。 **[其他 AI 逆向 · 待验证]**
 - [Flutter二进制：hiroyuki称Codex接Ghidra后自行抽对象池定位地址](cases/ionis-h-codex-ghidra-flutter-object-pool-analysis.md) — hiroyuki报告Codex接Ghidra后，在简略指令下编写对象池提取脚本，从地址定位继续分析Flutter二进制。未给应用、Flutter版本或脚本，不确认跨版本通用性。 **[其他 AI 逆向 · 分析测试]**
 - [1997年编译器：Giblet称用AI反编译Capcom所用工具的近亲版本](cases/giblet-1997-capcom-sibling-compiler-ai-decompilation.md) — Giblet回应AI披露争议，称AI用于反编译一款1997年编译器，其版本与Capcom所用相近但不完全相同。游戏、编译器名称和验证记录未提供，不确认首次完成或源码匹配。 **[其他 AI 逆向 · 待验证]**

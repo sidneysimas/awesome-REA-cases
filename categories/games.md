@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Steam找物游戏demo：Alex转述疑似Claude反编译留下13个同名类](../cases/alex-needle-haystack-demo-claude-copy-allegation.md) — Alex转述有人疑似用Claude反编译Steam找物游戏demo后作为自己的游戏发布，线索是残留shader错误与13个同名类；没有取得原开发者报告、代码或AI日志，不确认抄袭和工具归因。 **[其他 AI 逆向 · 待验证]**
+- [GameCube反编译：Douglas报告Opus与GPT协作补编译器，过度验证拖慢后续项目](../cases/douglas-gamecube-compiler-agent-decompilation.md) — Douglas称Opus 5.5与GPT-6 Astra协作重建缺失编译器版本，并继续移植和浸泡测试；后续GPT照搬流程却加上每函数数小时验证，说明不只是模型拒绝问题。 **[其他 AI 逆向 · 进行中]**
 - [旧Android游戏：Meet Shah报告多模型协作六小时恢复游玩](../cases/meetshah-old-android-game-multimodel-repair-report.md) — Meet Shah称曾在Samsung S2玩的旧游戏无法在新Android安装，勉强安装也不可玩；借GitHub逆向Skill及四种模型编码调试约六小时后，报告可以重温游戏。游戏和补丁未名，未独立测试。 **[未确认使用 REA · 待验证]**
 - [废弃项目升级UE5：InfiniteLabz计划测试AI反编译并迁移商店](../cases/infinitelabz-abandoned-project-ai-decompile-ue5-marketplace-idea.md) — InfiniteLabz计划当晚测试AI反编译，把一个废弃项目升级到Unreal Engine 5，并把商店改接供开发者上传资产与游戏的新市场；未报告已运行测试或完成迁移。 **[其他 AI 逆向 · 进行中]**
 - [FS95／FS98：Claude Code根据崩溃日志与调试截图修补旧模拟飞行EXE的转述](../cases/fs95-fs98-claude-binary-crash-patch-report.md) — 旺旺转述有人把Windows崩溃日志和x32dbg截图交给Claude Code，生成面向FS95／FS98在64位Windows崩溃的EXE补丁；备份恢复、无需DxWnd及作者未写代码均未独立核验。 **[其他 AI 逆向 · 待验证]**

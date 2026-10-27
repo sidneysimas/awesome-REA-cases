@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Mujina矿机固件：Aadhi确认Claude参与开发，补充Canaan调频背景](../cases/aadhi-mujina-claude-mining-firmware-report.md) — Aadhi在Mujina开源矿机固件讨论中确认Claude协助开发；后续称已有简单自动调频器，并解释Canaan芯片的四PLL机制。未披露AI具体逆向步骤或性能验收。 **[其他 AI 逆向 · 待验证]**
+- [Kindle原厂固件：丁洪Liam建议用REA研究内置KOReader式PDF重排的可能性](../cases/ding-liam-kindle-native-firmware-koreader-features-idea.md) — 青鸞嫌KOReader启动慢，希望原厂固件直接加入PDF重排与更多格式；丁洪Liam建议试REA。父串明确目标，区别于现有插件安装Skill，尚无固件修改。 **[REA · 待验证]**
+- [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](../cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
+- [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](../cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
+- [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](../cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
 - [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](../cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](../cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
@@ -110,7 +115,7 @@
 - [LG webOS：Heitor 用 REA 研究 launcher 后参考 GitHub 做 Apple TV 式界面的自述](../cases/lg-webos-heitor-rea-apple-tv-launcher.md) — hjcinelli 澄清先研究电视软件寻找launcher修改点，再给参考仓库并修错；不是给webOS装Android的成功案例。 **[REA · 待验证]**
 - [Samsung Q60D：Codex 整理 Couchroot 主页适配与恢复流程](../cases/q60d-codex-couchroot-home.md) — zonaantiwoke_ 称在 Q60D 保留 Tizen、以 Couchroot 为基础适配自定义主页，并让 Codex 整理教程；本地版本未公开。 **[其他 AI 逆向 · 待验证]**
 - [Kindle 胶片相框：Claude Code 的 USB、照片与 FBInk 工作流](../cases/kindle-claude-film-photo-frame-workflow.md) — 作者分享据自己会话整理的 Kindle 胶片扫描相框提示词，覆盖机型识别、现有越狱方法和低功耗显示；不是已核验实现。 **[其他 AI 逆向 · 待验证]**
-- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](../cases/claude-router-wifi-diagnosis-workflow.md) — codila 补充目标是 ISP 定制固件的 Huawei 路由器，称用官方 REA skills 分析后台登录、设备／Wi-Fi／重启端点并写聊天控制器；五分钟修复仍无测速佐证。 **[REA · 待验证]**
+- [家用路由器：Claude 调查管理接口、诊断 Wi-Fi 与回读配置的流程](../cases/claude-router-wifi-diagnosis-workflow.md) — codila的Huawei ISP路由器调查增加公开Skill仓库：文档列29设备记录、TR069管理通道和2025年6月固件；可查只读／批准式流程，五分钟修复仍无测速佐证。 **[REA · 待验证]**
 - [Spotify Car Thing：用 REA 备份、映射固件与比较社区替代的假设流程](../cases/car-thing-rea-revival-workflow-idea.md) — 作者回顾已停服的 Car Thing，设想若当时有 Opus／REA 如何研究并复用；明确社区项目早已存在，不是 AI 复活设备的实测。 **[REA · 待验证]**
 - [联想打印 APK：Codex 分析调用方式并封装打印 Skill 的自述](../cases/lenovo-print-apk-codex-skill.md) — 发帖者称让 Codex 提取联想打印 APK、研究调用打印机的方式，再封装成 Skill；没有公开型号、协议或测试。 **[其他 AI 逆向 · 待验证]**
 - [Nothing Phone 3a：Claude Code 辅助移植 iOS 16 的启动自述](../cases/nothing-phone-3a-claude-ios16-port.md) — Sajid Khan 称基于 ios-sweet 编写驱动、内核补丁与读崩溃日志，使 Nothing Phone 3a 进入 iOS 界面；无线、通话、相机与 GPU 均未可用。 **[其他 AI 逆向 · 待验证]**

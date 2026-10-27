@@ -2,7 +2,15 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
-- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](../cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01称为测试REA分析勒索软件的能力，使用无害模拟做了实验并链接视频。可读正文没有说明模拟器、分析步骤或发现，不确认真实勒索样本分析或解密成功。 **[REA · 分析测试]**
+- [NIA App：MATH FOURNITY称GLM在逆向元思维指导下完成分析](../cases/math-fournity-nia-glm-analysis-claim.md) — MATH FOURNITY称GLM分析了国家网络身份认证NIA App，并归因于“壮哥”的AI逆向元思维；可读正文没有步骤、发现或验收，“拿下”不能当服务入侵证明。 **[其他 AI 逆向 · 待验证]**
+- [CAIRN的A3规避：帖子转述84个恶意样本以明文干扰LLM分析](../cases/talos-cairn-a3-ai-malware-analysis-evasion-report.md) — 帖子署名Talos研究员Ryan Fetterman／CAIRN，称在84个样本中追踪AI-analysis evasion：注释要求分析器忽略文件、拒绝逆向或虚构国防合同。没有提供模型测试或成功规避率。 **[其他 AI 逆向 · 待验证]**
+- [Grok Bots行为探测：Florent Quinti设想让Agent群反推完整harness](../cases/florentquinti-grok-bots-behavioral-harness-idea.md) — Florent Quinti提出让Agent群系统交互并测试Grok Bots等产品，推断提示词、工具、技能、记忆和编排；是黑箱研究idea，没有报告恢复结果。 **[其他 AI 逆向 · 待验证]**
+- [比特币交互时间线：Louise Ivan用REA查看参考网站，Codex制作网页](../cases/louiseivan-bitcoin-timeline-rea-reference-websites.md) — Louise Ivan明确分工：Grok Bot做研究、REA查看参考站、Three.js与GSAP做视觉、Codex做网站、Opus做预告片；父帖称作品是覆盖17年的比特币价格与事件时间线，效果未核验。 **[REA · 待验证]**
+- [自有网页重建：Nino称不带REA的Claude先完成，REA组仍在调整移动版](../cases/ninodirector-claude-rea-own-website-comparison.md) — Nino让两个Claude以相同指令重建自己的网页，称裸Claude八分多钟完成并比较14个滚动位置，REA组耗尽时间时仍在修移动版；仅作者单次对照，不是通用性能基准。 **[REA · 分析测试]**
+- [IDA自举重建：Max_RM设想让IDA MCP与REA逆向IDA自身](../cases/max-rm-ida-self-reconstruction-rea-idea.md) — Max_RM回复Hex-Rays，设想用IDA MCP和REA将IDA自身逆向为源码；只是具名目标idea，没有执行、代码或等价验证。 **[REA · 待验证]**
+- [Malware Bot：Shanholo把Codex、REA／Ghidra与多种恶意软件分析工具组成助手](../cases/shanholo-malware-bot-codex-rea-workflow.md) — Shanholo介绍自己的Malware Bot，列出Codex、YARA、capa、REA／Ghidra、Volatility和REMnux；是具体恶意软件分析工作流，没有公开样本、工具编排或分析验收。 **[REA · 相关项目]**
+- [屏幕跟踪App：Parichay称因隐私顾虑用REA分析，再让Codex写替代品](../cases/parichay-screen-tracking-rea-codex-private-rebuild.md) — Parichay买了5美元的屏幕跟踪App后担心隐私，称用REA了解内部实现，再让Codex制作更简洁私密的应用并宣布开源；仓库、隐私性质和功能等价未核验。 **[REA · 待验证]**
+- [无害勒索软件模拟：zack0x01称用REA进行恶意软件分析实验](../cases/zack0x01-rea-harmless-ransomware-simulation-test.md) — zack0x01补充称普通DeepSeek模型在无害勒索模拟中生成加密器、锁定数据库并留下10万美元比特币赎金便条；视频另含备份恢复。是模拟与作者报告，不是分析真实勒索家族或破解加密。 **[REA · 分析测试]**
 - [pixiv APK：梦醒无路走称Codex逆向后去广告并可用会员功能](../cases/yjcdon-pixiv-apk-codex-modification-report.md) — @yjcdon称用Codex逆向pixiv APK，移除广告并可使用会员功能；未给APK版本、修改位置或测试，不能确认服务端权限、合法授权或完整会员访问。 **[其他 AI 逆向 · 待验证]**
 - [Flutter二进制：hiroyuki称Codex接Ghidra后自行抽对象池定位地址](../cases/ionis-h-codex-ghidra-flutter-object-pool-analysis.md) — hiroyuki报告Codex接Ghidra后，在简略指令下编写对象池提取脚本，从地址定位继续分析Flutter二进制。未给应用、Flutter版本或脚本，不确认跨版本通用性。 **[其他 AI 逆向 · 分析测试]**
 - [1997年编译器：Giblet称用AI反编译Capcom所用工具的近亲版本](../cases/giblet-1997-capcom-sibling-compiler-ai-decompilation.md) — Giblet回应AI披露争议，称AI用于反编译一款1997年编译器，其版本与Capcom所用相近但不完全相同。游戏、编译器名称和验证记录未提供，不确认首次完成或源码匹配。 **[其他 AI 逆向 · 待验证]**
