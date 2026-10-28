@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Seedance紫色能量战斗短片：16镜反推prompt，作者承认不完全匹配](../cases/sandmrk-seedance-violet-battle-prompt.md) — sandmrk发布39.3秒、16镜的Seedance2.5战斗视频反推描述；保留角色、空间与特效连续性，但未证明还原原prompt。 **[其他 AI 逆向 · 进行中]**
+- [KeyoAPI六层视觉重建：手拆咖啡馆图，生成不同人物的书店肖像](../cases/keyoapi-six-layer-lifestyle-image-reconstruction.md) — KeyoAPI把参考图分为六层手写规格，再用gpt-image-2做两个1536×1024书店肖像；明确非提取原prompt或相貌复制，仍偏咖啡馆。 **[其他 AI 逆向 · 分析测试]**
+- [Lionheart Anime Studio：Devon称研究三个生成器后整合纯prompt工作室](../cases/devon-lionheart-anime-studio-generator-study.md) — Commander Devon称逆向Anime Art Studio、Vivid与Grok Imagine后做成自己的艺术工作室，以提示词控制画风；无代码、对照或权重恢复证据。 **[其他 AI 逆向 · 待验证]**
 - [Popularo／Captain Hook：作者用Claude Opus归纳社媒传播hook，网站已停托管](../cases/popularo-captain-hook-claude-social-patterns.md) — AudioNervousSys称与Claude Code／Opus共同逆向社媒及meme hook，做过Popularo和高级组件Captain Hook；无输入输出或效果测试。 **[其他 AI 逆向 · 待验证]**
 - [Seedance舞蹈视频提示重建：AI art gallery保留逐秒动作与不匹配限制](../cases/sandmrk-video-prompt-laugh-reconstruction.md) — sandmrk发布从视频反推的Seedance2.5逐秒舞蹈prompt，回复明确说生成不能完全匹配原视频、仍需优化。 **[其他 AI 逆向 · 进行中]**
 - [LLM文本水印：ETH／ICML2024研究的低成本逆向与伪造转述](../cases/eth-icml2024-llm-text-watermark-spoofing-report.md) — 候选称ETH研究者可低于50美元逆向常见分布式文本水印、伪造成功率逾80%；未取得原论文与实验条件。 **[未确认使用 REA · 待验证]**

@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1104 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1114 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
 - [游戏与游戏保存](categories/games.md)（237）
-- [硬件与设备互通](categories/hardware.md)（312）
-- [应用与客户端](categories/apps.md)（456）
-- [算法与功能重建](categories/algorithms.md)（99）
+- [硬件与设备互通](categories/hardware.md)（314）
+- [应用与客户端](categories/apps.md)（461）
+- [算法与功能重建](categories/algorithms.md)（102）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -169,7 +169,7 @@
 - [Slay The Spire：在反编译成果上用 Claude 改玩法的报告](cases/slay-spire-claude-gameplay-report.md) — maya 自述借已有反编译成果改 Boss、画面、UI 和构筑；未确认 Claude 参与原始反编译。 **[其他 AI 逆向 · 待验证]**
 - [New Vegas：希望 AI 逆向带来可 Mod 的重制版](cases/new-vegas-ai-moddable-remaster-idea.md) — 读者希望 AI 逆向带来可修改的 New Vegas 重制版，而非更多云游戏；没有项目或成果。 **[其他 AI 逆向 · 待验证]**
 - [Battlefield／Frostbite：让玩家获得开放实现的 AI 逆向设想](cases/battlefield-frostbite-ai-open-idea.md) — 读者猜想有人可能正在用 AI 逆向 Battlefield 或 Frostbite，以做玩家想要的游戏；没有项目证据。 **[其他 AI 逆向 · 待验证]**
-- [GTA 6：拿到可执行文件后三个月逆向一半的预测](cases/gta6-ai-decompile-prediction.md) — 读者押注 AI Agent 三个月逆向 GTA 6 的50%；获取主机二进制本身仍被其视为瓶颈。 **[其他 AI 逆向 · 待验证]**
+- [GTA 6：逆向进度预测与Linux／Vulkan小体积移植的读者idea](cases/gta6-ai-decompile-prediction.md) — 读者预测三个月逆向GTA6一半；另有Silver Spoon调侃用AI反编译重编译成Linux/Vulkan版、装进DVD。均无实施或容量测试。 **[其他 AI 逆向 · 待验证]**
 - [Pre-CU Star Wars Galaxies：用 AI 加速模拟器逆向的 idea](cases/swg-precu-ai-emulator-idea.md) — 读者问 AI 能否缩短旧版 Star Wars Galaxies 模拟器的多年逆向工作；没有报告实施。 **[其他 AI 逆向 · 待验证]**
 - [Animal Jam / Burrow：Claude 反编译的未确认转述](cases/animal-jam-burrow-claude-report.md) — 多位社区读者将AI作用限定为Animal Jam辅助逆向，而非生成整个游戏；仍无开发者确认或正式安全审计。 **[其他 AI 逆向 · 待验证]**
 - [LittleBigPlanet：为可修改的原生 PC 版提出 AI 反编译 idea](cases/littlebigplanet-ai-native-port-idea.md) — duggsby 希望通过 AI 反编译获得可修改的原生 PC 版；同串声称见过 LBP1 产物的回复仍无项目来源。 **[其他 AI 逆向 · 待验证]**
@@ -266,6 +266,8 @@
 
 ### 硬件与设备互通
 
+- [Roborock床底清洁：Sergey想用Claude写自己的固件](cases/roborock-claude-under-bed-firmware-idea.md) — Sergey因Matic机身进不了床底，希望有空用Claude为Roborock做自定义固件；没有开始或成功的报告。 **[其他 AI 逆向 · 待验证]**
+- [二手设备改装：Codex逆向闭源协议，作者正绘制CAD配件](cases/ec12edfae2cb221-used-printer-codex-protocol.md) — 王依依棺材馅儿称以三百多元二手设备替代原想买的拓竹，Codex搞定官方闭源协议，改装CAD仍在画；型号不明。 **[其他 AI 逆向 · 进行中]**
 - [相机关机画面：ThinkerZhang在RICOH GR讨论中提固件改造与Codex可能性](cases/camera-poweroff-screen-codex-community-idea.md) — 作者称社区有人定制相机关机画面，并提Codex潜力；父串是RICOH GR热靴配件，不证明Codex完成固件修改。 **[其他 AI 逆向 · 待验证]**
 - [iPad mini 60帧限制：读者希望用AI／REA研究解锁](cases/ipad-mini-rea-60fps-unlock-idea.md) — 候选希望未来AI与REA能研究iPad mini的60帧限制；没有设备代际、限制所在层或实施证据。 **[REA · 待验证]**
 - [烟感器逐件拆解展示：Gatiti称Opus识别隐藏相机，不能当物理检测证据](cases/gatiti-smoke-detector-ai-teardown-visualization-report.md) — Gatiti描述单prompt让Claude Code／Opus5.5用光标拆开烟感器并找出相机的展示；没有实体、测量或实际拆机记录。 **[其他 AI 逆向 · 待验证]**
@@ -308,7 +310,7 @@
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
 - [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
 - [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
-- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability自述逆向Ray-Ban Meta做棋局助手；10月28日Codez补述WhatsApp到Mac、Jev筛帧、Opus读盘和Stockfish流程。同一实现归属、开源与3000+Elo均未独立确认。 **[未确认使用 REA · 待验证]**
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。实现归属、开源与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
 - [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**
@@ -581,6 +583,11 @@
 
 ### 应用与客户端
 
+- [Clawd：8Bit回顾10月首周用REA研究，未披露恢复范围](cases/8bit-clawd-rea-retrospective.md) — 8Bit称10月首周已用REA逆向Clawd，并谈Agent层与转向Raydium；没有实现、测试或目标版本。 **[REA · 待验证]**
+- [GINJA的IPA修改：称用REA与AI研究，无需越狱](cases/ginja-rea-ipa-modding-no-jailbreak.md) — GINJA称正用REA和AI修改IPA、不越狱；未具名应用、修改功能或安装验证，不能推断运行Android或macOS。 **[REA · 进行中]**
+- [Samsung One UI快捷面板：读者建议用REA改手机软件去限制](cases/samsung-oneui-rea-reader-redesign-idea.md) — Janszoon在One UI快捷面板设计讨论中建议REA研究手机软件、去掉限制；只是具体界面背景下的愿望。 **[REA · 待验证]**
+- [Windows HTTP/3：Xiao Tan转述Anthropic模型无源码逆向与服务器崩溃](cases/anthropic-windows-http3-binary-vulnerability-report.md) — Xiao Tan转述未发布Anthropic模型直接研究Windows二进制、找到可使HTTP/3服务器崩溃重启的漏洞；未取得原始公告或CVE。 **[其他 AI 逆向 · 待验证]**
+- [Hark iOS对话加载故障：REA定位timezone与WAF冲突的作者报告](cases/hark-ios-timezone-rea-waf-diagnosis.md) — xxx_cccv称REA发现Hark iOS比网页多带timezone参数，被Cloudflare WAF拦截，建议用Loon／圈X去参数；无抓包或重测。 **[REA · 待验证]**
 - [Unreal 6无AI替代版：读者提出用REA重建的idea](cases/unreal6-rea-no-ai-reader-idea.md) — 读者问能否用REA制作去掉AI功能的Unreal 6副本，仅有目标和动机，没有实施。 **[REA · 待验证]**
 - [Daniel B.的本地旧软件研究：Qwen27B与DeepSeek Harness约7天用量自述](cases/danielbitpro-local-qwen27b-dsh-unsupported-software.md) — Daniel B.称用本地Qwen27B和DeepSeek Harness逆向停止支持的软件约7天，处理680M、生成9M tokens；未给重建成果。 **[其他 AI 逆向 · 进行中]**
 - [MCP原生插件审计：Mika称Claude／REA发现延迟外传，事件未独立核验](cases/mika-rea-mcp-native-addon-exfiltration-report.md) — Mika称REA静态追查项目搜索MCP的.node插件，发现延迟读取敏感路径并外传；后续公开只读审计prompt，无样本、日志或交易证据。 **[REA · 待验证]**
@@ -803,7 +810,7 @@
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
 - [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
-- [Grokbot：SOL 6.1 辅助恢复 Harness 与 Host 的远程电脑执行链](cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告三天恢复0.72.0-pre.11核心链路，主Agent委派电脑子Agent并打开Chrome；代码整理与宿主能力仍待完成。 **[其他 AI 逆向 · 进行中]**
+- [Grokbot：核心执行链恢复与NewMax云电脑插件的不同作者报告](cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告SOL6.1恢复Grokbot核心链路；10月28日Yangyi另称逆向插件接入NewMax Mobile调云电脑。两者实现关系、完整性与费用未核验。 **[其他 AI 逆向 · 进行中]**
 - [OrcaCyber Nano 1.0：本地解读反汇编的27B安全模型介绍](cases/orcacyber-nano-local-re-analysis.md) — 日语ChatGPT摘要介绍OrcaRouter的本地安全模型，用于反汇编解释与漏洞分析；没有具体二进制实验，通用数学代码分数不等于逆向能力。 **[其他 AI 逆向 · 相关项目]**
 - [超市购物：Grokbot被挡后，用笔记本上的逆向MCP配Claude](cases/supermarket-local-mcp-claude-report.md) — AD称超市阻止Grokbot后，改在笔记本运行其逆向MCP与Claude购物；实现和超市名称未公开，逆向时是否用了AI未知。 **[其他 AI 逆向 · 待验证]**
 - [Twitter本地API：读者称用AI与TypeScript重实现网页后端](cases/twitter-local-typescript-ai-api-reimplementation.md) — Felicodes将xitter解释为AI写的本地Twitter API重实现，把用户与帖子请求导向本机；尚无仓库或协议等价验证。 **[其他 AI 逆向 · 待验证]**
@@ -1040,6 +1047,9 @@
 
 ### 算法与功能重建
 
+- [Seedance紫色能量战斗短片：16镜反推prompt，作者承认不完全匹配](cases/sandmrk-seedance-violet-battle-prompt.md) — sandmrk发布39.3秒、16镜的Seedance2.5战斗视频反推描述；保留角色、空间与特效连续性，但未证明还原原prompt。 **[其他 AI 逆向 · 进行中]**
+- [KeyoAPI六层视觉重建：手拆咖啡馆图，生成不同人物的书店肖像](cases/keyoapi-six-layer-lifestyle-image-reconstruction.md) — KeyoAPI把参考图分为六层手写规格，再用gpt-image-2做两个1536×1024书店肖像；明确非提取原prompt或相貌复制，仍偏咖啡馆。 **[其他 AI 逆向 · 分析测试]**
+- [Lionheart Anime Studio：Devon称研究三个生成器后整合纯prompt工作室](cases/devon-lionheart-anime-studio-generator-study.md) — Commander Devon称逆向Anime Art Studio、Vivid与Grok Imagine后做成自己的艺术工作室，以提示词控制画风；无代码、对照或权重恢复证据。 **[其他 AI 逆向 · 待验证]**
 - [Popularo／Captain Hook：作者用Claude Opus归纳社媒传播hook，网站已停托管](cases/popularo-captain-hook-claude-social-patterns.md) — AudioNervousSys称与Claude Code／Opus共同逆向社媒及meme hook，做过Popularo和高级组件Captain Hook；无输入输出或效果测试。 **[其他 AI 逆向 · 待验证]**
 - [Seedance舞蹈视频提示重建：AI art gallery保留逐秒动作与不匹配限制](cases/sandmrk-video-prompt-laugh-reconstruction.md) — sandmrk发布从视频反推的Seedance2.5逐秒舞蹈prompt，回复明确说生成不能完全匹配原视频、仍需优化。 **[其他 AI 逆向 · 进行中]**
 - [LLM文本水印：ETH／ICML2024研究的低成本逆向与伪造转述](cases/eth-icml2024-llm-text-watermark-spoofing-report.md) — 候选称ETH研究者可低于50美元逆向常见分布式文本水印、伪造成功率逾80%；未取得原论文与实验条件。 **[未确认使用 REA · 待验证]**

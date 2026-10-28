@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Roborock床底清洁：Sergey想用Claude写自己的固件](../cases/roborock-claude-under-bed-firmware-idea.md) — Sergey因Matic机身进不了床底，希望有空用Claude为Roborock做自定义固件；没有开始或成功的报告。 **[其他 AI 逆向 · 待验证]**
+- [二手设备改装：Codex逆向闭源协议，作者正绘制CAD配件](../cases/ec12edfae2cb221-used-printer-codex-protocol.md) — 王依依棺材馅儿称以三百多元二手设备替代原想买的拓竹，Codex搞定官方闭源协议，改装CAD仍在画；型号不明。 **[其他 AI 逆向 · 进行中]**
 - [相机关机画面：ThinkerZhang在RICOH GR讨论中提固件改造与Codex可能性](../cases/camera-poweroff-screen-codex-community-idea.md) — 作者称社区有人定制相机关机画面，并提Codex潜力；父串是RICOH GR热靴配件，不证明Codex完成固件修改。 **[其他 AI 逆向 · 待验证]**
 - [iPad mini 60帧限制：读者希望用AI／REA研究解锁](../cases/ipad-mini-rea-60fps-unlock-idea.md) — 候选希望未来AI与REA能研究iPad mini的60帧限制；没有设备代际、限制所在层或实施证据。 **[REA · 待验证]**
 - [烟感器逐件拆解展示：Gatiti称Opus识别隐藏相机，不能当物理检测证据](../cases/gatiti-smoke-detector-ai-teardown-visualization-report.md) — Gatiti描述单prompt让Claude Code／Opus5.5用光标拆开烟感器并找出相机的展示；没有实体、测量或实际拆机记录。 **[其他 AI 逆向 · 待验证]**
@@ -44,7 +46,7 @@
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](../cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
 - [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](../cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
 - [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](../cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
-- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability自述逆向Ray-Ban Meta做棋局助手；10月28日Codez补述WhatsApp到Mac、Jev筛帧、Opus读盘和Stockfish流程。同一实现归属、开源与3000+Elo均未独立确认。 **[未确认使用 REA · 待验证]**
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。实现归属、开源与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](../cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](../cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
 - [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](../cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**

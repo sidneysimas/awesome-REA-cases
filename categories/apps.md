@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Clawd：8Bit回顾10月首周用REA研究，未披露恢复范围](../cases/8bit-clawd-rea-retrospective.md) — 8Bit称10月首周已用REA逆向Clawd，并谈Agent层与转向Raydium；没有实现、测试或目标版本。 **[REA · 待验证]**
+- [GINJA的IPA修改：称用REA与AI研究，无需越狱](../cases/ginja-rea-ipa-modding-no-jailbreak.md) — GINJA称正用REA和AI修改IPA、不越狱；未具名应用、修改功能或安装验证，不能推断运行Android或macOS。 **[REA · 进行中]**
+- [Samsung One UI快捷面板：读者建议用REA改手机软件去限制](../cases/samsung-oneui-rea-reader-redesign-idea.md) — Janszoon在One UI快捷面板设计讨论中建议REA研究手机软件、去掉限制；只是具体界面背景下的愿望。 **[REA · 待验证]**
+- [Windows HTTP/3：Xiao Tan转述Anthropic模型无源码逆向与服务器崩溃](../cases/anthropic-windows-http3-binary-vulnerability-report.md) — Xiao Tan转述未发布Anthropic模型直接研究Windows二进制、找到可使HTTP/3服务器崩溃重启的漏洞；未取得原始公告或CVE。 **[其他 AI 逆向 · 待验证]**
+- [Hark iOS对话加载故障：REA定位timezone与WAF冲突的作者报告](../cases/hark-ios-timezone-rea-waf-diagnosis.md) — xxx_cccv称REA发现Hark iOS比网页多带timezone参数，被Cloudflare WAF拦截，建议用Loon／圈X去参数；无抓包或重测。 **[REA · 待验证]**
 - [Unreal 6无AI替代版：读者提出用REA重建的idea](../cases/unreal6-rea-no-ai-reader-idea.md) — 读者问能否用REA制作去掉AI功能的Unreal 6副本，仅有目标和动机，没有实施。 **[REA · 待验证]**
 - [Daniel B.的本地旧软件研究：Qwen27B与DeepSeek Harness约7天用量自述](../cases/danielbitpro-local-qwen27b-dsh-unsupported-software.md) — Daniel B.称用本地Qwen27B和DeepSeek Harness逆向停止支持的软件约7天，处理680M、生成9M tokens；未给重建成果。 **[其他 AI 逆向 · 进行中]**
 - [MCP原生插件审计：Mika称Claude／REA发现延迟外传，事件未独立核验](../cases/mika-rea-mcp-native-addon-exfiltration-report.md) — Mika称REA静态追查项目搜索MCP的.node插件，发现延迟读取敏感路径并外传；后续公开只读审计prompt，无样本、日志或交易证据。 **[REA · 待验证]**
@@ -224,7 +229,7 @@
 - [Kindle 与 ZenOS：Codex 研究系统后做 Apple Books／微信读书 EPUB 投递界面](../cases/kindle-zenos-codex-epub-sync.md) — 郭宇称让Codex研究ZenOS与Kindle原系统，制作统一书架与一键EPUB投递界面；未给系统版本、代码或传输验证。 **[其他 AI 逆向 · 待验证]**
 - [Fuji XApp：为相机与 iPhone 稳定同步提出 AI 逆向替代端 idea](../cases/fuji-xapp-ai-iphone-sync-idea.md) — GeekPlux抱怨XApp连接失败与传输慢，ThinkerZhang建议AI研究官方App再做更快同步端；尚无实现报告。 **[其他 AI 逆向 · 待验证]**
 - [Kestrel：研究 MuMuPlayer Pro，为 Apple Silicon 做原生 Android 游戏播放器](../cases/kestrel-colate-rea-mac-android-player.md) — Himansh Raj 的公开 Swift 项目在 Google Android Emulator 上加 Metal 播放器与键鼠映射；报告 BGMI 可玩，但当前公开 CI 的 Swift 测试失败。 **[REA · 进行中]**
-- [Grokbot：SOL 6.1 辅助恢复 Harness 与 Host 的远程电脑执行链](../cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告三天恢复0.72.0-pre.11核心链路，主Agent委派电脑子Agent并打开Chrome；代码整理与宿主能力仍待完成。 **[其他 AI 逆向 · 进行中]**
+- [Grokbot：核心执行链恢复与NewMax云电脑插件的不同作者报告](../cases/grokbot-sol61-harness-host-reconstruction.md) — 熊布朗报告SOL6.1恢复Grokbot核心链路；10月28日Yangyi另称逆向插件接入NewMax Mobile调云电脑。两者实现关系、完整性与费用未核验。 **[其他 AI 逆向 · 进行中]**
 - [OrcaCyber Nano 1.0：本地解读反汇编的27B安全模型介绍](../cases/orcacyber-nano-local-re-analysis.md) — 日语ChatGPT摘要介绍OrcaRouter的本地安全模型，用于反汇编解释与漏洞分析；没有具体二进制实验，通用数学代码分数不等于逆向能力。 **[其他 AI 逆向 · 相关项目]**
 - [超市购物：Grokbot被挡后，用笔记本上的逆向MCP配Claude](../cases/supermarket-local-mcp-claude-report.md) — AD称超市阻止Grokbot后，改在笔记本运行其逆向MCP与Claude购物；实现和超市名称未公开，逆向时是否用了AI未知。 **[其他 AI 逆向 · 待验证]**
 - [Twitter本地API：读者称用AI与TypeScript重实现网页后端](../cases/twitter-local-typescript-ai-api-reimplementation.md) — Felicodes将xitter解释为AI写的本地Twitter API重实现，把用户与帖子请求导向本机；尚无仓库或协议等价验证。 **[其他 AI 逆向 · 待验证]**
