@@ -2,6 +2,13 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Flash 5重建：Lynn Cole从REA与界面观察转向旧手册驱动的WASM项目](../cases/flash5-wasm-zig-bun-reconstruction-report.md) — Lynn Cole称REA与Codex界面探索未得到满意结果，转用旧Flash手册和教程指导WASM/Zig/Bun重建；三周后报告补间、影片编译与工作区进度。 **[REA · 进行中]**
+- [网络风险SaaS设计系统：用Claude从现有产品恢复规范，以原型交接前端](../cases/cyber-risk-saas-claude-design-system-prototype.md) — 作者回忆为缺设计资源的客户用Claude恢复设计系统，再与设计负责人校验，以可交互原型而非Figma交接。 **[其他 AI 逆向 · 待验证]**
+- [Higgsfield Katana：作者称反推制作Claude动效Skill，依赖Scenario配乐音效](../cases/higgsfield-katana-claude-motion-skill.md) — 作者称用Claude动效Skill替代Katana，文字描述产品后编排与卡点，Scenario负责音乐音效并输出4K；未核验下载或等价性。 **[其他 AI 逆向 · 待验证]**
+- [8Bit的Solana研究与REA机器人：Pump反汇编、未发布模板与Core本地测试](../cases/8bit-rea-solana-decompiler-research.md) — 同组帖子宣布REA @bot，报告Pump程序与IDL分析、三Skill待发布模板、Metaplex Core离线测试；分支未推送，不是整条区块链重建。 **[REA · 进行中]**
+- [Rayon：用REA为Windows重做Raycast式启动器，尚待整日使用检验](../cases/rayon-windows-raycast-rea-report.md) — 法语作者称用REA制作Windows启动器Rayon，带命令面板、AI和小工具，先供自己与团队用；明确还没做完整一天对照。 **[REA · 进行中]**
+- [苹果官网本地重建：作者称REA配Antigravity复刻外观](../cases/apple-website-rea-antigravity-local-rebuild.md) — 作者称用REA与Google Antigravity研究苹果官网并本地重做；一模一样仅为作者视觉评价，没有交互或功能对照。 **[REA · 待验证]**
+- [纯本地应用六层防御：作者称整理十类REA无法逆向的实例后设计防护](../cases/local-app-rea-six-layer-defense-report.md) — 作者宣称收集十类REA失败的证据案例并为本地应用做六层防御；未读清单、实现或对抗实验，不采信无法逆向的保证。 **[REA · 待验证]**
 - [PlainMount：REA研究NTFSTool，为旧硬盘做原生Mac读写工具](../cases/laplaced-plainmount-rea-ntfstool-macos.md) — Laplaced称Agent用REA研究NTFSTool后，复用现有NTFS组件制作PlainMount，并在旧Transcend硬盘测试读写重连；源码公开，未独立磁盘测试。 **[REA · 进行中]**
 - [Ginux：Codex在人的架构与验收约束下重建Linux用户态兼容内核](../cases/ginux-codex-linux-abi-kernel-report.md) — Gregory Kurtzer的Ginux公开Rust内核与Linux ABI兼容代码；报道与文档称Codex持续11天，Rocky10启动到systemd，但只验证特定QEMU路径且总测试仍有失败。 **[其他 AI 逆向 · 进行中]**
 - [ProofOfAgent #1884：AI拒绝逆向服务器取答案的具体设想](../cases/hushww-proofofagent-server-answer-refusal.md) — hushww称解题免费铸造太难，问AI能否逆向服务器取答案，被拒后改为等待入口的守护进程；没有服务器分析或成功铸造证明。 **[其他 AI 逆向 · 待验证]**
@@ -23,7 +30,6 @@
 - [习惯追踪Today页：REA与Appllama辅助SwiftUI重建的三组耗时自述](../cases/rea-appllama-habit-tracker-swiftui-comparison.md) — 推广帖称Opus5.5单独、加REA、再加Appllama分别用34.7、19.6、11.0秒重建Today页，未提供重复试验或完整对照。 **[REA · 分析测试]**
 - [Claude Code记忆：Dhravya Shah团队称完成逆向并发布讲解](../cases/dhravya-claude-code-memory-research.md) — Dhravya Shah称团队逆向Claude Code记忆，机制很简单但有注意事项；可见帖未展开这些机制。 **[未确认使用 REA · 待验证]**
 - [仿AirDrop的Mac/Windows传输：Opus写Electron应用，非Apple协议兼容证明](../cases/opus-electron-airdrop-like-local-transfer.md) — 作者称一个下午用Opus5.5制作本地文件传输，报告UDP发现、接受/拒绝与Mac启动修复；方法更像重建体验而非逆向AirDrop协议。 **[其他 AI 逆向 · 待验证]**
-- [8Bit的Solana合约研究：自研反编译技术配合REA](../cases/8bit-rea-solana-decompiler-research.md) — 8Bit称从两年前不会GitHub走到用自研反编译技术与REA研究Solana协议；未命名合约或给恢复规格。 **[REA · 进行中]**
 - [自有Web App到Agent训练场：REA与Opus从一次录制恢复工具和奖励检查的idea](../cases/rea-opus-webapp-recording-agent-gym-idea.md) — 推广帖提出用REA/Opus5.5把自有Web App一次会话录制转成工具、本地状态与奖励检查；无可运行环境。 **[REA · 待验证]**
 - [PicasaPy：Virág Attila以Ghidra、Claude与Codex重建Picasa3.9照片管理器](../cases/picasapy-ghidra-claude-codex-photo-manager.md) — Virág Attila发布Python/Qt重写Picasa，公开二进制研究规格与成功CI；项目自己区分静态菜单覆盖、点击测试和仍未证明的效果等价。 **[其他 AI 逆向 · 进行中]**
 - [ego lite Windows版：旺仔卷卷让AI解释反编译结果](../cases/ego-lite-windows-ai-decompilation-study.md) — 旺仔卷卷称Windows版ego lite发布后就反编译，让AI讲解以学习逆向与反代机制；没有修改或替代品结果。 **[其他 AI 逆向 · 待验证]**
@@ -346,7 +352,7 @@
 - [Virtual Desktop Streamer：研究安装包，做 Linux 适配层](../cases/virtual-desktop-streamer-linux.md) — Claude Code + REA 分析官方安装包，复用协议库并替换 macOS 平台层。 **[REA · 进行中]**
 - [微信本地聊天记录：Codex 分析加密数据的作者报告](../cases/wechat-local-chat-decryption-report.md) — 作者称曾用 Codex 处理微信本地加密聊天记录，过程与范围未公开。 **[其他 AI 逆向 · 待验证]**
 - [LightBurn：为自己的激光机重建专用控制软件的报告](../cases/lightburn-personal-laser-rebuild.md) — 作者称用 REA 在16分钟内制作只针对自己激光机的 LightBurn 替代。 **[REA · 待验证]**
-- [MarkText：用 REA 逆向并重建 HTML 导出](../cases/marktext-html-export.md) — 用 AI bots 与 REA 分析 MarkText 的 HTML 导出并重建；17 项测试通过，Windows 检查仍未完成。 **[REA · 进行中]**
+- [MarkText：用 REA 逆向并重建 HTML 导出](../cases/marktext-html-export.md) — 早期作者报告导出重建17项测试通过、Windows待检查；10月28日另一作者补充REA静态追链与人工核对自述，不是动态验证。 **[REA · 进行中]**
 - [Screen Studio：用 REA 拆解后复刻录屏演示工具](../cases/screen-studio-rebuild.md) — 作者报告用 REA 分析 Screen Studio，并以 Claude Code 复刻、录制演示。 **[REA · 待验证]**
 - [Claude Desktop：用 REA 观察界面细节](../cases/claude-desktop-ui-details.md) — REA 界面研究从作者观察延伸到公开 Open Claude UI 文档；组件与动效的保真度、新版适用性未独立测试。 **[REA · 分析测试]**
 - [Typeless：用 REA 做本地语音输入替代品](../cases/rea-typeless-local.md) — 作者报告用 REA 分析 Typeless，并完成离线运行的 Swift 语音输入应用。 **[REA · 待验证]**

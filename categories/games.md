@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [童年旧游戏：iamstalkholic称与Claude反编译，准备现代化重写](../cases/iamstalkholic-claude-childhood-game-rewrite.md) — 作者称已与Claude反编译小时候玩的旧游戏，并计划重写；游戏名称、代码与运行情况未提供。 **[其他 AI 逆向 · 进行中]**
+- [Fortnite 27.11风暴逻辑：Claude经MCP读IDA dump，尝试补服务端实现](../cases/fortnite2711-claude-ida-storm-server-rebuild.md) — 作者称研究2023年11月OG版本，用Claude与IDA dump推断客户端已不再保存的风暴代码；常一次成功、节时90%均是经验自述。 **[其他 AI 逆向 · 进行中]**
+- [PS5 Overdrive商店：Claude构建与下线的二手报道，不是AI发现利用链](../cases/overdrive-ps5-claude-storefront-secondary-report.md) — 候选援引eTeknix称Claude参与Overdrive商店，复用Relapse并索引外部游戏库，后被下线；未核验原报道、补丁或服务状态。 **[其他 AI 逆向 · 待验证]**
 - [Instance：按黑盒规格用Claude重建GameMaker8.1的Rust编辑器与引擎](../cases/instance-gamemaker81-claude-blackbox-rust.md) — 二手报道称Claude Opus5.5按行为规格重写GameMaker8.1；公开Instance仓库有Rust编辑器、运行时、黑盒测试及浏览器入口，兼容性与工时未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [Uma Forza：Unity重建地平线4世界并导入赛马娘角色的二手报道](../cases/uma-forza-petracoreproxy-unity-secondary-report.md) — 遊戲角落报道PetracoreProxy把FH4地图、环境与赛马娘角色放进Unity；AI只在报道背景中出现，实际贡献未确认。 **[其他 AI 逆向 · 待验证]**
 - [SNES逻辑与时序：JSONB让Agent驱动模拟器检查字节一致性](../cases/vyrotek-snes-asm-agent-emulator-parity.md) — JSONB称从SNES汇编dump逆向游戏逻辑和时序，再让Agent操作模拟器确认精确字节一致；游戏与对照范围未披露。 **[其他 AI 逆向 · 进行中]**

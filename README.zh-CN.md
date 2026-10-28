@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 1143 个案例与项目
+# 1164 个案例与项目
 
-**最近案例更新：**2026 年 10 月 28 日 21:05 · **最近维护：**2026 年 10 月 28 日 21:05 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 29 日 00:13 · **最近维护：**2026 年 10 月 29 日 00:13 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -22,7 +22,7 @@
 
 ## 近期精选
 
-**10 个值得读的案例**，从设备互通、游戏保存到实用替代品：不只看公开实现，也看测试与历史怪癖如何划出兼容边界。下列日期为来源或作者更新日期，不是收录日期。
+**10 个值得读的案例**，从设备互通、游戏保存到实用替代品：看实际对照了什么——二进制、旧版怪癖，甚至音箱的灯光与声音。下列日期为来源或作者更新日期，不是收录日期。
 
 1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
 2. **[NIST 曲线种子从哪来](cases/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic 报告 Claude 追到 **lrand48 与时间戳**，公开代码，也保留未解问题。**不是破解 ECDSA**，本合集未独立复算。`研究报告`
@@ -33,7 +33,7 @@
 7. **[Instance：保存GameMaker的怪癖，而不只是功能](cases/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — 报道称**Claude按黑盒规格用Rust重建8.1编辑器与运行时**，公开代码及浏览器入口，保留旧事件、随机数和音频行为。按报道完整工作是**三周，不只一上午**；不保证全面等价或法律合规，本合集未运行。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
 9. **[PicasaPy：让本地照片工作流继续用](cases/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28`（北京时间） — Virág Attila用**Ghidra／Claude／Codex辅助Python/Qt重写**，公开研究规格及精确提交的成功CI。共用**.picasa.ini**不等于无冲突同步；项目文档区分静态覆盖与点击测试。未证明全面等价，本合集未运行。`进行中`
-10. **[BEST抽油烟机：找回被缓存藏住的控制项](cases/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27`（北京时间） — Steve Godlewski与Claude Code抓蓝牙流量，纠正**40项缓存漏掉54个特征中部分控制项**的误判，将四档风速与四档灯光接入Home Assistant。公开日志保留失败诊断，上游修正已合并；复用前人工作，**仅一台HBN65366SS作者实测**，本合集未运行。`进行中`
+10. **[Klipsch Lumina：让Agent自己看灯、听音](cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md)** · `2026-10-28` — Pawan Deshpande报告**抓BLE流量、研究手机App二进制**后做Mac控制应用，再接摄像头与麦克风反馈检查LED和音频。称另有随屏幕主色变化的灯光模式；源码入口与实物效果未独立核验。`作者报告`
 
 ## 经典案例
 
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **242** |
-| [硬件与设备互通](categories/hardware.md) | **321** |
-| [应用与客户端](categories/apps.md) | **471** |
-| [算法与功能重建](categories/algorithms.md) | **109** |
+| [游戏与游戏保存](categories/games.md) | **245** |
+| [硬件与设备互通](categories/hardware.md) | **328** |
+| [应用与客户端](categories/apps.md) | **477** |
+| [算法与功能重建](categories/algorithms.md) | **114** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 

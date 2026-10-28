@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Anthropic红队多平台报告转述：Ghidra读Windows QUIC二进制并对照C重建](../cases/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — 读者转述Claude研究Chrome、Safari、Linux和Windows，其中QUIC使用Ghidra与C行为对照；原始报告、漏洞链与修复版本未独立核对。 **[其他 AI 逆向 · 待验证]**
+- [macOS开盖唤醒：读者希望逆向行为，让Linux更快亮屏](../cases/macos-linux-fast-wake-reconstruction-idea.md) — 在AI逆向语境下，读者提出研究macOS开盖唤醒并在Linux重建；0.25秒与3分钟是愿景对比，不是基准。 **[未确认使用 REA · 待验证]**
+- [银发旗袍女巫：sandmrk反推8.9秒九个硬切姿态的生成提示词](../cases/sandmrk-qipao-witch-nine-pose-video-prompt.md) — sandmrk按原视频写人物、室内场景与逐秒九镜头提示，强调姿态展示而非舞蹈；明确生成结果仍不能完全匹配。 **[其他 AI 逆向 · 进行中]**
+- [Solana整链重建：REA与40 Agent、72小时的未验证自述](../cases/solana-rea40-agents72h-reconstruction-report.md) — 作者称40个并行Agent用REA在72小时重建Solana核心机制并将开源；无仓库核对、共识或网络兼容性测试。 **[REA · 待验证]**
+- [MoCap Anything V2：从普通视频反求参考骨架旋转的研究系统转述](../cases/mocap-anything-v2-video-skeleton-reconstruction.md) — 报道介绍视频到3D关节再到旋转的AI流程，输出BVH而非仅视频；20倍离线提速与误差来自二手论文口径，公开实现另有复实现限制。 **[其他 AI 逆向 · 待验证]**
 - [镜面旗袍舞蹈：sandmrk反推7.5秒Seedance单镜视频规格](../cases/sandmrk-seedance-mirror-qipao-75s-prompt.md) — sandmrk反推Seedance2.5的白发旗袍镜面舞蹈，逐秒列动作和倒影几何约束；明确生成不能完全匹配原视频。 **[其他 AI 逆向 · 进行中]**
 - [抗衰老药丸成分：Bob设想气相色谱加AI反推配方](../cases/bob-ai-chromatography-antiaging-pill-idea.md) — Bob设想用气相色谱和逆向AI识别抗衰老药丸成分，再委托制造；没有实验、配方或安全性证据。 **[其他 AI 逆向 · 待验证]**
 - [白发旗袍舞蹈：sandmrk为18秒视频反推Seedance提示词](../cases/sandmrk-seedance-whitehair-qipao-dance-prompt.md) — sandmrk给出18秒固定机位舞蹈的Seedance2.5重建规格，含105.5BPM与逐秒动作，明确生成不能完全匹配原片。 **[其他 AI 逆向 · 进行中]**

@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1143 cases & projects
+# 1164 cases & projects
 
-**Latest case update:** October 28, 2026, 21:05 · **Last maintained:** October 28, 2026, 21:05 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 29, 2026, 00:13 · **Last maintained:** October 29, 2026, 00:13 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation and useful replacements. Public implementations matter, but so do the tests and quirks that reveal where compatibility stops. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, game preservation and useful replacements. Look for what was actually compared: binaries, old quirks, or even a speaker's lights and sound. Dates below are source or author-update dates, not collection dates.
 
 1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Instance: preserve GameMaker's quirks, not just its features](cases/en/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — A report credits **Claude-assisted, black-box-spec-driven Rust reconstruction** of the 8.1 editor and runtime. Public code and browser entry include old event, RNG and audio behavior; **three weeks, not just a morning**, according to the report. No full-parity or legal-compliance guarantee; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[PicasaPy: keep a local photo workflow alive](cases/en/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28` (Beijing time) — Virág Attila's **Ghidra/Claude/Codex-assisted Python/Qt rewrite** has public research specifications and successful exact-commit CI. Shared **.picasa.ini** files are not conflict-safe synchronization; project documents separate static coverage from click tests. Full parity not established; not run here. `In progress`
-10. **[BEST hood: restore the controls the cache hid](cases/en/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27` (Beijing time) — Steve Godlewski and Claude Code trace Bluetooth traffic to correct a **40-entry cache hiding part of 54 characteristics**, bringing four fan speeds and four light levels to Home Assistant. Public logs preserve the mistaken diagnosis; an upstream fix is merged. Builds on prior work, **one HBN65366SS tested by the author**, not independently run here. `In progress`
+10. **[Klipsch Lumina: let the agent see and hear the test](cases/en/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md)** · `2026-10-28` — Pawan Deshpande reports **BLE sniffing and mobile-binary research** for a Mac controller, then webcam/microphone feedback to check LEDs and audio. Includes a claimed screen-color lighting mode; source entry and physical results not independently checked. `Author report`
 
 ## Classic cases
 
@@ -48,10 +48,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **242** |
-| [Hardware & interoperability](categories/en/hardware.md) | **321** |
-| [Applications & clients](categories/en/apps.md) | **471** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **109** |
+| [Games & preservation](categories/en/games.md) | **245** |
+| [Hardware & interoperability](categories/en/hardware.md) | **328** |
+| [Applications & clients](categories/en/apps.md) | **477** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **114** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

@@ -2,6 +2,13 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Klipsch Lumina音箱：AI研究BLE，以摄像头和麦克风闭环检查Mac控制应用](../cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande称AI从抓包和手机App二进制研究Lumina 2.1协议，再用摄像头看灯、麦克风听音，迭代Mac菜单栏应用；未独立测试。 **[其他 AI 逆向 · 进行中]**
+- [扫地机夜巡：Martin称用Opus与Valetudo改为识别宠物的家庭守卫](../cases/vacuum-opus-valetudo-night-guard-report.md) — Martin称root自有扫地机，让Claude Code检查Valetudo与本地相机，再组合YOLO和巡逻规划；没有型号、代码或延迟实测。 **[其他 AI 逆向 · 待验证]**
+- [小米15运行iOS16：读者转述AI逆向移植，尚无启动验证](../cases/xiaomi15-ios16-ai-port-secondary-report.md) — 读者称刷到小米15可运行iOS16的AI移植说法；没有开发者、仓库或启动记录，不认定可刷机。 **[其他 AI 逆向 · 待验证]**
+- [Ray-Ban Meta赛道教练：REA读相机、Claude理解Spa画面的未验证宣称](../cases/rayban-meta-rea-spa-race-coach-report.md) — 帖子称REA让Agent读取眼镜30fps画面、Claude给路线和刹车提示；未证明实时管线、眼镜显示或真实驾驶测试。 **[REA · 待验证]**
+- [Sony FX3／FX30／A7 IV：用AI与REA研究软件功能限制的idea](../cases/sony-fx3-fx30-a7iv-ai-restrictions-idea.md) — 作者建议用AI研究三款Sony相机的软件限制；没有指定功能、固件版本、补丁或解锁结果。 **[REA · 待验证]**
+- [低功耗Broadcom Linux：建议AI反编译固件路径，进一步压缩间歇启动耗时](../cases/broadcom-linux-ai-firmware-fast-boot-idea.md) — 读者在电池/太阳能Linux项目讨论中建议让AI研究固件路径以缩短启动；父串3.5秒是既有背景，不是AI成果。 **[其他 AI 逆向 · 待验证]**
+- [自有路由器配置与流量：Claude只读分析远程支持程序、DNS和转发规则](../cases/router-config-claude-remote-support-audit-report.md) — 作者称给Claude配置导出与一小时流量，发现远程管理、未知支持程序及NAS转发；无原始记录，不把DNS查询等同解密全部浏览。 **[其他 AI 逆向 · 待验证]**
 - [米遥MI-AO：Codex协作研究遥控器BLE，把按住说话送入Mac任务](../cases/fanxeon-mi-ao-xiaomi-remote-codex.md) — MI-AO读取小米2Pro的ATVV音频，经ADPCM与本地Whisper送入Codex；作者报告固件2671端到端测试，macOS14+源码优先beta。 **[其他 AI 逆向 · 进行中]**
 - [SayAll：把小米蓝牙遥控器改接电脑语音输入的相关项目](../cases/sayall-xiaomi-remote-voice-bridge.md) — SayAll将遥控器音频接为电脑麦克风并映射按键；候选区分Mac与Windows预览，公开文档说明AI工具参与开发，但未证明AI逆向协议的具体过程。 **[其他 AI 逆向 · 相关项目]**
 - [OpenRemoteAssistant：RC003-MS遥控器麦克风接入Mac与Windows的预发布项目](../cases/openremoteassistant-rc003-computer-microphone.md) — OpenRemoteAssistant将小米2Pro按键与音频接电脑，识别交输入法；项目称Windows10开发机有测试、Win11未实测，AI辅助逆向角色未说明。 **[未确认使用 REA · 相关项目]**

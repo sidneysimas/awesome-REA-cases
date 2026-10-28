@@ -20,6 +20,7 @@ Post-window supplementary reading uses README commit 35e3dbb63e26b8179006ae26fa4
 
 The document reports zero mismatches in Pump Main L31's 44-suite captured-loader corpus of 10,468 cases. AMM's 763-window candidate still has two incentive error-order differences in five signed synthetic pairs per build, without full runtime receipts, so its 17,462-case summary is not independently verified. The maintained checkpoint remains 660 windows; a separate 760-window fix is not combined with the 763-window artifact. App documentation distinguishes 31/31 SDK files, 648/648 captured scripts and 4,915/4,915 inventoried factory extractions from actual feature reconstruction. Original backend source is unobservable, native compatibility qualification is 0/67 public API operations, and frontend/backend feature tables still have zero accepted milestones. Captures and scaffolds are not a fully working app. This collection only read repository documentation. It did not execute target code, compile, rerun comparisons, connect a wallet or trade, and does not turn project-generated evidence into independent reproduction or a security guarantee.
 
+The October 28, 2026 candidate at 21:25:58 promotes Slop Cash participation, claiming AI has cracked 97.3% of Pump source and a one-million-PUMP prize round with USDC/PUMP distributions. No completion denominator, payout or earnings evidence is given. This lower secondhand figure does not replace Shaw's or the pinned README's distinct measurements; promotional earnings of 8,000 USDT per month are not established. Snapshot: 0 likes, 910 views, 0 reposts.
 Posted: 2026-10-12T10:01:06+08:00 (Beijing time)
 Engagement snapshot (2026-10-12): 1 like | 44 views | 0 reposts
 Follow-up posted: 2026-10-13T05:43:27+08:00 (Beijing time)
@@ -48,5 +49,6 @@ October 28, 18:50 candidate snapshot: 141 likes, 10,508 views, 19 reposts. Shaw'
 - [Supplementary: public Musebook Launch entry, statically read October 28](https://launch.musebook.trade/)
 - [Shaw's 97.6% progress and frontend/backend contribution plan, October 28, 2026 at 18:50](https://x.com/i/status/2115395755045441970)
 - [Post-window pinned 20:51:44 README: function windows, meaningful ELFs and app-feature limits](https://github.com/lalalune/pumpfun-source/blob/35e3dbb63e26b8179006ae26fa425ce9a3afb1ff/README.md)
+- [October 28, 21:25: Slop Cash promotion's 97.3% and prize claims](https://x.com/i/status/2115434902493786625)
 
 [中文](../pumpfun-reconstruction-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/apps.md)
