@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [gridsim：Mark尝试AI逆向，却报告重引入大量已修bug](../cases/mark-gridsim-ai-reconstruction-bug-report.md) — Mark称终于试了AI reverse engineer anything，工具不错但gridsim输出糟糕，数到100个bug时停止，其中99个此前已修。 **[其他 AI 逆向 · 分析测试]**
+- [EasyClick APK：Goge称本地Qwen在44分58秒还原自写加密JS](../cases/goge-qwen-easyclick-apk-js-recovery.md) — Goge用Qwen3.8-next-flash-iq3_s、opencode、jadx与OrbStack研究自己的自动化APK，报告完整还原IEC2内JS，明确未装REA。 **[其他 AI 逆向 · 分析测试]**
+- [iOS设计重建：Appllama、Expo与Emil Skills组合方案，非IPA逆向](../cases/appllama-expo-emil-ios-design-reconstruction-workflow.md) — 发布者提出先研究头部App界面，再用Expo/RN与动效规则重建原生感体验的三组Skills流程，明确不是REA iOS版或IPA分析工具链。 **[其他 AI 逆向 · 相关项目]**
+- [WildRE：WildCanvas发布Python安全工作流，逆向与YARA草拟仍在完善](../cases/wildcanvas-wildre-ai-security-suite.md) — WildCanvas称WildRE提供日志、IOC、YARA草拟、恶意软件分诊与逆向及MCP/Skills；同串说不绑定模型，未取得源码或测试记录。 **[其他 AI 逆向 · 相关项目]**
+- [ChatGPT桌面端flags：wolfram称DeepSeek与REA区分服务端控制及本地覆盖](../cases/wolfram-chatgpt-desktop-rea-deepseek-flags.md) — wolfram称用V4.1-Flash-1017和REA研究ChatGPT桌面应用，找到server flags与客户端可覆盖项，推理市场花费不到一美分；无复现材料。 **[REA · 待验证]**
 - [Clawd：8Bit回顾10月首周用REA研究，未披露恢复范围](../cases/8bit-clawd-rea-retrospective.md) — 8Bit称10月首周已用REA逆向Clawd，并谈Agent层与转向Raydium；没有实现、测试或目标版本。 **[REA · 待验证]**
 - [GINJA的IPA修改：称用REA与AI研究，无需越狱](../cases/ginja-rea-ipa-modding-no-jailbreak.md) — GINJA称正用REA和AI修改IPA、不越狱；未具名应用、修改功能或安装验证，不能推断运行Android或macOS。 **[REA · 进行中]**
 - [Samsung One UI快捷面板：读者建议用REA改手机软件去限制](../cases/samsung-oneui-rea-reader-redesign-idea.md) — Janszoon在One UI快捷面板设计讨论中建议REA研究手机软件、去掉限制；只是具体界面背景下的愿望。 **[REA · 待验证]**
@@ -155,7 +160,7 @@
 - [1992年 Windows 3.1 赞美诗软件：Ghidra 与 REA 的反编译自述](../cases/windows31-1992-hymnal-ghidra-rea.md) — Glauber Lima 报告用 Ghidra 配合 REA 成功反编译老赞美诗程序，未给恢复内容或运行验证。 **[REA · 待验证]**
 - [剪映 AI 调用封装：余温用 REA 研究后暂缓公开](../cases/jianying-gkxspace-rea-ai-control.md) — 余温称已将剪映大量功能封装为 AI 可调用操作，准备脱敏发布后又改为自用；未公开代码或功能清单核验。 **[REA · 进行中]**
 - [Windows 任务管理器：五分钟、两美元 AI 重建的待验证转述](../cases/windows-task-manager-ai-five-minute-report.md) — Onchana01 转述任务管理器被快速逆向；没有原作者、代码或行为测试，保留明确目标而不采纳完成断言。 **[未确认使用 REA · 待验证]**
-- [Antigravity 隐藏模式：language_server.exe 与扩展 Skill 的转述](../cases/antigravity-hidden-agent-modes-report.md) — 发布者称在 jetski/language_server.exe 找到四个多 Agent 模式，并建议装扩展 Skill；未给二进制证据或执行验证。 **[未确认使用 REA · 相关项目]**
+- [Antigravity内部研究：旧隐藏模式转述与Jerry的Gemini辅助2.27.0枚举分析](../cases/antigravity-hidden-agent-modes-report.md) — 旧帖称四个隐藏模式；Jerry新增2.27.0 language_server中的Argon、BYOM/BYOK与Jarvis枚举报告，后续确认Gemini分析；静态字段不证明已上线。 **[其他 AI 逆向 · 分析测试]**
 - [Awesome Reverse-Engineered：让 Agent 先查已有互通实现，再决定是否逆向](../cases/awesome-reverse-engineered-agent-index.md) — 具备搜索站与 Agent Skill 的开源互通项目目录，帮助按目标、许可与维护状况选已有工具；条目存在不代表逆向结果正确。 **[未确认使用 REA · 相关项目]**
 - [中国激光软件 EXE：Dan Nunn 用 Codex 持续恢复 Pascal 逻辑](../cases/chinese-laser-exe-codex-pascal.md) — 作者报告已研究12天，目标是将激光软件可执行文件恢复为Pascal；未报告完成，也未给设备兼容或加工验证。 **[其他 AI 逆向 · 进行中]**
 - [GrapheneOS NFC 支付：让 AI 反编译相关实现的读者愿望](../cases/grapheneos-ai-nfc-payments-idea.md) — 读者希望借助AI反编译让GrapheneOS支持所需NFC支付；没有协议、支付提供方或可行性测试。 **[其他 AI 逆向 · 相关项目]**

@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Uma Forza：Unity重建地平线4世界并导入赛马娘角色的二手报道](../cases/uma-forza-petracoreproxy-unity-secondary-report.md) — 遊戲角落报道PetracoreProxy把FH4地图、环境与赛马娘角色放进Unity；AI只在报道背景中出现，实际贡献未确认。 **[其他 AI 逆向 · 待验证]**
+- [SNES逻辑与时序：JSONB让Agent驱动模拟器检查字节一致性](../cases/vyrotek-snes-asm-agent-emulator-parity.md) — JSONB称从SNES汇编dump逆向游戏逻辑和时序，再让Agent操作模拟器确认精确字节一致；游戏与对照范围未披露。 **[其他 AI 逆向 · 进行中]**
+- [The Sims 4：Sérgei用AI追踪编译Python与XML调校依赖](../cases/frooot-simmer-sims4-ai-python-xml-research.md) — Sérgei称AI帮助理解Sims4跨编译Python与XML的逻辑和依赖，减少手工研究负担；未给具名Mod或测试。 **[其他 AI 逆向 · 进行中]**
+- [mugen-unleashed：从2013年M.U.G.E.N引擎恢复C，提交披露Claude协作](../cases/zxmarcos-mugen-unleashed-claude-c-reconstruction.md) — zxmarcos公开M.U.G.E.N1.1 Beta1的C重建，初始提交署名Claude Opus5.5；项目称逐函数差分和多场景日志一致，未独立运行。 **[其他 AI 逆向 · 进行中]**
 - [Tokyo Mirage Sessions：AI浪潮下的PC反编译移植报道，60至120帧未核验](../cases/tokyo-mirage-sessions-ai-pc-port-secondary-report.md) — playswave称Tokyo Mirage Sessions已有粉丝PC反编译移植、60至120FPS，并将其与AI编程关联；没有作者技术记录。 **[其他 AI 逆向 · 待验证]**
 - [ql：Bismuth提出用AI逆向，替代不满意的Steam版](../cases/bismuth-ql-ai-steam-alternative-idea.md) — 800IQ(Bismuth)希望有人用AI逆向ql，以摆脱其不满意的Steam版本；只是具体目标的读者idea。 **[其他 AI 逆向 · 待验证]**
 - [Tormentis混淆自测：开发者称AI恢复可读名称，但只是预测](../cases/tormentis-ai-obfuscated-name-recovery-test.md) — TormentisGame称以自有高混淆游戏测试AI，得到可理解的反编译命名；明确承认名称是预测，未展示对照。 **[其他 AI 逆向 · 分析测试]**

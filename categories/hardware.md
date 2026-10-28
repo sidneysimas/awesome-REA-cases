@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [小米机器人Brick：Felipe用REA与Claude研究蓝牙并写Rust客户端](../cases/fmancinirt-xiaomi-robot-brick-rea-rust.md) — Felipe称分析小米App与机器人Brick间的蓝牙流量，从捕获命令和数据包写出不依赖官方App的基础Rust客户端。 **[REA · 进行中]**
+- [2014洗衣机回到SmartThings：Claude辅助互通的二手报告](../cases/2014-washer-claude-smartthings-secondary-report.md) — 葡语报道转述机主借Claude重建SmartThings集成，不换零件或固件；需兼容hub，设备型号与协议未披露。 **[其他 AI 逆向 · 待验证]**
+- [父母电视去广告：Milon转述Claude按型号查找Wi-Fi设备并清理](../cases/milon-parents-tv-claude-cleanup-secondary-report.md) — Milon称见到Claude Code按电视型号在Wi-Fi找到设备并清广告，追问固件更新后稳定性；未给型号、代码或逆向方法。 **[其他 AI 逆向 · 待验证]**
 - [Roborock床底清洁：Sergey想用Claude写自己的固件](../cases/roborock-claude-under-bed-firmware-idea.md) — Sergey因Matic机身进不了床底，希望有空用Claude为Roborock做自定义固件；没有开始或成功的报告。 **[其他 AI 逆向 · 待验证]**
 - [二手设备改装：Codex逆向闭源协议，作者正绘制CAD配件](../cases/ec12edfae2cb221-used-printer-codex-protocol.md) — 王依依棺材馅儿称以三百多元二手设备替代原想买的拓竹，Codex搞定官方闭源协议，改装CAD仍在画；型号不明。 **[其他 AI 逆向 · 进行中]**
 - [相机关机画面：ThinkerZhang在RICOH GR讨论中提固件改造与Codex可能性](../cases/camera-poweroff-screen-codex-community-idea.md) — 作者称社区有人定制相机关机画面，并提Codex潜力；父串是RICOH GR热靴配件，不证明Codex完成固件修改。 **[其他 AI 逆向 · 待验证]**

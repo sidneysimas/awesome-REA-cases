@@ -2,6 +2,12 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [抗衰老药丸成分：Bob设想气相色谱加AI反推配方](../cases/bob-ai-chromatography-antiaging-pill-idea.md) — Bob设想用气相色谱和逆向AI识别抗衰老药丸成分，再委托制造；没有实验、配方或安全性证据。 **[其他 AI 逆向 · 待验证]**
+- [白发旗袍舞蹈：sandmrk为18秒视频反推Seedance提示词](../cases/sandmrk-seedance-whitehair-qipao-dance-prompt.md) — sandmrk给出18秒固定机位舞蹈的Seedance2.5重建规格，含105.5BPM与逐秒动作，明确生成不能完全匹配原片。 **[其他 AI 逆向 · 进行中]**
+- [儿童频道创作公式：yuvraj转述Claude分析后生成原创内容](../cases/heyliccia-kids-channel-claude-formula-secondary-report.md) — yuvraj据heyliccia讲解称有人用Claude归纳2850万订阅儿童频道公式，做成原创生成引擎；未给频道、prompt或对照。 **[其他 AI 逆向 · 待验证]**
+- [代码艺术视频：shi_jinwei想检验AI能否反推复杂动态作品](../cases/shi-jinwei-code-art-video-reconstruction-idea.md) — whenever-不可兼容好奇AI能否仅看视频复刻自己的代码艺术；称每件需手调五六十参数，明确还没试。 **[其他 AI 逆向 · 待验证]**
+- [Polymarket五分钟BTC：财经老王转述Grok Bot拆解盈利机器人策略](../cases/laowang-grok-polymarket-bot-strategy-secondary-report.md) — 推广帖称逆向盈利机器人并做四模块AI风控，报告23天10774美元与6692笔交易；无账户、代码或原始交易记录，不能认证收益。 **[其他 AI 逆向 · 待验证]**
+- [小红书图片重建：麦麦提用Gemini反推提示词，再交大香蕉2.1生成](../cases/maimaiti-gemini-argon-xiaohongshu-image-prompt-test.md) — 麦麦提称截图让Gemini4分析prompt，再用大香蕉2.1生成，觉得过度相似且自己怀疑；未独立比较图片或取得prompt。 **[其他 AI 逆向 · 分析测试]**
 - [Seedance紫色能量战斗短片：16镜反推prompt，作者承认不完全匹配](../cases/sandmrk-seedance-violet-battle-prompt.md) — sandmrk发布39.3秒、16镜的Seedance2.5战斗视频反推描述；保留角色、空间与特效连续性，但未证明还原原prompt。 **[其他 AI 逆向 · 进行中]**
 - [KeyoAPI六层视觉重建：手拆咖啡馆图，生成不同人物的书店肖像](../cases/keyoapi-six-layer-lifestyle-image-reconstruction.md) — KeyoAPI把参考图分为六层手写规格，再用gpt-image-2做两个1536×1024书店肖像；明确非提取原prompt或相貌复制，仍偏咖啡馆。 **[其他 AI 逆向 · 分析测试]**
 - [Lionheart Anime Studio：Devon称研究三个生成器后整合纯prompt工作室](../cases/devon-lionheart-anime-studio-generator-study.md) — Commander Devon称逆向Anime Art Studio、Vivid与Grok Imagine后做成自己的艺术工作室，以提示词控制画风；无代码、对照或权重恢复证据。 **[其他 AI 逆向 · 待验证]**
