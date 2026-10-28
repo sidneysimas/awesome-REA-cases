@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [tolpo：研究Tapo应用协议，经MCP控制设备并显示实时3D住宅](../cases/tolpo-tapo-claude-lan-3d-home-report.md) — beamnxw转述Claude Code参与协议研究；公开tolpo复用python-kasa接Tapo局域网设备，支持人工校正户型与3D状态，区分实物测试和模拟实现。 **[其他 AI 逆向 · 进行中]**
+- [Ray-Ban Meta扑克助手：Opus与卡牌检测工作流的未验证转述](../cases/rayban-meta-opus-poker-assistant-report.md) — 候选转述学生把眼镜视频送到笔记本，以合成数据训练卡牌检测并用Opus给语音建议；3000+ Elo、情绪识别、开源和实战均未核验。 **[未确认使用 REA · 待验证]**
 - [Klipsch Lumina音箱：AI研究BLE，以摄像头和麦克风闭环检查Mac控制应用](../cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande称AI从抓包和手机App二进制研究Lumina 2.1协议，再用摄像头看灯、麦克风听音，迭代Mac菜单栏应用；未独立测试。 **[其他 AI 逆向 · 进行中]**
 - [扫地机夜巡：Martin称用Opus与Valetudo改为识别宠物的家庭守卫](../cases/vacuum-opus-valetudo-night-guard-report.md) — Martin称root自有扫地机，让Claude Code检查Valetudo与本地相机，再组合YOLO和巡逻规划；没有型号、代码或延迟实测。 **[其他 AI 逆向 · 待验证]**
 - [小米15运行iOS16：读者转述AI逆向移植，尚无启动验证](../cases/xiaomi15-ios16-ai-port-secondary-report.md) — 读者称刷到小米15可运行iOS16的AI移植说法；没有开发者、仓库或启动记录，不认定可刷机。 **[其他 AI 逆向 · 待验证]**

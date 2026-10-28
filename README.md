@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1164 cases & projects
+# 1175 cases & projects
 
-**Latest case update:** October 29, 2026, 00:13 · **Last maintained:** October 29, 2026, 00:13 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 29, 2026, 04:10 · **Last maintained:** October 29, 2026, 04:10 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,9 +22,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation and useful replacements. Look for what was actually compared: binaries, old quirks, or even a speaker's lights and sound. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, game preservation and useful replacements. Public code is a starting point: look for exact-build checks, hardware-test limits and behavior that still needs work. Dates below are source or author-update dates, not collection dates.
 
-1. **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — Use Windows reference behavior to improve Linux drivers. Published measurements also disclose low-light and exposure defects. `In progress`
+1. **[tolpo: a live 3D view of your Tapo home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md)** · `2026-10-29` — A Claude-assisted protocol-research report leads to **public LAN/MCP control and a human-corrected floor plan**. Reuses python-kasa; earlier project tests cover nine rooms and 18 devices, not every write or model. Local device traffic does not mean local AI. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
 3. **[LG UltraFine: repair the updater, not the firmware](cases/en/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex-assisted diagnosis and a **public, exact-build memory patch**; the author reports a scaler update reaching **100% with CRC passing**. Credits an earlier bug report; one Apple Silicon setup, not independently flashed here. `Author-tested patch`
 4. **[Brother: scan straight to your NAS](cases/en/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — Replace the PC button app with a **public Claude/REA-assisted Go service for SMB, FTP, S3 and local storage**, building on prior protocol work. A server is still required; only MFC-L2800DW firmware 1.32 is project-tested. `Public implementation`
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Instance: preserve GameMaker's quirks, not just its features](cases/en/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — A report credits **Claude-assisted, black-box-spec-driven Rust reconstruction** of the 8.1 editor and runtime. Public code and browser entry include old event, RNG and audio behavior; **three weeks, not just a morning**, according to the report. No full-parity or legal-compliance guarantee; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[PicasaPy: keep a local photo workflow alive](cases/en/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28` (Beijing time) — Virág Attila's **Ghidra/Claude/Codex-assisted Python/Qt rewrite** has public research specifications and successful exact-commit CI. Shared **.picasa.ini** files are not conflict-safe synchronization; project documents separate static coverage from click tests. Full parity not established; not run here. `In progress`
-10. **[Klipsch Lumina: let the agent see and hear the test](cases/en/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md)** · `2026-10-28` — Pawan Deshpande reports **BLE sniffing and mobile-binary research** for a Mac controller, then webcam/microphone feedback to check LEDs and audio. Includes a claimed screen-color lighting mode; source entry and physical results not independently checked. `Author report`
+10. **[Super Lemon Text: rebuild an editor from behavior](cases/en/super-lemon-text-sublime-cleanroom-experiment.md)** · `2026-10-29` — A **public Claude Code/Rust Sublime-style editor** with successful exact-commit CI and explicit automated/manual/unfinished test boundaries. Not recovered Sublime source; Windows milestones are project-reported, other platforms remain unfinished, and the original author has stopped development. `Open for continuation`
 
 ## Classic cases
 
@@ -42,15 +42,16 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 - **[Modern Warfare 2](cases/en/mw2-decompilation.md)** — Author-reported multi-agent reconstruction; **83% function byte matches**, no public code or independent reproduction here.
 - **[Smart toilet from the Mac menu bar](cases/en/smart-toilet.md)** — Author-reported Bluetooth research and home-device control.
 - **[Apple TV remote on Linux](cases/en/siri-remote-linux.md)** — Bluetooth interoperability with a public implementation; REA use unconfirmed.
+- **[Plustek scanner & ThinkPad camera](cases/en/schaller-opticfilm-thinkpad-linux.md)** — Windows reference behavior informs Linux drivers; published measurements retain low-light and exposure defects.
 - **[LG PlxNative](cases/en/lg-plxnative.md)** — Native Plex client; user-selection time reportedly falls from **30 seconds to 3 seconds**.
 
 ## Browse by category
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **245** |
-| [Hardware & interoperability](categories/en/hardware.md) | **328** |
-| [Applications & clients](categories/en/apps.md) | **477** |
+| [Games & preservation](categories/en/games.md) | **247** |
+| [Hardware & interoperability](categories/en/hardware.md) | **330** |
+| [Applications & clients](categories/en/apps.md) | **484** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **114** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)

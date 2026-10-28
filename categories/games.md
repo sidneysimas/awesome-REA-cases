@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Harvester_ITA：带Claude/Opus标签的1996年冒险游戏意大利语本地化项目](../cases/harvester-ita-claude-tagged-localization-report.md) — Sh0dan介绍Harvester意大利语补丁、手册与兼容性工程，列出Python/汇编/Shell分工；AI仅见标签，具体贡献和仓库尚未核验。 **[未确认使用 REA · 待验证]**
+- [FFVII或FFIX：用AI逆向与重编译做现代2D重制的idea](../cases/ffvii-ffix-ai-modern-2d-remake-idea.md) — 读者问能否把原版Final Fantasy VII或IX的逆向/重编译成果用于现代2D重制；只有具体改编目标，没有实现或可行性验证。 **[未确认使用 REA · 待验证]**
 - [童年旧游戏：iamstalkholic称与Claude反编译，准备现代化重写](../cases/iamstalkholic-claude-childhood-game-rewrite.md) — 作者称已与Claude反编译小时候玩的旧游戏，并计划重写；游戏名称、代码与运行情况未提供。 **[其他 AI 逆向 · 进行中]**
 - [Fortnite 27.11风暴逻辑：Claude经MCP读IDA dump，尝试补服务端实现](../cases/fortnite2711-claude-ida-storm-server-rebuild.md) — 作者称研究2023年11月OG版本，用Claude与IDA dump推断客户端已不再保存的风暴代码；常一次成功、节时90%均是经验自述。 **[其他 AI 逆向 · 进行中]**
 - [PS5 Overdrive商店：Claude构建与下线的二手报道，不是AI发现利用链](../cases/overdrive-ps5-claude-storefront-secondary-report.md) — 候选援引eTeknix称Claude参与Overdrive商店，复用Relapse并索引外部游戏库，后被下线；未核验原报道、补丁或服务状态。 **[其他 AI 逆向 · 待验证]**

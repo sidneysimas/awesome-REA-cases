@@ -2,10 +2,17 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Super Lemon Text：Claude Code按行为描述重建Sublime式Rust编辑器](../cases/super-lemon-text-sublime-cleanroom-experiment.md) — Lemonator32公开Rust编辑器与测试文档，称Claude Code未读原程序而按行为描述重建；Windows里程碑自报完成，但项目未完、原作者已停止开发。 **[其他 AI 逆向 · 进行中]**
+- [智能戒指自制界面：Pranav称反推WHOOP/Oura恢复、负荷与睡眠算法](../cases/pranav-smart-ring-whoop-oura-recovery-app.md) — Pranav Janakiraman嫌戒指界面难用，称做了自己的WHOOP式应用并让Agent直接记上下文；算法恢复方法和AI逆向贡献未说明。 **[未确认使用 REA · 待验证]**
+- [开源应用发布包：Mia建议用REA辅助检查二进制是否对应源码](../cases/rea-open-source-binary-provenance-check-idea.md) — 在可复现构建讨论下，Mia提出用REA逆向检查发布二进制的idea；没有选定样本或实验，不能替代可复现构建。 **[REA · 待验证]**
+- [学校作业客户端：研究窗口白名单时向DeepSeek请求反编译受阻](../cases/school-homework-client-deepseek-decompilation-attempt.md) — 作者抱怨未具名客户端会终止非白名单窗口，称花半天向AI请求无源码反编译，DeepSeek按考试客户端拒绝；未报告成功补丁。 **[其他 AI 逆向 · 待验证]**
+- [QuillBot查重重建：Dinesh称使用REA，但承认部分功能未正常工作](../cases/dinesh-quillbot-rea-plagiarism-reconstruction.md) — Dinesh V称以REA研究QuillBot，做免费开源查重软件；没有确认算法等价、源码或查重准确率，作者明确邀请修复未正常工作的功能。 **[REA · 进行中]**
+- [Grok Bot本地替代：Asterisk称用REA研究桌面助手，接入自有模型账户](../cases/asterisk-grokbot-rea-local-model-accounts.md) — Asterisk自述研究Grok Bot桌面助手后重建本地版本，避免锁定单一模型栈；无源码、功能对照或运行测试。 **[REA · 待验证]**
+- [NVDA交易架构：REA提规则、Claude写状态引擎、Grok调度的未验证自述](../cases/robinhood-nvda-rea-regime-engine-report.md) — 作者称自动化Robinhood交易，以REA提取既有工具规则并接Claude/Grok；没有具名规则源、代码、成交记录或收益测量。 **[REA · 待验证]**
 - [Flash 5重建：Lynn Cole从REA与界面观察转向旧手册驱动的WASM项目](../cases/flash5-wasm-zig-bun-reconstruction-report.md) — Lynn Cole称REA与Codex界面探索未得到满意结果，转用旧Flash手册和教程指导WASM/Zig/Bun重建；三周后报告补间、影片编译与工作区进度。 **[REA · 进行中]**
 - [网络风险SaaS设计系统：用Claude从现有产品恢复规范，以原型交接前端](../cases/cyber-risk-saas-claude-design-system-prototype.md) — 作者回忆为缺设计资源的客户用Claude恢复设计系统，再与设计负责人校验，以可交互原型而非Figma交接。 **[其他 AI 逆向 · 待验证]**
 - [Higgsfield Katana：作者称反推制作Claude动效Skill，依赖Scenario配乐音效](../cases/higgsfield-katana-claude-motion-skill.md) — 作者称用Claude动效Skill替代Katana，文字描述产品后编排与卡点，Scenario负责音乐音效并输出4K；未核验下载或等价性。 **[其他 AI 逆向 · 待验证]**
-- [8Bit的Solana研究与REA机器人：Pump反汇编、未发布模板与Core本地测试](../cases/8bit-rea-solana-decompiler-research.md) — 同组帖子宣布REA @bot，报告Pump程序与IDL分析、三Skill待发布模板、Metaplex Core离线测试；分支未推送，不是整条区块链重建。 **[REA · 进行中]**
+- [8Bit的Solana与REA机器人：Pump/Core研究、v.30及移动端宣称](../cases/8bit-rea-solana-decompiler-research.md) — 8Bit在Pump反汇编与Core本地测试后称REA @bot更新v.30，并宣称研究FOMO/Pump移动端；没有公开日志确认入侵、发布或整链重建。 **[REA · 进行中]**
 - [Rayon：用REA为Windows重做Raycast式启动器，尚待整日使用检验](../cases/rayon-windows-raycast-rea-report.md) — 法语作者称用REA制作Windows启动器Rayon，带命令面板、AI和小工具，先供自己与团队用；明确还没做完整一天对照。 **[REA · 进行中]**
 - [苹果官网本地重建：作者称REA配Antigravity复刻外观](../cases/apple-website-rea-antigravity-local-rebuild.md) — 作者称用REA与Google Antigravity研究苹果官网并本地重做；一模一样仅为作者视觉评价，没有交互或功能对照。 **[REA · 待验证]**
 - [纯本地应用六层防御：作者称整理十类REA无法逆向的实例后设计防护](../cases/local-app-rea-six-layer-defense-report.md) — 作者宣称收集十类REA失败的证据案例并为本地应用做六层防御；未读清单、实现或对抗实验，不采信无法逆向的保证。 **[REA · 待验证]**

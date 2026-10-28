@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 1164 个案例与项目
+# 1175 个案例与项目
 
-**最近案例更新：**2026 年 10 月 29 日 00:13 · **最近维护：**2026 年 10 月 29 日 00:13 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 29 日 04:10 · **最近维护：**2026 年 10 月 29 日 04:10 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -22,9 +22,9 @@
 
 ## 近期精选
 
-**10 个值得读的案例**，从设备互通、游戏保存到实用替代品：看实际对照了什么——二进制、旧版怪癖，甚至音箱的灯光与声音。下列日期为来源或作者更新日期，不是收录日期。
+**10 个值得读的案例**，从设备互通、游戏保存到实用替代品：公开代码只是起点，还要看精确构建检查、实物测试边界与尚未补齐的行为。下列日期为来源或作者更新日期，不是收录日期。
 
-1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
+1. **[tolpo：Tapo住宅的实时3D视图](cases/tolpo-tapo-claude-lan-3d-home-report.md)** · `2026-10-29` — 转述Claude辅助协议研究，公开**LAN/MCP控制与人工校正户型**。复用python-kasa；较早项目自测覆盖九房间、18设备，不代表所有写操作与型号。设备本地通信不等于AI本地运行。`进行中`
 2. **[NIST 曲线种子从哪来](cases/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic 报告 Claude 追到 **lrand48 与时间戳**，公开代码，也保留未解问题。**不是破解 ECDSA**，本合集未独立复算。`研究报告`
 3. **[LG UltraFine：修更新器，而不是破解固件](cases/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex 辅助诊断，公开**精确构建限定的内存补丁**；作者报告 scaler 更新达 **100%、CRC 通过**。注明前人错误报告；仅一套 Apple Silicon 配置，本合集未独立刷机。`作者实测补丁`
 4. **[Brother：扫描直接进 NAS](cases/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — 以 **Claude/REA 辅助的公开 Go 服务替代电脑按键应用，支持 SMB、FTP、S3 与本地保存**，复用前人协议研究。仍需服务器；项目只报告测试 MFC-L2800DW 固件1.32。`公开实现`
@@ -33,7 +33,7 @@
 7. **[Instance：保存GameMaker的怪癖，而不只是功能](cases/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — 报道称**Claude按黑盒规格用Rust重建8.1编辑器与运行时**，公开代码及浏览器入口，保留旧事件、随机数和音频行为。按报道完整工作是**三周，不只一上午**；不保证全面等价或法律合规，本合集未运行。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
 9. **[PicasaPy：让本地照片工作流继续用](cases/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28`（北京时间） — Virág Attila用**Ghidra／Claude／Codex辅助Python/Qt重写**，公开研究规格及精确提交的成功CI。共用**.picasa.ini**不等于无冲突同步；项目文档区分静态覆盖与点击测试。未证明全面等价，本合集未运行。`进行中`
-10. **[Klipsch Lumina：让Agent自己看灯、听音](cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md)** · `2026-10-28` — Pawan Deshpande报告**抓BLE流量、研究手机App二进制**后做Mac控制应用，再接摄像头与麦克风反馈检查LED和音频。称另有随屏幕主色变化的灯光模式；源码入口与实物效果未独立核验。`作者报告`
+10. **[Super Lemon Text：按行为重建编辑器](cases/super-lemon-text-sublime-cleanroom-experiment.md)** · `2026-10-29` — 公开**Claude Code/Rust的Sublime式编辑器**，有精确提交成功CI，明确自动、手工与未完测试边界。不是恢复Sublime源码；Windows里程碑为项目自述，其他平台未完，原作者已停止开发。`开放接续`
 
 ## 经典案例
 
@@ -42,15 +42,16 @@
 - **[《现代战争 2》](cases/mw2-decompilation.md)** — 作者报告多 Agent 重建，**83% 函数字节级匹配**；代码未公开，未独立复现。
 - **[Mac 菜单栏控制智能马桶](cases/smart-toilet.md)** — 作者报告研究蓝牙通信，并扩展到其他家居设备。
 - **[Apple TV 遥控器接入 Linux](cases/siri-remote-linux.md)** — 蓝牙互通与公开实现，未确认使用 REA。
+- **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** — 用Windows参考行为改善Linux驱动，公开测量仍保留低光与曝光缺陷。
 - **[LG PlxNative](cases/lg-plxnative.md)** — 原生 Plex 客户端；作者报告用户选择时间从 **30 秒降到 3 秒**。
 
 ## 分类浏览
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **245** |
-| [硬件与设备互通](categories/hardware.md) | **328** |
-| [应用与客户端](categories/apps.md) | **477** |
+| [游戏与游戏保存](categories/games.md) | **247** |
+| [硬件与设备互通](categories/hardware.md) | **330** |
+| [应用与客户端](categories/apps.md) | **484** |
 | [算法与功能重建](categories/algorithms.md) | **114** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)

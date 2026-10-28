@@ -10,15 +10,15 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**1164 entries**, organized by use case, without a Top-N or popularity threshold.
+**1175 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (245)
-- [Hardware and interoperability](categories/en/hardware.md) (328)
-- [Applications and clients](categories/en/apps.md) (477)
+- [Games and preservation](categories/en/games.md) (247)
+- [Hardware and interoperability](categories/en/hardware.md) (330)
+- [Applications and clients](categories/en/apps.md) (484)
 - [Algorithms and feature recovery](categories/en/algorithms.md) (114)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
@@ -28,6 +28,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Harvester_ITA: a 1996 adventure localization project tagged Claude/Opus](cases/en/harvester-ita-claude-tagged-localization-report.md) — Sh0dan describes Italian patches, a manual and compatibility work for Harvester, with Python/assembly/Shell roles. AI appears only in tags; its contribution and the repository remain unverified. **[REA use unconfirmed · Needs verification]**
+- [FFVII or FFIX: an idea for an AI-assisted modern 2D remake](cases/en/ffvii-ffix-ai-modern-2d-remake-idea.md) — A reader asks whether reversing and recompilation of the original Final Fantasy VII or IX could support a modern 2D remake. A concrete adaptation idea, not an implementation or feasibility test. **[REA use unconfirmed · Needs verification]**
 - [An unnamed childhood game: iamstalkholic reports Claude-assisted decompilation](cases/en/iamstalkholic-claude-childhood-game-rewrite.md) — The author reports decompiling an old childhood game with Claude and plans a modern rewrite. The game's name, code and runtime state are unspecified. **[Other AI-assisted work · In progress]**
 - [Fortnite 27.11 storm logic: Claude uses an IDA dump through MCP to infer server behavior](cases/en/fortnite2711-claude-ida-storm-server-rebuild.md) — The author reports studying the November 2023 OG version and using Claude/IDA context to reconstruct absent storm code. Frequent first-pass success and 90% time savings are personal claims. **[Other AI-assisted work · In progress]**
 - [PS5 Overdrive storefront: a secondhand Claude-build and takedown report, not AI exploit discovery](cases/en/overdrive-ps5-claude-storefront-secondary-report.md) — Citing eTeknix, a candidate says Claude helped build Overdrive using Relapse and external game indexes before it went offline. The original article, patches and service state were not verified. **[Other AI-assisted work · Needs verification]**
@@ -276,6 +278,8 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [tolpo: Tapo protocol research, MCP device control and a live 3D home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md) — beamnxw attributes protocol work to Claude Code. Public tolpo reuses python-kasa for Tapo LAN devices and offers a corrected-by-human floor plan with 3D state, distinguishing hardware tests from simulation. **[Other AI-assisted work · In progress]**
+- [Ray-Ban Meta poker assistance: an unverified Opus and card-detection account](cases/en/rayban-meta-opus-poker-assistant-report.md) — A candidate says a student streamed glasses video to a laptop, trained card detection on synthetic data and used Opus for spoken advice. 3000+ Elo, emotion reading, open source and real play are unverified. **[REA use unconfirmed · Needs verification]**
 - [Klipsch Lumina speakers: AI-assisted BLE research with webcam and microphone feedback](cases/en/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande reports studying Lumina 2.1 BLE traffic and mobile binaries, then checking LEDs with a webcam and audio with a microphone while iterating a Mac menu-bar app. Not independently tested. **[Other AI-assisted work · In progress]**
 - [Robot-vacuum night patrol: Martin reports an Opus/Valetudo home guard](cases/en/vacuum-opus-valetudo-night-guard-report.md) — Martin says Claude Code checked Valetudo and local camera support on a rooted vacuum, then combined YOLO and patrol planning. No model, source or measured latency is supplied. **[Other AI-assisted work · Needs verification]**
 - [iOS 16 on Xiaomi 15: an unverified secondhand AI-porting claim](cases/en/xiaomi15-ios16-ai-port-secondary-report.md) — A reader recounts seeing an AI-assisted iOS 16 port to Xiaomi 15. No developer, repository or boot record is supplied; flashability is not established. **[Other AI-assisted work · Needs verification]**
@@ -607,10 +611,17 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Super Lemon Text: Claude Code rebuilds a Sublime-style Rust editor from behavior](cases/en/super-lemon-text-sublime-cleanroom-experiment.md) — Lemonator32 publishes a Rust editor and test documentation, saying Claude Code worked from behavioral descriptions without the original program. Windows milestones are self-reported complete, but work is unfinished and the original author has stopped. **[Other AI-assisted work · In progress]**
+- [A personal smart-ring UI: Pranav reports WHOOP/Oura recovery, strain and sleep reconstruction](cases/en/pranav-smart-ring-whoop-oura-recovery-app.md) — Pranav Janakiraman dislikes his ring's UI and reports a WHOOP-style app with agent-written context. Algorithm recovery methods and AI's reversing contribution are unspecified. **[REA use unconfirmed · Needs verification]**
+- [Open-source app releases: Mia suggests REA-assisted binary provenance checks](cases/en/rea-open-source-binary-provenance-check-idea.md) — In a reproducible-build discussion, Mia proposes reversing release binaries with REA. No sample or experiment is selected; this is not a replacement for reproducible builds. **[REA · Needs verification]**
+- [A school homework client: a DeepSeek decompilation request blocked over window allowlisting](cases/en/school-homework-client-deepseek-decompilation-attempt.md) — An author says an unnamed client terminates non-allowlisted windows and reports half a day seeking AI-assisted decompilation without source. DeepSeek treated it as an exam client and refused; no successful patch is reported. **[Other AI-assisted work · Needs verification]**
+- [QuillBot plagiarism-checking reconstruction: Dinesh reports REA use and broken features](cases/en/dinesh-quillbot-rea-plagiarism-reconstruction.md) — Dinesh V reports a free open-source QuillBot-inspired checker made with REA. Algorithm equivalence, source and detection accuracy are unconfirmed, and the author explicitly invites fixes for malfunctioning features. **[REA · In progress]**
+- [A local Grok Bot alternative: Asterisk reports REA research and personal model accounts](cases/en/asterisk-grokbot-rea-local-model-accounts.md) — Asterisk reports studying the Grok Bot desktop assistant and rebuilding a local version to avoid a single model stack. No source, feature comparison or runtime tests are available. **[REA · Needs verification]**
+- [An NVDA trading stack: unverified REA rules, a Claude regime engine and Grok scheduling](cases/en/robinhood-nvda-rea-regime-engine-report.md) — An author claims Robinhood automation using REA-extracted rules and Claude/Grok. The rule source, code, fills and measured returns are absent. **[REA · Needs verification]**
 - [Rebuilding Flash 5: Lynn Cole moves from REA and UI exploration to old manuals](cases/en/flash5-wasm-zig-bun-reconstruction-report.md) — Lynn Cole says REA and Codex UI exploration disappointed, then old Flash manuals and tutorials guided a WASM/Zig/Bun rebuild. After three weeks, tweening, movie compilation and workspace progress are reported. **[REA · In progress]**
 - [A cyber-risk SaaS design system: Claude-assisted recovery and prototype handoff](cases/en/cyber-risk-saas-claude-design-system-prototype.md) — An author recalls recovering a client's design system with Claude when designers were unavailable, checking decisions with its design lead and handing frontend a prototype instead of Figma. **[Other AI-assisted work · Needs verification]**
 - [Higgsfield Katana: a claimed Claude motion-design skill using Scenario audio](cases/en/higgsfield-katana-claude-motion-skill.md) — The author claims a Katana replacement skill that turns a product brief into animated, beat-cut films, with Scenario music/effects and 4K output. Download and parity are unverified. **[Other AI-assisted work · Needs verification]**
-- [8Bit's Solana research and REA bot: Pump disassembly, an unpublished template and local Core tests](cases/en/8bit-rea-solana-decompiler-research.md) — 8Bit adds REA @bot, Pump/IDL analysis, a pending three-skill template and offline Metaplex Core tests to earlier custom-decompiler research. The branch was not pushed; not whole-chain reconstruction. **[REA · In progress]**
+- [8Bit's Solana and REA bot: Pump/Core research, v.30 and mobile claims](cases/en/8bit-rea-solana-decompiler-research.md) — After Pump disassembly and local Core tests, 8Bit reports REA @bot v.30 and FOMO/Pump mobile research. Public logs do not establish compromise, release or whole-chain reconstruction. **[REA · In progress]**
 - [Rayon: a REA-assisted Windows Raycast-style launcher awaiting day-long use](cases/en/rayon-windows-raycast-rea-report.md) — A French-language author reports Rayon, a Windows launcher with commands, AI and small tools for an internal team. A full day of comparison with Raycast is explicitly still pending. **[REA · In progress]**
 - [A local Apple website rebuild using REA and Antigravity, according to its author](cases/en/apple-website-rea-antigravity-local-rebuild.md) — The author says REA and Google Antigravity recreated Apple's website locally. Looking identical is a personal visual assessment, not an interaction or feature comparison. **[REA · Needs verification]**
 - [Six-layer defense for local apps: an author's claimed response to ten REA failure cases](cases/en/local-app-rea-six-layer-defense-report.md) — An author claims ten evidence-based REA failure cases and a six-layer defense for local desktop apps. The list, implementation and adversarial tests were not read; irreversibility is not established. **[REA · Needs verification]**
