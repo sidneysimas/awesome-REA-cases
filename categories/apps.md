@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Unreal 6无AI替代版：读者提出用REA重建的idea](../cases/unreal6-rea-no-ai-reader-idea.md) — 读者问能否用REA制作去掉AI功能的Unreal 6副本，仅有目标和动机，没有实施。 **[REA · 待验证]**
+- [Daniel B.的本地旧软件研究：Qwen27B与DeepSeek Harness约7天用量自述](../cases/danielbitpro-local-qwen27b-dsh-unsupported-software.md) — Daniel B.称用本地Qwen27B和DeepSeek Harness逆向停止支持的软件约7天，处理680M、生成9M tokens；未给重建成果。 **[其他 AI 逆向 · 进行中]**
+- [MCP原生插件审计：Mika称Claude／REA发现延迟外传，事件未独立核验](../cases/mika-rea-mcp-native-addon-exfiltration-report.md) — Mika称REA静态追查项目搜索MCP的.node插件，发现延迟读取敏感路径并外传；后续公开只读审计prompt，无样本、日志或交易证据。 **[REA · 待验证]**
 - [习惯追踪Today页：REA与Appllama辅助SwiftUI重建的三组耗时自述](../cases/rea-appllama-habit-tracker-swiftui-comparison.md) — 推广帖称Opus5.5单独、加REA、再加Appllama分别用34.7、19.6、11.0秒重建Today页，未提供重复试验或完整对照。 **[REA · 分析测试]**
 - [Claude Code记忆：Dhravya Shah团队称完成逆向并发布讲解](../cases/dhravya-claude-code-memory-research.md) — Dhravya Shah称团队逆向Claude Code记忆，机制很简单但有注意事项；可见帖未展开这些机制。 **[未确认使用 REA · 待验证]**
 - [仿AirDrop的Mac/Windows传输：Opus写Electron应用，非Apple协议兼容证明](../cases/opus-electron-airdrop-like-local-transfer.md) — 作者称一个下午用Opus5.5制作本地文件传输，报告UDP发现、接受/拒绝与Mac启动修复；方法更像重建体验而非逆向AirDrop协议。 **[其他 AI 逆向 · 待验证]**

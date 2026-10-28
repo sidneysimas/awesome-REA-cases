@@ -2,6 +2,14 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Tokyo Mirage Sessions：AI浪潮下的PC反编译移植报道，60至120帧未核验](../cases/tokyo-mirage-sessions-ai-pc-port-secondary-report.md) — playswave称Tokyo Mirage Sessions已有粉丝PC反编译移植、60至120FPS，并将其与AI编程关联；没有作者技术记录。 **[其他 AI 逆向 · 待验证]**
+- [ql：Bismuth提出用AI逆向，替代不满意的Steam版](../cases/bismuth-ql-ai-steam-alternative-idea.md) — 800IQ(Bismuth)希望有人用AI逆向ql，以摆脱其不满意的Steam版本；只是具体目标的读者idea。 **[其他 AI 逆向 · 待验证]**
+- [Tormentis混淆自测：开发者称AI恢复可读名称，但只是预测](../cases/tormentis-ai-obfuscated-name-recovery-test.md) — TormentisGame称以自有高混淆游戏测试AI，得到可理解的反编译命名；明确承认名称是预测，未展示对照。 **[其他 AI 逆向 · 分析测试]**
+- [Age of Empires Castle Siege：用REA研究停运旧版，计划浏览器与Android复活](../cases/castle-siege-rea-browser-android-revival.md) — criptoejesus420称正在逆向自己怀念的Castle Siege，准备在ChainLensNFT arcade浏览器及侧载Android APK中可玩；无构建或演示。 **[REA · 进行中]**
+- [Undertale到Roblox：Claude Code反编译移植的读者转述](../cases/undertale-roblox-claude-port-secondary-report.md) — 一则评论将Undertale列为Claude Code辅助反编译并移植Roblox的游戏，未提供作者、实现或演示。 **[其他 AI 逆向 · 待验证]**
+- [Left 4 Dead 2到Roblox：Claude Code辅助移植的未核验评论](../cases/l4d2-roblox-claude-port-secondary-report.md) — 读者称Claude Code被用于将L4D2反编译并带入Roblox，没有实现证据，不证明完整游戏移植。 **[其他 AI 逆向 · 待验证]**
+- [Counter-Strike 2到Roblox：Claude Code移植的二手主张](../cases/cs2-roblox-claude-port-secondary-report.md) — 评论将CS2列为Claude Code辅助反编译移植Roblox的对象；没有具名项目或可验证构建。 **[其他 AI 逆向 · 待验证]**
+- [P.T.移植：读者将反编译阶段归因AI，但未提供实现来源](../cases/pt-port-ai-decompilation-secondary-attribution.md) — 一则回复称P.T.移植用了AI辅助反编译；具体移植版本和开发者不明，未核验AI贡献。 **[其他 AI 逆向 · 待验证]**
 - [Rainbow Six Mobile：读者提出用REA研究的简短idea](../cases/rainbow-six-mobile-rea-reader-idea.md) — 读者回复Rainbow6Mobile说REA可用于逆向；只有具名对象和工具建议，没有实施或明确改造目标。 **[REA · 待验证]**
 - [Mewgenics：读者夸张自称Agent37分钟逆向，未提供实现](../cases/mewgenics-37-minute-agent-reversing-claim.md) — 回复TylerGlaiel的帖子自称37分钟逆向Mewgenics并提Agent；语气可能是玩笑，不能作为完成证据。 **[未确认使用 REA · 待验证]**
 - [Jeuner的MW2重写：为Apple Silicon转Rust，称四小时可在全部地图移动](../cases/jeuner-mw2-apple-silicon-rust-rebuild.md) — Jeuner称MW2不再能在Apple Silicon运行，计划Rust重写；四小时后报告可在所有地图移动，Claude周额度耗尽后拟周末继续。 **[REA · 进行中]**

@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [相机关机画面：ThinkerZhang在RICOH GR讨论中提固件改造与Codex可能性](../cases/camera-poweroff-screen-codex-community-idea.md) — 作者称社区有人定制相机关机画面，并提Codex潜力；父串是RICOH GR热靴配件，不证明Codex完成固件修改。 **[其他 AI 逆向 · 待验证]**
+- [iPad mini 60帧限制：读者希望用AI／REA研究解锁](../cases/ipad-mini-rea-60fps-unlock-idea.md) — 候选希望未来AI与REA能研究iPad mini的60帧限制；没有设备代际、限制所在层或实施证据。 **[REA · 待验证]**
+- [烟感器逐件拆解展示：Gatiti称Opus识别隐藏相机，不能当物理检测证据](../cases/gatiti-smoke-detector-ai-teardown-visualization-report.md) — Gatiti描述单prompt让Claude Code／Opus5.5用光标拆开烟感器并找出相机的展示；没有实体、测量或实际拆机记录。 **[其他 AI 逆向 · 待验证]**
 - [Build Hours耳机实验：参与者尝试逆向固件，实现双设备连接](../cases/openai-student-build-hours-earphone-multipoint.md) — OpenAI Student Collective活动回顾称有人尝试改耳机固件，使其同时连接两台设备；未报告成功。 **[未确认使用 REA · 进行中]**
 - [RuuviTag温湿度传感器：作者称Claude一小时加HomeKit固件支持](../cases/ruuvitag-claude-homekit-firmware-report.md) — 作者为闲置RuuviTag接Apple Home，请Claude改固件，在Raspberry Pi一小时后称首次即成功；无代码或配对记录。 **[其他 AI 逆向 · 待验证]**
 - [Karlos的Kindle：Claude与REA研究原厂代码，称UI与性能改善](../cases/karlos-kindle-rea-ui-performance-report.md) — Karlos称把REA仓库交给Claude研究Amazon原厂代码，解决KOReader、键盘和自动灯问题并有两倍速度；缺少计时与补丁。 **[REA · 待验证]**
@@ -41,7 +44,7 @@
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](../cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
 - [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](../cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
 - [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](../cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
-- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 本轮两帖转述Ray-Ban Meta棋局助手；补查0xProbability的10月24日原帖，作者称逆向自己的眼镜，让AI读棋盘并在AR中显示最佳着法。未给代码、眼镜代际或实测，不确认3000+Elo及零延迟。 **[未确认使用 REA · 待验证]**
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability自述逆向Ray-Ban Meta做棋局助手；10月28日Codez补述WhatsApp到Mac、Jev筛帧、Opus读盘和Stockfish流程。同一实现归属、开源与3000+Elo均未独立确认。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](../cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](../cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
 - [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](../cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**
@@ -230,7 +233,7 @@
 - [蓝牙小手柄：协议研究后计划做跨平台设置程序](../cases/gamepad-settings-request.md) — 作者报告协议已逆向，但设置程序仍计划中。 **[REA · 进行中]**
 - [华硕笔记本：通过 ACPI 研究改善 Linux 显卡支持](../cases/asus-acpi-gpu.md) — 作者称 Codex 启用了 NVIDIA 显卡，缺少具体复现材料。 **[其他 AI 逆向 · 待验证]**
 - [游戏鼠标：为 macOS 恢复 RGB、DPI 与按键设置](../cases/gaming-mouse-macos.md) — 用 ChatGPT 辅助逆向鼠标配套软件，补上 Mac 设置能力。 **[其他 AI 逆向 · 待验证]**
-- [PS5 安全机制：AI 辅助逆向的传播报告](../cases/ps5-ai-security-report.md) — 传播帖称 AI 加速 PS5 安全研究，后续提到具名研究者的 LLM 实验，但缺少原始技术记录。 **[未确认使用 REA · 待验证]**
+- [PS5 安全机制：AI 辅助逆向的传播报告](../cases/ps5-ai-security-report.md) — PS5的AI安全研究传播报告；10月28日转述再称Jordy获5万美元赏金，并保留前人已发现漏洞的背景。无原始技术记录，不确认AI首创或赏金因果。 **[未确认使用 REA · 待验证]**
 - [空调协议：用 AR 眼镜手势控制家电](../cases/ar-air-conditioner-control.md) — 分析官方 App 请求，再把开关和调温控制接到 AR 眼镜。 **[REA · 待验证]**
 - [红米电视：研究浏览器 APK，把闲置电视改成数据大屏](../cases/redmi-tv-dashboard.md) — Muse + Codex 分析电视浏览器与全屏行为，适配现有数据看板。 **[其他 AI 逆向 · 待验证]**
 - [CF632BLE 体脂秤：在浏览器里称重，不走厂商后台](../cases/cf632ble-web-bluetooth.md) — Claude Code + ghidra-rpc 研究 BLE 协议，重实现 Python 与网页客户端。 **[其他 AI 逆向 · 待验证]**

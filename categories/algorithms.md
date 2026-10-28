@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [Popularo／Captain Hook：作者用Claude Opus归纳社媒传播hook，网站已停托管](../cases/popularo-captain-hook-claude-social-patterns.md) — AudioNervousSys称与Claude Code／Opus共同逆向社媒及meme hook，做过Popularo和高级组件Captain Hook；无输入输出或效果测试。 **[其他 AI 逆向 · 待验证]**
+- [Seedance舞蹈视频提示重建：AI art gallery保留逐秒动作与不匹配限制](../cases/sandmrk-video-prompt-laugh-reconstruction.md) — sandmrk发布从视频反推的Seedance2.5逐秒舞蹈prompt，回复明确说生成不能完全匹配原视频、仍需优化。 **[其他 AI 逆向 · 进行中]**
+- [LLM文本水印：ETH／ICML2024研究的低成本逆向与伪造转述](../cases/eth-icml2024-llm-text-watermark-spoofing-report.md) — 候选称ETH研究者可低于50美元逆向常见分布式文本水印、伪造成功率逾80%；未取得原论文与实验条件。 **[未确认使用 REA · 待验证]**
 - [ReGen：从广告画面推断可重做提示词的Chrome扩展介绍](../cases/regen-ad-prompt-reconstruction-report.md) — 候选介绍ReGen为广告重建提示词；补查Amy Hua原帖确认Chrome扩展定位，但未证明恢复原始提示词或生成一致。 **[其他 AI 逆向 · 待验证]**
 - [Vitruvius别墅体素重建：作者称AI从蓝图与图片恢复建筑](../cases/voxel-vitruvius-villa-ai-blueprint-reconstruction.md) — 作者在自研C引擎中报告模拟Vitruvius按蓝图与图片重建别墅，称接近一比一；不是Minecraft源码恢复。 **[其他 AI 逆向 · 待验证]**
 - [本机安全工具对照：作者称4模型360次零拒绝，固件检查正确性未明](../cases/four-model-local-security-refusal-cost-test.md) — 作者在自有机器用4模型跑6类安全任务，称360次零拒绝、花1.48美元；包括路由器固件检查，但无任务成功率。 **[其他 AI 逆向 · 分析测试]**
