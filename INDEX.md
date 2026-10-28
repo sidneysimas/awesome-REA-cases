@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1132 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1143 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（241）
-- [硬件与设备互通](categories/hardware.md)（317）
-- [应用与客户端](categories/apps.md)（466）
-- [算法与功能重建](categories/algorithms.md)（108）
+- [游戏与游戏保存](categories/games.md)（242）
+- [硬件与设备互通](categories/hardware.md)（321）
+- [应用与客户端](categories/apps.md)（471）
+- [算法与功能重建](categories/algorithms.md)（109）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,7 @@
 
 ### 游戏与游戏保存
 
+- [Instance：按黑盒规格用Claude重建GameMaker8.1的Rust编辑器与引擎](cases/instance-gamemaker81-claude-blackbox-rust.md) — 二手报道称Claude Opus5.5按行为规格重写GameMaker8.1；公开Instance仓库有Rust编辑器、运行时、黑盒测试及浏览器入口，兼容性与工时未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [Uma Forza：Unity重建地平线4世界并导入赛马娘角色的二手报道](cases/uma-forza-petracoreproxy-unity-secondary-report.md) — 遊戲角落报道PetracoreProxy把FH4地图、环境与赛马娘角色放进Unity；AI只在报道背景中出现，实际贡献未确认。 **[其他 AI 逆向 · 待验证]**
 - [SNES逻辑与时序：JSONB让Agent驱动模拟器检查字节一致性](cases/vyrotek-snes-asm-agent-emulator-parity.md) — JSONB称从SNES汇编dump逆向游戏逻辑和时序，再让Agent操作模拟器确认精确字节一致；游戏与对照范围未披露。 **[其他 AI 逆向 · 进行中]**
 - [The Sims 4：Sérgei用AI追踪编译Python与XML调校依赖](cases/frooot-simmer-sims4-ai-python-xml-research.md) — Sérgei称AI帮助理解Sims4跨编译Python与XML的逻辑和依赖，减少手工研究负担；未给具名Mod或测试。 **[其他 AI 逆向 · 进行中]**
@@ -270,6 +271,10 @@
 
 ### 硬件与设备互通
 
+- [米遥MI-AO：Codex协作研究遥控器BLE，把按住说话送入Mac任务](cases/fanxeon-mi-ao-xiaomi-remote-codex.md) — MI-AO读取小米2Pro的ATVV音频，经ADPCM与本地Whisper送入Codex；作者报告固件2671端到端测试，macOS14+源码优先beta。 **[其他 AI 逆向 · 进行中]**
+- [SayAll：把小米蓝牙遥控器改接电脑语音输入的相关项目](cases/sayall-xiaomi-remote-voice-bridge.md) — SayAll将遥控器音频接为电脑麦克风并映射按键；候选区分Mac与Windows预览，公开文档说明AI工具参与开发，但未证明AI逆向协议的具体过程。 **[其他 AI 逆向 · 相关项目]**
+- [OpenRemoteAssistant：RC003-MS遥控器麦克风接入Mac与Windows的预发布项目](cases/openremoteassistant-rc003-computer-microphone.md) — OpenRemoteAssistant将小米2Pro按键与音频接电脑，识别交输入法；项目称Windows10开发机有测试、Win11未实测，AI辅助逆向角色未说明。 **[未确认使用 REA · 相关项目]**
+- [第三方耳机接手机控制中心：Kxians转述Claude Opus约3元逆向报告](cases/kxians-opus-earphones-native-control-center-report.md) — Kxians称有人用Claude Opus研究第三方耳机，约3元tokens接入手机原生控制中心；型号、系统与原作者未提供。 **[其他 AI 逆向 · 待验证]**
 - [小米机器人Brick：Felipe用REA与Claude研究蓝牙并写Rust客户端](cases/fmancinirt-xiaomi-robot-brick-rea-rust.md) — Felipe称分析小米App与机器人Brick间的蓝牙流量，从捕获命令和数据包写出不依赖官方App的基础Rust客户端。 **[REA · 进行中]**
 - [2014洗衣机回到SmartThings：Claude辅助互通的二手报告](cases/2014-washer-claude-smartthings-secondary-report.md) — 葡语报道转述机主借Claude重建SmartThings集成，不换零件或固件；需兼容hub，设备型号与协议未披露。 **[其他 AI 逆向 · 待验证]**
 - [父母电视去广告：Milon转述Claude按型号查找Wi-Fi设备并清理](cases/milon-parents-tv-claude-cleanup-secondary-report.md) — Milon称见到Claude Code按电视型号在Wi-Fi找到设备并清广告，追问固件更新后稳定性；未给型号、代码或逆向方法。 **[其他 AI 逆向 · 待验证]**
@@ -317,7 +322,7 @@
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
 - [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
 - [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
-- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。实现归属、开源与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。新增CISO Marketplace的开源转述，但实现归属、仓库与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
 - [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**
@@ -590,6 +595,11 @@
 
 ### 应用与客户端
 
+- [PlainMount：REA研究NTFSTool，为旧硬盘做原生Mac读写工具](cases/laplaced-plainmount-rea-ntfstool-macos.md) — Laplaced称Agent用REA研究NTFSTool后，复用现有NTFS组件制作PlainMount，并在旧Transcend硬盘测试读写重连；源码公开，未独立磁盘测试。 **[REA · 进行中]**
+- [Ginux：Codex在人的架构与验收约束下重建Linux用户态兼容内核](cases/ginux-codex-linux-abi-kernel-report.md) — Gregory Kurtzer的Ginux公开Rust内核与Linux ABI兼容代码；报道与文档称Codex持续11天，Rocky10启动到systemd，但只验证特定QEMU路径且总测试仍有失败。 **[其他 AI 逆向 · 进行中]**
+- [ProofOfAgent #1884：AI拒绝逆向服务器取答案的具体设想](cases/hushww-proofofagent-server-answer-refusal.md) — hushww称解题免费铸造太难，问AI能否逆向服务器取答案，被拒后改为等待入口的守护进程；没有服务器分析或成功铸造证明。 **[其他 AI 逆向 · 待验证]**
+- [闪动校园pro：Radiant Mistfall拟用REA、GPT与DSH研究App](cases/radiantmistfall-shandong-campus-pro-rea-idea.md) — Radiant Mistfall看到逆向一切项目后，提出与GPT和DSH一起研究闪动校园pro；尚无具体功能问题或分析结果。 **[REA · 待验证]**
+- [MCP Reverse Shield：GuardBee宣传从应用构建检查可见秘密的防御产品](cases/guardbee-mcp-reverse-shield-app-exposure.md) — GuardBee Ai介绍MCP Reverse Shield检查构建中的API key、source map与内部端点暴露；仅产品宣传，无样本扫描或AI分析流程验证。 **[未确认使用 REA · 相关项目]**
 - [gridsim：Mark尝试AI逆向，却报告重引入大量已修bug](cases/mark-gridsim-ai-reconstruction-bug-report.md) — Mark称终于试了AI reverse engineer anything，工具不错但gridsim输出糟糕，数到100个bug时停止，其中99个此前已修。 **[其他 AI 逆向 · 分析测试]**
 - [EasyClick APK：Goge称本地Qwen在44分58秒还原自写加密JS](cases/goge-qwen-easyclick-apk-js-recovery.md) — Goge用Qwen3.8-next-flash-iq3_s、opencode、jadx与OrbStack研究自己的自动化APK，报告完整还原IEC2内JS，明确未装REA。 **[其他 AI 逆向 · 分析测试]**
 - [iOS设计重建：Appllama、Expo与Emil Skills组合方案，非IPA逆向](cases/appllama-expo-emil-ios-design-reconstruction-workflow.md) — 发布者提出先研究头部App界面，再用Expo/RN与动效规则重建原生感体验的三组Skills流程，明确不是REA iOS版或IPA分析工具链。 **[其他 AI 逆向 · 相关项目]**
@@ -722,7 +732,7 @@
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
 - [搜索框重建：mai报告四个Claude Code Agent的观察、规格、隔离实现与对照测试](cases/mai-rea-four-agent-search-bar-rebuild.md) — mai称四个Agent以REA工作流在4分52秒重建一个搜索框，18项对照从64%到100%；目标应用、测试和代码未公开核实，24项观察仍有3项未知。 **[REA · 待验证]**
-- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。 **[REA · 待验证]**
+- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。10月28日另有读者建议用Hetzner虚拟机编译Chromium并移植补丁维护fork。 **[REA · 待验证]**
 - [链上聚类图：Capslock报告REA与Claude用公开数据重建单HTML可视化](cases/capslock-rea-public-chain-cluster-map.md) — Capslock称跳过付费接口，以公开链上数据重做月费499美元工具的聚类图，约14秒；同作者提示词限定为持有人及转账数据和单HTML，不证明整个收费产品已被替代。 **[REA · 待验证]**
 - [Telegram交易机器人：cypher pepe报告Claude Code静态检查发现剪贴板外发](cases/cypher-pepe-claude-sniper-bot-static-report.md) — 作者称未运行匿名sniper bot，而用Claude Code反编译检查网络、文件与沙箱分支，70秒报告提示钱包路径上报及每30分钟剪贴板外发；未提供样本或报告，不能确认恶意行为与源码差异。 **[其他 AI 逆向 · 待验证]**
 - [春秋的Android MCP框架：用Grok Bot研究微信，准备让Agent操作手机应用](cases/chunqiu-android-mcp-grok-wechat-research.md) — 春秋自称搭建Android MCP框架，让Grok Bot分析手机应用，当前展示微信，计划将订餐、酒店、机票及比价交给AI；未公开框架或可核测试，不把所有App内存透明视为已实现。 **[其他 AI 逆向 · 进行中]**
@@ -896,7 +906,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — Shaw称pumpfun-source追求字节相同且本人未用REA；已读固定文档为0/4核心全匹配、140/150有限处理器重建。10月27日8Bit追加REA与社交检索衍生Musebook/Fair Launch的报告，不证明合约匹配或上线安全。 **[REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](cases/pumpfun-reconstruction-report.md) — Shaw在10月28日报97.6%合约集进度；晚间固定README改按函数窗口列98.0%，原字节与归一化匹配分开，3/5 meaningful ELF相同。不是整套合约源码恢复或安全部署，前后端功能仍未完成；保留早期REA与Musebook的分别归因。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**
@@ -1059,6 +1069,7 @@
 
 ### 算法与功能重建
 
+- [镜面旗袍舞蹈：sandmrk反推7.5秒Seedance单镜视频规格](cases/sandmrk-seedance-mirror-qipao-75s-prompt.md) — sandmrk反推Seedance2.5的白发旗袍镜面舞蹈，逐秒列动作和倒影几何约束；明确生成不能完全匹配原视频。 **[其他 AI 逆向 · 进行中]**
 - [抗衰老药丸成分：Bob设想气相色谱加AI反推配方](cases/bob-ai-chromatography-antiaging-pill-idea.md) — Bob设想用气相色谱和逆向AI识别抗衰老药丸成分，再委托制造；没有实验、配方或安全性证据。 **[其他 AI 逆向 · 待验证]**
 - [白发旗袍舞蹈：sandmrk为18秒视频反推Seedance提示词](cases/sandmrk-seedance-whitehair-qipao-dance-prompt.md) — sandmrk给出18秒固定机位舞蹈的Seedance2.5重建规格，含105.5BPM与逐秒动作，明确生成不能完全匹配原片。 **[其他 AI 逆向 · 进行中]**
 - [儿童频道创作公式：yuvraj转述Claude分析后生成原创内容](cases/heyliccia-kids-channel-claude-formula-secondary-report.md) — yuvraj据heyliccia讲解称有人用Claude归纳2850万订阅儿童频道公式，做成原创生成引擎；未给频道、prompt或对照。 **[其他 AI 逆向 · 待验证]**

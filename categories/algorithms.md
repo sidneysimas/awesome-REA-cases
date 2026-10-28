@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [镜面旗袍舞蹈：sandmrk反推7.5秒Seedance单镜视频规格](../cases/sandmrk-seedance-mirror-qipao-75s-prompt.md) — sandmrk反推Seedance2.5的白发旗袍镜面舞蹈，逐秒列动作和倒影几何约束；明确生成不能完全匹配原视频。 **[其他 AI 逆向 · 进行中]**
 - [抗衰老药丸成分：Bob设想气相色谱加AI反推配方](../cases/bob-ai-chromatography-antiaging-pill-idea.md) — Bob设想用气相色谱和逆向AI识别抗衰老药丸成分，再委托制造；没有实验、配方或安全性证据。 **[其他 AI 逆向 · 待验证]**
 - [白发旗袍舞蹈：sandmrk为18秒视频反推Seedance提示词](../cases/sandmrk-seedance-whitehair-qipao-dance-prompt.md) — sandmrk给出18秒固定机位舞蹈的Seedance2.5重建规格，含105.5BPM与逐秒动作，明确生成不能完全匹配原片。 **[其他 AI 逆向 · 进行中]**
 - [儿童频道创作公式：yuvraj转述Claude分析后生成原创内容](../cases/heyliccia-kids-channel-claude-formula-secondary-report.md) — yuvraj据heyliccia讲解称有人用Claude归纳2850万订阅儿童频道公式，做成原创生成引擎；未给频道、prompt或对照。 **[其他 AI 逆向 · 待验证]**

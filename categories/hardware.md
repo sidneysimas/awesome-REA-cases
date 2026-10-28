@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [米遥MI-AO：Codex协作研究遥控器BLE，把按住说话送入Mac任务](../cases/fanxeon-mi-ao-xiaomi-remote-codex.md) — MI-AO读取小米2Pro的ATVV音频，经ADPCM与本地Whisper送入Codex；作者报告固件2671端到端测试，macOS14+源码优先beta。 **[其他 AI 逆向 · 进行中]**
+- [SayAll：把小米蓝牙遥控器改接电脑语音输入的相关项目](../cases/sayall-xiaomi-remote-voice-bridge.md) — SayAll将遥控器音频接为电脑麦克风并映射按键；候选区分Mac与Windows预览，公开文档说明AI工具参与开发，但未证明AI逆向协议的具体过程。 **[其他 AI 逆向 · 相关项目]**
+- [OpenRemoteAssistant：RC003-MS遥控器麦克风接入Mac与Windows的预发布项目](../cases/openremoteassistant-rc003-computer-microphone.md) — OpenRemoteAssistant将小米2Pro按键与音频接电脑，识别交输入法；项目称Windows10开发机有测试、Win11未实测，AI辅助逆向角色未说明。 **[未确认使用 REA · 相关项目]**
+- [第三方耳机接手机控制中心：Kxians转述Claude Opus约3元逆向报告](../cases/kxians-opus-earphones-native-control-center-report.md) — Kxians称有人用Claude Opus研究第三方耳机，约3元tokens接入手机原生控制中心；型号、系统与原作者未提供。 **[其他 AI 逆向 · 待验证]**
 - [小米机器人Brick：Felipe用REA与Claude研究蓝牙并写Rust客户端](../cases/fmancinirt-xiaomi-robot-brick-rea-rust.md) — Felipe称分析小米App与机器人Brick间的蓝牙流量，从捕获命令和数据包写出不依赖官方App的基础Rust客户端。 **[REA · 进行中]**
 - [2014洗衣机回到SmartThings：Claude辅助互通的二手报告](../cases/2014-washer-claude-smartthings-secondary-report.md) — 葡语报道转述机主借Claude重建SmartThings集成，不换零件或固件；需兼容hub，设备型号与协议未披露。 **[其他 AI 逆向 · 待验证]**
 - [父母电视去广告：Milon转述Claude按型号查找Wi-Fi设备并清理](../cases/milon-parents-tv-claude-cleanup-secondary-report.md) — Milon称见到Claude Code按电视型号在Wi-Fi找到设备并清广告，追问固件更新后稳定性；未给型号、代码或逆向方法。 **[其他 AI 逆向 · 待验证]**
@@ -49,7 +53,7 @@
 - [Civic安卓车机：Indra转述Crunchy-Nut1用Claude Code调查后台服务并清理18包](../cases/crunchy-nut1-civic-claude-head-unit-audit-report.md) — Indra转述u/Crunchy-Nut1调查Honda Civic的中国安卓车机，报告唤醒助手、预装录音器、root与APK安装入口，并用Claude Code清理服务、重做launcher；未取得原设备日志或独立安全验证。 **[其他 AI 逆向 · 待验证]**
 - [原装电视遥控器：ArcyDev想用一个按键同时启动电视与mini PC](../cases/arcydev-tv-remote-mini-pc-power-idea.md) — ArcyDev提出用电视原装遥控器的可编程按键启动mini PC，最好一键启动两台设备；是REA辅助设备互通的具体idea，没有实现或测试。 **[REA · 待验证]**
 - [HP打印机：TEJAS称用AI重写固件以使用便宜墨盒并切断厂商访问](../cases/texasalantodd-hp-printer-ai-firmware-rewrite-report.md) — TEJAS（@TexasAlanTodd）称AI重写其HP打印机固件后可用便宜墨盒、不再有广告和厂商访问；未给型号、代码或打印记录，不是已验证固件替换。 **[未确认使用 REA · 待验证]**
-- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。实现归属、开源与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
+- [Ray-Ban Meta棋局助手：0xProbability称逆向眼镜后让AI读棋盘并显示着法](../cases/0xprobabillity-rayban-meta-ai-chess-report.md) — 0xProbability称逆向眼镜做棋局助手，Codez描述WhatsApp到Mac的AI读盘流程；m质疑这并未展示眼镜逆向。新增CISO Marketplace的开源转述，但实现归属、仓库与3000+Elo均未确认。 **[未确认使用 REA · 待验证]**
 - [BlackBerry Q10：0xProbability称逆向旧机后随身使用SSH与Claude Code](../cases/0xprobabillity-blackberry-q10-ssh-claude-code.md) — 0xProbability以60美元二手BlackBerry Q10对比600美元起的Minimal Phone 2，称逆向后获得实体键盘、SSH及随身Claude Code。未给实现或模型运行位置，不确认手机本地运行Claude或AI参与逆向。 **[未确认使用 REA · 待验证]**
 - [Ruizu X02：Sem称Opus提取固件、重做iPod式菜单并加入小游戏](../cases/sem-ruizu-x02-opus-ipod-interface-firmware.md) — Sem报告Claude Opus从Ruizu X02的USB恢复模式读NAND、分析加密更新格式与UI资源，改成iPod式菜单和按键，并在Unicorn测试补丁后刷写。实机与376词双语游戏均为作者自述，未取得代码或日志。 **[其他 AI 逆向 · 待验证]**
 - [Samsung The Frame 65：Christian Ander报告root命令执行，Claude只做前后工作](../cases/nderchris-samsung-frame65-claude-root-boundary-report.md) — Christian Ander称Chris-ritsen方案在其2024年The Frame 65、固件T-PTMDEUC-1720.7上有效；Claude Opus与Sonnet拒绝下载和执行环节，仅辅助前后工作。作者明确root命令执行不等于任意文件与进程控制。 **[其他 AI 逆向 · 待验证]**

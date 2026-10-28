@@ -10,12 +10,15 @@ At 05:08:57 on October 28, Codez (@0xCodez) gives a secondhand account of Meta R
 
 At 11:09:04 on October 28, m (@mm_dyh) replies directly to Codez that no reversing is visible: all work occurs on a Mac over a standard WhatsApp call. They suggest an iPhone could process frames, perform vision and run Stockfish locally without paid cloud models. Thread lookup confirms the reply concerns the Codez workflow above. This is a concrete technical criticism and alternative idea, not a device test, implemented iPhone solution or independent disproof; it cannot rule out undisclosed protocol research.
 
-A Mac video pipeline and speech/video overlay do not establish an on-glasses engine, modified firmware or native AR. AI board reading is distinct from AI-assisted protocol reversing, which remains unknown. Open source, third-generation hardware, models and features are not confirmed by source. Recognition accuracy, end-to-end latency, win rates and device tests are absent; videos were not verified. 3000+ Elo, 20,000 hours and zero seconds are not project competitive measurements. Half a second is engine-thinking time, not whole-pipeline latency. No competitive cheating instructions are provided, glasses operated or code executed here. REA is unknown and status remains unverified.
+A Mac video pipeline and speech/video overlay do not establish an on-glasses engine, modified firmware or native AR. AI board reading is distinct from AI-assisted protocol reversing, which remains unknown. Open source, third-generation hardware, models and features are not confirmed by source. Recognition accuracy, end-to-end latency, win rates and device tests are absent; videos were not verified. 3000+ Elo, 20,000 hours and zero seconds are not project competitive measurements. Half a second is engine-thinking time, not whole-pipeline latency. At 16:59:10 on October 28, CISO Marketplace (@CisoMarketplace) separately says the creator open-sourced code after an original demo reached 13 million views. Lookup confirms the reporting account and video attachment, but no attributable repository was obtained. Thirteen million is a claim about another demo's historical engagement, not this candidate's 45-view snapshot, and does not resolve the dispute between native AR, a standard WhatsApp pipeline and actual glasses reversing. This retelling is not confirmation of open source.
+
+No competitive cheating instructions are provided, glasses operated or code executed here. REA is unknown and status remains unverified.
 
 The October 24 original establishes attribution and target, not a newly collected October 28 experiment.
 AI board reading, communication reversing, AR, speech and 3000+ Elo are distinct claims; the new pipeline is not proven to be the same implementation as the original AR demonstration.
 Earlier October 28 candidate snapshot: 48 likes, 4,111 views, 3 reposts. One frame/second, one frame/three seconds and half-second thinking are retelling figures.
 11:09 criticism candidate snapshot: 0 likes, 65 views, 0 reposts. Not independent disproof; the reversing-attribution dispute is retained.
+16:59 retelling candidate snapshot: 0 likes, 45 views, 0 reposts. Thirteen million views and open source lack original-repository verification.
 
 ## Sources
 
@@ -24,5 +27,6 @@ Earlier October 28 candidate snapshot: 48 likes, 4,111 views, 3 reposts. One fra
 - [Another historical retelling with AR and voice claims, October 26, 2026](https://x.com/i/status/2114679466291233152)
 - [Codez describes the WhatsApp/Mac/Jev/Opus/Stockfish pipeline, October 28, 2026](https://x.com/i/status/2115189030442688686)
 - [m questions whether a standard WhatsApp pipeline demonstrates glasses reversing, October 28, 2026](https://x.com/i/status/2115279656698229088)
+- [CISO Marketplace adds secondhand open-source and 13-million-view claims, October 28, 2026](https://x.com/i/status/2115367761660522988)
 
 [中文](../0xprobabillity-rayban-meta-ai-chess-report.md) | [Back to editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [Category](../../categories/en/hardware.md)

@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [PlainMount：REA研究NTFSTool，为旧硬盘做原生Mac读写工具](../cases/laplaced-plainmount-rea-ntfstool-macos.md) — Laplaced称Agent用REA研究NTFSTool后，复用现有NTFS组件制作PlainMount，并在旧Transcend硬盘测试读写重连；源码公开，未独立磁盘测试。 **[REA · 进行中]**
+- [Ginux：Codex在人的架构与验收约束下重建Linux用户态兼容内核](../cases/ginux-codex-linux-abi-kernel-report.md) — Gregory Kurtzer的Ginux公开Rust内核与Linux ABI兼容代码；报道与文档称Codex持续11天，Rocky10启动到systemd，但只验证特定QEMU路径且总测试仍有失败。 **[其他 AI 逆向 · 进行中]**
+- [ProofOfAgent #1884：AI拒绝逆向服务器取答案的具体设想](../cases/hushww-proofofagent-server-answer-refusal.md) — hushww称解题免费铸造太难，问AI能否逆向服务器取答案，被拒后改为等待入口的守护进程；没有服务器分析或成功铸造证明。 **[其他 AI 逆向 · 待验证]**
+- [闪动校园pro：Radiant Mistfall拟用REA、GPT与DSH研究App](../cases/radiantmistfall-shandong-campus-pro-rea-idea.md) — Radiant Mistfall看到逆向一切项目后，提出与GPT和DSH一起研究闪动校园pro；尚无具体功能问题或分析结果。 **[REA · 待验证]**
+- [MCP Reverse Shield：GuardBee宣传从应用构建检查可见秘密的防御产品](../cases/guardbee-mcp-reverse-shield-app-exposure.md) — GuardBee Ai介绍MCP Reverse Shield检查构建中的API key、source map与内部端点暴露；仅产品宣传，无样本扫描或AI分析流程验证。 **[未确认使用 REA · 相关项目]**
 - [gridsim：Mark尝试AI逆向，却报告重引入大量已修bug](../cases/mark-gridsim-ai-reconstruction-bug-report.md) — Mark称终于试了AI reverse engineer anything，工具不错但gridsim输出糟糕，数到100个bug时停止，其中99个此前已修。 **[其他 AI 逆向 · 分析测试]**
 - [EasyClick APK：Goge称本地Qwen在44分58秒还原自写加密JS](../cases/goge-qwen-easyclick-apk-js-recovery.md) — Goge用Qwen3.8-next-flash-iq3_s、opencode、jadx与OrbStack研究自己的自动化APK，报告完整还原IEC2内JS，明确未装REA。 **[其他 AI 逆向 · 分析测试]**
 - [iOS设计重建：Appllama、Expo与Emil Skills组合方案，非IPA逆向](../cases/appllama-expo-emil-ios-design-reconstruction-workflow.md) — 发布者提出先研究头部App界面，再用Expo/RN与动效规则重建原生感体验的三组Skills流程，明确不是REA iOS版或IPA分析工具链。 **[其他 AI 逆向 · 相关项目]**
@@ -134,7 +139,7 @@
 - [Granola数据迁出：读者建议AI研究本地存储与加密的导出idea](../cases/granola-ai-local-data-export-idea.md) — Michael希望迁出Granola旧聊天；父串有人建议Codex检查Mac本地存储，Serg再建议AI逆向。未报告完成解密或导出，也未证实服务的收费与存储机制。 **[未确认使用 REA · 待验证]**
 - [REAP：JoasASantos的REA单功能调查提示词集](../cases/reap-joasasantos-rea-investigation-prompts.md) — 公开REA-Prompts仓库按二进制、固件、Android、游戏与内核等任务整理提示词，要求引用地址、区分事实与未知；这是工作流资料，不是所有示例均已验证的逆向成果。 **[REA · 相关项目]**
 - [搜索框重建：mai报告四个Claude Code Agent的观察、规格、隔离实现与对照测试](../cases/mai-rea-four-agent-search-bar-rebuild.md) — mai称四个Agent以REA工作流在4分52秒重建一个搜索框，18项对照从64%到100%；目标应用、测试和代码未公开核实，24项观察仍有3项未知。 **[REA · 待验证]**
-- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](../cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。 **[REA · 待验证]**
+- [Arc浏览器保存愿望：停服公告后，读者建议REA与Codex辅助社区重建](../cases/arc-browser-ai-community-preservation-idea.md) — Arc宣布2026年12月22日结束服务后，读者建议REA与Codex辅助保存；Debdeep Sen随后称用REA与Claude一小时重建，计划打磨后开源，但无功能对照、仓库或测试。10月28日另有读者建议用Hetzner虚拟机编译Chromium并移植补丁维护fork。 **[REA · 待验证]**
 - [链上聚类图：Capslock报告REA与Claude用公开数据重建单HTML可视化](../cases/capslock-rea-public-chain-cluster-map.md) — Capslock称跳过付费接口，以公开链上数据重做月费499美元工具的聚类图，约14秒；同作者提示词限定为持有人及转账数据和单HTML，不证明整个收费产品已被替代。 **[REA · 待验证]**
 - [Telegram交易机器人：cypher pepe报告Claude Code静态检查发现剪贴板外发](../cases/cypher-pepe-claude-sniper-bot-static-report.md) — 作者称未运行匿名sniper bot，而用Claude Code反编译检查网络、文件与沙箱分支，70秒报告提示钱包路径上报及每30分钟剪贴板外发；未提供样本或报告，不能确认恶意行为与源码差异。 **[其他 AI 逆向 · 待验证]**
 - [春秋的Android MCP框架：用Grok Bot研究微信，准备让Agent操作手机应用](../cases/chunqiu-android-mcp-grok-wechat-research.md) — 春秋自称搭建Android MCP框架，让Grok Bot分析手机应用，当前展示微信，计划将订餐、酒店、机票及比价交给AI；未公开框架或可核测试，不把所有App内存透明视为已实现。 **[其他 AI 逆向 · 进行中]**
@@ -308,7 +313,7 @@
 - [Apple Notes：迁移笔记、文件夹和图片到 Grape](../cases/apple-notes-migration.md) — 研究笔记数据以实现跨产品导入。 **[其他 AI 逆向]**
 - [扑克桌面整理：重建牌桌管理工具](../cases/poker-table-organizer.md) — 用 REA、Ghidra 和 Codex 重建整理扑克桌面的功能。 **[REA · 待验证]**
 - [Codex 电脑操作：研究浏览器能力并接入其他 Agent](../cases/codex-cua-harness-research.md) — 研究 Codex 电脑操作和浏览器功能，以便其他模型在独立框架中使用。 **[REA · 进行中]**
-- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — Shaw称pumpfun-source追求字节相同且本人未用REA；已读固定文档为0/4核心全匹配、140/150有限处理器重建。10月27日8Bit追加REA与社交检索衍生Musebook/Fair Launch的报告，不证明合约匹配或上线安全。 **[REA · 待验证]**
+- [Pump.fun：并行 Agent 研究发币平台机制](../cases/pumpfun-reconstruction-report.md) — Shaw在10月28日报97.6%合约集进度；晚间固定README改按函数窗口列98.0%，原字节与归一化匹配分开，3/5 meaningful ELF相同。不是整套合约源码恢复或安全部署，前后端功能仍未完成；保留早期REA与Musebook的分别归因。 **[REA · 待验证]**
 - [远程桌面客户端：用 AI 逆向做数据采集监测的 idea](../cases/remote-client-privacy-monitor-idea.md) — 在 ToDesk 等远程桌面客户端场景，提出逆向分析并监测数据采集。 **[未确认使用 REA · 待验证]**
 - [稿定设计：为固定封面制作自己的工作台](../cases/gaoding-cover-workbench.md) — 已用 Codex + Fabric.js 做封面工具，计划再用 REA 研究稿定的界面与逻辑。 **[REA · 进行中]**
 - [Axure：反编译原型工具，做 AI 时代版本的 idea](../cases/axure-ai-rebuild-idea.md) — 提出研究 Axure 并重做面向 AI 的交互原型工具。 **[未确认使用 REA · 待验证]**

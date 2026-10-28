@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Instance：按黑盒规格用Claude重建GameMaker8.1的Rust编辑器与引擎](../cases/instance-gamemaker81-claude-blackbox-rust.md) — 二手报道称Claude Opus5.5按行为规格重写GameMaker8.1；公开Instance仓库有Rust编辑器、运行时、黑盒测试及浏览器入口，兼容性与工时未独立验证。 **[其他 AI 逆向 · 进行中]**
 - [Uma Forza：Unity重建地平线4世界并导入赛马娘角色的二手报道](../cases/uma-forza-petracoreproxy-unity-secondary-report.md) — 遊戲角落报道PetracoreProxy把FH4地图、环境与赛马娘角色放进Unity；AI只在报道背景中出现，实际贡献未确认。 **[其他 AI 逆向 · 待验证]**
 - [SNES逻辑与时序：JSONB让Agent驱动模拟器检查字节一致性](../cases/vyrotek-snes-asm-agent-emulator-parity.md) — JSONB称从SNES汇编dump逆向游戏逻辑和时序，再让Agent操作模拟器确认精确字节一致；游戏与对照范围未披露。 **[其他 AI 逆向 · 进行中]**
 - [The Sims 4：Sérgei用AI追踪编译Python与XML调校依赖](../cases/frooot-simmer-sims4-ai-python-xml-research.md) — Sérgei称AI帮助理解Sims4跨编译Python与XML的逻辑和依赖，减少手工研究负担；未给具名Mod或测试。 **[其他 AI 逆向 · 进行中]**

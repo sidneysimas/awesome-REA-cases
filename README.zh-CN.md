@@ -8,9 +8,9 @@
 
 精选 **AI 逆向的项目、实验与具体想法**：让旧设备继续工作，重建应用功能，保存游戏，理解隐藏的实现。
 
-# 1132 个案例与项目
+# 1143 个案例与项目
 
-**最近案例更新：**2026 年 10 月 28 日 20:45 · **最近维护：**2026 年 10 月 28 日 20:45 · 北京时间（UTC+8）；数量统计截至此次维护。
+**最近案例更新：**2026 年 10 月 28 日 21:05 · **最近维护：**2026 年 10 月 28 日 21:05 · 北京时间（UTC+8）；数量统计截至此次维护。
 
 **每天更新 6 次** · [完整目录](INDEX.md) · [按分类浏览](#分类浏览)
 
@@ -22,15 +22,15 @@
 
 ## 近期精选
 
-**10 个值得读的案例**，从设备互通、游戏保存到实用应用复活：先看公开实现与有边界的测试；完整目录也保留本地模型研究APK、重建失败与早期想法，分别说明证据限制。下列日期为来源或作者更新日期，不是收录日期。
+**10 个值得读的案例**，从设备互通、游戏保存到实用替代品：不只看公开实现，也看测试与历史怪癖如何划出兼容边界。下列日期为来源或作者更新日期，不是收录日期。
 
 1. **[Plustek 扫描仪与 ThinkPad 相机](cases/schaller-opticfilm-thinkpad-linux.md)** · `2026-10-15` — 用 Windows 参考行为改善 Linux 驱动；公开测量也保留低光与曝光缺陷。`进行中`
 2. **[NIST 曲线种子从哪来](cases/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic 报告 Claude 追到 **lrand48 与时间戳**，公开代码，也保留未解问题。**不是破解 ECDSA**，本合集未独立复算。`研究报告`
 3. **[LG UltraFine：修更新器，而不是破解固件](cases/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex 辅助诊断，公开**精确构建限定的内存补丁**；作者报告 scaler 更新达 **100%、CRC 通过**。注明前人错误报告；仅一套 Apple Silicon 配置，本合集未独立刷机。`作者实测补丁`
 4. **[Brother：扫描直接进 NAS](cases/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — 以 **Claude/REA 辅助的公开 Go 服务替代电脑按键应用，支持 SMB、FTP、S3 与本地保存**，复用前人协议研究。仍需服务器；项目只报告测试 MFC-L2800DW 固件1.32。`公开实现`
 5. **[Claude 写证明，Rocq 检查二进制](cases/anthropic-theorem-claude-binary-formal-verification.md)** · `2026-10-22` — Anthropic／Theorem 报告为 **123 库的 239 个入口**建立机器码无崩溃证明。限单线程静态 RISC-V/Linux、小于64MB输入；**不等于整库无 bug**，本合集未独立重跑检查器。`分析测试`
-6. **[QuixiDesk：保留桌面工作区，自选模型](cases/quixiai-quixidesk-rea-claude-desktop-recreation.md)** · `2026-10-27` — Eric Hartford报告**用REA研究并重建Claude Desktop**，接入本地与云模型。Rust工作空间及同日较晚的文档公开；限macOS14以上，**功能等价与工具权限未经独立测试**。不是复制Claude模型权重。`进行中`
-7. **[Ace Combat 04：PS2 函数到原生 C++](cases/projectstonehenge-ace-combat04-ai-native-port.md)** · `2026-10-25` — ProjectStonehenge 文档明确 **Anthropic 辅助研究与编码**，使用 Ghidra/MCP 和 PCSX2 参考。最高 **360FPS 是可选渲染上限**，不是实测帧率；游戏逻辑仍为59.94Hz。限 Windows 与一版光盘，存档互通仍是beta；本合集未运行。`进行中`
+6. **[PlainMount：在Mac上写入旧NTFS硬盘](cases/laplaced-plainmount-rea-ntfstool-macos.md)** · `2026-10-28` — Laplaced报告**REA研究NTFSTool后，复用现有NTFS组件写原生应用**，在一块旧盘测试读、写与重连。源码公开，限Apple Silicon/macOS14+；**后端许可混合、未经Apple公证**，本合集未独立测盘。`进行中`
+7. **[Instance：保存GameMaker的怪癖，而不只是功能](cases/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — 报道称**Claude按黑盒规格用Rust重建8.1编辑器与运行时**，公开代码及浏览器入口，保留旧事件、随机数和音频行为。按报道完整工作是**三周，不只一上午**；不保证全面等价或法律合规，本合集未运行。`进行中`
 8. **[初代文明：重建1991年的 DOS 可执行文件](cases/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia 的 AI 辅助 C／汇编重建有**公开代码与精确提交的哈希校验 CI 成功记录**。**四字节启动修正**是受检构建步骤，不是最终仍有差异。命名为推断，依赖前人 OpenCiv1；不是原始源码，本合集未独立编译。`进行中`
 9. **[PicasaPy：让本地照片工作流继续用](cases/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28`（北京时间） — Virág Attila用**Ghidra／Claude／Codex辅助Python/Qt重写**，公开研究规格及精确提交的成功CI。共用**.picasa.ini**不等于无冲突同步；项目文档区分静态覆盖与点击测试。未证明全面等价，本合集未运行。`进行中`
 10. **[BEST抽油烟机：找回被缓存藏住的控制项](cases/godlewski-best-hbn65366ss-claude-ble-homeassistant.md)** · `2026-10-27`（北京时间） — Steve Godlewski与Claude Code抓蓝牙流量，纠正**40项缓存漏掉54个特征中部分控制项**的误判，将四档风速与四档灯光接入Home Assistant。公开日志保留失败诊断，上游修正已合并；复用前人工作，**仅一台HBN65366SS作者实测**，本合集未运行。`进行中`
@@ -48,10 +48,10 @@
 
 | 分类 | 数量 |
 | :--- | ---: |
-| [游戏与游戏保存](categories/games.md) | **241** |
-| [硬件与设备互通](categories/hardware.md) | **317** |
-| [应用与客户端](categories/apps.md) | **466** |
-| [算法与功能重建](categories/algorithms.md) | **108** |
+| [游戏与游戏保存](categories/games.md) | **242** |
+| [硬件与设备互通](categories/hardware.md) | **321** |
+| [应用与客户端](categories/apps.md) | **471** |
+| [算法与功能重建](categories/algorithms.md) | **109** |
 
 [**查看全部案例 →**](INDEX.md) · [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
