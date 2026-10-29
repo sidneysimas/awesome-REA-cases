@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [老友重建旧游戏：HumanProbably考虑分摊AI额度](../cases/friends-shared-ai-credits-old-game-clone-idea.md) — HumanProbably与朋友考虑平摊AI额度，重建几十年前一起玩的游戏；游戏未具名，没有开工或可玩版本。 **[其他 AI 逆向 · 待验证]**
+- [未具名游戏：咸鱼称REA十分钟完成逆向](../cases/nickling017-rea-ten-minute-unnamed-game-report.md) — 咸鱼报告REA十分钟帮自己完成游戏逆向；只确认作者自述及一张截图附件，游戏名、逆向范围和可运行成果未核验。 **[REA · 待验证]**
+- [Kega Fusion：用AI反编译模拟器、增加无边框窗口的愿望](../cases/kega-fusion-ai-decompile-borderless-idea.md) — 读者建议AI反编译Kega Fusion模拟器，加入无边框窗口等现代功能；尚无实现或测试。 **[其他 AI 逆向 · 待验证]**
 - [Street Fighter the Movie到SNES：Old Man Rukus称AI帮助Ghidra命名符号](../cases/oldmanrukus-sftm-ai-ghidra-snes-project.md) — Old Man Rukus澄清SFTM从AI主导转为约一半人工，AI通过Ghidra命名符号并帮助学习SNES；旧帖提及MSU-1与SD2SNES，未独立核验可玩移植。 **[其他 AI 逆向 · 进行中]**
 - [Super Turbo反编译：Old Man Rukus称先用AI，再转向个人SNES学习](../cases/oldmanrukus-super-turbo-ai-decompilation.md) — Old Man Rukus称用AI反编译Super Turbo，随后强调自己学习SNES而不继续依赖AI；没有给游戏版本、源码或可运行输出。 **[其他 AI 逆向 · 进行中]**
 - [Capcom vs SNK到SNES：Old Man Rukus计划AI反编译后亲自接手](../cases/oldmanrukus-capcom-vs-snk-ai-decompile-plan.md) — Old Man Rukus计划先用AI反编译Capcom vs SNK再自己开发；较早说明把它与SNES/MSU-1学习相连，没有已完成反编译或移植证据。 **[其他 AI 逆向 · 待验证]**

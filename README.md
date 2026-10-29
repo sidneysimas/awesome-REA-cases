@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1191 cases & projects
+# 1207 cases & projects
 
-**Latest case update:** October 29, 2026, 08:13 · **Last maintained:** October 29, 2026, 08:13 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 29, 2026, 12:19 · **Last maintained:** October 29, 2026, 12:19 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation and useful replacements. These picks favor concrete implementations and inspectable evidence over speed claims; public code still needs exact-build checks and clearly bounded tests. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, game preservation and useful replacements. Public code matters, but so do retired experiments and limits on what was actually tested. Dates below are source or author-update dates, not collection dates.
 
 1. **[tolpo: a live 3D view of your Tapo home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md)** · `2026-10-29` — A Claude-assisted protocol-research report leads to **public LAN/MCP control and a human-corrected floor plan**. Reuses python-kasa; earlier project tests cover nine rooms and 18 devices, not every write or model. Local device traffic does not mean local AI. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -33,7 +33,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 7. **[Instance: preserve GameMaker's quirks, not just its features](cases/en/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — A report credits **Claude-assisted, black-box-spec-driven Rust reconstruction** of the 8.1 editor and runtime. Public code and browser entry include old event, RNG and audio behavior; **three weeks, not just a morning**, according to the report. No full-parity or legal-compliance guarantee; not run here. `In progress`
 8. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
 9. **[PicasaPy: keep a local photo workflow alive](cases/en/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28` (Beijing time) — Virág Attila's **Ghidra/Claude/Codex-assisted Python/Qt rewrite** has public research specifications and successful exact-commit CI. Shared **.picasa.ini** files are not conflict-safe synchronization; project documents separate static coverage from click tests. Full parity not established; not run here. `In progress`
-10. **[Super Lemon Text: rebuild an editor from behavior](cases/en/super-lemon-text-sublime-cleanroom-experiment.md)** · `2026-10-29` — A **public Claude Code/Rust Sublime-style editor** with successful exact-commit CI and explicit automated/manual/unfinished test boundaries. Not recovered Sublime source; Windows milestones are project-reported, other platforms remain unfinished, and the original author has stopped development. `Open for continuation`
+10. **[Hasselblad X2D: firmware research with the failures left in](cases/en/radium-hasselblad-cim-codex-feature-research.md)** · `2026-10-29` report; `2026-10-28` project README — Codex-assisted CIM research is reported alongside **public Doom and autofocus work with bounded first-generation device feedback**. The README retires a false-focus trial; **second-generation CarPlay/GPT claims are not validated by it**. Not flashed or optically tested here. `In progress`
 
 ## Classic cases
 
@@ -49,10 +49,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **252** |
-| [Hardware & interoperability](categories/en/hardware.md) | **333** |
-| [Applications & clients](categories/en/apps.md) | **491** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **115** |
+| [Games & preservation](categories/en/games.md) | **255** |
+| [Hardware & interoperability](categories/en/hardware.md) | **336** |
+| [Applications & clients](categories/en/apps.md) | **499** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **117** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 

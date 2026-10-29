@@ -2,6 +2,14 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Reall：Conra为REA fork制作可解释的五阶段界面](../cases/conra-reall-rea-explainable-gui-fork.md) — Conra称制作Reall，将REA的分析、规格、构建、验证和报告放进简单界面，支持多模型、局部目标、预算与证据展示；源码和运行结果未取得。 **[REA · 进行中]**
+- [Chrome：Anthropic报告内部模型串联浏览器漏洞与越沙箱](../cases/anthropic-internal-claude-chrome-chain-report.md) — Ummon转述Anthropic未发布内部模型在人工初始提示后研究Chrome，串联V8与浏览器进程缺陷，并报告macOS默认浏览器打开计算器的演示；62个CVE及修复状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Safari：二手报道内部Claude模型以纯数据链绕过同源策略](../cases/anthropic-internal-claude-safari-data-only-report.md) — Ummon转述Anthropic研究Safari，组合JavaScriptCore内存、Gigacage与IPC行为绕过同源策略，不依赖任意代码执行；Apple修复为转述，未复现。 **[其他 AI 逆向 · 分析测试]**
+- [Windows QUIC：二手报道内部Claude模型以Ghidra研究内核二进制](../cases/anthropic-internal-claude-windows-quic-report.md) — Ummon转述Anthropic将Windows可执行文件交给内部模型，用Ghidra等工具逆向并写注释C重现，发现HTTP/3内核QUIC越界读取导致拒绝服务；CVE与修复未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Linux MPTCP：二手报道内部Claude模型研究内核网络竞态链](../cases/anthropic-internal-claude-linux-mptcp-report.md) — Ummon转述Anthropic内部模型研究Linux多路径TCP内核竞态，报告无凭据远程root执行及48+5分钟演示；CVE、稳定分支修复和实际影响未独立核验。 **[其他 AI 逆向 · 分析测试]**
+- [Kuna：Dopax介绍面向Agent的Rust反编译器与WASM入口](../cases/kuna-agent-rust-decompiler-report.md) — Dopax介绍Kuna为从Ghidra移植并独立演进的Rust反编译器，提供CLI、浏览器WASM和Ghidra后端；19MB约三分钟与DecBench排名为二手说法。 **[未确认使用 REA · 相关项目]**
+- [SuperGhidra：常驻Ghidra/MCP与可重编译C的项目转述](../cases/superghidra-daemon-mcp-recompilation-report.md) — Dopax介绍SuperGhidra以常驻守护进程/MCP减少headless冷启动，并称支持C改写、MSVC RTTI/MFC布局恢复与Z3等价检查；未核验具体实现或证明范围。 **[未确认使用 REA · 相关项目]**
+- [付费应用单功能替代：Delor Jr提出Grok/REA/Opus夜间经营方案](../cases/delor-grok-rea-opus-overnight-feature-business-idea.md) — Delor Jr建议Grok找抱怨、REA研究付费应用关键功能、Opus制作9美元产品并在夜间处理支持；没有具名替代品、运行或收入证据。 **[REA · 待验证]**
 - [Android APK到TypeScript客户端：Agent Cooney称REA五分钟生成库](../cases/adrian-cooney-rea-apk-typescript-client.md) — Agent Cooney称自己为个人项目研究Web API多年，REA读取该服务Android APK后五分钟输出TypeScript客户端库；目标未具名，未给兼容性测试。 **[REA · 待验证]**
 - [1Password独立AI实现：Azote在数据丢失后报告的未完整替代路线](../cases/azote-1password-independent-ai-implementation.md) — Azote称数据迁移后丢失一年内容，借本地缓存缩小损失，并受独立AI逆向实现帮助；同作者明确说功能不全，不应据此保证恢复成功或净室合规。 **[其他 AI 逆向 · 待验证]**
 - [1Password 7前人成果改造：Azote报告另一条源码可见、许可存疑路线](../cases/azote-1password7-prior-work-adaptation.md) — Azote另指向基于前人1Password 7成果的改造实现，称功能全但可能有许可争议；与独立AI实现分开，AI在这条路线的贡献未披露。 **[未确认使用 REA · 待验证]**
@@ -112,7 +120,7 @@
 - [Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能](../cases/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。 **[其他 AI 逆向 · 相关项目]**
 - [daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制](../cases/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [videograb：Jan以REA与多模型工作流制作Downie替代的进展](../cases/jan-videograb-rea-downie-alternative.md) — Jan M称使用REA制作自己付费产品的替代品，具名Downie替代videograb；Claude写提示并审查，Codex/Grok/Gemini执行，尚无功能或下载成功率证据。 **[REA · 进行中]**
-- [Addy的递归自学习REA skill：持续构建工具的作者自述](../cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
+- [Addy的递归自学习REA skill：持续构建工具的作者自述](../cases/addy-recursive-self-learning-rea-skill.md) — Addy再介绍REA衍生skill，链接确认Speedrunlab公开项目；文档定义书面功能清单、连续两次验收与预算/停滞停止规则，自学习是待人工批准的经验记录，不是权重训练。未运行。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](../cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](../cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
 - [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](../cases/ablation-tool-ai-reverse-engineering-framework.md) — Ablation以LLM循环组织二进制分析；Dan Kornas新增语义函数搜索、跨会话假设追踪与跨目标学习介绍，10月27日固定README可追溯这些文档入口，未运行或认证效果。 **[其他 AI 逆向 · 相关项目]**

@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1191 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1207 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（252）
-- [硬件与设备互通](categories/hardware.md)（333）
-- [应用与客户端](categories/apps.md)（491）
-- [算法与功能重建](categories/algorithms.md)（115）
+- [游戏与游戏保存](categories/games.md)（255）
+- [硬件与设备互通](categories/hardware.md)（336）
+- [应用与客户端](categories/apps.md)（499）
+- [算法与功能重建](categories/algorithms.md)（117）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,9 @@
 
 ### 游戏与游戏保存
 
+- [老友重建旧游戏：HumanProbably考虑分摊AI额度](cases/friends-shared-ai-credits-old-game-clone-idea.md) — HumanProbably与朋友考虑平摊AI额度，重建几十年前一起玩的游戏；游戏未具名，没有开工或可玩版本。 **[其他 AI 逆向 · 待验证]**
+- [未具名游戏：咸鱼称REA十分钟完成逆向](cases/nickling017-rea-ten-minute-unnamed-game-report.md) — 咸鱼报告REA十分钟帮自己完成游戏逆向；只确认作者自述及一张截图附件，游戏名、逆向范围和可运行成果未核验。 **[REA · 待验证]**
+- [Kega Fusion：用AI反编译模拟器、增加无边框窗口的愿望](cases/kega-fusion-ai-decompile-borderless-idea.md) — 读者建议AI反编译Kega Fusion模拟器，加入无边框窗口等现代功能；尚无实现或测试。 **[其他 AI 逆向 · 待验证]**
 - [Street Fighter the Movie到SNES：Old Man Rukus称AI帮助Ghidra命名符号](cases/oldmanrukus-sftm-ai-ghidra-snes-project.md) — Old Man Rukus澄清SFTM从AI主导转为约一半人工，AI通过Ghidra命名符号并帮助学习SNES；旧帖提及MSU-1与SD2SNES，未独立核验可玩移植。 **[其他 AI 逆向 · 进行中]**
 - [Super Turbo反编译：Old Man Rukus称先用AI，再转向个人SNES学习](cases/oldmanrukus-super-turbo-ai-decompilation.md) — Old Man Rukus称用AI反编译Super Turbo，随后强调自己学习SNES而不继续依赖AI；没有给游戏版本、源码或可运行输出。 **[其他 AI 逆向 · 进行中]**
 - [Capcom vs SNK到SNES：Old Man Rukus计划AI反编译后亲自接手](cases/oldmanrukus-capcom-vs-snk-ai-decompile-plan.md) — Old Man Rukus计划先用AI反编译Capcom vs SNK再自己开发；较早说明把它与SNES/MSU-1学习相连，没有已完成反编译或移植证据。 **[其他 AI 逆向 · 待验证]**
@@ -281,6 +284,9 @@
 
 ### 硬件与设备互通
 
+- [哈苏X2D系列：Codex辅助CIM研究、Doom与受限自动对焦扩展](cases/radium-hasselblad-cim-codex-feature-research.md) — 极客开源转述Radium Wang用Codex研究哈苏CIM与ARM64/Qt扩展；公开固定README区分一代Doom和AF有限实机反馈、二代静态分析与未完成项目，不支持把CarPlay/GPT转述当完整验收。 **[其他 AI 逆向 · 进行中]**
+- [Pixel 9：二手报道内部Claude模型研究Android锁屏与Play services二进制](cases/anthropic-internal-claude-android-lockscreen-report.md) — Ummon转述Anthropic结合源码、Play services二进制逆向和Pixel 9实机研究锁屏访问，报告三漏洞越过四道保护；Google处理状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Point Smart：Conra承认支付终端逆向暂失败，转向AI与官方SmartApps SDK](cases/conra-point-smart-ai-research-sdk-pivot.md) — Conra以Astra和DeepSeek v4研究Mercado Pago Point Smart，遇AP/SP与防拆边界而未突破；另用REA衍生skill探索官方SDK商用应用，教程尚计划中。 **[REA · 进行中]**
 - [iPad Pro刷macOS：WeZZard提出AI逆向移植愿望](cases/ipad-pro-macos-ai-port-idea.md) — WeZZard问能否借AI逆向让iPad Pro直接运行macOS；没有具体机型、启动方案或执行报告。 **[未确认使用 REA · 待验证]**
 - [Amica EB954BA+烤箱：建议Claude研究旧固件、USB更新与以太网](cases/amica-eb954ba-claude-firmware-research-idea.md) — Norbert想修改失去支持的联网烤箱，Pawel建议把固件交给Claude研究，先探索USB更新再看以太网；没有执行或刷机结果。 **[其他 AI 逆向 · 待验证]**
 - [Giulia车机审计：LittlePoly称Claude Code/REA发现并清理恶意组件](cases/littlepoly-giulia-rea-malware-audit-report.md) — LittlePoly自述通过USB-C连接Alfa Romeo Giulia车机，使用Claude Code/REA扫描并清理十个所谓恶意组件；无可审计日志或样本，不能据此归罪厂商或服务商。 **[REA · 待验证]**
@@ -617,6 +623,14 @@
 
 ### 应用与客户端
 
+- [Reall：Conra为REA fork制作可解释的五阶段界面](cases/conra-reall-rea-explainable-gui-fork.md) — Conra称制作Reall，将REA的分析、规格、构建、验证和报告放进简单界面，支持多模型、局部目标、预算与证据展示；源码和运行结果未取得。 **[REA · 进行中]**
+- [Chrome：Anthropic报告内部模型串联浏览器漏洞与越沙箱](cases/anthropic-internal-claude-chrome-chain-report.md) — Ummon转述Anthropic未发布内部模型在人工初始提示后研究Chrome，串联V8与浏览器进程缺陷，并报告macOS默认浏览器打开计算器的演示；62个CVE及修复状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Safari：二手报道内部Claude模型以纯数据链绕过同源策略](cases/anthropic-internal-claude-safari-data-only-report.md) — Ummon转述Anthropic研究Safari，组合JavaScriptCore内存、Gigacage与IPC行为绕过同源策略，不依赖任意代码执行；Apple修复为转述，未复现。 **[其他 AI 逆向 · 分析测试]**
+- [Windows QUIC：二手报道内部Claude模型以Ghidra研究内核二进制](cases/anthropic-internal-claude-windows-quic-report.md) — Ummon转述Anthropic将Windows可执行文件交给内部模型，用Ghidra等工具逆向并写注释C重现，发现HTTP/3内核QUIC越界读取导致拒绝服务；CVE与修复未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Linux MPTCP：二手报道内部Claude模型研究内核网络竞态链](cases/anthropic-internal-claude-linux-mptcp-report.md) — Ummon转述Anthropic内部模型研究Linux多路径TCP内核竞态，报告无凭据远程root执行及48+5分钟演示；CVE、稳定分支修复和实际影响未独立核验。 **[其他 AI 逆向 · 分析测试]**
+- [Kuna：Dopax介绍面向Agent的Rust反编译器与WASM入口](cases/kuna-agent-rust-decompiler-report.md) — Dopax介绍Kuna为从Ghidra移植并独立演进的Rust反编译器，提供CLI、浏览器WASM和Ghidra后端；19MB约三分钟与DecBench排名为二手说法。 **[未确认使用 REA · 相关项目]**
+- [SuperGhidra：常驻Ghidra/MCP与可重编译C的项目转述](cases/superghidra-daemon-mcp-recompilation-report.md) — Dopax介绍SuperGhidra以常驻守护进程/MCP减少headless冷启动，并称支持C改写、MSVC RTTI/MFC布局恢复与Z3等价检查；未核验具体实现或证明范围。 **[未确认使用 REA · 相关项目]**
+- [付费应用单功能替代：Delor Jr提出Grok/REA/Opus夜间经营方案](cases/delor-grok-rea-opus-overnight-feature-business-idea.md) — Delor Jr建议Grok找抱怨、REA研究付费应用关键功能、Opus制作9美元产品并在夜间处理支持；没有具名替代品、运行或收入证据。 **[REA · 待验证]**
 - [Android APK到TypeScript客户端：Agent Cooney称REA五分钟生成库](cases/adrian-cooney-rea-apk-typescript-client.md) — Agent Cooney称自己为个人项目研究Web API多年，REA读取该服务Android APK后五分钟输出TypeScript客户端库；目标未具名，未给兼容性测试。 **[REA · 待验证]**
 - [1Password独立AI实现：Azote在数据丢失后报告的未完整替代路线](cases/azote-1password-independent-ai-implementation.md) — Azote称数据迁移后丢失一年内容，借本地缓存缩小损失，并受独立AI逆向实现帮助；同作者明确说功能不全，不应据此保证恢复成功或净室合规。 **[其他 AI 逆向 · 待验证]**
 - [1Password 7前人成果改造：Azote报告另一条源码可见、许可存疑路线](cases/azote-1password7-prior-work-adaptation.md) — Azote另指向基于前人1Password 7成果的改造实现，称功能全但可能有许可争议；与独立AI实现分开，AI在这条路线的贡献未披露。 **[未确认使用 REA · 待验证]**
@@ -727,7 +741,7 @@
 - [Microsoft Skill Recorder：由录屏与操作事件重建可复用Agent技能](cases/microsoft-skill-recorder-workflow-reconstruction.md) — TechVerser介绍微软Skill Recorder：用Copilot从一次操作记录恢复任务意图与有序步骤，再生成SKILL.md或Automation；分析会上传记录数据，并非全程离线。 **[其他 AI 逆向 · 相关项目]**
 - [daos.fun：wei转述Shaw以AI重建Anchor合约与同哈希二进制](cases/shaw-daosfun-ai-anchor-reconstruction-report.md) — wei转述Shaw从链上取出daos.fun闭源程序，以AI重建Anchor源码，称1120784字节二进制同SHA256并有六项审计发现；原代码、哈希与漏洞均未独立核验。 **[其他 AI 逆向 · 待验证]**
 - [videograb：Jan以REA与多模型工作流制作Downie替代的进展](cases/jan-videograb-rea-downie-alternative.md) — Jan M称使用REA制作自己付费产品的替代品，具名Downie替代videograb；Claude写提示并审查，Codex/Grok/Gemini执行，尚无功能或下载成功率证据。 **[REA · 进行中]**
-- [Addy的递归自学习REA skill：持续构建工具的作者自述](cases/addy-recursive-self-learning-rea-skill.md) — addy_oz称受REA启发制作递归自学习skill，让Agent持续构建直到任务完成，并称可搭配任何Agent；仓库身份与实际停止条件未核验。 **[REA · 相关项目]**
+- [Addy的递归自学习REA skill：持续构建工具的作者自述](cases/addy-recursive-self-learning-rea-skill.md) — Addy再介绍REA衍生skill，链接确认Speedrunlab公开项目；文档定义书面功能清单、连续两次验收与预算/停滞停止规则，自学习是待人工批准的经验记录，不是权重训练。未运行。 **[REA · 相关项目]**
 - [Chess.com可视化复盘：Tjay报告Claude重建分析并接本地Qwen](cases/tjay-chesscom-local-qwen-visual-review.md) — Tjay称研究Chess.com复盘引擎，用Claude与本地量化Qwen实现棋盘上的走法解释和历史对局同步；宣称Mac、Windows及浏览器可用，开源仍为承诺。 **[其他 AI 逆向 · 待验证]**
 - [STICH FAIXI SiX：AdyLovelace用REA与Ghidra制作Tiny Client的自述](cases/ady-stich-faixi-six-tiny-client.md) — AdyLovelace称用REA、AI Assist与Ghidra为其称为STICH FAIXI SiX的目标制作实验性Tiny Client；未公开代码或可核查功能。 **[REA · 待验证]**
 - [Ablation：由LLM工具循环连接二进制上下文与分析模块的框架](cases/ablation-tool-ai-reverse-engineering-framework.md) — Ablation以LLM循环组织二进制分析；Dan Kornas新增语义函数搜索、跨会话假设追踪与跨目标学习介绍，10月27日固定README可追溯这些文档入口，未运行或认证效果。 **[其他 AI 逆向 · 相关项目]**
@@ -1111,6 +1125,8 @@
 
 ### 算法与功能重建
 
+- [王城燃烧短片：sandmrk反推Muse四段分镜，承认仍不匹配原片](cases/sandmrk-muse-royal-city-burned-video-prompt.md) — sandmrk把王后、骑士和少年在火灾王城中的短片反推为Muse提示词，细分镜头时段、角色一致性、第一人称与合成对白；不是恢复原始提示词，未独立比较生成结果。 **[其他 AI 逆向 · 分析测试]**
+- [水墨湖面舟子：sandmrk反推构图比例、色值与负面提示](cases/sandmrk-inkwash-boatman-image-prompt.md) — sandmrk反推16:9水墨湖景，以位置百分比和色值约束山崖、红枫、白花与单舟，明确生成图仍不完全匹配；未证明找回原始提示或模型。 **[其他 AI 逆向 · 分析测试]**
 - [旗袍捣杵舞：sandmrk反推Muse视频动作规格，明确仍不匹配原片](cases/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk为11.2秒固定镜头舞蹈写Muse生成prompt，按节拍描述动作与跨片段衔接；作者承认结果不能完全匹配，不是恢复原始prompt。 **[其他 AI 逆向 · 进行中]**
 - [Anthropic红队多平台报告转述：Ghidra读Windows QUIC二进制并对照C重建](cases/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — 读者转述Claude研究Chrome、Safari、Linux和Windows，其中QUIC使用Ghidra与C行为对照；原始报告、漏洞链与修复版本未独立核对。 **[其他 AI 逆向 · 待验证]**
 - [macOS开盖唤醒：读者希望逆向行为，让Linux更快亮屏](cases/macos-linux-fast-wake-reconstruction-idea.md) — 在AI逆向语境下，读者提出研究macOS开盖唤醒并在Linux重建；0.25秒与3分钟是愿景对比，不是基准。 **[未确认使用 REA · 待验证]**

@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [哈苏X2D系列：Codex辅助CIM研究、Doom与受限自动对焦扩展](../cases/radium-hasselblad-cim-codex-feature-research.md) — 极客开源转述Radium Wang用Codex研究哈苏CIM与ARM64/Qt扩展；公开固定README区分一代Doom和AF有限实机反馈、二代静态分析与未完成项目，不支持把CarPlay/GPT转述当完整验收。 **[其他 AI 逆向 · 进行中]**
+- [Pixel 9：二手报道内部Claude模型研究Android锁屏与Play services二进制](../cases/anthropic-internal-claude-android-lockscreen-report.md) — Ummon转述Anthropic结合源码、Play services二进制逆向和Pixel 9实机研究锁屏访问，报告三漏洞越过四道保护；Google处理状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
+- [Point Smart：Conra承认支付终端逆向暂失败，转向AI与官方SmartApps SDK](../cases/conra-point-smart-ai-research-sdk-pivot.md) — Conra以Astra和DeepSeek v4研究Mercado Pago Point Smart，遇AP/SP与防拆边界而未突破；另用REA衍生skill探索官方SDK商用应用，教程尚计划中。 **[REA · 进行中]**
 - [iPad Pro刷macOS：WeZZard提出AI逆向移植愿望](../cases/ipad-pro-macos-ai-port-idea.md) — WeZZard问能否借AI逆向让iPad Pro直接运行macOS；没有具体机型、启动方案或执行报告。 **[未确认使用 REA · 待验证]**
 - [Amica EB954BA+烤箱：建议Claude研究旧固件、USB更新与以太网](../cases/amica-eb954ba-claude-firmware-research-idea.md) — Norbert想修改失去支持的联网烤箱，Pawel建议把固件交给Claude研究，先探索USB更新再看以太网；没有执行或刷机结果。 **[其他 AI 逆向 · 待验证]**
 - [Giulia车机审计：LittlePoly称Claude Code/REA发现并清理恶意组件](../cases/littlepoly-giulia-rea-malware-audit-report.md) — LittlePoly自述通过USB-C连接Alfa Romeo Giulia车机，使用Claude Code/REA扫描并清理十个所谓恶意组件；无可审计日志或样本，不能据此归罪厂商或服务商。 **[REA · 待验证]**

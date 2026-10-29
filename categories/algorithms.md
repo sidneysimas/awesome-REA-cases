@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [王城燃烧短片：sandmrk反推Muse四段分镜，承认仍不匹配原片](../cases/sandmrk-muse-royal-city-burned-video-prompt.md) — sandmrk把王后、骑士和少年在火灾王城中的短片反推为Muse提示词，细分镜头时段、角色一致性、第一人称与合成对白；不是恢复原始提示词，未独立比较生成结果。 **[其他 AI 逆向 · 分析测试]**
+- [水墨湖面舟子：sandmrk反推构图比例、色值与负面提示](../cases/sandmrk-inkwash-boatman-image-prompt.md) — sandmrk反推16:9水墨湖景，以位置百分比和色值约束山崖、红枫、白花与单舟，明确生成图仍不完全匹配；未证明找回原始提示或模型。 **[其他 AI 逆向 · 分析测试]**
 - [旗袍捣杵舞：sandmrk反推Muse视频动作规格，明确仍不匹配原片](../cases/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk为11.2秒固定镜头舞蹈写Muse生成prompt，按节拍描述动作与跨片段衔接；作者承认结果不能完全匹配，不是恢复原始prompt。 **[其他 AI 逆向 · 进行中]**
 - [Anthropic红队多平台报告转述：Ghidra读Windows QUIC二进制并对照C重建](../cases/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — 读者转述Claude研究Chrome、Safari、Linux和Windows，其中QUIC使用Ghidra与C行为对照；原始报告、漏洞链与修复版本未独立核对。 **[其他 AI 逆向 · 待验证]**
 - [macOS开盖唤醒：读者希望逆向行为，让Linux更快亮屏](../cases/macos-linux-fast-wake-reconstruction-idea.md) — 在AI逆向语境下，读者提出研究macOS开盖唤醒并在Linux重建；0.25秒与3分钟是愿景对比，不是基准。 **[未确认使用 REA · 待验证]**
