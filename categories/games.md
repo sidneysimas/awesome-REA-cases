@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [Street Fighter the Movie到SNES：Old Man Rukus称AI帮助Ghidra命名符号](../cases/oldmanrukus-sftm-ai-ghidra-snes-project.md) — Old Man Rukus澄清SFTM从AI主导转为约一半人工，AI通过Ghidra命名符号并帮助学习SNES；旧帖提及MSU-1与SD2SNES，未独立核验可玩移植。 **[其他 AI 逆向 · 进行中]**
+- [Super Turbo反编译：Old Man Rukus称先用AI，再转向个人SNES学习](../cases/oldmanrukus-super-turbo-ai-decompilation.md) — Old Man Rukus称用AI反编译Super Turbo，随后强调自己学习SNES而不继续依赖AI；没有给游戏版本、源码或可运行输出。 **[其他 AI 逆向 · 进行中]**
+- [Capcom vs SNK到SNES：Old Man Rukus计划AI反编译后亲自接手](../cases/oldmanrukus-capcom-vs-snk-ai-decompile-plan.md) — Old Man Rukus计划先用AI反编译Capcom vs SNK再自己开发；较早说明把它与SNES/MSU-1学习相连，没有已完成反编译或移植证据。 **[其他 AI 逆向 · 待验证]**
+- [Final Fantasy 7上SNES：Old Man Rukus以SD2SNES mkII为长期目标](../cases/oldmanrukus-ff7-snes-sd2snes-idea.md) — Old Man Rukus把AI辅助格斗游戏研究的长期动机归于SNES加SD2SNES mkII运行FF7的信念；没有技术验证，不同于现代二维重制idea。 **[未确认使用 REA · 待验证]**
+- [Resident Evil复古降级：Jame(Rez)建议AI反编译经典引擎](../cases/resident-evil-classic-engine-ai-demake-idea.md) — 在把RE4/5/7/8/9做成初代风格的愿望下，Jame(Rez)建议AI反编译老游戏、重建引擎；没有开始实施或性能、兼容性证据。 **[其他 AI 逆向 · 待验证]**
 - [Harvester_ITA：带Claude/Opus标签的1996年冒险游戏意大利语本地化项目](../cases/harvester-ita-claude-tagged-localization-report.md) — Sh0dan介绍Harvester意大利语补丁、手册与兼容性工程，列出Python/汇编/Shell分工；AI仅见标签，具体贡献和仓库尚未核验。 **[未确认使用 REA · 待验证]**
 - [FFVII或FFIX：用AI逆向与重编译做现代2D重制的idea](../cases/ffvii-ffix-ai-modern-2d-remake-idea.md) — 读者问能否把原版Final Fantasy VII或IX的逆向/重编译成果用于现代2D重制；只有具体改编目标，没有实现或可行性验证。 **[未确认使用 REA · 待验证]**
 - [童年旧游戏：iamstalkholic称与Claude反编译，准备现代化重写](../cases/iamstalkholic-claude-childhood-game-rewrite.md) — 作者称已与Claude反编译小时候玩的旧游戏，并计划重写；游戏名称、代码与运行情况未提供。 **[其他 AI 逆向 · 进行中]**

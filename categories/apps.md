@@ -2,6 +2,13 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [Android APK到TypeScript客户端：Agent Cooney称REA五分钟生成库](../cases/adrian-cooney-rea-apk-typescript-client.md) — Agent Cooney称自己为个人项目研究Web API多年，REA读取该服务Android APK后五分钟输出TypeScript客户端库；目标未具名，未给兼容性测试。 **[REA · 待验证]**
+- [1Password独立AI实现：Azote在数据丢失后报告的未完整替代路线](../cases/azote-1password-independent-ai-implementation.md) — Azote称数据迁移后丢失一年内容，借本地缓存缩小损失，并受独立AI逆向实现帮助；同作者明确说功能不全，不应据此保证恢复成功或净室合规。 **[其他 AI 逆向 · 待验证]**
+- [1Password 7前人成果改造：Azote报告另一条源码可见、许可存疑路线](../cases/azote-1password7-prior-work-adaptation.md) — Azote另指向基于前人1Password 7成果的改造实现，称功能全但可能有许可争议；与独立AI实现分开，AI在这条路线的贡献未披露。 **[未确认使用 REA · 待验证]**
+- [应用同意开关审计：Kiro转述REA追踪遥测并对比开关前后流量的工作流](../cases/rea-app-consent-toggle-privacy-audit-workflow.md) — Kiro分享隐私审计idea：从Electron/APK/原生应用追到外连触发动作，对比同意开关及同意前流量；没有具名应用的实测结果。 **[REA · 待验证]**
+- [订阅应用局部替代：Skik称REA研究界面、Opus重建、Grok部署](../cases/rea-opus-unnamed-subscription-feature-rebuild.md) — Skik称一夜间重做某30美元/月应用中自己常用的部分，REA研究界面、Opus5.5编写、Grok Bot部署；目标和功能均未具名，无兼容性或净室验证。 **[REA · 待验证]**
+- [iPhone本地AI安全工作台：eddiebro在优化离线模型与逆向分析工具](../cases/eddiebro-iphone-local-ai-security-workbench.md) — eddiebro称正在把pcap检查、漏洞与恶意软件逆向工具整合到iPhone，本地模型仍在下载和优化；未公开仓库或证明原生扫描/注入能力。 **[未确认使用 REA · 进行中]**
+- [Kong：Ghidra上下文驱动的LLM符号恢复与XZ后门项目基准](../cases/kong-ghidra-llm-symbols-xz-benchmark.md) — Kong公开以调用图组织Ghidra/LLM分析并回写名称和类型；较早基准称15分钟、6.63美元分析XZ后门样本。源码可查，置信度和完整链条仍为项目自述，未独立复现。 **[其他 AI 逆向 · 分析测试]**
 - [Super Lemon Text：Claude Code按行为描述重建Sublime式Rust编辑器](../cases/super-lemon-text-sublime-cleanroom-experiment.md) — Lemonator32公开Rust编辑器与测试文档，称Claude Code未读原程序而按行为描述重建；Windows里程碑自报完成，但项目未完、原作者已停止开发。 **[其他 AI 逆向 · 进行中]**
 - [智能戒指自制界面：Pranav称反推WHOOP/Oura恢复、负荷与睡眠算法](../cases/pranav-smart-ring-whoop-oura-recovery-app.md) — Pranav Janakiraman嫌戒指界面难用，称做了自己的WHOOP式应用并让Agent直接记上下文；算法恢复方法和AI逆向贡献未说明。 **[未确认使用 REA · 待验证]**
 - [开源应用发布包：Mia建议用REA辅助检查二进制是否对应源码](../cases/rea-open-source-binary-provenance-check-idea.md) — 在可复现构建讨论下，Mia提出用REA逆向检查发布二进制的idea；没有选定样本或实验，不能替代可复现构建。 **[REA · 待验证]**

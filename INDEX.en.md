@@ -10,16 +10,16 @@ A collection of REA and AI reverse-engineering cases and projects, covering game
 
 [REA](https://github.com/morluto/rea) (Reverse Engineer Anything) lets coding agents call local reverse-engineering tools through CLI and MCP interfaces. This collection also includes work with other AI tools and interoperability projects built for AI agents.
 
-**1175 entries**, organized by use case, without a Top-N or popularity threshold.
+**1191 entries**, organized by use case, without a Top-N or popularity threshold.
 
 English case details and category pages are available throughout this reading path. Contribution and maintenance guides are in Chinese.
 
 ## Contents
 
-- [Games and preservation](categories/en/games.md) (247)
-- [Hardware and interoperability](categories/en/hardware.md) (330)
-- [Applications and clients](categories/en/apps.md) (484)
-- [Algorithms and feature recovery](categories/en/algorithms.md) (114)
+- [Games and preservation](categories/en/games.md) (252)
+- [Hardware and interoperability](categories/en/hardware.md) (333)
+- [Applications and clients](categories/en/apps.md) (491)
+- [Algorithms and feature recovery](categories/en/algorithms.md) (115)
 - [Contribute a case (Chinese)](CONTRIBUTING.md) · [Maintenance (Chinese)](MAINTENANCE.md)
 
 Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage labels—Needs verification, In progress, Analysis test, and Related project—keep all entries discoverable without presenting them as completed results.
@@ -28,6 +28,11 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Games and preservation
 
+- [Street Fighter the Movie toward SNES: Old Man Rukus credits AI/Ghidra symbol naming](cases/en/oldmanrukus-sftm-ai-ghidra-snes-project.md) — Old Man Rukus says SFTM shifted from AI-led work to roughly half manual, with AI naming symbols through Ghidra and helping him learn SNES. Earlier posts mention MSU-1 and SD2SNES; a playable port was not independently checked. **[Other AI-assisted work · In progress]**
+- [Super Turbo decompilation: Old Man Rukus reports AI use followed by personal SNES learning](cases/en/oldmanrukus-super-turbo-ai-decompilation.md) — Old Man Rukus says AI decompiled Super Turbo, then emphasizes learning SNES without continuing to rely on AI. No game revision, source or runnable output is supplied. **[Other AI-assisted work · In progress]**
+- [Capcom vs SNK toward SNES: Old Man Rukus plans AI decompilation before taking over](cases/en/oldmanrukus-capcom-vs-snk-ai-decompile-plan.md) — Old Man Rukus plans to have AI decompile Capcom vs SNK before continuing manually. An earlier explanation links it to SNES/MSU-1 learning; completed decompilation or porting is not established. **[Other AI-assisted work · Needs verification]**
+- [Final Fantasy 7 on SNES: Old Man Rukus's long-term SD2SNES mkII idea](cases/en/oldmanrukus-ff7-snes-sd2snes-idea.md) — Old Man Rukus motivates his AI-assisted fighting-game research with a belief that SNES plus SD2SNES mkII could run FF7. No technical validation is supplied; this differs from a modern 2D remake idea. **[REA use unconfirmed · Needs verification]**
+- [Resident Evil demakes: Jame(Rez) suggests AI decompilation of a classic engine](cases/en/resident-evil-classic-engine-ai-demake-idea.md) — Responding to a wish for RE4/5/7/8/9 in the originals' style, Jame(Rez) suggests AI decompilation and engine reconstruction. No implementation, performance or compatibility evidence is supplied. **[Other AI-assisted work · Needs verification]**
 - [Harvester_ITA: a 1996 adventure localization project tagged Claude/Opus](cases/en/harvester-ita-claude-tagged-localization-report.md) — Sh0dan describes Italian patches, a manual and compatibility work for Harvester, with Python/assembly/Shell roles. AI appears only in tags; its contribution and the repository remain unverified. **[REA use unconfirmed · Needs verification]**
 - [FFVII or FFIX: an idea for an AI-assisted modern 2D remake](cases/en/ffvii-ffix-ai-modern-2d-remake-idea.md) — A reader asks whether reversing and recompilation of the original Final Fantasy VII or IX could support a modern 2D remake. A concrete adaptation idea, not an implementation or feasibility test. **[REA use unconfirmed · Needs verification]**
 - [An unnamed childhood game: iamstalkholic reports Claude-assisted decompilation](cases/en/iamstalkholic-claude-childhood-game-rewrite.md) — The author reports decompiling an old childhood game with Claude and plans a modern rewrite. The game's name, code and runtime state are unspecified. **[Other AI-assisted work · In progress]**
@@ -278,6 +283,9 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Hardware and interoperability
 
+- [macOS on iPad Pro: WeZZard proposes an AI-assisted reversing wish](cases/en/ipad-pro-macos-ai-port-idea.md) — WeZZard asks whether AI-assisted reversing could put macOS directly on iPad Pro. No exact model, boot method or implementation is reported. **[REA use unconfirmed · Needs verification]**
+- [Amica EB954BA+ oven: a Claude firmware, USB-update and Ethernet research idea](cases/en/amica-eb954ba-claude-firmware-research-idea.md) — Norbert wants to modify an unsupported connected oven. Pawel suggests examining firmware with Claude, exploring USB updates and then Ethernet. No execution or flashing result is reported. **[Other AI-assisted work · Needs verification]**
+- [Giulia head-unit audit: LittlePoly claims Claude Code/REA found and removed malicious components](cases/en/littlepoly-giulia-rea-malware-audit-report.md) — LittlePoly reports a USB-C connection to an Alfa Romeo Giulia head unit and Claude Code/REA-assisted scanning and removal of ten alleged malicious components. No auditable logs or samples establish the claims or implicate a vendor or service provider. **[REA · Needs verification]**
 - [tolpo: Tapo protocol research, MCP device control and a live 3D home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md) — beamnxw attributes protocol work to Claude Code. Public tolpo reuses python-kasa for Tapo LAN devices and offers a corrected-by-human floor plan with 3D state, distinguishing hardware tests from simulation. **[Other AI-assisted work · In progress]**
 - [Ray-Ban Meta poker assistance: an unverified Opus and card-detection account](cases/en/rayban-meta-opus-poker-assistant-report.md) — A candidate says a student streamed glasses video to a laptop, trained card detection on synthetic data and used Opus for spoken advice. 3000+ Elo, emotion reading, open source and real play are unverified. **[REA use unconfirmed · Needs verification]**
 - [Klipsch Lumina speakers: AI-assisted BLE research with webcam and microphone feedback](cases/en/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande reports studying Lumina 2.1 BLE traffic and mobile binaries, then checking LEDs with a webcam and audio with a microphone while iterating a Mac menu-bar app. Not independently tested. **[Other AI-assisted work · In progress]**
@@ -611,6 +619,13 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Applications and clients
 
+- [Android APK to TypeScript client: Agent Cooney reports a five-minute REA library](cases/en/adrian-cooney-rea-apk-typescript-client.md) — Agent Cooney says he spent years researching a web API for a personal project, then REA produced a TypeScript client from its Android APK in five minutes. The target is unnamed and compatibility is untested here. **[REA · Needs verification]**
+- [An independent AI 1Password implementation: Azote's incomplete alternative after data loss](cases/en/azote-1password-independent-ai-implementation.md) — Azote reports a year of data lost after migration, a possible cache-assisted reduction of that loss, and help from an independent AI reversing implementation. The author explicitly calls it incomplete; recovery and clean-room compliance are not established. **[Other AI-assisted work · Needs verification]**
+- [Adapting prior 1Password 7 work: Azote reports a source-visible route with licensing concerns](cases/en/azote-1password7-prior-work-adaptation.md) — Azote separately points to an adaptation of prior 1Password 7 research, calling it feature-complete but potentially license-disputed. It is distinct from the independent AI implementation; AI's role in this route is undisclosed. **[REA use unconfirmed · Needs verification]**
+- [App consent-toggle auditing: Kiro describes an REA telemetry-tracing workflow](cases/en/rea-app-consent-toggle-privacy-audit-workflow.md) — Kiro shares an audit idea: trace outbound calls in Electron/APK/native apps to interactions, compare consent ON/OFF and pre-consent traffic. No named application is actually tested in the source. **[REA · Needs verification]**
+- [A partial subscription-app replacement: Skik reports REA analysis, Opus rebuilding and Grok deployment](cases/en/rea-opus-unnamed-subscription-feature-rebuild.md) — Skik says one frequently used part of a $30/month app was rebuilt overnight with REA UI research, Opus 5.5 coding and Grok Bot deployment. Neither target nor feature is named; compatibility and clean-room claims are unverified. **[REA · Needs verification]**
+- [An iPhone local-AI security workbench: eddiebro is optimizing offline models and reversing tools](cases/en/eddiebro-iphone-local-ai-security-workbench.md) — eddiebro reports integrating pcap inspection, vulnerability tools and malware analysis on iPhone. The local model is still downloading and being optimized; no public repository or native scanning/injection capability is established. **[REA use unconfirmed · In progress]**
+- [Kong: Ghidra-context-driven LLM symbol recovery and a project XZ backdoor benchmark](cases/en/kong-ghidra-llm-symbols-xz-benchmark.md) — Kong publishes call-graph-organized Ghidra/LLM analysis with name/type writeback. An earlier benchmark reports 15 minutes and $6.63 on an XZ backdoor sample. Source is inspectable, but confidence and kill-chain reconstruction remain project claims, not independent reproduction. **[Other AI-assisted work · Analysis test]**
 - [Super Lemon Text: Claude Code rebuilds a Sublime-style Rust editor from behavior](cases/en/super-lemon-text-sublime-cleanroom-experiment.md) — Lemonator32 publishes a Rust editor and test documentation, saying Claude Code worked from behavioral descriptions without the original program. Windows milestones are self-reported complete, but work is unfinished and the original author has stopped. **[Other AI-assisted work · In progress]**
 - [A personal smart-ring UI: Pranav reports WHOOP/Oura recovery, strain and sleep reconstruction](cases/en/pranav-smart-ring-whoop-oura-recovery-app.md) — Pranav Janakiraman dislikes his ring's UI and reports a WHOOP-style app with agent-written context. Algorithm recovery methods and AI's reversing contribution are unspecified. **[REA use unconfirmed · Needs verification]**
 - [Open-source app releases: Mia suggests REA-assisted binary provenance checks](cases/en/rea-open-source-binary-provenance-check-idea.md) — In a reproducible-build discussion, Mia proposes reversing release binaries with REA. No sample or experiment is selected; this is not a replacement for reproducible builds. **[REA · Needs verification]**
@@ -1098,6 +1113,7 @@ Tool labels distinguish REA, other AI work, and unconfirmed REA use. Stage label
 
 ### Algorithms and feature recovery
 
+- [Qipao pestle dance: sandmrk reconstructs a Muse motion prompt while admitting mismatch](cases/en/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk writes a Muse generation prompt for an 11.2-second locked-camera dance, specifying beats and cross-clip continuity. The author admits incomplete matching; this is not recovery of the actual original prompt. **[Other AI-assisted work · In progress]**
 - [A secondhand Anthropic red-team report: Ghidra and C comparisons for Windows QUIC](cases/en/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — A reader recounts Claude investigations of Chrome, Safari, Linux and Windows, including Ghidra/C behavioral comparisons for QUIC. Original research, exploit chains and fixed versions were not independently checked. **[Other AI-assisted work · Needs verification]**
 - [macOS lid-open wake: a reader's idea to reconstruct faster Linux screen recovery](cases/en/macos-linux-fast-wake-reconstruction-idea.md) — In the AI-reversing discussion, a reader proposes studying macOS wake behavior for Linux. The 0.25-second versus three-minute contrast is an aspiration, not a benchmark. **[REA use unconfirmed · Needs verification]**
 - [A silver-haired qipao witch: sandmrk reconstructs a nine-pose, 8.9-second video prompt](cases/en/sandmrk-qipao-witch-nine-pose-video-prompt.md) — sandmrk specifies identity, an interior and nine timed hard-cut shots, emphasizing held poses rather than dance. Generated output explicitly remains an incomplete match. **[Other AI-assisted work · In progress]**

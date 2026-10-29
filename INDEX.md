@@ -10,14 +10,14 @@
 
 [REA](https://github.com/morluto/rea)（Reverse Engineer Anything）通过 CLI / MCP，让编程 Agent 调用本地逆向分析工具。本集合不局限于 REA，也收录其他 AI 辅助逆向和为 AI 工具实现互通的项目。
 
-当前收录 **1175 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
+当前收录 **1191 个案例与项目**，按用途分类，不设 Top N 或热度门槛。
 
 ## 目录
 
-- [游戏与游戏保存](categories/games.md)（247）
-- [硬件与设备互通](categories/hardware.md)（330）
-- [应用与客户端](categories/apps.md)（484）
-- [算法与功能重建](categories/algorithms.md)（114）
+- [游戏与游戏保存](categories/games.md)（252）
+- [硬件与设备互通](categories/hardware.md)（333）
+- [应用与客户端](categories/apps.md)（491）
+- [算法与功能重建](categories/algorithms.md)（115）
 - [贡献案例](CONTRIBUTING.md) · [维护方法](MAINTENANCE.md)
 
 工具标注：`REA` / `其他 AI 逆向` / `未确认使用 REA`。阶段标注：`待验证` / `进行中` / `分析测试` / `相关项目`；有标注的也列在主目录，但不等同于已完成成果。
@@ -26,6 +26,11 @@
 
 ### 游戏与游戏保存
 
+- [Street Fighter the Movie到SNES：Old Man Rukus称AI帮助Ghidra命名符号](cases/oldmanrukus-sftm-ai-ghidra-snes-project.md) — Old Man Rukus澄清SFTM从AI主导转为约一半人工，AI通过Ghidra命名符号并帮助学习SNES；旧帖提及MSU-1与SD2SNES，未独立核验可玩移植。 **[其他 AI 逆向 · 进行中]**
+- [Super Turbo反编译：Old Man Rukus称先用AI，再转向个人SNES学习](cases/oldmanrukus-super-turbo-ai-decompilation.md) — Old Man Rukus称用AI反编译Super Turbo，随后强调自己学习SNES而不继续依赖AI；没有给游戏版本、源码或可运行输出。 **[其他 AI 逆向 · 进行中]**
+- [Capcom vs SNK到SNES：Old Man Rukus计划AI反编译后亲自接手](cases/oldmanrukus-capcom-vs-snk-ai-decompile-plan.md) — Old Man Rukus计划先用AI反编译Capcom vs SNK再自己开发；较早说明把它与SNES/MSU-1学习相连，没有已完成反编译或移植证据。 **[其他 AI 逆向 · 待验证]**
+- [Final Fantasy 7上SNES：Old Man Rukus以SD2SNES mkII为长期目标](cases/oldmanrukus-ff7-snes-sd2snes-idea.md) — Old Man Rukus把AI辅助格斗游戏研究的长期动机归于SNES加SD2SNES mkII运行FF7的信念；没有技术验证，不同于现代二维重制idea。 **[未确认使用 REA · 待验证]**
+- [Resident Evil复古降级：Jame(Rez)建议AI反编译经典引擎](cases/resident-evil-classic-engine-ai-demake-idea.md) — 在把RE4/5/7/8/9做成初代风格的愿望下，Jame(Rez)建议AI反编译老游戏、重建引擎；没有开始实施或性能、兼容性证据。 **[其他 AI 逆向 · 待验证]**
 - [Harvester_ITA：带Claude/Opus标签的1996年冒险游戏意大利语本地化项目](cases/harvester-ita-claude-tagged-localization-report.md) — Sh0dan介绍Harvester意大利语补丁、手册与兼容性工程，列出Python/汇编/Shell分工；AI仅见标签，具体贡献和仓库尚未核验。 **[未确认使用 REA · 待验证]**
 - [FFVII或FFIX：用AI逆向与重编译做现代2D重制的idea](cases/ffvii-ffix-ai-modern-2d-remake-idea.md) — 读者问能否把原版Final Fantasy VII或IX的逆向/重编译成果用于现代2D重制；只有具体改编目标，没有实现或可行性验证。 **[未确认使用 REA · 待验证]**
 - [童年旧游戏：iamstalkholic称与Claude反编译，准备现代化重写](cases/iamstalkholic-claude-childhood-game-rewrite.md) — 作者称已与Claude反编译小时候玩的旧游戏，并计划重写；游戏名称、代码与运行情况未提供。 **[其他 AI 逆向 · 进行中]**
@@ -276,6 +281,9 @@
 
 ### 硬件与设备互通
 
+- [iPad Pro刷macOS：WeZZard提出AI逆向移植愿望](cases/ipad-pro-macos-ai-port-idea.md) — WeZZard问能否借AI逆向让iPad Pro直接运行macOS；没有具体机型、启动方案或执行报告。 **[未确认使用 REA · 待验证]**
+- [Amica EB954BA+烤箱：建议Claude研究旧固件、USB更新与以太网](cases/amica-eb954ba-claude-firmware-research-idea.md) — Norbert想修改失去支持的联网烤箱，Pawel建议把固件交给Claude研究，先探索USB更新再看以太网；没有执行或刷机结果。 **[其他 AI 逆向 · 待验证]**
+- [Giulia车机审计：LittlePoly称Claude Code/REA发现并清理恶意组件](cases/littlepoly-giulia-rea-malware-audit-report.md) — LittlePoly自述通过USB-C连接Alfa Romeo Giulia车机，使用Claude Code/REA扫描并清理十个所谓恶意组件；无可审计日志或样本，不能据此归罪厂商或服务商。 **[REA · 待验证]**
 - [tolpo：研究Tapo应用协议，经MCP控制设备并显示实时3D住宅](cases/tolpo-tapo-claude-lan-3d-home-report.md) — beamnxw转述Claude Code参与协议研究；公开tolpo复用python-kasa接Tapo局域网设备，支持人工校正户型与3D状态，区分实物测试和模拟实现。 **[其他 AI 逆向 · 进行中]**
 - [Ray-Ban Meta扑克助手：Opus与卡牌检测工作流的未验证转述](cases/rayban-meta-opus-poker-assistant-report.md) — 候选转述学生把眼镜视频送到笔记本，以合成数据训练卡牌检测并用Opus给语音建议；3000+ Elo、情绪识别、开源和实战均未核验。 **[未确认使用 REA · 待验证]**
 - [Klipsch Lumina音箱：AI研究BLE，以摄像头和麦克风闭环检查Mac控制应用](cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande称AI从抓包和手机App二进制研究Lumina 2.1协议，再用摄像头看灯、麦克风听音，迭代Mac菜单栏应用；未独立测试。 **[其他 AI 逆向 · 进行中]**
@@ -609,6 +617,13 @@
 
 ### 应用与客户端
 
+- [Android APK到TypeScript客户端：Agent Cooney称REA五分钟生成库](cases/adrian-cooney-rea-apk-typescript-client.md) — Agent Cooney称自己为个人项目研究Web API多年，REA读取该服务Android APK后五分钟输出TypeScript客户端库；目标未具名，未给兼容性测试。 **[REA · 待验证]**
+- [1Password独立AI实现：Azote在数据丢失后报告的未完整替代路线](cases/azote-1password-independent-ai-implementation.md) — Azote称数据迁移后丢失一年内容，借本地缓存缩小损失，并受独立AI逆向实现帮助；同作者明确说功能不全，不应据此保证恢复成功或净室合规。 **[其他 AI 逆向 · 待验证]**
+- [1Password 7前人成果改造：Azote报告另一条源码可见、许可存疑路线](cases/azote-1password7-prior-work-adaptation.md) — Azote另指向基于前人1Password 7成果的改造实现，称功能全但可能有许可争议；与独立AI实现分开，AI在这条路线的贡献未披露。 **[未确认使用 REA · 待验证]**
+- [应用同意开关审计：Kiro转述REA追踪遥测并对比开关前后流量的工作流](cases/rea-app-consent-toggle-privacy-audit-workflow.md) — Kiro分享隐私审计idea：从Electron/APK/原生应用追到外连触发动作，对比同意开关及同意前流量；没有具名应用的实测结果。 **[REA · 待验证]**
+- [订阅应用局部替代：Skik称REA研究界面、Opus重建、Grok部署](cases/rea-opus-unnamed-subscription-feature-rebuild.md) — Skik称一夜间重做某30美元/月应用中自己常用的部分，REA研究界面、Opus5.5编写、Grok Bot部署；目标和功能均未具名，无兼容性或净室验证。 **[REA · 待验证]**
+- [iPhone本地AI安全工作台：eddiebro在优化离线模型与逆向分析工具](cases/eddiebro-iphone-local-ai-security-workbench.md) — eddiebro称正在把pcap检查、漏洞与恶意软件逆向工具整合到iPhone，本地模型仍在下载和优化；未公开仓库或证明原生扫描/注入能力。 **[未确认使用 REA · 进行中]**
+- [Kong：Ghidra上下文驱动的LLM符号恢复与XZ后门项目基准](cases/kong-ghidra-llm-symbols-xz-benchmark.md) — Kong公开以调用图组织Ghidra/LLM分析并回写名称和类型；较早基准称15分钟、6.63美元分析XZ后门样本。源码可查，置信度和完整链条仍为项目自述，未独立复现。 **[其他 AI 逆向 · 分析测试]**
 - [Super Lemon Text：Claude Code按行为描述重建Sublime式Rust编辑器](cases/super-lemon-text-sublime-cleanroom-experiment.md) — Lemonator32公开Rust编辑器与测试文档，称Claude Code未读原程序而按行为描述重建；Windows里程碑自报完成，但项目未完、原作者已停止开发。 **[其他 AI 逆向 · 进行中]**
 - [智能戒指自制界面：Pranav称反推WHOOP/Oura恢复、负荷与睡眠算法](cases/pranav-smart-ring-whoop-oura-recovery-app.md) — Pranav Janakiraman嫌戒指界面难用，称做了自己的WHOOP式应用并让Agent直接记上下文；算法恢复方法和AI逆向贡献未说明。 **[未确认使用 REA · 待验证]**
 - [开源应用发布包：Mia建议用REA辅助检查二进制是否对应源码](cases/rea-open-source-binary-provenance-check-idea.md) — 在可复现构建讨论下，Mia提出用REA逆向检查发布二进制的idea；没有选定样本或实验，不能替代可复现构建。 **[REA · 待验证]**
@@ -1096,6 +1111,7 @@
 
 ### 算法与功能重建
 
+- [旗袍捣杵舞：sandmrk反推Muse视频动作规格，明确仍不匹配原片](cases/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk为11.2秒固定镜头舞蹈写Muse生成prompt，按节拍描述动作与跨片段衔接；作者承认结果不能完全匹配，不是恢复原始prompt。 **[其他 AI 逆向 · 进行中]**
 - [Anthropic红队多平台报告转述：Ghidra读Windows QUIC二进制并对照C重建](cases/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — 读者转述Claude研究Chrome、Safari、Linux和Windows，其中QUIC使用Ghidra与C行为对照；原始报告、漏洞链与修复版本未独立核对。 **[其他 AI 逆向 · 待验证]**
 - [macOS开盖唤醒：读者希望逆向行为，让Linux更快亮屏](cases/macos-linux-fast-wake-reconstruction-idea.md) — 在AI逆向语境下，读者提出研究macOS开盖唤醒并在Linux重建；0.25秒与3分钟是愿景对比，不是基准。 **[未确认使用 REA · 待验证]**
 - [银发旗袍女巫：sandmrk反推8.9秒九个硬切姿态的生成提示词](cases/sandmrk-qipao-witch-nine-pose-video-prompt.md) — sandmrk按原视频写人物、室内场景与逐秒九镜头提示，强调姿态展示而非舞蹈；明确生成结果仍不能完全匹配。 **[其他 AI 逆向 · 进行中]**

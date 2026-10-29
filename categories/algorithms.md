@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [旗袍捣杵舞：sandmrk反推Muse视频动作规格，明确仍不匹配原片](../cases/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk为11.2秒固定镜头舞蹈写Muse生成prompt，按节拍描述动作与跨片段衔接；作者承认结果不能完全匹配，不是恢复原始prompt。 **[其他 AI 逆向 · 进行中]**
 - [Anthropic红队多平台报告转述：Ghidra读Windows QUIC二进制并对照C重建](../cases/anthropic-redteam-browser-kernel-ghidra-secondary-report.md) — 读者转述Claude研究Chrome、Safari、Linux和Windows，其中QUIC使用Ghidra与C行为对照；原始报告、漏洞链与修复版本未独立核对。 **[其他 AI 逆向 · 待验证]**
 - [macOS开盖唤醒：读者希望逆向行为，让Linux更快亮屏](../cases/macos-linux-fast-wake-reconstruction-idea.md) — 在AI逆向语境下，读者提出研究macOS开盖唤醒并在Linux重建；0.25秒与3分钟是愿景对比，不是基准。 **[未确认使用 REA · 待验证]**
 - [银发旗袍女巫：sandmrk反推8.9秒九个硬切姿态的生成提示词](../cases/sandmrk-qipao-witch-nine-pose-video-prompt.md) — sandmrk按原视频写人物、室内场景与逐秒九镜头提示，强调姿态展示而非舞蹈；明确生成结果仍不能完全匹配。 **[其他 AI 逆向 · 进行中]**

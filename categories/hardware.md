@@ -2,6 +2,9 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [iPad Pro刷macOS：WeZZard提出AI逆向移植愿望](../cases/ipad-pro-macos-ai-port-idea.md) — WeZZard问能否借AI逆向让iPad Pro直接运行macOS；没有具体机型、启动方案或执行报告。 **[未确认使用 REA · 待验证]**
+- [Amica EB954BA+烤箱：建议Claude研究旧固件、USB更新与以太网](../cases/amica-eb954ba-claude-firmware-research-idea.md) — Norbert想修改失去支持的联网烤箱，Pawel建议把固件交给Claude研究，先探索USB更新再看以太网；没有执行或刷机结果。 **[其他 AI 逆向 · 待验证]**
+- [Giulia车机审计：LittlePoly称Claude Code/REA发现并清理恶意组件](../cases/littlepoly-giulia-rea-malware-audit-report.md) — LittlePoly自述通过USB-C连接Alfa Romeo Giulia车机，使用Claude Code/REA扫描并清理十个所谓恶意组件；无可审计日志或样本，不能据此归罪厂商或服务商。 **[REA · 待验证]**
 - [tolpo：研究Tapo应用协议，经MCP控制设备并显示实时3D住宅](../cases/tolpo-tapo-claude-lan-3d-home-report.md) — beamnxw转述Claude Code参与协议研究；公开tolpo复用python-kasa接Tapo局域网设备，支持人工校正户型与3D状态，区分实物测试和模拟实现。 **[其他 AI 逆向 · 进行中]**
 - [Ray-Ban Meta扑克助手：Opus与卡牌检测工作流的未验证转述](../cases/rayban-meta-opus-poker-assistant-report.md) — 候选转述学生把眼镜视频送到笔记本，以合成数据训练卡牌检测并用Opus给语音建议；3000+ Elo、情绪识别、开源和实战均未核验。 **[未确认使用 REA · 待验证]**
 - [Klipsch Lumina音箱：AI研究BLE，以摄像头和麦克风闭环检查Mac控制应用](../cases/klipsch-promedia-lumina-ai-ble-mac-sensor-loop.md) — Pawan Deshpande称AI从抓包和手机App二进制研究Lumina 2.1协议，再用摄像头看灯、麦克风听音，迭代Mac菜单栏应用；未独立测试。 **[其他 AI 逆向 · 进行中]**

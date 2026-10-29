@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1175 cases & projects
+# 1191 cases & projects
 
-**Latest case update:** October 29, 2026, 04:10 · **Last maintained:** October 29, 2026, 04:10 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 29, 2026, 08:13 · **Last maintained:** October 29, 2026, 08:13 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,7 +22,7 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation and useful replacements. Public code is a starting point: look for exact-build checks, hardware-test limits and behavior that still needs work. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, game preservation and useful replacements. These picks favor concrete implementations and inspectable evidence over speed claims; public code still needs exact-build checks and clearly bounded tests. Dates below are source or author-update dates, not collection dates.
 
 1. **[tolpo: a live 3D view of your Tapo home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md)** · `2026-10-29` — A Claude-assisted protocol-research report leads to **public LAN/MCP control and a human-corrected floor plan**. Reuses python-kasa; earlier project tests cover nine rooms and 18 devices, not every write or model. Local device traffic does not mean local AI. `In progress`
 2. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
@@ -49,10 +49,10 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **247** |
-| [Hardware & interoperability](categories/en/hardware.md) | **330** |
-| [Applications & clients](categories/en/apps.md) | **484** |
-| [Algorithms & feature recovery](categories/en/algorithms.md) | **114** |
+| [Games & preservation](categories/en/games.md) | **252** |
+| [Hardware & interoperability](categories/en/hardware.md) | **333** |
+| [Applications & clients](categories/en/apps.md) | **491** |
+| [Algorithms & feature recovery](categories/en/algorithms.md) | **115** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
 
