@@ -2,6 +2,11 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [Airtel Xtream机顶盒：terminalfix征求REA逆向与精简方案](../cases/airtel-xtream-set-top-box-rea-debloat-request.md) — terminalfix询问是否有人逆向并精简Airtel Xtream机顶盒，愿请咖啡或啤酒换取分享；仅具体设备请求，没有实现结果。 **[REA · 待验证]**
+- [一加5T刷iOS：铁柱AGI提出AI/REA移植疑问](../cases/oneplus5t-ios-rea-port-idea.md) — 铁柱AGI在AI/REA讨论中询问一加5T是否可刷iOS；只有具体机型愿望，未给可行方案或运行结果。 **[REA · 待验证]**
+- [OPPO Pad mini运行iPadOS：Zhi提出AI逆向移植愿望](../cases/oppo-pad-mini-ipados-ai-port-idea.md) — Zhi因小平板高刷新率话题，提出在OPPO Pad mini上用AI逆向移植iPadOS；没有技术方案、代码或运行结果。 **[其他 AI 逆向 · 待验证]**
+- [mr.y的PS5：Hermes Desktop与开放模型辅助越狱自述](../cases/mry-hermes-ps5-jailbreak-report.md) — mr.y称用Hermes Desktop、OpenRouter与GLM/DeepSeek Flash辅助PS5越狱；没有固件、方法或执行日志，不代表AI发现新漏洞。 **[其他 AI 逆向 · 待验证]**
+- [mr.y的Android精简：Hermes Desktop辅助设备改造的简短报告](../cases/mry-hermes-android-debloat-report.md) — mr.y称Hermes Desktop配合OpenRouter及GLM/DeepSeek Flash精简Android；未说明设备、包清单、逆向环节或回滚结果。 **[其他 AI 逆向 · 待验证]**
 - [哈苏X2D系列：Codex辅助CIM研究、Doom与受限自动对焦扩展](../cases/radium-hasselblad-cim-codex-feature-research.md) — 极客开源转述Radium Wang用Codex研究哈苏CIM与ARM64/Qt扩展；公开固定README区分一代Doom和AF有限实机反馈、二代静态分析与未完成项目，不支持把CarPlay/GPT转述当完整验收。 **[其他 AI 逆向 · 进行中]**
 - [Pixel 9：二手报道内部Claude模型研究Android锁屏与Play services二进制](../cases/anthropic-internal-claude-android-lockscreen-report.md) — Ummon转述Anthropic结合源码、Play services二进制逆向和Pixel 9实机研究锁屏访问，报告三漏洞越过四道保护；Google处理状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
 - [Point Smart：Conra承认支付终端逆向暂失败，转向AI与官方SmartApps SDK](../cases/conra-point-smart-ai-research-sdk-pivot.md) — Conra以Astra和DeepSeek v4研究Mercado Pago Point Smart，遇AP/SP与防拆边界而未突破；另用REA衍生skill探索官方SDK商用应用，教程尚计划中。 **[REA · 进行中]**

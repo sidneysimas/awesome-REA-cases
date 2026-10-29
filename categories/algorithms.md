@@ -2,6 +2,10 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/algorithms.md)
 
+- [The Flame Ritual：sandmrk反推银甲人物与指尖火焰的Muse两镜头](../cases/sandmrk-muse-flame-ritual-video-prompt.md) — sandmrk将黑色背景中银甲人物举起指尖火焰的短片转为Muse分镜，要求火焰与缓慢手势分速、闭眼后睁红眼；生成结果仍不匹配原片。 **[其他 AI 逆向 · 分析测试]**
+- [Ziping旗袍律动：sandmrk反推Muse八秒舞蹈动作与固定镜头](../cases/sandmrk-muse-ziping-qipao-eight-second-groove.md) — sandmrk把象牙色旗袍女子的八秒舞蹈反推为Muse生成规格，逐秒约束手臂、重心、表情与音频，明确结果仍不匹配原视频。 **[其他 AI 逆向 · 分析测试]**
+- [真人换装短片重建：Nathan AI Lab介绍抽帧、关键帧锁定与CLI流水线](../cases/ai-outfit-transition-keyframe-reconstruction-workflow.md) — Nathan AI Lab介绍从换装原片抽帧反推分镜，以GPT Image锁定首尾人物、Seedance生成转场，再用Claude Code/Python串成CLI的流程；产量与视觉一致性未核验。 **[其他 AI 逆向 · 待验证]**
+- [镜片里的古都：sandmrk反推古风肖像的机位、单眼焦点与倒影](../cases/sandmrk-ancient-glasses-capital-reflection-prompt.md) — sandmrk以9:16特写规格反推古风人物、低戴红金眼镜与镜片古都倒影，保留负面限制和生成结果不匹配说明；不是恢复原始提示词。 **[其他 AI 逆向 · 分析测试]**
 - [王城燃烧短片：sandmrk反推Muse四段分镜，承认仍不匹配原片](../cases/sandmrk-muse-royal-city-burned-video-prompt.md) — sandmrk把王后、骑士和少年在火灾王城中的短片反推为Muse提示词，细分镜头时段、角色一致性、第一人称与合成对白；不是恢复原始提示词，未独立比较生成结果。 **[其他 AI 逆向 · 分析测试]**
 - [水墨湖面舟子：sandmrk反推构图比例、色值与负面提示](../cases/sandmrk-inkwash-boatman-image-prompt.md) — sandmrk反推16:9水墨湖景，以位置百分比和色值约束山崖、红枫、白花与单舟，明确生成图仍不完全匹配；未证明找回原始提示或模型。 **[其他 AI 逆向 · 分析测试]**
 - [旗袍捣杵舞：sandmrk反推Muse视频动作规格，明确仍不匹配原片](../cases/sandmrk-muse-qipao-pestle-dance-prompt.md) — sandmrk为11.2秒固定镜头舞蹈写Muse生成prompt，按节拍描述动作与跨片段衔接；作者承认结果不能完全匹配，不是恢复原始prompt。 **[其他 AI 逆向 · 进行中]**

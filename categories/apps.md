@@ -2,6 +2,13 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [capcut-cli：剪映草稿结构与本地Whisper字幕流水线的转述](../cases/capcut-cli-draft-whisper-secondary-report.md) — 一则项目推荐称capcut-cli直接组装剪映原生草稿与字幕轨，再交官方界面精修；存在多个同名仓库，尚未可靠归属，性能与功能覆盖未核验。 **[未确认使用 REA · 待验证]**
+- [未具名公司SaaS：Jason fengg报告线下委托逆向重建并小额获利](../cases/jasonfeng-unnamed-company-saas-reconstruction-report.md) — Jason fengg在AI业务复盘中称给一家公司逆向做了SaaS并赚一点；没有原产品、功能、模型或验收细节，属于简短项目自述。 **[其他 AI 逆向 · 待验证]**
+- [Claude本地身份与遥测：stormzhang的客户端逆向线索，不是服务端封号还原](../cases/stormzhang-claude-local-identity-telemetry-analysis.md) — stormzhang称研究Claude本地代码，列账号/设备标识、失败遥测重试、配置备份与凭据存储；承认服务端黑盒，未证明标识与封号因果，也未说明AI辅助。 **[未确认使用 REA · 相关项目]**
+- [BLA对抗REA：公开诱饵与预算边界测试，不是不可逆向保证](../cases/bla-counter-rea-budget-decoy-validation.md) — 0xMarioNawfal介绍BLA保护发布产物；固定README和公开报告展示部分真实REA分析器预算错误，但不等于LLM端到端失败、实付成本暴涨或所有工具无法逆向。 **[REA · 分析测试]**
+- [Rustify：用REA证据、产品规格与分片验证组织二进制到Rust重建](../cases/rustify-rea-binary-to-rust-agent-skills.md) — Runchao Han介绍Rustify的跨Agent技能；公开README给出二进制取证、UX与架构规格、Rust实现、对照和缺口台账，目标是完整产品重建，但不证明任意目标已等价。 **[REA · 进行中]**
+- [REA/IDA双Agent隔离：规划者只接规格，专员保留原始分析的提案](../cases/annabel-rea-ida-dual-agent-isolation-proposal.md) — Annabel提出将REA/IDA专员与主规划Agent分开，后者只接清理后的结论；另一帖补充git worktree与本地模型/Kimi。没有真实逆向对照，不能保证账号安全。 **[REA · 待验证]**
+- [Claude Code状态摘要：遥测成本研究与Bun定时器拦截的转述](../cases/claude-code-agent-summary-telemetry-timer-research.md) — 爆裂队长NEXT转述Flamerix的agent_summary成本与非官方Bun钩子；公开issue支持一次四小时会话及bundle分析，不证明所有用户成本相同，也未说明研究是否由AI辅助。 **[未确认使用 REA · 相关项目]**
 - [Reall：Conra为REA fork制作可解释的五阶段界面](../cases/conra-reall-rea-explainable-gui-fork.md) — Conra称制作Reall，将REA的分析、规格、构建、验证和报告放进简单界面，支持多模型、局部目标、预算与证据展示；源码和运行结果未取得。 **[REA · 进行中]**
 - [Chrome：Anthropic报告内部模型串联浏览器漏洞与越沙箱](../cases/anthropic-internal-claude-chrome-chain-report.md) — Ummon转述Anthropic未发布内部模型在人工初始提示后研究Chrome，串联V8与浏览器进程缺陷，并报告macOS默认浏览器打开计算器的演示；62个CVE及修复状态未独立核查。 **[其他 AI 逆向 · 分析测试]**
 - [Safari：二手报道内部Claude模型以纯数据链绕过同源策略](../cases/anthropic-internal-claude-safari-data-only-report.md) — Ummon转述Anthropic研究Safari，组合JavaScriptCore内存、Gigacage与IPC行为绕过同源策略，不依赖任意代码执行；Apple修复为转述，未复现。 **[其他 AI 逆向 · 分析测试]**
