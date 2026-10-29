@@ -2,12 +2,20 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/apps.md)
 
+- [hexgrab：Claude/REA研究PowerToys取色器，九项论断中一项只对了一半](../cases/hexgrab-powertoys-colorpicker-rea-study.md) — Mukesh Murugan从PowerToys发布二进制研究取色器，再以.NET10/WPF写最小替代品；公开评分为8项完全正确、1项部分正确，跨二进制的热键注册是盲点。 **[REA · 分析测试]**
+- [逆向OpenClaw：Johannes在REA讨论中提出的目标](../cases/johannes-openclaw-rea-reversing-idea.md) — Johannes Copeland在回复REA作者的讨论中提出现在该逆向OpenClaw；只有具名目标，没有功能范围、分析材料或结果。 **[REA · 待验证]**
+- [反爬脚本的危险关键词：Mxr猫仙人转述GPT-6拒绝分析现象](../cases/mxr-antiscraping-ai-safety-keyword-report.md) — Mxr猫仙人转述某反爬公司在脚本函数名中埋危险词，使GPT-6拒绝协助分析；公司、原研究者、站点样本和模型响应均未给出。 **[其他 AI 逆向 · 待验证]**
+- [iPhone12 mini照片归档：林野让Gemini推荐既有icloudpd工具](../cases/linye-gemini-icloudpd-photo-archive-report.md) — 林野称借Gemini建议用icloudpd从iCloud归档一千张照片并释放约8G；这是AI辅助使用既有私有接口工具，不是作者新逆向CloudKit的报告。 **[其他 AI 逆向 · 相关项目]**
+- [React生态迁到Solid：Savvas提出借AI重建缺失组件的idea](../cases/savvas-ai-react-ecosystem-solid-rebuild-idea.md) — Savvas认为既然AI可用于软件反编译，也应能在Solid重建React生态的大块功能，以降低框架迁移阻力；未点名库、实现或测试。 **[其他 AI 逆向 · 待验证]**
+- [darkzodchi的REA学习站：十二类目标、十八提示与七站路线](../cases/darkzodchi-rea-twelve-target-prompt-roadmap.md) — darkzodchi介绍自建REA提示与路线站，按桌面、移动端、固件、协议和游戏选目标；数量来自作者，站点内容和提示效果未核验，不与其他作者资料站混并。 **[REA · 相关项目]**
+- [预测市场终端：Stingy询问Claude/REA能否研究跨平台交易界面](../cases/stingy-prediction-market-terminal-rea-idea.md) — Stingy对一款跨Polymarket/Kalshi的预测市场终端询问能否用Claude配REA研究；父帖提供界面用途，但未给软件身份、源码或验证结果。 **[REA · 待验证]**
+- [Claude Android与Sift：钱多多转述APK采集字段研究，非封号算法还原](../cases/claude-android-sift-secondary-analysis-report.md) — 钱多多称有人逆向Claude安卓包发现Sift及SIM、运营商、网络与应用字段；没有构建、样本或流量记录，AI辅助未知，不能证明静默上报或封号因果。 **[未确认使用 REA · 相关项目]**
 - [capcut-cli：剪映草稿结构与本地Whisper字幕流水线的转述](../cases/capcut-cli-draft-whisper-secondary-report.md) — 一则项目推荐称capcut-cli直接组装剪映原生草稿与字幕轨，再交官方界面精修；存在多个同名仓库，尚未可靠归属，性能与功能覆盖未核验。 **[未确认使用 REA · 待验证]**
 - [未具名公司SaaS：Jason fengg报告线下委托逆向重建并小额获利](../cases/jasonfeng-unnamed-company-saas-reconstruction-report.md) — Jason fengg在AI业务复盘中称给一家公司逆向做了SaaS并赚一点；没有原产品、功能、模型或验收细节，属于简短项目自述。 **[其他 AI 逆向 · 待验证]**
 - [Claude本地身份与遥测：stormzhang的客户端逆向线索，不是服务端封号还原](../cases/stormzhang-claude-local-identity-telemetry-analysis.md) — stormzhang称研究Claude本地代码，列账号/设备标识、失败遥测重试、配置备份与凭据存储；承认服务端黑盒，未证明标识与封号因果，也未说明AI辅助。 **[未确认使用 REA · 相关项目]**
 - [BLA对抗REA：公开诱饵与预算边界测试，不是不可逆向保证](../cases/bla-counter-rea-budget-decoy-validation.md) — 0xMarioNawfal介绍BLA保护发布产物；固定README和公开报告展示部分真实REA分析器预算错误，但不等于LLM端到端失败、实付成本暴涨或所有工具无法逆向。 **[REA · 分析测试]**
 - [Rustify：用REA证据、产品规格与分片验证组织二进制到Rust重建](../cases/rustify-rea-binary-to-rust-agent-skills.md) — Runchao Han介绍Rustify的跨Agent技能；公开README给出二进制取证、UX与架构规格、Rust实现、对照和缺口台账，目标是完整产品重建，但不证明任意目标已等价。 **[REA · 进行中]**
-- [REA/IDA双Agent隔离：规划者只接规格，专员保留原始分析的提案](../cases/annabel-rea-ida-dual-agent-isolation-proposal.md) — Annabel提出将REA/IDA专员与主规划Agent分开，后者只接清理后的结论；另一帖补充git worktree与本地模型/Kimi。没有真实逆向对照，不能保证账号安全。 **[REA · 待验证]**
+- [REA/IDA双Agent隔离：规划者只接规格，专员保留原始分析的提案](../cases/annabel-rea-ida-dual-agent-isolation-proposal.md) — Annabel等提出分离规划者与REA/IDA专员；Cloud Whisperer另报告IDA片段受限和本地模型复杂推理不足。均未给受控对照，不能保证隔离或账号安全。 **[REA · 待验证]**
 - [Claude Code状态摘要：遥测成本研究与Bun定时器拦截的转述](../cases/claude-code-agent-summary-telemetry-timer-research.md) — 爆裂队长NEXT转述Flamerix的agent_summary成本与非官方Bun钩子；公开issue支持一次四小时会话及bundle分析，不证明所有用户成本相同，也未说明研究是否由AI辅助。 **[未确认使用 REA · 相关项目]**
 - [Reall：Conra为REA fork制作可解释的五阶段界面](../cases/conra-reall-rea-explainable-gui-fork.md) — Conra称制作Reall，将REA的分析、规格、构建、验证和报告放进简单界面，支持多模型、局部目标、预算与证据展示；源码和运行结果未取得。 **[REA · 进行中]**
 - [Chrome：Anthropic报告内部模型串联浏览器漏洞与越沙箱](../cases/anthropic-internal-claude-chrome-chain-report.md) — Ummon转述Anthropic未发布内部模型在人工初始提示后研究Chrome，串联V8与浏览器进程缺陷，并报告macOS默认浏览器打开计算器的演示；62个CVE及修复状态未独立核查。 **[其他 AI 逆向 · 分析测试]**

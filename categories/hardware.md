@@ -2,6 +2,7 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/hardware.md)
 
+- [旧Mi Band滚动短视频：Aditya与Claude研究手环陀螺仪](../cases/aditya-mi-band-claude-gyro-reels.md) — Aditya称正和Claude逆向旧Mi Band，想用陀螺仪滚动reels；设备用途明确，但没有型号、协议、代码或可确认运行结果。 **[其他 AI 逆向 · 进行中]**
 - [Airtel Xtream机顶盒：terminalfix征求REA逆向与精简方案](../cases/airtel-xtream-set-top-box-rea-debloat-request.md) — terminalfix询问是否有人逆向并精简Airtel Xtream机顶盒，愿请咖啡或啤酒换取分享；仅具体设备请求，没有实现结果。 **[REA · 待验证]**
 - [一加5T刷iOS：铁柱AGI提出AI/REA移植疑问](../cases/oneplus5t-ios-rea-port-idea.md) — 铁柱AGI在AI/REA讨论中询问一加5T是否可刷iOS；只有具体机型愿望，未给可行方案或运行结果。 **[REA · 待验证]**
 - [OPPO Pad mini运行iPadOS：Zhi提出AI逆向移植愿望](../cases/oppo-pad-mini-ipados-ai-port-idea.md) — Zhi因小平板高刷新率话题，提出在OPPO Pad mini上用AI逆向移植iPadOS；没有技术方案、代码或运行结果。 **[其他 AI 逆向 · 待验证]**

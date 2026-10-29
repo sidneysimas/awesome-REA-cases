@@ -2,6 +2,7 @@
 
 [Editor picks](../../README.md) | [Full index](../../INDEX.en.md) | [中文](../hardware.md)
 
+- [Scrolling reels with an old Mi Band: Aditya investigates its gyroscope with Claude](../../cases/en/aditya-mi-band-claude-gyro-reels.md) — Aditya says he is reverse-engineering an old Mi Band with Claude to scroll reels using its gyroscope. The use is concrete, but model, protocol, code and a confirmed working result are absent. **[Other AI-assisted work · In progress]**
 - [Airtel Xtream set-top box: terminalfix asks for REA reversing and debloating work](../../cases/en/airtel-xtream-set-top-box-rea-debloat-request.md) — terminalfix asks whether anyone has reversed and debloated an Airtel Xtream set-top box, offering coffee or beer for a shared approach. This is a device-specific request, not an implementation result. **[REA · Needs verification]**
 - [iOS on OnePlus 5T: cgnot996's AI/REA port question](../../cases/en/oneplus5t-ios-rea-port-idea.md) — cgnot996 asks whether AI/REA could put iOS on a OnePlus 5T. This is a specific-model wish without a workable plan or execution result. **[REA · Needs verification]**
 - [iPadOS on OPPO Pad mini: Zhi's AI-assisted reverse-engineering port idea](../../cases/en/oppo-pad-mini-ipados-ai-port-idea.md) — In a discussion of high-refresh-rate small tablets, Zhi asks about AI-assisted reverse engineering to run iPadOS on OPPO Pad mini. No technical plan, code or execution result is supplied. **[Other AI-assisted work · Needs verification]**

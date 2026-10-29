@@ -2,6 +2,8 @@
 
 [返回主目录](../README.zh-CN.md) | [English](en/games.md)
 
+- [怒之铁拳：RuiNelson借LLM分析与RageDecompiler把68000逻辑重编译为C++](../cases/ruinelson-streets-of-rage-ai-static-recompilation.md) — 公开项目将初代Streets of Rage的游戏逻辑转为C++，保留SDL3硬件模拟，并以逆向状态机支持符号AI玩家；开发者致谢Claude、ChatGPT和Grok，不是完整原生重写或独立通关验证。 **[其他 AI 逆向 · 进行中]**
+- [Forza Motorsport 4：AI辅助静态重编译，公开限定硬件的帧率对照](../cases/i2kiselev-forza4-ai-static-recompilation.md) — i2kiselev以ShiftGlue和Pinyon Shift为基础将Xbox360的FM4带到Windows，公开承认AI辅助逆向；项目测试把5K与240fps分开，不能理解为5K下240fps。 **[其他 AI 逆向 · 进行中]**
 - [老友重建旧游戏：HumanProbably考虑分摊AI额度](../cases/friends-shared-ai-credits-old-game-clone-idea.md) — HumanProbably与朋友考虑平摊AI额度，重建几十年前一起玩的游戏；游戏未具名，没有开工或可玩版本。 **[其他 AI 逆向 · 待验证]**
 - [未具名游戏：咸鱼称REA十分钟完成逆向](../cases/nickling017-rea-ten-minute-unnamed-game-report.md) — 咸鱼报告REA十分钟帮自己完成游戏逆向；只确认作者自述及一张截图附件，游戏名、逆向范围和可运行成果未核验。 **[REA · 待验证]**
 - [Kega Fusion：用AI反编译模拟器、增加无边框窗口的愿望](../cases/kega-fusion-ai-decompile-borderless-idea.md) — 读者建议AI反编译Kega Fusion模拟器，加入无边框窗口等现代功能；尚无实现或测试。 **[其他 AI 逆向 · 待验证]**

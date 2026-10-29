@@ -8,9 +8,9 @@
 
 A curated collection of **reverse-engineering projects, experiments, and ideas**: revive old devices, rebuild apps, preserve games, and understand hidden behavior.
 
-# 1223 cases & projects
+# 1234 cases & projects
 
-**Latest case update:** October 29, 2026, 16:18 · **Last maintained:** October 29, 2026, 16:18 · Beijing time (UTC+8). Counts as of this maintenance.
+**Latest case update:** October 29, 2026, 20:13 · **Last maintained:** October 29, 2026, 20:13 · Beijing time (UTC+8). Counts as of this maintenance.
 
 Updates **6× daily** · [Full index](INDEX.en.md) · [Browse categories](#browse-by-category)
 
@@ -22,17 +22,17 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 ## Recent picks
 
-**10 worth reading** for device interoperability, game preservation, useful replacements and the limits of automated analysis. Public code and bounded tests matter more than universal claims. Dates below are source or author-update dates, not collection dates.
+**10 worth reading** for device interoperability, useful replacements and game preservation—with concrete tests and visible failure modes, not universal promises. Dates below are source or author-update dates, not collection dates.
 
 1. **[tolpo: a live 3D view of your Tapo home](cases/en/tolpo-tapo-claude-lan-3d-home-report.md)** · `2026-10-29` — A Claude-assisted protocol-research report leads to **public LAN/MCP control and a human-corrected floor plan**. Reuses python-kasa; earlier project tests cover nine rooms and 18 devices, not every write or model. Local device traffic does not mean local AI. `In progress`
-2. **[BLA: probe the limits of REA analysis](cases/en/bla-counter-rea-budget-decoy-validation.md)** · `2026-10-29` report; `2026-10-27` project tests — Public before/after samples report **real analyzer-budget failures**, while EVM still returns OK and native debugger paths remain untested. **Not proof of end-to-end LLM failure**; token/cost multipliers are estimates, not measured spending. Not rerun here. `Analysis test`
-3. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
-4. **[LG UltraFine: repair the updater, not the firmware](cases/en/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex-assisted diagnosis and a **public, exact-build memory patch**; the author reports a scaler update reaching **100% with CRC passing**. Credits an earlier bug report; one Apple Silicon setup, not independently flashed here. `Author-tested patch`
-5. **[Brother: scan straight to your NAS](cases/en/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — Replace the PC button app with a **public Claude/REA-assisted Go service for SMB, FTP, S3 and local storage**, building on prior protocol work. A server is still required; only MFC-L2800DW firmware 1.32 is project-tested. `Public implementation`
-6. **[Claude writes proofs; Rocq checks the binaries](cases/en/anthropic-theorem-claude-binary-formal-verification.md)** · `2026-10-22` — Anthropic/Theorem report machine-code no-crash proofs for **239 entry points across 123 libraries**. Single-threaded static RISC-V/Linux, inputs below 64MB; **not bug-free whole libraries**, and the checker was not independently rerun here. `Analysis test`
-7. **[PlainMount: write to an old NTFS drive on a Mac](cases/en/laplaced-plainmount-rea-ntfstool-macos.md)** · `2026-10-28` — Laplaced reports **REA inspection of NTFSTool**, then a native app using existing NTFS components; reading, writing and reconnection tested on one old drive. Public source, Apple Silicon/macOS 14+; **mixed backend licenses, no Apple notarization**, no independent disk test here. `In progress`
-8. **[Instance: preserve GameMaker's quirks, not just its features](cases/en/instance-gamemaker81-claude-blackbox-rust.md)** · `2026-10-28` — A report credits **Claude-assisted, black-box-spec-driven Rust reconstruction** of the 8.1 editor and runtime. Public code and browser entry include old event, RNG and audio behavior; **three weeks, not just a morning**, according to the report. No full-parity or legal-compliance guarantee; not run here. `In progress`
-9. **[Civilization: rebuild the 1991 DOS executable](cases/en/civilization-dos47405-ai-reconstruction-report.md)** · `2026-10-21` — Steve Melia's AI-assisted C/assembly reconstruction has **public code and successful exact-commit hash-checking CI**. A checked **four-byte startup correction** is part of the build, not a remaining mismatch. Inferred names, prior OpenCiv1 work; not original source or an independently rerun build here. `In progress`
+2. **[hexgrab: learn from PowerToys, then build a smaller picker](cases/en/hexgrab-powertoys-colorpicker-rea-study.md)** · `2026-10-29` report; `2026-10-12` investigation — Claude/REA studies shipped binaries; the author's source scorecard gives **8 of 9 claims fully correct, one partial**. Public .NET 10 implementation; hotkey registration in an unexamined runner exposed a blind spot. One monitor tested, not independently rerun. `Analysis test`
+3. **[BLA: probe the limits of REA analysis](cases/en/bla-counter-rea-budget-decoy-validation.md)** · `2026-10-29` report; `2026-10-27` project tests — Public samples report **analyzer-budget failures**, while EVM still returns OK and native debugger paths remain untested. **Not end-to-end LLM failure**; cost multipliers are estimates. Not rerun here. `Analysis test`
+4. **[Where NIST curve seeds came from](cases/en/nist-ecdsa-origin-claude-report.md)** · `2026-10-16` — Anthropic reports Claude traced public parameters to **lrand48 and timestamps**, publishing code and unresolved questions. **Not an ECDSA break**; not independently recomputed here. `Research report`
+5. **[LG UltraFine: repair the updater, not the firmware](cases/en/lg-ultrafine-codex-updater-patch.md)** · `2026-10-19` — Codex-assisted diagnosis and a **public, exact-build memory patch**; the author reports a scaler update reaching **100% with CRC passing**. Credits an earlier bug report; one Apple Silicon setup, not independently flashed here. `Author-tested patch`
+6. **[Brother: scan straight to your NAS](cases/en/brother-scan-button-claude-rea-server.md)** · `2026-10-18` — Replace the PC button app with a **public Claude/REA-assisted Go service for SMB, FTP, S3 and local storage**, building on prior protocol work. A server is still required; only MFC-L2800DW firmware 1.32 is project-tested. `Public implementation`
+7. **[Claude writes proofs; Rocq checks the binaries](cases/en/anthropic-theorem-claude-binary-formal-verification.md)** · `2026-10-22` — Anthropic/Theorem report machine-code no-crash proofs for **239 entry points across 123 libraries**. Single-threaded static RISC-V/Linux, inputs below 64MB; **not bug-free whole libraries**, and the checker was not independently rerun here. `Analysis test`
+8. **[PlainMount: write to an old NTFS drive on a Mac](cases/en/laplaced-plainmount-rea-ntfstool-macos.md)** · `2026-10-28` — Laplaced reports **REA inspection of NTFSTool**, then a native app using existing NTFS components; reading, writing and reconnection tested on one old drive. Public source, Apple Silicon/macOS 14+; **mixed backend licenses, no Apple notarization**, no independent disk test here. `In progress`
+9. **[Forza Motorsport 4: recompile the Xbox 360 racer for Windows](cases/en/i2kiselev-forza4-ai-static-recompilation.md)** · `2026-10-29` — Public AI-assisted ShiftGlue/Vulkan project, crediting prior work. Its bounded benchmark reports **102 fps at 5K—not 240 fps at 5K**. Requires supported game files; no LIVE/Kinect, Linux still planned. Not built or benchmarked here. `Experimental`
 10. **[PicasaPy: keep a local photo workflow alive](cases/en/picasapy-ghidra-claude-codex-photo-manager.md)** · `2026-10-28` (Beijing time) — Virág Attila's **Ghidra/Claude/Codex-assisted Python/Qt rewrite** has public research specifications and successful exact-commit CI. Shared **.picasa.ini** files are not conflict-safe synchronization; project documents separate static coverage from click tests. Full parity not established; not run here. `In progress`
 
 ## Classic cases
@@ -49,9 +49,9 @@ Covers [REA](https://github.com/morluto/rea) and other AI-assisted work. REA con
 
 | Category | Entries |
 | :--- | ---: |
-| [Games & preservation](categories/en/games.md) | **255** |
-| [Hardware & interoperability](categories/en/hardware.md) | **341** |
-| [Applications & clients](categories/en/apps.md) | **506** |
+| [Games & preservation](categories/en/games.md) | **257** |
+| [Hardware & interoperability](categories/en/hardware.md) | **342** |
+| [Applications & clients](categories/en/apps.md) | **514** |
 | [Algorithms & feature recovery](categories/en/algorithms.md) | **121** |
 
 [**View all cases →**](INDEX.en.md) · [Contribute (中文)](CONTRIBUTING.md) · [Maintenance (中文)](MAINTENANCE.md)
